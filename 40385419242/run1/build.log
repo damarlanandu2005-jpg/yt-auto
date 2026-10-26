@@ -1,0 +1,15 @@
+[0;93m2026-10-26 19:18:03.044901059 [W:onnxruntime:Default, device_discovery.cc:95 GetPciBusId] Skipping pci_bus_id for PCI path at "/sys/devices/LNXSYSTM:00/LNXSYBUS:00/ACPI0004:00/MSFT1000:00/5620e0c7-8062-4dce-aeb7-520c7ef76171" because filename "5620e0c7-8062-4dce-aeb7-520c7ef76171" did not match expected pattern of [0-9a-f]+:[0-9a-f]+:[0-9a-f]+[.][0-9a-f]+[m
+[bench] narration: 93.09 s
+[bench] keyframes: 3.9 s
+[bench] segments: 64.09 s
+[bench] assemble: 5.32 s
+Timeout (0:10:00)!
+Thread 0x00007fb288dcfb80 (most recent call first):
+  File "/opt/hostedtoolcache/Python/3.13.16/x64/lib/python3.13/selectors.py", line 398 in select
+  File "/opt/hostedtoolcache/Python/3.13.16/x64/lib/python3.13/subprocess.py", line 2155 in _communicate
+  File "/opt/hostedtoolcache/Python/3.13.16/x64/lib/python3.13/subprocess.py", line 1223 in communicate
+  File "/opt/hostedtoolcache/Python/3.13.16/x64/lib/python3.13/subprocess.py", line 557 in run
+  File "/home/runner/work/yt-auto/yt-auto/yt_auto/render.py", line 16 in _run
+  File "/home/runner/work/yt-auto/yt-auto/yt_auto/render.py", line 66 in preview
+  File "/home/runner/work/yt-auto/yt-auto/phase0/run_benchmark.py", line 86 in main
+  File "/home/runner/work/yt-auto/yt-auto/phase0/run_benchmark.py", line 112 in <module>
