@@ -77,7 +77,8 @@ def main() -> None:
     ap.add_argument("--speed", type=float, default=0.9)
     args = ap.parse_args()
 
-    faulthandler.dump_traceback_later(50 * 60, exit=True)  # print every thread's stack if anything hangs
+    # Print every thread's stack before the workflow step's 45-minute limit kills us silently.
+    faulthandler.dump_traceback_later(40 * 60, exit=True)
     out = Path(args.out)
     for sub in ("audio", "frames", "segments", "photos", "ffmpeg_logs", "llm"):
         (out / sub).mkdir(parents=True, exist_ok=True)

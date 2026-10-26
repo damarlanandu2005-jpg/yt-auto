@@ -16,7 +16,7 @@ import re
 from pathlib import Path
 
 from . import photos
-from .llm import LLMError, llm
+from .llm import FAST, LLMError, llm
 
 TARGET_S, MIN_S, MAX_S = 4.5, 3.0, 6.5
 
@@ -94,9 +94,10 @@ PLAN_SCHEMA = {"type": "object", "properties": {"visuals": {"type": "array", "it
     "properties": {
         "id": {"type": "string"},
         "kind": {"type": "string", "enum": ["photo", "card"]},
-        "photo_subject": {"type": "string", "description": "what the photo must show, concretely"},
+        "photo_subject": {"type": "string", "description": "the ONE thing the photo shows, in a few plain words "
+                                                            "(e.g. 'a GPS satellite', 'an atomic clock')"},
         "photo_queries": {"type": "array", "items": {"type": "string"}, "maxItems": 2,
-                          "description": "2 short search phrases (2-4 words) for NASA / Wikimedia Commons"},
+                          "description": "2 search phrases of 1-3 common words, e.g. 'atomic clock', 'GPS receiver'"},
         "card": {"type": "object", "properties": _CARD, "required": ["type", "title"],
                  "description": "the card to show (kind=card), or the fallback if no photo is found (kind=photo)"},
     },
@@ -119,19 +120,23 @@ def plan_visuals(script_title: str, the_slots: list[dict], headings: dict[str, s
     prompt = f"""Video: {script_title}
 Plan one visual for each slot of narration below. The viewer sees it while hearing that text.
 Rules:
-- Real photos first: use kind=photo for at least 60 per cent of slots, whenever a real photo could show the
-  thing being talked about (objects, places, people's work, spacecraft, machines, nature, historical photos).
-  NASA and Wikimedia Commons have huge archives; think what a photo archive would really contain.
+- Real photos first: use kind=photo for at least 65 per cent of slots, whenever a real photo could show the
+  thing being talked about (objects, places, spacecraft, machines, nature, historical photos).
+  Ask for SIMPLE subjects an archive surely has ("a handheld GPS receiver", "a rocket launch", "an atomic
+  clock"), never a detailed scene ("a hiker with a GPS in remote mountains with no signal"). A photo of the
+  object being discussed is better than a text card.
 - Use kind=card when a number, comparison, process or list is the point, or at scene starts (title card).
 - The first slot is a title card with the video title.
 - Every number on a card MUST appear in that slot's text or earlier in the same scene. Never invent data.
 - Vary: never the same card type twice in a row; never more than 2 cards in a row.
+- Text cards are the last choice: at most one bullets card per scene, and a bare title card only at scene starts.
+  Prefer stat, bars, timeline, flow or compare when a card is needed.
 - For kind=photo still give a fallback card (used if no good photo exists).
 {CARD_HELP}
 
 SLOTS:
 """ + "\n".join(lines)
-    res = llm(prompt, schema=PLAN_SCHEMA, name="visual_plan", temperature=0.7)
+    res = llm(prompt, schema=PLAN_SCHEMA, name="visual_plan", temperature=0.7, models=FAST)
     by_id = {v["id"]: v for v in res["visuals"]}
     out = []
     for s in the_slots:
@@ -149,8 +154,10 @@ def check_card_numbers(visuals: list[dict], scene_text: dict[str, str]) -> list[
     problems = []
     for v in visuals:
         card = v["card"]
+        # ensure_ascii=False: otherwise "°" becomes "\u00b0" and its digits look like numbers
         shown = _numbers(json.dumps({k: card.get(k) for k in ("value", "label", "note", "items", "steps", "values",
-                                                                "events", "left_points", "right_points", "subtitle")}))
+                                                                "events", "left_points", "right_points", "subtitle")},
+                                    ensure_ascii=False))
         shown = {n.rstrip("0").rstrip(".") if "." in n else n for n in shown}
         spoken = {n.rstrip("0").rstrip(".") if "." in n else n for n in _numbers(scene_text[v["scene"]])}
         bad = shown - spoken
@@ -174,7 +181,7 @@ def find_photos(visuals: list[dict], photo_dir: Path, log: dict) -> None:
     want = [v for v in visuals if v["kind"] == "photo" and v.get("photo_queries")]
     cands: dict[str, list[dict]] = {}
     for v in want:
-        cands[v["id"]] = photos.search(v["photo_queries"][:2], per_source=6)[:10]
+        cands[v["id"]] = photos.search(v["photo_queries"][:2], per_source=6)[:12]
     log["photo_slots"] = len(want)
     log["candidates"] = {k: len(c) for k, c in cands.items()}
     asks = [v for v in want if cands[v["id"]]]
@@ -186,14 +193,17 @@ def find_photos(visuals: list[dict], photo_dir: Path, log: dict) -> None:
                          for i, c in enumerate(cands[v["id"]]))
         blocks.append(f"[{v['id']}] needs: {v.get('photo_subject', '')} | narration: {v['text']}\n{opts}")
     prompt = """Pick the best photo for each slot from its numbered candidates (title | description).
-The photo must clearly show what the slot needs, as a viewer would recognise it. Prefer real photographs over
-diagrams with small text, logos, or maps with dense labels. Avoid close-up faces of private people.
-Do not use the same photo twice. Answer choice = the candidate number as text, or "" if none fits well.
+Choose a candidate if it shows the slot's subject or something closely related that fits the narration
+(it does not need to match every detail: a photo of a real handheld GPS receiver fits "a hiker's GPS").
+Answer "" only when no candidate is related, or the only related ones would mislead the viewer.
+Prefer real photographs over diagrams with small text, logos, or maps with dense labels. Avoid close-up
+faces of private people. Do not use the same photo twice.
+Answer choice = the candidate number as text, or "".
 
 """ + "\n\n".join(blocks)
     try:
         picks = {p["id"]: p["choice"] for p in llm(prompt, schema=PICK_SCHEMA, name="photo_pick",
-                                                     temperature=0.2)["picks"]}
+                                                     temperature=0.2, models=FAST)["picks"]}
     except LLMError as e:
         log["pick_error"] = str(e)
         return
@@ -241,7 +251,7 @@ and not be misleading next to the narration.
 {listing}"""
     try:
         res = llm(prompt, images=[_thumb(v["photo"]["path"]) for v in chosen], schema=VERIFY_SCHEMA,
-                  name="photo_verify", temperature=0.1)
+                  name="photo_verify", temperature=0.1, models=FAST)
     except LLMError as e:
         log["verify_error"] = str(e)
         return

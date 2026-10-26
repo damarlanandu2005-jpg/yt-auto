@@ -24,6 +24,10 @@ GEMINI = "https://generativelanguage.googleapis.com/v1beta"
 # next one is tried. Override with LLM_MODELS="a,b,c".
 MODELS = [m for m in os.environ.get(
     "LLM_MODELS", "gemini-3.8-flash,gemini-3.6-flash,gemini-3.5-flash,gemini-3.5-flash-lite").split(",") if m]
+# For quick structured jobs (visual plan, photo pick/check). First test run, 26 Oct 2026: 3.8 Flash
+# answered 503 "high demand" on 5 of 7 calls and took 219 s for the visual plan; 3.6 Flash took 6-70 s.
+FAST = ["gemini-3.6-flash", "gemini-3.5-flash", "gemini-3.8-flash", "gemini-3.5-flash-lite"]
+_DOWN: set[str] = set()  # models that gave up with 503 in this run: tried last from then on
 
 LOG: list[dict] = []
 LOG_DIR: Path | None = None  # set by the caller to keep each prompt and reply on disk
@@ -35,17 +39,20 @@ class LLMError(RuntimeError):
 
 def llm(prompt: str, *, system: str = "", schema: dict | None = None, model: str | None = None,
         temperature: float = 0.7, name: str = "llm", images: list[bytes] | None = None,
-        max_tries: int = 3, timeout: int = 300):
+        models: list[str] | None = None, max_tries: int = 3, timeout: int = 600):
     """Send one prompt, return the reply text (or parsed JSON when `schema` is given).
 
     `images`: optional JPEG bytes shown to the model before the prompt.
     """
     errors = []
-    for m in ([model] if model else MODELS):
+    order = [model] if model else (models or MODELS)
+    order = [m for m in order if m not in _DOWN] + [m for m in order if m in _DOWN]
+    for m in order:
         try:
             return _call(m, prompt, system, schema, temperature, name, images, max_tries, timeout)
         except _TryNextModel as e:
             print(f"[llm] {name}: {m} unavailable ({e}); trying next model", flush=True)
+            _DOWN.add(m)
             errors.append(f"{m}: {e}")
     raise LLMError(f"{name}: no model available: {errors}")
 
