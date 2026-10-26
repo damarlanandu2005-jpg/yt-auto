@@ -1,0 +1,35 @@
+[0;93m2026-10-26 18:52:38.567811993 [W:onnxruntime:Default, device_discovery.cc:95 GetPciBusId] Skipping pci_bus_id for PCI path at "/sys/devices/LNXSYSTM:00/LNXSYBUS:00/ACPI0004:00/MSFT1000:00/5620e0c7-8062-4dce-aeb7-520c7ef76171" because filename "5620e0c7-8062-4dce-aeb7-520c7ef76171" did not match expected pattern of [0-9a-f]+:[0-9a-f]+:[0-9a-f]+[.][0-9a-f]+[m
+[bench] narration: 39.15 s
+[bench] keyframes: 2.06 s
+[bench] segments: 43.07 s
+[bench] assemble: 3.02 s
+Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+[bench] subtitles: 14.48 s
+[bench] preview: 4.11 s
+{
+  "total_seconds": 105.91,
+  "stages_seconds": {
+    "narration": 39.15,
+    "keyframes": 2.06,
+    "segments": 43.07,
+    "assemble": 3.02,
+    "subtitles": 14.48,
+    "preview": 4.11
+  },
+  "peak_memory_mb": {
+    "python": 1070.1,
+    "largest_child": 1070.1
+  },
+  "machine": {
+    "arch": "x86_64",
+    "cpus": 4,
+    "python": "3.13.16",
+    "runner": "GitHub Actions 1000000220"
+  },
+  "subtitle_lines": 93,
+  "video_seconds": 244.4,
+  "video_mb": 20.0,
+  "scenes": 12,
+  "keyframes": 34,
+  "voice": "af_heart"
+}

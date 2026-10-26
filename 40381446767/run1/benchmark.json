@@ -1,0 +1,27 @@
+{
+  "total_seconds": 105.91,
+  "stages_seconds": {
+    "narration": 39.15,
+    "keyframes": 2.06,
+    "segments": 43.07,
+    "assemble": 3.02,
+    "subtitles": 14.48,
+    "preview": 4.11
+  },
+  "peak_memory_mb": {
+    "python": 1070.1,
+    "largest_child": 1070.1
+  },
+  "machine": {
+    "arch": "x86_64",
+    "cpus": 4,
+    "python": "3.13.16",
+    "runner": "GitHub Actions 1000000220"
+  },
+  "subtitle_lines": 93,
+  "video_seconds": 244.4,
+  "video_mb": 20.0,
+  "scenes": 12,
+  "keyframes": 34,
+  "voice": "af_heart"
+}
