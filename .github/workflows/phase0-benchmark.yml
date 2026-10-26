@@ -78,7 +78,7 @@ jobs:
         run: bash scripts/download_models.sh models
 
       - name: Build the video
-        timeout-minutes: 30
+        timeout-minutes: 15
         run: |
           set -o pipefail
           mkdir -p out/run

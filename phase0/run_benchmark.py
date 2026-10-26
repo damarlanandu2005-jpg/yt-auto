@@ -10,7 +10,9 @@ Usage:
 from __future__ import annotations
 
 import argparse
+import faulthandler
 import json
+import subprocess
 import sys
 from pathlib import Path
 
@@ -32,6 +34,9 @@ def main() -> None:
     ap.add_argument("--voice", default="af_heart")
     ap.add_argument("--skip-subtitles", action="store_true")
     args = ap.parse_args()
+
+    # If anything hangs for 10 minutes, print every thread's stack and exit.
+    faulthandler.dump_traceback_later(600, exit=True)
 
     script = json.loads(Path(args.script).read_text())
     scenes = script["scenes"][: args.scenes or None]
@@ -76,17 +81,20 @@ def main() -> None:
         render.concat_video(segments, out / "video_noaudio.mp4")
         render.mux(out / "video_noaudio.mp4", out / "narration.wav", out / "video.mp4")
 
-    # 5. Subtitles
-    if not args.skip_subtitles:
-        with bench.stage("subtitles"):
-            from yt_auto.subtitles import make_srt
-
-            n_subs = make_srt(out / "narration.wav", out / "subtitles.srt")
-            bench.info["subtitle_lines"] = n_subs
-
-    # 6. Small preview for quick checking
+    # 5. Small preview for quick checking
     with bench.stage("preview"):
         render.preview(out / "video.mp4", out / "preview_480p.mp4")
+
+    # 6. Subtitles, in a separate process (see yt_auto/subtitles.py)
+    if not args.skip_subtitles:
+        with bench.stage("subtitles"):
+            result = subprocess.run(
+                [sys.executable, "-m", "yt_auto.subtitles", str(out / "narration.wav"), str(out / "subtitles.srt")],
+                cwd=ROOT, capture_output=True, text=True, stdin=subprocess.DEVNULL, timeout=900,
+            )
+            if result.returncode != 0:
+                raise RuntimeError(f"Subtitles failed:\n{result.stderr[-2000:]}")
+            bench.info["subtitle_lines"] = int(result.stdout.strip().splitlines()[-1])
 
     video = out / "video.mp4"
     bench.info.update({

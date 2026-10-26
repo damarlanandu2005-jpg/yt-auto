@@ -43,3 +43,12 @@ def make_srt(audio: Path, out: Path, model_size: str = "base.en") -> int:
         lines.append(f"{n}\n{_ts(seg.start)} --> {_ts(seg.end)}\n{seg.text.strip()}\n")
     out.write_text("\n".join(lines), encoding="utf-8")
     return n
+
+
+if __name__ == "__main__":
+    # Run as its own process: `python -m yt_auto.subtitles narration.wav subtitles.srt`
+    # faster-whisper (CTranslate2) leaves worker threads behind; starting FFmpeg from a
+    # process that holds them can freeze, so the main pipeline keeps whisper out of process.
+    import sys
+
+    print(make_srt(Path(sys.argv[1]), Path(sys.argv[2])))
