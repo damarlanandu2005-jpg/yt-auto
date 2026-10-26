@@ -1,0 +1,112 @@
+{
+  "title": "How Does GPS Know Where You Are?",
+  "note": "Benchmark sample only. Facts are widely published but this script has not been through the fact-checking step and is not for upload.",
+  "scenes": [
+    {
+      "id": "s01_hook",
+      "narration": "Right now, the phone in your pocket can work out where you are to within a few metres. And here is the strange part. It never sends a single message to space. It only listens. So how can a device that never talks to a satellite know exactly where it is standing? The answer is a story about clocks, distance, and a correction that comes straight from Einstein.",
+      "keyframes": [
+        {"type": "title", "title": "How does GPS know where you are?", "subtitle": "Clocks, distance, and a correction from Einstein"},
+        {"type": "stat", "value": "~5 m", "label": "typical smartphone GPS accuracy", "note": "under open sky"},
+        {"type": "flow", "title": "Your phone only listens", "steps": ["Satellites broadcast", "Signals travel", "Phone receives", "Phone calculates"]}
+      ]
+    },
+    {
+      "id": "s02_constellation",
+      "narration": "GPS is a group of about thirty satellites run by the United States. They circle the Earth at roughly twenty thousand two hundred kilometres up, far higher than the International Space Station. Each one goes around the planet about twice a day. They are spread out so that, from almost anywhere on Earth, at least four of them are above the horizon at any moment.",
+      "keyframes": [
+        {"type": "stat", "value": "~30", "label": "GPS satellites in operation", "note": "operated by the United States"},
+        {"type": "bars", "title": "How high are they?", "labels": ["Space Station", "GPS", "Geostationary"], "values": [400, 20200, 35786], "unit": "km above Earth", "highlight": 1},
+        {"type": "stat", "value": "2 orbits", "label": "per day for each satellite", "note": "one orbit takes about 12 hours"},
+        {"type": "bullets", "title": "Why so many?", "items": ["Spread across six orbital planes", "At least four visible from almost anywhere", "Spares keep the system running"]}
+      ]
+    },
+    {
+      "id": "s03_signal",
+      "narration": "Every satellite broadcasts a simple message, over and over. It says two things. Here is exactly where I am in my orbit, and here is exactly what time it was when I sent this. That is all. The satellite does not know you exist. Your phone simply catches these messages as they arrive.",
+      "keyframes": [
+        {"type": "flow", "title": "What each satellite says", "steps": ["My position in orbit", "The exact send time", "Repeat, forever"]},
+        {"type": "bullets", "title": "What the satellite does not know", "items": ["Who is listening", "How many receivers exist", "Where any receiver is"]},
+        {"type": "stat", "value": "0", "label": "messages your phone sends to GPS satellites", "note": "receiving only"}
+      ]
+    },
+    {
+      "id": "s04_time_to_distance",
+      "narration": "Now comes the clever part. The signal travels at the speed of light, about three hundred thousand kilometres every second. If your phone knows when the message left the satellite, and when it arrived, it can multiply that travel time by the speed of light. The result is the distance to that satellite. For GPS, that trip takes less than a tenth of a second.",
+      "keyframes": [
+        {"type": "stat", "value": "300,000 km/s", "label": "speed of the radio signal", "note": "the speed of light"},
+        {"type": "line", "title": "Travel time becomes distance", "x": [0, 20, 40, 60, 80, 100], "y": [0, 6000, 12000, 18000, 24000, 30000], "xlabel": "Travel time (milliseconds)", "ylabel": "Distance (km)", "mark_x": 67, "mark_label": "a GPS signal: ~67 ms"},
+        {"type": "flow", "title": "The calculation", "steps": ["Arrival time", "minus send time", "times speed of light", "= distance"]}
+      ]
+    },
+    {
+      "id": "s05_one_sphere",
+      "narration": "Knowing your distance from one satellite is not enough. It only tells you that you are somewhere on a giant sphere around that satellite. Picture it as a circle on a flat map. You could be anywhere on that line.",
+      "keyframes": [
+        {"type": "circles", "title": "One satellite: you are somewhere on this circle", "count": 1, "show_point": false},
+        {"type": "bullets", "title": "One distance gives", "items": ["A sphere in space", "Millions of possible positions", "Not enough to find you"]}
+      ]
+    },
+    {
+      "id": "s06_intersection",
+      "narration": "Add a second satellite, and you get a second circle. The two circles cross in only two places. Add a third, and only one point sits on all three circles. That point is you. This method is called trilateration, and it works because each distance removes a huge number of possible positions.",
+      "keyframes": [
+        {"type": "circles", "title": "Two satellites: two possible points", "count": 2, "show_point": false},
+        {"type": "circles", "title": "Three satellites: one point", "count": 3, "show_point": true},
+        {"type": "stat", "value": "Trilateration", "label": "finding a position from distances", "note": "not angles"}
+      ]
+    },
+    {
+      "id": "s07_clock_problem",
+      "narration": "But there is a problem. All of this depends on time, and the clock in your phone is cheap. Light travels three hundred metres in a single microsecond. So if your phone's clock is off by just one thousandth of a second, every distance it calculates is wrong by about three hundred kilometres. That would put you in the wrong city.",
+      "keyframes": [
+        {"type": "stat", "value": "1 μs = 300 m", "label": "distance light travels in one microsecond", "note": ""},
+        {"type": "bars", "title": "Position error from a clock error", "labels": ["1 microsecond", "1 millisecond"], "values": [0.3, 300], "unit": "km of error", "highlight": 1, "log": true},
+        {"type": "bullets", "title": "The weak link", "items": ["Satellite clocks: extremely precise", "Phone clock: cheap quartz", "Small time errors become huge distance errors"]}
+      ]
+    },
+    {
+      "id": "s08_fourth_satellite",
+      "narration": "The solution is elegant. Instead of trusting its own clock, the phone treats the clock error as one more unknown. Its position has three unknowns: east-west, north-south, and height. Add the clock error, and there are four. Four unknowns need four measurements, so the phone listens to at least four satellites and solves for all of them at once.",
+      "keyframes": [
+        {"type": "bullets", "title": "Four unknowns", "items": ["East-west position", "North-south position", "Height", "The phone's clock error"]},
+        {"type": "stat", "value": "4 satellites", "label": "minimum for a position fix", "note": "four equations, four unknowns"},
+        {"type": "flow", "title": "Solving for everything at once", "steps": ["4+ signals", "4 distance equations", "Solve together", "Position + exact time"]}
+      ]
+    },
+    {
+      "id": "s09_atomic_clocks",
+      "narration": "That is why the satellites carry atomic clocks. These clocks count the vibrations of atoms, which happen at an extremely steady rate. Because the whole system depends on them, GPS has quietly become one of the world's most important time sources. Phone networks, power grids and banks all use GPS time to stay in sync.",
+      "keyframes": [
+        {"type": "bullets", "title": "Atomic clocks in orbit", "items": ["Count vibrations of atoms", "Extremely steady rate", "Several clocks per satellite for backup"]},
+        {"type": "flow", "title": "Who else uses GPS time", "steps": ["Phone networks", "Power grids", "Financial systems"]}
+      ]
+    },
+    {
+      "id": "s10_relativity",
+      "narration": "And here is where Einstein comes in. Because the satellites move fast, their clocks run slightly slow, by about seven microseconds a day. But because they are farther from Earth's gravity, their clocks also run fast, by about forty five microseconds a day. Together, the satellite clocks gain about thirty eight microseconds every day. If engineers ignored this, GPS positions would drift by roughly ten kilometres a day. So the clocks are adjusted to account for relativity.",
+      "keyframes": [
+        {"type": "bars", "title": "Relativity changes satellite time", "labels": ["Weaker gravity", "High speed", "Net effect"], "values": [45, -7, 38], "unit": "microseconds per day", "highlight": 2},
+        {"type": "stat", "value": "~10 km/day", "label": "drift if relativity were ignored", "note": ""},
+        {"type": "bullets", "title": "The fix", "items": ["Satellite clocks are tuned before launch", "Receivers apply small corrections", "Einstein's theory, used every day"]}
+      ]
+    },
+    {
+      "id": "s11_limits",
+      "narration": "Even with all of this, GPS is not perfect. The signal slows down slightly as it passes through the upper atmosphere. In cities, it bounces off tall buildings before reaching you. And if the visible satellites are bunched together in one part of the sky, small errors get bigger. This is why your location sometimes jumps around between skyscrapers.",
+      "keyframes": [
+        {"type": "bullets", "title": "What makes GPS less accurate", "items": ["Delays in the atmosphere", "Reflections off buildings", "Satellites bunched in one part of the sky"]},
+        {"type": "stat", "value": "Urban canyons", "label": "tall buildings block and reflect signals", "note": ""},
+        {"type": "flow", "title": "How phones improve accuracy", "steps": ["More satellite systems", "Wi-Fi and cell towers", "Motion sensors"]}
+      ]
+    },
+    {
+      "id": "s12_recap",
+      "narration": "So, every time you open a map, your phone is quietly listening to satellites twenty thousand kilometres away, timing their signals, turning time into distance, solving four equations, and correcting for Einstein. All of that happens in a moment, and it never says a word back.",
+      "keyframes": [
+        {"type": "flow", "title": "GPS in four steps", "steps": ["Listen", "Time the signals", "Turn time into distance", "Solve for position"]},
+        {"type": "title", "title": "Listening is enough", "subtitle": "Thanks for watching"}
+      ]
+    }
+  ]
+}
