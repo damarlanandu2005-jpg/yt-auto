@@ -19,7 +19,7 @@ import urllib.request
 from pathlib import Path
 
 GEMINI = "https://generativelanguage.googleapis.com/v1beta"
-UA = "yt-auto-phase1-check/0.1 (https://github.com/damarlanandu2005-jpg/yt-auto; private research pipeline)"
+UA = "yt-auto-phase1-check/0.1 (https://github.com/damarlanandu2005-jpg) python-urllib"
 
 
 def http(url: str, data: dict | None = None, headers: dict | None = None, timeout: int = 60) -> dict:
@@ -70,7 +70,10 @@ def gemini(out: Path) -> dict:
     names = [m["name"] for m in models if "generateContent" in (m.get("supportedGenerationMethods") or [])]
 
     # One tiny call per candidate. A free-tier quota error (429) names the quota and its value.
-    text = [n for n in names if "flash" in n and not any(x in n for x in ("image", "tts", "live", "audio", "embedding"))]
+    # Newest free Flash models first (pricing page, 26 Oct 2026: 3.8/3.6 Flash, 3.5/3.1 Flash-Lite, Gemma 4 are free).
+    preferred = ["models/gemini-3.8-flash", "models/gemini-3.6-flash", "models/gemini-3.5-flash",
+                 "models/gemini-3.5-flash-lite", "models/gemini-3.1-flash-lite", "models/gemma-4-31b-it"]
+    text = [n for n in preferred if n in names]
     image = [n for n in names if "image" in n]
     res["calls"] = {}
     for n in text[:8]:
@@ -78,7 +81,7 @@ def gemini(out: Path) -> dict:
                  data={"contents": [{"parts": [{"text": "Reply with the single word OK."}]}]})
         res["calls"][n] = _summary(r)
         time.sleep(4)
-    for n in image[:4]:
+    for n in image[:4] if os.environ.get("CHECK_IMAGES") else []:
         r = http(f"{GEMINI}/{n}:generateContent", headers=hdr, timeout=120,
                  data={"contents": [{"parts": [{"text": "A flat, simple vector icon of a satellite on a plain dark background."}]}],
                        "generationConfig": {"responseModalities": ["TEXT", "IMAGE"]}})
