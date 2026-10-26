@@ -46,7 +46,8 @@ Owner feedback on the Phase 0 video: **voice quality good**; pace was a bit fast
 
 - Gemini free tier (pricing page): free text models are 3.8 Flash, 3.6 Flash, 3.5 Flash-Lite, 3.1 Flash-Lite, Gemma 4. `gemini-2.5-flash` and `2.5-flash-lite` return 404 "no longer available to new users". Exact RPM/RPD are shown only in AI Studio, not on the docs page. Free tier content may be used by Google to improve products.
 - **Every Gemini image model has a free-tier limit of 0** (429 `limit: 0` for 2.5-flash-image, 3-pro-image, 3.1-flash-image). So no AI illustrations at ₹0; photos + charts/cards only.
-- 3.8 Flash is often overloaded (503) and slow (script call 590 s). `llm()` falls back down a model list; quick jobs start on 3.6 Flash.
+- **Free tier = 20 requests/day per model** for 3.8 Flash, 3.6 Flash and 3.5 Flash (from the 429 replies: `GenerateRequestsPerDayPerProjectPerModel-FreeTier`, quotaValue 20; resets midnight Pacific = 12:30 pm IST). Failed 503 attempts seem to count. One video needs ~8-9 calls, so about 2-3 videos a day. Test runs spend the same quota: use `resume_from`.
+- 3.8 Flash is often overloaded (503) and slow (script call 590 s). `llm()` falls back down a model list; quick jobs start on 3.6 Flash; script and fact-check never use Flash-Lite (it copied source wording).
 - NASA Image Library API and Wikimedia Commons API: free, no key. NASA: media generally not copyrighted, credit NASA, no endorsement, no NASA logo with AI imagery, don't attribute LLM text to NASA, third-party © images excluded. Wikimedia: User-Agent with contact, one request at a time.
 - Commons descriptions can be vandalised (saw one); the vision check of chosen photos is the safety gate.
 
@@ -78,7 +79,7 @@ yt_auto/align.py       subtitles from our own text: exact sentence times + whisp
 yt_auto/package.py     description.txt, licences.json, review.md, contact sheet
 phase1/make_video.py   topic -> package (stages cached in --out, so a rerun resumes)
 phase1/check_apis.py   pre-flight: key present, which models answer, NASA/Commons up, saves official pages
-.github/workflows/phase1-video.yml   manual (topic, scenes); also a 2-scene test when the workflow file changes on a phase-1 branch
+.github/workflows/phase1-video.yml   manual only (topic, scenes, resume_from = earlier run id to reuse plan/sources/script and save quota)
 .github/workflows/phase1-check.yml   manual; also runs when the check changes on a phase-1 branch
 phase0/run_benchmark.py      end-to-end benchmark; phase0/sample_script.json (GPS sample, not fact-checked, not for upload)
 .github/workflows/phase0-benchmark.yml   manual only (Actions -> Run workflow, 1 or 3 runs)

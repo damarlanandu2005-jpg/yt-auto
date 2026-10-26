@@ -15,11 +15,9 @@ on:
       scenes:
         description: "Keep only the first N scenes (small test). 0 = full video"
         default: "0"
-  # A change to this file on a Phase 1 branch runs a small test (2 scenes). Needed because
-  # GitHub can't start a new workflow by hand from a branch until it has run there once.
-  push:
-    branches: ["claude/phase-1-**"]
-    paths: [".github/workflows/phase1-video.yml"]
+      resume_from:
+        description: "Optional: run id of an earlier run (bench-results/phase1/<id>) whose plan, sources and script to reuse. Saves free API quota"
+        default: ""
 
 permissions:
   contents: write
@@ -78,12 +76,26 @@ jobs:
         timeout-minutes: 5
         run: bash scripts/download_models.sh models
 
+      - name: Reuse finished stages from an earlier run
+        if: inputs.resume_from != ''
+        timeout-minutes: 2
+        env:
+          RESUME: ${{ inputs.resume_from }}
+        run: |
+          [[ "$RESUME" =~ ^[0-9]+$ ]] || { echo "resume_from must be a run id (digits)"; exit 1; }
+          mkdir -p out/run
+          git fetch --depth 1 origin bench-results
+          # Only stages that don't depend on files left on the old runner (photos are searched again).
+          for f in plan.json sources.json script_draft.json script.json factcheck.json visual_plan.json; do
+            git show "FETCH_HEAD:phase1/$RESUME/$f" > "out/run/$f" 2>/dev/null && echo "reused $f" || rm -f "out/run/$f"
+          done
+
       - name: Make the video
         timeout-minutes: 45
         env:
           GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
-          TOPIC: ${{ inputs.topic || 'How does GPS know where you are?' }}
-          SCENES: ${{ inputs.scenes || '2' }}
+          TOPIC: ${{ inputs.topic }}
+          SCENES: ${{ inputs.scenes }}
         run: |
           set -o pipefail
           mkdir -p out/run
