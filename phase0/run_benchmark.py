@@ -44,7 +44,10 @@ def main() -> None:
     for sub in ("audio", "frames", "segments"):
         (out / sub).mkdir(parents=True, exist_ok=True)
     models = Path(args.models)
+    (out / "ffmpeg_logs").mkdir(exist_ok=True)
+    render.LOG_DIR = out / "ffmpeg_logs"
     bench = Bench()
+    print(f"[diag] machine: {bench.report()['machine']}", flush=True)
 
     # 1. Narration, one file per scene
     with bench.stage("narration"):
@@ -81,9 +84,20 @@ def main() -> None:
         render.concat_video(segments, out / "video_noaudio.mp4")
         render.mux(out / "video_noaudio.mp4", out / "narration.wav", out / "video.mp4")
 
-    # 5. Small preview for quick checking
+    # 5. Small preview for quick checking.
+    # Diagnosis: if it hangs, record why (see render.DIAGNOSTICS) and retry single-threaded.
     with bench.stage("preview"):
-        render.preview(out / "video.mp4", out / "preview_480p.mp4")
+        try:
+            bench.info["preview_default_s"] = render.preview(out / "video.mp4", out / "preview_480p.mp4")
+        except render.FFmpegHang as e:
+            print(f"[diag] {e}; retrying with -threads 1", flush=True)
+            bench.info["preview_default_s"] = "HUNG"
+            try:
+                bench.info["preview_threads1_s"] = render.preview(
+                    out / "video.mp4", out / "preview_480p.mp4", threads_n="1", name="preview_threads1")
+            except render.FFmpegHang as e2:
+                print(f"[diag] {e2}", flush=True)
+                bench.info["preview_threads1_s"] = "HUNG"
 
     # 6. Subtitles, in a separate process (see yt_auto/subtitles.py)
     if not args.skip_subtitles:
@@ -104,6 +118,9 @@ def main() -> None:
         "keyframes": len(frames),
         "voice": args.voice,
     })
+    if render.DIAGNOSTICS:
+        (out / "diagnostics.json").write_text(json.dumps(render.DIAGNOSTICS, indent=2))
+        bench.info["hangs"] = [d["command"] for d in render.DIAGNOSTICS]
     data = bench.save(out / "benchmark.json")
     print(json.dumps(data, indent=2))
 

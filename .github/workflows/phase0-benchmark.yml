@@ -110,6 +110,10 @@ jobs:
           mkdir -p "$dest"
           cp out/run/benchmark.json "$dest/" 2>/dev/null || echo "no benchmark.json (build failed)"
           cp out/run/build.log "$dest/" 2>/dev/null || true
+          cp out/run/diagnostics.json "$dest/" 2>/dev/null || true
+          mkdir -p "$dest/ffmpeg_logs"
+          cp out/run/ffmpeg_logs/preview*.log out/run/ffmpeg_logs/mux.log out/run/ffmpeg_logs/concat_*.log "$dest/ffmpeg_logs/" 2>/dev/null || true
+          lscpu > "$dest/lscpu.txt" 2>/dev/null || true
           if [ "${{ matrix.run }}" = "1" ]; then
             cp out/run/preview_480p.mp4 out/run/subtitles.srt "$dest/" || true
             mkdir -p "$dest/frames" && cp out/run/frames/*_00.png "$dest/frames/" || true

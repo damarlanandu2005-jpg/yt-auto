@@ -10,6 +10,27 @@ from contextlib import contextmanager
 from pathlib import Path
 
 
+def _cpu_model() -> str:
+    try:
+        for line in open("/proc/cpuinfo"):
+            if line.startswith("model name"):
+                return line.split(":", 1)[1].strip()
+    except OSError:
+        pass
+    return platform.processor() or "unknown"
+
+
+def _ffmpeg_version() -> str:
+    import subprocess
+
+    try:
+        out = subprocess.run(["ffmpeg", "-version"], capture_output=True, text=True,
+                             stdin=subprocess.DEVNULL, timeout=20).stdout
+        return out.splitlines()[0] if out else "unknown"
+    except Exception:  # noqa: BLE001
+        return "unknown"
+
+
 class Bench:
     def __init__(self):
         self.stages: dict[str, float] = {}
@@ -37,6 +58,8 @@ class Bench:
                 "cpus": os.cpu_count(),
                 "python": platform.python_version(),
                 "runner": os.environ.get("RUNNER_NAME", "local"),
+                "cpu_model": _cpu_model(),
+                "ffmpeg": _ffmpeg_version(),
             },
             **self.info,
         }
