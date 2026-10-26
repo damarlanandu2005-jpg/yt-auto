@@ -1,0 +1,59 @@
+name: Phase 1 API check
+
+# Pre-flight for Phase 1: is GEMINI_API_KEY saved, which Gemini models are free on it,
+# and do the NASA and Wikimedia Commons APIs answer without a key? About 1 minute.
+# Results go to the bench-results branch (phase1-check/<run_id>/).
+# The key is never printed.
+on:
+  workflow_dispatch:
+  push:
+    # Only when the check itself changes on a Phase 1 branch (a manual-run workflow
+    # can't be started from a branch until GitHub has seen it run once).
+    branches: ["claude/phase-1-**"]
+    paths: [".github/workflows/phase1-check.yml", "phase1/check_apis.py"]
+
+permissions:
+  contents: write
+
+concurrency:
+  group: phase1-check
+  cancel-in-progress: false
+
+jobs:
+  check:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.13"
+
+      - name: Check APIs
+        timeout-minutes: 5
+        env:
+          GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
+        run: python phase1/check_apis.py out/check
+
+      - name: Save results to the bench-results branch
+        if: always()
+        timeout-minutes: 3
+        run: |
+          set -e
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git fetch --depth 1 origin bench-results
+          git worktree add results FETCH_HEAD
+          git -C results checkout -B bench-results
+          dest="results/phase1-check/${{ github.run_id }}"
+          mkdir -p "$dest"
+          cp -r out/check/. "$dest/" || echo "no results"
+          cd results
+          git add -A
+          git commit -m "Phase 1 API check ${{ github.run_id }}"
+          for i in 1 2 3 4 5; do
+            git push origin bench-results && break
+            git pull --rebase origin bench-results
+            sleep 5
+          done
