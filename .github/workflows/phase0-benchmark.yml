@@ -21,7 +21,7 @@ concurrency:
 
 jobs:
   benchmark:
-    runs-on: ubuntu-latest
+    runs-on: ubuntu-24.04
     timeout-minutes: 60
     strategy:
       max-parallel: 1        # one after another, as the blueprint asks
@@ -33,7 +33,7 @@ jobs:
 
       - uses: actions/setup-python@v5
         with:
-          python-version: "3.12"
+          python-version: "3.13"
           cache: pip
 
       - name: Install system tools
@@ -60,10 +60,13 @@ jobs:
         run: bash scripts/download_models.sh models
 
       - name: Build the video
-        run: python phase0/run_benchmark.py --models models --out out/run
+        run: |
+          set -o pipefail
+          mkdir -p out/run
+          python phase0/run_benchmark.py --models models --out out/run 2>&1 | tee out/run/build.log
 
       - name: Upload full video (run 1 only)
-        if: matrix.run == 1
+        if: matrix.run == 1 && success()
         uses: actions/upload-artifact@v4
         with:
           name: phase0-video
@@ -73,6 +76,7 @@ jobs:
           retention-days: 7
 
       - name: Save results to the bench-results branch
+        if: always()
         run: |
           set -e
           git config user.name "github-actions[bot]"
@@ -85,7 +89,8 @@ jobs:
           fi
           dest="results/${{ github.run_id }}/run${{ matrix.run }}"
           mkdir -p "$dest"
-          cp out/run/benchmark.json "$dest/"
+          cp out/run/benchmark.json "$dest/" 2>/dev/null || echo "no benchmark.json (build failed)"
+          cp out/run/build.log "$dest/" 2>/dev/null || true
           if [ "${{ matrix.run }}" = "1" ]; then
             cp out/run/preview_480p.mp4 out/run/subtitles.srt "$dest/" || true
             mkdir -p "$dest/frames" && cp out/run/frames/*_00.png "$dest/frames/" || true
