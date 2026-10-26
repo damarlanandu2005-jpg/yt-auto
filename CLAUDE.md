@@ -22,7 +22,7 @@ Full plan: "YouTube Automation Blueprint" doc — https://claude.ai/artifact/XN7
 - Every video has its own question, structure and visuals. Never the same template with new numbers (YouTube "inauthentic content" rule, renamed 15 Jul 2025).
 - No AI "expert" persona. No financial, legal or health advice. No corporate-fraud or named-company accusation topics (defamation risk in India).
 - AI disclosure box in YouTube is needed only for realistic AI depictions of real people/places/events. AI script, TTS narration, charts and non-realistic illustrations do not need it.
-- Never commit secrets. Keys live in GitHub repo secrets only. Phase 1 needs `GEMINI_API_KEY`: the owner created a key; confirm it is saved as a repo secret before relying on it.
+- Never commit secrets. Keys live in GitHub repo secrets only. `GEMINI_API_KEY` is saved as a repo secret (confirmed by the Phase 1 API check run, 26 Oct 2026).
 
 ## Verified facts (checked against official pages, 26 Oct 2026)
 
@@ -37,10 +37,18 @@ Full plan: "YouTube Automation Blueprint" doc — https://claude.ai/artifact/XN7
 | --- | --- |
 | 0. Server benchmark | **PASSED** 27 Oct 2026: 3/3 runs on GitHub Actions (AMD EPYC, 4 cores), build 3 min 18 s to 3 min 26 s, ~4 min per job, peak ~690 MB, no hangs |
 | 0b. Niche data test | Not started. Needs a YouTube Data API key (owner to create). Niches to test: how technology works, science and space, money and economics (education only) |
-| 1. Production core | **Next.** See to-do below |
+| 1. Production core | **In progress** (branch `claude/phase-1-production-core-ufulti`). Pipeline built; first full video under review |
 | 2–6, auto-upload | Not started (see blueprint) |
 
 Owner feedback on the Phase 0 video: **voice quality good**; pace was a bit fast (fixed: speed 0.9, longer pauses); **wants more pictures** (decided: real photos first, AI illustrations when none fits).
+
+## Phase 1 facts (checked 26 Oct 2026 from a GitHub Actions run, not from blogs)
+
+- Gemini free tier (pricing page): free text models are 3.8 Flash, 3.6 Flash, 3.5 Flash-Lite, 3.1 Flash-Lite, Gemma 4. `gemini-2.5-flash` and `2.5-flash-lite` return 404 "no longer available to new users". Exact RPM/RPD are shown only in AI Studio, not on the docs page. Free tier content may be used by Google to improve products.
+- **Every Gemini image model has a free-tier limit of 0** (429 `limit: 0` for 2.5-flash-image, 3-pro-image, 3.1-flash-image). So no AI illustrations at ₹0; photos + charts/cards only.
+- 3.8 Flash is often overloaded (503) and slow (script call 590 s). `llm()` falls back down a model list; quick jobs start on 3.6 Flash.
+- NASA Image Library API and Wikimedia Commons API: free, no key. NASA: media generally not copyrighted, credit NASA, no endorsement, no NASA logo with AI imagery, don't attribute LLM text to NASA, third-party © images excluded. Wikimedia: User-Agent with contact, one request at a time.
+- Commons descriptions can be vandalised (saw one); the vision check of chosen photos is the safety gate.
 
 ## Phase 1 to-do (production core)
 
@@ -61,11 +69,24 @@ yt_auto/visuals.py     matplotlib keyframes: title, stat, bullets, flow, bars, l
 yt_auto/render.py      FFmpeg: per-keyframe segment (zoompan + fades), concat, mux (loudnorm -16 LUFS), preview
 yt_auto/subtitles.py   faster-whisper base.en int8; run as its own process: python -m yt_auto.subtitles in.wav out.srt
 yt_auto/bench.py       timings, memory, CPU model, FFmpeg version
+yt_auto/llm.py         one llm() for all text steps: Gemini free tier, model fallback, every call logged
+yt_auto/research.py    Wikipedia articles -> numbered passages (sources.json, with revision ids)
+yt_auto/writer.py      plan -> script (each sentence cites passage ids) -> separate fact-check -> fix or drop
+yt_auto/shots.py       ~4.5 s visual slots, visual plan, photo pick + vision check, card-number guard
+yt_auto/photos.py      NASA + Commons search, licence filter, licence JSON per file
+yt_auto/align.py       subtitles from our own text: exact sentence times + whisper word times
+yt_auto/package.py     description.txt, licences.json, review.md, contact sheet
+phase1/make_video.py   topic -> package (stages cached in --out, so a rerun resumes)
+phase1/check_apis.py   pre-flight: key present, which models answer, NASA/Commons up, saves official pages
+.github/workflows/phase1-video.yml   manual (topic, scenes); also a 2-scene test when the workflow file changes on a phase-1 branch
+.github/workflows/phase1-check.yml   manual; also runs when the check changes on a phase-1 branch
 phase0/run_benchmark.py      end-to-end benchmark; phase0/sample_script.json (GPS sample, not fact-checked, not for upload)
 .github/workflows/phase0-benchmark.yml   manual only (Actions -> Run workflow, 1 or 3 runs)
 ```
 
-Results of each workflow run are committed to the **`bench-results`** branch (`<run_id>/run<n>/`: benchmark.json, build.log, diagnostics.json, ffmpeg_logs/, preview, frames). Full video is an Actions artifact (7 days).
+Results of each workflow run are committed to the **`bench-results`** branch: Phase 0 `<run_id>/run<n>/`, Phase 1 `phase1/<run_id>/` (report.json with every LLM call, review.md, script, factcheck, visuals, contact_sheet.jpg, preview, llm/ prompts+replies), checks `phase1-check/<run_id>/`. Full video is an Actions artifact (7 days).
+
+A new workflow can't be started by hand from a branch (404) until it has run there once; that's why the Phase 1 workflows also have a narrow path-limited push trigger.
 
 ## Lessons from Phase 0 (7 attempts) — do not repeat
 
@@ -77,7 +98,9 @@ Results of each workflow run are committed to the **`bench-results`** branch (`<
 4. Every FFmpeg call: `-nostdin`, `stdin=DEVNULL`, a timeout, and its own log file. `faulthandler.dump_traceback_later` in the entry script. These made the real cause provable instead of guessed.
 5. Pin `runs-on: ubuntu-24.04` and Python 3.13. Give every workflow step a `timeout-minutes`.
 6. Diagnose with evidence before changing code. The owner explicitly asked for this.
-7. Workflow logs on GitHub's log storage can't be read from Claude's cloud sessions; that's why logs are saved to the `bench-results` branch.
+7. Workflow logs on GitHub's log storage can't be read from Claude's cloud sessions (404, even live); that's why logs are saved to the `bench-results` branch.
+8. Phase 1: `faulthandler` must fire before the workflow step timeout, or a hang leaves no stack.
+9. Phase 1: Commons/NASA have photos of objects, not staged scenes: ask for simple subjects, pick leniently, verify by looking.
 
 ## Reused open-source parts
 

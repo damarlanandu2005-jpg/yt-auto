@@ -27,7 +27,13 @@ MODELS = [m for m in os.environ.get(
 # For quick structured jobs (visual plan, photo pick/check). First test run, 26 Oct 2026: 3.8 Flash
 # answered 503 "high demand" on 5 of 7 calls and took 219 s for the visual plan; 3.6 Flash took 6-70 s.
 FAST = ["gemini-3.6-flash", "gemini-3.5-flash", "gemini-3.8-flash", "gemini-3.5-flash-lite"]
-_DOWN: set[str] = set()  # models that gave up with 503 in this run: tried last from then on
+# For the script and the fact-check: never Flash-Lite (it copied source wording; run 40402246414).
+QUALITY = ["gemini-3.8-flash", "gemini-3.6-flash", "gemini-3.5-flash"]
+# Free tier is about 20 requests/day per model (429 quotaValue 20 for 3.8 Flash, 26 Oct 2026),
+# and failed 503 attempts seem to count, so retries are few and spread out.
+ROUNDS, ROUND_WAIT_S = 3, 60
+_DOWN: set[str] = set()       # gave up with 503 in this run: tried last from then on
+_EXHAUSTED: set[str] = set()  # daily quota used up: skipped for the rest of the run
 
 LOG: list[dict] = []
 LOG_DIR: Path | None = None  # set by the caller to keep each prompt and reply on disk
@@ -39,21 +45,27 @@ class LLMError(RuntimeError):
 
 def llm(prompt: str, *, system: str = "", schema: dict | None = None, model: str | None = None,
         temperature: float = 0.7, name: str = "llm", images: list[bytes] | None = None,
-        models: list[str] | None = None, max_tries: int = 3, timeout: int = 600):
+        models: list[str] | None = None, max_tries: int = 2, timeout: int = 600):
     """Send one prompt, return the reply text (or parsed JSON when `schema` is given).
 
     `images`: optional JPEG bytes shown to the model before the prompt.
     """
     errors = []
-    order = [model] if model else (models or MODELS)
-    order = [m for m in order if m not in _DOWN] + [m for m in order if m in _DOWN]
-    for m in order:
-        try:
-            return _call(m, prompt, system, schema, temperature, name, images, max_tries, timeout)
-        except _TryNextModel as e:
-            print(f"[llm] {name}: {m} unavailable ({e}); trying next model", flush=True)
-            _DOWN.add(m)
-            errors.append(f"{m}: {e}")
+    for rnd in range(1, ROUNDS + 1):
+        order = [m for m in ([model] if model else (models or MODELS)) if m not in _EXHAUSTED]
+        order = [m for m in order if m not in _DOWN] + [m for m in order if m in _DOWN]
+        if not order:
+            break
+        for m in order:
+            try:
+                return _call(m, prompt, system, schema, temperature, name, images, max_tries, timeout)
+            except _TryNextModel as e:
+                print(f"[llm] {name}: {m} unavailable ({e}); trying next model", flush=True)
+                errors.append(f"{m}: {e}")
+                (_EXHAUSTED if "daily" in str(e) else _DOWN).add(m)
+        if rnd < ROUNDS and any(m not in _EXHAUSTED for m in order):
+            print(f"[llm] {name}: every model busy; waiting {ROUND_WAIT_S}s (round {rnd})", flush=True)
+            time.sleep(ROUND_WAIT_S)
     raise LLMError(f"{name}: no model available: {errors}")
 
 
@@ -96,7 +108,7 @@ def _call(model, prompt, system, schema, temperature, name, images, max_tries, t
             # 429 = per-minute limit, 5xx = overloaded: wait and retry. Others are our bug.
             if e.code in (429, 500, 503, 504):
                 if attempt < max_tries:
-                    wait = _retry_delay(err) or min(60, 10 * 2 ** (attempt - 1))
+                    wait = min(_retry_delay(err) or 30, 60)
                     print(f"[llm] {name}: {model} HTTP {e.code}, retry {attempt} in {wait:.0f}s", flush=True)
                     time.sleep(wait)
                     continue

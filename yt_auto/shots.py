@@ -145,8 +145,18 @@ SLOTS:
     return out
 
 
-def _numbers(text: str) -> set[str]:
-    return {n.replace(",", "") for n in re.findall(r"\d[\d,]*(?:\.\d+)?", text)}
+_WORDS = {w: str(i) for i, w in enumerate(
+    "zero one two three four five six seven eight nine ten eleven twelve thirteen fourteen fifteen sixteen "
+    "seventeen eighteen nineteen twenty".split())}
+_WORDS.update({"thirty": "30", "forty": "40", "fifty": "50", "sixty": "60", "seventy": "70", "eighty": "80",
+               "ninety": "90", "hundred": "100", "thousand": "1000", "once": "1", "twice": "2", "half": "0.5"})
+
+
+def _numbers(text: str, words: bool = False) -> set[str]:
+    found = {n.replace(",", "") for n in re.findall(r"\d[\d,]*(?:\.\d+)?", text)}
+    if words:  # the narration may say "two" where the card shows "2"
+        found |= {_WORDS[w] for w in re.findall(r"[a-z]+", text.lower()) if w in _WORDS}
+    return found
 
 
 def check_card_numbers(visuals: list[dict], scene_text: dict[str, str]) -> list[str]:
@@ -159,7 +169,7 @@ def check_card_numbers(visuals: list[dict], scene_text: dict[str, str]) -> list[
                                                                 "events", "left_points", "right_points", "subtitle")},
                                     ensure_ascii=False))
         shown = {n.rstrip("0").rstrip(".") if "." in n else n for n in shown}
-        spoken = {n.rstrip("0").rstrip(".") if "." in n else n for n in _numbers(scene_text[v["scene"]])}
+        spoken = {n.rstrip("0").rstrip(".") if "." in n else n for n in _numbers(scene_text[v["scene"]], words=True)}
         bad = shown - spoken
         if bad:
             problems.append(f"{v['id']}: numbers {sorted(bad)} not in narration; card replaced")

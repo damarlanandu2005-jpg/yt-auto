@@ -13,7 +13,7 @@ from __future__ import annotations
 import json
 import re
 
-from .llm import llm
+from .llm import QUALITY, llm
 from .research import as_prompt_text, passage_index
 
 AUDIENCE = ("a curious worldwide English-speaking audience (many are non-native speakers, "
@@ -103,7 +103,8 @@ Plan one 6-minute explainer video about this topic.
     return llm(prompt, system=RULES, schema=PLAN_SCHEMA, name="plan", temperature=0.9)
 
 
-def write_script(topic: str, the_plan: dict, sources: dict, words: tuple[int, int] = (900, 1000)) -> dict:
+def write_script(topic: str, the_plan: dict, sources: dict, words: tuple[int, int] = (1000, 1100)) -> dict:
+    # Asks a little above the 900-1,000 target: the fact-check usually removes a few sentences.
     prompt = f"""Topic: {topic}
 Question: {the_plan['question']}
 Angle: {the_plan['angle']}
@@ -119,7 +120,7 @@ Write the full narration: {words[0]} to {words[1]} words in total, in 5 to 8 sce
 
 SOURCE PASSAGES:
 {as_prompt_text(sources)}"""
-    return llm(prompt, system=RULES, schema=SCRIPT_SCHEMA, name="script", temperature=0.8)
+    return llm(prompt, system=RULES, schema=SCRIPT_SCHEMA, name="script", temperature=0.8, models=QUALITY)
 
 
 def number_sentences(script: dict) -> None:
@@ -161,7 +162,7 @@ A FRAMING SENTENCE has no passages: it is "supported" only if it makes no checka
 transition or invitation). If it states any fact, mark it "unsupported" with an empty fixed_text.
 
 """ + "\n\n".join(items)
-    res = llm(prompt, schema=CHECK_SCHEMA, name=name, temperature=0.1)
+    res = llm(prompt, schema=CHECK_SCHEMA, name=name, temperature=0.1, models=QUALITY)
     return {r["id"]: r for r in res["results"]}
 
 
@@ -178,7 +179,7 @@ def fact_check(script: dict, sources: dict) -> dict:
             s["sources"] = [p for p in s["sources"] if p in idx]
     first = check(facts, idx, "factcheck")
 
-    to_fix = []
+    to_fix, to_reword = [], []
     for s in facts:
         r = first.get(s["id"]) or {"verdict": "unsupported", "problem": "not returned by checker", "fixed_text": ""}
         s["check"] = r["verdict"]
@@ -187,12 +188,26 @@ def fact_check(script: dict, sources: dict) -> dict:
             report["copied"].append({"id": s["id"], "phrases": copied})
         if r["verdict"] == "supported" and not copied:
             report["supported_first_pass"] += 1
+        elif r["verdict"] == "supported":
+            to_reword.append((s, copied))
         elif r.get("fixed_text"):
             to_fix.append((s, s["text"], r))
             s["text"] = r["fixed_text"]
         else:
             to_fix.append((s, s["text"], r))
             s["drop"] = True
+
+    # True but too close to the source wording: say it in our own words (then it is re-checked below).
+    if to_reword:
+        new_text = reword(to_reword)
+        for s, _ in to_reword:
+            old = s["text"]
+            if new_text.get(s["id"]):
+                s["text"] = new_text[s["id"]]
+                to_fix.append((s, old, {"problem": "reworded: too close to source wording"}))
+            else:
+                s["drop"] = True
+                to_fix.append((s, old, {"problem": "copied source wording; reword failed"}))
 
     # Second pass: re-check every rewritten sentence; anything still failing is dropped.
     rewritten = [s for s, _, _ in to_fix if not s.get("drop")]
@@ -210,6 +225,23 @@ def fact_check(script: dict, sources: dict) -> dict:
     script["scenes"] = [sc for sc in script["scenes"] if sc["sentences"]]
     report["words_after"] = word_count(script)
     return report
+
+
+REWORD_SCHEMA = {"type": "object", "properties": {"sentences": {"type": "array", "items": {
+    "type": "object", "properties": {"id": {"type": "string"}, "text": {"type": "string"}},
+    "required": ["id", "text"]}}}, "required": ["sentences"]}
+
+
+def reword(items: list[tuple[dict, list[str]]]) -> dict[str, str]:
+    """Rewrite sentences that copy source phrases, keeping exactly the same facts."""
+    lines = [f"[{s['id']}] {s['text']}\n  copied phrases to avoid: {'; '.join(c[:3])}" for s, c in items]
+    prompt = """Each sentence below is correct but copies wording from its source. Rewrite each one in your own
+plain spoken words: exactly the same facts and numbers, nothing added or removed, and no run of 8 words
+that matches the copied phrases. Names (like "United States Space Force") may stay.
+
+""" + "\n".join(lines)
+    res = llm(prompt, system=RULES, schema=REWORD_SCHEMA, name="reword", temperature=0.6, models=QUALITY)
+    return {x["id"]: x["text"] for x in res["sentences"]}
 
 
 def word_count(script: dict) -> int:
