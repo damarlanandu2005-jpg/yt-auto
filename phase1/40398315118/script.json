@@ -1,0 +1,612 @@
+{
+ "title": "How GPS Knows Where You Are Without Tracking You",
+ "scenes": [
+  {
+   "heading": "The Passive Listener Myth",
+   "sentences": [
+    {
+     "text": "Have you ever wondered how navigation satellites high above Earth can watch your every step?",
+     "kind": "framing",
+     "sources": [],
+     "id": "s01.01",
+     "check": "supported"
+    },
+    {
+     "text": "The Global Positioning System does not require your mobile phone to transmit any data.",
+     "kind": "fact",
+     "sources": [
+      "A1.1"
+     ],
+     "id": "s01.03",
+     "check": "supported"
+    },
+    {
+     "text": "It operates completely independently of any mobile telephone network or internet connection.",
+     "kind": "fact",
+     "sources": [
+      "A1.1",
+      "A4.3"
+     ],
+     "id": "s01.04",
+     "check": "supported"
+    },
+    {
+     "text": "Even if you turn off mobile data, the system still delivers accurate location and time information.",
+     "kind": "fact",
+     "sources": [
+      "A1.1",
+      "A4.3"
+     ],
+     "id": "s01.05",
+     "check": "supported"
+    },
+    {
+     "text": "In reality, your mobile phone functions purely as a silent and passive radio receiver.",
+     "kind": "fact",
+     "sources": [
+      "A1.1",
+      "A1.69"
+     ],
+     "id": "s01.07",
+     "check": "supported"
+    },
+    {
+     "text": "The United States Space Force owns the satellite system and operates it through Mission Delta 31.",
+     "kind": "fact",
+     "sources": [
+      "A1.1"
+     ],
+     "id": "s01.08",
+     "check": "supported"
+    },
+    {
+     "text": "Although the United States government maintains the constellation, anyone with a receiver can freely access it.",
+     "kind": "fact",
+     "sources": [
+      "A1.1"
+     ],
+     "id": "s01.09",
+     "check": "supported"
+    },
+    {
+     "text": "The system was originally created for military use before being opened to civilians across the globe.",
+     "kind": "fact",
+     "sources": [
+      "A1.2",
+      "A1.6",
+      "A1.20"
+     ],
+     "id": "s01.10",
+     "check": "supported"
+    },
+    {
+     "text": "Civilian access was authorised by President Ronald Reagan after an airliner was tragically shot down in 1983.",
+     "kind": "fact",
+     "sources": [
+      "A1.2",
+      "A1.20",
+      "A1.26"
+     ],
+     "id": "s01.11",
+     "check": "supported"
+    },
+    {
+     "text": "Early civilian signals were intentionally degraded by a policy known as Selective Availability.",
+     "kind": "fact",
+     "sources": [
+      "A1.2",
+      "A1.21"
+     ],
+     "id": "s01.12",
+     "check": "supported"
+    },
+    {
+     "text": "This deliberate error degraded civilian accuracy to roughly 100 metres until the policy was ended in 2000.",
+     "kind": "fact",
+     "sources": [
+      "A1.2",
+      "A1.3",
+      "A1.21"
+     ],
+     "id": "s01.13",
+     "check": "supported"
+    },
+    {
+     "text": "Today, modern consumer smartphones can determine a position to within 4.9 metres or even better.",
+     "kind": "fact",
+     "sources": [
+      "A1.4"
+     ],
+     "id": "s01.14",
+     "check": "supported"
+    }
+   ],
+   "id": "s01"
+  },
+  {
+   "heading": "Constellation of Orbiting Clocks",
+   "sentences": [
+    {
+     "text": "To understand how your device knows its place, we must look up into orbit.",
+     "kind": "framing",
+     "sources": [],
+     "id": "s02.01",
+     "check": "supported"
+    },
+    {
+     "text": "The space segment of GPS consists of between 24 and 32 operational satellites.",
+     "kind": "fact",
+     "sources": [
+      "A1.70",
+      "A4.24"
+     ],
+     "id": "s02.02",
+     "check": "supported"
+    },
+    {
+     "text": "These spacecraft circle our planet in what engineers call medium Earth orbit.",
+     "kind": "fact",
+     "sources": [
+      "A1.70",
+      "A4.4"
+     ],
+     "id": "s02.03",
+     "check": "supported"
+    },
+    {
+     "text": "Each satellite travels at an altitude of approximately 20,200 kilometres above the surface of the Earth.",
+     "kind": "fact",
+     "sources": [
+      "A1.71",
+      "A4.4"
+     ],
+     "id": "s02.04",
+     "check": "supported"
+    },
+    {
+     "text": "The satellites are arranged across 6 separate orbital planes tilted at approximately 55 degrees to the equator.",
+     "kind": "fact",
+     "sources": [
+      "A1.70"
+     ],
+     "id": "s02.05",
+     "check": "supported"
+    },
+    {
+     "text": "Each orbit takes approximately 11 hours and 58 minutes, completing 2 full trips every sidereal day.",
+     "kind": "fact",
+     "sources": [
+      "A1.70",
+      "A1.71"
+     ],
+     "id": "s02.06",
+     "check": "supported"
+    },
+    {
+     "text": "The satellites are not spaced at equal 90-degree intervals along each orbital ring.",
+     "kind": "fact",
+     "sources": [
+      "A1.70"
+     ],
+     "id": "s02.07",
+     "check": "supported"
+    },
+    {
+     "text": "Instead, their spacing varies between 30 degrees, 105 degrees, and 120 degrees apart.",
+     "kind": "fact",
+     "sources": [
+      "A1.70"
+     ],
+     "id": "s02.08",
+     "check": "supported"
+    },
+    {
+     "text": "This deliberate geometry guarantees that at least 6 satellites remain visible from almost anywhere on Earth.",
+     "kind": "fact",
+     "sources": [
+      "A1.70"
+     ],
+     "id": "s02.09",
+     "check": "supported"
+    },
+    {
+     "text": "Day and night, every satellite continually broadcasts radio carrier waves down toward the ground below.",
+     "kind": "fact",
+     "sources": [
+      "A1.56",
+      "A1.69"
+     ],
+     "id": "s02.10",
+     "check": "supported"
+    },
+    {
+     "text": "The transmission contains a unique pseudorandom code made of ones and zeros that receivers recognise.",
+     "kind": "fact",
+     "sources": [
+      "A1.57"
+     ],
+     "id": "s02.11",
+     "check": "supported"
+    },
+    {
+     "text": "It also broadcasts a continuous data message containing its exact orbital position and the departure time.",
+     "kind": "fact",
+     "sources": [
+      "A1.58",
+      "A4.17"
+     ],
+     "id": "s02.12",
+     "check": "supported"
+    },
+    {
+     "text": "This detailed orbital data is called an ephemeris and allows receivers to pinpoint the satellite.",
+     "kind": "fact",
+     "sources": [
+      "A4.16",
+      "A4.17"
+     ],
+     "id": "s02.13",
+     "check": "supported"
+    }
+   ],
+   "id": "s02"
+  },
+  {
+   "heading": "The Geometry of Trilateration",
+   "sentences": [
+    {
+     "text": "How does a phone turn these simple radio messages into a physical location?",
+     "kind": "framing",
+     "sources": [],
+     "id": "s03.01",
+     "check": "supported"
+    },
+    {
+     "text": "The key is that radio waves travel at the constant speed of light.",
+     "kind": "fact",
+     "sources": [
+      "A1.54"
+     ],
+     "id": "s03.02",
+     "check": "supported"
+    },
+    {
+     "text": "Because this speed is constant, the time a signal takes to travel reveals the distance.",
+     "kind": "fact",
+     "sources": [
+      "A1.54"
+     ],
+     "id": "s03.03",
+     "check": "supported"
+    },
+    {
+     "text": "Your phone measures when the signal arrives and subtracts the time the satellite sent it.",
+     "kind": "fact",
+     "sources": [
+      "A1.57",
+      "A1.59"
+     ],
+     "id": "s03.04",
+     "check": "supported"
+    },
+    {
+     "text": "Multiplying this travel time by the speed of light provides an estimate of distance.",
+     "kind": "fact",
+     "sources": [
+      "A1.59"
+     ],
+     "id": "s03.05",
+     "check": "supported"
+    },
+    {
+     "text": "Engineers call this calculated distance a pseudo-range because it contains small timing discrepancies.",
+     "kind": "fact",
+     "sources": [
+      "A1.59",
+      "A2.2"
+     ],
+     "id": "s03.06",
+     "check": "supported"
+    },
+    {
+     "text": "A single distance measurement places your phone somewhere on a giant spherical shell in space.",
+     "kind": "fact",
+     "sources": [
+      "A4.18"
+     ],
+     "id": "s03.07",
+     "check": "supported"
+    },
+    {
+     "text": "That imaginary sphere is centred directly on the satellite at the measured distance.",
+     "kind": "fact",
+     "sources": [
+      "A4.18"
+     ],
+     "id": "s03.08",
+     "check": "supported"
+    },
+    {
+     "text": "Determining an unknown position by measuring distances to known points is called trilateration or multilateration.",
+     "kind": "fact",
+     "sources": [
+      "A2.1",
+      "A2.4"
+     ],
+     "id": "s03.09",
+     "check": "supported"
+    },
+    {
+     "text": "This technique uses distance measurements rather than angles, which distinguishes it from traditional triangulation.",
+     "kind": "fact",
+     "sources": [
+      "A2.3"
+     ],
+     "id": "s03.10",
+     "check": "supported"
+    },
+    {
+     "text": "When distance spheres from several satellites overlap, their mathematical intersection pinpoints your location.",
+     "kind": "fact",
+     "sources": [
+      "A1.64",
+      "A4.18"
+     ],
+     "id": "s03.11",
+     "check": "supported"
+    },
+    {
+     "text": "In advanced signal processing, time differences of arrival define intersecting curved geometric shapes called hyperboloids.",
+     "kind": "fact",
+     "sources": [
+      "A1.63"
+     ],
+     "id": "s03.12",
+     "check": "supported"
+    }
+   ],
+   "id": "s03"
+  },
+  {
+   "heading": "The Need for Atomic Precision",
+   "sentences": [
+    {
+     "text": "Calculating positions with this method demands timekeeping that borders on absolute perfection.",
+     "kind": "framing",
+     "sources": [],
+     "id": "s04.01",
+     "check": "supported"
+    },
+    {
+     "text": "Because radio waves travel so fast, even tiny timing mistakes create massive physical errors.",
+     "kind": "fact",
+     "sources": [
+      "A3.5"
+     ],
+     "id": "s04.02",
+     "check": "supported"
+    },
+    {
+     "text": "A timing error of merely 1 nanosecond causes an error of roughly 30 centimetres on Earth.",
+     "kind": "fact",
+     "sources": [
+      "A3.5"
+     ],
+     "id": "s04.03",
+     "check": "supported"
+    },
+    {
+     "text": "To maintain this precision, every GPS satellite carries extremely stable atomic clocks on board.",
+     "kind": "fact",
+     "sources": [
+      "A1.54",
+      "A3.5"
+     ],
+     "id": "s04.04",
+     "check": "supported"
+    },
+    {
+     "text": "Atoms have fixed energy levels that oscillate at universal frequencies unaffected by temperature swings.",
+     "kind": "fact",
+     "sources": [
+      "A3.1",
+      "A3.24",
+      "A3.26"
+     ],
+     "id": "s04.06",
+     "check": "supported"
+    },
+    {
+     "text": "In international science, 1 second is defined as 9,192,631,770 vibrations of a caesium-133 atom.",
+     "kind": "fact",
+     "sources": [
+      "A3.2",
+      "A3.3",
+      "A3.17"
+     ],
+     "id": "s04.07",
+     "check": "supported"
+    },
+    {
+     "text": "Ground control stations monitor satellite clocks continuously and correct any tiny drift against reference standards.",
+     "kind": "fact",
+     "sources": [
+      "A1.54"
+     ],
+     "id": "s04.08",
+     "check": "supported"
+    },
+    {
+     "text": "Space travel also introduces relativistic effects described by Albert Einstein.",
+     "kind": "fact",
+     "sources": [
+      "A1.7",
+      "A4.19"
+     ],
+     "id": "s04.09",
+     "check": "supported"
+    },
+    {
+     "text": "As a result, satellite clocks run 38 microseconds faster every day than clocks on the ground.",
+     "kind": "fact",
+     "sources": [
+      "A1.7",
+      "A4.19"
+     ],
+     "id": "s04.11",
+     "check": "supported"
+    },
+    {
+     "text": "The designers of the GPS system had to programme hardware to correct for this difference.",
+     "kind": "fact",
+     "sources": [
+      "A1.7",
+      "A4.19"
+     ],
+     "id": "s04.12",
+     "check": "supported"
+    }
+   ],
+   "id": "s04"
+  },
+  {
+   "heading": "Fixing Receiver Clocks and Pinpointing You",
+   "sentences": [
+    {
+     "text": "If satellites need atomic clocks, how does an affordable smartphone manage to work?",
+     "kind": "framing",
+     "sources": [],
+     "id": "s05.01",
+     "check": "supported"
+    },
+    {
+     "text": "Putting an atomic clock inside every mobile phone would be far too expensive and impractical.",
+     "kind": "fact",
+     "sources": [
+      "A1.64",
+      "A1.67"
+     ],
+     "id": "s05.02",
+     "check": "supported"
+    },
+    {
+     "text": "Your phone relies on an ordinary internal clock that is not synchronised with atomic time.",
+     "kind": "fact",
+     "sources": [
+      "A1.64",
+      "A1.67"
+     ],
+     "id": "s05.03",
+     "check": "supported"
+    },
+    {
+     "text": "This offset adds a 4th unknown variable to the navigation calculation.",
+     "kind": "fact",
+     "sources": [
+      "A1.55",
+      "A1.67"
+     ],
+     "id": "s05.04",
+     "check": "supported"
+    },
+    {
+     "text": "To fix your position, the receiver must solve for latitude, longitude, altitude, and clock error.",
+     "kind": "fact",
+     "sources": [
+      "A1.55",
+      "A1.60",
+      "A1.69"
+     ],
+     "id": "s05.05",
+     "check": "supported"
+    },
+    {
+     "text": "Therefore, a GPS receiver requires signals from at least 4 separate satellites at once.",
+     "kind": "fact",
+     "sources": [
+      "A1.55",
+      "A1.67"
+     ],
+     "id": "s05.06",
+     "check": "supported"
+    },
+    {
+     "text": "By processing 4 signals simultaneously, the phone solves mathematical equations that eliminate its clock bias.",
+     "kind": "fact",
+     "sources": [
+      "A1.59",
+      "A1.60",
+      "A1.67"
+     ],
+     "id": "s05.07",
+     "check": "supported"
+    },
+    {
+     "text": "Radio signals also slow down slightly as they travel through the charged ionosphere.",
+     "kind": "fact",
+     "sources": [
+      "A1.19",
+      "A4.18"
+     ],
+     "id": "s05.08",
+     "check": "supported"
+    },
+    {
+     "text": "Receivers use specialised mathematical models, such as the Klobuchar model, to correct for this delay.",
+     "kind": "fact",
+     "sources": [
+      "A1.19"
+     ],
+     "id": "s05.09",
+     "check": "supported"
+    },
+    {
+     "text": "Consumer smartphones can also use assistive services like local wireless networks to improve accuracy.",
+     "kind": "fact",
+     "sources": [
+      "A1.4"
+     ],
+     "id": "s05.10",
+     "check": "supported"
+    },
+    {
+     "text": "High-end receivers used in surveying can even reach an accuracy within 2 centimetres.",
+     "kind": "fact",
+     "sources": [
+      "A1.4"
+     ],
+     "id": "s05.11",
+     "check": "supported"
+    },
+    {
+     "text": "To answer our question, your phone determines where you are without sending any transmissions into space.",
+     "kind": "fact",
+     "sources": [
+      "A1.1"
+     ],
+     "id": "s05.12",
+     "check": "supported"
+    },
+    {
+     "text": "It simply listens to time-stamped radio signals from orbiting atomic clocks and calculates your exact coordinates.",
+     "kind": "fact",
+     "sources": [
+      "A1.1",
+      "A1.55",
+      "A1.69"
+     ],
+     "id": "s05.13",
+     "check": "supported"
+    },
+    {
+     "text": "Next time your phone maps your location, consider the extraordinary cosmic clockwork working quietly overhead.",
+     "kind": "framing",
+     "sources": [],
+     "id": "s05.14",
+     "check": "supported"
+    }
+   ],
+   "id": "s05"
+  }
+ ]
+}

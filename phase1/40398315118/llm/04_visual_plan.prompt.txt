@@ -1,0 +1,64 @@
+[model] gemini-3.8-flash
+[system]
+
+
+[user]
+Video: How GPS Knows Where You Are Without Tracking You
+Plan one visual for each slot of narration below. The viewer sees it while hearing that text.
+Rules:
+- Real photos first: use kind=photo for at least 60 per cent of slots, whenever a real photo could show the
+  thing being talked about (objects, places, people's work, spacecraft, machines, nature, historical photos).
+  NASA and Wikimedia Commons have huge archives; think what a photo archive would really contain.
+- Use kind=card when a number, comparison, process or list is the point, or at scene starts (title card).
+- The first slot is a title card with the video title.
+- Every number on a card MUST appear in that slot's text or earlier in the same scene. Never invent data.
+- Vary: never the same card type twice in a row; never more than 2 cards in a row.
+- For kind=photo still give a fallback card (used if no good photo exists).
+Card types (all text short; big and readable on a phone):
+- title: title (+ subtitle). Use for scene openings.
+- stat: value (a number with unit, e.g. "20,200 km") + label (+ note).
+- bullets: title + 2-4 items (each under 6 words).
+- flow: title + 2-5 steps (cause -> effect, process).
+- bars: title + labels + values (+ unit). Compare 2-6 quantities.
+- timeline: title + 2-5 events {when, label}.
+- compare: title + left_title/left_points vs right_title/right_points.
+
+SLOTS:
+v001 [5.8s] (scene: The Passive Listener Myth, SCENE START) Have you ever wondered how navigation satellites high above Earth can watch your every step?
+v002 [5.9s] (scene: The Passive Listener Myth) The Global Positioning System does not require your mobile phone to transmit any data.
+v003 [6.5s] (scene: The Passive Listener Myth) It operates completely independently of any mobile telephone network or internet connection.
+v004 [6.8s] (scene: The Passive Listener Myth) Even if you turn off mobile data, the system still delivers accurate location and time information.
+v005 [6.5s] (scene: The Passive Listener Myth) In reality, your mobile phone functions purely as a silent and passive radio receiver.
+v006 [6.7s] (scene: The Passive Listener Myth) The United States Space Force owns the satellite system and operates it through Mission Delta 31.
+v007 [3.4s] (scene: The Passive Listener Myth) Although the United States government maintains the constellation,
+v008 [3.8s] (scene: The Passive Listener Myth) anyone with a receiver can freely access it.
+v009 [6.7s] (scene: The Passive Listener Myth) The system was originally created for military use before being opened to civilians across the globe.
+v010 [4.0s] (scene: The Passive Listener Myth) Civilian access was authorised by President Ronald Reagan
+v011 [4.9s] (scene: The Passive Listener Myth) after an airliner was tragically shot down in 1983.
+v012 [6.8s] (scene: The Passive Listener Myth) Early civilian signals were intentionally degraded by a policy known as Selective Availability.
+v013 [3.9s] (scene: The Passive Listener Myth) This deliberate error degraded civilian accuracy to roughly
+v014 [4.8s] (scene: The Passive Listener Myth) 100 metres until the policy was ended in 2000.
+v015 [3.8s] (scene: The Passive Listener Myth) Today, modern consumer smartphones can determine a position
+v016 [4.9s] (scene: The Passive Listener Myth) to within 4.9 metres or even better.
+v017 [4.9s] (scene: Constellation of Orbiting Clocks, SCENE START) To understand how your device knows its place, we must look up into orbit.
+v018 [3.0s] (scene: Constellation of Orbiting Clocks) The space segment of GPS consists
+v019 [4.0s] (scene: Constellation of Orbiting Clocks) of between 24 and 32 operational satellites.
+v020 [5.2s] (scene: Constellation of Orbiting Clocks) These spacecraft circle our planet in what engineers call medium Earth orbit.
+v021 [3.6s] (scene: Constellation of Orbiting Clocks) Each satellite travels at an altitude of approximately
+v022 [4.2s] (scene: Constellation of Orbiting Clocks) 20,200 kilometres above the surface of the Earth.
+v023 [3.5s] (scene: Constellation of Orbiting Clocks) The satellites are arranged across 6 separate orbital
+v024 [4.4s] (scene: Constellation of Orbiting Clocks) planes tilted at approximately 55 degrees to the equator.
+v025 [3.7s] (scene: Constellation of Orbiting Clocks) Each orbit takes approximately 11 hours and 58
+v026 [4.2s] (scene: Constellation of Orbiting Clocks) minutes, completing 2 full trips every sidereal day.
+v027 [5.9s] (scene: Constellation of Orbiting Clocks) The satellites are not spaced at equal 90-degree intervals along each orbital ring.
+v028 [3.4s] (scene: Constellation of Orbiting Clocks) Instead, their spacing varies between 30
+v029 [4.5s] (scene: Constellation of Orbiting Clocks) degrees, 105 degrees, and 120 degrees apart.
+v030 [3.4s] (scene: Constellation of Orbiting Clocks) This deliberate geometry guarantees that at least 6
+v031 [4.0s] (scene: Constellation of Orbiting Clocks) satellites remain visible from almost anywhere on Earth.
+v032 [3.5s] (scene: Constellation of Orbiting Clocks) Day and night, every satellite continually broadcasts radio
+v033 [3.6s] (scene: Constellation of Orbiting Clocks) carrier waves down toward the ground below.
+v034 [3.6s] (scene: Constellation of Orbiting Clocks) The transmission contains a unique pseudorandom code made
+v035 [3.6s] (scene: Constellation of Orbiting Clocks) of ones and zeros that receivers recognise.
+v036 [3.7s] (scene: Constellation of Orbiting Clocks) It also broadcasts a continuous data message containing
+v037 [4.2s] (scene: Constellation of Orbiting Clocks) its exact orbital position and the departure time.
+v038 [7.7s] (scene: Constellation of Orbiting Clocks) This detailed orbital data is called an ephemeris and allows receivers to pinpoint the satellite.

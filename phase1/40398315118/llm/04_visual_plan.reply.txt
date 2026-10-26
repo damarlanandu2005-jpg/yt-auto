@@ -1,0 +1,408 @@
+{
+  "visuals": [
+    {
+      "id": "v001",
+      "kind": "card",
+      "card": {
+        "type": "title",
+        "title": "How GPS Knows Where You Are",
+        "subtitle": "Without tracking your device"
+      }
+    },
+    {
+      "id": "v002",
+      "kind": "card",
+      "card": {
+        "type": "compare",
+        "title": "How Your Phone Works with GPS",
+        "left_title": "Two-Way Systems",
+        "left_points": ["Transmits signals", "Networks track location"],
+        "right_title": "GPS Operation",
+        "right_points": ["Transmits no data", "Receiver only listens"]
+      }
+    },
+    {
+      "id": "v003",
+      "kind": "photo",
+      "photo_subject": "Close up of a modern smartphone with cellular antennas and screen disconnected from wifi",
+      "photo_queries": ["smartphone electronics antenna", "mobile phone outdoors"],
+      "card": {
+        "type": "bullets",
+        "title": "Completely Independent",
+        "items": ["No cellular network needed", "No internet connection", "Operates everywhere"]
+      }
+    },
+    {
+      "id": "v004",
+      "kind": "photo",
+      "photo_subject": "Hiker using handheld GPS navigation device in a remote mountain wilderness with no cell reception",
+      "photo_queries": ["handheld GPS receiver", "hiking GPS mountain"],
+      "card": {
+        "type": "bullets",
+        "title": "Offline Reliability",
+        "items": ["Mobile data switched off", "Accurate location intact", "Precise time delivered"]
+      }
+    },
+    {
+      "id": "v005",
+      "kind": "photo",
+      "photo_subject": "Internal antenna circuitry and RF receiver chip inside a handheld radio or smartphone",
+      "photo_queries": ["radio receiver circuit", "internal antenna chip"],
+      "card": {
+        "type": "bullets",
+        "title": "Passive Radio Receiver",
+        "items": ["Never transmits", "Listens like FM radio", "Total privacy by design"]
+      }
+    },
+    {
+      "id": "v006",
+      "kind": "photo",
+      "photo_subject": "United States Space Force operators inside satellite operations control room at Schriever Space Force Base",
+      "photo_queries": ["Space Force operations", "Schriever AFB operations center"],
+      "card": {
+        "type": "bullets",
+        "title": "System Operators",
+        "items": ["US Space Force", "Space Delta 31", "24/7 constellation control"]
+      }
+    },
+    {
+      "id": "v007",
+      "kind": "photo",
+      "photo_subject": "Exterior or insignia of United States Space Command and military satellite operations building",
+      "photo_queries": ["United States Space Command", "Space Force satellite control"],
+      "card": {
+        "type": "title",
+        "title": "Maintained by US Government",
+        "subtitle": "Global public utility"
+      }
+    },
+    {
+      "id": "v008",
+      "kind": "photo",
+      "photo_subject": "A surveyor using a commercial GPS receiver unit on a tripod outdoors",
+      "photo_queries": ["GPS surveyor antenna", "GNSS survey tripod"],
+      "card": {
+        "type": "bullets",
+        "title": "Open Access",
+        "items": ["Free for anyone", "No account needed", "Worldwide availability"]
+      }
+    },
+    {
+      "id": "v009",
+      "kind": "photo",
+      "photo_subject": "Historical military GPS receiver unit or early backpack field equipment from the late 1970s or 1980s",
+      "photo_queries": ["military GPS receiver vintage", "early GPS equipment military"],
+      "card": {
+        "type": "bullets",
+        "title": "Military Origins",
+        "items": ["Designed for defense", "Naval and aerial guidance", "Opened globally later"]
+      }
+    },
+    {
+      "id": "v010",
+      "kind": "photo",
+      "photo_subject": "Official portrait of President Ronald Reagan in the Oval Office",
+      "photo_queries": ["Ronald Reagan portrait", "President Reagan Oval Office"],
+      "card": {
+        "type": "title",
+        "title": "Civilian Access Authorized",
+        "subtitle": "Directive by President Ronald Reagan"
+      }
+    },
+    {
+      "id": "v011",
+      "kind": "photo",
+      "photo_subject": "Korean Air Lines Boeing 747 aircraft in flight or historical archive photo",
+      "photo_queries": ["Boeing 747 airliner vintage", "Korean Air Lines 747"],
+      "card": {
+        "type": "stat",
+        "title": "Historical Catalyst",
+        "value": "1983",
+        "label": "Tragic airliner shootdown prompted civilian release"
+      }
+    },
+    {
+      "id": "v012",
+      "kind": "photo",
+      "photo_subject": "Close-up of military avionics display showing navigation coordinate readouts",
+      "photo_queries": ["avionics display cockpit", "GPS navigation screen vintage"],
+      "card": {
+        "type": "title",
+        "title": "Selective Availability",
+        "subtitle": "Intentional signal degradation for civilians"
+      }
+    },
+    {
+      "id": "v013",
+      "kind": "photo",
+      "photo_subject": "Early consumer GPS navigation unit with monochrome LCD showing map error radius",
+      "photo_queries": ["early Garmin GPS receiver", "handheld GPS unit vintage"],
+      "card": {
+        "type": "title",
+        "title": "Deliberate civilian error",
+        "subtitle": "Added noise to satellite signals"
+      }
+    },
+    {
+      "id": "v014",
+      "kind": "card",
+      "card": {
+        "type": "stat",
+        "title": "Selective Availability Accuracy",
+        "value": "100 m",
+        "label": "Civilian positioning error",
+        "note": "Policy discontinued in May 2000"
+      }
+    },
+    {
+      "id": "v015",
+      "kind": "photo",
+      "photo_subject": "Person holding a modern smartphone displaying a digital map application with blue location dot",
+      "photo_queries": ["smartphone navigation map screen", "phone digital map location"],
+      "card": {
+        "type": "title",
+        "title": "Modern Smartphones",
+        "subtitle": "Everyday precision navigation"
+      }
+    },
+    {
+      "id": "v016",
+      "kind": "card",
+      "card": {
+        "type": "bars",
+        "title": "Civilian Accuracy Comparison",
+        "labels": ["Selective Availability", "Modern Smartphone"],
+        "values": [100, 4.9],
+        "unit": "m"
+      }
+    },
+    {
+      "id": "v017",
+      "kind": "card",
+      "card": {
+        "type": "title",
+        "title": "Constellation of Orbiting Clocks",
+        "subtitle": "Looking up into medium Earth orbit"
+      }
+    },
+    {
+      "id": "v018",
+      "kind": "photo",
+      "photo_subject": "Artist rendering of a GPS Block IIF or GPS III satellite in orbit above Earth",
+      "photo_queries": ["GPS III satellite orbit", "GPS satellite rendering NASA"],
+      "card": {
+        "type": "title",
+        "title": "The Space Segment",
+        "subtitle": "Constellation of navigation satellites"
+      }
+    },
+    {
+      "id": "v019",
+      "kind": "card",
+      "card": {
+        "type": "stat",
+        "title": "Active Constellation",
+        "value": "24 - 32",
+        "label": "Operational satellites in orbit"
+      }
+    },
+    {
+      "id": "v020",
+      "kind": "photo",
+      "photo_subject": "View of the blue curve of Earth and blackness of space from high orbit",
+      "photo_queries": ["Earth horizon space orbit", "Earth view from orbit NASA"],
+      "card": {
+        "type": "bullets",
+        "title": "Medium Earth Orbit",
+        "items": ["Above low Earth orbit", "Below geostationary belt", "Predictable global coverage"]
+      }
+    },
+    {
+      "id": "v021",
+      "kind": "photo",
+      "photo_subject": "GPS satellite in cleanroom testing prior to launch at space facility",
+      "photo_queries": ["GPS satellite cleanroom", "satellite assembly cleanroom"],
+      "card": {
+        "type": "title",
+        "title": "Orbital Altitude",
+        "subtitle": "High above Earth atmosphere"
+      }
+    },
+    {
+      "id": "v022",
+      "kind": "card",
+      "card": {
+        "type": "stat",
+        "title": "Orbital Altitude",
+        "value": "20,200 km",
+        "label": "Above Earth's surface"
+      }
+    },
+    {
+      "id": "v023",
+      "kind": "photo",
+      "photo_subject": "Diagram or globe model displaying orbital inclination rings encircling the planet",
+      "photo_queries": ["satellite constellation orbital planes", "GPS constellation diagram"],
+      "card": {
+        "type": "stat",
+        "title": "Orbital Planes",
+        "value": "6",
+        "label": "Evenly spaced orbital rings"
+      }
+    },
+    {
+      "id": "v024",
+      "kind": "card",
+      "card": {
+        "type": "stat",
+        "title": "Orbital Inclination",
+        "value": "55°",
+        "label": "Tilt relative to Earth's equator"
+      }
+    },
+    {
+      "id": "v025",
+      "kind": "photo",
+      "photo_subject": "High-precision rubidium or cesium atomic clock package built for spaceflight",
+      "photo_queries": ["atomic clock satellite space", "cesium atomic clock unit"],
+      "card": {
+        "type": "stat",
+        "title": "Orbital Period",
+        "value": "11 h 58 m",
+        "label": "Time to complete one orbit"
+      }
+    },
+    {
+      "id": "v026",
+      "kind": "card",
+      "card": {
+        "type": "bullets",
+        "title": "Daily Trajectory",
+        "items": ["11h 58m per orbit", "2 full trips per sidereal day", "Repeating ground tracks"]
+      }
+    },
+    {
+      "id": "v027",
+      "kind": "photo",
+      "photo_subject": "Multiple satellites in clean room processing or illustration of satellite orbital spacing",
+      "photo_queries": ["GPS satellites manufacturing", "satellite constellation array"],
+      "card": {
+        "type": "bullets",
+        "title": "Non-Uniform Spacing",
+        "items": ["Not spaced at equal 90° intervals", "Optimized to prevent dead zones", "Calculated for signal redundancy"]
+      }
+    },
+    {
+      "id": "v028",
+      "kind": "photo",
+      "photo_subject": "Engineers working on telemetry data and orbital mechanics calculations on screens",
+      "photo_queries": ["orbital mechanics engineers screens", "satellite control center engineers"],
+      "card": {
+        "type": "title",
+        "title": "Varied Orbital Spacing",
+        "subtitle": "Asymmetric orbital geometry"
+      }
+    },
+    {
+      "id": "v029",
+      "kind": "card",
+      "card": {
+        "type": "bullets",
+        "title": "Satellite Spacing Along Planes",
+        "items": ["30 degrees apart", "105 degrees apart", "120 degrees apart"]
+      }
+    },
+    {
+      "id": "v030",
+      "kind": "photo",
+      "photo_subject": "Night sky with open horizon showing stars and clear visibility across landscape",
+      "photo_queries": ["night sky open horizon", "starry sky landscape panorama"],
+      "card": {
+        "type": "title",
+        "title": "Global Coverage Guarantee",
+        "subtitle": "Engineered constellation geometry"
+      }
+    },
+    {
+      "id": "v031",
+      "kind": "card",
+      "card": {
+        "type": "stat",
+        "title": "Constellation Visibility",
+        "value": "≥ 6",
+        "label": "Satellites visible from almost anywhere"
+      }
+    },
+    {
+      "id": "v032",
+      "kind": "photo",
+      "photo_subject": "Satellite antenna array pointing towards Earth in space",
+      "photo_queries": ["satellite antenna array Earth", "communications satellite dish space"],
+      "card": {
+        "type": "bullets",
+        "title": "Continuous Broadcast",
+        "items": ["24 hours a day", "L-band radio frequencies", "Constant transmission"]
+      }
+    },
+    {
+      "id": "v033",
+      "kind": "photo",
+      "photo_subject": "Ground satellite receiving dish or radio dish tracking passing satellites",
+      "photo_queries": ["satellite ground station antenna", "parabolic antenna tracking station"],
+      "card": {
+        "type": "bullets",
+        "title": "Radio Carrier Waves",
+        "items": ["Broadcast down to Earth", "Penetrate clouds and weather", "Received by tiny phone antennas"]
+      }
+    },
+    {
+      "id": "v034",
+      "kind": "photo",
+      "photo_subject": "Oscilloscope or spectrum analyzer displaying digital binary radio waveform signals",
+      "photo_queries": ["oscilloscope digital signal waveform", "binary signal spectrum analyzer"],
+      "card": {
+        "type": "bullets",
+        "title": "Signal Structure",
+        "items": ["Pseudorandom noise code", "Unique to each satellite", "Identifiable binary pattern"]
+      }
+    },
+    {
+      "id": "v035",
+      "kind": "card",
+      "card": {
+        "type": "bullets",
+        "title": "Pseudorandom Code",
+        "items": ["Sequence of ones and zeros", "Recognized by receivers", "Allows signal timing"]
+      }
+    },
+    {
+      "id": "v036",
+      "kind": "photo",
+      "photo_subject": "Close-up of satellite telemetry electronic components and microwave transmitters",
+      "photo_queries": ["satellite electronics transmitter", "spacecraft avionics transmitter"],
+      "card": {
+        "type": "title",
+        "title": "Data Message",
+        "subtitle": "Continuous broadcast to Earth"
+      }
+    },
+    {
+      "id": "v037",
+      "kind": "card",
+      "card": {
+        "type": "bullets",
+        "title": "Broadcast Message Data",
+        "items": ["Exact satellite position", "Precise departure timestamp", "Clock correction parameters"]
+      }
+    },
+    {
+      "id": "v038",
+      "kind": "card",
+      "card": {
+        "type": "flow",
+        "title": "How Ephemeris Works",
+        "steps": ["Satellite transmits ephemeris", "Phone decodes orbital parameters", "Phone calculates exact satellite position"]
+      }
+    }
+  ]
+}

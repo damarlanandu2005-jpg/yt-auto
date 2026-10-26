@@ -1,0 +1,18 @@
+{
+ "question": "How does a smartphone determine your exact position on Earth using signals from space?",
+ "angle": "GPS satellites do not track you or receive any data from your phone; your device is purely a passive listener measuring microscopic time delays from orbiting atomic clocks.",
+ "structure": "Step-by-step physical breakdown, moving from space-based satellite constellations down to mathematical trilateration on your phone.",
+ "outline": [
+  "The widespread misconception that satellites actively watch, trace, or track your phone",
+  "How a constellation of orbiting satellites continuously broadcasts time and position data",
+  "The geometry of trilateration and calculating distances using the speed of light",
+  "Why ultra-precise onboard atomic clocks are required to measure microsecond delays",
+  "How your receiver corrects internal clock errors and atmospheric delays to pinpoint you"
+ ],
+ "wikipedia_titles": [
+  "Global Positioning System",
+  "Trilateration",
+  "Atomic clock",
+  "Satellite navigation"
+ ]
+}

@@ -1,0 +1,43 @@
+{
+ "card_number_fixes": [
+  "v006: numbers ['24', '7'] not in narration; card replaced",
+  "v024: numbers ['0', '00'] not in narration; card replaced",
+  "v027: numbers ['0', '00'] not in narration; card replaced",
+  "v031: numbers ['2265'] not in narration; card replaced"
+ ],
+ "photo_slots": 24,
+ "candidates": {
+  "v003": 4,
+  "v004": 10,
+  "v005": 4,
+  "v006": 10,
+  "v007": 10,
+  "v008": 3,
+  "v009": 0,
+  "v010": 10,
+  "v011": 4,
+  "v012": 10,
+  "v013": 0,
+  "v015": 5,
+  "v018": 6,
+  "v020": 10,
+  "v021": 4,
+  "v023": 4,
+  "v025": 6,
+  "v027": 10,
+  "v028": 10,
+  "v030": 9,
+  "v032": 10,
+  "v033": 10,
+  "v034": 5,
+  "v036": 1
+ },
+ "downloaded": 8,
+ "rejected_after_looking": [
+  {
+   "id": "v033",
+   "title": "Salzburg ground satellite antenna",
+   "reason": "Shows a mountain radio tower with directional antennas rather than a satellite tracking dish."
+  }
+ ]
+}

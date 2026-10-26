@@ -1,0 +1,16 @@
+[model] gemini-3.6-flash
+[system]
+
+
+[user]
+You see 8 images in order. For each, say if it fits: it must clearly show what it
+should show, be a real usable picture (not mostly text, not a blank or broken image, no watermark),
+and not be misleading next to the narration.
+Image 1: should show: Exterior or insignia of United States Space Command and military satellite operations building (narration: Although the United States government maintains the constellation,)
+Image 2: should show: A surveyor using a commercial GPS receiver unit on a tripod outdoors (narration: anyone with a receiver can freely access it.)
+Image 3: should show: Official portrait of President Ronald Reagan in the Oval Office (narration: Civilian access was authorised by President Ronald Reagan)
+Image 4: should show: Korean Air Lines Boeing 747 aircraft in flight or historical archive photo (narration: after an airliner was tragically shot down in 1983.)
+Image 5: should show: Artist rendering of a GPS Block IIF or GPS III satellite in orbit above Earth (narration: The space segment of GPS consists)
+Image 6: should show: View of the blue curve of Earth and blackness of space from high orbit (narration: These spacecraft circle our planet in what engineers call medium Earth orbit.)
+Image 7: should show: Night sky with open horizon showing stars and clear visibility across landscape (narration: This deliberate geometry guarantees that at least 6)
+Image 8: should show: Ground satellite receiving dish or radio dish tracking passing satellites (narration: carrier waves down toward the ground below.)

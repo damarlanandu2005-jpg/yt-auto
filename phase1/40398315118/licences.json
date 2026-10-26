@@ -1,0 +1,108 @@
+[
+  {
+    "kind": "voice model",
+    "name": "Kokoro-82M v1.0 (int8 ONNX via kokoro-onnx)",
+    "source_page": "https://huggingface.co/hexgrad/Kokoro-82M",
+    "download_url": "https://github.com/thewh1teagle/kokoro-onnx/releases/tag/model-files-v1.0",
+    "licence": "Apache-2.0 (model weights); kokoro-onnx code MIT",
+    "attribution": "Narration voice: Kokoro (hexgrad)"
+  },
+  {
+    "kind": "font",
+    "name": "DejaVu Sans (bundled with matplotlib)",
+    "source_page": "https://dejavu-fonts.github.io/",
+    "licence": "Bitstream Vera / DejaVu free font licence (free to use and embed)",
+    "attribution": "none required"
+  },
+  {
+    "file": "v007.jpg",
+    "kind": "photo",
+    "source": "wikimedia_commons",
+    "title": "U S Space Command Provisional Headquarters (7804765)",
+    "source_page": "https://commons.wikimedia.org/wiki/File:U_S_Space_Command_Provisional_Headquarters_(7804765).jpg",
+    "download_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/09/U_S_Space_Command_Provisional_Headquarters_%287804765%29.jpg/1920px-U_S_Space_Command_Provisional_Headquarters_%287804765%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "licence": "Public domain",
+    "licence_url": "",
+    "author": "Christopher Dewitt",
+    "attribution": "\"U S Space Command Provisional Headquarters (7804765)\" by Christopher Dewitt, Public domain, via Wikimedia Commons. https://commons.wikimedia.org/wiki/File:U_S_Space_Command_Provisional_Headquarters_(7804765).jpg",
+    "downloaded": "2026-10-26"
+  },
+  {
+    "file": "v008.jpg",
+    "kind": "photo",
+    "source": "wikimedia_commons",
+    "title": "GNSS receiver at dusk among eucalyptus trees",
+    "source_page": "https://commons.wikimedia.org/wiki/File:GNSS_receiver_at_dusk_among_eucalyptus_trees.jpg",
+    "download_url": "https://upload.wikimedia.org/wikipedia/commons/0/08/GNSS_receiver_at_dusk_among_eucalyptus_trees.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+    "licence": "CC BY 4.0",
+    "licence_url": "https://creativecommons.org/licenses/by/4.0",
+    "author": "Cvstr",
+    "attribution": "\"GNSS receiver at dusk among eucalyptus trees\" by Cvstr, CC BY 4.0, via Wikimedia Commons. https://commons.wikimedia.org/wiki/File:GNSS_receiver_at_dusk_among_eucalyptus_trees.jpg",
+    "downloaded": "2026-10-26"
+  },
+  {
+    "file": "v010.jpg",
+    "kind": "photo",
+    "source": "wikimedia_commons",
+    "title": "President Ronald Reagan in The Oval Office - DPLA - 87df639573ca07cf95894ce24b2ec3bd",
+    "source_page": "https://commons.wikimedia.org/wiki/File:President_Ronald_Reagan_in_The_Oval_Office_-_DPLA_-_87df639573ca07cf95894ce24b2ec3bd.jpg",
+    "download_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/f9/President_Ronald_Reagan_in_The_Oval_Office_-_DPLA_-_87df639573ca07cf95894ce24b2ec3bd.jpg/1920px-President_Ronald_Reagan_in_The_Oval_Office_-_DPLA_-_87df639573ca07cf95894ce24b2ec3bd.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "licence": "Public domain",
+    "licence_url": "",
+    "author": "President (1981-1989 : Reagan). White House Photographic Office. 1981-1989",
+    "attribution": "\"President Ronald Reagan in The Oval Office - DPLA - 87df639573ca07cf95894ce24b2ec3bd\" by President (1981-1989 : Reagan). White House Photographic Office. 1981-1989, Public domain, via Wikimedia Commons. https://commons.wikimedia.org/wiki/File:President_Ronald_Reagan_in_The_Oval_Office_-_DPLA_-_87df639573ca07cf95894ce24b2ec3bd.jpg",
+    "downloaded": "2026-10-26"
+  },
+  {
+    "file": "v011.jpg",
+    "kind": "photo",
+    "source": "wikimedia_commons",
+    "title": "Korean Air Lines Boeing 747-230B HL7440 (23339398360)",
+    "source_page": "https://commons.wikimedia.org/wiki/File:Korean_Air_Lines_Boeing_747-230B_HL7440_(23339398360).jpg",
+    "download_url": "https://upload.wikimedia.org/wikipedia/commons/e/ed/Korean_Air_Lines_Boeing_747-230B_HL7440_%2823339398360%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+    "licence": "CC BY 2.0",
+    "licence_url": "https://creativecommons.org/licenses/by/2.0",
+    "author": "Kambui",
+    "attribution": "\"Korean Air Lines Boeing 747-230B HL7440 (23339398360)\" by Kambui, CC BY 2.0, via Wikimedia Commons. https://commons.wikimedia.org/wiki/File:Korean_Air_Lines_Boeing_747-230B_HL7440_(23339398360).jpg",
+    "downloaded": "2026-10-26"
+  },
+  {
+    "file": "v018.jpg",
+    "kind": "photo",
+    "source": "wikimedia_commons",
+    "title": "GPS Block IIIA",
+    "source_page": "https://commons.wikimedia.org/wiki/File:GPS_Block_IIIA.jpg",
+    "download_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/49/GPS_Block_IIIA.jpg/1920px-GPS_Block_IIIA.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "licence": "Public domain",
+    "licence_url": "",
+    "author": "U.S. Air Force",
+    "attribution": "\"GPS Block IIIA\" by U.S. Air Force, Public domain, via Wikimedia Commons. https://commons.wikimedia.org/wiki/File:GPS_Block_IIIA.jpg",
+    "downloaded": "2026-10-26"
+  },
+  {
+    "file": "v020.jpg",
+    "kind": "photo",
+    "source": "nasa_image_library",
+    "title": "Earth Observation taken by the STS-125 Crew",
+    "source_page": "https://images.nasa.gov/details/s125e012183",
+    "download_url": "https://images-assets.nasa.gov/image/s125e012183/s125e012183~large.jpg",
+    "licence": "Public domain (NASA media, not copyrighted in the US)",
+    "licence_url": "https://www.nasa.gov/nasa-brand-center/images-and-media/",
+    "author": "NASA (JSC)",
+    "attribution": "Earth Observation taken by the STS-125 Crew — NASA (JSC), NASA, public domain. https://images.nasa.gov/details/s125e012183",
+    "downloaded": "2026-10-26"
+  },
+  {
+    "file": "v030.jpg",
+    "kind": "photo",
+    "source": "wikimedia_commons",
+    "title": "Starry night sky over rural Bavarian Swabia with a vertical light beam and light pollution on the horizon (2018)",
+    "source_page": "https://commons.wikimedia.org/wiki/File:Starry_night_sky_over_rural_Bavarian_Swabia_with_a_vertical_light_beam_and_light_pollution_on_the_horizon_(2018).jpg",
+    "download_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/c2/Starry_night_sky_over_rural_Bavarian_Swabia_with_a_vertical_light_beam_and_light_pollution_on_the_horizon_%282018%29.jpg/1920px-Starry_night_sky_over_rural_Bavarian_Swabia_with_a_vertical_light_beam_and_light_pollution_on_the_horizon_%282018%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "licence": "CC BY-SA 4.0",
+    "licence_url": "https://creativecommons.org/licenses/by-sa/4.0",
+    "author": "Paul Colin Hennig firstdorsal.eu",
+    "attribution": "\"Starry night sky over rural Bavarian Swabia with a vertical light beam and light pollution on the horizon (2018)\" by Paul Colin Hennig firstdorsal.eu, CC BY-SA 4.0, via Wikimedia Commons. https://commons.wikimedia.org/wiki/File:Starry_night_sky_over_rural_Bavarian_Swabia_with_a_vertical_light_beam_and_light_pollution_on_the_horizon_(2018).jpg",
+    "downloaded": "2026-10-26"
+  }
+]

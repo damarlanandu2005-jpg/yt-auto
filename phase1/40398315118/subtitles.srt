@@ -1,0 +1,218 @@
+1
+00:00:00,028 --> 00:00:04,520
+Have you ever wondered how navigation
+satellites high above Earth can watch your
+
+2
+00:00:04,520 --> 00:00:05,320
+every step?
+
+3
+00:00:05,775 --> 00:00:10,660
+The Global Positioning System does not
+require your mobile phone to transmit any
+
+4
+00:00:10,660 --> 00:00:11,460
+data.
+
+5
+00:00:11,637 --> 00:00:16,740
+It operates completely independently of
+any mobile telephone network or internet
+
+6
+00:00:16,740 --> 00:00:17,540
+connection.
+
+7
+00:00:18,145 --> 00:00:19,760
+Even if you turn off mobile data,
+
+8
+00:00:20,240 --> 00:00:23,940
+the system still delivers accurate
+location and time information.
+
+9
+00:00:24,960 --> 00:00:30,100
+In reality, your mobile phone functions
+purely as a silent and passive radio
+
+10
+00:00:30,100 --> 00:00:30,900
+receiver.
+
+11
+00:00:31,482 --> 00:00:36,080
+The United States Space Force owns the
+satellite system and operates it through
+
+12
+00:00:36,080 --> 00:00:37,300
+Mission Delta 31.
+
+13
+00:00:38,161 --> 00:00:41,140
+Although the United States government
+maintains the constellation,
+
+14
+00:00:42,180 --> 00:00:44,840
+anyone with a receiver
+can freely access it.
+
+15
+00:00:45,397 --> 00:00:50,220
+The system was originally created for
+military use before being opened to civilians
+
+16
+00:00:50,220 --> 00:00:51,420
+across the globe.
+
+17
+00:00:52,103 --> 00:00:57,580
+Civilian access was authorised by President
+Ronald Reagan after an airliner was
+
+18
+00:00:57,580 --> 00:01:00,020
+tragically shot down in 1983.
+
+19
+00:01:00,978 --> 00:01:06,280
+Early civilian signals were intentionally
+degraded by a policy known as Selective
+
+20
+00:01:06,280 --> 00:01:07,080
+Availability.
+
+21
+00:01:07,753 --> 00:01:12,640
+This deliberate error degraded civilian
+accuracy to roughly 100 metres
+
+22
+00:01:12,640 --> 00:01:15,380
+until the policy was ended in 2000.
+
+23
+00:01:16,485 --> 00:01:21,118
+Today, modern consumer smartphones
+can determine a position to within 4.9
+
+24
+00:01:21,118 --> 00:01:23,460
+metres or even better.
+
+25
+00:01:25,184 --> 00:01:27,580
+To understand how your
+device knows its place,
+
+26
+00:01:28,040 --> 00:01:29,220
+we must look up into orbit.
+
+27
+00:01:30,120 --> 00:01:35,520
+The space segment of GPS consists
+of between 24 and 32 operational
+
+28
+00:01:35,520 --> 00:01:36,320
+satellites.
+
+29
+00:01:37,056 --> 00:01:41,520
+These spacecraft circle our planet in
+what engineers call medium Earth orbit.
+
+30
+00:01:42,240 --> 00:01:47,340
+Each satellite travels at an altitude
+of approximately 20,200 kilometres
+
+31
+00:01:47,340 --> 00:01:49,300
+above the surface of the Earth.
+
+32
+00:01:50,010 --> 00:01:55,080
+The satellites are arranged across 6 separate
+orbital planes tilted at approximately
+
+33
+00:01:55,080 --> 00:01:57,280
+55 degrees to the equator.
+
+34
+00:01:57,929 --> 00:02:01,680
+Each orbit takes approximately
+11 hours and 58 minutes,
+
+35
+00:02:02,200 --> 00:02:05,120
+completing 2 full trips
+every sidereal day.
+
+36
+00:02:05,828 --> 00:02:11,000
+The satellites are not spaced at equal
+90-degree intervals along each orbital ring.
+
+37
+00:02:11,710 --> 00:02:14,500
+Instead, their spacing
+varies between 30 degrees,
+
+38
+00:02:15,320 --> 00:02:18,740
+105 degrees, and 120 degrees apart.
+
+39
+00:02:19,587 --> 00:02:24,960
+This deliberate geometry guarantees that
+at least 6 satellites remain visible from
+
+40
+00:02:24,960 --> 00:02:26,280
+almost anywhere on Earth.
+
+41
+00:02:27,021 --> 00:02:32,280
+Day and night, every satellite continually
+broadcasts radio carrier waves down
+
+42
+00:02:32,280 --> 00:02:33,340
+toward the ground below.
+
+43
+00:02:34,136 --> 00:02:39,500
+The transmission contains a unique
+pseudorandom code made of ones and zeros that
+
+44
+00:02:39,500 --> 00:02:40,933
+receivers recognise.
+
+45
+00:02:41,376 --> 00:02:46,260
+It also broadcasts a continuous data
+message containing its exact orbital
+
+46
+00:02:46,260 --> 00:02:48,600
+position and the departure time.
+
+47
+00:02:49,239 --> 00:02:54,500
+This detailed orbital data is called an
+ephemeris and allows receivers to pinpoint
+
+48
+00:02:54,500 --> 00:02:55,300
+the satellite.

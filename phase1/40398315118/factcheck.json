@@ -1,0 +1,37 @@
+{
+ "checked": 65,
+ "supported_first_pass": 61,
+ "fixed": [],
+ "dropped": [
+  {
+   "id": "s01.02",
+   "text": "The surprising reality is that those satellites cannot see you at all.",
+   "problem": "States a factual claim without any cited passages."
+  },
+  {
+   "id": "s01.06",
+   "text": "Many people imagine that satellites in space actively monitor, trace, or track private mobile phones.",
+   "problem": "The cited passage does not mention public beliefs or what people imagine satellites do."
+  },
+  {
+   "id": "s04.05",
+   "text": "An atomic clock measures time by monitoring the resonant frequency of specific atoms.",
+   "problem": ""
+  },
+  {
+   "id": "s04.10",
+   "text": "Clocks in orbit experience weaker gravity and travel at high speeds relative to Earth.",
+   "problem": "The passages mention special and general relativity but do not state that orbiting clocks experience weaker gravity or travel at high speeds relative to Earth."
+  }
+ ],
+ "bad_ids": [],
+ "copied": [
+  {
+   "id": "s04.05",
+   "phrases": [
+    "measures time by monitoring the resonant frequency of"
+   ]
+  }
+ ],
+ "words_after": 880
+}

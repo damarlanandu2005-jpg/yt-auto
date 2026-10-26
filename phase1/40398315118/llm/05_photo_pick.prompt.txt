@@ -1,0 +1,208 @@
+[model] gemini-3.6-flash
+[system]
+
+
+[user]
+Pick the best photo for each slot from its numbered candidates (title | description).
+The photo must clearly show what the slot needs, as a viewer would recognise it. Prefer real photographs over
+diagrams with small text, logos, or maps with dense labels. Avoid close-up faces of private people.
+Do not use the same photo twice. Answer choice = the candidate number as text, or "" if none fits well.
+
+[v003] needs: Close up of a modern smartphone with cellular antennas and screen disconnected from wifi | narration: It operates completely independently of any mobile telephone network or internet connection.
+  wiki:0: Cristina calling | Hello – is that the shy police?
+  wiki:1: Young girl phoning J1 | A young girl phoning on the Pont blanc (bridge) in Mouscron, Belgium.
+  wiki:2: Public USB charging points at Bus Stops in Paris, France | Public USB charging points at Bus Stops in Paris, France
+  wiki:3: Rambutão | Rambutan fruits for sale outdoors, Colatina.
+
+[v004] needs: Hiker using handheld GPS navigation device in a remote mountain wilderness with no cell reception | narration: Even if you turn off mobile data, the system still delivers accurate location and time information.
+  wiki:0: Defense advanced GPS receiver | Staff Sgt. Lucas R. Crumbacker from Waynesboro, Pa., who is assigned to Bravo Company, 392nd Signal Battalion, makes final adjustments to his defense advanced G
+  wiki:1: Defense Advanced GPS Receiver (cropped) | The Defense Advanced GPS Receiver (DAGR). Source: http://gps.losangeles.af.mil/user/products/dagr/DAGR%20Fact%20Sheet.doc
+  wiki:2: Magellan Triton 2000 handheld GPS receiver 01 | The main menu of the Magellan Triton 2000 GPS. The user interface could be controlled via the color touchscreen with a stylus (pictured) or with the physical bu
+  wiki:3: Magellan Triton 2000 handheld GPS receiver 03 | Rear view of the Magellan Triton 2000. This view shows the 2-megapixel camera, built-in speaker grille, and connection port for charging and data. The orange ru
+  wiki:4: Magellan Triton 2000 handheld GPS receiver 02 | The Magellan Triton 2000 was a high-end handheld GPS receiver released around 2007. It was one of the first consumer GPS units to feature a 2.7-inch color touch
+  wiki:5: Missouri Mountain GPS Track | GPS track from a hike up Missouri Mountain
+  wiki:6: 08 Rummana Mountain Trail - Chris Walking Towards the Mountain - panoramio | Rummana Mountain Trail - Chris Walking Towards the Mountain; Rummana Mountain within the Dana Biosphere Reserve in the background
+  wiki:7: 17 Pella Mountain Trail - On Jebel Sabarta - panoramio | 17 Pella Mountain Trail - On Jebel Sabarta
+  wiki:8: 16 Pella Mountain Trail - On Jebel Sabarta - panoramio | 16 Pella Mountain Trail - On Jebel Sabarta
+  wiki:9: 15 Pella Mountain Trail - On Jebel Sabarta - panoramio | 15 Pella Mountain Trail - On Jebel Sabarta
+
+[v005] needs: Internal antenna circuitry and RF receiver chip inside a handheld radio or smartphone | narration: In reality, your mobile phone functions purely as a silent and passive radio receiver.
+  wiki:0: Toshiba Vacuum tube Radio | 1955 AM-only Toshiba vacuum tube radio model 6SC-19, with 5 tubes.
+  wiki:1: Marconi Type 106 crystal radio receiver | Marconi Type 106 radio receiver, a sophisticated crystal radio receiver made from 1915 through 1922 by the American Marconi Co. for use in commercial wireless t
+  wiki:2: Crystal radio.agr | w:Crystal radio receiver with headphones probably from around 1920. Offered for sale at the MIT Flea Market. This was a circuit commonly used in homemade crysta
+  wiki:3: Contactless Payment Card opened to show RF antenna | Expired contactless opened to display contactless system's antenna. Chip is not visible in this image.
+
+[v006] needs: United States Space Force operators inside satellite operations control room at Schriever Space Force Base | narration: The United States Space Force owns the satellite system and operates it through Mission Delta 31.
+  nasa:0: OPALS on the ISS Artist Concept | This artist rendition shows the Optical PAyload for Lasercomm Science OPALS operating from the International Space Station. OPALS was launched to the station fr
+  nasa:1: PUNCH Satellites Solar Array Deployment Test | Crews conduct additional solar array deployment testing for NASA’s PUNCH (Polarimeter to Unify the Corona and Heliosphere) satellites at Astrotech Space Operati
+  nasa:2: PUNCH Satellites Solar Array Deployment Test | Crews conduct additional solar array deployment testing for NASA’s PUNCH (Polarimeter to Unify the Corona and Heliosphere) satellites at Astrotech Space Operati
+  nasa:3: PUNCH Satellites Solar Array Deployment Test | Crews conduct additional solar array deployment testing for NASA’s PUNCH (Polarimeter to Unify the Corona and Heliosphere) satellites at Astrotech Space Operati
+  nasa:4: PUNCH Satellites Solar Array Deployment Test | Crews conduct additional solar array deployment testing for NASA’s PUNCH (Polarimeter to Unify the Corona and Heliosphere) satellites at Astrotech Space Operati
+  nasa:5: PUNCH Satellites Solar Array Deployment Test | Crews conduct additional solar array deployment testing for NASA’s PUNCH (Polarimeter to Unify the Corona and Heliosphere) satellites at Astrotech Space Operati
+  wiki:6: U S Space Force Chief of Space Operations visits Vandenberg Space Force Base (8779702) | U.S. Congressman Salud Carbajal, left, and U.S. Space Force Chief of Space Operations Gen. Chance Saltzman, center, speak with U.S. Space Force 1st Lt. Caleb Be
+  wiki:7: U S Space Force Chief of Space Operations visits Vandenberg Space Force Base (8779703) | U.S. Congressman Salud Carbajal, left, and U.S. Space Force Chief of Space Operations Gen. Chance Saltzman, center, speak with U.S. Space Force 1st Lt. Caleb Be
+  wiki:8: Chief of Space Operations Visits Vandenberg Space Force Base (9765564) | Chief of Space Operations Gen. Chance Saltzman, center, poses with Space Launch Delta 30’s 2nd Range Operations Squadron in their heritage room at Vandenberg Sp
+  wiki:9: Chief of Space Operations Visits Vandenberg Space Force Base (9765633) | Chief of Space Operations Gen. Chance Saltzman, right, receives a mission update from U.S. Space Force Lt. Col. Andrew Singleton, U.S. Space Force 2nd Range Ope
+
+[v007] needs: Exterior or insignia of United States Space Command and military satellite operations building | narration: Although the United States government maintains the constellation,
+  nasa:0: Bolden Glenn Lecture Series | Former United States Marine Corps pilot, astronaut, and United States Sen. John Glenn speaks to those in attendance as he introduces NASA Administrator Charles 
+  nasa:1: Microgravity | Onboard Space Shuttle Columbia (STS-50) payload commander Bornie Dunbar performs life science experiments on crewmember payload specialist Lawrence Delucas in t
+  wiki:2: United States Space Command Establishment Ceremony Program (6893035) | Official program for the establishment ceremony of the United States Space Command.
+  wiki:3: U S Space Command Provisional Headquarters (7804765) | Building 1 at Peterson Space Force Base, Colo. is the provisional headquarters of U.S. Space Command. USSPACECOM conducts operations in, from, and to space to d
+  wiki:4: United States Space Force Combat Forces Command emblem | Combat Forces Command emblem
+  wiki:5: Space Systems Command visits the United States Air Force Academy (9679376) | Senior leaders from U.S. Space Force Space Systems Command (SSC) pose with an outdoor aircraft display during a visit to the United States Air Force Academy on 
+  wiki:6: USSPACECOM Commander, Deputy Commander Meet with ROK Chairman of the Joint Chiefs of Staff | Lt. Gen. Rick Zellmann, U.S. Space Command deputy commander, speaks with Chairman of the Joint Chiefs of Staff of the Republic of Korea Gen. Jin Yong-Sung, duri
+  nasa:7: KENNEDY SPACE CENTER, FLA. - At Vandenberg Air Force Base, Calif., the Pegasus launch vehi | KENNEDY SPACE CENTER, FLA. - At Vandenberg Air Force Base, Calif., the Pegasus launch vehicle is moved into its hangar. The Pegasus will carry the SciSat-1 spac
+  nasa:8: KENNEDY SPACE CENTER, FLA. -  The SciSat-1 spacecraft is uncrated at Vandenberg Air Force  | KENNEDY SPACE CENTER, FLA. - The SciSat-1 spacecraft is uncrated at Vandenberg Air Force Base, Calif. SciSat-1 weighs approximately 330 pounds and will be place
+  nasa:9: KSC-2011-6631 | VANDENBERG AIR FORCE BASE, Calif. -- The environmentally controlled transportation container holding NASA's National Polar-orbiting Operational Environmental Sa
+
+[v008] needs: A surveyor using a commercial GPS receiver unit on a tripod outdoors | narration: anyone with a receiver can freely access it.
+  wiki:0: Cgs01261 - Flickr - NOAA Photo Library | Ensign Patricia Raymond packing out tripod used for GPS antenna on Little Konuji.
+  wiki:1: Geodetic survey instruments 03 | Geodetic survey instruments and workers at Ibayo Marilao station construction site
+  wiki:2: GNSS receiver at dusk among eucalyptus trees | A tripod-mounted GNSS receiver set beneath the moon among eucalyptus trees during an evening survey. Photograph by HR Surveyors.
+
+[v010] needs: Official portrait of President Ronald Reagan in the Oval Office | narration: Civilian access was authorised by President Ronald Reagan
+  wiki:0: Official Portrait of President Reagan 1981 | Official portrait photograph of Ronald Reagan, 1981
+  wiki:1: Ronald Reagan 1985 presidential portrait (cropped) | Official portrait photograph of Ronald Reagan, 1985
+  wiki:2: Ronald Reagan 1981 presidential portrait | Official portrait photograph of Ronald Reagan, 1981
+  wiki:3: Ronald Reagan 1981 presidential portrait (cropped) | Official portrait photograph of Ronald Reagan, 1981
+  wiki:4: Ronald Reagan portrait (color) | Portrait of U.S. President Ronald Reagan
+  wiki:5: Official Portrait of President Ronald Reagan on The Oval Office Patio - DPLA - cc46de0e402 | 
+  wiki:6: President Ronald Reagan in The Oval Office - DPLA - 87df639573ca07cf95894ce24b2ec3bd | 
+  wiki:7: President Reagan and Ron Reagan in the Oval Office - DPLA - b6b2cf129675e3bcfea3216487d49e | 
+  wiki:8: President Reagan shakes hands with Roy Cohn in the Oval Office Jan 18, 1983 | 1-18-1983 President Reagan meeting with Rupert Murdoch and Roy Cohn in the Oval Office
+  wiki:9: President Ronald Reagan during a photo op. with President Desmond Hoyte of Guyana in the O | 
+
+[v011] needs: Korean Air Lines Boeing 747 aircraft in flight or historical archive photo | narration: after an airliner was tragically shot down in 1983.
+  wiki:0: Korean Air Lines, Boeing 747-4B5, HL7402 (14203449478) | Frankfurt Airport
+  wiki:1: Korean Air Lines, Boeing 747-4B5, HL7492 (14338454959) | Frankfurt Airport
+  wiki:2: Korean Air Lines, Boeing 747-8B5, HL7632 | KoreanAir747takeoff
+  wiki:3: Korean Air Lines Boeing 747-230B HL7440 (23339398360) | Honolulu - International / Pearl Harbor-Hickam JB (Hickam AFB) (HNL / PHNL / HIK / PHIK) Hawaii USA 1.1985 First Flight 4.1971 Del. 1971 to Lufthansa (D-ABYD), 
+
+[v012] needs: Close-up of military avionics display showing navigation coordinate readouts | narration: Early civilian signals were intentionally degraded by a policy known as Selective Availability.
+  nasa:0: NASA’s Improved Supersonic Cockpit Display Shows Precise Locations of Sonic Booms | Flight Test Engineer Jacob Schaefer inspects the Cockpit Interactive Sonic Boom Display Avionics, or CISBoomDA, from the cockpit of his F-18 at NASA’s Armstrong
+  nasa:1: Quesst Mission- NASA Test Piot Nils Larson Inspects X-59’s Cockpit | NASA test pilot, Nils Larson, inspects the X-59 cockpit displays and lighting system during system checkouts. The External Vision System (XVS) is displayed on t
+  nasa:2: NASA’s Improved Supersonic Cockpit Display Shows Precise Locations of Sonic Booms | Engineers and researchers at NASA’s Armstrong Flight Research Center monitored the flights, and were able to observe the mapping of the sonic boom carpet from t
+  nasa:3: NASA’s Improved Supersonic Cockpit Display Shows Precise Locations of Sonic Booms | The CISBoomDA display allows the pilot of a supersonic aircraft to monitor the locations of any sonic booms produced, to prevent the aircraft from positioning b
+  nasa:4: F-8 DFBW on-board electronics | The Apollo hardware jammed into the F-8C. The computer is partially visible in the avionics bay at the top of the fuselage behind the cockpit. Note the display 
+  nasa:5: Expedition 25 Soyuz Rollout | The Soyuz TMA-01M spacecraft is raised into vertical position at the launch pad of the Baikonur Cosmodrome, Kazakhstan, Tuesday, Oct. 5, 2010. The TMA-01M is a 
+  wiki:6: SAIL cockpit interior (JSC2011-E-067676) | A close-up view of controls and displays on the forward flight deck of OV-095 in the Shuttle Avionics Integration Laboratory (SAIL) at the Johnson Space Center 
+  wiki:7: SOFIA Boeing 747SP cockpit (after upgrade) | The cockpit of NASA's Stratospheric Observatory for Infrared Astronomy (SOFIA) received an avionics modernization upgrade in 2012 that replaced the outdated avi
+  wiki:8: AERO Friedrichshafen 2018, Friedrichshafen (1X7A4422) | AERO Friedrichshafen 2018
+  wiki:9: NASA’s Improved Supersonic Cockpit Display Shows Precise Locations of Sonic Booms (AFRC201 | Flight Test Engineer Jacob Schaefer inspects the Cockpit Interactive Sonic Boom Display Avionics, or CISBoomDA, from the cockpit of his F-18 at NASA’s Armstrong
+
+[v015] needs: Person holding a modern smartphone displaying a digital map application with blue location dot | narration: Today, modern consumer smartphones can determine a position
+  wiki:0: -2019-01-18 Digital Phone Company, High Street, Cromer | The 'Digital Phone Company' mobile phone shop which is located on High Street in the town of Cromer in the English county of Norfolk in England.
+  wiki:1: Digital Keyboards Synergy | A DK (Digital Keyboards) Synergy. A digital electronic musical instrument from the 1980s. Less than 600 of these were manufactured.
+  wiki:2: Dublin digital phone boxes in 2025.02 | Dublin digital phone boxes
+  wiki:3: Dublin digital phone boxes in 2025.03 | Dublin digital phone boxes
+  wiki:4: Dublin digital phone boxes in 2025.01 | Dublin digital phone boxes
+
+[v018] needs: Artist rendering of a GPS Block IIF or GPS III satellite in orbit above Earth | narration: The space segment of GPS consists
+  wiki:0: GPS Block IIIA | Artist's impression of a GPS Block IIIA satellite in orbit
+  wiki:1: Space Launch Delta 45 Supports Successful GPS III-5 Launch (210617-F-KD758-264) | A Falcon 9 rocket carrying a GPS III-5 satellite into orbit launches from LC-40 at Cape Canaveral Space Force Station, Fla., June 17, 2021. The GPS III satellit
+  wiki:2: GPS III Space Vehicle No 1 departs from Buckley AFB (4679356) | Tech. Sgt. Eugene Mehaffy, Jr., a loadmaster assigned to the 313th Airlift Squadron, secures the very first GPS III satellite, SV-01, named “Vespucci” in honor 
+  wiki:3: GPS III SV 2 Launch (190822-F-ZZ999-101) | A Delta IV carrying the GPS III SV2 satellite lifts off from Cape Canaveral Air Force Station's SLC-37, Aug. 22. The satellite will become part of a 31 satellit
+  wiki:4: GPS III | GPS III SV-01 sits in Lockheed Martin's GPS III Processing facility after its successful core mate. The satellite is currently part of the on-orbit GPS constell
+  wiki:5: GPS Block IIIA (cropped) | Artist's impression of a GPS Block IIIA satellite in orbit
+
+[v020] needs: View of the blue curve of Earth and blackness of space from high orbit | narration: These spacecraft circle our planet in what engineers call medium Earth orbit.
+  nasa:0: Noctilucent clouds illuminated when the sun is below Earth's horizon | iss071e364425 (July 16, 2024) --- Noctilucent clouds, high-altutude clouds visible during the summer months and illuminated when the sun is below Earth's horizo
+  nasa:1: Earth Observation taken by the STS-125 Crew | S125-E-012183 (19 May 2009) --- Earth?s horizon and the blackness of space are featured in this image photographed by an STS-125 crewmember on the Earth-orbitin
+  nasa:2: Earth Observations take by the STS-131 Crew | S131-E-006087 (6 April 2010) --- Earth?s horizon and the blackness of space are featured in this image photographed by an STS-131 crew member on the Earth-orbit
+  nasa:3: iss064e048201 | iss064e048201 (March 27, 2021) --- A Full Moon is pictured above the Earth's horizon as the International Space Station orbited 262 miles over eastern Iran.
+  nasa:4: iss064e048273 | iss064e048273 (March 28, 2021) --- A Full Moon is pictured above the Earth's horizon as the International Space Station orbited 262 miles over China.
+  wiki:5: First photo from space | The first photos taken from space were taken on October 24, 1946 on the sub-orbital U.S.-launched V-2 rocket (flight #13) at White Sands Missile Range. Photos w
+  wiki:6: North America from low orbiting satellite Suomi NPP | A view of most of North America taken from a low orbit of about 826 km altitude. The whole hemisphere is not visible owing to the low orbit, and the horizon is 
+  wiki:7: The Earth seen from Apollo 17 | "The Blue Marble" is a famous photograph of the Earth taken on December 7, 1972, by the crew of the Apollo 17 spacecraft en route to the Moon at a distance of a
+  wiki:8: An orbital sunrise crowns Earth's horizon (iss072e340644) | iss072e340644 (Nov., 18, 2024) --- An orbital sunrise crowns Earth's horizon in this photograph from the International Space Station as it orbited 261 miles abo
+  wiki:9: An orbital sunrise bursts above Earth's horizon (iss073e1068530) | iss073e1068530 (Nov. 13, 2025) --- An orbital sunrise bursts above Earth's horizon and begins to illuminate the atmosphere in this photograph taken at approxima
+
+[v021] needs: GPS satellite in cleanroom testing prior to launch at space facility | narration: Each satellite travels at an altitude of approximately
+  nasa:0: GSFC_20220224_PACE_018778 | Engineering Technicians Alex Schaeffer and Eric Norris assemble the Plankton, Aerosol, Cloud, ocean Ecosystem (PACE) Spacecraft structure in the cleanroom at NA
+  nasa:1: GSFC_20220224_PACE_038025 | The flight propellant tank is visible inside the partially assembled Plankton, Aerosol, Cloud, ocean Ecosystem (PACE) Spacecraft structure in the cleanroom at N
+  wiki:2: Sentinel-2A satellite - On the transportation platform | The ‘payload assembly composite’ is ready to leave the integration facility. Credits: ESA–M. Pedoussaut
+  wiki:3: Sentinel-2A satellite - Securing the assembly to the transportation platform | The ‘payload assembly composite’ being fixed onto a transportation platform. Credits: ESA–M. Pedoussaut
+
+[v023] needs: Diagram or globe model displaying orbital inclination rings encircling the planet | narration: The satellites are arranged across 6 separate orbital
+  wiki:0: TESS test image | This test image from one of the four cameras aboard the Transiting Exoplanet Survey Satellite (TESS) captures a swath of the southern sky along the plane of our
+  wiki:1: PIA12985 M3 & Comet Garradd | This image from the WISE mission was taken on January 2nd, 2010, during the check-out phase, before the start of the WISE survey. It is a mosaic of 3 individual
+  wiki:2: Space sustainability urgency in earth orbits white | An axonometric view displays various Earth orbits, illustrating space debris and active satellites. The diagram includes a separate sheet for each orbit type, d
+  wiki:3: Space sustainability urgency in earth orbits black | An axonometric view displays various Earth orbits, illustrating space debris and active satellites. The diagram includes a separate sheet for each orbit type, d
+
+[v025] needs: High-precision rubidium or cesium atomic clock package built for spaceflight | narration: Each orbit takes approximately 11 hours and 58
+  nasa:0: ELaNa 19 / Venture Class CubeSats - CHOMPTT | The goal of the CHOMPTT mission is to demonstrate new technologies that could be used for navigation and satellite networking in deep space. For future explorer
+  nasa:1: ELaNa 19 / Venture Class CubeSats - CHOMPTT | The goal of the CHOMPTT mission is to demonstrate new technologies that could be used for navigation and satellite networking in deep space. For future explorer
+  nasa:2: ELaNa 19 / Venture Class CubeSats - CHOMPTT | The goal of the CHOMPTT mission is to demonstrate new technologies that could be used for navigation and satellite networking in deep space. For future explorer
+  wiki:3: ESA Galileo Passive Hydrogen Maser | Space Passive Hydrogen Maser used in ESA Galileo satellites as a master clock for an onboard timing system. This atomic clock type uses the ultra stable 1,420,4
+  wiki:4: Time Dilation vs Orbital Height | Depicts the time dilation penis as a function of orbital height relative to a stationary observer on Earth. It is common to consider the total dilation as being
+  wiki:5: HP 5061A Cesium Beam Frequency Standard | One of the actual cesium beam atomic clock units used in the 1960's "flying clocks" experiment the synchronise time around the world. And later in the Hafele–Ke
+
+[v027] needs: Multiple satellites in clean room processing or illustration of satellite orbital spacing | narration: The satellites are not spaced at equal 90-degree intervals along each orbital ring.
+  wiki:0: Defense.gov News Photo 990824-F-2907C-001 | Staff Sgt. Barbara Bozeman, U.S. Air Force, demonstrates the operational check she performed on the hand-held Global Positioning System (GPS) units used by her 
+  wiki:1: Last of the dozen GPS IIF satellites arrive at CCAFS for processing (2223522) | Brig. Gen. Wayne Monteith, 45th Space Wing commander, talks with the members of the quality assurance team range who will process the GPS IIF-12 satellite that 
+  wiki:2: Last of the dozen GPS IIF satellites arrive at CCAFS for processing (2223520) | Brig. Gen. Wayne Monteith, 45th Space Wing commander, poses for a photo with the members of the quality assurance team range who will process the GPS IIF-12 sat
+  wiki:3: Last of the dozen GPS IIF satellites arrive at CCAFS for processing (2223523) | Brig. Gen. Wayne Monteith, 45th Space Wing commander, talks with the members of the quality assurance team range who will process the GPS IIF-12 satellite that 
+  wiki:4: GPS IIF 12 moves to next processing phase toward launch (2386299) | The Air Force's twelfth Global Positioning System (GPS) IIF satellite is encapsulated inside an Atlas V 4-meter payload fairing before being transported to a Un
+  wiki:5: Xona GPS Satellite with Future Ventures' Message (55197804868) | Part of a Xona satellite, destined to fly in space with this message from Future Ventures
+  nasa:6: TDRS-M Liftoff | As the Sun rises at Space Launch Complex 41 at Cape Canaveral Air Force Station in Florida, a United Launch Alliance Atlas V rocket vents liquid oxygen propella
+  nasa:7: TDRS-M Liftoff | As the Sun rises at Space Launch Complex 41 at Cape Canaveral Air Force Station in Florida, a United Launch Alliance Atlas V rocket vents liquid oxygen propella
+  nasa:8: KSC-2013-4313 | CAPE CANAVERAL, Fla. – NASA's TDRS-L satellite after rotation into place inside the Astrotech payload processing facility in Titusville for launch processing. T
+  nasa:9: KSC-2013-4275 | CAPE CANAVERAL, Fla. – A truck hauls NASA's TDRS-L satellite away from the Shuttle Landing Facility at NASA's Kennedy Space Center in Florida to the Astrotech f
+
+[v028] needs: Engineers working on telemetry data and orbital mechanics calculations on screens | narration: Instead, their spacing varies between 30
+  nasa:0: STS-30 JSC Mission Control Center (MCC) activity during OV-104 landing | As STS-30 ends its mission with the landing of Atlantis, Orbiter Vehicle (OV) 104, at Edwards Air Force Base (EAFB), California, flight controllers monitor scre
+  nasa:1: Microgravity | A test cell for the Mechanics of Granular Materials (MGM) experiment is shown in its on-orbit configuration in Spacehab during preparations for STS-89. The twin
+  nasa:2: KSC-98pc1264 | KENNEDY SPACE CENTER, FLA. -- Workers in the Defense Satellite Communications Systems Processing Facility (DPF) at Cape Canaveral Air Station (CCAS) make adjust
+  nasa:3: KSC-98pc1265 | KENNEDY SPACE CENTER, FLA. -- Workers in the Defense Satellite Communications Systems Processing Facility (DPF) at Cape Canaveral Air Station (CCAS) finish inst
+  nasa:4: KSC-98pc1262 | KENNEDY SPACE CENTER, FLA. -- Workers at the Defense Satellite Communications System Processing Facility (DPF), Cape Canaveral Air Station (CCAS), make adjustme
+  nasa:5: KSC-98pc1263 | KENNEDY SPACE CENTER, FLA. -- Workers at the Defense Satellite Communications System Processing Facility (DPF), Cape Canaveral Air Station (CCAS), maneuver the 
+  nasa:6: KSC-98pc1260 | KENNEDY SPACE CENTER, FLA. -- Workers at the Defense Satellite Communications System Processing Facility (DPF), Cape Canaveral Air Station (CCAS), install an io
+  nasa:7: KSC-98pc1261 | KENNEDY SPACE CENTER, FLA. -- Workers at the Defense Satellite Communications System Processing Facility (DPF), Cape Canaveral Air Station (CCAS), attach a stra
+  wiki:8: Satcom, Communication Satellite - GPN-2003-00010 | RCA engineer Joel Bacher adjusts a propulsion thruster on a communication satellite. The thrusters were designed to enable the spacecraft to maintain correct al
+  wiki:9: Flickr - The U.S. Army - Satellite Transportable Terminal setup | Soldiers from the 86th Engineer Support Battalion set up the Satellite Transportable Terminal and Joint Network Node for the Exercise Control Center to be used 
+
+[v030] needs: Night sky with open horizon showing stars and clear visibility across landscape | narration: This deliberate geometry guarantees that at least 6
+  wiki:0: Raw picture of stars in my kampung, At Kepala Batas, Kedah. Very clear night sky and moon  | Raw picture of stars in my kampung, At Kepala Batas, Kedah. Very clear night sky and moon below horizon
+  wiki:1: Comet Tsuchinshan–ATLAS, in the night sky over Tuntorp 4 | Comet C-2023 A3, Tsuchinshan–ATLAS, in the night sky over Tuntorp, Brastad, Lysekil Municipality, Sweden. The trees were illuminated by a waxing crescent moon r
+  wiki:2: A watercolour sky (potw2114a) | The Atacama Desert in Chile is one of the darkest and most peaceful astronomical sites on Earth — and has, as a result, proven to be the perfect location for ES
+  wiki:3: Starry night sky over rural Bavarian Swabia with a vertical light beam and light pollution | A star-filled night sky above a flat rural landscape with tree silhouettes in Bavarian Swabia, southwest of Augsburg, where a bright vertical beam of light rise
+  wiki:4: The sky of Starry Night Over the Rhone | 
+  wiki:5: Morning Glory copia | Shot taken during one of my trips in summer 2021. I woke up at 6.00 a.m. after an amazing starry night spent at Serra del Prete peak (about 2200m a.s.l.) watchi
+  wiki:6: Black and white view of the Milky Way and starry night sky over Great Basin National Park, | Black and white view of the Milky Way and starry night sky over Great Basin National Park, Nevada. Keywords: night sky; night skies; sky; night; dark sky; dark 
+  wiki:7: Neuss (DE), Rhein -- 2023 -- 0106 | Starry sky over the Rhine near Uedesheim, Neuss, Germany
+  wiki:8: Bischofswiesen (DE), Watzmann -- 2024 -- 0048 | Watzmann at night with a starry sky, photographed from Bischofswiesen in Berchtesgadener Land, Germany
+
+[v032] needs: Satellite antenna array pointing towards Earth in space | narration: Day and night, every satellite continually broadcasts radio
+  nasa:0: STS-43 TDRS-E & IUS over the Pacific Ocean after deployment from OV-104's PLB | STS043-601-033 (2 Aug 1991) --- The Tracking and Data Relay Satellite (TDRS-E), is seen almost as a silhouette in this 70mm image. The TDRS spacecraft was captu
+  nasa:1: SWOT Orbiting Earth (Illustration) | This illustration depicts the Surface Water and Ocean Topography (SWOT) satellite with solar arrays fully deployed. Measuring 48.8 feet (14.9 meters) in length 
+  nasa:2: STS-26 Discovery, Orbiter Vehicle (OV) 103, IUS / TDRS-C deployment | During STS-26, inertial upper stage (IUS) with tracking and data relay satellite C (TDRS-C) located in the payload bay (PLB) of Discovery, Orbiter Vehicle (OV) 
+  nasa:3: SWOT KaRIn Antenna Deployment (Animation) | This video animation shows antennas for the Ka-band Radar Interferometer (KaRIn) instrument deploying on the Surface Water and Ocean Topography (SWOT) satellite
+  nasa:4: SWOT in Orbit (Illustration) | The international Surface Water and Ocean Topography (SWOT) satellite is shown in orbit over Earth in this illustration, with sunlight glinting off one of its s
+  nasa:5: STS-43 TDRS-E / IUS is deployed from OV-104's payload bay (PLB) | STS043-72-020 (2 Aug 1991) --- The Tracking and Data Relay Satellite (TDRS-E), is loosened from its restraint device and begins to leave the payload bay of the 
+  wiki:6: MTG combined antenna ESA15748925 | A UHF and L-band combination patch-array antenna being tested inside ESA’s Hertz chamber in September 2015. This prototype antenna is positioned on a mockup of 
+  wiki:7: MTG combined antenna ESA15748925 (cropped) | A UHF and L-band combination patch-array antenna being tested inside ESA’s Hertz chamber in September 2015. This prototype antenna is positioned on a mockup of 
+  wiki:8: Juice images Earth during lunar-Earth flyby ESA500748 | During the first step of humankind’s first-ever lunar-Earth flyby, ESA’s Jupiter Icy Moons Explorer (Juice) captured this stunning view of Earth. The image cove
+  wiki:9: Satellite reflections over CTA Site (potw1902a) | Hundreds of astronomical objects are visible in this ESO Picture of the Week, including star clusters, nebulae, dust clouds, and other galaxies — most notably t
+
+[v033] needs: Ground satellite receiving dish or radio dish tracking passing satellites | narration: carrier waves down toward the ground below.
+  nasa:0: KSC-00pp0710 | At the Spacecraft Assembly and Encapsulation Facility (SAEF-2), a crane lowers the crated Tracking and Data Relay Satellite (TDRS-H) onto the ground. It was tra
+  nasa:1: KSC-2012-2707 | CAPE CANAVERAL, Fla. – In Orbiter Processing Facility-2 at NASA's Kennedy Space Center in Florida, operations are under way to stow a Ku-band antenna in space s
+  nasa:2: KSC-2012-2708 | CAPE CANAVERAL, Fla. – In Orbiter Processing Facility-2 at NASA's Kennedy Space Center in Florida, a Ku-band antenna is being stowed in space shuttle Endeavour’
+  nasa:3: KSC-2012-2714 | CAPE CANAVERAL, Fla. – In Orbiter Processing Facility-2 at NASA's Kennedy Space Center in Florida, a Ku-band antenna is stowed at the forward end of space shutt
+  nasa:4: KSC-2012-2706 | CAPE CANAVERAL, Fla. – In Orbiter Processing Facility-2 at NASA's Kennedy Space Center in Florida, stowage of a Ku-band antenna at the forward end of space shut
+  nasa:5: KSC-2012-2713 | CAPE CANAVERAL, Fla. – In Orbiter Processing Facility-2 at NASA's Kennedy Space Center in Florida, a Ku-band antenna is stowed in space shuttle Endeavour’s payl
+  wiki:6: ATS-3 Satellite VHF Ground Station Antenna | ATS-3 Satellite VHF Ground Station Antenna on the roof of the American Red Cross Office in San Francisco, CA.
+  wiki:7: Salzburg ground satellite antenna | Salzburg ground satellite antenna
+  wiki:8: Satellite antenna at Wallops Island, Virginia (2268-464) | Satellite antenna at Wallops Island, Virginia
+  wiki:9: Satellite antenna at Wallops Island, Virginia (2268-465) | Satellite antenna at Wallops Island, Virginia
+
+[v034] needs: Oscilloscope or spectrum analyzer displaying digital binary radio waveform signals | narration: The transmission contains a unique pseudorandom code made
+  wiki:0: Embedded World 2014 Oszilloskop und Funktionsgenerator | Embedded World 2014: Oscilloscope HMO 3004 and Arbitrary Waveform Generator (AWG) HMF 2550 manufactured from HAMEG/Rhode und Schwarz
+  wiki:1: Tektronix digitizing plug-in 7D20 for 7000 mainframe oscilloscope | The 7D20 uses an analog shift register (CCD) for high-speed signal acquisition, and then digitizes the stored analog signal at a lower speed. This design allows
+  wiki:2: Tektronix digitizing plug-in 7D20 for 7000 series analog oscilloscopes | The 7D20 uses an analog shift register (CCD) for high-speed signal acquisition, and then digitizes the stored analog signal at a lower speed. This design allows
+  wiki:3: Embedded World 2014 Oszilloskop und Funktionsgenerator (cropped) | Embedded World 2014: Oscilloscope HMO 3004 and Arbitrary Waveform Generator (AWG) HMF 2550 manufactured from HAMEG/Rhode und Schwarz
+  wiki:4: Digital Oscilloscope | This is a device that is used to observe the waveforms of different signals.
+
+[v036] needs: Close-up of satellite telemetry electronic components and microwave transmitters | narration: It also broadcasts a continuous data message containing
+  nasa:0: KSC-99pp1096 | In the Payload Hazardous Servicing Facility, four STS-103 crew members check the Flight Support System avionics to be used for repair and upgrade of the Hubble 

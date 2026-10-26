@@ -1,0 +1,896 @@
+[
+ {
+  "scene": "s01",
+  "start": 0.0,
+  "text": "Have you ever wondered how navigation satellites high above Earth can watch your every step?",
+  "sentences": [
+   "s01.01"
+  ],
+  "id": "v001",
+  "end": 5.775,
+  "seconds": 5.78,
+  "scene_start": true,
+  "kind": "card",
+  "card": {
+   "type": "title",
+   "title": "How GPS Knows Where You Are",
+   "subtitle": "Without tracking your device"
+  }
+ },
+ {
+  "scene": "s01",
+  "start": 5.775,
+  "text": "The Global Positioning System does not require your mobile phone to transmit any data.",
+  "sentences": [
+   "s01.03"
+  ],
+  "id": "v002",
+  "end": 11.637,
+  "seconds": 5.86,
+  "scene_start": false,
+  "kind": "card",
+  "card": {
+   "type": "compare",
+   "title": "How Your Phone Works with GPS",
+   "left_title": "Two-Way Systems",
+   "left_points": [
+    "Transmits signals",
+    "Networks track location"
+   ],
+   "right_title": "GPS Operation",
+   "right_points": [
+    "Transmits no data",
+    "Receiver only listens"
+   ]
+  }
+ },
+ {
+  "scene": "s01",
+  "start": 11.637,
+  "text": "It operates completely independently of any mobile telephone network or internet connection.",
+  "sentences": [
+   "s01.04"
+  ],
+  "id": "v003",
+  "end": 18.145,
+  "seconds": 6.51,
+  "scene_start": false,
+  "kind": "photo",
+  "photo_subject": "Close up of a modern smartphone with cellular antennas and screen disconnected from wifi",
+  "photo_queries": [
+   "smartphone electronics antenna",
+   "mobile phone outdoors"
+  ],
+  "card": {
+   "type": "bullets",
+   "title": "Completely Independent",
+   "items": [
+    "No cellular network needed",
+    "No internet connection",
+    "Operates everywhere"
+   ]
+  }
+ },
+ {
+  "scene": "s01",
+  "start": 18.145,
+  "text": "Even if you turn off mobile data, the system still delivers accurate location and time information.",
+  "sentences": [
+   "s01.05"
+  ],
+  "id": "v004",
+  "end": 24.96,
+  "seconds": 6.82,
+  "scene_start": false,
+  "kind": "photo",
+  "photo_subject": "Hiker using handheld GPS navigation device in a remote mountain wilderness with no cell reception",
+  "photo_queries": [
+   "handheld GPS receiver",
+   "hiking GPS mountain"
+  ],
+  "card": {
+   "type": "bullets",
+   "title": "Offline Reliability",
+   "items": [
+    "Mobile data switched off",
+    "Accurate location intact",
+    "Precise time delivered"
+   ]
+  }
+ },
+ {
+  "scene": "s01",
+  "start": 24.96,
+  "text": "In reality, your mobile phone functions purely as a silent and passive radio receiver.",
+  "sentences": [
+   "s01.07"
+  ],
+  "id": "v005",
+  "end": 31.482,
+  "seconds": 6.52,
+  "scene_start": false,
+  "kind": "photo",
+  "photo_subject": "Internal antenna circuitry and RF receiver chip inside a handheld radio or smartphone",
+  "photo_queries": [
+   "radio receiver circuit",
+   "internal antenna chip"
+  ],
+  "card": {
+   "type": "bullets",
+   "title": "Passive Radio Receiver",
+   "items": [
+    "Never transmits",
+    "Listens like FM radio",
+    "Total privacy by design"
+   ]
+  }
+ },
+ {
+  "scene": "s01",
+  "start": 31.482,
+  "text": "The United States Space Force owns the satellite system and operates it through Mission Delta 31.",
+  "sentences": [
+   "s01.08"
+  ],
+  "id": "v006",
+  "end": 38.161,
+  "seconds": 6.68,
+  "scene_start": false,
+  "kind": "photo",
+  "photo_subject": "United States Space Force operators inside satellite operations control room at Schriever Space Force Base",
+  "photo_queries": [
+   "Space Force operations",
+   "Schriever AFB operations center"
+  ],
+  "card": {
+   "type": "bullets",
+   "title": "System Operators",
+   "items": [
+    "US Space Force",
+    "Space Delta 31",
+    "24/7 constellation control"
+   ]
+  }
+ },
+ {
+  "scene": "s01",
+  "start": 38.161,
+  "text": "Although the United States government maintains the constellation,",
+  "sentences": [
+   "s01.09"
+  ],
+  "id": "v007",
+  "end": 41.553,
+  "seconds": 3.39,
+  "scene_start": false,
+  "kind": "photo",
+  "photo_subject": "Exterior or insignia of United States Space Command and military satellite operations building",
+  "photo_queries": [
+   "United States Space Command",
+   "Space Force satellite control"
+  ],
+  "card": {
+   "type": "title",
+   "title": "Maintained by US Government",
+   "subtitle": "Global public utility"
+  }
+ },
+ {
+  "scene": "s01",
+  "start": 41.553,
+  "text": "anyone with a receiver can freely access it.",
+  "sentences": [
+   "s01.09"
+  ],
+  "id": "v008",
+  "end": 45.397,
+  "seconds": 3.84,
+  "scene_start": false,
+  "kind": "photo",
+  "photo_subject": "A surveyor using a commercial GPS receiver unit on a tripod outdoors",
+  "photo_queries": [
+   "GPS surveyor antenna",
+   "GNSS survey tripod"
+  ],
+  "card": {
+   "type": "bullets",
+   "title": "Open Access",
+   "items": [
+    "Free for anyone",
+    "No account needed",
+    "Worldwide availability"
+   ]
+  }
+ },
+ {
+  "scene": "s01",
+  "start": 45.397,
+  "text": "The system was originally created for military use before being opened to civilians across the globe.",
+  "sentences": [
+   "s01.10"
+  ],
+  "id": "v009",
+  "end": 52.103,
+  "seconds": 6.71,
+  "scene_start": false,
+  "kind": "photo",
+  "photo_subject": "Historical military GPS receiver unit or early backpack field equipment from the late 1970s or 1980s",
+  "photo_queries": [
+   "military GPS receiver vintage",
+   "early GPS equipment military"
+  ],
+  "card": {
+   "type": "bullets",
+   "title": "Military Origins",
+   "items": [
+    "Designed for defense",
+    "Naval and aerial guidance",
+    "Opened globally later"
+   ]
+  }
+ },
+ {
+  "scene": "s01",
+  "start": 52.103,
+  "text": "Civilian access was authorised by President Ronald Reagan",
+  "sentences": [
+   "s01.11"
+  ],
+  "id": "v010",
+  "end": 56.054529411764705,
+  "seconds": 3.95,
+  "scene_start": false,
+  "kind": "photo",
+  "photo_subject": "Official portrait of President Ronald Reagan in the Oval Office",
+  "photo_queries": [
+   "Ronald Reagan portrait",
+   "President Reagan Oval Office"
+  ],
+  "card": {
+   "type": "title",
+   "title": "Civilian Access Authorized",
+   "subtitle": "Directive by President Ronald Reagan"
+  }
+ },
+ {
+  "scene": "s01",
+  "start": 56.054529411764705,
+  "text": "after an airliner was tragically shot down in 1983.",
+  "sentences": [
+   "s01.11"
+  ],
+  "id": "v011",
+  "end": 60.978,
+  "seconds": 4.92,
+  "scene_start": false,
+  "kind": "photo",
+  "photo_subject": "Korean Air Lines Boeing 747 aircraft in flight or historical archive photo",
+  "photo_queries": [
+   "Boeing 747 airliner vintage",
+   "Korean Air Lines 747"
+  ],
+  "card": {
+   "type": "stat",
+   "title": "Historical Catalyst",
+   "value": "1983",
+   "label": "Tragic airliner shootdown prompted civilian release"
+  }
+ },
+ {
+  "scene": "s01",
+  "start": 60.978,
+  "text": "Early civilian signals were intentionally degraded by a policy known as Selective Availability.",
+  "sentences": [
+   "s01.12"
+  ],
+  "id": "v012",
+  "end": 67.753,
+  "seconds": 6.77,
+  "scene_start": false,
+  "kind": "photo",
+  "photo_subject": "Close-up of military avionics display showing navigation coordinate readouts",
+  "photo_queries": [
+   "avionics display cockpit",
+   "GPS navigation screen vintage"
+  ],
+  "card": {
+   "type": "title",
+   "title": "Selective Availability",
+   "subtitle": "Intentional signal degradation for civilians"
+  }
+ },
+ {
+  "scene": "s01",
+  "start": 67.753,
+  "text": "This deliberate error degraded civilian accuracy to roughly",
+  "sentences": [
+   "s01.13"
+  ],
+  "id": "v013",
+  "end": 71.64852941176471,
+  "seconds": 3.9,
+  "scene_start": false,
+  "kind": "photo",
+  "photo_subject": "Early consumer GPS navigation unit with monochrome LCD showing map error radius",
+  "photo_queries": [
+   "early Garmin GPS receiver",
+   "handheld GPS unit vintage"
+  ],
+  "card": {
+   "type": "title",
+   "title": "Deliberate civilian error",
+   "subtitle": "Added noise to satellite signals"
+  }
+ },
+ {
+  "scene": "s01",
+  "start": 71.64852941176471,
+  "text": "100 metres until the policy was ended in 2000.",
+  "sentences": [
+   "s01.13"
+  ],
+  "id": "v014",
+  "end": 76.485,
+  "seconds": 4.84,
+  "scene_start": false,
+  "kind": "card",
+  "card": {
+   "type": "stat",
+   "title": "Selective Availability Accuracy",
+   "value": "100 m",
+   "label": "Civilian positioning error",
+   "note": "Policy discontinued in May 2000"
+  }
+ },
+ {
+  "scene": "s01",
+  "start": 76.485,
+  "text": "Today, modern consumer smartphones can determine a position",
+  "sentences": [
+   "s01.14"
+  ],
+  "id": "v015",
+  "end": 80.31700000000001,
+  "seconds": 3.83,
+  "scene_start": false,
+  "kind": "photo",
+  "photo_subject": "Person holding a modern smartphone displaying a digital map application with blue location dot",
+  "photo_queries": [
+   "smartphone navigation map screen",
+   "phone digital map location"
+  ],
+  "card": {
+   "type": "title",
+   "title": "Modern Smartphones",
+   "subtitle": "Everyday precision navigation"
+  }
+ },
+ {
+  "scene": "s01",
+  "start": 80.31700000000001,
+  "text": "to within 4.9 metres or even better.",
+  "sentences": [
+   "s01.14"
+  ],
+  "id": "v016",
+  "end": 85.184,
+  "seconds": 4.87,
+  "scene_start": false,
+  "kind": "card",
+  "card": {
+   "type": "bars",
+   "title": "Civilian Accuracy Comparison",
+   "labels": [
+    "Selective Availability",
+    "Modern Smartphone"
+   ],
+   "values": [
+    100,
+    4.9
+   ],
+   "unit": "m"
+  }
+ },
+ {
+  "scene": "s02",
+  "start": 85.184,
+  "text": "To understand how your device knows its place, we must look up into orbit.",
+  "sentences": [
+   "s02.01"
+  ],
+  "id": "v017",
+  "end": 90.043,
+  "seconds": 4.86,
+  "scene_start": true,
+  "kind": "card",
+  "card": {
+   "type": "title",
+   "title": "Constellation of Orbiting Clocks",
+   "subtitle": "Looking up into medium Earth orbit"
+  }
+ },
+ {
+  "scene": "s02",
+  "start": 90.043,
+  "text": "The space segment of GPS consists",
+  "sentences": [
+   "s02.02"
+  ],
+  "id": "v018",
+  "end": 93.07023076923078,
+  "seconds": 3.03,
+  "scene_start": false,
+  "kind": "photo",
+  "photo_subject": "Artist rendering of a GPS Block IIF or GPS III satellite in orbit above Earth",
+  "photo_queries": [
+   "GPS III satellite orbit",
+   "GPS satellite rendering NASA"
+  ],
+  "card": {
+   "type": "title",
+   "title": "The Space Segment",
+   "subtitle": "Constellation of navigation satellites"
+  }
+ },
+ {
+  "scene": "s02",
+  "start": 93.07023076923078,
+  "text": "of between 24 and 32 operational satellites.",
+  "sentences": [
+   "s02.02"
+  ],
+  "id": "v019",
+  "end": 97.056,
+  "seconds": 3.99,
+  "scene_start": false,
+  "kind": "card",
+  "card": {
+   "type": "stat",
+   "title": "Active Constellation",
+   "value": "24 - 32",
+   "label": "Operational satellites in orbit"
+  }
+ },
+ {
+  "scene": "s02",
+  "start": 97.056,
+  "text": "These spacecraft circle our planet in what engineers call medium Earth orbit.",
+  "sentences": [
+   "s02.03"
+  ],
+  "id": "v020",
+  "end": 102.222,
+  "seconds": 5.17,
+  "scene_start": false,
+  "kind": "photo",
+  "photo_subject": "View of the blue curve of Earth and blackness of space from high orbit",
+  "photo_queries": [
+   "Earth horizon space orbit",
+   "Earth view from orbit NASA"
+  ],
+  "card": {
+   "type": "bullets",
+   "title": "Medium Earth Orbit",
+   "items": [
+    "Above low Earth orbit",
+    "Below geostationary belt",
+    "Predictable global coverage"
+   ]
+  }
+ },
+ {
+  "scene": "s02",
+  "start": 102.222,
+  "text": "Each satellite travels at an altitude of approximately",
+  "sentences": [
+   "s02.04"
+  ],
+  "id": "v021",
+  "end": 105.8375,
+  "seconds": 3.62,
+  "scene_start": false,
+  "kind": "photo",
+  "photo_subject": "GPS satellite in cleanroom testing prior to launch at space facility",
+  "photo_queries": [
+   "GPS satellite cleanroom",
+   "satellite assembly cleanroom"
+  ],
+  "card": {
+   "type": "title",
+   "title": "Orbital Altitude",
+   "subtitle": "High above Earth atmosphere"
+  }
+ },
+ {
+  "scene": "s02",
+  "start": 105.8375,
+  "text": "20,200 kilometres above the surface of the Earth.",
+  "sentences": [
+   "s02.04"
+  ],
+  "id": "v022",
+  "end": 110.01,
+  "seconds": 4.17,
+  "scene_start": false,
+  "kind": "card",
+  "card": {
+   "type": "stat",
+   "title": "Orbital Altitude",
+   "value": "20,200 km",
+   "label": "Above Earth's surface"
+  }
+ },
+ {
+  "scene": "s02",
+  "start": 110.01,
+  "text": "The satellites are arranged across 6 separate orbital",
+  "sentences": [
+   "s02.05"
+  ],
+  "id": "v023",
+  "end": 113.51729411764705,
+  "seconds": 3.51,
+  "scene_start": false,
+  "kind": "photo",
+  "photo_subject": "Diagram or globe model displaying orbital inclination rings encircling the planet",
+  "photo_queries": [
+   "satellite constellation orbital planes",
+   "GPS constellation diagram"
+  ],
+  "card": {
+   "type": "stat",
+   "title": "Orbital Planes",
+   "value": "6",
+   "label": "Evenly spaced orbital rings"
+  }
+ },
+ {
+  "scene": "s02",
+  "start": 113.51729411764705,
+  "text": "planes tilted at approximately 55 degrees to the equator.",
+  "sentences": [
+   "s02.05"
+  ],
+  "id": "v024",
+  "end": 117.929,
+  "seconds": 4.41,
+  "scene_start": false,
+  "kind": "card",
+  "card": {
+   "type": "stat",
+   "title": "Orbital Inclination",
+   "value": "55°",
+   "label": "Tilt relative to Earth's equator"
+  }
+ },
+ {
+  "scene": "s02",
+  "start": 117.929,
+  "text": "Each orbit takes approximately 11 hours and 58",
+  "sentences": [
+   "s02.06"
+  ],
+  "id": "v025",
+  "end": 121.6255,
+  "seconds": 3.7,
+  "scene_start": false,
+  "kind": "photo",
+  "photo_subject": "High-precision rubidium or cesium atomic clock package built for spaceflight",
+  "photo_queries": [
+   "atomic clock satellite space",
+   "cesium atomic clock unit"
+  ],
+  "card": {
+   "type": "stat",
+   "title": "Orbital Period",
+   "value": "11 h 58 m",
+   "label": "Time to complete one orbit"
+  }
+ },
+ {
+  "scene": "s02",
+  "start": 121.6255,
+  "text": "minutes, completing 2 full trips every sidereal day.",
+  "sentences": [
+   "s02.06"
+  ],
+  "id": "v026",
+  "end": 125.828,
+  "seconds": 4.2,
+  "scene_start": false,
+  "kind": "card",
+  "card": {
+   "type": "bullets",
+   "title": "Daily Trajectory",
+   "items": [
+    "11h 58m per orbit",
+    "2 full trips per sidereal day",
+    "Repeating ground tracks"
+   ]
+  }
+ },
+ {
+  "scene": "s02",
+  "start": 125.828,
+  "text": "The satellites are not spaced at equal 90-degree intervals along each orbital ring.",
+  "sentences": [
+   "s02.07"
+  ],
+  "id": "v027",
+  "end": 131.71,
+  "seconds": 5.88,
+  "scene_start": false,
+  "kind": "photo",
+  "photo_subject": "Multiple satellites in clean room processing or illustration of satellite orbital spacing",
+  "photo_queries": [
+   "GPS satellites manufacturing",
+   "satellite constellation array"
+  ],
+  "card": {
+   "type": "bullets",
+   "title": "Non-Uniform Spacing",
+   "items": [
+    "Not spaced at equal 90° intervals",
+    "Optimized to prevent dead zones",
+    "Calculated for signal redundancy"
+   ]
+  }
+ },
+ {
+  "scene": "s02",
+  "start": 131.71,
+  "text": "Instead, their spacing varies between 30",
+  "sentences": [
+   "s02.08"
+  ],
+  "id": "v028",
+  "end": 135.12907692307692,
+  "seconds": 3.42,
+  "scene_start": false,
+  "kind": "photo",
+  "photo_subject": "Engineers working on telemetry data and orbital mechanics calculations on screens",
+  "photo_queries": [
+   "orbital mechanics engineers screens",
+   "satellite control center engineers"
+  ],
+  "card": {
+   "type": "title",
+   "title": "Varied Orbital Spacing",
+   "subtitle": "Asymmetric orbital geometry"
+  }
+ },
+ {
+  "scene": "s02",
+  "start": 135.12907692307692,
+  "text": "degrees, 105 degrees, and 120 degrees apart.",
+  "sentences": [
+   "s02.08"
+  ],
+  "id": "v029",
+  "end": 139.587,
+  "seconds": 4.46,
+  "scene_start": false,
+  "kind": "card",
+  "card": {
+   "type": "bullets",
+   "title": "Satellite Spacing Along Planes",
+   "items": [
+    "30 degrees apart",
+    "105 degrees apart",
+    "120 degrees apart"
+   ]
+  }
+ },
+ {
+  "scene": "s02",
+  "start": 139.587,
+  "text": "This deliberate geometry guarantees that at least 6",
+  "sentences": [
+   "s02.09"
+  ],
+  "id": "v030",
+  "end": 143.0135,
+  "seconds": 3.43,
+  "scene_start": false,
+  "kind": "photo",
+  "photo_subject": "Night sky with open horizon showing stars and clear visibility across landscape",
+  "photo_queries": [
+   "night sky open horizon",
+   "starry sky landscape panorama"
+  ],
+  "card": {
+   "type": "title",
+   "title": "Global Coverage Guarantee",
+   "subtitle": "Engineered constellation geometry"
+  }
+ },
+ {
+  "scene": "s02",
+  "start": 143.0135,
+  "text": "satellites remain visible from almost anywhere on Earth.",
+  "sentences": [
+   "s02.09"
+  ],
+  "id": "v031",
+  "end": 147.021,
+  "seconds": 4.01,
+  "scene_start": false,
+  "kind": "card",
+  "card": {
+   "type": "stat",
+   "title": "Constellation Visibility",
+   "value": "≥ 6",
+   "label": "Satellites visible from almost anywhere"
+  }
+ },
+ {
+  "scene": "s02",
+  "start": 147.021,
+  "text": "Day and night, every satellite continually broadcasts radio",
+  "sentences": [
+   "s02.10"
+  ],
+  "id": "v032",
+  "end": 150.5554,
+  "seconds": 3.53,
+  "scene_start": false,
+  "kind": "photo",
+  "photo_subject": "Satellite antenna array pointing towards Earth in space",
+  "photo_queries": [
+   "satellite antenna array Earth",
+   "communications satellite dish space"
+  ],
+  "card": {
+   "type": "bullets",
+   "title": "Continuous Broadcast",
+   "items": [
+    "24 hours a day",
+    "L-band radio frequencies",
+    "Constant transmission"
+   ]
+  }
+ },
+ {
+  "scene": "s02",
+  "start": 150.5554,
+  "text": "carrier waves down toward the ground below.",
+  "sentences": [
+   "s02.10"
+  ],
+  "id": "v033",
+  "end": 154.136,
+  "seconds": 3.58,
+  "scene_start": false,
+  "kind": "photo",
+  "photo_subject": "Ground satellite receiving dish or radio dish tracking passing satellites",
+  "photo_queries": [
+   "satellite ground station antenna",
+   "parabolic antenna tracking station"
+  ],
+  "card": {
+   "type": "bullets",
+   "title": "Radio Carrier Waves",
+   "items": [
+    "Broadcast down to Earth",
+    "Penetrate clouds and weather",
+    "Received by tiny phone antennas"
+   ]
+  }
+ },
+ {
+  "scene": "s02",
+  "start": 154.136,
+  "text": "The transmission contains a unique pseudorandom code made",
+  "sentences": [
+   "s02.11"
+  ],
+  "id": "v034",
+  "end": 157.76106666666666,
+  "seconds": 3.63,
+  "scene_start": false,
+  "kind": "photo",
+  "photo_subject": "Oscilloscope or spectrum analyzer displaying digital binary radio waveform signals",
+  "photo_queries": [
+   "oscilloscope digital signal waveform",
+   "binary signal spectrum analyzer"
+  ],
+  "card": {
+   "type": "bullets",
+   "title": "Signal Structure",
+   "items": [
+    "Pseudorandom noise code",
+    "Unique to each satellite",
+    "Identifiable binary pattern"
+   ]
+  }
+ },
+ {
+  "scene": "s02",
+  "start": 157.76106666666666,
+  "text": "of ones and zeros that receivers recognise.",
+  "sentences": [
+   "s02.11"
+  ],
+  "id": "v035",
+  "end": 161.376,
+  "seconds": 3.61,
+  "scene_start": false,
+  "kind": "card",
+  "card": {
+   "type": "bullets",
+   "title": "Pseudorandom Code",
+   "items": [
+    "Sequence of ones and zeros",
+    "Recognized by receivers",
+    "Allows signal timing"
+   ]
+  }
+ },
+ {
+  "scene": "s02",
+  "start": 161.376,
+  "text": "It also broadcasts a continuous data message containing",
+  "sentences": [
+   "s02.12"
+  ],
+  "id": "v036",
+  "end": 165.07049999999998,
+  "seconds": 3.69,
+  "scene_start": false,
+  "kind": "photo",
+  "photo_subject": "Close-up of satellite telemetry electronic components and microwave transmitters",
+  "photo_queries": [
+   "satellite electronics transmitter",
+   "spacecraft avionics transmitter"
+  ],
+  "card": {
+   "type": "title",
+   "title": "Data Message",
+   "subtitle": "Continuous broadcast to Earth"
+  }
+ },
+ {
+  "scene": "s02",
+  "start": 165.07049999999998,
+  "text": "its exact orbital position and the departure time.",
+  "sentences": [
+   "s02.12"
+  ],
+  "id": "v037",
+  "end": 169.239,
+  "seconds": 4.17,
+  "scene_start": false,
+  "kind": "card",
+  "card": {
+   "type": "bullets",
+   "title": "Broadcast Message Data",
+   "items": [
+    "Exact satellite position",
+    "Precise departure timestamp",
+    "Clock correction parameters"
+   ]
+  }
+ },
+ {
+  "scene": "s02",
+  "start": 169.239,
+  "text": "This detailed orbital data is called an ephemeris and allows receivers to pinpoint the satellite.",
+  "sentences": [
+   "s02.13"
+  ],
+  "id": "v038",
+  "end": 176.970667,
+  "seconds": 7.73,
+  "scene_start": false,
+  "kind": "card",
+  "card": {
+   "type": "flow",
+   "title": "How Ephemeris Works",
+   "steps": [
+    "Satellite transmits ephemeris",
+    "Phone decodes orbital parameters",
+    "Phone calculates exact satellite position"
+   ]
+  }
+ }
+]

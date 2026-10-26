@@ -1,0 +1,194 @@
+{
+ "sentences": [
+  {
+   "id": "s01.01",
+   "scene": "s01",
+   "text": "Have you ever wondered how navigation satellites high above Earth can watch your every step?",
+   "start": 0.028,
+   "end": 5.281
+  },
+  {
+   "id": "s01.03",
+   "scene": "s01",
+   "text": "The Global Positioning System does not require your mobile phone to transmit any data.",
+   "start": 5.775,
+   "end": 11.169
+  },
+  {
+   "id": "s01.04",
+   "scene": "s01",
+   "text": "It operates completely independently of any mobile telephone network or internet connection.",
+   "start": 11.637,
+   "end": 17.662
+  },
+  {
+   "id": "s01.05",
+   "scene": "s01",
+   "text": "Even if you turn off mobile data, the system still delivers accurate location and time information.",
+   "start": 18.145,
+   "end": 24.486
+  },
+  {
+   "id": "s01.07",
+   "scene": "s01",
+   "text": "In reality, your mobile phone functions purely as a silent and passive radio receiver.",
+   "start": 24.96,
+   "end": 30.993
+  },
+  {
+   "id": "s01.08",
+   "scene": "s01",
+   "text": "The United States Space Force owns the satellite system and operates it through Mission Delta 31.",
+   "start": 31.482,
+   "end": 37.699
+  },
+  {
+   "id": "s01.09",
+   "scene": "s01",
+   "text": "Although the United States government maintains the constellation, anyone with a receiver can freely access it.",
+   "start": 38.161,
+   "end": 44.945
+  },
+  {
+   "id": "s01.10",
+   "scene": "s01",
+   "text": "The system was originally created for military use before being opened to civilians across the globe.",
+   "start": 45.397,
+   "end": 51.63
+  },
+  {
+   "id": "s01.11",
+   "scene": "s01",
+   "text": "Civilian access was authorised by President Ronald Reagan after an airliner was tragically shot down in 1983.",
+   "start": 52.103,
+   "end": 60.5
+  },
+  {
+   "id": "s01.12",
+   "scene": "s01",
+   "text": "Early civilian signals were intentionally degraded by a policy known as Selective Availability.",
+   "start": 60.978,
+   "end": 67.263
+  },
+  {
+   "id": "s01.13",
+   "scene": "s01",
+   "text": "This deliberate error degraded civilian accuracy to roughly 100 metres until the policy was ended in 2000.",
+   "start": 67.753,
+   "end": 76.031
+  },
+  {
+   "id": "s01.14",
+   "scene": "s01",
+   "text": "Today, modern consumer smartphones can determine a position to within 4.9 metres or even better.",
+   "start": 76.485,
+   "end": 83.67
+  },
+  {
+   "id": "s02.01",
+   "scene": "s02",
+   "text": "To understand how your device knows its place, we must look up into orbit.",
+   "start": 85.184,
+   "end": 89.577
+  },
+  {
+   "id": "s02.02",
+   "scene": "s02",
+   "text": "The space segment of GPS consists of between 24 and 32 operational satellites.",
+   "start": 90.043,
+   "end": 96.602
+  },
+  {
+   "id": "s02.03",
+   "scene": "s02",
+   "text": "These spacecraft circle our planet in what engineers call medium Earth orbit.",
+   "start": 97.056,
+   "end": 101.765
+  },
+  {
+   "id": "s02.04",
+   "scene": "s02",
+   "text": "Each satellite travels at an altitude of approximately 20,200 kilometres above the surface of the Earth.",
+   "start": 102.222,
+   "end": 109.453
+  },
+  {
+   "id": "s02.05",
+   "scene": "s02",
+   "text": "The satellites are arranged across 6 separate orbital planes tilted at approximately 55 degrees to the equator.",
+   "start": 110.01,
+   "end": 117.463
+  },
+  {
+   "id": "s02.06",
+   "scene": "s02",
+   "text": "Each orbit takes approximately 11 hours and 58 minutes, completing 2 full trips every sidereal day.",
+   "start": 117.929,
+   "end": 125.322
+  },
+  {
+   "id": "s02.07",
+   "scene": "s02",
+   "text": "The satellites are not spaced at equal 90-degree intervals along each orbital ring.",
+   "start": 125.828,
+   "end": 131.218
+  },
+  {
+   "id": "s02.08",
+   "scene": "s02",
+   "text": "Instead, their spacing varies between 30 degrees, 105 degrees, and 120 degrees apart.",
+   "start": 131.71,
+   "end": 139.118
+  },
+  {
+   "id": "s02.09",
+   "scene": "s02",
+   "text": "This deliberate geometry guarantees that at least 6 satellites remain visible from almost anywhere on Earth.",
+   "start": 139.587,
+   "end": 146.44
+  },
+  {
+   "id": "s02.10",
+   "scene": "s02",
+   "text": "Day and night, every satellite continually broadcasts radio carrier waves down toward the ground below.",
+   "start": 147.021,
+   "end": 153.648
+  },
+  {
+   "id": "s02.11",
+   "scene": "s02",
+   "text": "The transmission contains a unique pseudorandom code made of ones and zeros that receivers recognise.",
+   "start": 154.136,
+   "end": 160.933
+  },
+  {
+   "id": "s02.12",
+   "scene": "s02",
+   "text": "It also broadcasts a continuous data message containing its exact orbital position and the departure time.",
+   "start": 161.376,
+   "end": 168.765
+  },
+  {
+   "id": "s02.13",
+   "scene": "s02",
+   "text": "This detailed orbital data is called an ephemeris and allows receivers to pinpoint the satellite.",
+   "start": 169.239,
+   "end": 175.525
+  }
+ ],
+ "scenes": [
+  {
+   "id": "s01",
+   "heading": "The Passive Listener Myth",
+   "start": 0.0,
+   "end": 85.18133333333333
+  },
+  {
+   "id": "s02",
+   "heading": "Constellation of Orbiting Clocks",
+   "start": 85.18133333333333,
+   "end": 176.97066666666666
+  }
+ ],
+ "total": 176.970667
+}

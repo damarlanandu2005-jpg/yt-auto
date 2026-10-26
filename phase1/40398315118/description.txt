@@ -1,0 +1,19 @@
+How GPS Knows Where You Are Without Tracking You
+
+How does a smartphone determine your exact position on Earth using signals from space?
+
+Sources (facts checked against these):
+- Global Positioning System — Wikipedia, revision 1381199385: https://en.wikipedia.org/wiki/Global_Positioning_System?oldid=1381199385
+- Satellite navigation — Wikipedia, revision 1380001107: https://en.wikipedia.org/wiki/Satellite_navigation?oldid=1380001107
+
+Image credits:
+- "U S Space Command Provisional Headquarters (7804765)" by Christopher Dewitt, Public domain, via Wikimedia Commons. https://commons.wikimedia.org/wiki/File:U_S_Space_Command_Provisional_Headquarters_(7804765).jpg
+- "GNSS receiver at dusk among eucalyptus trees" by Cvstr, CC BY 4.0, via Wikimedia Commons. https://commons.wikimedia.org/wiki/File:GNSS_receiver_at_dusk_among_eucalyptus_trees.jpg
+- "President Ronald Reagan in The Oval Office - DPLA - 87df639573ca07cf95894ce24b2ec3bd" by President (1981-1989 : Reagan). White House Photographic Office. 1981-1989, Public domain, via Wikimedia Commons. https://commons.wikimedia.org/wiki/File:President_Ronald_Reagan_in_The_Oval_Office_-_DPLA_-_87df639573ca07cf95894ce24b2ec3bd.jpg
+- "Korean Air Lines Boeing 747-230B HL7440 (23339398360)" by Kambui, CC BY 2.0, via Wikimedia Commons. https://commons.wikimedia.org/wiki/File:Korean_Air_Lines_Boeing_747-230B_HL7440_(23339398360).jpg
+- "GPS Block IIIA" by U.S. Air Force, Public domain, via Wikimedia Commons. https://commons.wikimedia.org/wiki/File:GPS_Block_IIIA.jpg
+- Earth Observation taken by the STS-125 Crew — NASA (JSC), NASA, public domain. https://images.nasa.gov/details/s125e012183
+- "Starry night sky over rural Bavarian Swabia with a vertical light beam and light pollution on the horizon (2018)" by Paul Colin Hennig firstdorsal.eu, CC BY-SA 4.0, via Wikimedia Commons. https://commons.wikimedia.org/wiki/File:Starry_night_sky_over_rural_Bavarian_Swabia_with_a_vertical_light_beam_and_light_pollution_on_the_horizon_(2018).jpg
+
+NASA images are used for education and do not imply NASA endorsement.
+Narration voice: Kokoro text-to-speech (synthetic voice). Script researched and written with AI help, fact-checked against the sources above and reviewed by a human before upload.
