@@ -1,0 +1,77 @@
+[model] gemini-3.5-flash-lite
+[system]
+
+
+[user]
+Video: How GPS Knows Where You Are
+Plan one visual for each slot of narration below. The viewer sees it while hearing that text.
+Rules:
+- Real photos first: use kind=photo for at least 65 per cent of slots, whenever a real photo could show the
+  thing being talked about (objects, places, spacecraft, machines, nature, historical photos).
+  Ask for SIMPLE subjects an archive surely has ("a handheld GPS receiver", "a rocket launch", "an atomic
+  clock"), never a detailed scene ("a hiker with a GPS in remote mountains with no signal"). A photo of the
+  object being discussed is better than a text card.
+- Use kind=card when a number, comparison, process or list is the point, or at scene starts (title card).
+- The first slot is a title card with the video title.
+- Every number on a card MUST appear in that slot's text or earlier in the same scene. Never invent data.
+- Vary: never the same card type twice in a row; never more than 2 cards in a row.
+- Text cards are the last choice: at most one bullets card per scene, and a bare title card only at scene starts.
+  Prefer stat, bars, timeline, flow or compare when a card is needed.
+- For kind=photo still give a fallback card (used if no good photo exists).
+Card types (all text short; big and readable on a phone):
+- title: title (+ subtitle). Use for scene openings.
+- stat: value (a number with unit, e.g. "20,200 km") + label (+ note).
+- bullets: title + 2-4 items (each under 6 words).
+- flow: title + 2-5 steps (cause -> effect, process).
+- bars: title + labels + values (+ unit). Compare 2-6 quantities.
+- timeline: title + 2-5 events {when, label}.
+- compare: title + left_title/left_points vs right_title/right_points.
+
+SLOTS:
+v001 [3.7s] (scene: The Tracking Myth, SCENE START) Many people worry that a global satellite network is
+v002 [4.1s] (scene: The Tracking Myth) constantly tracking the live location of their mobile phone.
+v003 [4.0s] (scene: The Tracking Myth) You might wonder how your phone determines your exact position on
+v004 [4.5s] (scene: The Tracking Myth) Earth using signals from space without ever sending any data back.
+v005 [4.5s] (scene: The Tracking Myth) It is a satellite-based navigation system that provides geolocation and
+v006 [4.5s] (scene: The Tracking Myth) time information to a receiver anywhere near the Earth.
+v007 [4.8s] (scene: The Tracking Myth) The entire network does not require you to transmit any data to function.
+v008 [7.1s] (scene: The Tracking Myth) Your device operates completely independently of any telephone or internet reception.
+v009 [6.0s] (scene: Floating Radio Stations, SCENE START) To understand how this passive network works, you need to look at the space segment of the system.
+v010 [6.8s] (scene: Floating Radio Stations) The space segment is composed of 24 to 32 space vehicles orbiting in medium Earth orbit.
+v011 [6.0s] (scene: Floating Radio Stations) These satellites orbit at an altitude of approximately 20,200 kilometres.
+v012 [3.1s] (scene: Floating Radio Stations) Each vehicle makes two complete orbits each sidereal
+v013 [4.0s] (scene: Floating Radio Stations) day, which is about 11 hours and 58 minutes.
+v014 [7.4s] (scene: Floating Radio Stations) The satellites broadcast these vital data points continuously down to the surface of the planet.
+v015 [4.8s] (scene: Measuring Signal Speed, SCENE START) How do those radio waves turn into a measurement of distance on your device?
+v016 [3.2s] (scene: Measuring Signal Speed) The time delay between when a satellite transmits a signal
+v017 [4.0s] (scene: Measuring Signal Speed) and when a receiver gets it is proportional to the distance.
+v018 [3.3s] (scene: Measuring Signal Speed) Modern electronics can measure this signal offset to
+v019 [4.8s] (scene: Measuring Signal Speed) within about 10 nanoseconds for the civilian code.
+v020 [6.9s] (scene: Combining Distance Spheres, SCENE START) Once your device calculates the distance to a satellite, it uses that data to narrow down where you could be.
+v021 [6.3s] (scene: Combining Distance Spheres) If you know you are a certain distance from a single satellite, you could be anywhere on a sphere surrounding it.
+v022 [3.4s] (scene: Combining Distance Spheres) Adding a second satellite narrows your possible location
+v023 [3.8s] (scene: Combining Distance Spheres) down to the circle where two spheres intersect.
+v024 [6.7s] (scene: Combining Distance Spheres) Bringing in a third satellite shrinks the intersection down to just two points in three-dimensional space.
+v025 [8.0s] (scene: Combining Distance Spheres) One of those two points is usually out in space, leaving only a single realistic position on the Earth.
+v026 [6.2s] (scene: Correcting Clock Errors, SCENE START) There is a major catch in this simple geometry that requires an extra step from your receiver.
+v027 [6.1s] (scene: Correcting Clock Errors) That cheap clock has a time offset relative to the true time kept by the satellite network.
+v028 [3.3s] (scene: Correcting Clock Errors) Because of this offset, your device cannot
+v029 [3.7s] (scene: Correcting Clock Errors) measure true ranges and instead calculates pseudo-ranges.
+v030 [7.7s] (scene: Correcting Clock Errors) To solve for this extra unknown variable, your receiver must look at more than just three space vehicles.
+v031 [4.4s] (scene: The Power of Relativity, SCENE START) Even with four satellites and good geometry, tiny invisible physics
+v032 [4.5s] (scene: The Power of Relativity) forces threaten to ruin the accuracy of your navigation.
+v033 [6.9s] (scene: The Power of Relativity) General relativity also shows that clocks located deeper in a gravitational well tick slower.
+v034 [4.6s] (scene: The Power of Relativity) Because the satellites are far above the Earth, their clocks
+v035 [5.5s] (scene: The Power of Relativity) run faster by about 45,850 nanoseconds per day due to gravity.
+v036 [4.2s] (scene: The Power of Relativity) Combined, these relativistic effects cause satellite clocks to
+v037 [4.2s] (scene: The Power of Relativity) gain about 38.6 microseconds every single day.
+v038 [6.9s] (scene: The Power of Relativity) Without corrections, errors of roughly 11.4 km per day would accumulate in the position.
+v039 [3.5s] (scene: The Power of Relativity) Engineers solve this by giving the atomic clocks on board
+v040 [5.4s] (scene: The Power of Relativity) a rate offset prior to launch to keep them perfectly synced.
+v041 [4.0s] (scene: Passive Positioning, SCENE START) So how does GPS know where you are without ever tracking you?
+v042 [4.5s] (scene: Passive Positioning) Your phone simply listens to passive radio signals broadcast
+v043 [5.0s] (scene: Passive Positioning) by an overhead constellation of ultra-precise floating atomic clocks.
+v044 [3.9s] (scene: Passive Positioning) By measuring the time delay of signals from four
+v045 [4.3s] (scene: Passive Positioning) separate satellites, your device calculates its exact position locally.
+v046 [3.7s] (scene: Passive Positioning) No data travels back to space, leaving your location
+v047 [5.1s] (scene: Passive Positioning) entirely private while guiding you precisely across the world.

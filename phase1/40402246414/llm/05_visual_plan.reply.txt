@@ -1,0 +1,637 @@
+{
+  "visuals": [
+    {
+      "id": "v001",
+      "kind": "card",
+      "card": {
+        "type": "title",
+        "title": "How GPS Knows Where You Are",
+        "subtitle": "The Tracking Myth"
+      }
+    },
+    {
+      "id": "v002",
+      "kind": "photo",
+      "photo_subject": "a smartphone",
+      "photo_queries": [
+        "smartphone screen",
+        "mobile phone"
+      ],
+      "card": {
+        "type": "bullets",
+        "title": "Mobile Privacy",
+        "items": [
+          "Not tracked live",
+          "Passive receiver",
+          "No data sent back"
+        ]
+      }
+    },
+    {
+      "id": "v003",
+      "kind": "photo",
+      "photo_subject": "Earth from space",
+      "photo_queries": [
+        "Earth from space",
+        "globe view"
+      ],
+      "card": {
+        "type": "stat",
+        "title": "Exact Position",
+        "value": "Earth",
+        "label": "Determining location from space signals"
+      }
+    },
+    {
+      "id": "v004",
+      "kind": "photo",
+      "photo_subject": "a GPS satellite",
+      "photo_queries": [
+        "GPS satellite",
+        "navigation satellite"
+      ],
+      "card": {
+        "type": "stat",
+        "title": "Signals from Space",
+        "value": "One-way",
+        "label": "Signals received without transmitting data"
+      }
+    },
+    {
+      "id": "v005",
+      "kind": "card",
+      "card": {
+        "type": "flow",
+        "title": "Navigation System",
+        "steps": [
+          "Satellites orbit",
+          "Signals broadcast",
+          "Receiver calculates",
+          "Position found"
+        ]
+      }
+    },
+    {
+      "id": "v006",
+      "kind": "photo",
+      "photo_subject": "a handheld GPS receiver",
+      "photo_queries": [
+        "handheld GPS",
+        "GPS receiver"
+      ],
+      "card": {
+        "type": "stat",
+        "title": "Receiver",
+        "value": "Anywhere",
+        "label": "Geolocation and time information"
+      }
+    },
+    {
+      "id": "v007",
+      "kind": "card",
+      "card": {
+        "type": "bullets",
+        "title": "Passive Network",
+        "items": [
+          "No data transmitted",
+          "Receiver only listens",
+          "Completely private"
+        ]
+      }
+    },
+    {
+      "id": "v008",
+      "kind": "photo",
+      "photo_subject": "a smartphone",
+      "photo_queries": [
+        "smartphone",
+        "mobile phone"
+      ],
+      "card": {
+        "type": "stat",
+        "title": "Independent Device",
+        "value": "No SIM",
+        "label": "Operates without phone or internet"
+      }
+    },
+    {
+      "id": "v009",
+      "kind": "card",
+      "card": {
+        "type": "title",
+        "title": "Floating Radio Stations",
+        "subtitle": "The space segment of GPS"
+      }
+    },
+    {
+      "id": "v010",
+      "kind": "photo",
+      "photo_subject": "a GPS satellite",
+      "photo_queries": [
+        "GPS satellite in orbit",
+        "satellite constellation"
+      ],
+      "card": {
+        "type": "stat",
+        "title": "Space Vehicles",
+        "value": "24-32",
+        "label": "Satellites in medium Earth orbit"
+      }
+    },
+    {
+      "id": "v011",
+      "kind": "card",
+      "card": {
+        "type": "stat",
+        "title": "Orbital Altitude",
+        "value": "20,200 km",
+        "unit": "km",
+        "left_title": "Orbit Details",
+        "right_title": "Height"
+      }
+    },
+    {
+      "id": "v012",
+      "kind": "photo",
+      "photo_subject": "a GPS satellite",
+      "photo_queries": [
+        "satellite in orbit",
+        "space station"
+      ],
+      "card": {
+        "type": "stat",
+        "title": "Orbit Count",
+        "value": "2",
+        "label": "Orbits per sidereal day"
+      }
+    },
+    {
+      "id": "v013",
+      "kind": "card",
+      "card": {
+        "type": "stat",
+        "title": "Sidereal Day",
+        "value": "11h 58m",
+        "label": "Time for two complete orbits"
+      }
+    },
+    {
+      "id": "v014",
+      "kind": "photo",
+      "photo_subject": "radio waves animation",
+      "photo_queries": [
+        "radio waves",
+        "signal transmission"
+      ],
+      "card": {
+        "type": "flow",
+        "title": "Continuous Broadcast",
+        "steps": [
+          "Satellite data",
+          "Radio waves",
+          "Planet surface"
+        ]
+      }
+    },
+    {
+      "id": "v015",
+      "kind": "card",
+      "card": {
+        "type": "title",
+        "title": "Measuring Signal Speed",
+        "subtitle": "Converting time to distance"
+      }
+    },
+    {
+      "id": "v016",
+      "kind": "card",
+      "card": {
+        "type": "flow",
+        "title": "Time Delay",
+        "steps": [
+          "Satellite transmits",
+          "Signal travels",
+          "Receiver gets signal"
+        ]
+      }
+    },
+    {
+      "id": "v017",
+      "kind": "photo",
+      "photo_subject": "radio waves",
+      "photo_queries": [
+        "radio wave",
+        "signal propagation"
+      ],
+      "card": {
+        "type": "stat",
+        "title": "Distance",
+        "value": "Proportional",
+        "label": "Time delay equals distance"
+      }
+    },
+    {
+      "id": "v018",
+      "kind": "photo",
+      "photo_subject": "an electronic circuit board",
+      "photo_queries": [
+        "circuit board",
+        "microchip electronics"
+      ],
+      "card": {
+        "type": "stat",
+        "title": "Modern Electronics",
+        "value": "Precision",
+        "label": "Measuring signal offset"
+      }
+    },
+    {
+      "id": "v019",
+      "kind": "card",
+      "card": {
+        "type": "stat",
+        "title": "Civilian Precision",
+        "value": "10 ns",
+        "label": "Signal offset measurement limit"
+      }
+    },
+    {
+      "id": "v020",
+      "kind": "card",
+      "card": {
+        "type": "title",
+        "title": "Combining Distance Spheres",
+        "subtitle": "Narrowing down position"
+      }
+    },
+    {
+      "id": "v021",
+      "kind": "photo",
+      "photo_subject": "a sphere diagram",
+      "photo_queries": [
+        "sphere geometry",
+        "3d sphere"
+      ],
+      "card": {
+        "type": "stat",
+        "title": "Single Satellite",
+        "value": "1 Sphere",
+        "label": "You could be anywhere on the sphere"
+      }
+    },
+    {
+      "id": "v022",
+      "kind": "photo",
+      "photo_subject": "intersecting spheres",
+      "photo_queries": [
+        "intersecting circles",
+        "sphere intersection"
+      ],
+      "card": {
+        "type": "stat",
+        "title": "Second Satellite",
+        "value": "2 Spheres",
+        "label": "Narrows position to an intersecting circle"
+      }
+    },
+    {
+      "id": "v023",
+      "kind": "card",
+      "card": {
+        "type": "stat",
+        "title": "Intersection Circle",
+        "value": "Circle",
+        "label": "Where two spheres meet"
+      }
+    },
+    {
+      "id": "v024",
+      "kind": "photo",
+      "photo_subject": "intersecting spheres in 3d space",
+      "photo_queries": [
+        "3d intersection",
+        "geometric points"
+      ],
+      "card": {
+        "type": "stat",
+        "title": "Third Satellite",
+        "value": "2 Points",
+        "label": "Shrinks intersection to two points"
+      }
+    },
+    {
+      "id": "v025",
+      "kind": "photo",
+      "photo_subject": "Earth from space",
+      "photo_queries": [
+        "Earth globe",
+        "planet Earth"
+      ],
+      "card": {
+        "type": "stat",
+        "title": "Final Position",
+        "value": "1 Position",
+        "label": "One point on Earth surface"
+      }
+    },
+    {
+      "id": "v026",
+      "kind": "card",
+      "card": {
+        "type": "title",
+        "title": "Correcting Clock Errors",
+        "subtitle": "The fourth dimension"
+      }
+    },
+    {
+      "id": "v027",
+      "kind": "photo",
+      "photo_subject": "a mechanical watch",
+      "photo_queries": [
+        "clock face",
+        "pocket watch"
+      ],
+      "card": {
+        "type": "stat",
+        "title": "Clock Offset",
+        "value": "Time Error",
+        "label": "Receiver clock vs satellite clock"
+      }
+    },
+    {
+      "id": "v028",
+      "kind": "card",
+      "card": {
+        "type": "bullets",
+        "title": "Timing Offset",
+        "items": [
+          "Cheap receiver clock",
+          "Drifts from true time",
+          "Causes range errors"
+        ]
+      }
+    },
+    {
+      "id": "v029",
+      "kind": "card",
+      "card": {
+        "type": "compare",
+        "title": "Ranges vs Pseudo-ranges",
+        "left_title": "True Range",
+        "left_points": [
+          "Requires exact time",
+          "Ideal measurement"
+        ],
+        "right_title": "Pseudo-range",
+        "right_points": [
+          "Includes clock error",
+          "Calculated by device"
+        ]
+      }
+    },
+    {
+      "id": "v030",
+      "kind": "photo",
+      "photo_subject": "multiple GPS satellites",
+      "photo_queries": [
+        "satellite constellation",
+        "spacecraft group"
+      ],
+      "card": {
+        "type": "stat",
+        "title": "Extra Variable",
+        "value": "4 Satellites",
+        "label": "Needed to solve clock offset"
+      }
+    },
+    {
+      "id": "v031",
+      "kind": "card",
+      "card": {
+        "type": "title",
+        "title": "The Power of Relativity",
+        "subtitle": "Physics in orbit"
+      }
+    },
+    {
+      "id": "v032",
+      "kind": "photo",
+      "photo_subject": "space physics",
+      "photo_queries": [
+        "physics equations",
+        "relativity concept"
+      ],
+      "card": {
+        "type": "stat",
+        "title": "Accuracy Threat",
+        "value": "Relativity",
+        "label": "Tiny invisible physics forces"
+      }
+    },
+    {
+      "id": "v033",
+      "kind": "photo",
+      "photo_subject": "gravitational field diagram",
+      "photo_queries": [
+        "gravity well",
+        "spacetime curvature"
+      ],
+      "card": {
+        "type": "stat",
+        "title": "Gravity Well",
+        "value": "Slower Ticks",
+        "label": "Clocks deeper in gravity tick slower"
+      }
+    },
+    {
+      "id": "v034",
+      "kind": "photo",
+      "photo_subject": "a GPS satellite",
+      "photo_queries": [
+        "satellite in space",
+        "orbiting satellite"
+      ],
+      "card": {
+        "type": "stat",
+        "title": "Satellite Altitude",
+        "value": "High Orbit",
+        "label": "Satellites far above Earth"
+      }
+    },
+    {
+      "id": "v035",
+      "kind": "card",
+      "card": {
+        "type": "stat",
+        "title": "Gravity Effect",
+        "value": "45,850 ns",
+        "unit": "ns/day",
+        "left_title": "Relativity",
+        "right_title": "Clock Speed"
+      }
+    },
+    {
+      "id": "v036",
+      "kind": "card",
+      "card": {
+        "type": "bullets",
+        "title": "Combined Relativistic Effects",
+        "items": [
+          "Gravity makes clocks run faster",
+          "Speed makes clocks run slower",
+          "Both effects combined"
+        ]
+      }
+    },
+    {
+      "id": "v037",
+      "kind": "card",
+      "card": {
+        "type": "stat",
+        "title": "Daily Gain",
+        "value": "38.6 µs",
+        "unit": "microseconds",
+        "left_title": "Time Drift",
+        "right_title": "Per Day"
+      }
+    },
+    {
+      "id": "v038",
+      "kind": "card",
+      "card": {
+        "type": "stat",
+        "title": "Uncorrected Error",
+        "value": "11.4 km",
+        "unit": "km/day",
+        "left_title": "Position Error",
+        "right_title": "Without Corrections"
+      }
+    },
+    {
+      "id": "v039",
+      "kind": "photo",
+      "photo_subject": "an atomic clock",
+      "photo_queries": [
+        "atomic clock",
+        "cesium clock"
+      ],
+      "card": {
+        "type": "stat",
+        "title": "Atomic Clocks",
+        "value": "On Board",
+        "label": "Engineers solve drift with offset"
+      }
+    },
+    {
+      "id": "v040",
+      "kind": "card",
+      "card": {
+        "type": "flow",
+        "title": "Pre-launch Sync",
+        "steps": [
+          "Calculate offset",
+          "Adjust clock rate",
+          "Launch satellite",
+          "Perfect sync"
+        ]
+      }
+    },
+    {
+      "id": "v041",
+      "kind": "card",
+      "card": {
+        "type": "title",
+        "title": "Passive Positioning",
+        "subtitle": "How GPS works without tracking"
+      }
+    },
+    {
+      "id": "v042",
+      "kind": "photo",
+      "photo_subject": "a smartphone",
+      "photo_queries": [
+        "smartphone user",
+        "mobile device"
+      ],
+      "card": {
+        "type": "stat",
+        "title": "Passive Listening",
+        "value": "Radio Signals",
+        "label": "Phone only listens, never transmits"
+      }
+    },
+    {
+      "id": "v043",
+      "kind": "photo",
+      "photo_subject": "an atomic clock",
+      "photo_queries": [
+        "atomic clock",
+        "precision clock"
+      ],
+      "card": {
+        "type": "stat",
+        "title": "Constellation",
+        "value": "Atomic Clocks",
+        "label": "Ultra-precise floating clocks"
+      }
+    },
+    {
+      "id": "v044",
+      "kind": "photo",
+      "photo_subject": "four GPS satellites",
+      "photo_queries": [
+        "GPS satellites",
+        "four satellites"
+      ],
+      "card": {
+        "type": "stat",
+        "title": "Minimum Satellites",
+        "value": "4 Satellites",
+        "label": "Measuring time delay"
+      }
+    },
+    {
+      "id": "v045",
+      "kind": "photo",
+      "photo_subject": "a GPS navigation screen",
+      "photo_queries": [
+        "GPS navigation map",
+        "location pin"
+      ],
+      "card": {
+        "type": "stat",
+        "title": "Local Calculation",
+        "value": "Exact Position",
+        "label": "Calculated locally on your device"
+      }
+    },
+    {
+      "id": "v046",
+      "kind": "card",
+      "card": {
+        "type": "bullets",
+        "title": "Total Privacy",
+        "items": [
+          "No data sent to space",
+          "Location stays private",
+          "Receiver is entirely passive"
+        ]
+      }
+    },
+    {
+      "id": "v047",
+      "kind": "photo",
+      "photo_subject": "Earth globe with navigation path",
+      "photo_queries": [
+        "navigation map",
+        "globe path"
+      ],
+      "card": {
+        "type": "stat",
+        "title": "Global Navigation",
+        "value": "Precise",
+        "label": "Guiding you across the world"
+      }
+    }
+  ]
+}

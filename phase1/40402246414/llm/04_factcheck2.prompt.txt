@@ -1,0 +1,18 @@
+[model] gemini-3.5-flash-lite
+[system]
+
+
+[user]
+You are a strict fact-checker. For each sentence below, decide using ONLY its cited passages
+(not your own knowledge):
+- supported: every detail (numbers, names, dates, causes, comparisons) is stated in or directly follows from them.
+- partly: the main point is backed but some detail is not, or it overstates / oversimplifies into something false.
+- unsupported: the cited passages do not back it, or there are none.
+For partly/unsupported, give fixed_text: a corrected sentence in the same plain spoken style that the cited
+passages fully support (keep digits and full unit words; no copying 8+ words). Leave fixed_text empty if impossible.
+A FRAMING SENTENCE has no passages: it is "supported" only if it makes no checkable claim at all (a question,
+transition or invitation). If it states any fact, mark it "unsupported" with an empty fixed_text.
+
+[s06.07] SENTENCE: Without corrections, errors of roughly 11.4 km per day would accumulate in the position.
+CITED PASSAGES:
+A4.47: Combined, these sources of time dilation cause the clocks on the satellites to gain 38.6 microseconds per day relative to the clocks on the ground. This is a difference of 4.465 parts in 1010. Without correction, errors of roughly 11.4 km/day would accumulate in the position. This initial pseudorange error is corrected in the process of solving the navigation equations. In addition, the elliptical, rather than perfectly circular, satellite orbits cause the time dilation and gravitational frequency shift effects to vary with time. This eccentricity effect causes the clock rate difference between a GPS satellite and a receiver to increase or decrease depending on the altitude of the satellite.

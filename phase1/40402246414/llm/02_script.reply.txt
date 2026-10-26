@@ -1,0 +1,260 @@
+{
+  "title": "How GPS Knows Where You Are",
+  "scenes": [
+    {
+      "heading": "The Tracking Myth",
+      "sentences": [
+        {
+          "text": "Many people worry that a global satellite network is constantly tracking the live location of their mobile phone.",
+          "kind": "framing",
+          "sources": []
+        },
+        {
+          "text": "You might wonder how your phone determines your exact position on Earth using signals from space without ever sending any data back.",
+          "kind": "framing",
+          "sources": []
+        },
+        {
+          "text": "The Global Positioning System is owned by the United States Space Force and operated by Mission Delta 31.",
+          "kind": "fact",
+          "sources": ["A1.1"]
+        },
+        {
+          "text": "It is a satellite-based navigation system that provides geolocation and time information to a receiver anywhere near the Earth.",
+          "kind": "fact",
+          "sources": ["A1.1"]
+        },
+        {
+          "text": "The entire network does not require you to transmit any data to function.",
+          "kind": "fact",
+          "sources": ["A1.1"]
+        },
+        {
+          "text": "Your device operates completely independently of any telephone or internet reception.",
+          "kind": "fact",
+          "sources": ["A1.1"]
+        }
+      ]
+    },
+    {
+      "heading": "Floating Radio Stations",
+      "sentences": [
+        {
+          "text": "To understand how this passive network works, you need to look at the space segment of the system.",
+          "kind": "framing",
+          "sources": []
+        },
+        {
+          "text": "The space segment is composed of 24 to 32 space vehicles orbiting in medium Earth orbit.",
+          "kind": "fact",
+          "sources": ["A1.70"]
+        },
+        {
+          "text": "These satellites orbit at an altitude of approximately 20,200 kilometres.",
+          "kind": "fact",
+          "sources": ["A1.71"]
+        },
+        {
+          "text": "Each vehicle makes two complete orbits each sidereal day, which is about 11 hours and 58 minutes.",
+          "kind": "fact",
+          "sources": ["A1.70"]
+        },
+        {
+          "text": "The orbits are arranged so that at least 6 satellites are always within line of sight from everywhere on the Earth.",
+          "kind": "fact",
+          "sources": ["A1.70"]
+        },
+        {
+          "text": "Each satellite acts like a floating radio station that carries an accurate record of its own position and time.",
+          "kind": "fact",
+          "sources": ["A1.55"]
+        },
+        {
+          "text": "The satellites broadcast these vital data points continuously down to the surface of the planet.",
+          "kind": "fact",
+          "sources": ["A1.55"]
+        }
+      ]
+    },
+    {
+      "heading": "Measuring Signal Speed",
+      "sentences": [
+        {
+          "text": "How do those radio waves turn into a measurement of distance on your device?",
+          "kind": "framing",
+          "sources": []
+        },
+        {
+          "text": "Each satellite carries very stable atomic clocks that are synchronized with reference clocks on the ground.",
+          "kind": "fact",
+          "sources": ["A1.54"]
+        },
+        {
+          "text": "An atomic clock measures time by monitoring the resonant frequency of atoms.",
+          "kind": "fact",
+          "sources": ["A3.1"]
+        },
+        {
+          "text": "Since the speed of radio waves is constant and independent of the satellite speed, time delay relates directly to distance.",
+          "kind": "fact",
+          "sources": ["A1.54"]
+        },
+        {
+          "text": "The time delay between when a satellite transmits a signal and when a receiver gets it is proportional to the distance.",
+          "kind": "fact",
+          "sources": ["A1.54"]
+        },
+        {
+          "text": "Your receiver compares the bit sequence received from the satellite with an internally generated version.",
+          "kind": "fact",
+          "sources": ["A4.11"]
+        },
+        {
+          "text": "Modern electronics can measure this signal offset to within about 10 nanoseconds for the civilian code.",
+          "kind": "fact",
+          "sources": ["A4.13"]
+        }
+      ]
+    },
+    {
+      "heading": "Combining Distance Spheres",
+      "sentences": [
+        {
+          "text": "Once your device calculates the distance to a satellite, it uses that data to narrow down where you could be.",
+          "kind": "framing",
+          "sources": []
+        },
+        {
+          "text": "Trilateration is the use of distances for determining the unknown position coordinates of a point of interest.",
+          "kind": "fact",
+          "sources": ["A2.1"]
+        },
+        {
+          "text": "If you know you are a certain distance from a single satellite, you could be anywhere on a sphere surrounding it.",
+          "kind": "framing",
+          "sources": []
+        },
+        {
+          "text": "Adding a second satellite narrows your possible location down to the circle where two spheres intersect.",
+          "kind": "framing",
+          "sources": []
+        },
+        {
+          "text": "Bringing in a third satellite shrinks the intersection down to just two points in three-dimensional space.",
+          "kind": "framing",
+          "sources": []
+        },
+        {
+          "text": "One of those two points is usually out in space, leaving only a single realistic position on the Earth.",
+          "kind": "framing",
+          "sources": []
+        }
+      ]
+    },
+    {
+      "heading": "Correcting Clock Errors",
+      "sentences": [
+        {
+          "text": "There is a major catch in this simple geometry that requires an extra step from your receiver.",
+          "kind": "framing",
+          "sources": []
+        },
+        {
+          "text": "While the satellites carry ultra-precise atomic clocks, your smartphone relies on a cheap internal quartz crystal clock.",
+          "kind": "framing",
+          "sources": []
+        },
+        {
+          "text": "That cheap clock has a time offset relative to the true time kept by the satellite network.",
+          "kind": "fact",
+          "sources": ["A1.60"]
+        },
+        {
+          "text": "Because of this offset, your device cannot measure true ranges and instead calculates pseudo-ranges.",
+          "kind": "fact",
+          "sources": ["A1.59", "A2.2"]
+        },
+        {
+          "text": "To solve for this extra unknown variable, your receiver must look at more than just three space vehicles.",
+          "kind": "framing",
+          "sources": []
+        },
+        {
+          "text": "At a minimum, four satellites must be in view for the receiver to compute three position coordinates and its clock deviation.",
+          "kind": "fact",
+          "sources": ["A1.55"]
+        }
+      ]
+    },
+    {
+      "heading": "The Power of Relativity",
+      "sentences": [
+        {
+          "text": "Even with four satellites and good geometry, tiny invisible physics forces threaten to ruin the accuracy of your navigation.",
+          "kind": "framing",
+          "sources": []
+        },
+        {
+          "text": "According to special relativity, the faster an object moves, the slower its time appears to pass.",
+          "kind": "fact",
+          "sources": ["A4.41"]
+        },
+        {
+          "text": "The atomic clocks moving at orbital speeds tick more slowly than stationary clocks by a fraction of 8.349 parts in 10 to the 11th.",
+          "kind": "fact",
+          "sources": ["A4.43", "A4.52"]
+        },
+        {
+          "text": "General relativity also shows that clocks located deeper in a gravitational well tick slower.",
+          "kind": "fact",
+          "sources": ["A4.42"]
+        },
+        {
+          "text": "Because the satellites are far above the Earth, their clocks run faster by about 45,850 nanoseconds per day due to gravity.",
+          "kind": "fact",
+          "sources": ["A4.63"]
+        },
+        {
+          "text": "Combined, these relativistic effects cause satellite clocks to gain about 38.6 microseconds every single day.",
+          "kind": "fact",
+          "sources": ["A4.47"]
+        },
+        {
+          "text": "Without corrections, this would accumulate into positioning errors of roughly 11 kilometres every day.",
+          "kind": "fact",
+          "sources": ["A4.47"]
+        },
+        {
+          "text": "Engineers solve this by giving the atomic clocks on board a rate offset prior to launch to keep them perfectly synced.",
+          "kind": "fact",
+          "sources": ["A4.48"]
+        }
+      ]
+    },
+    {
+      "heading": "Passive Positioning",
+      "sentences": [
+        {
+          "text": "So how does GPS know where you are without ever tracking you?",
+          "kind": "framing",
+          "sources": []
+        },
+        {
+          "text": "Your phone simply listens to passive radio signals broadcast by an overhead constellation of ultra-precise floating atomic clocks.",
+          "kind": "framing",
+          "sources": []
+        },
+        {
+          "text": "By measuring the time delay of signals from four separate satellites, your device calculates its exact position locally.",
+          "kind": "fact",
+          "sources": ["A1.55", "A1.59"]
+        },
+        {
+          "text": "No data travels back to space, leaving your location entirely private while guiding you precisely across the world.",
+          "kind": "framing",
+          "sources": []
+        }
+      ]
+    }
+  ]
+}

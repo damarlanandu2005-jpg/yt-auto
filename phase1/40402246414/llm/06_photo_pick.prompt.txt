@@ -1,0 +1,353 @@
+[model] gemini-3.5-flash-lite
+[system]
+
+
+[user]
+Pick the best photo for each slot from its numbered candidates (title | description).
+Choose a candidate if it shows the slot's subject or something closely related that fits the narration
+(it does not need to match every detail: a photo of a real handheld GPS receiver fits "a hiker's GPS").
+Answer "" only when no candidate is related, or the only related ones would mislead the viewer.
+Prefer real photographs over diagrams with small text, logos, or maps with dense labels. Avoid close-up
+faces of private people. Do not use the same photo twice.
+Answer choice = the candidate number as text, or "".
+
+[v002] needs: a smartphone | narration: constantly tracking the live location of their mobile phone.
+  nasa:0: Artemis IV: Gateway Gadget Fuels Deep Space Dining | jsc2024e040743 -- A NASA food scientist captures video of the Mini Potable Water Dispenser during testing at Johnson Space Center. Photo Credit: NASA/David DeHo
+  wiki:1: VIA VID Touch Screen Screen Display - VIA VID-2212-IP65 (5466727999) | This is an image showing the latest VIA VID-2212 touch screen display, shown with IP65 water resistance - designed for a range of industrial and commercial syst
+  wiki:2: VIA VID Touch Screen Screen Display - VIA VID-1000 Series-5 Models (5467228920) | This is an image showing the latest VIA VID Series of touch screen displays - designed for a range of industrial and commercial systems.
+  wiki:3: Electronic paper display microphotography | Electronic paper display microphotography
+  wiki:4: Olkiluoto Nuclear Power Plant production | Olkiluoto Nuclear Power Plant electricity production display at the Olkiluoto Visitor Centre in Finland
+  nasa:5: KSC-00pp1572 | Charles Street, part of the Emergency Preparedness team at KSC, uses a phone on the specially equipped emergency response vehicle. The vehicle, nicknamed “The B
+  nasa:6: KSC00pp1572 | Charles Street, part of the Emergency Preparedness team at KSC, uses a phone on the specially equipped emergency response vehicle. The vehicle, nicknamed “The B
+  nasa:7: STS-133 Launch Tweetup | sends streaming live video via a mobile phone attached to his hat to his website of Phylise Banner, who goes by @Phylisebanner on Twitter, as she stands in an a
+  nasa:8: KSC-99pp1417 | KENNEDY SPACE CENTER, Fla. -- Space Shuttle Endeavour is viewed atop the mobile launcher platform on its way to Launch Pad 39A for launch of mission STS-99. Nam
+  nasa:9: KSC-99pp1418 | KENNEDY SPACE CENTER, Fla. -- Under breaking clouds, Space Shuttle Endeavour, atop the mobile launcher platform and crawler-transporter, crawls its way to Launc
+  nasa:10: KSC-99pp1419 | KENNEDY SPACE CENTER, Fla. -- Under partly cloudy skies and the Atlantic Ocean as a backdrop, Space Shuttle Endeavour, atop the mobile launcher platform, arrive
+  wiki:11: Mobile phone PHS Japan 1997-2003 | Personal Handy-phone System (PHS) A271/AP-33/AM-15/P-inm@ster/AH-G10/J700/SA3001V Mobile_phone_PHS_Japan_1997-2003
+
+[v003] needs: Earth from space | narration: You might wonder how your phone determines your exact position on
+  nasa:0: View of Skylab space station cluster in Earth orbit from CSM | SL4-143-4707 (8 Feb. 1974) --- An overhead view of the Skylab space station cluster in Earth orbit as photographed from the Skylab 4 Command and Service Modules
+  nasa:1: View of Skylab space station cluster in Earth orbit from CSM | SL4-143-4706 (8 Feb. 1974) --- An overhead view of the Skylab space station cluster in Earth orbit as photographed from the Skylab 4 Command and Service Modules
+  nasa:2: NASA Google+ Hangout: 'Earthrise' A New Visualization - 45th Anniversary of Apollo 8 Viewi | Join NASA's Google+ Hangout on Friday, December 20th 2:00 - 3:00 PM (EST) at go.nasa.gov/18S2TbC It was 45 years ago, on December 24, 1968 when Apollo 8 astrona
+  nasa:3: Earth Observation from the International Space Station | Night Earth Observation from the International Space Station
+  nasa:4: Earth observations taken during STS-75 | Earth observations taken during the STS-75 mission from the space shuttle Columbia.
+  nasa:5: Aurora Australis, Sinuous Loop | STS039-23-020 (28 April-6 May 1991) --- A 35mm frame of the Aurora Australis, also known as the Southern Lights, photographed from Space Shuttle Discovery's fli
+  wiki:6: Space Shuttle Columbia launching | The April 12 launch at Pad 39A of STS-1, just seconds past 7 a.m., carries astronauts John Young and Robert Crippen into an Earth orbital mission scheduled to l
+  wiki:7: Earth's City Lights by DMSP, 1994-1995 (large) | This image of Earth’s city lights was created with data from the Defense Meteorological Satellite Program (DMSP) Operational Linescan System (OLS). Originally d
+  wiki:8: NASA-Apollo8-Dec24-Earthrise | Taken by Apollo 8 crewmember Bill Anders on December 24, 1968, at mission time 075:49:07 [8] (16:40 UTC), while in orbit around the Moon, showing the Earth risi
+  wiki:9: STS-135 final flyaround of ISS 1 | STS-135 final flyaround of ISSThis picture of the International Space Station was photographed from the space shuttle Atlantis as the orbiting complex and the s
+  wiki:10: North America from low orbiting satellite Suomi NPP | A view of most of North America taken from a low orbit of about 826 km altitude. The whole hemisphere is not visible owing to the low orbit, and the horizon is 
+  wiki:11: The Earth seen from Apollo 17 | "The Blue Marble" is a famous photograph of the Earth taken on December 7, 1972, by the crew of the Apollo 17 spacecraft en route to the Moon at a distance of a
+
+[v004] needs: a GPS satellite | narration: Earth using signals from space without ever sending any data back.
+  nasa:0: J-SSOD-6 Deployment | iss050e031340 (1/16/2017) --- Photo documentation of the Japanese-Small Satellite Orbital Deployer-6 (J-SSOD-6) deployment of the ECG Cubesat. The EGG Satellite
+  nasa:1: Space Science | In this photo, the Gravity Probe B (GP-B) space vehicle is completed during the solar array installation. The GP-B is the relativity experiment developed at Sta
+  nasa:2: Space Science | In this photo, the Gravity Probe B (GP-B) space vehicle is being encapsulated atop the Delta II launch vehicle. The GP-B is the relativity experiment developed 
+  nasa:3: Space Science | In this photo, the Gravity Probe B (GP-B) space vehicle is being assembled at the Sunnyvale, California location of the Lockheed Martin Corporation. The GP-B is
+  nasa:4: Space Science | In this photo, the Gravity Probe B (GP-B) space vehicle is being encapsulated atop the Delta II launch vehicle. The GP-B is the relativity experiment developed 
+  nasa:5: Earth Observations taken by STS-127 Crew | S127-E-012776 (30 July 2009) --- Backdropped by Earth?s horizon and the blackness of space, a Dual RF Astrodynamic GPS Orbital Navigator Satellite (DRAGONSat) i
+  wiki:6: GPS Satellite NASA art-iif | Artist's conception of GPS Block II-F satellite in Earth orbit.
+  nasa:7: Pegasus XL CYGNSS Microsats Installation on Deployment Module | Technicians with Orbital ATK install the first set of micro satellites on the deployment module for NASA’s Cyclone Global Navigation Satellite System (CYGNSS) i
+  nasa:8: Pegasus XL CYGNSS Microsats Installation on Deployment Module | Technicians with Orbital ATK prepare to install micro satellites on the deployment module for NASA’s Cyclone Global Navigation Satellite System (CYGNSS) in Buil
+  nasa:9: Pegasus XL CYGNSS Microsats Installation on Deployment Module | Technicians with Orbital ATK prepare the micro satellites for installation on the deployment module for NASA’s Cyclone Global Navigation Satellite System (CYGNS
+  nasa:10: Pegasus XL CYGNSS Microsats Installation on Deployment Module | Technicians with Orbital ATK prepare to install the micro satellites on the deployment module for NASA’s Cyclone Global Navigation Satellite System (CYGNSS) in 
+  nasa:11: Pegasus XL CYGNSS Microsats Installation on Deployment Module | Technicians with Orbital ATK continue to install the micro satellites on the deployment module for NASA’s Cyclone Global Navigation Satellite System (CYGNSS) in
+
+[v006] needs: a handheld GPS receiver | narration: time information to a receiver anywhere near the Earth.
+  wiki:0: Magellan Trailblazer XL GPS Handheld Receiver | The Magellan Trailblazer XL is an early commercial handheld Global Positioning System (GPS) receiver. Using GPS satellite signals, the device can locate the use
+  wiki:1: Magellan Triton 2000 handheld GPS receiver 01 | The main menu of the Magellan Triton 2000 GPS. The user interface could be controlled via the color touchscreen with a stylus (pictured) or with the physical bu
+  wiki:2: Magellan Triton 2000 handheld GPS receiver 03 | Rear view of the Magellan Triton 2000. This view shows the 2-megapixel camera, built-in speaker grille, and connection port for charging and data. The orange ru
+  wiki:3: Magellan Triton 2000 handheld GPS receiver 02 | The Magellan Triton 2000 was a high-end handheld GPS receiver released around 2007. It was one of the first consumer GPS units to feature a 2.7-inch color touch
+  nasa:4: NASA Pathways Intern Adjusts Equipment for Air Taxi Tests | Saré Culbertson, NASA Pathways intern at NASA’s Armstrong Flight Research Center in Edwards, California, adjusts the Emlid Reach RS2+ receiver equipment that co
+  nasa:5: NASA Pathways Intern Helps Validate GPS Coordinates | NASA Pathways intern Saré Culbertson, right, works with NASA operations engineer Jack Hayes at NASA’s Armstrong Flight Research Center in Edwards, California, o
+  nasa:6: POINTER's Receiver and Transmitter | To help locate and track firefighters inside buildings, where other positioning technologies fail, NASA's Jet Propulsion Laboratory and the Department of Homela
+  nasa:7: Engineers, Technicians Working on NISAR in Clean Room | Engineers and technicians from NASA's Jet Propulsion Laboratory work on the NASA-ISRO Synthetic Aperture Radar (NISAR) science instrument payload in a clean roo
+  nasa:8: Tonga Eruption Atmospheric Wave | Real-time data collected by the Global Differential Global Positioning System network, operated by NASA's Jet Propulsion Laboratory, shows the atmospheric signa
+  nasa:9: KSC-06pd1283 | KENNEDY SPACE CENTER, FLA. - A Rawinsonde weather balloon sails into the sky after release from the Cape Canaveral forecast facility in Florida. The release was
+  wiki:10: GPS Receivers | GPS receivers from Trimble, Garmin und Leica
+
+[v008] needs: a smartphone | narration: Your device operates completely independently of any telephone or internet reception.
+  nasa:0: Smartphone Photos From Orbit | These images of Earth were reconstructed from photos taken by three smartphones in orbit, or &quot;PhoneSats.&quot; The trio of PhoneSats launched on April 21, 
+  nasa:1: Smartphone 'Walkdown' | A technician points a smartphone camera at NASA's Perseverance rover during an inspection — called a "walkdown" — at Kennedy Space Center in Florida. The imager
+  nasa:2: Smartphone Video Guidance Sensor Test Operations | iss068e020703 (Nov. 7, 2022) --- NASA astronaut and Expedition 68 Flight Engineer Nicole Mann works with a pair of free-flying, cube-shaped Astrobee robotic hel
+  nasa:3: Smartphone Video Guidance Sensor Test Operations | iss068e020734 (Nov. 7, 2022) --- NASA astronaut and Expedition 68 Flight Engineer Nicole Mann poses with a pair of free-flying, cube-shaped Astrobee robotic hel
+  wiki:4: Smartphone use at railway station | People using smartphones at a railway station
+  wiki:5: Leaflet at Narita arrival. Requirement to have a smartphone to enter Japan during COVID-19 | Leaflet at Narita arrival. Requirement to have a smartphone to enter Japan during COVID-19 pandemic
+  wiki:6: Smartphone Use | Foto: bohed, Pixabay.
+  wiki:7: Smartphone di varie marche | smartphones di varie marche
+  wiki:8: Smartphone display screen | Smartphone display screen with time and icons
+  wiki:9: Smartphone ownership in 2013 | Countries where more than 50 percent of population owned a smartphone
+  nasa:10: KSC-00pp1572 | Charles Street, part of the Emergency Preparedness team at KSC, uses a phone on the specially equipped emergency response vehicle. The vehicle, nicknamed “The B
+  nasa:11: KSC00pp1572 | Charles Street, part of the Emergency Preparedness team at KSC, uses a phone on the specially equipped emergency response vehicle. The vehicle, nicknamed “The B
+
+[v010] needs: a GPS satellite | narration: The space segment is composed of 24 to 32 space vehicles orbiting in medium Earth orbit.
+  nasa:0: Earth Observations taken by STS-127 Crew | S127-E-012776 (30 July 2009) --- Backdropped by Earth?s horizon and the blackness of space, a Dual RF Astrodynamic GPS Orbital Navigator Satellite (DRAGONSat) i
+  nasa:1: Earth Observations taken by STS-127 Crew | S127-E-012774 (30 July 2009) --- Backdropped by Earth?s horizon and the blackness of space, a Dual RF Astrodynamic GPS Orbital Navigator Satellite (DRAGONSat) i
+  nasa:2: J-SSOD-6 Deployment | iss050e031340 (1/16/2017) --- Photo documentation of the Japanese-Small Satellite Orbital Deployer-6 (J-SSOD-6) deployment of the ECG Cubesat. The EGG Satellite
+  nasa:3: Space Science | In this photo, the Gravity Probe B (GP-B) space vehicle is completed during the solar array installation. The GP-B is the relativity experiment developed at Sta
+  nasa:4: Space Science | In this photo, the Gravity Probe B (GP-B) space vehicle is being encapsulated atop the Delta II launch vehicle. The GP-B is the relativity experiment developed 
+  nasa:5: Space Science | In this photo, the Gravity Probe B (GP-B) space vehicle is being assembled at the Sunnyvale, California location of the Lockheed Martin Corporation. The GP-B is
+  wiki:6: GPS Satellite NASA art-iif | Artist's conception of GPS Block II-F satellite in Earth orbit.
+  nasa:7: KSC-02pd1834 | KENNEDY SPACE CENTER, FLA. - The TDRS-J satellite arrives at the gantry on Launch Complex 36-A, Cape Canaveral Air Force Station. The satellite is scheduled to 
+  nasa:8: TDRS-M Liftoff | As the Sun rises at Space Launch Complex 41 at Cape Canaveral Air Force Station in Florida, a United Launch Alliance Atlas V rocket vents liquid oxygen propella
+  nasa:9: iss059e102911 | iss059e102911 (6/13/2019 --- Photo documentation taken aboard the International Space Station (ISS) of the JEM Small Satellite Orbital Deployer #11 (J-SSOD #11)
+  nasa:10: One Web Satellites Ground Breaking | A model of a OneWeb satellite like those the company will build to will connect all areas of the world to the Internet wirelessly. The company plans to launch 2
+  nasa:11: KSC00pp0427 | At launch pad 36-A, Cape Canaveral Air Force Station, lifting of the second stage of an Atlas II/Centaur rocket in the launch gantry is completed. The rocket is
+
+[v012] needs: a GPS satellite | narration: Each vehicle makes two complete orbits each sidereal
+  nasa:0: Aqua Satellite Orbiting Earth Artist Concept | NASA Aqua satellite carries six state-of-the-art instruments in a near-polar low-Earth orbit. Aqua is seen in this artist concept orbiting Earth. The six instru
+  nasa:1: View of the Syncom IV satellite in orbit over the earth | 41D-32-067 (31 Aug 1984) --- The Atlantic Oceans coastline of Angola forms the backdrop for this scene of the Syncom IV (Leasat-2) spacecraft as it and the Spac
+  nasa:2: Artist concept of satellite in orbit above the earth | Artist concept of satellite with solar panels deployed in orbit above the earth.
+  nasa:3: MISR Records the View as NASA's Terra Satellite Passes Its 100,000th Orbit | On Oct. 6, 2018, NASA's Terra satellite became one of a handful of NASA satellite ever to complete 100,000 orbits. Launched in 1999, Terra and its five scientif
+  nasa:4: A CubeSat is ejected into Earth orbit from a small satellite orbital deployer | iss072e351959 (Dec. 9, 2024) --- A CubeSat is ejected into Earth orbit from a small satellite orbital deployer attached to the International Space Station's Kib
+  wiki:5: North America from low orbiting satellite Suomi NPP | A view of most of North America taken from a low orbit of about 826 km altitude. The whole hemisphere is not visible owing to the low orbit, and the horizon is 
+  nasa:6: International Space Station mockup training | Expedition 68 trains for their upcoming International Space Station mission inside a mockup that models the real orbiting lab at NASA's Johnson Space Center in 
+  nasa:7: 2020 International Space Station Configuration | 2020 International Space Station Configuration
+  nasa:8: That No Space Station | That No Space Station
+  nasa:9: NASA Range Supports Space Station | Mission operator Mike Webb sits at one of the radar stations used to track the International Space Station as it passes high above NASA’s Armstrong Flight Resea
+  nasa:10: Space Station | In 1982, the Space Station Task Force was formed, signaling the initiation of the Space Station Freedom Program, and eventually resulting in the Marshall Space 
+  nasa:11: Space Station | This picture illustrates a concept of a 33-Foot-Diameter Space Station Leading to a Space Base. In-house work of the Marshall Space Flight Center, as well as a 
+
+[v014] needs: radio waves animation | narration: The satellites broadcast these vital data points continuously down to the surface of the planet.
+  nasa:0: Saturn Plasma and Radio Waves, as Seen by Cassini | This frame from an animation, derived from data obtained by NASA Cassini spacecraft, shows how plasma swirling around Saturn is correlated to bursts of radio wa
+  nasa:1: Juno Detects a Ham Radio HI from Earth | During its close flyby of Earth, NASA Jupiter-bound Juno spacecraft listened for a coordinated, global transmission from amateur radio operators using its radio
+  nasa:2: Lightning Sounds from Saturn Audio | Lightning sounds from Saturn can be heard via radio signals received by the radio and plasma wave science instrument on the Cassini spacecraft
+  nasa:3: Backward Black Hole Shoots Powerful Jets Artist Concept | This artist concept shows a galaxy with a supermassive black hole at its core. The black hole is shooting out jets of radio waves.
+  nasa:4: Roman Coronagraph Undergoes Electromagnetic Interference Testing | The Roman Coronagraph Instrument, a technology demonstration that will be part of NASA's Nancy Grace Roman Space Telescope, is seen amid testing at the agency's
+  nasa:5: Juno Listens to Jupiter Auroras Sing | During its close flyby of Jupiter on August 27, 2016, the Waves instrument on NASA's Juno spacecraft received radio signals associated with the giant planet's v
+  wiki:6: Cooking with radio waves - Short Wave Craft Nov 1933 cover | Demonstration of cooking by radio waves at the 1933 Chicago World's Fair, "Century of Progress", Chicago, Illinois, USA, illustration on cover of Hugo Gernsback
+  wiki:7: Radio Signal Reflection & Refraction on a Simple Ionosphere Model (SVS5240 - polar propaga | A simple animated plotting of radio wave refraction and reflection on a simplified ionosphere model, landscape format.
+  wiki:8: Radio Signal Reflection & Refraction on a Simple Ionosphere Model (SVS5240 - polar propaga | A simple animated plotting of radio wave refraction and reflection on a simplified ionosphere model, portrait format.
+  wiki:9: Radio Signal Reflection & Refraction on a Simple Ionosphere Model (SVS5240 - polar propaga | A simple animated plotting of radio wave reflection on a simplified ionosphere model; all waves reflected, no altitude scale, landscape format.
+  wiki:10: Radio Signal Reflection & Refraction on a Simple Ionosphere Model (SVS5240 - portrait pola | A simple animated plotting of radio wave reflection on a simplified ionosphere model; all waves reflected, no altitude scale, portrait format.
+  nasa:11: Communication Technology Satellite Portable Terminal | This vehicle served as a mobile terminal for the Communications Technology Satellite. The Communications Technology Satellite was an experimental communications
+
+[v017] needs: radio waves | narration: and when a receiver gets it is proportional to the distance.
+  nasa:0: Saturn Plasma and Radio Waves, as Seen by Cassini | This frame from an animation, derived from data obtained by NASA Cassini spacecraft, shows how plasma swirling around Saturn is correlated to bursts of radio wa
+  nasa:1: Juno Detects a Ham Radio HI from Earth | During its close flyby of Earth, NASA Jupiter-bound Juno spacecraft listened for a coordinated, global transmission from amateur radio operators using its radio
+  nasa:2: Lightning Sounds from Saturn Audio | Lightning sounds from Saturn can be heard via radio signals received by the radio and plasma wave science instrument on the Cassini spacecraft
+  nasa:3: Backward Black Hole Shoots Powerful Jets Artist Concept | This artist concept shows a galaxy with a supermassive black hole at its core. The black hole is shooting out jets of radio waves.
+  nasa:4: Roman Coronagraph Undergoes Electromagnetic Interference Testing | The Roman Coronagraph Instrument, a technology demonstration that will be part of NASA's Nancy Grace Roman Space Telescope, is seen amid testing at the agency's
+  nasa:5: Juno Listens to Jupiter Auroras Sing | During its close flyby of Jupiter on August 27, 2016, the Waves instrument on NASA's Juno spacecraft received radio signals associated with the giant planet's v
+  wiki:6: Cooking with radio waves - Short Wave Craft Nov 1933 cover | Demonstration of cooking by radio waves at the 1933 Chicago World's Fair, "Century of Progress", Chicago, Illinois, USA, illustration on cover of Hugo Gernsback
+  wiki:7: Radio Signal Reflection & Refraction on a Simple Ionosphere Model (SVS5240 - polar propaga | A simple animated plotting of radio wave refraction and reflection on a simplified ionosphere model, landscape format.
+  wiki:8: Radio Signal Reflection & Refraction on a Simple Ionosphere Model (SVS5240 - polar propaga | A simple animated plotting of radio wave refraction and reflection on a simplified ionosphere model, portrait format.
+  wiki:9: Radio Signal Reflection & Refraction on a Simple Ionosphere Model (SVS5240 - polar propaga | A simple animated plotting of radio wave reflection on a simplified ionosphere model; all waves reflected, no altitude scale, landscape format.
+  wiki:10: Radio Signal Reflection & Refraction on a Simple Ionosphere Model (SVS5240 - portrait pola | A simple animated plotting of radio wave reflection on a simplified ionosphere model; all waves reflected, no altitude scale, portrait format.
+  nasa:11: jsc2026e014327 | jsc2026e014327 (March 23, 2026) --- The research team as part of the Nanoracks-ITSI investigation, from left: Alex Chartier (PI), Matt Bailey (engineer), Greg M
+
+[v018] needs: an electronic circuit board | narration: Modern electronics can measure this signal offset to
+  nasa:0: ES43 PRINTED CIRCUIT BOARD ASSEMBLY, JACOB HARPER | ES43 PRINTED CIRCUIT BOARD ASSEMBLY, JACOB HARPER
+  nasa:1: Circuit Boards on Rover 2 | In the Payload Hazardous Servicing Facility, technicians remove one of the circuit boards on the Mars Exploration Rover 2 MER-2.
+  nasa:2: Lander Petals of Rover 2 | In the Payload Hazardous Servicing Facility, technicians reopen the lander petals of the Mars Exploration Rover 2 MER-2 to allow access to one of the spacecraft
+  nasa:3: Rover 2 | In the Payload Hazardous Servicing Facility, the lander petals of the Mars Exploration Rover 2 MER-2 have been reopened and its solar panels deployed to allow t
+  wiki:4: Printed Circuit Board 2 | Printed Circuit Board
+  wiki:5: Aurora 2ch mixer board arrived (2009-07-28 11.20.55 by c-g.) | The board arrived safe and sound from Canada. (Boards of Canada?) Now to order all the parts and get jiggy with my new solder station a local plastics firm is t
+  wiki:6: Circuit board after manual etching | After etching of the circuit board the uncovered copper surfaces have gone. The etching solution is in the background. Its light green colour is a sign of the d
+  wiki:7: Circuit board with protective layer ready for etching | A protective layer of laser toner was put on top of the copper surface using a hot iron.
+  wiki:8: Printed Circuit Board 9990 | A printed circuit board, specifically the analogue I/O board of an Akai CD3000XL sampler.
+  nasa:9: Second Names Chip is Placed on InSight | An engineer in the clean room at Lockheed Martin Space in Littleton, Colorado, affixes a dime-size chip onto the lander deck of NASA's InSight spacecraft. This 
+  nasa:10:  Europa Clipper's 'Golden Record' | NASA's Europa Clipper spacecraft will carry a special message when it launches in October 2024 and heads toward Jupiter's moon Europa. The moon shows strong evi
+  wiki:11: Integrated-circuit-open | 
+
+[v021] needs: a sphere diagram | narration: If you know you are a certain distance from a single satellite, you could be anywhere on a sphere surrounding it.
+  nasa:0: Juno's Ganymede Close-up | This image of the Jovian moon Ganymede was obtained by the JunoCam imager aboard NASA's Juno spacecraft during its June 7, 2021, flyby of the icy moon. At the t
+  wiki:1: Zhuravlyne ozero | Zhuravlyne Lake is a hydrological monument of nature, Sumy Oblast, Ukraine.
+  wiki:2: Foliation of the sphere by Lexell circles | A foliation of the sphere by Lexell circles. Every point on the same small circle through A* and B* (a Lexell circle) is the apex of a triangle with base AB and
+  wiki:3: Sphere with an opaque set of type (1, 2) (figure B) | A unit sphere with the current most optimal opaque set of type (1, 2), with a total length of 2pi2
+  wiki:4: Sphere with an opaque set of type (1, 2) (figure C) | unit sphere with the current most optimal opaque set of type (1, 2), with a total length of 2pi2
+  nasa:5: SPHERES Vertigo | ISS040-E-079083 (25 July 2014) --- In the International Space Station?s Kibo laboratory, NASA astronaut Steve Swanson, Expedition 40 commander, enters data in a
+  nasa:6: SPHERES-Vertigo experiment | ISS040-E-080130 (25 July 2014) --- In the International Space Station?s Kibo laboratory, European Space Agency astronaut Alexander Gerst, Expedition 40 flight e
+  nasa:7: SPHERES Vertigo | ISS040-E-079355 (25 July 2014) --- In the International Space Station?s Kibo laboratory, NASA astronaut Steve Swanson (foreground), Expedition 40 commander; and
+  nasa:8: SPHERES Vertigo | ISS040-E-079910 (25 July 2014) --- In the International Space Station?s Kibo laboratory, NASA astronaut Steve Swanson (left), Expedition 40 commander; and Europ
+  nasa:9: SPHERES Vertigo | ISS040-E-079129 (25 July 2014) --- In the International Space Station?s Kibo laboratory, NASA astronaut Steve Swanson (left), Expedition 40 commander; and Europ
+  nasa:10: SPHERES Vertigo | ISS040-E-079332 (25 July 2014) --- In the International Space Station?s Kibo laboratory, NASA astronaut Steve Swanson (foreground), Expedition 40 commander; and
+  wiki:11: Io highest resolution true color | Original Caption Released with Image: NASA's Galileo spacecraft acquired its highest resolution images of Jupiter's moon Io on 3 July 1999 during its closest pa
+
+[v022] needs: intersecting spheres | narration: Adding a second satellite narrows your possible location
+  nasa:0: Investigating Mars: Russell Crater | This image shows the western section of the large sand ridge on the floor of Russell Crater. This is also the northern extent of the dune field. The crest of th
+  nasa:1: Investigating Mars: Pavonis Mons | This image shows the western part of the smaller summit caldera on Pavonis Mons. On this side of the caldera is a complex region of fault related collapse of th
+  wiki:2: Glass flask decorated with intersecting circles MET DP107334 | Roman; Flask; Glass
+  wiki:3: Glass jug decorated with intersecting circles MET DP107001 | Roman; Jug; Glass
+  wiki:4: Glass flask decorated with intersecting circles MET DP107637 | Roman; Flask; Glass
+  wiki:5: Glass flask decorated with intersecting circles MET DP107638 | Roman; Flask; Glass
+  wiki:6: Glass flask decorated with intersecting circles MET DP117549 | Roman; Flask; Glass
+  wiki:7: Intersection sphères | intersection de deux sphères
+
+[v024] needs: intersecting spheres in 3d space | narration: Bringing in a third satellite shrinks the intersection down to just two points in three-dimensional space.
+  nasa:0: Magellan 3D perspective of Venus surface in western Eistla Regio | Magellan synthetic aperture radar data was used to create this three- dimensional (3D) perspective view of Venus' western Eistla Regio. This viewpoint is locate
+  nasa:1: Magellan 3D view of Venus impact craters | Three impact craters in three-dimensional perspective located approximately 27 degrees south latitude, 339 degrees east longitude in the northwestern portion of
+  wiki:2: Abies alba cross section Beskid Żywiecki | Abies alba cross section, Beskid Żywiecki, Poland.
+  wiki:3: Red cabbage cross section 02 | Cross section of a red cabbage
+  wiki:4: Ouster OS1-64 lidar point cloud of intersection of Folsom and Dore St, San Francisco | Orthographic projection of a registered point cloud captured over 18 seconds using an Ouster OS1 lidar mounted on a moving car. Approximately 23 million points 
+  wiki:5: Cross section himachal 1216 | cross section of himachal pradesh
+  nasa:6: Jupiter Ring | First evidence of a ring around the planet Jupiter is seen in this photograph taken by Voyager 1 on March 4, 1979. The multiple exposure of the extremely thin f
+  nasa:7: Huge Super Typhoon Meranti Over Taiwan Spotted by NASA MISR | On Sept. 14, 2016, the eye of Super Typhoon Meranti passed just south of Taiwan. The enormous storm, classified as a Category 5 typhoon at the time, still cause
+  nasa:8: Tropical Storm Harvey Spotted by NASA's MISR | On Aug. 27, 2017, the Multi-angle Imaging SpectroRadiometer (MISR) instrument on NASA's Terra satellite passed over then-Tropical Storm Harvey about noon local 
+  nasa:9: Flooding in Pakistan August 4, 2010 | NASA image acquired August 4, 2010 Though many areas in northwest Pakistan were bracing for heavy rain and additional flash flooding on August 4, 2010, the city
+  wiki:10: Centroid of parabola | 포물선의 도심
+  wiki:11: Vanishing points in Jan van Eyck's Madonna in the Church (geometric reconstruction of the  | Vanishing point analysis of Jan van Eyck's Madonna in the Church, by Gilles Simon, Université de Lorraine (geometric reconstruction of the upper part)
+
+[v025] needs: Earth from space | narration: One of those two points is usually out in space, leaving only a single realistic position on the Earth.
+  nasa:0: STS-45 Pilot Duffy with inflatable Earth globe on OV-104's middeck | STS045-19-032 (24 March-2 April 1992) --- Astronaut Brian Duffy, STS-45 pilot, uses an inflatable globe to demonstrate Earth observations for an educational pro
+  nasa:1: Global Images of Earth | Global images of Earth from NASA Galileo orbiter on December 11, 1999. In each frame, the continent of Antarctica is visible at the bottom of the globe.
+  nasa:2: GRC-1998-C-02816 | EARTH GLOBE WITH BLUE GLOW
+  nasa:3: NASA Earth Day 2019 | Visitors to NASA's exhibits at the Earth Day event take a picture with a globe, Monday, April 22, 2019, at Union Station in Washington, D.C. Photo Credit: (NASA
+  nasa:4: NASA Earth Day 2019 | Signs that can be held up in a picture with a large globe are seen on a table at NASA's Earth Day event on Monday, April 22, 2019, at Union Station in Washingto
+  nasa:5: KSC-62PC-0078 | CAPE CANAVERAL, Fla. -- An Atlas launch vehicle lifts off with the Mercury spacecraft Sigma 7 atop with astronaut Walter M. Schirra Jr. aboard. The fifth Americ
+  wiki:6: Coronelli globe terrestre | Coronelli Terrestrial Globe (1681-1683), Bibliothèque nationale de France, François-Mitterrand site, Paris, France.
+  wiki:7: Globe of Earth, signed J Blaen, 1602, City of Prague Museum, 200489 | Globe of Earth, signed J Blaen, 1602. The City of Prague Museum.
+  wiki:8: Seattle (WA, USA), P-I Globe -- 2022 -- 1708 | View from Myrtle Edwards Park to the P-I Globe in Seattle, Washington, USA
+  wiki:9: Globe with yellow background 2 | Globe with yellow background 2
+  wiki:10: Globe with yellow background 1 | Globe with yellow background 1
+  nasa:11: Earth-class Planets Line Up | This chart compares the first Earth-size planets found around a sun-like star to planets in our own solar system, Earth and Venus. NASA Kepler mission discovere
+
+[v027] needs: a mechanical watch | narration: That cheap clock has a time offset relative to the true time kept by the satellite network.
+  nasa:0: KSC-20120209-PH-PR_pressSite_FL-8-11-N-2 | Press Site facing countdown clock
+  nasa:1: KSC-20120209-PH-PR_pressSite_FL-8-11-N-1 | Press Site facing countdown clock
+  nasa:2: ARC-1991-AC91-3009 | The northern hemisphere is displayed in this global view of the surface of Venus. The north pole is at the center of the image; with 0 degrees, 90 degrees , 180
+  nasa:3: KSC-02PD0340 | KENNEDY SPACE CENTER, FLA. -- Before departing for Houston, the STS-110 crew poses in front of the countdown clock that faces the grandstand at the Press Site. 
+  nasa:4: KSC-2010-3351 | CAPE CANAVERAL, Fla. - Space shuttle Atlantis' liftoff from Launch Pad 39A at NASA's Kennedy Space Center in Florida is witnessed by news media representatives 
+  nasa:5: sts132-s-005 | STS132-S-005 (14 May 2010) --- Witnessed by news media representatives and STS-132 Tweet-up participants on hand by the countdown clock at the Press Site, Space
+  wiki:6: London Big Ben Inner Clock Face 1070925-PSD | The clock-face of Big Ben (Elizabeth Tower) as it looked in 2009 before being renovated and restored.[1] The clock-face framework has since been restored to its
+  wiki:7: Praha Astronomical Clock Dial 01 | This is a photo of a cultural monument of the Czech Republic,number:
+  wiki:8: Churchill Jubilee Clock Tower Four Faces | Jubilee Clock Tower at Churchill, Somerset, showing the four faces and inscription
+  wiki:9: The Clock Face, Prescot - geograph.org.uk - 1996064 | The Clock Face, Prescot
+  wiki:10: Dülmen, Kirchspiel, ehem. Sondermunitionslager Visbeck, "What if" -- 2023 -- 6686 (kreativ | Creative series “Pocket watch” with background from the Dülmen-Visbeck Special Ammunition Storage, Dernekamp, Kirchspiel, Dülmen, North Rhine-Westphalia, German
+  wiki:11: Longines 4 Grand Prix pocket watch - clockwork visible - enhanced resolution DSF3402-PSMS | Longines manual winding pocket watch, model 4 Grand Prix, silver casing, manufactured approx. 1900. Rear view, wear marks, clockwork visible. Enhanced resolutio
+
+[v030] needs: multiple GPS satellites | narration: To solve for this extra unknown variable, your receiver must look at more than just three space vehicles.
+  nasa:0: KSC-02pd1834 | KENNEDY SPACE CENTER, FLA. - The TDRS-J satellite arrives at the gantry on Launch Complex 36-A, Cape Canaveral Air Force Station. The satellite is scheduled to 
+  nasa:1: TDRS-M Liftoff | As the Sun rises at Space Launch Complex 41 at Cape Canaveral Air Force Station in Florida, a United Launch Alliance Atlas V rocket vents liquid oxygen propella
+  nasa:2: iss059e102911 | iss059e102911 (6/13/2019 --- Photo documentation taken aboard the International Space Station (ISS) of the JEM Small Satellite Orbital Deployer #11 (J-SSOD #11)
+  nasa:3: One Web Satellites Ground Breaking | A model of a OneWeb satellite like those the company will build to will connect all areas of the world to the Internet wirelessly. The company plans to launch 2
+  nasa:4: KSC00pp0427 | At launch pad 36-A, Cape Canaveral Air Force Station, lifting of the second stage of an Atlas II/Centaur rocket in the launch gantry is completed. The rocket is
+  nasa:5: JEM Small Satellite Orbital Deployer #11 (J-SSOD #11) micro-satellite deployment mission | iss059e104298 (6/17/2019) --- Photo documentation taken of the JEM Small Satellite Orbital Deployer #11 (J-SSOD #11) micro-satellite deployment mission. J-SSOD#
+  wiki:6: Geostationary Satellite Constellation | Sketch of a geostationary satellite constellation.
+  wiki:7: Pléiades (satellite) | Maquette d'un satellite de la constellation Pléiades, au stand du CNES, au salon du Bourget 2019
+  wiki:8: Constellation satellites in low Earth orbits (artist’s impression, not to scale) (noirlab2 | In May 2019 SpaceX launched its first batch of 60 Starlink communication satellites, which surprised astronomers and lay people with their appearance in the nig
+  wiki:9: Objects and debris in LEO by height white | Low Earth Orbit's debris density, and notable active satellites by height. Note the peaks of space debris at various heights, crowding, and future mega constell
+  nasa:10: Three Times the Fun | Three of Saturn moons, Tethys, Enceladus and Mimas, are captured in this group photo from NASA Cassini spacecraft.
+  nasa:11: Cerberus Fossae | This image captured by NASA 2001 Mars Odyssey spacecraft shows Cerberus Fossae, a group of graben located near the southern part of Tartarus Montes.
+
+[v032] needs: space physics | narration: forces threaten to ruin the accuracy of your navigation.
+  nasa:0: Global Map of Epithermal Neutrons | Observations by NASA's 2001 Mars Odyssey spacecraft show a global view of Mars in intermediate-energy, or epithermal, neutrons. Soil enriched by hydrogen is ind
+  nasa:1: KSC-2012-3216 | VANDENBERG AIR FORCE BASE, Calif. – Orbital Sciences’ L-1011 carrier aircraft appears to hover above the runway as it departs from Vandenberg Air Force Base in 
+  nasa:2: KSC-2012-3199 | VANDENBERG AIR FORCE BASE, Calif. – An Orbital Sciences’ Pegasus rocket and NASA’s Nuclear Spectroscopic Telescope Array, or NuSTAR, are installed under Orbital
+  nasa:3: KSC-2012-3209 | VANDENBERG AIR FORCE BASE, Calif. – Orbital Sciences’ L-1011 carrier aircraft taxies to the runway at Vandenberg Air Force Base in California. The aircraft is t
+  nasa:4: KSC-2012-3214 | VANDENBERG AIR FORCE BASE, Calif. – Orbital Sciences’ L-1011 carrier aircraft lifts off the runway as it departs from Vandenberg Air Force Base in California. T
+  nasa:5: KSC-2012-3212 | VANDENBERG AIR FORCE BASE, Calif. – Orbital Sciences’ L-1011 carrier aircraft prepares for takeoff from the runway at Vandenberg Air Force Base in California. T
+  wiki:6: Einstein equations of General Relativity | The Einstein equations of General Relativity.
+  wiki:7: Equation for calculation of stellar radii using the boltzmann law with an example of the r | ---------------------------------------------
+  wiki:8: Equation anyone? (5391443040) | At the entrance of the National Academies of Sciences.
+  nasa:9: GEMINI SPACECRAFT - ARTIST CONCEPT | S64-22331 (1964) --- Artist concept illustrating the relative sizes of the one-man Mercury spacecraft, the two-man Gemini spacecraft, and the three-man Apollo s
+  nasa:10: Pathfinder | This picture is an artist's concept of an orbiting vehicle using the Electrodynamic Tethers Propulsion System. Relatively short electrodynamic tethers can use s
+  nasa:11: GEMINI - ARTIST CONCEPT - SPACECRAFT COMPARISONS - MSC | S64-01123 (1964) --- Artist concept illustrating the relative sizes of the one-man Mercury spacecraft, the two-man Gemini spacecraft, and the three-man Apollo s
+
+[v033] needs: gravitational field diagram | narration: General relativity also shows that clocks located deeper in a gravitational well tick slower.
+  nasa:0: KSC-07pd0956 | KENNEDY SPACE CENTER, FLA. -- At the Kennedy Space Center Shuttle Landing Facility, a modified Boeing 727 aircraft owned by Zero Gravity Corp. is ready to take 
+  nasa:1: KSC-07pd0957 | KENNEDY SPACE CENTER, FLA. -- At the Kennedy Space Center Shuttle Landing Facility, a modified Boeing 727 aircraft owned by Zero Gravity Corp. takes off with it
+  nasa:2: KSC-98pc268 | KENNEDY SPACE CENTER, FLA. -- Technicians gather around the STS-90 Neurolab payload during weight and center-of-gravity measurements in KSC's Operations and Che
+  nasa:3: Skylab | Lexington, Massachusetts high school student, Judith Miles, discusses her proposed Skylab experiment with Keith Demorest (right) and Henry Floyd, both of Marsha
+  nasa:4: KSC-07pd0963 | KENNEDY SPACE CENTER, FLA. -- Well-wishers greet noted physicist Stephen Hawking (in the wheelchair) at the Kennedy Space Center Shuttle Landing Facility after 
+  nasa:5: KSC-07pd0962 | KENNEDY SPACE CENTER, FLA. -- Well-wishers greet noted physicist Stephen Hawking (in the wheelchair) at the Kennedy Space Center Shuttle Landing Facility after 
+  wiki:6: Gravity Wells Potential Plus Kinetic Energy - Circle-Ellipse-Parabola-Hyperbola | The gravity wells are shown for four conic section trajectories. The x-axis and y-axis show spatial dimensions around the primary body. The z-axis shows energy,
+  wiki:7: Force Field-Gravity Well Inter-relationship | A 2-D slice of a gravitational force vector field (left) is interchangable with a 3-D gravity well (right), with the z-axis showing energy (potential). The grad
+  wiki:8: LOR Gravity Well | Lunar Orbit Rendezvous explained in terms of gravity well efficiency. If on an expedition to the bottom of a canyon, it is a waste of energy to transport everyt
+  wiki:9: Reduced Gravity Walking Simulator - NASA 1963 | A test subject being suited up for studies on the Reduced Gravity Walking Simulator located in the hangar at Langley Research Center. The initial version of thi
+  wiki:10: Lattice analogy for complex curvature tensor | Noone ever managed to use Riemann curvature tensor for complex Minkowski space because we cannot use the real curvature tensor for a complex space. It contradic
+  wiki:11: **Published thought experiment on a reader with a book and an atomic clock in a spaceship  | A reader with a book and an atomic clock in a spaceship moving near a massive object. The reader maintains a constant speed $V_1$, experiencing curved space-tim
+
+[v034] needs: a GPS satellite | narration: Because the satellites are far above the Earth, their clocks
+  nasa:0: Full view of Challenger in space taken by the SPAS satellite | STS007-32-1667 (22 June 1983) --- The Earth-orbiting Space Shuttle Challenger over a heavily cloud-covered portion of the Earth was captured by a 70mm camera on
+  nasa:1: Palapa-B communications satellite launched from the Shuttle Challenger | S83-35764 (19 June 1983) --- The Indonesian Palapa B communications satellite is just about to clear the vertical stabilizer of the Earth-orbiting Space Shuttle
+  nasa:2: Japanese Space Flyer Unit (SFU) satellite rendezvous | STS072-720-042 (13 Jan. 1996) --- The crew members captured this 70mm view of the Japanese Space Flyer Unit (SFU) just prior to the jettisoning of the solar pan
+  nasa:3: View of the SBS-4 communications satellite in orbit above the earth | 41D-39-068 (1 Sept 1984) --- Quickly moving away from the Space Shuttle Discovery is the Telstar 3 communications satellite, deployed September 1, 1984. The 41-
+  nasa:4: Australia's AUSSAT satellite deployed from payload bay | 51I-32-023 (27 Aug. 1985) --- Australia's AUSSAT communications satellite is deployed from the payload bay of the space shuttle Discovery on flight day one. A p
+  nasa:5: SPARTAN 204 freeflying during STS-63 mission | The blackness of space and part of Earth's horizon form the backdrop for this 70mm frame of the free-flying SPARTAN 204 mission. Carried into space by the STS-6
+  wiki:6: Satellite image of Madagascar in September 2003 | Satellite image of Madagascar in September 2003. Slightly cropped, original taken from NASA's Visible Earth: [1]. Original description: The world's fourth large
+  wiki:7: Satellite image of France in August 2002 | Satellite image of France acquired August 14, 2002, by the Terra satellite. An unusually cloud-free France shows green and tan in this true-color Moderate Resol
+  wiki:8: Satellite image of New Zealand in December 2002 | Satellite image of New Zealand in December 2002. NASA's description: These stunning true-color images provide a rare, cloud-free look at the island nation of Ne
+  wiki:9: Venice Lagoon December 9 2001 | This picture of the Venetian Lagoon was taken by ASTER (Advanced Spaceborne Thermal Emission and Reflection Radiometer), an imaging instrument flying on Terra, 
+  wiki:10: North America from low orbiting satellite Suomi NPP | A view of most of North America taken from a low orbit of about 826 km altitude. The whole hemisphere is not visible owing to the low orbit, and the horizon is 
+  wiki:11: Central-eastern Brazil, by Copernicus Sentinel-2A satellite | Central-eastern Brazil, by Copernicus Sentinel-2A satellite. Here we can see a large, flat plateau blanked with fields benefiting from rich soils and an apparen
+
+[v039] needs: an atomic clock | narration: Engineers solve this by giving the atomic clocks on board
+  nasa:0: Deep Space Atomic Clock Hardware | NASA's Deep Space Atomic Clock could revolutionize deep space navigation. One key requirement for the technology demonstration was a compact design. The complet
+  nasa:1: Microgravity | An artist's concept of the Primary Atomic Clock Reference System (PARCS) plarned to fly on the International Space Station (ISS). PARCS will make even more accu
+  wiki:2: President Piñera receives ESO's first atomic clock | At a ceremony held on 14 November 2013 at the La Moneda Palace, Sebastián Piñera, the President of Chile, received the first atomic clock used by ESO in Chile f
+  wiki:3: Improvements in Atomic Clock Accuracy | improvements in clock and time measuracy accuracy over time
+  wiki:4: Beidou atomic clock at CSTM 02 | Hydrogen maser used by Beidou navigation satellites displayed at China Science and Technology Museum.
+  wiki:5: HP 5061A Cesium beam frequency standard | HP 5061A Cesium beam frequency standard
+  wiki:6: Cesium clock | Inside of an HP 5061 cesium beam atomic clock. These are commonly used as a primary time standard in national standards laboratories and naval observatories.
+  wiki:7: NIST-F2 cesium fountain atomic clock | NIST physicists Steve Jefferts (foreground) and Tom Heavner with the NIST-F2 cesium fountain atomic clock, a new civilian time standard for the United States.
+
+[v042] needs: a smartphone | narration: Your phone simply listens to passive radio signals broadcast
+  wiki:0: Exhausted smartphone user | Checking smartphones continously can be stressfull.
+  wiki:1: Young people in Hong Kong using smartphones whilst walking | Young people in Hong Kong staring at electronic devices whilst walking
+  wiki:2: Girl listening to music with a smartphone | Girl listening to music with a smartphone.
+  wiki:3: Disinterest smartphone cover, Winschoten (2022) 01 | A smartphone cover indicating disinterest of its user, that is located in the Groninger city of Winschoten, Oldambt.
+  wiki:4: Smartphone user in train (2) | A passenger uses a mobile phone in the train and charges it.
+  wiki:5: User interacts with smartphone while seated on exercise mat in a fitness setting | Person using a smartphone on a purple exercise mat, focusing on content while wearing black workout attire. Earphones are connected to the phone, suggesting a f
+  nasa:6: 2013 Inaugural Parade | A woman bundled up for the cold temperatures makes a picture with here mobile device as she waits for the Inaugural Parade honoring President Barack Obama, Mond
+  nasa:7: jsc2021e016670 | Nate Ball of Atlas Devices prepares to test an APA-5 powered rope ascender with the Exploration Conop (EXCON) Suit, a new xEMU spacesuit simulator. Atlas uses t
+  nasa:8: iss068e029599 | iss068e029599 (Dec. 14, 2022) --- NASA astronaut and Expedition 68 Flight Engineer Nicole Mann exchanges samples inside the Microgravity Science Glovebox for th
+  nasa:9: Pore Formation and Mobility Investigation Hardware Setup | iss068e024574 (Nov. 26, 2022) --- NASA astronaut and Expedition 68 Flight Engineer Frank Rubio works in the Microgravity Science Glovebox setting up hardware fo
+  nasa:10: iss068e037083 | iss068e037083 (Jan. 4, 2022) --- NASA astronaut and Expedition 68 Flight Engineer Josh Cassada swaps samples inside the Microgravity Science Glovebox for the Po
+  wiki:11: Evolution Directions of Mobile Device | Evolution Directions of Mobile Device
+
+[v043] needs: an atomic clock | narration: by an overhead constellation of ultra-precise floating atomic clocks.
+  nasa:0: Deep Space Atomic Clock Hardware | NASA's Deep Space Atomic Clock could revolutionize deep space navigation. One key requirement for the technology demonstration was a compact design. The complet
+  nasa:1: Microgravity | An artist's concept of the Primary Atomic Clock Reference System (PARCS) plarned to fly on the International Space Station (ISS). PARCS will make even more accu
+  wiki:2: President Piñera receives ESO's first atomic clock | At a ceremony held on 14 November 2013 at the La Moneda Palace, Sebastián Piñera, the President of Chile, received the first atomic clock used by ESO in Chile f
+  wiki:3: Improvements in Atomic Clock Accuracy | improvements in clock and time measuracy accuracy over time
+  wiki:4: Beidou atomic clock at CSTM 02 | Hydrogen maser used by Beidou navigation satellites displayed at China Science and Technology Museum.
+  nasa:5: The Gap Moons | Saturn ring-embedded moons, Pan and Daphnis, are captured in an alignment they repeat with the regularity of a precise cosmic clock
+  nasa:6: ELaNa 19 / Venture Class CubeSats - CHOMPTT | The goal of the CHOMPTT mission is to demonstrate new technologies that could be used for navigation and satellite networking in deep space. For future explorer
+  nasa:7: ELaNa 19 / Venture Class CubeSats - CHOMPTT | The goal of the CHOMPTT mission is to demonstrate new technologies that could be used for navigation and satellite networking in deep space. For future explorer
+  nasa:8: ELaNa 19 / Venture Class CubeSats - CHOMPTT | The goal of the CHOMPTT mission is to demonstrate new technologies that could be used for navigation and satellite networking in deep space. For future explorer
+  wiki:9: Precision observatory clock (master cylinder), World Museum Liverpool | Copper low pressure tank containing the master pendulum of a Shortt Synchronome astronomical regulator clock, the most accurate pendulum clock ever manufactured
+  wiki:10: SWCC 60 beat master clock | Master clock made by the Self Winding Clock Company. A precision regulator clock with a mercury pendulum beating seconds.
+  wiki:11: Precision™ daylight savings time adjusting clock, Winschoten (2022) 02 | A clock that automatically sets a new time during daylight savings time, that is located in the Groninger city of Winschoten, Oldambt.
+
+[v044] needs: four GPS satellites | narration: By measuring the time delay of signals from four
+  nasa:0: J-SSOD-6 Deployment | iss050e031340 (1/16/2017) --- Photo documentation of the Japanese-Small Satellite Orbital Deployer-6 (J-SSOD-6) deployment of the ECG Cubesat. The EGG Satellite
+  nasa:1: Space Science | In this photo, the Gravity Probe B (GP-B) space vehicle is completed during the solar array installation. The GP-B is the relativity experiment developed at Sta
+  nasa:2: Space Science | In this photo, the Gravity Probe B (GP-B) space vehicle is being encapsulated atop the Delta II launch vehicle. The GP-B is the relativity experiment developed 
+  nasa:3: Space Science | In this photo, the Gravity Probe B (GP-B) space vehicle is being assembled at the Sunnyvale, California location of the Lockheed Martin Corporation. The GP-B is
+  nasa:4: Space Science | In this photo, the Gravity Probe B (GP-B) space vehicle is being encapsulated atop the Delta II launch vehicle. The GP-B is the relativity experiment developed 
+  nasa:5: Earth Observations taken by STS-127 Crew | S127-E-012776 (30 July 2009) --- Backdropped by Earth?s horizon and the blackness of space, a Dual RF Astrodynamic GPS Orbital Navigator Satellite (DRAGONSat) i
+  wiki:6: GPS Block IIIA | Artist's impression of a GPS Block IIIA satellite in orbit
+  wiki:7: Three Guardians GPS III (2002838418) | Three Guardians_GPS III
+  wiki:8: GPS Block IIIA (cropped) | Artist's impression of a GPS Block IIIA satellite in orbit
+  nasa:9: Io in Front of Jupiter | Jupiter four largest satellites, including Io, the golden ornament in front of Jupiter in this image from NASA Cassini spacecraft.
+  nasa:10: TOPEX/El Niño Watch - March thru June, 1997 | These four views of the Pacific Ocean were produced using sea surface height measurements taken by NASA U.S./French TOPEX/POSEIDON satellite.
+  nasa:11: Hubble Finds Many Bright Clouds on Uranus | A recent NASA Hubble Space Telescope view reveals Uranus surrounded by its four major rings and by 10 of its 17 known satellites.
+
+[v045] needs: a GPS navigation screen | narration: separate satellites, your device calculates its exact position locally.
+  nasa:0: NASA Pathways Intern Helps Validate GPS Coordinates | NASA Pathways intern Saré Culbertson, right, works with NASA operations engineer Jack Hayes at NASA’s Armstrong Flight Research Center in Edwards, California, o
+  nasa:1: Kate Rubins - JETT5 - jsc2024e036518 | NASA astronaut Kate Rubins uses the hand controller on her wrist to display information while wearing the Joint AR (Joint Augmented Reality Visual Informatics S
+  nasa:2: JETT5 - jsc2024e036533 | NASA astronauts Andre Douglas and Kate Rubins during a nighttime advanced technology run in the San Francisco Volcanic Field in Northern Arizona on May 21, 2024
+  nasa:3: Andre Douglas - JETT5 - jsc2024e036529 | NASA astronaut Andre Douglas wears the Joint AR (Joint Augmented Reality Visual Informatics System) display during a nighttime advanced technology run in the Sa
+  nasa:4: Kate Rubins - JETT5 - jsc2024e035704 | NASA astronaut Kate Rubins pushes a cart through the lunar-like landscape while wearing the Joint AR (Joint Augmented Reality Visual Informatics System) display
+  nasa:5: Kate Rubins - JETT5 - jsc2024e035705 | NASA astronaut Kate Rubins walks through the lunar-like landscape wearing the Joint AR (Joint Augmented Reality Visual Informatics System) display during an adv
+  wiki:6: Waze W10 Event (15412760511) | Waze W10 Event, New York
+  wiki:7: Waze app screenshot | A screenshot of the Waze navigation app.
+  wiki:8: Olkhon Island, GPS navigation, Smartphone, Lake Baikal, Russia | GPS navigation. Smartphone. Olkhon Island, Lake Baikal, Russia.
+  nasa:9: KSC-08pd0041 | KENNEDY SPACE CENTER, FLA. -- This closeup of the replacement feed-through connector for the engine cutoff, or ECO, sensor system on space shuttle Atlantis show
+  nasa:10: KSC-08pd0005 | KENNEDY SPACE CENTER, FLA. -- At a lab at NASA's Kennedy Space Center, Bob Arp, an aerospace technician with the United Launch Alliance, inserts a wire from an 
+  nasa:11: View of Yurchikhin working on SMCC2 Command Processing Unit during Expedition 15 | ISS015-E-17726 (6 July 2007) --- Cosmonaut Fyodor N. Yurchikhin, Expedition 15 commander representing Russia's Federal Space Agency, checks measurements of pin 
+
+[v047] needs: Earth globe with navigation path | narration: entirely private while guiding you precisely across the world.
+  nasa:0: Clementine Observes the Moon, Solar Corona, and Venus | In 1994, during its flight, NASA's Clementine spacecraft returned images of the Moon. In addition to the geologic mapping cameras, the Clementine spacecraft als
+  nasa:1: Ingenuity's Hazard Avoidance Capability | In this video, images from NASA's Mars Ingenuity Helicopter's Flight 9, which took place on July 5, 2021, have been post-processed using the helicopter's hazard
+  nasa:2: VIPER Family Day | Ethan Massey, in the control booth, sends commands that control the movement of the Moon Gravity Representative Unit (MGRU3) at the Roverscape during Family Day
+  nasa:3: VIPER Family Day | Ethan Massey, in the control booth, sends commands that control the movement of the Moon Gravity Representative Unit (MGRU3) at the Roverscape during Family Day
+  nasa:4: NASA Pathways Intern Helps Validate GPS Coordinates | NASA Pathways intern Saré Culbertson, right, works with NASA operations engineer Jack Hayes at NASA’s Armstrong Flight Research Center in Edwards, California, o
+  nasa:5: VIPER Family Day | Antoine Tardy explains the operation of the Moon Gravity Representative Unit (MGRU3) at the Roverscape during Family Day for team members of the Volatiles Inves
+  wiki:6: Fernão Vaz Dourado 1571-1 | Nautical chart of Portuguese cartographer Fernão Vaz Dourado (c. 1520 - c. 1580), part of a nautical atlas drawn in 1571 and now kept in the Portuguese National
+  wiki:7: Mediterranean chart fourteenth century2 | Anonymous nautical chart in portolan style probably drawn in Genoa. Covers Mediterranean Sea from the Balearic Islands to the Levantine coast; also covers weste
+  wiki:8: Delaware Bay Vinckeboons 14 | Nautical chart of Zwaanendael ("Swanendael") and Godyn's Bay in New Netherland. Zwaanendael was a patroonship founded by Samuel Godyn, a director of the Dutch W
+  wiki:9: Puget Sound Nautical Chart NOAA (April 2017) | Puget Sound Nautical Chart NOAA from April 2017
+  wiki:10: 18453 - Tacoma Harbor nautical chart NOAA March 2013 | Nautical chart of Tacoma harbor from March 2023, NOAA #18453
+  wiki:11: Nautical chart of portion of the western Chesapeake Bay shore near Thomas Point and Annapo | A National Oceanic and Atmospheric Administration nautical chart of a portion of the western Chesapeake Bay shore near Thomas Point and Annapolis, Maryland.

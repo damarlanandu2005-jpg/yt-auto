@@ -1,0 +1,10 @@
+{
+  "results": [
+    {
+      "id": "s06.07",
+      "verdict": "supported",
+      "problem": "",
+      "fixed_text": ""
+    }
+  ]
+}

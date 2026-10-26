@@ -1,0 +1,19 @@
+{
+ "question": "How does a phone determine your exact location on Earth using signals from space without sending any data back?",
+ "angle": "Unpacking the common fear that GPS tracks you, revealing that GPS is actually a passive one-way network of ultra-precise floating clocks.",
+ "structure": "Myth vs fact coupled with a step by step mechanism breakdown to show how simple time measurement creates global positioning.",
+ "outline": [
+  "The common myth that GPS satellites actively monitor and track your mobile phone",
+  "How satellites act as floating radio stations broadcasting time and position data",
+  "Calculating distance by measuring signal speed and precise time delay",
+  "Combining distance spheres from three satellites using trilateration",
+  "Why a fourth satellite is needed to correct smartphone clock errors",
+  "How relativity corrections keep your location accurate every single day"
+ ],
+ "wikipedia_titles": [
+  "Global Positioning System",
+  "Trilateration",
+  "Atomic clock",
+  "Error analysis for the Global Positioning System"
+ ]
+}

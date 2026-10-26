@@ -1,0 +1,119 @@
+{
+  "checks": [
+    {
+      "n": 1,
+      "fits": true,
+      "reason": "clearly shows a smartphone"
+    },
+    {
+      "n": 2,
+      "fits": true,
+      "reason": "clearly shows Earth from space"
+    },
+    {
+      "n": 3,
+      "fits": true,
+      "reason": "clearly shows a GPS satellite"
+    },
+    {
+      "n": 4,
+      "fits": true,
+      "reason": "clearly shows a handheld GPS receiver"
+    },
+    {
+      "n": 5,
+      "fits": true,
+      "reason": "clearly shows a smartphone"
+    },
+    {
+      "n": 6,
+      "fits": true,
+      "reason": "clearly shows a GPS satellite"
+    },
+    {
+      "n": 7,
+      "fits": true,
+      "reason": "clearly shows radio waves animation relative to Earth"
+    },
+    {
+      "n": 8,
+      "fits": true,
+      "reason": "clearly shows an electronic circuit board"
+    },
+    {
+      "n": 9,
+      "fits": true,
+      "reason": "clearly shows a sphere diagram"
+    },
+    {
+      "n": 10,
+      "fits": true,
+      "reason": "clearly shows intersecting spheres"
+    },
+    {
+      "n": 11,
+      "fits": true,
+      "reason": "clearly shows intersecting spheres in 3d space"
+    },
+    {
+      "n": 12,
+      "fits": true,
+      "reason": "clearly shows Earth from space"
+    },
+    {
+      "n": 13,
+      "fits": true,
+      "reason": "clearly shows a mechanical watch mechanism"
+    },
+    {
+      "n": 14,
+      "fits": true,
+      "reason": "clearly shows multiple GPS satellites constellation diagram"
+    },
+    {
+      "n": 15,
+      "fits": true,
+      "reason": "clearly shows space physics equation"
+    },
+    {
+      "n": 16,
+      "fits": true,
+      "reason": "clearly shows gravitational field diagram"
+    },
+    {
+      "n": 17,
+      "fits": true,
+      "reason": "clearly shows a GPS satellite"
+    },
+    {
+      "n": 18,
+      "fits": true,
+      "reason": "clearly shows an atomic clock installation"
+    },
+    {
+      "n": 19,
+      "fits": true,
+      "reason": "clearly shows a smartphone"
+    },
+    {
+      "n": 20,
+      "fits": true,
+      "reason": "clearly shows a laboratory atomic clock inside a protective housing"
+    },
+    {
+      "n": 21,
+      "fits": true,
+      "reason": "clearly shows four Earth views representing multiple satellites"
+    },
+    {
+      "n": 22,
+      "fits": true,
+      "reason": "clearly shows a GPS navigation screen"
+    },
+    {
+      "n": 23,
+      "fits": true,
+      "reason": "clearly shows an old navigational map of Africa"
+    }
+  ]
+}

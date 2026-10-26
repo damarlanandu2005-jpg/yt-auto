@@ -1,0 +1,171 @@
+{
+ "checked": 44,
+ "supported_first_pass": 31,
+ "fixed": [
+  {
+   "id": "s06.07",
+   "old": "Without corrections, this would accumulate into positioning errors of roughly 11 kilometres every day.",
+   "new": "Without corrections, errors of roughly 11.4 km per day would accumulate in the position.",
+   "problem": "passes 11 kilometers instead of 11.4 km"
+  }
+ ],
+ "dropped": [
+  {
+   "id": "s01.03",
+   "text": "The Global Positioning System is owned by the United States Space Force and operated by Mission Delta 31.",
+   "problem": ""
+  },
+  {
+   "id": "s02.05",
+   "text": "The orbits are arranged so that at least 6 satellites are always within line of sight from everywhere on the Earth.",
+   "problem": ""
+  },
+  {
+   "id": "s02.06",
+   "text": "Each satellite acts like a floating radio station that carries an accurate record of its own position and time.",
+   "problem": ""
+  },
+  {
+   "id": "s03.02",
+   "text": "Each satellite carries very stable atomic clocks that are synchronized with reference clocks on the ground.",
+   "problem": ""
+  },
+  {
+   "id": "s03.03",
+   "text": "An atomic clock measures time by monitoring the resonant frequency of atoms.",
+   "problem": ""
+  },
+  {
+   "id": "s03.04",
+   "text": "Since the speed of radio waves is constant and independent of the satellite speed, time delay relates directly to distance.",
+   "problem": ""
+  },
+  {
+   "id": "s03.06",
+   "text": "Your receiver compares the bit sequence received from the satellite with an internally generated version.",
+   "problem": ""
+  },
+  {
+   "id": "s04.02",
+   "text": "Trilateration is the use of distances for determining the unknown position coordinates of a point of interest.",
+   "problem": ""
+  },
+  {
+   "id": "s05.02",
+   "text": "While the satellites carry ultra-precise atomic clocks, your smartphone relies on a cheap internal quartz crystal clock.",
+   "problem": "smartphone and quartz crystal clock are not mentioned in the passages"
+  },
+  {
+   "id": "s05.06",
+   "text": "At a minimum, four satellites must be in view for the receiver to compute three position coordinates and its clock deviation.",
+   "problem": ""
+  },
+  {
+   "id": "s06.02",
+   "text": "According to special relativity, the faster an object moves, the slower its time appears to pass.",
+   "problem": ""
+  },
+  {
+   "id": "s06.03",
+   "text": "The atomic clocks moving at orbital speeds tick more slowly than stationary clocks by a fraction of 8.349 parts in 10 to the 11th.",
+   "problem": ""
+  }
+ ],
+ "bad_ids": [],
+ "copied": [
+  {
+   "id": "s01.03",
+   "phrases": [
+    "by the united states space force and operated",
+    "owned by the united states space force and",
+    "space force and operated by mission delta 31",
+    "states space force and operated by mission delta",
+    "the united states space force and operated by",
+    "united states space force and operated by mission"
+   ]
+  },
+  {
+   "id": "s02.05",
+   "phrases": [
+    "always within line of sight from everywhere on",
+    "are always within line of sight from everywhere",
+    "line of sight from everywhere on the earth",
+    "satellites are always within line of sight from",
+    "the orbits are arranged so that at least",
+    "within line of sight from everywhere on the"
+   ]
+  },
+  {
+   "id": "s02.06",
+   "phrases": [
+    "accurate record of its own position and time",
+    "an accurate record of its own position and",
+    "carries an accurate record of its own position"
+   ]
+  },
+  {
+   "id": "s03.02",
+   "phrases": [
+    "very stable atomic clocks that are synchronized with"
+   ]
+  },
+  {
+   "id": "s03.03",
+   "phrases": [
+    "measures time by monitoring the resonant frequency of",
+    "time by monitoring the resonant frequency of atoms"
+   ]
+  },
+  {
+   "id": "s03.04",
+   "phrases": [
+    "is constant and independent of the satellite speed"
+   ]
+  },
+  {
+   "id": "s03.06",
+   "phrases": [
+    "bit sequence received from the satellite with an",
+    "compares the bit sequence received from the satellite",
+    "from the satellite with an internally generated version",
+    "received from the satellite with an internally generated",
+    "receiver compares the bit sequence received from the",
+    "sequence received from the satellite with an internally",
+    "the bit sequence received from the satellite with"
+   ]
+  },
+  {
+   "id": "s04.02",
+   "phrases": [
+    "determining the unknown position coordinates of a point",
+    "for determining the unknown position coordinates of a",
+    "the unknown position coordinates of a point of",
+    "unknown position coordinates of a point of interest"
+   ]
+  },
+  {
+   "id": "s05.06",
+   "phrases": [
+    "a minimum four satellites must be in view",
+    "at a minimum four satellites must be in"
+   ]
+  },
+  {
+   "id": "s06.02",
+   "phrases": [
+    "an object moves the slower its time appears",
+    "faster an object moves the slower its time",
+    "moves the slower its time appears to pass",
+    "object moves the slower its time appears to",
+    "the faster an object moves the slower its"
+   ]
+  },
+  {
+   "id": "s06.03",
+   "phrases": [
+    "tick more slowly than stationary clocks by a"
+   ]
+  }
+ ],
+ "words_after": 538
+}

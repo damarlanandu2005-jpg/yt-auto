@@ -1,0 +1,41 @@
+{
+ "card_number_fixes": [
+  "v012: numbers ['2'] not in narration; card replaced",
+  "v021: numbers ['1'] not in narration; card replaced",
+  "v022: numbers ['2'] not in narration; card replaced",
+  "v024: numbers ['2'] not in narration; card replaced",
+  "v025: numbers ['1'] not in narration; card replaced",
+  "v030: numbers ['4'] not in narration; card replaced",
+  "v044: numbers ['4'] not in narration; card replaced"
+ ],
+ "photo_slots": 25,
+ "candidates": {
+  "v002": 12,
+  "v003": 12,
+  "v004": 12,
+  "v006": 11,
+  "v008": 12,
+  "v010": 12,
+  "v012": 12,
+  "v014": 12,
+  "v017": 12,
+  "v018": 12,
+  "v021": 12,
+  "v022": 8,
+  "v024": 12,
+  "v025": 12,
+  "v027": 12,
+  "v030": 12,
+  "v032": 12,
+  "v033": 12,
+  "v034": 12,
+  "v039": 8,
+  "v042": 12,
+  "v043": 12,
+  "v044": 12,
+  "v045": 12,
+  "v047": 12
+ },
+ "downloaded": 23,
+ "rejected_after_looking": []
+}

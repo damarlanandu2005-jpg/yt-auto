@@ -1,0 +1,31 @@
+[model] gemini-3.5-flash-lite
+[system]
+
+
+[user]
+You see 23 images in order. For each, say if it fits: it must clearly show what it
+should show, be a real usable picture (not mostly text, not a blank or broken image, no watermark),
+and not be misleading next to the narration.
+Image 1: should show: a smartphone (narration: constantly tracking the live location of their mobile phone.)
+Image 2: should show: Earth from space (narration: You might wonder how your phone determines your exact position on)
+Image 3: should show: a GPS satellite (narration: Earth using signals from space without ever sending any data back.)
+Image 4: should show: a handheld GPS receiver (narration: time information to a receiver anywhere near the Earth.)
+Image 5: should show: a smartphone (narration: Your device operates completely independently of any telephone or internet reception.)
+Image 6: should show: a GPS satellite (narration: Each vehicle makes two complete orbits each sidereal)
+Image 7: should show: radio waves animation (narration: The satellites broadcast these vital data points continuously down to the surface of the planet.)
+Image 8: should show: an electronic circuit board (narration: Modern electronics can measure this signal offset to)
+Image 9: should show: a sphere diagram (narration: If you know you are a certain distance from a single satellite, you could be anywhere on a sphere surrounding it.)
+Image 10: should show: intersecting spheres (narration: Adding a second satellite narrows your possible location)
+Image 11: should show: intersecting spheres in 3d space (narration: Bringing in a third satellite shrinks the intersection down to just two points in three-dimensional space.)
+Image 12: should show: Earth from space (narration: One of those two points is usually out in space, leaving only a single realistic position on the Earth.)
+Image 13: should show: a mechanical watch (narration: That cheap clock has a time offset relative to the true time kept by the satellite network.)
+Image 14: should show: multiple GPS satellites (narration: To solve for this extra unknown variable, your receiver must look at more than just three space vehicles.)
+Image 15: should show: space physics (narration: forces threaten to ruin the accuracy of your navigation.)
+Image 16: should show: gravitational field diagram (narration: General relativity also shows that clocks located deeper in a gravitational well tick slower.)
+Image 17: should show: a GPS satellite (narration: Because the satellites are far above the Earth, their clocks)
+Image 18: should show: an atomic clock (narration: Engineers solve this by giving the atomic clocks on board)
+Image 19: should show: a smartphone (narration: Your phone simply listens to passive radio signals broadcast)
+Image 20: should show: an atomic clock (narration: by an overhead constellation of ultra-precise floating atomic clocks.)
+Image 21: should show: four GPS satellites (narration: By measuring the time delay of signals from four)
+Image 22: should show: a GPS navigation screen (narration: separate satellites, your device calculates its exact position locally.)
+Image 23: should show: Earth globe with navigation path (narration: entirely private while guiding you precisely across the world.)

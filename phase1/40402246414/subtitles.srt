@@ -1,0 +1,289 @@
+1
+00:00:00,024 --> 00:00:04,980
+Many people worry that a global satellite
+network is constantly tracking the live
+
+2
+00:00:04,980 --> 00:00:07,140
+location of their mobile phone.
+
+3
+00:00:07,810 --> 00:00:11,940
+You might wonder how your phone determines
+your exact position on Earth using
+
+4
+00:00:11,940 --> 00:00:15,580
+signals from space without
+ever sending any data back.
+
+5
+00:00:16,268 --> 00:00:21,600
+It is a satellite-based navigation system
+that provides geolocation and time
+
+6
+00:00:21,600 --> 00:00:24,620
+information to a receiver
+anywhere near the Earth.
+
+7
+00:00:25,273 --> 00:00:29,240
+The entire network does not require
+you to transmit any data to function.
+
+8
+00:00:30,097 --> 00:00:34,880
+Your device operates completely
+independently of any telephone or internet
+
+9
+00:00:34,880 --> 00:00:35,680
+reception.
+
+10
+00:00:37,224 --> 00:00:39,940
+To understand how this
+passive network works,
+
+11
+00:00:40,220 --> 00:00:42,540
+you need to look at the
+space segment of the system.
+
+12
+00:00:43,268 --> 00:00:48,740
+The space segment is composed of 24 to
+32 space vehicles orbiting in medium
+
+13
+00:00:48,740 --> 00:00:49,540
+Earth orbit.
+
+14
+00:00:50,109 --> 00:00:54,190
+These satellites orbit at an
+altitude of approximately 20,200
+
+15
+00:00:54,190 --> 00:00:55,716
+kilometres.
+
+16
+00:00:56,155 --> 00:00:59,400
+Each vehicle makes two complete
+orbits each sidereal day,
+
+17
+00:01:00,020 --> 00:01:02,460
+which is about 11 hours and 58 minutes.
+
+18
+00:01:03,242 --> 00:01:08,500
+The satellites broadcast these vital data
+points continuously down to the surface of
+
+19
+00:01:08,500 --> 00:01:09,300
+the planet.
+
+20
+00:01:10,621 --> 00:01:14,640
+How do those radio waves turn into a
+measurement of distance on your device?
+
+21
+00:01:15,474 --> 00:01:20,220
+The time delay between when a satellite
+transmits a signal and when a receiver gets
+
+22
+00:01:20,500 --> 00:01:21,940
+it is proportional to the distance.
+
+23
+00:01:22,720 --> 00:01:28,180
+Modern electronics can measure this signal
+offset to within about 10 nanoseconds for
+
+24
+00:01:28,180 --> 00:01:29,020
+the civilian code.
+
+25
+00:01:30,771 --> 00:01:33,480
+Once your device calculates
+the distance to a satellite,
+
+26
+00:01:34,180 --> 00:01:37,000
+it uses that data to narrow
+down where you could be.
+
+27
+00:01:37,647 --> 00:01:40,360
+If you know you are a certain
+distance from a single satellite,
+
+28
+00:01:41,100 --> 00:01:43,440
+you could be anywhere on
+a sphere surrounding it.
+
+29
+00:01:43,986 --> 00:01:49,180
+Adding a second satellite narrows your
+possible location down to the circle where
+
+30
+00:01:49,180 --> 00:01:50,340
+two spheres intersect.
+
+31
+00:01:51,182 --> 00:01:55,940
+Bringing in a third satellite shrinks the
+intersection down to just two points in
+
+32
+00:01:55,940 --> 00:01:57,040
+three-dimensional space.
+
+33
+00:01:57,834 --> 00:02:00,320
+One of those two points
+is usually out in space,
+
+34
+00:02:00,940 --> 00:02:04,120
+leaving only a single realistic
+position on the Earth.
+
+35
+00:02:05,810 --> 00:02:10,860
+There is a major catch in this simple geometry
+that requires an extra step from your
+
+36
+00:02:10,860 --> 00:02:11,660
+receiver.
+
+37
+00:02:11,966 --> 00:02:16,740
+That cheap clock has a time offset relative
+to the true time kept by the satellite
+
+38
+00:02:16,740 --> 00:02:17,540
+network.
+
+39
+00:02:18,024 --> 00:02:22,620
+Because of this offset, your device
+cannot measure true ranges and instead
+
+40
+00:02:22,620 --> 00:02:24,560
+calculates pseudo-ranges.
+
+41
+00:02:25,013 --> 00:02:27,220
+To solve for this extra unknown variable,
+
+42
+00:02:27,860 --> 00:02:30,980
+your receiver must look at more
+than just three space vehicles.
+
+43
+00:02:32,753 --> 00:02:35,120
+Even with four satellites
+and good geometry,
+
+44
+00:02:35,860 --> 00:02:40,660
+tiny invisible physics forces threaten
+to ruin the accuracy of your navigation.
+
+45
+00:02:41,652 --> 00:02:46,520
+General relativity also shows that
+clocks located deeper in a gravitational
+
+46
+00:02:46,520 --> 00:02:47,820
+well tick slower.
+
+47
+00:02:48,550 --> 00:02:50,700
+Because the satellites
+are far above the Earth,
+
+48
+00:02:51,300 --> 00:02:56,760
+their clocks run faster by
+about 45,850 nanoseconds per day
+
+49
+00:02:57,070 --> 00:02:57,880
+due to gravity.
+
+50
+00:02:58,720 --> 00:03:02,880
+Combined, these relativistic effects
+cause satellite clocks to gain about
+
+51
+00:03:02,880 --> 00:03:06,440
+38.6 microseconds every single day.
+
+52
+00:03:07,116 --> 00:03:12,240
+Without corrections, errors of roughly
+11.4 km per day would accumulate
+
+53
+00:03:12,240 --> 00:03:13,160
+in the position.
+
+54
+00:03:14,040 --> 00:03:19,220
+Engineers solve this by giving the atomic
+clocks on board a rate offset prior to
+
+55
+00:03:19,220 --> 00:03:21,340
+launch to keep them perfectly synced.
+
+56
+00:03:22,877 --> 00:03:26,260
+So how does GPS know where you
+are without ever tracking you?
+
+57
+00:03:26,874 --> 00:03:32,060
+Your phone simply listens to passive
+radio signals broadcast by an overhead
+
+58
+00:03:32,060 --> 00:03:35,600
+constellation of ultra-precise
+floating atomic clocks.
+
+59
+00:03:36,412 --> 00:03:39,900
+By measuring the time delay of
+signals from four separate satellites,
+
+60
+00:03:40,540 --> 00:03:43,740
+your device calculates its
+exact position locally.
+
+61
+00:03:44,700 --> 00:03:46,340
+No data travels back to space,
+
+62
+00:03:46,860 --> 00:03:51,800
+leaving your location entirely private while
+guiding you precisely across the world.

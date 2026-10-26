@@ -1,0 +1,161 @@
+[model] gemini-3.5-flash-lite
+[system]
+
+
+[user]
+You are a strict fact-checker. For each sentence below, decide using ONLY its cited passages
+(not your own knowledge):
+- supported: every detail (numbers, names, dates, causes, comparisons) is stated in or directly follows from them.
+- partly: the main point is backed but some detail is not, or it overstates / oversimplifies into something false.
+- unsupported: the cited passages do not back it, or there are none.
+For partly/unsupported, give fixed_text: a corrected sentence in the same plain spoken style that the cited
+passages fully support (keep digits and full unit words; no copying 8+ words). Leave fixed_text empty if impossible.
+A FRAMING SENTENCE has no passages: it is "supported" only if it makes no checkable claim at all (a question,
+transition or invitation). If it states any fact, mark it "unsupported" with an empty fixed_text.
+
+[s01.01] FRAMING SENTENCE: Many people worry that a global satellite network is constantly tracking the live location of their mobile phone.
+
+[s01.02] FRAMING SENTENCE: You might wonder how your phone determines your exact position on Earth using signals from space without ever sending any data back.
+
+[s01.03] SENTENCE: The Global Positioning System is owned by the United States Space Force and operated by Mission Delta 31.
+CITED PASSAGES:
+A1.1: The Global Positioning System (GPS) is a satellite-based hyperbolic navigation system owned by the United States Space Force and operated by Mission Delta 31. It is one of the global navigation satellite systems (GNSS) that provide geolocation and time information to a GPS receiver anywhere on or near the Earth where signal quality permits. It does not require the user to transmit any data, and operates independently of any telephone or Internet reception, though these technologies can enhance the usefulness of the GPS positioning information. It provides critical positioning capabilities to military, civil, and commercial users around the world. Although the United States government created, controls, and maintains GPS, it is freely accessible to anyone with a GPS receiver.
+
+[s01.04] SENTENCE: It is a satellite-based navigation system that provides geolocation and time information to a receiver anywhere near the Earth.
+CITED PASSAGES:
+A1.1: The Global Positioning System (GPS) is a satellite-based hyperbolic navigation system owned by the United States Space Force and operated by Mission Delta 31. It is one of the global navigation satellite systems (GNSS) that provide geolocation and time information to a GPS receiver anywhere on or near the Earth where signal quality permits. It does not require the user to transmit any data, and operates independently of any telephone or Internet reception, though these technologies can enhance the usefulness of the GPS positioning information. It provides critical positioning capabilities to military, civil, and commercial users around the world. Although the United States government created, controls, and maintains GPS, it is freely accessible to anyone with a GPS receiver.
+
+[s01.05] SENTENCE: The entire network does not require you to transmit any data to function.
+CITED PASSAGES:
+A1.1: The Global Positioning System (GPS) is a satellite-based hyperbolic navigation system owned by the United States Space Force and operated by Mission Delta 31. It is one of the global navigation satellite systems (GNSS) that provide geolocation and time information to a GPS receiver anywhere on or near the Earth where signal quality permits. It does not require the user to transmit any data, and operates independently of any telephone or Internet reception, though these technologies can enhance the usefulness of the GPS positioning information. It provides critical positioning capabilities to military, civil, and commercial users around the world. Although the United States government created, controls, and maintains GPS, it is freely accessible to anyone with a GPS receiver.
+
+[s01.06] SENTENCE: Your device operates completely independently of any telephone or internet reception.
+CITED PASSAGES:
+A1.1: The Global Positioning System (GPS) is a satellite-based hyperbolic navigation system owned by the United States Space Force and operated by Mission Delta 31. It is one of the global navigation satellite systems (GNSS) that provide geolocation and time information to a GPS receiver anywhere on or near the Earth where signal quality permits. It does not require the user to transmit any data, and operates independently of any telephone or Internet reception, though these technologies can enhance the usefulness of the GPS positioning information. It provides critical positioning capabilities to military, civil, and commercial users around the world. Although the United States government created, controls, and maintains GPS, it is freely accessible to anyone with a GPS receiver.
+
+[s02.01] FRAMING SENTENCE: To understand how this passive network works, you need to look at the space segment of the system.
+
+[s02.02] SENTENCE: The space segment is composed of 24 to 32 space vehicles orbiting in medium Earth orbit.
+CITED PASSAGES:
+A1.70: The space segment (SS) is composed of 24 to 32 satellites, or Space Vehicles (SV), in medium Earth orbit, and also includes the payload adapters to the boosters required to launch them into orbit. The GPS design originally called for 24 SVs, eight each in three approximately circular orbits, but this was modified to six orbital planes with four satellites each. The six orbit planes have approximately 55° inclination (tilt relative to the Earth's equator) and are separated by 60° right ascension of the ascending node (angle along the equator from a reference point to the orbit's intersection). The orbital period is one-half of a sidereal day, about 11 hours and 58 minutes, so that the satellites pass over the same locations or almost the same locations every day. The orbits are arranged so that at least six satellites are always within line of sight from everywhere on the Earth's surface (see animation at right). The result of this objective is that the four satellites are not evenly spaced (90°) apart within each orbit. In general terms, the angular difference between satellites in each orbit is 30°, 105°, 120°, and 105° apart, which sum to 360°.
+
+[s02.03] SENTENCE: These satellites orbit at an altitude of approximately 20,200 kilometres.
+CITED PASSAGES:
+A1.71: Orbiting at an altitude of approximately 20,200 km (12,600 mi); orbital radius of approximately 26,600 km (16,500 mi), each SV makes two complete orbits each sidereal day, repeating the same ground track each day. This was very helpful during development because even with only four satellites, correct alignment means all four are visible from one spot for a few hours each day. For military operations, the ground track repeat can be used to ensure good coverage in combat zones.
+
+[s02.04] SENTENCE: Each vehicle makes two complete orbits each sidereal day, which is about 11 hours and 58 minutes.
+CITED PASSAGES:
+A1.70: The space segment (SS) is composed of 24 to 32 satellites, or Space Vehicles (SV), in medium Earth orbit, and also includes the payload adapters to the boosters required to launch them into orbit. The GPS design originally called for 24 SVs, eight each in three approximately circular orbits, but this was modified to six orbital planes with four satellites each. The six orbit planes have approximately 55° inclination (tilt relative to the Earth's equator) and are separated by 60° right ascension of the ascending node (angle along the equator from a reference point to the orbit's intersection). The orbital period is one-half of a sidereal day, about 11 hours and 58 minutes, so that the satellites pass over the same locations or almost the same locations every day. The orbits are arranged so that at least six satellites are always within line of sight from everywhere on the Earth's surface (see animation at right). The result of this objective is that the four satellites are not evenly spaced (90°) apart within each orbit. In general terms, the angular difference between satellites in each orbit is 30°, 105°, 120°, and 105° apart, which sum to 360°.
+
+[s02.05] SENTENCE: The orbits are arranged so that at least 6 satellites are always within line of sight from everywhere on the Earth.
+CITED PASSAGES:
+A1.70: The space segment (SS) is composed of 24 to 32 satellites, or Space Vehicles (SV), in medium Earth orbit, and also includes the payload adapters to the boosters required to launch them into orbit. The GPS design originally called for 24 SVs, eight each in three approximately circular orbits, but this was modified to six orbital planes with four satellites each. The six orbit planes have approximately 55° inclination (tilt relative to the Earth's equator) and are separated by 60° right ascension of the ascending node (angle along the equator from a reference point to the orbit's intersection). The orbital period is one-half of a sidereal day, about 11 hours and 58 minutes, so that the satellites pass over the same locations or almost the same locations every day. The orbits are arranged so that at least six satellites are always within line of sight from everywhere on the Earth's surface (see animation at right). The result of this objective is that the four satellites are not evenly spaced (90°) apart within each orbit. In general terms, the angular difference between satellites in each orbit is 30°, 105°, 120°, and 105° apart, which sum to 360°.
+
+[s02.06] SENTENCE: Each satellite acts like a floating radio station that carries an accurate record of its own position and time.
+CITED PASSAGES:
+A1.55: Each GPS satellite carries an accurate record of its own position and time, and broadcasts that data continuously. Based on data received from multiple GPS satellites, an end user's GPS receiver can calculate its own four-dimensional position in spacetime; However, at a minimum, four satellites must be in view of the receiver for it to compute four unknown quantities (three position coordinates and the deviation of its own clock from satellite time).
+
+[s02.07] SENTENCE: The satellites broadcast these vital data points continuously down to the surface of the planet.
+CITED PASSAGES:
+A1.55: Each GPS satellite carries an accurate record of its own position and time, and broadcasts that data continuously. Based on data received from multiple GPS satellites, an end user's GPS receiver can calculate its own four-dimensional position in spacetime; However, at a minimum, four satellites must be in view of the receiver for it to compute four unknown quantities (three position coordinates and the deviation of its own clock from satellite time).
+
+[s03.01] FRAMING SENTENCE: How do those radio waves turn into a measurement of distance on your device?
+
+[s03.02] SENTENCE: Each satellite carries very stable atomic clocks that are synchronized with reference clocks on the ground.
+CITED PASSAGES:
+A1.54: The GPS satellites carry very stable atomic clocks that are synchronized with one another and with the reference atomic clocks at the ground control stations; any drift of the clocks aboard the satellites from the reference time maintained on the ground stations is corrected regularly. Since the speed of radio waves (speed of light) is constant and independent of the satellite speed, the time delay between when the satellite transmits a signal and the ground station receives it is proportional to the distance from the satellite to the ground station. With the distance information collected from multiple ground stations, the location coordinates of any satellite at any time can be calculated with great precision.
+
+[s03.03] SENTENCE: An atomic clock measures time by monitoring the resonant frequency of atoms.
+CITED PASSAGES:
+A3.1: An atomic clock is a clock that measures time by monitoring the resonant frequency of atoms. It is based on the fact that atoms have quantised energy levels, and transitions between such levels are driven by very specific frequencies of electromagnetic radiation. This phenomenon serves as the basis for the SI definition of the second:
+
+[s03.04] SENTENCE: Since the speed of radio waves is constant and independent of the satellite speed, time delay relates directly to distance.
+CITED PASSAGES:
+A1.54: The GPS satellites carry very stable atomic clocks that are synchronized with one another and with the reference atomic clocks at the ground control stations; any drift of the clocks aboard the satellites from the reference time maintained on the ground stations is corrected regularly. Since the speed of radio waves (speed of light) is constant and independent of the satellite speed, the time delay between when the satellite transmits a signal and the ground station receives it is proportional to the distance from the satellite to the ground station. With the distance information collected from multiple ground stations, the location coordinates of any satellite at any time can be calculated with great precision.
+
+[s03.05] SENTENCE: The time delay between when a satellite transmits a signal and when a receiver gets it is proportional to the distance.
+CITED PASSAGES:
+A1.54: The GPS satellites carry very stable atomic clocks that are synchronized with one another and with the reference atomic clocks at the ground control stations; any drift of the clocks aboard the satellites from the reference time maintained on the ground stations is corrected regularly. Since the speed of radio waves (speed of light) is constant and independent of the satellite speed, the time delay between when the satellite transmits a signal and the ground station receives it is proportional to the distance from the satellite to the ground station. With the distance information collected from multiple ground stations, the location coordinates of any satellite at any time can be calculated with great precision.
+
+[s03.06] SENTENCE: Your receiver compares the bit sequence received from the satellite with an internally generated version.
+CITED PASSAGES:
+A4.11: To measure the delay, the receiver compares the bit sequence received from the satellite with an internally generated version. By comparing the rising and trailing edges of the bit transitions, modern electronics can measure signal offset to within about one percent of a bit pulse width,
+
+[s03.07] SENTENCE: Modern electronics can measure this signal offset to within about 10 nanoseconds for the civilian code.
+CITED PASSAGES:
+A4.13: , or approximately 10 nanoseconds for the C/A code. Since GPS signals propagate at the speed of light, this represents an error of about 3 meters.
+
+[s04.01] FRAMING SENTENCE: Once your device calculates the distance to a satellite, it uses that data to narrow down where you could be.
+
+[s04.02] SENTENCE: Trilateration is the use of distances for determining the unknown position coordinates of a point of interest.
+CITED PASSAGES:
+A2.1: Trilateration is the use of distances (or "ranges") for determining the unknown position coordinates of a point of interest. When more than three distances are involved, it may also be called multilateration, for emphasis. The point of interest is often around Earth (geopositioning).
+
+[s04.03] FRAMING SENTENCE: If you know you are a certain distance from a single satellite, you could be anywhere on a sphere surrounding it.
+
+[s04.04] FRAMING SENTENCE: Adding a second satellite narrows your possible location down to the circle where two spheres intersect.
+
+[s04.05] FRAMING SENTENCE: Bringing in a third satellite shrinks the intersection down to just two points in three-dimensional space.
+
+[s04.06] FRAMING SENTENCE: One of those two points is usually out in space, leaving only a single realistic position on the Earth.
+
+[s05.01] FRAMING SENTENCE: There is a major catch in this simple geometry that requires an extra step from your receiver.
+
+[s05.02] FRAMING SENTENCE: While the satellites carry ultra-precise atomic clocks, your smartphone relies on a cheap internal quartz crystal clock.
+
+[s05.03] SENTENCE: That cheap clock has a time offset relative to the true time kept by the satellite network.
+CITED PASSAGES:
+A1.60: In practice the receiver position (in three dimensional Cartesian coordinates with origin at the Earth's center) and the offset of the receiver clock relative to the GPS time are computed simultaneously, using the navigation equations to process the TOFs.
+
+[s05.04] SENTENCE: Because of this offset, your device cannot measure true ranges and instead calculates pseudo-ranges.
+CITED PASSAGES:
+A1.59: Conceptually, the receiver measures the TOAs (according to its own clock) of four satellite signals. From the TOAs and the TOTs, the receiver forms four time of flight (TOF) values, which are (given the speed of light) approximately equivalent to receiver-satellite ranges plus time difference between the receiver and GPS satellites multiplied by speed of light, which are called pseudo-ranges. The receiver then computes its three-dimensional position and clock deviation from the four TOFs.
+A2.2: The distances or ranges might be ordinary Euclidean distances (slant ranges) or spherical distances (scaled central angles), as in true-range multilateration; or biased distances (pseudo-ranges), as in pseudo-range multilateration.
+
+[s05.05] FRAMING SENTENCE: To solve for this extra unknown variable, your receiver must look at more than just three space vehicles.
+
+[s05.06] SENTENCE: At a minimum, four satellites must be in view for the receiver to compute three position coordinates and its clock deviation.
+CITED PASSAGES:
+A1.55: Each GPS satellite carries an accurate record of its own position and time, and broadcasts that data continuously. Based on data received from multiple GPS satellites, an end user's GPS receiver can calculate its own four-dimensional position in spacetime; However, at a minimum, four satellites must be in view of the receiver for it to compute four unknown quantities (three position coordinates and the deviation of its own clock from satellite time).
+
+[s06.01] FRAMING SENTENCE: Even with four satellites and good geometry, tiny invisible physics forces threaten to ruin the accuracy of your navigation.
+
+[s06.02] SENTENCE: According to special relativity, the faster an object moves, the slower its time appears to pass.
+CITED PASSAGES:
+A4.41: The theory of relativity introduces several effects that need to be taken into account when dealing with precise time measurements. According to special relativity, time passes differently for objects in relative motion. That is known as kinetic time dilation: in an inertial reference frame, the faster an object moves, the slower its time appears to pass
+
+[s06.03] SENTENCE: The atomic clocks moving at orbital speeds tick more slowly than stationary clocks by a fraction of 8.349 parts in 10 to the 11th.
+CITED PASSAGES:
+A4.43: Special relativity predicts that as the velocity of an object increases (in a given frame), its time slows down (as measured in that frame). For instance, the frequency of the atomic clocks moving at GPS orbital speeds will tick more slowly than stationary clocks by a factor of
+A4.52: {\displaystyle {\frac {1}{\gamma }}\approx 1-{\frac {3874^{2}}{2\left(2.998\times 10^{8}\right)^{2}}}\approx 1-8.349\times 10^{-11}}
+
+[s06.04] SENTENCE: General relativity also shows that clocks located deeper in a gravitational well tick slower.
+CITED PASSAGES:
+A4.42: (as measured by the frame's clocks). General relativity takes into account also the effects that gravity has on the passage of time. In the context of GPS the most prominent correction introduced by general relativity is gravitational time dilation: the clocks located deeper in the gravitational potential well (i.e. closer to the attracting body) tick slower.
+
+[s06.05] SENTENCE: Because the satellites are far above the Earth, their clocks run faster by about 45,850 nanoseconds per day due to gravity.
+CITED PASSAGES:
+A4.63: That is, the satellites' clocks gain 45850 nanoseconds a day due to gravitational time dilation.
+
+[s06.06] SENTENCE: Combined, these relativistic effects cause satellite clocks to gain about 38.6 microseconds every single day.
+CITED PASSAGES:
+A4.47: Combined, these sources of time dilation cause the clocks on the satellites to gain 38.6 microseconds per day relative to the clocks on the ground. This is a difference of 4.465 parts in 1010. Without correction, errors of roughly 11.4 km/day would accumulate in the position. This initial pseudorange error is corrected in the process of solving the navigation equations. In addition, the elliptical, rather than perfectly circular, satellite orbits cause the time dilation and gravitational frequency shift effects to vary with time. This eccentricity effect causes the clock rate difference between a GPS satellite and a receiver to increase or decrease depending on the altitude of the satellite.
+
+[s06.07] SENTENCE: Without corrections, this would accumulate into positioning errors of roughly 11 kilometres every day.
+CITED PASSAGES:
+A4.47: Combined, these sources of time dilation cause the clocks on the satellites to gain 38.6 microseconds per day relative to the clocks on the ground. This is a difference of 4.465 parts in 1010. Without correction, errors of roughly 11.4 km/day would accumulate in the position. This initial pseudorange error is corrected in the process of solving the navigation equations. In addition, the elliptical, rather than perfectly circular, satellite orbits cause the time dilation and gravitational frequency shift effects to vary with time. This eccentricity effect causes the clock rate difference between a GPS satellite and a receiver to increase or decrease depending on the altitude of the satellite.
+
+[s06.08] SENTENCE: Engineers solve this by giving the atomic clocks on board a rate offset prior to launch to keep them perfectly synced.
+CITED PASSAGES:
+A4.48: To compensate for the discrepancy, the frequency standard on board each satellite is given a rate offset prior to launch, making it run slightly slower than the desired frequency on Earth; specifically, at 10.22999999543 MHz instead of 10.23 MHz. Since the atomic clocks on board the GPS satellites are precisely tuned, it makes the system a practical engineering application of the scientific theory of relativity in a real-world environment. Placing atomic clocks on artificial satellites to test Einstein's general theory was proposed by Friedwardt Winterberg in 1955.
+
+[s07.01] FRAMING SENTENCE: So how does GPS know where you are without ever tracking you?
+
+[s07.02] FRAMING SENTENCE: Your phone simply listens to passive radio signals broadcast by an overhead constellation of ultra-precise floating atomic clocks.
+
+[s07.03] SENTENCE: By measuring the time delay of signals from four separate satellites, your device calculates its exact position locally.
+CITED PASSAGES:
+A1.55: Each GPS satellite carries an accurate record of its own position and time, and broadcasts that data continuously. Based on data received from multiple GPS satellites, an end user's GPS receiver can calculate its own four-dimensional position in spacetime; However, at a minimum, four satellites must be in view of the receiver for it to compute four unknown quantities (three position coordinates and the deviation of its own clock from satellite time).
+A1.59: Conceptually, the receiver measures the TOAs (according to its own clock) of four satellite signals. From the TOAs and the TOTs, the receiver forms four time of flight (TOF) values, which are (given the speed of light) approximately equivalent to receiver-satellite ranges plus time difference between the receiver and GPS satellites multiplied by speed of light, which are called pseudo-ranges. The receiver then computes its three-dimensional position and clock deviation from the four TOFs.
+
+[s07.04] FRAMING SENTENCE: No data travels back to space, leaving your location entirely private while guiding you precisely across the world.

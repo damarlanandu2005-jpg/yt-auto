@@ -1,0 +1,273 @@
+{
+ "sentences": [
+  {
+   "id": "s01.01",
+   "scene": "s01",
+   "text": "Many people worry that a global satellite network is constantly tracking the live location of their mobile phone.",
+   "start": 0.024,
+   "end": 7.344
+  },
+  {
+   "id": "s01.02",
+   "scene": "s01",
+   "text": "You might wonder how your phone determines your exact position on Earth using signals from space without ever sending any data back.",
+   "start": 7.81,
+   "end": 15.802
+  },
+  {
+   "id": "s01.04",
+   "scene": "s01",
+   "text": "It is a satellite-based navigation system that provides geolocation and time information to a receiver anywhere near the Earth.",
+   "start": 16.268,
+   "end": 24.732
+  },
+  {
+   "id": "s01.05",
+   "scene": "s01",
+   "text": "The entire network does not require you to transmit any data to function.",
+   "start": 25.273,
+   "end": 29.608
+  },
+  {
+   "id": "s01.06",
+   "scene": "s01",
+   "text": "Your device operates completely independently of any telephone or internet reception.",
+   "start": 30.097,
+   "end": 35.748
+  },
+  {
+   "id": "s02.01",
+   "scene": "s02",
+   "text": "To understand how this passive network works, you need to look at the space segment of the system.",
+   "start": 37.224,
+   "end": 42.787
+  },
+  {
+   "id": "s02.02",
+   "scene": "s02",
+   "text": "The space segment is composed of 24 to 32 space vehicles orbiting in medium Earth orbit.",
+   "start": 43.268,
+   "end": 49.633
+  },
+  {
+   "id": "s02.03",
+   "scene": "s02",
+   "text": "These satellites orbit at an altitude of approximately 20,200 kilometres.",
+   "start": 50.109,
+   "end": 55.716
+  },
+  {
+   "id": "s02.04",
+   "scene": "s02",
+   "text": "Each vehicle makes two complete orbits each sidereal day, which is about 11 hours and 58 minutes.",
+   "start": 56.155,
+   "end": 62.769
+  },
+  {
+   "id": "s02.07",
+   "scene": "s02",
+   "text": "The satellites broadcast these vital data points continuously down to the surface of the planet.",
+   "start": 63.242,
+   "end": 69.139
+  },
+  {
+   "id": "s03.01",
+   "scene": "s03",
+   "text": "How do those radio waves turn into a measurement of distance on your device?",
+   "start": 70.621,
+   "end": 75.003
+  },
+  {
+   "id": "s03.05",
+   "scene": "s03",
+   "text": "The time delay between when a satellite transmits a signal and when a receiver gets it is proportional to the distance.",
+   "start": 75.474,
+   "end": 82.269
+  },
+  {
+   "id": "s03.07",
+   "scene": "s03",
+   "text": "Modern electronics can measure this signal offset to within about 10 nanoseconds for the civilian code.",
+   "start": 82.72,
+   "end": 89.284
+  },
+  {
+   "id": "s04.01",
+   "scene": "s04",
+   "text": "Once your device calculates the distance to a satellite, it uses that data to narrow down where you could be.",
+   "start": 90.771,
+   "end": 97.182
+  },
+  {
+   "id": "s04.03",
+   "scene": "s04",
+   "text": "If you know you are a certain distance from a single satellite, you could be anywhere on a sphere surrounding it.",
+   "start": 97.647,
+   "end": 103.51
+  },
+  {
+   "id": "s04.04",
+   "scene": "s04",
+   "text": "Adding a second satellite narrows your possible location down to the circle where two spheres intersect.",
+   "start": 103.986,
+   "end": 110.704
+  },
+  {
+   "id": "s04.05",
+   "scene": "s04",
+   "text": "Bringing in a third satellite shrinks the intersection down to just two points in three-dimensional space.",
+   "start": 111.182,
+   "end": 117.368
+  },
+  {
+   "id": "s04.06",
+   "scene": "s04",
+   "text": "One of those two points is usually out in space, leaving only a single realistic position on the Earth.",
+   "start": 117.834,
+   "end": 124.244
+  },
+  {
+   "id": "s05.01",
+   "scene": "s05",
+   "text": "There is a major catch in this simple geometry that requires an extra step from your receiver.",
+   "start": 125.81,
+   "end": 131.482
+  },
+  {
+   "id": "s05.03",
+   "scene": "s05",
+   "text": "That cheap clock has a time offset relative to the true time kept by the satellite network.",
+   "start": 131.966,
+   "end": 137.561
+  },
+  {
+   "id": "s05.04",
+   "scene": "s05",
+   "text": "Because of this offset, your device cannot measure true ranges and instead calculates pseudo-ranges.",
+   "start": 138.024,
+   "end": 144.56
+  },
+  {
+   "id": "s05.05",
+   "scene": "s05",
+   "text": "To solve for this extra unknown variable, your receiver must look at more than just three space vehicles.",
+   "start": 145.013,
+   "end": 151.295
+  },
+  {
+   "id": "s06.01",
+   "scene": "s06",
+   "text": "Even with four satellites and good geometry, tiny invisible physics forces threaten to ruin the accuracy of your navigation.",
+   "start": 152.753,
+   "end": 161.163
+  },
+  {
+   "id": "s06.04",
+   "scene": "s06",
+   "text": "General relativity also shows that clocks located deeper in a gravitational well tick slower.",
+   "start": 161.652,
+   "end": 168.079
+  },
+  {
+   "id": "s06.05",
+   "scene": "s06",
+   "text": "Because the satellites are far above the Earth, their clocks run faster by about 45,850 nanoseconds per day due to gravity.",
+   "start": 168.55,
+   "end": 178.198
+  },
+  {
+   "id": "s06.06",
+   "scene": "s06",
+   "text": "Combined, these relativistic effects cause satellite clocks to gain about 38.6 microseconds every single day.",
+   "start": 178.677,
+   "end": 186.625
+  },
+  {
+   "id": "s06.07",
+   "scene": "s06",
+   "text": "Without corrections, errors of roughly 11.4 km per day would accumulate in the position.",
+   "start": 187.116,
+   "end": 193.522
+  },
+  {
+   "id": "s06.08",
+   "scene": "s06",
+   "text": "Engineers solve this by giving the atomic clocks on board a rate offset prior to launch to keep them perfectly synced.",
+   "start": 193.981,
+   "end": 201.405
+  },
+  {
+   "id": "s07.01",
+   "scene": "s07",
+   "text": "So how does GPS know where you are without ever tracking you?",
+   "start": 202.877,
+   "end": 206.383
+  },
+  {
+   "id": "s07.02",
+   "scene": "s07",
+   "text": "Your phone simply listens to passive radio signals broadcast by an overhead constellation of ultra-precise floating atomic clocks.",
+   "start": 206.874,
+   "end": 215.964
+  },
+  {
+   "id": "s07.03",
+   "scene": "s07",
+   "text": "By measuring the time delay of signals from four separate satellites, your device calculates its exact position locally.",
+   "start": 216.412,
+   "end": 224.128
+  },
+  {
+   "id": "s07.04",
+   "scene": "s07",
+   "text": "No data travels back to space, leaving your location entirely private while guiding you precisely across the world.",
+   "start": 224.602,
+   "end": 231.973
+  }
+ ],
+ "scenes": [
+  {
+   "id": "s01",
+   "heading": "The Tracking Myth",
+   "start": 0.0,
+   "end": 37.218666666666664
+  },
+  {
+   "id": "s02",
+   "heading": "Floating Radio Stations",
+   "start": 37.218666666666664,
+   "end": 70.59733333333332
+  },
+  {
+   "id": "s03",
+   "heading": "Measuring Signal Speed",
+   "start": 70.59733333333332,
+   "end": 90.75999999999999
+  },
+  {
+   "id": "s04",
+   "heading": "Combining Distance Spheres",
+   "start": 90.75999999999999,
+   "end": 125.80266666666665
+  },
+  {
+   "id": "s05",
+   "heading": "Correcting Clock Errors",
+   "start": 125.80266666666665,
+   "end": 152.74399999999997
+  },
+  {
+   "id": "s06",
+   "heading": "The Power of Relativity",
+   "start": 152.74399999999997,
+   "end": 202.86399999999998
+  },
+  {
+   "id": "s07",
+   "heading": "Passive Positioning",
+   "start": 202.86399999999998,
+   "end": 233.432
+  }
+ ],
+ "total": 233.432
+}
