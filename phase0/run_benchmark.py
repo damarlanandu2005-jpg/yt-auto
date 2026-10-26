@@ -32,6 +32,7 @@ def main() -> None:
     ap.add_argument("--out", default=str(ROOT / "out" / "run"))
     ap.add_argument("--scenes", type=int, default=0, help="limit number of scenes (0 = all)")
     ap.add_argument("--voice", default="af_heart")
+    ap.add_argument("--speed", type=float, default=0.9, help="voice speed (1.0 = Kokoro default)")
     ap.add_argument("--skip-subtitles", action="store_true")
     args = ap.parse_args()
 
@@ -51,7 +52,7 @@ def main() -> None:
 
     # 1. Narration, one file per scene
     with bench.stage("narration"):
-        narrator = Narrator(models / "kokoro-v1.0.int8.onnx", models / "voices-v1.0.bin", voice=args.voice)
+        narrator = Narrator(models / "kokoro-v1.0.int8.onnx", models / "voices-v1.0.bin", voice=args.voice, speed=args.speed)
         scene_durations, wavs = [], []
         for sc in scenes:
             wav = out / "audio" / f"{sc['id']}.wav"
@@ -117,6 +118,7 @@ def main() -> None:
         "scenes": len(scenes),
         "keyframes": len(frames),
         "voice": args.voice,
+        "speed": args.speed,
     })
     if render.DIAGNOSTICS:
         (out / "diagnostics.json").write_text(json.dumps(render.DIAGNOSTICS, indent=2))

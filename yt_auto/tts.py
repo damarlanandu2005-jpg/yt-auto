@@ -7,8 +7,8 @@ from pathlib import Path
 import numpy as np
 import soundfile as sf
 
-SENTENCE_PAUSE_S = 0.25
-SCENE_PAUSE_S = 0.6
+SENTENCE_PAUSE_S = 0.4   # pause between sentences
+SCENE_PAUSE_S = 1.0      # pause between scenes
 
 
 def split_sentences(text: str) -> list[str]:
@@ -17,7 +17,7 @@ def split_sentences(text: str) -> list[str]:
 
 
 class Narrator:
-    def __init__(self, model_path: Path, voices_path: Path, voice: str = "af_heart", speed: float = 1.0):
+    def __init__(self, model_path: Path, voices_path: Path, voice: str = "af_heart", speed: float = 0.9):
         from kokoro_onnx import Kokoro  # imported here so other modules don't need onnxruntime
 
         self.kokoro = Kokoro(str(model_path), str(voices_path))
