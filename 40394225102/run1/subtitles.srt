@@ -1,0 +1,379 @@
+1
+00:00:00,000 --> 00:00:02,000
+Right now, the phone in your pocket
+
+2
+00:00:02,000 --> 00:00:04,800
+can work out where you are two within a few meters.
+
+3
+00:00:04,800 --> 00:00:07,040
+And here is the strange part.
+
+4
+00:00:07,040 --> 00:00:09,840
+It never sends a single message to space.
+
+5
+00:00:09,840 --> 00:00:11,520
+It only listens.
+
+6
+00:00:11,520 --> 00:00:14,680
+So how can a device that never talks to a satellite
+
+7
+00:00:14,680 --> 00:00:16,960
+know exactly where it is standing?
+
+8
+00:00:16,960 --> 00:00:20,200
+The answer is a story about clocks, distance,
+
+9
+00:00:20,200 --> 00:00:22,760
+and a correction that comes straight from Einstein.
+
+10
+00:00:24,080 --> 00:00:27,200
+GPS is a group of about 30 satellites
+
+11
+00:00:27,200 --> 00:00:29,120
+run by the United States.
+
+12
+00:00:29,120 --> 00:00:33,440
+They circle the Earth at roughly 20,200 kilometers up,
+
+13
+00:00:33,440 --> 00:00:36,560
+far higher than the International Space Station.
+
+14
+00:00:36,560 --> 00:00:39,880
+Each one goes around the planet about twice a day.
+
+15
+00:00:39,880 --> 00:00:43,480
+They are spread out so that, from almost anywhere on Earth,
+
+16
+00:00:43,480 --> 00:00:46,840
+at least four of them are above the horizon at any moment.
+
+17
+00:00:48,160 --> 00:00:52,320
+Every satellite broadcasts a simple message over and over.
+
+18
+00:00:52,320 --> 00:00:54,000
+It says two things.
+
+19
+00:00:54,000 --> 00:00:56,880
+Here is exactly where I am in my orbit.
+
+20
+00:00:56,880 --> 00:00:58,960
+And here is exactly what time it was
+
+21
+00:00:59,000 --> 00:01:00,320
+when I sent this.
+
+22
+00:01:00,320 --> 00:01:01,760
+That is all.
+
+23
+00:01:01,760 --> 00:01:04,320
+The satellite does not know you exist.
+
+24
+00:01:04,320 --> 00:01:08,040
+Your phone simply catches these messages as they arrive.
+
+25
+00:01:09,360 --> 00:01:11,400
+Now comes the clever part.
+
+26
+00:01:11,400 --> 00:01:13,880
+The signal travels at the speed of light,
+
+27
+00:01:13,880 --> 00:01:17,240
+about 300,000 kilometers every second.
+
+28
+00:01:17,240 --> 00:01:20,400
+If your phone knows when the message left the satellite,
+
+29
+00:01:20,400 --> 00:01:23,960
+and when it arrived, it can multiply that travel time
+
+30
+00:01:23,960 --> 00:01:25,440
+by the speed of light.
+
+31
+00:01:25,440 --> 00:01:28,400
+The result is the distance to that satellite.
+
+32
+00:01:28,400 --> 00:01:32,200
+For GPS, that trip takes less than a tenth of a second.
+
+33
+00:01:33,560 --> 00:01:37,120
+Knowing your distance from one satellite is not enough.
+
+34
+00:01:37,120 --> 00:01:40,440
+It only tells you that you are somewhere on a giant sphere
+
+35
+00:01:40,440 --> 00:01:42,080
+around that satellite.
+
+36
+00:01:42,080 --> 00:01:44,880
+Picture it as a circle on a flat map.
+
+37
+00:01:44,880 --> 00:01:46,720
+You could be anywhere on that line.
+
+38
+00:01:48,120 --> 00:01:51,480
+Add a second satellite and you get a second circle.
+
+39
+00:01:51,480 --> 00:01:54,520
+The two circles cross in only two places.
+
+40
+00:01:54,520 --> 00:01:58,520
+Add a third and only one point sits on all three circles.
+
+41
+00:01:58,520 --> 00:02:00,040
+That point is you.
+
+42
+00:02:00,040 --> 00:02:02,880
+This method is called triliteration.
+
+43
+00:02:02,880 --> 00:02:04,880
+And it works because each distance
+
+44
+00:02:04,880 --> 00:02:07,720
+removes a huge number of possible positions.
+
+45
+00:02:09,080 --> 00:02:10,840
+But there is a problem.
+
+46
+00:02:10,840 --> 00:02:12,720
+All of this depends on time,
+
+47
+00:02:12,720 --> 00:02:15,000
+and the clock in your phone is cheap.
+
+48
+00:02:15,000 --> 00:02:19,280
+Light travels 300 meters in a single microsecond.
+
+49
+00:02:19,280 --> 00:02:23,520
+So if your phone's clock is off by just 1,000th of a second,
+
+50
+00:02:23,520 --> 00:02:28,320
+every distance it calculates is wrong by about 300 kilometers.
+
+51
+00:02:28,320 --> 00:02:30,080
+That would put you in the wrong city.
+
+52
+00:02:31,520 --> 00:02:33,520
+The solution is elegant.
+
+53
+00:02:33,520 --> 00:02:35,560
+Instead of trusting its own clock,
+
+54
+00:02:35,560 --> 00:02:39,040
+the phone treats the clock error as one more unknown.
+
+55
+00:02:39,040 --> 00:02:42,080
+Its position has three unknowns, east, west,
+
+56
+00:02:42,080 --> 00:02:43,920
+north, south, and height.
+
+57
+00:02:43,920 --> 00:02:46,400
+Add the clock error and there are four.
+
+58
+00:02:46,400 --> 00:02:49,120
+Four unknowns need four measurements.
+
+59
+00:02:49,120 --> 00:02:51,920
+So the phone listens to at least four satellites
+
+60
+00:02:52,000 --> 00:02:53,960
+and solves for all of them at once.
+
+61
+00:02:55,320 --> 00:02:58,560
+That is why the satellites carry atomic clocks.
+
+62
+00:02:58,560 --> 00:03:01,280
+These clocks count the vibrations of atoms,
+
+63
+00:03:01,280 --> 00:03:04,080
+which happen at an extremely steady rate.
+
+64
+00:03:04,080 --> 00:03:06,440
+Because the whole system depends on them,
+
+65
+00:03:06,440 --> 00:03:09,280
+GPS has quietly become one of the world's
+
+66
+00:03:09,280 --> 00:03:11,600
+most important time sources.
+
+67
+00:03:11,600 --> 00:03:14,000
+Phone networks, power grids and banks
+
+68
+00:03:14,000 --> 00:03:16,520
+all use GPS time to stay in sync.
+
+69
+00:03:17,880 --> 00:03:20,360
+And here is where Einstein comes in.
+
+70
+00:03:20,400 --> 00:03:22,640
+Because the satellites move fast,
+
+71
+00:03:22,640 --> 00:03:27,320
+their clocks run slightly slow by about seven microseconds a day.
+
+72
+00:03:27,320 --> 00:03:30,000
+But because they are farther from Earth's gravity,
+
+73
+00:03:30,000 --> 00:03:35,000
+their clocks also run fast by about 45 microseconds a day.
+
+74
+00:03:35,000 --> 00:03:37,080
+Together, the satellite clocks gain
+
+75
+00:03:37,080 --> 00:03:39,760
+about 38 microseconds every day.
+
+76
+00:03:39,760 --> 00:03:43,120
+If engineers ignored this, GPS positions
+
+77
+00:03:43,120 --> 00:03:46,040
+would drift by roughly 10 kilometers a day.
+
+78
+00:03:46,040 --> 00:03:49,360
+So the clocks are adjusted to account for relativity.
+
+79
+00:03:50,600 --> 00:03:54,040
+Even with all of this, GPS is not perfect.
+
+80
+00:03:54,040 --> 00:03:56,200
+The signal slows down slightly
+
+81
+00:03:56,200 --> 00:03:58,680
+as it passes through the upper atmosphere.
+
+82
+00:03:58,680 --> 00:04:02,640
+In cities, it bounces off tall buildings before reaching you.
+
+83
+00:04:02,640 --> 00:04:05,040
+And if the visible satellites are bunched together
+
+84
+00:04:05,040 --> 00:04:08,600
+in one part of the sky, small errors get bigger.
+
+85
+00:04:08,600 --> 00:04:10,280
+This is why your location,
+
+86
+00:04:10,280 --> 00:04:13,400
+sometimes jumps around between skyscrapers.
+
+87
+00:04:14,680 --> 00:04:16,880
+So every time you open a map,
+
+88
+00:04:16,880 --> 00:04:18,640
+your phone is quietly listening
+
+89
+00:04:18,640 --> 00:04:21,720
+to satellites 20,000 kilometers away,
+
+90
+00:04:21,720 --> 00:04:23,240
+timing their signals,
+
+91
+00:04:23,240 --> 00:04:25,200
+turning time into distance,
+
+92
+00:04:25,200 --> 00:04:26,880
+solving four equations,
+
+93
+00:04:26,880 --> 00:04:29,000
+and correcting for Einstein.
+
+94
+00:04:29,000 --> 00:04:31,000
+All of that happens in a moment,
+
+95
+00:04:31,000 --> 00:04:32,680
+and it never says a word back.
