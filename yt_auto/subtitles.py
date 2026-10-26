@@ -25,8 +25,9 @@ def _load_16k_mono(audio: Path) -> np.ndarray:
     """
     with tempfile.TemporaryDirectory() as tmp:
         wav16 = Path(tmp) / "a16k.wav"
-        subprocess.run(["ffmpeg", "-y", "-loglevel", "error", "-i", str(audio),
-                        "-ac", "1", "-ar", "16000", str(wav16)], check=True)
+        subprocess.run(["ffmpeg", "-nostdin", "-y", "-loglevel", "error", "-i", str(audio),
+                        "-ac", "1", "-ar", "16000", str(wav16)], check=True,
+                       stdin=subprocess.DEVNULL, timeout=300)
         data, _ = sf.read(wav16, dtype="float32")
     return data
 

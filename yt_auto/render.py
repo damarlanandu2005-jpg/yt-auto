@@ -9,8 +9,11 @@ FPS = 30
 OUT_W, OUT_H = 1920, 1080
 
 
-def _run(cmd: list[str]) -> None:
-    result = subprocess.run(cmd, capture_output=True, text=True)
+def _run(cmd: list[str], timeout: int = 900) -> None:
+    """Run FFmpeg with no stdin (it can hang waiting for keys on CI) and a hard time limit."""
+    if cmd and cmd[0] == "ffmpeg" and "-nostdin" not in cmd:
+        cmd = ["ffmpeg", "-nostdin", *cmd[1:]]
+    result = subprocess.run(cmd, capture_output=True, text=True, stdin=subprocess.DEVNULL, timeout=timeout)
     if result.returncode != 0:
         raise RuntimeError(f"FFmpeg failed: {' '.join(cmd[:6])}...\n{result.stderr[-2000:]}")
 
@@ -67,5 +70,6 @@ def preview(video: Path, out: Path, seconds: int = 60) -> None:
 
 def probe_duration(path: Path) -> float:
     r = subprocess.run(["ffprobe", "-v", "error", "-show_entries", "format=duration",
-                        "-of", "default=nw=1:nk=1", str(path)], capture_output=True, text=True)
+                        "-of", "default=nw=1:nk=1", str(path)], capture_output=True, text=True,
+                       stdin=subprocess.DEVNULL, timeout=60)
     return float(r.stdout.strip())
