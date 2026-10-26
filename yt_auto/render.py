@@ -75,16 +75,34 @@ def threads() -> str:
     return os.environ.get("FFMPEG_THREADS", "0")  # 0 = let FFmpeg decide
 
 
-def make_segment(image: Path, duration: float, out: Path, zoom_in: bool = True) -> None:
-    """One keyframe held for `duration` seconds with a gentle zoom and short fades."""
+def make_segment(image: Path, duration: float, out: Path, zoom_in: bool = True, motion: str | None = None,
+                 fade_in: bool = True, fade_out: bool = True) -> None:
+    """One keyframe held for `duration` seconds with gentle motion (Ken Burns) and optional fades.
+
+    motion: zoom_in | zoom_out | pan_left | pan_right (default from zoom_in, as in Phase 0).
+    Photos move a little more (8%) than cards (5%) so they feel alive.
+    """
+    motion = motion or ("zoom_in" if zoom_in else "zoom_out")
     frames = max(1, round(duration * FPS))
-    step = 0.05 / frames  # total zoom of 5% across the segment
-    z = f"min(1+{step:.8f}*on,1.05)" if zoom_in else f"max(1.05-{step:.8f}*on,1.0)"
+    amount = 0.08 if motion.startswith("pan") else 0.05
+    step = amount / frames
+    cx, cy = "iw/2-(iw/zoom/2)", "ih/2-(ih/zoom/2)"
+    if motion == "zoom_in":
+        z, x, y = f"min(1+{step:.8f}*on,{1 + amount})", cx, cy
+    elif motion == "zoom_out":
+        z, x, y = f"max({1 + amount}-{step:.8f}*on,1.0)", cx, cy
+    else:  # pan across at a fixed zoom
+        z = f"{1 + amount}"
+        span = f"(iw-iw/zoom)"
+        x = f"{span}*on/{frames}" if motion == "pan_right" else f"{span}*(1-on/{frames})"
+        y = cy
     fade = min(0.3, duration / 4)
-    vf = (
-        f"zoompan=z='{z}':x='iw/2-(iw/zoom/2)':y='ih/2-(ih/zoom/2)':d={frames}:s={OUT_W}x{OUT_H}:fps={FPS},"
-        f"fade=t=in:st=0:d={fade:.2f},fade=t=out:st={max(0, duration - fade):.2f}:d={fade:.2f},format=yuv420p"
-    )
+    fades = ""
+    if fade_in:
+        fades += f",fade=t=in:st=0:d={fade:.2f}"
+    if fade_out:
+        fades += f",fade=t=out:st={max(0, duration - fade):.2f}:d={fade:.2f}"
+    vf = f"zoompan=z='{z}':x='{x}':y='{y}':d={frames}:s={OUT_W}x{OUT_H}:fps={FPS}{fades},format=yuv420p"
     _run([
         "ffmpeg", "-y", "-loglevel", "error", "-i", str(image), "-vf", vf, "-frames:v", str(frames),
         "-c:v", "libx264", "-preset", "veryfast", "-crf", "20", "-tune", "stillimage",

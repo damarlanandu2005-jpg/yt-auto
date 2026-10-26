@@ -190,6 +190,76 @@ def render_circles(spec, path):
     _save(fig, path)
 
 
+def render_timeline(spec, path):
+    fig = _canvas()
+    _title(fig, spec["title"])
+    events = spec["events"][:5]
+    n = len(events)
+    y = 0.47
+    fig.add_artist(FancyArrowPatch((0.06, y), (0.95, y), transform=fig.transFigure, arrowstyle="-|>",
+                                   mutation_scale=40, color=THEME["muted"], linewidth=4))
+    for i, ev in enumerate(events):
+        x = 0.12 + i * (0.76 / max(n - 1, 1)) if n > 1 else 0.5
+        fig.add_artist(Circle((x, y), 0.012, transform=fig.transFigure, color=THEME["accent2"], zorder=5))
+        fig.text(x, y + 0.08, ev["when"], color=THEME["accent"], fontsize=40, fontweight="bold", ha="center", va="bottom")
+        fig.text(x, y - 0.06, _wrap(ev["label"], 16), color=THEME["ink"], fontsize=30, ha="center", va="top",
+                 linespacing=1.2)
+    _save(fig, path)
+
+
+def render_compare(spec, path):
+    fig = _canvas()
+    _title(fig, spec["title"])
+    for k, (x, color) in enumerate(((0.06, THEME["accent"]), (0.52, THEME["accent2"]))):
+        side = "left" if k == 0 else "right"
+        fig.add_artist(FancyBboxPatch((x, 0.1), 0.42, 0.66, boxstyle="round,pad=0.008,rounding_size=0.02",
+                                      transform=fig.transFigure, facecolor=THEME["panel"], edgecolor=color,
+                                      linewidth=3))
+        fig.text(x + 0.21, 0.69, _wrap(spec.get(f"{side}_title", ""), 22), color=color, fontsize=46,
+                 fontweight="bold", ha="center", va="center")
+        for j, pt in enumerate(spec.get(f"{side}_points", [])[:3]):
+            fig.text(x + 0.03, 0.54 - j * 0.15, _wrap(pt, 26), color=THEME["ink"], fontsize=34, ha="left",
+                     va="center", linespacing=1.15)
+    _save(fig, path)
+
+
+def render_photo(spec, path):
+    """A real photo filling a 16:9 frame (slightly larger than 1080p for the slow zoom).
+
+    Close to 16:9: crop to fill. Otherwise: whole photo over a blurred, darkened copy.
+    A small credit line goes bottom-left (needed for CC BY / BY-SA, polite for NASA).
+    """
+    from PIL import Image, ImageDraw, ImageFilter, ImageFont
+
+    W, H = int(W_IN * DPI), int(H_IN * DPI)
+    im = Image.open(spec["path"]).convert("RGB")
+    ratio = im.width / im.height
+    if 1.45 <= ratio <= 2.0:
+        scale = max(W / im.width, H / im.height)
+        im2 = im.resize((round(im.width * scale), round(im.height * scale)), Image.LANCZOS)
+        left, top = (im2.width - W) // 2, (im2.height - H) // 2
+        canvas = im2.crop((left, top, left + W, top + H))
+    else:
+        scale = max(W / im.width, H / im.height)
+        bg = im.resize((round(im.width * scale), round(im.height * scale)), Image.LANCZOS)
+        bg = bg.crop(((bg.width - W) // 2, (bg.height - H) // 2, (bg.width - W) // 2 + W, (bg.height - H) // 2 + H))
+        bg = bg.filter(ImageFilter.GaussianBlur(40)).point(lambda v: int(v * 0.45))
+        fit = min(W * 0.92 / im.width, H * 0.92 / im.height)
+        fg = im.resize((round(im.width * fit), round(im.height * fit)), Image.LANCZOS)
+        bg.paste(fg, ((W - fg.width) // 2, (H - fg.height) // 2))
+        canvas = bg
+    credit = spec.get("credit")
+    if credit:
+        font_path = Path(matplotlib.get_data_path()) / "fonts" / "ttf" / "DejaVuSans.ttf"
+        font = ImageFont.truetype(str(font_path), 26)
+        d = ImageDraw.Draw(canvas, "RGBA")
+        tw = d.textlength(credit, font=font)
+        x0 = (W - tw) / 2  # centred and well inside the edges, so zoom/pan never cuts it off
+        d.rectangle((x0 - 12, H - 130, x0 + tw + 12, H - 90), fill=(0, 0, 0, 150))
+        d.text((x0, H - 126), credit, font=font, fill=(235, 235, 235, 255))
+    canvas.save(path)
+
+
 RENDERERS = {
     "title": render_title,
     "stat": render_stat,
@@ -198,6 +268,9 @@ RENDERERS = {
     "bars": render_bars,
     "line": render_line,
     "circles": render_circles,
+    "timeline": render_timeline,
+    "compare": render_compare,
+    "photo": render_photo,
 }
 
 

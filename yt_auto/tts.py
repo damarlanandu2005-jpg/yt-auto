@@ -25,15 +25,38 @@ class Narrator:
         self.speed = speed
         self.sample_rate = 24000
 
-    def speak(self, text: str, out_path: Path, tail_pause: float = SCENE_PAUSE_S) -> float:
+    def speak(self, text: str | list[str], out_path: Path, tail_pause: float = SCENE_PAUSE_S) -> float:
         """Synthesise one scene sentence by sentence; return duration in seconds."""
-        chunks = []
-        for sentence in split_sentences(text):
+        return self.speak_timed(text, out_path, tail_pause)[0]
+
+    def speak_timed(self, text: str | list[str], out_path: Path,
+                    tail_pause: float = SCENE_PAUSE_S) -> tuple[float, list[tuple[float, float]]]:
+        """Like speak(), but also return each sentence's (start, end) in seconds within the file.
+
+        We make the audio one sentence at a time, so these times are exact: this is
+        what lines up subtitles and visuals with our own script text.
+        """
+        sentences = split_sentences(text) if isinstance(text, str) else text
+        chunks, spans, pos = [], [], 0
+        for sentence in sentences:
             samples, sr = self.kokoro.create(sentence, voice=self.voice, speed=self.speed, lang="en-us")
             self.sample_rate = sr
-            chunks.append(samples.astype(np.float32))
-            chunks.append(np.zeros(int(sr * SENTENCE_PAUSE_S), dtype=np.float32))
+            samples = samples.astype(np.float32)
+            a, b = _speech_bounds(samples, sr)
+            spans.append(((pos + a) / sr, (pos + b) / sr))
+            pause = np.zeros(int(sr * SENTENCE_PAUSE_S), dtype=np.float32)
+            chunks += [samples, pause]
+            pos += len(samples) + len(pause)
         chunks.append(np.zeros(int(self.sample_rate * tail_pause), dtype=np.float32))
         audio = np.concatenate(chunks)
         sf.write(out_path, audio, self.sample_rate)
-        return len(audio) / self.sample_rate
+        return len(audio) / self.sample_rate, spans
+
+
+def _speech_bounds(x: np.ndarray, sr: int, threshold: float = 0.01) -> tuple[int, int]:
+    """First and last sample of real speech (Kokoro adds a little silence at both ends)."""
+    loud = np.flatnonzero(np.abs(x) > threshold)
+    if loud.size == 0:
+        return 0, len(x)
+    pad = int(0.03 * sr)
+    return max(0, int(loud[0]) - pad), min(len(x), int(loud[-1]) + pad)

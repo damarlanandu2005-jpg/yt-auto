@@ -1,0 +1,129 @@
+name: Phase 1 video
+
+# Topic in, upload-ready package out. Manual only: Actions -> Phase 1 video -> Run workflow.
+# The owner reviews every video and uploads it by hand in YouTube Studio.
+# Results (review sheet, script with sources, licences, contact sheet, 480p preview, logs)
+# go to the bench-results branch under phase1/<run_id>/. The full video, subtitles and
+# description are attached to the run as "phase1-package" for 7 days.
+on:
+  workflow_dispatch:
+    inputs:
+      topic:
+        description: "Video topic or question"
+        required: true
+        default: "How does GPS know where you are?"
+      scenes:
+        description: "Keep only the first N scenes (small test). 0 = full video"
+        default: "0"
+
+permissions:
+  contents: write
+
+concurrency:
+  group: phase1-video
+  cancel-in-progress: false
+
+jobs:
+  video:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 60
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.13"
+          cache: pip
+
+      # FFmpeg 8.1 stable static build, cached (see CLAUDE.md lesson 1: apt hung, master looped).
+      - name: Cache FFmpeg
+        uses: actions/cache@v4
+        with:
+          path: ~/ffmpeg
+          key: ffmpeg-n8.1-linux64-gpl-v1
+
+      - name: Install FFmpeg 8.1 (stable)
+        timeout-minutes: 5
+        run: |
+          if [ ! -x "$HOME/ffmpeg/bin/ffmpeg" ]; then
+            mkdir -p "$HOME/ffmpeg"
+            curl -fsSL --retry 3 https://github.com/BtbN/FFmpeg-Builds/releases/download/latest/ffmpeg-n8.1-latest-linux64-gpl-8.1.tar.xz \
+              | tar -xJ -C "$HOME/ffmpeg" --strip-components=1
+          fi
+          echo "$HOME/ffmpeg/bin" >> "$GITHUB_PATH"
+          "$HOME/ffmpeg/bin/ffmpeg" -version | head -1
+
+      - name: Cache voice model
+        uses: actions/cache@v4
+        with:
+          path: models
+          key: kokoro-v1.0-int8
+
+      - name: Cache subtitle model
+        uses: actions/cache@v4
+        with:
+          path: ~/.cache/huggingface
+          key: faster-whisper-base-en
+
+      - name: Install Python packages
+        timeout-minutes: 10
+        run: pip install -r requirements.txt
+
+      - name: Download voice model (first run only)
+        timeout-minutes: 5
+        run: bash scripts/download_models.sh models
+
+      - name: Make the video
+        timeout-minutes: 45
+        env:
+          GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
+          TOPIC: ${{ inputs.topic }}
+          SCENES: ${{ inputs.scenes }}
+        run: |
+          set -o pipefail
+          mkdir -p out/run
+          python phase1/make_video.py --topic "$TOPIC" --scenes "$SCENES" --models models --out out/run 2>&1 | tee out/run/build.log
+
+      - name: Upload video package
+        if: success()
+        uses: actions/upload-artifact@v4
+        with:
+          name: phase1-package
+          path: |
+            out/run/video.mp4
+            out/run/subtitles.srt
+            out/run/description.txt
+            out/run/review.md
+            out/run/licences.json
+            out/run/contact_sheet.jpg
+          retention-days: 7
+
+      - name: Save results to the bench-results branch
+        if: always()
+        timeout-minutes: 3
+        run: |
+          set -e
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git fetch --depth 1 origin bench-results
+          git worktree add results FETCH_HEAD
+          git -C results checkout -B bench-results
+          dest="results/phase1/${{ github.run_id }}"
+          mkdir -p "$dest"
+          cd out/run
+          cp build.log report.json review.md description.txt licences.json plan.json sources.json \
+             script_draft.json script.json factcheck.json timing.json visual_plan.json visuals.json photo_log.json \
+             subtitles.srt contact_sheet.jpg preview_480p.mp4 diagnostics.json "../../$dest/" 2>/dev/null || true
+          cp -r llm "../../$dest/" 2>/dev/null || true
+          mkdir -p "../../$dest/ffmpeg_logs"
+          # FFmpeg logs: the join/mux/preview steps, plus any segment log that mentions an error
+          cp ffmpeg_logs/concat_*.log ffmpeg_logs/mux.log ffmpeg_logs/preview*.log "../../$dest/ffmpeg_logs/" 2>/dev/null || true
+          grep -lis error ffmpeg_logs/*.log | xargs -r cp -t "../../$dest/ffmpeg_logs/" || true
+          cd ../../results
+          git add -A
+          git commit -m "Phase 1 video ${{ github.run_id }}"
+          for i in 1 2 3 4 5; do
+            git push origin bench-results && break
+            git pull --rebase origin bench-results
+            sleep 5
+          done

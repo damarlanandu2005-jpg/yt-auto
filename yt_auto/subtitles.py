@@ -45,10 +45,28 @@ def make_srt(audio: Path, out: Path, model_size: str = "base.en") -> int:
     return n
 
 
+def heard_words(audio: Path, out: Path, model_size: str = "base.en") -> int:
+    """Word start/end times as whisper hears them. Used for timing only (see align.py)."""
+    import json
+
+    from faster_whisper import WhisperModel
+
+    model = WhisperModel(model_size, device="cpu", compute_type="int8")
+    segments, _ = model.transcribe(_load_16k_mono(audio), language="en", word_timestamps=True)
+    words = [{"word": w.word.strip(), "start": round(w.start, 3), "end": round(w.end, 3)}
+             for seg in segments for w in (seg.words or [])]
+    out.write_text(json.dumps(words), encoding="utf-8")
+    return len(words)
+
+
 if __name__ == "__main__":
     # Run as its own process: `python -m yt_auto.subtitles narration.wav subtitles.srt`
+    # or, for word times only: `python -m yt_auto.subtitles --words narration.wav words.json`
     # faster-whisper (CTranslate2) leaves worker threads behind; starting FFmpeg from a
     # process that holds them can freeze, so the main pipeline keeps whisper out of process.
     import sys
 
-    print(make_srt(Path(sys.argv[1]), Path(sys.argv[2])))
+    if sys.argv[1] == "--words":
+        print(heard_words(Path(sys.argv[2]), Path(sys.argv[3])))
+    else:
+        print(make_srt(Path(sys.argv[1]), Path(sys.argv[2])))
