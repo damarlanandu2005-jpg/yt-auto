@@ -1,0 +1,45 @@
+[diag] machine: {'arch': 'x86_64', 'cpus': 4, 'python': '3.13.16', 'runner': 'GitHub Actions 1000000225', 'cpu_model': 'AMD EPYC 7763 64-Core Processor', 'ffmpeg': 'ffmpeg version N-128100-gceb466cbcd-20261026 Copyright (c) 2000-2026 the FFmpeg developers'}
+[0;93m2026-10-26 19:31:28.964644024 [W:onnxruntime:Default, device_discovery.cc:95 GetPciBusId] Skipping pci_bus_id for PCI path at "/sys/devices/LNXSYSTM:00/LNXSYBUS:00/ACPI0004:00/MSFT1000:00/5620e0c7-8062-4dce-aeb7-520c7ef76171" because filename "5620e0c7-8062-4dce-aeb7-520c7ef76171" did not match expected pattern of [0-9a-f]+:[0-9a-f]+:[0-9a-f]+[.][0-9a-f]+[m
+[bench] narration: 98.82 s
+[bench] keyframes: 3.97 s
+[bench] segments: 69.89 s
+[bench] assemble: 5.59 s
+[diag] preview did not finish in 180s; retrying with -threads 1
+[diag] preview_threads1 did not finish in 180s
+[bench] preview: 380.02 s
+[bench] subtitles: 23.62 s
+{
+  "total_seconds": 581.96,
+  "stages_seconds": {
+    "narration": 98.82,
+    "keyframes": 3.97,
+    "segments": 69.89,
+    "assemble": 5.59,
+    "preview": 380.02,
+    "subtitles": 23.62
+  },
+  "peak_memory_mb": {
+    "python": 688.8,
+    "largest_child": 688.8
+  },
+  "machine": {
+    "arch": "x86_64",
+    "cpus": 4,
+    "python": "3.13.16",
+    "runner": "GitHub Actions 1000000225",
+    "cpu_model": "AMD EPYC 7763 64-Core Processor",
+    "ffmpeg": "ffmpeg version N-128100-gceb466cbcd-20261026 Copyright (c) 2000-2026 the FFmpeg developers"
+  },
+  "preview_default_s": "HUNG",
+  "preview_threads1_s": "HUNG",
+  "subtitle_lines": 88,
+  "video_seconds": 244.4,
+  "video_mb": 20.2,
+  "scenes": 12,
+  "keyframes": 34,
+  "voice": "af_heart",
+  "hangs": [
+    "preview",
+    "preview_threads1"
+  ]
+}

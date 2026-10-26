@@ -1,0 +1,94 @@
+[
+  {
+    "command": "preview",
+    "timeout_s": 180,
+    "argv": [
+      "ffmpeg",
+      "-stats",
+      "-nostdin",
+      "-y",
+      "-loglevel",
+      "info",
+      "-i",
+      "out/run/video.mp4",
+      "-t",
+      "60",
+      "-vf",
+      "scale=854:480",
+      "-c:v",
+      "libx264",
+      "-preset",
+      "veryfast",
+      "-crf",
+      "30",
+      "-c:a",
+      "aac",
+      "-b:a",
+      "64k",
+      "out/run/preview_480p.mp4"
+    ],
+    "snapshot_at_timeout": {
+      "status": "sleeping",
+      "threads": 35,
+      "cpu_user_s": 188.6,
+      "cpu_system_s": 0.39,
+      "rss_mb": 182.2
+    },
+    "snapshot_10s_later": {
+      "status": "sleeping",
+      "threads": 35,
+      "cpu_user_s": 198.6,
+      "cpu_system_s": 0.39,
+      "rss_mb": 182.2
+    },
+    "log_tail": "84x elapsed=0:02:57.06    \nframe=  953 fps=5.4 q=36.0 size=     256KiB time=00:00:32.64 bitrate=  64.3kbits/s speed=0.184x elapsed=0:02:57.56    \nframe=  953 fps=5.4 q=36.0 size=     256KiB time=00:00:32.64 bitrate=  64.3kbits/s speed=0.183x elapsed=0:02:58.06    \nframe=  953 fps=5.3 q=36.0 size=     256KiB time=00:00:32.64 bitrate=  64.3kbits/s speed=0.183x elapsed=0:02:58.56    \nframe=  953 fps=5.3 q=36.0 size=     256KiB time=00:00:32.64 bitrate=  64.3kbits/s speed=0.182x elapsed=0:02:59.06    \nframe=  953 fps=5.3 q=36.0 size=     256KiB time=00:00:32.64 bitrate=  64.3kbits/s speed=0.182x elapsed=0:02:59.56    \nframe=  953 fps=5.3 q=36.0 size=     256KiB time=00:00:32.64 bitrate=  64.3kbits/s speed=0.181x elapsed=0:03:00.06    \nframe=  953 fps=5.3 q=36.0 size=     256KiB time=00:00:32.64 bitrate=  64.3kbits/s speed=0.181x elapsed=0:03:00.56    \nframe=  953 fps=5.3 q=36.0 size=     256KiB time=00:00:32.64 bitrate=  64.3kbits/s speed=0.18x elapsed=0:03:01.06    \nframe=  953 fps=5.2 q=36.0 size=     256KiB time=00:00:32.64 bitrate=  64.3kbits/s speed=0.18x elapsed=0:03:01.56    \nframe=  953 fps=5.2 q=36.0 size=     256KiB time=00:00:32.64 bitrate=  64.3kbits/s speed=0.179x elapsed=0:03:02.06    \nframe=  953 fps=5.2 q=36.0 size=     256KiB time=00:00:32.64 bitrate=  64.3kbits/s speed=0.179x elapsed=0:03:02.56    \nframe=  953 fps=5.2 q=36.0 size=     256KiB time=00:00:32.64 bitrate=  64.3kbits/s speed=0.178x elapsed=0:03:03.06    \nframe=  953 fps=5.2 q=36.0 size=     256KiB time=00:00:32.64 bitrate=  64.3kbits/s speed=0.178x elapsed=0:03:03.56    \nframe=  953 fps=5.2 q=36.0 size=     256KiB time=00:00:32.64 bitrate=  64.3kbits/s speed=0.177x elapsed=0:03:04.06    \nframe=  953 fps=5.2 q=36.0 size=     256KiB time=00:00:32.64 bitrate=  64.3kbits/s speed=0.177x elapsed=0:03:04.56    \nframe=  953 fps=5.1 q=36.0 size=     256KiB time=00:00:32.64 bitrate=  64.3kbits/s speed=0.176x elapsed=0:03:05.06    \nframe=  953 fps=5.1 q=36.0 size=     256KiB time=00:00:32.64 bitrate=  64.3kbits/s speed=0.176x elapsed=0:03:05.56    \nframe=  953 fps=5.1 q=36.0 size=     256KiB time=00:00:32.64 bitrate=  64.3kbits/s speed=0.175x elapsed=0:03:06.06    \nframe=  953 fps=5.1 q=36.0 size=     256KiB time=00:00:32.64 bitrate=  64.3kbits/s speed=0.175x elapsed=0:03:06.56    \nframe=  953 fps=5.1 q=36.0 size=     256KiB time=00:00:32.64 bitrate=  64.3kbits/s speed=0.174x elapsed=0:03:07.06    \nframe=  953 fps=5.1 q=36.0 size=     256KiB time=00:00:32.64 bitrate=  64.3kbits/s speed=0.174x elapsed=0:03:07.56    \nframe=  953 fps=5.1 q=36.0 size=     256KiB time=00:00:32.64 bitrate=  64.3kbits/s speed=0.174x elapsed=0:03:08.06    \nframe=  953 fps=5.1 q=36.0 size=     256KiB time=00:00:32.64 bitrate=  64.3kbits/s speed=0.173x elapsed=0:03:08.56    \nframe=  953 fps=5.0 q=36.0 size=     256KiB time=00:00:32.64 bitrate=  64.3kbits/s speed=0.173x elapsed=0:03:09.06    \nframe=  953 fps=5.0 q=36.0 size=     256KiB time=00:00:32.64 bitrate=  64.3kbits/s speed=0.172x elapsed=0:03:09.56    \n"
+  },
+  {
+    "command": "preview_threads1",
+    "timeout_s": 180,
+    "argv": [
+      "ffmpeg",
+      "-stats",
+      "-nostdin",
+      "-y",
+      "-loglevel",
+      "info",
+      "-threads",
+      "1",
+      "-i",
+      "out/run/video.mp4",
+      "-t",
+      "60",
+      "-vf",
+      "scale=854:480",
+      "-c:v",
+      "libx264",
+      "-preset",
+      "veryfast",
+      "-crf",
+      "30",
+      "-threads",
+      "1",
+      "-c:a",
+      "aac",
+      "-b:a",
+      "64k",
+      "out/run/preview_480p.mp4"
+    ],
+    "snapshot_at_timeout": {
+      "status": "sleeping",
+      "threads": 9,
+      "cpu_user_s": 186.78,
+      "cpu_system_s": 0.13,
+      "rss_mb": 119.6
+    },
+    "snapshot_10s_later": {
+      "status": "sleeping",
+      "threads": 9,
+      "cpu_user_s": 196.78,
+      "cpu_system_s": 0.13,
+      "rss_mb": 119.6
+    },
+    "log_tail": "84x elapsed=0:02:57.05    \nframe=  966 fps=5.4 q=36.0 size=     256KiB time=00:00:32.64 bitrate=  64.3kbits/s speed=0.184x elapsed=0:02:57.55    \nframe=  966 fps=5.4 q=36.0 size=     256KiB time=00:00:32.64 bitrate=  64.3kbits/s speed=0.183x elapsed=0:02:58.05    \nframe=  966 fps=5.4 q=36.0 size=     256KiB time=00:00:32.64 bitrate=  64.3kbits/s speed=0.183x elapsed=0:02:58.55    \nframe=  966 fps=5.4 q=36.0 size=     256KiB time=00:00:32.64 bitrate=  64.3kbits/s speed=0.182x elapsed=0:02:59.05    \nframe=  966 fps=5.4 q=36.0 size=     256KiB time=00:00:32.64 bitrate=  64.3kbits/s speed=0.182x elapsed=0:02:59.55    \nframe=  966 fps=5.4 q=36.0 size=     256KiB time=00:00:32.64 bitrate=  64.3kbits/s speed=0.181x elapsed=0:03:00.05    \nframe=  966 fps=5.4 q=36.0 size=     256KiB time=00:00:32.64 bitrate=  64.3kbits/s speed=0.181x elapsed=0:03:00.55    \nframe=  966 fps=5.3 q=36.0 size=     256KiB time=00:00:32.64 bitrate=  64.3kbits/s speed=0.18x elapsed=0:03:01.05    \nframe=  966 fps=5.3 q=36.0 size=     256KiB time=00:00:32.64 bitrate=  64.3kbits/s speed=0.18x elapsed=0:03:01.55    \nframe=  966 fps=5.3 q=36.0 size=     256KiB time=00:00:32.64 bitrate=  64.3kbits/s speed=0.179x elapsed=0:03:02.05    \nframe=  966 fps=5.3 q=36.0 size=     256KiB time=00:00:32.64 bitrate=  64.3kbits/s speed=0.179x elapsed=0:03:02.55    \nframe=  966 fps=5.3 q=36.0 size=     256KiB time=00:00:32.64 bitrate=  64.3kbits/s speed=0.178x elapsed=0:03:03.05    \nframe=  966 fps=5.3 q=36.0 size=     256KiB time=00:00:32.64 bitrate=  64.3kbits/s speed=0.178x elapsed=0:03:03.55    \nframe=  966 fps=5.2 q=36.0 size=     256KiB time=00:00:32.64 bitrate=  64.3kbits/s speed=0.177x elapsed=0:03:04.05    \nframe=  966 fps=5.2 q=36.0 size=     256KiB time=00:00:32.64 bitrate=  64.3kbits/s speed=0.177x elapsed=0:03:04.55    \nframe=  966 fps=5.2 q=36.0 size=     256KiB time=00:00:32.64 bitrate=  64.3kbits/s speed=0.176x elapsed=0:03:05.05    \nframe=  966 fps=5.2 q=36.0 size=     256KiB time=00:00:32.64 bitrate=  64.3kbits/s speed=0.176x elapsed=0:03:05.55    \nframe=  966 fps=5.2 q=36.0 size=     256KiB time=00:00:32.64 bitrate=  64.3kbits/s speed=0.175x elapsed=0:03:06.05    \nframe=  966 fps=5.2 q=36.0 size=     256KiB time=00:00:32.64 bitrate=  64.3kbits/s speed=0.175x elapsed=0:03:06.55    \nframe=  966 fps=5.2 q=36.0 size=     256KiB time=00:00:32.64 bitrate=  64.3kbits/s speed=0.174x elapsed=0:03:07.05    \nframe=  966 fps=5.2 q=36.0 size=     256KiB time=00:00:32.64 bitrate=  64.3kbits/s speed=0.174x elapsed=0:03:07.55    \nframe=  966 fps=5.1 q=36.0 size=     256KiB time=00:00:32.64 bitrate=  64.3kbits/s speed=0.174x elapsed=0:03:08.05    \nframe=  966 fps=5.1 q=36.0 size=     256KiB time=00:00:32.64 bitrate=  64.3kbits/s speed=0.173x elapsed=0:03:08.55    \nframe=  966 fps=5.1 q=36.0 size=     256KiB time=00:00:32.64 bitrate=  64.3kbits/s speed=0.173x elapsed=0:03:09.05    \nframe=  966 fps=5.1 q=36.0 size=     256KiB time=00:00:32.64 bitrate=  64.3kbits/s speed=0.172x elapsed=0:03:09.55    \n"
+  }
+]
