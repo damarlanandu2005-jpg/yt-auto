@@ -1,0 +1,30 @@
+{
+  "total_seconds": 198.02,
+  "stages_seconds": {
+    "narration": 92.94,
+    "keyframes": 3.91,
+    "segments": 65.15,
+    "assemble": 6.54,
+    "preview": 6.56,
+    "subtitles": 22.88
+  },
+  "peak_memory_mb": {
+    "python": 686.5,
+    "largest_child": 686.5
+  },
+  "machine": {
+    "arch": "x86_64",
+    "cpus": 4,
+    "python": "3.13.16",
+    "runner": "GitHub Actions 1000000229",
+    "cpu_model": "AMD EPYC 7763 64-Core Processor",
+    "ffmpeg": "ffmpeg version n8.1.3-24-g92611900bb-20261026 Copyright (c) 2000-2026 the FFmpeg developers"
+  },
+  "preview_default_s": 6.56,
+  "subtitle_lines": 88,
+  "video_seconds": 244.4,
+  "video_mb": 20.4,
+  "scenes": 12,
+  "keyframes": 34,
+  "voice": "af_heart"
+}
