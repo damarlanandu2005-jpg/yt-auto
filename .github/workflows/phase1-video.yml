@@ -15,6 +15,11 @@ on:
       scenes:
         description: "Keep only the first N scenes (small test). 0 = full video"
         default: "0"
+  # A change to this file on a Phase 1 branch runs a small test (2 scenes). Needed because
+  # GitHub can't start a new workflow by hand from a branch until it has run there once.
+  push:
+    branches: ["claude/phase-1-**"]
+    paths: [".github/workflows/phase1-video.yml"]
 
 permissions:
   contents: write
@@ -77,8 +82,8 @@ jobs:
         timeout-minutes: 45
         env:
           GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
-          TOPIC: ${{ inputs.topic }}
-          SCENES: ${{ inputs.scenes }}
+          TOPIC: ${{ inputs.topic || 'How does GPS know where you are?' }}
+          SCENES: ${{ inputs.scenes || '2' }}
         run: |
           set -o pipefail
           mkdir -p out/run
