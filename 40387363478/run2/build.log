@@ -1,0 +1,4 @@
+[diag] machine: {'arch': 'x86_64', 'cpus': 4, 'python': '3.13.16', 'runner': 'GitHub Actions 1000000226', 'cpu_model': 'AMD EPYC 9V45 96-Core Processor', 'ffmpeg': 'ffmpeg version N-128100-gceb466cbcd-20261026 Copyright (c) 2000-2026 the FFmpeg developers'}
+[0;93m2026-10-26 19:41:49.145032819 [W:onnxruntime:Default, device_discovery.cc:95 GetPciBusId] Skipping pci_bus_id for PCI path at "/sys/devices/LNXSYSTM:00/LNXSYBUS:00/ACPI0004:00/MSFT1000:00/5620e0c7-8062-4dce-aeb7-520c7ef76171" because filename "5620e0c7-8062-4dce-aeb7-520c7ef76171" did not match expected pattern of [0-9a-f]+:[0-9a-f]+:[0-9a-f]+[.][0-9a-f]+[m
+[bench] narration: 55.0 s
+[bench] keyframes: 2.16 s
