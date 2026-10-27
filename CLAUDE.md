@@ -106,6 +106,7 @@ phase4/find_topics.py  entry; .github/workflows/phase4-topics.yml manual (niche 
 yt_auto/owner_voice.py own-voice: recording_script.md; phone files → cleaned (highpass, afftdn, numpy pause shortening: FFmpeg silenceremove misbehaved on 6.1) → whisper word times → sentence times from our text → voice_match.json
 voice/                 owner's recordings, one folder per video (see voice/README.md)
 pilot/pilot.json       Phase 5 tracker; pilot/summary.py → pilot/report.md
+study/study_video.py   learn from another video (facts, captions, frames, shot changes); .github/workflows/study-video.yml manual, results bench-results/study/<id>/<run_id>/ (video not kept)
 phase1/check_apis.py   pre-flight: key present, which models answer, NASA/Commons up, saves official pages
 .github/workflows/phase1-video.yml   manual only (topic, scenes, resume_from, new_visual_plan, stop_after_script, owner_voice_folder); publishes video-<run_id> pre-release with plain mp4
 .github/workflows/phase1-check.yml   manual; also runs when the check changes on a phase-1 branch

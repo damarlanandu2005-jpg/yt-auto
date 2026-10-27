@@ -1,0 +1,63 @@
+name: Study a video
+
+# Learn from someone else's video: facts, captions, frames, shot changes, loudness.
+# The video file is not kept. Results: bench-results/study/<video_id>/<run_id>/.
+on:
+  workflow_dispatch:
+    inputs:
+      video_id:
+        description: "YouTube video id (the 11 characters after watch?v=)"
+        required: true
+
+permissions:
+  contents: write
+
+jobs:
+  study:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 30
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.13"
+      - name: Cache FFmpeg
+        uses: actions/cache@v4
+        with:
+          path: ~/ffmpeg
+          key: ffmpeg-n8.1-linux64-gpl-v1
+      - name: Install FFmpeg 8.1 (stable) and yt-dlp
+        timeout-minutes: 5
+        run: |
+          if [ ! -x "$HOME/ffmpeg/bin/ffmpeg" ]; then
+            mkdir -p "$HOME/ffmpeg"
+            curl -fsSL --retry 3 https://github.com/BtbN/FFmpeg-Builds/releases/download/latest/ffmpeg-n8.1-latest-linux64-gpl-8.1.tar.xz \
+              | tar -xJ -C "$HOME/ffmpeg" --strip-components=1
+          fi
+          echo "$HOME/ffmpeg/bin" >> "$GITHUB_PATH"
+          pip install -U yt-dlp
+      - name: Study
+        timeout-minutes: 20
+        env:
+          YOUTUBE_API_KEY: ${{ secrets.YOUTUBE_API_KEY }}
+          VID: ${{ inputs.video_id }}
+        run: |
+          [[ "$VID" =~ ^[A-Za-z0-9_-]{11}$ ]] || { echo "bad video id"; exit 1; }
+          python study/study_video.py "$VID" out/study 2>&1 | tee out/study.log
+      - name: Save to bench-results
+        if: always()
+        timeout-minutes: 3
+        env:
+          VID: ${{ inputs.video_id }}
+        run: |
+          set -e
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git fetch --depth 1 origin bench-results
+          git worktree add results FETCH_HEAD
+          git -C results checkout -B bench-results
+          dest="results/study/$VID/${{ github.run_id }}"
+          mkdir -p "$dest" && cp -r out/study/. "$dest/" 2>/dev/null || true
+          cp out/study.log "$dest/" 2>/dev/null || true
+          cd results && git add -A && git commit -m "Study video $VID ${{ github.run_id }}"
+          for i in 1 2 3 4 5; do git push origin bench-results && break; git pull --rebase origin bench-results; sleep 5; done
