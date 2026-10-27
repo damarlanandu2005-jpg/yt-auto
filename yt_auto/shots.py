@@ -190,6 +190,9 @@ def check_card_numbers(visuals: list[dict], scene_text: dict[str, str]) -> list[
 PICK_SCHEMA = {"type": "object", "properties": {"picks": {"type": "array", "items": {
     "type": "object", "properties": {"id": {"type": "string"}, "choice": {"type": "string"}},
     "required": ["id", "choice"]}}}, "required": ["picks"]}
+SEEN_SCHEMA = {"type": "object", "properties": {"images": {"type": "array", "items": {
+    "type": "object", "properties": {"n": {"type": "integer"}, "seen": {"type": "string"}},
+    "required": ["n", "seen"]}}}, "required": ["images"]}
 VERIFY_SCHEMA = {"type": "object", "properties": {"checks": {"type": "array", "items": {
     "type": "object", "properties": {"n": {"type": "integer"}, "seen": {"type": "string"},
                                      "fits": {"type": "boolean"}, "reason": {"type": "string"}},
@@ -307,24 +310,41 @@ def _verify(chosen: list[dict], log: dict, drawings: bool = False) -> None:
     picture it gives no verdict for is dropped (fail closed)."""
     if not chosen:
         return
-    listing = "\n".join(f"Image {i + 1}: should show: {v.get('photo_subject', '')} (narration: {v['text']})"
-                        for i, v in enumerate(chosen))
+    # Step 1, blind: describe each picture WITHOUT being told what it should show. When told, the model
+    # copied the request as what it "saw" and passed all 18 drawings of pilot video 1 (run 40586668835),
+    # including a red diamond for "a star near Earth" and a Mars density chart for a supernova.
+    try:
+        desc = llm(f"""Above are {len(chosen)} images, each right after its label "Image n:". For EVERY image, say in
+one or two plain sentences what it literally shows, as if to someone who cannot see it. Be honest: if it is
+abstract, unclear or just shapes, say so. Mention any text, labels, logo, emblem, chart axes, or deformed
+hands, faces or bodies.""", images=[(f"Image {i + 1}:", _thumb(v["photo"]["path"])) for i, v in enumerate(chosen)],
+                   schema=SEEN_SCHEMA, name="drawing_describe" if drawings else "photo_describe", temperature=0.1,
+                   models=VISION, last_resort=True)
+    except LLMError as e:
+        log["verify_error"] = str(e)
+        return
+    seen_by_n = {x["n"]: x["seen"] for x in desc["images"]}
     if drawings:
-        rules = """These are ink drawings made by an AI image model; about half miss their subject. It fits only if
-the subject is clearly recognisable at a glance, the drawing is not confusing, has no garbled letters or
-fake text, no deformed hands, faces or bodies, does not look like a logo, emblem, badge, seal or flag (it would
-imitate a real organisation's mark), and is not misleading next to the narration."""
+        rules = """The pictures are ink drawings made by an AI image model, which often misses. A drawing fits only
+if the description shows the subject would be recognised at a glance by a viewer hearing the narration. Abstract
+shapes, unclear blobs, a scene about something else, any text or labels, a logo/emblem/badge/flag, or deformed
+bodies do NOT fit."""
     else:
-        rules = """It must clearly show what it should show, be a real usable picture (not mostly text, not a blank
-or broken image, no watermark), and not be misleading next to the narration."""
-    prompt = f"""Above are {len(chosen)} images, each right after its label "Image n:". For EVERY image, first
-write in "seen" what that image actually shows (a few words), then decide if it fits.
+        rules = """A photo fits only if the description shows it clearly depicts what it should show: not mostly text,
+not a chart or test target about something else, not a different planet or object than the narration is about,
+no watermark, nothing misleading."""
+    listing = "\n".join(f"Image {i + 1}: described as: {seen_by_n.get(i + 1, '(no description)')}\n"
+                        f"  should show: {v.get('photo_subject', '')}\n  narration: {v['text']}"
+                        for i, v in enumerate(chosen))
+    prompt = f"""Step 2 of a picture check for a science video. Someone looked at each picture WITHOUT knowing
+what it should show and described it. Decide for each image whether the picture fits.
 {rules}
+When unsure, answer fits = false (a chart or plain card is shown instead, which is fine).
+Copy the description into "seen".
 {listing}"""
     try:
-        res = llm(prompt, images=[(f"Image {i + 1}:", _thumb(v["photo"]["path"])) for i, v in enumerate(chosen)],
-                  schema=VERIFY_SCHEMA, name="drawing_verify" if drawings else "photo_verify", temperature=0.1,
-                  models=VISION, last_resort=True)
+        res = llm(prompt, schema=VERIFY_SCHEMA, name="drawing_verify" if drawings else "photo_verify",
+                  temperature=0.1, models=LIGHT, last_resort=True)
     except LLMError as e:
         log["verify_error"] = str(e)
         return

@@ -1,0 +1,70 @@
+name: Picture check test
+
+# Re-runs the photo/drawing check on a finished video's frames, to test the check itself.
+# About 4 light AI requests. Results: bench-results/phase5/picture-check/<run_id>/.
+on:
+  workflow_dispatch:
+    inputs:
+      video_run:
+        description: "Run id of a finished Phase 1 video (needs its release video-<id>)"
+        required: true
+
+permissions:
+  contents: write
+
+jobs:
+  check:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 25
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.13"
+      - name: Cache FFmpeg
+        uses: actions/cache@v4
+        with:
+          path: ~/ffmpeg
+          key: ffmpeg-n8.1-linux64-gpl-v1
+      - name: Install FFmpeg 8.1 (stable) and Pillow
+        timeout-minutes: 5
+        run: |
+          if [ ! -x "$HOME/ffmpeg/bin/ffmpeg" ]; then
+            mkdir -p "$HOME/ffmpeg"
+            curl -fsSL --retry 3 https://github.com/BtbN/FFmpeg-Builds/releases/download/latest/ffmpeg-n8.1-latest-linux64-gpl-8.1.tar.xz \
+              | tar -xJ -C "$HOME/ffmpeg" --strip-components=1
+          fi
+          echo "$HOME/ffmpeg/bin" >> "$GITHUB_PATH"
+          pip install Pillow
+      - name: Get the video and its visual list
+        timeout-minutes: 5
+        env:
+          GH_TOKEN: ${{ github.token }}
+          RUN: ${{ inputs.video_run }}
+        run: |
+          [[ "$RUN" =~ ^[0-9]+$ ]] || { echo "bad run id"; exit 1; }
+          mkdir -p in out/check
+          gh release download "video-$RUN" -p video.mp4 -D in
+          git fetch --depth 1 origin bench-results
+          git show "FETCH_HEAD:phase1/$RUN/visuals.json" > in/visuals.json
+      - name: Check pictures
+        timeout-minutes: 12
+        env:
+          GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
+        run: |
+          set -o pipefail
+          python phase5/check_pictures.py in/visuals.json in/video.mp4 out/check 2>&1 | tee out/check/build.log
+      - name: Save to bench-results
+        if: always()
+        timeout-minutes: 3
+        run: |
+          set -e
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git fetch --depth 1 origin bench-results
+          git worktree add results FETCH_HEAD
+          git -C results checkout -B bench-results
+          dest="results/phase5/picture-check/${{ github.run_id }}"
+          mkdir -p "$dest" && cp -r out/check/build.log out/check/result.json out/check/llm "$dest/" 2>/dev/null || true
+          cd results && git add -A && git commit -m "Picture check test ${{ github.run_id }}"
+          for i in 1 2 3 4 5; do git push origin bench-results && break; git pull --rebase origin bench-results; sleep 5; done
