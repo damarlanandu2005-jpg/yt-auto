@@ -1,0 +1,463 @@
+{
+ "sentences": [
+  {
+   "id": "s01.01",
+   "scene": "s01",
+   "text": "How can your smartphone pinpoint your exact location anywhere on Earth just by receiving silent radio signals?",
+   "start": 0.018,
+   "end": 7.266
+  },
+  {
+   "id": "s01.03",
+   "scene": "s01",
+   "text": "In reality, the Global Positioning System is a completely one-way passive broadcast network.",
+   "start": 7.696,
+   "end": 13.817
+  },
+  {
+   "id": "s01.05",
+   "scene": "s01",
+   "text": "GPS operates independently of telephone or Internet reception.",
+   "start": 14.277,
+   "end": 18.876
+  },
+  {
+   "id": "s01.06",
+   "scene": "s01",
+   "text": "Owned by the United States Space Force, the satellite system is freely accessible to anyone.",
+   "start": 19.348,
+   "end": 25.181
+  },
+  {
+   "id": "s01.07",
+   "scene": "s01",
+   "text": "The constellation consists of at least 24 active satellites arranged across six distinct orbital planes.",
+   "start": 25.683,
+   "end": 32.791
+  },
+  {
+   "id": "s01.08",
+   "scene": "s01",
+   "text": "The first prototype spacecraft went into orbit in 1978 before reaching full operational status in 1995.",
+   "start": 33.246,
+   "end": 42.565
+  },
+  {
+   "id": "s01.09",
+   "scene": "s01",
+   "text": "Each satellite completes two full orbits around Earth during every sidereal day.",
+   "start": 43.026,
+   "end": 47.896
+  },
+  {
+   "id": "s01.10",
+   "scene": "s01",
+   "text": "As they orbit, these satellites continuously broadcast radio signals containing their exact position and precise time.",
+   "start": 48.372,
+   "end": 56.34
+  },
+  {
+   "id": "s01.11",
+   "scene": "s01",
+   "text": "Your phone acts as a silent receiver, quietly catching these incoming radio transmissions from the sky.",
+   "start": 56.819,
+   "end": 63.354
+  },
+  {
+   "id": "s02.01",
+   "scene": "s02",
+   "text": "To figure out your exact location, your device converts time measurements directly into distance measurements.",
+   "start": 64.824,
+   "end": 71.485
+  },
+  {
+   "id": "s02.02",
+   "scene": "s02",
+   "text": "GPS satellites circle the Earth in medium orbit at an altitude of approximately 20,200 kilometres.",
+   "start": 71.93,
+   "end": 79.942
+  },
+  {
+   "id": "s02.03",
+   "scene": "s02",
+   "text": "Radio signals broadcast from these satellites travel through space at the constant speed of light.",
+   "start": 80.397,
+   "end": 86.377
+  },
+  {
+   "id": "s02.04",
+   "scene": "s02",
+   "text": "Crucially, the speed of radio waves is constant and completely independent of the satellite's speed.",
+   "start": 86.845,
+   "end": 93.042
+  },
+  {
+   "id": "s02.05",
+   "scene": "s02",
+   "text": "Each satellite continually broadcasts a pseudorandom sequence of ones and zeros known to the receiver.",
+   "start": 93.525,
+   "end": 100.433
+  },
+  {
+   "id": "s02.06",
+   "scene": "s02",
+   "text": "The transmission message includes a timestamp recording the exact time the signal left the satellite.",
+   "start": 100.948,
+   "end": 107.347
+  },
+  {
+   "id": "s02.07",
+   "scene": "s02",
+   "text": "When your device receives the signal, it records the arrival time using its own internal clock.",
+   "start": 107.824,
+   "end": 114.054
+  },
+  {
+   "id": "s02.08",
+   "scene": "s02",
+   "text": "By subtracting the transmission time from the arrival time, the receiver calculates the signal delay.",
+   "start": 114.526,
+   "end": 120.503
+  },
+  {
+   "id": "s02.09",
+   "scene": "s02",
+   "text": "Multiplying this time value by the speed of light yields a pseudorange rather than an exact distance.",
+   "start": 120.978,
+   "end": 127.327
+  },
+  {
+   "id": "s02.11",
+   "scene": "s02",
+   "text": "Because light moves so fast, a tiny timing offset of just 10 nanoseconds causes a 3 metre distance error.",
+   "start": 127.781,
+   "end": 135.253
+  },
+  {
+   "id": "s03.02",
+   "scene": "s03",
+   "text": "A single distance measurement places your device somewhere on a giant spherical shell centred on that satellite.",
+   "start": 136.726,
+   "end": 143.29
+  },
+  {
+   "id": "s03.03",
+   "scene": "s03",
+   "text": "To narrow down your location, your phone needs signals from additional satellites orbiting above.",
+   "start": 143.742,
+   "end": 149.573
+  },
+  {
+   "id": "s03.05",
+   "scene": "s03",
+   "text": "When you receive a distance measurement from a second satellite, a second sphere is created.",
+   "start": 150.044,
+   "end": 154.978
+  },
+  {
+   "id": "s03.06",
+   "scene": "s03",
+   "text": "Taking several distance measurements allows a receiver to find the point where the spherical shells meet.",
+   "start": 155.466,
+   "end": 161.351
+  },
+  {
+   "id": "s03.07",
+   "scene": "s03",
+   "text": "Your receiver generates a position fix by finding where multiple spherical shells meet.",
+   "start": 161.832,
+   "end": 167.225
+  },
+  {
+   "id": "s03.08",
+   "scene": "s03",
+   "text": "Adding a third satellite creates a third spherical surface around that third broadcasting source.",
+   "start": 167.683,
+   "end": 173.694
+  },
+  {
+   "id": "s03.09",
+   "scene": "s03",
+   "text": "Combining multiple distance measurements allows the receiver to determine the point where the shells meet.",
+   "start": 174.136,
+   "end": 180.059
+  },
+  {
+   "id": "s03.11",
+   "scene": "s03",
+   "text": "In special cases where elevation is already known, three satellites can determine a position.",
+   "start": 180.508,
+   "end": 186.276
+  },
+  {
+   "id": "s03.12",
+   "scene": "s03",
+   "text": "This geometric technique of calculating positions using measured distances is known as trilateration.",
+   "start": 186.75,
+   "end": 193.989
+  },
+  {
+   "id": "s04.01",
+   "scene": "s04",
+   "text": "Trilateration with three spheres assumes that your receiver clock is perfectly synchronized with the satellites.",
+   "start": 195.448,
+   "end": 202.135
+  },
+  {
+   "id": "s04.02",
+   "scene": "s04",
+   "text": "GPS satellites carry extremely stable atomic clocks that are monitored and synchronized regularly by ground stations.",
+   "start": 202.577,
+   "end": 210.717
+  },
+  {
+   "id": "s04.04",
+   "scene": "s04",
+   "text": "Because your phone clock is inaccurate, measured travel times produce biased distances called pseudoranges.",
+   "start": 211.19,
+   "end": 218.017
+  },
+  {
+   "id": "s04.06",
+   "scene": "s04",
+   "text": "To solve this problem without needing an impractical receiver clock, the system uses signals from a fourth satellite.",
+   "start": 218.455,
+   "end": 225.519
+  },
+  {
+   "id": "s04.07",
+   "scene": "s04",
+   "text": "Your GPS receiver requires signals from at least four satellites to solve its navigation equations.",
+   "start": 225.976,
+   "end": 232.804
+  },
+  {
+   "id": "s04.08",
+   "scene": "s04",
+   "text": "With four satellite signals, your phone calculates four unknown mathematical quantities simultaneously.",
+   "start": 233.261,
+   "end": 240.095
+  },
+  {
+   "id": "s04.09",
+   "scene": "s04",
+   "text": "These unknowns are three spatial coordinates representing position and the exact deviation of your phone clock.",
+   "start": 240.567,
+   "end": 247.543
+  },
+  {
+   "id": "s04.10",
+   "scene": "s04",
+   "text": "Solving the navigation equations gives receiver position and clock deviation, providing cheap and highly accurate timing.",
+   "start": 248.007,
+   "end": 256.137
+  },
+  {
+   "id": "s04.11",
+   "scene": "s04",
+   "text": "This clever mathematical approach keeps consumer receivers light, affordable, and practical for daily use.",
+   "start": 256.63,
+   "end": 263.867
+  },
+  {
+   "id": "s05.01",
+   "scene": "s05",
+   "text": "Even with four satellite signals, GPS would fail quickly without accounting for Albert Einstein's theories of relativity.",
+   "start": 265.315,
+   "end": 273.376
+  },
+  {
+   "id": "s05.02",
+   "scene": "s05",
+   "text": "Special relativity predicts that time passes slower for objects moving at higher speeds relative to an observer.",
+   "start": 273.839,
+   "end": 281.514
+  },
+  {
+   "id": "s05.03",
+   "scene": "s05",
+   "text": "Because satellites travel at roughly 3,874 metres per second, their atomic clocks tick slower.",
+   "start": 281.987,
+   "end": 289.426
+  },
+  {
+   "id": "s05.04",
+   "scene": "s05",
+   "text": "This speed effect causes orbital clocks to lose about 7.2 microseconds per day compared to ground clocks.",
+   "start": 289.91,
+   "end": 297.184
+  },
+  {
+   "id": "s05.05",
+   "scene": "s05",
+   "text": "Meanwhile, general relativity shows that gravity slows down time closer to massive bodies like Earth.",
+   "start": 297.635,
+   "end": 304.015
+  },
+  {
+   "id": "s05.06",
+   "scene": "s05",
+   "text": "Because satellites operate high above Earth's surface, they experience weaker gravity than receivers on the ground.",
+   "start": 304.563,
+   "end": 311.616
+  },
+  {
+   "id": "s05.07",
+   "scene": "s05",
+   "text": "This weaker gravity causes satellite clocks to tick faster by about 45.8 microseconds per day.",
+   "start": 312.072,
+   "end": 318.954
+  },
+  {
+   "id": "s05.08",
+   "scene": "s05",
+   "text": "Combining both relativistic effects, satellite clocks run faster by approximately 38.6 microseconds every day.",
+   "start": 319.443,
+   "end": 327.846
+  },
+  {
+   "id": "s05.09",
+   "scene": "s05",
+   "text": "If uncorrected, this timing difference would cause location errors of roughly 11.4 kilometres per day.",
+   "start": 328.31,
+   "end": 335.29
+  },
+  {
+   "id": "s05.10",
+   "scene": "s05",
+   "text": "To correct this, engineers pre-adjust the atomic clock frequencies before launching the satellites into space.",
+   "start": 335.783,
+   "end": 342.715
+  },
+  {
+   "id": "s05.11",
+   "scene": "s05",
+   "text": "They slow the clock rate from 10.23 megahertz down to 10.22999999543 megahertz.",
+   "start": 343.214,
+   "end": 352.258
+  },
+  {
+   "id": "s05.12",
+   "scene": "s05",
+   "text": "This pre-launch adjustment allows orbital clocks to stay synchronized with time on Earth's surface.",
+   "start": 352.709,
+   "end": 358.653
+  },
+  {
+   "id": "s06.01",
+   "scene": "s06",
+   "text": "Once your device processes the satellite signals, it calculates raw three-dimensional position coordinates.",
+   "start": 360.099,
+   "end": 366.798
+  },
+  {
+   "id": "s06.02",
+   "scene": "s06",
+   "text": "The receiver then converts these spatial numbers into standard latitude, longitude, and height.",
+   "start": 367.247,
+   "end": 373.142
+  },
+  {
+   "id": "s06.03",
+   "scene": "s06",
+   "text": "Consumer devices like smartphones can achieve horizontal positioning accuracy of 4.9 metres or better.",
+   "start": 373.608,
+   "end": 381.157
+  },
+  {
+   "id": "s06.04",
+   "scene": "s06",
+   "text": "When paired with assistive services like Wi-Fi positioning, positioning performance becomes even more reliable.",
+   "start": 381.658,
+   "end": 388.69
+  },
+  {
+   "id": "s06.05",
+   "scene": "s06",
+   "text": "High-end applications like land surveying can even achieve sub-millimetre accuracy with long-term measurements.",
+   "start": 389.174,
+   "end": 396.42
+  },
+  {
+   "id": "s06.06",
+   "scene": "s06",
+   "text": "These calculated coordinates may be displayed on a moving map display or used by another system.",
+   "start": 396.892,
+   "end": 402.976
+  },
+  {
+   "id": "s06.07",
+   "scene": "s06",
+   "text": "An internal tracker algorithm combines successive measurements to predict movement and filter out random errors.",
+   "start": 403.435,
+   "end": 410.513
+  },
+  {
+   "id": "s06.08",
+   "scene": "s06",
+   "text": "By analyzing signal Doppler frequency shifts, your device can also calculate your exact velocity and direction.",
+   "start": 410.952,
+   "end": 418.403
+  },
+  {
+   "id": "s06.09",
+   "scene": "s06",
+   "text": "More advanced navigation systems combine these satellite data with internal compasses or motion sensors.",
+   "start": 418.868,
+   "end": 426.01
+  },
+  {
+   "id": "s06.10",
+   "scene": "s06",
+   "text": "Your phone finds your exact location by listening to broadcast timestamps, measuring radio travel times, and calculating geometry.",
+   "start": 426.466,
+   "end": 435.562
+  },
+  {
+   "id": "s06.11",
+   "scene": "s06",
+   "text": "Next time you follow that blue dot on your screen, consider how orbital geometry and atomic time keeping guide your path.",
+   "start": 436.044,
+   "end": 443.658
+  }
+ ],
+ "scenes": [
+  {
+   "id": "s01",
+   "heading": "The passive listener: why GPS satellites do not track you or receive signals from your phone",
+   "start": 0.0,
+   "end": 64.824
+  },
+  {
+   "id": "s02",
+   "heading": "Turning time into space: how measuring radio travel times reveals your distance from an orbit",
+   "start": 64.824,
+   "end": 136.7253333333333
+  },
+  {
+   "id": "s03",
+   "heading": "The sphere intersection: using trilateration to narrow your place on Earth to two points",
+   "start": 136.7253333333333,
+   "end": 195.44799999999998
+  },
+  {
+   "id": "s04",
+   "heading": "The fourth satellite trick: how an extra signal fixes the cheap quartz clock in your pocket",
+   "start": 195.44799999999998,
+   "end": 265.3066666666666
+  },
+  {
+   "id": "s05",
+   "heading": "Einstein in orbit: why satellite clocks tick faster and how engineers correct for relativity",
+   "start": 265.3066666666666,
+   "end": 360.08799999999997
+  },
+  {
+   "id": "s06",
+   "heading": "Mapping the numbers: how raw coordinates turn into a moving blue dot on your screen",
+   "start": 360.08799999999997,
+   "end": 445.1253333333333
+  }
+ ],
+ "total": 445.125333
+}

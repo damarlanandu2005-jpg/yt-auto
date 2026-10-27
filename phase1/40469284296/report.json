@@ -1,0 +1,207 @@
+{
+  "total_seconds": 674.83,
+  "stages_seconds": {
+    "script": 0.0,
+    "narration": 77.15,
+    "visual_plan": 0.0,
+    "photos": 440.18,
+    "keyframes": 24.07,
+    "segments": 96.53,
+    "assemble": 7.39,
+    "subtitles": 19.71,
+    "preview": 4.7
+  },
+  "peak_memory_mb": {
+    "python": 759.2,
+    "largest_child": 759.2
+  },
+  "machine": {
+    "arch": "x86_64",
+    "cpus": 4,
+    "python": "3.13.16",
+    "runner": "GitHub Actions 1000000246",
+    "cpu_model": "AMD EPYC 9V45 96-Core Processor",
+    "ffmpeg": "ffmpeg version n8.1.3-24-g92611900bb-20261026 Copyright (c) 2000-2026 the FFmpeg developers"
+  },
+  "subtitle_cues": 120,
+  "whisper_words": 920,
+  "topic": "How does GPS know where you are?",
+  "title": "How GPS Finds Your Location Using Satellite Timestamps",
+  "words": 900,
+  "video_seconds": 445.0,
+  "visuals": 99,
+  "photos": 44,
+  "cards": 55,
+  "seconds_per_visual": 4.5,
+  "photo_log": {
+    "card_number_fixes": [
+      "v002: numbers ['100'] not in narration; card replaced",
+      "v004: numbers ['0'] not in narration; card replaced",
+      "v019: numbers ['299792'] not in narration; card replaced",
+      "v036: numbers ['1'] not in narration; card replaced",
+      "v037: numbers ['4'] not in narration; card replaced"
+    ],
+    "photo_slots": 71,
+    "downloaded": 53,
+    "seen": {
+      "v002": "hand holding a smartphone showing a GPS speed and distance tracker screen without a map",
+      "v004": "a telecommunications cell tower structure",
+      "v005": "plain text reading UNITED STATES SPACE FORCE on a starry background",
+      "v008": "a rocket launching into space at night",
+      "v011": "rendering of a GPS satellite in orbit around Earth",
+      "v012": "a satellite atomic clock module unit",
+      "v013": "a handheld Magellan GPS receiver unit",
+      "v014": "a satellite dish mounted on a pole pointing upwards",
+      "v017": "a communications satellite orbiting above planet Earth",
+      "v019": "diagram of radio wave paths bouncing between Earth and the ionosphere",
+      "v020": "a large radio telescope dish at twilight",
+      "v021": "an oscilloscope screen displaying triangle and square waveforms",
+      "v022": "a green digital binary code pattern screen",
+      "v023": "a digital LED clock display showing time",
+      "v024": "an integrated circuit microchip on a green circuit board",
+      "v027": "a frequency counter and signal generator lab instrument",
+      "v030": "a solid shaded 3D white sphere",
+      "v031": "diagram of a geostationary satellite constellation around Earth",
+      "v032": "abstract 3D geometric ring wireframes and red shapes",
+      "v034": "a GPS navigation receiver screen showing coordinates fix and satellite skyplot",
+      "v037": "a topographic elevation map of Scotland",
+      "v038": "a deep space infrared astronomical image of stars and nebula",
+      "v042": "scientists working on an experimental atomic clock laboratory setup",
+      "v043": "a large illuminated satellite tracking dish antenna at night",
+      "v044": "a mobile phone motherboard circuit board",
+      "v048": "a handheld Garmin GPS receiver outdoors on mossy concrete",
+      "v052": "a 3D Cartesian coordinate axis diagram",
+      "v055": "a Citizen quartz crystal oscillator electronic component",
+      "v056": "modern thin smartphones displayed side-by-side",
+      "v059": "a historic photograph of Albert Einstein",
+      "v060": "a satellite orbiting high above Earth",
+      "v061": "the International Space Station orbiting Earth",
+      "v064": "a line chart plotting relativistic time dilation versus orbital height",
+      "v067": "small satellites deployed in orbit above Earth horizon",
+      "v068": "a grid of global maps showing Earth gravity field variations",
+      "v069": "a scientist working on an optical atomic clock on a optical bench",
+      "v071": "operators at computer consoles in a satellite mission control room",
+      "v073": "a green map showing a hiking GPS track line",
+      "v075": "cleanroom technicians assembling a satellite on a rig",
+      "v076": "a satellite in a cleanroom facility prior to launch",
+      "v079": "a rocket launching into the sky viewed by spectators",
+      "v081": "diagram of a 3D coordinate space transformation grid",
+      "v082": "diagram showing parallels of latitude and meridians of longitude on globes",
+      "v083": "a man holding a smartphone with the screen facing away",
+      "v085": "a vertical black Netgear router unit",
+      "v087": "a surveyor looking through an optical total station standard surveying instrument",
+      "v089": "a car infotainment screen displaying a digital navigation map",
+      "v090": "a code snippet filtering age and salary columns in a dataframe",
+      "v091": "a Spectran real-time spectrum analyzer unit",
+      "v092": "diagram explaining Doppler effect wave compression and stretching",
+      "v095": "a person holding a magnetic directional compass",
+      "v096": "a smartphone lying on a wooden desk near a laptop and notebook",
+      "v099": "night sky with stars, a wind turbine, and a satellite streak line"
+    },
+    "rejected_after_looking": [
+      {
+        "id": "v002",
+        "title": "Motion X GPS and OSM",
+        "seen": "hand holding a smartphone showing a GPS speed and distance tracker screen without a map",
+        "reason": "It shows numerical GPS statistics rather than a digital map."
+      },
+      {
+        "id": "v005",
+        "title": "U S Space Force (2002230265)",
+        "seen": "plain text reading UNITED STATES SPACE FORCE on a starry background",
+        "reason": "It shows plain text overlay rather than an official symbol/logo, and consists mostly of text."
+      },
+      {
+        "id": "v030",
+        "title": "Parametric surface illustration (sphere)",
+        "seen": "a solid shaded 3D white sphere",
+        "reason": "It shows a solid shaded sphere instead of a wireframe sphere model."
+      },
+      {
+        "id": "v032",
+        "title": "EuDi; medusa spheres; cell 09",
+        "seen": "abstract 3D geometric ring wireframes and red shapes",
+        "reason": "It does not clearly show two intersecting spheres."
+      },
+      {
+        "id": "v038",
+        "title": "All That Remains of Exploded Star",
+        "seen": "a deep space infrared astronomical image of stars and nebula",
+        "reason": "It shows an astronomical nebula instead of a surveyor using a transit telescope."
+      },
+      {
+        "id": "v073",
+        "title": "Gps-abweichungen-wald",
+        "seen": "a green map showing a hiking GPS track line",
+        "reason": "It shows a route track rather than location position error."
+      },
+      {
+        "id": "v083",
+        "title": "Man using smartphone outdoors",
+        "seen": "a man holding a smartphone with the screen facing away",
+        "reason": "The smartphone screen is hidden and does not clearly show a map."
+      },
+      {
+        "id": "v087",
+        "title": "Land Surveyor",
+        "seen": "a surveyor looking through an optical total station standard surveying instrument",
+        "reason": "It shows an optical total station/theodolite rather than GPS surveying equipment."
+      },
+      {
+        "id": "v090",
+        "title": "Filtered example",
+        "seen": "a code snippet filtering age and salary columns in a dataframe",
+        "reason": "It shows basic database filtering code rather than a tracking algorithm."
+      }
+    ]
+  },
+  "llm_calls": [
+    {
+      "name": "photo_pick",
+      "model": "gemini-3.6-flash",
+      "prompt_chars": 149489,
+      "images": 0,
+      "status": 503,
+      "attempt": 1,
+      "error": "{\n  \"error\": {\n    \"code\": 503,\n    \"message\": \"This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.\",\n    \"status\": \"UNAVAILABLE\"\n  }\n}\n"
+    },
+    {
+      "name": "photo_pick",
+      "model": "gemini-3.6-flash",
+      "prompt_chars": 149489,
+      "images": 0,
+      "status": 200,
+      "seconds": 138.1,
+      "attempts": 2,
+      "finish": "STOP",
+      "in_tokens": 40442,
+      "out_tokens": 1756,
+      "thought_tokens": 12802
+    },
+    {
+      "name": "photo_verify",
+      "model": "gemini-3.6-flash",
+      "prompt_chars": 7568,
+      "images": 53,
+      "status": 503,
+      "attempt": 1,
+      "error": "{\n  \"error\": {\n    \"code\": 503,\n    \"message\": \"This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.\",\n    \"status\": \"UNAVAILABLE\"\n  }\n}\n"
+    },
+    {
+      "name": "photo_verify",
+      "model": "gemini-3.6-flash",
+      "prompt_chars": 7568,
+      "images": 53,
+      "status": 200,
+      "seconds": 79.9,
+      "attempts": 2,
+      "finish": "STOP",
+      "in_tokens": 59311,
+      "out_tokens": 2454,
+      "thought_tokens": 4659
+    }
+  ],
+  "llm_calls_ok_by_model": {
+    "gemini-3.6-flash": 2
+  }
+}

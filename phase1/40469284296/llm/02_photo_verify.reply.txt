@@ -1,0 +1,322 @@
+{
+  "checks": [
+    {
+      "n": 1,
+      "seen": "hand holding a smartphone showing a GPS speed and distance tracker screen without a map",
+      "fits": false,
+      "reason": "It shows numerical GPS statistics rather than a digital map."
+    },
+    {
+      "n": 2,
+      "seen": "a telecommunications cell tower structure",
+      "fits": true,
+      "reason": ""
+    },
+    {
+      "n": 3,
+      "seen": "plain text reading UNITED STATES SPACE FORCE on a starry background",
+      "fits": false,
+      "reason": "It shows plain text overlay rather than an official symbol/logo, and consists mostly of text."
+    },
+    {
+      "n": 4,
+      "seen": "a rocket launching into space at night",
+      "fits": true,
+      "reason": ""
+    },
+    {
+      "n": 5,
+      "seen": "rendering of a GPS satellite in orbit around Earth",
+      "fits": true,
+      "reason": ""
+    },
+    {
+      "n": 6,
+      "seen": "a satellite atomic clock module unit",
+      "fits": true,
+      "reason": ""
+    },
+    {
+      "n": 7,
+      "seen": "a handheld Magellan GPS receiver unit",
+      "fits": true,
+      "reason": ""
+    },
+    {
+      "n": 8,
+      "seen": "a satellite dish mounted on a pole pointing upwards",
+      "fits": true,
+      "reason": ""
+    },
+    {
+      "n": 9,
+      "seen": "a communications satellite orbiting above planet Earth",
+      "fits": true,
+      "reason": ""
+    },
+    {
+      "n": 10,
+      "seen": "diagram of radio wave paths bouncing between Earth and the ionosphere",
+      "fits": true,
+      "reason": ""
+    },
+    {
+      "n": 11,
+      "seen": "a large radio telescope dish at twilight",
+      "fits": true,
+      "reason": ""
+    },
+    {
+      "n": 12,
+      "seen": "an oscilloscope screen displaying triangle and square waveforms",
+      "fits": true,
+      "reason": ""
+    },
+    {
+      "n": 13,
+      "seen": "a green digital binary code pattern screen",
+      "fits": true,
+      "reason": ""
+    },
+    {
+      "n": 14,
+      "seen": "a digital LED clock display showing time",
+      "fits": true,
+      "reason": ""
+    },
+    {
+      "n": 15,
+      "seen": "an integrated circuit microchip on a green circuit board",
+      "fits": true,
+      "reason": ""
+    },
+    {
+      "n": 16,
+      "seen": "a frequency counter and signal generator lab instrument",
+      "fits": true,
+      "reason": ""
+    },
+    {
+      "n": 17,
+      "seen": "a solid shaded 3D white sphere",
+      "fits": false,
+      "reason": "It shows a solid shaded sphere instead of a wireframe sphere model."
+    },
+    {
+      "n": 18,
+      "seen": "diagram of a geostationary satellite constellation around Earth",
+      "fits": true,
+      "reason": ""
+    },
+    {
+      "n": 19,
+      "seen": "abstract 3D geometric ring wireframes and red shapes",
+      "fits": false,
+      "reason": "It does not clearly show two intersecting spheres."
+    },
+    {
+      "n": 20,
+      "seen": "a GPS navigation receiver screen showing coordinates fix and satellite skyplot",
+      "fits": true,
+      "reason": ""
+    },
+    {
+      "n": 21,
+      "seen": "a topographic elevation map of Scotland",
+      "fits": true,
+      "reason": ""
+    },
+    {
+      "n": 22,
+      "seen": "a deep space infrared astronomical image of stars and nebula",
+      "fits": false,
+      "reason": "It shows an astronomical nebula instead of a surveyor using a transit telescope."
+    },
+    {
+      "n": 23,
+      "seen": "scientists working on an experimental atomic clock laboratory setup",
+      "fits": true,
+      "reason": ""
+    },
+    {
+      "n": 24,
+      "seen": "a large illuminated satellite tracking dish antenna at night",
+      "fits": true,
+      "reason": ""
+    },
+    {
+      "n": 25,
+      "seen": "a mobile phone motherboard circuit board",
+      "fits": true,
+      "reason": ""
+    },
+    {
+      "n": 26,
+      "seen": "a handheld Garmin GPS receiver outdoors on mossy concrete",
+      "fits": true,
+      "reason": ""
+    },
+    {
+      "n": 27,
+      "seen": "a 3D Cartesian coordinate axis diagram",
+      "fits": true,
+      "reason": ""
+    },
+    {
+      "n": 28,
+      "seen": "a Citizen quartz crystal oscillator electronic component",
+      "fits": true,
+      "reason": ""
+    },
+    {
+      "n": 29,
+      "seen": "modern thin smartphones displayed side-by-side",
+      "fits": true,
+      "reason": ""
+    },
+    {
+      "n": 30,
+      "seen": "a historic photograph of Albert Einstein",
+      "fits": true,
+      "reason": ""
+    },
+    {
+      "n": 31,
+      "seen": "a satellite orbiting high above Earth",
+      "fits": true,
+      "reason": ""
+    },
+    {
+      "n": 32,
+      "seen": "the International Space Station orbiting Earth",
+      "fits": true,
+      "reason": ""
+    },
+    {
+      "n": 33,
+      "seen": "a line chart plotting relativistic time dilation versus orbital height",
+      "fits": true,
+      "reason": ""
+    },
+    {
+      "n": 34,
+      "seen": "small satellites deployed in orbit above Earth horizon",
+      "fits": true,
+      "reason": ""
+    },
+    {
+      "n": 35,
+      "seen": "a grid of global maps showing Earth gravity field variations",
+      "fits": true,
+      "reason": ""
+    },
+    {
+      "n": 36,
+      "seen": "a scientist working on an optical atomic clock on a optical bench",
+      "fits": true,
+      "reason": ""
+    },
+    {
+      "n": 37,
+      "seen": "operators at computer consoles in a satellite mission control room",
+      "fits": true,
+      "reason": ""
+    },
+    {
+      "n": 38,
+      "seen": "a green map showing a hiking GPS track line",
+      "fits": false,
+      "reason": "It shows a route track rather than location position error."
+    },
+    {
+      "n": 39,
+      "seen": "cleanroom technicians assembling a satellite on a rig",
+      "fits": true,
+      "reason": ""
+    },
+    {
+      "n": 40,
+      "seen": "a satellite in a cleanroom facility prior to launch",
+      "fits": true,
+      "reason": ""
+    },
+    {
+      "n": 41,
+      "seen": "a rocket launching into the sky viewed by spectators",
+      "fits": true,
+      "reason": ""
+    },
+    {
+      "n": 42,
+      "seen": "diagram of a 3D coordinate space transformation grid",
+      "fits": true,
+      "reason": ""
+    },
+    {
+      "n": 43,
+      "seen": "diagram showing parallels of latitude and meridians of longitude on globes",
+      "fits": true,
+      "reason": ""
+    },
+    {
+      "n": 44,
+      "seen": "a man holding a smartphone with the screen facing away",
+      "fits": false,
+      "reason": "The smartphone screen is hidden and does not clearly show a map."
+    },
+    {
+      "n": 45,
+      "seen": "a vertical black Netgear router unit",
+      "fits": true,
+      "reason": ""
+    },
+    {
+      "n": 46,
+      "seen": "a surveyor looking through an optical total station standard surveying instrument",
+      "fits": false,
+      "reason": "It shows an optical total station/theodolite rather than GPS surveying equipment."
+    },
+    {
+      "n": 47,
+      "seen": "a car infotainment screen displaying a digital navigation map",
+      "fits": true,
+      "reason": ""
+    },
+    {
+      "n": 48,
+      "seen": "a code snippet filtering age and salary columns in a dataframe",
+      "fits": false,
+      "reason": "It shows basic database filtering code rather than a tracking algorithm."
+    },
+    {
+      "n": 49,
+      "seen": "a Spectran real-time spectrum analyzer unit",
+      "fits": true,
+      "reason": ""
+    },
+    {
+      "n": 50,
+      "seen": "diagram explaining Doppler effect wave compression and stretching",
+      "fits": true,
+      "reason": ""
+    },
+    {
+      "n": 51,
+      "seen": "a person holding a magnetic directional compass",
+      "fits": true,
+      "reason": ""
+    },
+    {
+      "n": 52,
+      "seen": "a smartphone lying on a wooden desk near a laptop and notebook",
+      "fits": true,
+      "reason": ""
+    },
+    {
+      "n": 53,
+      "seen": "night sky with stars, a wind turbine, and a satellite streak line",
+      "fits": true,
+      "reason": ""
+    }
+  ]
+}

@@ -1,0 +1,2218 @@
+[
+ {
+  "scene": "s01",
+  "start": 0.0,
+  "text": "How can your smartphone pinpoint your exact location",
+  "sentences": [
+   "s01.01"
+  ],
+  "id": "v001",
+  "end": 3.381294117647059,
+  "seconds": 3.38,
+  "scene_start": true,
+  "kind": "card",
+  "card": {
+   "type": "title",
+   "title": "How GPS Finds Your Location Using Satellite Timestamps",
+   "subtitle": "The Passive Listener"
+  }
+ },
+ {
+  "scene": "s01",
+  "start": 3.381294117647059,
+  "text": "anywhere on Earth just by receiving silent radio signals?",
+  "sentences": [
+   "s01.01"
+  ],
+  "id": "v002",
+  "end": 7.611,
+  "seconds": 4.23,
+  "scene_start": false,
+  "kind": "photo",
+  "photo_subject": "a smartphone displaying a digital map",
+  "photo_queries": [
+   "smartphone map",
+   "gps phone"
+  ],
+  "card": {
+   "type": "stat",
+   "title": "Global Reach",
+   "value": "100%",
+   "label": "Earth Coverage"
+  }
+ },
+ {
+  "scene": "s01",
+  "start": 7.611,
+  "text": "In reality, the Global Positioning System is a completely one-way passive broadcast network.",
+  "sentences": [
+   "s01.03"
+  ],
+  "id": "v003",
+  "end": 14.213,
+  "seconds": 6.6,
+  "scene_start": false,
+  "kind": "card",
+  "card": {
+   "type": "compare",
+   "title": "GPS System Architecture",
+   "left_title": "Passive Broadcast",
+   "left_points": [
+    "Satellites transmit only",
+    "Unlimited receivers",
+    "Zero phone data sent"
+   ],
+   "right_title": "Two-Way Network",
+   "right_points": [
+    "Two-way signal exchange",
+    "Limited capacity",
+    "Transmits user data"
+   ]
+  }
+ },
+ {
+  "scene": "s01",
+  "start": 14.213,
+  "text": "GPS operates independently of telephone or Internet reception.",
+  "sentences": [
+   "s01.05"
+  ],
+  "id": "v004",
+  "end": 19.262,
+  "seconds": 5.05,
+  "scene_start": false,
+  "kind": "photo",
+  "photo_subject": "a remote cell tower",
+  "photo_queries": [
+   "cell tower",
+   "cellular antenna"
+  ],
+  "card": {
+   "type": "stat",
+   "title": "Cellular Network",
+   "value": "0",
+   "label": "Cell Signals Needed for GPS"
+  }
+ },
+ {
+  "scene": "s01",
+  "start": 19.262,
+  "text": "Owned by the United States Space Force, the satellite system is freely accessible to anyone.",
+  "sentences": [
+   "s01.06"
+  ],
+  "id": "v005",
+  "end": 25.534,
+  "seconds": 6.27,
+  "scene_start": false,
+  "kind": "photo",
+  "photo_subject": "a US Space Force symbol",
+  "photo_queries": [
+   "space force",
+   "space military"
+  ],
+  "card": {
+   "type": "title",
+   "title": "US Space Force",
+   "subtitle": "Operators of Global Positioning System"
+  }
+ },
+ {
+  "scene": "s01",
+  "start": 25.534,
+  "text": "The constellation consists of at least 24 active",
+  "sentences": [
+   "s01.07"
+  ],
+  "id": "v006",
+  "end": 29.324399999999997,
+  "seconds": 3.79,
+  "scene_start": false,
+  "kind": "card",
+  "card": {
+   "type": "stat",
+   "title": "Active GPS Satellites",
+   "value": "24+",
+   "label": "Operational Spacecraft"
+  }
+ },
+ {
+  "scene": "s01",
+  "start": 29.324399999999997,
+  "text": "satellites arranged across six distinct orbital planes.",
+  "sentences": [
+   "s01.07"
+  ],
+  "id": "v007",
+  "end": 33.098,
+  "seconds": 3.77,
+  "scene_start": false,
+  "kind": "photo",
+  "photo_subject": "diagram of satellite orbits around Earth",
+  "photo_queries": [
+   "orbit diagram",
+   "satellite orbit"
+  ],
+  "card": {
+   "type": "stat",
+   "title": "Orbital Planes",
+   "value": "6",
+   "label": "Distinct Orbital Planes"
+  }
+ },
+ {
+  "scene": "s01",
+  "start": 33.098,
+  "text": "The first prototype spacecraft went into orbit in",
+  "sentences": [
+   "s01.08"
+  ],
+  "id": "v008",
+  "end": 37.7805,
+  "seconds": 4.68,
+  "scene_start": false,
+  "kind": "photo",
+  "photo_subject": "a rocket launching into space",
+  "photo_queries": [
+   "rocket launch",
+   "space launch"
+  ],
+  "card": {
+   "type": "title",
+   "title": "First Prototype",
+   "subtitle": "Initial GPS Satellite Launch"
+  }
+ },
+ {
+  "scene": "s01",
+  "start": 37.7805,
+  "text": "1978 before reaching full operational status in 1995.",
+  "sentences": [
+   "s01.08"
+  ],
+  "id": "v009",
+  "end": 42.919,
+  "seconds": 5.14,
+  "scene_start": false,
+  "kind": "card",
+  "card": {
+   "type": "timeline",
+   "title": "GPS System History",
+   "events": [
+    {
+     "when": "1978",
+     "label": "First prototype satellite in orbit"
+    },
+    {
+     "when": "1995",
+     "label": "Full operational capability achieved"
+    }
+   ]
+  }
+ },
+ {
+  "scene": "s01",
+  "start": 42.919,
+  "text": "Each satellite completes two full orbits around Earth during every sidereal day.",
+  "sentences": [
+   "s01.09"
+  ],
+  "id": "v010",
+  "end": 48.282,
+  "seconds": 5.36,
+  "scene_start": false,
+  "kind": "card",
+  "card": {
+   "type": "stat",
+   "title": "Daily Orbital Rate",
+   "value": "2 orbits",
+   "label": "Per Sidereal Day"
+  }
+ },
+ {
+  "scene": "s01",
+  "start": 48.282,
+  "text": "As they orbit, these satellites continuously broadcast radio",
+  "sentences": [
+   "s01.10"
+  ],
+  "id": "v011",
+  "end": 52.2685,
+  "seconds": 3.99,
+  "scene_start": false,
+  "kind": "photo",
+  "photo_subject": "a GPS satellite in orbit",
+  "photo_queries": [
+   "gps satellite",
+   "satellite space"
+  ],
+  "card": {
+   "type": "title",
+   "title": "Radio Signal Broadcasting",
+   "subtitle": "Continuous Space Transmissions"
+  }
+ },
+ {
+  "scene": "s01",
+  "start": 52.2685,
+  "text": "signals containing their exact position and precise time.",
+  "sentences": [
+   "s01.10"
+  ],
+  "id": "v012",
+  "end": 56.734,
+  "seconds": 4.47,
+  "scene_start": false,
+  "kind": "photo",
+  "photo_subject": "an atomic clock module",
+  "photo_queries": [
+   "atomic clock",
+   "precision clock"
+  ],
+  "card": {
+   "type": "title",
+   "title": "Broadcast Data",
+   "subtitle": "Satellite Position & Precision Time"
+  }
+ },
+ {
+  "scene": "s01",
+  "start": 56.734,
+  "text": "Your phone acts as a silent receiver, quietly",
+  "sentences": [
+   "s01.11"
+  ],
+  "id": "v013",
+  "end": 60.0,
+  "seconds": 3.27,
+  "scene_start": false,
+  "kind": "photo",
+  "photo_subject": "a handheld GPS receiver",
+  "photo_queries": [
+   "gps receiver",
+   "handheld gps"
+  ],
+  "card": {
+   "type": "title",
+   "title": "Passive Reception",
+   "subtitle": "Phone Only Receives Signals"
+  }
+ },
+ {
+  "scene": "s01",
+  "start": 60.0,
+  "text": "catching these incoming radio transmissions from the sky.",
+  "sentences": [
+   "s01.11"
+  ],
+  "id": "v014",
+  "end": 64.739,
+  "seconds": 4.74,
+  "scene_start": false,
+  "kind": "photo",
+  "photo_subject": "a satellite dish pointing up at the sky",
+  "photo_queries": [
+   "satellite dish",
+   "radio antenna"
+  ],
+  "card": {
+   "type": "title",
+   "title": "Signal Acquisition",
+   "subtitle": "Catching Transmissions from Space"
+  }
+ },
+ {
+  "scene": "s02",
+  "start": 64.739,
+  "text": "To figure out your exact location, your device",
+  "sentences": [
+   "s02.01"
+  ],
+  "id": "v015",
+  "end": 68.30380000000001,
+  "seconds": 3.56,
+  "scene_start": true,
+  "kind": "card",
+  "card": {
+   "type": "title",
+   "title": "Turning Time Into Space",
+   "subtitle": "Measuring Radio Travel Times"
+  }
+ },
+ {
+  "scene": "s02",
+  "start": 68.30380000000001,
+  "text": "converts time measurements directly into distance measurements.",
+  "sentences": [
+   "s02.01"
+  ],
+  "id": "v016",
+  "end": 71.866,
+  "seconds": 3.56,
+  "scene_start": false,
+  "kind": "card",
+  "card": {
+   "type": "flow",
+   "title": "Distance Calculation Principle",
+   "steps": [
+    "Measure Radio Time",
+    "Multiply by Signal Speed",
+    "Calculate Range Distance"
+   ]
+  }
+ },
+ {
+  "scene": "s02",
+  "start": 71.866,
+  "text": "GPS satellites circle the Earth in medium orbit",
+  "sentences": [
+   "s02.02"
+  ],
+  "id": "v017",
+  "end": 76.08626666666666,
+  "seconds": 4.22,
+  "scene_start": false,
+  "kind": "photo",
+  "photo_subject": "a satellite orbiting planet Earth",
+  "photo_queries": [
+   "earth satellite",
+   "satellite orbit"
+  ],
+  "card": {
+   "type": "title",
+   "title": "Medium Earth Orbit",
+   "subtitle": "High Altitude Satellite Constellation"
+  }
+ },
+ {
+  "scene": "s02",
+  "start": 76.08626666666666,
+  "text": "at an altitude of approximately 20,200 kilometres.",
+  "sentences": [
+   "s02.02"
+  ],
+  "id": "v018",
+  "end": 80.224,
+  "seconds": 4.14,
+  "scene_start": false,
+  "kind": "card",
+  "card": {
+   "type": "stat",
+   "title": "GPS Orbital Altitude",
+   "value": "20,200 km",
+   "label": "Height Above Earth"
+  }
+ },
+ {
+  "scene": "s02",
+  "start": 80.224,
+  "text": "Radio signals broadcast from these satellites travel through space at the constant speed of light.",
+  "sentences": [
+   "s02.03"
+  ],
+  "id": "v019",
+  "end": 86.781,
+  "seconds": 6.56,
+  "scene_start": false,
+  "kind": "photo",
+  "photo_subject": "radio wave transmission illustration",
+  "photo_queries": [
+   "radio waves",
+   "signal transmission"
+  ],
+  "card": {
+   "type": "stat",
+   "title": "Signal Speed",
+   "value": "299,792 km/s",
+   "label": "Speed of Light in Vacuum"
+  }
+ },
+ {
+  "scene": "s02",
+  "start": 86.781,
+  "text": "Crucially, the speed of radio waves is constant and completely independent of the satellite's speed.",
+  "sentences": [
+   "s02.04"
+  ],
+  "id": "v020",
+  "end": 93.462,
+  "seconds": 6.68,
+  "scene_start": false,
+  "kind": "photo",
+  "photo_subject": "a large radio telescope dish",
+  "photo_queries": [
+   "radio telescope",
+   "radio dish"
+  ],
+  "card": {
+   "type": "title",
+   "title": "Constant Speed",
+   "subtitle": "Radio Wave Velocity Is Fixed"
+  }
+ },
+ {
+  "scene": "s02",
+  "start": 93.462,
+  "text": "Each satellite continually broadcasts a pseudorandom sequence of",
+  "sentences": [
+   "s02.05"
+  ],
+  "id": "v021",
+  "end": 97.12813333333334,
+  "seconds": 3.67,
+  "scene_start": false,
+  "kind": "photo",
+  "photo_subject": "a digital oscilloscope screen showing wave signals",
+  "photo_queries": [
+   "oscilloscope",
+   "signal display"
+  ],
+  "card": {
+   "type": "title",
+   "title": "Pseudorandom Code",
+   "subtitle": "Continuous Binary Transmission"
+  }
+ },
+ {
+  "scene": "s02",
+  "start": 97.12813333333334,
+  "text": "ones and zeros known to the receiver.",
+  "sentences": [
+   "s02.05"
+  ],
+  "id": "v022",
+  "end": 100.82,
+  "seconds": 3.69,
+  "scene_start": false,
+  "kind": "photo",
+  "photo_subject": "binary code software screen",
+  "photo_queries": [
+   "binary code",
+   "digital signal"
+  ],
+  "card": {
+   "type": "title",
+   "title": "Binary Sequences",
+   "subtitle": "Known Sequence Matched by Receiver"
+  }
+ },
+ {
+  "scene": "s02",
+  "start": 100.82,
+  "text": "The transmission message includes a timestamp recording the exact time the signal left the satellite.",
+  "sentences": [
+   "s02.06"
+  ],
+  "id": "v023",
+  "end": 107.526,
+  "seconds": 6.71,
+  "scene_start": false,
+  "kind": "photo",
+  "photo_subject": "a precision digital clock timer",
+  "photo_queries": [
+   "digital clock",
+   "precision timer"
+  ],
+  "card": {
+   "type": "title",
+   "title": "Transmission Timestamp",
+   "subtitle": "Exact Time Signal Left Satellite"
+  }
+ },
+ {
+  "scene": "s02",
+  "start": 107.526,
+  "text": "When your device receives the signal, it records the arrival time using its own internal clock.",
+  "sentences": [
+   "s02.07"
+  ],
+  "id": "v024",
+  "end": 114.206,
+  "seconds": 6.68,
+  "scene_start": false,
+  "kind": "photo",
+  "photo_subject": "a computer microchip processor",
+  "photo_queries": [
+   "microchip",
+   "clock crystal"
+  ],
+  "card": {
+   "type": "title",
+   "title": "Arrival Timestamp",
+   "subtitle": "Recorded by Internal Device Clock"
+  }
+ },
+ {
+  "scene": "s02",
+  "start": 114.206,
+  "text": "By subtracting the transmission time from the arrival time, the receiver calculates the signal delay.",
+  "sentences": [
+   "s02.08"
+  ],
+  "id": "v025",
+  "end": 120.701,
+  "seconds": 6.49,
+  "scene_start": false,
+  "kind": "card",
+  "card": {
+   "type": "flow",
+   "title": "Calculating Signal Delay",
+   "steps": [
+    "Arrival Time",
+    "Subtract Transmission Time",
+    "Signal Transit Delay"
+   ]
+  }
+ },
+ {
+  "scene": "s02",
+  "start": 120.701,
+  "text": "Multiplying this time value by the speed of light yields a pseudorange rather than an exact distance.",
+  "sentences": [
+   "s02.09"
+  ],
+  "id": "v026",
+  "end": 127.503,
+  "seconds": 6.8,
+  "scene_start": false,
+  "kind": "photo",
+  "photo_subject": "mathematical formulas on a blackboard",
+  "photo_queries": [
+   "math formula",
+   "physics calculation"
+  ],
+  "card": {
+   "type": "title",
+   "title": "Pseudorange Formula",
+   "subtitle": "Delay x Speed of Light = Distance"
+  }
+ },
+ {
+  "scene": "s02",
+  "start": 127.503,
+  "text": "Because light moves so fast, a tiny timing offset of",
+  "sentences": [
+   "s02.11"
+  ],
+  "id": "v027",
+  "end": 131.4266842105263,
+  "seconds": 3.92,
+  "scene_start": false,
+  "kind": "photo",
+  "photo_subject": "a high precision electronic timer",
+  "photo_queries": [
+   "nanosecond timer",
+   "frequency counter"
+  ],
+  "card": {
+   "type": "title",
+   "title": "High Speed Signals",
+   "subtitle": "Extreme Precision Needed for Light"
+  }
+ },
+ {
+  "scene": "s02",
+  "start": 131.4266842105263,
+  "text": "just 10 nanoseconds causes a 3 metre distance error.",
+  "sentences": [
+   "s02.11"
+  ],
+  "id": "v028",
+  "end": 136.431,
+  "seconds": 5.0,
+  "scene_start": false,
+  "kind": "card",
+  "card": {
+   "type": "stat",
+   "title": "Timing Sensitivity",
+   "value": "3 metres",
+   "label": "Distance Error per 10 Nanoseconds Delay"
+  }
+ },
+ {
+  "scene": "s03",
+  "start": 136.431,
+  "text": "A single distance measurement places your device somewhere",
+  "sentences": [
+   "s03.02"
+  ],
+  "id": "v029",
+  "end": 139.59900000000002,
+  "seconds": 3.17,
+  "scene_start": true,
+  "kind": "card",
+  "card": {
+   "type": "title",
+   "title": "The Sphere Intersection",
+   "subtitle": "Using Trilateration to Find Position"
+  }
+ },
+ {
+  "scene": "s03",
+  "start": 139.59900000000002,
+  "text": "on a giant spherical shell centred on that satellite.",
+  "sentences": [
+   "s03.02"
+  ],
+  "id": "v030",
+  "end": 143.614,
+  "seconds": 4.01,
+  "scene_start": false,
+  "kind": "photo",
+  "photo_subject": "a 3D wireframe sphere model",
+  "photo_queries": [
+   "3d sphere",
+   "wireframe sphere"
+  ],
+  "card": {
+   "type": "title",
+   "title": "Single Satellite Range",
+   "subtitle": "Position Lies on a Spherical Shell"
+  }
+ },
+ {
+  "scene": "s03",
+  "start": 143.614,
+  "text": "To narrow down your location, your phone needs signals from additional satellites orbiting above.",
+  "sentences": [
+   "s03.03"
+  ],
+  "id": "v031",
+  "end": 149.874,
+  "seconds": 6.26,
+  "scene_start": false,
+  "kind": "photo",
+  "photo_subject": "a constellation of satellites around Earth",
+  "photo_queries": [
+   "satellite constellation",
+   "orbiting satellites"
+  ],
+  "card": {
+   "type": "title",
+   "title": "Multiple Signals",
+   "subtitle": "Combining Satellites for Precise Location"
+  }
+ },
+ {
+  "scene": "s03",
+  "start": 149.874,
+  "text": "When you receive a distance measurement from a second satellite, a second sphere is created.",
+  "sentences": [
+   "s03.05"
+  ],
+  "id": "v032",
+  "end": 155.253,
+  "seconds": 5.38,
+  "scene_start": false,
+  "kind": "photo",
+  "photo_subject": "diagram of two intersecting spheres",
+  "photo_queries": [
+   "intersecting spheres",
+   "geometry spheres"
+  ],
+  "card": {
+   "type": "title",
+   "title": "Two Satellites",
+   "subtitle": "Intersection Forms a Circular Ring"
+  }
+ },
+ {
+  "scene": "s03",
+  "start": 155.253,
+  "text": "Taking several distance measurements allows a receiver to find the point where the spherical shells meet.",
+  "sentences": [
+   "s03.06"
+  ],
+  "id": "v033",
+  "end": 161.643,
+  "seconds": 6.39,
+  "scene_start": false,
+  "kind": "photo",
+  "photo_subject": "a 3D geometric intersection model",
+  "photo_queries": [
+   "geometric intersection",
+   "3d geometry"
+  ],
+  "card": {
+   "type": "title",
+   "title": "Sphere Intersection",
+   "subtitle": "Narrowing Down Location Points"
+  }
+ },
+ {
+  "scene": "s03",
+  "start": 161.643,
+  "text": "Your receiver generates a position fix by finding where multiple spherical shells meet.",
+  "sentences": [
+   "s03.07"
+  ],
+  "id": "v034",
+  "end": 167.577,
+  "seconds": 5.93,
+  "scene_start": false,
+  "kind": "photo",
+  "photo_subject": "a GPS receiver showing coordinates fix",
+  "photo_queries": [
+   "gps coordinates",
+   "position fix"
+  ],
+  "card": {
+   "type": "title",
+   "title": "Position Fix",
+   "subtitle": "Where Spherical Shells Intersect"
+  }
+ },
+ {
+  "scene": "s03",
+  "start": 167.577,
+  "text": "Adding a third satellite creates a third spherical surface around that third broadcasting source.",
+  "sentences": [
+   "s03.08"
+  ],
+  "id": "v035",
+  "end": 174.03,
+  "seconds": 6.45,
+  "scene_start": false,
+  "kind": "photo",
+  "photo_subject": "diagram of three overlapping spheres",
+  "photo_queries": [
+   "three spheres",
+   "venn spheres"
+  ],
+  "card": {
+   "type": "title",
+   "title": "Third Satellite",
+   "subtitle": "Reduces Position to Two Distinct Points"
+  }
+ },
+ {
+  "scene": "s03",
+  "start": 174.03,
+  "text": "Combining multiple distance measurements allows the receiver to determine the point where the shells meet.",
+  "sentences": [
+   "s03.09"
+  ],
+  "id": "v036",
+  "end": 180.423,
+  "seconds": 6.39,
+  "scene_start": false,
+  "kind": "card",
+  "card": {
+   "type": "flow",
+   "title": "Geometric Progression",
+   "steps": [
+    "1 Sphere: Shell Area",
+    "2 Spheres: Circular Ring",
+    "3 Spheres: Two Intersection Points"
+   ]
+  }
+ },
+ {
+  "scene": "s03",
+  "start": 180.423,
+  "text": "In special cases where elevation is already known, three satellites can determine a position.",
+  "sentences": [
+   "s03.11"
+  ],
+  "id": "v037",
+  "end": 186.653,
+  "seconds": 6.23,
+  "scene_start": false,
+  "kind": "photo",
+  "photo_subject": "a topographic elevation map",
+  "photo_queries": [
+   "topographic map",
+   "contour map"
+  ],
+  "card": {
+   "type": "title",
+   "title": "Known Elevation",
+   "subtitle": "Earth Surface Replaces 4th Point"
+  }
+ },
+ {
+  "scene": "s03",
+  "start": 186.653,
+  "text": "This geometric technique of calculating positions",
+  "sentences": [
+   "s03.12"
+  ],
+  "id": "v038",
+  "end": 190.01253846153844,
+  "seconds": 3.36,
+  "scene_start": false,
+  "kind": "photo",
+  "photo_subject": "a surveyor using a transit telescope",
+  "photo_queries": [
+   "land surveyor",
+   "surveying telescope"
+  ],
+  "card": {
+   "type": "title",
+   "title": "Position Calculation",
+   "subtitle": "Geometric Method Using Distances"
+  }
+ },
+ {
+  "scene": "s03",
+  "start": 190.01253846153844,
+  "text": "using measured distances is known as trilateration.",
+  "sentences": [
+   "s03.12"
+  ],
+  "id": "v039",
+  "end": 195.384,
+  "seconds": 5.37,
+  "scene_start": false,
+  "kind": "card",
+  "card": {
+   "type": "bullets",
+   "title": "Trilateration Principles",
+   "items": [
+    "Measures distances to known satellites",
+    "Creates overlapping spherical surfaces",
+    "Calculates exact point of intersection"
+   ]
+  }
+ },
+ {
+  "scene": "s04",
+  "start": 195.384,
+  "text": "Trilateration with three spheres assumes that your receiver",
+  "sentences": [
+   "s04.01"
+  ],
+  "id": "v040",
+  "end": 199.00373333333332,
+  "seconds": 3.62,
+  "scene_start": true,
+  "kind": "card",
+  "card": {
+   "type": "title",
+   "title": "The Fourth Satellite Trick",
+   "subtitle": "Correcting Cheap Quartz Clock Errors"
+  }
+ },
+ {
+  "scene": "s04",
+  "start": 199.00373333333332,
+  "text": "clock is perfectly synchronized with the satellites.",
+  "sentences": [
+   "s04.01"
+  ],
+  "id": "v041",
+  "end": 202.617,
+  "seconds": 3.61,
+  "scene_start": false,
+  "kind": "photo",
+  "photo_subject": "a quartz clock crystal oscillator",
+  "photo_queries": [
+   "quartz crystal",
+   "clock crystal"
+  ],
+  "card": {
+   "type": "title",
+   "title": "Synchronization Assumption",
+   "subtitle": "Perfect Clock Sync Required"
+  }
+ },
+ {
+  "scene": "s04",
+  "start": 202.617,
+  "text": "GPS satellites carry extremely stable atomic clocks that",
+  "sentences": [
+   "s04.02"
+  ],
+  "id": "v042",
+  "end": 206.7145,
+  "seconds": 4.1,
+  "scene_start": false,
+  "kind": "photo",
+  "photo_subject": "a lab atomic clock apparatus",
+  "photo_queries": [
+   "atomic clock",
+   "cesium clock"
+  ],
+  "card": {
+   "type": "title",
+   "title": "Space Clocks",
+   "subtitle": "Ultra-Stable Atomic Clocks in Orbit"
+  }
+ },
+ {
+  "scene": "s04",
+  "start": 206.7145,
+  "text": "are monitored and synchronized regularly by ground stations.",
+  "sentences": [
+   "s04.02"
+  ],
+  "id": "v043",
+  "end": 211.275,
+  "seconds": 4.56,
+  "scene_start": false,
+  "kind": "photo",
+  "photo_subject": "a satellite ground tracking antenna dish",
+  "photo_queries": [
+   "ground station antenna",
+   "satellite ground station"
+  ],
+  "card": {
+   "type": "title",
+   "title": "Ground Control",
+   "subtitle": "Regular Synchronization Updates"
+  }
+ },
+ {
+  "scene": "s04",
+  "start": 211.275,
+  "text": "Because your phone clock is inaccurate, measured",
+  "sentences": [
+   "s04.04"
+  ],
+  "id": "v044",
+  "end": 214.6885,
+  "seconds": 3.41,
+  "scene_start": false,
+  "kind": "photo",
+  "photo_subject": "a smartphone circuit motherboard",
+  "photo_queries": [
+   "smartphone circuit",
+   "phone motherboard"
+  ],
+  "card": {
+   "type": "title",
+   "title": "Receiver Clock Offsets",
+   "subtitle": "Inexpensive Consumer Quartz Clocks"
+  }
+ },
+ {
+  "scene": "s04",
+  "start": 214.6885,
+  "text": "travel times produce biased distances called pseudoranges.",
+  "sentences": [
+   "s04.04"
+  ],
+  "id": "v045",
+  "end": 218.541,
+  "seconds": 3.85,
+  "scene_start": false,
+  "kind": "card",
+  "card": {
+   "type": "compare",
+   "title": "Clock Precision Comparison",
+   "left_title": "Satellite Atomic Clock",
+   "left_points": [
+    "Ultra precise timing",
+    "High cost & weight",
+    "Synchronized by ground"
+   ],
+   "right_title": "Phone Quartz Clock",
+   "right_points": [
+    "Slight timing drift",
+    "Low cost & compact",
+    "Corrected mathematically"
+   ]
+  }
+ },
+ {
+  "scene": "s04",
+  "start": 218.541,
+  "text": "To solve this problem without needing an impractical receiver",
+  "sentences": [
+   "s04.06"
+  ],
+  "id": "v046",
+  "end": 222.07299999999998,
+  "seconds": 3.53,
+  "scene_start": false,
+  "kind": "photo",
+  "photo_subject": "a modern smartphone internal chip",
+  "photo_queries": [
+   "mobile processor",
+   "phone chip"
+  ],
+  "card": {
+   "type": "title",
+   "title": "Engineering Challenge",
+   "subtitle": "Avoiding Atomic Clocks in Phones"
+  }
+ },
+ {
+  "scene": "s04",
+  "start": 222.07299999999998,
+  "text": "clock, the system uses signals from a fourth satellite.",
+  "sentences": [
+   "s04.06"
+  ],
+  "id": "v047",
+  "end": 226.061,
+  "seconds": 3.99,
+  "scene_start": false,
+  "kind": "photo",
+  "photo_subject": "four satellites in space formation",
+  "photo_queries": [
+   "satellites in space",
+   "satellite array"
+  ],
+  "card": {
+   "type": "title",
+   "title": "The Fourth Satellite",
+   "subtitle": "Eliminates Receiver Time Bias"
+  }
+ },
+ {
+  "scene": "s04",
+  "start": 226.061,
+  "text": "Your GPS receiver requires signals from at least",
+  "sentences": [
+   "s04.07"
+  ],
+  "id": "v048",
+  "end": 229.7426,
+  "seconds": 3.68,
+  "scene_start": false,
+  "kind": "photo",
+  "photo_subject": "a handheld GPS receiver outdoors",
+  "photo_queries": [
+   "gps unit",
+   "handheld gps"
+  ],
+  "card": {
+   "type": "title",
+   "title": "Signal Requirement",
+   "subtitle": "Minimum Signals for Navigation"
+  }
+ },
+ {
+  "scene": "s04",
+  "start": 229.7426,
+  "text": "four satellites to solve its navigation equations.",
+  "sentences": [
+   "s04.07"
+  ],
+  "id": "v049",
+  "end": 233.431,
+  "seconds": 3.69,
+  "scene_start": false,
+  "kind": "card",
+  "card": {
+   "type": "stat",
+   "title": "Required Signals",
+   "value": "4",
+   "label": "Minimum Satellites Needed for Fix"
+  }
+ },
+ {
+  "scene": "s04",
+  "start": 233.431,
+  "text": "With four satellite signals, your phone",
+  "sentences": [
+   "s04.08"
+  ],
+  "id": "v050",
+  "end": 236.8605,
+  "seconds": 3.43,
+  "scene_start": false,
+  "kind": "photo",
+  "photo_subject": "a phone screen displaying satellite reception",
+  "photo_queries": [
+   "phone gps app",
+   "satellite reception"
+  ],
+  "card": {
+   "type": "title",
+   "title": "Mathematical Solution",
+   "subtitle": "Solving System of Equations"
+  }
+ },
+ {
+  "scene": "s04",
+  "start": 236.8605,
+  "text": "calculates four unknown mathematical quantities simultaneously.",
+  "sentences": [
+   "s04.08"
+  ],
+  "id": "v051",
+  "end": 240.758,
+  "seconds": 3.9,
+  "scene_start": false,
+  "kind": "card",
+  "card": {
+   "type": "stat",
+   "title": "Mathematical Model",
+   "value": "4",
+   "label": "Unknown Quantities Solved Simultaneously"
+  }
+ },
+ {
+  "scene": "s04",
+  "start": 240.758,
+  "text": "These unknowns are three spatial coordinates representing position",
+  "sentences": [
+   "s04.09"
+  ],
+  "id": "v052",
+  "end": 244.247,
+  "seconds": 3.49,
+  "scene_start": false,
+  "kind": "photo",
+  "photo_subject": "a 3D coordinate axis diagram",
+  "photo_queries": [
+   "3d coordinate system",
+   "xyz axis"
+  ],
+  "card": {
+   "type": "title",
+   "title": "Spatial Coordinates",
+   "subtitle": "X, Y, and Z Position Axes"
+  }
+ },
+ {
+  "scene": "s04",
+  "start": 244.247,
+  "text": "and the exact deviation of your phone clock.",
+  "sentences": [
+   "s04.09"
+  ],
+  "id": "v053",
+  "end": 248.2,
+  "seconds": 3.95,
+  "scene_start": false,
+  "kind": "photo",
+  "photo_subject": "a digital clock error drift graphic",
+  "photo_queries": [
+   "digital clock drift",
+   "clock offset"
+  ],
+  "card": {
+   "type": "title",
+   "title": "Clock Offset Variable",
+   "subtitle": "Fourth Solved Mathematical Unknown"
+  }
+ },
+ {
+  "scene": "s04",
+  "start": 248.2,
+  "text": "Solving the navigation equations gives receiver position and",
+  "sentences": [
+   "s04.10"
+  ],
+  "id": "v054",
+  "end": 252.259,
+  "seconds": 4.06,
+  "scene_start": false,
+  "kind": "photo",
+  "photo_subject": "a computer code processing matrix",
+  "photo_queries": [
+   "matrix computation",
+   "algorithm code"
+  ],
+  "card": {
+   "type": "title",
+   "title": "Equation Processing",
+   "subtitle": "Computing Position & Time Deviation"
+  }
+ },
+ {
+  "scene": "s04",
+  "start": 252.259,
+  "text": "clock deviation, providing cheap and highly accurate timing.",
+  "sentences": [
+   "s04.10"
+  ],
+  "id": "v055",
+  "end": 256.779,
+  "seconds": 4.52,
+  "scene_start": false,
+  "kind": "photo",
+  "photo_subject": "a quartz timing crystal component",
+  "photo_queries": [
+   "quartz oscillator",
+   "timing crystal"
+  ],
+  "card": {
+   "type": "title",
+   "title": "Accurate Timing",
+   "subtitle": "Atomic Precision with Cheap Hardware"
+  }
+ },
+ {
+  "scene": "s04",
+  "start": 256.779,
+  "text": "This clever mathematical approach keeps consumer receivers",
+  "sentences": [
+   "s04.11"
+  ],
+  "id": "v056",
+  "end": 260.4225,
+  "seconds": 3.64,
+  "scene_start": false,
+  "kind": "photo",
+  "photo_subject": "a modern thin smartphone",
+  "photo_queries": [
+   "smartphone design",
+   "modern phone"
+  ],
+  "card": {
+   "type": "title",
+   "title": "Consumer Hardware",
+   "subtitle": "Mathematical Efficiency in Pocket Devices"
+  }
+ },
+ {
+  "scene": "s04",
+  "start": 260.4225,
+  "text": "light, affordable, and practical for daily use.",
+  "sentences": [
+   "s04.11"
+  ],
+  "id": "v057",
+  "end": 265.507,
+  "seconds": 5.08,
+  "scene_start": false,
+  "kind": "photo",
+  "photo_subject": "a person using a smartphone map outdoors",
+  "photo_queries": [
+   "person using phone map",
+   "walking with smartphone"
+  ],
+  "card": {
+   "type": "title",
+   "title": "Everyday Navigation",
+   "subtitle": "Practical Satellite Location Tracking"
+  }
+ },
+ {
+  "scene": "s05",
+  "start": 265.507,
+  "text": "Even with four satellite signals, GPS would fail",
+  "sentences": [
+   "s05.01"
+  ],
+  "id": "v058",
+  "end": 269.25476470588234,
+  "seconds": 3.75,
+  "scene_start": true,
+  "kind": "card",
+  "card": {
+   "type": "title",
+   "title": "Einstein in Orbit",
+   "subtitle": "Relativity Corrections in GPS"
+  }
+ },
+ {
+  "scene": "s05",
+  "start": 269.25476470588234,
+  "text": "quickly without accounting for Albert Einstein's theories of relativity.",
+  "sentences": [
+   "s05.01"
+  ],
+  "id": "v059",
+  "end": 273.947,
+  "seconds": 4.69,
+  "scene_start": false,
+  "kind": "photo",
+  "photo_subject": "a historical photograph of Albert Einstein",
+  "photo_queries": [
+   "albert einstein",
+   "einstein portrait"
+  ],
+  "card": {
+   "type": "title",
+   "title": "Relativity Theory",
+   "subtitle": "Essential Physics for Satellite Timing"
+  }
+ },
+ {
+  "scene": "s05",
+  "start": 273.947,
+  "text": "Special relativity predicts that time passes slower for",
+  "sentences": [
+   "s05.02"
+  ],
+  "id": "v060",
+  "end": 277.58182352941174,
+  "seconds": 3.63,
+  "scene_start": false,
+  "kind": "photo",
+  "photo_subject": "a satellite moving rapidly in orbit",
+  "photo_queries": [
+   "orbiting satellite",
+   "spacecraft motion"
+  ],
+  "card": {
+   "type": "title",
+   "title": "Special Relativity",
+   "subtitle": "Time Dilation from High Speed"
+  }
+ },
+ {
+  "scene": "s05",
+  "start": 277.58182352941174,
+  "text": "objects moving at higher speeds relative to an observer.",
+  "sentences": [
+   "s05.02"
+  ],
+  "id": "v061",
+  "end": 282.157,
+  "seconds": 4.58,
+  "scene_start": false,
+  "kind": "photo",
+  "photo_subject": "the International Space Station orbiting Earth",
+  "photo_queries": [
+   "space station orbit",
+   "iss space"
+  ],
+  "card": {
+   "type": "title",
+   "title": "Speed and Time",
+   "subtitle": "Faster Motion Slows Down Clock Ticks"
+  }
+ },
+ {
+  "scene": "s05",
+  "start": 282.157,
+  "text": "Because satellites travel at roughly 3,874 metres",
+  "sentences": [
+   "s05.03"
+  ],
+  "id": "v062",
+  "end": 285.8105,
+  "seconds": 3.65,
+  "scene_start": false,
+  "kind": "photo",
+  "photo_subject": "an orbital velocity vector graphic",
+  "photo_queries": [
+   "orbital velocity",
+   "satellite velocity"
+  ],
+  "card": {
+   "type": "title",
+   "title": "Orbital Velocity",
+   "subtitle": "High Speed Orbital Motion"
+  }
+ },
+ {
+  "scene": "s05",
+  "start": 285.8105,
+  "text": "per second, their atomic clocks tick slower.",
+  "sentences": [
+   "s05.03"
+  ],
+  "id": "v063",
+  "end": 289.952,
+  "seconds": 4.14,
+  "scene_start": false,
+  "kind": "card",
+  "card": {
+   "type": "stat",
+   "title": "Satellite Orbital Speed",
+   "value": "3,874 m/s",
+   "label": "Relative to Earth Surface"
+  }
+ },
+ {
+  "scene": "s05",
+  "start": 289.952,
+  "text": "This speed effect causes orbital clocks to lose",
+  "sentences": [
+   "s05.04"
+  ],
+  "id": "v064",
+  "end": 293.3750588235294,
+  "seconds": 3.42,
+  "scene_start": false,
+  "kind": "photo",
+  "photo_subject": "a clock losing time graphic",
+  "photo_queries": [
+   "clock losing time",
+   "time dilation"
+  ],
+  "card": {
+   "type": "title",
+   "title": "Slower Orbital Clocks",
+   "subtitle": "Special Relativity Delay Effect"
+  }
+ },
+ {
+  "scene": "s05",
+  "start": 293.3750588235294,
+  "text": "about 7.2 microseconds per day compared to ground clocks.",
+  "sentences": [
+   "s05.04"
+  ],
+  "id": "v065",
+  "end": 297.678,
+  "seconds": 4.3,
+  "scene_start": false,
+  "kind": "card",
+  "card": {
+   "type": "stat",
+   "title": "Special Relativity Effect",
+   "value": "-7.2 µs",
+   "label": "Daily Time Loss for Orbital Clocks"
+  }
+ },
+ {
+  "scene": "s05",
+  "start": 297.678,
+  "text": "Meanwhile, general relativity shows that gravity slows down time closer to massive bodies like Earth.",
+  "sentences": [
+   "s05.05"
+  ],
+  "id": "v066",
+  "end": 304.603,
+  "seconds": 6.93,
+  "scene_start": false,
+  "kind": "photo",
+  "photo_subject": "a spacetime curvature diagram around Earth",
+  "photo_queries": [
+   "gravity well earth",
+   "spacetime curvature"
+  ],
+  "card": {
+   "type": "title",
+   "title": "General Relativity",
+   "subtitle": "Gravity Alters Time Passage Rate"
+  }
+ },
+ {
+  "scene": "s05",
+  "start": 304.603,
+  "text": "Because satellites operate high above Earth's surface, they",
+  "sentences": [
+   "s05.06"
+  ],
+  "id": "v067",
+  "end": 308.156,
+  "seconds": 3.55,
+  "scene_start": false,
+  "kind": "photo",
+  "photo_subject": "a satellite far above the Earth's horizon",
+  "photo_queries": [
+   "satellite high orbit",
+   "earth horizon space"
+  ],
+  "card": {
+   "type": "title",
+   "title": "Weaker Gravity Altitude",
+   "subtitle": "Operating in Lower Gravitational Field"
+  }
+ },
+ {
+  "scene": "s05",
+  "start": 308.156,
+  "text": "experience weaker gravity than receivers on the ground.",
+  "sentences": [
+   "s05.06"
+  ],
+  "id": "v068",
+  "end": 312.179,
+  "seconds": 4.02,
+  "scene_start": false,
+  "kind": "photo",
+  "photo_subject": "a gravimetric map of Earth gravity field",
+  "photo_queries": [
+   "earth gravity map",
+   "gravimetric earth"
+  ],
+  "card": {
+   "type": "title",
+   "title": "Gravitational Gradient",
+   "subtitle": "Stronger Gravity Near Earth Surface"
+  }
+ },
+ {
+  "scene": "s05",
+  "start": 312.179,
+  "text": "This weaker gravity causes satellite clocks to tick",
+  "sentences": [
+   "s05.07"
+  ],
+  "id": "v069",
+  "end": 315.85473333333334,
+  "seconds": 3.68,
+  "scene_start": false,
+  "kind": "photo",
+  "photo_subject": "an atomic clock in a science laboratory",
+  "photo_queries": [
+   "atomic clock lab",
+   "laser atomic clock"
+  ],
+  "card": {
+   "type": "title",
+   "title": "Faster Clock Ticks",
+   "subtitle": "Weaker Gravity Speeds Up Time"
+  }
+ },
+ {
+  "scene": "s05",
+  "start": 315.85473333333334,
+  "text": "faster by about 45.8 microseconds per day.",
+  "sentences": [
+   "s05.07"
+  ],
+  "id": "v070",
+  "end": 319.55,
+  "seconds": 3.7,
+  "scene_start": false,
+  "kind": "card",
+  "card": {
+   "type": "stat",
+   "title": "General Relativity Effect",
+   "value": "+45.8 µs",
+   "label": "Daily Time Gain in High Orbit"
+  }
+ },
+ {
+  "scene": "s05",
+  "start": 319.55,
+  "text": "Combining both relativistic effects, satellite clocks run",
+  "sentences": [
+   "s05.08"
+  ],
+  "id": "v071",
+  "end": 323.7115,
+  "seconds": 4.16,
+  "scene_start": false,
+  "kind": "photo",
+  "photo_subject": "a satellite network control center",
+  "photo_queries": [
+   "satellite control room",
+   "mission control"
+  ],
+  "card": {
+   "type": "title",
+   "title": "Combined Relativity",
+   "subtitle": "Net Offset of Both Einstein Effects"
+  }
+ },
+ {
+  "scene": "s05",
+  "start": 323.7115,
+  "text": "faster by approximately 38.6 microseconds every day.",
+  "sentences": [
+   "s05.08"
+  ],
+  "id": "v072",
+  "end": 328.353,
+  "seconds": 4.64,
+  "scene_start": false,
+  "kind": "card",
+  "card": {
+   "type": "stat",
+   "title": "Net Relativistic Drift",
+   "value": "+38.6 µs",
+   "label": "Net Daily Clock Acceleration"
+  }
+ },
+ {
+  "scene": "s05",
+  "start": 328.353,
+  "text": "If uncorrected, this timing difference would cause location",
+  "sentences": [
+   "s05.09"
+  ],
+  "id": "v073",
+  "end": 332.07460000000003,
+  "seconds": 3.72,
+  "scene_start": false,
+  "kind": "photo",
+  "photo_subject": "a map displaying location position error",
+  "photo_queries": [
+   "map error radius",
+   "gps deviation map"
+  ],
+  "card": {
+   "type": "title",
+   "title": "Uncorrected Drift",
+   "subtitle": "Position Errors Accumulate Rapidly"
+  }
+ },
+ {
+  "scene": "s05",
+  "start": 332.07460000000003,
+  "text": "errors of roughly 11.4 kilometres per day.",
+  "sentences": [
+   "s05.09"
+  ],
+  "id": "v074",
+  "end": 335.826,
+  "seconds": 3.75,
+  "scene_start": false,
+  "kind": "card",
+  "card": {
+   "type": "stat",
+   "title": "Uncorrected Error Rate",
+   "value": "11.4 km",
+   "label": "Daily Position Error Without Relativity Fix"
+  }
+ },
+ {
+  "scene": "s05",
+  "start": 335.826,
+  "text": "To correct this, engineers pre-adjust the atomic clock",
+  "sentences": [
+   "s05.10"
+  ],
+  "id": "v075",
+  "end": 339.54920000000004,
+  "seconds": 3.72,
+  "scene_start": false,
+  "kind": "photo",
+  "photo_subject": "a cleanroom satellite assembly technician",
+  "photo_queries": [
+   "satellite cleanroom",
+   "spacecraft assembly"
+  ],
+  "card": {
+   "type": "title",
+   "title": "Engineering Correction",
+   "subtitle": "Clock Frequency Pre-adjustment"
+  }
+ },
+ {
+  "scene": "s05",
+  "start": 339.54920000000004,
+  "text": "frequencies before launching the satellites into space.",
+  "sentences": [
+   "s05.10"
+  ],
+  "id": "v076",
+  "end": 343.303,
+  "seconds": 3.75,
+  "scene_start": false,
+  "kind": "photo",
+  "photo_subject": "a satellite pre-launch inspection",
+  "photo_queries": [
+   "satellite inspection",
+   "spacecraft pre launch"
+  ],
+  "card": {
+   "type": "title",
+   "title": "Pre-Launch Tuning",
+   "subtitle": "Slowing Clocks Down Before Flight"
+  }
+ },
+ {
+  "scene": "s05",
+  "start": 343.303,
+  "text": "They slow the clock rate from",
+  "sentences": [
+   "s05.11"
+  ],
+  "id": "v077",
+  "end": 347.7625,
+  "seconds": 4.46,
+  "scene_start": false,
+  "kind": "photo",
+  "photo_subject": "a signal generator oscilloscope screen",
+  "photo_queries": [
+   "frequency counter",
+   "signal generator"
+  ],
+  "card": {
+   "type": "title",
+   "title": "Frequency Offset",
+   "subtitle": "Lowering Frequency Before Launch"
+  }
+ },
+ {
+  "scene": "s05",
+  "start": 347.7625,
+  "text": "10.23 megahertz down to 10.22999999543 megahertz.",
+  "sentences": [
+   "s05.11"
+  ],
+  "id": "v078",
+  "end": 352.689,
+  "seconds": 4.93,
+  "scene_start": false,
+  "kind": "card",
+  "card": {
+   "type": "compare",
+   "title": "Satellite Clock Rate Tuning",
+   "left_title": "Standard Earth Base Rate",
+   "left_points": [
+    "10.23 MHz clock rate",
+    "Unadjusted ground standard",
+    "Would gain 38.6 µs/day"
+   ],
+   "right_title": "Pre-Adjusted Launch Rate",
+   "right_points": [
+    "10.22999999543 MHz",
+    "Pre-tuned for orbit",
+    "Runs at 10.23 MHz in space"
+   ]
+  }
+ },
+ {
+  "scene": "s05",
+  "start": 352.689,
+  "text": "This pre-launch adjustment allows orbital clocks to stay synchronized with time on Earth's surface.",
+  "sentences": [
+   "s05.12"
+  ],
+  "id": "v079",
+  "end": 360.077,
+  "seconds": 7.39,
+  "scene_start": false,
+  "kind": "photo",
+  "photo_subject": "a rocket launching from launch pad",
+  "photo_queries": [
+   "rocket lift off",
+   "launch pad rocket"
+  ],
+  "card": {
+   "type": "title",
+   "title": "Orbital Synchronization",
+   "subtitle": "Space Clocks Match Earth Time Exactly"
+  }
+ },
+ {
+  "scene": "s06",
+  "start": 360.077,
+  "text": "Once your device processes the satellite",
+  "sentences": [
+   "s06.01"
+  ],
+  "id": "v080",
+  "end": 363.14576923076925,
+  "seconds": 3.07,
+  "scene_start": true,
+  "kind": "card",
+  "card": {
+   "type": "title",
+   "title": "Mapping the Numbers",
+   "subtitle": "From Raw Coordinates to Screen"
+  }
+ },
+ {
+  "scene": "s06",
+  "start": 363.14576923076925,
+  "text": "signals, it calculates raw three-dimensional position coordinates.",
+  "sentences": [
+   "s06.01"
+  ],
+  "id": "v081",
+  "end": 367.165,
+  "seconds": 4.02,
+  "scene_start": false,
+  "kind": "photo",
+  "photo_subject": "a 3D position coordinate grid",
+  "photo_queries": [
+   "3d coordinate grid",
+   "spatial coordinates"
+  ],
+  "card": {
+   "type": "title",
+   "title": "Raw Spatial Output",
+   "subtitle": "3D ECEF Coordinate Calculation"
+  }
+ },
+ {
+  "scene": "s06",
+  "start": 367.165,
+  "text": "The receiver then converts these spatial numbers into standard latitude, longitude, and height.",
+  "sentences": [
+   "s06.02"
+  ],
+  "id": "v082",
+  "end": 373.523,
+  "seconds": 6.36,
+  "scene_start": false,
+  "kind": "photo",
+  "photo_subject": "a Earth globe with latitude and longitude lines",
+  "photo_queries": [
+   "globe latitude longitude",
+   "earth coordinates"
+  ],
+  "card": {
+   "type": "title",
+   "title": "Standard Coordinates",
+   "subtitle": "Latitude, Longitude, and Altitude"
+  }
+ },
+ {
+  "scene": "s06",
+  "start": 373.523,
+  "text": "Consumer devices like smartphones can achieve horizontal",
+  "sentences": [
+   "s06.03"
+  ],
+  "id": "v083",
+  "end": 377.3,
+  "seconds": 3.78,
+  "scene_start": false,
+  "kind": "photo",
+  "photo_subject": "a person holding smartphone map outdoors",
+  "photo_queries": [
+   "smartphone location map",
+   "person holding phone"
+  ],
+  "card": {
+   "type": "title",
+   "title": "Consumer Hardware",
+   "subtitle": "Pocket Smartphone Positioning"
+  }
+ },
+ {
+  "scene": "s06",
+  "start": 377.3,
+  "text": "positioning accuracy of 4.9 metres or better.",
+  "sentences": [
+   "s06.03"
+  ],
+  "id": "v084",
+  "end": 381.573,
+  "seconds": 4.27,
+  "scene_start": false,
+  "kind": "card",
+  "card": {
+   "type": "stat",
+   "title": "Smartphone Positioning",
+   "value": "4.9 m",
+   "label": "Horizontal Accuracy Standard"
+  }
+ },
+ {
+  "scene": "s06",
+  "start": 381.573,
+  "text": "When paired with assistive services like Wi-Fi",
+  "sentences": [
+   "s06.04"
+  ],
+  "id": "v085",
+  "end": 385.075,
+  "seconds": 3.5,
+  "scene_start": false,
+  "kind": "photo",
+  "photo_subject": "a modern Wi-Fi router with antennas",
+  "photo_queries": [
+   "wifi router",
+   "wireless antenna"
+  ],
+  "card": {
+   "type": "title",
+   "title": "Assisted GPS",
+   "subtitle": "Combining Cellular & Wi-Fi Data"
+  }
+ },
+ {
+  "scene": "s06",
+  "start": 385.075,
+  "text": "positioning, positioning performance becomes even more reliable.",
+  "sentences": [
+   "s06.04"
+  ],
+  "id": "v086",
+  "end": 389.046,
+  "seconds": 3.97,
+  "scene_start": false,
+  "kind": "photo",
+  "photo_subject": "a smartphone navigating on a city street",
+  "photo_queries": [
+   "city street map phone",
+   "urban navigation"
+  ],
+  "card": {
+   "type": "title",
+   "title": "Urban Reliability",
+   "subtitle": "Faster Fixes in Signal Canyons"
+  }
+ },
+ {
+  "scene": "s06",
+  "start": 389.046,
+  "text": "High-end applications like land surveying can",
+  "sentences": [
+   "s06.05"
+  ],
+  "id": "v087",
+  "end": 392.4133846153846,
+  "seconds": 3.37,
+  "scene_start": false,
+  "kind": "photo",
+  "photo_subject": "professional land surveying GPS equipment",
+  "photo_queries": [
+   "surveying gps",
+   "land surveyor tripod"
+  ],
+  "card": {
+   "type": "title",
+   "title": "Surveying Grade GPS",
+   "subtitle": "High Precision Carrier Phase Tracking"
+  }
+ },
+ {
+  "scene": "s06",
+  "start": 392.4133846153846,
+  "text": "even achieve sub-millimetre accuracy with long-term measurements.",
+  "sentences": [
+   "s06.05"
+  ],
+  "id": "v088",
+  "end": 396.806,
+  "seconds": 4.39,
+  "scene_start": false,
+  "kind": "card",
+  "card": {
+   "type": "stat",
+   "title": "High-End Accuracy",
+   "value": "< 1 mm",
+   "label": "Sub-millimetre Precision in Land Surveying"
+  }
+ },
+ {
+  "scene": "s06",
+  "start": 396.806,
+  "text": "These calculated coordinates may be displayed on a moving map display or used by another system.",
+  "sentences": [
+   "s06.06"
+  ],
+  "id": "v089",
+  "end": 403.349,
+  "seconds": 6.54,
+  "scene_start": false,
+  "kind": "photo",
+  "photo_subject": "a car digital dashboard map display",
+  "photo_queries": [
+   "car navigation display",
+   "dashboard map"
+  ],
+  "card": {
+   "type": "title",
+   "title": "Map Visualizations",
+   "subtitle": "Rendering Position on Interactive Maps"
+  }
+ },
+ {
+  "scene": "s06",
+  "start": 403.349,
+  "text": "An internal tracker algorithm combines successive measurements to",
+  "sentences": [
+   "s06.07"
+  ],
+  "id": "v090",
+  "end": 407.17886666666664,
+  "seconds": 3.83,
+  "scene_start": false,
+  "kind": "photo",
+  "photo_subject": "computer tracking algorithm software screen",
+  "photo_queries": [
+   "computer algorithm code",
+   "data filter code"
+  ],
+  "card": {
+   "type": "title",
+   "title": "Kalman Filtering",
+   "subtitle": "Smooth Movement Prediction"
+  }
+ },
+ {
+  "scene": "s06",
+  "start": 407.17886666666664,
+  "text": "predict movement and filter out random errors.",
+  "sentences": [
+   "s06.07"
+  ],
+  "id": "v091",
+  "end": 410.973,
+  "seconds": 3.79,
+  "scene_start": false,
+  "kind": "photo",
+  "photo_subject": "a frequency signal spectrum analyzer",
+  "photo_queries": [
+   "spectrum analyzer",
+   "signal filtering"
+  ],
+  "card": {
+   "type": "title",
+   "title": "Error Reduction",
+   "subtitle": "Filtering Out Random Signal Noise"
+  }
+ },
+ {
+  "scene": "s06",
+  "start": 410.973,
+  "text": "By analyzing signal Doppler frequency shifts, your device",
+  "sentences": [
+   "s06.08"
+  ],
+  "id": "v092",
+  "end": 414.661,
+  "seconds": 3.69,
+  "scene_start": false,
+  "kind": "photo",
+  "photo_subject": "a Doppler effect frequency wave diagram",
+  "photo_queries": [
+   "doppler effect",
+   "wave frequency shift"
+  ],
+  "card": {
+   "type": "title",
+   "title": "Doppler Shift",
+   "subtitle": "Measuring Signal Frequency Shifts"
+  }
+ },
+ {
+  "scene": "s06",
+  "start": 414.661,
+  "text": "can also calculate your exact velocity and direction.",
+  "sentences": [
+   "s06.08"
+  ],
+  "id": "v093",
+  "end": 418.801,
+  "seconds": 4.14,
+  "scene_start": false,
+  "kind": "card",
+  "card": {
+   "type": "flow",
+   "title": "Speed Tracking Process",
+   "steps": [
+    "Detect Doppler Frequency Shift",
+    "Calculate Relative Velocity",
+    "Determine Heading Direction"
+   ]
+  }
+ },
+ {
+  "scene": "s06",
+  "start": 418.801,
+  "text": "More advanced navigation systems combine these satellite",
+  "sentences": [
+   "s06.09"
+  ],
+  "id": "v094",
+  "end": 422.3745,
+  "seconds": 3.57,
+  "scene_start": false,
+  "kind": "photo",
+  "photo_subject": "a microelectromechanical motion sensor chip",
+  "photo_queries": [
+   "imu chip",
+   "motion sensor chip"
+  ],
+  "card": {
+   "type": "title",
+   "title": "Inertial Measurement",
+   "subtitle": "Combining Gyroscopes and Accelerometers"
+  }
+ },
+ {
+  "scene": "s06",
+  "start": 422.3745,
+  "text": "data with internal compasses or motion sensors.",
+  "sentences": [
+   "s06.09"
+  ],
+  "id": "v095",
+  "end": 426.404,
+  "seconds": 4.03,
+  "scene_start": false,
+  "kind": "photo",
+  "photo_subject": "a magnetic compass instrument",
+  "photo_queries": [
+   "magnetic compass",
+   "compass navigation"
+  ],
+  "card": {
+   "type": "title",
+   "title": "Sensor Fusion",
+   "subtitle": "Merging GPS with Internal Compass"
+  }
+ },
+ {
+  "scene": "s06",
+  "start": 426.404,
+  "text": "Your phone finds your exact location by listening to",
+  "sentences": [
+   "s06.10"
+  ],
+  "id": "v096",
+  "end": 430.913,
+  "seconds": 4.51,
+  "scene_start": false,
+  "kind": "photo",
+  "photo_subject": "a smartphone resting on a wooden desk",
+  "photo_queries": [
+   "smartphone desk",
+   "mobile phone"
+  ],
+  "card": {
+   "type": "title",
+   "title": "Complete System Integration",
+   "subtitle": "Listening to Space Signals"
+  }
+ },
+ {
+  "scene": "s06",
+  "start": 430.913,
+  "text": "broadcast timestamps, measuring radio travel times, and calculating geometry.",
+  "sentences": [
+   "s06.10"
+  ],
+  "id": "v097",
+  "end": 435.916,
+  "seconds": 5.0,
+  "scene_start": false,
+  "kind": "photo",
+  "photo_subject": "a graphic of satellite network surrounding Earth",
+  "photo_queries": [
+   "satellite network earth",
+   "global constellation"
+  ],
+  "card": {
+   "type": "title",
+   "title": "GPS Summary",
+   "subtitle": "Timestamps, Travel Times & Orbital Geometry"
+  }
+ },
+ {
+  "scene": "s06",
+  "start": 435.916,
+  "text": "Next time you follow that blue dot on your screen,",
+  "sentences": [
+   "s06.11"
+  ],
+  "id": "v098",
+  "end": 439.54171428571425,
+  "seconds": 3.63,
+  "scene_start": false,
+  "kind": "photo",
+  "photo_subject": "a smartphone screen displaying a blue dot map",
+  "photo_queries": [
+   "blue dot map phone",
+   "gps navigation blue dot"
+  ],
+  "card": {
+   "type": "title",
+   "title": "The Blue Dot",
+   "subtitle": "Pinpointing Your Place on Earth"
+  }
+ },
+ {
+  "scene": "s06",
+  "start": 439.54171428571425,
+  "text": "consider how orbital geometry and atomic time keeping guide your path.",
+  "sentences": [
+   "s06.11"
+  ],
+  "id": "v099",
+  "end": 444.997333,
+  "seconds": 5.46,
+  "scene_start": false,
+  "kind": "photo",
+  "photo_subject": "a night sky with a satellite streak passing overhead",
+  "photo_queries": [
+   "satellite night sky",
+   "space satellite night"
+  ],
+  "card": {
+   "type": "title",
+   "title": "Atomic Time in Orbit",
+   "subtitle": "Guiding Modern Navigation"
+  }
+ }
+]
