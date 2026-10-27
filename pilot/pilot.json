@@ -10,12 +10,13 @@
    "status": "retry",
    "runs": [
     40547244234,
-    40584117034
+    40584117034,
+    40586668835
    ],
    "owner_minutes": null,
    "uploaded": null,
    "youtube_id": null,
-   "notes": "Run 40547244234 (27 Oct): video rendered but stopped at 40 min in the quality gate; Gemini overloaded (503) all run and the failed attempts used up the daily quota; script only 531 words (25 of 55 sentences dropped). Fixed: no same-model retry on 503, 52-min limit, framing sentences reworded not dropped. Redo from scratch. Run 40584117034 (27 Oct, 21:10 UTC, owner asked to start early, with drawings): plan, sources and script draft saved, then stopped at factcheck2: all strong models' daily quota used up (resets 07:00 UTC). Resume from it on 28 Oct."
+   "notes": "Run 40547244234 (27 Oct): video rendered but stopped at 40 min in the quality gate; Gemini overloaded (503) all run and the failed attempts used up the daily quota; script only 531 words (25 of 55 sentences dropped). Fixed: no same-model retry on 503, 52-min limit, framing sentences reworded not dropped. Redo from scratch. Run 40584117034 (27 Oct, 21:10 UTC, owner asked to start early, with drawings): plan, sources and script draft saved, then stopped at factcheck2: all strong models' daily quota used up (resets 07:00 UTC). Resume from it on 28 Oct. Run 40586668835 (27 Oct night): finished, 6.6 min, 818 words (26 fixed, 12 dropped), 82 visuals: 37 photos, 18 drawings, 27 cards; gate FLAG (pronunciation only); release video-40586668835. The drawing check copied the request and passed all 18; by eye ~6 drawings and 2 photos bad. Check fixed (blind describe + judge, tests 40592303925, 40592925859); pictures re-made with resume_from 40586668835 + new visual plan."
   },
   {
    "n": 2,
