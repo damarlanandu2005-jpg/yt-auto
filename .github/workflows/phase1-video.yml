@@ -22,6 +22,13 @@ on:
         description: "With resume_from: make a new visual plan instead of reusing the old one"
         type: boolean
         default: false
+      stop_after_script:
+        description: "Own-voice video, step 1: stop after the checked script and give the recording script"
+        type: boolean
+        default: false
+      owner_voice_folder:
+        description: "Own-voice video, step 2: folder in the repo with the owner's recordings (voice/...). Use with resume_from = the step-1 run id"
+        default: ""
 
 permissions:
   contents: write
@@ -102,10 +109,32 @@ jobs:
           GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
           TOPIC: ${{ inputs.topic }}
           SCENES: ${{ inputs.scenes }}
+          STOP: ${{ inputs.stop_after_script }}
+          VOICE: ${{ inputs.owner_voice_folder }}
         run: |
           set -o pipefail
           mkdir -p out/run
-          python phase1/make_video.py --topic "$TOPIC" --scenes "$SCENES" --models models --out out/run 2>&1 | tee out/run/build.log
+          extra=()
+          if [ "$STOP" = "true" ]; then extra+=(--stop-after-script); fi
+          if [ -n "$VOICE" ]; then
+            [[ "$VOICE" =~ ^voice/[A-Za-z0-9._/-]+$ && "$VOICE" != *..* ]] || { echo "owner_voice_folder must be a folder under voice/"; exit 1; }
+            [ -d "$VOICE" ] || { echo "folder $VOICE not found in the repo"; exit 1; }
+            extra+=(--owner-audio "$GITHUB_WORKSPACE/$VOICE")
+          fi
+          python phase1/make_video.py --topic "$TOPIC" --scenes "$SCENES" --models models --out out/run "${extra[@]}" 2>&1 | tee out/run/build.log
+
+      # A plain video.mp4 to download (Chrome blocked the artifact zip as a "dangerous download")
+      - name: Publish video as a GitHub Release (pre-release, private repo)
+        if: success() && inputs.stop_after_script != true
+        timeout-minutes: 10
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          title=$(python -c "import json;print(json.load(open('out/run/report.json')).get('title','video')[:80])")
+          verdict=$(python -c "import json;print(json.load(open('out/run/report.json')).get('gate',{}).get('verdict','?'))")
+          gh release create "video-${{ github.run_id }}" --prerelease --title "$title" \
+            --notes "Quality gate: $verdict. Review review.md (run ${{ github.run_id }}) before uploading to YouTube." \
+            out/run/video.mp4 out/run/subtitles.srt out/run/description.txt out/run/credits.txt out/run/review.md
 
       - name: Upload video package
         if: success()
@@ -121,6 +150,7 @@ jobs:
             out/run/facts.csv
             out/run/credits.txt
             out/run/gate.json
+            out/run/recording_script.md
             out/run/contact_sheet.jpg
           retention-days: 7
 
@@ -137,7 +167,7 @@ jobs:
           dest="results/phase1/${{ github.run_id }}"
           mkdir -p "$dest"
           cd out/run
-          cp build.log report.json review.md description.txt licences.json facts.csv credits.txt gate.json plan.json sources.json \
+          cp build.log report.json review.md description.txt licences.json facts.csv credits.txt gate.json recording_script.md voice_match.json plan.json sources.json \
              script_draft.json script.json factcheck.json timing.json visual_plan.json visuals.json photo_log.json \
              subtitles.srt contact_sheet.jpg preview_480p.mp4 diagnostics.json "../../$dest/" 2>/dev/null || true
           cp -r llm "../../$dest/" 2>/dev/null || true

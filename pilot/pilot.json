@@ -1,0 +1,102 @@
+{
+ "_about": "Phase 5 pilot tracker (blueprint: 8 videos in the chosen niche, alternate Kokoro and the owner's own voice; measure cost, time and failure rate per video). Topics = top 8 Phase 4 ideas (run 40533636460). Claude fills runs; the owner reports owner_minutes (recording + review + upload), upload date and YouTube video id.",
+ "niche": "science_space",
+ "videos": [
+  {
+   "n": 1,
+   "topic": "How close would an exploding star need to be to strip away Earth's protective atmosphere?",
+   "phase4_score": 3.8,
+   "voice": "kokoro",
+   "status": "planned",
+   "runs": [],
+   "owner_minutes": null,
+   "uploaded": null,
+   "youtube_id": null,
+   "notes": ""
+  },
+  {
+   "n": 2,
+   "topic": "Why does the universe organize into vast cosmic webs instead of spreading out uniformly?",
+   "phase4_score": 3.8,
+   "voice": "owner",
+   "status": "planned",
+   "runs": [],
+   "owner_minutes": null,
+   "uploaded": null,
+   "youtube_id": null,
+   "notes": ""
+  },
+  {
+   "n": 3,
+   "topic": "How do rocket engines push spacecraft forward in the vacuum of space?",
+   "phase4_score": 3.65,
+   "voice": "kokoro",
+   "status": "planned",
+   "runs": [],
+   "owner_minutes": null,
+   "uploaded": null,
+   "youtube_id": null,
+   "notes": ""
+  },
+  {
+   "n": 4,
+   "topic": "Why are sunsets on Mars blue while sunsets on Earth are red?",
+   "phase4_score": 3.65,
+   "voice": "owner",
+   "status": "planned",
+   "runs": [],
+   "owner_minutes": null,
+   "uploaded": null,
+   "youtube_id": null,
+   "notes": ""
+  },
+  {
+   "n": 5,
+   "topic": "Why do planetary rings form and why are they destined to disappear?",
+   "phase4_score": 3.65,
+   "voice": "kokoro",
+   "status": "planned",
+   "runs": [],
+   "owner_minutes": null,
+   "uploaded": null,
+   "youtube_id": null,
+   "notes": ""
+  },
+  {
+   "n": 6,
+   "topic": "Why do supermassive black holes periodically stop feeding and go quiet?",
+   "phase4_score": 3.6,
+   "voice": "owner",
+   "status": "planned",
+   "runs": [],
+   "owner_minutes": null,
+   "uploaded": null,
+   "youtube_id": null,
+   "notes": ""
+  },
+  {
+   "n": 7,
+   "topic": "How do wide-field space telescopes survey billions of galaxies much faster than Hubble or Webb?",
+   "phase4_score": 3.5,
+   "voice": "kokoro",
+   "status": "planned",
+   "runs": [],
+   "owner_minutes": null,
+   "uploaded": null,
+   "youtube_id": null,
+   "notes": ""
+  },
+  {
+   "n": 8,
+   "topic": "How would a human body actually survive a multi-year trip to Mars?",
+   "phase4_score": 3.48,
+   "voice": "owner",
+   "status": "planned",
+   "runs": [],
+   "owner_minutes": null,
+   "uploaded": null,
+   "youtube_id": null,
+   "notes": ""
+  }
+ ]
+}

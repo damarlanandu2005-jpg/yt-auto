@@ -23,7 +23,7 @@ from pathlib import Path
 ROOT = Path(__file__).resolve().parents[1]
 sys.path.insert(0, str(ROOT))
 
-from yt_auto import align, gate, llm, package, render, research, shots, writer  # noqa: E402
+from yt_auto import align, gate, llm, owner_voice, package, render, research, shots, writer  # noqa: E402
 from yt_auto.bench import Bench  # noqa: E402
 from yt_auto.tts import Narrator  # noqa: E402
 from yt_auto.visuals import render_keyframe  # noqa: E402
@@ -75,6 +75,9 @@ def main() -> None:
     ap.add_argument("--scenes", type=int, default=0, help="keep only the first N scenes (small test); 0 = all")
     ap.add_argument("--voice", default="af_heart")
     ap.add_argument("--speed", type=float, default=0.9)
+    ap.add_argument("--owner-audio", default="", help="folder with the owner's recordings (Phase 5 own-voice videos)")
+    ap.add_argument("--stop-after-script", action="store_true",
+                    help="stop after the fact-checked script and recording script (owner records next)")
     args = ap.parse_args()
 
     # Print every thread's stack before the workflow step's 45-minute limit kills us silently.
@@ -119,23 +122,36 @@ def run(args, out: Path, bench: Bench) -> None:
               f"{len(report['fixed'])} fixed, {len(report['dropped'])} dropped", flush=True)
         if args.scenes:
             script["scenes"] = script["scenes"][: args.scenes]
+        owner_voice.recording_script(script, out / "recording_script.md")
+    if args.stop_after_script:
+        bench.info.update({"stopped_after": "script", "title": script["title"], "words": writer.word_count(script)})
+        print(f"[script] stopped after the script: recording_script.md is ready", flush=True)
+        return
 
-    # 5. Narration, one file per scene, with exact sentence times
+    # 5. Narration with exact sentence times: Kokoro, or the owner's own recording (Phase 5)
+    heard = None
     with bench.stage("narration"):
-        narrator = Narrator(Path(args.models) / "kokoro-v1.0.int8.onnx", Path(args.models) / "voices-v1.0.bin",
-                            voice=args.voice, speed=args.speed)
-        sentences, scenes, wavs, offset = [], [], [], 0.0
-        for sc in script["scenes"]:
-            wav = out / "audio" / f"{sc['id']}.wav"
-            dur, spans = narrator.speak_timed([s["text"] for s in sc["sentences"]], wav)
-            scenes.append({"id": sc["id"], "heading": sc["heading"], "start": offset, "end": offset + dur})
-            for s, (a, b) in zip(sc["sentences"], spans):
-                sentences.append({"id": s["id"], "scene": sc["id"], "text": s["text"],
-                                  "start": round(offset + a, 3), "end": round(offset + b, 3)})
-            wavs.append(wav)
-            offset += dur
-        render.concat_audio(wavs, out / "narration.wav")
-        total = render.probe_duration(out / "narration.wav")
+        if args.owner_audio:
+            ov = owner_voice.prepare(Path(args.owner_audio), script, out, ROOT)
+            sentences, scenes, total, heard = ov["sentences"], ov["scenes"], ov["total"], ov["heard"]
+            bench.info["voice"] = "owner"
+            bench.info["voice_match"] = {k: v for k, v in ov["match"].items() if k != "by_scene"}
+        else:
+            narrator = Narrator(Path(args.models) / "kokoro-v1.0.int8.onnx", Path(args.models) / "voices-v1.0.bin",
+                                voice=args.voice, speed=args.speed)
+            sentences, scenes, wavs, offset = [], [], [], 0.0
+            for sc in script["scenes"]:
+                wav = out / "audio" / f"{sc['id']}.wav"
+                dur, spans = narrator.speak_timed([s["text"] for s in sc["sentences"]], wav)
+                scenes.append({"id": sc["id"], "heading": sc["heading"], "start": offset, "end": offset + dur})
+                for s, (a, b) in zip(sc["sentences"], spans):
+                    sentences.append({"id": s["id"], "scene": sc["id"], "text": s["text"],
+                                      "start": round(offset + a, 3), "end": round(offset + b, 3)})
+                wavs.append(wav)
+                offset += dur
+            render.concat_audio(wavs, out / "narration.wav")
+            total = render.probe_duration(out / "narration.wav")
+            bench.info["voice"] = "kokoro"
         (out / "timing.json").write_text(json.dumps({"sentences": sentences, "scenes": scenes, "total": total}, indent=1))
 
     # 6-7. Visual plan and photos
@@ -192,14 +208,14 @@ def run(args, out: Path, bench: Bench) -> None:
 
     # 11. Subtitles from our own text (whisper only gives word timing, in its own process)
     with bench.stage("subtitles"):
-        heard = []
-        r = subprocess.run([sys.executable, "-m", "yt_auto.subtitles", "--words", str(out / "narration.wav"),
-                            str(out / "heard_words.json")], cwd=ROOT, capture_output=True, text=True,
-                           stdin=subprocess.DEVNULL, timeout=900)
-        if r.returncode == 0:
-            heard = json.loads((out / "heard_words.json").read_text())
-        else:
-            print(f"[subtitles] whisper word timing failed, using sentence timing only:\n{r.stderr[-1500:]}", flush=True)
+        if heard is None:  # Kokoro videos: whisper word times now (own-voice videos already have them)
+            r = subprocess.run([sys.executable, "-m", "yt_auto.subtitles", "--words", str(out / "narration.wav"),
+                                str(out / "heard_words.json")], cwd=ROOT, capture_output=True, text=True,
+                               stdin=subprocess.DEVNULL, timeout=900)
+            heard = json.loads((out / "heard_words.json").read_text()) if r.returncode == 0 else []
+            if r.returncode:
+                print(f"[subtitles] whisper word timing failed, using sentence timing only:\n{r.stderr[-1500:]}",
+                      flush=True)
         bench.info["subtitle_cues"] = align.write_srt(sentences, heard, out / "subtitles.srt")
         bench.info["whisper_words"] = len(heard)
 

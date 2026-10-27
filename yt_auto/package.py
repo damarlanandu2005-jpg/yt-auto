@@ -13,6 +13,11 @@ VOICE_RECORD = {
     "download_url": "https://github.com/thewh1teagle/kokoro-onnx/releases/tag/model-files-v1.0",
     "licence": "Apache-2.0 (model weights); kokoro-onnx code MIT", "attribution": "Narration voice: Kokoro (hexgrad)",
 }
+OWNER_VOICE_RECORD = {
+    "kind": "voice model", "name": "The channel owner's own voice, recorded on a phone",
+    "source_page": "own recording", "licence": "own work (all rights held by the channel owner)",
+    "attribution": "none required",
+}
 FONT_RECORD = {
     "kind": "font", "name": "DejaVu Sans (bundled with matplotlib)",
     "source_page": "https://dejavu-fonts.github.io/",
@@ -110,7 +115,9 @@ def write(out: Path, script: dict, the_plan: dict, sources: dict, visuals: list[
     photos = [v["photo"] for v in visuals if v.get("photo")]
     rights_gate(photos)
     # Licences: every asset in the video.
-    records = [VOICE_RECORD, FONT_RECORD] + [{k: p[k] for k in p if k != "path"} for p in photos]
+    owner = run_info.get("voice") == "owner"
+    records = [OWNER_VOICE_RECORD if owner else VOICE_RECORD, FONT_RECORD] + \
+        [{k: p[k] for k in p if k != "path"} for p in photos]
     (out / "licences.json").write_text(json.dumps(records, indent=2, ensure_ascii=False), encoding="utf-8")
 
     fact_table(script, sources, out / "facts.csv")
@@ -126,8 +133,9 @@ def write(out: Path, script: dict, the_plan: dict, sources: dict, visuals: list[
     lines += [f"- {a['title']} — Wikipedia, revision {a['revision_id']}: "
               f"{a['url']}?oldid={a['revision_id']}" for a in arts]
     footer = ["", "NASA images are used for education and do not imply NASA endorsement.",
-              "Narration voice: Kokoro text-to-speech (synthetic voice). Script researched and written with AI help, "
-              "fact-checked against the sources above and reviewed by a human before upload."]
+              ("Narrated by the creator. " if owner else "Narration voice: Kokoro text-to-speech (synthetic voice). ")
+              + "Script researched and written with AI help, fact-checked against the sources above and reviewed "
+              "by a human before upload."]
     credits = credit_lines(photos)
     (out / "credits.txt").write_text("Image credits:\n" + "\n".join(credits["full"]) + "\n", encoding="utf-8")
     body = lines + ["", "Image credits:"] + credits["short"] + footer

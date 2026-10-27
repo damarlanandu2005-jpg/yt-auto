@@ -170,6 +170,26 @@ def metadata_checks(title: str, description: str, tags: list[str] | None = None)
                   f"title {len(title)} chars, description {len(description)} chars, sources listed")]
 
 
+VOICE_MATCH_MIN = 0.85  # share of script words heard in the owner's recording
+
+
+def voice_checks(pkg: Path) -> list[dict]:
+    """Own-voice videos: the recording must follow the fact-checked script."""
+    f = pkg / "voice_match.json"
+    if not f.exists():
+        return []
+    m = json.loads(f.read_text(encoding="utf-8"))
+    share = m.get("script_words_heard")
+    if share is None:
+        return [check("voice_matches_script", FLAG, "could not check: no word timing from the recording")]
+    missing = m.get("missing_sentences", [])
+    status = FAIL if share < VOICE_MATCH_MIN else (FLAG if missing else PASS)
+    detail = f"{share:.0%} of script words heard (need {VOICE_MATCH_MIN:.0%})"
+    if missing:
+        detail += f"; sentences skipped or changed: {[x['id'] for x in missing][:10]}"
+    return [check("voice_matches_script", status, detail)]
+
+
 def fact_checks(script: dict) -> list[dict]:
     bad = []
     for sc in script["scenes"]:
@@ -360,6 +380,7 @@ def run(pkg: Path, library_dir: Path | None = None, use_ai: bool = True, media: 
         known = Path(__file__).resolve().parents[1] / "pronunciation.json"
         pronunciation = json.loads(known.read_text(encoding="utf-8")) if known.exists() else {}
     results += pronunciation_checks(script, pronunciation)
+    results += voice_checks(pkg)
     results += fact_checks(script)
     results += brief_checks(plan)
     results += originality_checks(script, load_library(library_dir, exclude_title=title))
