@@ -1,0 +1,9 @@
+[llm] vision_gemma-4-31b-it: gemma-4-31b-it unavailable (HTTP 500 (busy)); trying next model
+[llm] vision_gemma-4-31b-it: every model busy; waiting 120s (round 1)
+[llm] vision_gemma-4-31b-it: gemma-4-31b-it unavailable (HTTP 500 (busy)); trying next model
+[llm] vision_gemma-4-31b-it: every model busy; waiting 120s (round 2)
+[llm] vision_gemma-4-31b-it: gemma-4-31b-it unavailable (HTTP 500 (busy)); trying next model
+[llm] vision_gemini-3.1-flash-lite: gemini-3.1-flash-lite unavailable (HTTP 503 (busy)); trying next model
+[llm] vision_gemini-3.1-flash-lite: every model busy; waiting 120s (round 1)
+[llm] vision_gemini-3.1-flash-lite: gemini-3.1-flash-lite unavailable (HTTP 503 (busy)); trying next model
+[llm] vision_gemini-3.1-flash-lite: every model busy; waiting 120s (round 2)
