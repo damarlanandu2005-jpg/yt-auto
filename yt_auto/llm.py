@@ -121,7 +121,13 @@ def _post(url: str, body: dict, headers: dict, entry: dict, model: str, name: st
         req = urllib.request.Request(url, data=data, headers={"Content-Type": "application/json", **headers})
         try:
             with urllib.request.urlopen(req, timeout=timeout) as r:
-                return json.loads(r.read()), attempt
+                raw, status, ctype = r.read(), r.status, r.headers.get("Content-Type", "")
+            try:
+                return json.loads(raw), attempt
+            except ValueError:  # e.g. an empty or HTML reply: log it and move on (crashed models check 40557681397)
+                LOG.append({**entry, "status": status, "attempt": attempt,
+                            "error": f"not JSON ({ctype}, {len(raw)} bytes): {raw[:500].decode(errors='replace')}"})
+                raise _TryNextModel(f"reply was not JSON (HTTP {status})") from None
         except urllib.error.HTTPError as e:
             err = e.read().decode(errors="replace")
             LOG.append({**entry, "status": e.code, "attempt": attempt, "error": err[:1500]})
