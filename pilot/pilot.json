@@ -9,12 +9,13 @@
    "voice": "kokoro",
    "status": "retry",
    "runs": [
-    40547244234
+    40547244234,
+    40584117034
    ],
    "owner_minutes": null,
    "uploaded": null,
    "youtube_id": null,
-   "notes": "Run 40547244234 (27 Oct): video rendered but stopped at 40 min in the quality gate; Gemini overloaded (503) all run and the failed attempts used up the daily quota; script only 531 words (25 of 55 sentences dropped). Fixed: no same-model retry on 503, 52-min limit, framing sentences reworded not dropped. Redo from scratch."
+   "notes": "Run 40547244234 (27 Oct): video rendered but stopped at 40 min in the quality gate; Gemini overloaded (503) all run and the failed attempts used up the daily quota; script only 531 words (25 of 55 sentences dropped). Fixed: no same-model retry on 503, 52-min limit, framing sentences reworded not dropped. Redo from scratch. Run 40584117034 (27 Oct, 21:10 UTC, owner asked to start early, with drawings): plan, sources and script draft saved, then stopped at factcheck2: all strong models' daily quota used up (resets 07:00 UTC). Resume from it on 28 Oct."
   },
   {
    "n": 2,
