@@ -40,7 +40,7 @@ Full plan: "YouTube Automation Blueprint" doc — https://claude.ai/artifact/XN7
 | 0b. Niche data test | Not started. Needs a YouTube Data API key (owner to create). Niches to test: how technology works, science and space, money and economics (education only) |
 | 1. Production core | **DONE**, owner approved the video 27 Oct 2026. Run 40469284296: 7.4 min GPS video, 900 words fact-checked, 99 visuals (44 real photos, each checked by looking), subtitles from our own text, ~11 min on Actions. Owner liked the earlier 3.9 min version; quality work moves to later phases. Known weak spots: some title-only cards, one off-topic diagram (geostationary, v031) |
 | 2. Research and facts | **Test PASSED** 27 Oct 2026 (run 40466026336): 30/30 planted errors caught, 0/16 false alarms (rule set before testing: ≥80% overall, ≥60% per type, ≤1 false alarm). First run 28/30 (missed 2 conflicting-source cases) → one prompt rule added. Also: number/unit guard, facts.csv, rights gate, junk-passage filter. Caveat: test set written by the same author as the checker; add independent cases later |
-| 3. Quality gate | **In progress** (27 Oct). Done when planted faults (silent gap, unlicensed image, wrong title promise, near-duplicate script) are all caught; clean video must get 0 false blocks |
+| 3. Quality gate | **Test PASSED** 27 Oct 2026 (run 40477248640): all 6 blueprint faults caught (silent gap, unlicensed image, wrong title promise, 3 kinds of near-duplicate), 17/17 planted faults overall, 0/5 false blocks on clean controls. First AI run blocked the approved video on 'hook'; split per blueprint (no question = FAIL, no 'why it matters' = FLAG). The gate also found a real bug: GPS description 9,850 chars (YouTube max 5,000) → credits shortened |
 | 4–6, auto-upload | Not started (see blueprint). 0b waits for a YouTube Data API key |
 
 Owner feedback on the Phase 0 video: **voice quality good**; pace was a bit fast (fixed: speed 0.9, longer pauses); **wants more pictures** (decided: real photos first, AI illustrations when none fits).
@@ -87,6 +87,11 @@ yt_auto/factguard.py   plain-code number/unit check beside the AI fact-check (no
 phase2/factcheck_testset.json  planted errors + controls (real Wikipedia passages; X* passages are synthetic)
 phase2/eval_factcheck.py       counts misses/false alarms per error type (1 Gemini request); --guard-only needs none
 .github/workflows/phase2-factcheck-eval.yml  manual; results in bench-results/phase2/<run_id>/
+yt_auto/gate.py        quality gate: FFmpeg silence/loudness/black/length, scenes, rights, metadata, pronunciation, facts, brief, originality vs library/, 1 AI request (hook, title promise, cards, sensitive, value). PASS/FAIL/FLAG; results lead review.md
+library/               approved videos (script JSON) that new videos must not duplicate. Add each video the owner approves
+pronunciation.json     terms checked by listening; others get flagged
+phase3/eval_gate.py    planted-fault test (2 Gemini requests; --no-ai needs none); fixtures in phase3/fixtures/
+.github/workflows/phase3-gate-eval.yml  manual; results in bench-results/phase3/<run_id>/
 phase1/check_apis.py   pre-flight: key present, which models answer, NASA/Commons up, saves official pages
 .github/workflows/phase1-video.yml   manual only (topic, scenes, resume_from = earlier run id to reuse plan/sources/script and save quota)
 .github/workflows/phase1-check.yml   manual; also runs when the check changes on a phase-1 branch
