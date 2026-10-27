@@ -126,7 +126,7 @@ def scene_checks(script: dict, visuals: list[dict], frames_dir: Path | None) -> 
 
 
 def rights_checks(visuals: list[dict], licences: list[dict]) -> list[dict]:
-    from .photos import allowed_licence
+    from .photos import record_allowed
 
     problems = []
     by_file = {r.get("file"): r for r in licences if r.get("file")}
@@ -145,7 +145,7 @@ def rights_checks(visuals: list[dict], licences: list[dict]) -> list[dict]:
         missing = [k for k in ("source_page", "licence", "author", "attribution", "downloaded") if not r.get(k)]
         if missing:
             problems.append(f"{v['id']}: licence record missing {missing}")
-        elif r.get("source") != "nasa_image_library" and not allowed_licence(r["licence"]):
+        elif not record_allowed(r):
             problems.append(f"{v['id']}: licence {r['licence']!r} is not allowed")
     return [check("rights", FAIL if problems else PASS,
                   "; ".join(problems) if problems else f"{len(by_file)} pictures, voice and font all have allowed licences",

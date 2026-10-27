@@ -51,6 +51,18 @@ def _get(url: str, timeout: int = 60, raw: bool = False):
             raise
 
 
+AI_MODEL_LICENCES = ("Apache-2.0", "MIT")  # drawing models whose licences put no limits on their output
+
+
+def record_allowed(r: dict) -> bool:
+    """Is a picture's licence record allowed? NASA: public domain. AI drawings: the model's licence."""
+    if r.get("source") == "nasa_image_library":
+        return True
+    if r.get("source") == "ai_drawing":
+        return r.get("model_licence") in AI_MODEL_LICENCES
+    return bool(allowed_licence(r.get("licence", "")))
+
+
 def allowed_licence(short_name: str) -> str | None:
     """Return a normalised licence name if allowed, else None."""
     s = (short_name or "").strip()

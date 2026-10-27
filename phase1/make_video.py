@@ -3,7 +3,7 @@
 Stages (each saves its result in --out; re-running with the same --out skips finished
 stages, so a failed run does not spend free API quota twice):
   plan -> sources (Wikipedia) -> script -> fact-check -> narration (Kokoro)
-  -> visual plan -> photos (NASA + Commons) -> keyframes -> segments (Ken Burns)
+  -> visual plan -> photos (NASA + Commons) -> drawings (free open model, CPU) -> keyframes -> segments (Ken Burns)
   -> video -> subtitles (our text, forced alignment) -> preview -> package
 
 Usage:
@@ -23,7 +23,7 @@ from pathlib import Path
 ROOT = Path(__file__).resolve().parents[1]
 sys.path.insert(0, str(ROOT))
 
-from yt_auto import align, gate, llm, owner_voice, package, render, research, shots, writer  # noqa: E402
+from yt_auto import align, drawings, gate, llm, owner_voice, package, render, research, shots, writer  # noqa: E402
 from yt_auto.bench import Bench  # noqa: E402
 from yt_auto.tts import Narrator  # noqa: E402
 from yt_auto.visuals import render_keyframe  # noqa: E402
@@ -61,6 +61,8 @@ def card_spec(card: dict, fallback_title: str) -> dict:
 
 
 def short_credit(p: dict) -> str:
+    if p["source"] == "ai_drawing":
+        return ""  # our own drawing: listed in the description, no credit line on screen
     if p["source"] == "nasa_image_library":
         return "Image: NASA"
     author = p["author"] if len(p["author"]) <= 40 else p["author"][:38] + "…"
@@ -76,14 +78,17 @@ def main() -> None:
     ap.add_argument("--voice", default="af_heart")
     ap.add_argument("--speed", type=float, default=0.9)
     ap.add_argument("--owner-audio", default="", help="folder with the owner's recordings (Phase 5 own-voice videos)")
+    ap.add_argument("--max-drawings", type=int, default=drawings.MAX_DRAWINGS,
+                    help="AI drawings per video (about 80 s each on the runner); 0 = photos and cards only")
     ap.add_argument("--stop-after-script", action="store_true",
                     help="stop after the fact-checked script and recording script (owner records next)")
     args = ap.parse_args()
 
-    # Print every thread's stack before the workflow step's 45-minute limit kills us silently.
-    faulthandler.dump_traceback_later(52 * 60, exit=True)  # slow Gemini is not a hang (pilot video 1)
+    # Print every thread's stack before the workflow step's limit (95 min) kills us silently.
+    # Slow Gemini is not a hang (pilot video 1); drawings add up to 25 min.
+    faulthandler.dump_traceback_later(88 * 60, exit=True)
     out = Path(args.out)
-    for sub in ("audio", "frames", "segments", "photos", "ffmpeg_logs", "llm"):
+    for sub in ("audio", "frames", "segments", "photos", "drawings", "ffmpeg_logs", "llm"):
         (out / sub).mkdir(parents=True, exist_ok=True)
     render.LOG_DIR = out / "ffmpeg_logs"
     llm.LOG_DIR = out / "llm"
@@ -159,7 +164,8 @@ def run(args, out: Path, bench: Bench) -> None:
     scene_text = {sc["id"]: " ".join(s["text"] for s in sc["sentences"]) for sc in script["scenes"]}
     with bench.stage("visual_plan"):
         visuals = cached(out / "visual_plan.json",
-                         lambda: shots.plan_visuals(script["title"], shots.slots(sentences, total), headings))
+                         lambda: shots.plan_visuals(script["title"], shots.slots(sentences, total), headings,
+                                                    max_drawings=min(12, args.max_drawings)))
     with bench.stage("photos"):
         if (out / "visuals.json").exists():
             visuals = json.loads((out / "visuals.json").read_text(encoding="utf-8"))
@@ -169,6 +175,21 @@ def run(args, out: Path, bench: Bench) -> None:
             shots.find_photos(visuals, out / "photos", photo_log)
             (out / "visuals.json").write_text(json.dumps(visuals, indent=1, ensure_ascii=False), encoding="utf-8")
             (out / "photo_log.json").write_text(json.dumps(photo_log, indent=1, ensure_ascii=False))
+
+    # 7b. Drawings for ideas no photo shows, then for photo slots left without a photo
+    with bench.stage("drawings"):
+        if (out / "drawing_log.json").exists():
+            drawing_log = json.loads((out / "drawing_log.json").read_text())
+        else:
+            jobs = shots.drawing_jobs(visuals, args.max_drawings)
+            made = drawings.make(jobs, out / "drawings", ROOT)
+            drawing_log = made["log"]
+            shots.add_drawings(visuals, made["drawn"], drawing_log)
+            print(f"[drawings] asked {len(jobs)}, drawn {drawing_log.get('drawn', 0)}, "
+                  f"used after looking {drawing_log.get('drawings_used', 0)}"
+                  f"{'; ' + drawing_log['error'] if drawing_log.get('error') else ''}", flush=True)
+            (out / "visuals.json").write_text(json.dumps(visuals, indent=1, ensure_ascii=False), encoding="utf-8")
+            (out / "drawing_log.json").write_text(json.dumps(drawing_log, indent=1, ensure_ascii=False))
 
     # 8. Keyframes
     with bench.stage("keyframes"):
@@ -224,11 +245,14 @@ def run(args, out: Path, bench: Bench) -> None:
         render.preview(out / "video.mp4", out / "preview_480p.mp4")
 
     # 13. Package for review
-    n_photos = sum(1 for v in visuals if v.get("photo"))
+    n_drawings = sum(1 for v in visuals if v.get("photo", {}).get("source") == "ai_drawing")
+    n_photos = sum(1 for v in visuals if v.get("photo")) - n_drawings
     bench.info.update({
         "topic": args.topic, "title": script["title"], "words": writer.word_count(script),
         "video_seconds": round(render.probe_duration(out / "video.mp4"), 1),
-        "visuals": len(visuals), "photos": n_photos, "cards": len(visuals) - n_photos,
+        "visuals": len(visuals), "photos": n_photos, "drawings": n_drawings,
+        "cards": len(visuals) - n_photos - n_drawings,
+        "drawing_log": {k: v for k, v in drawing_log.items() if k not in ("seconds", "drawings_seen")},
         "seconds_per_visual": round(total / max(len(visuals), 1), 2),
         "photo_log": {k: v for k, v in photo_log.items() if k != "candidates"},
     })
@@ -243,7 +267,7 @@ def run(args, out: Path, bench: Bench) -> None:
         bench.info["gate"] = {"verdict": result["verdict"],
                               "not_pass": {c["check"]: c["status"] for c in result["checks"] if c["status"] != "PASS"}}
         print(f"[gate] {result['verdict']}: {bench.info['gate']['not_pass']}", flush=True)
-    print(json.dumps({k: bench.info[k] for k in ("title", "words", "video_seconds", "visuals", "photos", "cards",
+    print(json.dumps({k: bench.info[k] for k in ("title", "words", "video_seconds", "visuals", "photos", "drawings", "cards",
                                                  "seconds_per_visual")}, indent=2), flush=True)
 
 

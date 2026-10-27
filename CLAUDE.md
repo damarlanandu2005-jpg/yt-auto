@@ -86,6 +86,8 @@ yt_auto/research.py    Wikipedia articles -> numbered passages (sources.json, wi
 yt_auto/writer.py      plan -> script (each sentence cites passage ids) -> separate fact-check -> fix or drop
 yt_auto/shots.py       ~4.5 s visual slots, visual plan, photo pick + vision check, card-number guard
 yt_auto/photos.py      NASA + Commons search, licence filter, licence JSON per file
+yt_auto/drawings.py    AI ink drawings (Segmind-Vega + VegaRT, Apache-2.0) on the runner CPU, own process, max 18 / 25 min;
+                       for ideas no photo shows, then photo slots with no photo; shots.add_drawings looks at each (VISION) and drops bad ones
 yt_auto/align.py       subtitles from our own text: exact sentence times + whisper word times
 yt_auto/package.py     description.txt, licences.json, review.md, contact sheet
 phase1/make_video.py   topic -> package (stages cached in --out, so a rerun resumes)
@@ -146,6 +148,7 @@ Used: Kokoro / kokoro-onnx (Apache-2.0 / MIT), matplotlib, FFmpeg 8.1 (run as a 
 - Commit messages explain why. Push to `main` (owner approved merging on 27 Oct; work branch `claude/phase-1-production-core-ufulti` was fast-forwarded into `main` at 744ebce).
 - Gemini quota (27 Oct, owner said 'build it'): strong Flash only for plan/script/fact-check (~3-4 calls a video); light jobs on Gemma 4 (same key, free, separate limit) and GitHub Models (free, uses the workflow's own token, `permissions: models: read`). Models check results (27 Oct, runs 40557681397, 40559021860, 40560587143, 40560953772): 3.5 Flash-Lite JSON + pictures OK; 3.1 Flash-Lite OK but often 503; Gemma 4 text JSON OK once, then 500/503, and **HTTP 500 to every request with pictures** (so the photo check uses the VISION list, no Gemma); GitHub Models answers a bare 'OK' (text/plain, from GitHub's own IP) to catalog and chat: most likely Models is not enabled in repo Settings -> Models (owner asked). Until then it is skipped cleanly (non-JSON reply = next model). GitHub Models limits are third-party figures until a call works.
 - Drawing test 27 Oct (run 40576992038): Segmind-Vega + VegaRT (both Apache-2.0, not gated) on the 4-core runner, 1024x576, 4 steps: 76 s per drawing, peak 9.2 GB RAM, model load 52 s. Ink style mostly holds; about 5 of 10 match their idea (ship, road, satellite cutaway, city, ground station), others miss (no Earth/satellite ring, garbled clock text, distorted hand, three circles not drawn), backgrounds switch black/white. Too slow for every shot (~2 h for 99); fits ~15-20 drawings per video for ideas photos can't show. Below the quality of the fitness channel the owner studied.
+- Mixed visuals (owner chose A, 27 Oct): real photos first, then up to 18 AI ink drawings (black background, red accent), then cards. Drawings are non-realistic (no YouTube AI disclosure), credited in the description, licence record source `ai_drawing` allowed only if the model licence is Apache-2.0 or MIT (photos.record_allowed). Workflow input max_drawings (0 = off).
 - Phase 1+ workflows: manual trigger or schedule, never on every push (saves free minutes; private repo has 2,000 min/month).
 - Test small locally (1–2 scenes) before using GitHub minutes.
 

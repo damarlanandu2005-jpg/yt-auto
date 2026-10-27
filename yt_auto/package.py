@@ -35,8 +35,12 @@ def credit_lines(photos: list[dict]) -> dict:
     each licence's own link once at the end (CC BY / BY-SA ask for a link to the licence)."""
     from urllib.parse import unquote
 
-    seen, nasa, pd, commons, licences, full = set(), 0, 0, [], {}, []
+    seen, nasa, pd, drawn, commons, licences, full = set(), 0, 0, 0, [], {}, []
     for p in photos:
+        if p["source"] == "ai_drawing":  # all share the model's page, so count them before de-duplicating
+            drawn += 1
+            full.append(f"- {p['attribution']}")
+            continue
         if p["source_page"] in seen:
             continue
         seen.add(p["source_page"])
@@ -51,7 +55,8 @@ def credit_lines(photos: list[dict]) -> dict:
             if p.get("licence_url"):
                 licences[p["licence"]] = p["licence_url"]
     short = ([f"- {nasa} images: NASA (public domain)"] if nasa else []) + \
-        ([f"- {pd} images: public domain / CC0, via Wikimedia Commons"] if pd else []) + commons
+        ([f"- {pd} images: public domain / CC0, via Wikimedia Commons"] if pd else []) + \
+        ([f"- {drawn} illustrations: AI-generated drawings (Segmind-Vega, Apache-2.0)"] if drawn else []) + commons
     if licences:
         short += ["Licences: " + "; ".join(f"{k} {v}" for k, v in sorted(licences.items()))]
     return {"short": short, "full": full}
@@ -68,14 +73,14 @@ class RightsError(RuntimeError):
 
 def rights_gate(photos: list[dict]) -> None:
     """Stop before packaging if any picture lacks a complete record or an allowed licence."""
-    from .photos import allowed_licence
+    from .photos import record_allowed
 
     bad = []
     for p in photos:
         missing = [k for k in ("source_page", "licence", "author", "attribution", "downloaded") if not p.get(k)]
         if missing:
             bad.append(f"{p.get('file')}: missing {missing}")
-        elif p["source"] != "nasa_image_library" and not allowed_licence(p["licence"]):
+        elif not record_allowed(p):
             bad.append(f"{p.get('file')}: licence {p['licence']!r} is not allowed")
     if bad:
         raise RightsError("Rights check failed:\n" + "\n".join(bad))
@@ -140,7 +145,7 @@ def write(out: Path, script: dict, the_plan: dict, sources: dict, visuals: list[
     (out / "credits.txt").write_text("Image credits:\n" + "\n".join(credits["full"]) + "\n", encoding="utf-8")
     body = lines + ["", "Image credits:"] + credits["short"] + footer
     if len("\n".join(body)) > DESC_LIMIT:  # YouTube allows 5,000 characters; the GPS video had 9,850
-        body = lines + ["", "Image credits: NASA (public domain) and Wikimedia Commons contributors. "
+        body = lines + ["", "Image credits: NASA (public domain), Wikimedia Commons contributors and AI-generated drawings. "
                             "Full list with licences in the pinned comment."] + footer
     lines = body
     (out / "description.txt").write_text("\n".join(lines) + "\n", encoding="utf-8")
@@ -151,7 +156,8 @@ def write(out: Path, script: dict, the_plan: dict, sources: dict, visuals: list[
           f"**Question:** {the_plan['question']}  ", f"**Angle:** {the_plan['angle']}  ",
           f"**Structure:** {the_plan['structure']}", "",
           f"Words: {run_info.get('words')} · Video: {run_info.get('video_seconds')} s · "
-          f"Visuals: {run_info.get('visuals')} ({run_info.get('photos')} photos, {run_info.get('cards')} cards)", "",
+          f"Visuals: {run_info.get('visuals')} ({run_info.get('photos')} photos, {run_info.get('drawings', 0)} drawings, "
+          f"{run_info.get('cards')} cards)", "",
           "## Fact-check summary", "",
           f"- Sentences checked: {factcheck['checked']}, passed first time: {factcheck['supported_first_pass']}",
           f"- Fixed: {len(factcheck['fixed'])}, dropped: {len(factcheck['dropped'])}, "
@@ -174,7 +180,8 @@ def write(out: Path, script: dict, the_plan: dict, sources: dict, visuals: list[
            "- [ ] Title and description honest? Edit description.txt as you like.",
            "- [ ] Upload subtitles.srt as English subtitles in YouTube Studio.",
            "- [ ] AI disclosure ('altered or synthetic content'): only needed for realistic AI depictions of real "
-           "people, places or events. This video uses real photos, charts and a TTS voice, so normally: No.",
+           "people, places or events. This video uses real photos, charts, non-realistic ink drawings and a TTS "
+           "voice, so normally: No.",
            "- [ ] Made for kids: No (general audience explainer)."]
     (out / "review.md").write_text("\n".join(md) + "\n", encoding="utf-8")
 

@@ -1,0 +1,7 @@
+# AI drawings (yt_auto/drawings.py), installed in the workflow after CPU-only PyTorch:
+#   pip install torch --index-url https://download.pytorch.org/whl/cpu && pip install -r requirements-draw.txt
+diffusers
+transformers
+accelerate
+peft
+safetensors

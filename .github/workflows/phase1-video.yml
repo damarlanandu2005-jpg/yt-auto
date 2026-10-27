@@ -29,6 +29,9 @@ on:
       owner_voice_folder:
         description: "Own-voice video, step 2: folder in the repo with the owner's recordings (voice/...). Use with resume_from = the step-1 run id"
         default: ""
+      max_drawings:
+        description: "AI ink drawings per video (about 80 s each; 0 = photos and cards only)"
+        default: "18"
 
 permissions:
   contents: write
@@ -41,7 +44,7 @@ concurrency:
 jobs:
   video:
     runs-on: ubuntu-24.04
-    timeout-minutes: 75
+    timeout-minutes: 115
     steps:
       - uses: actions/checkout@v4
 
@@ -80,9 +83,23 @@ jobs:
           path: ~/.cache/huggingface
           key: faster-whisper-base-en
 
+      - name: Cache drawing model
+        if: inputs.max_drawings != '0'
+        uses: actions/cache@v4
+        with:
+          path: ~/hf-draw
+          key: draw-segmind-vega-hub-v1
+
       - name: Install Python packages
         timeout-minutes: 10
         run: pip install -r requirements.txt
+
+      - name: Install drawing tools (CPU-only PyTorch)
+        if: inputs.max_drawings != '0'
+        timeout-minutes: 10
+        run: |
+          pip install torch --index-url https://download.pytorch.org/whl/cpu
+          pip install -r requirements-draw.txt
 
       - name: Download voice model (first run only)
         timeout-minutes: 5
@@ -105,7 +122,7 @@ jobs:
           if [ "$NEW_PLAN" = "true" ]; then rm -f out/run/visual_plan.json && echo "visual plan will be made again"; fi
 
       - name: Make the video
-        timeout-minutes: 58
+        timeout-minutes: 95
         env:
           GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
           GITHUB_MODELS_TOKEN: ${{ github.token }}
@@ -113,10 +130,13 @@ jobs:
           SCENES: ${{ inputs.scenes }}
           STOP: ${{ inputs.stop_after_script }}
           VOICE: ${{ inputs.owner_voice_folder }}
+          DRAW: ${{ inputs.max_drawings }}
         run: |
           set -o pipefail
           mkdir -p out/run
           extra=()
+          [[ "$DRAW" =~ ^[0-9]+$ ]] || { echo "max_drawings must be a number"; exit 1; }
+          extra+=(--max-drawings "$DRAW")
           if [ "$STOP" = "true" ]; then extra+=(--stop-after-script); fi
           if [ -n "$VOICE" ]; then
             [[ "$VOICE" =~ ^voice/[A-Za-z0-9._/-]+$ && "$VOICE" != *..* ]] || { echo "owner_voice_folder must be a folder under voice/"; exit 1; }
@@ -169,10 +189,11 @@ jobs:
           dest="results/phase1/${{ github.run_id }}"
           mkdir -p "$dest"
           cd out/run
-          cp build.log report.json review.md description.txt licences.json facts.csv credits.txt gate.json recording_script.md voice_match.json plan.json sources.json \
+          cp build.log report.json review.md description.txt licences.json facts.csv credits.txt gate.json recording_script.md voice_match.json drawing_log.json plan.json sources.json \
              script_draft.json script.json factcheck.json timing.json visual_plan.json visuals.json photo_log.json \
              subtitles.srt contact_sheet.jpg preview_480p.mp4 diagnostics.json "../../$dest/" 2>/dev/null || true
           cp -r llm "../../$dest/" 2>/dev/null || true
+          mkdir -p "../../$dest/drawings" && cp drawings/result.json drawings/drawings.log drawings/jobs.json "../../$dest/drawings/" 2>/dev/null || true
           mkdir -p "../../$dest/ffmpeg_logs"
           # FFmpeg logs: the join/mux/preview steps, plus any segment log that mentions an error
           cp ffmpeg_logs/concat_*.log ffmpeg_logs/mux.log ffmpeg_logs/preview*.log "../../$dest/ffmpeg_logs/" 2>/dev/null || true

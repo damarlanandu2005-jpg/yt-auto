@@ -4,8 +4,9 @@
 2. plan_visuals(): one model call gives each slot a photo request or a chart/diagram.
 3. find_photos(): NASA + Commons search, one model call picks the best candidate
    per slot, then one call LOOKS at the chosen photos and rejects bad matches.
-   A slot without a good photo uses its non-photo fallback (AI illustrations are
-   not on the Gemini free tier: limit 0, checked 26 Oct 2026).
+4. drawings: ink drawings from a free open model on the runner's CPU (Gemini image models have a
+   free limit of 0) for ideas no photo can show, then for photo slots left without a photo; one call
+   LOOKS at them and rejects bad ones. A slot with neither keeps its fallback card.
 """
 from __future__ import annotations
 
@@ -93,13 +94,16 @@ PLAN_SCHEMA = {"type": "object", "properties": {"visuals": {"type": "array", "it
     "type": "object",
     "properties": {
         "id": {"type": "string"},
-        "kind": {"type": "string", "enum": ["photo", "card"]},
+        "kind": {"type": "string", "enum": ["photo", "drawing", "card"]},
         "photo_subject": {"type": "string", "description": "the ONE thing the photo shows, in a few plain words "
                                                             "(e.g. 'a GPS satellite', 'an atomic clock')"},
         "photo_queries": {"type": "array", "items": {"type": "string"}, "maxItems": 2,
                           "description": "2 search phrases of 1-3 common words, e.g. 'atomic clock', 'GPS receiver'"},
+        "drawing_subject": {"type": "string", "description": "kind=drawing: one simple scene of objects in plain "
+                                                              "words, e.g. 'a radio wave travelling from a satellite "
+                                                              "down to a phone'"},
         "card": {"type": "object", "properties": _CARD, "required": ["type", "title"],
-                 "description": "the card to show (kind=card), or the fallback if no photo is found (kind=photo)"},
+                 "description": "the card to show (kind=card), or the fallback if no photo or drawing works"},
     },
     "required": ["id", "kind", "card"],
 }}}, "required": ["visuals"]}
@@ -114,7 +118,7 @@ CARD_HELP = """Card types (all text short; big and readable on a phone):
 - compare: title + left_title/left_points vs right_title/right_points."""
 
 
-def plan_visuals(script_title: str, the_slots: list[dict], headings: dict[str, str]) -> list[dict]:
+def plan_visuals(script_title: str, the_slots: list[dict], headings: dict[str, str], max_drawings: int = 12) -> list[dict]:
     lines = [f"{s['id']} [{s['seconds']:.1f}s] (scene: {headings[s['scene']]}{', SCENE START' if s['scene_start'] else ''}) "
              f"{s['text']}" for s in the_slots]
     prompt = f"""Video: {script_title}
@@ -125,13 +129,17 @@ Rules:
   Ask for SIMPLE subjects an archive surely has ("a handheld GPS receiver", "a rocket launch", "an atomic
   clock"), never a detailed scene ("a hiker with a GPS in remote mountains with no signal"). A photo of the
   object being discussed is better than a text card.
+- Use kind=drawing (at most {max_drawings} in the whole video) for an idea no real photo can show: an invisible
+  process, a view nobody photographed, a comparison of two things (e.g. "a radio wave travelling from a satellite
+  down to a phone", "two clocks side by side, one in orbit and one on the ground"). drawing_subject: one simple
+  scene of objects. No people's faces or hands, no text, no numbers, no maps with labels.
 - Use kind=card when a number, comparison, process or list is the point, or at scene starts (title card).
 - The first slot is a title card with the video title.
 - Every number on a card MUST appear in that slot's text or earlier in the same scene. Never invent data.
 - Vary: never the same card type twice in a row; never more than 2 cards in a row.
 - Text cards are the last choice: at most one bullets card per scene, and a bare title card only at scene starts.
   Prefer stat, bars, timeline, flow or compare when a card is needed.
-- For kind=photo still give a fallback card (used if no good photo exists).
+- For kind=photo and kind=drawing still give a fallback card (used if no good picture is made).
 {CARD_HELP}
 
 SLOTS:
@@ -252,8 +260,40 @@ def _thumb(path: str, size: int = 384) -> bytes:
     return buf.getvalue()
 
 
-def _verify(chosen: list[dict], log: dict) -> None:
-    """Let the model look at each chosen photo; drop ones that don't show the subject.
+def drawing_jobs(visuals: list[dict], max_n: int) -> list[dict]:
+    """Planned drawings first, then photo slots that ended without a photo (up to max_n in all)."""
+    planned = [v for v in visuals if v["kind"] == "drawing" and v.get("drawing_subject")]
+    no_photo = [v for v in visuals if v["kind"] == "photo" and not v.get("photo") and v.get("photo_subject")]
+    jobs = [{"id": v["id"], "subject": v["drawing_subject"]} for v in planned]
+    jobs += [{"id": v["id"], "subject": v["photo_subject"]} for v in no_photo]
+    return jobs[:max_n]
+
+
+def add_drawings(visuals: list[dict], drawn: dict[str, str], log: dict) -> None:
+    """Attach finished drawings as pictures, then look at them and drop bad ones (fail closed)."""
+    by_id = {v["id"]: v for v in visuals}
+    chosen = []
+    for vid, path in drawn.items():
+        v = by_id[vid]
+        rec = json.loads(Path(path).with_suffix(".licence.json").read_text())
+        v["photo"] = {"path": path, **rec}
+        v.setdefault("photo_subject", v.get("drawing_subject", ""))
+        if v["kind"] == "drawing":
+            v["photo_subject"] = v.get("drawing_subject") or v["photo_subject"]
+        chosen.append(v)
+    sub: dict = {}
+    _verify(chosen, sub, drawings=True)
+    log["drawings_seen"] = sub.get("seen", {})
+    log["drawings_rejected"] = sub.get("rejected_after_looking", [])
+    if "verify_error" in sub:
+        log["drawings_verify_error"] = sub["verify_error"]
+        for v in chosen:  # not looked at: don't use them (fail closed)
+            v["drawing_rejected"] = v.pop("photo")
+    log["drawings_used"] = sum(1 for v in chosen if v.get("photo"))
+
+
+def _verify(chosen: list[dict], log: dict, drawings: bool = False) -> None:
+    """Let the model look at each chosen picture; drop ones that don't show the subject.
 
     Each picture is sent with its own "Image n:" label, the model first says what it sees, and a
     picture it gives no verdict for is dropped (fail closed)."""
@@ -261,14 +301,21 @@ def _verify(chosen: list[dict], log: dict) -> None:
         return
     listing = "\n".join(f"Image {i + 1}: should show: {v.get('photo_subject', '')} (narration: {v['text']})"
                         for i, v in enumerate(chosen))
+    if drawings:
+        rules = """These are ink drawings made by an AI image model; about half miss their subject. It fits only if
+the subject is clearly recognisable at a glance, the drawing is not confusing, has no garbled letters or
+fake text, no deformed hands, faces or bodies, and is not misleading next to the narration."""
+    else:
+        rules = """It must clearly show what it should show, be a real usable picture (not mostly text, not a blank
+or broken image, no watermark), and not be misleading next to the narration."""
     prompt = f"""Above are {len(chosen)} images, each right after its label "Image n:". For EVERY image, first
-write in "seen" what that image actually shows (a few words), then decide if it fits: it must clearly show
-what it should show, be a real usable picture (not mostly text, not a blank or broken image, no watermark),
-and not be misleading next to the narration.
+write in "seen" what that image actually shows (a few words), then decide if it fits.
+{rules}
 {listing}"""
     try:
         res = llm(prompt, images=[(f"Image {i + 1}:", _thumb(v["photo"]["path"])) for i, v in enumerate(chosen)],
-                  schema=VERIFY_SCHEMA, name="photo_verify", temperature=0.1, models=VISION, last_resort=True)
+                  schema=VERIFY_SCHEMA, name="drawing_verify" if drawings else "photo_verify", temperature=0.1,
+                  models=VISION, last_resort=True)
     except LLMError as e:
         log["verify_error"] = str(e)
         return
@@ -280,6 +327,6 @@ and not be misleading next to the narration.
         if not c["fits"]:
             rejected.append({"id": v["id"], "title": v["photo"]["title"], "seen": c.get("seen", ""),
                              "reason": c["reason"]})
-            v["photo_rejected"] = v.pop("photo")
+            v["drawing_rejected" if drawings else "photo_rejected"] = v.pop("photo")
     log["seen"] = seen
     log["rejected_after_looking"] = rejected
