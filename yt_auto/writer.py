@@ -42,10 +42,17 @@ PLAN_SCHEMA = {
         "question": {"type": "string", "description": "the single clear question this video answers"},
         "angle": {"type": "string", "description": "what makes this video's take original and interesting"},
         "structure": {"type": "string", "description": "the storytelling structure chosen for THIS topic and why"},
+        "answer": {"type": "string", "description": "the answer in one or two plain sentences"},
+        "evidence": {"type": "string", "description": "the key facts that prove the answer"},
+        "unique_examples": {"type": "string", "description": "the concrete examples, comparisons or graphics "
+                                                            "that make THIS video different from others"},
+        "why_watch": {"type": "string", "description": "why a viewer gets more from this video than from a "
+                                                      "quick search or a typical video on the topic"},
         "outline": {"type": "array", "items": {"type": "string"}, "minItems": 5, "maxItems": 8},
         "wikipedia_titles": {"type": "array", "items": {"type": "string"}, "minItems": 3, "maxItems": 7},
     },
-    "required": ["question", "angle", "structure", "outline", "wikipedia_titles"],
+    "required": ["question", "angle", "answer", "evidence", "unique_examples", "why_watch", "structure", "outline",
+                 "wikipedia_titles"],
 }
 
 SCRIPT_SCHEMA = {
@@ -97,6 +104,8 @@ def plan(topic: str) -> dict:
 
 Plan one 6-minute explainer video about this topic.
 - Pick ONE clear question the video answers, and an angle that makes it worth watching.
+- Write the editorial brief: the answer, the evidence, the unique examples or graphics, and why it is worth
+  watching (the quality gate rejects a video without one).
 - Choose a structure that suits THIS topic (for example: mystery then reveal, myth vs fact, step by step,
   history timeline, comparison, "what would happen if"). Do not default to a generic list.
 - Outline 5 to 8 parts.

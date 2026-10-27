@@ -38,13 +38,14 @@ Full plan: "YouTube Automation Blueprint" doc — https://claude.ai/artifact/XN7
 | --- | --- |
 | 0. Server benchmark | **PASSED** 27 Oct 2026: 3/3 runs on GitHub Actions (AMD EPYC, 4 cores), build 3 min 18 s to 3 min 26 s, ~4 min per job, peak ~690 MB, no hangs |
 | 0b. Niche data test | Not started. Needs a YouTube Data API key (owner to create). Niches to test: how technology works, science and space, money and economics (education only) |
-| 1. Production core | **Done, owner to confirm** 27 Oct 2026. Run 40469284296: 7.4 min GPS video, 900 words fact-checked, 99 visuals (44 real photos, each checked by looking), subtitles from our own text, ~11 min on Actions. Owner liked the earlier 3.9 min version; quality work moves to later phases. Known weak spots: some title-only cards, one off-topic diagram (geostationary, v031) |
+| 1. Production core | **DONE**, owner approved the video 27 Oct 2026. Run 40469284296: 7.4 min GPS video, 900 words fact-checked, 99 visuals (44 real photos, each checked by looking), subtitles from our own text, ~11 min on Actions. Owner liked the earlier 3.9 min version; quality work moves to later phases. Known weak spots: some title-only cards, one off-topic diagram (geostationary, v031) |
 | 2. Research and facts | **Test PASSED** 27 Oct 2026 (run 40466026336): 30/30 planted errors caught, 0/16 false alarms (rule set before testing: ≥80% overall, ≥60% per type, ≤1 false alarm). First run 28/30 (missed 2 conflicting-source cases) → one prompt rule added. Also: number/unit guard, facts.csv, rights gate, junk-passage filter. Caveat: test set written by the same author as the checker; add independent cases later |
-| 3–6, auto-upload | Not started (see blueprint). 0b waits for a YouTube Data API key |
+| 3. Quality gate | **In progress** (27 Oct). Done when planted faults (silent gap, unlicensed image, wrong title promise, near-duplicate script) are all caught; clean video must get 0 false blocks |
+| 4–6, auto-upload | Not started (see blueprint). 0b waits for a YouTube Data API key |
 
 Owner feedback on the Phase 0 video: **voice quality good**; pace was a bit fast (fixed: speed 0.9, longer pauses); **wants more pictures** (decided: real photos first, AI illustrations when none fits).
 
-Owner feedback on the first Phase 1 video (27 Oct): quite good; wants more quality changes, to be done in later phases. Known weak spots: a few off-topic or misleading photos (e.g. a geostationary diagram for GPS), some bare title cards, video shorter than target when Flash-Lite wrote the script.
+Owner feedback on the first Phase 1 video (27 Oct): quite good; full-length video approved ("ok for the current step"); wants more quality changes, to be done in later phases. Known weak spots: a few off-topic or misleading photos (e.g. a geostationary diagram for GPS), some bare title cards, video shorter than target when Flash-Lite wrote the script.
 
 ## Phase 1 facts (checked 26 Oct 2026 from a GitHub Actions run, not from blogs)
 
@@ -124,3 +125,5 @@ Used: Kokoro / kokoro-onnx (Apache-2.0 / MIT), matplotlib, FFmpeg 8.1 (run as a 
 - Commit messages explain why. Push to `main`.
 - Phase 1+ workflows: manual trigger or schedule, never on every push (saves free minutes; private repo has 2,000 min/month).
 - Test small locally (1–2 scenes) before using GitHub minutes.
+
+- Chrome may block GitHub artifact zips as "dangerous download"; the owner keeps them via chrome://downloads. Consider GitHub Releases for plain mp4 downloads.

@@ -20,6 +20,38 @@ FONT_RECORD = {
 }
 
 
+DESC_LIMIT = 4900  # YouTube's limit is 5,000 characters; keep a little room for the owner's edits
+
+
+def credit_lines(photos: list[dict]) -> dict:
+    """Short credits for the description, full ones for credits.txt.
+
+    NASA photos are public domain: one line. Each Commons photo: author, licence, page link;
+    each licence's own link once at the end (CC BY / BY-SA ask for a link to the licence)."""
+    from urllib.parse import unquote
+
+    seen, nasa, pd, commons, licences, full = set(), 0, 0, [], {}, []
+    for p in photos:
+        if p["source_page"] in seen:
+            continue
+        seen.add(p["source_page"])
+        full.append(f"- {p['attribution']}")
+        if p["source"] == "nasa_image_library":
+            nasa += 1
+        elif not p["licence"].upper().startswith("CC BY"):  # public domain / CC0: no attribution required
+            pd += 1
+        else:
+            author = p["author"] if len(p["author"]) <= 40 else p["author"][:38] + "…"
+            commons.append(f"- {author}, {p['licence']}: {unquote(p['source_page'])}")
+            if p.get("licence_url"):
+                licences[p["licence"]] = p["licence_url"]
+    short = ([f"- {nasa} images: NASA (public domain)"] if nasa else []) + \
+        ([f"- {pd} images: public domain / CC0, via Wikimedia Commons"] if pd else []) + commons
+    if licences:
+        short += ["Licences: " + "; ".join(f"{k} {v}" for k, v in sorted(licences.items()))]
+    return {"short": short, "full": full}
+
+
 def _mmss(t: float) -> str:
     t = int(t)
     return f"{t // 60}:{t % 60:02}"
@@ -93,15 +125,16 @@ def write(out: Path, script: dict, the_plan: dict, sources: dict, visuals: list[
     lines += ["Sources (facts checked against these):"]
     lines += [f"- {a['title']} — Wikipedia, revision {a['revision_id']}: "
               f"{a['url']}?oldid={a['revision_id']}" for a in arts]
-    lines += ["", "Image credits:"]
-    seen = set()
-    for p in photos:
-        if p["source_page"] not in seen:
-            seen.add(p["source_page"])
-            lines.append(f"- {p['attribution']}")
-    lines += ["", "NASA images are used for education and do not imply NASA endorsement.",
+    footer = ["", "NASA images are used for education and do not imply NASA endorsement.",
               "Narration voice: Kokoro text-to-speech (synthetic voice). Script researched and written with AI help, "
               "fact-checked against the sources above and reviewed by a human before upload."]
+    credits = credit_lines(photos)
+    (out / "credits.txt").write_text("Image credits:\n" + "\n".join(credits["full"]) + "\n", encoding="utf-8")
+    body = lines + ["", "Image credits:"] + credits["short"] + footer
+    if len("\n".join(body)) > DESC_LIMIT:  # YouTube allows 5,000 characters; the GPS video had 9,850
+        body = lines + ["", "Image credits: NASA (public domain) and Wikimedia Commons contributors. "
+                            "Full list with licences in the pinned comment."] + footer
+    lines = body
     (out / "description.txt").write_text("\n".join(lines) + "\n", encoding="utf-8")
 
     # Review sheet: every sentence, its sources and its check result.

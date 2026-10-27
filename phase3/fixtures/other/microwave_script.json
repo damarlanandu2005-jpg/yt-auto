@@ -1,0 +1,177 @@
+{
+ "title": "How Does a Microwave Oven Heat Food?",
+ "note": "TEST FIXTURE ONLY: not fact-checked, not for upload. Used to check that a different video is NOT flagged as a duplicate.",
+ "scenes": [
+  {
+   "id": "s01",
+   "heading": "Hot food, cool plate",
+   "sentences": [
+    {
+     "id": "s01.01",
+     "text": "Heat soup in a microwave and the bowl can stay cool while the soup boils.",
+     "kind": "fact",
+     "sources": [
+      "T1"
+     ],
+     "check": "supported"
+    },
+    {
+     "id": "s01.02",
+     "text": "How can an oven heat the food but not the air around it?",
+     "kind": "fact",
+     "sources": [
+      "T1"
+     ],
+     "check": "supported"
+    }
+   ]
+  },
+  {
+   "id": "s02",
+   "heading": "Invisible waves",
+   "sentences": [
+    {
+     "id": "s02.01",
+     "text": "A microwave oven makes radio waves with a part called a magnetron.",
+     "kind": "fact",
+     "sources": [
+      "T1"
+     ],
+     "check": "supported"
+    },
+    {
+     "id": "s02.02",
+     "text": "The waves bounce around the metal box and pass into the food.",
+     "kind": "fact",
+     "sources": [
+      "T1"
+     ],
+     "check": "supported"
+    },
+    {
+     "id": "s02.03",
+     "text": "They are the same family of waves as radio and Wi-Fi, just at a chosen frequency.",
+     "kind": "fact",
+     "sources": [
+      "T1"
+     ],
+     "check": "supported"
+    }
+   ]
+  },
+  {
+   "id": "s03",
+   "heading": "Shaking water",
+   "sentences": [
+    {
+     "id": "s03.01",
+     "text": "Water molecules have a positive end and a negative end.",
+     "kind": "fact",
+     "sources": [
+      "T1"
+     ],
+     "check": "supported"
+    },
+    {
+     "id": "s03.02",
+     "text": "The changing electric field of the wave twists them back and forth billions of times a second.",
+     "kind": "fact",
+     "sources": [
+      "T1"
+     ],
+     "check": "supported"
+    },
+    {
+     "id": "s03.03",
+     "text": "All that jostling rubs neighbouring molecules and turns into heat.",
+     "kind": "fact",
+     "sources": [
+      "T1"
+     ],
+     "check": "supported"
+    }
+   ]
+  },
+  {
+   "id": "s04",
+   "heading": "Why it heats unevenly",
+   "sentences": [
+    {
+     "id": "s04.01",
+     "text": "The waves form a pattern of hot and cold spots inside the box.",
+     "kind": "fact",
+     "sources": [
+      "T1"
+     ],
+     "check": "supported"
+    },
+    {
+     "id": "s04.02",
+     "text": "That is why ovens have a turntable, to move food through the hot spots.",
+     "kind": "fact",
+     "sources": [
+      "T1"
+     ],
+     "check": "supported"
+    },
+    {
+     "id": "s04.03",
+     "text": "Frozen water heats poorly, so ice can stay frozen next to boiling patches.",
+     "kind": "fact",
+     "sources": [
+      "T1"
+     ],
+     "check": "supported"
+    }
+   ]
+  },
+  {
+   "id": "s05",
+   "heading": "Metal and sparks",
+   "sentences": [
+    {
+     "id": "s05.01",
+     "text": "Metal reflects the waves instead of absorbing them.",
+     "kind": "fact",
+     "sources": [
+      "T1"
+     ],
+     "check": "supported"
+    },
+    {
+     "id": "s05.02",
+     "text": "Sharp metal edges can gather charge and make sparks.",
+     "kind": "fact",
+     "sources": [
+      "T1"
+     ],
+     "check": "supported"
+    }
+   ]
+  },
+  {
+   "id": "s06",
+   "heading": "The answer",
+   "sentences": [
+    {
+     "id": "s06.01",
+     "text": "A microwave oven heats food by making its water molecules shake.",
+     "kind": "fact",
+     "sources": [
+      "T1"
+     ],
+     "check": "supported"
+    },
+    {
+     "id": "s06.02",
+     "text": "The plate stays cooler because it holds little water.",
+     "kind": "fact",
+     "sources": [
+      "T1"
+     ],
+     "check": "supported"
+    }
+   ]
+  }
+ ]
+}

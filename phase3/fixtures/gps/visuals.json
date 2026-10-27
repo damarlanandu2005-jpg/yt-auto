@@ -1,0 +1,2953 @@
+[
+ {
+  "scene": "s01",
+  "start": 0.0,
+  "text": "How can your smartphone pinpoint your exact location",
+  "sentences": [
+   "s01.01"
+  ],
+  "id": "v001",
+  "end": 3.381294117647059,
+  "seconds": 3.38,
+  "scene_start": true,
+  "kind": "card",
+  "card": {
+   "type": "title",
+   "title": "How GPS Finds Your Location Using Satellite Timestamps",
+   "subtitle": "The Passive Listener"
+  }
+ },
+ {
+  "scene": "s01",
+  "start": 3.381294117647059,
+  "text": "anywhere on Earth just by receiving silent radio signals?",
+  "sentences": [
+   "s01.01"
+  ],
+  "id": "v002",
+  "end": 7.611,
+  "seconds": 4.23,
+  "scene_start": false,
+  "kind": "photo",
+  "photo_subject": "a smartphone displaying a digital map",
+  "photo_queries": [
+   "smartphone map",
+   "gps phone"
+  ],
+  "card": {
+   "type": "title",
+   "title": "Global Reach",
+   "subtitle": ""
+  },
+  "photo_rejected": {
+   "path": "out/run/photos/v002.jpg",
+   "file": "v002.jpg",
+   "kind": "photo",
+   "source": "wikimedia_commons",
+   "title": "Motion X GPS and OSM",
+   "source_page": "https://commons.wikimedia.org/wiki/File:Motion_X_GPS_and_OSM.jpg",
+   "download_url": "https://upload.wikimedia.org/wikipedia/commons/8/80/Motion_X_GPS_and_OSM.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+   "licence": "CC BY-SA 2.0",
+   "licence_url": "https://creativecommons.org/licenses/by-sa/2.0",
+   "author": "Harry Wood",
+   "attribution": "\"Motion X GPS and OSM\" by Harry Wood, CC BY-SA 2.0, via Wikimedia Commons. https://commons.wikimedia.org/wiki/File:Motion_X_GPS_and_OSM.jpg",
+   "downloaded": "2026-10-27"
+  }
+ },
+ {
+  "scene": "s01",
+  "start": 7.611,
+  "text": "In reality, the Global Positioning System is a completely one-way passive broadcast network.",
+  "sentences": [
+   "s01.03"
+  ],
+  "id": "v003",
+  "end": 14.213,
+  "seconds": 6.6,
+  "scene_start": false,
+  "kind": "card",
+  "card": {
+   "type": "compare",
+   "title": "GPS System Architecture",
+   "left_title": "Passive Broadcast",
+   "left_points": [
+    "Satellites transmit only",
+    "Unlimited receivers",
+    "Zero phone data sent"
+   ],
+   "right_title": "Two-Way Network",
+   "right_points": [
+    "Two-way signal exchange",
+    "Limited capacity",
+    "Transmits user data"
+   ]
+  }
+ },
+ {
+  "scene": "s01",
+  "start": 14.213,
+  "text": "GPS operates independently of telephone or Internet reception.",
+  "sentences": [
+   "s01.05"
+  ],
+  "id": "v004",
+  "end": 19.262,
+  "seconds": 5.05,
+  "scene_start": false,
+  "kind": "photo",
+  "photo_subject": "a remote cell tower",
+  "photo_queries": [
+   "cell tower",
+   "cellular antenna"
+  ],
+  "card": {
+   "type": "title",
+   "title": "Cellular Network",
+   "subtitle": ""
+  },
+  "photo": {
+   "path": "out/run/photos/v004.jpg",
+   "file": "v004.jpg",
+   "kind": "photo",
+   "source": "wikimedia_commons",
+   "title": "Орта Дересин, вышка связи",
+   "source_page": "https://commons.wikimedia.org/wiki/File:%D0%9E%D1%80%D1%82%D0%B0_%D0%94%D0%B5%D1%80%D0%B5%D1%81%D0%B8%D0%BD,_%D0%B2%D1%8B%D1%88%D0%BA%D0%B0_%D1%81%D0%B2%D1%8F%D0%B7%D0%B8.jpg",
+   "download_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/72/%D0%9E%D1%80%D1%82%D0%B0_%D0%94%D0%B5%D1%80%D0%B5%D1%81%D0%B8%D0%BD%2C_%D0%B2%D1%8B%D1%88%D0%BA%D0%B0_%D1%81%D0%B2%D1%8F%D0%B7%D0%B8.jpg/1920px-%D0%9E%D1%80%D1%82%D0%B0_%D0%94%D0%B5%D1%80%D0%B5%D1%81%D0%B8%D0%BD%2C_%D0%B2%D1%8B%D1%88%D0%BA%D0%B0_%D1%81%D0%B2%D1%8F%D0%B7%D0%B8.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "licence": "CC BY-SA 4.0",
+   "licence_url": "https://creativecommons.org/licenses/by-sa/4.0",
+   "author": "Nikolai Bulykin",
+   "attribution": "\"Орта Дересин, вышка связи\" by Nikolai Bulykin, CC BY-SA 4.0, via Wikimedia Commons. https://commons.wikimedia.org/wiki/File:%D0%9E%D1%80%D1%82%D0%B0_%D0%94%D0%B5%D1%80%D0%B5%D1%81%D0%B8%D0%BD,_%D0%B2%D1%8B%D1%88%D0%BA%D0%B0_%D1%81%D0%B2%D1%8F%D0%B7%D0%B8.jpg",
+   "downloaded": "2026-10-27"
+  }
+ },
+ {
+  "scene": "s01",
+  "start": 19.262,
+  "text": "Owned by the United States Space Force, the satellite system is freely accessible to anyone.",
+  "sentences": [
+   "s01.06"
+  ],
+  "id": "v005",
+  "end": 25.534,
+  "seconds": 6.27,
+  "scene_start": false,
+  "kind": "photo",
+  "photo_subject": "a US Space Force symbol",
+  "photo_queries": [
+   "space force",
+   "space military"
+  ],
+  "card": {
+   "type": "title",
+   "title": "US Space Force",
+   "subtitle": "Operators of Global Positioning System"
+  },
+  "photo_rejected": {
+   "path": "out/run/photos/v005.jpg",
+   "file": "v005.jpg",
+   "kind": "photo",
+   "source": "wikimedia_commons",
+   "title": "U S Space Force (2002230265)",
+   "source_page": "https://commons.wikimedia.org/wiki/File:U_S_Space_Force_(2002230265).jpg",
+   "download_url": "https://upload.wikimedia.org/wikipedia/commons/2/2e/U_S_Space_Force_%282002230265%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+   "licence": "Public domain",
+   "licence_url": "",
+   "author": "Staff Sgt. James Richardson",
+   "attribution": "\"U S Space Force (2002230265)\" by Staff Sgt. James Richardson, Public domain, via Wikimedia Commons. https://commons.wikimedia.org/wiki/File:U_S_Space_Force_(2002230265).jpg",
+   "downloaded": "2026-10-27"
+  }
+ },
+ {
+  "scene": "s01",
+  "start": 25.534,
+  "text": "The constellation consists of at least 24 active",
+  "sentences": [
+   "s01.07"
+  ],
+  "id": "v006",
+  "end": 29.324399999999997,
+  "seconds": 3.79,
+  "scene_start": false,
+  "kind": "card",
+  "card": {
+   "type": "stat",
+   "title": "Active GPS Satellites",
+   "value": "24+",
+   "label": "Operational Spacecraft"
+  }
+ },
+ {
+  "scene": "s01",
+  "start": 29.324399999999997,
+  "text": "satellites arranged across six distinct orbital planes.",
+  "sentences": [
+   "s01.07"
+  ],
+  "id": "v007",
+  "end": 33.098,
+  "seconds": 3.77,
+  "scene_start": false,
+  "kind": "photo",
+  "photo_subject": "diagram of satellite orbits around Earth",
+  "photo_queries": [
+   "orbit diagram",
+   "satellite orbit"
+  ],
+  "card": {
+   "type": "stat",
+   "title": "Orbital Planes",
+   "value": "6",
+   "label": "Distinct Orbital Planes"
+  }
+ },
+ {
+  "scene": "s01",
+  "start": 33.098,
+  "text": "The first prototype spacecraft went into orbit in",
+  "sentences": [
+   "s01.08"
+  ],
+  "id": "v008",
+  "end": 37.7805,
+  "seconds": 4.68,
+  "scene_start": false,
+  "kind": "photo",
+  "photo_subject": "a rocket launching into space",
+  "photo_queries": [
+   "rocket launch",
+   "space launch"
+  ],
+  "card": {
+   "type": "title",
+   "title": "First Prototype",
+   "subtitle": "Initial GPS Satellite Launch"
+  },
+  "photo": {
+   "path": "out/run/photos/v008.jpg",
+   "file": "v008.jpg",
+   "kind": "photo",
+   "source": "nasa_image_library",
+   "title": "Rocket Lab PREFIRE-1 Launch",
+   "source_page": "https://images.nasa.gov/details/KSC-20240525-PH-RKL01_0005",
+   "download_url": "https://images-assets.nasa.gov/image/KSC-20240525-PH-RKL01_0005/KSC-20240525-PH-RKL01_0005~large.jpg",
+   "licence": "Public domain (NASA media, not copyrighted in the US)",
+   "licence_url": "https://www.nasa.gov/nasa-brand-center/images-and-media/",
+   "author": "Rocket Lab",
+   "attribution": "Rocket Lab PREFIRE-1 Launch — Rocket Lab, NASA, public domain. https://images.nasa.gov/details/KSC-20240525-PH-RKL01_0005",
+   "downloaded": "2026-10-27"
+  }
+ },
+ {
+  "scene": "s01",
+  "start": 37.7805,
+  "text": "1978 before reaching full operational status in 1995.",
+  "sentences": [
+   "s01.08"
+  ],
+  "id": "v009",
+  "end": 42.919,
+  "seconds": 5.14,
+  "scene_start": false,
+  "kind": "card",
+  "card": {
+   "type": "timeline",
+   "title": "GPS System History",
+   "events": [
+    {
+     "when": "1978",
+     "label": "First prototype satellite in orbit"
+    },
+    {
+     "when": "1995",
+     "label": "Full operational capability achieved"
+    }
+   ]
+  }
+ },
+ {
+  "scene": "s01",
+  "start": 42.919,
+  "text": "Each satellite completes two full orbits around Earth during every sidereal day.",
+  "sentences": [
+   "s01.09"
+  ],
+  "id": "v010",
+  "end": 48.282,
+  "seconds": 5.36,
+  "scene_start": false,
+  "kind": "card",
+  "card": {
+   "type": "stat",
+   "title": "Daily Orbital Rate",
+   "value": "2 orbits",
+   "label": "Per Sidereal Day"
+  }
+ },
+ {
+  "scene": "s01",
+  "start": 48.282,
+  "text": "As they orbit, these satellites continuously broadcast radio",
+  "sentences": [
+   "s01.10"
+  ],
+  "id": "v011",
+  "end": 52.2685,
+  "seconds": 3.99,
+  "scene_start": false,
+  "kind": "photo",
+  "photo_subject": "a GPS satellite in orbit",
+  "photo_queries": [
+   "gps satellite",
+   "satellite space"
+  ],
+  "card": {
+   "type": "title",
+   "title": "Radio Signal Broadcasting",
+   "subtitle": "Continuous Space Transmissions"
+  },
+  "photo": {
+   "path": "out/run/photos/v011.jpg",
+   "file": "v011.jpg",
+   "kind": "photo",
+   "source": "wikimedia_commons",
+   "title": "GPS Satellite NASA art-iif",
+   "source_page": "https://commons.wikimedia.org/wiki/File:GPS_Satellite_NASA_art-iif.jpg",
+   "download_url": "https://upload.wikimedia.org/wikipedia/commons/8/8d/GPS_Satellite_NASA_art-iif.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+   "licence": "Public domain",
+   "licence_url": "",
+   "author": "NASA",
+   "attribution": "\"GPS Satellite NASA art-iif\" by NASA, Public domain, via Wikimedia Commons. https://commons.wikimedia.org/wiki/File:GPS_Satellite_NASA_art-iif.jpg",
+   "downloaded": "2026-10-27"
+  }
+ },
+ {
+  "scene": "s01",
+  "start": 52.2685,
+  "text": "signals containing their exact position and precise time.",
+  "sentences": [
+   "s01.10"
+  ],
+  "id": "v012",
+  "end": 56.734,
+  "seconds": 4.47,
+  "scene_start": false,
+  "kind": "photo",
+  "photo_subject": "an atomic clock module",
+  "photo_queries": [
+   "atomic clock",
+   "precision clock"
+  ],
+  "card": {
+   "type": "title",
+   "title": "Broadcast Data",
+   "subtitle": "Satellite Position & Precision Time"
+  },
+  "photo": {
+   "path": "out/run/photos/v012.jpg",
+   "file": "v012.jpg",
+   "kind": "photo",
+   "source": "nasa_image_library",
+   "title": "Deep Space Atomic Clock Hardware",
+   "source_page": "https://images.nasa.gov/details/PIA24573",
+   "download_url": "https://images-assets.nasa.gov/image/PIA24573/PIA24573~large.jpg",
+   "licence": "Public domain (NASA media, not copyrighted in the US)",
+   "licence_url": "https://www.nasa.gov/nasa-brand-center/images-and-media/",
+   "author": "NASA/JPL-Caltech",
+   "attribution": "Deep Space Atomic Clock Hardware — NASA/JPL-Caltech, NASA, public domain. https://images.nasa.gov/details/PIA24573",
+   "downloaded": "2026-10-27"
+  }
+ },
+ {
+  "scene": "s01",
+  "start": 56.734,
+  "text": "Your phone acts as a silent receiver, quietly",
+  "sentences": [
+   "s01.11"
+  ],
+  "id": "v013",
+  "end": 60.0,
+  "seconds": 3.27,
+  "scene_start": false,
+  "kind": "photo",
+  "photo_subject": "a handheld GPS receiver",
+  "photo_queries": [
+   "gps receiver",
+   "handheld gps"
+  ],
+  "card": {
+   "type": "title",
+   "title": "Passive Reception",
+   "subtitle": "Phone Only Receives Signals"
+  },
+  "photo": {
+   "path": "out/run/photos/v013.jpg",
+   "file": "v013.jpg",
+   "kind": "photo",
+   "source": "wikimedia_commons",
+   "title": "Magellan Trailblazer XL GPS Handheld Receiver",
+   "source_page": "https://commons.wikimedia.org/wiki/File:Magellan_Trailblazer_XL_GPS_Handheld_Receiver.jpg",
+   "download_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/58/Magellan_Trailblazer_XL_GPS_Handheld_Receiver.jpg/1920px-Magellan_Trailblazer_XL_GPS_Handheld_Receiver.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "licence": "CC BY-SA 4.0",
+   "licence_url": "https://creativecommons.org/licenses/by-sa/4.0",
+   "author": "Sanjay Acharya",
+   "attribution": "\"Magellan Trailblazer XL GPS Handheld Receiver\" by Sanjay Acharya, CC BY-SA 4.0, via Wikimedia Commons. https://commons.wikimedia.org/wiki/File:Magellan_Trailblazer_XL_GPS_Handheld_Receiver.jpg",
+   "downloaded": "2026-10-27"
+  }
+ },
+ {
+  "scene": "s01",
+  "start": 60.0,
+  "text": "catching these incoming radio transmissions from the sky.",
+  "sentences": [
+   "s01.11"
+  ],
+  "id": "v014",
+  "end": 64.739,
+  "seconds": 4.74,
+  "scene_start": false,
+  "kind": "photo",
+  "photo_subject": "a satellite dish pointing up at the sky",
+  "photo_queries": [
+   "satellite dish",
+   "radio antenna"
+  ],
+  "card": {
+   "type": "title",
+   "title": "Signal Acquisition",
+   "subtitle": "Catching Transmissions from Space"
+  },
+  "photo": {
+   "path": "out/run/photos/v014.jpg",
+   "file": "v014.jpg",
+   "kind": "photo",
+   "source": "wikimedia_commons",
+   "title": "Satellite dish in Austria",
+   "source_page": "https://commons.wikimedia.org/wiki/File:Satellite_dish_in_Austria.JPG",
+   "download_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/5f/Satellite_dish_in_Austria.JPG/1920px-Satellite_dish_in_Austria.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "licence": "CC BY 3.0 de",
+   "licence_url": "https://creativecommons.org/licenses/by/3.0/de/deed.en",
+   "author": "High Contrast",
+   "attribution": "\"Satellite dish in Austria\" by High Contrast, CC BY 3.0 de, via Wikimedia Commons. https://commons.wikimedia.org/wiki/File:Satellite_dish_in_Austria.JPG",
+   "downloaded": "2026-10-27"
+  }
+ },
+ {
+  "scene": "s02",
+  "start": 64.739,
+  "text": "To figure out your exact location, your device",
+  "sentences": [
+   "s02.01"
+  ],
+  "id": "v015",
+  "end": 68.30380000000001,
+  "seconds": 3.56,
+  "scene_start": true,
+  "kind": "card",
+  "card": {
+   "type": "title",
+   "title": "Turning Time Into Space",
+   "subtitle": "Measuring Radio Travel Times"
+  }
+ },
+ {
+  "scene": "s02",
+  "start": 68.30380000000001,
+  "text": "converts time measurements directly into distance measurements.",
+  "sentences": [
+   "s02.01"
+  ],
+  "id": "v016",
+  "end": 71.866,
+  "seconds": 3.56,
+  "scene_start": false,
+  "kind": "card",
+  "card": {
+   "type": "flow",
+   "title": "Distance Calculation Principle",
+   "steps": [
+    "Measure Radio Time",
+    "Multiply by Signal Speed",
+    "Calculate Range Distance"
+   ]
+  }
+ },
+ {
+  "scene": "s02",
+  "start": 71.866,
+  "text": "GPS satellites circle the Earth in medium orbit",
+  "sentences": [
+   "s02.02"
+  ],
+  "id": "v017",
+  "end": 76.08626666666666,
+  "seconds": 4.22,
+  "scene_start": false,
+  "kind": "photo",
+  "photo_subject": "a satellite orbiting planet Earth",
+  "photo_queries": [
+   "earth satellite",
+   "satellite orbit"
+  ],
+  "card": {
+   "type": "title",
+   "title": "Medium Earth Orbit",
+   "subtitle": "High Altitude Satellite Constellation"
+  },
+  "photo": {
+   "path": "out/run/photos/v017.jpg",
+   "file": "v017.jpg",
+   "kind": "photo",
+   "source": "nasa_image_library",
+   "title": "Artist concept of satellite in orbit above the earth",
+   "source_page": "https://images.nasa.gov/details/S81-38291",
+   "download_url": "https://images-assets.nasa.gov/image/S81-38291/S81-38291~large.jpg",
+   "licence": "Public domain (NASA media, not copyrighted in the US)",
+   "licence_url": "https://www.nasa.gov/nasa-brand-center/images-and-media/",
+   "author": "NASA (JSC)",
+   "attribution": "Artist concept of satellite in orbit above the earth — NASA (JSC), NASA, public domain. https://images.nasa.gov/details/S81-38291",
+   "downloaded": "2026-10-27"
+  }
+ },
+ {
+  "scene": "s02",
+  "start": 76.08626666666666,
+  "text": "at an altitude of approximately 20,200 kilometres.",
+  "sentences": [
+   "s02.02"
+  ],
+  "id": "v018",
+  "end": 80.224,
+  "seconds": 4.14,
+  "scene_start": false,
+  "kind": "card",
+  "card": {
+   "type": "stat",
+   "title": "GPS Orbital Altitude",
+   "value": "20,200 km",
+   "label": "Height Above Earth"
+  }
+ },
+ {
+  "scene": "s02",
+  "start": 80.224,
+  "text": "Radio signals broadcast from these satellites travel through space at the constant speed of light.",
+  "sentences": [
+   "s02.03"
+  ],
+  "id": "v019",
+  "end": 86.781,
+  "seconds": 6.56,
+  "scene_start": false,
+  "kind": "photo",
+  "photo_subject": "radio wave transmission illustration",
+  "photo_queries": [
+   "radio waves",
+   "signal transmission"
+  ],
+  "card": {
+   "type": "title",
+   "title": "Signal Speed",
+   "subtitle": ""
+  },
+  "photo": {
+   "path": "out/run/photos/v019.jpg",
+   "file": "v019.jpg",
+   "kind": "photo",
+   "source": "wikimedia_commons",
+   "title": "Radio Signal Reflection & Refraction on a Simple Ionosphere Model (SVS5240 - polar propagation basic sample 1920x1080)",
+   "source_page": "https://commons.wikimedia.org/wiki/File:Radio_Signal_Reflection_%26_Refraction_on_a_Simple_Ionosphere_Model_(SVS5240_-_polar_propagation_basic_sample_1920x1080).png",
+   "download_url": "https://upload.wikimedia.org/wikipedia/commons/9/91/Radio_Signal_Reflection_%26_Refraction_on_a_Simple_Ionosphere_Model_%28SVS5240_-_polar_propagation_basic_sample_1920x1080%29.png?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+   "licence": "Public domain",
+   "licence_url": "",
+   "author": "NASA's Scientific Visualization Studio - null",
+   "attribution": "\"Radio Signal Reflection & Refraction on a Simple Ionosphere Model (SVS5240 - polar propagation basic sample 1920x1080)\" by NASA's Scientific Visualization Studio - null, Public domain, via Wikimedia Commons. https://commons.wikimedia.org/wiki/File:Radio_Signal_Reflection_%26_Refraction_on_a_Simple_Ionosphere_Model_(SVS5240_-_polar_propagation_basic_sample_1920x1080).png",
+   "downloaded": "2026-10-27"
+  }
+ },
+ {
+  "scene": "s02",
+  "start": 86.781,
+  "text": "Crucially, the speed of radio waves is constant and completely independent of the satellite's speed.",
+  "sentences": [
+   "s02.04"
+  ],
+  "id": "v020",
+  "end": 93.462,
+  "seconds": 6.68,
+  "scene_start": false,
+  "kind": "photo",
+  "photo_subject": "a large radio telescope dish",
+  "photo_queries": [
+   "radio telescope",
+   "radio dish"
+  ],
+  "card": {
+   "type": "title",
+   "title": "Constant Speed",
+   "subtitle": "Radio Wave Velocity Is Fixed"
+  },
+  "photo": {
+   "path": "out/run/photos/v020.jpg",
+   "file": "v020.jpg",
+   "kind": "photo",
+   "source": "wikimedia_commons",
+   "title": "CSIRO ScienceImage 4350 CSIROs Parkes Radio Telescope with moon in the background",
+   "source_page": "https://commons.wikimedia.org/wiki/File:CSIRO_ScienceImage_4350_CSIROs_Parkes_Radio_Telescope_with_moon_in_the_background.jpg",
+   "download_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/00/CSIRO_ScienceImage_4350_CSIROs_Parkes_Radio_Telescope_with_moon_in_the_background.jpg/1920px-CSIRO_ScienceImage_4350_CSIROs_Parkes_Radio_Telescope_with_moon_in_the_background.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "licence": "CC BY 3.0",
+   "licence_url": "https://creativecommons.org/licenses/by/3.0",
+   "author": "division, CSIRO",
+   "attribution": "\"CSIRO ScienceImage 4350 CSIROs Parkes Radio Telescope with moon in the background\" by division, CSIRO, CC BY 3.0, via Wikimedia Commons. https://commons.wikimedia.org/wiki/File:CSIRO_ScienceImage_4350_CSIROs_Parkes_Radio_Telescope_with_moon_in_the_background.jpg",
+   "downloaded": "2026-10-27"
+  }
+ },
+ {
+  "scene": "s02",
+  "start": 93.462,
+  "text": "Each satellite continually broadcasts a pseudorandom sequence of",
+  "sentences": [
+   "s02.05"
+  ],
+  "id": "v021",
+  "end": 97.12813333333334,
+  "seconds": 3.67,
+  "scene_start": false,
+  "kind": "photo",
+  "photo_subject": "a digital oscilloscope screen showing wave signals",
+  "photo_queries": [
+   "oscilloscope",
+   "signal display"
+  ],
+  "card": {
+   "type": "title",
+   "title": "Pseudorandom Code",
+   "subtitle": "Continuous Binary Transmission"
+  },
+  "photo": {
+   "path": "out/run/photos/v021.jpg",
+   "file": "v021.jpg",
+   "kind": "photo",
+   "source": "wikimedia_commons",
+   "title": "Triangular wave and square wave on oscilloscope screen",
+   "source_page": "https://commons.wikimedia.org/wiki/File:Triangular_wave_and_square_wave_on_oscilloscope_screen.jpg",
+   "download_url": "https://upload.wikimedia.org/wikipedia/commons/4/47/Triangular_wave_and_square_wave_on_oscilloscope_screen.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+   "licence": "CC0",
+   "licence_url": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
+   "author": "User:Xato",
+   "attribution": "\"Triangular wave and square wave on oscilloscope screen\" by User:Xato, CC0, via Wikimedia Commons. https://commons.wikimedia.org/wiki/File:Triangular_wave_and_square_wave_on_oscilloscope_screen.jpg",
+   "downloaded": "2026-10-27"
+  }
+ },
+ {
+  "scene": "s02",
+  "start": 97.12813333333334,
+  "text": "ones and zeros known to the receiver.",
+  "sentences": [
+   "s02.05"
+  ],
+  "id": "v022",
+  "end": 100.82,
+  "seconds": 3.69,
+  "scene_start": false,
+  "kind": "photo",
+  "photo_subject": "binary code software screen",
+  "photo_queries": [
+   "binary code",
+   "digital signal"
+  ],
+  "card": {
+   "type": "title",
+   "title": "Binary Sequences",
+   "subtitle": "Known Sequence Matched by Receiver"
+  },
+  "photo": {
+   "path": "out/run/photos/v022.jpg",
+   "file": "v022.jpg",
+   "kind": "photo",
+   "source": "wikimedia_commons",
+   "title": "Binary Code",
+   "source_page": "https://commons.wikimedia.org/wiki/File:Binary_Code.jpg",
+   "download_url": "https://upload.wikimedia.org/wikipedia/commons/c/cf/Binary_Code.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+   "licence": "CC BY-SA 3.0",
+   "licence_url": "https://creativecommons.org/licenses/by-sa/3.0",
+   "author": "Cncplayer",
+   "attribution": "\"Binary Code\" by Cncplayer, CC BY-SA 3.0, via Wikimedia Commons. https://commons.wikimedia.org/wiki/File:Binary_Code.jpg",
+   "downloaded": "2026-10-27"
+  }
+ },
+ {
+  "scene": "s02",
+  "start": 100.82,
+  "text": "The transmission message includes a timestamp recording the exact time the signal left the satellite.",
+  "sentences": [
+   "s02.06"
+  ],
+  "id": "v023",
+  "end": 107.526,
+  "seconds": 6.71,
+  "scene_start": false,
+  "kind": "photo",
+  "photo_subject": "a precision digital clock timer",
+  "photo_queries": [
+   "digital clock",
+   "precision timer"
+  ],
+  "card": {
+   "type": "title",
+   "title": "Transmission Timestamp",
+   "subtitle": "Exact Time Signal Left Satellite"
+  },
+  "photo": {
+   "path": "out/run/photos/v023.jpg",
+   "file": "v023.jpg",
+   "kind": "photo",
+   "source": "wikimedia_commons",
+   "title": "Digital Clock Display reading 20250709 131211 with Rolling Shutter Effect",
+   "source_page": "https://commons.wikimedia.org/wiki/File:Digital_Clock_Display_reading_20250709_131211_with_Rolling_Shutter_Effect.jpg",
+   "download_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/8a/Digital_Clock_Display_reading_20250709_131211_with_Rolling_Shutter_Effect.jpg/1920px-Digital_Clock_Display_reading_20250709_131211_with_Rolling_Shutter_Effect.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "licence": "CC BY-SA 4.0",
+   "licence_url": "https://creativecommons.org/licenses/by-sa/4.0",
+   "author": "TheresNothingOutThere",
+   "attribution": "\"Digital Clock Display reading 20250709 131211 with Rolling Shutter Effect\" by TheresNothingOutThere, CC BY-SA 4.0, via Wikimedia Commons. https://commons.wikimedia.org/wiki/File:Digital_Clock_Display_reading_20250709_131211_with_Rolling_Shutter_Effect.jpg",
+   "downloaded": "2026-10-27"
+  }
+ },
+ {
+  "scene": "s02",
+  "start": 107.526,
+  "text": "When your device receives the signal, it records the arrival time using its own internal clock.",
+  "sentences": [
+   "s02.07"
+  ],
+  "id": "v024",
+  "end": 114.206,
+  "seconds": 6.68,
+  "scene_start": false,
+  "kind": "photo",
+  "photo_subject": "a computer microchip processor",
+  "photo_queries": [
+   "microchip",
+   "clock crystal"
+  ],
+  "card": {
+   "type": "title",
+   "title": "Arrival Timestamp",
+   "subtitle": "Recorded by Internal Device Clock"
+  },
+  "photo": {
+   "path": "out/run/photos/v024.jpg",
+   "file": "v024.jpg",
+   "kind": "photo",
+   "source": "wikimedia_commons",
+   "title": "Integrated circuit on microchip",
+   "source_page": "https://commons.wikimedia.org/wiki/File:Integrated_circuit_on_microchip.jpg",
+   "download_url": "https://upload.wikimedia.org/wikipedia/commons/1/1b/Integrated_circuit_on_microchip.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+   "licence": "Public domain",
+   "licence_url": "",
+   "author": "unknown",
+   "attribution": "\"Integrated circuit on microchip\" by unknown, Public domain, via Wikimedia Commons. https://commons.wikimedia.org/wiki/File:Integrated_circuit_on_microchip.jpg",
+   "downloaded": "2026-10-27"
+  }
+ },
+ {
+  "scene": "s02",
+  "start": 114.206,
+  "text": "By subtracting the transmission time from the arrival time, the receiver calculates the signal delay.",
+  "sentences": [
+   "s02.08"
+  ],
+  "id": "v025",
+  "end": 120.701,
+  "seconds": 6.49,
+  "scene_start": false,
+  "kind": "card",
+  "card": {
+   "type": "flow",
+   "title": "Calculating Signal Delay",
+   "steps": [
+    "Arrival Time",
+    "Subtract Transmission Time",
+    "Signal Transit Delay"
+   ]
+  }
+ },
+ {
+  "scene": "s02",
+  "start": 120.701,
+  "text": "Multiplying this time value by the speed of light yields a pseudorange rather than an exact distance.",
+  "sentences": [
+   "s02.09"
+  ],
+  "id": "v026",
+  "end": 127.503,
+  "seconds": 6.8,
+  "scene_start": false,
+  "kind": "photo",
+  "photo_subject": "mathematical formulas on a blackboard",
+  "photo_queries": [
+   "math formula",
+   "physics calculation"
+  ],
+  "card": {
+   "type": "title",
+   "title": "Pseudorange Formula",
+   "subtitle": "Delay x Speed of Light = Distance"
+  }
+ },
+ {
+  "scene": "s02",
+  "start": 127.503,
+  "text": "Because light moves so fast, a tiny timing offset of",
+  "sentences": [
+   "s02.11"
+  ],
+  "id": "v027",
+  "end": 131.4266842105263,
+  "seconds": 3.92,
+  "scene_start": false,
+  "kind": "photo",
+  "photo_subject": "a high precision electronic timer",
+  "photo_queries": [
+   "nanosecond timer",
+   "frequency counter"
+  ],
+  "card": {
+   "type": "title",
+   "title": "High Speed Signals",
+   "subtitle": "Extreme Precision Needed for Light"
+  },
+  "photo": {
+   "path": "out/run/photos/v027.jpg",
+   "file": "v027.jpg",
+   "kind": "photo",
+   "source": "wikimedia_commons",
+   "title": "Frequency counter",
+   "source_page": "https://commons.wikimedia.org/wiki/File:Frequency_counter.JPG",
+   "download_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/a4/Frequency_counter.JPG/1920px-Frequency_counter.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "licence": "CC BY-SA 3.0",
+   "licence_url": "http://creativecommons.org/licenses/by-sa/3.0/",
+   "author": "User:Coaster J",
+   "attribution": "\"Frequency counter\" by User:Coaster J, CC BY-SA 3.0, via Wikimedia Commons. https://commons.wikimedia.org/wiki/File:Frequency_counter.JPG",
+   "downloaded": "2026-10-27"
+  }
+ },
+ {
+  "scene": "s02",
+  "start": 131.4266842105263,
+  "text": "just 10 nanoseconds causes a 3 metre distance error.",
+  "sentences": [
+   "s02.11"
+  ],
+  "id": "v028",
+  "end": 136.431,
+  "seconds": 5.0,
+  "scene_start": false,
+  "kind": "card",
+  "card": {
+   "type": "stat",
+   "title": "Timing Sensitivity",
+   "value": "3 metres",
+   "label": "Distance Error per 10 Nanoseconds Delay"
+  }
+ },
+ {
+  "scene": "s03",
+  "start": 136.431,
+  "text": "A single distance measurement places your device somewhere",
+  "sentences": [
+   "s03.02"
+  ],
+  "id": "v029",
+  "end": 139.59900000000002,
+  "seconds": 3.17,
+  "scene_start": true,
+  "kind": "card",
+  "card": {
+   "type": "title",
+   "title": "The Sphere Intersection",
+   "subtitle": "Using Trilateration to Find Position"
+  }
+ },
+ {
+  "scene": "s03",
+  "start": 139.59900000000002,
+  "text": "on a giant spherical shell centred on that satellite.",
+  "sentences": [
+   "s03.02"
+  ],
+  "id": "v030",
+  "end": 143.614,
+  "seconds": 4.01,
+  "scene_start": false,
+  "kind": "photo",
+  "photo_subject": "a 3D wireframe sphere model",
+  "photo_queries": [
+   "3d sphere",
+   "wireframe sphere"
+  ],
+  "card": {
+   "type": "title",
+   "title": "Single Satellite Range",
+   "subtitle": "Position Lies on a Spherical Shell"
+  },
+  "photo_rejected": {
+   "path": "out/run/photos/v030.jpg",
+   "file": "v030.jpg",
+   "kind": "photo",
+   "source": "wikimedia_commons",
+   "title": "Parametric surface illustration (sphere)",
+   "source_page": "https://commons.wikimedia.org/wiki/File:Parametric_surface_illustration_(sphere).png",
+   "download_url": "https://upload.wikimedia.org/wikipedia/commons/2/24/Parametric_surface_illustration_%28sphere%29.png?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+   "licence": "CC BY-SA 4.0",
+   "licence_url": "https://creativecommons.org/licenses/by-sa/4.0",
+   "author": "Rob su",
+   "attribution": "\"Parametric surface illustration (sphere)\" by Rob su, CC BY-SA 4.0, via Wikimedia Commons. https://commons.wikimedia.org/wiki/File:Parametric_surface_illustration_(sphere).png",
+   "downloaded": "2026-10-27"
+  }
+ },
+ {
+  "scene": "s03",
+  "start": 143.614,
+  "text": "To narrow down your location, your phone needs signals from additional satellites orbiting above.",
+  "sentences": [
+   "s03.03"
+  ],
+  "id": "v031",
+  "end": 149.874,
+  "seconds": 6.26,
+  "scene_start": false,
+  "kind": "photo",
+  "photo_subject": "a constellation of satellites around Earth",
+  "photo_queries": [
+   "satellite constellation",
+   "orbiting satellites"
+  ],
+  "card": {
+   "type": "title",
+   "title": "Multiple Signals",
+   "subtitle": "Combining Satellites for Precise Location"
+  },
+  "photo": {
+   "path": "out/run/photos/v031.jpg",
+   "file": "v031.jpg",
+   "kind": "photo",
+   "source": "wikimedia_commons",
+   "title": "Geostationary Satellite Constellation",
+   "source_page": "https://commons.wikimedia.org/wiki/File:Geostationary_Satellite_Constellation.png",
+   "download_url": "https://upload.wikimedia.org/wikipedia/commons/c/c4/Geostationary_Satellite_Constellation.png?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+   "licence": "CC0",
+   "licence_url": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
+   "author": "Markus R Schmidt",
+   "attribution": "\"Geostationary Satellite Constellation\" by Markus R Schmidt, CC0, via Wikimedia Commons. https://commons.wikimedia.org/wiki/File:Geostationary_Satellite_Constellation.png",
+   "downloaded": "2026-10-27"
+  }
+ },
+ {
+  "scene": "s03",
+  "start": 149.874,
+  "text": "When you receive a distance measurement from a second satellite, a second sphere is created.",
+  "sentences": [
+   "s03.05"
+  ],
+  "id": "v032",
+  "end": 155.253,
+  "seconds": 5.38,
+  "scene_start": false,
+  "kind": "photo",
+  "photo_subject": "diagram of two intersecting spheres",
+  "photo_queries": [
+   "intersecting spheres",
+   "geometry spheres"
+  ],
+  "card": {
+   "type": "title",
+   "title": "Two Satellites",
+   "subtitle": "Intersection Forms a Circular Ring"
+  },
+  "photo_rejected": {
+   "path": "out/run/photos/v032.jpg",
+   "file": "v032.jpg",
+   "kind": "photo",
+   "source": "wikimedia_commons",
+   "title": "EuDi; medusa spheres; cell 09",
+   "source_page": "https://commons.wikimedia.org/wiki/File:EuDi;_medusa_spheres;_cell_09.png",
+   "download_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/a4/EuDi%3B_medusa_spheres%3B_cell_09.png/1920px-EuDi%3B_medusa_spheres%3B_cell_09.png?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "licence": "CC BY 4.0",
+   "licence_url": "https://creativecommons.org/licenses/by/4.0",
+   "author": "WatchduckYou can name the author as \"T. Piesk\", \"Tilman Piesk\" or \"Watchduck\".",
+   "attribution": "\"EuDi; medusa spheres; cell 09\" by WatchduckYou can name the author as \"T. Piesk\", \"Tilman Piesk\" or \"Watchduck\"., CC BY 4.0, via Wikimedia Commons. https://commons.wikimedia.org/wiki/File:EuDi;_medusa_spheres;_cell_09.png",
+   "downloaded": "2026-10-27"
+  }
+ },
+ {
+  "scene": "s03",
+  "start": 155.253,
+  "text": "Taking several distance measurements allows a receiver to find the point where the spherical shells meet.",
+  "sentences": [
+   "s03.06"
+  ],
+  "id": "v033",
+  "end": 161.643,
+  "seconds": 6.39,
+  "scene_start": false,
+  "kind": "photo",
+  "photo_subject": "a 3D geometric intersection model",
+  "photo_queries": [
+   "geometric intersection",
+   "3d geometry"
+  ],
+  "card": {
+   "type": "title",
+   "title": "Sphere Intersection",
+   "subtitle": "Narrowing Down Location Points"
+  }
+ },
+ {
+  "scene": "s03",
+  "start": 161.643,
+  "text": "Your receiver generates a position fix by finding where multiple spherical shells meet.",
+  "sentences": [
+   "s03.07"
+  ],
+  "id": "v034",
+  "end": 167.577,
+  "seconds": 5.93,
+  "scene_start": false,
+  "kind": "photo",
+  "photo_subject": "a GPS receiver showing coordinates fix",
+  "photo_queries": [
+   "gps coordinates",
+   "position fix"
+  ],
+  "card": {
+   "type": "title",
+   "title": "Position Fix",
+   "subtitle": "Where Spherical Shells Intersect"
+  },
+  "photo": {
+   "path": "out/run/photos/v034.jpg",
+   "file": "v034.jpg",
+   "kind": "photo",
+   "source": "wikimedia_commons",
+   "title": "GPS Coordinates (15622025729)",
+   "source_page": "https://commons.wikimedia.org/wiki/File:GPS_Coordinates_(15622025729).jpg",
+   "download_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/9f/GPS_Coordinates_%2815622025729%29.jpg/1920px-GPS_Coordinates_%2815622025729%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "licence": "CC BY 2.0",
+   "licence_url": "https://creativecommons.org/licenses/by/2.0",
+   "author": "Tony Webster from Portland, Oregon, United States",
+   "attribution": "\"GPS Coordinates (15622025729)\" by Tony Webster from Portland, Oregon, United States, CC BY 2.0, via Wikimedia Commons. https://commons.wikimedia.org/wiki/File:GPS_Coordinates_(15622025729).jpg",
+   "downloaded": "2026-10-27"
+  }
+ },
+ {
+  "scene": "s03",
+  "start": 167.577,
+  "text": "Adding a third satellite creates a third spherical surface around that third broadcasting source.",
+  "sentences": [
+   "s03.08"
+  ],
+  "id": "v035",
+  "end": 174.03,
+  "seconds": 6.45,
+  "scene_start": false,
+  "kind": "photo",
+  "photo_subject": "diagram of three overlapping spheres",
+  "photo_queries": [
+   "three spheres",
+   "venn spheres"
+  ],
+  "card": {
+   "type": "title",
+   "title": "Third Satellite",
+   "subtitle": "Reduces Position to Two Distinct Points"
+  }
+ },
+ {
+  "scene": "s03",
+  "start": 174.03,
+  "text": "Combining multiple distance measurements allows the receiver to determine the point where the shells meet.",
+  "sentences": [
+   "s03.09"
+  ],
+  "id": "v036",
+  "end": 180.423,
+  "seconds": 6.39,
+  "scene_start": false,
+  "kind": "card",
+  "card": {
+   "type": "title",
+   "title": "Geometric Progression",
+   "subtitle": ""
+  }
+ },
+ {
+  "scene": "s03",
+  "start": 180.423,
+  "text": "In special cases where elevation is already known, three satellites can determine a position.",
+  "sentences": [
+   "s03.11"
+  ],
+  "id": "v037",
+  "end": 186.653,
+  "seconds": 6.23,
+  "scene_start": false,
+  "kind": "photo",
+  "photo_subject": "a topographic elevation map",
+  "photo_queries": [
+   "topographic map",
+   "contour map"
+  ],
+  "card": {
+   "type": "title",
+   "title": "Known Elevation",
+   "subtitle": ""
+  },
+  "photo": {
+   "path": "out/run/photos/v037.jpg",
+   "file": "v037.jpg",
+   "kind": "photo",
+   "source": "wikimedia_commons",
+   "title": "Scotland topographic map-fr",
+   "source_page": "https://commons.wikimedia.org/wiki/File:Scotland_topographic_map-fr.jpg",
+   "download_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/58/Scotland_topographic_map-fr.jpg/1920px-Scotland_topographic_map-fr.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "licence": "CC BY-SA 4.0",
+   "licence_url": "https://creativecommons.org/licenses/by-sa/4.0",
+   "author": "Eric Gaba (Sting – fr:Sting)",
+   "attribution": "\"Scotland topographic map-fr\" by Eric Gaba (Sting – fr:Sting), CC BY-SA 4.0, via Wikimedia Commons. https://commons.wikimedia.org/wiki/File:Scotland_topographic_map-fr.jpg",
+   "downloaded": "2026-10-27"
+  }
+ },
+ {
+  "scene": "s03",
+  "start": 186.653,
+  "text": "This geometric technique of calculating positions",
+  "sentences": [
+   "s03.12"
+  ],
+  "id": "v038",
+  "end": 190.01253846153844,
+  "seconds": 3.36,
+  "scene_start": false,
+  "kind": "photo",
+  "photo_subject": "a surveyor using a transit telescope",
+  "photo_queries": [
+   "land surveyor",
+   "surveying telescope"
+  ],
+  "card": {
+   "type": "title",
+   "title": "Position Calculation",
+   "subtitle": "Geometric Method Using Distances"
+  },
+  "photo_rejected": {
+   "path": "out/run/photos/v038.jpg",
+   "file": "v038.jpg",
+   "kind": "photo",
+   "source": "nasa_image_library",
+   "title": "All That Remains of Exploded Star",
+   "source_page": "https://images.nasa.gov/details/PIA14871",
+   "download_url": "https://images-assets.nasa.gov/image/PIA14871/PIA14871~large.jpg",
+   "licence": "Public domain (NASA media, not copyrighted in the US)",
+   "licence_url": "https://www.nasa.gov/nasa-brand-center/images-and-media/",
+   "author": "NASA/JPL-Caltech/UCLA",
+   "attribution": "All That Remains of Exploded Star — NASA/JPL-Caltech/UCLA, NASA, public domain. https://images.nasa.gov/details/PIA14871",
+   "downloaded": "2026-10-27"
+  }
+ },
+ {
+  "scene": "s03",
+  "start": 190.01253846153844,
+  "text": "using measured distances is known as trilateration.",
+  "sentences": [
+   "s03.12"
+  ],
+  "id": "v039",
+  "end": 195.384,
+  "seconds": 5.37,
+  "scene_start": false,
+  "kind": "card",
+  "card": {
+   "type": "bullets",
+   "title": "Trilateration Principles",
+   "items": [
+    "Measures distances to known satellites",
+    "Creates overlapping spherical surfaces",
+    "Calculates exact point of intersection"
+   ]
+  }
+ },
+ {
+  "scene": "s04",
+  "start": 195.384,
+  "text": "Trilateration with three spheres assumes that your receiver",
+  "sentences": [
+   "s04.01"
+  ],
+  "id": "v040",
+  "end": 199.00373333333332,
+  "seconds": 3.62,
+  "scene_start": true,
+  "kind": "card",
+  "card": {
+   "type": "title",
+   "title": "The Fourth Satellite Trick",
+   "subtitle": "Correcting Cheap Quartz Clock Errors"
+  }
+ },
+ {
+  "scene": "s04",
+  "start": 199.00373333333332,
+  "text": "clock is perfectly synchronized with the satellites.",
+  "sentences": [
+   "s04.01"
+  ],
+  "id": "v041",
+  "end": 202.617,
+  "seconds": 3.61,
+  "scene_start": false,
+  "kind": "photo",
+  "photo_subject": "a quartz clock crystal oscillator",
+  "photo_queries": [
+   "quartz crystal",
+   "clock crystal"
+  ],
+  "card": {
+   "type": "title",
+   "title": "Synchronization Assumption",
+   "subtitle": "Perfect Clock Sync Required"
+  }
+ },
+ {
+  "scene": "s04",
+  "start": 202.617,
+  "text": "GPS satellites carry extremely stable atomic clocks that",
+  "sentences": [
+   "s04.02"
+  ],
+  "id": "v042",
+  "end": 206.7145,
+  "seconds": 4.1,
+  "scene_start": false,
+  "kind": "photo",
+  "photo_subject": "a lab atomic clock apparatus",
+  "photo_queries": [
+   "atomic clock",
+   "cesium clock"
+  ],
+  "card": {
+   "type": "title",
+   "title": "Space Clocks",
+   "subtitle": "Ultra-Stable Atomic Clocks in Orbit"
+  },
+  "photo": {
+   "path": "out/run/photos/v042.jpg",
+   "file": "v042.jpg",
+   "kind": "photo",
+   "source": "wikimedia_commons",
+   "title": "NIST-F2 cesium fountain atomic clock",
+   "source_page": "https://commons.wikimedia.org/wiki/File:NIST-F2_cesium_fountain_atomic_clock.jpg",
+   "download_url": "https://upload.wikimedia.org/wikipedia/commons/4/43/NIST-F2_cesium_fountain_atomic_clock.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+   "licence": "Public domain",
+   "licence_url": "",
+   "author": "National Institute of Standards and Technology - Physics Laboratory: Time and Frequency Division",
+   "attribution": "\"NIST-F2 cesium fountain atomic clock\" by National Institute of Standards and Technology - Physics Laboratory: Time and Frequency Division, Public domain, via Wikimedia Commons. https://commons.wikimedia.org/wiki/File:NIST-F2_cesium_fountain_atomic_clock.jpg",
+   "downloaded": "2026-10-27"
+  }
+ },
+ {
+  "scene": "s04",
+  "start": 206.7145,
+  "text": "are monitored and synchronized regularly by ground stations.",
+  "sentences": [
+   "s04.02"
+  ],
+  "id": "v043",
+  "end": 211.275,
+  "seconds": 4.56,
+  "scene_start": false,
+  "kind": "photo",
+  "photo_subject": "a satellite ground tracking antenna dish",
+  "photo_queries": [
+   "ground station antenna",
+   "satellite ground station"
+  ],
+  "card": {
+   "type": "title",
+   "title": "Ground Control",
+   "subtitle": "Regular Synchronization Updates"
+  },
+  "photo": {
+   "path": "out/run/photos/v043.jpg",
+   "file": "v043.jpg",
+   "kind": "photo",
+   "source": "nasa_image_library",
+   "title": "The Deep Space Network's New DSS-53 at Night",
+   "source_page": "https://images.nasa.gov/details/PIA25137",
+   "download_url": "https://images-assets.nasa.gov/image/PIA25137/PIA25137~large.jpg",
+   "licence": "Public domain (NASA media, not copyrighted in the US)",
+   "licence_url": "https://www.nasa.gov/nasa-brand-center/images-and-media/",
+   "author": "NASA/JPL-Caltech",
+   "attribution": "The Deep Space Network's New DSS-53 at Night — NASA/JPL-Caltech, NASA, public domain. https://images.nasa.gov/details/PIA25137",
+   "downloaded": "2026-10-27"
+  }
+ },
+ {
+  "scene": "s04",
+  "start": 211.275,
+  "text": "Because your phone clock is inaccurate, measured",
+  "sentences": [
+   "s04.04"
+  ],
+  "id": "v044",
+  "end": 214.6885,
+  "seconds": 3.41,
+  "scene_start": false,
+  "kind": "photo",
+  "photo_subject": "a smartphone circuit motherboard",
+  "photo_queries": [
+   "smartphone circuit",
+   "phone motherboard"
+  ],
+  "card": {
+   "type": "title",
+   "title": "Receiver Clock Offsets",
+   "subtitle": "Inexpensive Consumer Quartz Clocks"
+  },
+  "photo": {
+   "path": "out/run/photos/v044.jpg",
+   "file": "v044.jpg",
+   "kind": "photo",
+   "source": "wikimedia_commons",
+   "title": "LG VN251S Motherboard Back",
+   "source_page": "https://commons.wikimedia.org/wiki/File:LG_VN251S_Motherboard_Back.jpg",
+   "download_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/3a/LG_VN251S_Motherboard_Back.jpg/1920px-LG_VN251S_Motherboard_Back.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "licence": "CC BY 4.0",
+   "licence_url": "https://creativecommons.org/licenses/by/4.0",
+   "author": "Mbrickn",
+   "attribution": "\"LG VN251S Motherboard Back\" by Mbrickn, CC BY 4.0, via Wikimedia Commons. https://commons.wikimedia.org/wiki/File:LG_VN251S_Motherboard_Back.jpg",
+   "downloaded": "2026-10-27"
+  }
+ },
+ {
+  "scene": "s04",
+  "start": 214.6885,
+  "text": "travel times produce biased distances called pseudoranges.",
+  "sentences": [
+   "s04.04"
+  ],
+  "id": "v045",
+  "end": 218.541,
+  "seconds": 3.85,
+  "scene_start": false,
+  "kind": "card",
+  "card": {
+   "type": "compare",
+   "title": "Clock Precision Comparison",
+   "left_title": "Satellite Atomic Clock",
+   "left_points": [
+    "Ultra precise timing",
+    "High cost & weight",
+    "Synchronized by ground"
+   ],
+   "right_title": "Phone Quartz Clock",
+   "right_points": [
+    "Slight timing drift",
+    "Low cost & compact",
+    "Corrected mathematically"
+   ]
+  }
+ },
+ {
+  "scene": "s04",
+  "start": 218.541,
+  "text": "To solve this problem without needing an impractical receiver",
+  "sentences": [
+   "s04.06"
+  ],
+  "id": "v046",
+  "end": 222.07299999999998,
+  "seconds": 3.53,
+  "scene_start": false,
+  "kind": "photo",
+  "photo_subject": "a modern smartphone internal chip",
+  "photo_queries": [
+   "mobile processor",
+   "phone chip"
+  ],
+  "card": {
+   "type": "title",
+   "title": "Engineering Challenge",
+   "subtitle": "Avoiding Atomic Clocks in Phones"
+  }
+ },
+ {
+  "scene": "s04",
+  "start": 222.07299999999998,
+  "text": "clock, the system uses signals from a fourth satellite.",
+  "sentences": [
+   "s04.06"
+  ],
+  "id": "v047",
+  "end": 226.061,
+  "seconds": 3.99,
+  "scene_start": false,
+  "kind": "photo",
+  "photo_subject": "four satellites in space formation",
+  "photo_queries": [
+   "satellites in space",
+   "satellite array"
+  ],
+  "card": {
+   "type": "title",
+   "title": "The Fourth Satellite",
+   "subtitle": "Eliminates Receiver Time Bias"
+  }
+ },
+ {
+  "scene": "s04",
+  "start": 226.061,
+  "text": "Your GPS receiver requires signals from at least",
+  "sentences": [
+   "s04.07"
+  ],
+  "id": "v048",
+  "end": 229.7426,
+  "seconds": 3.68,
+  "scene_start": false,
+  "kind": "photo",
+  "photo_subject": "a handheld GPS receiver outdoors",
+  "photo_queries": [
+   "gps unit",
+   "handheld gps"
+  ],
+  "card": {
+   "type": "title",
+   "title": "Signal Requirement",
+   "subtitle": "Minimum Signals for Navigation"
+  },
+  "photo": {
+   "path": "out/run/photos/v048.jpg",
+   "file": "v048.jpg",
+   "kind": "photo",
+   "source": "wikimedia_commons",
+   "title": "Benchmark and GPS unit on canal edge - geograph.org.uk - 5291490",
+   "source_page": "https://commons.wikimedia.org/wiki/File:Benchmark_and_GPS_unit_on_canal_edge_-_geograph.org.uk_-_5291490.jpg",
+   "download_url": "https://upload.wikimedia.org/wikipedia/commons/f/ff/Benchmark_and_GPS_unit_on_canal_edge_-_geograph.org.uk_-_5291490.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+   "licence": "CC BY-SA 2.0",
+   "licence_url": "https://creativecommons.org/licenses/by-sa/2.0",
+   "author": "Roger Templeman",
+   "attribution": "\"Benchmark and GPS unit on canal edge - geograph.org.uk - 5291490\" by Roger Templeman, CC BY-SA 2.0, via Wikimedia Commons. https://commons.wikimedia.org/wiki/File:Benchmark_and_GPS_unit_on_canal_edge_-_geograph.org.uk_-_5291490.jpg",
+   "downloaded": "2026-10-27"
+  }
+ },
+ {
+  "scene": "s04",
+  "start": 229.7426,
+  "text": "four satellites to solve its navigation equations.",
+  "sentences": [
+   "s04.07"
+  ],
+  "id": "v049",
+  "end": 233.431,
+  "seconds": 3.69,
+  "scene_start": false,
+  "kind": "card",
+  "card": {
+   "type": "stat",
+   "title": "Required Signals",
+   "value": "4",
+   "label": "Minimum Satellites Needed for Fix"
+  }
+ },
+ {
+  "scene": "s04",
+  "start": 233.431,
+  "text": "With four satellite signals, your phone",
+  "sentences": [
+   "s04.08"
+  ],
+  "id": "v050",
+  "end": 236.8605,
+  "seconds": 3.43,
+  "scene_start": false,
+  "kind": "photo",
+  "photo_subject": "a phone screen displaying satellite reception",
+  "photo_queries": [
+   "phone gps app",
+   "satellite reception"
+  ],
+  "card": {
+   "type": "title",
+   "title": "Mathematical Solution",
+   "subtitle": "Solving System of Equations"
+  }
+ },
+ {
+  "scene": "s04",
+  "start": 236.8605,
+  "text": "calculates four unknown mathematical quantities simultaneously.",
+  "sentences": [
+   "s04.08"
+  ],
+  "id": "v051",
+  "end": 240.758,
+  "seconds": 3.9,
+  "scene_start": false,
+  "kind": "card",
+  "card": {
+   "type": "stat",
+   "title": "Mathematical Model",
+   "value": "4",
+   "label": "Unknown Quantities Solved Simultaneously"
+  }
+ },
+ {
+  "scene": "s04",
+  "start": 240.758,
+  "text": "These unknowns are three spatial coordinates representing position",
+  "sentences": [
+   "s04.09"
+  ],
+  "id": "v052",
+  "end": 244.247,
+  "seconds": 3.49,
+  "scene_start": false,
+  "kind": "photo",
+  "photo_subject": "a 3D coordinate axis diagram",
+  "photo_queries": [
+   "3d coordinate system",
+   "xyz axis"
+  ],
+  "card": {
+   "type": "title",
+   "title": "Spatial Coordinates",
+   "subtitle": "X, Y, and Z Position Axes"
+  },
+  "photo": {
+   "path": "out/run/photos/v052.jpg",
+   "file": "v052.jpg",
+   "kind": "photo",
+   "source": "wikimedia_commons",
+   "title": "Right-handed coordinate system (z to back)",
+   "source_page": "https://commons.wikimedia.org/wiki/File:Right-handed_coordinate_system_(z_to_back).png",
+   "download_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/c1/Right-handed_coordinate_system_%28z_to_back%29.png/1920px-Right-handed_coordinate_system_%28z_to_back%29.png?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "licence": "CC BY-SA 4.0",
+   "licence_url": "https://creativecommons.org/licenses/by-sa/4.0",
+   "author": "Watchduck",
+   "attribution": "\"Right-handed coordinate system (z to back)\" by Watchduck, CC BY-SA 4.0, via Wikimedia Commons. https://commons.wikimedia.org/wiki/File:Right-handed_coordinate_system_(z_to_back).png",
+   "downloaded": "2026-10-27"
+  }
+ },
+ {
+  "scene": "s04",
+  "start": 244.247,
+  "text": "and the exact deviation of your phone clock.",
+  "sentences": [
+   "s04.09"
+  ],
+  "id": "v053",
+  "end": 248.2,
+  "seconds": 3.95,
+  "scene_start": false,
+  "kind": "photo",
+  "photo_subject": "a digital clock error drift graphic",
+  "photo_queries": [
+   "digital clock drift",
+   "clock offset"
+  ],
+  "card": {
+   "type": "title",
+   "title": "Clock Offset Variable",
+   "subtitle": "Fourth Solved Mathematical Unknown"
+  }
+ },
+ {
+  "scene": "s04",
+  "start": 248.2,
+  "text": "Solving the navigation equations gives receiver position and",
+  "sentences": [
+   "s04.10"
+  ],
+  "id": "v054",
+  "end": 252.259,
+  "seconds": 4.06,
+  "scene_start": false,
+  "kind": "photo",
+  "photo_subject": "a computer code processing matrix",
+  "photo_queries": [
+   "matrix computation",
+   "algorithm code"
+  ],
+  "card": {
+   "type": "title",
+   "title": "Equation Processing",
+   "subtitle": "Computing Position & Time Deviation"
+  }
+ },
+ {
+  "scene": "s04",
+  "start": 252.259,
+  "text": "clock deviation, providing cheap and highly accurate timing.",
+  "sentences": [
+   "s04.10"
+  ],
+  "id": "v055",
+  "end": 256.779,
+  "seconds": 4.52,
+  "scene_start": false,
+  "kind": "photo",
+  "photo_subject": "a quartz timing crystal component",
+  "photo_queries": [
+   "quartz oscillator",
+   "timing crystal"
+  ],
+  "card": {
+   "type": "title",
+   "title": "Accurate Timing",
+   "subtitle": "Atomic Precision with Cheap Hardware"
+  },
+  "photo": {
+   "path": "out/run/photos/v055.jpg",
+   "file": "v055.jpg",
+   "kind": "photo",
+   "source": "wikimedia_commons",
+   "title": "Crystal oscillator 16MHz",
+   "source_page": "https://commons.wikimedia.org/wiki/File:Crystal_oscillator_16MHz.jpg",
+   "download_url": "https://upload.wikimedia.org/wikipedia/commons/3/31/Crystal_oscillator_16MHz.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+   "licence": "CC BY-SA 4.0",
+   "licence_url": "https://creativecommons.org/licenses/by-sa/4.0",
+   "author": "Mister rf",
+   "attribution": "\"Crystal oscillator 16MHz\" by Mister rf, CC BY-SA 4.0, via Wikimedia Commons. https://commons.wikimedia.org/wiki/File:Crystal_oscillator_16MHz.jpg",
+   "downloaded": "2026-10-27"
+  }
+ },
+ {
+  "scene": "s04",
+  "start": 256.779,
+  "text": "This clever mathematical approach keeps consumer receivers",
+  "sentences": [
+   "s04.11"
+  ],
+  "id": "v056",
+  "end": 260.4225,
+  "seconds": 3.64,
+  "scene_start": false,
+  "kind": "photo",
+  "photo_subject": "a modern thin smartphone",
+  "photo_queries": [
+   "smartphone design",
+   "modern phone"
+  ],
+  "card": {
+   "type": "title",
+   "title": "Consumer Hardware",
+   "subtitle": "Mathematical Efficiency in Pocket Devices"
+  },
+  "photo": {
+   "path": "out/run/photos/v056.jpg",
+   "file": "v056.jpg",
+   "kind": "photo",
+   "source": "wikimedia_commons",
+   "title": "Samsung Galaxy Note 10 (Wiki)",
+   "source_page": "https://commons.wikimedia.org/wiki/File:Samsung_Galaxy_Note_10_(Wiki).jpg",
+   "download_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/18/Samsung_Galaxy_Note_10_%28Wiki%29.jpg/1920px-Samsung_Galaxy_Note_10_%28Wiki%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "licence": "CC BY-SA 4.0",
+   "licence_url": "https://creativecommons.org/licenses/by-sa/4.0",
+   "author": "嘉傑",
+   "attribution": "\"Samsung Galaxy Note 10 (Wiki)\" by 嘉傑, CC BY-SA 4.0, via Wikimedia Commons. https://commons.wikimedia.org/wiki/File:Samsung_Galaxy_Note_10_(Wiki).jpg",
+   "downloaded": "2026-10-27"
+  }
+ },
+ {
+  "scene": "s04",
+  "start": 260.4225,
+  "text": "light, affordable, and practical for daily use.",
+  "sentences": [
+   "s04.11"
+  ],
+  "id": "v057",
+  "end": 265.507,
+  "seconds": 5.08,
+  "scene_start": false,
+  "kind": "photo",
+  "photo_subject": "a person using a smartphone map outdoors",
+  "photo_queries": [
+   "person using phone map",
+   "walking with smartphone"
+  ],
+  "card": {
+   "type": "title",
+   "title": "Everyday Navigation",
+   "subtitle": "Practical Satellite Location Tracking"
+  }
+ },
+ {
+  "scene": "s05",
+  "start": 265.507,
+  "text": "Even with four satellite signals, GPS would fail",
+  "sentences": [
+   "s05.01"
+  ],
+  "id": "v058",
+  "end": 269.25476470588234,
+  "seconds": 3.75,
+  "scene_start": true,
+  "kind": "card",
+  "card": {
+   "type": "title",
+   "title": "Einstein in Orbit",
+   "subtitle": "Relativity Corrections in GPS"
+  }
+ },
+ {
+  "scene": "s05",
+  "start": 269.25476470588234,
+  "text": "quickly without accounting for Albert Einstein's theories of relativity.",
+  "sentences": [
+   "s05.01"
+  ],
+  "id": "v059",
+  "end": 273.947,
+  "seconds": 4.69,
+  "scene_start": false,
+  "kind": "photo",
+  "photo_subject": "a historical photograph of Albert Einstein",
+  "photo_queries": [
+   "albert einstein",
+   "einstein portrait"
+  ],
+  "card": {
+   "type": "title",
+   "title": "Relativity Theory",
+   "subtitle": "Essential Physics for Satellite Timing"
+  },
+  "photo": {
+   "path": "out/run/photos/v059.jpg",
+   "file": "v059.jpg",
+   "kind": "photo",
+   "source": "wikimedia_commons",
+   "title": "Albert Einstein 1921 by F Schmutzer",
+   "source_page": "https://commons.wikimedia.org/wiki/File:Albert_Einstein_1921_by_F_Schmutzer.jpg",
+   "download_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/3f/Albert_Einstein_1921_by_F_Schmutzer.jpg/1920px-Albert_Einstein_1921_by_F_Schmutzer.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "licence": "Public domain",
+   "licence_url": "",
+   "author": "Ferdinand Schmutzer",
+   "attribution": "\"Albert Einstein 1921 by F Schmutzer\" by Ferdinand Schmutzer, Public domain, via Wikimedia Commons. https://commons.wikimedia.org/wiki/File:Albert_Einstein_1921_by_F_Schmutzer.jpg",
+   "downloaded": "2026-10-27"
+  }
+ },
+ {
+  "scene": "s05",
+  "start": 273.947,
+  "text": "Special relativity predicts that time passes slower for",
+  "sentences": [
+   "s05.02"
+  ],
+  "id": "v060",
+  "end": 277.58182352941174,
+  "seconds": 3.63,
+  "scene_start": false,
+  "kind": "photo",
+  "photo_subject": "a satellite moving rapidly in orbit",
+  "photo_queries": [
+   "orbiting satellite",
+   "spacecraft motion"
+  ],
+  "card": {
+   "type": "title",
+   "title": "Special Relativity",
+   "subtitle": "Time Dilation from High Speed"
+  },
+  "photo": {
+   "path": "out/run/photos/v060.jpg",
+   "file": "v060.jpg",
+   "kind": "photo",
+   "source": "nasa_image_library",
+   "title": "Aqua Satellite Orbiting Earth Artist Concept",
+   "source_page": "https://images.nasa.gov/details/PIA18156",
+   "download_url": "https://images-assets.nasa.gov/image/PIA18156/PIA18156~orig.jpg",
+   "licence": "Public domain (NASA media, not copyrighted in the US)",
+   "licence_url": "https://www.nasa.gov/nasa-brand-center/images-and-media/",
+   "author": "NASA",
+   "attribution": "Aqua Satellite Orbiting Earth Artist Concept — NASA, NASA, public domain. https://images.nasa.gov/details/PIA18156",
+   "downloaded": "2026-10-27"
+  }
+ },
+ {
+  "scene": "s05",
+  "start": 277.58182352941174,
+  "text": "objects moving at higher speeds relative to an observer.",
+  "sentences": [
+   "s05.02"
+  ],
+  "id": "v061",
+  "end": 282.157,
+  "seconds": 4.58,
+  "scene_start": false,
+  "kind": "photo",
+  "photo_subject": "the International Space Station orbiting Earth",
+  "photo_queries": [
+   "space station orbit",
+   "iss space"
+  ],
+  "card": {
+   "type": "title",
+   "title": "Speed and Time",
+   "subtitle": "Faster Motion Slows Down Clock Ticks"
+  },
+  "photo": {
+   "path": "out/run/photos/v061.jpg",
+   "file": "v061.jpg",
+   "kind": "photo",
+   "source": "wikimedia_commons",
+   "title": "ISS March 2009",
+   "source_page": "https://commons.wikimedia.org/wiki/File:ISS_March_2009.jpg",
+   "download_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/80/ISS_March_2009.jpg/1920px-ISS_March_2009.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "licence": "Public domain",
+   "licence_url": "",
+   "author": "National Aeronautics and Space Administration",
+   "attribution": "\"ISS March 2009\" by National Aeronautics and Space Administration, Public domain, via Wikimedia Commons. https://commons.wikimedia.org/wiki/File:ISS_March_2009.jpg",
+   "downloaded": "2026-10-27"
+  }
+ },
+ {
+  "scene": "s05",
+  "start": 282.157,
+  "text": "Because satellites travel at roughly 3,874 metres",
+  "sentences": [
+   "s05.03"
+  ],
+  "id": "v062",
+  "end": 285.8105,
+  "seconds": 3.65,
+  "scene_start": false,
+  "kind": "photo",
+  "photo_subject": "an orbital velocity vector graphic",
+  "photo_queries": [
+   "orbital velocity",
+   "satellite velocity"
+  ],
+  "card": {
+   "type": "title",
+   "title": "Orbital Velocity",
+   "subtitle": "High Speed Orbital Motion"
+  }
+ },
+ {
+  "scene": "s05",
+  "start": 285.8105,
+  "text": "per second, their atomic clocks tick slower.",
+  "sentences": [
+   "s05.03"
+  ],
+  "id": "v063",
+  "end": 289.952,
+  "seconds": 4.14,
+  "scene_start": false,
+  "kind": "card",
+  "card": {
+   "type": "stat",
+   "title": "Satellite Orbital Speed",
+   "value": "3,874 m/s",
+   "label": "Relative to Earth Surface"
+  }
+ },
+ {
+  "scene": "s05",
+  "start": 289.952,
+  "text": "This speed effect causes orbital clocks to lose",
+  "sentences": [
+   "s05.04"
+  ],
+  "id": "v064",
+  "end": 293.3750588235294,
+  "seconds": 3.42,
+  "scene_start": false,
+  "kind": "photo",
+  "photo_subject": "a clock losing time graphic",
+  "photo_queries": [
+   "clock losing time",
+   "time dilation"
+  ],
+  "card": {
+   "type": "title",
+   "title": "Slower Orbital Clocks",
+   "subtitle": "Special Relativity Delay Effect"
+  },
+  "photo": {
+   "path": "out/run/photos/v064.jpg",
+   "file": "v064.jpg",
+   "kind": "photo",
+   "source": "wikimedia_commons",
+   "title": "Time Dilation vs Orbital Height",
+   "source_page": "https://commons.wikimedia.org/wiki/File:Time_Dilation_vs_Orbital_Height.png",
+   "download_url": "https://upload.wikimedia.org/wikipedia/commons/c/ca/Time_Dilation_vs_Orbital_Height.png?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+   "licence": "CC BY-SA 4.0",
+   "licence_url": "https://creativecommons.org/licenses/by-sa/4.0",
+   "author": "Prokaryotic Caspase Homolog",
+   "attribution": "\"Time Dilation vs Orbital Height\" by Prokaryotic Caspase Homolog, CC BY-SA 4.0, via Wikimedia Commons. https://commons.wikimedia.org/wiki/File:Time_Dilation_vs_Orbital_Height.png",
+   "downloaded": "2026-10-27"
+  }
+ },
+ {
+  "scene": "s05",
+  "start": 293.3750588235294,
+  "text": "about 7.2 microseconds per day compared to ground clocks.",
+  "sentences": [
+   "s05.04"
+  ],
+  "id": "v065",
+  "end": 297.678,
+  "seconds": 4.3,
+  "scene_start": false,
+  "kind": "card",
+  "card": {
+   "type": "stat",
+   "title": "Special Relativity Effect",
+   "value": "-7.2 µs",
+   "label": "Daily Time Loss for Orbital Clocks"
+  }
+ },
+ {
+  "scene": "s05",
+  "start": 297.678,
+  "text": "Meanwhile, general relativity shows that gravity slows down time closer to massive bodies like Earth.",
+  "sentences": [
+   "s05.05"
+  ],
+  "id": "v066",
+  "end": 304.603,
+  "seconds": 6.93,
+  "scene_start": false,
+  "kind": "photo",
+  "photo_subject": "a spacetime curvature diagram around Earth",
+  "photo_queries": [
+   "gravity well earth",
+   "spacetime curvature"
+  ],
+  "card": {
+   "type": "title",
+   "title": "General Relativity",
+   "subtitle": "Gravity Alters Time Passage Rate"
+  }
+ },
+ {
+  "scene": "s05",
+  "start": 304.603,
+  "text": "Because satellites operate high above Earth's surface, they",
+  "sentences": [
+   "s05.06"
+  ],
+  "id": "v067",
+  "end": 308.156,
+  "seconds": 3.55,
+  "scene_start": false,
+  "kind": "photo",
+  "photo_subject": "a satellite far above the Earth's horizon",
+  "photo_queries": [
+   "satellite high orbit",
+   "earth horizon space"
+  ],
+  "card": {
+   "type": "title",
+   "title": "Weaker Gravity Altitude",
+   "subtitle": "Operating in Lower Gravitational Field"
+  },
+  "photo": {
+   "path": "out/run/photos/v067.jpg",
+   "file": "v067.jpg",
+   "kind": "photo",
+   "source": "wikimedia_commons",
+   "title": "A trio of CubeSats is ejected into Earth orbit from a small satellite orbital deployer (iss072e352045)",
+   "source_page": "https://commons.wikimedia.org/wiki/File:A_trio_of_CubeSats_is_ejected_into_Earth_orbit_from_a_small_satellite_orbital_deployer_(iss072e352045).jpg",
+   "download_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/47/A_trio_of_CubeSats_is_ejected_into_Earth_orbit_from_a_small_satellite_orbital_deployer_%28iss072e352045%29.jpg/1920px-A_trio_of_CubeSats_is_ejected_into_Earth_orbit_from_a_small_satellite_orbital_deployer_%28iss072e352045%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "licence": "Public domain",
+   "licence_url": "",
+   "author": "NASA Johnson Space Center",
+   "attribution": "\"A trio of CubeSats is ejected into Earth orbit from a small satellite orbital deployer (iss072e352045)\" by NASA Johnson Space Center, Public domain, via Wikimedia Commons. https://commons.wikimedia.org/wiki/File:A_trio_of_CubeSats_is_ejected_into_Earth_orbit_from_a_small_satellite_orbital_deployer_(iss072e352045).jpg",
+   "downloaded": "2026-10-27"
+  }
+ },
+ {
+  "scene": "s05",
+  "start": 308.156,
+  "text": "experience weaker gravity than receivers on the ground.",
+  "sentences": [
+   "s05.06"
+  ],
+  "id": "v068",
+  "end": 312.179,
+  "seconds": 4.02,
+  "scene_start": false,
+  "kind": "photo",
+  "photo_subject": "a gravimetric map of Earth gravity field",
+  "photo_queries": [
+   "earth gravity map",
+   "gravimetric earth"
+  ],
+  "card": {
+   "type": "title",
+   "title": "Gravitational Gradient",
+   "subtitle": "Stronger Gravity Near Earth Surface"
+  },
+  "photo": {
+   "path": "out/run/photos/v068.jpg",
+   "file": "v068.jpg",
+   "kind": "photo",
+   "source": "nasa_image_library",
+   "title": "Monthly GRACE Gravity Anomaly Maps",
+   "source_page": "https://images.nasa.gov/details/PIA22448",
+   "download_url": "https://images-assets.nasa.gov/image/PIA22448/PIA22448~large.jpg",
+   "licence": "Public domain (NASA media, not copyrighted in the US)",
+   "licence_url": "https://www.nasa.gov/nasa-brand-center/images-and-media/",
+   "author": "NASA/JPL-Caltech",
+   "attribution": "Monthly GRACE Gravity Anomaly Maps — NASA/JPL-Caltech, NASA, public domain. https://images.nasa.gov/details/PIA22448",
+   "downloaded": "2026-10-27"
+  }
+ },
+ {
+  "scene": "s05",
+  "start": 312.179,
+  "text": "This weaker gravity causes satellite clocks to tick",
+  "sentences": [
+   "s05.07"
+  ],
+  "id": "v069",
+  "end": 315.85473333333334,
+  "seconds": 3.68,
+  "scene_start": false,
+  "kind": "photo",
+  "photo_subject": "an atomic clock in a science laboratory",
+  "photo_queries": [
+   "atomic clock lab",
+   "laser atomic clock"
+  ],
+  "card": {
+   "type": "title",
+   "title": "Faster Clock Ticks",
+   "subtitle": "Weaker Gravity Speeds Up Time"
+  },
+  "photo": {
+   "path": "out/run/photos/v069.jpg",
+   "file": "v069.jpg",
+   "kind": "photo",
+   "source": "wikimedia_commons",
+   "title": "Colliding Fermions; Atomic Clock Accuracy (5978323607)",
+   "source_page": "https://commons.wikimedia.org/wiki/File:Colliding_Fermions;_Atomic_Clock_Accuracy_(5978323607).jpg",
+   "download_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/94/Colliding_Fermions%3B_Atomic_Clock_Accuracy_%285978323607%29.jpg/1920px-Colliding_Fermions%3B_Atomic_Clock_Accuracy_%285978323607%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "licence": "Public domain",
+   "licence_url": "",
+   "author": "National Institute of Standards and Technology",
+   "attribution": "\"Colliding Fermions; Atomic Clock Accuracy (5978323607)\" by National Institute of Standards and Technology, Public domain, via Wikimedia Commons. https://commons.wikimedia.org/wiki/File:Colliding_Fermions;_Atomic_Clock_Accuracy_(5978323607).jpg",
+   "downloaded": "2026-10-27"
+  }
+ },
+ {
+  "scene": "s05",
+  "start": 315.85473333333334,
+  "text": "faster by about 45.8 microseconds per day.",
+  "sentences": [
+   "s05.07"
+  ],
+  "id": "v070",
+  "end": 319.55,
+  "seconds": 3.7,
+  "scene_start": false,
+  "kind": "card",
+  "card": {
+   "type": "stat",
+   "title": "General Relativity Effect",
+   "value": "+45.8 µs",
+   "label": "Daily Time Gain in High Orbit"
+  }
+ },
+ {
+  "scene": "s05",
+  "start": 319.55,
+  "text": "Combining both relativistic effects, satellite clocks run",
+  "sentences": [
+   "s05.08"
+  ],
+  "id": "v071",
+  "end": 323.7115,
+  "seconds": 4.16,
+  "scene_start": false,
+  "kind": "photo",
+  "photo_subject": "a satellite network control center",
+  "photo_queries": [
+   "satellite control room",
+   "mission control"
+  ],
+  "card": {
+   "type": "title",
+   "title": "Combined Relativity",
+   "subtitle": "Net Offset of Both Einstein Effects"
+  },
+  "photo": {
+   "path": "out/run/photos/v071.jpg",
+   "file": "v071.jpg",
+   "kind": "photo",
+   "source": "wikimedia_commons",
+   "title": "Satellite Operations Control Center (SOCC) launch control room (2268-469)",
+   "source_page": "https://commons.wikimedia.org/wiki/File:Satellite_Operations_Control_Center_(SOCC)_launch_control_room_(2268-469).jpg",
+   "download_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/6e/Satellite_Operations_Control_Center_%28SOCC%29_launch_control_room_%282268-469%29.jpg/1920px-Satellite_Operations_Control_Center_%28SOCC%29_launch_control_room_%282268-469%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "licence": "Public domain",
+   "licence_url": "",
+   "author": "NOAA",
+   "attribution": "\"Satellite Operations Control Center (SOCC) launch control room (2268-469)\" by NOAA, Public domain, via Wikimedia Commons. https://commons.wikimedia.org/wiki/File:Satellite_Operations_Control_Center_(SOCC)_launch_control_room_(2268-469).jpg",
+   "downloaded": "2026-10-27"
+  }
+ },
+ {
+  "scene": "s05",
+  "start": 323.7115,
+  "text": "faster by approximately 38.6 microseconds every day.",
+  "sentences": [
+   "s05.08"
+  ],
+  "id": "v072",
+  "end": 328.353,
+  "seconds": 4.64,
+  "scene_start": false,
+  "kind": "card",
+  "card": {
+   "type": "stat",
+   "title": "Net Relativistic Drift",
+   "value": "+38.6 µs",
+   "label": "Net Daily Clock Acceleration"
+  }
+ },
+ {
+  "scene": "s05",
+  "start": 328.353,
+  "text": "If uncorrected, this timing difference would cause location",
+  "sentences": [
+   "s05.09"
+  ],
+  "id": "v073",
+  "end": 332.07460000000003,
+  "seconds": 3.72,
+  "scene_start": false,
+  "kind": "photo",
+  "photo_subject": "a map displaying location position error",
+  "photo_queries": [
+   "map error radius",
+   "gps deviation map"
+  ],
+  "card": {
+   "type": "title",
+   "title": "Uncorrected Drift",
+   "subtitle": "Position Errors Accumulate Rapidly"
+  },
+  "photo_rejected": {
+   "path": "out/run/photos/v073.jpg",
+   "file": "v073.jpg",
+   "kind": "photo",
+   "source": "wikimedia_commons",
+   "title": "Gps-abweichungen-wald",
+   "source_page": "https://commons.wikimedia.org/wiki/File:Gps-abweichungen-wald.png",
+   "download_url": "https://upload.wikimedia.org/wikipedia/commons/9/97/Gps-abweichungen-wald.png?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+   "licence": "CC BY-SA 3.0",
+   "licence_url": "https://creativecommons.org/licenses/by-sa/3.0",
+   "author": "Kreuzschnabel",
+   "attribution": "\"Gps-abweichungen-wald\" by Kreuzschnabel, CC BY-SA 3.0, via Wikimedia Commons. https://commons.wikimedia.org/wiki/File:Gps-abweichungen-wald.png",
+   "downloaded": "2026-10-27"
+  }
+ },
+ {
+  "scene": "s05",
+  "start": 332.07460000000003,
+  "text": "errors of roughly 11.4 kilometres per day.",
+  "sentences": [
+   "s05.09"
+  ],
+  "id": "v074",
+  "end": 335.826,
+  "seconds": 3.75,
+  "scene_start": false,
+  "kind": "card",
+  "card": {
+   "type": "stat",
+   "title": "Uncorrected Error Rate",
+   "value": "11.4 km",
+   "label": "Daily Position Error Without Relativity Fix"
+  }
+ },
+ {
+  "scene": "s05",
+  "start": 335.826,
+  "text": "To correct this, engineers pre-adjust the atomic clock",
+  "sentences": [
+   "s05.10"
+  ],
+  "id": "v075",
+  "end": 339.54920000000004,
+  "seconds": 3.72,
+  "scene_start": false,
+  "kind": "photo",
+  "photo_subject": "a cleanroom satellite assembly technician",
+  "photo_queries": [
+   "satellite cleanroom",
+   "spacecraft assembly"
+  ],
+  "card": {
+   "type": "title",
+   "title": "Engineering Correction",
+   "subtitle": "Clock Frequency Pre-adjustment"
+  },
+  "photo": {
+   "path": "out/run/photos/v075.jpg",
+   "file": "v075.jpg",
+   "kind": "photo",
+   "source": "nasa_image_library",
+   "title": "KSC-2011-7167",
+   "source_page": "https://images.nasa.gov/details/2011-7167",
+   "download_url": "https://images-assets.nasa.gov/image/2011-7167/2011-7167~large.jpg",
+   "licence": "Public domain (NASA media, not copyrighted in the US)",
+   "licence_url": "https://www.nasa.gov/nasa-brand-center/images-and-media/",
+   "author": "Ball Aerospace",
+   "attribution": "KSC-2011-7167 — Ball Aerospace, NASA, public domain. https://images.nasa.gov/details/2011-7167",
+   "downloaded": "2026-10-27"
+  }
+ },
+ {
+  "scene": "s05",
+  "start": 339.54920000000004,
+  "text": "frequencies before launching the satellites into space.",
+  "sentences": [
+   "s05.10"
+  ],
+  "id": "v076",
+  "end": 343.303,
+  "seconds": 3.75,
+  "scene_start": false,
+  "kind": "photo",
+  "photo_subject": "a satellite pre-launch inspection",
+  "photo_queries": [
+   "satellite inspection",
+   "spacecraft pre launch"
+  ],
+  "card": {
+   "type": "title",
+   "title": "Pre-Launch Tuning",
+   "subtitle": "Slowing Clocks Down Before Flight"
+  },
+  "photo": {
+   "path": "out/run/photos/v076.jpg",
+   "file": "v076.jpg",
+   "kind": "photo",
+   "source": "nasa_image_library",
+   "title": "GRACE Follow-On Moves Closer to Launch",
+   "source_page": "https://images.nasa.gov/details/PIA22452",
+   "download_url": "https://images-assets.nasa.gov/image/PIA22452/PIA22452~large.jpg",
+   "licence": "Public domain (NASA media, not copyrighted in the US)",
+   "licence_url": "https://www.nasa.gov/nasa-brand-center/images-and-media/",
+   "author": "Iridium Communications Inc./NASA/JPL-Caltech",
+   "attribution": "GRACE Follow-On Moves Closer to Launch — Iridium Communications Inc./NASA/JPL-Caltech, NASA, public domain. https://images.nasa.gov/details/PIA22452",
+   "downloaded": "2026-10-27"
+  }
+ },
+ {
+  "scene": "s05",
+  "start": 343.303,
+  "text": "They slow the clock rate from",
+  "sentences": [
+   "s05.11"
+  ],
+  "id": "v077",
+  "end": 347.7625,
+  "seconds": 4.46,
+  "scene_start": false,
+  "kind": "photo",
+  "photo_subject": "a signal generator oscilloscope screen",
+  "photo_queries": [
+   "frequency counter",
+   "signal generator"
+  ],
+  "card": {
+   "type": "title",
+   "title": "Frequency Offset",
+   "subtitle": "Lowering Frequency Before Launch"
+  }
+ },
+ {
+  "scene": "s05",
+  "start": 347.7625,
+  "text": "10.23 megahertz down to 10.22999999543 megahertz.",
+  "sentences": [
+   "s05.11"
+  ],
+  "id": "v078",
+  "end": 352.689,
+  "seconds": 4.93,
+  "scene_start": false,
+  "kind": "card",
+  "card": {
+   "type": "compare",
+   "title": "Satellite Clock Rate Tuning",
+   "left_title": "Standard Earth Base Rate",
+   "left_points": [
+    "10.23 MHz clock rate",
+    "Unadjusted ground standard",
+    "Would gain 38.6 µs/day"
+   ],
+   "right_title": "Pre-Adjusted Launch Rate",
+   "right_points": [
+    "10.22999999543 MHz",
+    "Pre-tuned for orbit",
+    "Runs at 10.23 MHz in space"
+   ]
+  }
+ },
+ {
+  "scene": "s05",
+  "start": 352.689,
+  "text": "This pre-launch adjustment allows orbital clocks to stay synchronized with time on Earth's surface.",
+  "sentences": [
+   "s05.12"
+  ],
+  "id": "v079",
+  "end": 360.077,
+  "seconds": 7.39,
+  "scene_start": false,
+  "kind": "photo",
+  "photo_subject": "a rocket launching from launch pad",
+  "photo_queries": [
+   "rocket lift off",
+   "launch pad rocket"
+  ],
+  "card": {
+   "type": "title",
+   "title": "Orbital Synchronization",
+   "subtitle": "Space Clocks Match Earth Time Exactly"
+  },
+  "photo": {
+   "path": "out/run/photos/v079.jpg",
+   "file": "v079.jpg",
+   "kind": "photo",
+   "source": "nasa_image_library",
+   "title": "Odyssey Launch to Mars on April 7, 2001",
+   "source_page": "https://images.nasa.gov/details/PIA20331",
+   "download_url": "https://images-assets.nasa.gov/image/PIA20331/PIA20331~orig.jpg",
+   "licence": "Public domain (NASA media, not copyrighted in the US)",
+   "licence_url": "https://www.nasa.gov/nasa-brand-center/images-and-media/",
+   "author": "NASA/JPL-Caltech/Arizona State University",
+   "attribution": "Odyssey Launch to Mars on April 7, 2001 — NASA/JPL-Caltech/Arizona State University, NASA, public domain. https://images.nasa.gov/details/PIA20331",
+   "downloaded": "2026-10-27"
+  }
+ },
+ {
+  "scene": "s06",
+  "start": 360.077,
+  "text": "Once your device processes the satellite",
+  "sentences": [
+   "s06.01"
+  ],
+  "id": "v080",
+  "end": 363.14576923076925,
+  "seconds": 3.07,
+  "scene_start": true,
+  "kind": "card",
+  "card": {
+   "type": "title",
+   "title": "Mapping the Numbers",
+   "subtitle": "From Raw Coordinates to Screen"
+  }
+ },
+ {
+  "scene": "s06",
+  "start": 363.14576923076925,
+  "text": "signals, it calculates raw three-dimensional position coordinates.",
+  "sentences": [
+   "s06.01"
+  ],
+  "id": "v081",
+  "end": 367.165,
+  "seconds": 4.02,
+  "scene_start": false,
+  "kind": "photo",
+  "photo_subject": "a 3D position coordinate grid",
+  "photo_queries": [
+   "3d coordinate grid",
+   "spatial coordinates"
+  ],
+  "card": {
+   "type": "title",
+   "title": "Raw Spatial Output",
+   "subtitle": "3D ECEF Coordinate Calculation"
+  },
+  "photo": {
+   "path": "out/run/photos/v081.jpg",
+   "file": "v081.jpg",
+   "kind": "photo",
+   "source": "wikimedia_commons",
+   "title": "Transformation from curvilinear to rectilinear grid",
+   "source_page": "https://commons.wikimedia.org/wiki/File:Transformation_from_curvilinear_to_rectilinear_grid.png",
+   "download_url": "https://upload.wikimedia.org/wikipedia/commons/6/69/Transformation_from_curvilinear_to_rectilinear_grid.png?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+   "licence": "Public domain",
+   "licence_url": "",
+   "author": "Ari Sadarjoen, Theo van Walsum, Andres J.S. Hin and Frits H. Post",
+   "attribution": "\"Transformation from curvilinear to rectilinear grid\" by Ari Sadarjoen, Theo van Walsum, Andres J.S. Hin and Frits H. Post, Public domain, via Wikimedia Commons. https://commons.wikimedia.org/wiki/File:Transformation_from_curvilinear_to_rectilinear_grid.png",
+   "downloaded": "2026-10-27"
+  }
+ },
+ {
+  "scene": "s06",
+  "start": 367.165,
+  "text": "The receiver then converts these spatial numbers into standard latitude, longitude, and height.",
+  "sentences": [
+   "s06.02"
+  ],
+  "id": "v082",
+  "end": 373.523,
+  "seconds": 6.36,
+  "scene_start": false,
+  "kind": "photo",
+  "photo_subject": "a Earth globe with latitude and longitude lines",
+  "photo_queries": [
+   "globe latitude longitude",
+   "earth coordinates"
+  ],
+  "card": {
+   "type": "title",
+   "title": "Standard Coordinates",
+   "subtitle": "Latitude, Longitude, and Altitude"
+  },
+  "photo": {
+   "path": "out/run/photos/v082.jpg",
+   "file": "v082.jpg",
+   "kind": "photo",
+   "source": "wikimedia_commons",
+   "title": "Longitudes and latitude",
+   "source_page": "https://commons.wikimedia.org/wiki/File:Longitudes_and_latitude.jpg",
+   "download_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/2b/Longitudes_and_latitude.jpg/1920px-Longitudes_and_latitude.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "licence": "CC BY-SA 4.0",
+   "licence_url": "https://creativecommons.org/licenses/by-sa/4.0",
+   "author": "Rajneesh kumar Thakur",
+   "attribution": "\"Longitudes and latitude\" by Rajneesh kumar Thakur, CC BY-SA 4.0, via Wikimedia Commons. https://commons.wikimedia.org/wiki/File:Longitudes_and_latitude.jpg",
+   "downloaded": "2026-10-27"
+  }
+ },
+ {
+  "scene": "s06",
+  "start": 373.523,
+  "text": "Consumer devices like smartphones can achieve horizontal",
+  "sentences": [
+   "s06.03"
+  ],
+  "id": "v083",
+  "end": 377.3,
+  "seconds": 3.78,
+  "scene_start": false,
+  "kind": "photo",
+  "photo_subject": "a person holding smartphone map outdoors",
+  "photo_queries": [
+   "smartphone location map",
+   "person holding phone"
+  ],
+  "card": {
+   "type": "title",
+   "title": "Consumer Hardware",
+   "subtitle": "Pocket Smartphone Positioning"
+  },
+  "photo_rejected": {
+   "path": "out/run/photos/v083.jpg",
+   "file": "v083.jpg",
+   "kind": "photo",
+   "source": "wikimedia_commons",
+   "title": "Man using smartphone outdoors",
+   "source_page": "https://commons.wikimedia.org/wiki/File:Man_using_smartphone_outdoors.jpg",
+   "download_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/72/Man_using_smartphone_outdoors.jpg/1920px-Man_using_smartphone_outdoors.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "licence": "CC BY-SA 4.0",
+   "licence_url": "https://creativecommons.org/licenses/by-sa/4.0",
+   "author": "Bhullargraphic",
+   "attribution": "\"Man using smartphone outdoors\" by Bhullargraphic, CC BY-SA 4.0, via Wikimedia Commons. https://commons.wikimedia.org/wiki/File:Man_using_smartphone_outdoors.jpg",
+   "downloaded": "2026-10-27"
+  }
+ },
+ {
+  "scene": "s06",
+  "start": 377.3,
+  "text": "positioning accuracy of 4.9 metres or better.",
+  "sentences": [
+   "s06.03"
+  ],
+  "id": "v084",
+  "end": 381.573,
+  "seconds": 4.27,
+  "scene_start": false,
+  "kind": "card",
+  "card": {
+   "type": "stat",
+   "title": "Smartphone Positioning",
+   "value": "4.9 m",
+   "label": "Horizontal Accuracy Standard"
+  }
+ },
+ {
+  "scene": "s06",
+  "start": 381.573,
+  "text": "When paired with assistive services like Wi-Fi",
+  "sentences": [
+   "s06.04"
+  ],
+  "id": "v085",
+  "end": 385.075,
+  "seconds": 3.5,
+  "scene_start": false,
+  "kind": "photo",
+  "photo_subject": "a modern Wi-Fi router with antennas",
+  "photo_queries": [
+   "wifi router",
+   "wireless antenna"
+  ],
+  "card": {
+   "type": "title",
+   "title": "Assisted GPS",
+   "subtitle": "Combining Cellular & Wi-Fi Data"
+  },
+  "photo": {
+   "path": "out/run/photos/v085.jpg",
+   "file": "v085.jpg",
+   "kind": "photo",
+   "source": "wikimedia_commons",
+   "title": "Netgear N300 wireless router n01",
+   "source_page": "https://commons.wikimedia.org/wiki/File:Netgear_N300_wireless_router_n01.jpg",
+   "download_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/6f/Netgear_N300_wireless_router_n01.jpg/1920px-Netgear_N300_wireless_router_n01.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "licence": "CC BY 2.5",
+   "licence_url": "https://creativecommons.org/licenses/by/2.5",
+   "author": "Marie-Lan Nguyen",
+   "attribution": "\"Netgear N300 wireless router n01\" by Marie-Lan Nguyen, CC BY 2.5, via Wikimedia Commons. https://commons.wikimedia.org/wiki/File:Netgear_N300_wireless_router_n01.jpg",
+   "downloaded": "2026-10-27"
+  }
+ },
+ {
+  "scene": "s06",
+  "start": 385.075,
+  "text": "positioning, positioning performance becomes even more reliable.",
+  "sentences": [
+   "s06.04"
+  ],
+  "id": "v086",
+  "end": 389.046,
+  "seconds": 3.97,
+  "scene_start": false,
+  "kind": "photo",
+  "photo_subject": "a smartphone navigating on a city street",
+  "photo_queries": [
+   "city street map phone",
+   "urban navigation"
+  ],
+  "card": {
+   "type": "title",
+   "title": "Urban Reliability",
+   "subtitle": "Faster Fixes in Signal Canyons"
+  }
+ },
+ {
+  "scene": "s06",
+  "start": 389.046,
+  "text": "High-end applications like land surveying can",
+  "sentences": [
+   "s06.05"
+  ],
+  "id": "v087",
+  "end": 392.4133846153846,
+  "seconds": 3.37,
+  "scene_start": false,
+  "kind": "photo",
+  "photo_subject": "professional land surveying GPS equipment",
+  "photo_queries": [
+   "surveying gps",
+   "land surveyor tripod"
+  ],
+  "card": {
+   "type": "title",
+   "title": "Surveying Grade GPS",
+   "subtitle": "High Precision Carrier Phase Tracking"
+  },
+  "photo_rejected": {
+   "path": "out/run/photos/v087.jpg",
+   "file": "v087.jpg",
+   "kind": "photo",
+   "source": "wikimedia_commons",
+   "title": "Land Surveyor",
+   "source_page": "https://commons.wikimedia.org/wiki/File:Land_Surveyor.jpg",
+   "download_url": "https://upload.wikimedia.org/wikipedia/commons/8/8a/Land_Surveyor.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+   "licence": "CC BY-SA 3.0",
+   "licence_url": "https://creativecommons.org/licenses/by-sa/3.0",
+   "author": "Random Guy of the Century",
+   "attribution": "\"Land Surveyor\" by Random Guy of the Century, CC BY-SA 3.0, via Wikimedia Commons. https://commons.wikimedia.org/wiki/File:Land_Surveyor.jpg",
+   "downloaded": "2026-10-27"
+  }
+ },
+ {
+  "scene": "s06",
+  "start": 392.4133846153846,
+  "text": "even achieve sub-millimetre accuracy with long-term measurements.",
+  "sentences": [
+   "s06.05"
+  ],
+  "id": "v088",
+  "end": 396.806,
+  "seconds": 4.39,
+  "scene_start": false,
+  "kind": "card",
+  "card": {
+   "type": "stat",
+   "title": "High-End Accuracy",
+   "value": "< 1 mm",
+   "label": "Sub-millimetre Precision in Land Surveying"
+  }
+ },
+ {
+  "scene": "s06",
+  "start": 396.806,
+  "text": "These calculated coordinates may be displayed on a moving map display or used by another system.",
+  "sentences": [
+   "s06.06"
+  ],
+  "id": "v089",
+  "end": 403.349,
+  "seconds": 6.54,
+  "scene_start": false,
+  "kind": "photo",
+  "photo_subject": "a car digital dashboard map display",
+  "photo_queries": [
+   "car navigation display",
+   "dashboard map"
+  ],
+  "card": {
+   "type": "title",
+   "title": "Map Visualizations",
+   "subtitle": "Rendering Position on Interactive Maps"
+  },
+  "photo": {
+   "path": "out/run/photos/v089.jpg",
+   "file": "v089.jpg",
+   "kind": "photo",
+   "source": "wikimedia_commons",
+   "title": "OSMAnd map on the screen of the infotainment system of an Opel car-110954367",
+   "source_page": "https://commons.wikimedia.org/wiki/File:OSMAnd_map_on_the_screen_of_the_infotainment_system_of_an_Opel_car-110954367.jpg",
+   "download_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/86/OSMAnd_map_on_the_screen_of_the_infotainment_system_of_an_Opel_car-110954367.jpg/1920px-OSMAnd_map_on_the_screen_of_the_infotainment_system_of_an_Opel_car-110954367.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "licence": "Public domain",
+   "licence_url": "",
+   "author": "Raimond Spekking",
+   "attribution": "\"OSMAnd map on the screen of the infotainment system of an Opel car-110954367\" by Raimond Spekking, Public domain, via Wikimedia Commons. https://commons.wikimedia.org/wiki/File:OSMAnd_map_on_the_screen_of_the_infotainment_system_of_an_Opel_car-110954367.jpg",
+   "downloaded": "2026-10-27"
+  }
+ },
+ {
+  "scene": "s06",
+  "start": 403.349,
+  "text": "An internal tracker algorithm combines successive measurements to",
+  "sentences": [
+   "s06.07"
+  ],
+  "id": "v090",
+  "end": 407.17886666666664,
+  "seconds": 3.83,
+  "scene_start": false,
+  "kind": "photo",
+  "photo_subject": "computer tracking algorithm software screen",
+  "photo_queries": [
+   "computer algorithm code",
+   "data filter code"
+  ],
+  "card": {
+   "type": "title",
+   "title": "Kalman Filtering",
+   "subtitle": "Smooth Movement Prediction"
+  },
+  "photo_rejected": {
+   "path": "out/run/photos/v090.jpg",
+   "file": "v090.jpg",
+   "kind": "photo",
+   "source": "wikimedia_commons",
+   "title": "Filtered example",
+   "source_page": "https://commons.wikimedia.org/wiki/File:Filtered_example.png",
+   "download_url": "https://upload.wikimedia.org/wikipedia/commons/1/13/Filtered_example.png?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+   "licence": "CC BY-SA 4.0",
+   "licence_url": "https://creativecommons.org/licenses/by-sa/4.0",
+   "author": "Austinjly",
+   "attribution": "\"Filtered example\" by Austinjly, CC BY-SA 4.0, via Wikimedia Commons. https://commons.wikimedia.org/wiki/File:Filtered_example.png",
+   "downloaded": "2026-10-27"
+  }
+ },
+ {
+  "scene": "s06",
+  "start": 407.17886666666664,
+  "text": "predict movement and filter out random errors.",
+  "sentences": [
+   "s06.07"
+  ],
+  "id": "v091",
+  "end": 410.973,
+  "seconds": 3.79,
+  "scene_start": false,
+  "kind": "photo",
+  "photo_subject": "a frequency signal spectrum analyzer",
+  "photo_queries": [
+   "spectrum analyzer",
+   "signal filtering"
+  ],
+  "card": {
+   "type": "title",
+   "title": "Error Reduction",
+   "subtitle": "Filtering Out Random Signal Noise"
+  },
+  "photo": {
+   "path": "out/run/photos/v091.jpg",
+   "file": "v091.jpg",
+   "kind": "photo",
+   "source": "wikimedia_commons",
+   "title": "A modern real time spectrum analyzer",
+   "source_page": "https://commons.wikimedia.org/wiki/File:A_modern_real_time_spectrum_analyzer.jpg",
+   "download_url": "https://upload.wikimedia.org/wikipedia/commons/6/61/A_modern_real_time_spectrum_analyzer.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+   "licence": "CC BY-SA 4.0",
+   "licence_url": "https://creativecommons.org/licenses/by-sa/4.0",
+   "author": "Soulera",
+   "attribution": "\"A modern real time spectrum analyzer\" by Soulera, CC BY-SA 4.0, via Wikimedia Commons. https://commons.wikimedia.org/wiki/File:A_modern_real_time_spectrum_analyzer.jpg",
+   "downloaded": "2026-10-27"
+  }
+ },
+ {
+  "scene": "s06",
+  "start": 410.973,
+  "text": "By analyzing signal Doppler frequency shifts, your device",
+  "sentences": [
+   "s06.08"
+  ],
+  "id": "v092",
+  "end": 414.661,
+  "seconds": 3.69,
+  "scene_start": false,
+  "kind": "photo",
+  "photo_subject": "a Doppler effect frequency wave diagram",
+  "photo_queries": [
+   "doppler effect",
+   "wave frequency shift"
+  ],
+  "card": {
+   "type": "title",
+   "title": "Doppler Shift",
+   "subtitle": "Measuring Signal Frequency Shifts"
+  },
+  "photo": {
+   "path": "out/run/photos/v092.jpg",
+   "file": "v092.jpg",
+   "kind": "photo",
+   "source": "wikimedia_commons",
+   "title": "Doppler effect Deutsches Museum (176068975)",
+   "source_page": "https://commons.wikimedia.org/wiki/File:Doppler_effect_Deutsches_Museum_(176068975).jpg",
+   "download_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/36/Doppler_effect_Deutsches_Museum_%28176068975%29.jpg/1920px-Doppler_effect_Deutsches_Museum_%28176068975%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "licence": "CC BY-SA 2.0",
+   "licence_url": "https://creativecommons.org/licenses/by-sa/2.0",
+   "author": "brewbooks from near Seattle, USA",
+   "attribution": "\"Doppler effect Deutsches Museum (176068975)\" by brewbooks from near Seattle, USA, CC BY-SA 2.0, via Wikimedia Commons. https://commons.wikimedia.org/wiki/File:Doppler_effect_Deutsches_Museum_(176068975).jpg",
+   "downloaded": "2026-10-27"
+  }
+ },
+ {
+  "scene": "s06",
+  "start": 414.661,
+  "text": "can also calculate your exact velocity and direction.",
+  "sentences": [
+   "s06.08"
+  ],
+  "id": "v093",
+  "end": 418.801,
+  "seconds": 4.14,
+  "scene_start": false,
+  "kind": "card",
+  "card": {
+   "type": "flow",
+   "title": "Speed Tracking Process",
+   "steps": [
+    "Detect Doppler Frequency Shift",
+    "Calculate Relative Velocity",
+    "Determine Heading Direction"
+   ]
+  }
+ },
+ {
+  "scene": "s06",
+  "start": 418.801,
+  "text": "More advanced navigation systems combine these satellite",
+  "sentences": [
+   "s06.09"
+  ],
+  "id": "v094",
+  "end": 422.3745,
+  "seconds": 3.57,
+  "scene_start": false,
+  "kind": "photo",
+  "photo_subject": "a microelectromechanical motion sensor chip",
+  "photo_queries": [
+   "imu chip",
+   "motion sensor chip"
+  ],
+  "card": {
+   "type": "title",
+   "title": "Inertial Measurement",
+   "subtitle": "Combining Gyroscopes and Accelerometers"
+  }
+ },
+ {
+  "scene": "s06",
+  "start": 422.3745,
+  "text": "data with internal compasses or motion sensors.",
+  "sentences": [
+   "s06.09"
+  ],
+  "id": "v095",
+  "end": 426.404,
+  "seconds": 4.03,
+  "scene_start": false,
+  "kind": "photo",
+  "photo_subject": "a magnetic compass instrument",
+  "photo_queries": [
+   "magnetic compass",
+   "compass navigation"
+  ],
+  "card": {
+   "type": "title",
+   "title": "Sensor Fusion",
+   "subtitle": "Merging GPS with Internal Compass"
+  },
+  "photo": {
+   "path": "out/run/photos/v095.jpg",
+   "file": "v095.jpg",
+   "kind": "photo",
+   "source": "wikimedia_commons",
+   "title": "Handheld compass with a magnetic needle",
+   "source_page": "https://commons.wikimedia.org/wiki/File:Handheld_compass_with_a_magnetic_needle.jpg",
+   "download_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/53/Handheld_compass_with_a_magnetic_needle.jpg/1920px-Handheld_compass_with_a_magnetic_needle.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "licence": "CC BY-SA 4.0",
+   "licence_url": "https://creativecommons.org/licenses/by-sa/4.0",
+   "author": "Sneha G Gupta",
+   "attribution": "\"Handheld compass with a magnetic needle\" by Sneha G Gupta, CC BY-SA 4.0, via Wikimedia Commons. https://commons.wikimedia.org/wiki/File:Handheld_compass_with_a_magnetic_needle.jpg",
+   "downloaded": "2026-10-27"
+  }
+ },
+ {
+  "scene": "s06",
+  "start": 426.404,
+  "text": "Your phone finds your exact location by listening to",
+  "sentences": [
+   "s06.10"
+  ],
+  "id": "v096",
+  "end": 430.913,
+  "seconds": 4.51,
+  "scene_start": false,
+  "kind": "photo",
+  "photo_subject": "a smartphone resting on a wooden desk",
+  "photo_queries": [
+   "smartphone desk",
+   "mobile phone"
+  ],
+  "card": {
+   "type": "title",
+   "title": "Complete System Integration",
+   "subtitle": "Listening to Space Signals"
+  },
+  "photo": {
+   "path": "out/run/photos/v096.jpg",
+   "file": "v096.jpg",
+   "kind": "photo",
+   "source": "wikimedia_commons",
+   "title": "Apple-iphone-smartphone-desk (24243796611)",
+   "source_page": "https://commons.wikimedia.org/wiki/File:Apple-iphone-smartphone-desk_(24243796611).jpg",
+   "download_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/e7/Apple-iphone-smartphone-desk_%2824243796611%29.jpg/1920px-Apple-iphone-smartphone-desk_%2824243796611%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "licence": "CC0",
+   "licence_url": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
+   "author": "www.Pixel.la Free Stock Photos",
+   "attribution": "\"Apple-iphone-smartphone-desk (24243796611)\" by www.Pixel.la Free Stock Photos, CC0, via Wikimedia Commons. https://commons.wikimedia.org/wiki/File:Apple-iphone-smartphone-desk_(24243796611).jpg",
+   "downloaded": "2026-10-27"
+  }
+ },
+ {
+  "scene": "s06",
+  "start": 430.913,
+  "text": "broadcast timestamps, measuring radio travel times, and calculating geometry.",
+  "sentences": [
+   "s06.10"
+  ],
+  "id": "v097",
+  "end": 435.916,
+  "seconds": 5.0,
+  "scene_start": false,
+  "kind": "photo",
+  "photo_subject": "a graphic of satellite network surrounding Earth",
+  "photo_queries": [
+   "satellite network earth",
+   "global constellation"
+  ],
+  "card": {
+   "type": "title",
+   "title": "GPS Summary",
+   "subtitle": "Timestamps, Travel Times & Orbital Geometry"
+  }
+ },
+ {
+  "scene": "s06",
+  "start": 435.916,
+  "text": "Next time you follow that blue dot on your screen,",
+  "sentences": [
+   "s06.11"
+  ],
+  "id": "v098",
+  "end": 439.54171428571425,
+  "seconds": 3.63,
+  "scene_start": false,
+  "kind": "photo",
+  "photo_subject": "a smartphone screen displaying a blue dot map",
+  "photo_queries": [
+   "blue dot map phone",
+   "gps navigation blue dot"
+  ],
+  "card": {
+   "type": "title",
+   "title": "The Blue Dot",
+   "subtitle": "Pinpointing Your Place on Earth"
+  }
+ },
+ {
+  "scene": "s06",
+  "start": 439.54171428571425,
+  "text": "consider how orbital geometry and atomic time keeping guide your path.",
+  "sentences": [
+   "s06.11"
+  ],
+  "id": "v099",
+  "end": 444.997333,
+  "seconds": 5.46,
+  "scene_start": false,
+  "kind": "photo",
+  "photo_subject": "a night sky with a satellite streak passing overhead",
+  "photo_queries": [
+   "satellite night sky",
+   "space satellite night"
+  ],
+  "card": {
+   "type": "title",
+   "title": "Atomic Time in Orbit",
+   "subtitle": "Guiding Modern Navigation"
+  },
+  "photo": {
+   "path": "out/run/photos/v099.jpg",
+   "file": "v099.jpg",
+   "kind": "photo",
+   "source": "wikimedia_commons",
+   "title": "Wind turbine at night under a starry sky (2022)",
+   "source_page": "https://commons.wikimedia.org/wiki/File:Wind_turbine_at_night_under_a_starry_sky_(2022).jpg",
+   "download_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/4a/Wind_turbine_at_night_under_a_starry_sky_%282022%29.jpg/1920px-Wind_turbine_at_night_under_a_starry_sky_%282022%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "licence": "CC BY-SA 4.0",
+   "licence_url": "https://creativecommons.org/licenses/by-sa/4.0",
+   "author": "Paul Colin Hennig firstdorsal.eu",
+   "attribution": "\"Wind turbine at night under a starry sky (2022)\" by Paul Colin Hennig firstdorsal.eu, CC BY-SA 4.0, via Wikimedia Commons. https://commons.wikimedia.org/wiki/File:Wind_turbine_at_night_under_a_starry_sky_(2022).jpg",
+   "downloaded": "2026-10-27"
+  }
+ }
+]

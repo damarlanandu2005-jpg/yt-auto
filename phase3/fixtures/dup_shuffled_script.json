@@ -1,0 +1,345 @@
+{
+ "title": "The Hidden Clocks Behind Your Map App",
+ "scenes": [
+  {
+   "heading": "Einstein in orbit: why satellite clocks tick faster and how engineers correct for relativity",
+   "sentences": [
+    {
+     "text": "This speed effect causes orbital timers to lose roughly 7.2 microseconds per day compared to ground clocks.",
+     "kind": "fact",
+     "sources": [
+      "A4.45",
+      "A4.55"
+     ],
+     "id": "s05.04",
+     "check": "supported"
+    },
+    {
+     "text": "They slow the timer rate from 10.23 megahertz down to 10.22999999543 megahertz.",
+     "kind": "fact",
+     "sources": [
+      "A4.48",
+      "A4.67"
+     ],
+     "id": "s05.11",
+     "check": "supported"
+    },
+    {
+     "text": "Combining both relativistic effects, spacecraft timers run faster by approximately 38.6 microseconds every day.",
+     "kind": "fact",
+     "sources": [
+      "A4.47",
+      "A4.64",
+      "A5.19"
+     ],
+     "id": "s05.08",
+     "check": "supported"
+    },
+    {
+     "text": "Meanwhile, general relativity shows that gravity slows down moment closer to massive bodies like Earth.",
+     "kind": "fact",
+     "sources": [
+      "A4.42",
+      "A4.46"
+     ],
+     "id": "s05.05",
+     "check": "supported"
+    },
+    {
+     "text": "Because spacecraft operate high above Earth's surface, they experience weaker gravity than receivers on the ground.",
+     "kind": "fact",
+     "sources": [
+      "A4.42",
+      "A4.46",
+      "A4.59"
+     ],
+     "id": "s05.06",
+     "check": "supported"
+    },
+    {
+     "text": "If uncorrected, this timing difference would cause position errors of roughly 11.4 kilometres per day.",
+     "kind": "fact",
+     "sources": [
+      "A4.47"
+     ],
+     "id": "s05.09",
+     "check": "supported"
+    }
+   ],
+   "id": "s05"
+  },
+  {
+   "heading": "The passive listener: why GPS satellites do not track you or receive signals from your phone",
+   "sentences": [
+    {
+     "text": "Your handset acts as a silent receiver, quietly catching these incoming radio transmissions from the sky.",
+     "kind": "fact",
+     "sources": [
+      "A1.1",
+      "A1.55"
+     ],
+     "id": "s01.11",
+     "check": "supported"
+    },
+    {
+     "text": "GPS operates independently of telephone or Internet reception.",
+     "kind": "fact",
+     "sources": [
+      "A1.1"
+     ],
+     "id": "s01.05",
+     "check": "supported (after fix)"
+    },
+    {
+     "text": "As they orbit, these spacecraft continuously broadcast radio transmissions containing their precise position and precise time.",
+     "kind": "fact",
+     "sources": [
+      "A1.55",
+      "A1.56",
+      "A1.58"
+     ],
+     "id": "s01.10",
+     "check": "supported"
+    },
+    {
+     "text": "How can your smartphone pinpoint your precise position anywhere on our planet just by receiving silent radio signals?",
+     "kind": "framing",
+     "sources": [],
+     "id": "s01.01",
+     "check": "supported"
+    },
+    {
+     "text": "In reality, the Global Positioning System is a completely one-way passive broadcast network.",
+     "kind": "fact",
+     "sources": [
+      "A1.1"
+     ],
+     "id": "s01.03",
+     "check": "supported"
+    }
+   ],
+   "id": "s01"
+  },
+  {
+   "heading": "Mapping the numbers: how raw coordinates turn into a moving blue dot on your screen",
+   "sentences": [
+    {
+     "text": "High-end applications like land surveying can even achieve sub-millimetre accuracy with long-term measurements.",
+     "kind": "fact",
+     "sources": [
+      "A1.4"
+     ],
+     "id": "s06.05",
+     "check": "supported"
+    },
+    {
+     "text": "Next moment you follow that blue dot on your screen, consider how orbital geometry and atomic moment keeping guide your path.",
+     "kind": "framing",
+     "sources": [],
+     "id": "s06.11",
+     "check": "supported"
+    },
+    {
+     "text": "By analyzing transmission Doppler frequency shifts, your device can also calculate your precise velocity and direction.",
+     "kind": "fact",
+     "sources": [
+      "A1.66"
+     ],
+     "id": "s06.08",
+     "check": "supported"
+    },
+    {
+     "text": "More advanced navigation systems combine these spacecraft data with internal compasses or motion sensors.",
+     "kind": "fact",
+     "sources": [
+      "A1.66"
+     ],
+     "id": "s06.09",
+     "check": "supported"
+    },
+    {
+     "text": "Once your device processes the spacecraft signals, it calculates raw three-dimensional position coordinates.",
+     "kind": "fact",
+     "sources": [
+      "A1.59",
+      "A1.60"
+     ],
+     "id": "s06.01",
+     "check": "supported"
+    },
+    {
+     "text": "When paired with assistive services like Wi-Fi positioning, positioning performance becomes even more reliable.",
+     "kind": "fact",
+     "sources": [
+      "A1.4"
+     ],
+     "id": "s06.04",
+     "check": "supported"
+    }
+   ],
+   "id": "s06"
+  },
+  {
+   "heading": "The fourth satellite trick: how an extra signal fixes the cheap quartz clock in your pocket",
+   "sentences": [
+    {
+     "text": "To solve this problem without needing an impractical device clock, the system uses transmissions from a fourth satellite.",
+     "kind": "fact",
+     "sources": [
+      "A1.55",
+      "A1.67"
+     ],
+     "id": "s04.06",
+     "check": "supported (after fix)"
+    },
+    {
+     "text": "Trilateration with three spheres assumes that your device timer is perfectly synchronized with the satellites.",
+     "kind": "fact",
+     "sources": [
+      "A1.64"
+     ],
+     "id": "s04.01",
+     "check": "supported"
+    },
+    {
+     "text": "These unknowns are three spatial coordinates representing position and the precise deviation of your handset clock.",
+     "kind": "fact",
+     "sources": [
+      "A1.55",
+      "A1.60"
+     ],
+     "id": "s04.09",
+     "check": "supported"
+    },
+    {
+     "text": "Your GPS device requires transmissions from at least four spacecraft to solve its navigation equations.",
+     "kind": "fact",
+     "sources": [
+      "A1.55",
+      "A1.60",
+      "A1.67"
+     ],
+     "id": "s04.07",
+     "check": "supported"
+    },
+    {
+     "text": "Because your handset timer is inaccurate, measured travel times produce biased distances called pseudoranges.",
+     "kind": "fact",
+     "sources": [
+      "A1.59",
+      "A2.2"
+     ],
+     "id": "s04.04",
+     "check": "supported"
+    }
+   ],
+   "id": "s04"
+  },
+  {
+   "heading": "Turning time into space: how measuring radio travel times reveals your distance from an orbit",
+   "sentences": [
+    {
+     "text": "Because light moves so fast, a tiny timing offset of just 10 nanoseconds causes a 3 metre range error.",
+     "kind": "fact",
+     "sources": [
+      "A4.13"
+     ],
+     "id": "s02.11",
+     "check": "supported"
+    },
+    {
+     "text": "Crucially, the speed of radio waves is constant and completely independent of the satellite's speed.",
+     "kind": "fact",
+     "sources": [
+      "A1.54"
+     ],
+     "id": "s02.04",
+     "check": "supported"
+    },
+    {
+     "text": "When your device receives the signal, it records the arrival moment using its own internal clock.",
+     "kind": "fact",
+     "sources": [
+      "A1.57",
+      "A1.59"
+     ],
+     "id": "s02.07",
+     "check": "supported"
+    },
+    {
+     "text": "Each spacecraft continually broadcasts a pseudorandom sequence of ones and zeros known to the receiver.",
+     "kind": "fact",
+     "sources": [
+      "A1.56",
+      "A1.57"
+     ],
+     "id": "s02.05",
+     "check": "supported"
+    },
+    {
+     "text": "GPS spacecraft circle the our planet in medium orbit at an altitude of approximately 20,200 kilometres.",
+     "kind": "fact",
+     "sources": [
+      "A1.71"
+     ],
+     "id": "s02.02",
+     "check": "supported"
+    }
+   ],
+   "id": "s02"
+  },
+  {
+   "heading": "The sphere intersection: using trilateration to narrow your place on Earth to two points",
+   "sentences": [
+    {
+     "text": "To narrow down your location, your handset needs transmissions from additional spacecraft orbiting above.",
+     "kind": "fact",
+     "sources": [
+      "A1.55",
+      "A5.17",
+      "A5.18"
+     ],
+     "id": "s03.03",
+     "check": "supported"
+    },
+    {
+     "text": "A single range measurement places your device somewhere on a giant spherical shell centred on that satellite.",
+     "kind": "fact",
+     "sources": [
+      "A5.18"
+     ],
+     "id": "s03.02",
+     "check": "supported"
+    },
+    {
+     "text": "When you receive a range measurement from a second satellite, a second sphere is created.",
+     "kind": "fact",
+     "sources": [
+      "A5.18"
+     ],
+     "id": "s03.05",
+     "check": "supported"
+    },
+    {
+     "text": "Your device generates a position fix by finding where multiple spherical shells meet.",
+     "kind": "fact",
+     "sources": [
+      "A5.18"
+     ],
+     "id": "s03.07",
+     "check": "supported (after fix)"
+    },
+    {
+     "text": "Adding a third spacecraft creates a third spherical surface around that third broadcasting source.",
+     "kind": "fact",
+     "sources": [
+      "A5.18"
+     ],
+     "id": "s03.08",
+     "check": "supported"
+    }
+   ],
+   "id": "s03"
+  }
+ ]
+}

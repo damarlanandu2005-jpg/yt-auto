@@ -1,0 +1,204 @@
+{
+ "title": "Why Don't Satellites Fall Out of the Sky?",
+ "note": "TEST FIXTURE ONLY: not fact-checked, not for upload. Used to check that a different video is NOT flagged as a duplicate.",
+ "scenes": [
+  {
+   "id": "s01",
+   "heading": "The falling puzzle",
+   "sentences": [
+    {
+     "id": "s01.01",
+     "text": "Throw a ball and it curves back to the ground.",
+     "kind": "fact",
+     "sources": [
+      "T1"
+     ],
+     "check": "supported"
+    },
+    {
+     "id": "s01.02",
+     "text": "So why does a satellite, which is also pulled by gravity, stay up for years?",
+     "kind": "fact",
+     "sources": [
+      "T1"
+     ],
+     "check": "supported"
+    },
+    {
+     "id": "s01.03",
+     "text": "The surprising answer is that it is falling all the time.",
+     "kind": "fact",
+     "sources": [
+      "T1"
+     ],
+     "check": "supported"
+    }
+   ]
+  },
+  {
+   "id": "s02",
+   "heading": "Newton's cannon",
+   "sentences": [
+    {
+     "id": "s02.01",
+     "text": "Isaac Newton imagined a cannon on a very tall mountain.",
+     "kind": "fact",
+     "sources": [
+      "T1"
+     ],
+     "check": "supported"
+    },
+    {
+     "id": "s02.02",
+     "text": "Fire the ball faster and it lands farther away.",
+     "kind": "fact",
+     "sources": [
+      "T1"
+     ],
+     "check": "supported"
+    },
+    {
+     "id": "s02.03",
+     "text": "Fire it fast enough and the ground curves away beneath it as quickly as it drops.",
+     "kind": "fact",
+     "sources": [
+      "T1"
+     ],
+     "check": "supported"
+    },
+    {
+     "id": "s02.04",
+     "text": "The ball keeps falling but never reaches the ground.",
+     "kind": "fact",
+     "sources": [
+      "T1"
+     ],
+     "check": "supported"
+    }
+   ]
+  },
+  {
+   "id": "s03",
+   "heading": "Speed is everything",
+   "sentences": [
+    {
+     "id": "s03.01",
+     "text": "Near the Earth, that speed is about 7.8 kilometres per second.",
+     "kind": "fact",
+     "sources": [
+      "T1"
+     ],
+     "check": "supported"
+    },
+    {
+     "id": "s03.02",
+     "text": "That is fast enough to cross India in about five minutes.",
+     "kind": "fact",
+     "sources": [
+      "T1"
+     ],
+     "check": "supported"
+    },
+    {
+     "id": "s03.03",
+     "text": "Go slower and the orbit dips into the air, where drag pulls the satellite down.",
+     "kind": "fact",
+     "sources": [
+      "T1"
+     ],
+     "check": "supported"
+    }
+   ]
+  },
+  {
+   "id": "s04",
+   "heading": "Higher means slower",
+   "sentences": [
+    {
+     "id": "s04.01",
+     "text": "Higher orbits need less speed, because gravity is weaker farther away.",
+     "kind": "fact",
+     "sources": [
+      "T1"
+     ],
+     "check": "supported"
+    },
+    {
+     "id": "s04.02",
+     "text": "The Moon moves at only about 1 kilometre per second.",
+     "kind": "fact",
+     "sources": [
+      "T1"
+     ],
+     "check": "supported"
+    },
+    {
+     "id": "s04.03",
+     "text": "A geostationary satellite circles once a day, so it seems to hang over one spot.",
+     "kind": "fact",
+     "sources": [
+      "T1"
+     ],
+     "check": "supported"
+    }
+   ]
+  },
+  {
+   "id": "s05",
+   "heading": "Why some do fall",
+   "sentences": [
+    {
+     "id": "s05.01",
+     "text": "Low satellites still brush the thin top of the atmosphere.",
+     "kind": "fact",
+     "sources": [
+      "T1"
+     ],
+     "check": "supported"
+    },
+    {
+     "id": "s05.02",
+     "text": "Each pass steals a little speed, and the orbit slowly shrinks.",
+     "kind": "fact",
+     "sources": [
+      "T1"
+     ],
+     "check": "supported"
+    },
+    {
+     "id": "s05.03",
+     "text": "That is why space stations fire their engines to climb back up.",
+     "kind": "fact",
+     "sources": [
+      "T1"
+     ],
+     "check": "supported"
+    }
+   ]
+  },
+  {
+   "id": "s06",
+   "heading": "The answer",
+   "sentences": [
+    {
+     "id": "s06.01",
+     "text": "A satellite stays up by moving sideways fast enough to keep missing the Earth.",
+     "kind": "fact",
+     "sources": [
+      "T1"
+     ],
+     "check": "supported"
+    },
+    {
+     "id": "s06.02",
+     "text": "It is not floating. It is falling around the planet.",
+     "kind": "fact",
+     "sources": [
+      "T1"
+     ],
+     "check": "supported"
+    }
+   ]
+  }
+ ]
+}

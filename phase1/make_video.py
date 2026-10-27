@@ -23,7 +23,7 @@ from pathlib import Path
 ROOT = Path(__file__).resolve().parents[1]
 sys.path.insert(0, str(ROOT))
 
-from yt_auto import align, llm, package, render, research, shots, writer  # noqa: E402
+from yt_auto import align, gate, llm, package, render, research, shots, writer  # noqa: E402
 from yt_auto.bench import Bench  # noqa: E402
 from yt_auto.tts import Narrator  # noqa: E402
 from yt_auto.visuals import render_keyframe  # noqa: E402
@@ -218,6 +218,15 @@ def run(args, out: Path, bench: Bench) -> None:
     })
     package.write(out, script, the_plan, sources, visuals, scenes, report, bench.info)
     package.contact_sheet([Path(v["frame"]) for v in visuals], out / "contact_sheet.jpg")
+
+    # 14. Quality gate (Phase 3): technical + editorial checks; results lead the review sheet
+    with bench.stage("gate"):
+        result = gate.run(out, ROOT / "library", use_ai=True, media=True, script=script)
+        review = (out / "review.md").read_text(encoding="utf-8")
+        (out / "review.md").write_text(gate.markdown(result) + "\n" + review, encoding="utf-8")
+        bench.info["gate"] = {"verdict": result["verdict"],
+                              "not_pass": {c["check"]: c["status"] for c in result["checks"] if c["status"] != "PASS"}}
+        print(f"[gate] {result['verdict']}: {bench.info['gate']['not_pass']}", flush=True)
     print(json.dumps({k: bench.info[k] for k in ("title", "words", "video_seconds", "visuals", "photos", "cards",
                                                  "seconds_per_visual")}, indent=2), flush=True)
 

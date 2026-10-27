@@ -1,0 +1,20 @@
+{
+ "question": "How can your phone find your exact location on Earth just by listening to the time?",
+ "angle": "Most people assume satellites track your phone, but GPS is completely one-way. Your device is a silent receiver calculating geometry from broadcast timestamps, where an error of a microsecond means missing your turn by hundreds of metres.",
+ "structure": "Myth-busting into a step-by-step physical reveal: starting with the misconception that satellites watch you, then building up the mathematics of time delay, the sphere intersections, and the vital relativistic time fix.",
+ "outline": [
+  "The passive listener: why GPS satellites do not track you or receive signals from your phone",
+  "Turning time into space: how measuring radio travel times reveals your distance from an orbit",
+  "The sphere intersection: using trilateration to narrow your place on Earth to two points",
+  "The fourth satellite trick: how an extra signal fixes the cheap quartz clock in your pocket",
+  "Einstein in orbit: why satellite clocks tick faster and how engineers correct for relativity",
+  "Mapping the numbers: how raw coordinates turn into a moving blue dot on your screen"
+ ],
+ "wikipedia_titles": [
+  "Global Positioning System",
+  "Trilateration",
+  "Atomic clock",
+  "Error analysis for the Global Positioning System",
+  "Satellite navigation"
+ ]
+}

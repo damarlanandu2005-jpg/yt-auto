@@ -1,0 +1,85 @@
+name: Phase 3 quality gate test
+
+# Runs the quality gate on planted faults (phase3/eval_gate.py): silent gap, unlicensed image,
+# wrong title promise, near-duplicate scripts, and more, plus clean controls.
+# Uses TWO Gemini requests (the AI cases). About 3 minutes.
+# Results go to the bench-results branch under phase3/<run_id>/.
+on:
+  workflow_dispatch:
+  # Only to register this new workflow (GitHub can't start it by hand from a branch until it
+  # has run there once). Remove after the first run.
+  push:
+    branches: ["claude/phase-1-**"]
+    paths: [".github/workflows/phase3-gate-eval.yml"]
+
+permissions:
+  contents: write
+
+concurrency:
+  group: phase3-eval
+  cancel-in-progress: false
+
+jobs:
+  eval:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 20
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.13"
+          cache: pip
+
+      # Same FFmpeg as the video workflow (CLAUDE.md lesson 1)
+      - name: Cache FFmpeg
+        uses: actions/cache@v4
+        with:
+          path: ~/ffmpeg
+          key: ffmpeg-n8.1-linux64-gpl-v1
+
+      - name: Install FFmpeg 8.1 (stable)
+        timeout-minutes: 5
+        run: |
+          if [ ! -x "$HOME/ffmpeg/bin/ffmpeg" ]; then
+            mkdir -p "$HOME/ffmpeg"
+            curl -fsSL --retry 3 https://github.com/BtbN/FFmpeg-Builds/releases/download/latest/ffmpeg-n8.1-latest-linux64-gpl-8.1.tar.xz \
+              | tar -xJ -C "$HOME/ffmpeg" --strip-components=1
+          fi
+          echo "$HOME/ffmpeg/bin" >> "$GITHUB_PATH"
+
+      - name: Install Python packages
+        timeout-minutes: 10
+        run: pip install -r requirements.txt
+
+      - name: Run the test
+        timeout-minutes: 12
+        env:
+          GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
+        run: |
+          set -o pipefail
+          mkdir -p out/eval
+          python phase3/eval_gate.py --out out/eval 2>&1 | tee out/eval/build.log
+
+      - name: Save results to the bench-results branch
+        if: always()
+        timeout-minutes: 3
+        run: |
+          set -e
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git fetch --depth 1 origin bench-results
+          git worktree add results FETCH_HEAD
+          git -C results checkout -B bench-results
+          dest="results/phase3/${{ github.run_id }}"
+          mkdir -p "$dest"
+          cp out/eval/report.md out/eval/results.json out/eval/build.log "$dest/" 2>/dev/null || echo "no results"
+          cp -r out/eval/llm "$dest/" 2>/dev/null || true
+          cd results
+          git add -A
+          git commit -m "Phase 3 gate test ${{ github.run_id }}"
+          for i in 1 2 3 4 5; do
+            git push origin bench-results && break
+            git pull --rebase origin bench-results
+            sleep 5
+          done
