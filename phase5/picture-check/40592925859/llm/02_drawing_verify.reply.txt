@@ -1,0 +1,112 @@
+{
+  "checks": [
+    {
+      "n": 1,
+      "seen": "An abstract black and white illustration with curved ink lines and a bright white wave-like formation, accented with red patches on the upper right.",
+      "fits": false,
+      "reason": "It is only abstract shapes and lines without a recognisable planet surface or blast wave."
+    },
+    {
+      "n": 2,
+      "seen": "An abstract, explosive design featuring a bright central starburst with radiating red and white lines against a black background speckled with white dots.",
+      "fits": true,
+      "reason": "Shows a stellar detonation and expanding matter recognisable as an exploded star."
+    },
+    {
+      "n": 3,
+      "seen": "An abstract composition with a dark background, featuring dynamic white and red brush strokes radiating diagonally, resembling an explosion or cosmic burst.",
+      "fits": false,
+      "reason": "It shows abstract streaks rather than recognisable particles."
+    },
+    {
+      "n": 4,
+      "seen": "An abstract black background with a wide diagonal beam of white and thin red light, accompanied by scattered white dots resembling stars.",
+      "fits": false,
+      "reason": "Only shows abstract light beams, not a particle stream."
+    },
+    {
+      "n": 5,
+      "seen": "An abstract celestial illustration against a black background, featuring a spiky red and white starburst in the center, a red circle on the top left, a grey cratered moon on the right, and scattered white dots.",
+      "fits": false,
+      "reason": "Shows a starburst and symbols, not a star moving away."
+    },
+    {
+      "n": 6,
+      "seen": "An abstract black-and-white landscape with wavy mountains and a volcanic eruption in the center, shooting bright red flames and smoke into a starry night sky.",
+      "fits": false,
+      "reason": "Shows a volcano, which is explicitly incorrect for atmospheric radiation."
+    },
+    {
+      "n": 7,
+      "seen": "An abstract microscopic view of interconnected grey and white spheres with several larger red spheres scattered throughout on a black background.",
+      "fits": true,
+      "reason": "Shows interconnected spheres clearly representing molecules."
+    },
+    {
+      "n": 8,
+      "seen": "An abstract black background with clusters of grey and white bubbles or cells, featuring a prominent red organic-shaped mass on the left side and a dome-like structure on top.",
+      "fits": true,
+      "reason": "Depicts molecular structures and clusters."
+    },
+    {
+      "n": 9,
+      "seen": "An abstract black-and-white image depicting a cell-like structure with a prominent nucleus containing two smaller circular bodies, surrounded by irregular organic shapes and small dots.",
+      "fits": true,
+      "reason": "Shows a cell-like molecular structure recognisable for ozone molecules."
+    },
+    {
+      "n": 10,
+      "seen": "A monochrome abstract illustration showing a deep canyon with textured, striated rock formations on both sides leading to a flat horizon.",
+      "fits": false,
+      "reason": "Shows a canyon instead of atmospheric composition."
+    },
+    {
+      "n": 11,
+      "seen": "An abstract spherical object set against a black background, featuring a dark grey grid-patterned inner core encircled by a vibrant red ring and layered white outer rings.",
+      "fits": true,
+      "reason": "Shows a planet-like sphere with protective rings or a shield."
+    },
+    {
+      "n": 12,
+      "seen": "A minimalist abstract image showing a bright, glowing white light on the left edge that smoothly transitions into a dark black gradient on the right.",
+      "fits": false,
+      "reason": "Only shows a light gradient, no recognisable ultraviolet light or atmosphere."
+    },
+    {
+      "n": 13,
+      "seen": "An abstract black-and-white image resembling a microscopic view of intertwined tubular structures or blood vessels, with small segments highlighted in red.",
+      "fits": true,
+      "reason": "Clearly represents tubular structures akin to DNA strands."
+    },
+    {
+      "n": 14,
+      "seen": "An abstract black-and-white geometric structure with intertwined tubular elements and a grid pattern on the right side, accented with small red details.",
+      "fits": true,
+      "reason": "Shows intertwined tubular elements representing DNA structure."
+    },
+    {
+      "n": 15,
+      "seen": "An abstract black-and-white illustration of various sea creatures, fish, and organic plant-like shapes tightly packed together in a dynamic underwater composition.",
+      "fits": true,
+      "reason": "Clearly shows fish and sea creatures representing the ocean web."
+    },
+    {
+      "n": 16,
+      "seen": "An abstract grey celestial body or world map set against a black background, with a vibrant red region highlighting a specific area on the lower left.",
+      "fits": true,
+      "reason": "Shows a world map or globe representing global climate."
+    },
+    {
+      "n": 17,
+      "seen": "An abstract 3D white wireframe sphere composed of intersecting curved lines and node points, set against a solid black background.",
+      "fits": true,
+      "reason": "Shows an atomic or molecular structure model."
+    },
+    {
+      "n": 18,
+      "seen": "An abstract black background featuring a large red diamond shape near the center, a grey smoke-like trail extending to the right, and scattered white dots representing stars.",
+      "fits": false,
+      "reason": "Uses a red diamond instead of a star."
+    }
+  ]
+}

@@ -1,0 +1,17 @@
+[llm] drawing_verify: gemma-4-31b-it unavailable (HTTP 500 (busy)); trying next model
+drawings: checked 18, rejected 8
+  REJECT v002: An abstract black and white illustration with curved ink lines and a bright white wave-like formation, accente | It is only abstract shapes and lines without a recognisable planet surface or blast wave.
+  REJECT v010: An abstract composition with a dark background, featuring dynamic white and red brush strokes radiating diagon | It shows abstract streaks rather than recognisable particles.
+  REJECT v022: An abstract black background with a wide diagonal beam of white and thin red light, accompanied by scattered w | Only shows abstract light beams, not a particle stream.
+  REJECT v030: An abstract celestial illustration against a black background, featuring a spiky red and white starburst in th | Shows a starburst and symbols, not a star moving away.
+  REJECT v034: An abstract black-and-white landscape with wavy mountains and a volcanic eruption in the center, shooting brig | Shows a volcano, which is explicitly incorrect for atmospheric radiation.
+  REJECT v039: A monochrome abstract illustration showing a deep canyon with textured, striated rock formations on both sides | Shows a canyon instead of atmospheric composition.
+  REJECT v054: A minimalist abstract image showing a bright, glowing white light on the left edge that smoothly transitions i | Only shows a light gradient, no recognisable ultraviolet light or atmosphere.
+  REJECT v080: An abstract black background featuring a large red diamond shape near the center, a grey smoke-like trail exte | Uses a red diamond instead of a star.
+photos: checked 37, rejected 6
+  REJECT v004: A long, narrow solar sail structure tilted against a clear blue sky. At the bottom, there is a small label rea | The image shows a solar sail structure rather than just a clear blue sky and clouds as requested.
+  REJECT v018: A black-and-white image showing a narrow ring segment and portions of planetary rings against the darkness of  | The image depicts planetary rings instead of a bright glowing star.
+  REJECT v020: A large white observatory dome sits on a mountainous landscape overlooking a blue sea under a twilight sky, wi | The image shows an observatory on land, not a telescope view of a star.
+  REJECT v053: A dark scene featuring a bright orange-red rectangular block above a darker, partially visible object glowing  | The image is abstract or unclear, not a clear depiction of sunlight ultraviolet rays.
+  REJECT v055: A black-and-white image of a heavily cratered, spherical moon illuminated against the black void of space. At  | The image shows a moon, not the Earth's surface as requested.
+  REJECT v061: An artist's illustration of a golden scientific satellite orbiting Earth, with its solar panels deployed and t | The image shows a satellite, not ocean surface waves.

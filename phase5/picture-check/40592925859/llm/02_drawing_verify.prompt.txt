@@ -1,0 +1,69 @@
+[model] gemini-3.5-flash-lite
+[system]
+
+
+[user]
+Step 2 of a picture check for a science video. Someone looked at each picture WITHOUT knowing
+what it should show and described it. Decide for each image whether the picture fits.
+The pictures are ink drawings made by an AI image model, which often misses. A drawing fits if a
+viewer hearing the narration would recognise its main object(s) (a star, a planet, a blast, molecules, DNA,
+fish...). It does NOT need to show the action or process (collapsing, moving, changing): a still picture of
+the right thing is enough. It does NOT fit if it is only shapes or texture with no recognisable object, shows
+a different thing (a volcano or canyon for the atmosphere, a red diamond for a star), has text or labels, looks
+like a logo/emblem/badge/flag, or has deformed bodies.
+When unsure, answer fits = false (a chart or plain card is shown instead, which is fine).
+Copy the description into "seen".
+Image 1: described as: An abstract black and white illustration with curved ink lines and a bright white wave-like formation, accented with red patches on the upper right.
+  should show: a fiery blast wave sweeping across a planet surface
+  narration: Do science fiction movies show a fiery blast wave sweeping our planet bare within seconds?
+Image 2: described as: An abstract, explosive design featuring a bright central starburst with radiating red and white lines against a black background speckled with white dots.
+  should show: a star expelling matter into space
+  narration: These stellar detonations expel several solar masses
+Image 3: described as: An abstract composition with a dark background, featuring dynamic white and red brush strokes radiating diagonally, resembling an explosion or cosmic burst.
+  should show: particles traveling at light speed
+  narration: The ejected material travels outward at speeds reaching several per cent of the speed of light.
+Image 4: described as: An abstract black background with a wide diagonal beam of white and thin red light, accompanied by scattered white dots resembling stars.
+  should show: particle stream moving across space
+  narration: When it detonates, its particle stream will reach
+Image 5: described as: An abstract celestial illustration against a black background, featuring a spiky red and white starburst in the center, a red circle on the top left, a grey cratered moon on the right, and scattered white dots.
+  should show: a star moving away in space
+  narration: is currently moving away to a safe distance.
+Image 6: described as: An abstract black-and-white landscape with wavy mountains and a volcanic eruption in the center, shooting bright red flames and smoke into a starry night sky.
+  should show: radiation hitting upper atmosphere
+  narration: When gamma radiation hits the upper atmosphere, it causes chemical reactions.
+Image 7: described as: An abstract microscopic view of interconnected grey and white spheres with several larger red spheres scattered throughout on a black background.
+  should show: gas molecules breaking apart
+  narration: Radiolysis breaks apart these common gas molecules
+Image 8: described as: An abstract black background with clusters of grey and white bubbles or cells, featuring a prominent red organic-shaped mass on the left side and a dome-like structure on top.
+  should show: molecules recombining into nitrogen oxides
+  narration: and recombines them into harmful nitrogen oxides.
+Image 9: described as: An abstract black-and-white image depicting a cell-like structure with a prominent nucleus containing two smaller circular bodies, surrounded by irregular organic shapes and small dots.
+  should show: ozone molecules being depleted
+  narration: These newly created nitrogen oxides notably deplete ozone molecules.
+Image 10: described as: A monochrome abstract illustration showing a deep canyon with textured, striated rock formations on both sides leading to a flat horizon.
+  should show: atmosphere composition changing
+  narration: The atmosphere's protective ozone composition is transformed by these reactions.
+Image 11: described as: An abstract spherical object set against a black background, featuring a dark grey grid-patterned inner core encircled by a vibrant red ring and layered white outer rings.
+  should show: planet shield collapsing
+  narration: Does that distance boundary mark where atmospheric protection collapses?
+Image 12: described as: A minimalist abstract image showing a bright, glowing white light on the left edge that smoothly transitions into a dark black gradient on the right.
+  should show: ultraviolet light penetrating atmosphere
+  narration: When stratospheric ozone levels drop, intense ultraviolet
+Image 13: described as: An abstract black-and-white image resembling a microscopic view of intertwined tubular structures or blood vessels, with small segments highlighted in red.
+  should show: cellular DNA damaged by radiation
+  narration: This extreme radiation damages cellular DNA, causing pyrimidine
+Image 14: described as: An abstract black-and-white geometric structure with intertwined tubular elements and a grid pattern on the right side, accented with small red details.
+  should show: DNA replication transcription errors
+  narration: bases to form transcription errors during replication.
+Image 15: described as: An abstract black-and-white illustration of various sea creatures, fish, and organic plant-like shapes tightly packed together in a dynamic underwater composition.
+  should show: ocean food web collapse
+  narration: Their collapse would seriously damage the foundation of the ocean food web.
+Image 16: described as: An abstract grey celestial body or world map set against a black background, with a vibrant red region highlighting a specific area on the lower left.
+  should show: global climate cooling pattern
+  narration: alter climate patterns and cool the global temperature.
+Image 17: described as: An abstract 3D white wireframe sphere composed of intersecting curved lines and node points, set against a solid black background.
+  should show: iron-60 isotope atomic structure
+  narration: One isotope produced during these events is iron-60,
+Image 18: described as: An abstract black background featuring a large red diamond shape near the center, a grey smoke-like trail extending to the right, and scattered white dots representing stars.
+  should show: star near Earth with atmospheric shield
+  narration: So how close would a dying star need to be to wipe out our protective atmospheric shield?

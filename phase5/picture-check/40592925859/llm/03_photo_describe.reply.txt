@@ -1,0 +1,152 @@
+{
+  "images": [
+    {
+      "n": 1,
+      "seen": "A full view of planet Earth photographed from space, showing continents, oceans, and swirling cloud patterns against a black background. At the bottom, there is text reading 'Image: NASA/Apollo 17 crew; taken by either H... / Public domain / Wikimedia Commons'."
+    },
+    {
+      "n": 2,
+      "seen": "A long, narrow solar sail structure tilted against a clear blue sky. At the bottom, there is a small label reading 'Image: NASA'."
+    },
+    {
+      "n": 3,
+      "seen": "A colorful nebula glowing in space against a star-filled black background, with complex filaments of gas and dust. At the bottom, there is a credit line reading 'Image: NASA, ESA, J. Hester and A. Loll (Ariz... / Public domain / Wikimedia Commons'."
+    },
+    {
+      "n": 4,
+      "seen": "A large, glowing red star centered in the frame, surrounded by a dense field of distant stars in deep space. At the bottom, there is a label reading 'Image: NASA'."
+    },
+    {
+      "n": 5,
+      "seen": "An artistic rendering of a planetary system featuring a bright star surrounded by multiple dusty rings and orbiting planetoids. At the bottom, there is a text label reading 'Image: NASA'."
+    },
+    {
+      "n": 6,
+      "seen": "A detailed scientific diagram titled 'The Interstellar Medium' illustrating the heliosphere, solar system planets, and various cosmic regions with color-coded zones and distances. At the bottom, there is a credit line reading 'Image: Charles Carter/Keck Institute for Spac... / Public domain / Wikimedia Commons'."
+    },
+    {
+      "n": 7,
+      "seen": "A spherical, textured astronomical remnant glowing with orange, yellow, and blue colors against a black backdrop. At the bottom, there is a credit line reading 'Image: NASA/CXC/Chinese Academy of Sciences/F... / Public domain / Wikimedia Commons'."
+    },
+    {
+      "n": 8,
+      "seen": "A night sky filled with stars above a dark silhouette of coastal grass and a faint shooting star streak on the right. At the bottom, there is a label reading 'Image: NASA'."
+    },
+    {
+      "n": 9,
+      "seen": "An infrared view of the dense star fields and dusty clouds near the center of the Milky Way galaxy, glowing in reddish hues. At the bottom, there is a credit line reading 'Image: Credit: NASA/JPL-Caltech/S. Stolovy (S... / Public domain / Wikimedia Commons'."
+    },
+    {
+      "n": 10,
+      "seen": "A black-and-white image showing a narrow ring segment and portions of planetary rings against the darkness of space. At the bottom, there is a label reading 'Image: NASA'."
+    },
+    {
+      "n": 11,
+      "seen": "A close-up image of the star Betelgeuse captured as an asymmetrical, glowing orange-red disk against a black background. At the bottom, there is a credit line reading 'Image: ALMA (ESO/NAOJ/NRAO)/E. O'Gorman/P. Ke... / CC BY 4.0 / Wikimedia Commons'."
+    },
+    {
+      "n": 12,
+      "seen": "A large white observatory dome sits on a mountainous landscape overlooking a blue sea under a twilight sky, with a faint comet or streak visible on the left. At the bottom, there is a credit line reading 'Image: Whystheirskyblue1 / CC BY-SA 4.0 / Wikimedia Commons'."
+    },
+    {
+      "n": 13,
+      "seen": "A space view showing a bright green nebula in the upper portion and a red filamentary structure resembling a supernova remnant below, dotted with numerous blue stars. At the bottom, there is a label reading 'Image: NASA'."
+    },
+    {
+      "n": 14,
+      "seen": "An artist's illustration of multiple exoplanets in a star system, with one large pinkish planet in the foreground and a bright star emerging behind it. At the bottom, there is a credit line reading 'Image: Robin Dienel, courtesy of the Carnegie... / CC BY 4.0 / Wikimedia Commons'."
+    },
+    {
+      "n": 15,
+      "seen": "An illustration of two interacting galaxies with bright light beams and three inset color spectrum graphs labeled with rainbow bars. At the bottom, there is a credit line reading 'Image: ESO/L. Calçada / CC BY 4.0 / Wikimedia Commons'."
+    },
+    {
+      "n": 16,
+      "seen": "A satellite map of the Earth centered on Antarctica, showing the ozone hole highlighted in purple and blue against surrounding green and yellow regions. At the bottom, there is a label reading 'Image: NASA'."
+    },
+    {
+      "n": 17,
+      "seen": "A scientific line graph on a blue grid with a large red data area representing density measurements over time, featuring text labels and a green arrow pointing to March 2022. At the bottom, there is a label reading 'Image: NASA'."
+    },
+    {
+      "n": 18,
+      "seen": "A detailed astronomical photograph of a red emission nebula filled with glowing gas clouds and scattered background stars. At the bottom, there is a label reading 'Image: NASA'."
+    },
+    {
+      "n": 19,
+      "seen": "An artist's concept of a reddish-brown exoplanet in the foreground, with a glowing star and its surrounding debris disk visible in the background among floating asteroids. At the bottom, there is a label reading 'Image: NASA'."
+    },
+    {
+      "n": 20,
+      "seen": "A view from high altitude showing a thick layer of white clouds below, a thin blue atmospheric haze, and a crescent moon hanging in the dark upper sky. At the bottom, there is a credit line reading 'Image: NASA Earth Observatory / Public domain / Wikimedia Commons'."
+    },
+    {
+      "n": 21,
+      "seen": "A dark scene featuring a bright orange-red rectangular block above a darker, partially visible object glowing with faint blue spots. At the bottom, there is a label reading 'Image: NASA'."
+    },
+    {
+      "n": 22,
+      "seen": "A black-and-white image of a heavily cratered, spherical moon illuminated against the black void of space. At the bottom, there is a label reading 'Image: NASA'."
+    },
+    {
+      "n": 23,
+      "seen": "A brown frog sits on mossy forest ground surrounded by green vegetation and leaf litter. At the bottom, there is a credit line reading 'Image: Ehrgeiz2 / CC BY 3.0 / Wikimedia Commons'."
+    },
+    {
+      "n": 24,
+      "seen": "A satellite image of a coastal region with turquoise shallow waters, coral reefs, green landmasses, and scattered cloud formations. At the bottom, there is a label reading 'Image: NASA'."
+    },
+    {
+      "n": 25,
+      "seen": "An artist's illustration of a golden scientific satellite orbiting Earth, with its solar panels deployed and the bright sun flaring in the background. At the bottom, there is a label reading 'Image: NASA'."
+    },
+    {
+      "n": 26,
+      "seen": "A satellite view showing a large swirling turquoise phytoplankton bloom in the dark ocean waters surrounded by white clouds and landmasses. At the bottom, there is a label reading 'Image: NASA'."
+    },
+    {
+      "n": 27,
+      "seen": "A photograph taken from space showing the curved horizon of Earth with a vibrant green and red aurora glowing in the upper atmosphere against a star-filled sky. At the bottom, there is a label reading 'Image: NASA'."
+    },
+    {
+      "n": 28,
+      "seen": "A close-up photograph of a brown, layered, domed rock formation resembling a fossilized stromatolite, placed next to a penny for scale. At the bottom, there is a label reading 'Image: NASA'."
+    },
+    {
+      "n": 29,
+      "seen": "A grayish-black fossilized animal tooth mounted against a light background, accompanied by a blue sign with text in English and another language reading 'FOSSIL TEETH'. At the bottom, there is a credit line reading 'Image: Mohit07agre / CC0 / Wikimedia Commons'."
+    },
+    {
+      "n": 30,
+      "seen": "A close-up photograph of a rough, light-colored mineral or rock specimen with embedded white and gray crystalline patches against a dark background. At the bottom, there is a credit line reading 'Image: James St. John / CC BY 2.0 / Wikimedia Commons'."
+    },
+    {
+      "n": 31,
+      "seen": "A vertical composite image showing multiple sediment core samples arranged side by side, displaying varying shades of gray, brown, and tan layers. At the bottom, there is a credit line reading 'Image: Hannes Grobe, AWI / CC BY 3.0 / Wikimedia Commons'."
+    },
+    {
+      "n": 32,
+      "seen": "A three-panel educational graphic titled 'Progression of a Supernova Explosion', showing a pre-supernova star with internal layers, a central explosion marked with a question mark, and the resulting colorful nebula. At the bottom, there is a label reading 'Image: NASA'."
+    },
+    {
+      "n": 33,
+      "seen": "A global view of the Earth with seafloor crust ages color-coded, showing red and orange at the mid-ocean ridges and blue and green in older oceanic basins. At the bottom, there is a credit line reading 'Image: Earth_seafloor_crust_age_poster.gif: N... / Public domain / Wikimedia Commons'."
+    },
+    {
+      "n": 34,
+      "seen": "An aerial photograph of a massive ice shelf ending in a sheer cliff face at the edge of the dark blue ocean, with several smaller icebergs floating nearby. At the bottom, there is a label reading 'Image: NASA'."
+    },
+    {
+      "n": 35,
+      "seen": "A black-and-white scanning electron microscope image showing microscopic tubular and granular structures densely packed together. At the bottom, there is a label reading 'Image: NASA'."
+    },
+    {
+      "n": 36,
+      "seen": "A black-and-white scanning electron microscope image showing a collection of microscopic marine microfossils, including coccolithophores and shell fragments. At the bottom, there is a credit line reading 'Image: Hannes Grobe (talk), Alfred Wegener In... / CC BY 3.0 / Wikimedia Commons'."
+    },
+    {
+      "n": 37,
+      "seen": "A photograph of the Earth's horizon from space, showing white clouds covering the surface, a bright sun glare reflecting off the sea, and the thin blue atmospheric rim against the black void. At the bottom, there is a label reading 'Image: NASA'."
+    }
+  ]
+}
