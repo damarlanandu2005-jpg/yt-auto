@@ -1,0 +1,56 @@
+{
+  "_about": "Phase 0b niche test settings. FROZEN on 27 Oct 2026 before any channel data was pulled (see RULES.md). Change only by a new dated version, never after looking at results.",
+  "version": 1,
+  "niches": {
+    "technology": {
+      "label": "How technology works",
+      "queries": ["how it works explained", "how does technology work", "engineering explained",
+                  "how computers work", "how smartphones work", "how the internet works",
+                  "how batteries work", "inventions explained"],
+      "keywords": ["how", "work", "works", "explained", "engineering", "technology", "tech", "computer", "chip",
+                   "processor", "internet", "smartphone", "phone", "battery", "machine", "engine", "invention",
+                   "electric", "electricity", "software", "hardware", "robot", "camera", "screen", "signal"]
+    },
+    "science_space": {
+      "label": "Science and space",
+      "queries": ["space explained", "universe explained", "physics explained", "black holes explained",
+                  "planets documentary", "why is the sky", "science explained simply", "rocket science explained"],
+      "keywords": ["space", "universe", "planet", "star", "stars", "galaxy", "black hole", "moon", "mars", "sun",
+                   "earth", "physics", "quantum", "rocket", "orbit", "science", "chemistry", "atom", "light",
+                   "gravity", "cosmos", "solar", "nasa", "telescope", "asteroid"]
+    },
+    "money_economics": {
+      "label": "Money and economics (education only)",
+      "queries": ["economics explained", "how money works", "inflation explained", "history of money",
+                  "how banks work", "why countries get rich", "global economy explained", "trade explained"],
+      "keywords": ["economy", "economics", "economic", "money", "inflation", "bank", "banks", "market", "trade",
+                   "gdp", "debt", "tax", "price", "prices", "currency", "recession", "wealth", "poverty", "country",
+                   "countries", "budget", "interest", "dollar", "rupee", "history"],
+      "exclude_title_words": ["stocks to buy", "invest", "investing", "crypto", "bitcoin", "trading", "trader",
+                              "get rich", "passive income", "side hustle", "make money", "forex", "signals",
+                              "portfolio", "buy now", "dividend"]
+    }
+  },
+  "selection": {
+    "search": {"type": "video", "videoDuration": "medium", "relevanceLanguage": "en",
+               "published_within_days": 180, "maxResults": 50},
+    "subscribers_min": 1000,
+    "subscribers_max": 100000,
+    "long_video_min_seconds": 240,
+    "long_videos_min": 10,
+    "last_long_upload_within_days": 60,
+    "fit_min_titles": 4,
+    "fit_out_of": 10,
+    "english_ascii_min": 0.9,
+    "channels_per_niche": 20,
+    "channels_per_niche_min": 15
+  },
+  "metrics": {
+    "latest_long_videos": 10,
+    "too_new_days": 7,
+    "outlier_ratio": 2.0,
+    "snapshots": 5,
+    "snapshot_every_days": 7
+  },
+  "quota": {"daily_units_free": 10000, "stop_at_units": 8000}
+}
