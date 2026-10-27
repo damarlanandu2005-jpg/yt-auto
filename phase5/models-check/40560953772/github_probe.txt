@@ -1,0 +1,15 @@
+140.82.112.22   glb-db52c2cf8be544.github.com models.github.ai
+== https://models.github.ai/catalog/models
+HTTP/2 200 
+content-type: text/plain
+
+
+remote_ip=140.82.112.22 code=200
+OK
+
+== https://models.inference.ai.azure.com/models
+curl: (6) Could not resolve host: models.inference.ai.azure.com
+
+remote_ip= code=000
+OK
+
