@@ -1,0 +1,1480 @@
+{
+ "niche": "science_space",
+ "made": "2026-10-27T15:49:25.028156+00:00",
+ "weights": {
+  "demand": 0.35,
+  "fit": 0.2,
+  "visuals": 0.2,
+  "originality": 0.15,
+  "evergreen": 0.1
+ },
+ "signals": {
+  "outlier_video": 40,
+  "trending_video": 4,
+  "news": 40
+ },
+ "log": {
+  "trending_errors": [
+   "US/27: HTTP Error 404: Not Found",
+   "GB/27: HTTP Error 404: Not Found",
+   "IN/27: HTTP Error 404: Not Found"
+  ],
+  "trending_units": 3
+ },
+ "proposed": 25,
+ "chosen": [
+  {
+   "question": "How close would a exploding star need to be to strip away Earth's protective atmosphere?",
+   "angle": "Evaluating stellar core-collapse energetics, gamma-ray ozone layer depletion radii, and historic near-Earth supernovae risks.",
+   "signals": [
+    "S40",
+    "S59"
+   ],
+   "wikipedia_articles": [
+    "Supernova",
+    "Gamma-ray burst",
+    "Near-Earth supernova"
+   ],
+   "evidence": [
+    {
+     "kind": "outlier_video",
+     "title": "What Would Happen If Betelgeuse Exploded Tonight?",
+     "channel": "Caelum",
+     "subscribers": 2080,
+     "ratio": 2.3,
+     "views": 1112,
+     "days": 17.2,
+     "url": "https://www.youtube.com/watch?v=Bs55BvKDR-Y",
+     "id": "S40"
+    },
+    {
+     "kind": "news",
+     "title": "Nearly 3,000 exploding stars challenge our understanding of the Universe",
+     "url": "https://www.sciencedaily.com/releases/2026/10/261021231244.htm",
+     "date": "Thu, 22 Oct 2026 22:54:41 EDT",
+     "id": "S59"
+    }
+   ],
+   "pageviews": [
+    {
+     "article": "Supernova",
+     "last_30_days": 32143,
+     "trend": 0.97
+    },
+    {
+     "article": "Gamma-ray burst",
+     "last_30_days": 11679,
+     "trend": 1.04
+    },
+    {
+     "article": "Near-Earth supernova",
+     "last_30_days": 2993,
+     "trend": 1.11
+    }
+   ],
+   "scores": {
+    "fit": 5,
+    "visuals": 4,
+    "originality": 3,
+    "evergreen": 5,
+    "demand": 3
+   },
+   "safe": true,
+   "score_reason": "Dramatic astronomical hazard concept with rich supernova remnant photography from Hubble and Chandra.",
+   "score": 3.8
+  },
+  {
+   "question": "Why does the universe organize into vast cosmic webs instead of spreading out uniformly?",
+   "angle": "Investigating dark matter scaffolding, gravitational instability, and cosmic filaments connecting superclusters over billions of years.",
+   "signals": [
+    "S27",
+    "S74"
+   ],
+   "wikipedia_articles": [
+    "Galaxy filament",
+    "Dark matter",
+    "Large-scale structure of the cosmos"
+   ],
+   "evidence": [
+    {
+     "kind": "outlier_video",
+     "title": "The Scariest Theories That Turned Out to Be True",
+     "channel": "Mr Space Explainer",
+     "subscribers": 11600,
+     "ratio": 4.2,
+     "views": 37819,
+     "days": 7.9,
+     "url": "https://www.youtube.com/watch?v=9YxSt7RyoH0",
+     "id": "S27"
+    },
+    {
+     "kind": "news",
+     "title": "James Webb reveals a massive cosmic structure that challenges our understanding of the Universe",
+     "url": "https://www.sciencedaily.com/releases/2026/10/261012185021.htm",
+     "date": "Tue, 13 Oct 2026 07:27:24 EDT",
+     "id": "S74"
+    }
+   ],
+   "pageviews": [
+    {
+     "article": "Galaxy filament",
+     "last_30_days": 8973,
+     "trend": 1.03
+    },
+    {
+     "article": "Dark matter",
+     "last_30_days": 52427,
+     "trend": 0.69
+    },
+    {
+     "article": "Large-scale structure of the cosmos",
+     "last_30_days": 265,
+     "trend": 0.77
+    }
+   ],
+   "scores": {
+    "fit": 5,
+    "visuals": 4,
+    "originality": 3,
+    "evergreen": 5,
+    "demand": 3
+   },
+   "safe": true,
+   "score_reason": "Core large-scale structure topic illustrated effectively by Sloan Digital Sky Survey maps and dark matter scaffolding visualisations.",
+   "score": 3.8
+  },
+  {
+   "question": "How do rocket engines push spacecraft forward in the vacuum of space?",
+   "angle": "Explaining momentum conservation, gas expansion mechanics, and nozzle design without air pressure to push against.",
+   "signals": [
+    "S14",
+    "S68"
+   ],
+   "wikipedia_articles": [
+    "Rocket engine",
+    "Rocket nozzle",
+    "Newton's laws of motion"
+   ],
+   "evidence": [
+    {
+     "kind": "outlier_video",
+     "title": "Every NASA Rocket Engine Explained",
+     "channel": "The Space Explained",
+     "subscribers": 1030,
+     "ratio": 11.4,
+     "views": 943,
+     "days": 11.1,
+     "url": "https://www.youtube.com/watch?v=cy-9ZyW008Y",
+     "id": "S14"
+    },
+    {
+     "kind": "news",
+     "title": "NASA’s SpaceX launch lights up the sky with a giant glowing jellyfish",
+     "url": "https://www.sciencedaily.com/releases/2026/10/261016070635.htm",
+     "date": "Sat, 17 Oct 2026 23:02:35 EDT",
+     "id": "S68"
+    }
+   ],
+   "pageviews": [
+    {
+     "article": "Rocket engine",
+     "last_30_days": 6160,
+     "trend": 0.93
+    },
+    {
+     "article": "Rocket nozzle",
+     "last_30_days": 107,
+     "trend": 0.79
+    },
+    {
+     "article": "Newton's laws of motion",
+     "last_30_days": 59650,
+     "trend": 0.96
+    }
+   ],
+   "scores": {
+    "fit": 5,
+    "visuals": 4,
+    "originality": 2,
+    "evergreen": 5,
+    "demand": 3
+   },
+   "safe": true,
+   "score_reason": "Very basic rocketry physics with great vacuum chamber test footage and schematics, but conceptually over-explained.",
+   "score": 3.65
+  },
+  {
+   "question": "Why are sunsets on Mars blue while sunsets on Earth are red?",
+   "angle": "Comparing Rayleigh scattering from atmospheric gases on Earth with Mie scattering from fine suspended dust on Mars.",
+   "signals": [
+    "S15",
+    "S29"
+   ],
+   "wikipedia_articles": [
+    "Rayleigh scattering",
+    "Mie scattering",
+    "Atmosphere of Mars"
+   ],
+   "evidence": [
+    {
+     "kind": "outlier_video",
+     "title": "Skydiving on Every Planet in the Solar System",
+     "channel": "Space Explainer",
+     "subscribers": 23300,
+     "ratio": 11.3,
+     "views": 12075,
+     "days": 17.2,
+     "url": "https://www.youtube.com/watch?v=ONNcaLKzXIw",
+     "id": "S15"
+    },
+    {
+     "kind": "outlier_video",
+     "title": "Every Sunset in the Solar System",
+     "channel": "Space Explainer",
+     "subscribers": 23300,
+     "ratio": 3.5,
+     "views": 12110,
+     "days": 55.2,
+     "url": "https://www.youtube.com/watch?v=3qWzdlABMkA",
+     "id": "S29"
+    }
+   ],
+   "pageviews": [
+    {
+     "article": "Rayleigh scattering",
+     "last_30_days": 17483,
+     "trend": 1.03
+    },
+    {
+     "article": "Mie scattering",
+     "last_30_days": 5427,
+     "trend": 1.03
+    },
+    {
+     "article": "Atmosphere of Mars",
+     "last_30_days": 7351,
+     "trend": 1.0
+    }
+   ],
+   "scores": {
+    "fit": 5,
+    "visuals": 5,
+    "originality": 3,
+    "evergreen": 5,
+    "demand": 2.0
+   },
+   "safe": true,
+   "score_reason": "Visually compelling thanks to real Martian rover sunset photos paired directly with optical scattering diagrams.",
+   "score": 3.65
+  },
+  {
+   "question": "Why do planetary rings form and why are they destined to disappear?",
+   "angle": "Detailing Roche limit gravitational tidal forces and the ring rain phenomenon draining Saturn's rings over millions of years.",
+   "signals": [
+    "S21",
+    "S34"
+   ],
+   "wikipedia_articles": [
+    "Roche limit",
+    "Rings of Saturn",
+    "Ring system"
+   ],
+   "evidence": [
+    {
+     "kind": "outlier_video",
+     "title": "Saturn's Rings Are Disappearing Faster Than We Thought",
+     "channel": "Curio",
+     "subscribers": 3970,
+     "ratio": 6.0,
+     "views": 396,
+     "days": 22.0,
+     "url": "https://www.youtube.com/watch?v=Z3YscLRV3KM",
+     "id": "S21"
+    },
+    {
+     "kind": "outlier_video",
+     "title": "Every Object in the Solar System Explained",
+     "channel": "Supernova",
+     "subscribers": 10000,
+     "ratio": 2.9,
+     "views": 13846,
+     "days": 92.5,
+     "url": "https://www.youtube.com/watch?v=e3iPZRENR8w",
+     "id": "S34"
+    }
+   ],
+   "pageviews": [
+    {
+     "article": "Roche limit",
+     "last_30_days": 8735,
+     "trend": 1.09
+    },
+    {
+     "article": "Rings of Saturn",
+     "last_30_days": 18597,
+     "trend": 1.03
+    },
+    {
+     "article": "Ring system",
+     "last_30_days": 3966,
+     "trend": 1.01
+    }
+   ],
+   "scores": {
+    "fit": 5,
+    "visuals": 5,
+    "originality": 3,
+    "evergreen": 5,
+    "demand": 2.0
+   },
+   "safe": true,
+   "score_reason": "Exceptional Cassini imagery illustrates both ring dynamics and ring rain, though Saturn's rings are a familiar subject.",
+   "score": 3.65
+  },
+  {
+   "question": "Why do supermassive black holes periodically stop feeding and go quiet?",
+   "angle": "Analyzing active galactic nuclei feedback loops, accretion disk radiation pressure, and why material gets pushed away from the event horizon.",
+   "signals": [
+    "S10",
+    "S24",
+    "S73"
+   ],
+   "wikipedia_articles": [
+    "Active galactic nucleus",
+    "Accretion disk",
+    "Supermassive black hole"
+   ],
+   "evidence": [
+    {
+     "kind": "outlier_video",
+     "title": "Every Black Hole That Shouldn’t Exist Explained in 14 Minutes",
+     "channel": "Bluntly Explained",
+     "subscribers": 45200,
+     "ratio": 12.9,
+     "views": 1445272,
+     "days": 35.9,
+     "url": "https://www.youtube.com/watch?v=NnY1Blo0f-g",
+     "id": "S10"
+    },
+    {
+     "kind": "outlier_video",
+     "title": "Sagittarius A* Stopped Eating (And No One Knows Why)",
+     "channel": "Curio",
+     "subscribers": 3970,
+     "ratio": 5.5,
+     "views": 1551,
+     "days": 95.0,
+     "url": "https://www.youtube.com/watch?v=baYzyu4zMJ4",
+     "id": "S24"
+    },
+    {
+     "kind": "news",
+     "title": "Astronomers discover a strange universal rule behind black hole eruptions",
+     "url": "https://www.sciencedaily.com/releases/2026/10/261014015507.htm",
+     "date": "Fri, 16 Oct 2026 06:45:33 EDT",
+     "id": "S73"
+    }
+   ],
+   "pageviews": [
+    {
+     "article": "Active galactic nucleus",
+     "last_30_days": 8181,
+     "trend": 1.2
+    },
+    {
+     "article": "Accretion disk",
+     "last_30_days": 8672,
+     "trend": 1.09
+    },
+    {
+     "article": "Supermassive black hole",
+     "last_30_days": 27760,
+     "trend": 0.58
+    }
+   ],
+   "scores": {
+    "fit": 5,
+    "visuals": 4,
+    "originality": 4,
+    "evergreen": 5,
+    "demand": 2.0
+   },
+   "safe": true,
+   "score_reason": "Offers a fresh perspective on black holes by focusing on feeding dormancy and AGN feedback using real X-ray and radio survey data.",
+   "score": 3.6
+  },
+  {
+   "question": "How do wide-field space telescopes survey billions of galaxies much faster than Hubble or Webb?",
+   "angle": "Comparing deep narrow pencil-beam optics against ultra-wide infrared sensor arrays for massive statistical surveys.",
+   "signals": [
+    "S6",
+    "S69"
+   ],
+   "wikipedia_articles": [
+    "Nancy Grace Roman Space Telescope",
+    "Wide-field Infrared Survey Explorer",
+    "Space telescope"
+   ],
+   "evidence": [
+    {
+     "kind": "outlier_video",
+     "title": "The new telescope 100x better than Hubble | Nancy Grace Roman Explained",
+     "channel": "Digital Astronaut",
+     "subscribers": 51800,
+     "ratio": 35.9,
+     "views": 746256,
+     "days": 90.2,
+     "url": "https://www.youtube.com/watch?v=Qxugt_wZPsI",
+     "id": "S6"
+    },
+    {
+     "kind": "news",
+     "title": "NASA’s Roman Space Telescope exceeds expectations by nearly 30%",
+     "url": "https://www.sciencedaily.com/releases/2026/10/261016070630.htm",
+     "date": "Sat, 17 Oct 2026 09:28:13 EDT",
+     "id": "S69"
+    }
+   ],
+   "pageviews": [
+    {
+     "article": "Nancy Grace Roman Space Telescope",
+     "last_30_days": 26405,
+     "trend": 0.1
+    },
+    {
+     "article": "Wide-field Infrared Survey Explorer",
+     "last_30_days": 1568,
+     "trend": 0.71
+    },
+    {
+     "article": "Space telescope",
+     "last_30_days": 3785,
+     "trend": 0.52
+    }
+   ],
+   "scores": {
+    "fit": 5,
+    "visuals": 4,
+    "originality": 4,
+    "evergreen": 4,
+    "demand": 2.0
+   },
+   "safe": true,
+   "score_reason": "Distinct angle highlighting survey astronomy over targeted imaging, easily visualised with hardware photos and sky-coverage comparisons.",
+   "score": 3.5
+  },
+  {
+   "question": "How would a human body actually survive a multi-year trip to Mars?",
+   "angle": "Examining the physiological challenges of microgravity, cosmic radiation, and cardiovascular degradation during prolonged deep-space journeys.",
+   "signals": [
+    "S4",
+    "S62"
+   ],
+   "wikipedia_articles": [
+    "Human mission to Mars",
+    "Effect of spaceflight on the human body",
+    "Space medicine"
+   ],
+   "evidence": [
+    {
+     "kind": "outlier_video",
+     "title": "The Truth About Dying in Space Nobody Tells You",
+     "channel": "The Gravity Well",
+     "subscribers": 3870,
+     "ratio": 54.4,
+     "views": 54002,
+     "days": 8.0,
+     "url": "https://www.youtube.com/watch?v=W9OOggrz4EU",
+     "id": "S4"
+    },
+    {
+     "kind": "news",
+     "title": "Astronauts’ hearts just passed a surprising test for Mars",
+     "url": "https://www.sciencedaily.com/releases/2026/10/261020085016.htm",
+     "date": "Wed, 21 Oct 2026 07:59:14 EDT",
+     "id": "S62"
+    }
+   ],
+   "pageviews": [
+    {
+     "article": "Human mission to Mars",
+     "last_30_days": 11944,
+     "trend": 0.98
+    },
+    {
+     "article": "Effect of spaceflight on the human body",
+     "last_30_days": 5596,
+     "trend": 1.58
+    },
+    {
+     "article": "Space medicine",
+     "last_30_days": 1033,
+     "trend": 0.95
+    }
+   ],
+   "scores": {
+    "fit": 5,
+    "visuals": 4,
+    "originality": 2,
+    "evergreen": 5,
+    "demand": 2.5
+   },
+   "safe": true,
+   "score_reason": "Classic human spaceflight topic supported by abundant NASA biomedical data and ISS imagery, though covered heavily across YouTube.",
+   "score": 3.48
+  },
+  {
+   "question": "Why does the far side of the Moon look so drastically different from the side facing Earth?",
+   "angle": "Investigating lunar crustal thickness variations, ancient giant impacts, and earthshine heating differences during tidal locking.",
+   "signals": [
+    "S75"
+   ],
+   "wikipedia_articles": [
+    "Far side of the Moon",
+    "Lunar maria",
+    "Lunar geology"
+   ],
+   "evidence": [
+    {
+     "kind": "news",
+     "title": "Scientists may have finally solved the mystery of the Moon’s two faces",
+     "url": "https://www.sciencedaily.com/releases/2026/10/261012185019.htm",
+     "date": "Wed, 14 Oct 2026 06:38:46 EDT",
+     "id": "S75"
+    }
+   ],
+   "pageviews": [
+    {
+     "article": "Far side of the Moon",
+     "last_30_days": 10139,
+     "trend": 1.03
+    },
+    {
+     "article": "Lunar maria",
+     "last_30_days": 438,
+     "trend": 1.08
+    },
+    {
+     "article": "Lunar geology",
+     "last_30_days": 20,
+     "trend": 2.5
+    }
+   ],
+   "scores": {
+    "fit": 5,
+    "visuals": 5,
+    "originality": 3,
+    "evergreen": 5,
+    "demand": 1.5
+   },
+   "safe": true,
+   "score_reason": "Striking visual contrast illustrated directly by real LRO and Chang'e global mosaics alongside GRAIL gravity maps.",
+   "score": 3.47
+  },
+  {
+   "question": "Why does the observable universe have a edge even if space goes on forever?",
+   "angle": "Differentiating between an infinite space fabric and the expanding light horizon defined by particle horizons and the speed of light.",
+   "signals": [
+    "S1",
+    "S26"
+   ],
+   "wikipedia_articles": [
+    "Observable universe",
+    "Particle horizon",
+    "Expansion of the universe"
+   ],
+   "evidence": [
+    {
+     "kind": "outlier_video",
+     "title": "How Huge Is the Universe? (The Answer Breaks Physics)",
+     "channel": "Curio",
+     "subscribers": 3970,
+     "ratio": 763.9,
+     "views": 73100,
+     "days": 32.0,
+     "url": "https://www.youtube.com/watch?v=7ODUMgPob-Q",
+     "id": "S1"
+    },
+    {
+     "kind": "outlier_video",
+     "title": "The Distance Between Galaxies Is More Terrifying Than You Think",
+     "channel": "Today in the Space World",
+     "subscribers": 78400,
+     "ratio": 5.1,
+     "views": 136385,
+     "days": 12.8,
+     "url": "https://www.youtube.com/watch?v=Wbmvi8e-1_Q",
+     "id": "S26"
+    }
+   ],
+   "pageviews": [
+    {
+     "article": "Observable universe",
+     "last_30_days": 33451,
+     "trend": 1.0
+    },
+    {
+     "article": "Particle horizon",
+     "last_30_days": 1973,
+     "trend": 0.91
+    },
+    {
+     "article": "Expansion of the universe",
+     "last_30_days": 12843,
+     "trend": 0.91
+    }
+   ],
+   "scores": {
+    "fit": 5,
+    "visuals": 3,
+    "originality": 2,
+    "evergreen": 5,
+    "demand": 3
+   },
+   "safe": true,
+   "score_reason": "Standard cosmology question relying mostly on 2D horizon diagrams and CMB maps; heavily explored by existing channels.",
+   "score": 3.45
+  }
+ ],
+ "reserve": [
+  {
+   "question": "How can subsurface lunar lava tubes protect human habitats on the Moon?",
+   "angle": "Analyzing natural basaltic shields against micro-meteorites, cosmic radiation, and extreme surface temperature swings.",
+   "signals": [
+    "S3",
+    "S80"
+   ],
+   "wikipedia_articles": [
+    "Lunar lava tube",
+    "Colonization of the Moon",
+    "Lunar soil"
+   ],
+   "evidence": [
+    {
+     "kind": "outlier_video",
+     "title": "Artemis II Explained | 2026 Mission to the Moon",
+     "channel": "Digital Astronaut",
+     "subscribers": 51800,
+     "ratio": 64.2,
+     "views": 4260349,
+     "days": 288.1,
+     "url": "https://www.youtube.com/watch?v=nBdjwRmJRbU",
+     "id": "S3"
+    },
+    {
+     "kind": "news",
+     "title": "NASA is searching for hidden caves to build its first Moon base",
+     "url": "https://www.sciencedaily.com/releases/2026/10/261008005247.htm",
+     "date": "Thu, 08 Oct 2026 08:19:20 EDT",
+     "id": "S80"
+    }
+   ],
+   "pageviews": [
+    {
+     "article": "Lunar lava tube",
+     "last_30_days": 1750,
+     "trend": 1.15
+    },
+    {
+     "article": "Colonization of the Moon",
+     "last_30_days": 3203,
+     "trend": 1.04
+    },
+    {
+     "article": "Lunar soil",
+     "last_30_days": 410,
+     "trend": 0.97
+    }
+   ],
+   "scores": {
+    "fit": 5,
+    "visuals": 4,
+    "originality": 3,
+    "evergreen": 5,
+    "demand": 2.0
+   },
+   "safe": true,
+   "score_reason": "Pragmatic lunar exploration topic well supported by Lunar Reconnaissance Orbiter pit imagery and geological schematics.",
+   "score": 3.45
+  },
+  {
+   "question": "Why is Martian dust so much more dangerous to machinery and humans than Earth dust?",
+   "angle": "Exploring electrostatic charging, jagged unweathered silica particles, and atmospheric dust storm dynamics on Mars.",
+   "signals": [
+    "S46",
+    "S47"
+   ],
+   "wikipedia_articles": [
+    "Dust storm",
+    "Martian soil",
+    "Toxicity of Mars soil"
+   ],
+   "evidence": [
+    {
+     "kind": "news",
+     "title": "NASA’s Perseverance Views Dust at Neretva Vallis",
+     "url": "https://science.nasa.gov/photojournal/nasas-perseverance-views-dust-at-neretva-vallis/",
+     "date": "Mon, 26 Oct 2026 22:48:12 +0000",
+     "id": "S46"
+    },
+    {
+     "kind": "news",
+     "title": "NASA’s Perseverance Offers Clues to Protect Crews From Mars Dust",
+     "url": "https://www.nasa.gov/missions/mars-2020-perseverance/nasas-perseverance-offers-clues-to-protect-crews-from-mars-dust/",
+     "date": "Mon, 26 Oct 2026 21:07:28 +0000",
+     "id": "S47"
+    }
+   ],
+   "pageviews": [
+    {
+     "article": "Dust storm",
+     "last_30_days": 5019,
+     "trend": 0.9
+    },
+    {
+     "article": "Martian soil",
+     "last_30_days": 712,
+     "trend": 0.91
+    }
+   ],
+   "scores": {
+    "fit": 5,
+    "visuals": 5,
+    "originality": 4,
+    "evergreen": 5,
+    "demand": 1.0
+   },
+   "safe": true,
+   "score_reason": "Overlooked practical engineering challenge supported by high-resolution electron micrographs, rover wheel wear photos, and lunar dust archives.",
+   "score": 3.45
+  },
+  {
+   "question": "How could liquid oceans thrive beneath the ice of outer solar system moons without solar light?",
+   "angle": "Examining tidal gravitational flexing, internal radioactive heating, and hydrothermal chemosynthesis sustaining subsurface oceans.",
+   "signals": [
+    "S20"
+   ],
+   "wikipedia_articles": [
+    "Subsurface ocean",
+    "Chemosynthesis",
+    "Ocean world"
+   ],
+   "evidence": [
+    {
+     "kind": "outlier_video",
+     "title": "THE SEARCH FOR LIFE IN OUR SOLAR SYSTEM | SLEEPDAIRY",
+     "channel": "sleepdairy ",
+     "subscribers": 1010,
+     "ratio": 6.4,
+     "views": 41137,
+     "days": 36.2,
+     "url": "https://www.youtube.com/watch?v=lLxyb2AhBvE",
+     "id": "S20"
+    }
+   ],
+   "pageviews": [
+    {
+     "article": "Subsurface ocean",
+     "last_30_days": 610,
+     "trend": 0.9
+    },
+    {
+     "article": "Chemosynthesis",
+     "last_30_days": 3464,
+     "trend": 1.07
+    },
+    {
+     "article": "Ocean world",
+     "last_30_days": 7455,
+     "trend": 0.97
+    }
+   ],
+   "scores": {
+    "fit": 5,
+    "visuals": 4,
+    "originality": 3,
+    "evergreen": 5,
+    "demand": 2.0
+   },
+   "safe": true,
+   "score_reason": "Staple astrobiology subject supported by authentic Cassini plume captures, Europa imagery, and terrestrial hydrothermal vent photos.",
+   "score": 3.45
+  },
+  {
+   "question": "What happens when two neutron stars collide and explode as a kilonova?",
+   "angle": "Detailing relativistic jet generation, gravitational radiation, and rapid neutron-capture nucleosynthesis during mergers.",
+   "signals": [
+    "S84"
+   ],
+   "wikipedia_articles": [
+    "Kilonova",
+    "Neutron star",
+    "Gravitational wave"
+   ],
+   "evidence": [
+    {
+     "kind": "news",
+     "title": "Einstein Probe reveals a hidden phase of neutron star collisions",
+     "url": "https://www.sciencedaily.com/releases/2026/10/261006234511.htm",
+     "date": "Thu, 08 Oct 2026 06:06:06 EDT",
+     "id": "S84"
+    }
+   ],
+   "pageviews": [
+    {
+     "article": "Kilonova",
+     "last_30_days": 3899,
+     "trend": 1.0
+    },
+    {
+     "article": "Neutron star",
+     "last_30_days": 36654,
+     "trend": 1.09
+    },
+    {
+     "article": "Gravitational wave",
+     "last_30_days": 10373,
+     "trend": 0.9
+    }
+   ],
+   "scores": {
+    "fit": 5,
+    "visuals": 4,
+    "originality": 3,
+    "evergreen": 5,
+    "demand": 2
+   },
+   "safe": true,
+   "score_reason": "Landmark multi-messenger astronomy event with real LIGO wave plots and multi-wavelength observatory follow-up imagery.",
+   "score": 3.45
+  },
+  {
+   "question": "What causes young protoplanets to collide and shatter during solar system formation?",
+   "angle": "Examining planetary migration, orbital resonance instability, and giant impact dynamics during early planetary assembly.",
+   "signals": [
+    "S33",
+    "S82"
+   ],
+   "wikipedia_articles": [
+    "Protoplanetary disk",
+    "Planetary migration",
+    "Neptune-like planet"
+   ],
+   "evidence": [
+    {
+     "kind": "outlier_video",
+     "title": "Every Planet That Shouldn't Exist",
+     "channel": "Patrick Explained",
+     "subscribers": 1660,
+     "ratio": 2.9,
+     "views": 919,
+     "days": 9.8,
+     "url": "https://www.youtube.com/watch?v=yM1u0IIw6bE",
+     "id": "S33"
+    },
+    {
+     "kind": "news",
+     "title": "NASA’s Webb finds signs of Mars-sized worlds smashing together",
+     "url": "https://www.sciencedaily.com/releases/2026/10/261007042108.htm",
+     "date": "Wed, 07 Oct 2026 09:09:15 EDT",
+     "id": "S82"
+    }
+   ],
+   "pageviews": [
+    {
+     "article": "Protoplanetary disk",
+     "last_30_days": 5843,
+     "trend": 1.07
+    },
+    {
+     "article": "Planetary migration",
+     "last_30_days": 1197,
+     "trend": 1.0
+    }
+   ],
+   "scores": {
+    "fit": 5,
+    "visuals": 3,
+    "originality": 3,
+    "evergreen": 5,
+    "demand": 2.0
+   },
+   "safe": true,
+   "score_reason": "Interesting early solar system mechanics using ALMA disk photos and impact charts, though early dynamic stages require diagrams.",
+   "score": 3.25
+  },
+  {
+   "question": "How do white dwarf stars transform into gigantic spheres of solid crystal carbon?",
+   "angle": "Exploring degenerate matter physics, thermal energy exhaustion, and carbon-oxygen crystallization in ancient star cores.",
+   "signals": [
+    "S67"
+   ],
+   "wikipedia_articles": [
+    "White dwarf",
+    "Degenerate matter",
+    "Stellar evolution"
+   ],
+   "evidence": [
+    {
+     "kind": "news",
+     "title": "Astronomers discover a ghostly green star unlike any known before",
+     "url": "https://www.sciencedaily.com/releases/2026/10/261017230018.htm",
+     "date": "Mon, 19 Oct 2026 06:26:03 EDT",
+     "id": "S67"
+    }
+   ],
+   "pageviews": [
+    {
+     "article": "White dwarf",
+     "last_30_days": 28873,
+     "trend": 1.37
+    },
+    {
+     "article": "Degenerate matter",
+     "last_30_days": 5200,
+     "trend": 1.11
+    },
+    {
+     "article": "Stellar evolution",
+     "last_30_days": 11596,
+     "trend": 1.0
+    }
+   ],
+   "scores": {
+    "fit": 5,
+    "visuals": 3,
+    "originality": 4,
+    "evergreen": 5,
+    "demand": 1.5
+   },
+   "safe": true,
+   "score_reason": "Less common stellar evolution topic supported by Hubble white dwarf cluster surveys and solid-state physics phase diagrams.",
+   "score": 3.23
+  },
+  {
+   "question": "How did heavy metals like gold end up in Earth's outer crust instead of sinking to the core?",
+   "angle": "Investigating neutron star collision nucleosynthesis and late heavy bombardment impacts that re-seeded the surface with heavy elements.",
+   "signals": [
+    "S19",
+    "S57"
+   ],
+   "wikipedia_articles": [
+    "Nucleosynthesis",
+    "Neutron star merger",
+    "Late Heavy Bombardment"
+   ],
+   "evidence": [
+    {
+     "kind": "outlier_video",
+     "title": "Where Did Earth’s Gold ACTUALLY Come From?. Can Science Finally Make Artificial Gold?",
+     "channel": "Simply Wonder",
+     "subscribers": 6770,
+     "ratio": 7.9,
+     "views": 697,
+     "days": 28.1,
+     "url": "https://www.youtube.com/watch?v=xlN3ZhCqiFQ",
+     "id": "S19"
+    },
+    {
+     "kind": "news",
+     "title": "NASA’s asteroid Bennu samples reveal a 4.5-billion-year-old secret",
+     "url": "https://www.sciencedaily.com/releases/2026/10/261023023734.htm",
+     "date": "Sat, 24 Oct 2026 08:50:06 EDT",
+     "id": "S57"
+    }
+   ],
+   "pageviews": [
+    {
+     "article": "Nucleosynthesis",
+     "last_30_days": 3804,
+     "trend": 0.87
+    },
+    {
+     "article": "Neutron star merger",
+     "last_30_days": 3689,
+     "trend": 0.94
+    },
+    {
+     "article": "Late Heavy Bombardment",
+     "last_30_days": 7246,
+     "trend": 0.94
+    }
+   ],
+   "scores": {
+    "fit": 4,
+    "visuals": 3,
+    "originality": 4,
+    "evergreen": 5,
+    "demand": 2.0
+   },
+   "safe": true,
+   "score_reason": "Intriguing planetary differentiation riddle that goes beyond standard nucleosynthesis, supported by meteorite and geological cross-sections.",
+   "score": 3.2
+  },
+  {
+   "question": "What took place during cosmic inflation in the universe's first second?",
+   "angle": "Investigating dark energy-like phase transitions, spatial expansion rates exceeding light speed, and primordial quantum fluctuations.",
+   "signals": [
+    "S9",
+    "S64"
+   ],
+   "wikipedia_articles": [
+    "Inflation (cosmology)",
+    "Chronology of the universe",
+    "Cosmic microwave background"
+   ],
+   "evidence": [
+    {
+     "kind": "outlier_video",
+     "title": "What Was There Before the Big Bang?",
+     "channel": "Caelum",
+     "subscribers": 2080,
+     "ratio": 17.7,
+     "views": 12833,
+     "days": 25.8,
+     "url": "https://www.youtube.com/watch?v=XDnC6uoaWII",
+     "id": "S9"
+    },
+    {
+     "kind": "news",
+     "title": "Astronomers uncover new secrets of the Universe’s first five minutes",
+     "url": "https://www.sciencedaily.com/releases/2026/10/261019093442.htm",
+     "date": "Tue, 20 Oct 2026 08:34:15 EDT",
+     "id": "S64"
+    }
+   ],
+   "pageviews": [
+    {
+     "article": "Inflation (cosmology)",
+     "last_30_days": 2118,
+     "trend": 0.9
+    },
+    {
+     "article": "Chronology of the universe",
+     "last_30_days": 19172,
+     "trend": 0.91
+    },
+    {
+     "article": "Cosmic microwave background",
+     "last_30_days": 22193,
+     "trend": 0.9
+    }
+   ],
+   "scores": {
+    "fit": 5,
+    "visuals": 3,
+    "originality": 2,
+    "evergreen": 5,
+    "demand": 2.0
+   },
+   "safe": true,
+   "score_reason": "Important cosmological phase backed by WMAP/Planck charts, but conceptually abstract and frequently covered.",
+   "score": 3.1
+  },
+  {
+   "question": "What actually happens to matter when it reaches absolute zero?",
+   "angle": "Exploring quantum state transitions, Bose-Einstein condensates, and why zero-point energy prevents particles from completely stopping.",
+   "signals": [
+    "S5",
+    "S11"
+   ],
+   "wikipedia_articles": [
+    "Absolute zero",
+    "Bose–Einstein condensate",
+    "Zero-point energy"
+   ],
+   "evidence": [
+    {
+     "kind": "outlier_video",
+     "title": "Every Crazy Temperature in the Universe",
+     "channel": "Space Explainer",
+     "subscribers": 23300,
+     "ratio": 43.0,
+     "views": 122934,
+     "days": 46.1,
+     "url": "https://www.youtube.com/watch?v=CVaY9MLqq4k",
+     "id": "S5"
+    },
+    {
+     "kind": "outlier_video",
+     "title": "The Coolest Physics Nobel Prize in History (Literally)",
+     "channel": "Animated Physics",
+     "subscribers": 37700,
+     "ratio": 12.1,
+     "views": 76904,
+     "days": 18.0,
+     "url": "https://www.youtube.com/watch?v=iB70qzI76Is",
+     "id": "S11"
+    }
+   ],
+   "pageviews": [
+    {
+     "article": "Absolute zero",
+     "last_30_days": 19811,
+     "trend": 1.06
+    },
+    {
+     "article": "Bose–Einstein condensate",
+     "last_30_days": 16193,
+     "trend": 1.0
+    },
+    {
+     "article": "Zero-point energy",
+     "last_30_days": 10015,
+     "trend": 0.97
+    }
+   ],
+   "scores": {
+    "fit": 4,
+    "visuals": 3,
+    "originality": 3,
+    "evergreen": 5,
+    "demand": 2.0
+   },
+   "safe": true,
+   "score_reason": "Solid physics explainer with lab schematics and phase charts, though it remains a standard textbook topic.",
+   "score": 3.05
+  },
+  {
+   "question": "Where did all the matter in the universe come from after the Big Bang?",
+   "angle": "Explaining quantum field fluctuations, baryon asymmetry, and matter-antimatter imbalance following cosmic cooling.",
+   "signals": [
+    "S28",
+    "S53"
+   ],
+   "wikipedia_articles": [
+    "Baryon asymmetry",
+    "Matter–antimatter asymmetry",
+    "Pair production"
+   ],
+   "evidence": [
+    {
+     "kind": "outlier_video",
+     "title": "You Existed Before You Were Born (It’s Not What You Think) | Feynman Explains",
+     "channel": "Physics Daily",
+     "subscribers": 35000,
+     "ratio": 4.0,
+     "views": 7403,
+     "days": 7.1,
+     "url": "https://www.youtube.com/watch?v=3KxBECv2JKc",
+     "id": "S28"
+    },
+    {
+     "kind": "news",
+     "title": "Smithsonian scientists just recreated the first 2 billion years of the Universe",
+     "url": "https://www.sciencedaily.com/releases/2026/10/261026225600.htm",
+     "date": "Tue, 27 Oct 2026 05:48:35 EDT",
+     "id": "S53"
+    }
+   ],
+   "pageviews": [
+    {
+     "article": "Baryon asymmetry",
+     "last_30_days": 4552,
+     "trend": 0.98
+    },
+    {
+     "article": "Matter–antimatter asymmetry",
+     "last_30_days": 301,
+     "trend": 0.83
+    },
+    {
+     "article": "Pair production",
+     "last_30_days": 3332,
+     "trend": 1.0
+    }
+   ],
+   "scores": {
+    "fit": 5,
+    "visuals": 2,
+    "originality": 3,
+    "evergreen": 5,
+    "demand": 2.0
+   },
+   "safe": true,
+   "score_reason": "Deep fundamental physics question, but visually restricted to abstract Feynman diagrams and particle detector tracks.",
+   "score": 3.05
+  },
+  {
+   "question": "How can solar flares disrupt power grids and communications on Earth?",
+   "angle": "Tracing magnetic reconnection on the Sun, coronal mass ejections, and geomagnetically induced currents in electrical conductors.",
+   "signals": [
+    "S54",
+    "S58",
+    "S61"
+   ],
+   "wikipedia_articles": [
+    "Geomagnetic storm",
+    "Coronal mass ejection",
+    "Carrington Event"
+   ],
+   "evidence": [
+    {
+     "kind": "news",
+     "title": "A 2,700-year-old solar eclipse just revealed something surprising about Earth",
+     "url": "https://www.sciencedaily.com/releases/2026/10/261025073055.htm",
+     "date": "Mon, 26 Oct 2026 07:06:08 EDT",
+     "id": "S54"
+    },
+    {
+     "kind": "news",
+     "title": "Astronomers uncover a mysterious magnetic web above the Sun",
+     "url": "https://www.sciencedaily.com/releases/2026/10/261023023723.htm",
+     "date": "Sat, 24 Oct 2026 08:23:38 EDT",
+     "id": "S58"
+    },
+    {
+     "kind": "news",
+     "title": "A train was delayed by a solar storm. But something didn't add up.",
+     "url": "https://www.sciencedaily.com/releases/2026/10/261020085021.htm",
+     "date": "Wed, 21 Oct 2026 08:35:57 EDT",
+     "id": "S61"
+    }
+   ],
+   "pageviews": [
+    {
+     "article": "Geomagnetic storm",
+     "last_30_days": 3970,
+     "trend": 0.8
+    },
+    {
+     "article": "Coronal mass ejection",
+     "last_30_days": 7590,
+     "trend": 0.86
+    },
+    {
+     "article": "Carrington Event",
+     "last_30_days": 26835,
+     "trend": 0.5
+    }
+   ],
+   "scores": {
+    "fit": 5,
+    "visuals": 4,
+    "originality": 3,
+    "evergreen": 4,
+    "demand": 1.0
+   },
+   "safe": true,
+   "score_reason": "Strong space weather explainer driven by SDO solar imagery and magnetosphere charts, though the Carrington narrative is common.",
+   "score": 3.0
+  },
+  {
+   "question": "Why does measuring a quantum particle force it to change its behavior?",
+   "angle": "Deconstructing wave function collapse, particle-wave duality, and decoherence without resorting to science fiction tropes.",
+   "signals": [
+    "S12"
+   ],
+   "wikipedia_articles": [
+    "Double-slit experiment",
+    "Wave function collapse",
+    "Observer effect (physics)"
+   ],
+   "evidence": [
+    {
+     "kind": "outlier_video",
+     "title": "The Double-Slit Experiment: 225 Years, and Nobody Can Explain It",
+     "channel": "Arthur's Physics",
+     "subscribers": 1970,
+     "ratio": 12.1,
+     "views": 49836,
+     "days": 16.8,
+     "url": "https://www.youtube.com/watch?v=uyB9pA12RuQ",
+     "id": "S12"
+    }
+   ],
+   "pageviews": [
+    {
+     "article": "Double-slit experiment",
+     "last_30_days": 28286,
+     "trend": 0.69
+    },
+    {
+     "article": "Wave function collapse",
+     "last_30_days": 6855,
+     "trend": 0.94
+    },
+    {
+     "article": "Observer effect (physics)",
+     "last_30_days": 9661,
+     "trend": 1.44
+    }
+   ],
+   "scores": {
+    "fit": 4,
+    "visuals": 2,
+    "originality": 2,
+    "evergreen": 5,
+    "demand": 2.5
+   },
+   "safe": true,
+   "score_reason": "Heavily saturated quantum topic that suffers visually from a lack of real photos, relying almost entirely on conceptual diagrams.",
+   "score": 2.88
+  },
+  {
+   "question": "How do hot exoplanets maintain clouds made of vaporized rock and metal?",
+   "angle": "Analyzing tidal locking, atmospheric circulation, and metal condensation chemistry under extreme planetary temperatures.",
+   "signals": [
+    "S52",
+    "S71"
+   ],
+   "wikipedia_articles": [
+    "Hot Jupiter",
+    "Atmosphere of Jupiter",
+    "Tidal locking"
+   ],
+   "evidence": [
+    {
+     "kind": "news",
+     "title": "James Webb discovers a scorching lava planet with a “giant sunscreen”",
+     "url": "https://www.sciencedaily.com/releases/2026/10/261026225603.htm",
+     "date": "Tue, 27 Oct 2026 06:20:52 EDT",
+     "id": "S52"
+    },
+    {
+     "kind": "news",
+     "title": "NASA’s Webb reveals the wild weather of a mysterious world 20 light-years away",
+     "url": "https://www.sciencedaily.com/releases/2026/10/261015073215.htm",
+     "date": "Sat, 17 Oct 2026 08:26:49 EDT",
+     "id": "S71"
+    }
+   ],
+   "pageviews": [
+    {
+     "article": "Hot Jupiter",
+     "last_30_days": 4226,
+     "trend": 1.14
+    },
+    {
+     "article": "Atmosphere of Jupiter",
+     "last_30_days": 4018,
+     "trend": 0.94
+    },
+    {
+     "article": "Tidal locking",
+     "last_30_days": 9648,
+     "trend": 0.92
+    }
+   ],
+   "scores": {
+    "fit": 5,
+    "visuals": 2,
+    "originality": 4,
+    "evergreen": 5,
+    "demand": 1.0
+   },
+   "safe": true,
+   "score_reason": "Compelling exoplanet atmospheric chemistry, but hindered by the complete absence of real photography beyond transmission spectra graphs.",
+   "score": 2.85
+  },
+  {
+   "question": "How do rogue exoplanets capture and hold onto moons in deep space?",
+   "angle": "Evaluating Hill sphere dynamics, gravitational three-body interactions, and capture stability in starless environments.",
+   "signals": [
+    "S56",
+    "S83"
+   ],
+   "wikipedia_articles": [
+    "Natural satellite",
+    "Hill sphere",
+    "Exomoon"
+   ],
+   "evidence": [
+    {
+     "kind": "news",
+     "title": "Astronomers may have discovered the first moon beyond our Solar System",
+     "url": "https://www.sciencedaily.com/releases/2026/10/261023023736.htm",
+     "date": "Sat, 24 Oct 2026 23:13:05 EDT",
+     "id": "S56"
+    },
+    {
+     "kind": "news",
+     "title": "Hubble Space Telescope may have found a planet born after its star died",
+     "url": "https://www.sciencedaily.com/releases/2026/10/261007042106.htm",
+     "date": "Fri, 09 Oct 2026 13:31:02 EDT",
+     "id": "S83"
+    }
+   ],
+   "pageviews": [
+    {
+     "article": "Natural satellite",
+     "last_30_days": 12136,
+     "trend": 0.91
+    },
+    {
+     "article": "Hill sphere",
+     "last_30_days": 3875,
+     "trend": 1.01
+    },
+    {
+     "article": "Exomoon",
+     "last_30_days": 4196,
+     "trend": 1.09
+    }
+   ],
+   "scores": {
+    "fit": 5,
+    "visuals": 2,
+    "originality": 4,
+    "evergreen": 5,
+    "demand": 1.0
+   },
+   "safe": true,
+   "score_reason": "Fascinating orbital mechanics scenario, but completely lacks real photos and relies on theoretical orbital diagrams.",
+   "score": 2.85
+  },
+  {
+   "question": "What would a space traveler actually see when approaching light speed?",
+   "angle": "Explaining relativistic Doppler shift, searchlight effect, and optical aberration distorting ambient light near c.",
+   "signals": [
+    "S32"
+   ],
+   "wikipedia_articles": [
+    "Relativistic Doppler effect",
+    "Relativistic aberration",
+    "Special relativity"
+   ],
+   "evidence": [
+    {
+     "kind": "outlier_video",
+     "title": "What Would You ACTUALLY See at the Speed of Light?",
+     "channel": "Animated Physics",
+     "subscribers": 37700,
+     "ratio": 3.1,
+     "views": 9955,
+     "days": 9.0,
+     "url": "https://www.youtube.com/watch?v=DzNYu83nAXQ",
+     "id": "S32"
+    }
+   ],
+   "pageviews": [
+    {
+     "article": "Relativistic Doppler effect",
+     "last_30_days": 3380,
+     "trend": 0.91
+    },
+    {
+     "article": "Relativistic aberration",
+     "last_30_days": 758,
+     "trend": 1.05
+    },
+    {
+     "article": "Special relativity",
+     "last_30_days": 19386,
+     "trend": 0.89
+    }
+   ],
+   "scores": {
+    "fit": 4,
+    "visuals": 2,
+    "originality": 2,
+    "evergreen": 5,
+    "demand": 2.0
+   },
+   "safe": true,
+   "score_reason": "Common special relativity thought experiment that cannot be shown with real photographs, requiring computer simulations.",
+   "score": 2.7
+  }
+ ],
+ "dropped": []
+}

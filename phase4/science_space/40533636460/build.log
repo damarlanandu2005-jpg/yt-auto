@@ -1,0 +1,33 @@
+[llm] topic_scout: gemini-3.8-flash HTTP 503, retry 1 in 30s
+[llm] topic_scout: gemini-3.8-flash unavailable (HTTP 503 after 2 tries); trying next model
+[llm] topic_scout: gemini-3.6-flash HTTP 503, retry 1 in 30s
+[llm] topic_scout: gemini-3.6-flash unavailable (HTTP 503 after 2 tries); trying next model
+[llm] topic_scorer: gemini-3.5-flash unavailable (daily free quota used up); trying next model
+[llm] topic_scorer: gemini-3.8-flash HTTP 503, retry 1 in 30s
+[llm] topic_scorer: gemini-3.8-flash unavailable (HTTP 503 after 2 tries); trying next model
+[llm] topic_scorer: gemini-3.6-flash unavailable (daily free quota used up); trying next model
+[llm] topic_scorer: every model busy; waiting 60s (round 1)
+# Topic ideas: Science and space
+
+Made 2026-10-27. Signals: {'outlier_video': 40, 'trending_video': 4, 'news': 40}. Ideas proposed 25, chosen 10, dropped 0.
+
+Score = 0.35 demand (measured) + 0.20 fit + 0.20 visuals + 0.15 originality + 0.10 evergreen (each 1-5).
+
+| # | Question | Score | Demand | Evidence |
+| --- | --- | --- | --- | --- |
+| 1 | How close would a exploding star need to be to strip away Earth's protective atmosphere? | 3.8 | 3 | Wikipedia 'Supernova' 32,143 views/30 days (trend 0.97x); outlier video: What Would Happen If Betelgeuse Exploded Tonight? (2.3x); news: Nearly 3,000 exploding stars challenge our understanding of  |
+| 2 | Why does the universe organize into vast cosmic webs instead of spreading out uniformly? | 3.8 | 3 | Wikipedia 'Dark matter' 52,427 views/30 days (trend 0.69x); outlier video: The Scariest Theories That Turned Out to Be True (4.2x); news: James Webb reveals a massive cosmic structure that challenge |
+| 3 | How do rocket engines push spacecraft forward in the vacuum of space? | 3.65 | 3 | Wikipedia 'Newton's laws of motion' 59,650 views/30 days (trend 0.96x); outlier video: Every NASA Rocket Engine Explained (11.4x); news: NASA’s SpaceX launch lights up the sky with a giant glowing  |
+| 4 | Why are sunsets on Mars blue while sunsets on Earth are red? | 3.65 | 2 | Wikipedia 'Rayleigh scattering' 17,483 views/30 days (trend 1.03x); outlier video: Skydiving on Every Planet in the Solar System (11.3x); outlier video: Every Sunset in the Solar System (3.5x) |
+| 5 | Why do planetary rings form and why are they destined to disappear? | 3.65 | 2 | Wikipedia 'Rings of Saturn' 18,597 views/30 days (trend 1.03x); outlier video: Saturn's Rings Are Disappearing Faster Than We Thought (6.0x); outlier video: Every Object in the Solar System Explained (2.9x) |
+| 6 | Why do supermassive black holes periodically stop feeding and go quiet? | 3.6 | 2 | Wikipedia 'Supermassive black hole' 27,760 views/30 days (trend 0.58x); outlier video: Every Black Hole That Shouldn’t Exist Explained in 14 Minute (12.9x); outlier video: Sagittarius A* Stopped Eating (And No One Knows Why) (5.5x) |
+| 7 | How do wide-field space telescopes survey billions of galaxies much faster than Hubble or Webb? | 3.5 | 2 | Wikipedia 'Nancy Grace Roman Space Telescope' 26,405 views/30 days (trend 0.1x); outlier video: The new telescope 100x better than Hubble | Nancy Grace Roma (35.9x); news: NASA’s Roman Space Telescope exceeds expectations by nearly  |
+| 8 | How would a human body actually survive a multi-year trip to Mars? | 3.48 | 2.5 | Wikipedia 'Human mission to Mars' 11,944 views/30 days (trend 0.98x); outlier video: The Truth About Dying in Space Nobody Tells You (54.4x); news: Astronauts’ hearts just passed a surprising test for Mars |
+| 9 | Why does the far side of the Moon look so drastically different from the side facing Earth? | 3.47 | 1.5 | Wikipedia 'Far side of the Moon' 10,139 views/30 days (trend 1.03x); news: Scientists may have finally solved the mystery of the Moon’s |
+| 10 | Why does the observable universe have a edge even if space goes on forever? | 3.45 | 3 | Wikipedia 'Observable universe' 33,451 views/30 days (trend 1.0x); outlier video: How Huge Is the Universe? (The Answer Breaks Physics) (763.9x); outlier video: The Distance Between Galaxies Is More Terrifying Than You Th (5.1x) |
+
+## Dropped
+
+- none
+
+[phase4] DONE: 10/10 scored ideas with evidence

@@ -1,0 +1,100 @@
+[
+ {
+  "name": "topic_scout",
+  "model": "gemini-3.8-flash",
+  "prompt_chars": 8670,
+  "images": 0,
+  "status": 503,
+  "attempt": 1,
+  "error": "{\n  \"error\": {\n    \"code\": 503,\n    \"message\": \"This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.\",\n    \"status\": \"UNAVAILABLE\"\n  }\n}\n"
+ },
+ {
+  "name": "topic_scout",
+  "model": "gemini-3.8-flash",
+  "prompt_chars": 8670,
+  "images": 0,
+  "status": 503,
+  "attempt": 2,
+  "error": "{\n  \"error\": {\n    \"code\": 503,\n    \"message\": \"This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.\",\n    \"status\": \"UNAVAILABLE\"\n  }\n}\n"
+ },
+ {
+  "name": "topic_scout",
+  "model": "gemini-3.6-flash",
+  "prompt_chars": 8670,
+  "images": 0,
+  "status": 503,
+  "attempt": 1,
+  "error": "{\n  \"error\": {\n    \"code\": 503,\n    \"message\": \"This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.\",\n    \"status\": \"UNAVAILABLE\"\n  }\n}\n"
+ },
+ {
+  "name": "topic_scout",
+  "model": "gemini-3.6-flash",
+  "prompt_chars": 8670,
+  "images": 0,
+  "status": 503,
+  "attempt": 2,
+  "error": "{\n  \"error\": {\n    \"code\": 503,\n    \"message\": \"This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.\",\n    \"status\": \"UNAVAILABLE\"\n  }\n}\n"
+ },
+ {
+  "name": "topic_scout",
+  "model": "gemini-3.5-flash",
+  "prompt_chars": 8670,
+  "images": 0,
+  "status": 200,
+  "seconds": 28.8,
+  "attempts": 1,
+  "finish": "STOP",
+  "in_tokens": 2489,
+  "out_tokens": 1694,
+  "thought_tokens": 3481
+ },
+ {
+  "name": "topic_scorer",
+  "model": "gemini-3.5-flash",
+  "prompt_chars": 7402,
+  "images": 0,
+  "status": 429,
+  "attempt": 1,
+  "error": "{\n  \"error\": {\n    \"code\": 429,\n    \"message\": \"You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \\n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 20, model: gemini-3.6-flash, description: Generate content requests per day limit exceeded on Free Tier. See https://ai.google.dev/gemini-api/docs/rate-limits.\\nPlease retry in 15h15m22.501295025s.\",\n    \"status\": \"RESOURCE_EXHAUSTED\",\n    \"details\": [\n      {\n        \"@type\": \"type.googleapis.com/google.rpc.Help\",\n        \"links\": [\n          {\n            \"description\": \"Learn more about Gemini API quotas\",\n            \"url\": \"https://ai.google.dev/gemini-api/docs/rate-limits\"\n          }\n        ]\n      },\n      {\n        \"@type\": \"type.googleapis.com/google.rpc.QuotaFailure\",\n        \"violations\": [\n          {\n            \"description\": \"Generate content requests per day limit exceeded on Free Tier. See https://ai.google.dev/gemini-api/docs/rate-limits.\",\n            \"quotaMetric\": \"generativelanguage.googleapis.com/generate_content_free_tier_requests\",\n            \"quotaId\": \"GenerateRequestsPerDayPerProjectPerModel-FreeTier\",\n            \"quotaDimensions\": {\n              \"location\": \"global\",\n              \"model\": \"gemini-3.6-flash\"\n            },\n            \"quotaValue\": \"20\""
+ },
+ {
+  "name": "topic_scorer",
+  "model": "gemini-3.8-flash",
+  "prompt_chars": 7402,
+  "images": 0,
+  "status": 503,
+  "attempt": 1,
+  "error": "{\n  \"error\": {\n    \"code\": 503,\n    \"message\": \"This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.\",\n    \"status\": \"UNAVAILABLE\"\n  }\n}\n"
+ },
+ {
+  "name": "topic_scorer",
+  "model": "gemini-3.8-flash",
+  "prompt_chars": 7402,
+  "images": 0,
+  "status": 503,
+  "attempt": 2,
+  "error": "{\n  \"error\": {\n    \"code\": 503,\n    \"message\": \"This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.\",\n    \"status\": \"UNAVAILABLE\"\n  }\n}\n"
+ },
+ {
+  "name": "topic_scorer",
+  "model": "gemini-3.6-flash",
+  "prompt_chars": 7402,
+  "images": 0,
+  "status": 429,
+  "attempt": 1,
+  "error": "{\n  \"error\": {\n    \"code\": 429,\n    \"message\": \"You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \\n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 20, model: gemini-3.6-flash, description: Generate content requests per day limit exceeded on Free Tier. See https://ai.google.dev/gemini-api/docs/rate-limits.\\nPlease retry in 15h14m51.237708499s.\",\n    \"status\": \"RESOURCE_EXHAUSTED\",\n    \"details\": [\n      {\n        \"@type\": \"type.googleapis.com/google.rpc.Help\",\n        \"links\": [\n          {\n            \"description\": \"Learn more about Gemini API quotas\",\n            \"url\": \"https://ai.google.dev/gemini-api/docs/rate-limits\"\n          }\n        ]\n      },\n      {\n        \"@type\": \"type.googleapis.com/google.rpc.QuotaFailure\",\n        \"violations\": [\n          {\n            \"description\": \"Generate content requests per day limit exceeded on Free Tier. See https://ai.google.dev/gemini-api/docs/rate-limits.\",\n            \"quotaMetric\": \"generativelanguage.googleapis.com/generate_content_free_tier_requests\",\n            \"quotaId\": \"GenerateRequestsPerDayPerProjectPerModel-FreeTier\",\n            \"quotaDimensions\": {\n              \"location\": \"global\",\n              \"model\": \"gemini-3.6-flash\"\n            },\n            \"quotaValue\": \"20\""
+ },
+ {
+  "name": "topic_scorer",
+  "model": "gemini-3.8-flash",
+  "prompt_chars": 7402,
+  "images": 0,
+  "status": 200,
+  "seconds": 196.3,
+  "attempts": 1,
+  "finish": "STOP",
+  "in_tokens": 1466,
+  "out_tokens": 1285,
+  "thought_tokens": 2749
+ }
+]
