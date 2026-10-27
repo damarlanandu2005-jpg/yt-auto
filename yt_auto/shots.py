@@ -183,9 +183,9 @@ PICK_SCHEMA = {"type": "object", "properties": {"picks": {"type": "array", "item
     "type": "object", "properties": {"id": {"type": "string"}, "choice": {"type": "string"}},
     "required": ["id", "choice"]}}}, "required": ["picks"]}
 VERIFY_SCHEMA = {"type": "object", "properties": {"checks": {"type": "array", "items": {
-    "type": "object", "properties": {"n": {"type": "integer"}, "fits": {"type": "boolean"},
-                                     "reason": {"type": "string"}},
-    "required": ["n", "fits", "reason"]}}}, "required": ["checks"]}
+    "type": "object", "properties": {"n": {"type": "integer"}, "seen": {"type": "string"},
+                                     "fits": {"type": "boolean"}, "reason": {"type": "string"}},
+    "required": ["n", "seen", "fits", "reason"]}}}, "required": ["checks"]}
 
 
 def find_photos(visuals: list[dict], photo_dir: Path, log: dict) -> None:
@@ -253,25 +253,33 @@ def _thumb(path: str, size: int = 384) -> bytes:
 
 
 def _verify(chosen: list[dict], log: dict) -> None:
-    """Let the model look at each chosen photo; drop ones that don't show the subject."""
+    """Let the model look at each chosen photo; drop ones that don't show the subject.
+
+    Each picture is sent with its own "Image n:" label, the model first says what it sees, and a
+    picture it gives no verdict for is dropped (fail closed)."""
     if not chosen:
         return
     listing = "\n".join(f"Image {i + 1}: should show: {v.get('photo_subject', '')} (narration: {v['text']})"
                         for i, v in enumerate(chosen))
-    prompt = f"""You see {len(chosen)} images in order. For each, say if it fits: it must clearly show what it
-should show, be a real usable picture (not mostly text, not a blank or broken image, no watermark),
+    prompt = f"""Above are {len(chosen)} images, each right after its label "Image n:". For EVERY image, first
+write in "seen" what that image actually shows (a few words), then decide if it fits: it must clearly show
+what it should show, be a real usable picture (not mostly text, not a blank or broken image, no watermark),
 and not be misleading next to the narration.
 {listing}"""
     try:
-        res = llm(prompt, images=[_thumb(v["photo"]["path"]) for v in chosen], schema=VERIFY_SCHEMA,
-                  name="photo_verify", temperature=0.1, models=FAST, last_resort=True)
+        res = llm(prompt, images=[(f"Image {i + 1}:", _thumb(v["photo"]["path"])) for i, v in enumerate(chosen)],
+                  schema=VERIFY_SCHEMA, name="photo_verify", temperature=0.1, models=FAST, last_resort=True)
     except LLMError as e:
         log["verify_error"] = str(e)
         return
-    rejected = []
-    for c in res["checks"]:
-        if not c["fits"] and 1 <= c["n"] <= len(chosen):
-            v = chosen[c["n"] - 1]
-            rejected.append({"id": v["id"], "title": v["photo"]["title"], "reason": c["reason"]})
+    verdicts = {c["n"]: c for c in res["checks"] if 1 <= c["n"] <= len(chosen)}
+    rejected, seen = [], {}
+    for i, v in enumerate(chosen, 1):
+        c = verdicts.get(i) or {"fits": False, "reason": "no verdict returned", "seen": ""}
+        seen[v["id"]] = c.get("seen", "")
+        if not c["fits"]:
+            rejected.append({"id": v["id"], "title": v["photo"]["title"], "seen": c.get("seen", ""),
+                             "reason": c["reason"]})
             v["photo_rejected"] = v.pop("photo")
+    log["seen"] = seen
     log["rejected_after_looking"] = rejected

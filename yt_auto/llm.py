@@ -47,11 +47,11 @@ class LLMError(RuntimeError):
 
 
 def llm(prompt: str, *, system: str = "", schema: dict | None = None, model: str | None = None,
-        temperature: float = 0.7, name: str = "llm", images: list[bytes] | None = None,
+        temperature: float = 0.7, name: str = "llm", images: list | None = None,
         models: list[str] | None = None, max_tries: int = 2, timeout: int = 600, last_resort: bool = False):
     """Send one prompt, return the reply text (or parsed JSON when `schema` is given).
 
-    `images`: optional JPEG bytes shown to the model before the prompt.
+    `images`: optional JPEG bytes (or (label, bytes) pairs) shown to the model before the prompt.
     `last_resort`: after every round failed, try Flash-Lite once (fine for picking photos, never for the script).
     """
     errors = []
@@ -86,7 +86,14 @@ def _call(model, prompt, system, schema, temperature, name, images, max_tries, t
     key = os.environ.get("GEMINI_API_KEY")
     if not key:
         raise LLMError("GEMINI_API_KEY is not set")
-    parts = [{"inlineData": {"mimeType": "image/jpeg", "data": base64.b64encode(b).decode()}} for b in images or []]
+    parts = []
+    for img in images or []:
+        # (label, bytes): the label goes right before its picture. With 54 unlabelled pictures the
+        # model's numbering drifted by one (run 40467512243), so the photo check judged the wrong ones.
+        label, data = img if isinstance(img, tuple) else (None, img)
+        if label:
+            parts.append({"text": label})
+        parts.append({"inlineData": {"mimeType": "image/jpeg", "data": base64.b64encode(data).decode()}})
     parts.append({"text": prompt})
     body: dict = {"contents": [{"role": "user", "parts": parts}],
                   "generationConfig": {"temperature": temperature}}

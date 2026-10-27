@@ -39,7 +39,7 @@ Full plan: "YouTube Automation Blueprint" doc — https://claude.ai/artifact/XN7
 | 0. Server benchmark | **PASSED** 27 Oct 2026: 3/3 runs on GitHub Actions (AMD EPYC, 4 cores), build 3 min 18 s to 3 min 26 s, ~4 min per job, peak ~690 MB, no hangs |
 | 0b. Niche data test | Not started. Needs a YouTube Data API key (owner to create). Niches to test: how technology works, science and space, money and economics (education only) |
 | 1. Production core | **Working** (branch `claude/phase-1-production-core-ufulti`). Run 40402246414 made a 3.9 min GPS video end to end; owner reviewed it 27 Oct: "quite good", more quality work later in other phases. A full-length run (resume_from 40404179356) is pending the daily quota reset |
-| 2. Research and facts | **In progress.** Planted-error test (30 errors + 16 controls), number/unit guard, facts.csv, rights gate. Pass rule: ≥80% caught, ≥60% per type, ≤1 false alarm |
+| 2. Research and facts | **Test PASSED** 27 Oct 2026 (run 40466026336): 30/30 planted errors caught, 0/16 false alarms (rule set before testing: ≥80% overall, ≥60% per type, ≤1 false alarm). First run 28/30 (missed 2 conflicting-source cases) → one prompt rule added. Also: number/unit guard, facts.csv, rights gate, junk-passage filter. Caveat: test set written by the same author as the checker; add independent cases later |
 | 3–6, auto-upload | Not started (see blueprint). 0b waits for a YouTube Data API key |
 
 Owner feedback on the Phase 0 video: **voice quality good**; pace was a bit fast (fixed: speed 0.9, longer pauses); **wants more pictures** (decided: real photos first, AI illustrations when none fits).
@@ -111,6 +111,8 @@ A failed run is not always a bug: run 40404179356 failed only because all strong
 6. Diagnose with evidence before changing code. The owner explicitly asked for this.
 7. Workflow logs on GitHub's log storage can't be read from Claude's cloud sessions (404, even live); that's why logs are saved to the `bench-results` branch.
 8. Phase 1: `faulthandler` must fire before the workflow step timeout, or a hang leaves no stack.
+10. Network: `ConnectionResetError` while reading a reply is not a `URLError`; catch `OSError` (crashed a run once).
+11. Parse model answers loosely: Flash-Lite answered `wiki:6` where `6` was asked, and every photo pick was lost.
 9. Phase 1: Commons/NASA have photos of objects, not staged scenes: ask for simple subjects, pick leniently, verify by looking.
 
 ## Reused open-source parts
