@@ -27,8 +27,7 @@
   ],
   "exclude_words": [],
   "youtube_categories": [
-    28,
-    27
+    28
   ],
   "youtube_regions": [
     "US",
@@ -43,5 +42,6 @@
     "education only: no financial, legal or health advice",
     "no accusations against named companies or people",
     "a worldwide English audience; explain, don't report breaking news"
-  ]
+  ],
+  "_note_categories": "28 = Science & Technology. 27 (Education) has no most-popular chart: 404 in all regions (Phase 4 run 40533636460)."
 }

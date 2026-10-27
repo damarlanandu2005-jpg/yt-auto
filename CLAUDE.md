@@ -41,7 +41,8 @@ Full plan: "YouTube Automation Blueprint" doc — https://claude.ai/artifact/XN7
 | 1. Production core | **DONE**, owner approved the video 27 Oct 2026. Run 40469284296: 7.4 min GPS video, 900 words fact-checked, 99 visuals (44 real photos, each checked by looking), subtitles from our own text, ~11 min on Actions. Owner liked the earlier 3.9 min version; quality work moves to later phases. Known weak spots: some title-only cards, one off-topic diagram (geostationary, v031) |
 | 2. Research and facts | **Test PASSED** 27 Oct 2026 (run 40466026336): 30/30 planted errors caught, 0/16 false alarms (rule set before testing: ≥80% overall, ≥60% per type, ≤1 false alarm). First run 28/30 (missed 2 conflicting-source cases) → one prompt rule added. Also: number/unit guard, facts.csv, rights gate, junk-passage filter. Caveat: test set written by the same author as the checker; add independent cases later |
 | 3. Quality gate | **Test PASSED** 27 Oct 2026 (run 40477248640): all 6 blueprint faults caught (silent gap, unlicensed image, wrong title promise, 3 kinds of near-duplicate), 17/17 planted faults overall, 0/5 false blocks on clean controls. First AI run blocked the approved video on 'hook'; split per blueprint (no question = FAIL, no 'why it matters' = FLAG). The gate also found a real bug: GPS description 9,850 chars (YouTube max 5,000) → credits shortened |
-| 4–6, auto-upload | Not started (see blueprint). Phase 4 (topic finding) needs the niche from 0b |
+| 4. Topic finding | **DONE (done-when met)** 27 Oct 2026, run 40533636460 (science_space, provisional until the 0b result): 25 ideas proposed from 84 measured signals (40 'beats its channel's normal' videos, 4 trending, 40 news), 10 chosen with evidence, 15 in reserve, none repeating library/. Re-run for the winning niche after 23 Nov. Uses 2 Gemini requests + 3 YouTube units. Ideas in bench-results/phase4/<niche>/<run_id>/ideas.md |
+| 5–6, auto-upload | Not started (see blueprint). Phase 5 pilot needs the niche from 0b |
 
 Owner feedback on the Phase 0 video: **voice quality good**; pace was a bit fast (fixed: speed 0.9, longer pauses); **wants more pictures** (decided: real photos first, AI illustrations when none fits).
 
@@ -94,6 +95,9 @@ phase3/eval_gate.py    planted-fault test (2 Gemini requests; --no-ai needs none
 .github/workflows/phase3-gate-eval.yml  manual; results in bench-results/phase3/<run_id>/
 phase0b/niche_test.py  niche test: check, select (once), snapshot (weekly), report; settings phase0b/niches.json, rules phase0b/RULES.md
 .github/workflows/phase0b-niche.yml  manual (start/snapshot/report) + Mondays 03:17 UTC (only from main)
+yt_auto/topics.py      Phase 4: signals (0b outliers, YouTube chart cat 28, RSS, Wikipedia views) -> 1 Gemini call ideas -> repeat filter vs library/ -> 1 Gemini call scores -> fixed formula (demand 0.35)
+niches/<niche>.json    per-niche settings (blueprint's niche.yaml, JSON to avoid a dependency)
+phase4/find_topics.py  entry; .github/workflows/phase4-topics.yml manual (niche choice)
 phase1/check_apis.py   pre-flight: key present, which models answer, NASA/Commons up, saves official pages
 .github/workflows/phase1-video.yml   manual only (topic, scenes, resume_from = earlier run id to reuse plan/sources/script and save quota)
 .github/workflows/phase1-check.yml   manual; also runs when the check changes on a phase-1 branch
