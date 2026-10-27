@@ -59,3 +59,10 @@ A niche with fewer than 15 eligible channels cannot win (too little evidence).
 YouTube Data API free quota: 10,000 units a day. Search costs 100 units; channel and video details
 cost 1 unit per 50 items. Expected: about 3,000 units for the first run, about 200 per weekly re-check.
 The script stops at 8,000 units. No Gemini quota is used.
+
+## Change log
+
+- 27 Oct 2026, still before any data: removed format words that are not topics from the keyword
+  lists ("how", "work", "works", "explained" from technology; "history", "country", "countries" from money).
+  With them, a money channel titled "How Inflation Works" also counted as technology, and ties went to
+  technology. Found by reading the code, not from data.
