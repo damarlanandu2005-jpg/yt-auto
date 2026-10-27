@@ -37,10 +37,12 @@ Full plan: "YouTube Automation Blueprint" doc — https://claude.ai/artifact/XN7
 | --- | --- |
 | 0. Server benchmark | **PASSED** 27 Oct 2026: 3/3 runs on GitHub Actions (AMD EPYC, 4 cores), build 3 min 18 s to 3 min 26 s, ~4 min per job, peak ~690 MB, no hangs |
 | 0b. Niche data test | Not started. Needs a YouTube Data API key (owner to create). Niches to test: how technology works, science and space, money and economics (education only) |
-| 1. Production core | **In progress** (branch `claude/phase-1-production-core-ufulti`). Pipeline built; first full video under review |
+| 1. Production core | **Working** (branch `claude/phase-1-production-core-ufulti`). Run 40402246414 made a 3.9 min GPS video end to end; owner reviewed it 27 Oct: "quite good", more quality work later in other phases. A full-length run (resume_from 40404179356) is pending the daily quota reset |
 | 2–6, auto-upload | Not started (see blueprint) |
 
 Owner feedback on the Phase 0 video: **voice quality good**; pace was a bit fast (fixed: speed 0.9, longer pauses); **wants more pictures** (decided: real photos first, AI illustrations when none fits).
+
+Owner feedback on the first Phase 1 video (27 Oct): quite good; wants more quality changes, to be done in later phases. Known weak spots: a few off-topic or misleading photos (e.g. a geostationary diagram for GPS), some bare title cards, video shorter than target when Flash-Lite wrote the script.
 
 ## Phase 1 facts (checked 26 Oct 2026 from a GitHub Actions run, not from blogs)
 
@@ -87,7 +89,9 @@ phase0/run_benchmark.py      end-to-end benchmark; phase0/sample_script.json (GP
 
 Results of each workflow run are committed to the **`bench-results`** branch: Phase 0 `<run_id>/run<n>/`, Phase 1 `phase1/<run_id>/` (report.json with every LLM call, review.md, script, factcheck, visuals, contact_sheet.jpg, preview, llm/ prompts+replies), checks `phase1-check/<run_id>/`. Full video is an Actions artifact (7 days).
 
-A new workflow can't be started by hand from a branch (404) until it has run there once; that's why the Phase 1 workflows also have a narrow path-limited push trigger.
+A new workflow can't be started by hand from a branch (404) until it has run there once. Fix: give it a narrow path-limited push trigger for one run, then remove it (done for phase1-video; phase1-check still has it).
+
+A failed run is not always a bug: run 40404179356 failed only because all strong Gemini models had used their 20 requests/day. Check report.json for 429 before changing code.
 
 ## Lessons from Phase 0 (7 attempts) — do not repeat
 
