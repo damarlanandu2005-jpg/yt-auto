@@ -73,3 +73,26 @@ The script stops at 8,000 units. No Gemini quota is used.
   newly eligible channels fill each niche up to 20 by the same sort rule. Science was already full, so only
   technology and money can change. Every other rule is unchanged. New channels' growth is measured from
   their own first snapshot.
+
+## Backward check (added 27 Oct 2026 at the owner's request, written BEFORE running it)
+
+The owner asked for a faster answer than 4 weeks. YouTube's API has no history, so the backward check
+uses these proxies on data available today. It does not replace the weekly test; it gives an early,
+lower-confidence answer that the 4 weeks then confirm or overturn.
+
+Channels: every channel judged **eligible** for a niche (not only the chosen 20), so tech and money
+have as many as possible.
+
+1. **Young-channel growth (main):** for channels created in the last 3 years: subscribers ÷ months since
+   the channel was created. Niche value = median.
+2. **Momentum:** per channel (at least 6 long videos 7+ days old among its 10 latest), median views/day of
+   the newer half ÷ median of the older half. (First draft said "5 newest vs 5 before"; changed before the
+   run because most channels have fewer than 10 such videos once very new ones are left out.) Niche value = median of channels (above 1 = speeding up). Older videos get the same
+   bias in every niche, so only the comparison between niches is used.
+3. **Breakout rate:** share of recent long videos with at least 2× their channel's median views/day.
+4. **Audience interest (context, not ranked):** Wikipedia monthly views of 8 fixed core articles per niche
+   (listed in `backward.py`), last 6 months vs the 6 before.
+
+**Winner rule:** best on measure 1, unless it is last on both 2 and 3, in which case the runner-up wins.
+A niche with fewer than 10 eligible channels created in the last 3 years is marked "too little data".
+The owner confirms.

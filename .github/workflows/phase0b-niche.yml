@@ -10,9 +10,9 @@ on:
   workflow_dispatch:
     inputs:
       command:
-        description: "start, snapshot or report"
+        description: "start, snapshot, report or backward"
         type: choice
-        options: ["start", "snapshot", "report"]
+        options: ["start", "snapshot", "report", "backward"]
         default: "snapshot"
   schedule:
     - cron: "17 3 * * 1"   # Mondays 03:17 UTC (08:47 IST)
@@ -57,10 +57,14 @@ jobs:
               python phase0b/niche_test.py check "$D"
               python phase0b/niche_test.py select "$D"
             fi
-            if [ "$COMMAND" != "report" ]; then
-              python phase0b/niche_test.py snapshot "$D"
+            if [ "$COMMAND" = "backward" ]; then
+              python phase0b/backward.py "$D"
+            else
+              if [ "$COMMAND" != "report" ]; then
+                python phase0b/niche_test.py snapshot "$D"
+              fi
+              python phase0b/niche_test.py report "$D"
             fi
-            python phase0b/niche_test.py report "$D"
           } 2>&1 | tee "$D/last_run.log"
 
       - name: Save to bench-results
