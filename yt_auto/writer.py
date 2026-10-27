@@ -157,6 +157,9 @@ def check(sentences: list[dict], idx: dict, name: str) -> dict[str, dict]:
 - supported: every detail (numbers, names, dates, causes, comparisons) is stated in or directly follows from them.
 - partly: the main point is backed but some detail is not, or it overstates / oversimplifies into something false.
 - unsupported: the cited passages do not back it, or there are none.
+- Conflict: if the cited passages DISAGREE with each other about any number, date or name the sentence
+  states, the sentence is at most "partly" even if it matches one of them; say "sources conflict". Its
+  fixed_text must not pick a side: state only what all passages agree on, or give both values.
 For partly/unsupported, give fixed_text: a corrected sentence in the same plain spoken style that the cited
 passages fully support (keep digits and full unit words; no copying 8+ words). Leave fixed_text empty if impossible.
 A FRAMING SENTENCE has no passages: it is "supported" only if it makes no checkable claim at all (a question,
