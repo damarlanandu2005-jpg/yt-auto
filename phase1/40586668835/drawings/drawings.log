@@ -1,0 +1,33 @@
+[drawings] v002: 82 s  a fiery blast wave sweeping across a planet surface
+[drawings] v008: 82 s  a star expelling matter into space
+[drawings] v010: 82 s  particles traveling at light speed
+[drawings] v022: 82 s  particle stream moving across space
+[drawings] v030: 82 s  a star moving away in space
+[drawings] v034: 82 s  radiation hitting upper atmosphere
+[drawings] v035: 82 s  gas molecules breaking apart
+[drawings] v036: 82 s  molecules recombining into nitrogen oxides
+[drawings] v037: 82 s  ozone molecules being depleted
+[drawings] v039: 82 s  atmosphere composition changing
+[drawings] v050: 82 s  planet shield collapsing
+[drawings] v054: 82 s  ultraviolet light penetrating atmosphere
+[drawings] v056: 82 s  cellular DNA damaged by radiation
+[drawings] v057: 82 s  DNA replication transcription errors
+[drawings] v063: 82 s  ocean food web collapse
+[drawings] v065: 82 s  global climate cooling pattern
+[drawings] v073: 82 s  iron-60 isotope atomic structure
+[drawings] v080: 82 s  star near Earth with atmospheric shield
+
+[transformers] `CLIPImageProcessor` requires torchvision (not installed); falling back to `CLIPImageProcessorPil` for backward compatibility. Install torchvision to use the default backend, or import `CLIPImageProcessorPil` directly to silence this warning.
+[transformers] `SiglipImageProcessor` requires torchvision (not installed); falling back to `SiglipImageProcessorPil` for backward compatibility. Install torchvision to use the default backend, or import `SiglipImageProcessorPil` directly to silence this warning.
+/opt/hostedtoolcache/Python/3.13.17/x64/lib/python3.13/site-packages/diffusers/utils/deprecation_utils.py:23: FutureWarning: `torch_dtype` is deprecated and will be removed in version 1.0.0. Please use `dtype` instead.
+  deprecate("torch_dtype", "1.0.0", _TORCH_DTYPE_DEPRECATION_MESSAGE)
+
+Loading pipeline components...:   0%|          | 0/7 [00:00<?, ?it/s][0;93m2026-10-27 21:35:27.101622593 [W:onnxruntime:Default, device_discovery.cc:95 GetPciBusId] Skipping pci_bus_id for PCI path at "/sys/devices/LNXSYSTM:00/LNXSYBUS:00/ACPI0004:00/MSFT1000:00/5620e0c7-8062-4dce-aeb7-520c7ef76171" because filename "5620e0c7-8062-4dce-aeb7-520c7ef76171" did not match expected pattern of [0-9a-f]+:[0-9a-f]+:[0-9a-f]+[.][0-9a-f]+[m
+
+Loading pipeline components...:  14%|█▍        | 1/7 [00:00<00:01,  3.11it/s]
+Loading pipeline components...:  57%|█████▋    | 4/7 [00:00<00:00,  9.65it/s]
+Loading pipeline components...: 100%|██████████| 7/7 [00:00<00:00, 14.23it/s]
+Loading pipeline components...: 100%|██████████| 7/7 [00:00<00:00, 11.58it/s]
+No LoRA keys associated to CLIPTextModel found with the prefix='text_encoder'. This is safe to ignore if LoRA state dict didn't originally have any CLIPTextModel related params. You can also try specifying `prefix=None` to resolve the warning. Otherwise, open an issue if you think it's unexpected: https://github.com/huggingface/diffusers/issues/new
+No LoRA keys associated to CLIPTextModelWithProjection found with the prefix='text_encoder_2'. This is safe to ignore if LoRA state dict didn't originally have any CLIPTextModelWithProjection related params. You can also try specifying `prefix=None` to resolve the warning. Otherwise, open an issue if you think it's unexpected: https://github.com/huggingface/diffusers/issues/new
+The config attributes {'skip_prk_steps': True} were passed to LCMScheduler, but are not expected and will be ignored. Please verify your scheduler_config.json configuration file.

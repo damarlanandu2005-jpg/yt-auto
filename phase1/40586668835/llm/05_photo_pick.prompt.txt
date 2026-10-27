@@ -1,0 +1,524 @@
+[model] gemini-3.5-flash-lite
+[system]
+
+
+[user]
+Pick the best photo for each slot from its numbered candidates (title | description).
+Choose a candidate if it shows the slot's subject or something closely related that fits the narration
+(it does not need to match every detail: a photo of a real handheld GPS receiver fits "a hiker's GPS").
+Answer "" only when no candidate is related, or the only related ones would mislead the viewer.
+Prefer real photographs over diagrams with small text, logos, or maps with dense labels. Avoid close-up
+faces of private people. Do not use the same photo twice.
+Answer choice = the candidate number as text, or "".
+
+[v003] needs: Planet Earth | narration: Why does this question matter when considering terrestrial life?
+  nasa:0: Earth-class Planets Line Up | This chart compares the first Earth-size planets found around a sun-like star to planets in our own solar system, Earth and Venus. NASA Kepler mission discovere
+  nasa:1: K2 Finds Earth-Sized Planets Artist Concept | This artist's concept shows NASA's Kepler Space Telescope on its K2 mission. In July 2016, an international team of astronomers announced they had discovered mo
+  nasa:2: Kepler-186f, the First Earth-size Planet in the Habitable Zone Artist Concept | This artist concept depicts Kepler-186f, the first validated Earth-size planet to orbit a distant star in the habitable zone, a range of distance from a star wh
+  nasa:3: Birth of an Earth-like Planet Artist Xoncept | This artist conception shows a binary-star, or two-star, system, called HD 113766, where astronomers suspect a rocky Earth-like planet is forming around one of 
+  nasa:4: Pantheon of Planets Similar to Earth Artist Concept | A newly discovered exoplanet, Kepler-452b, comes the closest of any found so far to matching our Earth-sun system. This artist's conception of a planetary lineu
+  nasa:5: Earth's thin blue atmosphere traces the planet's horizon above the Pacific Ocean | iss074e0089803 (Jan. 16, 2026) --- Earth's thin blue atmosphere traces the planet's horizon as the sun's glint beams off a partly cloudy Pacific Ocean west of C
+  wiki:6: Earth's City Lights by DMSP, 1994-1995 (large) | This image of Earth’s city lights was created with data from the Defense Meteorological Satellite Program (DMSP) Operational Linescan System (OLS). Originally d
+  wiki:7: NASA-Apollo8-Dec24-Earthrise | Taken by Apollo 8 crewmember Bill Anders on December 24, 1968, at mission time 075:49:07 [8] (16:40 UTC), while in orbit around the Moon, showing the Earth risi
+  wiki:8: STS-135 final flyaround of ISS 1 | STS-135 final flyaround of ISSThis picture of the International Space Station was photographed from the space shuttle Atlantis as the orbiting complex and the s
+  wiki:9: North America from low orbiting satellite Suomi NPP | A view of most of North America taken from a low orbit of about 826 km altitude. The whole hemisphere is not visible owing to the low orbit, and the horizon is 
+  wiki:10: The Earth seen from Apollo 17 | "The Blue Marble" is a famous photograph of the Earth taken on December 7, 1972, by the crew of the Apollo 17 spacecraft en route to the Moon at a distance of a
+  wiki:11: Africa and Europe from a Million Miles Away | July 29, 2015 Africa and Europe from a Million Miles Away http://www.nasa.gov/image-feature/africa-and-europe-from-a-million-miles-away Africa is front and cent
+
+[v004] needs: blue sky and clouds | narration: How essential is our oxygen atmosphere for survival?
+  nasa:0: With sensor booms projecting ahead of the wing, the Pathfinder-Plus soars under a blue sky | With its sensor booms projecting ahead of the wing, the Pathfinder-Plus solar-electric aircraft soars under a blue sky on a turbulence measurement research flig
+  nasa:1: With sensor booms projecting ahead of the wing, the Pathfinder-Plus soars under a blue sky | With its sensor booms projecting ahead of the wing, the Pathfinder-Plus solar wing soars under a blue sky on its final turbulence measurement research flight.
+  nasa:2: Stars fill the sky above a serene, blue-green airglow blanketing Earth's horizon | iss073e0830977 (Sept. 27, 2025) --- Stars fill the sky above a serene, blue-green airglow blanketing Earth's horizon in this photograph taken from the Internati
+  nasa:3: A pristine blue sky backdrops the X-48B Blended Wing Body aircraft during the aircraft's f | A pristine blue sky backdrops the X-48B Blended Wing Body aircraft during the aircraft's first flight July 20, 2007, from NASA's Dryden Flight Research Center.
+  nasa:4: KENNEDY SPACE CENTER, FLA. - A successful controlled burn near KSC’s Launch Complex 39 are | KENNEDY SPACE CENTER, FLA. - A successful controlled burn near KSC’s Launch Complex 39 area creates clouds of smoke in a clear blue sky. The water seen is the B
+  nasa:5: Pluto Blue Sky | Pluto's haze layer shows its blue color in this picture taken by the New Horizons Ralph/Multispectral Visible Imaging Camera (MVIC). The high-altitude haze is t
+  wiki:6: Trees rising out of Cheow Lan Lake, blue sky, eternal summer in Surat Thani edited | Old submerged trees on Cheow Lan Reservoir Lake in Surat Thani, Thailand. Remnants of the old Shorea Dipterocarp forest. The lake shores still harbour forests w
+  wiki:7: Burimun gate and pine under blue sky at Beomeosa temple in Busan, South Korea | Burimun gate and high Japanese black pine at Beomeosa Buddhist temple, under a blue sky in Busan, South Korea.
+  wiki:8: Front view of the Imperial Throne Hall Geunjeongjeon at Gyeongbokgung Palace with blue sky | Front view of the Imperial Throne Hall Geunjeongjeon, at Gyeongbokgung Palace, with blue sky in Seoul, South Korea.
+  wiki:9: Front view of Jibokjae Hall under blue sky at Gyeongbokgung Palace in Seoul | Front view of Jibokjae Hall under blue sky at Gyeongbokgung Palace in Seoul, South Korea.
+  wiki:10: Cheomseongdae Observatory under blue sky in Gyeongju South Korea | Cheomseongdae Observatory, under blue sky in Gyeongju, South Korea. In stone, it was constructed in the 7th century.
+  wiki:11: Bulguksa temple entrance gate stairs flower bed and blue sky in Gyeongju South Korea | Cheongungyo and Baegungyo Stairs at Bulguksa Buddhist temple entrance, flower bed and blue sky, in Gyeongju, South Korea.
+
+[v005] needs: supernova remnant | narration: In reality, a supernova is a powerful explosion marking the death of a star.
+  nasa:0: Supernova Remnant W49B | Release date Dec. 30, 2009 In the supernova remnant W49B, Suzaku found another fossil fireball. It detected X-rays produced when heavily ionized iron atoms reca
+  nasa:1: Vivid View of Tycho Supernova Remnant | This composite image of the Tycho supernova remnant combines infrared and X-ray observations obtained with NASA Spitzer and Chandra space observatories, respect
+  nasa:2: Supernova Remnant in 3-D | For the first time, a multiwavelength three-dimensional reconstruction of a supernova remnant has been created. This visualization of Cassiopeia A, or Cas A, th
+  wiki:3: Tycho-supernova-xray | The Chandra X-ray Observatory image of Tycho's Supernova Remnant depicts a glowing, multi-colored sphere that appears to be suspended in the blackness of space.
+  wiki:4: Supernova Remnant SN 1006 | This image is a composite of visible (or optical), radio, and X-ray data of the full shell of the supernova remnant from SN 1006. The radio data show much of th
+  wiki:5: NASA-SNR0519690-ChandraXRayObservatory-20150122 | X-ray &amp; Optical Images of SNR E0519-69.0 - When a massive star exploded in the Large Magellanic Cloud, a satellite galaxy to the Milky Way, it left behind a
+  wiki:6: Vela supernova - VST - Eso2214a | The Vela supernova remnant imaged by the VLT Survey Telescope The image shows stringy clouds of hot pink and golden orange, nested together all over the frame, 
+  wiki:7: Vela Supernova Remnant - Noirlab2406a | Vela Supernova Remnant, using line filters for OIII, SII, H-alpha &amp; NII Ghostly Stellar Tendrils of the Vela Supernova Remnant This colorful web of wispy ga
+  wiki:8: Crab Nebula | This is a mosaic image, one of the largest ever taken by NASA's Hubble Space Telescope, of the Crab Nebula, a six-light-year-wide expanding remnant of a star's 
+  wiki:9: Crab nebula and crab pulsar composite | A combination of optical and X-ray images of the Crab Nebula. The X-ray image reveals evidence of a spinning disc of super-hot gas with high-speed jets shooting
+  wiki:10: The Crab Nebula (weic2326a) | The NASA/ESA/CSA James Webb Space Telescope has gazed at the Crab Nebula in the search for answers about the supernova remnant’s origins. Webb’s NIRCam (Near-In
+
+[v006] needs: stellar core | narration: When a massive star runs out of fuel, its core collapses under immense gravitational force.
+  nasa:0: The Helix Nebula: Unraveling at the Seams | This image from NASA Spitzer and GALEX shows the Helix nebula, a dying star throwing a cosmic tantrum. In death, the star dusty outer layers are unraveling into
+  nasa:1: Kepler Beyond Planets: Finding Exploding Stars (Core Collapse Supernova) | This image from an animation shows a gigantic star exploding in a "core collapse" supernova. As atoms fuse inside the star, eventually the star can't support it
+  nasa:2: Kepler Beyond Planets: Finding Exploding Stars (Type Ia Supernova from a White Dwarf Steal | This frame from an animation shows a gigantic star exploding in a "core collapse" supernova. As atoms fuse inside the star, eventually the star can't support it
+  nasa:3: Waving goodbye | This planetary nebula is called PK 329-02.2 and is located in the constellation of Norma in the southern sky. It is also sometimes referred to as Menzel 2, or M
+  nasa:4: New Views of a Familiar Beauty | This image composite compares the well-known visible-light picture of the glowing Trifid Nebula (left panel) with infrared views from NASA's Spitzer Space Teles
+  nasa:5: Kepler Beyond Planets: Finding Exploding Stars (Type Ia Supernova from a White Dwarf Merge | This frame from an animation shows the merger of two white dwarfs. A white dwarf is an extremely dense remnant of a star that can no longer burn nuclear fuel at
+  wiki:6: A pulsating stellar relic | This NASA/ESA Hubble Space Telescope image shows the planetary nebula NGC 2452, located in the southern constellation of Puppis. The blue haze across the frame 
+  wiki:7: A stellar fingerprint | Showcased at the centre of this NASA/ESA Hubble Space Telescope image is an emission-line star known as IRAS 12196-6300. Located just under 2300 light-years fro
+  wiki:8: Young Stellar System Caught in the Act of Forming Close Multiples | For the first time, astronomers have seen a dusty disc of material around a young star fragmenting into a multiple star system. This image comprises new observa
+  wiki:9: A stellar close encounter at the core of globular cluster M15 (artist's impression) (opo93 | The sky is ablaze with several hundred thousand stars in the imaginary view from the surface of a hypothetical planet at the center if the globular star cluster
+  wiki:10: Stellar dendrite snowflake | A micrograph of a stellar dendrite snowflake captured using standard bottom lighting. The image was taken under a microscope using an 8x objective. A focus stac
+  nasa:11: Storm of Stars in the Trifid Nebula | Radiation and winds from massive stars have blown a cavity into the surrounding dust and gas, creating the Trifid nebula, as seen here in infrared light by NASA
+
+[v007] needs: white dwarf star | narration: Alternatively, an exploding white dwarf star undergoes runaway nuclear fusion.
+  nasa:0: Kepler Beyond Planets: Finding Exploding Stars (Type Ia Supernova from a White Dwarf Merge | This frame from an animation shows the merger of two white dwarfs. A white dwarf is an extremely dense remnant of a star that can no longer burn nuclear fuel at
+  nasa:1: Scene of Multiple Explosions | This composite image NASA Galaxy Evolution Explorer shows Z Camelopardalis, or Z Cam, a double-star system featuring a collapsed, dead star, called a white dwar
+  nasa:2: Comet Bites the Dust Around Dead Star  Artist Concept | This artist concept illustrates a comet being torn to shreds around a dead star, or white dwarf, called G29-38. NASA Spitzer Space Telescope observed a cloud of
+  nasa:3: Silicates in Alien Asteroids | This plot of data from NASA Spitzer Space Telescopes shows that asteroid dust around a dead white dwarf star contains silicates -- a common mineral on Earth.
+  nasa:4: Coolest Orbs on the Block Artist Concept | This artist concept shows hundreds of brown dwarfs deep red, expected to be added to the population of known stars in our solar neighborhood. Our sun and other 
+  nasa:5: Firework Nova | Nova Stars are essentially giant fusion reactions occurring in the vacuum of space. Because stars have so much mass, they possess powerful gravitational force—b
+  wiki:6: Starburst in NGC 4449 (captured by the Hubble Space Telescope) | Hundreds of thousands of vibrant blue and red stars blaze in this image taken by NASA's Hubble Space Telescope. Hot bluish-white clusters of massive stars are s
+  wiki:7: Star-sizes | Relative sizes of the planets in the solar system and several well known stars. Star colours are estimated (based on temperature) and Saturn's rings are shown s
+  wiki:8: Confocal measurement of 1-euro-star 3d and euro | Three dimensional representation of a 1-euro coin's surface detail: One of the stars embossed on one side of the coin is shown. The 3d profile has been measured
+  wiki:9: The Sun by the Atmospheric Imaging Assembly of NASA's Solar Dynamics Observatory - 2010081 | The Sun photographed at 304 angstroms by the Atmospheric Imaging Assembly (AIA 304) of NASA's Solar Dynamics Observatory (SDO). This is a false-color image of t
+  wiki:10: Stars 01 (MK) | Part (~280°) of the starry sky near Brandenburg an der Havel (Germany), close to midnight.
+
+[v009] needs: interstellar medium | narration: of matter into the surrounding interstellar medium.
+  nasa:0: KSC-02pd2055 | KENNEDY SPACE CENTER, FLA. - The Cosmic Hot Interstellar Plasma Spectrometer, or CHIPSat, undergoes final processing before launch. CHIPSat, a suitcase-size 131
+  nasa:1: KSC-02pd2056 | KENNEDY SPACE CENTER, FLA. - The Cosmic Hot Interstellar Plasma Spectrometer, or CHIPSat, undergoes final processing before launch. CHIPSat, a suitcase-size 131
+  nasa:2: KSC-02pd2054 | KENNEDY SPACE CENTER, FLA. - The Cosmic Hot Interstellar Plasma Spectrometer, or CHIPSat, undergoes final processing before launch. CHIPSat, a suitcase-size 131
+  nasa:3: KSC-02pd2053 | KENNEDY SPACE CENTER, FLA. - The Cosmic Hot Interstellar Plasma Spectrometer, or CHIPSat, undergoes final processing before launch. CHIPSat, a suitcase-size 131
+  nasa:4: Bow Shock Around Young Star | This image, taken by the Hubble Space Telescope, shows a bow shock around a very young star, LL Ori. The bow shock shows where the star's heliosphere collides w
+  nasa:5: KSC-02pd2060 | KENNEDY SPACE CENTER, FLA. - A second stage is lifted at NASA's Space Launch Complex 2 (SLC-2) at Vandenberg Air Force Base, Calif., for placement atop a Delta 
+  wiki:6: Uncertain size-frequency distribution of interstellar visitors | Interstellar visitors in the Solar System cover the whole range of sizes - from kilometer large objects down to submicron particles. Also, interstellar dust and
+  wiki:7: Milky Way 360 equirectangular rendering with foreground stars removed | This image was rendered by bsrender (https://github.com/kevinloch/bsrender) using the star records from the Gaia EDR3 dataset (https://www.cosmos.esa.int/web/ga
+  wiki:8: Milky Way 360-degree rendering with foreground stars removed | This image was rendered by bsrender (https://github.com/kevinloch/bsrender) using the star records from the Gaia EDR3 dataset (https://www.cosmos.esa.int/web/ga
+  wiki:9: Interstellar medium annotated | An annotated illustration of the interstellar medium on a logarithmic scale. The solar gravity lens marks the point where a conceptual spacecraft in interstella
+  nasa:10: Dusty Star Stands Out From the Rest | It a dust bunny of cosmic proportions. Astronomers used images from NASA WISE to locate an aging star shedding loads of dust orange dot at upper left.
+  nasa:11: Seeing Stars in Serpens | Infant stars are glowing gloriously in this image of the Serpens star-forming region, captured by NASA Spitzer Space Telescope. The reddish-pink dots are baby s
+
+[v011] needs: expanding shock wave nebula | narration: This creates an expanding shock wave that sweeps up a shell of interstellar gas and dust.
+  nasa:0: History of Chandra X-Ray Observatory | This x-ray image of the Cassiopeia A (CAS A) supernova remnant is the official first light image of the Chandra X-Ray Observatory (CXO). The 5,000-second image 
+  nasa:1: History of Chandra X-Ray Observatory | This Chandra image reveals, in detail, the turbulent debris created by a supernova explosion that was observed by the Danish Astronomer Tycho Brahe in the year 
+  nasa:2: High Energy Astronomy Observatory (HEAO) | This x-ray photograph of the Supernova remnant Cassiopeia A, taken with the High Energy Astronomy Observatory (HEAO) 2/Einstein Observatory, shows that the regi
+  nasa:3: KSC-2009-3097 | CAPE CANAVERAL, Fla. – Space shuttle Atlantis roars into the cloudy sky above Launch Pad 39A at NASA's Kennedy Space Center in Florida on the STS-125 mission. B
+  nasa:4: KSC-2009-3088 | CAPE CANAVERAL, Fla. – Space shuttle Atlantis roars into the cloudy sky above Launch Pad 39A at NASA's Kennedy Space Center in Florida on the STS-125 mission. B
+  wiki:5: Tycho-supernova-xray | The Chandra X-ray Observatory image of Tycho's Supernova Remnant depicts a glowing, multi-colored sphere that appears to be suspended in the blackness of space.
+  wiki:6: Zeta Oph Runaway Star | The giant star Zeta Ophiuchi is having a "shocking" effect on the surrounding dust clouds in this infrared image from NASA's Spitzer Space Telescope. Stellar wi
+  wiki:7: Tycho's Supernova composite image highlighting possible shock wave carrying material from  | This Chandra image of the Tycho supernova remnant contains new evidence for what triggered the original supernova explosion. Tycho was formed by a Type Ia super
+  nasa:8: A Supernova Shockwaves | Supernovae are the explosive deaths of the universe most massive stars. This false-color composite from NASA Spitzer Space Telescope and NASA Chandra X-ray Obse
+  nasa:9: History of Chandra X-Ray Observatory | The Chandra X-Ray Observatory has captured this spectacular image of G292.0+1.8, a young, oxygen-rich supernova remnant with a pulsar at its center surrounded b
+  nasa:10: Kepler Beyond Planets: Finding Exploding Stars (Type Felt Supernova) | This frame from an animation shows a kind of stellar explosion called a Fast-Evolving Luminous Transient. In this case, a giant star "burps" out a shell of gas 
+  wiki:11: Supernova remnant N103B | This image, taken with the NASA/ESA Hubble Space Telescope, shows the supernova remnant SNR 0509-68.7, also known as N103B (top of the image). N103B was a Type 
+
+[v013] needs: starry night sky | narration: Astronomers define a near-Earth supernova as one
+  nasa:0: The Night Sky on Mars | The Night Sky on Mars
+  nasa:1: Creative Photography - Night Sky | Sea oats are backdropped by the night sky and the Milky Way in this view from the Atlantic shoreline at NASA’s Kennedy Space Center in Florida on Oct. 31, 2019.
+  nasa:2: Creative Photography - Night Sky | Sea oats frame the night sky, bisected by the Milky Way, in this view from the Atlantic shoreline at NASA’s Kennedy Space Center in Florida on Oct. 31, 2019. Th
+  nasa:3: Creative Photography - Night Sky | Lights from Launch Complexes 39A and B, left, glow against the night sky in this view from the Atlantic shoreline at NASA’s Kennedy Space Center in Florida on O
+  nasa:4: Creative Photography - Night Sky | Sea oats are backdropped by the night sky and the Milky Way in this view from the Atlantic shoreline at NASA’s Kennedy Space Center in Florida on Oct. 31, 2019.
+  nasa:5: Creative Photography - Night Sky | Lights from Launch Complexes 39A and B, left, glow against the night sky in this view from the Atlantic shoreline at NASA’s Kennedy Space Center in Florida on O
+  wiki:6: Las Vegas (Nevada, USA), The Strip -- 2012 -- 6232 | “The Strip” (part of the Las Vegas Boulevard) in Las Vegas, Nevada, USAThe Las Vegas Strip is the most famous section of Las Vegas Boulevard in Las Vegas. It st
+  wiki:7: Dülmen, Viktorkirmes auf dem Overbergplatz -- 2014 -- 3738 (2) | Light traces of a Ferris wheel, Viktorkirmes in Dülmen, North Rhine-Westphalia, GermanyTwo traditional folk festivals are particularly important in Dülmen: the 
+  wiki:8: Virmalised 15.09.2017 - Aurora Borealis 15.09.2017 copy | Northern lights in Lääneranna Parish, West-Estonia.
+  wiki:9: Münster, Schlossplatz, Frühjahrssend -- 2019 -- 4208 | Swing “Nessy” and Ferris wheel at the funfair “Send” in Münster, North Rhine-Westphalia, GermanyThe Send is Münster’s big folk festival and takes place three ti
+  wiki:10: Perth (AU), Elizabeth Quay Bridge -- 2019 -- 0346-8 (crop 2) | Elizabeth Quay Bridge, Perth, Western Australia, AustraliaThe Elizabeth Quay Bridge is a striking pedestrian bridge in Perth city center. It was built as part o
+  wiki:11: Sydney (AU), Darling Harbour -- 2019 -- 3193-5 | Night in Darling Harbour, Sydney, New South Wales, AustraliaDarling Harbour in Sydney is located on the eastern edge of the city center and has a long and varie
+
+[v016] needs: Milky Way galaxy | narration: potential near-Earth supernovas inside that broader distance.
+  nasa:0: Astronomers Discover Dizzying Spin of the Milky Way Galaxy’s “Halo” | Our Milky Way galaxy and its small companions are surrounded by a giant halo of million-degree gas (seen in blue in this artists' rendition) that is only visibl
+  nasa:1: KSC-2009-1124 | CAPE CANAVERAL, Fla. -- Lights are reflected on the solar array panels of NASA's Kepler spacecraft during illumination testing. A NASA Discovery mission, Kepler
+  nasa:2: KSC-2009-1127 | CAPE CANAVERAL, Fla. -- A Ball Aerospace and Technology worker conducts a light sensor test on NASA's Kepler spacecraft. A NASA Discovery mission, Kepler is spe
+  nasa:3: KSC-2009-1129 | CAPE CANAVERAL, Fla. -- Ball Aerospace and Technology workers conduct a light test on the solar array panels of NASA's Kepler spacecraft. A NASA Discovery missi
+  wiki:4: Milky Way IR Spitzer | The center of our Milky Way galaxy is hidden from the prying eyes of optical telescopes by clouds of obscuring dust and gas. But in this stunning vista, the Spi
+  wiki:5: Center of the Milky Way Galaxy IV – Composite | In celebration of the International Year of Astronomy 2009, NASA's Great Observatories -- the Hubble Space Telescope, the Spitzer Space Telescope, and the Chand
+  wiki:6: Laser Towards Milky Ways Centre | In mid-August 2010 ESO Photo Ambassador Yuri Beletsky snapped this photo at ESO’s Paranal Observatory, Chile. A group of astronomers were observing the centre o
+  wiki:7: Bontecou Lake Milky Way panorama | Panorama of the Milky Way galactic plane stretching over Bontecou Lake in Dutchess County, New York.
+  wiki:8: Milky way in Elbrus | The Milky Way over Mount Elbrus, the highest mountain in the Caucasus Mountains. The Serpens-Aquila Rift stands in the center of the view: a group of dark inter
+  wiki:9: 036 Milky Way during Perseids seen from Oeschinensee with water reflections Photo by Giles | Vertical panorama of the Milky Way during Perseids photographed from Oeschinensee with water reflections. Here is a step by step guide to do astrophotography. E
+  nasa:10: Virgo Galaxy Cluster | This ultraviolet image from NASA Galaxy Evolution Explorer is of a small area of the Virgo Cluster of galaxies. http://photojournal.jpl.nasa.gov/catalog/PIA0790
+  nasa:11: Monster in the Middle: Brightest Cluster Galaxy | This image shows two of the galaxy clusters observed by NASA WISE and Spitzer Space Telescope missions. Galaxy clusters are among the most massive structures in
+
+[v018] needs: bright glowing star | narration: Although these dying stars will shine brilliantly, they pose little direct threat to our planet.
+  nasa:0: Thackeray Globules | Strangely glowing, floating dark clouds are silhouetted against nearby bright stars in a busy star-forming region viewed by NASA Hubble Space Telescope
+  nasa:1: Wish Upon a Star | What's that bright point of light in the outer A ring? It's a star, bright enough to be visible through the ring! Quick, make a wish! This star -- seen in the l
+  nasa:2: Flickering Aldebaran #1 | As Cassini watches the rings pass in front of the bright red giant star Aldebaran, the star light fluctuates, providing information about the concentrations of 
+  nasa:3: White Dwarfs: Small and Strong | This chart shows data from NASA Kepler space telescope, which looks for planets by monitoring changes in the brightness of stars. As planets orbit in front of a
+  nasa:4: Gas Giants Form Quickly  Artist Concept | This is an artist concept of a hypothetical 10-million-year-old star system. The bright blur at the center is a star much like our sun. The other orb in the ima
+  nasa:5: Menkhib and the California Nebula | This infrared image from NASA Wide-field Infrared Survey Explorer features one of the bright stars in the constellation Perseus, named Menkhib, along with a lar
+  wiki:6: The Bright Star Public House sign - geograph.org.uk - 5725790 | The Bright Star Public House sign
+  wiki:7: Bright Star at Peters Green | The Bright Star, Peters Green, Kimpton, Hertfordshire
+  wiki:8: BRIGHT STAR 25- Amphibious Assault (9315821) | Egyptian Armed Forces service members participate in an amphibious assault exercise as part of exercise BRIGHT STAR 25 in Alexandria, Egypt, Sept. 10, 2025. Mul
+  wiki:9: Hubble celebrates 31st birthday with giant star on the edge of destruction (51132513082) | In celebration of the 31st anniversary of the launching of the NASA/ESA Hubble Space Telescope, astronomers aimed the celebrated observatory at one of the brigh
+  wiki:10: Tarantula Nebula (MIRI Image) | What’s that caught in our Webb? A giant space tarantula! Take a moment to stare into thousands of never-before-seen young stars in the Tarantula Nebula. The Jam
+  wiki:11: The exotic stellar population of Westerlund 1 (potm2409a) | The open cluster Westerlund 1, showcased in this new Webb Picture of the Month, is located roughly 12 000 light-years away in the southern constellation Ara (th
+
+[v019] needs: Betelgeuse star | narration: What about the famous red supergiant star Betelgeuse?
+  nasa:0: Stars in Orion as Seen from Mars | Stars in the upper portion of the constellation Orion the Hunter, including the bright shoulder star Betelgeuse and Orion three-star belt, appear in this image 
+  nasa:1: Jupiter Ring, With Orion | As NASA's Juno spacecraft flew through the narrow gap between Jupiter's radiation belts and the planet during its first science flyby, Perijove 1, on August 27,
+  wiki:2: Betelgeuse captured by ALMA | This orange blob shows the nearby star Betelgeuse, as seen by the Atacama Large Millimeter/submillimeter Array (ALMA). This is the first time that ALMA has ever
+  wiki:3: Arcturus to Betelgeuse comparison | A size comparison between the Sun, red giant Arcturus, blue supergiant Rigel, blue hypergiant S Doradus, and red supergiants Antares (at minimum) and Betelgeuse
+  wiki:4: Betelgeuse – and its newfound companion star | A century-old hypothesis that Betelgeuse, the 10th brightest star in our night sky, is orbited by a very close companion star was proved true by a team of astro
+  wiki:5: Location of the binary system of Betelgeuse in constellation Orion | Photo of the constellation Orion produced by NOIRLab in collaboration with Eckhard Slawik, a German astrophotographer. This is the annotated version. Steve Howe
+  nasa:6: The Tarantula Nebula | NASA Spitzer Space Telescope, formerly known as the Space Infrared Telescope Facility, has captured in stunning detail the spidery filaments and newborn stars o
+  wiki:7: V838 Mon HST | Light echo around V838 Monocerotis In January 2002, a dull star in an obscure constellation suddenly became 600,000 times more luminous than our Sun, temporaril
+  wiki:8: Red supergiant star surrounded by a veil of circumstellar material before explosion as sug | Red supergiant star surrounded by a veil of circumstellar material before explosion as suggested by early time observations of type II supernova
+  wiki:9: The Garnet Star (HD 206936, HR 8316, HIP 107259, SAO 33693), Cepheus | The Garnet Star (HD 206936, HR 8316, HIP 107259, SAO 33693), Cepheus Mu Cephei, referred to as the "garnet star" by Herschel in 1783, is thought to be the large
+  wiki:10: Stars Larger than Betelgeuse | A diagram of large, red supergiant stars by sizes measured with solar radii, that are larger than Betelgeuse; including HV 888, WOH S170, W60 B90, VX Sagitarii,
+
+[v020] needs: telescope view of a star | narration: Scientists estimate that Betelgeuse could require as long
+  nasa:0: echnicians lift SOFIA's primary mirror assembly above NASA's 747SP airborne astronomy airc | echnicians lift SOFIA's primary mirror assembly above NASA's 747SP airborne astronomy aircraft just prior to installation in the telescope cavity.
+  nasa:1: Technicians check out the mounting structure of the infrared telescope installed in NASA's | Technicians check out the mounting structure of the 20-metric-ton infrared telescope installed in NASA's Stratospheric Observatory for Infrared Astronomy (SOFIA
+  nasa:2: The German-built 100-inch telescope that is the heart of NASA's Stratospheric Observatory  | The German-built 100-inch telescope that is the heart of NASA's Stratospheric Observatory for Infrared Astronomy is nestled in the SOFIA 747's rear fuselage.
+  nasa:3: The Search for Life Beyond Earth | Dave Gallagher, Director of Astronomy, Physics, and Space Technology at NASA's Jet Propulsion Laboratory speaks during a panel discussion on the search for life
+  nasa:4: Fade to Red | This image shows the Andromeda galaxy, first as seen in visible light by the National Optical Astronomy Observatory, then as seen in infrared by NASA Spitzer Sp
+  nasa:5: STS-35 ASTRO-1 in OV-102's payload bay silhouetted against RCS firing | STS035-28-006 (2-10 Dec 1990) --- STS-35 Astronomy Laboratory 1 (ASTRO-1) telescopes, in on-orbit operating position in the payload bay (PLB), are silhouetted a
+  wiki:6: Grand star-forming region R136 in NGC 2070 (captured by the Hubble Space Telescope) | A Hubble Space Telescope image of the R136 super star cluster, near the center of the 30 Doradus Nebula, also known as the Tarantula Nebula or NGC 2070. (Conver
+  wiki:7: James Webb Space Telescope Mirror37 | Caption: During cryogenic testing, the mirrors will be subjected to temperatures dipping to 24 Kelvins, permitting engineers to measure in extreme detail how th
+  wiki:8: The spectacular star-forming Carina Nebula imaged by the VLT Survey Telescope | The spectacular star-forming Carina Nebula has been captured in great detail by the VLT Survey Telescope at ESO’s Paranal Observatory. This picture was taken wi
+  wiki:9: Astronomy telescope-SOM-P5200295-gradient | 
+  wiki:10: Astronomy telescope-SOM-P5200301 | 
+  wiki:11: William Herschel Telescope and Comet Tsuchinshan–ATLAS | This photograph shows the William Herschel Telescope (WHT) at the Roque de Los Muchachos observatory, alongside the comet Tsuchinshan–ATLAS. The tail of Tsuchin
+
+[v024] needs: ancient supernova remnant | narration: Looking back in time, other relatively nearby stars have exploded in Earth's past.
+  nasa:0: Ancient Supernova Revealed | Seen as a red dusty cloud in this image from NASA Wide-field Infrared Survey Explorer, Puppis A is the remnant of a supernova explosion.
+  wiki:1: Veil Nebula Supernova Remnant (27993269556) | NASA's Hubble Space Telescope unveiled in stunning detail a small section of the expanding remains of a massive star that exploded about 8,000 years ago. Called
+  wiki:2: Hubble observes spectacular supernova timelapse (50407299001) | Pictured here is the captivating galaxy NGC 2525. Located nearly 70 million light-years from Earth, this galaxy is part of the constellation of Puppis in the so
+  wiki:3: Hubble Captures Supernova in NGC 2525 (50422290166) | Pictured here is part of the captivating galaxy NGC 2525. Located nearly 70 million light-years from Earth, this galaxy is part of the constellation of Puppis i
+  wiki:4: Artist’s impression of the collapse and supernova explosion of a massive star (j1655) | This artist’s impression shows the effects of the collapse and supernova explosion of a massive star. A black hole (right) was formed in the collapse and debris
+  wiki:5: Artist’s impression of the collapse and supernova explosion of a massive star (j1655-illus | This artist’s impression shows the effects of the collapse and supernova explosion of a massive star. A black hole (right) was formed in the collapse and debris
+  nasa:6: Galaxy Evolution Explorer Celebrates Five Years in Space | Since its launch five years ago, the Galaxy Evolution Explorer has photographed hundreds of millions of galaxies in ultraviolet light. M106 is one of those gala
+  nasa:7: Mastcam-Z's Calibration Target | The primary calibration target for Mastcam-Z, a pair of zoomable cameras aboard NASA's Perseverance Mars rover, features color swatches used by scientists to fi
+  nasa:8: New Radiation Zones on Jupiter | This graphic shows a new radiation zone surrounding Jupiter, located just above the atmosphere near the equator, that has been discovered by NASA's Juno mission
+  wiki:9: Starburst in NGC 4449 (captured by the Hubble Space Telescope) | Hundreds of thousands of vibrant blue and red stars blaze in this image taken by NASA's Hubble Space Telescope. Hot bluish-white clusters of massive stars are s
+  wiki:10: Ring of stellar wildfire (50224225638) | NGC 1614, captured here by the NASA/ESA Hubble Space Telescope, is an eccentrically-shaped galaxy ablaze with activity. The galaxy resides about 200 million lig
+  wiki:11: A Stellar Incubator (gemini1007a) | Starburst galaxy NGC 1313 is a stellar incubator delivering stars on a scale rarely seen in a single galaxy of its size. As imaged by the Gemini South 8-meter t
+
+[v029] needs: IK Pegasi binary star system | narration: The closest known white dwarf candidate, IK Pegasi,
+  nasa:0: Birth of an Earth-like Planet Artist Xoncept | This artist conception shows a binary-star, or two-star, system, called HD 113766, where astronomers suspect a rocky Earth-like planet is forming around one of 
+  nasa:1: Brown Dwarfs in our Backyard | The third closest star system to the sun, called WISE J104915.57-531906, center of large image, which was taken by NASA WISE. It appeared to be a single object,
+  nasa:2: Before the Smashup Artist Concept | This artist concept illustrates an imminent planetary collision around a pair of double stars. NASA Spitzer Space Telescope found evidence that such collisions 
+  nasa:3: Ghostly Remnant of an Explosive Past | This enhanced image from the far-ultraviolet detector on NASA Galaxy Evolution shows a ghostly shell of ionized gas around Z Camelopardalis, a binary, or double
+  nasa:4: Where Planets Take up Residence | This diagram illustrates that mature planetary systems like our own might be more common around twin, or binary, stars that are either really close together, or
+  wiki:5: Menkalinan | Binary star system 81 ly away in the constellation of Auriga - The two stars are metallic-lined hot blue-white subgiants roughly the same mass and diameter - Ev
+  wiki:6: Planet Lost in the Glare of Binary Stars | This illustration depicts a planet partially hidden in the glare of its host star and a nearby companion star. After examining a number of binary stars, astrono
+  wiki:7: Artist's interpretation of a close binary star system (geminiann18004a) | Artist's interpretation of a close binary star system in which several planets orbit the brighter star. The fainter companion star looms brightly in the sky (up
+  nasa:8: Kepler Beyond Planets: Finding Exploding Stars (Type Ia Supernova from a White Dwarf Merge | This frame from an animation shows the merger of two white dwarfs. A white dwarf is an extremely dense remnant of a star that can no longer burn nuclear fuel at
+  nasa:9: Scene of Multiple Explosions | This composite image NASA Galaxy Evolution Explorer shows Z Camelopardalis, or Z Cam, a double-star system featuring a collapsed, dead star, called a white dwar
+  nasa:10: Comet Bites the Dust Around Dead Star  Artist Concept | This artist concept illustrates a comet being torn to shreds around a dead star, or white dwarf, called G29-38. NASA Spitzer Space Telescope observed a cloud of
+  nasa:11: Silicates in Alien Asteroids | This plot of data from NASA Spitzer Space Telescopes shows that asteroid dust around a dead white dwarf star contains silicates -- a common mineral on Earth.
+
+[v032] needs: cosmic rays visualization | narration: Supernovae act as a major source of cosmic rays.
+  nasa:0: Cosmic Rays Liberate Neutrons | Cosmic Rays Liberate Neutrons
+  nasa:1: Cosmic Rays Near Mercury | Cosmic Rays Near Mercury
+  nasa:2: Cosmic-Ray Energetics and Mass (CREAM) Processing - Bonding | In the Space Station Processing Facility at NASA's Kennedy Space Center in Florida, technicians and engineers remove a protective cover on the Cosmic-Ray Energe
+  nasa:3: Cosmic-Ray Energetics and Mass (CREAM) Processing - Bonding | In the Space Station Processing Facility at NASA's Kennedy Space Center in Florida, a technician remove a protective cover on the Cosmic-Ray Energetics and Mass
+  nasa:4: Cosmic-Ray Energetics and Mass (CREAM) Processing - Bonding | In the Space Station Processing Facility at NASA's Kennedy Space Center in Florida, technicians and engineers remove a protective cover on the Cosmic-Ray Energe
+  nasa:5: Cosmic-Ray Energetics and Mass (CREAM) Processing - Bonding | In the Space Station Processing Facility at NASA's Kennedy Space Center in Florida, technicians and engineers inspect components for the Cosmic-Ray Energetics a
+  wiki:6: Cosmic Ray Sensor for soil moisture measurements-DSC 6642w | Cosmic Ray Sensor used for soil moisture measurements (http://cosmos.hwr.arizona.edu), position: Petzenkirchen, Lower Austria
+  wiki:7: 2024-(08-09)-(30-01-02) - Muons detection map | Muons detection map using an IMX183M sensor.17h,42mins,20sec of capture using 500secs dark exposures.
+  nasa:8: KSC-97PC1078 | Applied Physics Laboratory engineers and technicians from Johns Hopkins University assist in leveling and orienting the Advanced Composition Explorer (ACE) as i
+  nasa:9: Astronaut Sultan Alneyadi removes physics research hardware | iss069e008883 (May 5, 2023) --- UAE (United Arab Emirates) astronaut and Expedition 69 Flight Engineer Sultan Alneyadi removes physics research hardware from in
+  nasa:10: iss068e045093 | iss068e045093 (Feb. 3, 2023) --- NASA astronaut and Expedition 68 Flight Engineer Frank Rubio sets up the new Particle Vibration experiment inside the Destiny l
+  nasa:11: Technology Box Experiment - (Tetr’ISS) | jsc2021e029741 (7/13/2021) --- A preflight illustration of the TECHNOLOGY BOX design of the Chladni's Figures experiment. The main objective of Technology Box (
+
+[v033] needs: gamma ray burst | narration: They also emit fluxes of X-rays and gamma rays.
+  nasa:0: KSC-04pd1617 | KENNEDY SPACE CENTER, FLA. - In Hangar AE at Cape Canaveral Air Force Station, Spectrum Astro workers remove the final pieces of protective cover on the Swift s
+  nasa:1: KSC-04pd1612 | KENNEDY SPACE CENTER, FLA. - The Swift spacecraft is being unwrapped in Hangar AE at Cape Canaveral Air Force Station. Swift is a first-of-its-kind, multi-wavel
+  nasa:2: KSC-04pd1614 | KENNEDY SPACE CENTER, FLA. - In Hangar AE at Cape Canaveral Air Force Station, Spectrum Astro workers look over the Swift spacecraft while removing its protecti
+  nasa:3: KSC-04pd1613 | KENNEDY SPACE CENTER, FLA. - The Swift spacecraft is being unwrapped in Hangar AE at Cape Canaveral Air Force Station. Swift is a first-of-its-kind, multi-wavel
+  nasa:4: KSC-04pd1618 | KENNEDY SPACE CENTER, FLA. - - In Hangar AE at Cape Canaveral Air Force Station, the Swift spacecraft waits for final removal of the protective cover (at top). 
+  nasa:5: KSC-04pd1611 | KENNEDY SPACE CENTER, FLA. - The Swift spacecraft is being unwrapped in Hangar AE at Cape Canaveral Air Force Station. Swift is a first-of-its-kind, multi-wavel
+  wiki:6: Artist’s impression of a gamma-ray burst shining through two young galaxies in the early U | This artist’s impression shows two galaxies in the early Universe. The brilliant explosion on the left is a gamma-ray burst. As the light from the burst passes 
+  wiki:7: Gamma Ray 27x39 ENGLISH | A radiating thriller of cosmic proportions! Gamma Ray Ghouls: "In the depths of the universe, the cores of two collapsed stars violently merge to release a burs
+  nasa:8: Black Hole Jets Make Shock Waves | A composite image of the spiral galaxy NGC 4258 showing X-ray emission observed with NASA Chandra X-ray Observatory blue and infrared emission observed with NAS
+  nasa:9: 30 Doradus: The Growing Tarantula Within | About 2,400 massive stars in the center of 30 Doradus, the Tarantula Nebula, produce intense radiation and powerful winds as they blow off material seen as infr
+  nasa:10: Coronet: A Star-Formation Neighbor | This composite image shows the Coronet in X-rays from Chandra and infrared from NASA Spitzer Space Telescope orange, green, and cyan. The Spitzer data show youn
+  nasa:11: High Energy Astronomy Observatory (HEAO) | This is an x-ray image of the Crab Nebula taken with the High Energy Astronomy Observatory (HEAO)-2/Einstein Observatory. The image is demonstrated by a pulsar,
+
+[v038] needs: Earth ozone layer | narration: In this way, atmospheric chemistry depletes our planet's protective ozone layer.
+  nasa:0: 2009 Antarctic Ozone Hole | The annual ozone hole has started developing over the South Pole, and it appears that it will be comparable to ozone depletions over the past decade. This compo
+  nasa:1: Snapshot of the Antarctic Ozone Hole 2010 | Image acquired September 12, 2010 The yearly depletion of stratospheric ozone over Antarctica – more commonly referred to as the “ozone hole” – started in early
+  nasa:2: Skylab | This 1970 photograph shows Skylab's Ultraviolet (UV) Airglow Horizon Photography experiment. It was an astrophysics investigation designed to photograph the twi
+  nasa:3: AIRS Ozone Burden During Antarctic Winter: Time Series from 8/1/2005 to   9/30/2005 | The Atmospheric Infrared Sounder (AIRS) provides a daily global 3-dimensional view of Earth's ozone layer. Since AIRS observes in the thermal infrared spectral 
+  nasa:4: Space Shuttle Projects | This STS-48 onboard photo is of the Upper Atmosphere Research Satellite (UARS) in the grasp of the RMS (Remote Manipulator System) during deployment, September 
+  nasa:5: Space Shuttle Projects | This STS-48 onboard photo is of the Upper Atmosphere Research Satellite (UARS) in the grasp of the RMS (Remote Manipulator System) during deployment, September 
+  wiki:6: CFCs & Ozone | CFCs are released into the atmosphere via aerosols and refrigerants. Sunlight breaks the CFC molecules up so that there are lone chlorine atoms in the atmospher
+  wiki:7: Maximum Ozone Hole Area for 1985 | Stratospheric Ozone for October 3, 1985.
+  nasa:8: Sunset | This cross section of the Earth's atmosphere at sunset and earth limb (24.5S, 43.5E) displays an unusual layering believed to be caused by temperature inversion
+  nasa:9: Sunrise, Earth Limb, SW Pacific Ocean | STS047-54-018 (12-20 Sept. 1992) --- The colors in this photograph provide insight into the relative density of the atmosphere. The crew members had many opport
+  nasa:10: Unprecedented Arctic Ozone Loss in 2011 | In mid-March 2011, NASA Aura spacecraft observed ozone in Earth stratosphere -- low ozone amounts are shown in purple and grey colors, large amounts of chlorine
+  nasa:11: WASP-18b (Artist's Concept) | WASP-18b is an exoplanet located 325 light-years from Earth. The planet's mass is 10 times that of Jupiter, and it orbits its star once every 23 hours. A 2017 s
+
+[v045] needs: scientific data graph | narration: Researchers derived this calculation from atmospheric
+  nasa:0: KENNEDY SPACE CENTER, FLA. -  In the Payload Hazardous Servicing Facility at KSC, installa | KENNEDY SPACE CENTER, FLA. - In the Payload Hazardous Servicing Facility at KSC, installation is under way of the Mars Orbiter Camera (MOC) on the Mars Global S
+  nasa:1: KENNEDY SPACE CENTER, FLA. -  In the Payload Hazardous Servicing Facility at KSC, installa | KENNEDY SPACE CENTER, FLA. - In the Payload Hazardous Servicing Facility at KSC, installation is under way of the Mars Orbiter Camera (MOC) on the Mars Global S
+  nasa:2: KENNEDY SPACE CENTER, FLA. -  In the Payload Hazardous Servicing Facility at KSC, installa | KENNEDY SPACE CENTER, FLA. - In the Payload Hazardous Servicing Facility at KSC, installation is under way of the Mars Orbiter Camera (MOC) on the Mars Global S
+  nasa:3: KENNEDY SPACE CENTER, FLA. -  In the Payload Hazardous Servicing Facility at KSC, installa | KENNEDY SPACE CENTER, FLA. - In the Payload Hazardous Servicing Facility at KSC, installation is under way of the Mars Orbiter Camera (MOC) on the Mars Global S
+  nasa:4: AFRC2016-0292-08 | NASA’s Global Hawk aircraft was deployed to Florida from Armstrong Flight Research Center at Edwards, CA. on Oct. 6 to monitor and take scientific measurements 
+  wiki:5: Difference between Data-Driven Companies and Data Bounty Hunter Companies | A schematic of the difference in workflow between data-driven companies and data bounty hunter companies that shows how both classes of company generate revenue
+  wiki:6: Data-driven vs data-brokering | A schematic of the difference in workflow between data-driven and data-brokering companies that shows how each type of company generates revenue from data.
+  wiki:7: Change of number of scientific works by field (visualization of OpenAlex data) | https://twitter.com/OpenAlex_org/status/1489644301042683908 "Relevant data details fyi: - there are about 205 million works in OpenAlex right now. - most but no
+  wiki:8: Data-labelled-door | A door in a medical facility labelled 'DATA'
+  nasa:9: Mars Atmosphere Density Model | Models for the seasonal variation in atmospheric density on Mars between summer (low density) and winter (higher density) predict that air density will be high 
+  nasa:10: MAVEN Press Briefing | A model of the MAVEN spacecraft is pictured during a press conference for the upcoming launch of the Mars Atmosphere and Volatile Evolution (MAVEN) mission, at 
+  nasa:11: Atmospheric Probe Shows Promise in Test Flight | The atmospheric probe model on a stand is prepped for flight and release from a quad rotor remotely piloted aircraft. The probe successfully flew on Oct. 22, 20
+
+[v046] needs: supernova 1987A | narration: models and radiation data from supernova 1987A.
+  nasa:0: The Dawn of a New Era for Supernova 1987a | Three decades ago, astronomers spotted one of the brightest exploding stars in more than 400 years. The titanic supernova, called Supernova 1987A (SN 1987A), bl
+  nasa:1: History of Hubble Space Telescope (HST) | This image of SN 1987A, taken November 28, 2003 by the Advanced Camera for Surveys aboard NASA's Hubble Space Telescope (HST), shows many bright spots along a r
+  nasa:2: Tracing Titanium Escape | The plot of data from NASA's Nuclear Spectroscopic Telescope Array, or NuSTAR (right), amounts to a "smoking gun" of evidence in the mystery of how massive star
+  wiki:3: SN 1987A (NIRCam image) (SN1987a-1) | The NASA/ESA/CSA James Webb Space Telescope has begun the study of one of the most renowned supernovae, SN 1987A (Supernova 1987A). Located 168,000 light-years 
+  wiki:4: Supernova 1987A (1991-03-34) | A NASA Hubble Space Telescope image of a gaseous ring surrounding the supernova 1987A, which exploded on February 23, 1987 in the Large Magellanic Cloud, an irr
+  wiki:5: Supernova 1987A (opo9017a) | The European Space Agency's Faint Object Camera on board NASA/ESA Hubble Space Telescope has provided a fascinating close-up view of Supernova 1987A in the Larg
+  nasa:6: Odyssey/Marie | Data from NASA Mars Odyssey spacecraft Martian radiation environment experiment show that the radiation dose equivalent at Mars is two to three times greater th
+  nasa:7: Estimated Radiation on Mars, Hits per Cell Nucleus | This global map of Mars, based on data from NASA Mars Odyssey, shows estimates for amounts of high-energy-particle cosmic radiation reaching the surface, a seri
+  nasa:8: Arsia Mons Spiral Cloud | This global map of Mars, based on data from NASA Mars Odyssey, shows estimates for amounts of high-energy-particle cosmic radiation reaching the surface, a seri
+  nasa:9: Global Mineral Map of Vesta | This colorized map from NASA Dawn mission shows the distribution of minerals across the surface of the giant asteroid Vesta. It was made from spectra -- or data
+  nasa:10: Estimated Radiation Dosage on Mars | This global map of Mars, based on data from NASA Mars Odyssey, shows the estimated radiation dosages from cosmic rays reaching the surface, a serious health con
+  nasa:11: Active Tissue Equivalent Dosimeter | iss056e097010 (7/17/2018) --- Photographic documentation of Active Tissue Equivalent Dosimeter during deployment aboard the International Space Station (ISS). T
+
+[v049] needs: dim white dwarf star | narration: Because white dwarfs are dim and common, they can detonate unpredictably in unstudied systems.
+  nasa:0: Kepler Beyond Planets: Finding Exploding Stars (Type Ia Supernova from a White Dwarf Merge | This frame from an animation shows the merger of two white dwarfs. A white dwarf is an extremely dense remnant of a star that can no longer burn nuclear fuel at
+  nasa:1: Polluted White Dwarf (Artist's Concept) | This artist's concept shows an exoplanet and debris disk orbiting a polluted white dwarf. White dwarfs are dim, dense remnants of stars similar to the Sun that 
+  nasa:2: Citizen Scientist Finds Ancient White Dwarf Star Encircled by Puzzling Rings | In this illustration, an asteroid (bottom left) breaks apart under the powerful gravity of LSPM J0207+3331, the oldest, coldest white dwarf known to be surround
+  nasa:3: Comet Bites the Dust Around Dead Star  Artist Concept | This artist concept illustrates a comet being torn to shreds around a dead star, or white dwarf, called G29-38. NASA Spitzer Space Telescope observed a cloud of
+  nasa:4: Silicates in Alien Asteroids | This plot of data from NASA Spitzer Space Telescopes shows that asteroid dust around a dead white dwarf star contains silicates -- a common mineral on Earth.
+  wiki:5: White Dwarf Resurrection | The bright star in the centre of this image is not the star of this show. At the bottom centre is a rather unremarkable smudge of red which is in fact a rare an
+  wiki:6: Illustration of Rocky Debris around a White Dwarf | Rocky debris, the pieces of a former rocky planet that has broken up, spiral inward toward a white dwarf in this illustration. Studying the atmospheres of white
+  wiki:7: Artist's impression of an evolving white dwarf and millisecond pulsar binary system | Artist's impression of an evolving white dwarf (foreground) and millisecond pulsar (background) binary system. Using the 4.1-meter SOAR Telescope on Cerro Pachó
+  wiki:8: Illustration of an ultracool dwarf with a companion white dwarf | Illustration of an ultracool dwarf with a companion white dwarf. Ace citizen scientist Frank Kiwy used the Astro Data Lab science platform at NSF’s NOIRLab to d
+  wiki:9: Dwarf White Bauhinia Flowers in Gujarat, India | Dwarf White Bauhinia (Bauhinia Acuminata) Flowers in Gujarat, India
+  nasa:10: Cold and Close Celestial Orb Artist Concept | This artist conception shows the object named WISE J085510.83-071442.5, the coldest known brown dwarf. Brown dwarfs are dim star-like bodies that lack the mass 
+  nasa:11: Kepler-444 Planetary System Artist Concept | The tightly packed system, named Kepler-444, is home to five small planets in very compact orbits. The planets were detected from the dimming that occurs when t
+
+[v052] needs: Earth stratosphere | narration: Ozone is the only atmospheric gas capable of
+  nasa:0: Polar Stratosphere | Polar Stratosphere
+  nasa:1: Ultraviolet View Shows Jupiter Stratosphere | Ultraviolet View Shows Jupiter Stratosphere
+  nasa:2: Ultraviolet Movie of Jupiter Polar Stratosphere | Ultraviolet Movie of Jupiter Polar Stratosphere
+  nasa:3: Changing Temperatures in Saturn Stratosphere | NASA Cassini spacecraft obtained shifting stratospheric temperatures. The difference between the temperatures from 2005-2008 is shown in the middle, with red in
+  nasa:4: Jupiter Stratospheric Haze Comparison | These two views of Jupiter obtained by NASA Galileo spacecraft show evidence of strikingly different stratospheric hazes between the polar regions and low or mi
+  wiki:5: Top of Atmosphere | View of the crescent moon through the top of the Earth's atmosphere. Photographed above 21.5°N, 113.3°E by International Space Station crew Expedition 13 over t
+  wiki:6: Noctilucent-clouds-msu-6817 | Noctilucent clouds in Laboe, Germany
+  wiki:7: Stratosphere and American Flag | View of The Stratosphere with and american flag out of focus.
+  wiki:8: Stratosphere Tower 1 | The Stratosphere observation tower seen from the freeway.
+  wiki:9: Stratosphere Tower 4 | The Stratosphere observation tower seen from the freeway.
+  wiki:10: The Stratosphere Tower | The stratosphere (now called The Strat) tower in Las Vegas, Nevada.
+  nasa:11: 2009 Antarctic Ozone Hole | The annual ozone hole has started developing over the South Pole, and it appears that it will be comparable to ozone depletions over the past decade. This compo
+
+[v053] needs: sunlight ultraviolet rays | narration: absorbing dangerous ultraviolet B radiation from sunlight.
+  nasa:0: Saturn's Rings in Ultraviolet Light | Saturn's Rings in Ultraviolet Light Credit: NASA and E. Karkoschka (University of Arizona) The Hubble Space Telescope is a project of international cooperation 
+  nasa:1: MAHLI Calibration Target in Ultraviolet Light | During pre-flight testing in March 2011, the Mars Hand Lens Imager MAHLI camera on NASA Mars rover Curiosity took this image of the MAHLI calibration target und
+  nasa:2: GALEX 1st Light Far Ultraviolet | This image was taken May 21 and 22, 2003 by NASA Galaxy Evolution Explorer. The image was made from data gathered by the far ultraviolet channel of the spacecra
+  nasa:3: First Night Image of MAHLI Calibration Target Under Ultraviolet Lights | Illumination in this image comes from MAHLI two ultraviolet LEDs, which emit light in a waveband centered at a wavelength of 365 nanometers in this image of a c
+  nasa:4: GALEX 1st Light Near and Far Ultraviolet -100 | NASA's Galaxy Evolution Explorer took this image on May 21 and 22, 2003. The image was made from data gathered by the two channels of the spacecraft camera duri
+  nasa:5: MAHLI First Night Imaging of Martian Rock Under Ultraviolet Lighting | This image of a Martian rock dubbed Sayunei is illuminated by ultraviolet LEDs light emitting diodes is part of the first set of nighttime images taken by the M
+  wiki:6: Tonic water uv | Bottle of tonic water, under regular and UV light (shows fluorescence of quinine).
+  wiki:7: Saturn's Rings in Ultraviolet Light | Saturn's Rings in Ultraviolet Light
+  wiki:8: Ultraviolet image of the Cygnus Loop Nebula crop | Wispy tendrils of hot dust and gas glow brightly in this ultraviolet image of the Cygnus Loop Nebula, taken by NASA’s Galaxy Evolution Explorer. The nebula lies
+  wiki:9: Adamite under ultraviolet light-1669 | Adamite Dimensions: 3 cm × 2.4 cm × 1.5 cm Locality: Mexico Description: Greenish yellow, acicular radiating crystals of adamite on porose reddish matrix; light
+  wiki:10: Hood Ultraviolet Light | In this shared workspace, various professors and students work in a sterile environment. Everything under the hood has been sterilized using an ethanol solution
+  wiki:11: Rough diamonds - necklace in UV and normal light B - composite | Necklace made of drilled rough low-quality light brown (Coffee diamonds) diamonds. The stones range from 2 mm to 3,5 mm and weighs a total of 15 carats. Made by
+
+[v055] needs: sunlight surface of earth | narration: B light penetrates directly to the surface.
+  nasa:0: Pluto at High Noon Artist Concept | Just how dim is the sunlight on Pluto, some three billion miles away? This artist concept of the frosty surface of Pluto with Charon and our sun as backdrops il
+  nasa:1: Ring Shadows on Janus | Sunlight passing through the Cassini Division between Saturn A and B rings sweeps across and illuminates the surface of the moon Janus in this image captured by
+  nasa:2: Reflection of Sunlight off Titan Lake | This image taken by NASA Cassini spacecraft in 2009, shows the first flash of sunlight reflected off a hydrocarbon lake on Saturn moon Titan. The glint off a mi
+  nasa:3: How MLA Works | NASA Mercury Laser Altimeter MLA is shown ranging to Mercury surface from orbit. In this animation, yellow flashes represent near-infrared laser pulses that can
+  nasa:4: Reflecting on Icy Rhea | Bright sunlight on Rhea shows off the cratered surface of Saturn second largest moon in this image captured by NASA Cassini Orbiter. The image was taken in visi
+  nasa:5: Blasted Mimas | Mimas plows along in its orbit, its pockmarked surface in crisp relief. The bright, steep walls of the enormous crater, Herschel 130 kilometers, or 80 miles wid
+  wiki:6: Total Solar Eclipse 8-21-17 | Total solar eclipse image taken through Takahashi FS152 with a f6 focal reducer and a Canon 5D MarkIV, exposure bracketing was used in seven steps from 1/2 sec 
+  wiki:7: Sunlight through Nelumbo nucifera leaf (Sacred lotus) | Sunlight through Nelumbo nucifera (Sacred lotus) leaf, at the surface of a muddy pond, at sunset, in Don Det, Si Phan Don, Laos.
+  wiki:8: Sunlight on wet surfaces - geograph.org.uk - 6731169 | Sunlight on wet surfaces
+  nasa:9: SOLAR - ASTRONOMY (APOLLO-SATURN [AS]-16) | S72-36972 (21 April 1972) --- A color enhancement of a far-ultraviolet photo of Earth taken by astronaut John W. Young, commander, with the ultraviolet camera o
+  nasa:10: NASA's Europa Clipper's Ultraviolet Spectrograph Is Delivered | Engineers and technicians examine and test the first of NASA's Europa Clipper's science instruments to be delivered to the agency's Jet Propulsion Laboratory in
+  nasa:11: Sputtering, Surging Sun [HD Video] | STEREO (Ahead) caught the action as one edge of a single active region spurted out more than a dozen surges of plasma in less than two days (Feb. 15-16, 2010). 
+
+[v058] needs: wildlife in nature | narration: In humans and animals, excess ultraviolet
+  nasa:0: Creative Photography - Nature/Wildlife | Kennedy Space Center shares boundaries with the Merritt Island National Wildlife Refuge on Florida’s Atlantic coast. The refuge's coastal location, tropic-like 
+  nasa:1: Creative Photography, Wildlife - Birds | Creating an artistic reflection, a Great Blue Heron skims its wings on a waterway at NASA's Kennedy Space Center in Florida on Jan. 11, 2021. The center shares 
+  nasa:2: Creative Photography - Nature/Wildlife | Kennedy Space Center shares boundaries with the Merritt Island National Wildlife Refuge on Florida’s Atlantic coast. The refuge's coastal location, tropic-like 
+  nasa:3: Creative Photography, Wildlife - Birds | A group of sandpipers wades in the shoreline of the Atlantic Ocean near NASA's Kennedy Space Center in Florida on Jan. 11, 2021. The center shares a border with
+  nasa:4: Creative Photography - Nature/Wildlife | Kennedy Space Center shares boundaries with the Merritt Island National Wildlife Refuge on Florida’s Atlantic coast. The refuge's coastal location, tropic-like 
+  nasa:5: Creative Photography, Wildlife - Pigs | A wild pig crosses a roadway at NASA's Kennedy Space Center in Florida on Jan. 11, 2021. The center shares a border with the Merritt Island National Wildlife Re
+  wiki:6: Rana temporaria in nature park Trhoň in 2014 (2) | Rana temporaria in nature park Trhoň, Rokycany District, Czech Republic
+  wiki:7: Blue rock thrush (male) at Gamla Nature Reserve | Blue rock thrush, male. Photographed in Israel at Gamla Nature Reserve
+  wiki:8: Mistletoebird - Round Hill Nature Reserve | Mistletoebird, Round Hill Nature Reserve, New South Wales, Australia
+  wiki:9: Yellow-faced Honeyeater 2 - Castlereagh Nature Reserve | Yellow-faced Honeyeater (Caligavis chrysops chrysops), Castlereagh Nature Reserve, New South Wales, Australia
+  wiki:10: Animals of Attenborough Nature Reserve 09 | Attenborough Nature Reserve, situated next to the River Trent in Nottinghamshire, has developed from several former gravel pits that have been flooded to create
+  wiki:11: 071 Wild marmot at Grand Muveran Nature Reserve Photo by Giles Laurent | Wild marmot at Grand Muveran Hunting Ban Reserve
+
+[v060] needs: coral reef marine ecosystem | narration: Marine ecosystems suffer harm because ultraviolet
+  nasa:0: Lagoons of New Caledonia | In this image, taken by NASA Terra spacecraft, six marine clusters represent the main diversity of coral reefs and associated ecosystems in the French Pacific O
+  nasa:1: PACE Launch | NASA’s PACE (Plankton, Aerosol, Cloud, ocean Ecosystem) spacecraft, atop a SpaceX Falcon 9 rocket, successfully lifts off from Space Launch Complex 40 at Cape C
+  nasa:2: PACE Live Launch Coverage | NASA’s PACE (Plankton, Aerosol, Cloud, ocean Ecosystem) spacecraft, atop a SpaceX Falcon 9 rocket, successfully lifts off from Space Launch Complex 40 at Cape C
+  nasa:3: GSFC_20240208_PACE_002311 | NASA’s PACE (Plankton, Aerosol, Cloud, ocean Ecosystem) spacecraft, atop a SpaceX Falcon 9 rocket, successfully lifts off from Space Launch Complex 40 at Cape C
+  nasa:4: PACE Launch | NASA’s PACE (Plankton, Aerosol, Cloud, ocean Ecosystem) spacecraft, atop a SpaceX Falcon 9 rocket, successfully lifts off from Space Launch Complex 40 at Cape C
+  nasa:5: SpaceX PACE Launch | NASA’s PACE (Plankton, Aerosol, Cloud, ocean Ecosystem) spacecraft, atop a SpaceX Falcon 9 rocket, successfully lifts off from Space Launch Complex 40 at Cape C
+  wiki:6: Marine ecosystem structure and size-spectrum scaling | Relationship between ecosystem structure and size-spectrum scaling. Width of bars represent relative abundance or biomass for value of the mass scaling exponent
+  wiki:7: Interacting components for evaluating marine ecosystem services and biodiversity | Interacting components for evaluating marine ecosystem services and biodiversity Biodiversity is central to all of these components, underpinning the delivery o
+  wiki:8: Conceptual diagram of marine coastal ecosystems | Conceptual diagram of marine coastal ecosystems Natural coastal ecosystems with connections to the Great Barrier Reef
+  wiki:9: UN Decade on Ecosystem Restoration 2021 to 2030 – coastal ecosystems | UN Decade on Ecosystem Restoration 2021 to 2030 – coastal ecosystems Current state of modified and impacted coastal ecosystems and expected state following the 
+  wiki:10: Ecosystem services provided by a vegetated coastal ecosystem | Ecosystem services provided by a vegetated coastal ecosystem Diagram showing connectivity between a vegetated coastal ecosystem for the Penaeid prawn lifecycle 
+  nasa:11: Study Uses MODIS Data to Determine Belize Coral Reef Risk | The Moderate Resolution Imaging Spectroradiometer (MODIS) instrument aboard NASA's Aqua satellite captured this image of the Yucatán Peninsula on Feb. 3, 2022. 
+
+[v061] needs: ocean surface waves | narration: rays affect surface and reef communities.
+  nasa:0: SWOT Science Payload | Part of the Surface Water and Ocean Topography (SWOT) satellite's science instrument payload sits in a clean room at NASA's Jet Propulsion Laboratory during ass
+  nasa:1: Ocean Surface Topography Mission/Jason 2 Artist Concept | An artist concept of the Ocean Surface Topography Mission/Jason 2 Earth satellite. The Ocean Surface Topography Mission/Jason 2 is an Earth satellite designed t
+  nasa:2: SWOT Orbiting Earth (Illustration) | This illustration depicts the Surface Water and Ocean Topography (SWOT) satellite with solar arrays fully deployed. Measuring 48.8 feet (14.9 meters) in length 
+  nasa:3: SWOT Satellite With Solar Arrays in Full View (Illustration) | This illustration depicts the Surface Water and Ocean Topography (SWOT) satellite with solar arrays fully deployed. Arranged on opposite sides of the spacecraft
+  nasa:4: SWOT Secured for Transport in C-17 Aircraft | On June 27, 2021, teams from NASA's Jet Propulsion Laboratory in Southern California and the March Air Reserve Base in Riverside County, California, loaded the 
+  nasa:5: SWOT Headed to France on C-17 Aircraft | On June 27, 2021, teams from NASA's Jet Propulsion Laboratory in Southern California and the March Air Reserve Base in Riverside County, California, loaded the 
+  nasa:6: Great Barrier Reef | Great Barrier Reef - August 8th, 1999 Description: What might be mistaken for dinosaur bones being unearthed at a paleontological dig are some of the individual
+  nasa:7: Crew Earth Observations over Bolivia taken during Expedition 12 | ISS012-E-06456 (3 Nov. 2005) --- Salar de Uyuni, the largest Salar (salt flat) in the world, located within the Altiplano of Bolivia, South America is featured 
+  wiki:8: Habitats at Kingman Reef - Peerj-81-fig-2E | The exposed shallow (&lt;5 m) reef has a steep slope incline (30–50°). Photo credit: Enric Sala.
+  wiki:9: Reef habitats at Palmyra Atoll - Peerj-81-fig-3C | Palmyra’s deep reef terrace habitat dominated by massive Porites and soft corals at 20 m. Photo credit: Franklin Viola.
+  wiki:10: Coral Reef Community (6022419020) | Submerged resources of Dry Tortugas National Park. National Park Service Photo taken by John Dengler
+  wiki:11: NPS capitol-reef-vegetation-map | Capitol Reef vegetation map, labeling the various plant and forest communities found within the boundaries of Capitol Reef National Park and in the surrounding 
+
+[v062] needs: phytoplankton in water | narration: Phytoplankton and reef communities are particularly vulnerable to this elevated radiation.
+  nasa:0: Phytoplankton bloom off Newfoundland | NASA image acquired August 9, 2010 Phytoplankton are microscopic organisms that live in watery environments. When conditions are right, phytoplankton undergo ex
+  nasa:1: Phytoplankton in the Sea of Okhotsk | Differently colored waters in the Sea of Okhotsk on June 12, 2013 suggest differences in phytoplankton community structure from one location to the next. The oc
+  nasa:2: Phytoplankton bloom off Iceland | A massive phytoplankton bloom stained the waters of the Atlantic Ocean north of Iceland with brilliant jewel tones in late summer, 2014. The Moderate Resolution
+  nasa:3: Phytoplankton bloom in the North Atlantic Ocean | On July 23, 2013 the deep blue waters of the central North Atlantic Ocean provided a background for a spectacular bloom of phytoplankton. The Moderate Resolutio
+  nasa:4: Phytoplankton bloom in the Bay of Biscay | Springtime in the Bay of Biscay, off the coast of France, as in most places, is a season of abundant growth. On April 20, 2013, the Moderate Resolution Imaging 
+  nasa:5: Phytoplankton bloom off western Iceland | NASA image captured 06/24/2010 at 14 :30 UTC Phytoplankton bloom off western Iceland Satellite: Aqua NASA/GSFC/Jeff Schmaltz/MODIS Land Rapid Response Team To l
+  wiki:6: Phytoplankton Bloom off Ireland | Phytoplankton Bloom off Ireland. – Viewspace Caption: Swirling clouds of blue and green lit the Atlantic Ocean west of Ireland on June 2, 2006, when the Moderat
+  wiki:7: Paracirrhites forsteri Forsters Hawkfish juvenile Papua New Guinea by Nick Hobgood | Paracirrhites forsteri Forsters Hawkfish juvenile
+  wiki:8: Mixed phytoplankton community 2 | Mixed phytoplankton community 2
+  wiki:9: 001220-Gurdim-IMG 1100-2 | Phytoplanktons, Gurdim Port, Chabahar, Iran
+  nasa:10: 69PC-23 | An Atlas-Centaur rocket carrying the Mariner 6 spacecraft lifted off from Cape Kennedy’s Launch Complex 36B at 8:29 P.M. EST, February 24, 1969. The spacecraft’
+  nasa:11: Earth Observation | ISS040-E-081424 (27 July 2014) --- From an altitude of 223 nautical miles, one of the Expedition 40 crew members aboard the International Space Station on July 
+
+[v064] needs: cosmic ray night sky | narration: At the same time, elevated cosmic rays can
+  nasa:0: Cosmic Rays Liberate Neutrons | Cosmic Rays Liberate Neutrons
+  nasa:1: Cosmic Rays Near Mercury | Cosmic Rays Near Mercury
+  nasa:2: Cosmic-Ray Energetics and Mass (CREAM) Processing - Bonding | In the Space Station Processing Facility at NASA's Kennedy Space Center in Florida, technicians and engineers remove a protective cover on the Cosmic-Ray Energe
+  nasa:3: Cosmic-Ray Energetics and Mass (CREAM) Processing - Bonding | In the Space Station Processing Facility at NASA's Kennedy Space Center in Florida, a technician remove a protective cover on the Cosmic-Ray Energetics and Mass
+  nasa:4: Cosmic-Ray Energetics and Mass (CREAM) Processing - Bonding | In the Space Station Processing Facility at NASA's Kennedy Space Center in Florida, technicians and engineers remove a protective cover on the Cosmic-Ray Energe
+  nasa:5: Cosmic-Ray Energetics and Mass (CREAM) Processing - Bonding | In the Space Station Processing Facility at NASA's Kennedy Space Center in Florida, technicians and engineers inspect components for the Cosmic-Ray Energetics a
+  wiki:6: Cosmic Ray Sensor for soil moisture measurements-DSC 6642w | Cosmic Ray Sensor used for soil moisture measurements (http://cosmos.hwr.arizona.edu), position: Petzenkirchen, Lower Austria
+  wiki:7: 2024-(08-09)-(30-01-02) - Muons detection map | Muons detection map using an IMX183M sensor.17h,42mins,20sec of capture using 500secs dark exposures.
+  nasa:8: Earth Observations taken by Expedition 30 crewmember | iss030e119777 (3/3/2012) --- A view of the night earth taken aboard the International Space Station (ISS) showing an aurora. An aurora sometimes referred to as 
+  nasa:9: iss061e138170 | iss061e138170 (Jan. 22, 2020) --- An aurora blankets the Earth beneath a celestial night sky as the International Space Station orbited 261 miles above the Atla
+  nasa:10: Earth observation taken by the Expedition 52 crew | iss052e004913 (June 19, 2017) --- The aurora and the night sky above Earth’s atmosphere are pictured from the space station. A portion of the station’s solar ar
+  nasa:11: iss067e269019 | iss067e269019 (Aug. 17, 2022) --- An aurora crowns the Earth beneath a starry sky in this night time photograph from the International Space Station as it orbit
+
+[v066] needs: ancient fossil specimen | narration: Gamma ray bursts from dangerously close stars may have caused the ancient end-Ordovician extinction.
+  nasa:0: Lake Salda Rocks | The rocks seen here along the shoreline of Lake Salda in Turkey were formed over time by microbes that trap minerals and sediments in the water. These so-called
+  nasa:1: Tumbiana Stromatolite | This image shows the finely layered internal structure of a stromatolite sample, with a U.S. penny for scale. This stromatolite formed about 2.7 billion years a
+  nasa:2: Earth observations taken during STS-83 mission | STS083-747-033 (4-8 April 1997) --- Center Pivot Irrigation, in Saudi Arabia. This irrigation project in Saudi Arabia is typical of many isolated irrigation pro
+  nasa:3: A Glimpse into History | Nothing gets a geologist more excited than layered bedrock, except perhaps finding a fossil or holding a meteorite in your hand. All of these things create a pr
+  wiki:4: Sites with ancient DNA or Initial Upper Palaeolithic assemblages - Fig1 of Initial Upper P | Sites with modern human genome-wide data older than 40 kyr bp (red circles) or older than 30 kyr bp (yellow circles), sites in Europe with modern human remains 
+  wiki:5: Ancient Whale Fossil-Skeleton | Harvard natural History museum
+  wiki:6: Protecting Our Ancient Fossil Heritage | This exhibit focuses on the petrified wood fossils of Calatrava, Negros Occidental, which provide invaluable insights into ancient forest ecosystems. Known loca
+  wiki:7: Ancient Petrified Wood Fossil Display | This exhibit presents a specimen of petrified wood, a fossil formed through the process of permineralization. Discovered in Calatrava, Negros Occidental, this a
+  wiki:8: Ancient Petrified Wood Fossil Discovery | This exhibit showcases a piece of petrified wood, which provides a fascinating glimpse into the prehistoric environment of Negros Occidental. Petrified wood is 
+  nasa:9: iss068e022293 | iss068e022293 (Nov. 14, 2022) --- An interior view of the Destiny U.S. Laboratory at night under ambient light with the main lights turned off. The Destiny modu
+  nasa:10: Earth Observations taken by the Expedition 18 Crew | ISS018-E-011127 (6 Dec. 2008) --- Raven Ridge, Colorado is featured in this image photographed by an Expedition 18 crewmember on the International Space Station
+  wiki:11: Tyrannosaurus during extinction | A tyrannosaurus rex escaping the darkness
+
+[v067] needs: prehistoric fossilized shell | narration: That prehistoric cataclysm resulted in the death of
+  wiki:0: Prehistoric amulets, fossil, perforated shells Wellcome M0010967 | Prehistoric amulets, fossil, perforated shells. General Collections Keywords: Religion; amulet: luck charms; Prehistory; Magic; Archaeology
+  wiki:1: Ovibos moschatus (fossil musk ox skull) (prehistoric; Siberia | Ovibos moschatus Blainville, 1816 - fossil musk ox skull from Siberia, Russia. (public display, Yakutsk Public Unified Museum of History &amp; Northern Folk Cul
+  wiki:2: P.wangi fossil image | Pseudopulex wangi. Prehistoric ectoparasite fossil image obtained for visual representation of morphology.
+  wiki:3: Fossil beetle tracks (Lararmie Formation, Upper Cretaceous; Parfet Prehistoric Preserve, G | Fossil beetle tracks in sandstone in the Cretaceous of Colorado, USA. Trace fossils are any indirect evidence of ancient life. They are features in rocks that d
+  wiki:4: Prehistoric Animal Fossil Teeth Specimen | A well-preserved fossilized tooth specimen displayed in a museum, showcasing the dental structure of an ancient species.
+  wiki:5: Windows to Ancient Aquatic Life | Physa is a genus of small freshwater snails, often found in ponds, rivers, and lakes. These snails help indicate water quality and play a role in freshwater eco
+
+[v069] needs: Devonian rock strata | narration: Rapid successive supernovae have also been proposed as triggers for the Late Devonian extinction.
+  nasa:0: Earth observation taken by the Expedition 20 crew | ISS020-E-026195 (25 July 2009) --- Aorounga Impact Crater is featured in this image photographed by an Expedition 20 crew member on the International Space Stat
+  wiki:1: Rock gypsum (Lucas Formation, Middle Devonian; Paulding County, Ohio, USA) 2 | Rock gypsum from the Devonian of Ohio, USA. Sedimentary rocks form by the solidification of loose sediments. Loose sediments become hard rocks by the processes 
+  wiki:2: Rock gypsum (Lucas Formation, Middle Devonian; Paulding County, Ohio, USA) 5 | Rock gypsum from the Devonian of Ohio, USA. Sedimentary rocks form by the solidification of loose sediments. Loose sediments become hard rocks by the processes 
+  wiki:3: Rock gypsum (Lucas Formation, Middle Devonian; Paulding County, Ohio, USA) 3 | Rock gypsum from the Devonian of Ohio, USA. Sedimentary rocks form by the solidification of loose sediments. Loose sediments become hard rocks by the processes 
+  wiki:4: Rock gypsum (Lucas Formation, Middle Devonian; Paulding County, Ohio, USA) 4 | Rock gypsum from the Devonian of Ohio, USA. Sedimentary rocks form by the solidification of loose sediments. Loose sediments become hard rocks by the processes 
+  nasa:5: 3-D View of Grand Canyon, Arizona | The Grand Canyon is one of North America's most spectacular geologic features. Carved primarily by the Colorado River over the past six million years, the canyo
+  nasa:6: Apollo 12 crewmembers during geological field trip | S69-55662 (10 Oct. 1969) --- Astronauts Alan L. Bean (left) and Charles Conrad Jr., the two crewmen of the Apollo 12 lunar landing mission who are scheduled to 
+  nasa:7: Light-Toned Layers in Tithonium Chasma | Tithonium Chasma is a part of Valles Marineris, the largest canyon in the Solar System. If Valles Marineris was located on Earth, at more than 4,000 kilometers 
+  wiki:8: Geological time spiral | A diagram of the geological time scale
+  wiki:9: Cliff with geological strata, Andalusia, Spain | Cliff with geological strata, Andalusia, Spain
+  wiki:10: Stratum 2 (PSF) | a sheetlike mass of sedimentary rock or earth of one kind lying between beds of other kinds
+  wiki:11: Wales rock strata, William Smith | diagram of section across rock strata in Wales near London by William Smith, as reproduced in William Berryman Scott’s A History of Land Mammals in the Western 
+
+[v071] needs: seabed sediment core sample | narration: Proof of past supernovae was discovered by examining deep seabed sediments.
+  wiki:0: X-radiographs marine-sediment hg | X-radiography of marine sediment cores
+  wiki:1: Biogeochemical sulfur cycle of marine sediments | Biogeochemical sulfur cycle of marine sediments. Arrows indicate fluxes and pathways of biological or chemical processes. Microbial dissimilatory sulfate reduct
+  wiki:2: AWI-core-archive hg | Sediment core repository; archive of marine geological samples taken in both polar oceans with the research vessel POLARSTERN of the Alfred Wegener Institute fo
+  wiki:3: Ocean core sediments on the Polarstern | Sediment core, taken with a gravity corer by the research vessel POLARSTERN in the South Atlantic; light/dark-coloured changes are due to climate cycles of the 
+  wiki:4: IODP Kernlager Bremen | The Bremen core repository of the International Ocean Discovery Program (IODP) at MARUM. Cores from the Atlantic and Arctic Oceans and the Mediterranean, Black 
+  wiki:5: Sediment core collection and processing | (a) An overview of sediment core collection and processing for micropaleontological research. (b) Ocean-floor sediment samples collected with a dredge during th
+
+[v072] needs: heavy elements nebula | narration: Dying stars forge heavy elements and disperse them into space during their catastrophic final moments.
+  nasa:0: Evolution of a Supernova | A massive star left, which has created elements as heavy as iron in its interior, blows up in a tremendous explosion middle, scattering its outer layers in a st
+  nasa:1: STS-125 MS2 McArthur poses for a photo on the FD during Flight Day 5 | S125-E-007736 (15 May 2009) --- Astronaut Megan McArthur, STS-125 mission specialist, is positioned to provide heavy support for Atlantis' second session of ext
+  nasa:2: Polluted White Dwarf (Artist's Concept) | This artist's concept shows an exoplanet and debris disk orbiting a polluted white dwarf. White dwarfs are dim, dense remnants of stars similar to the Sun that 
+  nasa:3: History of Chandra X-Ray Observatory | The Chandra X-Ray Observatory has captured this spectacular image of G292.0+1.8, a young, oxygen-rich supernova remnant with a pulsar at its center surrounded b
+  nasa:4: Early Program Development | This 1989 artist's rendering shows how a Shuttle-C would look during launch. As envisioned by Marshall Space Flight Center plarners, the Shuttle-C would be an u
+  nasa:5: Early Program Development | In this 1989 artist's concept, the Shuttle-C floats in space with its cargo bay doors open. As envisioned by Marshall Space Flight Center plarners, the Shuttle-
+  wiki:6: Tsjuder, Jan-Erik „Nag“ Romøren at Party.San Metal Open Air 2013 | Tsjuder at Party.San Metal Open Air 2013
+  wiki:7: A heavy-metal home | This 10.5-billion-year-old globular cluster, NGC 6496, is home to heavy-metal stars of a celestial kind! The stars comprising this spectacular spherical cluster
+  wiki:8: Heavy Metal DK29 | Skała Heavy Metal na wzgórzu Łężec między Morskiem i Podlesicami
+  nasa:9: History of Chandra X-Ray Observatory | This Chandra image reveals, in detail, the turbulent debris created by a supernova explosion that was observed by the Danish Astronomer Tycho Brahe in the year 
+  nasa:10: History of Hubble Space Telescope (HST) | This is a color Hubble Space Telescope (HST) heritage image of supernova remnant N49, a neighboring galaxy, that was taken with Hubble's Wide Field Planetary Ca
+  nasa:11: Space Science | The colorful streamers that float across the sky in this photo taken by NASA's Hubble Space Telescope (HST) were created by the universe's biggest firecracker, 
+
+[v075] needs: oceanic crust layer | narration: They identified these stellar atoms within the top two centimetres of the oceanic crust.
+  nasa:0: Blocks in the Europan Crust Provide More Evidence of Subterranean Ocean | Blocks in the Europan Crust Provide More Evidence of Subterranean Ocean
+  nasa:1: Possible Moonwich of Ice and Oceans on Ganymede Artist Concept | This artist concept of Jupiter moon Ganymede, the largest moon in the solar system, illustrates the club sandwich model of its interior oceans. Scientists suspe
+  nasa:2: Callisto Cutaway with Ocean Artist Concept | This artist concept, a cutaway view of Jupiter moon Callisto, is based on recent data from NASA Galileo spacecraft which indicates a salty ocean may lie beneath
+  nasa:3: Global Ocean on Enceladus Artist Rendering | This illustration is a speculative representation of the interior of Saturn's moon Enceladus with a global liquid water ocean between its rocky core and icy cru
+  nasa:4: Proposed Perrier Ocean for Enceladus | A graphic laid atop an image of Enceladus jets taken by NASA Cassini imaging cameras shows bubbles in seawater traveling through a passage in the ice crust to f
+  nasa:5: Trident: Exploring the Mysteries of Triton | A new mission competing for selection under NASA's Discovery Program would explore Neptune's largest moon, Triton, which is potentially an ocean world with liqu
+  wiki:6: Oceanic Crust Sphere Map1 | Age of oceanic crust. (See also Image:Earth seafloor crust age 1996.gif) Source: Excerpted from http://www.ngdc.noaa.gov/mgg/image/crustageposter.gif ; original
+  wiki:7: Continental and oceanic crust mk | Lithosphere: continental and oceanic crust on the upper earth mantle. Labels in Macedonian.
+  wiki:8: UvA-Artis 300.003 - Siboga - uitzetten van de dreg | 1899-1900, Siboga-expeditie naar Nederlands Oost-Indië, onder leiding van Max Wilhelm Carl Weber uitzetten van de dreg De dreg is voorzien van een paar dikke zw
+  wiki:9: UvA-Artis 300.009 - Siboga - uitzetten van de dreg | 1899-1900, Siboga-expeditie naar Nederlands Oost-Indië, onder leiding van Max Wilhelm Carl Weber uitzetten van de dreg De dreg is voorzien van een paar dikke zw
+  wiki:10: Layered Limestone New Zealand. (51405004876) | The Pancake Rocks at Dolomite Point near Punakaiki are a heavily eroded limestone area where the sea bursts through several vertical blowholes. The foundations 
+  wiki:11: EMSO-Ligure Nice - Piézomètre déployé sur les fonds marins en mer Ligure (Ifremer 00735-84 | This piezometer deployed on the seabed is a tool that allows the study of interstitial overpressures. The technique consists of planting a sort of vertical lanc
+
+[v077] needs: Antarctic snow sample | narration: Similar interstellar traces have also appeared in Antarctic surface snow and in lunar samples.
+  nasa:0: Thurston Island | Snow is blown off of the Thurston Island calving front off of western Antarctica as seen on the IceBridge flight on Nov. 5, 2014. Image Credit: NASA/Jim Yungel 
+  nasa:1: Thurston Island | The Thurston Island calving front off of western Antarctica as seen from the window of NASA's DC-8 on Nov. 5, 2014. Image Credit: NASA/Jim Yungel NASA’s Operati
+  nasa:2: Thurston Island Calving | A sea of icebergs float near the Thurston Island calving front off of western Antarctica as seen on the IceBridge flight on Nov. 5, 2014. Image Credit: NASA/Jim
+  nasa:3: Bellingshausen Sea | A small hole in the clouds revealed newly formed sea ice in the Bellingshausen Sea next to an ice berg on Nov. 5, 2014 flight. Image Credit: NASA/Digital Mappin
+  nasa:4: Mountain Peaks | Mountain peaks through the ice cover on Thurston Island off of western Antarctica as seen on the IceBridge flight on Nov. 5, 2014. Image Credit: NASA/Jim Yungel
+  nasa:5: 2014_11_05_uss_constellation | NASA’s Operation IceBridge collected some rare images on a flight out of Punta Arenas, Chile on Nov. 5, 2014, on a science flight over western Antarctica dubbed
+  wiki:6: Crew member Felix Ferranto using a blowtorch to thaw out the wheelhub motors of the Antarc | Sergeant Felix Ferranto, the radio operator, uses a Primus blowtorch to thaw out the wheelhub motors of the Antarctic Snow Cruiser on August 23, 1940.
+  wiki:7: The abandoned Antarctic Snow Cruiser | The abandoned Antarctic Snow Cruiser on December 22, 1940.
+  wiki:8: The Antarctic Snow Cruiser and its crew | The crew of the Antarctic Snow Cruiser photographed in Antarctica on September 20, 1940. From left to right: C. W. Griffith, diesel mechanic; Dr. Franklin Alton
+  wiki:9: The Antarctic Snow Cruiser partly buried in snow | The Antarctic Snow Cruiser partly buried in snow in Antarctica, 1940.
+  wiki:10: The Antarctic Snow Cruiser buried in snow after a blizzard | The Antarctic Snow Cruiser buried in snow after a 50 mph (80 km/h) blizzard had blown through.
+  wiki:11: Commander Dr. Franklin Alton Wade leaving the Antarctic Snow Cruiser through a hatch | The commander, Dr. Franklin Alton Wade, leaving the Antarctic Snow Cruiser through a hatch in the surrounding snow.
+
+[v078] needs: fossilized bacteria under microscope | narration: Iron-60 atoms were even found preserved
+  nasa:0: Mars Life? - Microscopic Tubular Structures | This electron microscope image shows extremely tiny tubular structures that are possible microscopic fossils of bacteria-like organisms that may have lived on M
+  nasa:1: Mars Life? - Microscopic Structures | In the center of this electron microscope image of a small chip from a meteorite are several tiny structures that are possible microscopic fossils of primitive,
+  nasa:2: ARC-1996-AC96-0345-11 | Martian Meteorite (ALH84001): This high resolution transmission electron microscope image is of a cast, or replica, from a chip of a Martian meteorite, labeled 
+  wiki:3: Ancient bacteria and fungi Wellcome M0009215 | Ancient bacteria and fungi (a-d): A)Colonies of "cultures" of bacteria are often fossilized etc.; B) Mycelia and Sporangia etc.; C) Scattered bacteria in plant 
+  wiki:4: Seirocrinus subangularis (fossil crinoid) (Posidonia Shale, Lower Jurassic; Holzmaden area | Seirocrinus subangularis (Miller, 1821) - fossil crinoid from the Jurassic of Germany. (CM 34210, Carnegie Museum of Natural History, Pittsburgh, Pennsylvania, 
+  wiki:5: Seirocrinus subangularis (fossil crinoid) (Posidonia Shale, Lower Jurassic; Holzmaden area | Seirocrinus subangularis (Miller, 1821) - fossil crinoid from the Jurassic of Germany. (CM 34210, Carnegie Museum of Natural History, Pittsburgh, Pennsylvania, 
+  wiki:6: Drilling vessel recovering a sediment core for sedaDNA analysis | Schematic of a drilling vessel recovering a sediment core for sedaDNA analysis and hypothetical past marine community composition. The pink dashed line indicate
+  nasa:7: NASA astronaut Anne McClain processes bacteria samples for viewing inside a 3D imaging mic | iss073e0027806 (May 10, 2025) --- NASA astronaut and Expedition 73 Flight Engineer Anne McClain works in the Kibo laboratory module's Life Sciences Glovebox pro
+  nasa:8: NASA astronaut Nichole Ayers processes bacteria samples for viewing inside a 3D imaging mi | iss073e0025978 (May 9, 2025) --- NASA astronaut and Expedition 73 Flight Engineer Nichole Ayers works in the Kibo laboratory module's Life Sciences Glovebox pro
+  nasa:9: iss073e0025988 | iss073e0025988 (5/9/2025) --- NASA astronaut Nichole Ayers works with the ELVIS investigation at the Life Sciences Glovebox (LSG), aboard the Kibo module of the
+  wiki:10: Bacteria (259 05) | This image comes from the archive of Josef Reischig and is part of the 384 pictures kindly donated by the authorship heirs under CC BY SA 3.0 license as a part 
+  wiki:11: Microscopic view of germ theory | Electron microscope photo of bacteria in accordance with germ theory
+
+[v079] needs: deep sea sediment core | narration: inside fossilised bacteria living in seabed sediments.
+  wiki:0: Seabed sediments from Crowley Lake-1200px | Seabed sediments in Nevahbe Ridge, as seen from Crowley Lake
+  wiki:1: Biogeochemical sulfur cycle of marine sediments | Biogeochemical sulfur cycle of marine sediments. Arrows indicate fluxes and pathways of biological or chemical processes. Microbial dissimilatory sulfate reduct
+  wiki:2: Remains of Fishing Boats on the Dried Seabed of the Aral Sea | Remains of Fishing Boats on the Dried Seabed of the Aral Sea
+  wiki:3: Deep Sea Drilling Project microfossils | Microfossils from a sediment core of the Deep Sea Drilling Project (DSDP), Sediment sample with microfossils
+  wiki:4: Sediment core collection and processing | (a) An overview of sediment core collection and processing for micropaleontological research. (b) Ocean-floor sediment samples collected with a dredge during th
+  wiki:5: Deep-sea research vessel Pourquoi Pas? (Ifremer 00655-76753) | This picture was taken during the FOCUSX1 cruise. We can see the deep-sea research vessel Pourquoi Pas?, which can undertake hydrographic surveys and other miss
+  wiki:6: Deep and Overflow Waters | Currents (a) and water masses (b, c, d, e, f) in the deep and overflow layer of the Atlantic Ocean. (a) The currents (arrows) and the formation areas (rectangul
+
+[v082] needs: Earth horizon from space | narration: What delicate balance protects our planet from cosmic events?
+  nasa:0: Earth's thin blue atmosphere traces the planet's horizon above the Pacific Ocean | iss074e0089803 (Jan. 16, 2026) --- Earth's thin blue atmosphere traces the planet's horizon as the sun's glint beams off a partly cloudy Pacific Ocean west of C
+  nasa:1: Sunrise, Earth Limb | STS052-23-022 (22 Oct.-1 Nov. 1992) --- As the Space Shuttle Columbia orbited Earth in an easterly direction over the Indian Ocean, moonrise was followed quickl
+  nasa:2: MAF_20221026_CS3 IT Move from 55 to Cell G_Jnl-32 | Technicians at NASA’s Michoud Assembly Facility move the intertank of NASA’s Space Launch System rocket for Artemis III to Cell G to await application of the th
+  nasa:3: The city lights of Mexico's Yucatan peninsula | iss072e518202 (Jan. 23, 2025) --- This long-duration photograph highlights the city lights of Mexico's Yucatan peninsula, Earth's atmospheric glow, and star tra
+  nasa:4: KENNEDY SPACE CENTER, FLA. - At Vandenberg Air Force Base, Calif., the Pegasus launch vehi | KENNEDY SPACE CENTER, FLA. - At Vandenberg Air Force Base, Calif., the Pegasus launch vehicle is moved into its hangar. The Pegasus will carry the SciSat-1 spac
+  wiki:5: Top of Atmosphere | View of the crescent moon through the top of the Earth's atmosphere. Photographed above 21.5°N, 113.3°E by International Space Station crew Expedition 13 over t
+  wiki:6: International Space Station star trails - JSC2012E039800 | Star trail composite image created by International Space Station Expedition 30 crew member Don Pettit using images ISS030E171842 through ISS030E171889. Expedit
+  wiki:7: James Webb Space Telescope Mirrors Will Piece Together Cosmic Puzzles (30108124923) | The primary mirror of NASA's James Webb Space Telescope consisting of 18 hexagonal mirrors looks like a giant puzzle piece standing in the massive clean room of
+  wiki:8: 469649main earths-atmosphere-orig full | "This graphic depicts Earth's upper atmosphere. It shows at the bottom a partial Earth globe with the Troposphere, Stratosphere, Mesosphere, Thermosphere layers
+  wiki:9: Balancing Stones by the Stormy Shore | The image captures a striking juxtaposition of tranquility and impending turmoil. In the foreground, a carefully stacked arrangement of smooth stones stands in 
+  wiki:10: The Delicate Watcher | Suspended in quiet vigilance, a daddy longlegs spider stretches its impossibly slender legs outward, a delicate contrast against the blurred backdrop. Its mottl
+  wiki:11: Closure view of roadside | The future is fragile, a delicate balance of hope and despair.

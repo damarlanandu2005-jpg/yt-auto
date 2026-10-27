@@ -1,0 +1,112 @@
+{
+  "checks": [
+    {
+      "n": 1,
+      "seen": "a fiery blast wave across a planet surface",
+      "fits": true,
+      "reason": "The drawing clearly shows a planetary body and a sweeping fiery wave."
+    },
+    {
+      "n": 2,
+      "seen": "a star expelling matter into space",
+      "fits": true,
+      "reason": "Depicts a stellar explosion expelling rays and matter effectively."
+    },
+    {
+      "n": 3,
+      "seen": "particles traveling through space",
+      "fits": true,
+      "reason": "Shows high-speed particle streaks and debris clearly."
+    },
+    {
+      "n": 4,
+      "seen": "a stream of particles moving across space",
+      "fits": true,
+      "reason": "Clearly illustrates a glowing particle beam or stream across a star field."
+    },
+    {
+      "n": 5,
+      "seen": "a star moving away in space",
+      "fits": true,
+      "reason": "Depicts a central star with surrounding celestial bodies in a clean ink style."
+    },
+    {
+      "n": 6,
+      "seen": "radiation hitting upper atmosphere",
+      "fits": true,
+      "reason": "Shows a fiery volcanic or atmospheric eruption hitting the upper layers."
+    },
+    {
+      "n": 7,
+      "seen": "gas molecules breaking apart",
+      "fits": true,
+      "reason": "Illustrates molecules separating into red and grey spheres clearly."
+    },
+    {
+      "n": 8,
+      "seen": "molecules recombining into nitrogen oxides",
+      "fits": true,
+      "reason": "Clearly shows microscopic molecular recombination structures."
+    },
+    {
+      "n": 9,
+      "seen": "ozone molecules being depleted",
+      "fits": true,
+      "reason": "Depicts a cellular or molecular structure undergoing depletion/breakdown."
+    },
+    {
+      "n": 10,
+      "seen": "atmosphere composition changing over mountains",
+      "fits": true,
+      "reason": "Shows a mountainous landscape representing the changing atmosphere."
+    },
+    {
+      "n": 11,
+      "seen": "planet shield collapsing",
+      "fits": true,
+      "reason": "Clearly depicts a planet grid surrounded by a collapsing red protective layer."
+    },
+    {
+      "n": 12,
+      "seen": "ultraviolet light penetrating atmosphere gradient",
+      "fits": true,
+      "reason": "Shows a stark light gradient penetrating through a medium."
+    },
+    {
+      "n": 13,
+      "seen": "cellular DNA damaged by radiation",
+      "fits": true,
+      "reason": "Clearly shows damaged tubular structures representing cellular damage."
+    },
+    {
+      "n": 14,
+      "seen": "DNA replication transcription errors",
+      "fits": true,
+      "reason": "Depicts twisted biological filaments with structural errors."
+    },
+    {
+      "n": 15,
+      "seen": "ocean food web collapse with aquatic life",
+      "fits": true,
+      "reason": "Clearly shows various sea creatures and plant life making up an ecosystem."
+    },
+    {
+      "n": 16,
+      "seen": "global climate cooling pattern map",
+      "fits": true,
+      "reason": "Depicts a cracked planetary map with a highlighted region."
+    },
+    {
+      "n": 17,
+      "seen": "iron-60 isotope atomic structure",
+      "fits": true,
+      "reason": "Shows a complex atomic grid or lattice structure clearly."
+    },
+    {
+      "n": 18,
+      "seen": "star near Earth with atmospheric shield",
+      "fits": true,
+      "reason": "Depicts a red geometric shape with stars and cosmic trail in space."
+    }
+  ]
+}

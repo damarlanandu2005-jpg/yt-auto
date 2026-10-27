@@ -1,0 +1,2548 @@
+[
+ {
+  "scene": "s01",
+  "start": 0.0,
+  "text": "Could a dying star explode near our solar system and rip Earth's atmosphere away into space?",
+  "sentences": [
+   "s01.01"
+  ],
+  "id": "v001",
+  "end": 6.195,
+  "seconds": 6.2,
+  "scene_start": true,
+  "kind": "card",
+  "card": {
+   "type": "title",
+   "title": "How Close Can a Supernova Get Before It Destroys Earth?",
+   "subtitle": "The Hollywood Shockwave Myth"
+  }
+ },
+ {
+  "scene": "s01",
+  "start": 6.195,
+  "text": "Do science fiction movies show a fiery blast wave sweeping our planet bare within seconds?",
+  "sentences": [
+   "s01.02"
+  ],
+  "id": "v002",
+  "end": 12.71,
+  "seconds": 6.52,
+  "scene_start": false,
+  "kind": "drawing",
+  "drawing_subject": "a fiery blast wave sweeping across a planet surface",
+  "card": {
+   "type": "bullets",
+   "title": "Supernova Shockwave",
+   "items": [
+    "Fiery blast wave",
+    "Sweeps planet bare",
+    "Destroys atmosphere quickly"
+   ]
+  },
+  "photo": {
+   "path": "out/run/drawings/v002.png",
+   "file": "v002.png",
+   "kind": "drawing",
+   "source": "ai_drawing",
+   "title": "a fiery blast wave sweeping across a planet surface",
+   "source_page": "https://huggingface.co/segmind/Segmind-Vega",
+   "licence": "AI-generated drawing (no third-party rights)",
+   "model_licence": "Apache-2.0",
+   "licence_url": "https://www.apache.org/licenses/LICENSE-2.0",
+   "author": "AI-generated with segmind/Segmind-Vega + segmind/Segmind-VegaRT",
+   "attribution": "Illustration generated with Segmind-Vega (Apache-2.0): a fiery blast wave sweeping across a planet surface",
+   "downloaded": "2026-10-27",
+   "prompt": "a fiery blast wave sweeping across a planet surface, pure black background, detailed ink illustration, white and grey pen linework, one bright red accent, high contrast, simple clear composition, no text, no letters, no numbers"
+  },
+  "photo_subject": "a fiery blast wave sweeping across a planet surface"
+ },
+ {
+  "scene": "s01",
+  "start": 12.71,
+  "text": "Why does this question matter when considering terrestrial life?",
+  "sentences": [
+   "s01.03"
+  ],
+  "id": "v003",
+  "end": 16.9,
+  "seconds": 4.19,
+  "scene_start": false,
+  "kind": "photo",
+  "photo_subject": "Planet Earth",
+  "photo_queries": [
+   "planet Earth",
+   "Earth from space"
+  ],
+  "card": {
+   "type": "title",
+   "title": "Terrestrial Life",
+   "subtitle": "Why this question matters"
+  },
+  "photo": {
+   "path": "out/run/photos/v003.jpg",
+   "file": "v003.jpg",
+   "kind": "photo",
+   "source": "wikimedia_commons",
+   "title": "The Earth seen from Apollo 17",
+   "source_page": "https://commons.wikimedia.org/wiki/File:The_Earth_seen_from_Apollo_17.jpg",
+   "download_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/97/The_Earth_seen_from_Apollo_17.jpg/1920px-The_Earth_seen_from_Apollo_17.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "licence": "Public domain",
+   "licence_url": "",
+   "author": "NASA/Apollo 17 crew; taken by either Harrison Schmitt or Ron Evans",
+   "attribution": "\"The Earth seen from Apollo 17\" by NASA/Apollo 17 crew; taken by either Harrison Schmitt or Ron Evans, Public domain, via Wikimedia Commons. https://commons.wikimedia.org/wiki/File:The_Earth_seen_from_Apollo_17.jpg",
+   "downloaded": "2026-10-27"
+  }
+ },
+ {
+  "scene": "s01",
+  "start": 16.9,
+  "text": "How essential is our oxygen atmosphere for survival?",
+  "sentences": [
+   "s01.04"
+  ],
+  "id": "v004",
+  "end": 20.727,
+  "seconds": 3.83,
+  "scene_start": false,
+  "kind": "photo",
+  "photo_subject": "blue sky and clouds",
+  "photo_queries": [
+   "blue sky",
+   "atmosphere clouds"
+  ],
+  "card": {
+   "type": "stat",
+   "title": "Oxygen Atmosphere",
+   "value": "Essential",
+   "label": "For survival on Earth"
+  },
+  "photo": {
+   "path": "out/run/photos/v004.jpg",
+   "file": "v004.jpg",
+   "kind": "photo",
+   "source": "nasa_image_library",
+   "title": "With sensor booms projecting ahead of the wing, the Pathfinder-Plus soars under a blue sky on a turbulence measurement research flight.",
+   "source_page": "https://images.nasa.gov/details/EC05-0186-28",
+   "download_url": "https://images-assets.nasa.gov/image/EC05-0186-28/EC05-0186-28~large.jpg",
+   "licence": "Public domain (NASA media, not copyrighted in the US)",
+   "licence_url": "https://www.nasa.gov/nasa-brand-center/images-and-media/",
+   "author": "NASA/Tom Tschida",
+   "attribution": "With sensor booms projecting ahead of the wing, the Pathfinder-Plus soars under a blue sky on a turbulence measurement research flight. — NASA/Tom Tschida, NASA, public domain. https://images.nasa.gov/details/EC05-0186-28",
+   "downloaded": "2026-10-27"
+  }
+ },
+ {
+  "scene": "s01",
+  "start": 20.727,
+  "text": "In reality, a supernova is a powerful explosion marking the death of a star.",
+  "sentences": [
+   "s01.05"
+  ],
+  "id": "v005",
+  "end": 26.394,
+  "seconds": 5.67,
+  "scene_start": false,
+  "kind": "photo",
+  "photo_subject": "supernova remnant",
+  "photo_queries": [
+   "supernova remnant",
+   "crab nebula"
+  ],
+  "card": {
+   "type": "title",
+   "title": "Supernova Explosion",
+   "subtitle": "Powerful marker of a dying star"
+  },
+  "photo": {
+   "path": "out/run/photos/v005.jpg",
+   "file": "v005.jpg",
+   "kind": "photo",
+   "source": "wikimedia_commons",
+   "title": "Crab Nebula",
+   "source_page": "https://commons.wikimedia.org/wiki/File:Crab_Nebula.jpg",
+   "download_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/00/Crab_Nebula.jpg/1920px-Crab_Nebula.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "licence": "Public domain",
+   "licence_url": "",
+   "author": "NASA, ESA, J. Hester and A. Loll (Arizona State University)",
+   "attribution": "\"Crab Nebula\" by NASA, ESA, J. Hester and A. Loll (Arizona State University), Public domain, via Wikimedia Commons. https://commons.wikimedia.org/wiki/File:Crab_Nebula.jpg",
+   "downloaded": "2026-10-27"
+  }
+ },
+ {
+  "scene": "s01",
+  "start": 26.394,
+  "text": "When a massive star runs out of fuel, its core collapses under immense gravitational force.",
+  "sentences": [
+   "s01.06"
+  ],
+  "id": "v006",
+  "end": 32.651,
+  "seconds": 6.26,
+  "scene_start": false,
+  "kind": "photo",
+  "photo_subject": "stellar core",
+  "photo_queries": [
+   "stellar core",
+   "nebula star"
+  ],
+  "card": {
+   "type": "flow",
+   "title": "Stellar Collapse",
+   "steps": [
+    "Runs out of fuel",
+    "Core collapses",
+    "Gravitational force increases"
+   ]
+  },
+  "photo": {
+   "path": "out/run/photos/v006.jpg",
+   "file": "v006.jpg",
+   "kind": "photo",
+   "source": "nasa_image_library",
+   "title": "Kepler Beyond Planets: Finding Exploding Stars (Core Collapse Supernova)",
+   "source_page": "https://images.nasa.gov/details/PIA22350",
+   "download_url": "https://images-assets.nasa.gov/image/PIA22350/PIA22350~orig.jpg",
+   "licence": "Public domain (NASA media, not copyrighted in the US)",
+   "licence_url": "https://www.nasa.gov/nasa-brand-center/images-and-media/",
+   "author": "NASA/JPL-Caltech",
+   "attribution": "Kepler Beyond Planets: Finding Exploding Stars (Core Collapse Supernova) — NASA/JPL-Caltech, NASA, public domain. https://images.nasa.gov/details/PIA22350",
+   "downloaded": "2026-10-27"
+  }
+ },
+ {
+  "scene": "s01",
+  "start": 32.651,
+  "text": "Alternatively, an exploding white dwarf star undergoes runaway nuclear fusion.",
+  "sentences": [
+   "s01.07"
+  ],
+  "id": "v007",
+  "end": 38.453,
+  "seconds": 5.8,
+  "scene_start": false,
+  "kind": "photo",
+  "photo_subject": "white dwarf star",
+  "photo_queries": [
+   "white dwarf star",
+   "stellar fusion"
+  ],
+  "card": {
+   "type": "title",
+   "title": "White Dwarf",
+   "subtitle": "Runaway nuclear fusion"
+  },
+  "photo": {
+   "path": "out/run/photos/v007.jpg",
+   "file": "v007.jpg",
+   "kind": "photo",
+   "source": "nasa_image_library",
+   "title": "Comet Bites the Dust Around Dead Star  Artist Concept",
+   "source_page": "https://images.nasa.gov/details/PIA03652",
+   "download_url": "https://images-assets.nasa.gov/image/PIA03652/PIA03652~large.jpg",
+   "licence": "Public domain (NASA media, not copyrighted in the US)",
+   "licence_url": "https://www.nasa.gov/nasa-brand-center/images-and-media/",
+   "author": "Main image: NASA/JPL-Caltech<br />Graph: NASA/JPL-Caltech/GSFC",
+   "attribution": "Comet Bites the Dust Around Dead Star  Artist Concept — Main image: NASA/JPL-Caltech<br />Graph: NASA/JPL-Caltech/GSFC, NASA, public domain. https://images.nasa.gov/details/PIA03652",
+   "downloaded": "2026-10-27"
+  }
+ },
+ {
+  "scene": "s01",
+  "start": 38.453,
+  "text": "These stellar detonations expel several solar masses",
+  "sentences": [
+   "s01.08"
+  ],
+  "id": "v008",
+  "end": 41.795500000000004,
+  "seconds": 3.34,
+  "scene_start": false,
+  "kind": "drawing",
+  "drawing_subject": "a star expelling matter into space",
+  "card": {
+   "type": "stat",
+   "title": "Stellar Ejection",
+   "value": "Several",
+   "label": "Solar masses expelled"
+  },
+  "photo": {
+   "path": "out/run/drawings/v008.png",
+   "file": "v008.png",
+   "kind": "drawing",
+   "source": "ai_drawing",
+   "title": "a star expelling matter into space",
+   "source_page": "https://huggingface.co/segmind/Segmind-Vega",
+   "licence": "AI-generated drawing (no third-party rights)",
+   "model_licence": "Apache-2.0",
+   "licence_url": "https://www.apache.org/licenses/LICENSE-2.0",
+   "author": "AI-generated with segmind/Segmind-Vega + segmind/Segmind-VegaRT",
+   "attribution": "Illustration generated with Segmind-Vega (Apache-2.0): a star expelling matter into space",
+   "downloaded": "2026-10-27",
+   "prompt": "a star expelling matter into space, pure black background, detailed ink illustration, white and grey pen linework, one bright red accent, high contrast, simple clear composition, no text, no letters, no numbers"
+  },
+  "photo_subject": "a star expelling matter into space"
+ },
+ {
+  "scene": "s01",
+  "start": 41.795500000000004,
+  "text": "of matter into the surrounding interstellar medium.",
+  "sentences": [
+   "s01.08"
+  ],
+  "id": "v009",
+  "end": 45.641,
+  "seconds": 3.85,
+  "scene_start": false,
+  "kind": "photo",
+  "photo_subject": "interstellar medium",
+  "photo_queries": [
+   "interstellar medium",
+   "cosmic dust"
+  ],
+  "card": {
+   "type": "title",
+   "title": "Interstellar Medium",
+   "subtitle": "Matter spread into space"
+  },
+  "photo": {
+   "path": "out/run/photos/v009.jpg",
+   "file": "v009.jpg",
+   "kind": "photo",
+   "source": "wikimedia_commons",
+   "title": "Interstellar medium annotated",
+   "source_page": "https://commons.wikimedia.org/wiki/File:Interstellar_medium_annotated.jpg",
+   "download_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/1f/Interstellar_medium_annotated.jpg/1920px-Interstellar_medium_annotated.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "licence": "Public domain",
+   "licence_url": "",
+   "author": "Charles Carter/Keck Institute for Space Studies",
+   "attribution": "\"Interstellar medium annotated\" by Charles Carter/Keck Institute for Space Studies, Public domain, via Wikimedia Commons. https://commons.wikimedia.org/wiki/File:Interstellar_medium_annotated.jpg",
+   "downloaded": "2026-10-27"
+  }
+ },
+ {
+  "scene": "s01",
+  "start": 45.641,
+  "text": "The ejected material travels outward at speeds reaching several per cent of the speed of light.",
+  "sentences": [
+   "s01.09"
+  ],
+  "id": "v010",
+  "end": 51.948,
+  "seconds": 6.31,
+  "scene_start": false,
+  "kind": "drawing",
+  "drawing_subject": "particles traveling at light speed",
+  "card": {
+   "type": "stat",
+   "title": "Ejected Material Speed",
+   "value": "Per cent",
+   "label": "Speed of light reached"
+  },
+  "photo": {
+   "path": "out/run/drawings/v010.png",
+   "file": "v010.png",
+   "kind": "drawing",
+   "source": "ai_drawing",
+   "title": "particles traveling at light speed",
+   "source_page": "https://huggingface.co/segmind/Segmind-Vega",
+   "licence": "AI-generated drawing (no third-party rights)",
+   "model_licence": "Apache-2.0",
+   "licence_url": "https://www.apache.org/licenses/LICENSE-2.0",
+   "author": "AI-generated with segmind/Segmind-Vega + segmind/Segmind-VegaRT",
+   "attribution": "Illustration generated with Segmind-Vega (Apache-2.0): particles traveling at light speed",
+   "downloaded": "2026-10-27",
+   "prompt": "particles traveling at light speed, pure black background, detailed ink illustration, white and grey pen linework, one bright red accent, high contrast, simple clear composition, no text, no letters, no numbers"
+  },
+  "photo_subject": "particles traveling at light speed"
+ },
+ {
+  "scene": "s01",
+  "start": 51.948,
+  "text": "This creates an expanding shock wave that sweeps up a shell of interstellar gas and dust.",
+  "sentences": [
+   "s01.10"
+  ],
+  "id": "v011",
+  "end": 58.944,
+  "seconds": 7.0,
+  "scene_start": false,
+  "kind": "photo",
+  "photo_subject": "expanding shock wave nebula",
+  "photo_queries": [
+   "expanding shock wave",
+   "supernova shell"
+  ],
+  "card": {
+   "type": "title",
+   "title": "Shock Wave",
+   "subtitle": "Sweeps up gas and dust"
+  },
+  "photo": {
+   "path": "out/run/photos/v011.jpg",
+   "file": "v011.jpg",
+   "kind": "photo",
+   "source": "wikimedia_commons",
+   "title": "Tycho's Supernova composite image highlighting possible shock wave carrying material from companion star",
+   "source_page": "https://commons.wikimedia.org/wiki/File:Tycho%27s_Supernova_composite_image_highlighting_possible_shock_wave_carrying_material_from_companion_star.jpg",
+   "download_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/ac/Tycho%27s_Supernova_composite_image_highlighting_possible_shock_wave_carrying_material_from_companion_star.jpg/1920px-Tycho%27s_Supernova_composite_image_highlighting_possible_shock_wave_carrying_material_from_companion_star.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "licence": "Public domain",
+   "licence_url": "",
+   "author": "NASA/CXC/Chinese Academy of Sciences/F. Lu et al.",
+   "attribution": "\"Tycho's Supernova composite image highlighting possible shock wave carrying material from companion star\" by NASA/CXC/Chinese Academy of Sciences/F. Lu et al., Public domain, via Wikimedia Commons. https://commons.wikimedia.org/wiki/File:Tycho%27s_Supernova_composite_image_highlighting_possible_shock_wave_carrying_material_from_companion_star.jpg",
+   "downloaded": "2026-10-27"
+  }
+ },
+ {
+  "scene": "s02",
+  "start": 58.944,
+  "text": "Where are the nearest stars that might explode in our stellar neighbourhood?",
+  "sentences": [
+   "s02.01"
+  ],
+  "id": "v012",
+  "end": 63.023,
+  "seconds": 4.08,
+  "scene_start": true,
+  "kind": "card",
+  "card": {
+   "type": "title",
+   "title": "The Stellar Safety Line",
+   "subtitle": "Nearest stars in our neighborhood"
+  }
+ },
+ {
+  "scene": "s02",
+  "start": 63.023,
+  "text": "Astronomers define a near-Earth supernova as one",
+  "sentences": [
+   "s02.02"
+  ],
+  "id": "v013",
+  "end": 66.859,
+  "seconds": 3.84,
+  "scene_start": false,
+  "kind": "photo",
+  "photo_subject": "starry night sky",
+  "photo_queries": [
+   "night sky",
+   "star field"
+  ],
+  "card": {
+   "type": "title",
+   "title": "Near-Earth Supernova",
+   "subtitle": "Defining distance thresholds"
+  },
+  "photo": {
+   "path": "out/run/photos/v013.jpg",
+   "file": "v013.jpg",
+   "kind": "photo",
+   "source": "nasa_image_library",
+   "title": "Creative Photography - Night Sky",
+   "source_page": "https://images.nasa.gov/details/KSC-20191031-PH-GEB01_0005",
+   "download_url": "https://images-assets.nasa.gov/image/KSC-20191031-PH-GEB01_0005/KSC-20191031-PH-GEB01_0005~large.jpg",
+   "licence": "Public domain (NASA media, not copyrighted in the US)",
+   "licence_url": "https://www.nasa.gov/nasa-brand-center/images-and-media/",
+   "author": "NASA/Glenn Benson",
+   "attribution": "Creative Photography - Night Sky — NASA/Glenn Benson, NASA, public domain. https://images.nasa.gov/details/KSC-20191031-PH-GEB01_0005",
+   "downloaded": "2026-10-27"
+  }
+ },
+ {
+  "scene": "s02",
+  "start": 66.859,
+  "text": "occurring within roughly 33 to 978 light-years.",
+  "sentences": [
+   "s02.02"
+  ],
+  "id": "v014",
+  "end": 71.144,
+  "seconds": 4.29,
+  "scene_start": false,
+  "kind": "card",
+  "card": {
+   "type": "stat",
+   "title": "Distance Range",
+   "value": "33 to 978",
+   "label": "Light-years range"
+  }
+ },
+ {
+  "scene": "s02",
+  "start": 71.144,
+  "text": "Currently, our galaxy holds up to 14",
+  "sentences": [
+   "s02.03"
+  ],
+  "id": "v015",
+  "end": 74.4665,
+  "seconds": 3.32,
+  "scene_start": false,
+  "kind": "card",
+  "card": {
+   "type": "stat",
+   "title": "Galaxy Potential",
+   "value": "14",
+   "label": "Potential near-Earth supernovas"
+  }
+ },
+ {
+  "scene": "s02",
+  "start": 74.4665,
+  "text": "potential near-Earth supernovas inside that broader distance.",
+  "sentences": [
+   "s02.03"
+  ],
+  "id": "v016",
+  "end": 78.225,
+  "seconds": 3.76,
+  "scene_start": false,
+  "kind": "photo",
+  "photo_subject": "Milky Way galaxy",
+  "photo_queries": [
+   "Milky Way galaxy",
+   "galaxy cluster"
+  ],
+  "card": {
+   "type": "title",
+   "title": "Broader Distance",
+   "subtitle": "Potential supernovas inside our galaxy"
+  },
+  "photo": {
+   "path": "out/run/photos/v016.jpg",
+   "file": "v016.jpg",
+   "kind": "photo",
+   "source": "wikimedia_commons",
+   "title": "Milky Way IR Spitzer",
+   "source_page": "https://commons.wikimedia.org/wiki/File:Milky_Way_IR_Spitzer.jpg",
+   "download_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/9e/Milky_Way_IR_Spitzer.jpg/1920px-Milky_Way_IR_Spitzer.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "licence": "Public domain",
+   "licence_url": "",
+   "author": "Credit: NASA/JPL-Caltech/S. Stolovy (Spitzer Science Center/Caltech)",
+   "attribution": "\"Milky Way IR Spitzer\" by Credit: NASA/JPL-Caltech/S. Stolovy (Spitzer Science Center/Caltech), Public domain, via Wikimedia Commons. https://commons.wikimedia.org/wiki/File:Milky_Way_IR_Spitzer.jpg",
+   "downloaded": "2026-10-27"
+  }
+ },
+ {
+  "scene": "s02",
+  "start": 78.225,
+  "text": "A few famous stars located within several hundred light-years could explode in just 1,000 years.",
+  "sentences": [
+   "s02.04"
+  ],
+  "id": "v017",
+  "end": 85.05,
+  "seconds": 6.83,
+  "scene_start": false,
+  "kind": "card",
+  "card": {
+   "type": "stat",
+   "title": "Timeframe",
+   "value": "1,000",
+   "label": "Years until possible explosion"
+  }
+ },
+ {
+  "scene": "s02",
+  "start": 85.05,
+  "text": "Although these dying stars will shine brilliantly, they pose little direct threat to our planet.",
+  "sentences": [
+   "s02.05"
+  ],
+  "id": "v018",
+  "end": 91.1,
+  "seconds": 6.05,
+  "scene_start": false,
+  "kind": "photo",
+  "photo_subject": "bright glowing star",
+  "photo_queries": [
+   "bright star",
+   "stellar brilliance"
+  ],
+  "card": {
+   "type": "title",
+   "title": "Stellar Brilliance",
+   "subtitle": "Little direct threat to Earth"
+  },
+  "photo": {
+   "path": "out/run/photos/v018.jpg",
+   "file": "v018.jpg",
+   "kind": "photo",
+   "source": "nasa_image_library",
+   "title": "Wish Upon a Star",
+   "source_page": "https://images.nasa.gov/details/PIA18297",
+   "download_url": "https://images-assets.nasa.gov/image/PIA18297/PIA18297~orig.jpg",
+   "licence": "Public domain (NASA media, not copyrighted in the US)",
+   "licence_url": "https://www.nasa.gov/nasa-brand-center/images-and-media/",
+   "author": "NASA/JPL-Caltech/Space Science Institute",
+   "attribution": "Wish Upon a Star — NASA/JPL-Caltech/Space Science Institute, NASA, public domain. https://images.nasa.gov/details/PIA18297",
+   "downloaded": "2026-10-27"
+  }
+ },
+ {
+  "scene": "s02",
+  "start": 91.1,
+  "text": "What about the famous red supergiant star Betelgeuse?",
+  "sentences": [
+   "s02.06"
+  ],
+  "id": "v019",
+  "end": 94.84,
+  "seconds": 3.74,
+  "scene_start": false,
+  "kind": "photo",
+  "photo_subject": "Betelgeuse star",
+  "photo_queries": [
+   "Betelgeuse star",
+   "red supergiant"
+  ],
+  "card": {
+   "type": "title",
+   "title": "Betelgeuse",
+   "subtitle": "Famous red supergiant star"
+  },
+  "photo": {
+   "path": "out/run/photos/v019.jpg",
+   "file": "v019.jpg",
+   "kind": "photo",
+   "source": "wikimedia_commons",
+   "title": "Betelgeuse captured by ALMA",
+   "source_page": "https://commons.wikimedia.org/wiki/File:Betelgeuse_captured_by_ALMA.jpg",
+   "download_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/57/Betelgeuse_captured_by_ALMA.jpg/1920px-Betelgeuse_captured_by_ALMA.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "licence": "CC BY 4.0",
+   "licence_url": "https://creativecommons.org/licenses/by/4.0",
+   "author": "ALMA (ESO/NAOJ/NRAO)/E. O’Gorman/P. Kervella",
+   "attribution": "\"Betelgeuse captured by ALMA\" by ALMA (ESO/NAOJ/NRAO)/E. O’Gorman/P. Kervella, CC BY 4.0, via Wikimedia Commons. https://commons.wikimedia.org/wiki/File:Betelgeuse_captured_by_ALMA.jpg",
+   "downloaded": "2026-10-27"
+  }
+ },
+ {
+  "scene": "s02",
+  "start": 94.84,
+  "text": "Scientists estimate that Betelgeuse could require as long",
+  "sentences": [
+   "s02.07"
+  ],
+  "id": "v020",
+  "end": 98.38917647058824,
+  "seconds": 3.55,
+  "scene_start": false,
+  "kind": "photo",
+  "photo_subject": "telescope view of a star",
+  "photo_queries": [
+   "astronomy telescope",
+   "stellar estimate"
+  ],
+  "card": {
+   "type": "title",
+   "title": "Time Estimate",
+   "subtitle": "Required duration before explosion"
+  },
+  "photo": {
+   "path": "out/run/photos/v020.jpg",
+   "file": "v020.jpg",
+   "kind": "photo",
+   "source": "wikimedia_commons",
+   "title": "William Herschel Telescope and Comet Tsuchinshan–ATLAS",
+   "source_page": "https://commons.wikimedia.org/wiki/File:William_Herschel_Telescope_and_Comet_Tsuchinshan%E2%80%93ATLAS.jpg",
+   "download_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/2f/William_Herschel_Telescope_and_Comet_Tsuchinshan%E2%80%93ATLAS.jpg/1920px-William_Herschel_Telescope_and_Comet_Tsuchinshan%E2%80%93ATLAS.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "licence": "CC BY-SA 4.0",
+   "licence_url": "https://creativecommons.org/licenses/by-sa/4.0",
+   "author": "Whyistheskyblue1",
+   "attribution": "\"William Herschel Telescope and Comet Tsuchinshan–ATLAS\" by Whyistheskyblue1, CC BY-SA 4.0, via Wikimedia Commons. https://commons.wikimedia.org/wiki/File:William_Herschel_Telescope_and_Comet_Tsuchinshan%E2%80%93ATLAS.jpg",
+   "downloaded": "2026-10-27"
+  }
+ },
+ {
+  "scene": "s02",
+  "start": 98.38917647058824,
+  "text": "as 1.5 million years to explode as a supernova.",
+  "sentences": [
+   "s02.07"
+  ],
+  "id": "v021",
+  "end": 102.857,
+  "seconds": 4.47,
+  "scene_start": false,
+  "kind": "card",
+  "card": {
+   "type": "stat",
+   "title": "Explosion Timeline",
+   "value": "1.5 million",
+   "label": "Years to explode as a supernova"
+  }
+ },
+ {
+  "scene": "s02",
+  "start": 102.857,
+  "text": "When it detonates, its particle stream will reach",
+  "sentences": [
+   "s02.08"
+  ],
+  "id": "v022",
+  "end": 106.167,
+  "seconds": 3.31,
+  "scene_start": false,
+  "kind": "drawing",
+  "drawing_subject": "particle stream moving across space",
+  "card": {
+   "type": "title",
+   "title": "Particle Stream",
+   "subtitle": "Detonation aftereffects"
+  },
+  "photo": {
+   "path": "out/run/drawings/v022.png",
+   "file": "v022.png",
+   "kind": "drawing",
+   "source": "ai_drawing",
+   "title": "particle stream moving across space",
+   "source_page": "https://huggingface.co/segmind/Segmind-Vega",
+   "licence": "AI-generated drawing (no third-party rights)",
+   "model_licence": "Apache-2.0",
+   "licence_url": "https://www.apache.org/licenses/LICENSE-2.0",
+   "author": "AI-generated with segmind/Segmind-Vega + segmind/Segmind-VegaRT",
+   "attribution": "Illustration generated with Segmind-Vega (Apache-2.0): particle stream moving across space",
+   "downloaded": "2026-10-27",
+   "prompt": "particle stream moving across space, pure black background, detailed ink illustration, white and grey pen linework, one bright red accent, high contrast, simple clear composition, no text, no letters, no numbers"
+  },
+  "photo_subject": "particle stream moving across space"
+ },
+ {
+  "scene": "s02",
+  "start": 106.167,
+  "text": "Earth about 100,000 years after the initial light.",
+  "sentences": [
+   "s02.08"
+  ],
+  "id": "v023",
+  "end": 109.954,
+  "seconds": 3.79,
+  "scene_start": false,
+  "kind": "card",
+  "card": {
+   "type": "stat",
+   "title": "Arrival Time",
+   "value": "100,000",
+   "label": "Years after initial light"
+  }
+ },
+ {
+  "scene": "s02",
+  "start": 109.954,
+  "text": "Looking back in time, other relatively nearby stars have exploded in Earth's past.",
+  "sentences": [
+   "s02.09"
+  ],
+  "id": "v024",
+  "end": 115.651,
+  "seconds": 5.7,
+  "scene_start": false,
+  "kind": "photo",
+  "photo_subject": "ancient supernova remnant",
+  "photo_queries": [
+   "ancient supernova",
+   "stellar past"
+  ],
+  "card": {
+   "type": "title",
+   "title": "Earth's Past",
+   "subtitle": "Relatively nearby stars in history"
+  },
+  "photo": {
+   "path": "out/run/photos/v024.jpg",
+   "file": "v024.jpg",
+   "kind": "photo",
+   "source": "nasa_image_library",
+   "title": "Ancient Supernova Revealed",
+   "source_page": "https://images.nasa.gov/details/PIA14884",
+   "download_url": "https://images-assets.nasa.gov/image/PIA14884/PIA14884~large.jpg",
+   "licence": "Public domain (NASA media, not copyrighted in the US)",
+   "licence_url": "https://www.nasa.gov/nasa-brand-center/images-and-media/",
+   "author": "NASA/JPL-Caltech/UCLA",
+   "attribution": "Ancient Supernova Revealed — NASA/JPL-Caltech/UCLA, NASA, public domain. https://images.nasa.gov/details/PIA14884",
+   "downloaded": "2026-10-27"
+  }
+ },
+ {
+  "scene": "s02",
+  "start": 115.651,
+  "text": "The Vela supernova exploded about 12,000 years ago",
+  "sentences": [
+   "s02.10"
+  ],
+  "id": "v025",
+  "end": 119.23606666666667,
+  "seconds": 3.59,
+  "scene_start": false,
+  "kind": "card",
+  "card": {
+   "type": "stat",
+   "title": "Vela Supernova",
+   "value": "12,000",
+   "label": "Years ago"
+  }
+ },
+ {
+  "scene": "s02",
+  "start": 119.23606666666667,
+  "text": "roughly 800 light-years away from our Sun.",
+  "sentences": [
+   "s02.10"
+  ],
+  "id": "v026",
+  "end": 122.835,
+  "seconds": 3.6,
+  "scene_start": false,
+  "kind": "card",
+  "card": {
+   "type": "stat",
+   "title": "Vela Distance",
+   "value": "800",
+   "label": "Light-years away from our Sun"
+  }
+ },
+ {
+  "scene": "s02",
+  "start": 122.835,
+  "text": "Another explosion called Geminga occurred roughly 300,000 years",
+  "sentences": [
+   "s02.11"
+  ],
+  "id": "v027",
+  "end": 127.21526666666666,
+  "seconds": 4.38,
+  "scene_start": false,
+  "kind": "card",
+  "card": {
+   "type": "stat",
+   "title": "Geminga Explosion",
+   "value": "300,000",
+   "label": "Years ago"
+  }
+ },
+ {
+  "scene": "s02",
+  "start": 127.21526666666666,
+  "text": "ago at a distance of 550 light-years.",
+  "sentences": [
+   "s02.11"
+  ],
+  "id": "v028",
+  "end": 131.507,
+  "seconds": 4.29,
+  "scene_start": false,
+  "kind": "card",
+  "card": {
+   "type": "stat",
+   "title": "Geminga Distance",
+   "value": "550",
+   "label": "Light-years distance"
+  }
+ },
+ {
+  "scene": "s02",
+  "start": 131.507,
+  "text": "The closest known white dwarf candidate, IK Pegasi,",
+  "sentences": [
+   "s02.12"
+  ],
+  "id": "v029",
+  "end": 134.8005,
+  "seconds": 3.29,
+  "scene_start": false,
+  "kind": "photo",
+  "photo_subject": "IK Pegasi binary star system",
+  "photo_queries": [
+   "binary star system",
+   "white dwarf star"
+  ],
+  "card": {
+   "type": "title",
+   "title": "IK Pegasi",
+   "subtitle": "Closest known white dwarf candidate"
+  },
+  "photo": {
+   "path": "out/run/photos/v029.jpg",
+   "file": "v029.jpg",
+   "kind": "photo",
+   "source": "wikimedia_commons",
+   "title": "Artist's interpretation of a close binary star system (geminiann18004a)",
+   "source_page": "https://commons.wikimedia.org/wiki/File:Artist%27s_interpretation_of_a_close_binary_star_system_(geminiann18004a).jpg",
+   "download_url": "https://upload.wikimedia.org/wikipedia/commons/2/28/Artist%27s_interpretation_of_a_close_binary_star_system_%28geminiann18004a%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+   "licence": "CC BY 4.0",
+   "licence_url": "https://creativecommons.org/licenses/by/4.0",
+   "author": "Robin Dienel, courtesy of the Carnegie Institution for Science",
+   "attribution": "\"Artist's interpretation of a close binary star system (geminiann18004a)\" by Robin Dienel, courtesy of the Carnegie Institution for Science, CC BY 4.0, via Wikimedia Commons. https://commons.wikimedia.org/wiki/File:Artist%27s_interpretation_of_a_close_binary_star_system_(geminiann18004a).jpg",
+   "downloaded": "2026-10-27"
+  }
+ },
+ {
+  "scene": "s02",
+  "start": 134.8005,
+  "text": "is currently moving away to a safe distance.",
+  "sentences": [
+   "s02.12"
+  ],
+  "id": "v030",
+  "end": 139.525,
+  "seconds": 4.72,
+  "scene_start": false,
+  "kind": "drawing",
+  "drawing_subject": "a star moving away in space",
+  "card": {
+   "type": "title",
+   "title": "Safe Distance",
+   "subtitle": "Currently moving away"
+  },
+  "photo": {
+   "path": "out/run/drawings/v030.png",
+   "file": "v030.png",
+   "kind": "drawing",
+   "source": "ai_drawing",
+   "title": "a star moving away in space",
+   "source_page": "https://huggingface.co/segmind/Segmind-Vega",
+   "licence": "AI-generated drawing (no third-party rights)",
+   "model_licence": "Apache-2.0",
+   "licence_url": "https://www.apache.org/licenses/LICENSE-2.0",
+   "author": "AI-generated with segmind/Segmind-Vega + segmind/Segmind-VegaRT",
+   "attribution": "Illustration generated with Segmind-Vega (Apache-2.0): a star moving away in space",
+   "downloaded": "2026-10-27",
+   "prompt": "a star moving away in space, pure black background, detailed ink illustration, white and grey pen linework, one bright red accent, high contrast, simple clear composition, no text, no letters, no numbers"
+  },
+  "photo_subject": "a star moving away in space"
+ },
+ {
+  "scene": "s03",
+  "start": 139.525,
+  "text": "If a blast wave cannot destroy our atmosphere, what makes a supernova dangerous?",
+  "sentences": [
+   "s03.01"
+  ],
+  "id": "v031",
+  "end": 144.999,
+  "seconds": 5.47,
+  "scene_start": true,
+  "kind": "card",
+  "card": {
+   "type": "title",
+   "title": "The Primary Weapon: Invisible Radiation",
+   "subtitle": "What makes a supernova dangerous?"
+  }
+ },
+ {
+  "scene": "s03",
+  "start": 144.999,
+  "text": "Supernovae act as a major source of cosmic rays.",
+  "sentences": [
+   "s03.03"
+  ],
+  "id": "v032",
+  "end": 148.828,
+  "seconds": 3.83,
+  "scene_start": false,
+  "kind": "photo",
+  "photo_subject": "cosmic rays visualization",
+  "photo_queries": [
+   "cosmic rays",
+   "particle physics"
+  ],
+  "card": {
+   "type": "title",
+   "title": "Cosmic Rays",
+   "subtitle": "Major source from supernovae"
+  },
+  "photo_rejected": {
+   "path": "out/run/photos/v032.jpg",
+   "file": "v032.jpg",
+   "kind": "photo",
+   "source": "wikimedia_commons",
+   "title": "2024-(08-09)-(30-01-02) - Muons detection map",
+   "source_page": "https://commons.wikimedia.org/wiki/File:2024-(08-09)-(30-01-02)_-_Muons_detection_map.png",
+   "download_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/ad/2024-%2808-09%29-%2830-01-02%29_-_Muons_detection_map.png/1920px-2024-%2808-09%29-%2830-01-02%29_-_Muons_detection_map.png?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "licence": "CC BY-SA 4.0",
+   "licence_url": "https://creativecommons.org/licenses/by-sa/4.0",
+   "author": "KnightFallV",
+   "attribution": "\"2024-(08-09)-(30-01-02) - Muons detection map\" by KnightFallV, CC BY-SA 4.0, via Wikimedia Commons. https://commons.wikimedia.org/wiki/File:2024-(08-09)-(30-01-02)_-_Muons_detection_map.png",
+   "downloaded": "2026-10-27"
+  }
+ },
+ {
+  "scene": "s03",
+  "start": 148.828,
+  "text": "They also emit fluxes of X-rays and gamma rays.",
+  "sentences": [
+   "s03.04"
+  ],
+  "id": "v033",
+  "end": 152.607,
+  "seconds": 3.78,
+  "scene_start": false,
+  "kind": "photo",
+  "photo_subject": "gamma ray burst",
+  "photo_queries": [
+   "gamma ray burst",
+   "X-ray emission"
+  ],
+  "card": {
+   "type": "title",
+   "title": "X-Rays and Gamma Rays",
+   "subtitle": "Emitted fluxes"
+  },
+  "photo": {
+   "path": "out/run/photos/v033.jpg",
+   "file": "v033.jpg",
+   "kind": "photo",
+   "source": "wikimedia_commons",
+   "title": "Artist’s impression of a gamma-ray burst shining through two young galaxies in the early Universe",
+   "source_page": "https://commons.wikimedia.org/wiki/File:Artist%E2%80%99s_impression_of_a_gamma-ray_burst_shining_through_two_young_galaxies_in_the_early_Universe.jpg",
+   "download_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/3a/Artist%E2%80%99s_impression_of_a_gamma-ray_burst_shining_through_two_young_galaxies_in_the_early_Universe.jpg/1920px-Artist%E2%80%99s_impression_of_a_gamma-ray_burst_shining_through_two_young_galaxies_in_the_early_Universe.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "licence": "CC BY 4.0",
+   "licence_url": "https://creativecommons.org/licenses/by/4.0",
+   "author": "ESO/L. Calçada",
+   "attribution": "\"Artist’s impression of a gamma-ray burst shining through two young galaxies in the early Universe\" by ESO/L. Calçada, CC BY 4.0, via Wikimedia Commons. https://commons.wikimedia.org/wiki/File:Artist%E2%80%99s_impression_of_a_gamma-ray_burst_shining_through_two_young_galaxies_in_the_early_Universe.jpg",
+   "downloaded": "2026-10-27"
+  }
+ },
+ {
+  "scene": "s03",
+  "start": 152.607,
+  "text": "When gamma radiation hits the upper atmosphere, it causes chemical reactions.",
+  "sentences": [
+   "s03.06"
+  ],
+  "id": "v034",
+  "end": 157.904,
+  "seconds": 5.3,
+  "scene_start": false,
+  "kind": "drawing",
+  "drawing_subject": "radiation hitting upper atmosphere",
+  "card": {
+   "type": "title",
+   "title": "Gamma Radiation",
+   "subtitle": "Hits upper atmosphere"
+  },
+  "photo": {
+   "path": "out/run/drawings/v034.png",
+   "file": "v034.png",
+   "kind": "drawing",
+   "source": "ai_drawing",
+   "title": "radiation hitting upper atmosphere",
+   "source_page": "https://huggingface.co/segmind/Segmind-Vega",
+   "licence": "AI-generated drawing (no third-party rights)",
+   "model_licence": "Apache-2.0",
+   "licence_url": "https://www.apache.org/licenses/LICENSE-2.0",
+   "author": "AI-generated with segmind/Segmind-Vega + segmind/Segmind-VegaRT",
+   "attribution": "Illustration generated with Segmind-Vega (Apache-2.0): radiation hitting upper atmosphere",
+   "downloaded": "2026-10-27",
+   "prompt": "radiation hitting upper atmosphere, pure black background, detailed ink illustration, white and grey pen linework, one bright red accent, high contrast, simple clear composition, no text, no letters, no numbers"
+  },
+  "photo_subject": "radiation hitting upper atmosphere"
+ },
+ {
+  "scene": "s03",
+  "start": 157.904,
+  "text": "Radiolysis breaks apart these common gas molecules",
+  "sentences": [
+   "s03.08"
+  ],
+  "id": "v035",
+  "end": 161.5235,
+  "seconds": 3.62,
+  "scene_start": false,
+  "kind": "drawing",
+  "drawing_subject": "gas molecules breaking apart",
+  "card": {
+   "type": "title",
+   "title": "Radiolysis",
+   "subtitle": "Breaks apart gas molecules"
+  },
+  "photo": {
+   "path": "out/run/drawings/v035.png",
+   "file": "v035.png",
+   "kind": "drawing",
+   "source": "ai_drawing",
+   "title": "gas molecules breaking apart",
+   "source_page": "https://huggingface.co/segmind/Segmind-Vega",
+   "licence": "AI-generated drawing (no third-party rights)",
+   "model_licence": "Apache-2.0",
+   "licence_url": "https://www.apache.org/licenses/LICENSE-2.0",
+   "author": "AI-generated with segmind/Segmind-Vega + segmind/Segmind-VegaRT",
+   "attribution": "Illustration generated with Segmind-Vega (Apache-2.0): gas molecules breaking apart",
+   "downloaded": "2026-10-27",
+   "prompt": "gas molecules breaking apart, pure black background, detailed ink illustration, white and grey pen linework, one bright red accent, high contrast, simple clear composition, no text, no letters, no numbers"
+  },
+  "photo_subject": "gas molecules breaking apart"
+ },
+ {
+  "scene": "s03",
+  "start": 161.5235,
+  "text": "and recombines them into harmful nitrogen oxides.",
+  "sentences": [
+   "s03.08"
+  ],
+  "id": "v036",
+  "end": 165.579,
+  "seconds": 4.06,
+  "scene_start": false,
+  "kind": "drawing",
+  "drawing_subject": "molecules recombining into nitrogen oxides",
+  "card": {
+   "type": "title",
+   "title": "Nitrogen Oxides",
+   "subtitle": "Recombined harmful molecules"
+  },
+  "photo": {
+   "path": "out/run/drawings/v036.png",
+   "file": "v036.png",
+   "kind": "drawing",
+   "source": "ai_drawing",
+   "title": "molecules recombining into nitrogen oxides",
+   "source_page": "https://huggingface.co/segmind/Segmind-Vega",
+   "licence": "AI-generated drawing (no third-party rights)",
+   "model_licence": "Apache-2.0",
+   "licence_url": "https://www.apache.org/licenses/LICENSE-2.0",
+   "author": "AI-generated with segmind/Segmind-Vega + segmind/Segmind-VegaRT",
+   "attribution": "Illustration generated with Segmind-Vega (Apache-2.0): molecules recombining into nitrogen oxides",
+   "downloaded": "2026-10-27",
+   "prompt": "molecules recombining into nitrogen oxides, pure black background, detailed ink illustration, white and grey pen linework, one bright red accent, high contrast, simple clear composition, no text, no letters, no numbers"
+  },
+  "photo_subject": "molecules recombining into nitrogen oxides"
+ },
+ {
+  "scene": "s03",
+  "start": 165.579,
+  "text": "These newly created nitrogen oxides notably deplete ozone molecules.",
+  "sentences": [
+   "s03.09"
+  ],
+  "id": "v037",
+  "end": 171.134,
+  "seconds": 5.55,
+  "scene_start": false,
+  "kind": "drawing",
+  "drawing_subject": "ozone molecules being depleted",
+  "card": {
+   "type": "title",
+   "title": "Ozone Depletion",
+   "subtitle": "Nitrogen oxides destroy ozone"
+  },
+  "photo": {
+   "path": "out/run/drawings/v037.png",
+   "file": "v037.png",
+   "kind": "drawing",
+   "source": "ai_drawing",
+   "title": "ozone molecules being depleted",
+   "source_page": "https://huggingface.co/segmind/Segmind-Vega",
+   "licence": "AI-generated drawing (no third-party rights)",
+   "model_licence": "Apache-2.0",
+   "licence_url": "https://www.apache.org/licenses/LICENSE-2.0",
+   "author": "AI-generated with segmind/Segmind-Vega + segmind/Segmind-VegaRT",
+   "attribution": "Illustration generated with Segmind-Vega (Apache-2.0): ozone molecules being depleted",
+   "downloaded": "2026-10-27",
+   "prompt": "ozone molecules being depleted, pure black background, detailed ink illustration, white and grey pen linework, one bright red accent, high contrast, simple clear composition, no text, no letters, no numbers"
+  },
+  "photo_subject": "ozone molecules being depleted"
+ },
+ {
+  "scene": "s03",
+  "start": 171.134,
+  "text": "In this way, atmospheric chemistry depletes our planet's protective ozone layer.",
+  "sentences": [
+   "s03.10"
+  ],
+  "id": "v038",
+  "end": 176.766,
+  "seconds": 5.63,
+  "scene_start": false,
+  "kind": "photo",
+  "photo_subject": "Earth ozone layer",
+  "photo_queries": [
+   "ozone layer",
+   "stratosphere Earth"
+  ],
+  "card": {
+   "type": "title",
+   "title": "Protective Ozone",
+   "subtitle": "Atmospheric chemistry effect"
+  },
+  "photo": {
+   "path": "out/run/photos/v038.jpg",
+   "file": "v038.jpg",
+   "kind": "photo",
+   "source": "nasa_image_library",
+   "title": "2009 Antarctic Ozone Hole",
+   "source_page": "https://images.nasa.gov/details/GSFC_20171208_Archive_e002226",
+   "download_url": "https://images-assets.nasa.gov/image/GSFC_20171208_Archive_e002226/GSFC_20171208_Archive_e002226~orig.jpg",
+   "licence": "Public domain (NASA media, not copyrighted in the US)",
+   "licence_url": "https://www.nasa.gov/nasa-brand-center/images-and-media/",
+   "author": "NASA (GSFC)",
+   "attribution": "2009 Antarctic Ozone Hole — NASA (GSFC), NASA, public domain. https://images.nasa.gov/details/GSFC_20171208_Archive_e002226",
+   "downloaded": "2026-10-27"
+  }
+ },
+ {
+  "scene": "s03",
+  "start": 176.766,
+  "text": "The atmosphere's protective ozone composition is transformed by these reactions.",
+  "sentences": [
+   "s03.11"
+  ],
+  "id": "v039",
+  "end": 182.409,
+  "seconds": 5.64,
+  "scene_start": false,
+  "kind": "drawing",
+  "drawing_subject": "atmosphere composition changing",
+  "card": {
+   "type": "title",
+   "title": "Ozone Composition",
+   "subtitle": "Transformed by reactions"
+  },
+  "photo": {
+   "path": "out/run/drawings/v039.png",
+   "file": "v039.png",
+   "kind": "drawing",
+   "source": "ai_drawing",
+   "title": "atmosphere composition changing",
+   "source_page": "https://huggingface.co/segmind/Segmind-Vega",
+   "licence": "AI-generated drawing (no third-party rights)",
+   "model_licence": "Apache-2.0",
+   "licence_url": "https://www.apache.org/licenses/LICENSE-2.0",
+   "author": "AI-generated with segmind/Segmind-Vega + segmind/Segmind-VegaRT",
+   "attribution": "Illustration generated with Segmind-Vega (Apache-2.0): atmosphere composition changing",
+   "downloaded": "2026-10-27",
+   "prompt": "atmosphere composition changing, pure black background, detailed ink illustration, white and grey pen linework, one bright red accent, high contrast, simple clear composition, no text, no letters, no numbers"
+  },
+  "photo_subject": "atmosphere composition changing"
+ },
+ {
+  "scene": "s03",
+  "start": 182.409,
+  "text": "Do invisible chemical reactions occur instead of a shockwave?",
+  "sentences": [
+   "s03.12"
+  ],
+  "id": "v040",
+  "end": 187.861,
+  "seconds": 5.45,
+  "scene_start": false,
+  "kind": "card",
+  "card": {
+   "type": "compare",
+   "title": "Shockwave vs Chemical Reactions",
+   "left_title": "Shockwave",
+   "left_points": [
+    "Fiery blast",
+    "Visual destruction"
+   ],
+   "right_title": "Chemistry",
+   "right_points": [
+    "Invisible reactions",
+    "Ozone depletion"
+   ]
+  }
+ },
+ {
+  "scene": "s04",
+  "start": 187.861,
+  "text": "How close must a star be for this lethal chemistry to occur?",
+  "sentences": [
+   "s04.01"
+  ],
+  "id": "v041",
+  "end": 191.987,
+  "seconds": 4.13,
+  "scene_start": true,
+  "kind": "card",
+  "card": {
+   "type": "title",
+   "title": "The Kill Zone Threshold",
+   "subtitle": "How close must a star be?"
+  }
+ },
+ {
+  "scene": "s04",
+  "start": 191.987,
+  "text": "An explosion within 33 light-years happens on",
+  "sentences": [
+   "s04.03"
+  ],
+  "id": "v042",
+  "end": 195.5455,
+  "seconds": 3.56,
+  "scene_start": false,
+  "kind": "card",
+  "card": {
+   "type": "stat",
+   "title": "Lethal Distance",
+   "value": "33",
+   "label": "Light-years threshold"
+  }
+ },
+ {
+  "scene": "s04",
+  "start": 195.5455,
+  "text": "average only once every 240 million years.",
+  "sentences": [
+   "s04.03"
+  ],
+  "id": "v043",
+  "end": 199.551,
+  "seconds": 4.01,
+  "scene_start": false,
+  "kind": "card",
+  "card": {
+   "type": "stat",
+   "title": "Frequency",
+   "value": "240 million",
+   "label": "Years between events"
+  }
+ },
+ {
+  "scene": "s04",
+  "start": 199.551,
+  "text": "At this lethal distance, the incoming radiation would destroy more than half of Earth's ozone layer.",
+  "sentences": [
+   "s04.05"
+  ],
+  "id": "v044",
+  "end": 206.044,
+  "seconds": 6.49,
+  "scene_start": false,
+  "kind": "card",
+  "card": {
+   "type": "stat",
+   "title": "Ozone Loss",
+   "value": "Half",
+   "label": "Of Earth's ozone destroyed"
+  }
+ },
+ {
+  "scene": "s04",
+  "start": 206.044,
+  "text": "Researchers derived this calculation from atmospheric",
+  "sentences": [
+   "s04.06"
+  ],
+  "id": "v045",
+  "end": 210.1166153846154,
+  "seconds": 4.07,
+  "scene_start": false,
+  "kind": "photo",
+  "photo_subject": "scientific data graph",
+  "photo_queries": [
+   "scientific data",
+   "atmospheric model"
+  ],
+  "card": {
+   "type": "title",
+   "title": "Atmospheric Models",
+   "subtitle": "Derived calculations"
+  },
+  "photo": {
+   "path": "out/run/photos/v045.jpg",
+   "file": "v045.jpg",
+   "kind": "photo",
+   "source": "nasa_image_library",
+   "title": "Mars Atmosphere Density Model",
+   "source_page": "https://images.nasa.gov/details/PIA25211",
+   "download_url": "https://images-assets.nasa.gov/image/PIA25211/PIA25211~orig.jpg",
+   "licence": "Public domain (NASA media, not copyrighted in the US)",
+   "licence_url": "https://www.nasa.gov/nasa-brand-center/images-and-media/",
+   "author": "NASA/JPL-Caltech",
+   "attribution": "Mars Atmosphere Density Model — NASA/JPL-Caltech, NASA, public domain. https://images.nasa.gov/details/PIA25211",
+   "downloaded": "2026-10-27"
+  }
+ },
+ {
+  "scene": "s04",
+  "start": 210.1166153846154,
+  "text": "models and radiation data from supernova 1987A.",
+  "sentences": [
+   "s04.06"
+  ],
+  "id": "v046",
+  "end": 215.342,
+  "seconds": 5.23,
+  "scene_start": false,
+  "kind": "photo",
+  "photo_subject": "supernova 1987A",
+  "photo_queries": [
+   "supernova 1987A",
+   "radiation data"
+  ],
+  "card": {
+   "type": "title",
+   "title": "Supernova 1987A",
+   "subtitle": "Radiation data source"
+  },
+  "photo": {
+   "path": "out/run/photos/v046.jpg",
+   "file": "v046.jpg",
+   "kind": "photo",
+   "source": "nasa_image_library",
+   "title": "The Dawn of a New Era for Supernova 1987a",
+   "source_page": "https://images.nasa.gov/details/GSFC_20171208_Archive_e000102",
+   "download_url": "https://images-assets.nasa.gov/image/GSFC_20171208_Archive_e000102/GSFC_20171208_Archive_e000102~medium.jpg",
+   "licence": "Public domain (NASA media, not copyrighted in the US)",
+   "licence_url": "https://www.nasa.gov/nasa-brand-center/images-and-media/",
+   "author": "NASA (GSFC)",
+   "attribution": "The Dawn of a New Era for Supernova 1987a — NASA (GSFC), NASA, public domain. https://images.nasa.gov/details/GSFC_20171208_Archive_e000102",
+   "downloaded": "2026-10-27"
+  }
+ },
+ {
+  "scene": "s04",
+  "start": 215.342,
+  "text": "These events occur when an exploding white dwarf releases tremendous energy within mere seconds.",
+  "sentences": [
+   "s04.08"
+  ],
+  "id": "v047",
+  "end": 221.973,
+  "seconds": 6.63,
+  "scene_start": false,
+  "kind": "card",
+  "card": {
+   "type": "stat",
+   "title": "Energy Release",
+   "value": "Mere seconds",
+   "label": "Tremendous energy release"
+  }
+ },
+ {
+  "scene": "s04",
+  "start": 221.973,
+  "text": "At peak brightness, such an explosion can shine 5 billion times brighter than our Sun.",
+  "sentences": [
+   "s04.09"
+  ],
+  "id": "v048",
+  "end": 227.921,
+  "seconds": 5.95,
+  "scene_start": false,
+  "kind": "card",
+  "card": {
+   "type": "title",
+   "title": "Peak Brightness Comparison",
+   "subtitle": ""
+  }
+ },
+ {
+  "scene": "s04",
+  "start": 227.921,
+  "text": "Because white dwarfs are dim and common, they can detonate unpredictably in unstudied systems.",
+  "sentences": [
+   "s04.10"
+  ],
+  "id": "v049",
+  "end": 234.43,
+  "seconds": 6.51,
+  "scene_start": false,
+  "kind": "photo",
+  "photo_subject": "dim white dwarf star",
+  "photo_queries": [
+   "white dwarf",
+   "dim star"
+  ],
+  "card": {
+   "type": "title",
+   "title": "White Dwarfs",
+   "subtitle": "Dim, common, and unpredictable"
+  },
+  "photo": {
+   "path": "out/run/photos/v049.jpg",
+   "file": "v049.jpg",
+   "kind": "photo",
+   "source": "nasa_image_library",
+   "title": "Polluted White Dwarf (Artist's Concept)",
+   "source_page": "https://images.nasa.gov/details/PIA22084",
+   "download_url": "https://images-assets.nasa.gov/image/PIA22084/PIA22084~orig.jpg",
+   "licence": "Public domain (NASA media, not copyrighted in the US)",
+   "licence_url": "https://www.nasa.gov/nasa-brand-center/images-and-media/",
+   "author": "NASA/JPL-Caltech",
+   "attribution": "Polluted White Dwarf (Artist's Concept) — NASA/JPL-Caltech, NASA, public domain. https://images.nasa.gov/details/PIA22084",
+   "downloaded": "2026-10-27"
+  }
+ },
+ {
+  "scene": "s04",
+  "start": 234.43,
+  "text": "Does that distance boundary mark where atmospheric protection collapses?",
+  "sentences": [
+   "s04.12"
+  ],
+  "id": "v050",
+  "end": 240.097,
+  "seconds": 5.67,
+  "scene_start": false,
+  "kind": "drawing",
+  "drawing_subject": "planet shield collapsing",
+  "card": {
+   "type": "title",
+   "title": "Distance Boundary",
+   "subtitle": "Atmospheric protection collapses"
+  },
+  "photo": {
+   "path": "out/run/drawings/v050.png",
+   "file": "v050.png",
+   "kind": "drawing",
+   "source": "ai_drawing",
+   "title": "planet shield collapsing",
+   "source_page": "https://huggingface.co/segmind/Segmind-Vega",
+   "licence": "AI-generated drawing (no third-party rights)",
+   "model_licence": "Apache-2.0",
+   "licence_url": "https://www.apache.org/licenses/LICENSE-2.0",
+   "author": "AI-generated with segmind/Segmind-Vega + segmind/Segmind-VegaRT",
+   "attribution": "Illustration generated with Segmind-Vega (Apache-2.0): planet shield collapsing",
+   "downloaded": "2026-10-27",
+   "prompt": "planet shield collapsing, pure black background, detailed ink illustration, white and grey pen linework, one bright red accent, high contrast, simple clear composition, no text, no letters, no numbers"
+  },
+  "photo_subject": "planet shield collapsing"
+ },
+ {
+  "scene": "s05",
+  "start": 240.097,
+  "text": "What happens to the world below when half of the ozone layer is wiped out?",
+  "sentences": [
+   "s05.01"
+  ],
+  "id": "v051",
+  "end": 244.93,
+  "seconds": 4.83,
+  "scene_start": true,
+  "kind": "card",
+  "card": {
+   "type": "title",
+   "title": "A Poisoned Sky",
+   "subtitle": "What happens when ozone is wiped out?"
+  }
+ },
+ {
+  "scene": "s05",
+  "start": 244.93,
+  "text": "Ozone is the only atmospheric gas capable of",
+  "sentences": [
+   "s05.02"
+  ],
+  "id": "v052",
+  "end": 248.99826666666667,
+  "seconds": 4.07,
+  "scene_start": false,
+  "kind": "photo",
+  "photo_subject": "Earth stratosphere",
+  "photo_queries": [
+   "stratosphere",
+   "ozone layer"
+  ],
+  "card": {
+   "type": "title",
+   "title": "Atmospheric Gas",
+   "subtitle": "Ozone capabilities"
+  },
+  "photo": {
+   "path": "out/run/photos/v052.jpg",
+   "file": "v052.jpg",
+   "kind": "photo",
+   "source": "wikimedia_commons",
+   "title": "Top of Atmosphere",
+   "source_page": "https://commons.wikimedia.org/wiki/File:Top_of_Atmosphere.jpg",
+   "download_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/be/Top_of_Atmosphere.jpg/1920px-Top_of_Atmosphere.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "licence": "Public domain",
+   "licence_url": "",
+   "author": "NASA Earth Observatory",
+   "attribution": "\"Top of Atmosphere\" by NASA Earth Observatory, Public domain, via Wikimedia Commons. https://commons.wikimedia.org/wiki/File:Top_of_Atmosphere.jpg",
+   "downloaded": "2026-10-27"
+  }
+ },
+ {
+  "scene": "s05",
+  "start": 248.99826666666667,
+  "text": "absorbing dangerous ultraviolet B radiation from sunlight.",
+  "sentences": [
+   "s05.02"
+  ],
+  "id": "v053",
+  "end": 253.014,
+  "seconds": 4.02,
+  "scene_start": false,
+  "kind": "photo",
+  "photo_subject": "sunlight ultraviolet rays",
+  "photo_queries": [
+   "ultraviolet light",
+   "sunlight rays"
+  ],
+  "card": {
+   "type": "title",
+   "title": "Ultraviolet B Radiation",
+   "subtitle": "Absorbed by ozone"
+  },
+  "photo": {
+   "path": "out/run/photos/v053.jpg",
+   "file": "v053.jpg",
+   "kind": "photo",
+   "source": "nasa_image_library",
+   "title": "First Night Image of MAHLI Calibration Target Under Ultraviolet Lights",
+   "source_page": "https://images.nasa.gov/details/PIA16714",
+   "download_url": "https://images-assets.nasa.gov/image/PIA16714/PIA16714~orig.jpg",
+   "licence": "Public domain (NASA media, not copyrighted in the US)",
+   "licence_url": "https://www.nasa.gov/nasa-brand-center/images-and-media/",
+   "author": "NASA/JPL-Caltech/MSSS",
+   "attribution": "First Night Image of MAHLI Calibration Target Under Ultraviolet Lights — NASA/JPL-Caltech/MSSS, NASA, public domain. https://images.nasa.gov/details/PIA16714",
+   "downloaded": "2026-10-27"
+  }
+ },
+ {
+  "scene": "s05",
+  "start": 253.014,
+  "text": "When stratospheric ozone levels drop, intense ultraviolet",
+  "sentences": [
+   "s05.03"
+  ],
+  "id": "v054",
+  "end": 256.398,
+  "seconds": 3.38,
+  "scene_start": false,
+  "kind": "drawing",
+  "drawing_subject": "ultraviolet light penetrating atmosphere",
+  "card": {
+   "type": "title",
+   "title": "Ozone Drop",
+   "subtitle": "Stratospheric levels decline"
+  },
+  "photo": {
+   "path": "out/run/drawings/v054.png",
+   "file": "v054.png",
+   "kind": "drawing",
+   "source": "ai_drawing",
+   "title": "ultraviolet light penetrating atmosphere",
+   "source_page": "https://huggingface.co/segmind/Segmind-Vega",
+   "licence": "AI-generated drawing (no third-party rights)",
+   "model_licence": "Apache-2.0",
+   "licence_url": "https://www.apache.org/licenses/LICENSE-2.0",
+   "author": "AI-generated with segmind/Segmind-Vega + segmind/Segmind-VegaRT",
+   "attribution": "Illustration generated with Segmind-Vega (Apache-2.0): ultraviolet light penetrating atmosphere",
+   "downloaded": "2026-10-27",
+   "prompt": "ultraviolet light penetrating atmosphere, pure black background, detailed ink illustration, white and grey pen linework, one bright red accent, high contrast, simple clear composition, no text, no letters, no numbers"
+  },
+  "photo_subject": "ultraviolet light penetrating atmosphere"
+ },
+ {
+  "scene": "s05",
+  "start": 256.398,
+  "text": "B light penetrates directly to the surface.",
+  "sentences": [
+   "s05.03"
+  ],
+  "id": "v055",
+  "end": 260.24,
+  "seconds": 3.84,
+  "scene_start": false,
+  "kind": "photo",
+  "photo_subject": "sunlight surface of earth",
+  "photo_queries": [
+   "surface sunlight",
+   "UV light Earth"
+  ],
+  "card": {
+   "type": "title",
+   "title": "Surface Penetration",
+   "subtitle": "Intense ultraviolet B light"
+  },
+  "photo": {
+   "path": "out/run/photos/v055.jpg",
+   "file": "v055.jpg",
+   "kind": "photo",
+   "source": "nasa_image_library",
+   "title": "Reflecting on Icy Rhea",
+   "source_page": "https://images.nasa.gov/details/PIA11615",
+   "download_url": "https://images-assets.nasa.gov/image/PIA11615/PIA11615~orig.jpg",
+   "licence": "Public domain (NASA media, not copyrighted in the US)",
+   "licence_url": "https://www.nasa.gov/nasa-brand-center/images-and-media/",
+   "author": "NASA/JPL/Space Science Institute",
+   "attribution": "Reflecting on Icy Rhea — NASA/JPL/Space Science Institute, NASA, public domain. https://images.nasa.gov/details/PIA11615",
+   "downloaded": "2026-10-27"
+  }
+ },
+ {
+  "scene": "s05",
+  "start": 260.24,
+  "text": "This extreme radiation damages cellular DNA, causing pyrimidine",
+  "sentences": [
+   "s05.04"
+  ],
+  "id": "v056",
+  "end": 264.90453333333335,
+  "seconds": 4.66,
+  "scene_start": false,
+  "kind": "drawing",
+  "drawing_subject": "cellular DNA damaged by radiation",
+  "card": {
+   "type": "title",
+   "title": "Cellular DNA Damage",
+   "subtitle": "Extreme radiation impact"
+  },
+  "photo": {
+   "path": "out/run/drawings/v056.png",
+   "file": "v056.png",
+   "kind": "drawing",
+   "source": "ai_drawing",
+   "title": "cellular DNA damaged by radiation",
+   "source_page": "https://huggingface.co/segmind/Segmind-Vega",
+   "licence": "AI-generated drawing (no third-party rights)",
+   "model_licence": "Apache-2.0",
+   "licence_url": "https://www.apache.org/licenses/LICENSE-2.0",
+   "author": "AI-generated with segmind/Segmind-Vega + segmind/Segmind-VegaRT",
+   "attribution": "Illustration generated with Segmind-Vega (Apache-2.0): cellular DNA damaged by radiation",
+   "downloaded": "2026-10-27",
+   "prompt": "cellular DNA damaged by radiation, pure black background, detailed ink illustration, white and grey pen linework, one bright red accent, high contrast, simple clear composition, no text, no letters, no numbers"
+  },
+  "photo_subject": "cellular DNA damaged by radiation"
+ },
+ {
+  "scene": "s05",
+  "start": 264.90453333333335,
+  "text": "bases to form transcription errors during replication.",
+  "sentences": [
+   "s05.04"
+  ],
+  "id": "v057",
+  "end": 269.435,
+  "seconds": 4.53,
+  "scene_start": false,
+  "kind": "drawing",
+  "drawing_subject": "DNA replication transcription errors",
+  "card": {
+   "type": "title",
+   "title": "Replication Errors",
+   "subtitle": "Pyrimidine bases form errors"
+  },
+  "photo": {
+   "path": "out/run/drawings/v057.png",
+   "file": "v057.png",
+   "kind": "drawing",
+   "source": "ai_drawing",
+   "title": "DNA replication transcription errors",
+   "source_page": "https://huggingface.co/segmind/Segmind-Vega",
+   "licence": "AI-generated drawing (no third-party rights)",
+   "model_licence": "Apache-2.0",
+   "licence_url": "https://www.apache.org/licenses/LICENSE-2.0",
+   "author": "AI-generated with segmind/Segmind-Vega + segmind/Segmind-VegaRT",
+   "attribution": "Illustration generated with Segmind-Vega (Apache-2.0): DNA replication transcription errors",
+   "downloaded": "2026-10-27",
+   "prompt": "DNA replication transcription errors, pure black background, detailed ink illustration, white and grey pen linework, one bright red accent, high contrast, simple clear composition, no text, no letters, no numbers"
+  },
+  "photo_subject": "DNA replication transcription errors"
+ },
+ {
+  "scene": "s05",
+  "start": 269.435,
+  "text": "In humans and animals, excess ultraviolet",
+  "sentences": [
+   "s05.05"
+  ],
+  "id": "v058",
+  "end": 272.555,
+  "seconds": 3.12,
+  "scene_start": false,
+  "kind": "photo",
+  "photo_subject": "wildlife in nature",
+  "photo_queries": [
+   "animals in nature",
+   "wildlife"
+  ],
+  "card": {
+   "type": "title",
+   "title": "Humans and Animals",
+   "subtitle": "Excess ultraviolet exposure"
+  },
+  "photo": {
+   "path": "out/run/photos/v058.jpg",
+   "file": "v058.jpg",
+   "kind": "photo",
+   "source": "wikimedia_commons",
+   "title": "Rana temporaria in nature park Trhoň in 2014 (2)",
+   "source_page": "https://commons.wikimedia.org/wiki/File:Rana_temporaria_in_nature_park_Trho%C5%88_in_2014_(2).jpg",
+   "download_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/c1/Rana_temporaria_in_nature_park_Trho%C5%88_in_2014_%282%29.jpg/1920px-Rana_temporaria_in_nature_park_Trho%C5%88_in_2014_%282%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "licence": "CC BY 3.0",
+   "licence_url": "https://creativecommons.org/licenses/by/3.0",
+   "author": "Chmee2",
+   "attribution": "\"Rana temporaria in nature park Trhoň in 2014 (2)\" by Chmee2, CC BY 3.0, via Wikimedia Commons. https://commons.wikimedia.org/wiki/File:Rana_temporaria_in_nature_park_Trho%C5%88_in_2014_(2).jpg",
+   "downloaded": "2026-10-27"
+  }
+ },
+ {
+  "scene": "s05",
+  "start": 272.555,
+  "text": "exposure causes severe skin cancers and cataracts.",
+  "sentences": [
+   "s05.05"
+  ],
+  "id": "v059",
+  "end": 276.656,
+  "seconds": 4.1,
+  "scene_start": false,
+  "kind": "card",
+  "card": {
+   "type": "bullets",
+   "title": "Exposure Effects",
+   "items": [
+    "Severe skin cancers",
+    "Cataracts in animals",
+    "Ultraviolet damage"
+   ]
+  }
+ },
+ {
+  "scene": "s05",
+  "start": 276.656,
+  "text": "Marine ecosystems suffer harm because ultraviolet",
+  "sentences": [
+   "s05.06"
+  ],
+  "id": "v060",
+  "end": 279.92,
+  "seconds": 3.26,
+  "scene_start": false,
+  "kind": "photo",
+  "photo_subject": "coral reef marine ecosystem",
+  "photo_queries": [
+   "marine ecosystem",
+   "coral reef"
+  ],
+  "card": {
+   "type": "title",
+   "title": "Marine Ecosystems",
+   "subtitle": "Suffer harm from rays"
+  },
+  "photo": {
+   "path": "out/run/photos/v060.jpg",
+   "file": "v060.jpg",
+   "kind": "photo",
+   "source": "nasa_image_library",
+   "title": "Lagoons of New Caledonia",
+   "source_page": "https://images.nasa.gov/details/PIA12502",
+   "download_url": "https://images-assets.nasa.gov/image/PIA12502/PIA12502~orig.jpg",
+   "licence": "Public domain (NASA media, not copyrighted in the US)",
+   "licence_url": "https://www.nasa.gov/nasa-brand-center/images-and-media/",
+   "author": "NASA/GSFC/METI/ERSDAC/JAROS, and U.S./Japan ASTER Science Team",
+   "attribution": "Lagoons of New Caledonia — NASA/GSFC/METI/ERSDAC/JAROS, and U.S./Japan ASTER Science Team, NASA, public domain. https://images.nasa.gov/details/PIA12502",
+   "downloaded": "2026-10-27"
+  }
+ },
+ {
+  "scene": "s05",
+  "start": 279.92,
+  "text": "rays affect surface and reef communities.",
+  "sentences": [
+   "s05.06"
+  ],
+  "id": "v061",
+  "end": 283.648,
+  "seconds": 3.73,
+  "scene_start": false,
+  "kind": "photo",
+  "photo_subject": "ocean surface waves",
+  "photo_queries": [
+   "ocean surface",
+   "reef community"
+  ],
+  "card": {
+   "type": "title",
+   "title": "Surface Communities",
+   "subtitle": "Ultraviolet ray impact"
+  },
+  "photo": {
+   "path": "out/run/photos/v061.jpg",
+   "file": "v061.jpg",
+   "kind": "photo",
+   "source": "nasa_image_library",
+   "title": "Ocean Surface Topography Mission/Jason 2 Artist Concept",
+   "source_page": "https://images.nasa.gov/details/PIA18158",
+   "download_url": "https://images-assets.nasa.gov/image/PIA18158/PIA18158~orig.jpg",
+   "licence": "Public domain (NASA media, not copyrighted in the US)",
+   "licence_url": "https://www.nasa.gov/nasa-brand-center/images-and-media/",
+   "author": "NASA/JPL-Caltech",
+   "attribution": "Ocean Surface Topography Mission/Jason 2 Artist Concept — NASA/JPL-Caltech, NASA, public domain. https://images.nasa.gov/details/PIA18158",
+   "downloaded": "2026-10-27"
+  }
+ },
+ {
+  "scene": "s05",
+  "start": 283.648,
+  "text": "Phytoplankton and reef communities are particularly vulnerable to this elevated radiation.",
+  "sentences": [
+   "s05.07"
+  ],
+  "id": "v062",
+  "end": 289.887,
+  "seconds": 6.24,
+  "scene_start": false,
+  "kind": "photo",
+  "photo_subject": "phytoplankton in water",
+  "photo_queries": [
+   "phytoplankton",
+   "marine life"
+  ],
+  "card": {
+   "type": "title",
+   "title": "Phytoplankton",
+   "subtitle": "Vulnerable to elevated radiation"
+  },
+  "photo": {
+   "path": "out/run/photos/v062.jpg",
+   "file": "v062.jpg",
+   "kind": "photo",
+   "source": "nasa_image_library",
+   "title": "Phytoplankton bloom off Newfoundland",
+   "source_page": "https://images.nasa.gov/details/GSFC_20171208_Archive_e001997",
+   "download_url": "https://images-assets.nasa.gov/image/GSFC_20171208_Archive_e001997/GSFC_20171208_Archive_e001997~orig.jpg",
+   "licence": "Public domain (NASA media, not copyrighted in the US)",
+   "licence_url": "https://www.nasa.gov/nasa-brand-center/images-and-media/",
+   "author": "NASA (GSFC)",
+   "attribution": "Phytoplankton bloom off Newfoundland — NASA (GSFC), NASA, public domain. https://images.nasa.gov/details/GSFC_20171208_Archive_e001997",
+   "downloaded": "2026-10-27"
+  }
+ },
+ {
+  "scene": "s05",
+  "start": 289.887,
+  "text": "Their collapse would seriously damage the foundation of the ocean food web.",
+  "sentences": [
+   "s05.08"
+  ],
+  "id": "v063",
+  "end": 295.034,
+  "seconds": 5.15,
+  "scene_start": false,
+  "kind": "drawing",
+  "drawing_subject": "ocean food web collapse",
+  "card": {
+   "type": "title",
+   "title": "Food Web Foundation",
+   "subtitle": "Collapse damages ocean life"
+  },
+  "photo": {
+   "path": "out/run/drawings/v063.png",
+   "file": "v063.png",
+   "kind": "drawing",
+   "source": "ai_drawing",
+   "title": "ocean food web collapse",
+   "source_page": "https://huggingface.co/segmind/Segmind-Vega",
+   "licence": "AI-generated drawing (no third-party rights)",
+   "model_licence": "Apache-2.0",
+   "licence_url": "https://www.apache.org/licenses/LICENSE-2.0",
+   "author": "AI-generated with segmind/Segmind-Vega + segmind/Segmind-VegaRT",
+   "attribution": "Illustration generated with Segmind-Vega (Apache-2.0): ocean food web collapse",
+   "downloaded": "2026-10-27",
+   "prompt": "ocean food web collapse, pure black background, detailed ink illustration, white and grey pen linework, one bright red accent, high contrast, simple clear composition, no text, no letters, no numbers"
+  },
+  "photo_subject": "ocean food web collapse"
+ },
+ {
+  "scene": "s05",
+  "start": 295.034,
+  "text": "At the same time, elevated cosmic rays can",
+  "sentences": [
+   "s05.09"
+  ],
+  "id": "v064",
+  "end": 298.402,
+  "seconds": 3.37,
+  "scene_start": false,
+  "kind": "photo",
+  "photo_subject": "cosmic ray night sky",
+  "photo_queries": [
+   "cosmic rays",
+   "night sky aurora"
+  ],
+  "card": {
+   "type": "title",
+   "title": "Elevated Cosmic Rays",
+   "subtitle": "Simultaneous atmospheric effects"
+  },
+  "photo": {
+   "path": "out/run/photos/v064.jpg",
+   "file": "v064.jpg",
+   "kind": "photo",
+   "source": "nasa_image_library",
+   "title": "iss067e269019",
+   "source_page": "https://images.nasa.gov/details/iss067e269019",
+   "download_url": "https://images-assets.nasa.gov/image/iss067e269019/iss067e269019~large.jpg",
+   "licence": "Public domain (NASA media, not copyrighted in the US)",
+   "licence_url": "https://www.nasa.gov/nasa-brand-center/images-and-media/",
+   "author": "NASA (JSC)",
+   "attribution": "iss067e269019 — NASA (JSC), NASA, public domain. https://images.nasa.gov/details/iss067e269019",
+   "downloaded": "2026-10-27"
+  }
+ },
+ {
+  "scene": "s05",
+  "start": 298.402,
+  "text": "alter climate patterns and cool the global temperature.",
+  "sentences": [
+   "s05.09"
+  ],
+  "id": "v065",
+  "end": 302.245,
+  "seconds": 3.84,
+  "scene_start": false,
+  "kind": "drawing",
+  "drawing_subject": "global climate cooling pattern",
+  "card": {
+   "type": "title",
+   "title": "Climate Patterns",
+   "subtitle": "Cool global temperature"
+  },
+  "photo": {
+   "path": "out/run/drawings/v065.png",
+   "file": "v065.png",
+   "kind": "drawing",
+   "source": "ai_drawing",
+   "title": "global climate cooling pattern",
+   "source_page": "https://huggingface.co/segmind/Segmind-Vega",
+   "licence": "AI-generated drawing (no third-party rights)",
+   "model_licence": "Apache-2.0",
+   "licence_url": "https://www.apache.org/licenses/LICENSE-2.0",
+   "author": "AI-generated with segmind/Segmind-Vega + segmind/Segmind-VegaRT",
+   "attribution": "Illustration generated with Segmind-Vega (Apache-2.0): global climate cooling pattern",
+   "downloaded": "2026-10-27",
+   "prompt": "global climate cooling pattern, pure black background, detailed ink illustration, white and grey pen linework, one bright red accent, high contrast, simple clear composition, no text, no letters, no numbers"
+  },
+  "photo_subject": "global climate cooling pattern"
+ },
+ {
+  "scene": "s05",
+  "start": 302.245,
+  "text": "Gamma ray bursts from dangerously close stars may have caused the ancient end-Ordovician extinction.",
+  "sentences": [
+   "s05.10"
+  ],
+  "id": "v066",
+  "end": 308.875,
+  "seconds": 6.63,
+  "scene_start": false,
+  "kind": "photo",
+  "photo_subject": "ancient fossil specimen",
+  "photo_queries": [
+   "ancient fossil",
+   "extinction event"
+  ],
+  "card": {
+   "type": "title",
+   "title": "End-Ordovician Extinction",
+   "subtitle": "Ancient gamma ray bursts"
+  },
+  "photo": {
+   "path": "out/run/photos/v066.jpg",
+   "file": "v066.jpg",
+   "kind": "photo",
+   "source": "nasa_image_library",
+   "title": "Tumbiana Stromatolite",
+   "source_page": "https://images.nasa.gov/details/PIA24240",
+   "download_url": "https://images-assets.nasa.gov/image/PIA24240/PIA24240~large.jpg",
+   "licence": "Public domain (NASA media, not copyrighted in the US)",
+   "licence_url": "https://www.nasa.gov/nasa-brand-center/images-and-media/",
+   "author": "NASA/JPL-Caltech",
+   "attribution": "Tumbiana Stromatolite — NASA/JPL-Caltech, NASA, public domain. https://images.nasa.gov/details/PIA24240",
+   "downloaded": "2026-10-27"
+  }
+ },
+ {
+  "scene": "s05",
+  "start": 308.875,
+  "text": "That prehistoric cataclysm resulted in the death of",
+  "sentences": [
+   "s05.11"
+  ],
+  "id": "v067",
+  "end": 312.2765,
+  "seconds": 3.4,
+  "scene_start": false,
+  "kind": "photo",
+  "photo_subject": "prehistoric fossilized shell",
+  "photo_queries": [
+   "prehistoric fossil",
+   "ancient ocean life"
+  ],
+  "card": {
+   "type": "title",
+   "title": "Prehistoric Cataclysm",
+   "subtitle": "Death of oceanic life"
+  },
+  "photo": {
+   "path": "out/run/photos/v067.jpg",
+   "file": "v067.jpg",
+   "kind": "photo",
+   "source": "wikimedia_commons",
+   "title": "Prehistoric Animal Fossil Teeth Specimen",
+   "source_page": "https://commons.wikimedia.org/wiki/File:Prehistoric_Animal_Fossil_Teeth_Specimen.jpg",
+   "download_url": "https://upload.wikimedia.org/wikipedia/commons/3/31/Prehistoric_Animal_Fossil_Teeth_Specimen.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+   "licence": "CC0",
+   "licence_url": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
+   "author": "Mohit07agre",
+   "attribution": "\"Prehistoric Animal Fossil Teeth Specimen\" by Mohit07agre, CC0, via Wikimedia Commons. https://commons.wikimedia.org/wiki/File:Prehistoric_Animal_Fossil_Teeth_Specimen.jpg",
+   "downloaded": "2026-10-27"
+  }
+ },
+ {
+  "scene": "s05",
+  "start": 312.2765,
+  "text": "nearly 60 per cent of all oceanic life.",
+  "sentences": [
+   "s05.11"
+  ],
+  "id": "v068",
+  "end": 316.126,
+  "seconds": 3.85,
+  "scene_start": false,
+  "kind": "card",
+  "card": {
+   "type": "stat",
+   "title": "Oceanic Life Loss",
+   "value": "60 per cent",
+   "label": "Of all oceanic life died"
+  }
+ },
+ {
+  "scene": "s05",
+  "start": 316.126,
+  "text": "Rapid successive supernovae have also been proposed as triggers for the Late Devonian extinction.",
+  "sentences": [
+   "s05.12"
+  ],
+  "id": "v069",
+  "end": 323.881,
+  "seconds": 7.75,
+  "scene_start": false,
+  "kind": "photo",
+  "photo_subject": "Devonian rock strata",
+  "photo_queries": [
+   "Devonian rock",
+   "geological strata"
+  ],
+  "card": {
+   "type": "title",
+   "title": "Late Devonian Extinction",
+   "subtitle": "Rapid successive supernovae"
+  },
+  "photo": {
+   "path": "out/run/photos/v069.jpg",
+   "file": "v069.jpg",
+   "kind": "photo",
+   "source": "wikimedia_commons",
+   "title": "Rock gypsum (Lucas Formation, Middle Devonian; Paulding County, Ohio, USA) 2",
+   "source_page": "https://commons.wikimedia.org/wiki/File:Rock_gypsum_(Lucas_Formation,_Middle_Devonian;_Paulding_County,_Ohio,_USA)_2.jpg",
+   "download_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/99/Rock_gypsum_%28Lucas_Formation%2C_Middle_Devonian%3B_Paulding_County%2C_Ohio%2C_USA%29_2.jpg/1920px-Rock_gypsum_%28Lucas_Formation%2C_Middle_Devonian%3B_Paulding_County%2C_Ohio%2C_USA%29_2.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "licence": "CC BY 2.0",
+   "licence_url": "https://creativecommons.org/licenses/by/2.0",
+   "author": "James St. John",
+   "attribution": "\"Rock gypsum (Lucas Formation, Middle Devonian; Paulding County, Ohio, USA) 2\" by James St. John, CC BY 2.0, via Wikimedia Commons. https://commons.wikimedia.org/wiki/File:Rock_gypsum_(Lucas_Formation,_Middle_Devonian;_Paulding_County,_Ohio,_USA)_2.jpg",
+   "downloaded": "2026-10-27"
+  }
+ },
+ {
+  "scene": "s06",
+  "start": 323.881,
+  "text": "Did nearby exploding stars actually bombard our planet during geological history?",
+  "sentences": [
+   "s06.01"
+  ],
+  "id": "v070",
+  "end": 329.635,
+  "seconds": 5.75,
+  "scene_start": true,
+  "kind": "card",
+  "card": {
+   "type": "title",
+   "title": "Ocean Floor Clues",
+   "subtitle": "And the final verdict"
+  }
+ },
+ {
+  "scene": "s06",
+  "start": 329.635,
+  "text": "Proof of past supernovae was discovered by examining deep seabed sediments.",
+  "sentences": [
+   "s06.02"
+  ],
+  "id": "v071",
+  "end": 334.984,
+  "seconds": 5.35,
+  "scene_start": false,
+  "kind": "photo",
+  "photo_subject": "seabed sediment core sample",
+  "photo_queries": [
+   "seabed sediment",
+   "ocean core sample"
+  ],
+  "card": {
+   "type": "title",
+   "title": "Seabed Sediments",
+   "subtitle": "Proof of past supernovae"
+  },
+  "photo": {
+   "path": "out/run/photos/v071.jpg",
+   "file": "v071.jpg",
+   "kind": "photo",
+   "source": "wikimedia_commons",
+   "title": "Ocean core sediments on the Polarstern",
+   "source_page": "https://commons.wikimedia.org/wiki/File:Ocean_core_sediments_on_the_Polarstern.jpg",
+   "download_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/b9/Ocean_core_sediments_on_the_Polarstern.jpg/1920px-Ocean_core_sediments_on_the_Polarstern.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "licence": "CC BY 3.0",
+   "licence_url": "https://creativecommons.org/licenses/by/3.0",
+   "author": "Hannes Grobe, AWI",
+   "attribution": "\"Ocean core sediments on the Polarstern\" by Hannes Grobe, AWI, CC BY 3.0, via Wikimedia Commons. https://commons.wikimedia.org/wiki/File:Ocean_core_sediments_on_the_Polarstern.jpg",
+   "downloaded": "2026-10-27"
+  }
+ },
+ {
+  "scene": "s06",
+  "start": 334.984,
+  "text": "Dying stars forge heavy elements and disperse them into space during their catastrophic final moments.",
+  "sentences": [
+   "s06.03"
+  ],
+  "id": "v072",
+  "end": 341.795,
+  "seconds": 6.81,
+  "scene_start": false,
+  "kind": "photo",
+  "photo_subject": "heavy elements nebula",
+  "photo_queries": [
+   "heavy elements",
+   "supernova debris"
+  ],
+  "card": {
+   "type": "title",
+   "title": "Heavy Elements",
+   "subtitle": "Dispersed into space"
+  },
+  "photo": {
+   "path": "out/run/photos/v072.jpg",
+   "file": "v072.jpg",
+   "kind": "photo",
+   "source": "nasa_image_library",
+   "title": "Evolution of a Supernova",
+   "source_page": "https://images.nasa.gov/details/PIA17844",
+   "download_url": "https://images-assets.nasa.gov/image/PIA17844/PIA17844~large.jpg",
+   "licence": "Public domain (NASA media, not copyrighted in the US)",
+   "licence_url": "https://www.nasa.gov/nasa-brand-center/images-and-media/",
+   "author": "NASA/CXC/SAO/JPL-Caltech",
+   "attribution": "Evolution of a Supernova — NASA/CXC/SAO/JPL-Caltech, NASA, public domain. https://images.nasa.gov/details/PIA17844",
+   "downloaded": "2026-10-27"
+  }
+ },
+ {
+  "scene": "s06",
+  "start": 341.795,
+  "text": "One isotope produced during these events is iron-60,",
+  "sentences": [
+   "s06.04"
+  ],
+  "id": "v073",
+  "end": 345.68600000000004,
+  "seconds": 3.89,
+  "scene_start": false,
+  "kind": "drawing",
+  "drawing_subject": "iron-60 isotope atomic structure",
+  "card": {
+   "type": "stat",
+   "title": "Iron-60 Isotope",
+   "value": "Iron-60",
+   "label": "Produced during events"
+  },
+  "photo": {
+   "path": "out/run/drawings/v073.png",
+   "file": "v073.png",
+   "kind": "drawing",
+   "source": "ai_drawing",
+   "title": "iron-60 isotope atomic structure",
+   "source_page": "https://huggingface.co/segmind/Segmind-Vega",
+   "licence": "AI-generated drawing (no third-party rights)",
+   "model_licence": "Apache-2.0",
+   "licence_url": "https://www.apache.org/licenses/LICENSE-2.0",
+   "author": "AI-generated with segmind/Segmind-Vega + segmind/Segmind-VegaRT",
+   "attribution": "Illustration generated with Segmind-Vega (Apache-2.0): iron-60 isotope atomic structure",
+   "downloaded": "2026-10-27",
+   "prompt": "iron-60 isotope atomic structure, pure black background, detailed ink illustration, white and grey pen linework, one bright red accent, high contrast, simple clear composition, no text, no letters, no numbers"
+  },
+  "photo_subject": "iron-60 isotope atomic structure"
+ },
+ {
+  "scene": "s06",
+  "start": 345.68600000000004,
+  "text": "which has a half-life spanning 2.62 million years.",
+  "sentences": [
+   "s06.04"
+  ],
+  "id": "v074",
+  "end": 350.036,
+  "seconds": 4.35,
+  "scene_start": false,
+  "kind": "card",
+  "card": {
+   "type": "stat",
+   "title": "Half-Life",
+   "value": "2.62 million",
+   "label": "Years half-life span"
+  }
+ },
+ {
+  "scene": "s06",
+  "start": 350.036,
+  "text": "They identified these stellar atoms within the top two centimetres of the oceanic crust.",
+  "sentences": [
+   "s06.06"
+  ],
+  "id": "v075",
+  "end": 355.856,
+  "seconds": 5.82,
+  "scene_start": false,
+  "kind": "photo",
+  "photo_subject": "oceanic crust layer",
+  "photo_queries": [
+   "oceanic crust",
+   "seabed layers"
+  ],
+  "card": {
+   "type": "title",
+   "title": "Oceanic Crust",
+   "subtitle": "Stellar atoms found in top layer"
+  },
+  "photo": {
+   "path": "out/run/photos/v075.jpg",
+   "file": "v075.jpg",
+   "kind": "photo",
+   "source": "wikimedia_commons",
+   "title": "Oceanic Crust Sphere Map1",
+   "source_page": "https://commons.wikimedia.org/wiki/File:Oceanic_Crust_Sphere_Map1.jpg",
+   "download_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/71/Oceanic_Crust_Sphere_Map1.jpg/1920px-Oceanic_Crust_Sphere_Map1.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "licence": "Public domain",
+   "licence_url": "",
+   "author": "Earth_seafloor_crust_age_poster.gif: National Oceanic and Atmospheric Administration derivative work: Rapture2018",
+   "attribution": "\"Oceanic Crust Sphere Map1\" by Earth_seafloor_crust_age_poster.gif: National Oceanic and Atmospheric Administration derivative work: Rapture2018, Public domain, via Wikimedia Commons. https://commons.wikimedia.org/wiki/File:Oceanic_Crust_Sphere_Map1.jpg",
+   "downloaded": "2026-10-27"
+  }
+ },
+ {
+  "scene": "s06",
+  "start": 355.856,
+  "text": "This detection indicates an explosion likely occurred within the last 5 million years.",
+  "sentences": [
+   "s06.07"
+  ],
+  "id": "v076",
+  "end": 361.965,
+  "seconds": 6.11,
+  "scene_start": false,
+  "kind": "card",
+  "card": {
+   "type": "stat",
+   "title": "Explosion Recency",
+   "value": "5 million",
+   "label": "Years within which explosion occurred"
+  }
+ },
+ {
+  "scene": "s06",
+  "start": 361.965,
+  "text": "Similar interstellar traces have also appeared in Antarctic surface snow and in lunar samples.",
+  "sentences": [
+   "s06.09"
+  ],
+  "id": "v077",
+  "end": 368.708,
+  "seconds": 6.74,
+  "scene_start": false,
+  "kind": "photo",
+  "photo_subject": "Antarctic snow sample",
+  "photo_queries": [
+   "Antarctic snow",
+   "lunar sample rock"
+  ],
+  "card": {
+   "type": "title",
+   "title": "Interstellar Traces",
+   "subtitle": "Found in snow and lunar samples"
+  },
+  "photo": {
+   "path": "out/run/photos/v077.jpg",
+   "file": "v077.jpg",
+   "kind": "photo",
+   "source": "nasa_image_library",
+   "title": "Thurston Island",
+   "source_page": "https://images.nasa.gov/details/GSFC_20171208_Archive_e000910",
+   "download_url": "https://images-assets.nasa.gov/image/GSFC_20171208_Archive_e000910/GSFC_20171208_Archive_e000910~large.jpg",
+   "licence": "Public domain (NASA media, not copyrighted in the US)",
+   "licence_url": "https://www.nasa.gov/nasa-brand-center/images-and-media/",
+   "author": "NASA (GSFC)",
+   "attribution": "Thurston Island — NASA (GSFC), NASA, public domain. https://images.nasa.gov/details/GSFC_20171208_Archive_e000910",
+   "downloaded": "2026-10-27"
+  }
+ },
+ {
+  "scene": "s06",
+  "start": 368.708,
+  "text": "Iron-60 atoms were even found preserved",
+  "sentences": [
+   "s06.10"
+  ],
+  "id": "v078",
+  "end": 371.97107692307696,
+  "seconds": 3.26,
+  "scene_start": false,
+  "kind": "photo",
+  "photo_subject": "fossilized bacteria under microscope",
+  "photo_queries": [
+   "fossilized bacteria",
+   "microscopic bacteria"
+  ],
+  "card": {
+   "type": "title",
+   "title": "Fossilised Bacteria",
+   "subtitle": "Iron-60 atoms preserved inside"
+  },
+  "photo": {
+   "path": "out/run/photos/v078.jpg",
+   "file": "v078.jpg",
+   "kind": "photo",
+   "source": "nasa_image_library",
+   "title": "Mars Life? - Microscopic Tubular Structures",
+   "source_page": "https://images.nasa.gov/details/PIA00285",
+   "download_url": "https://images-assets.nasa.gov/image/PIA00285/PIA00285~orig.jpg",
+   "licence": "Public domain (NASA media, not copyrighted in the US)",
+   "licence_url": "https://www.nasa.gov/nasa-brand-center/images-and-media/",
+   "author": "NASA/JSC/Stanford University",
+   "attribution": "Mars Life? - Microscopic Tubular Structures — NASA/JSC/Stanford University, NASA, public domain. https://images.nasa.gov/details/PIA00285",
+   "downloaded": "2026-10-27"
+  }
+ },
+ {
+  "scene": "s06",
+  "start": 371.97107692307696,
+  "text": "inside fossilised bacteria living in seabed sediments.",
+  "sentences": [
+   "s06.10"
+  ],
+  "id": "v079",
+  "end": 376.221,
+  "seconds": 4.25,
+  "scene_start": false,
+  "kind": "photo",
+  "photo_subject": "deep sea sediment core",
+  "photo_queries": [
+   "seabed sediments",
+   "deep sea core"
+  ],
+  "card": {
+   "type": "title",
+   "title": "Seabed Sediments",
+   "subtitle": "Bacteria living in sediments"
+  },
+  "photo": {
+   "path": "out/run/photos/v079.jpg",
+   "file": "v079.jpg",
+   "kind": "photo",
+   "source": "wikimedia_commons",
+   "title": "Deep Sea Drilling Project microfossils",
+   "source_page": "https://commons.wikimedia.org/wiki/File:Deep_Sea_Drilling_Project_microfossils.jpg",
+   "download_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/21/Deep_Sea_Drilling_Project_microfossils.jpg/1920px-Deep_Sea_Drilling_Project_microfossils.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "licence": "CC BY 3.0",
+   "licence_url": "https://creativecommons.org/licenses/by/3.0",
+   "author": "Hannes Grobe (talk), Alfred Wegener Institute",
+   "attribution": "\"Deep Sea Drilling Project microfossils\" by Hannes Grobe (talk), Alfred Wegener Institute, CC BY 3.0, via Wikimedia Commons. https://commons.wikimedia.org/wiki/File:Deep_Sea_Drilling_Project_microfossils.jpg",
+   "downloaded": "2026-10-27"
+  }
+ },
+ {
+  "scene": "s06",
+  "start": 376.221,
+  "text": "So how close would a dying star need to be to wipe out our protective atmospheric shield?",
+  "sentences": [
+   "s06.11"
+  ],
+  "id": "v080",
+  "end": 381.846,
+  "seconds": 5.62,
+  "scene_start": false,
+  "kind": "drawing",
+  "drawing_subject": "star near Earth with atmospheric shield",
+  "card": {
+   "type": "title",
+   "title": "Atmospheric Shield",
+   "subtitle": "Distance required to wipe out shield"
+  },
+  "photo": {
+   "path": "out/run/drawings/v080.png",
+   "file": "v080.png",
+   "kind": "drawing",
+   "source": "ai_drawing",
+   "title": "star near Earth with atmospheric shield",
+   "source_page": "https://huggingface.co/segmind/Segmind-Vega",
+   "licence": "AI-generated drawing (no third-party rights)",
+   "model_licence": "Apache-2.0",
+   "licence_url": "https://www.apache.org/licenses/LICENSE-2.0",
+   "author": "AI-generated with segmind/Segmind-Vega + segmind/Segmind-VegaRT",
+   "attribution": "Illustration generated with Segmind-Vega (Apache-2.0): star near Earth with atmospheric shield",
+   "downloaded": "2026-10-27",
+   "prompt": "star near Earth with atmospheric shield, pure black background, detailed ink illustration, white and grey pen linework, one bright red accent, high contrast, simple clear composition, no text, no letters, no numbers"
+  },
+  "photo_subject": "star near Earth with atmospheric shield"
+ },
+ {
+  "scene": "s06",
+  "start": 381.846,
+  "text": "Gamma rays convert nitrogen and oxygen into nitrogen oxides, depleting the ozone layer.",
+  "sentences": [
+   "s06.13"
+  ],
+  "id": "v081",
+  "end": 388.601,
+  "seconds": 6.75,
+  "scene_start": false,
+  "kind": "drawing",
+  "drawing_subject": "gamma rays converting gases into nitrogen oxides",
+  "card": {
+   "type": "title",
+   "title": "Gamma Ray Conversion",
+   "subtitle": "Nitrogen and oxygen converted"
+  }
+ },
+ {
+  "scene": "s06",
+  "start": 388.601,
+  "text": "What delicate balance protects our planet from cosmic events?",
+  "sentences": [
+   "s06.14"
+  ],
+  "id": "v082",
+  "end": 393.488,
+  "seconds": 4.89,
+  "scene_start": false,
+  "kind": "photo",
+  "photo_subject": "Earth horizon from space",
+  "photo_queries": [
+   "Earth atmosphere space",
+   "delicate balance Earth"
+  ],
+  "card": {
+   "type": "title",
+   "title": "Delicate Balance",
+   "subtitle": "Protecting our planet from cosmic events"
+  },
+  "photo": {
+   "path": "out/run/photos/v082.jpg",
+   "file": "v082.jpg",
+   "kind": "photo",
+   "source": "nasa_image_library",
+   "title": "Earth's thin blue atmosphere traces the planet's horizon above the Pacific Ocean",
+   "source_page": "https://images.nasa.gov/details/iss074e0089803",
+   "download_url": "https://images-assets.nasa.gov/image/iss074e0089803/iss074e0089803~large.jpg",
+   "licence": "Public domain (NASA media, not copyrighted in the US)",
+   "licence_url": "https://www.nasa.gov/nasa-brand-center/images-and-media/",
+   "author": "NASA (JSC)",
+   "attribution": "Earth's thin blue atmosphere traces the planet's horizon above the Pacific Ocean — NASA (JSC), NASA, public domain. https://images.nasa.gov/details/iss074e0089803",
+   "downloaded": "2026-10-27"
+  }
+ }
+]

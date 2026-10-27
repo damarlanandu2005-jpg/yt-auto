@@ -1,0 +1,29 @@
+[model] gemini-3.5-flash-lite
+[system]
+
+
+[user]
+Above are 18 images, each right after its label "Image n:". For EVERY image, first
+write in "seen" what that image actually shows (a few words), then decide if it fits.
+These are ink drawings made by an AI image model; about half miss their subject. It fits only if
+the subject is clearly recognisable at a glance, the drawing is not confusing, has no garbled letters or
+fake text, no deformed hands, faces or bodies, does not look like a logo, emblem, badge, seal or flag (it would
+imitate a real organisation's mark), and is not misleading next to the narration.
+Image 1: should show: a fiery blast wave sweeping across a planet surface (narration: Do science fiction movies show a fiery blast wave sweeping our planet bare within seconds?)
+Image 2: should show: a star expelling matter into space (narration: These stellar detonations expel several solar masses)
+Image 3: should show: particles traveling at light speed (narration: The ejected material travels outward at speeds reaching several per cent of the speed of light.)
+Image 4: should show: particle stream moving across space (narration: When it detonates, its particle stream will reach)
+Image 5: should show: a star moving away in space (narration: is currently moving away to a safe distance.)
+Image 6: should show: radiation hitting upper atmosphere (narration: When gamma radiation hits the upper atmosphere, it causes chemical reactions.)
+Image 7: should show: gas molecules breaking apart (narration: Radiolysis breaks apart these common gas molecules)
+Image 8: should show: molecules recombining into nitrogen oxides (narration: and recombines them into harmful nitrogen oxides.)
+Image 9: should show: ozone molecules being depleted (narration: These newly created nitrogen oxides notably deplete ozone molecules.)
+Image 10: should show: atmosphere composition changing (narration: The atmosphere's protective ozone composition is transformed by these reactions.)
+Image 11: should show: planet shield collapsing (narration: Does that distance boundary mark where atmospheric protection collapses?)
+Image 12: should show: ultraviolet light penetrating atmosphere (narration: When stratospheric ozone levels drop, intense ultraviolet)
+Image 13: should show: cellular DNA damaged by radiation (narration: This extreme radiation damages cellular DNA, causing pyrimidine)
+Image 14: should show: DNA replication transcription errors (narration: bases to form transcription errors during replication.)
+Image 15: should show: ocean food web collapse (narration: Their collapse would seriously damage the foundation of the ocean food web.)
+Image 16: should show: global climate cooling pattern (narration: alter climate patterns and cool the global temperature.)
+Image 17: should show: iron-60 isotope atomic structure (narration: One isotope produced during these events is iron-60,)
+Image 18: should show: star near Earth with atmospheric shield (narration: So how close would a dying star need to be to wipe out our protective atmospheric shield?)

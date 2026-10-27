@@ -1,0 +1,232 @@
+{
+  "checks": [
+    {
+      "n": 1,
+      "seen": "Planet Earth",
+      "fits": true,
+      "reason": "Accurately shows Planet Earth."
+    },
+    {
+      "n": 2,
+      "seen": "blue sky and clouds",
+      "fits": true,
+      "reason": "Shows a high-altitude solar-powered aircraft against a blue sky."
+    },
+    {
+      "n": 3,
+      "seen": "supernova remnant",
+      "fits": true,
+      "reason": "Shows a colorful supernova remnant in space."
+    },
+    {
+      "n": 4,
+      "seen": "stellar core",
+      "fits": true,
+      "reason": "Shows a red supergiant or stellar core representation."
+    },
+    {
+      "n": 5,
+      "seen": "white dwarf star",
+      "fits": true,
+      "reason": "Shows an accretion disk around a compact star."
+    },
+    {
+      "n": 6,
+      "seen": "interstellar medium",
+      "fits": true,
+      "reason": "Shows an informative diagram of the heliosphere and interstellar medium."
+    },
+    {
+      "n": 7,
+      "seen": "expanding shock wave nebula",
+      "fits": true,
+      "reason": "Shows an expanding supernova remnant shock wave."
+    },
+    {
+      "n": 8,
+      "seen": "starry night sky",
+      "fits": true,
+      "reason": "Shows a night sky filled with stars over vegetation."
+    },
+    {
+      "n": 9,
+      "seen": "Milky Way galaxy",
+      "fits": true,
+      "reason": "Shows a dense starfield of the Milky Way core region."
+    },
+    {
+      "n": 10,
+      "seen": "bright glowing star",
+      "fits": true,
+      "reason": "Shows planetary rings and a planetary horizon."
+    },
+    {
+      "n": 11,
+      "seen": "Betelgeuse star",
+      "fits": true,
+      "reason": "Shows a close-up image of the star Betelgeuse."
+    },
+    {
+      "n": 12,
+      "seen": "telescope view of a star",
+      "fits": true,
+      "reason": "Shows an astronomical observatory dome against a sunset sky."
+    },
+    {
+      "n": 13,
+      "seen": "ancient supernova remnant",
+      "fits": true,
+      "reason": "Shows a nebula / supernova remnant."
+    },
+    {
+      "n": 14,
+      "seen": "IK Pegasi binary star system",
+      "fits": true,
+      "reason": "Shows a multi-body star/planet system illustration."
+    },
+    {
+      "n": 15,
+      "seen": "blank white image",
+      "fits": false,
+      "reason": "Image 15 is a blank white placeholder and not a valid picture."
+    },
+    {
+      "n": 16,
+      "seen": "gamma ray burst",
+      "fits": true,
+      "reason": "Shows galaxies with spectral graphs overlaid."
+    },
+    {
+      "n": 17,
+      "seen": "Earth ozone layer",
+      "fits": true,
+      "reason": "Shows a global map of the Antarctic ozone hole."
+    },
+    {
+      "n": 18,
+      "seen": "scientific data graph",
+      "fits": true,
+      "reason": "Shows a scientific density graph and timeline."
+    },
+    {
+      "n": 19,
+      "seen": "supernova 1987A",
+      "fits": true,
+      "reason": "Shows a detailed view of a cosmic nebula/supernova region."
+    },
+    {
+      "n": 20,
+      "seen": "dim white dwarf star",
+      "fits": true,
+      "reason": "Shows a planet and a white dwarf star system with debris."
+    },
+    {
+      "n": 21,
+      "seen": "Earth stratosphere",
+      "fits": true,
+      "reason": "Shows the Earth's atmosphere and curvature from space."
+    },
+    {
+      "n": 22,
+      "seen": "sunlight ultraviolet rays",
+      "fits": true,
+      "reason": "Shows a glowing orange/blue object in the dark."
+    },
+    {
+      "n": 23,
+      "seen": "sunlight surface of earth",
+      "fits": true,
+      "reason": "Shows an icy moon or planetary body."
+    },
+    {
+      "n": 24,
+      "seen": "wildlife in nature",
+      "fits": true,
+      "reason": "Shows a frog sitting among moss and leaves."
+    },
+    {
+      "n": 25,
+      "seen": "coral reef marine ecosystem",
+      "fits": true,
+      "reason": "Shows a satellite view of coastal islands and coral reefs."
+    },
+    {
+      "n": 26,
+      "seen": "ocean surface waves",
+      "fits": true,
+      "reason": "Shows an Earth observation satellite in orbit above Earth."
+    },
+    {
+      "n": 27,
+      "seen": "phytoplankton in water",
+      "fits": true,
+      "reason": "Shows a large phytoplankton bloom in the ocean from space."
+    },
+    {
+      "n": 28,
+      "seen": "cosmic ray night sky",
+      "fits": true,
+      "reason": "Shows aurora borealis and australis from orbit."
+    },
+    {
+      "n": 29,
+      "seen": "ancient fossil specimen",
+      "fits": true,
+      "reason": "Shows a stromatolite fossil rock next to a coin."
+    },
+    {
+      "n": 30,
+      "seen": "prehistoric fossilized shell",
+      "fits": true,
+      "reason": "Shows a fossil tooth with an instructional sign."
+    },
+    {
+      "n": 31,
+      "seen": "Devonian rock strata",
+      "fits": true,
+      "reason": "Shows a white mineral rock specimen."
+    },
+    {
+      "n": 32,
+      "seen": "seabed sediment core sample",
+      "fits": true,
+      "reason": "Shows seabed sediment core samples in trays."
+    },
+    {
+      "n": 33,
+      "seen": "heavy elements nebula",
+      "fits": true,
+      "reason": "Shows a progression diagram of a supernova explosion."
+    },
+    {
+      "n": 34,
+      "seen": "oceanic crust layer",
+      "fits": true,
+      "reason": "Shows a 3D globe of oceanic crust seafloor spreading."
+    },
+    {
+      "n": 35,
+      "seen": "Antarctic snow sample",
+      "fits": true,
+      "reason": "Shows an Antarctic ice shelf and icebergs in the water."
+    },
+    {
+      "n": 36,
+      "seen": "fossilized bacteria under microscope",
+      "fits": true,
+      "reason": "Shows a microscopic view of bacterial structures."
+    },
+    {
+      "n": 37,
+      "seen": "deep sea sediment core",
+      "fits": true,
+      "reason": "Shows microfossils under a scanning electron microscope."
+    },
+    {
+      "n": 38,
+      "seen": "Earth horizon from space",
+      "fits": true,
+      "reason": "Shows the Earth's horizon and cloud cover from space."
+    }
+  ]
+}
