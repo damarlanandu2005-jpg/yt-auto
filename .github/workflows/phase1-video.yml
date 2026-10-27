@@ -18,6 +18,10 @@ on:
       resume_from:
         description: "Optional: run id of an earlier run (bench-results/phase1/<id>) whose plan, sources and script to reuse. Saves free API quota"
         default: ""
+      new_visual_plan:
+        description: "With resume_from: make a new visual plan instead of reusing the old one"
+        type: boolean
+        default: false
 
 permissions:
   contents: write
@@ -81,6 +85,7 @@ jobs:
         timeout-minutes: 2
         env:
           RESUME: ${{ inputs.resume_from }}
+          NEW_PLAN: ${{ inputs.new_visual_plan }}
         run: |
           [[ "$RESUME" =~ ^[0-9]+$ ]] || { echo "resume_from must be a run id (digits)"; exit 1; }
           mkdir -p out/run
@@ -89,6 +94,7 @@ jobs:
           for f in plan.json sources.json script_draft.json script.json factcheck.json visual_plan.json; do
             git show "FETCH_HEAD:phase1/$RESUME/$f" > "out/run/$f" 2>/dev/null && echo "reused $f" || rm -f "out/run/$f"
           done
+          if [ "$NEW_PLAN" = "true" ]; then rm -f out/run/visual_plan.json && echo "visual plan will be made again"; fi
 
       - name: Make the video
         timeout-minutes: 45

@@ -136,7 +136,7 @@ Rules:
 
 SLOTS:
 """ + "\n".join(lines)
-    res = llm(prompt, schema=PLAN_SCHEMA, name="visual_plan", temperature=0.7, models=FAST)
+    res = llm(prompt, schema=PLAN_SCHEMA, name="visual_plan", temperature=0.7, models=FAST, last_resort=True)
     by_id = {v["id"]: v for v in res["visuals"]}
     out = []
     for s in the_slots:
@@ -149,7 +149,9 @@ _WORDS = {w: str(i) for i, w in enumerate(
     "zero one two three four five six seven eight nine ten eleven twelve thirteen fourteen fifteen sixteen "
     "seventeen eighteen nineteen twenty".split())}
 _WORDS.update({"thirty": "30", "forty": "40", "fifty": "50", "sixty": "60", "seventy": "70", "eighty": "80",
-               "ninety": "90", "hundred": "100", "thousand": "1000", "once": "1", "twice": "2", "half": "0.5"})
+               "ninety": "90", "hundred": "100", "thousand": "1000", "once": "1", "twice": "2", "half": "0.5",
+               "ones": "1", "zeros": "0", "zeroes": "0", "first": "1", "second": "2", "third": "3", "fourth": "4",
+               "fifth": "5", "sixth": "6"})
 
 
 def _numbers(text: str, words: bool = False) -> set[str]:
@@ -213,17 +215,18 @@ Answer choice = the candidate number as text, or "".
 """ + "\n\n".join(blocks)
     try:
         picks = {p["id"]: p["choice"] for p in llm(prompt, schema=PICK_SCHEMA, name="photo_pick",
-                                                     temperature=0.2, models=FAST)["picks"]}
+                                                     temperature=0.2, models=FAST, last_resort=True)["picks"]}
     except LLMError as e:
         log["pick_error"] = str(e)
         return
 
     used, chosen = set(), []
     for v in asks:
-        ch = str(picks.get(v["id"], "")).strip()
-        if not ch.isdigit() or int(ch) >= len(cands[v["id"]]):
+        # Accept "6" or "wiki:6" (run 40465984856: Flash-Lite copied the label, and every pick was lost).
+        m = re.search(r"(\d+)\s*$", str(picks.get(v["id"], "")))
+        if not m or int(m.group(1)) >= len(cands[v["id"]]):
             continue
-        c = cands[v["id"]][int(ch)]
+        c = cands[v["id"]][int(m.group(1))]
         if c["id"] in used:
             continue
         try:
@@ -261,7 +264,7 @@ and not be misleading next to the narration.
 {listing}"""
     try:
         res = llm(prompt, images=[_thumb(v["photo"]["path"]) for v in chosen], schema=VERIFY_SCHEMA,
-                  name="photo_verify", temperature=0.1, models=FAST)
+                  name="photo_verify", temperature=0.1, models=FAST, last_resort=True)
     except LLMError as e:
         log["verify_error"] = str(e)
         return

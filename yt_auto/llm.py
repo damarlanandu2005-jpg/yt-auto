@@ -26,7 +26,10 @@ MODELS = [m for m in os.environ.get(
     "LLM_MODELS", "gemini-3.8-flash,gemini-3.6-flash,gemini-3.5-flash,gemini-3.5-flash-lite").split(",") if m]
 # For quick structured jobs (visual plan, photo pick/check). First test run, 26 Oct 2026: 3.8 Flash
 # answered 503 "high demand" on 5 of 7 calls and took 219 s for the visual plan; 3.6 Flash took 6-70 s.
-FAST = ["gemini-3.6-flash", "gemini-3.5-flash", "gemini-3.8-flash", "gemini-3.5-flash-lite"]
+FAST = ["gemini-3.6-flash", "gemini-3.5-flash", "gemini-3.8-flash"]
+# Flash-Lite only after every round above failed (run 40465984856: when it stepped in at once, its
+# visual plan asked for photos in only 26 of 99 slots).
+LITE = "gemini-3.5-flash-lite"
 # For the script and the fact-check: never Flash-Lite (it copied source wording; run 40402246414).
 QUALITY = ["gemini-3.8-flash", "gemini-3.6-flash", "gemini-3.5-flash"]
 # Free tier is about 20 requests/day per model (429 quotaValue 20 for 3.8 Flash, 26 Oct 2026),
@@ -45,10 +48,11 @@ class LLMError(RuntimeError):
 
 def llm(prompt: str, *, system: str = "", schema: dict | None = None, model: str | None = None,
         temperature: float = 0.7, name: str = "llm", images: list[bytes] | None = None,
-        models: list[str] | None = None, max_tries: int = 2, timeout: int = 600):
+        models: list[str] | None = None, max_tries: int = 2, timeout: int = 600, last_resort: bool = False):
     """Send one prompt, return the reply text (or parsed JSON when `schema` is given).
 
     `images`: optional JPEG bytes shown to the model before the prompt.
+    `last_resort`: after every round failed, try Flash-Lite once (fine for picking photos, never for the script).
     """
     errors = []
     for rnd in range(1, ROUNDS + 1):
@@ -66,6 +70,11 @@ def llm(prompt: str, *, system: str = "", schema: dict | None = None, model: str
         if rnd < ROUNDS and any(m not in _EXHAUSTED for m in order):
             print(f"[llm] {name}: every model busy; waiting {ROUND_WAIT_S}s (round {rnd})", flush=True)
             time.sleep(ROUND_WAIT_S)
+    if last_resort and LITE not in _EXHAUSTED:
+        try:
+            return _call(LITE, prompt, system, schema, temperature, name, images, max_tries, timeout)
+        except _TryNextModel as e:
+            errors.append(f"{LITE}: {e}")
     raise LLMError(f"{name}: no model available: {errors}")
 
 

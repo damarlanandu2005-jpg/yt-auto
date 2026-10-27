@@ -5,11 +5,6 @@ name: Phase 2 fact-check test
 # Results go to the bench-results branch under phase2/<run_id>/ (report.md, results.json, llm/).
 on:
   workflow_dispatch:
-  # Only to register this new workflow (GitHub can't start it by hand from a branch until it
-  # has run there once). Remove after the first run.
-  push:
-    branches: ["claude/phase-1-**"]
-    paths: [".github/workflows/phase2-factcheck-eval.yml"]
 
 permissions:
   contents: write
