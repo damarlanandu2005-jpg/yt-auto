@@ -16,11 +16,6 @@ on:
         default: "snapshot"
   schedule:
     - cron: "17 3 * * 1"   # Mondays 03:17 UTC (08:47 IST)
-  # Only to register this new workflow (GitHub can't start it by hand from a branch until it
-  # has run there once). Remove after the first run.
-  push:
-    branches: ["claude/phase-1-**"]
-    paths: [".github/workflows/phase0b-niche.yml"]
 
 permissions:
   contents: write

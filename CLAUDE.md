@@ -37,7 +37,7 @@ Full plan: "YouTube Automation Blueprint" doc — https://claude.ai/artifact/XN7
 | Phase | State |
 | --- | --- |
 | 0. Server benchmark | **PASSED** 27 Oct 2026: 3/3 runs on GitHub Actions (AMD EPYC, 4 cores), build 3 min 18 s to 3 min 26 s, ~4 min per job, peak ~690 MB, no hangs |
-| 0b. Niche data test | Not started. Needs a YouTube Data API key (owner to create). Niches to test: how technology works, science and space, money and economics (education only) |
+| 0b. Niche data test | **Started** 27 Oct 2026. `YOUTUBE_API_KEY` secret works. Rules frozen first (phase0b/RULES.md, commits de753c2, 4835888). First pull: 954 candidates → 34 eligible (617 under 1k subs): science 20 chosen, technology 7, money 4 (rule needs 15). Likely too few searches (8 per niche); owner to decide on a v2 with more searches (equal for all niches, before any growth data). Week-0 snapshot saved; data on bench-results/phase0b/. Weekly schedule needs the workflow on `main` |
 | 1. Production core | **DONE**, owner approved the video 27 Oct 2026. Run 40469284296: 7.4 min GPS video, 900 words fact-checked, 99 visuals (44 real photos, each checked by looking), subtitles from our own text, ~11 min on Actions. Owner liked the earlier 3.9 min version; quality work moves to later phases. Known weak spots: some title-only cards, one off-topic diagram (geostationary, v031) |
 | 2. Research and facts | **Test PASSED** 27 Oct 2026 (run 40466026336): 30/30 planted errors caught, 0/16 false alarms (rule set before testing: ≥80% overall, ≥60% per type, ≤1 false alarm). First run 28/30 (missed 2 conflicting-source cases) → one prompt rule added. Also: number/unit guard, facts.csv, rights gate, junk-passage filter. Caveat: test set written by the same author as the checker; add independent cases later |
 | 3. Quality gate | **Test PASSED** 27 Oct 2026 (run 40477248640): all 6 blueprint faults caught (silent gap, unlicensed image, wrong title promise, 3 kinds of near-duplicate), 17/17 planted faults overall, 0/5 false blocks on clean controls. First AI run blocked the approved video on 'hook'; split per blueprint (no question = FAIL, no 'why it matters' = FLAG). The gate also found a real bug: GPS description 9,850 chars (YouTube max 5,000) → credits shortened |
@@ -92,6 +92,8 @@ library/               approved videos (script JSON) that new videos must not du
 pronunciation.json     terms checked by listening; others get flagged
 phase3/eval_gate.py    planted-fault test (2 Gemini requests; --no-ai needs none); fixtures in phase3/fixtures/
 .github/workflows/phase3-gate-eval.yml  manual; results in bench-results/phase3/<run_id>/
+phase0b/niche_test.py  niche test: check, select (once), snapshot (weekly), report; settings phase0b/niches.json, rules phase0b/RULES.md
+.github/workflows/phase0b-niche.yml  manual (start/snapshot/report) + Mondays 03:17 UTC (only from main)
 phase1/check_apis.py   pre-flight: key present, which models answer, NASA/Commons up, saves official pages
 .github/workflows/phase1-video.yml   manual only (topic, scenes, resume_from = earlier run id to reuse plan/sources/script and save quota)
 .github/workflows/phase1-check.yml   manual; also runs when the check changes on a phase-1 branch
