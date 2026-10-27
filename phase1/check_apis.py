@@ -185,8 +185,6 @@ def keys() -> dict:
     secrets = {k[4:]: v for k, v in os.environ.items() if k.startswith("KEY_") and v}
     res = {"secret_names": sorted(secrets), "keys": {}}
     for name, value in secrets.items():
-        if not isinstance(value, str) or not value.startswith("AIza"):
-            continue  # not a Google API key
         hdr = {"x-goog-api-key": value}
         r = http(f"{GEMINI}/models?pageSize=200", headers=hdr)
         info = {"list_models_status": r["status"], "models": len((r.get("json") or {}).get("models", [])),
