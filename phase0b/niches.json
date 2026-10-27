@@ -1,6 +1,6 @@
 {
-  "_about": "Phase 0b niche test settings. FROZEN on 27 Oct 2026 before any channel data was pulled (see RULES.md). Change only by a new dated version, never after looking at results.",
-  "version": 1,
+  "_about": "Phase 0b niche test settings. v1 frozen 27 Oct 2026 before any data. v2 (27 Oct, after the first pull, before any growth data): 12 more search phrases per niche, same for all niches (see RULES.md change log).",
+  "version": 2,
   "niches": {
     "technology": {
       "label": "How technology works",
@@ -36,6 +36,20 @@
         "camera",
         "screen",
         "signal"
+      ],
+      "queries_v2": [
+        "how engines work",
+        "how electricity works",
+        "how cameras work",
+        "how chips are made",
+        "how airplanes fly",
+        "how satellites work",
+        "how GPS works",
+        "how 3D printers work",
+        "how solar panels work",
+        "how cars work explained",
+        "how computer memory works",
+        "how wifi works"
       ]
     },
     "science_space": {
@@ -76,6 +90,20 @@
         "nasa",
         "telescope",
         "asteroid"
+      ],
+      "queries_v2": [
+        "how stars are born",
+        "what is quantum physics",
+        "how gravity works",
+        "solar system explained",
+        "chemistry explained",
+        "how light works",
+        "james webb telescope explained",
+        "mars mission explained",
+        "how the moon formed",
+        "what is dark matter",
+        "how atoms work",
+        "earth science explained"
       ]
     },
     "money_economics": {
@@ -131,6 +159,20 @@
         "portfolio",
         "buy now",
         "dividend"
+      ],
+      "queries_v2": [
+        "how inflation works",
+        "why recessions happen",
+        "how stock markets work explained",
+        "what is gdp",
+        "how taxes work",
+        "how central banks work",
+        "why prices rise",
+        "how currency exchange works",
+        "national debt explained",
+        "why some countries are poor",
+        "how interest rates work",
+        "economic history explained"
       ]
     }
   },

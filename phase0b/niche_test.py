@@ -142,14 +142,20 @@ def _fit(titles: list[str], words: list[str]) -> int:
 
 
 def cmd_select(data: Path) -> None:
+    """Version 1: choose channels once. Version 2 (RULES.md change log): top up with queries_v2,
+    keeping every channel already chosen."""
+    prev = None
     if (data / "channels.json").exists():
-        print("channels.json already exists: selection is done once and never redone")
-        return
+        prev = json.loads((data / "channels.json").read_text(encoding="utf-8"))
+        if prev["rules_version"] >= CFG["version"]:
+            print("channels.json already made with these rules: selection is never redone")
+            return
     sel = CFG["selection"]
     after = (now() - dt.timedelta(days=sel["search"]["published_within_days"])).strftime("%Y-%m-%dT%H:%M:%SZ")
     found: dict[str, set[str]] = {}  # channel id -> niches whose search found it
+    key = "queries_v2" if prev else "queries"
     for niche, nc in CFG["niches"].items():
-        for q in nc["queries"]:
+        for q in nc[key]:
             d = yt("search", part="snippet", q=q, type=sel["search"]["type"], videoDuration=sel["search"]["videoDuration"],
                    relevanceLanguage=sel["search"]["relevanceLanguage"], publishedAfter=after,
                    maxResults=sel["search"]["maxResults"])
@@ -158,6 +164,8 @@ def cmd_select(data: Path) -> None:
     print(f"[select] {len(found)} candidate channels from {sum(len(n['queries']) for n in CFG['niches'].values())} "
           f"searches ({USED['units']} units)", flush=True)
 
+    if prev:  # screen only channels the first pull hasn't already screened
+        found = {c: n for c, n in found.items() if c not in prev["screening_log"]}
     info = channels_info(sorted(found))
     log, eligible = {}, []
     for cid in sorted(found):
@@ -211,11 +219,17 @@ def cmd_select(data: Path) -> None:
         log[cid] = f"eligible for {best} (fit {fits[best]}/10)"
     chosen = {}
     for niche in CFG["niches"]:
+        keep = prev["chosen"][niche] if prev else []
         pool = sorted((e for e in eligible if e["niche"] == niche), key=lambda e: (-e["fit"], e["subscribers"], e["id"]))
-        chosen[niche] = pool[:sel["channels_per_niche"]]
-    out = {"created": now().isoformat(), "rules_version": CFG["version"], "candidates": len(found),
-           "eligible": len(eligible), "units": USED["units"], "chosen": chosen, "eligible_all": eligible,
-           "screening_log": log}
+        chosen[niche] = keep + [dict(e, added_in_version=CFG["version"]) for e in pool][:max(0, sel["channels_per_niche"] - len(keep))]
+    out = {"created": prev["created"] if prev else now().isoformat(), "rules_version": CFG["version"],
+           "candidates": len(found) + (prev["candidates"] if prev else 0),
+           "eligible": len(eligible) + (prev["eligible"] if prev else 0), "units": USED["units"],
+           "chosen": chosen, "eligible_all": (prev["eligible_all"] if prev else []) + eligible,
+           "screening_log": {**(prev["screening_log"] if prev else {}), **log},
+           "history": (prev.get("history", []) if prev else []) + [
+               {"version": CFG["version"], "at": now().isoformat(), "new_candidates": len(found),
+                "new_eligible": len(eligible), "units": USED["units"]}]}
     (data / "channels.json").write_text(json.dumps(out, indent=1, ensure_ascii=False), encoding="utf-8")
     for n, c in chosen.items():
         print(f"[select] {n}: {len(c)} chosen (of {sum(e['niche'] == n for e in eligible)} eligible)")
@@ -269,8 +283,15 @@ def cmd_report(data: Path) -> None:
     snaps = sorted((data / "snapshots").glob("*.json"))
     if not snaps:
         raise SystemExit("no snapshots yet")
-    first, last = (json.loads(p.read_text(encoding="utf-8")) for p in (snaps[0], snaps[-1]))
+    all_snaps = [json.loads(p.read_text(encoding="utf-8")) for p in snaps]
+    first, last = all_snaps[0], all_snaps[-1]
     weeks = max((dt.datetime.fromisoformat(last["taken"]) - dt.datetime.fromisoformat(first["taken"])).days / 7, 0)
+
+    def first_seen(cid):  # channels added in rules v2 start later: measure from their own first snapshot
+        for sn in all_snaps:
+            if sn["channels"].get(cid, {}).get("views"):
+                return sn
+        return first
     md = [f"# Niche data test — report ({len(snaps)} snapshot{'s' if len(snaps) > 1 else ''}, "
           f"{weeks:.1f} weeks of change)", "",
           f"Rules: phase0b/RULES.md (version {sel['rules_version']}). Channels chosen {sel['created'][:10]} from "
@@ -280,9 +301,11 @@ def cmd_report(data: Path) -> None:
         growth, sub_up, beats, recent = [], [], 0, 0
         outliers = []
         for c in chans:
-            a, b = first["channels"].get(c["id"], {}), last["channels"].get(c["id"], {})
-            if weeks >= 1 and a.get("views") and b.get("views"):
-                growth.append(((b["views"] / a["views"]) ** (1 / weeks) - 1) * 100)
+            f = first_seen(c["id"])
+            a, b = f["channels"].get(c["id"], {}), last["channels"].get(c["id"], {})
+            w = (dt.datetime.fromisoformat(last["taken"]) - dt.datetime.fromisoformat(f["taken"])).days / 7
+            if w >= 1 and a.get("views") and b.get("views"):
+                growth.append(((b["views"] / a["views"]) ** (1 / w) - 1) * 100)
                 sub_up.append(b["subscribers"] > a["subscribers"])
             rows, med = video_rows(b)
             for r in rows:

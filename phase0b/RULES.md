@@ -66,3 +66,10 @@ The script stops at 8,000 units. No Gemini quota is used.
   lists ("how", "work", "works", "explained" from technology; "history", "country", "countries" from money).
   With them, a money channel titled "How Inflation Works" also counted as technology, and ties went to
   technology. Found by reading the code, not from data.
+- 27 Oct 2026, **version 2** (owner approved), after the first pull but before any growth data: the first
+  pull found only 7 technology and 4 money channels (rule needs 15) but 20 for science, from 8 searches per
+  niche; 617 of 954 candidates had under 1,000 subscribers. Too few searches is the likely cause, so each
+  niche gets **12 more search phrases** (`queries_v2`, same number for all). Channels already chosen stay;
+  newly eligible channels fill each niche up to 20 by the same sort rule. Science was already full, so only
+  technology and money can change. Every other rule is unchanged. New channels' growth is measured from
+  their own first snapshot.
