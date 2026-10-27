@@ -9,6 +9,7 @@ on:
 
 permissions:
   contents: write
+  models: read    # GitHub Models: free backup AI for light jobs
 
 concurrency:
   group: phase3-eval
@@ -51,6 +52,7 @@ jobs:
         timeout-minutes: 12
         env:
           GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
+          GITHUB_MODELS_TOKEN: ${{ github.token }}
         run: |
           set -o pipefail
           mkdir -p out/eval

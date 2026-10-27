@@ -1,0 +1,46 @@
+name: AI models check
+
+# Checks the light AI models (Gemma 4, Flash-Lite, GitHub Models): JSON answers, pictures in order,
+# and their limits. About 2 requests per model. Results: bench-results/phase5/models-check/<run_id>/.
+on:
+  workflow_dispatch:
+
+permissions:
+  contents: write
+  models: read
+
+jobs:
+  check:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.13"
+      - name: Install Pillow
+        timeout-minutes: 3
+        run: pip install Pillow
+      - name: Check models
+        timeout-minutes: 8
+        env:
+          GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
+          GITHUB_MODELS_TOKEN: ${{ github.token }}
+        run: |
+          set -o pipefail
+          mkdir -p out/check
+          python phase5/check_models.py out/check 2>&1 | tee out/check/build.log
+      - name: Save to bench-results
+        if: always()
+        timeout-minutes: 3
+        run: |
+          set -e
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git fetch --depth 1 origin bench-results
+          git worktree add results FETCH_HEAD
+          git -C results checkout -B bench-results
+          dest="results/phase5/models-check/${{ github.run_id }}"
+          mkdir -p "$dest" && cp -r out/check/. "$dest/"
+          cd results && git add -A && git commit -m "AI models check ${{ github.run_id }}"
+          for i in 1 2 3 4 5; do git push origin bench-results && break; git pull --rebase origin bench-results; sleep 5; done

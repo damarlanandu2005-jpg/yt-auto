@@ -77,7 +77,11 @@ yt_auto/visuals.py     matplotlib keyframes: title, stat, bullets, flow, bars, l
 yt_auto/render.py      FFmpeg: per-keyframe segment (zoompan + fades), concat, mux (loudnorm -16 LUFS), preview
 yt_auto/subtitles.py   faster-whisper base.en int8; run as its own process: python -m yt_auto.subtitles in.wav out.srt
 yt_auto/bench.py       timings, memory, CPU model, FFmpeg version
-yt_auto/llm.py         one llm() for all text steps: Gemini free tier, model fallback, every call logged
+yt_auto/llm.py         one llm() for all text steps, every call logged. QUALITY (3.8/3.6/3.5 Flash) for plan, script,
+                       fact-check, topic ideas; LIGHT (Gemma 4 31B -> Flash-Lite -> GitHub Models gpt-4.1-mini -> Flash)
+                       for visual plan, photo pick/check, gate, topic scores. Busy (503) model skipped at once, not retried
+phase5/check_models.py live check of the LIGHT models (JSON, pictures in order, GitHub catalog);
+                       .github/workflows/ai-models-check.yml manual, results bench-results/phase5/models-check/<run_id>/
 yt_auto/research.py    Wikipedia articles -> numbered passages (sources.json, with revision ids)
 yt_auto/writer.py      plan -> script (each sentence cites passage ids) -> separate fact-check -> fix or drop
 yt_auto/shots.py       ~4.5 s visual slots, visual plan, photo pick + vision check, card-number guard
@@ -138,6 +142,7 @@ Used: Kokoro / kokoro-onnx (Apache-2.0 / MIT), matplotlib, FFmpeg 8.1 (run as a 
 ## Conventions
 
 - Commit messages explain why. Push to `main` (owner approved merging on 27 Oct; work branch `claude/phase-1-production-core-ufulti` was fast-forwarded into `main` at 744ebce).
+- Gemini quota (27 Oct, owner said 'build it'): strong Flash only for plan/script/fact-check (~3-4 calls a video); light jobs on Gemma 4 (same key, free, separate limit) and GitHub Models (free, uses the workflow's own token, `permissions: models: read`). GitHub Models limits are from third-party pages until ai-models-check confirms them.
 - Phase 1+ workflows: manual trigger or schedule, never on every push (saves free minutes; private repo has 2,000 min/month).
 - Test small locally (1–2 scenes) before using GitHub minutes.
 

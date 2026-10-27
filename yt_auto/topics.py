@@ -241,7 +241,7 @@ SCORE_SCHEMA = {"type": "object", "properties": {"scores": {"type": "array", "it
 
 
 def score(niche: dict, ideas: list[dict]) -> None:
-    from .llm import QUALITY, llm
+    from .llm import LIGHT, llm
 
     lines = [f"{i + 1}. {x['question']} — angle: {x['angle']} — sources: {', '.join(x['wikipedia_articles'])}"
              for i, x in enumerate(ideas)]
@@ -250,7 +250,7 @@ narration over real photos and simple charts; no AI images; facts only from Wiki
 Use the rubric in the schema strictly; most ideas should NOT get 5s. Answer for every number.
 
 """ + "\n".join(lines)
-    res = llm(prompt, schema=SCORE_SCHEMA, name="topic_scorer", temperature=0.2, models=QUALITY)["scores"]
+    res = llm(prompt, schema=SCORE_SCHEMA, name="topic_scorer", temperature=0.2, models=LIGHT)["scores"]
     by_n = {r["n"]: r for r in res}
     for i, x in enumerate(ideas, 1):
         r = by_n.get(i)

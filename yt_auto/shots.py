@@ -16,7 +16,7 @@ import re
 from pathlib import Path
 
 from . import photos
-from .llm import FAST, LLMError, llm
+from .llm import LIGHT, LLMError, llm
 
 TARGET_S, MIN_S, MAX_S = 4.5, 3.0, 6.5
 
@@ -136,7 +136,7 @@ Rules:
 
 SLOTS:
 """ + "\n".join(lines)
-    res = llm(prompt, schema=PLAN_SCHEMA, name="visual_plan", temperature=0.7, models=FAST, last_resort=True)
+    res = llm(prompt, schema=PLAN_SCHEMA, name="visual_plan", temperature=0.7, models=LIGHT, last_resort=True)
     by_id = {v["id"]: v for v in res["visuals"]}
     out = []
     for s in the_slots:
@@ -215,7 +215,7 @@ Answer choice = the candidate number as text, or "".
 """ + "\n\n".join(blocks)
     try:
         picks = {p["id"]: p["choice"] for p in llm(prompt, schema=PICK_SCHEMA, name="photo_pick",
-                                                     temperature=0.2, models=FAST, last_resort=True)["picks"]}
+                                                     temperature=0.2, models=LIGHT, last_resort=True)["picks"]}
     except LLMError as e:
         log["pick_error"] = str(e)
         return
@@ -268,7 +268,7 @@ and not be misleading next to the narration.
 {listing}"""
     try:
         res = llm(prompt, images=[(f"Image {i + 1}:", _thumb(v["photo"]["path"])) for i, v in enumerate(chosen)],
-                  schema=VERIFY_SCHEMA, name="photo_verify", temperature=0.1, models=FAST, last_resort=True)
+                  schema=VERIFY_SCHEMA, name="photo_verify", temperature=0.1, models=LIGHT, last_resort=True)
     except LLMError as e:
         log["verify_error"] = str(e)
         return

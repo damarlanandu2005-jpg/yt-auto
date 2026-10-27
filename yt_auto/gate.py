@@ -310,7 +310,7 @@ AI_SCHEMA = {"type": "object", "properties": {"checks": {"type": "array", "items
 
 
 def ai_checks(title: str, plan: dict, script: dict, timing: dict, visuals: list[dict]) -> list[dict]:
-    from .llm import QUALITY, LLMError, llm
+    from .llm import LIGHT, LLMError, llm
 
     first30 = " ".join(s["text"] for s in timing["sentences"] if s["start"] < 30)
     body = "\n".join(f"## {sc['heading']}\n" + " ".join(s["text"] for s in sc["sentences"]) for sc in script["scenes"])
@@ -341,7 +341,7 @@ SCRIPT:
 TEXT CARDS SHOWN:
 {shown}"""
     try:
-        res = llm(prompt, schema=AI_SCHEMA, name="gate_editorial", temperature=0.1, models=QUALITY)
+        res = llm(prompt, schema=AI_SCHEMA, name="gate_editorial", temperature=0.1, models=LIGHT)
     except LLMError as e:
         return [check("editorial_ai", FLAG, f"AI review not available: {e}")]
     out = []

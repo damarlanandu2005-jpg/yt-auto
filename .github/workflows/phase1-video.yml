@@ -32,6 +32,7 @@ on:
 
 permissions:
   contents: write
+  models: read    # GitHub Models: free backup AI for light jobs
 
 concurrency:
   group: phase1-video
@@ -107,6 +108,7 @@ jobs:
         timeout-minutes: 58
         env:
           GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
+          GITHUB_MODELS_TOKEN: ${{ github.token }}
           TOPIC: ${{ inputs.topic }}
           SCENES: ${{ inputs.scenes }}
           STOP: ${{ inputs.stop_after_script }}
