@@ -1,0 +1,1 @@
+{"sentences":[{"id":"s03.04","text":"The satellite network is set up so you can see a minimum of six satellites from almost anywhere."}]}

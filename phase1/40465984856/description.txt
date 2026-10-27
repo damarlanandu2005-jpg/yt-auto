@@ -1,0 +1,22 @@
+How GPS Finds Your Location Using Satellite Timestamps
+
+How can your phone find your exact location on Earth just by listening to the time?
+
+Chapters:
+0:00 The passive listener: why GPS satellites do not track you or receive signals from your phone
+1:04 Turning time into space: how measuring radio travel times reveals your distance from an orbit
+2:16 The sphere intersection: using trilateration to narrow your place on Earth to two points
+3:15 The fourth satellite trick: how an extra signal fixes the cheap quartz clock in your pocket
+4:25 Einstein in orbit: why satellite clocks tick faster and how engineers correct for relativity
+6:00 Mapping the numbers: how raw coordinates turn into a moving blue dot on your screen
+
+Sources (facts checked against these):
+- Global Positioning System — Wikipedia, revision 1381199385: https://en.wikipedia.org/wiki/Global_Positioning_System?oldid=1381199385
+- Trilateration — Wikipedia, revision 1347869902: https://en.wikipedia.org/wiki/Trilateration?oldid=1347869902
+- Error analysis for the Global Positioning System — Wikipedia, revision 1377400056: https://en.wikipedia.org/wiki/Error_analysis_for_the_Global_Positioning_System?oldid=1377400056
+- Satellite navigation — Wikipedia, revision 1380001107: https://en.wikipedia.org/wiki/Satellite_navigation?oldid=1380001107
+
+Image credits:
+
+NASA images are used for education and do not imply NASA endorsement.
+Narration voice: Kokoro text-to-speech (synthetic voice). Script researched and written with AI help, fact-checked against the sources above and reviewed by a human before upload.

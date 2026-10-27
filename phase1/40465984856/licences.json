@@ -1,0 +1,17 @@
+[
+  {
+    "kind": "voice model",
+    "name": "Kokoro-82M v1.0 (int8 ONNX via kokoro-onnx)",
+    "source_page": "https://huggingface.co/hexgrad/Kokoro-82M",
+    "download_url": "https://github.com/thewh1teagle/kokoro-onnx/releases/tag/model-files-v1.0",
+    "licence": "Apache-2.0 (model weights); kokoro-onnx code MIT",
+    "attribution": "Narration voice: Kokoro (hexgrad)"
+  },
+  {
+    "kind": "font",
+    "name": "DejaVu Sans (bundled with matplotlib)",
+    "source_page": "https://dejavu-fonts.github.io/",
+    "licence": "Bitstream Vera / DejaVu free font licence (free to use and embed)",
+    "attribution": "none required"
+  }
+]

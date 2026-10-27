@@ -1,0 +1,1167 @@
+{
+  "visuals": [
+    {
+      "id": "v001",
+      "kind": "card",
+      "card": {
+        "type": "title",
+        "title": "How GPS Finds Your Location",
+        "subtitle": "Using Satellite Timestamps"
+      }
+    },
+    {
+      "id": "v002",
+      "kind": "photo",
+      "photo_subject": "a smartphone",
+      "photo_queries": ["smartphone", "mobile phone"],
+      "card": {
+        "type": "stat",
+        "title": "Silent Radio Signals",
+        "value": "0",
+        "label": "Transmitters on your phone",
+        "note": "GPS is purely passive"
+      }
+    },
+    {
+      "id": "v003",
+      "kind": "photo",
+      "photo_subject": "a GPS satellite",
+      "photo_queries": ["GPS satellite", "satellite in space"],
+      "card": {
+        "type": "stat",
+        "title": "One-Way Network",
+        "value": "1-way",
+        "label": "Broadcast network",
+        "note": "Satellites only transmit"
+      }
+    },
+    {
+      "id": "v004",
+      "kind": "card",
+      "card": {
+        "type": "stat",
+        "title": "Independent Operation",
+        "value": "0",
+        "label": "Required cellular or internet towers",
+        "note": "Works without mobile signal"
+      }
+    },
+    {
+      "id": "v005",
+      "kind": "photo",
+      "photo_subject": "a rocket launch",
+      "photo_queries": ["rocket launch", "space launch"],
+      "card": {
+        "type": "stat",
+        "title": "System Operators",
+        "value": "USSF",
+        "label": "United States Space Force",
+        "note": "Freely accessible worldwide"
+      }
+    },
+    {
+      "id": "v006",
+      "kind": "photo",
+      "photo_subject": "a GPS satellite in orbit",
+      "photo_queries": ["GPS satellite", "satellite constellation"],
+      "card": {
+        "type": "stat",
+        "title": "Active Satellites",
+        "value": "24",
+        "label": "Minimum active satellites",
+        "note": "Constellation size"
+      }
+    },
+    {
+      "id": "v007",
+      "kind": "card",
+      "card": {
+        "type": "stat",
+        "title": "Orbital Planes",
+        "value": "6",
+        "label": "Distinct orbital planes",
+        "note": "Evenly distributed"
+      }
+    },
+    {
+      "id": "v008",
+      "kind": "photo",
+      "photo_subject": "a rocket launch",
+      "photo_queries": ["rocket launch", "spacecraft launch"],
+      "card": {
+        "type": "timeline",
+        "title": "GPS Development",
+        "events": [
+          {
+            "when": "1978",
+            "label": "First prototype in orbit"
+          }
+        ]
+      }
+    },
+    {
+      "id": "v009",
+      "kind": "card",
+      "card": {
+        "type": "timeline",
+        "title": "Milestones",
+        "events": [
+          {
+            "when": "1978",
+            "label": "First prototype"
+          },
+          {
+            "when": "1995",
+            "label": "Full operational status"
+          }
+        ]
+      }
+    },
+    {
+      "id": "v010",
+      "kind": "card",
+      "card": {
+        "type": "stat",
+        "title": "Daily Orbits",
+        "value": "2",
+        "label": "Full orbits per sidereal day",
+        "note": "Continuous motion"
+      }
+    },
+    {
+      "id": "v011",
+      "kind": "photo",
+      "photo_subject": "a GPS satellite",
+      "photo_queries": ["GPS satellite", "satellite antenna"],
+      "card": {
+        "type": "stat",
+        "title": "Radio Broadcasts",
+        "value": "Continuous",
+        "label": "Signal transmission",
+        "note": "Broadcasting from space"
+      }
+    },
+    {
+      "id": "v012",
+      "kind": "card",
+      "card": {
+        "type": "bullets",
+        "title": "Signal Contents",
+        "items": [
+          "Exact satellite position",
+          "Precise atomic time"
+        ]
+      }
+    },
+    {
+      "id": "v013",
+      "kind": "photo",
+      "photo_subject": "a handheld GPS receiver",
+      "photo_queries": ["GPS receiver", "handheld GPS"],
+      "card": {
+        "type": "stat",
+        "title": "Silent Receiver",
+        "value": "100%",
+        "label": "Passive listening",
+        "note": "No outgoing signals"
+      }
+    },
+    {
+      "id": "v014",
+      "kind": "photo",
+      "photo_subject": "a smartphone",
+      "photo_queries": ["smartphone screen", "mobile phone"],
+      "card": {
+        "type": "stat",
+        "title": "Radio Transmissions",
+        "value": "Sky",
+        "label": "Incoming transmissions",
+        "note": "Caught by your device"
+      }
+    },
+    {
+      "id": "v015",
+      "kind": "card",
+      "card": {
+        "type": "title",
+        "title": "Turning Time Into Space",
+        "subtitle": "How time reveals distance"
+      }
+    },
+    {
+      "id": "v016",
+      "kind": "card",
+      "card": {
+        "type": "flow",
+        "title": "Conversion",
+        "steps": [
+          "Time measurement",
+          "Distance calculation"
+        ]
+      }
+    },
+    {
+      "id": "v017",
+      "kind": "photo",
+      "photo_subject": "Earth from space",
+      "photo_queries": ["Earth from space", "planet Earth orbit"],
+      "card": {
+        "type": "stat",
+        "title": "Medium Orbit",
+        "value": "MEO",
+        "label": "Orbital region",
+        "note": "Circling Earth"
+      }
+    },
+    {
+      "id": "v018",
+      "kind": "photo",
+      "photo_subject": "a GPS satellite",
+      "photo_queries": ["GPS satellite", "satellite in orbit"],
+      "card": {
+        "type": "stat",
+        "title": "Orbital Altitude",
+        "value": "20,200 km",
+        "label": "Height above Earth",
+        "note": "Medium Earth orbit"
+      }
+    },
+    {
+      "id": "v019",
+      "kind": "card",
+      "card": {
+        "type": "stat",
+        "title": "Signal Speed",
+        "value": "Speed of light",
+        "label": "Radio wave velocity",
+        "note": "Traveling through space"
+      }
+    },
+    {
+      "id": "v020",
+      "kind": "card",
+      "card": {
+        "type": "stat",
+        "title": "Constant Speed",
+        "value": "Independent",
+        "label": "Of satellite speed",
+        "note": "Speed of light is constant"
+      }
+    },
+    {
+      "id": "v021",
+      "kind": "card",
+      "card": {
+        "type": "bullets",
+        "title": "Broadcast Code",
+        "items": [
+          "Pseudorandom sequence",
+          "Ones and zeros",
+          "Known to receiver"
+        ]
+      }
+    },
+    {
+      "id": "v022",
+      "kind": "photo",
+      "photo_subject": "digital code binary",
+      "photo_queries": ["binary code", "digital numbers"],
+      "card": {
+        "type": "stat",
+        "title": "Binary Data",
+        "value": "1s and 0s",
+        "label": "Pseudorandom sequence",
+        "note": "Known to receiver"
+      }
+    },
+    {
+      "id": "v023",
+      "kind": "card",
+      "card": {
+        "type": "stat",
+        "title": "Timestamp",
+        "value": "Exact Time",
+        "label": "Signal departure time",
+        "note": "Included in transmission"
+      }
+    },
+    {
+      "id": "v024",
+      "kind": "photo",
+      "photo_subject": "an internal clock circuit",
+      "photo_queries": ["quartz clock", "internal clock"],
+      "card": {
+        "type": "stat",
+        "title": "Arrival Time",
+        "value": "Internal Clock",
+        "label": "Receiver timestamp",
+        "note": "Recorded on receipt"
+      }
+    },
+    {
+      "id": "v025",
+      "kind": "card",
+      "card": {
+        "type": "flow",
+        "title": "Delay Calculation",
+        "steps": [
+          "Arrival time",
+          "Minus transmission time",
+          "Equals signal delay"
+        ]
+      }
+    },
+    {
+      "id": "v026",
+      "kind": "card",
+      "card": {
+        "type": "stat",
+        "title": "Pseudorange",
+        "value": "Time x Light",
+        "label": "Calculated measurement",
+        "note": "Rather than exact distance"
+      }
+    },
+    {
+      "id": "v027",
+      "kind": "card",
+      "card": {
+        "type": "stat",
+        "title": "Timing Sensitivity",
+        "value": "Very fast",
+        "label": "Light speed movement",
+        "note": "Tiny offsets matter"
+      }
+    },
+    {
+      "id": "v028",
+      "kind": "card",
+      "card": {
+        "type": "stat",
+        "title": "Distance Error",
+        "value": "3 metres",
+        "label": "Caused by timing offset",
+        "note": "10 nanoseconds offset"
+      }
+    },
+    {
+      "id": "v029",
+      "kind": "card",
+      "card": {
+        "type": "title",
+        "title": "The Sphere Intersection",
+        "subtitle": "Trilateration basics"
+      }
+    },
+    {
+      "id": "v030",
+      "kind": "photo",
+      "photo_subject": "a sphere in space",
+      "photo_queries": ["sphere 3d", "spherical shell"],
+      "card": {
+        "type": "stat",
+        "title": "Single Measurement",
+        "value": "Spherical Shell",
+        "label": "Centred on satellite",
+        "note": "One distance value"
+      }
+    },
+    {
+      "id": "v031",
+      "kind": "photo",
+      "photo_subject": "multiple GPS satellites",
+      "photo_queries": ["multiple satellites", "satellite constellation"],
+      "card": {
+        "type": "stat",
+        "title": "Location Reduction",
+        "value": "Extra Signals",
+        "label": "Required from above",
+        "note": "Narrowing location"
+      }
+    },
+    {
+      "id": "v032",
+      "kind": "card",
+      "card": {
+        "type": "stat",
+        "title": "Second Satellite",
+        "value": "2nd Sphere",
+        "label": "Created by second signal",
+        "note": "Adding a measurement"
+      }
+    },
+    {
+      "id": "v033",
+      "kind": "card",
+      "card": {
+        "type": "flow",
+        "title": "Intersection Process",
+        "steps": [
+          "Distance measurements",
+          "Find meeting points",
+          "Determine position"
+        ]
+      }
+    },
+    {
+      "id": "v034",
+      "kind": "card",
+      "card": {
+        "type": "stat",
+        "title": "Position Fix",
+        "value": "Spherical Shells",
+        "label": "Where surfaces meet",
+        "note": "Receiver calculation"
+      }
+    },
+    {
+      "id": "v035",
+      "kind": "card",
+      "card": {
+        "type": "stat",
+        "title": "Third Satellite",
+        "value": "3rd Surface",
+        "label": "Third spherical surface",
+        "note": "Broadcasting source"
+      }
+    },
+    {
+      "id": "v036",
+      "kind": "card",
+      "card": {
+        "type": "flow",
+        "title": "Shell Intersection",
+        "steps": [
+          "Multiple distances",
+          "Receiver processing",
+          "Shell meeting point"
+        ]
+      }
+    },
+    {
+      "id": "v037",
+      "kind": "card",
+      "card": {
+        "type": "stat",
+        "title": "Special Case",
+        "value": "3 Satellites",
+        "label": "When elevation is known",
+        "note": "Minimum for 2D position"
+      }
+    },
+    {
+      "id": "v038",
+      "kind": "card",
+      "card": {
+        "type": "stat",
+        "title": "Geometric Technique",
+        "value": "Positions",
+        "label": "Calculated from distances",
+        "note": "Geometry in action"
+      }
+    },
+    {
+      "id": "v039",
+      "kind": "card",
+      "card": {
+        "type": "stat",
+        "title": "Trilateration",
+        "value": "Geometry",
+        "label": "Measured distances method",
+        "note": "Core navigation technique"
+      }
+    },
+    {
+      "id": "v040",
+      "kind": "card",
+      "card": {
+        "type": "title",
+        "title": "The Fourth Satellite Trick",
+        "subtitle": "Fixing the phone clock"
+      }
+    },
+    {
+      "id": "v041",
+      "kind": "card",
+      "card": {
+        "type": "stat",
+        "title": "Clock Assumption",
+        "value": "Perfect Sync",
+        "label": "Required for 3 spheres",
+        "note": "Idealized assumption"
+      }
+    },
+    {
+      "id": "v042",
+      "kind": "photo",
+      "photo_subject": "an atomic clock",
+      "photo_queries": ["atomic clock", "precision clock"],
+      "card": {
+        "type": "stat",
+        "title": "Satellite Clocks",
+        "value": "Atomic",
+        "label": "Extremely stable clocks",
+        "note": "On board satellites"
+      }
+    },
+    {
+      "id": "v043",
+      "kind": "photo",
+      "photo_subject": "a satellite ground station dish",
+      "photo_queries": ["ground station", "satellite dish"],
+      "card": {
+        "type": "stat",
+        "title": "Ground Control",
+        "value": "Monitored",
+        "label": "Synchronized regularly",
+        "note": "By ground stations"
+      }
+    },
+    {
+      "id": "v044",
+      "kind": "card",
+      "card": {
+        "type": "stat",
+        "title": "Phone Clock",
+        "value": "Inaccurate",
+        "label": "Consumer quartz clock",
+        "note": "Causes travel time bias"
+      }
+    },
+    {
+      "id": "v045",
+      "kind": "card",
+      "card": {
+        "type": "stat",
+        "title": "Biased Distances",
+        "value": "Pseudoranges",
+        "label": "From inaccurate timing",
+        "note": "Measured travel times"
+      }
+    },
+    {
+      "id": "v046",
+      "kind": "card",
+      "card": {
+        "type": "stat",
+        "title": "Solution",
+        "value": "No Atomic Clock",
+        "label": "Impractical for phones",
+        "note": "Using math instead"
+      }
+    },
+    {
+      "id": "v047",
+      "kind": "card",
+      "card": {
+        "type": "stat",
+        "title": "Fourth Satellite",
+        "value": "4th Signal",
+        "label": "Used to solve offset",
+        "note": "System requirement"
+      }
+    },
+    {
+      "id": "v048",
+      "kind": "card",
+      "card": {
+        "type": "stat",
+        "title": "Requirement",
+        "value": "At least 4",
+        "label": "Satellites needed",
+        "note": "For full navigation"
+      }
+    },
+    {
+      "id": "v049",
+      "kind": "card",
+      "card": {
+        "type": "stat",
+        "title": "Equations",
+        "value": "4 Satellites",
+        "label": "Solve navigation math",
+        "note": "Minimum requirement"
+      }
+    },
+    {
+      "id": "v050",
+      "kind": "card",
+      "card": {
+        "type": "stat",
+        "title": "Signal Count",
+        "value": "4 Signals",
+        "label": "Processed by phone",
+        "note": "Simultaneous calculation"
+      }
+    },
+    {
+      "id": "v051",
+      "kind": "card",
+      "card": {
+        "type": "stat",
+        "title": "Quantities",
+        "value": "4 Unknowns",
+        "label": "Calculated simultaneously",
+        "note": "Mathematical approach"
+      }
+    },
+    {
+      "id": "v052",
+      "kind": "card",
+      "card": {
+        "type": "bullets",
+        "title": "First 3 Unknowns",
+        "items": [
+          "X spatial coordinate",
+          "Y spatial coordinate",
+          "Z spatial coordinate"
+        ]
+      }
+    },
+    {
+      "id": "v053",
+      "kind": "card",
+      "card": {
+        "type": "stat",
+        "title": "Fourth Unknown",
+        "value": "Clock Deviation",
+        "label": "Exact error of phone clock",
+        "note": "Fourth calculated quantity"
+      }
+    },
+    {
+      "id": "v054",
+      "kind": "card",
+      "card": {
+        "type": "flow",
+        "title": "Equation Output",
+        "steps": [
+          "Solve equations",
+          "Receiver position",
+          "Clock deviation"
+        ]
+      }
+    },
+    {
+      "id": "v055",
+      "kind": "card",
+      "card": {
+        "type": "stat",
+        "title": "Timing Accuracy",
+        "value": "High Accuracy",
+        "label": "Provided cheaply",
+        "note": "From clock correction"
+      }
+    },
+    {
+      "id": "v056",
+      "kind": "card",
+      "card": {
+        "type": "stat",
+        "title": "Mathematical Approach",
+        "value": "Clever Math",
+        "label": "Keeps receivers practical",
+        "note": "Consumer friendly"
+      }
+    },
+    {
+      "id": "v057",
+      "kind": "card",
+      "card": {
+        "type": "bullets",
+        "title": "Receiver Benefits",
+        "items": [
+          "Lightweight",
+          "Affordable",
+          "Practical for daily use"
+        ]
+      }
+    },
+    {
+      "id": "v058",
+      "kind": "card",
+      "card": {
+        "type": "title",
+        "title": "Einstein in Orbit",
+        "subtitle": "Relativity and GPS"
+      }
+    },
+    {
+      "id": "v059",
+      "kind": "photo",
+      "photo_subject": "Albert Einstein portrait",
+      "photo_queries": ["Albert Einstein", "relativity scientist"],
+      "card": {
+        "type": "stat",
+        "title": "Relativity",
+        "value": "Einstein",
+        "label": "Theories of relativity",
+        "note": "Essential for GPS"
+      }
+    },
+    {
+      "id": "v060",
+      "kind": "card",
+      "card": {
+        "type": "stat",
+        "title": "Special Relativity",
+        "value": "Slower Time",
+        "label": "For moving objects",
+        "note": "Higher speeds"
+      }
+    },
+    {
+      "id": "v061",
+      "kind": "card",
+      "card": {
+        "type": "stat",
+        "title": "Speed Effect",
+        "value": "Velocity",
+        "label": "Relative to observer",
+        "note": "Time passes slower"
+      }
+    },
+    {
+      "id": "v062",
+      "kind": "card",
+      "card": {
+        "type": "stat",
+        "title": "Satellite Speed",
+        "value": "3,874 m/s",
+        "label": "Orbital velocity",
+        "note": "Speed in space"
+      }
+    },
+    {
+      "id": "v063",
+      "kind": "card",
+      "card": {
+        "type": "stat",
+        "title": "Clock Tick Rate",
+        "value": "Slower",
+        "label": "Due to high speed",
+        "note": "Atomic clock effect"
+      }
+    },
+    {
+      "id": "v064",
+      "kind": "card",
+      "card": {
+        "type": "stat",
+        "title": "Speed Loss",
+        "value": "Velocity Effect",
+        "label": "Orbital clocks losing time",
+        "note": "Compared to ground"
+      }
+    },
+    {
+      "id": "v065",
+      "kind": "card",
+      "card": {
+        "type": "stat",
+        "title": "Special Relativity Loss",
+        "value": "-7.2 µs/day",
+        "label": "Lost per day",
+        "note": "Microseconds compared to ground"
+      }
+    },
+    {
+      "id": "v066",
+      "kind": "card",
+      "card": {
+        "type": "stat",
+        "title": "General Relativity",
+        "value": "Gravity",
+        "label": "Slows down time near Earth",
+        "note": "Massive bodies"
+      }
+    },
+    {
+      "id": "v067",
+      "kind": "card",
+      "card": {
+        "type": "stat",
+        "title": "Orbital Height",
+        "value": "High Above",
+        "label": "Earth's surface",
+        "note": "Operating altitude"
+      }
+    },
+    {
+      "id": "v068",
+      "kind": "card",
+      "card": {
+        "type": "stat",
+        "title": "Gravity Difference",
+        "value": "Weaker",
+        "label": "Gravity in orbit",
+        "note": "Compared to ground"
+      }
+    },
+    {
+      "id": "v069",
+      "kind": "card",
+      "card": {
+        "type": "stat",
+        "title": "Gravity Effect",
+        "value": "Faster",
+        "label": "Clocks tick faster",
+        "note": "Weaker gravity"
+      }
+    },
+    {
+      "id": "v070",
+      "kind": "card",
+      "card": {
+        "type": "stat",
+        "title": "General Relativity Gain",
+        "value": "+45.8 µs/day",
+        "label": "Gained per day",
+        "note": "Microseconds from gravity"
+      }
+    },
+    {
+      "id": "v071",
+      "kind": "card",
+      "card": {
+        "type": "stat",
+        "title": "Combined Effects",
+        "value": "Relativistic",
+        "label": "Both effects combined",
+        "note": "Speed and gravity"
+      }
+    },
+    {
+      "id": "v072",
+      "kind": "card",
+      "card": {
+        "type": "stat",
+        "title": "Net Clock Advance",
+        "value": "+38.6 µs/day",
+        "label": "Faster every day",
+        "note": "Total relativistic drift"
+      }
+    },
+    {
+      "id": "v073",
+      "kind": "card",
+      "card": {
+        "type": "stat",
+        "title": "Uncorrected Error",
+        "value": "Location Error",
+        "label": "Without relativity correction",
+        "note": "Timing difference impact"
+      }
+    },
+    {
+      "id": "v074",
+      "kind": "card",
+      "card": {
+        "type": "stat",
+        "title": "Daily Drift Error",
+        "value": "11.4 km",
+        "label": "Error per day",
+        "note": "Roughly eleven kilometres"
+      }
+    },
+    {
+      "id": "v075",
+      "kind": "card",
+      "card": {
+        "type": "flow",
+        "title": "Engineer Correction",
+        "steps": [
+          "Pre-adjust clock",
+          "Before launch",
+          "Into space"
+        ]
+      }
+    },
+    {
+      "id": "v076",
+      "kind": "photo",
+      "photo_subject": "a satellite being prepared in a cleanroom",
+      "photo_queries": ["satellite cleanroom", "spacecraft pre launch"],
+      "card": {
+        "type": "stat",
+        "title": "Pre-Launch",
+        "value": "Frequency",
+        "label": "Adjusted before launch",
+        "note": "Engineers pre-adjust"
+      }
+    },
+    {
+      "id": "v077",
+      "kind": "card",
+      "card": {
+        "type": "stat",
+        "title": "Clock Slowing",
+        "value": "Rate Adjustment",
+        "label": "Slowing the clock rate",
+        "note": "Pre-launch fix"
+      }
+    },
+    {
+      "id": "v078",
+      "kind": "card",
+      "card": {
+        "type": "bars",
+        "title": "Frequency Adjustment",
+        "labels": ["Standard", "Adjusted"],
+        "values": [10.23, 10.22999999543],
+        "unit": "MHz"
+      }
+    },
+    {
+      "id": "v079",
+      "kind": "card",
+      "card": {
+        "type": "stat",
+        "title": "Synchronization",
+        "value": "Synchronized",
+        "label": "With Earth's surface",
+        "note": "Pre-launch adjustment success"
+      }
+    },
+    {
+      "id": "v080",
+      "kind": "card",
+      "card": {
+        "type": "title",
+        "title": "Mapping the Numbers",
+        "subtitle": "From coordinates to the blue dot"
+      }
+    },
+    {
+      "id": "v081",
+      "kind": "card",
+      "card": {
+        "type": "stat",
+        "title": "Raw Coordinates",
+        "value": "3D Position",
+        "label": "Calculated by device",
+        "note": "Raw spatial numbers"
+      }
+    },
+    {
+      "id": "v082",
+      "kind": "card",
+      "card": {
+        "type": "bullets",
+        "title": "Coordinate Conversion",
+        "items": [
+          "Latitude",
+          "Longitude",
+          "Height"
+        ]
+      }
+    },
+    {
+      "id": "v083",
+      "kind": "photo",
+      "photo_subject": "a smartphone",
+      "photo_queries": ["smartphone GPS", "mobile phone map"],
+      "card": {
+        "type": "stat",
+        "title": "Consumer Accuracy",
+        "value": "Smartphones",
+        "label": "Horizontal positioning",
+        "note": "Everyday devices"
+      }
+    },
+    {
+      "id": "v084",
+      "kind": "card",
+      "card": {
+        "type": "stat",
+        "title": "Positioning Accuracy",
+        "value": "4.9 m",
+        "label": "Horizontal accuracy or better",
+        "note": "Consumer devices"
+      }
+    },
+    {
+      "id": "v085",
+      "kind": "photo",
+      "photo_subject": "a Wi-Fi router",
+      "photo_queries": ["wifi router", "wireless network"],
+      "card": {
+        "type": "stat",
+        "title": "Assistive Services",
+        "value": "Wi-Fi",
+        "label": "Assisted positioning",
+        "note": "Extra reliability"
+      }
+    },
+    {
+      "id": "v086",
+      "kind": "card",
+      "card": {
+        "type": "stat",
+        "title": "Reliability",
+        "value": "Enhanced",
+        "label": "Performance with Wi-Fi",
+        "note": "Assistive positioning"
+      }
+    },
+    {
+      "id": "v087",
+      "kind": "photo",
+      "photo_subject": "land surveying equipment GPS",
+      "photo_queries": ["land surveying", "surveyor GPS equipment"],
+      "card": {
+        "type": "stat",
+        "title": "High-End Apps",
+        "value": "Land Surveying",
+        "label": "Professional application",
+        "note": "Precision measurement"
+      }
+    },
+    {
+      "id": "v088",
+      "kind": "card",
+      "card": {
+        "type": "stat",
+        "title": "Surveying Accuracy",
+        "value": "Sub-mm",
+        "label": "With long-term measurements",
+        "note": "High-end applications"
+      }
+    },
+    {
+      "id": "v089",
+      "kind": "photo",
+      "photo_subject": "a digital map on a screen",
+      "photo_queries": ["digital map screen", "GPS navigation map"],
+      "card": {
+        "type": "stat",
+        "title": "Map Display",
+        "value": "Moving Map",
+        "label": "Calculated coordinates shown",
+        "note": "Visualized on screen"
+      }
+    },
+    {
+      "id": "v090",
+      "kind": "card",
+      "card": {
+        "type": "stat",
+        "title": "Tracker Algorithm",
+        "value": "Internal",
+        "label": "Combines successive measurements",
+        "note": "Movement prediction"
+      }
+    },
+    {
+      "id": "v091",
+      "kind": "card",
+      "card": {
+        "type": "flow",
+        "title": "Filter Process",
+        "steps": [
+          "Predict movement",
+          "Filter random errors"
+        ]
+      }
+    },
+    {
+      "id": "v092",
+      "kind": "card",
+      "card": {
+        "type": "stat",
+        "title": "Doppler Shift",
+        "value": "Frequency",
+        "label": "Signal Doppler shifts",
+        "note": "Analyzed by device"
+      }
+    },
+    {
+      "id": "v093",
+      "kind": "card",
+      "card": {
+        "type": "bullets",
+        "title": "Motion Output",
+        "items": [
+          "Exact velocity",
+          "Exact direction"
+        ]
+      }
+    },
+    {
+      "id": "v094",
+      "kind": "card",
+      "card": {
+        "type": "stat",
+        "title": "Advanced Systems",
+        "value": "Sensor Fusion",
+        "label": "Combining satellite data",
+        "note": "Advanced navigation"
+      }
+    },
+    {
+      "id": "v095",
+      "kind": "photo",
+      "photo_subject": "an internal smartphone sensor compass",
+      "photo_queries": ["smartphone compass", "inertial sensors"],
+      "card": {
+        "type": "stat",
+        "title": "Sensors",
+        "value": "Compasses",
+        "label": "And motion sensors",
+        "note": "Internal hardware"
+      }
+    },
+    {
+      "id": "v096",
+      "kind": "photo",
+      "photo_subject": "a smartphone showing a navigation app",
+      "photo_queries": ["smartphone GPS map", "mobile navigation"],
+      "card": {
+        "type": "stat",
+        "title": "Location Discovery",
+        "value": "Exact",
+        "label": "Found by listening",
+        "note": "Timestamps and geometry"
+      }
+    },
+    {
+      "id": "v097",
+      "kind": "card",
+      "card": {
+        "type": "bullets",
+        "title": "GPS Fundamentals",
+        "items": [
+          "Broadcast timestamps",
+          "Measuring travel times",
+          "Calculating geometry"
+        ]
+      }
+    },
+    {
+      "id": "v098",
+      "kind": "photo",
+      "photo_subject": "a blue dot on a digital map",
+      "photo_queries": ["blue dot GPS map", "navigation screen"],
+      "card": {
+        "type": "stat",
+        "title": "Blue Dot",
+        "value": "Screen",
+        "label": "Following your path",
+        "note": "Next time you navigate"
+      }
+    },
+    {
+      "id": "v099",
+      "kind": "photo",
+      "photo_subject": "a GPS satellite orbiting Earth",
+      "photo_queries": ["satellite orbit Earth", "GPS constellation"],
+      "card": {
+        "type": "stat",
+        "title": "Guidance",
+        "value": "Orbital Time",
+        "label": "Orbital geometry & atomic time",
+        "note": "Guiding your path"
+      }
+    }
+  ]
+}
