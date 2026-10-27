@@ -43,7 +43,7 @@ jobs:
           VID: ${{ inputs.video_id }}
         run: |
           [[ "$VID" =~ ^[A-Za-z0-9_-]{11}$ ]] || { echo "bad video id"; exit 1; }
-          python study/study_video.py "$VID" out/study 2>&1 | tee out/study.log
+          mkdir -p out/study && python study/study_video.py "$VID" out/study 2>&1 | tee out/study.log
       - name: Save to bench-results
         if: always()
         timeout-minutes: 3

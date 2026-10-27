@@ -48,6 +48,30 @@ def facts(vid: str, out: Path) -> dict:
     return res
 
 
+def get(url: str, timeout: int = 30) -> bytes:
+    req = urllib.request.Request(url, headers={"User-Agent": "Mozilla/5.0", "Accept-Language": "en"})
+    with urllib.request.urlopen(req, timeout=timeout) as r:
+        return r.read()
+
+
+def storyboard(vid: str, out: Path) -> str:
+    """YouTube's own timeline preview frames (shown when hovering the progress bar), from the public page."""
+    html = get(f"https://www.youtube.com/watch?v={vid}&hl=en").decode(errors="replace")
+    m = re.search(r'"playerStoryboardSpecRenderer":\{"spec":"([^"]+)"', html)
+    if not m:
+        return "no storyboard spec in page"
+    spec = m.group(1).replace("\\u0026", "&").split("|")
+    base, levels = spec[0], spec[1:]
+    lv = len(levels) - 1  # largest frames
+    w, h, count, cols, rows, interval, name, sigh = levels[lv].split("#")
+    pages = -(-int(count) // (int(cols) * int(rows)))
+    for page in range(pages):
+        url = base.replace("$L", str(lv)).replace("$N", name.replace("$M", str(page))) + "&sigh=" + sigh
+        (out / f"storyboard_{page + 1:02}.jpg").write_bytes(get(url))
+    return f"{pages} pages, {cols}x{rows} frames of {w}x{h}, one every {int(interval) / 1000:.1f} s" \
+        if int(interval) else f"{pages} pages, {count} frames of {w}x{h} spread over the video"
+
+
 def main() -> None:
     vid, out = sys.argv[1], Path(sys.argv[2])
     if not re.fullmatch(r"[A-Za-z0-9_-]{11}", vid):
@@ -67,6 +91,16 @@ def main() -> None:
                        uploads_last_50=len(f["recent_uploads"]))
     except Exception as e:  # noqa: BLE001
         summary["facts_error"] = repr(e)[:300]
+
+    try:
+        thumbs = f["video"]["snippet"]["thumbnails"]
+        (out / "thumbnail.jpg").write_bytes(get((thumbs.get("maxres") or thumbs["high"])["url"]))
+    except Exception as e:  # noqa: BLE001
+        summary["thumbnail_error"] = repr(e)[:200]
+    try:
+        summary["storyboard"] = storyboard(vid, out)
+    except Exception as e:  # noqa: BLE001
+        summary["storyboard"] = f"failed: {e!r}"[:300]
 
     url = f"https://www.youtube.com/watch?v={vid}"
     r = run([sys.executable, "-m", "yt_dlp", "-f", "bv*[height<=480]+ba/b[height<=480]/b", "--merge-output-format", "mp4",
