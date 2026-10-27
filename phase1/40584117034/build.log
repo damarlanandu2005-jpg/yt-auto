@@ -1,0 +1,27 @@
+[diag] machine: {'arch': 'x86_64', 'cpus': 4, 'python': '3.13.16', 'runner': 'GitHub Actions 1000000263', 'cpu_model': 'AMD EPYC 7763 64-Core Processor', 'ffmpeg': 'ffmpeg version n8.1.3-24-g92611900bb-20261026 Copyright (c) 2000-2026 the FFmpeg developers'}
+[research] A1 Near-Earth supernova: 12 passages
+[research] A2 Supernova: 64 passages
+[research] A3 Ozone depletion: 54 passages
+[research] A4 Isotopes of iron: 14 passages
+[llm] factcheck: gemini-3.8-flash unavailable (daily free quota used up); trying next model
+[llm] factcheck: gemini-3.6-flash unavailable (HTTP 503 (busy)); trying next model
+[llm] factcheck2: gemini-3.5-flash unavailable (daily free quota used up); trying next model
+[llm] factcheck2: gemini-3.6-flash unavailable (daily free quota used up); trying next model
+[bench] script: 426.66 s
+Traceback (most recent call last):
+  File "/home/runner/work/yt-auto/yt-auto/phase1/make_video.py", line 275, in <module>
+    main()
+    ~~~~^^
+  File "/home/runner/work/yt-auto/yt-auto/phase1/make_video.py", line 99, in main
+    run(args, out, bench)
+    ~~~^^^^^^^^^^^^^^^^^^
+  File "/home/runner/work/yt-auto/yt-auto/phase1/make_video.py", line 122, in run
+    report = writer.fact_check(script, sources)
+  File "/home/runner/work/yt-auto/yt-auto/yt_auto/writer.py", line 238, in fact_check
+    second = check(rewritten, idx, "factcheck2") if rewritten else {}
+             ~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/runner/work/yt-auto/yt-auto/yt_auto/writer.py", line 180, in check
+    res = llm(prompt, schema=CHECK_SCHEMA, name=name, temperature=0.1, models=QUALITY)
+  File "/home/runner/work/yt-auto/yt-auto/yt_auto/llm.py", line 95, in llm
+    raise LLMError(f"{name}: no model available: {errors}")
+yt_auto.llm.LLMError: factcheck2: no model available: ['gemini-3.5-flash: daily free quota used up', 'gemini-3.6-flash: daily free quota used up']
