@@ -1,0 +1,280 @@
+{
+  "results": [
+    {
+      "id": "u1",
+      "verdict": "partly",
+      "problem": "The cited passage does not state that NASA designed and built TRANSIT.",
+      "fixed_text": "TRANSIT was first tested successfully in 1960."
+    },
+    {
+      "id": "u2",
+      "verdict": "partly",
+      "problem": "The cited passage does not mention that the receiver cost less than 1,000 dollars.",
+      "fixed_text": "In 1991, DARPA finished a project creating a 1.25 kilogram handheld GPS receiver."
+    },
+    {
+      "id": "u3",
+      "verdict": "partly",
+      "problem": "The passage does not state that airlines pushed for making GPS a dual-use system.",
+      "fixed_text": "In 1996, President Bill Clinton declared GPS a dual-use system due to its importance for civilian and military users."
+    },
+    {
+      "id": "u4",
+      "verdict": "partly",
+      "problem": "The passage does not state that assisted GPS was in every smartphone by 2008.",
+      "fixed_text": "Qualcomm announced successful tests of assisted GPS for mobile phones in November 2004."
+    },
+    {
+      "id": "u5",
+      "verdict": "unsupported",
+      "problem": "The passage does not state that hydrogen masers keep time inside GPS satellites.",
+      "fixed_text": "Hydrogen masers have high short-term stability and are useful in radio astronomy."
+    },
+    {
+      "id": "u6",
+      "verdict": "unsupported",
+      "problem": "The framing sentence contains an unbacked factual claim that over 6 billion people use GPS daily.",
+      "fixed_text": ""
+    },
+    {
+      "id": "o1",
+      "verdict": "partly",
+      "problem": "As of 2026, the GPS constellation has 31 operational satellites rather than 24.",
+      "fixed_text": "GPS currently operates with 31 active satellites in its constellation."
+    },
+    {
+      "id": "o2",
+      "verdict": "partly",
+      "problem": "Operation of the GPS constellation was transferred to the U.S. Space Force in July 2020.",
+      "fixed_text": "In July 2020, operation of the GPS constellation was moved to the U.S. Space Force."
+    },
+    {
+      "id": "o3",
+      "verdict": "partly",
+      "problem": "A record-setting optical atomic clock based on a trapped aluminium ion was reported in July 2025 as having higher accuracy.",
+      "fixed_text": "The NIST-F2 caesium clock operates with a relative uncertainty of around 10−16."
+    },
+    {
+      "id": "o4",
+      "verdict": "partly",
+      "problem": "Selective Availability was discontinued in 2000 and no longer adds errors to civilian signals.",
+      "fixed_text": "Selective Availability previously added intentional errors up to 100 meters before being turned off in 2000."
+    },
+    {
+      "id": "o5",
+      "verdict": "partly",
+      "problem": "As of March 2026, 21 GPS satellites broadcast L5 signals, not 12.",
+      "fixed_text": "As of March 2026, 21 GPS satellites broadcast L5 signals."
+    },
+    {
+      "id": "o6",
+      "verdict": "partly",
+      "problem": "The United States' primary time standard is the NIST-F2 clock, not NIST-F1.",
+      "fixed_text": "The primary time standard of the United States is the NIST-F2 caesium fountain clock."
+    },
+    {
+      "id": "q1",
+      "verdict": "partly",
+      "problem": "Air Force Space Command said there was only a small risk they would not continue to exceed performance standards.",
+      "fixed_text": "In 2009, Air Force Space Command stated there was only a small risk of not exceeding performance standards."
+    },
+    {
+      "id": "q2",
+      "verdict": "partly",
+      "problem": "The quote about a small risk was made by Air Force Space Command, while the GAO warned that satellites could fail as soon as 2010.",
+      "fixed_text": "In 2009, the Government Accountability Office reported that several GPS satellites could fail as early as 2010."
+    },
+    {
+      "id": "q3",
+      "verdict": "partly",
+      "problem": "The 2015 review lamented the pernicious influence of the Dick effect rather than praising it.",
+      "fixed_text": "A 2015 review lamented the pernicious influence of the Dick effect on optical standards."
+    },
+    {
+      "id": "q4",
+      "verdict": "unsupported",
+      "problem": "The passage does not state that Bill Clinton called GPS a gift to the whole world.",
+      "fixed_text": "President Bill Clinton declared GPS a dual-use system in 1996."
+    },
+    {
+      "id": "q5",
+      "verdict": "partly",
+      "problem": "Al Gore was Vice President in 1998, not President.",
+      "fixed_text": "In 1998, Vice President Al Gore announced plans for two new civilian GPS signals."
+    },
+    {
+      "id": "q6",
+      "verdict": "partly",
+      "problem": "NIST researchers called their clock a quantum logic clock, not a quantum leap clock.",
+      "fixed_text": "NIST researchers called their record-setting clock a quantum logic clock."
+    },
+    {
+      "id": "c1",
+      "verdict": "partly",
+      "problem": "GPS achieved initial operational capability by December 1993, not 1995.",
+      "fixed_text": "By December 1993, GPS reached initial operational capability with 24 satellites."
+    },
+    {
+      "id": "c2",
+      "verdict": "partly",
+      "problem": "More than 50 Atomichron units were sold during the 1950s, not only about 20.",
+      "fixed_text": "During the 1950s, more than 50 Atomichron atomic clocks were sold."
+    },
+    {
+      "id": "c3",
+      "verdict": "partly",
+      "problem": "Relativistic effects make GPS satellite clocks gain about 38.6 microseconds per day, not 45.",
+      "fixed_text": "In total, relativistic effects make GPS satellite clocks run fast by around 38.6 microseconds daily."
+    },
+    {
+      "id": "c4",
+      "verdict": "partly",
+      "problem": "TRANSIT was first successfully tested in 1960, not 1964.",
+      "fixed_text": "TRANSIT underwent its first successful test in 1960."
+    },
+    {
+      "id": "c5",
+      "verdict": "supported",
+      "problem": "",
+      "fixed_text": ""
+    },
+    {
+      "id": "c6",
+      "verdict": "supported",
+      "problem": "",
+      "fixed_text": ""
+    },
+    {
+      "id": "w1",
+      "verdict": "partly",
+      "problem": "A timing error of 1 nanosecond, not 1 microsecond, causes a 30 centimetre positional error.",
+      "fixed_text": "A timing error of 1 nanosecond creates a position error of roughly 30 centimetres."
+    },
+    {
+      "id": "w2",
+      "verdict": "partly",
+      "problem": "An error of 10 nanoseconds represents a position error of about 3 meters, not 3 kilometres.",
+      "fixed_text": "An error of 10 nanoseconds in the code causes a position error of about 3 meters."
+    },
+    {
+      "id": "w3",
+      "verdict": "partly",
+      "problem": "The clocks fall behind by 7,214 nanoseconds per day due to speed, not microseconds.",
+      "fixed_text": "Due to their speed, satellite clocks fall behind by 7,214 nanoseconds each day."
+    },
+    {
+      "id": "w4",
+      "verdict": "partly",
+      "problem": "The previous military receivers weighed 16 kilograms (35 pounds), not 16 pounds.",
+      "fixed_text": "In 1991, 16-kilogram military receivers were replaced by a 1.25-kilogram handheld unit."
+    },
+    {
+      "id": "w5",
+      "verdict": "partly",
+      "problem": "GPS satellites move at 3,874 meters per second, not kilometres per second.",
+      "fixed_text": "GPS satellites travel at 3,874 meters per second relative to Earth's center."
+    },
+    {
+      "id": "w6",
+      "verdict": "partly",
+      "problem": "Strontium optical clocks work at 429 terahertz, not gigahertz.",
+      "fixed_text": "Strontium optical clocks operate at a frequency of 429 terahertz."
+    },
+    {
+      "id": "k1",
+      "verdict": "supported",
+      "problem": "",
+      "fixed_text": ""
+    },
+    {
+      "id": "k2",
+      "verdict": "supported",
+      "problem": "",
+      "fixed_text": ""
+    },
+    {
+      "id": "k3",
+      "verdict": "supported",
+      "problem": "",
+      "fixed_text": ""
+    },
+    {
+      "id": "k4",
+      "verdict": "supported",
+      "problem": "",
+      "fixed_text": ""
+    },
+    {
+      "id": "k5",
+      "verdict": "supported",
+      "problem": "",
+      "fixed_text": ""
+    },
+    {
+      "id": "k6",
+      "verdict": "supported",
+      "problem": "",
+      "fixed_text": ""
+    },
+    {
+      "id": "k7",
+      "verdict": "supported",
+      "problem": "",
+      "fixed_text": ""
+    },
+    {
+      "id": "k8",
+      "verdict": "supported",
+      "problem": "",
+      "fixed_text": ""
+    },
+    {
+      "id": "k9",
+      "verdict": "supported",
+      "problem": "",
+      "fixed_text": ""
+    },
+    {
+      "id": "k10",
+      "verdict": "supported",
+      "problem": "",
+      "fixed_text": ""
+    },
+    {
+      "id": "k11",
+      "verdict": "supported",
+      "problem": "",
+      "fixed_text": ""
+    },
+    {
+      "id": "k12",
+      "verdict": "supported",
+      "problem": "",
+      "fixed_text": ""
+    },
+    {
+      "id": "k13",
+      "verdict": "supported",
+      "problem": "",
+      "fixed_text": ""
+    },
+    {
+      "id": "k14",
+      "verdict": "supported",
+      "problem": "",
+      "fixed_text": ""
+    },
+    {
+      "id": "k15",
+      "verdict": "supported",
+      "problem": "",
+      "fixed_text": ""
+    },
+    {
+      "id": "k16",
+      "verdict": "supported",
+      "problem": "",
+      "fixed_text": ""
+    }
+  ]
+}

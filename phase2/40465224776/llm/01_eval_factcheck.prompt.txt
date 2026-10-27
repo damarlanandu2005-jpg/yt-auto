@@ -1,0 +1,208 @@
+[model] gemini-3.6-flash
+[system]
+
+
+[user]
+You are a strict fact-checker. For each sentence below, decide using ONLY its cited passages
+(not your own knowledge):
+- supported: every detail (numbers, names, dates, causes, comparisons) is stated in or directly follows from them.
+- partly: the main point is backed but some detail is not, or it overstates / oversimplifies into something false.
+- unsupported: the cited passages do not back it, or there are none.
+For partly/unsupported, give fixed_text: a corrected sentence in the same plain spoken style that the cited
+passages fully support (keep digits and full unit words; no copying 8+ words). Leave fixed_text empty if impossible.
+A FRAMING SENTENCE has no passages: it is "supported" only if it makes no checkable claim at all (a question,
+transition or invitation). If it states any fact, mark it "unsupported" with an empty fixed_text.
+
+[u1] SENTENCE: TRANSIT, first tested in 1960, was designed and built by NASA.
+CITED PASSAGES:
+A1.10: TRANSIT was first successfully tested in 1960. It used a constellation of five satellites and could provide a navigational fix approximately once per hour. In 1967, the U.S. Navy developed the Timation satellite, which proved the feasibility of placing accurate clocks in space, a technology required for GPS.
+
+[u2] SENTENCE: In 1991, DARPA's small handheld GPS receiver was finished, and it cost less than 1,000 dollars.
+CITED PASSAGES:
+A1.30: In 1991, DARPA's project to create a miniature GPS receiver successfully ended, replacing the previous 16 kg (35 lb) military receivers with a 1.25 kg (2.8 lb) all-digital handheld GPS receiver.
+
+[u3] SENTENCE: Bill Clinton made GPS a dual-use system in 1996 because airlines pushed for it.
+CITED PASSAGES:
+A1.34: In 1996, recognizing the importance of GPS to civilian users as well as military users, U.S. president Bill Clinton issued a policy directive declaring GPS a dual-use system and establishing an Interagency GPS Executive Board to manage it as a national asset.
+
+[u4] SENTENCE: Qualcomm tested assisted GPS for phones in 2004, and by 2008 it was in every smartphone.
+CITED PASSAGES:
+A1.39: In November 2004, Qualcomm announced successful tests of assisted GPS for mobile phones.
+
+[u5] SENTENCE: Hydrogen masers are the clocks that keep time inside GPS satellites.
+CITED PASSAGES:
+A3.67: Hydrogen masers have superior short-term stability compared to other standards, but lower long-term accuracy. The long-term stability of hydrogen maser standards decreases because of changes in the cavity's properties over time. The relative error of hydrogen masers is 5 × 10−16 for periods of 1000 seconds. This makes hydrogen masers good for radio astronomy, in particular for very long baseline interferometry.
+
+[u6] FRAMING SENTENCE: Did you know that more than 6 billion people use GPS every day?
+
+[o1] SENTENCE: Today, GPS runs on a constellation of 24 satellites.
+CITED PASSAGES:
+A1.32: By December 1993, GPS achieved initial operational capability (IOC), with a full constellation (24 satellites) available and providing the Standard Positioning Service (SPS).
+X1: As of 2026, the GPS constellation has 31 operational satellites, more than the 24 needed for full coverage.
+
+[o2] SENTENCE: Today, GPS is managed by the 50th Space Wing.
+CITED PASSAGES:
+A1.31: In 1992, the 2nd Space Wing, which originally managed the system, was inactivated and replaced by the 50th Space Wing.
+A1.46: July 24, 2020, operation of the GPS constellation was transferred to the newly established U.S. Space Force as part of its establishment.
+
+[o3] SENTENCE: The NIST-F2 caesium clock is the most accurate atomic clock ever built.
+CITED PASSAGES:
+A3.6: The main variety of atomic clock in use today employs caesium atoms (or ions) cooled to near absolute zero. For example, the United States' primary standard, the NIST caesium fountain clock named NIST-F2, operates with a relative uncertainty around 10−16.
+A3.7: In July 2025, researchers at the National Institute of Standards and Technology in the United States reported a record-setting optical atomic clock based on a trapped aluminium ion. This "quantum logic" clock achieves a systematic uncertainty corresponding to around 19 decimal places of accuracy, representing a 41% improvement over the previous record and being 2.6 times more stable than any other ion clock.
+
+[o4] SENTENCE: Selective Availability still adds errors of up to 100 metres to civilian GPS signals.
+CITED PASSAGES:
+A4.33: GPS formerly included a feature called Selective Availability (SA) that added intentional, time varying errors of up to 100 meters (328 ft) to the publicly available navigation signals. This was intended to deny an enemy the use of civilian GPS receivers for precision weapon guidance.
+A1.36: On May 2, 2000 "Selective Availability" was discontinued as a result of the 1996 executive order, allowing civilian users to receive a non-degraded signal globally.
+
+[o5] SENTENCE: So far, only 12 GPS satellites broadcast the new L5 signal.
+CITED PASSAGES:
+X2: In 2019, only 12 GPS satellites were broadcasting the L5 signal.
+A1.5: As of March 2026, 21 GPS satellites broadcast L5 signals, which are considered pre-operational prior to the availability of all 24 satellites in 2027.
+
+[o6] SENTENCE: The United States' primary time standard is the NIST-F1 caesium clock.
+CITED PASSAGES:
+A3.60: Caesium clocks include the NIST-F1 clock, developed in 1999, and the NIST-F2 clock, developed in 2013.
+A3.6: The main variety of atomic clock in use today employs caesium atoms (or ions) cooled to near absolute zero. For example, the United States' primary standard, the NIST caesium fountain clock named NIST-F2, operates with a relative uncertainty around 10−16.
+
+[q1] SENTENCE: In 2009, Air Force Space Command said: "There is no risk at all that GPS will fail."
+CITED PASSAGES:
+A1.43: On May 21, 2009, the Air Force Space Command allayed fears of GPS failure, saying: "There's only a small risk we will not continue to exceed our performance standard."
+
+[q2] SENTENCE: In 2009, the Government Accountability Office said there was "only a small risk" of GPS falling below its standard.
+CITED PASSAGES:
+A1.42: On May 19, 2009, the United States Government Accountability Office issued a report warning that some GPS satellites could fail as soon as 2010.
+A1.43: On May 21, 2009, the Air Force Space Command allayed fears of GPS failure, saying: "There's only a small risk we will not continue to exceed our performance standard."
+
+[q3] SENTENCE: A 2015 review praised "the beneficial influence of the Dick effect" on optical clocks.
+CITED PASSAGES:
+A3.33: , and, for many of the newer clocks, is significantly larger. Analysis of the effect and its consequence as applied to optical standards has been treated in a major review (Ludlow, et al., 2015) that lamented on "the pernicious influence of the Dick effect", and in several other papers.
+
+[q4] SENTENCE: In 1996, Bill Clinton called GPS "a gift to the whole world".
+CITED PASSAGES:
+A1.34: In 1996, recognizing the importance of GPS to civilian users as well as military users, U.S. president Bill Clinton issued a policy directive declaring GPS a dual-use system and establishing an Interagency GPS Executive Board to manage it as a national asset.
+
+[q5] SENTENCE: In 1998, President Al Gore announced two new civilian GPS signals.
+CITED PASSAGES:
+A1.35: In 1998, United States vice president Al Gore announced plans to upgrade GPS with two new civilian signals for enhanced user accuracy and reliability, particularly with respect to aviation safety, and in 2000 the United States Congress authorized the effort, referring to it as GPS III.
+
+[q6] SENTENCE: NIST researchers called their record-breaking clock the "quantum leap" clock.
+CITED PASSAGES:
+A3.7: In July 2025, researchers at the National Institute of Standards and Technology in the United States reported a record-setting optical atomic clock based on a trapped aluminium ion. This "quantum logic" clock achieves a systematic uncertainty corresponding to around 19 decimal places of accuracy, representing a 41% improvement over the previous record and being 2.6 times more stable than any other ion clock.
+
+[c1] SENTENCE: GPS reached initial operational capability in 1995.
+CITED PASSAGES:
+A1.32: By December 1993, GPS achieved initial operational capability (IOC), with a full constellation (24 satellites) available and providing the Standard Positioning Service (SPS).
+X3: GPS reached initial operational capability in 1995, after the last Block II satellite was launched.
+
+[c2] SENTENCE: Only about 20 Atomichron clocks were ever sold.
+CITED PASSAGES:
+A3.16: During the 1950s, the National Radio Company sold more than 50 units of the first atomic clock, the Atomichron. In 1964, engineers at Hewlett-Packard released the 5060 rack-mounted model of caesium clocks.
+X4: Only about 20 Atomichron clocks were ever sold.
+
+[c3] SENTENCE: In total, GPS satellite clocks run fast by about 45 microseconds a day.
+CITED PASSAGES:
+A4.64: Hence the satellites' clocks gain approximately 38,640 nanoseconds a day or 38.6 μs per day due to relativistic effects in total.
+X5: In total, relativity makes GPS satellite clocks run fast by about 45 microseconds a day.
+
+[c4] SENTENCE: TRANSIT was first successfully tested in 1964.
+CITED PASSAGES:
+A1.10: TRANSIT was first successfully tested in 1960. It used a constellation of five satellites and could provide a navigational fix approximately once per hour. In 1967, the U.S. Navy developed the Timation satellite, which proved the feasibility of placing accurate clocks in space, a technology required for GPS.
+X6: TRANSIT was first successfully tested in 1964.
+
+[c5] SENTENCE: International Atomic Time is a weighted average of about 450 clocks.
+CITED PASSAGES:
+A3.52: Coordinated Universal Time (UTC) is the result of comparing clocks in national laboratories around the world to International Atomic Time (TAI), then adding leap seconds as necessary. TAI is a weighted average of around 450 clocks in some 80 time institutions. The relative stability of TAI is around one part in 1016.
+X7: International Atomic Time combines about 300 clocks.
+
+[c6] SENTENCE: Bradford Parkinson retired from the Air Force in 1978.
+CITED PASSAGES:
+A1.51: Bradford Parkinson, professor of aeronautics and astronautics at Stanford University, conceived the present satellite-based system in the early 1960s and developed it in conjunction with the U.S. Air Force. Parkinson served twenty-one years in the Air Force, from 1957 to 1978, and retired with the rank of colonel.
+X8: Bradford Parkinson retired from the Air Force in 1980.
+
+[w1] SENTENCE: A timing error of just 1 microsecond puts your position out by about 30 centimetres.
+CITED PASSAGES:
+A3.5: The accurate time-keeping capabilities of atomic clocks are also used for navigation by satellite networks such as the EU's Galileo Programme and the United States' GPS. The timing accuracy of the atomic clocks matters because even a timing error of 1 nanosecond (10−9 s) corresponds to a positional error of roughly 30 cm when multiplied by the speed of light.
+
+[w2] SENTENCE: An error of about 10 nanoseconds in the code means a position error of about 3 kilometres.
+CITED PASSAGES:
+A4.13: , or approximately 10 nanoseconds for the C/A code. Since GPS signals propagate at the speed of light, this represents an error of about 3 meters.
+
+[w3] SENTENCE: Because of their speed, the satellites' clocks fall behind by 7,214 microseconds a day.
+CITED PASSAGES:
+A4.55: That is, the satellites' clocks are slower than Earth's clocks by 7214 nanoseconds a day due to their velocity.
+
+[w4] SENTENCE: In 1991, 16-pound military receivers were replaced by a handheld unit of 1.25 kilograms.
+CITED PASSAGES:
+A1.30: In 1991, DARPA's project to create a miniature GPS receiver successfully ended, replacing the previous 16 kg (35 lb) military receivers with a 1.25 kg (2.8 lb) all-digital handheld GPS receiver.
+
+[w5] SENTENCE: GPS satellites move at 3,874 kilometres per second relative to the centre of the Earth.
+CITED PASSAGES:
+A4.51: The GPS satellites move at 3874 m/s relative to Earth's center. We thus determine:
+
+[w6] SENTENCE: Strontium optical clocks work at 429 gigahertz.
+CITED PASSAGES:
+A3.30: . This is why optical clocks such as strontium clocks (429 terahertz) are much more stable than caesium clocks (9.19 GHz).
+
+[k1] SENTENCE: TRANSIT, first tested successfully in 1960, used five satellites and gave a position fix about once an hour.
+CITED PASSAGES:
+A1.10: TRANSIT was first successfully tested in 1960. It used a constellation of five satellites and could provide a navigational fix approximately once per hour. In 1967, the U.S. Navy developed the Timation satellite, which proved the feasibility of placing accurate clocks in space, a technology required for GPS.
+
+[k2] SENTENCE: The Gulf War of 1990 to 1991 was the first conflict where the military used GPS widely.
+CITED PASSAGES:
+A1.29: The Gulf War from 1990 to 1991 was the first conflict in which the military widely used GPS.
+
+[k3] SENTENCE: Selective Availability was switched off on 2 May 2000, so civilians everywhere got a clean signal.
+CITED PASSAGES:
+A1.36: On May 2, 2000 "Selective Availability" was discontinued as a result of the 1996 executive order, allowing civilian users to receive a non-degraded signal globally.
+
+[k4] SENTENCE: In July 2020, the newly created U.S. Space Force took over running the GPS satellites.
+CITED PASSAGES:
+A1.46: July 24, 2020, operation of the GPS constellation was transferred to the newly established U.S. Space Force as part of its establishment.
+
+[k5] SENTENCE: A clock that is wrong by just 1 nanosecond puts your position out by roughly 30 centimetres.
+CITED PASSAGES:
+A3.5: The accurate time-keeping capabilities of atomic clocks are also used for navigation by satellite networks such as the EU's Galileo Programme and the United States' GPS. The timing accuracy of the atomic clocks matters because even a timing error of 1 nanosecond (10−9 s) corresponds to a positional error of roughly 30 cm when multiplied by the speed of light.
+
+[k6] SENTENCE: Because they move so fast, the satellites' clocks fall behind clocks on Earth by 7,214 nanoseconds every day.
+CITED PASSAGES:
+A4.55: That is, the satellites' clocks are slower than Earth's clocks by 7214 nanoseconds a day due to their velocity.
+
+[k7] SENTENCE: Weaker gravity makes them gain 45,850 nanoseconds a day, so overall they run fast by about 38.6 microseconds daily.
+CITED PASSAGES:
+A4.63: That is, the satellites' clocks gain 45850 nanoseconds a day due to gravitational time dilation.
+A4.64: Hence the satellites' clocks gain approximately 38,640 nanoseconds a day or 38.6 μs per day due to relativistic effects in total.
+
+[k8] SENTENCE: In 1991, a DARPA project shrank military GPS receivers from 16 kilograms to a handheld unit of 1.25 kilograms.
+CITED PASSAGES:
+A1.30: In 1991, DARPA's project to create a miniature GPS receiver successfully ended, replacing the previous 16 kg (35 lb) military receivers with a 1.25 kg (2.8 lb) all-digital handheld GPS receiver.
+
+[k9] SENTENCE: By December 1993, a full set of 24 satellites was in place and GPS reached initial operational capability.
+CITED PASSAGES:
+A1.32: By December 1993, GPS achieved initial operational capability (IOC), with a full constellation (24 satellites) available and providing the Standard Positioning Service (SPS).
+
+[k10] SENTENCE: International Atomic Time is a weighted average of around 450 clocks in some 80 institutions.
+CITED PASSAGES:
+A3.52: Coordinated Universal Time (UTC) is the result of comparing clocks in national laboratories around the world to International Atomic Time (TAI), then adding leap seconds as necessary. TAI is a weighted average of around 450 clocks in some 80 time institutions. The relative stability of TAI is around one part in 1016.
+
+[k11] SENTENCE: In 2009, Air Force Space Command said there was "only a small risk" that GPS would stop exceeding its performance standard.
+CITED PASSAGES:
+A1.43: On May 21, 2009, the Air Force Space Command allayed fears of GPS failure, saying: "There's only a small risk we will not continue to exceed our performance standard."
+
+[k12] SENTENCE: The NIST-F2 caesium clock was developed in 2013, fourteen years after NIST-F1.
+CITED PASSAGES:
+A3.60: Caesium clocks include the NIST-F1 clock, developed in 1999, and the NIST-F2 clock, developed in 2013.
+
+[k13] SENTENCE: Selective Availability once added deliberate errors of up to 100 metres to civilian signals.
+CITED PASSAGES:
+A4.33: GPS formerly included a feature called Selective Availability (SA) that added intentional, time varying errors of up to 100 meters (328 ft) to the publicly available navigation signals. This was intended to deny an enemy the use of civilian GPS receivers for precision weapon guidance.
+
+[k14] SENTENCE: Bradford Parkinson spent twenty-one years in the Air Force and retired as a colonel.
+CITED PASSAGES:
+A1.51: Bradford Parkinson, professor of aeronautics and astronautics at Stanford University, conceived the present satellite-based system in the early 1960s and developed it in conjunction with the U.S. Air Force. Parkinson served twenty-one years in the Air Force, from 1957 to 1978, and retired with the rank of colonel.
+
+[k15] SENTENCE: Strontium optical clocks work at 429 terahertz, far above the 9.19 gigahertz of caesium clocks.
+CITED PASSAGES:
+A3.30: . This is why optical clocks such as strontium clocks (429 terahertz) are much more stable than caesium clocks (9.19 GHz).
+
+[k16] FRAMING SENTENCE: So how can a clock in space tell you where you are standing?
