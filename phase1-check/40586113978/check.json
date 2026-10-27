@@ -1,0 +1,902 @@
+{
+  "keys": {
+    "secret_names": [
+      "GEMINI_API_KEY"
+    ],
+    "keys": {
+      "GEMINI_API_KEY": {
+        "list_models_status": 200,
+        "models": 60,
+        "error": "",
+        "youtube_api": "HTTP 401",
+        "project_fingerprint": null
+      }
+    },
+    "same_project": null
+  },
+  "pages": {
+    "gemini_pricing.html": 200,
+    "google_apis_terms.html": 200,
+    "gemini_rate_limits.html": 200,
+    "gemini_models.html": 200,
+    "gemini_deprecations.html": 200,
+    "gemini_terms.html": 200,
+    "nasa_media_guidelines.html": 200,
+    "nasa_api_docs.pdf": 200,
+    "wikimedia_api_etiquette.html": 200,
+    "wikimedia_user_agent_policy.html": 200,
+    "wikimedia_api_access_policy.html": 200
+  },
+  "gemini": {
+    "key_present": true,
+    "models": [
+      {
+        "name": "models/gemini-2.5-flash",
+        "display": "Gemini 2.5 Flash",
+        "methods": [
+          "generateContent",
+          "countTokens",
+          "createCachedContent",
+          "batchGenerateContent"
+        ],
+        "input_tokens": 1048576,
+        "output_tokens": 65536
+      },
+      {
+        "name": "models/gemini-2.5-pro",
+        "display": "Gemini 2.5 Pro",
+        "methods": [
+          "generateContent",
+          "countTokens",
+          "createCachedContent",
+          "batchGenerateContent"
+        ],
+        "input_tokens": 1048576,
+        "output_tokens": 65536
+      },
+      {
+        "name": "models/gemini-2.5-flash-preview-tts",
+        "display": "Gemini 2.5 Flash Preview TTS",
+        "methods": [
+          "countTokens",
+          "generateContent"
+        ],
+        "input_tokens": 8192,
+        "output_tokens": 16384
+      },
+      {
+        "name": "models/gemini-2.5-pro-preview-tts",
+        "display": "Gemini 2.5 Pro Preview TTS",
+        "methods": [
+          "countTokens",
+          "generateContent",
+          "batchGenerateContent"
+        ],
+        "input_tokens": 8192,
+        "output_tokens": 16384
+      },
+      {
+        "name": "models/gemma-4-26b-a4b-it",
+        "display": "Gemma 4 26B A4B IT",
+        "methods": [
+          "generateContent",
+          "countTokens"
+        ],
+        "input_tokens": 262144,
+        "output_tokens": 32768
+      },
+      {
+        "name": "models/gemma-4-31b-it",
+        "display": "Gemma 4 31B IT",
+        "methods": [
+          "generateContent",
+          "countTokens"
+        ],
+        "input_tokens": 262144,
+        "output_tokens": 32768
+      },
+      {
+        "name": "models/gemini-flash-latest",
+        "display": "Gemini Flash Latest",
+        "methods": [
+          "generateContent",
+          "countTokens",
+          "createCachedContent",
+          "batchGenerateContent"
+        ],
+        "input_tokens": 1048576,
+        "output_tokens": 65536
+      },
+      {
+        "name": "models/gemini-flash-lite-latest",
+        "display": "Gemini Flash-Lite Latest",
+        "methods": [
+          "generateContent",
+          "countTokens",
+          "createCachedContent",
+          "batchGenerateContent"
+        ],
+        "input_tokens": 1048576,
+        "output_tokens": 65536
+      },
+      {
+        "name": "models/gemini-pro-latest",
+        "display": "Gemini Pro Latest",
+        "methods": [
+          "generateContent",
+          "countTokens",
+          "createCachedContent",
+          "batchGenerateContent"
+        ],
+        "input_tokens": 1048576,
+        "output_tokens": 65536
+      },
+      {
+        "name": "models/gemini-2.5-flash-lite",
+        "display": "Gemini 2.5 Flash-Lite",
+        "methods": [
+          "generateContent",
+          "countTokens",
+          "createCachedContent",
+          "batchGenerateContent"
+        ],
+        "input_tokens": 1048576,
+        "output_tokens": 65536
+      },
+      {
+        "name": "models/gemini-2.5-flash-image",
+        "display": "Nano Banana",
+        "methods": [
+          "generateContent",
+          "countTokens",
+          "batchGenerateContent"
+        ],
+        "input_tokens": 32768,
+        "output_tokens": 32768
+      },
+      {
+        "name": "models/gemini-3-flash-preview",
+        "display": "Gemini 3 Flash Preview",
+        "methods": [
+          "generateContent",
+          "countTokens",
+          "createCachedContent",
+          "batchGenerateContent"
+        ],
+        "input_tokens": 1048576,
+        "output_tokens": 65536
+      },
+      {
+        "name": "models/gemini-3.1-pro-preview",
+        "display": "Gemini 3.1 Pro Preview",
+        "methods": [
+          "generateContent",
+          "countTokens",
+          "createCachedContent",
+          "batchGenerateContent"
+        ],
+        "input_tokens": 1048576,
+        "output_tokens": 65536
+      },
+      {
+        "name": "models/gemini-3.1-pro-preview-customtools",
+        "display": "Gemini 3.1 Pro Preview Custom Tools",
+        "methods": [
+          "generateContent",
+          "countTokens",
+          "createCachedContent",
+          "batchGenerateContent"
+        ],
+        "input_tokens": 1048576,
+        "output_tokens": 65536
+      },
+      {
+        "name": "models/gemini-3.1-flash-lite-preview",
+        "display": "Gemini 3.1 Flash Lite Preview",
+        "methods": [
+          "generateContent",
+          "countTokens",
+          "createCachedContent",
+          "batchGenerateContent"
+        ],
+        "input_tokens": 1048576,
+        "output_tokens": 65536
+      },
+      {
+        "name": "models/gemini-3.1-flash-lite",
+        "display": "Gemini 3.1 Flash Lite",
+        "methods": [
+          "generateContent",
+          "countTokens",
+          "createCachedContent",
+          "batchGenerateContent"
+        ],
+        "input_tokens": 1048576,
+        "output_tokens": 65536
+      },
+      {
+        "name": "models/gemini-3-pro-image-preview",
+        "display": "Nano Banana Pro",
+        "methods": [
+          "generateContent",
+          "countTokens",
+          "batchGenerateContent"
+        ],
+        "input_tokens": 131072,
+        "output_tokens": 32768
+      },
+      {
+        "name": "models/gemini-3-pro-image",
+        "display": "Nano Banana Pro",
+        "methods": [
+          "generateContent",
+          "countTokens",
+          "batchGenerateContent"
+        ],
+        "input_tokens": 131072,
+        "output_tokens": 32768
+      },
+      {
+        "name": "models/nano-banana-pro-preview",
+        "display": "Nano Banana Pro",
+        "methods": [
+          "generateContent",
+          "countTokens",
+          "batchGenerateContent"
+        ],
+        "input_tokens": 131072,
+        "output_tokens": 32768
+      },
+      {
+        "name": "models/gemini-3.1-flash-image-preview",
+        "display": "Nano Banana 2",
+        "methods": [
+          "generateContent",
+          "countTokens",
+          "batchGenerateContent"
+        ],
+        "input_tokens": 65536,
+        "output_tokens": 65536
+      },
+      {
+        "name": "models/gemini-3.1-flash-image",
+        "display": "Nano Banana 2",
+        "methods": [
+          "generateContent",
+          "countTokens",
+          "batchGenerateContent"
+        ],
+        "input_tokens": 65536,
+        "output_tokens": 65536
+      },
+      {
+        "name": "models/gemini-3.1-flash-lite-image",
+        "display": "Nano Banana 2 Lite",
+        "methods": [
+          "generateContent",
+          "countTokens",
+          "batchGenerateContent"
+        ],
+        "input_tokens": 65536,
+        "output_tokens": 65536
+      },
+      {
+        "name": "models/gemini-nano-banana-2.1",
+        "display": "Nano Banana 2.1",
+        "methods": [
+          "generateContent",
+          "countTokens",
+          "batchGenerateContent"
+        ],
+        "input_tokens": 65536,
+        "output_tokens": 65536
+      },
+      {
+        "name": "models/gemini-3.5-flash",
+        "display": "Gemini 3.5 Flash",
+        "methods": [
+          "generateContent",
+          "countTokens",
+          "createCachedContent",
+          "batchGenerateContent"
+        ],
+        "input_tokens": 1048576,
+        "output_tokens": 65536
+      },
+      {
+        "name": "models/gemini-3.5-flash-lite",
+        "display": "Gemini 3.5 Flash Lite",
+        "methods": [
+          "generateContent",
+          "countTokens",
+          "createCachedContent",
+          "batchGenerateContent"
+        ],
+        "input_tokens": 1048576,
+        "output_tokens": 65536
+      },
+      {
+        "name": "models/gemini-omni-flash-preview",
+        "display": "Gemini Omni Flash Preview",
+        "methods": [
+          "generateContent",
+          "countTokens"
+        ],
+        "input_tokens": 131072,
+        "output_tokens": 65536
+      },
+      {
+        "name": "models/gemini-omni-1.1-flash",
+        "display": "Gemini Omni 1.1 Flash",
+        "methods": [
+          "generateContent",
+          "countTokens"
+        ],
+        "input_tokens": 131072,
+        "output_tokens": 65536
+      },
+      {
+        "name": "models/gemini-3.5-transcribe",
+        "display": "Gemini 3.5 Transcribe",
+        "methods": [
+          "generateContent",
+          "countTokens"
+        ],
+        "input_tokens": 98304,
+        "output_tokens": 32768
+      },
+      {
+        "name": "models/gemini-3.6-flash",
+        "display": "Gemini 3.6 Flash",
+        "methods": [
+          "generateContent",
+          "countTokens",
+          "createCachedContent",
+          "batchGenerateContent"
+        ],
+        "input_tokens": 1048576,
+        "output_tokens": 65536
+      },
+      {
+        "name": "models/gemini-3.7-flash",
+        "display": "Gemini 3.7 Flash",
+        "methods": [
+          "generateContent",
+          "countTokens",
+          "createCachedContent",
+          "batchGenerateContent"
+        ],
+        "input_tokens": 1048576,
+        "output_tokens": 65536
+      },
+      {
+        "name": "models/gemini-3.8-flash",
+        "display": "Gemini 3.8 Flash",
+        "methods": [
+          "generateContent",
+          "countTokens",
+          "createCachedContent",
+          "batchGenerateContent"
+        ],
+        "input_tokens": 1048576,
+        "output_tokens": 65536
+      },
+      {
+        "name": "models/gemini-4-argon",
+        "display": "Gemini 4 Argon",
+        "methods": [
+          "generateContent",
+          "countTokens",
+          "batchGenerateContent"
+        ],
+        "input_tokens": 1048576,
+        "output_tokens": 32768
+      },
+      {
+        "name": "models/lyria-3-clip-preview",
+        "display": "Lyria 3 Clip Preview",
+        "methods": [
+          "generateContent",
+          "countTokens"
+        ],
+        "input_tokens": 1048576,
+        "output_tokens": 65536
+      },
+      {
+        "name": "models/lyria-3-pro-preview",
+        "display": "Lyria 3 Pro Preview",
+        "methods": [
+          "generateContent",
+          "countTokens"
+        ],
+        "input_tokens": 1048576,
+        "output_tokens": 65536
+      },
+      {
+        "name": "models/lyria-3.5",
+        "display": "Lyria 3.5",
+        "methods": [
+          "generateContent",
+          "countTokens"
+        ],
+        "input_tokens": 1048576,
+        "output_tokens": 65536
+      },
+      {
+        "name": "models/gemini-3.1-flash-tts-preview",
+        "display": "Gemini 3.1 Flash TTS Preview",
+        "methods": [
+          "generateContent",
+          "countTokens",
+          "batchGenerateContent"
+        ],
+        "input_tokens": 8192,
+        "output_tokens": 16384
+      },
+      {
+        "name": "models/gemini-3.8-flash-tts",
+        "display": "Gemini 3.8 Flash TTS",
+        "methods": [
+          "generateContent",
+          "countTokens",
+          "batchGenerateContent"
+        ],
+        "input_tokens": 8192,
+        "output_tokens": 16384
+      },
+      {
+        "name": "models/gemini-3.8-flash-lite-tts",
+        "display": "Gemini 3.8 Flash Lite TTS",
+        "methods": [
+          "generateContent",
+          "countTokens",
+          "batchGenerateContent"
+        ],
+        "input_tokens": 8192,
+        "output_tokens": 16384
+      },
+      {
+        "name": "models/gemini-robotics-er-2-preview",
+        "display": "Gemini Robotics-ER 2 Preview",
+        "methods": [
+          "generateContent",
+          "countTokens",
+          "createCachedContent",
+          "batchGenerateContent"
+        ],
+        "input_tokens": 131072,
+        "output_tokens": 65536
+      },
+      {
+        "name": "models/gemini-2.5-computer-use-preview-10-2025",
+        "display": "Gemini 2.5 Computer Use Preview 10-2025",
+        "methods": [
+          "generateContent",
+          "countTokens"
+        ],
+        "input_tokens": 131072,
+        "output_tokens": 65536
+      },
+      {
+        "name": "models/antigravity-preview-05-2026",
+        "display": "Antigravity Agent Preview",
+        "methods": [
+          "generateContent",
+          "countTokens"
+        ],
+        "input_tokens": 1048576,
+        "output_tokens": 65536
+      },
+      {
+        "name": "models/antigravity-preview-09-2026",
+        "display": "Antigravity Agent Preview",
+        "methods": [
+          "generateContent",
+          "countTokens"
+        ],
+        "input_tokens": 1048576,
+        "output_tokens": 65536
+      },
+      {
+        "name": "models/antigravity-preview-latest",
+        "display": "Antigravity Agent Preview Latest",
+        "methods": [
+          "generateContent",
+          "countTokens"
+        ],
+        "input_tokens": 1048576,
+        "output_tokens": 65536
+      },
+      {
+        "name": "models/deep-research-max-preview-04-2026",
+        "display": "Deep Research Max Preview (Apr-21-2026)",
+        "methods": [
+          "generateContent",
+          "countTokens"
+        ],
+        "input_tokens": 131072,
+        "output_tokens": 65536
+      },
+      {
+        "name": "models/deep-research-preview-04-2026",
+        "display": "Deep Research Preview (Apr-21-2026)",
+        "methods": [
+          "generateContent",
+          "countTokens"
+        ],
+        "input_tokens": 131072,
+        "output_tokens": 65536
+      },
+      {
+        "name": "models/deep-research-pro-preview-12-2025",
+        "display": "Deep Research Pro Preview (Dec-12-2025) [Rerouted]",
+        "methods": [
+          "generateContent",
+          "countTokens"
+        ],
+        "input_tokens": 131072,
+        "output_tokens": 65536
+      },
+      {
+        "name": "models/gemini-embedding-001",
+        "display": "Gemini Embedding 001",
+        "methods": [
+          "embedContent",
+          "countTextTokens",
+          "countTokens",
+          "asyncBatchEmbedContent"
+        ],
+        "input_tokens": 2048,
+        "output_tokens": 1
+      },
+      {
+        "name": "models/gemini-embedding-2-preview",
+        "display": "Gemini Embedding 2 Preview",
+        "methods": [
+          "embedContent",
+          "countTextTokens",
+          "countTokens",
+          "asyncBatchEmbedContent"
+        ],
+        "input_tokens": 8192,
+        "output_tokens": 1
+      },
+      {
+        "name": "models/gemini-embedding-2",
+        "display": "Gemini Embedding 2",
+        "methods": [
+          "embedContent",
+          "countTextTokens",
+          "countTokens",
+          "asyncBatchEmbedContent"
+        ],
+        "input_tokens": 8192,
+        "output_tokens": 1
+      },
+      {
+        "name": "models/aqa",
+        "display": "Model that performs Attributed Question Answering.",
+        "methods": [
+          "generateAnswer"
+        ],
+        "input_tokens": 7168,
+        "output_tokens": 1024
+      },
+      {
+        "name": "models/gemini-3.5-transcribe-live",
+        "display": "Gemini 3.5 Transcribe Live",
+        "methods": [
+          "bidiGenerateContent"
+        ],
+        "input_tokens": 131072,
+        "output_tokens": 65536
+      },
+      {
+        "name": "models/gemini-2.5-flash-native-audio-latest",
+        "display": "Gemini 2.5 Flash Native Audio Latest",
+        "methods": [
+          "countTokens",
+          "bidiGenerateContent"
+        ],
+        "input_tokens": 131072,
+        "output_tokens": 8192
+      },
+      {
+        "name": "models/gemini-2.5-flash-native-audio-preview-09-2025",
+        "display": "Gemini 2.5 Flash Native Audio Preview 09-2025",
+        "methods": [
+          "countTokens",
+          "bidiGenerateContent"
+        ],
+        "input_tokens": 131072,
+        "output_tokens": 8192
+      },
+      {
+        "name": "models/gemini-2.5-flash-native-audio-preview-12-2025",
+        "display": "Gemini 2.5 Flash Native Audio Preview 12-2025",
+        "methods": [
+          "countTokens",
+          "bidiGenerateContent"
+        ],
+        "input_tokens": 131072,
+        "output_tokens": 8192
+      },
+      {
+        "name": "models/gemini-3.1-flash-live-preview",
+        "display": "Gemini 3.1 Flash Live Preview",
+        "methods": [
+          "bidiGenerateContent"
+        ],
+        "input_tokens": 131072,
+        "output_tokens": 65536
+      },
+      {
+        "name": "models/gemini-3.8-live",
+        "display": "Gemini 3.8 Live",
+        "methods": [
+          "bidiGenerateContent"
+        ],
+        "input_tokens": 131072,
+        "output_tokens": 65536
+      },
+      {
+        "name": "models/gemini-3.8-live-extended-thinking",
+        "display": "Gemini 3.8 Live Extended Thinking",
+        "methods": [
+          "bidiGenerateContent"
+        ],
+        "input_tokens": 131072,
+        "output_tokens": 65536
+      },
+      {
+        "name": "models/gemini-robotics-er-2-streaming-preview",
+        "display": "Gemini Robotics-ER 2 Streaming Preview",
+        "methods": [
+          "bidiGenerateContent"
+        ],
+        "input_tokens": 131072,
+        "output_tokens": 65536
+      },
+      {
+        "name": "models/gemini-3.5-live-translate-preview",
+        "display": "Gemini 3.5 Live Translate Preview",
+        "methods": [
+          "bidiGenerateContent"
+        ],
+        "input_tokens": 16384,
+        "output_tokens": 32768
+      },
+      {
+        "name": "models/lyria-realtime-exp",
+        "display": "Lyria Realtime Experimental",
+        "methods": [
+          "bidiGenerateMusic"
+        ],
+        "input_tokens": 1048576,
+        "output_tokens": 65536
+      }
+    ],
+    "calls": {
+      "models/gemini-3.8-flash": {
+        "status": 503,
+        "seconds": 1.73,
+        "error": {
+          "code": 503,
+          "message": "This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.",
+          "status": "UNAVAILABLE"
+        }
+      },
+      "models/gemini-3.6-flash": {
+        "status": 200,
+        "seconds": 1.32,
+        "parts": [
+          "OK"
+        ],
+        "usage": {
+          "promptTokenCount": 7,
+          "candidatesTokenCount": 1,
+          "totalTokenCount": 110,
+          "promptTokensDetails": [
+            {
+              "modality": "TEXT",
+              "tokenCount": 7
+            }
+          ],
+          "thoughtsTokenCount": 102,
+          "serviceTier": "standard"
+        }
+      },
+      "models/gemini-3.5-flash": {
+        "status": 200,
+        "seconds": 1.52,
+        "parts": [
+          "OK"
+        ],
+        "usage": {
+          "promptTokenCount": 7,
+          "candidatesTokenCount": 1,
+          "totalTokenCount": 108,
+          "promptTokensDetails": [
+            {
+              "modality": "TEXT",
+              "tokenCount": 7
+            }
+          ],
+          "thoughtsTokenCount": 100,
+          "serviceTier": "standard"
+        }
+      },
+      "models/gemini-3.5-flash-lite": {
+        "status": 200,
+        "seconds": 0.43,
+        "parts": [
+          "OK"
+        ],
+        "usage": {
+          "promptTokenCount": 7,
+          "candidatesTokenCount": 1,
+          "totalTokenCount": 8,
+          "promptTokensDetails": [
+            {
+              "modality": "TEXT",
+              "tokenCount": 7
+            }
+          ],
+          "serviceTier": "standard"
+        }
+      },
+      "models/gemini-3.1-flash-lite": {
+        "status": 200,
+        "seconds": 6.76,
+        "parts": [
+          "OK"
+        ],
+        "usage": {
+          "promptTokenCount": 7,
+          "candidatesTokenCount": 1,
+          "totalTokenCount": 8,
+          "promptTokensDetails": [
+            {
+              "modality": "TEXT",
+              "tokenCount": 7
+            }
+          ],
+          "serviceTier": "standard"
+        }
+      },
+      "models/gemma-4-31b-it": {
+        "status": 200,
+        "seconds": 54.25,
+        "parts": [
+          "The user wants me to reply with a single word: \"OK\".\n\nConstraint checklist & Con",
+          "OK"
+        ],
+        "usage": {
+          "promptTokenCount": 7,
+          "candidatesTokenCount": 1,
+          "totalTokenCount": 132,
+          "promptTokensDetails": [
+            {
+              "modality": "TEXT",
+              "tokenCount": 7
+            }
+          ],
+          "thoughtsTokenCount": 124,
+          "serviceTier": "standard"
+        }
+      }
+    }
+  },
+  "nasa": {
+    "status": 200,
+    "seconds": 0.47,
+    "headers": {
+      "Content-Type": "application/json"
+    },
+    "error": null,
+    "total_hits": 220,
+    "sample": [
+      {
+        "nasa_id": "iss050e031340",
+        "title": "J-SSOD-6 Deployment",
+        "center": "JSC",
+        "secondary_creator": null,
+        "date": "2017-01-16T00:00:00Z",
+        "asset": "https://images-assets.nasa.gov/image/iss050e031340/collection.json"
+      },
+      {
+        "nasa_id": "0400538",
+        "title": "Space Science",
+        "center": "MSFC",
+        "secondary_creator": null,
+        "date": "2004-01-01T00:00:00Z",
+        "asset": "https://images-assets.nasa.gov/image/0400538/collection.json"
+      },
+      {
+        "nasa_id": "0400536",
+        "title": "Space Science",
+        "center": "MSFC",
+        "secondary_creator": null,
+        "date": "2004-01-01T00:00:00Z",
+        "asset": "https://images-assets.nasa.gov/image/0400536/collection.json"
+      },
+      {
+        "nasa_id": "0400534",
+        "title": "Space Science",
+        "center": "MSFC",
+        "secondary_creator": null,
+        "date": "2000-01-01T00:00:00Z",
+        "asset": "https://images-assets.nasa.gov/image/0400534/collection.json"
+      },
+      {
+        "nasa_id": "0400535",
+        "title": "Space Science",
+        "center": "MSFC",
+        "secondary_creator": null,
+        "date": "2004-01-01T00:00:00Z",
+        "asset": "https://images-assets.nasa.gov/image/0400535/collection.json"
+      }
+    ],
+    "asset_manifest": {
+      "status": 200,
+      "files": [
+        "http://images-assets.nasa.gov/image/iss050e031340/iss050e031340~orig.jpg",
+        "http://images-assets.nasa.gov/image/iss050e031340/iss050e031340~large.jpg",
+        "http://images-assets.nasa.gov/image/iss050e031340/iss050e031340~medium.jpg",
+        "http://images-assets.nasa.gov/image/iss050e031340/iss050e031340~small.jpg",
+        "http://images-assets.nasa.gov/image/iss050e031340/iss050e031340~thumb.jpg",
+        "http://images-assets.nasa.gov/image/iss050e031340/metadata.json"
+      ]
+    }
+  },
+  "commons": {
+    "status": 200,
+    "seconds": 1.07,
+    "headers": {
+      "content-type": "application/json; charset=utf-8"
+    },
+    "error": null,
+    "sample": [
+      {
+        "title": "File:GPS Satellite NASA art-iif.jpg",
+        "licence": "Public domain",
+        "size": [
+          1006,
+          806
+        ]
+      },
+      {
+        "title": "File:GPS satellite orbit.gif",
+        "licence": "Public domain",
+        "size": [
+          447,
+          446
+        ]
+      },
+      {
+        "title": "File:GPS satellite constellation.jpg",
+        "licence": "Public domain",
+        "size": [
+          240,
+          240
+        ]
+      },
+      {
+        "title": "File:ConstellationGPS.gif",
+        "licence": "Public domain",
+        "size": [
+          240,
+          192
+        ]
+      },
+      {
+        "title": "File:Animation of GPS satellite orbits.gif",
+        "licence": "CC BY-SA 4.0",
+        "size": [
+          560,
+          420
+        ]
+      }
+    ]
+  }
+}
