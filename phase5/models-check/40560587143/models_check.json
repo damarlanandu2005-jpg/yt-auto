@@ -1,0 +1,121 @@
+{
+ "models": {
+  "gemma-4-31b-it": {
+   "json": "failed: json_gemma-4-31b-it: no model available: ['gemma-4-31b-it: HTTP 503 (busy)']",
+   "vision": "failed: vision_gemma-4-31b-it: no model available: ['gemma-4-31b-it: HTTP 503 (busy)']",
+   "vision_one_image": "failed: vision1_gemma: no model available: ['gemma-4-31b-it: HTTP 500 (busy)']"
+  },
+  "gemini-3.5-flash-lite": {
+   "json": "ok",
+   "vision": "ok"
+  },
+  "gemini-3.1-flash-lite": {
+   "json": "ok",
+   "vision": "failed: vision_gemini-3.1-flash-lite: no model available: ['gemini-3.1-flash-lite: HTTP 503 (busy)']"
+  },
+  "github:openai/gpt-4.1-mini": {
+   "json": "failed: json_github:openai/gpt-4.1-mini: no model available: ['github:openai/gpt-4.1-mini: reply was not JSON (HTTP 200)']",
+   "vision": "failed: vision_github:openai/gpt-4.1-mini: no model available: ['github:openai/gpt-4.1-mini: reply was not JSON (HTTP 200)']"
+  }
+ },
+ "errors": [
+  {
+   "model": "gemma-4-31b-it",
+   "status": 503,
+   "error": "{\n  \"error\": {\n    \"code\": 503,\n    \"message\": \"This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.\",\n    \"status\": \"UNAVAILABLE\"\n  }\n}\n"
+  },
+  {
+   "model": "gemma-4-31b-it",
+   "status": 503,
+   "error": "{\n  \"error\": {\n    \"code\": 503,\n    \"message\": \"This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.\",\n    \"status\": \"UNAVAILABLE\"\n  }\n}\n"
+  },
+  {
+   "model": "gemini-3.1-flash-lite",
+   "status": 503,
+   "error": "{\n  \"error\": {\n    \"code\": 503,\n    \"message\": \"This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.\",\n    \"status\": \"UNAVAILABLE\"\n  }\n}\n"
+  },
+  {
+   "model": "gemma-4-31b-it",
+   "status": 500,
+   "error": "{\n  \"error\": {\n    \"code\": 500,\n    \"message\": \"Internal error encountered.\",\n    \"status\": \"INTERNAL\"\n  }\n}\n"
+  }
+ ],
+ "github_catalog": {
+  "catalog": {
+   "status": 200,
+   "url": "https://models.github.ai/catalog/models",
+   "headers": {
+    "Content-Type": "text/plain",
+    "connection": "close"
+   },
+   "bytes": 4,
+   "body": "OK\r\n"
+  },
+  "chat": {
+   "status": 200,
+   "url": "https://models.github.ai/inference/chat/completions",
+   "headers": {
+    "Content-Type": "text/plain",
+    "connection": "close"
+   },
+   "bytes": 4,
+   "body": "OK\r\n"
+  }
+ },
+ "calls": [
+  {
+   "name": "json_gemma-4-31b-it",
+   "model": "gemma-4-31b-it",
+   "status": 503,
+   "seconds": null
+  },
+  {
+   "name": "vision_gemma-4-31b-it",
+   "model": "gemma-4-31b-it",
+   "status": 503,
+   "seconds": null
+  },
+  {
+   "name": "json_gemini-3.5-flash-lite",
+   "model": "gemini-3.5-flash-lite",
+   "status": 200,
+   "seconds": 0.9
+  },
+  {
+   "name": "vision_gemini-3.5-flash-lite",
+   "model": "gemini-3.5-flash-lite",
+   "status": 200,
+   "seconds": 1.1
+  },
+  {
+   "name": "json_gemini-3.1-flash-lite",
+   "model": "gemini-3.1-flash-lite",
+   "status": 200,
+   "seconds": 6.0
+  },
+  {
+   "name": "vision_gemini-3.1-flash-lite",
+   "model": "gemini-3.1-flash-lite",
+   "status": 503,
+   "seconds": null
+  },
+  {
+   "name": "json_github:openai/gpt-4.1-mini",
+   "model": "github:openai/gpt-4.1-mini",
+   "status": 200,
+   "seconds": null
+  },
+  {
+   "name": "vision_github:openai/gpt-4.1-mini",
+   "model": "github:openai/gpt-4.1-mini",
+   "status": 200,
+   "seconds": null
+  },
+  {
+   "name": "vision1_gemma",
+   "model": "gemma-4-31b-it",
+   "status": 500,
+   "seconds": null
+  }
+ ]
+}

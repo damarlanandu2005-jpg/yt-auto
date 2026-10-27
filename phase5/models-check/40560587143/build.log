@@ -1,0 +1,12 @@
+[llm] json_gemma-4-31b-it: gemma-4-31b-it unavailable (HTTP 503 (busy)); trying next model
+[llm] vision_gemma-4-31b-it: gemma-4-31b-it unavailable (HTTP 503 (busy)); trying next model
+[llm] vision_gemini-3.1-flash-lite: gemini-3.1-flash-lite unavailable (HTTP 503 (busy)); trying next model
+[llm] json_github:openai/gpt-4.1-mini: github:openai/gpt-4.1-mini unavailable (reply was not JSON (HTTP 200)); trying next model
+[llm] vision_github:openai/gpt-4.1-mini: github:openai/gpt-4.1-mini unavailable (reply was not JSON (HTTP 200)); trying next model
+[llm] vision1_gemma: gemma-4-31b-it unavailable (HTTP 500 (busy)); trying next model
+gemma-4-31b-it {'json': "failed: json_gemma-4-31b-it: no model available: ['gemma-4-31b-it: HTTP 503 (busy)']", 'vision': "failed: vision_gemma-4-31b-it: no model available: ['gemma-4-31b-it: HTTP 503 (busy)']", 'vision_one_image': "failed: vision1_gemma: no model available: ['gemma-4-31b-it: HTTP 500 (busy)']"}
+gemini-3.5-flash-lite {'json': 'ok', 'vision': 'ok'}
+gemini-3.1-flash-lite {'json': 'ok', 'vision': "failed: vision_gemini-3.1-flash-lite: no model available: ['gemini-3.1-flash-lite: HTTP 503 (busy)']"}
+github:openai/gpt-4.1-mini {'json': "failed: json_github:openai/gpt-4.1-mini: no model available: ['github:openai/gpt-4.1-mini: reply was not JSON (HTTP 200)", 'vision': "failed: vision_github:openai/gpt-4.1-mini: no model available: ['github:openai/gpt-4.1-mini: reply was not JSON (HTTP 20"}
+GitHub catalog: status 200 bytes 4 'OK\r\n'
+GitHub chat: status 200 bytes 4 'OK\r\n'
