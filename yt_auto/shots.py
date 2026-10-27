@@ -279,13 +279,18 @@ NO_DRAW = re.compile(r"\b(logo|emblem|insignia|seal|badge|flag|crest|coat of arm
                      r"portrait|face|person|people|man|woman|astronaut|scientist|president|map)s?\b", re.I)
 
 
+PLANNED_MAX = 12
+
+
 def drawing_jobs(visuals: list[dict], max_n: int) -> list[dict]:
     """Planned drawings first, then photo slots that ended without a photo (up to max_n in all)."""
     planned = [v for v in visuals if v["kind"] == "drawing" and v.get("drawing_subject")
                and not NO_DRAW.search(v["drawing_subject"])]
     no_photo = [v for v in visuals if v["kind"] == "photo" and not v.get("photo") and v.get("photo_subject")
                 and not NO_DRAW.search(v["photo_subject"])]
-    jobs = [{"id": v["id"], "subject": v["drawing_subject"]} for v in planned]
+    # Keep room for photo slots whose photo failed the check: pilot video 1 remake (run 40593105860) planned
+    # 18 drawings (asked for at most 12), so the 12 rejected photos all became bare title cards.
+    jobs = [{"id": v["id"], "subject": v["drawing_subject"]} for v in planned[:PLANNED_MAX]]
     jobs += [{"id": v["id"], "subject": v["photo_subject"]} for v in no_photo]
     return jobs[:max_n]
 
@@ -344,7 +349,8 @@ like a logo/emblem/badge/flag, or has deformed bodies."""
     else:
         rules = """A photo fits only if the description shows it clearly depicts what it should show: not mostly text,
 not a test target, not a different planet or object than the narration is about, no watermark, nothing
-misleading. A chart or graph fits ONLY if its labels show it is about exactly what the narration says (a graph
+misleading. A diagram, infographic or poster with many labels or much text does NOT fit (too small to read
+in a video, and made for another purpose). A chart or graph fits ONLY if its labels show it is about exactly what the narration says (a graph
 of Mars data, or with unexplained labels like 'RHOS', does not fit a sentence about Earth or a star)."""
     listing = "\n".join(f"Image {i + 1}: described as: {seen_by_n.get(i + 1, '(no description)')}\n"
                         f"  should show: {v.get('photo_subject', '')}\n  narration: {v['text']}"

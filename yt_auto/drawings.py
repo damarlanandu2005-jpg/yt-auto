@@ -25,8 +25,8 @@ MODEL = {"base": "segmind/Segmind-Vega", "lora": "segmind/Segmind-VegaRT", "step
 STYLE = ("pure black background, detailed ink illustration, white and grey pen linework, one bright red accent, "
          "high contrast, simple clear composition, no text, no letters, no numbers")
 WIDTH, HEIGHT = 1024, 576
-MAX_DRAWINGS = 18
-BUDGET_S = 25 * 60
+MAX_DRAWINGS = 24  # 12 planned + room for photo slots whose photo failed the check
+BUDGET_S = 32 * 60
 CACHE = Path.home() / "hf-draw"  # own model cache (the whisper cache has its own key in the workflow)
 
 

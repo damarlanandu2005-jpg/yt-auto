@@ -31,7 +31,7 @@ on:
         default: ""
       max_drawings:
         description: "AI ink drawings per video (about 80 s each; 0 = photos and cards only)"
-        default: "18"
+        default: "24"
 
 permissions:
   contents: write
