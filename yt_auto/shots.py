@@ -132,7 +132,7 @@ Rules:
 - Use kind=drawing (at most {max_drawings} in the whole video) for an idea no real photo can show: an invisible
   process, a view nobody photographed, a comparison of two things (e.g. "a radio wave travelling from a satellite
   down to a phone", "two clocks side by side, one in orbit and one on the ground"). drawing_subject: one simple
-  scene of objects. No people's faces or hands, no text, no numbers, no maps with labels.
+  scene of objects. No people, faces or hands, no logos, emblems or flags, no text, no numbers, no maps.
 - Use kind=card when a number, comparison, process or list is the point, or at scene starts (title card).
 - The first slot is a title card with the video title.
 - Every number on a card MUST appear in that slot's text or earlier in the same scene. Never invent data.
@@ -260,10 +260,18 @@ def _thumb(path: str, size: int = 384) -> bytes:
     return buf.getvalue()
 
 
+# Never drawn: a drawn logo, emblem or flag imitates a real organisation's mark (run 40580636183 drew a
+# fake "US Space Force logo" and the vision check passed it), and drawn people/brands could mislead.
+NO_DRAW = re.compile(r"\b(logo|emblem|insignia|seal|badge|flag|crest|coat of arms|trademark|brand|mascot|"
+                     r"portrait|face|person|people|man|woman|astronaut|scientist|president|map)s?\b", re.I)
+
+
 def drawing_jobs(visuals: list[dict], max_n: int) -> list[dict]:
     """Planned drawings first, then photo slots that ended without a photo (up to max_n in all)."""
-    planned = [v for v in visuals if v["kind"] == "drawing" and v.get("drawing_subject")]
-    no_photo = [v for v in visuals if v["kind"] == "photo" and not v.get("photo") and v.get("photo_subject")]
+    planned = [v for v in visuals if v["kind"] == "drawing" and v.get("drawing_subject")
+               and not NO_DRAW.search(v["drawing_subject"])]
+    no_photo = [v for v in visuals if v["kind"] == "photo" and not v.get("photo") and v.get("photo_subject")
+                and not NO_DRAW.search(v["photo_subject"])]
     jobs = [{"id": v["id"], "subject": v["drawing_subject"]} for v in planned]
     jobs += [{"id": v["id"], "subject": v["photo_subject"]} for v in no_photo]
     return jobs[:max_n]
@@ -304,7 +312,8 @@ def _verify(chosen: list[dict], log: dict, drawings: bool = False) -> None:
     if drawings:
         rules = """These are ink drawings made by an AI image model; about half miss their subject. It fits only if
 the subject is clearly recognisable at a glance, the drawing is not confusing, has no garbled letters or
-fake text, no deformed hands, faces or bodies, and is not misleading next to the narration."""
+fake text, no deformed hands, faces or bodies, does not look like a logo, emblem, badge, seal or flag (it would
+imitate a real organisation's mark), and is not misleading next to the narration."""
     else:
         rules = """It must clearly show what it should show, be a real usable picture (not mostly text, not a blank
 or broken image, no watermark), and not be misleading next to the narration."""
