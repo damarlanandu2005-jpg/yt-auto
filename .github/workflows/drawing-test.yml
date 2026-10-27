@@ -1,0 +1,60 @@
+name: Drawing test
+
+# Free open image model on the runner's CPU: licence, speed, memory, 10 sample drawings.
+# Results: bench-results/phase5/drawing-test/<run_id>/.
+on:
+  workflow_dispatch:
+    inputs:
+      model:
+        description: "Model to test"
+        default: "segmind-vega"
+      n:
+        description: "Number of drawings"
+        default: "10"
+
+permissions:
+  contents: write
+
+jobs:
+  draw:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 60
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.13"
+      - name: Cache image model
+        uses: actions/cache@v4
+        with:
+          path: ~/.cache/huggingface
+          key: draw-${{ inputs.model }}-v1
+      - name: Install (CPU-only PyTorch)
+        timeout-minutes: 10
+        run: |
+          pip install torch --index-url https://download.pytorch.org/whl/cpu
+          pip install diffusers transformers accelerate peft safetensors Pillow
+          free -g; nproc
+      - name: Draw
+        timeout-minutes: 42
+        env:
+          MODEL: ${{ inputs.model }}
+          N: ${{ inputs.n }}
+        run: |
+          [[ "$MODEL" =~ ^[a-z0-9-]+$ && "$N" =~ ^[0-9]+$ ]] || { echo "bad input"; exit 1; }
+          mkdir -p out/draw
+          python -X faulthandler phase5/drawing_test.py out/draw --model "$MODEL" --n "$N" 2>&1 | tee out/draw/build.log
+      - name: Save to bench-results
+        if: always()
+        timeout-minutes: 3
+        run: |
+          set -e
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git fetch --depth 1 origin bench-results
+          git worktree add results FETCH_HEAD
+          git -C results checkout -B bench-results
+          dest="results/phase5/drawing-test/${{ github.run_id }}"
+          mkdir -p "$dest" && cp -r out/draw/. "$dest/" 2>/dev/null || true
+          cd results && git add -A && git commit -m "Drawing test ${{ github.run_id }}"
+          for i in 1 2 3 4 5; do git push origin bench-results && break; git pull --rebase origin bench-results; sleep 5; done
