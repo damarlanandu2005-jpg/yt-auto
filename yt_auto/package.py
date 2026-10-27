@@ -25,6 +25,43 @@ def _mmss(t: float) -> str:
     return f"{t // 60}:{t % 60:02}"
 
 
+class RightsError(RuntimeError):
+    pass
+
+
+def rights_gate(photos: list[dict]) -> None:
+    """Stop before packaging if any picture lacks a complete record or an allowed licence."""
+    from .photos import allowed_licence
+
+    bad = []
+    for p in photos:
+        missing = [k for k in ("source_page", "licence", "author", "attribution", "downloaded") if not p.get(k)]
+        if missing:
+            bad.append(f"{p.get('file')}: missing {missing}")
+        elif p["source"] != "nasa_image_library" and not allowed_licence(p["licence"]):
+            bad.append(f"{p.get('file')}: licence {p['licence']!r} is not allowed")
+    if bad:
+        raise RightsError("Rights check failed:\n" + "\n".join(bad))
+
+
+def fact_table(script: dict, sources: dict, path: Path) -> None:
+    """One row per sentence: what it says, its check result, and the exact source text and link."""
+    import csv
+
+    idx = {p["id"]: (a, p) for a in sources["articles"] for p in a["passages"]}
+    with open(path, "w", newline="", encoding="utf-8") as f:
+        w = csv.writer(f)
+        w.writerow(["sentence_id", "kind", "sentence", "check", "source_id", "source_title", "source_link",
+                    "retrieved", "source_text"])
+        for sc in script["scenes"]:
+            for s in sc["sentences"]:
+                for pid in s["sources"] or [""]:
+                    a, p = idx.get(pid, ({}, {}))
+                    link = f"{a['url']}?oldid={a['revision_id']}" if a else ""
+                    w.writerow([s["id"], s["kind"], s["text"], s.get("check", ""), pid, a.get("title", ""), link,
+                                a.get("retrieved", ""), p.get("text", "")])
+
+
 def chapters(scenes: list[dict]) -> list[str]:
     """YouTube chapters: first at 0:00, at least 3, each at least 10 s long."""
     out, last = [], -100.0
@@ -39,9 +76,12 @@ def chapters(scenes: list[dict]) -> list[str]:
 def write(out: Path, script: dict, the_plan: dict, sources: dict, visuals: list[dict], scenes: list[dict],
           factcheck: dict, run_info: dict) -> None:
     photos = [v["photo"] for v in visuals if v.get("photo")]
+    rights_gate(photos)
     # Licences: every asset in the video.
     records = [VOICE_RECORD, FONT_RECORD] + [{k: p[k] for k in p if k != "path"} for p in photos]
     (out / "licences.json").write_text(json.dumps(records, indent=2, ensure_ascii=False), encoding="utf-8")
+
+    fact_table(script, sources, out / "facts.csv")
 
     # Description (draft — the owner edits it in YouTube Studio).
     used_ids = {pid for sc in script["scenes"] for s in sc["sentences"] for pid in s["sources"]}

@@ -13,6 +13,7 @@ from __future__ import annotations
 import json
 import re
 
+from . import factguard
 from .llm import QUALITY, llm
 from .research import as_prompt_text, passage_index
 
@@ -171,7 +172,11 @@ def fact_check(script: dict, sources: dict) -> dict:
     idx = passage_index(sources)
     facts = [s for sc in script["scenes"] for s in sc["sentences"]]  # framing too: it must hold no claims
     report = {"checked": len(facts), "supported_first_pass": 0, "fixed": [], "dropped": [], "bad_ids": [],
-              "copied": []}
+              "copied": [], "guard": []}
+
+    def guard(s):  # plain-code number/unit check (Phase 2: caught 6/6 wrong units, 0 false alarms)
+        return factguard.check(s["text"], [idx[p]["text"] for p in s["sources"] if p in idx]) if s["kind"] == "fact" else []
+
     for s in facts:
         bad = [p for p in s["sources"] if p not in idx]
         if bad:
@@ -182,6 +187,11 @@ def fact_check(script: dict, sources: dict) -> dict:
     to_fix, to_reword = [], []
     for s in facts:
         r = first.get(s["id"]) or {"verdict": "unsupported", "problem": "not returned by checker", "fixed_text": ""}
+        g = guard(s)
+        if g:
+            report["guard"].append({"id": s["id"], "problems": g})
+            if r["verdict"] == "supported":  # the AI missed it; the guard has no fix to offer
+                r = {"verdict": "partly", "problem": "; ".join(g), "fixed_text": ""}
         s["check"] = r["verdict"]
         copied = copied_phrases(s["text"], idx)
         if copied:
@@ -214,7 +224,8 @@ def fact_check(script: dict, sources: dict) -> dict:
     second = check(rewritten, idx, "factcheck2") if rewritten else {}
     for s, old, r in to_fix:
         r2 = second.get(s["id"])
-        if s.get("drop") or not r2 or r2["verdict"] != "supported" or copied_phrases(s["text"], idx):
+        if (s.get("drop") or not r2 or r2["verdict"] != "supported" or copied_phrases(s["text"], idx)
+                or guard(s)):
             s["drop"] = True
             report["dropped"].append({"id": s["id"], "text": old, "problem": r["problem"]})
         else:

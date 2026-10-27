@@ -65,6 +65,14 @@ def fetch_article(title: str) -> dict | None:
             "revision_time": rev.get("timestamp"), "text": p["extract"]}
 
 
+def _junk(line: str) -> bool:
+    """Maths markup or a fragment cut off from a formula: useless as a source and confusing to the checker.
+
+    Seen in run 40404179356: "{\\displaystyle ...}" lines and paragraphs starting ", or about ..."."""
+    letters = sum(ch.isalpha() for ch in line)
+    return "\\displaystyle" in line or line[0] in ",.;:)" or letters < 0.6 * len(line)
+
+
 def passages(text: str) -> list[dict]:
     """Split a plain-text article into paragraphs, each tagged with its section."""
     out, section, total = [], "Introduction", 0
@@ -75,7 +83,7 @@ def passages(text: str) -> list[dict]:
             if len(m.group(1)) == 2:  # top-level section; subsections inherit its skip status
                 section = m.group(2)
             continue
-        if section.lower() in SKIP_SECTIONS or len(line) < 80:
+        if section.lower() in SKIP_SECTIONS or len(line) < 80 or _junk(line):
             continue
         out.append({"section": section, "text": line})
         total += len(line)

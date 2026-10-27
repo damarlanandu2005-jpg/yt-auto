@@ -1,0 +1,61 @@
+name: Phase 2 fact-check test
+
+# Runs the fact-checker on planted errors (phase2/factcheck_testset.json) and counts
+# misses and false alarms. Uses ONE Gemini request. About 1 minute.
+# Results go to the bench-results branch under phase2/<run_id>/ (report.md, results.json, llm/).
+on:
+  workflow_dispatch:
+  # Only to register this new workflow (GitHub can't start it by hand from a branch until it
+  # has run there once). Remove after the first run.
+  push:
+    branches: ["claude/phase-1-**"]
+    paths: [".github/workflows/phase2-factcheck-eval.yml"]
+
+permissions:
+  contents: write
+
+concurrency:
+  group: phase2-eval
+  cancel-in-progress: false
+
+jobs:
+  eval:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.13"
+
+      - name: Run the test
+        timeout-minutes: 10
+        env:
+          GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
+        run: |
+          set -o pipefail
+          mkdir -p out/eval
+          python phase2/eval_factcheck.py --out out/eval 2>&1 | tee out/eval/build.log
+
+      - name: Save results to the bench-results branch
+        if: always()
+        timeout-minutes: 3
+        run: |
+          set -e
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git fetch --depth 1 origin bench-results
+          git worktree add results FETCH_HEAD
+          git -C results checkout -B bench-results
+          dest="results/phase2/${{ github.run_id }}"
+          mkdir -p "$dest"
+          cp -r out/eval/. "$dest/" || echo "no results"
+          cd results
+          git add -A
+          git commit -m "Phase 2 fact-check test ${{ github.run_id }}"
+          for i in 1 2 3 4 5; do
+            git push origin bench-results && break
+            git pull --rebase origin bench-results
+            sleep 5
+          done
