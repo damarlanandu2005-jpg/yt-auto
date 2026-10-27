@@ -35,12 +35,13 @@ def picture(colour: str, shape: str) -> bytes:
 
 
 def main() -> None:
+    llm.ROUNDS = 1  # a check, not a video: report busy models instead of waiting
     out = Path(sys.argv[1])
     out.mkdir(parents=True, exist_ok=True)
     rows = {}
     pics = [("Image 1:", picture("red", "square")), ("Image 2:", picture("blue", "circle")),
             ("Image 3:", picture("green", "square"))]
-    for m in llm.LIGHT:
+    for m in dict.fromkeys(llm.LIGHT + llm.VISION):
         if m in llm.QUALITY:
             continue  # strong models are checked by the real runs
         r = {}

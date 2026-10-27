@@ -16,7 +16,7 @@ import re
 from pathlib import Path
 
 from . import photos
-from .llm import LIGHT, LLMError, llm
+from .llm import LIGHT, VISION, LLMError, llm
 
 TARGET_S, MIN_S, MAX_S = 4.5, 3.0, 6.5
 
@@ -268,7 +268,7 @@ and not be misleading next to the narration.
 {listing}"""
     try:
         res = llm(prompt, images=[(f"Image {i + 1}:", _thumb(v["photo"]["path"])) for i, v in enumerate(chosen)],
-                  schema=VERIFY_SCHEMA, name="photo_verify", temperature=0.1, models=LIGHT, last_resort=True)
+                  schema=VERIFY_SCHEMA, name="photo_verify", temperature=0.1, models=VISION, last_resort=True)
     except LLMError as e:
         log["verify_error"] = str(e)
         return

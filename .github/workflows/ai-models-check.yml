@@ -12,7 +12,7 @@ permissions:
 jobs:
   check:
     runs-on: ubuntu-24.04
-    timeout-minutes: 15
+    timeout-minutes: 20
     steps:
       - uses: actions/checkout@v4
       - uses: actions/setup-python@v5
@@ -22,7 +22,7 @@ jobs:
         timeout-minutes: 3
         run: pip install Pillow
       - name: Check models
-        timeout-minutes: 8
+        timeout-minutes: 12
         env:
           GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
           GITHUB_MODELS_TOKEN: ${{ github.token }}
