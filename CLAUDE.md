@@ -22,7 +22,8 @@ Full plan: "YouTube Automation Blueprint" doc — https://claude.ai/artifact/XN7
 - Every video has its own question, structure and visuals. Never the same template with new numbers (YouTube "inauthentic content" rule, renamed 15 Jul 2025).
 - No AI "expert" persona. No financial, legal or health advice. No corporate-fraud or named-company accusation topics (defamation risk in India).
 - AI disclosure box in YouTube is needed only for realistic AI depictions of real people/places/events. AI script, TTS narration, charts and non-realistic illustrations do not need it.
-- Never commit secrets. Keys live in GitHub repo secrets only. `GEMINI_API_KEY` is saved as a repo secret (confirmed by the Phase 1 API check run, 26 Oct 2026).
+- Never commit secrets. Keys live in GitHub repo secrets only. `GEMINI_API_KEY` is saved as a repo secret (confirmed 26-27 Oct 2026). **Use only `GEMINI_API_KEY`** (owner, 27 Oct). Don't ask about other keys; never use extra keys or projects to get more free quota (Google APIs Terms: "will not attempt to circumvent" limits).
+- Never pass `toJSON(secrets)` in a workflow: GitHub held those runs as 'action required'.
 
 ## Verified facts (checked against official pages, 26 Oct 2026)
 
@@ -38,7 +39,8 @@ Full plan: "YouTube Automation Blueprint" doc — https://claude.ai/artifact/XN7
 | 0. Server benchmark | **PASSED** 27 Oct 2026: 3/3 runs on GitHub Actions (AMD EPYC, 4 cores), build 3 min 18 s to 3 min 26 s, ~4 min per job, peak ~690 MB, no hangs |
 | 0b. Niche data test | Not started. Needs a YouTube Data API key (owner to create). Niches to test: how technology works, science and space, money and economics (education only) |
 | 1. Production core | **Working** (branch `claude/phase-1-production-core-ufulti`). Run 40402246414 made a 3.9 min GPS video end to end; owner reviewed it 27 Oct: "quite good", more quality work later in other phases. A full-length run (resume_from 40404179356) is pending the daily quota reset |
-| 2–6, auto-upload | Not started (see blueprint) |
+| 2. Research and facts | **In progress.** Planted-error test (30 errors + 16 controls), number/unit guard, facts.csv, rights gate. Pass rule: ≥80% caught, ≥60% per type, ≤1 false alarm |
+| 3–6, auto-upload | Not started (see blueprint). 0b waits for a YouTube Data API key |
 
 Owner feedback on the Phase 0 video: **voice quality good**; pace was a bit fast (fixed: speed 0.9, longer pauses); **wants more pictures** (decided: real photos first, AI illustrations when none fits).
 
@@ -80,6 +82,10 @@ yt_auto/photos.py      NASA + Commons search, licence filter, licence JSON per f
 yt_auto/align.py       subtitles from our own text: exact sentence times + whisper word times
 yt_auto/package.py     description.txt, licences.json, review.md, contact sheet
 phase1/make_video.py   topic -> package (stages cached in --out, so a rerun resumes)
+yt_auto/factguard.py   plain-code number/unit check beside the AI fact-check (no quota)
+phase2/factcheck_testset.json  planted errors + controls (real Wikipedia passages; X* passages are synthetic)
+phase2/eval_factcheck.py       counts misses/false alarms per error type (1 Gemini request); --guard-only needs none
+.github/workflows/phase2-factcheck-eval.yml  manual; results in bench-results/phase2/<run_id>/
 phase1/check_apis.py   pre-flight: key present, which models answer, NASA/Commons up, saves official pages
 .github/workflows/phase1-video.yml   manual only (topic, scenes, resume_from = earlier run id to reuse plan/sources/script and save quota)
 .github/workflows/phase1-check.yml   manual; also runs when the check changes on a phase-1 branch

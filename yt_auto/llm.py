@@ -114,9 +114,13 @@ def _call(model, prompt, system, schema, temperature, name, images, max_tries, t
                     continue
                 raise _TryNextModel(f"HTTP {e.code} after {max_tries} tries") from None
             raise LLMError(f"{name}: HTTP {e.code}: {err[:600]}") from None
-        except (urllib.error.URLError, TimeoutError) as e:
+        except OSError as e:
+            # Network trouble: URLError, timeouts, and ConnectionResetError raised while reading the
+            # reply (not wrapped in URLError; crashed Phase 2 run 40464679016). HTTPError is handled above.
+            LOG.append({**entry, "status": None, "attempt": attempt, "error": repr(e)[:300]})
             if attempt < max_tries:
-                time.sleep(5 * attempt)
+                print(f"[llm] {name}: {model} network error {e!r}, retry {attempt} in {10 * attempt}s", flush=True)
+                time.sleep(10 * attempt)
                 continue
             raise _TryNextModel(repr(e)) from None
 
