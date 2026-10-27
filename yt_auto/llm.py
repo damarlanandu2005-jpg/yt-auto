@@ -34,7 +34,7 @@ LITE = "gemini-3.5-flash-lite"
 QUALITY = ["gemini-3.8-flash", "gemini-3.6-flash", "gemini-3.5-flash"]
 # Free tier is about 20 requests/day per model (429 quotaValue 20 for 3.8 Flash, 26 Oct 2026),
 # and failed 503 attempts seem to count, so retries are few and spread out.
-ROUNDS, ROUND_WAIT_S = 3, 60
+ROUNDS, ROUND_WAIT_S = 3, 120  # pilot video 1: failed 503 attempts used up the daily quota
 _DOWN: set[str] = set()       # gave up with 503 in this run: tried last from then on
 _EXHAUSTED: set[str] = set()  # daily quota used up: skipped for the rest of the run
 
@@ -48,7 +48,7 @@ class LLMError(RuntimeError):
 
 def llm(prompt: str, *, system: str = "", schema: dict | None = None, model: str | None = None,
         temperature: float = 0.7, name: str = "llm", images: list | None = None,
-        models: list[str] | None = None, max_tries: int = 2, timeout: int = 600, last_resort: bool = False):
+        models: list[str] | None = None, max_tries: int = 1, timeout: int = 600, last_resort: bool = False):
     """Send one prompt, return the reply text (or parsed JSON when `schema` is given).
 
     `images`: optional JPEG bytes (or (label, bytes) pairs) shown to the model before the prompt.

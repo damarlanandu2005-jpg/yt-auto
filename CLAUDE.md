@@ -22,7 +22,7 @@ Full plan: "YouTube Automation Blueprint" doc — https://claude.ai/artifact/XN7
 - Every video has its own question, structure and visuals. Never the same template with new numbers (YouTube "inauthentic content" rule, renamed 15 Jul 2025).
 - No AI "expert" persona. No financial, legal or health advice. No corporate-fraud or named-company accusation topics (defamation risk in India).
 - AI disclosure box in YouTube is needed only for realistic AI depictions of real people/places/events. AI script, TTS narration, charts and non-realistic illustrations do not need it.
-- Never commit secrets. Keys live in GitHub repo secrets only. `GEMINI_API_KEY` is saved as a repo secret (confirmed 26-27 Oct 2026). **Use only `GEMINI_API_KEY`** (owner, 27 Oct). Don't ask about other keys; never use extra keys or projects to get more free quota (Google APIs Terms: "will not attempt to circumvent" limits).
+- Never commit secrets. Keys live in GitHub repo secrets only. `GEMINI_API_KEY` is saved as a repo secret (confirmed 26-27 Oct 2026). **Use only `GEMINI_API_KEY`** (owner, 27 Oct). On 27 Oct the owner replaced it with a key from another project after the old project hit its daily limit; Claude explained the terms risk twice, the owner confirmed free tier and decided to go ahead. From then on: this one key only, no further switching to reset limits. Don't ask about other keys; never use extra keys or projects to get more free quota (Google APIs Terms: "will not attempt to circumvent" limits).
 - Never pass `toJSON(secrets)` in a workflow: GitHub held those runs as 'action required'.
 
 ## Verified facts (checked against official pages, 26 Oct 2026)

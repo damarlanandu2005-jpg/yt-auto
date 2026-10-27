@@ -81,7 +81,7 @@ def main() -> None:
     args = ap.parse_args()
 
     # Print every thread's stack before the workflow step's 45-minute limit kills us silently.
-    faulthandler.dump_traceback_later(40 * 60, exit=True)
+    faulthandler.dump_traceback_later(52 * 60, exit=True)  # slow Gemini is not a hang (pilot video 1)
     out = Path(args.out)
     for sub in ("audio", "frames", "segments", "photos", "ffmpeg_logs", "llm"):
         (out / sub).mkdir(parents=True, exist_ok=True)

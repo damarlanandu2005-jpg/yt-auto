@@ -173,7 +173,8 @@ def check(sentences: list[dict], idx: dict, name: str) -> dict[str, dict]:
 For partly/unsupported, give fixed_text: a corrected sentence in the same plain spoken style that the cited
 passages fully support (keep digits and full unit words; no copying 8+ words). Leave fixed_text empty if impossible.
 A FRAMING SENTENCE has no passages: it is "supported" only if it makes no checkable claim at all (a question,
-transition or invitation). If it states any fact, mark it "unsupported" with an empty fixed_text.
+transition or invitation). If it states any fact, mark it "unsupported" and give fixed_text: the same idea as a
+pure question or transition with no claim (e.g. "So what would a nearby supernova do to us?").
 
 """ + "\n\n".join(items)
     res = llm(prompt, schema=CHECK_SCHEMA, name=name, temperature=0.1, models=QUALITY)
