@@ -6,7 +6,7 @@ on:
   workflow_dispatch:
     inputs:
       video_id:
-        description: "YouTube video id (the 11 characters after watch?v=)"
+        description: "YouTube video id (the 11 characters after watch?v=), or a channel @handle"
         required: true
 
 permissions:
@@ -42,8 +42,13 @@ jobs:
           YOUTUBE_API_KEY: ${{ secrets.YOUTUBE_API_KEY }}
           VID: ${{ inputs.video_id }}
         run: |
-          [[ "$VID" =~ ^[A-Za-z0-9_-]{11}$ ]] || { echo "bad video id"; exit 1; }
-          mkdir -p out/study && python study/study_video.py "$VID" out/study 2>&1 | tee out/study.log
+          mkdir -p out/study
+          if [[ "$VID" =~ ^@[A-Za-z0-9._-]{3,40}$ ]]; then
+            python study/study_channel.py "$VID" out/study 2>&1 | tee out/study.log
+          else
+            [[ "$VID" =~ ^[A-Za-z0-9_-]{11}$ ]] || { echo "bad video id"; exit 1; }
+            python study/study_video.py "$VID" out/study 2>&1 | tee out/study.log
+          fi
       - name: Save to bench-results
         if: always()
         timeout-minutes: 3
