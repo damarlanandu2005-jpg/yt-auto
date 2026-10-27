@@ -80,7 +80,7 @@ yt_auto/bench.py       timings, memory, CPU model, FFmpeg version
 yt_auto/llm.py         one llm() for all text steps, every call logged. QUALITY (3.8/3.6/3.5 Flash) for plan, script,
                        fact-check, topic ideas; LIGHT (Gemma 4 31B -> Flash-Lite -> GitHub Models gpt-4.1-mini -> Flash)
                        for visual plan, photo pick/check, gate, topic scores. Busy (503) model skipped at once, not retried
-phase5/check_models.py live check of the LIGHT models (JSON, pictures in order, GitHub catalog);
+phase5/check_models.py live check of the LIGHT/VISION models (JSON, pictures in order, GitHub raw replies);
                        .github/workflows/ai-models-check.yml manual, results bench-results/phase5/models-check/<run_id>/
 yt_auto/research.py    Wikipedia articles -> numbered passages (sources.json, with revision ids)
 yt_auto/writer.py      plan -> script (each sentence cites passage ids) -> separate fact-check -> fix or drop
@@ -142,7 +142,7 @@ Used: Kokoro / kokoro-onnx (Apache-2.0 / MIT), matplotlib, FFmpeg 8.1 (run as a 
 ## Conventions
 
 - Commit messages explain why. Push to `main` (owner approved merging on 27 Oct; work branch `claude/phase-1-production-core-ufulti` was fast-forwarded into `main` at 744ebce).
-- Gemini quota (27 Oct, owner said 'build it'): strong Flash only for plan/script/fact-check (~3-4 calls a video); light jobs on Gemma 4 (same key, free, separate limit) and GitHub Models (free, uses the workflow's own token, `permissions: models: read`). GitHub Models limits are from third-party pages until ai-models-check confirms them.
+- Gemini quota (27 Oct, owner said 'build it'): strong Flash only for plan/script/fact-check (~3-4 calls a video); light jobs on Gemma 4 (same key, free, separate limit) and GitHub Models (free, uses the workflow's own token, `permissions: models: read`). Models check results (27 Oct, runs 40557681397, 40559021860, 40560587143, 40560953772): 3.5 Flash-Lite JSON + pictures OK; 3.1 Flash-Lite OK but often 503; Gemma 4 text JSON OK once, then 500/503, and **HTTP 500 to every request with pictures** (so the photo check uses the VISION list, no Gemma); GitHub Models answers a bare 'OK' (text/plain, from GitHub's own IP) to catalog and chat: most likely Models is not enabled in repo Settings -> Models (owner asked). Until then it is skipped cleanly (non-JSON reply = next model). GitHub Models limits are third-party figures until a call works.
 - Phase 1+ workflows: manual trigger or schedule, never on every push (saves free minutes; private repo has 2,000 min/month).
 - Test small locally (1–2 scenes) before using GitHub minutes.
 
