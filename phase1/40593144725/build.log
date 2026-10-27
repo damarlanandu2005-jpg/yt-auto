@@ -1,0 +1,26 @@
+[diag] machine: {'arch': 'x86_64', 'cpus': 4, 'python': '3.13.16', 'runner': 'GitHub Actions 1000000269', 'cpu_model': 'AMD EPYC 9V45 96-Core Processor', 'ffmpeg': 'ffmpeg version n8.1.3-24-g92611900bb-20261026 Copyright (c) 2000-2026 the FFmpeg developers'}
+[llm] plan: gemini-3.8-flash unavailable (daily free quota used up); trying next model
+[llm] plan: gemini-3.6-flash unavailable (HTTP 503 (busy)); trying next model
+[llm] plan: gemini-3.5-flash unavailable (daily free quota used up); trying next model
+[llm] plan: every model busy; waiting 120s (round 1)
+[llm] plan: gemini-3.6-flash unavailable (daily free quota used up); trying next model
+[bench] script: 122.06 s
+Traceback (most recent call last):
+  File "/home/runner/work/yt-auto/yt-auto/phase1/make_video.py", line 275, in <module>
+    main()
+    ~~~~^^
+  File "/home/runner/work/yt-auto/yt-auto/phase1/make_video.py", line 99, in main
+    run(args, out, bench)
+    ~~~^^^^^^^^^^^^^^^^^^
+  File "/home/runner/work/yt-auto/yt-auto/phase1/make_video.py", line 111, in run
+    the_plan = cached(out / "plan.json", lambda: writer.plan(args.topic))
+  File "/home/runner/work/yt-auto/yt-auto/phase1/make_video.py", line 39, in cached
+    data = make()
+  File "/home/runner/work/yt-auto/yt-auto/phase1/make_video.py", line 111, in <lambda>
+    the_plan = cached(out / "plan.json", lambda: writer.plan(args.topic))
+                                                 ~~~~~~~~~~~^^^^^^^^^^^^
+  File "/home/runner/work/yt-auto/yt-auto/yt_auto/writer.py", line 113, in plan
+    return llm(prompt, system=RULES, schema=PLAN_SCHEMA, name="plan", temperature=0.9)
+  File "/home/runner/work/yt-auto/yt-auto/yt_auto/llm.py", line 95, in llm
+    raise LLMError(f"{name}: no model available: {errors}")
+yt_auto.llm.LLMError: plan: no model available: ['gemini-3.8-flash: daily free quota used up', 'gemini-3.6-flash: HTTP 503 (busy)', 'gemini-3.5-flash: daily free quota used up', 'gemini-3.6-flash: daily free quota used up']
