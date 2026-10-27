@@ -1,0 +1,59 @@
+[
+ {
+  "repo": "segmind/Segmind-Vega",
+  "license": "apache-2.0",
+  "gated": false,
+  "tags": [
+   "license:apache-2.0"
+  ],
+  "sha": "7714c4363e5856ff974a4f4b068e8691f26d0b40",
+  "last_modified": "2024-01-08T04:31:59.000Z"
+ },
+ {
+  "repo": "segmind/Segmind-VegaRT",
+  "license": "apache-2.0",
+  "gated": false,
+  "tags": [
+   "license:apache-2.0"
+  ],
+  "sha": "3162e917016cef536fa040ceeeeadd9e09d93e7a",
+  "last_modified": "2023-12-12T13:42:39.000Z"
+ }
+]
+[transformers] `CLIPImageProcessor` requires torchvision (not installed); falling back to `CLIPImageProcessorPil` for backward compatibility. Install torchvision to use the default backend, or import `CLIPImageProcessorPil` directly to silence this warning.
+[transformers] `SiglipImageProcessor` requires torchvision (not installed); falling back to `SiglipImageProcessorPil` for backward compatibility. Install torchvision to use the default backend, or import `SiglipImageProcessorPil` directly to silence this warning.
+/opt/hostedtoolcache/Python/3.13.16/x64/lib/python3.13/site-packages/diffusers/utils/deprecation_utils.py:23: FutureWarning: `torch_dtype` is deprecated and will be removed in version 1.0.0. Please use `dtype` instead.
+  deprecate("torch_dtype", "1.0.0", _TORCH_DTYPE_DEPRECATION_MESSAGE)
+Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+Fetching 18 files:   0%|          | 0/18 [00:00<?, ?it/s]Fetching 18 files:  11%|█         | 2/18 [00:00<00:01, 12.02it/s]Fetching 18 files:  44%|████▍     | 8/18 [00:00<00:00, 30.31it/s]Fetching 18 files:  72%|███████▏  | 13/18 [00:00<00:00, 36.83it/s]Fetching 18 files:  89%|████████▉ | 16/18 [00:19<00:00, 36.83it/s]Fetching 18 files:  94%|█████████▍| 17/18 [00:30<00:02,  2.69s/it]Fetching 18 files: 100%|██████████| 18/18 [00:44<00:00,  3.97s/it]Fetching 18 files: 100%|██████████| 18/18 [00:44<00:00,  2.45s/it]
+Loading pipeline components...:   0%|          | 0/7 [00:00<?, ?it/s]
+Loading weights:   0%|          | 0/517 [00:00<?, ?it/s][A
+Loading weights:  87%|████████▋ | 451/517 [00:00<00:00, 4479.79it/s][ALoading weights: 100%|██████████| 517/517 [00:00<00:00, 4460.76it/s]
+Loading pipeline components...:  14%|█▍        | 1/7 [00:00<00:01,  3.23it/s]Loading pipeline components...:  71%|███████▏  | 5/7 [00:00<00:00, 13.53it/s]
+Loading weights:   0%|          | 0/196 [00:00<?, ?it/s][ALoading weights: 100%|██████████| 196/196 [00:00<00:00, 4630.10it/s]
+Loading pipeline components...: 100%|██████████| 7/7 [00:00<00:00, 13.13it/s]Loading pipeline components...: 100%|██████████| 7/7 [00:00<00:00, 11.66it/s]
+No LoRA keys associated to CLIPTextModel found with the prefix='text_encoder'. This is safe to ignore if LoRA state dict didn't originally have any CLIPTextModel related params. You can also try specifying `prefix=None` to resolve the warning. Otherwise, open an issue if you think it's unexpected: https://github.com/huggingface/diffusers/issues/new
+No LoRA keys associated to CLIPTextModelWithProjection found with the prefix='text_encoder_2'. This is safe to ignore if LoRA state dict didn't originally have any CLIPTextModelWithProjection related params. You can also try specifying `prefix=None` to resolve the warning. Otherwise, open an issue if you think it's unexpected: https://github.com/huggingface/diffusers/issues/new
+The config attributes {'skip_prk_steps': True} were passed to LCMScheduler, but are not expected and will be ignored. Please verify your scheduler_config.json configuration file.
+loaded in 51.9 s, peak 4342 MB
+  0%|          | 0/4 [00:00<?, ?it/s] 25%|██▌       | 1/4 [00:10<00:30, 10.19s/it] 50%|█████     | 2/4 [00:20<00:20, 10.13s/it] 75%|███████▌  | 3/4 [00:30<00:10, 10.11s/it]100%|██████████| 4/4 [00:40<00:00, 10.10s/it]100%|██████████| 4/4 [00:40<00:00, 10.12s/it]
+d01.jpg: 76.6 s
+  0%|          | 0/4 [00:00<?, ?it/s] 25%|██▌       | 1/4 [00:10<00:30, 10.05s/it] 50%|█████     | 2/4 [00:20<00:20, 10.06s/it] 75%|███████▌  | 3/4 [00:30<00:10, 10.06s/it]100%|██████████| 4/4 [00:40<00:00, 10.05s/it]100%|██████████| 4/4 [00:40<00:00, 10.05s/it]
+d02.jpg: 76.1 s
+  0%|          | 0/4 [00:00<?, ?it/s] 25%|██▌       | 1/4 [00:10<00:30, 10.04s/it] 50%|█████     | 2/4 [00:20<00:20, 10.03s/it] 75%|███████▌  | 3/4 [00:30<00:10, 10.08s/it]100%|██████████| 4/4 [00:40<00:00, 10.14s/it]100%|██████████| 4/4 [00:40<00:00, 10.11s/it]
+d03.jpg: 76.3 s
+  0%|          | 0/4 [00:00<?, ?it/s] 25%|██▌       | 1/4 [00:10<00:30, 10.04s/it] 50%|█████     | 2/4 [00:20<00:20, 10.02s/it] 75%|███████▌  | 3/4 [00:30<00:10, 10.03s/it]100%|██████████| 4/4 [00:40<00:00, 10.03s/it]100%|██████████| 4/4 [00:40<00:00, 10.03s/it]
+d04.jpg: 75.9 s
+  0%|          | 0/4 [00:00<?, ?it/s] 25%|██▌       | 1/4 [00:10<00:30, 10.04s/it] 50%|█████     | 2/4 [00:20<00:20, 10.02s/it] 75%|███████▌  | 3/4 [00:30<00:10, 10.01s/it]100%|██████████| 4/4 [00:40<00:00, 10.03s/it]100%|██████████| 4/4 [00:40<00:00, 10.03s/it]
+d05.jpg: 76.0 s
+  0%|          | 0/4 [00:00<?, ?it/s] 25%|██▌       | 1/4 [00:10<00:30, 10.03s/it] 50%|█████     | 2/4 [00:20<00:20, 10.02s/it] 75%|███████▌  | 3/4 [00:30<00:10, 10.02s/it]100%|██████████| 4/4 [00:40<00:00, 10.02s/it]100%|██████████| 4/4 [00:40<00:00, 10.02s/it]
+d06.jpg: 75.9 s
+  0%|          | 0/4 [00:00<?, ?it/s] 25%|██▌       | 1/4 [00:10<00:30, 10.05s/it] 50%|█████     | 2/4 [00:20<00:20, 10.04s/it] 75%|███████▌  | 3/4 [00:30<00:10, 10.03s/it]100%|██████████| 4/4 [00:40<00:00, 10.04s/it]100%|██████████| 4/4 [00:40<00:00, 10.04s/it]
+d07.jpg: 76.0 s
+  0%|          | 0/4 [00:00<?, ?it/s] 25%|██▌       | 1/4 [00:10<00:30, 10.02s/it] 50%|█████     | 2/4 [00:20<00:20, 10.02s/it] 75%|███████▌  | 3/4 [00:30<00:10, 10.01s/it]100%|██████████| 4/4 [00:40<00:00, 10.01s/it]100%|██████████| 4/4 [00:40<00:00, 10.01s/it]
+d08.jpg: 75.9 s
+  0%|          | 0/4 [00:00<?, ?it/s] 25%|██▌       | 1/4 [00:10<00:30, 10.04s/it] 50%|█████     | 2/4 [00:20<00:20, 10.03s/it] 75%|███████▌  | 3/4 [00:30<00:10, 10.03s/it]100%|██████████| 4/4 [00:40<00:00, 10.03s/it]100%|██████████| 4/4 [00:40<00:00, 10.03s/it]
+d09.jpg: 76.0 s
+  0%|          | 0/4 [00:00<?, ?it/s] 25%|██▌       | 1/4 [00:10<00:30, 10.07s/it] 50%|█████     | 2/4 [00:20<00:20, 10.05s/it] 75%|███████▌  | 3/4 [00:30<00:10, 10.04s/it]100%|██████████| 4/4 [00:40<00:00, 10.03s/it]100%|██████████| 4/4 [00:40<00:00, 10.04s/it]
+d10.jpg: 76.0 s
+average 76.1 s per drawing, peak 9174 MB
