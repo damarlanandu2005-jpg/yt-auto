@@ -1,0 +1,166 @@
+{
+ "made": "2026-10-27T16:26:19.961734+00:00",
+ "units": 76,
+ "niches": {
+  "technology": {
+   "eligible": 12,
+   "young_channels": 4,
+   "subs_per_month_median": 956.897,
+   "momentum_median": 3.121,
+   "breakout_rate": 0.295,
+   "wiki_last6_vs_prev6_median": 0.915,
+   "wiki_last6_total": 4126724,
+   "too_little_data": true,
+   "interest": {
+    "Computer": {
+     "last_6": 579276,
+     "prev_6": 635276,
+     "change": 0.91
+    },
+    "Smartphone": {
+     "last_6": 206178,
+     "prev_6": 253769,
+     "change": 0.81
+    },
+    "Internet": {
+     "last_6": 703018,
+     "prev_6": 883054,
+     "change": 0.8
+    },
+    "Electric battery": {
+     "last_6": 77782,
+     "prev_6": 91419,
+     "change": 0.85
+    },
+    "Semiconductor": {
+     "last_6": 174386,
+     "prev_6": 189061,
+     "change": 0.92
+    },
+    "Artificial intelligence": {
+     "last_6": 2156131,
+     "prev_6": 2057043,
+     "change": 1.05
+    },
+    "Electric car": {
+     "last_6": 69298,
+     "prev_6": 68545,
+     "change": 1.01
+    },
+    "Engineering": {
+     "last_6": 160655,
+     "prev_6": 165168,
+     "change": 0.97
+    }
+   }
+  },
+  "science_space": {
+   "eligible": 57,
+   "young_channels": 32,
+   "subs_per_month_median": 611.193,
+   "momentum_median": 1.852,
+   "breakout_rate": 0.244,
+   "wiki_last6_vs_prev6_median": 0.97,
+   "wiki_last6_total": 5024238,
+   "too_little_data": false,
+   "interest": {
+    "Universe": {
+     "last_6": 349949,
+     "prev_6": 440973,
+     "change": 0.79
+    },
+    "Black hole": {
+     "last_6": 1167053,
+     "prev_6": 991934,
+     "change": 1.18
+    },
+    "Solar System": {
+     "last_6": 724621,
+     "prev_6": 827380,
+     "change": 0.88
+    },
+    "Mars": {
+     "last_6": 617805,
+     "prev_6": 659035,
+     "change": 0.94
+    },
+    "Moon": {
+     "last_6": 1069585,
+     "prev_6": 1067252,
+     "change": 1.0
+    },
+    "James Webb Space Telescope": {
+     "last_6": 323682,
+     "prev_6": 324763,
+     "change": 1.0
+    },
+    "Quantum mechanics": {
+     "last_6": 411053,
+     "prev_6": 473831,
+     "change": 0.87
+    },
+    "Physics": {
+     "last_6": 360490,
+     "prev_6": 332385,
+     "change": 1.08
+    }
+   }
+  },
+  "money_economics": {
+   "eligible": 11,
+   "young_channels": 5,
+   "subs_per_month_median": 845.556,
+   "momentum_median": 1.921,
+   "breakout_rate": 0.27,
+   "wiki_last6_vs_prev6_median": 0.82,
+   "wiki_last6_total": 1256948,
+   "too_little_data": true,
+   "interest": {
+    "Inflation": {
+     "last_6": 119776,
+     "prev_6": 159234,
+     "change": 0.75
+    },
+    "Economics": {
+     "last_6": 200412,
+     "prev_6": 227330,
+     "change": 0.88
+    },
+    "Money": {
+     "last_6": 175350,
+     "prev_6": 215962,
+     "change": 0.81
+    },
+    "Recession": {
+     "last_6": 61625,
+     "prev_6": 68872,
+     "change": 0.89
+    },
+    "Gross domestic product": {
+     "last_6": 450040,
+     "prev_6": 729557,
+     "change": 0.62
+    },
+    "Central bank": {
+     "last_6": 69573,
+     "prev_6": 96911,
+     "change": 0.72
+    },
+    "Interest rate": {
+     "last_6": 62791,
+     "prev_6": 52590,
+     "change": 1.19
+    },
+    "Stock market": {
+     "last_6": 117381,
+     "prev_6": 142252,
+     "change": 0.83
+    }
+   }
+  }
+ },
+ "ranking_by_main": [
+  "science_space"
+ ],
+ "winner": "science_space"
+}

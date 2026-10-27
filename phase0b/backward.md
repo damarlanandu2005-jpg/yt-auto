@@ -1,0 +1,11 @@
+# Niche backward check (early answer; the 4-week test confirms)
+
+Made 2026-10-27. Method and winner rule: RULES.md 'Backward check' (written before running).
+
+| Niche | Eligible | Young (≤3 y) | Subs/month (median) | Momentum | Breakouts | Wikipedia interest (last 6 vs prev 6 months) |
+| --- | --- | --- | --- | --- | --- | --- |
+| How technology works | 12 | 4 (too little data) | 956.897 | 3.121 | 0.295 | 0.915x (4,126,724 views) |
+| Science and space | 57 | 32 | 611.193 | 1.852 | 0.244 | 0.97x (5,024,238 views) |
+| Money and economics (education only) | 11 | 5 (too little data) | 845.556 | 1.921 | 0.27 | 0.82x (1,256,948 views) |
+
+**Backward winner: Science and space** (ranking on main measure: Science and space)
