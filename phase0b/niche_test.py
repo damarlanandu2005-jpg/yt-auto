@@ -161,7 +161,7 @@ def cmd_select(data: Path) -> None:
                    maxResults=sel["search"]["maxResults"])
             for it in d.get("items", []):
                 found.setdefault(it["snippet"]["channelId"], set()).add(niche)
-    print(f"[select] {len(found)} candidate channels from {sum(len(n['queries']) for n in CFG['niches'].values())} "
+    print(f"[select] {len(found)} candidate channels from {sum(len(n[key]) for n in CFG['niches'].values())} "
           f"searches ({USED['units']} units)", flush=True)
 
     if prev:  # screen only channels the first pull hasn't already screened
@@ -232,7 +232,7 @@ def cmd_select(data: Path) -> None:
                 "new_eligible": len(eligible), "units": USED["units"]}]}
     (data / "channels.json").write_text(json.dumps(out, indent=1, ensure_ascii=False), encoding="utf-8")
     for n, c in chosen.items():
-        print(f"[select] {n}: {len(c)} chosen (of {sum(e['niche'] == n for e in eligible)} eligible)")
+        print(f"[select] {n}: {len(c)} chosen ({sum(e['niche'] == n for e in eligible)} newly eligible)")
     print(f"[select] units used: {USED['units']}")
 
 

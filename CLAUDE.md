@@ -37,11 +37,11 @@ Full plan: "YouTube Automation Blueprint" doc — https://claude.ai/artifact/XN7
 | Phase | State |
 | --- | --- |
 | 0. Server benchmark | **PASSED** 27 Oct 2026: 3/3 runs on GitHub Actions (AMD EPYC, 4 cores), build 3 min 18 s to 3 min 26 s, ~4 min per job, peak ~690 MB, no hangs |
-| 0b. Niche data test | **Started** 27 Oct 2026. `YOUTUBE_API_KEY` secret works. Rules frozen first (phase0b/RULES.md, commits de753c2, 4835888). First pull: 954 candidates → 34 eligible (617 under 1k subs): science 20 chosen, technology 7, money 4 (rule needs 15). Likely too few searches (8 per niche); owner to decide on a v2 with more searches (equal for all niches, before any growth data). Week-0 snapshot saved; data on bench-results/phase0b/. Weekly schedule needs the workflow on `main` |
+| 0b. Niche data test | **Running** (week 0 = 27 Oct 2026). Rules frozen first (phase0b/RULES.md); v2 approved by owner after the first pull, before any growth data: 20 searches per niche (2,356 candidates, 80 eligible). Chosen: science 20, technology 12, money 11 (rule: under 15 cannot win, so far only science qualifies; all 43 are still measured). Weekly snapshots Mondays 03:17 UTC from `main` (2, 9, 16, 23 Nov); final report and owner's niche choice after 23 Nov. ~7,000 YouTube units used on day 1; ~90 per weekly snapshot |
 | 1. Production core | **DONE**, owner approved the video 27 Oct 2026. Run 40469284296: 7.4 min GPS video, 900 words fact-checked, 99 visuals (44 real photos, each checked by looking), subtitles from our own text, ~11 min on Actions. Owner liked the earlier 3.9 min version; quality work moves to later phases. Known weak spots: some title-only cards, one off-topic diagram (geostationary, v031) |
 | 2. Research and facts | **Test PASSED** 27 Oct 2026 (run 40466026336): 30/30 planted errors caught, 0/16 false alarms (rule set before testing: ≥80% overall, ≥60% per type, ≤1 false alarm). First run 28/30 (missed 2 conflicting-source cases) → one prompt rule added. Also: number/unit guard, facts.csv, rights gate, junk-passage filter. Caveat: test set written by the same author as the checker; add independent cases later |
 | 3. Quality gate | **Test PASSED** 27 Oct 2026 (run 40477248640): all 6 blueprint faults caught (silent gap, unlicensed image, wrong title promise, 3 kinds of near-duplicate), 17/17 planted faults overall, 0/5 false blocks on clean controls. First AI run blocked the approved video on 'hook'; split per blueprint (no question = FAIL, no 'why it matters' = FLAG). The gate also found a real bug: GPS description 9,850 chars (YouTube max 5,000) → credits shortened |
-| 4–6, auto-upload | Not started (see blueprint). 0b waits for a YouTube Data API key |
+| 4–6, auto-upload | Not started (see blueprint). Phase 4 (topic finding) needs the niche from 0b |
 
 Owner feedback on the Phase 0 video: **voice quality good**; pace was a bit fast (fixed: speed 0.9, longer pauses); **wants more pictures** (decided: real photos first, AI illustrations when none fits).
 
@@ -129,7 +129,7 @@ Used: Kokoro / kokoro-onnx (Apache-2.0 / MIT), matplotlib, FFmpeg 8.1 (run as a 
 
 ## Conventions
 
-- Commit messages explain why. Push to `main`.
+- Commit messages explain why. Push to `main` (owner approved merging on 27 Oct; work branch `claude/phase-1-production-core-ufulti` was fast-forwarded into `main` at 744ebce).
 - Phase 1+ workflows: manual trigger or schedule, never on every push (saves free minutes; private repo has 2,000 min/month).
 - Test small locally (1–2 scenes) before using GitHub minutes.
 
