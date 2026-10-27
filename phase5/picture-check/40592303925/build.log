@@ -1,0 +1,24 @@
+drawings: checked 18, rejected 14
+  REJECT v002: An abstract illustration shows black-and-white wavy lines sweeping across a dark space with a crescent planeta | The description mentions abstract wavy lines rather than a clear fiery blast wave.
+  REJECT v030: An abstract celestial illustration depicts a spiky, multi-pointed red and white star shape flanked by a solid  | The description is of an abstract spiky shape and does not convey the action of moving away.
+  REJECT v034: A surreal landscape features rolling gray terrain and an erupting central volcano spewing a tall plume of red  | A volcano is not a representation of radiation hitting the upper atmosphere.
+  REJECT v036: An abstract composition features clusters of gray spheres, smooth white globes, and a distinct red organic blo | The description mentions an organic blob-like shape, which is explicitly listed as not fitting.
+  REJECT v037: A grayscale microscopic-style illustration shows a central circular cellular structure with visible internal n | The image shows cells and amoebas, not ozone molecules.
+  REJECT v039: A monochromatic illustration depicts a deep, rocky canyon or valley carved between sharply textured mountains  | A canyon does not represent changes in atmospheric composition.
+  REJECT v050: An abstract illustration shows a central textured dark globe encircled by a vibrant red ring and an outer laye | The description shows concentric rings but does not convey the concept of a shield collapsing.
+  REJECT v054: An abstract image features a smooth, luminous white gradient fading into a dark gray and black texture across  | A simple gradient is too abstract to represent ultraviolet light penetrating the atmosphere.
+  REJECT v056: A grayscale electron microscope-style rendering displays a network of branching tubular vessels with highlight | Branching tubular vessels look like biological vasculature, not the double-helix structure of DNA.
+  REJECT v057: A grayscale abstract structure shows interwoven tubular and grid-like geometric elements with red accents set  | Grid-like geometric elements are too abstract to be recognized as DNA replication errors.
+  REJECT v063: An abstract, black-and-white illustration features a dense collage of various organic, fish-like, and plant-li | A collage of shapes represents a food web, but it does not show the action of collapse.
+  REJECT v065: A textured grayish planetary globe is shown with a highlighted reddish region across its lower-left section ag | A red region on a globe typically suggests heating, which contradicts the narration about cooling.
+  REJECT v073: An abstract white wireframe structure forms a complex spherical, knotted geometric network against a solid bla | A knotted geometric network is too abstract to be recognized as a specific atomic structure.
+  REJECT v080: A minimalist space illustration features a prominent red diamond-shaped geometric object floating alongside a  | A diamond-shaped object and a comet-like streak do not represent a star and Earth's atmospheric shield.
+[llm] photo_verify: gemma-4-31b-it unavailable (HTTP 503 (busy)); trying next model
+photos: checked 37, rejected 7
+  REJECT v018: A close-up black and white image of Saturn's ring system, showing a bright ring edge and narrow propeller-like | The image shows Saturn's rings instead of a bright glowing star.
+  REJECT v020: A large white astronomical dome observatory perched on a mountain ridge overlooking a blue sea and clouds, wit | The image shows an observatory dome, not a telescope view of a star.
+  REJECT v033: An illustration of two interacting galaxies connected by a bridge of material, with three colorful spectral gr | The image contains overlaid graphs and shows galaxies, not a direct visual of a gamma ray burst.
+  REJECT v053: A dark, abstract image featuring a rectangular orange-red object near the top and smaller glowing blue light s | The image is too abstract and does not clearly show sunlight ultraviolet rays.
+  REJECT v055: A black and white image of a heavily cratered, spherical moon illuminated on one side against a pitch-black ba | The image shows a moon, not the sunlit surface of Earth.
+  REJECT v061: An artistic rendering of a gold-colored scientific satellite in orbit above the curved blue limb of Earth, wit | The image shows a satellite and Earth, not ocean surface waves.
+  REJECT v067: A gray fossilized tooth with distinct vertical ridges resting on a plain surface, accompanied by a blue sign w | The image shows a fossilized tooth, not a prehistoric fossilized shell.

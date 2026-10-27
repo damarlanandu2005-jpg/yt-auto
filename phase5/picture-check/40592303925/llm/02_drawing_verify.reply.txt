@@ -1,0 +1,114 @@
+```json
+{
+  "checks": [
+    {
+      "n": 1,
+      "seen": "An abstract illustration shows black-and-white wavy lines sweeping across a dark space with a crescent planetary object featuring reddish markings on the right.",
+      "fits": false,
+      "reason": "The description mentions abstract wavy lines rather than a clear fiery blast wave."
+    },
+    {
+      "n": 2,
+      "seen": "An abstract, starburst-like graphic features explosive white and red lines radiating outward against a dark background, interspersed with small white dots.",
+      "fits": true,
+      "reason": "The starburst and radiating explosive lines clearly represent a star expelling matter."
+    },
+    {
+      "n": 3,
+      "seen": "An abstract graphic shows dynamic white and red brushstrokes or streaks erupting from a central red core against a black background.",
+      "fits": true,
+      "reason": "Streaks erupting from a core effectively visualize particles traveling at high speed."
+    },
+    {
+      "n": 4,
+      "seen": "An abstract digital illustration displays a glowing diagonal band of white and red linear streaks surrounded by scattered white dots against a black background.",
+      "fits": true,
+      "reason": "A band of linear streaks is a recognizable representation of a particle stream."
+    },
+    {
+      "n": 5,
+      "seen": "An abstract celestial illustration depicts a spiky, multi-pointed red and white star shape flanked by a solid red circle on the left and a small gray planet on the right against a black starry background.",
+      "fits": false,
+      "reason": "The description is of an abstract spiky shape and does not convey the action of moving away."
+    },
+    {
+      "n": 6,
+      "seen": "A surreal landscape features rolling gray terrain and an erupting central volcano spewing a tall plume of red fire against a dark, starry sky.",
+      "fits": false,
+      "reason": "A volcano is not a representation of radiation hitting the upper atmosphere."
+    },
+    {
+      "n": 7,
+      "seen": "An abstract image shows a cluster of textured gray spheres and larger smooth red spheres arranged dynamically against a black background.",
+      "fits": true,
+      "reason": "Spheres are standard representations for molecules, and a dynamic arrangement fits them breaking apart."
+    },
+    {
+      "n": 8,
+      "seen": "An abstract composition features clusters of gray spheres, smooth white globes, and a distinct red organic blob-like shape against a black backdrop.",
+      "fits": false,
+      "reason": "The description mentions an organic blob-like shape, which is explicitly listed as not fitting."
+    },
+    {
+      "n": 9,
+      "seen": "A grayscale microscopic-style illustration shows a central circular cellular structure with visible internal nucleus-like circles, surrounded by irregular amoeba-like shapes and floating dots against a black background.",
+      "fits": false,
+      "reason": "The image shows cells and amoebas, not ozone molecules."
+    },
+    {
+      "n": 10,
+      "seen": "A monochromatic illustration depicts a deep, rocky canyon or valley carved between sharply textured mountains under a pale sky.",
+      "fits": false,
+      "reason": "A canyon does not represent changes in atmospheric composition."
+    },
+    {
+      "n": 11,
+      "seen": "An abstract illustration shows a central textured dark globe encircled by a vibrant red ring and an outer layer of white concentric rings against a black background.",
+      "fits": false,
+      "reason": "The description shows concentric rings but does not convey the concept of a shield collapsing."
+    },
+    {
+      "n": 12,
+      "seen": "An abstract image features a smooth, luminous white gradient fading into a dark gray and black texture across the frame.",
+      "fits": false,
+      "reason": "A simple gradient is too abstract to represent ultraviolet light penetrating the atmosphere."
+    },
+    {
+      "n": 13,
+      "seen": "A grayscale electron microscope-style rendering displays a network of branching tubular vessels with highlighted reddish inner regions.",
+      "fits": false,
+      "reason": "Branching tubular vessels look like biological vasculature, not the double-helix structure of DNA."
+    },
+    {
+      "n": 14,
+      "seen": "A grayscale abstract structure shows interwoven tubular and grid-like geometric elements with red accents set against a black background.",
+      "fits": false,
+      "reason": "Grid-like geometric elements are too abstract to be recognized as DNA replication errors."
+    },
+    {
+      "n": 15,
+      "seen": "An abstract, black-and-white illustration features a dense collage of various organic, fish-like, and plant-like shapes intertwined with subtle red details.",
+      "fits": false,
+      "reason": "A collage of shapes represents a food web, but it does not show the action of collapse."
+    },
+    {
+      "n": 16,
+      "seen": "A textured grayish planetary globe is shown with a highlighted reddish region across its lower-left section against a black, starry backdrop.",
+      "fits": false,
+      "reason": "A red region on a globe typically suggests heating, which contradicts the narration about cooling."
+    },
+    {
+      "n": 17,
+      "seen": "An abstract white wireframe structure forms a complex spherical, knotted geometric network against a solid black background.",
+      "fits": false,
+      "reason": "A knotted geometric network is too abstract to be recognized as a specific atomic structure."
+    },
+    {
+      "n": 18,
+      "seen": "A minimalist space illustration features a prominent red diamond-shaped geometric object floating alongside a hazy gray comet-like streak amid scattered white stars on a black background.",
+      "fits": false,
+      "reason": "A diamond-shaped object and a comet-like streak do not represent a star and Earth's atmospheric shield."
+    }
+  ]
+}
+```

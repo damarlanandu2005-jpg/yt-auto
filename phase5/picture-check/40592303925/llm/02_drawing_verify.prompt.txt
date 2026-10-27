@@ -1,0 +1,67 @@
+[model] gemma-4-31b-it
+[system]
+
+
+[user]
+Step 2 of a picture check for a science video. Someone looked at each picture WITHOUT knowing
+what it should show and described it. Decide for each image whether the picture fits.
+The pictures are ink drawings made by an AI image model, which often misses. A drawing fits only
+if the description shows the subject would be recognised at a glance by a viewer hearing the narration. Abstract
+shapes, unclear blobs, a scene about something else, any text or labels, a logo/emblem/badge/flag, or deformed
+bodies do NOT fit.
+When unsure, answer fits = false (a chart or plain card is shown instead, which is fine).
+Copy the description into "seen".
+Image 1: described as: An abstract illustration shows black-and-white wavy lines sweeping across a dark space with a crescent planetary object featuring reddish markings on the right.
+  should show: a fiery blast wave sweeping across a planet surface
+  narration: Do science fiction movies show a fiery blast wave sweeping our planet bare within seconds?
+Image 2: described as: An abstract, starburst-like graphic features explosive white and red lines radiating outward against a dark background, interspersed with small white dots.
+  should show: a star expelling matter into space
+  narration: These stellar detonations expel several solar masses
+Image 3: described as: An abstract graphic shows dynamic white and red brushstrokes or streaks erupting from a central red core against a black background.
+  should show: particles traveling at light speed
+  narration: The ejected material travels outward at speeds reaching several per cent of the speed of light.
+Image 4: described as: An abstract digital illustration displays a glowing diagonal band of white and red linear streaks surrounded by scattered white dots against a black background.
+  should show: particle stream moving across space
+  narration: When it detonates, its particle stream will reach
+Image 5: described as: An abstract celestial illustration depicts a spiky, multi-pointed red and white star shape flanked by a solid red circle on the left and a small gray planet on the right against a black starry background.
+  should show: a star moving away in space
+  narration: is currently moving away to a safe distance.
+Image 6: described as: A surreal landscape features rolling gray terrain and an erupting central volcano spewing a tall plume of red fire against a dark, starry sky.
+  should show: radiation hitting upper atmosphere
+  narration: When gamma radiation hits the upper atmosphere, it causes chemical reactions.
+Image 7: described as: An abstract image shows a cluster of textured gray spheres and larger smooth red spheres arranged dynamically against a black background.
+  should show: gas molecules breaking apart
+  narration: Radiolysis breaks apart these common gas molecules
+Image 8: described as: An abstract composition features clusters of gray spheres, smooth white globes, and a distinct red organic blob-like shape against a black backdrop.
+  should show: molecules recombining into nitrogen oxides
+  narration: and recombines them into harmful nitrogen oxides.
+Image 9: described as: A grayscale microscopic-style illustration shows a central circular cellular structure with visible internal nucleus-like circles, surrounded by irregular amoeba-like shapes and floating dots against a black background.
+  should show: ozone molecules being depleted
+  narration: These newly created nitrogen oxides notably deplete ozone molecules.
+Image 10: described as: A monochromatic illustration depicts a deep, rocky canyon or valley carved between sharply textured mountains under a pale sky.
+  should show: atmosphere composition changing
+  narration: The atmosphere's protective ozone composition is transformed by these reactions.
+Image 11: described as: An abstract illustration shows a central textured dark globe encircled by a vibrant red ring and an outer layer of white concentric rings against a black background.
+  should show: planet shield collapsing
+  narration: Does that distance boundary mark where atmospheric protection collapses?
+Image 12: described as: An abstract image features a smooth, luminous white gradient fading into a dark gray and black texture across the frame.
+  should show: ultraviolet light penetrating atmosphere
+  narration: When stratospheric ozone levels drop, intense ultraviolet
+Image 13: described as: A grayscale electron microscope-style rendering displays a network of branching tubular vessels with highlighted reddish inner regions.
+  should show: cellular DNA damaged by radiation
+  narration: This extreme radiation damages cellular DNA, causing pyrimidine
+Image 14: described as: A grayscale abstract structure shows interwoven tubular and grid-like geometric elements with red accents set against a black background.
+  should show: DNA replication transcription errors
+  narration: bases to form transcription errors during replication.
+Image 15: described as: An abstract, black-and-white illustration features a dense collage of various organic, fish-like, and plant-like shapes intertwined with subtle red details.
+  should show: ocean food web collapse
+  narration: Their collapse would seriously damage the foundation of the ocean food web.
+Image 16: described as: A textured grayish planetary globe is shown with a highlighted reddish region across its lower-left section against a black, starry backdrop.
+  should show: global climate cooling pattern
+  narration: alter climate patterns and cool the global temperature.
+Image 17: described as: An abstract white wireframe structure forms a complex spherical, knotted geometric network against a solid black background.
+  should show: iron-60 isotope atomic structure
+  narration: One isotope produced during these events is iron-60,
+Image 18: described as: A minimalist space illustration features a prominent red diamond-shaped geometric object floating alongside a hazy gray comet-like streak amid scattered white stars on a black background.
+  should show: star near Earth with atmospheric shield
+  narration: So how close would a dying star need to be to wipe out our protective atmospheric shield?

@@ -1,0 +1,237 @@
+{
+ "drawings": {
+  "checked": 18,
+  "kept": [
+   "v008",
+   "v010",
+   "v022",
+   "v035"
+  ],
+  "rejected": [
+   {
+    "id": "v002",
+    "title": "a fiery blast wave sweeping across a planet surface",
+    "seen": "An abstract illustration shows black-and-white wavy lines sweeping across a dark space with a crescent planetary object featuring reddish markings on the right.",
+    "reason": "The description mentions abstract wavy lines rather than a clear fiery blast wave."
+   },
+   {
+    "id": "v030",
+    "title": "a star moving away in space",
+    "seen": "An abstract celestial illustration depicts a spiky, multi-pointed red and white star shape flanked by a solid red circle on the left and a small gray planet on the right against a black starry background.",
+    "reason": "The description is of an abstract spiky shape and does not convey the action of moving away."
+   },
+   {
+    "id": "v034",
+    "title": "radiation hitting upper atmosphere",
+    "seen": "A surreal landscape features rolling gray terrain and an erupting central volcano spewing a tall plume of red fire against a dark, starry sky.",
+    "reason": "A volcano is not a representation of radiation hitting the upper atmosphere."
+   },
+   {
+    "id": "v036",
+    "title": "molecules recombining into nitrogen oxides",
+    "seen": "An abstract composition features clusters of gray spheres, smooth white globes, and a distinct red organic blob-like shape against a black backdrop.",
+    "reason": "The description mentions an organic blob-like shape, which is explicitly listed as not fitting."
+   },
+   {
+    "id": "v037",
+    "title": "ozone molecules being depleted",
+    "seen": "A grayscale microscopic-style illustration shows a central circular cellular structure with visible internal nucleus-like circles, surrounded by irregular amoeba-like shapes and floating dots against a black background.",
+    "reason": "The image shows cells and amoebas, not ozone molecules."
+   },
+   {
+    "id": "v039",
+    "title": "atmosphere composition changing",
+    "seen": "A monochromatic illustration depicts a deep, rocky canyon or valley carved between sharply textured mountains under a pale sky.",
+    "reason": "A canyon does not represent changes in atmospheric composition."
+   },
+   {
+    "id": "v050",
+    "title": "planet shield collapsing",
+    "seen": "An abstract illustration shows a central textured dark globe encircled by a vibrant red ring and an outer layer of white concentric rings against a black background.",
+    "reason": "The description shows concentric rings but does not convey the concept of a shield collapsing."
+   },
+   {
+    "id": "v054",
+    "title": "ultraviolet light penetrating atmosphere",
+    "seen": "An abstract image features a smooth, luminous white gradient fading into a dark gray and black texture across the frame.",
+    "reason": "A simple gradient is too abstract to represent ultraviolet light penetrating the atmosphere."
+   },
+   {
+    "id": "v056",
+    "title": "cellular DNA damaged by radiation",
+    "seen": "A grayscale electron microscope-style rendering displays a network of branching tubular vessels with highlighted reddish inner regions.",
+    "reason": "Branching tubular vessels look like biological vasculature, not the double-helix structure of DNA."
+   },
+   {
+    "id": "v057",
+    "title": "DNA replication transcription errors",
+    "seen": "A grayscale abstract structure shows interwoven tubular and grid-like geometric elements with red accents set against a black background.",
+    "reason": "Grid-like geometric elements are too abstract to be recognized as DNA replication errors."
+   },
+   {
+    "id": "v063",
+    "title": "ocean food web collapse",
+    "seen": "An abstract, black-and-white illustration features a dense collage of various organic, fish-like, and plant-like shapes intertwined with subtle red details.",
+    "reason": "A collage of shapes represents a food web, but it does not show the action of collapse."
+   },
+   {
+    "id": "v065",
+    "title": "global climate cooling pattern",
+    "seen": "A textured grayish planetary globe is shown with a highlighted reddish region across its lower-left section against a black, starry backdrop.",
+    "reason": "A red region on a globe typically suggests heating, which contradicts the narration about cooling."
+   },
+   {
+    "id": "v073",
+    "title": "iron-60 isotope atomic structure",
+    "seen": "An abstract white wireframe structure forms a complex spherical, knotted geometric network against a solid black background.",
+    "reason": "A knotted geometric network is too abstract to be recognized as a specific atomic structure."
+   },
+   {
+    "id": "v080",
+    "title": "star near Earth with atmospheric shield",
+    "seen": "A minimalist space illustration features a prominent red diamond-shaped geometric object floating alongside a hazy gray comet-like streak amid scattered white stars on a black background.",
+    "reason": "A diamond-shaped object and a comet-like streak do not represent a star and Earth's atmospheric shield."
+   }
+  ],
+  "seen": {
+   "v002": "An abstract illustration shows black-and-white wavy lines sweeping across a dark space with a crescent planetary object featuring reddish markings on the right.",
+   "v008": "An abstract, starburst-like graphic features explosive white and red lines radiating outward against a dark background, interspersed with small white dots.",
+   "v010": "An abstract graphic shows dynamic white and red brushstrokes or streaks erupting from a central red core against a black background.",
+   "v022": "An abstract digital illustration displays a glowing diagonal band of white and red linear streaks surrounded by scattered white dots against a black background.",
+   "v030": "An abstract celestial illustration depicts a spiky, multi-pointed red and white star shape flanked by a solid red circle on the left and a small gray planet on the right against a black starry background.",
+   "v034": "A surreal landscape features rolling gray terrain and an erupting central volcano spewing a tall plume of red fire against a dark, starry sky.",
+   "v035": "An abstract image shows a cluster of textured gray spheres and larger smooth red spheres arranged dynamically against a black background.",
+   "v036": "An abstract composition features clusters of gray spheres, smooth white globes, and a distinct red organic blob-like shape against a black backdrop.",
+   "v037": "A grayscale microscopic-style illustration shows a central circular cellular structure with visible internal nucleus-like circles, surrounded by irregular amoeba-like shapes and floating dots against a black background.",
+   "v039": "A monochromatic illustration depicts a deep, rocky canyon or valley carved between sharply textured mountains under a pale sky.",
+   "v050": "An abstract illustration shows a central textured dark globe encircled by a vibrant red ring and an outer layer of white concentric rings against a black background.",
+   "v054": "An abstract image features a smooth, luminous white gradient fading into a dark gray and black texture across the frame.",
+   "v056": "A grayscale electron microscope-style rendering displays a network of branching tubular vessels with highlighted reddish inner regions.",
+   "v057": "A grayscale abstract structure shows interwoven tubular and grid-like geometric elements with red accents set against a black background.",
+   "v063": "An abstract, black-and-white illustration features a dense collage of various organic, fish-like, and plant-like shapes intertwined with subtle red details.",
+   "v065": "A textured grayish planetary globe is shown with a highlighted reddish region across its lower-left section against a black, starry backdrop.",
+   "v073": "An abstract white wireframe structure forms a complex spherical, knotted geometric network against a solid black background.",
+   "v080": "A minimalist space illustration features a prominent red diamond-shaped geometric object floating alongside a hazy gray comet-like streak amid scattered white stars on a black background."
+  },
+  "error": null
+ },
+ "photos": {
+  "checked": 37,
+  "kept": [
+   "v003",
+   "v004",
+   "v005",
+   "v006",
+   "v007",
+   "v009",
+   "v011",
+   "v013",
+   "v016",
+   "v019",
+   "v024",
+   "v029",
+   "v038",
+   "v045",
+   "v046",
+   "v049",
+   "v052",
+   "v058",
+   "v060",
+   "v062",
+   "v064",
+   "v066",
+   "v069",
+   "v071",
+   "v072",
+   "v075",
+   "v077",
+   "v078",
+   "v079",
+   "v082"
+  ],
+  "rejected": [
+   {
+    "id": "v018",
+    "title": "Wish Upon a Star",
+    "seen": "A close-up black and white image of Saturn's ring system, showing a bright ring edge and narrow propeller-like features, with a 'NASA' label.",
+    "reason": "The image shows Saturn's rings instead of a bright glowing star."
+   },
+   {
+    "id": "v020",
+    "title": "William Herschel Telescope and Comet Tsuchinshan–ATLAS",
+    "seen": "A large white astronomical dome observatory perched on a mountain ridge overlooking a blue sea and clouds, with a bright comet streak visible in the upper left sky.",
+    "reason": "The image shows an observatory dome, not a telescope view of a star."
+   },
+   {
+    "id": "v033",
+    "title": "Artist’s impression of a gamma-ray burst shining through two young galaxies in the early Universe",
+    "seen": "An illustration of two interacting galaxies connected by a bridge of material, with three colorful spectral graphs superimposed next to different bright regions.",
+    "reason": "The image contains overlaid graphs and shows galaxies, not a direct visual of a gamma ray burst."
+   },
+   {
+    "id": "v053",
+    "title": "First Night Image of MAHLI Calibration Target Under Ultraviolet Lights",
+    "seen": "A dark, abstract image featuring a rectangular orange-red object near the top and smaller glowing blue light sources below against a black background.",
+    "reason": "The image is too abstract and does not clearly show sunlight ultraviolet rays."
+   },
+   {
+    "id": "v055",
+    "title": "Reflecting on Icy Rhea",
+    "seen": "A black and white image of a heavily cratered, spherical moon illuminated on one side against a pitch-black background, labeled 'NASA'.",
+    "reason": "The image shows a moon, not the sunlit surface of Earth."
+   },
+   {
+    "id": "v061",
+    "title": "Ocean Surface Topography Mission/Jason 2 Artist Concept",
+    "seen": "An artistic rendering of a gold-colored scientific satellite in orbit above the curved blue limb of Earth, with the sun shining brightly behind it.",
+    "reason": "The image shows a satellite and Earth, not ocean surface waves."
+   },
+   {
+    "id": "v067",
+    "title": "Prehistoric Animal Fossil Teeth Specimen",
+    "seen": "A gray fossilized tooth with distinct vertical ridges resting on a plain surface, accompanied by a blue sign with English and Hindi text reading 'FOSSIL TEETH'.",
+    "reason": "The image shows a fossilized tooth, not a prehistoric fossilized shell."
+   }
+  ],
+  "seen": {
+   "v003": "A full view of planet Earth from space, showing continents covered in white clouds against deep blue oceans, with text reading 'NASA / Apollo 17 crew' at the bottom.",
+   "v004": "A long, narrow rectangular solar panel structure or wing angled against a clear blue sky, with the label 'NASA' at the bottom.",
+   "v005": "A colorful nebula in outer space with intricate green, yellow, and blue filaments surrounded by distant stars, bearing a NASA credit at the bottom.",
+   "v006": "A bright reddish-orange spherical star set against a vast field of small white stars in a black background, with the label 'NASA' at the bottom.",
+   "v007": "An illustration of a bright central star surrounded by a wide, dusty accretion disk with a glowing planet or object creating a trail through the debris, labeled 'NASA'.",
+   "v009": "An educational diagram titled 'The Interstellar Medium' depicting the solar system, heliosphere, and various surrounding cosmic clouds with distance markers and text labels.",
+   "v011": "A spherical supernova remnant showing a textured mass of yellow-orange material enclosed within a thin blue outer shell against a dark background, with a NASA credit.",
+   "v013": "A night landscape showing tall grasses at the bottom silhouetted against a dark sky filled with numerous small stars and a faint streak of light, labeled 'NASA'.",
+   "v016": "A dense starfield showing the glowing red and dusty core of the Milky Way galaxy, with a credit to NASA, JPL-Caltech, and others at the bottom.",
+   "v018": "A close-up black and white image of Saturn's ring system, showing a bright ring edge and narrow propeller-like features, with a 'NASA' label.",
+   "v019": "A glowing, diffuse reddish-orange orb representing a star against a completely black background, with attribution text to ALMA and other observatories at the bottom.",
+   "v020": "A large white astronomical dome observatory perched on a mountain ridge overlooking a blue sea and clouds, with a bright comet streak visible in the upper left sky.",
+   "v024": "A space view showing a dense star-forming region with a prominent reddish-orange nebula surrounded by glowing green gas and bright blue stars, labeled 'NASA'.",
+   "v029": "A digital illustration of a dark space scene featuring three pinkish exoplanets of different sizes and a bright distant star, with a credit to Robin Dienel and the Carnegie Institution.",
+   "v033": "An illustration of two interacting galaxies connected by a bridge of material, with three colorful spectral graphs superimposed next to different bright regions.",
+   "v038": "A satellite map of the Antarctic region showing a purple and blue ozone hole surrounded by green and yellow contours, with a 'NASA' label at the bottom.",
+   "v045": "A line graph with a red filled area showing density measurements labeled 'RHOS' over time, annotated with vertical white lines and a green arrow pointing to March 2022.",
+   "v046": "A wide-field astrophotography image of a bright red emission nebula with dense dark dust lanes and numerous scattered stars, bearing a 'NASA' label.",
+   "v049": "An illustration of a large reddish-brown planet on the left, with an asteroid field and a glowing star system with a protoplanetary disk on the right, labeled 'NASA'.",
+   "v052": "A view from high altitude showing a thick layer of white clouds below, with a crescent moon hanging above the distinct blue edge of Earth's atmosphere.",
+   "v053": "A dark, abstract image featuring a rectangular orange-red object near the top and smaller glowing blue light sources below against a black background.",
+   "v055": "A black and white image of a heavily cratered, spherical moon illuminated on one side against a pitch-black background, labeled 'NASA'.",
+   "v058": "A close-up photograph of a brown and yellow frog resting on damp forest soil amidst green moss and vegetation.",
+   "v060": "A satellite image showing turquoise and blue shallow coastal waters, green islands, and landmasses with intricate reef structures, labeled 'NASA'.",
+   "v061": "An artistic rendering of a gold-colored scientific satellite in orbit above the curved blue limb of Earth, with the sun shining brightly behind it.",
+   "v062": "A satellite photo showing a swirling turquoise and blue phytoplankton bloom in the dark ocean waters near coastal land and clouds, with a 'NASA' label.",
+   "v064": "A view from space of Earth's dark terrain, featuring a glowing green and red aurora borealis arched across the upper atmosphere beneath a starry sky.",
+   "v066": "A close-up photograph of a brown, dome-shaped fossilized stromatolite rock with concentric layered rings, shown next to a U.S. penny for scale.",
+   "v067": "A gray fossilized tooth with distinct vertical ridges resting on a plain surface, accompanied by a blue sign with English and Hindi text reading 'FOSSIL TEETH'.",
+   "v069": "A close-up photograph of a rough geological specimen with patches of chalky white mineral formations embedded in a gray matrix.",
+   "v071": "A vertical arrangement of multiple sediment core samples showing varying shades of gray, tan, and brown stratigraphy.",
+   "v072": "A three-panel educational graphic titled 'Progression of a Supernova Explosion', showing a layered star on the left, a question mark over an explosion in the center, and a colorful nebula remnant on the right.",
+   "v075": "A globe of the Earth with color-coded seafloor crust ages, where red represents youngest crust along mid-ocean ridges and blue represents older crust near continents.",
+   "v077": "An aerial photograph of a massive flat-topped ice shelf ending in a sheer white cliff wall adjacent to dark blue ocean water filled with scattered smaller icebergs.",
+   "v078": "A black and white scanning electron microscope image showing a heavily textured, rough microscopic biological or geological surface with filamentous structures.",
+   "v079": "A black and white scanning electron microscope image displaying a collection of microscopic marine microfossil shells, including circular diatoms and ornate coccolithophore plates.",
+   "v082": "An astronaut's eye-view photograph from space showing the sun reflecting brightly off cloud patterns over the ocean, beneath a thin blue atmospheric haze and pitch-black space."
+  },
+  "error": null
+ }
+}
