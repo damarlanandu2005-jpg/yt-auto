@@ -1,0 +1,768 @@
+{
+ "articles": [
+  {
+   "title": "Near-Earth supernova",
+   "url": "https://en.wikipedia.org/wiki/Near-Earth_supernova",
+   "revision_id": 1377740028,
+   "revision_time": "2026-09-30T22:25:23Z",
+   "id": "A1",
+   "passages": [
+    {
+     "id": "A1.1",
+     "section": "Introduction",
+     "text": "A near-Earth supernova is an explosion resulting from the  death of a star that occurs close enough to the Earth, less than roughly 10 to 300 parsecs [33 to 978 light-years] away, to have noticeable effects on its biosphere."
+    },
+    {
+     "id": "A1.2",
+     "section": "Introduction",
+     "text": "An estimated 20 supernova explosions have happened within 300 pc of the Earth over the last 300 thousand years. Type II supernova explosions are expected to occur in active star-forming regions, with 12 such OB associations being located within 650 pc of the Earth. At present, there are up to 14 near-Earth supernova candidates within 300 pc."
+    },
+    {
+     "id": "A1.3",
+     "section": "Effects on Earth",
+     "text": "Estimates for the rate of supernova explosions are highly uncertain. An example is that on average, one supernova explosion occurs within 10 parsecs (33 light-years) of the Earth every 240 million years. Gamma rays are responsible for most of the adverse effects that a supernova may have on a life-harboring terrestrial planet. In Earth's case, gamma rays induce radiolysis of diatomic N2 and O2 in the upper atmosphere, converting molecular nitrogen and oxygen into nitrogen oxides, and thereby notably depleting the ozone layer, enough to expose the surface to bio-harmful (mainly ultra-violet) solar and cosmic radiation. Phytoplankton and reef communities would be particularly affected, which could severely deplete the base of the marine food chain."
+    },
+    {
+     "id": "A1.4",
+     "section": "Effects on Earth",
+     "text": "Historically, nearby supernovae may have influenced the biodiversity of life on the planet. Geological records suggest that nearby supernova events have led to an increase in cosmic rays, which in turn produced a cooler climate. A greater temperature difference between the poles and the equator created stronger winds, increased ocean mixing, and resulted in the transport of nutrients to shallow waters along the continental shelves. This led to greater biodiversity."
+    },
+    {
+     "id": "A1.5",
+     "section": "Effects on Earth",
+     "text": "Odenwald discusses the possible effects of a Betelgeuse supernova on the Earth and on human space travel, especially the effects of the stream of charged particles that would reach the Earth about 100,000 years later than the initial light and other electromagnetic radiation produced by the explosion. However, it is estimated that it may take up to 1.5 million years for Betelgeuse to undergo a supernova."
+    },
+    {
+     "id": "A1.6",
+     "section": "Risk by supernova type",
+     "text": "Speculation as to the effects of a nearby supernova on Earth often focuses on large stars as Type II supernova candidates. Several prominent stars within a few hundred light years of the Sun are candidates for becoming supernovae in as little as 1,000 years. Although they would be extremely visible, if these \"predictable\" supernovae were to occur, they are thought to pose little threat to Earth."
+    },
+    {
+     "id": "A1.7",
+     "section": "Risk by supernova type",
+     "text": "It is estimated that a Type II supernova closer than eight parsecs (26 light-years) would destroy more than half of the Earth's ozone layer. Such estimates are based on atmospheric modeling and the measured radiation flux from SN 1987A, a Type II supernova in the Large Magellanic Cloud. Estimates of the rate of supernova occurrence within 10 parsecs of the Earth vary from 0.05–0.5 per billion years to 10 per billion years. Several studies assume that supernovae are concentrated in the spiral arms of the galaxy, and that supernova explosions near the Sun usually occur during the approximately 10 million years that the Sun takes to pass through one of these regions. Examples of relatively near supernovae are the Vela Supernova Remnant (c. 800 ly, c. 12,000 years ago) and Geminga (c. 550 ly, c. 300,000 years ago)."
+    },
+    {
+     "id": "A1.8",
+     "section": "Risk by supernova type",
+     "text": "Type Ia supernovae are thought to be potentially the most dangerous if they occur close enough to the Earth. Because Type Ia supernovae arise from dim, common white dwarf stars, it is likely that a supernova that could affect the Earth will occur unpredictably and take place in a star system that is not well studied. The closest known candidate is IK Pegasi. It is currently estimated, however, that by the time it could become a threat, its velocity in relation to the Solar System would have carried IK Pegasi to a safe distance."
+    },
+    {
+     "id": "A1.9",
+     "section": "Past events",
+     "text": "Evidence from daughter products of short-lived radioactive isotopes shows that a nearby supernova helped determine the composition of the Solar System 4.5 billion years ago, and may even have triggered the formation of this system. Supernova production of heavy elements over astronomic periods of time ultimately made the chemistry of life on Earth possible."
+    },
+    {
+     "id": "A1.10",
+     "section": "Past events",
+     "text": "Past supernovae might be detectable on Earth in the form of metal isotope signatures in rock strata. Subsequently, iron-60 enrichment has been reported in deep-sea rock of the Pacific Ocean by researchers from the Technical University of Munich. Twenty-three atoms of this iron isotope were found in the top 2 cm of crust (this layer corresponds to times from 13.4 million years ago to the present). It is estimated that the supernova must have occurred in the last 5 million years or else it would have had to happen very close to the solar system to account for so much iron-60 still being here. A supernova occurring so close would have probably caused a mass extinction, which did not happen in that time frame. The quantity of iron seems to indicate that the supernova was less than 30 parsecs away. On the other hand, the authors estimate the frequency of supernovae at a distance less than D (for reasonably small D) as around (D/10 pc)3 per billion years, which gives a probability of only around 5% for a supernova within 30 pc in the last 5 million years. They point out that the probability may be higher because the Solar System is entering the Orion Arm of the Milky Way. In 2019, the group in Munich found interstellar dust in Antarctic surface snow not older than 20 years which they relate to the Local Interstellar Cloud. The detection of interstellar dust in Antarctica was done by the measurement of the radionuclides Fe-60 and Mn-53 by highly sensitive accelerator mass spectrometry, where Fe-60 is again the clear signature for a recent near-Earth supernova origin."
+    },
+    {
+     "id": "A1.11",
+     "section": "Past events",
+     "text": "Gamma ray bursts from \"dangerously close\" supernova explosions occur two or more times per billion years, and this has been proposed as the cause of the end-Ordovician extinction, which resulted in the death of nearly 60% of the oceanic life on Earth. Multiple supernovae in a cluster of dying hypergiant stars that occurred in rapid succession on an astronomical and geological timescale have also been proposed as a trigger for the multiple pulses of the Late Devonian extinction, in particular the Hangenberg event at the terminus of the Devonian."
+    },
+    {
+     "id": "A1.12",
+     "section": "Past events",
+     "text": "In 1998 a supernova remnant, RX J0852.0−4622, was found in front (apparently) of the larger Vela Supernova Remnant. Gamma rays from the decay of titanium-44 (half-life about 60 years) were independently discovered emanating from it, showing that it must have exploded fairly recently (perhaps around the year 1200), but there is no historical record of it. Its distance is controversial, but some scientists argue from the flux of gamma rays and X-rays that the supernova remnant is only 200 parsecs (650–700 light-years) away. If so, its occurring 800 years ago is a statistically unexpected event because supernovae less than 200 parsecs away are estimated to occur less than once per 100,000 years."
+    }
+   ],
+   "licence": "CC BY-SA 4.0 (Wikipedia text; facts used, wording not copied)",
+   "retrieved": "2026-10-27"
+  },
+  {
+   "title": "Supernova",
+   "url": "https://en.wikipedia.org/wiki/Supernova",
+   "revision_id": 1381835707,
+   "revision_time": "2026-10-25T02:35:01Z",
+   "id": "A2",
+   "passages": [
+    {
+     "id": "A2.1",
+     "section": "Introduction",
+     "text": "A supernova (pl.: supernovae) is a powerful and luminous explosion of a star. A supernova occurs during the last evolutionary stages of a massive star, or when a white dwarf is triggered into runaway nuclear fusion. The original object, called the progenitor, either collapses to a neutron star or black hole, or is completely destroyed to form a diffuse nebula. The peak optical luminosity of a supernova can be comparable to that of an entire galaxy before fading over several weeks or months."
+    },
+    {
+     "id": "A2.2",
+     "section": "Introduction",
+     "text": "It is expected that supernovae in our galaxy occur on average once every 61 years, although the last to be observed was Kepler's Supernova in 1604.  SN 1987A occurred in the Large Magellanic Cloud, a satellite galaxy of our galaxy, in 1987.  Several thousand supernovae are typically seen in distant galaxies every year."
+    },
+    {
+     "id": "A2.3",
+     "section": "Introduction",
+     "text": "Theoretical studies indicate that most supernovae are triggered by one of two basic mechanisms: the sudden re-ignition of nuclear fusion in a white dwarf, or the sudden gravitational collapse of a massive star's core."
+    },
+    {
+     "id": "A2.4",
+     "section": "Introduction",
+     "text": "In the re-ignition of a white dwarf, the object's temperature is raised enough to trigger runaway nuclear fusion, completely disrupting the star. Possible causes are an accumulation of material from a binary companion through accretion, or by a stellar merger."
+    },
+    {
+     "id": "A2.5",
+     "section": "Introduction",
+     "text": "In the case of a massive star's sudden implosion, the core of a massive star will undergo sudden collapse once it is unable to produce sufficient energy from fusion to counteract the star's own gravity, which must happen once the star begins fusing iron, but may happen during an earlier stage of metal fusion."
+    },
+    {
+     "id": "A2.6",
+     "section": "Introduction",
+     "text": "Supernovae can expel several solar masses of material at speeds up to several percent of the speed of light. This drives an expanding shock wave into the surrounding interstellar medium, sweeping up an expanding shell of gas and dust observed as a supernova remnant. Supernovae are a major source of elements in the interstellar medium from oxygen to rubidium. The expanding shock waves of supernovae can trigger the formation of new stars. Supernovae are a major source of cosmic rays. They might also produce gravitational waves."
+    },
+    {
+     "id": "A2.7",
+     "section": "Occurrence",
+     "text": "The first supernovae to be studied by astronomical methods were Tycho's Supernova in 1572 and Kepler's Supernova in 1604, both of which were in the Milky Way and were visible to the naked eye. Analysis of the historical record suggests that, aside from telescope discoveries, fewer than 10 supernovae have been observed over the last 2,000 years."
+    },
+    {
+     "id": "A2.8",
+     "section": "Occurrence",
+     "text": "Observations of recent supernova remnants within the Milky Way, coupled with studies of supernovae in other galaxies, suggest that these powerful stellar explosions occur in our galaxy approximately 1.6 to 4.6 times per century on average."
+    },
+    {
+     "id": "A2.9",
+     "section": "Occurrence",
+     "text": "In 1987, the supernova SN 1987A appeared in the Large Magellanic Cloud, a satellite galaxy of the Milky Way in an easily studied part of the sky. Many astronomical observations were made on SN 1987A, including the only measurements of astronomical neutrinos other than the Sun's. The event was attributed to an explosion of a blue supergiant star."
+    },
+    {
+     "id": "A2.10",
+     "section": "Etymology",
+     "text": "The word supernova has the plural form supernovae () or supernovas and is often abbreviated as SN or SNe. It is derived from the Latin word nova, meaning 'new', which refers to what appears to be a temporary new bright star. Adding the prefix \"super-\" distinguishes supernovae from ordinary novae, which are far less luminous. The word supernova was coined by Walter Baade and Fritz Zwicky, who began using it in astrophysics lectures in 1931. Its first use in a journal article came the following year in a publication by Knut Lundmark, who may have coined it independently."
+    },
+    {
+     "id": "A2.11",
+     "section": "Observation history",
+     "text": "Compared to a star's entire history, the visual appearance of a supernova is very brief, sometimes spanning several months, so that the chances of observing one with the naked eye are roughly once in a lifetime. Only a tiny fraction of the 100 billion stars in a typical galaxy have the capacity to become a supernova, the ability being restricted to those having high mass and those in rare kinds of binary star systems with at least one white dwarf."
+    },
+    {
+     "id": "A2.12",
+     "section": "Observation history",
+     "text": "A rock carving in the Burzahama region of Kashmir, dated to 4500±1000 BC showing what might be nova HB9 is the earliest of many claimed but unverifiable records of supernovae by prehistoric people. The first widely recorded supernova was SN 1006, observed in AD 1006 in the constellation of Lupus. This event was described by observers in China, Japan, Iraq, Egypt and Europe."
+    },
+    {
+     "id": "A2.13",
+     "section": "Observation history",
+     "text": "The supernova SN 1054, which produced the Crab Nebula, was recorded by Chinese astronomers in AD 1054. Supernovae SN 1572 and SN 1604, the latest Milky Way supernovae to be observed with the naked eye, had a notable influence on the development of astronomy in Europe because they were used to argue against the Aristotelian idea that the universe beyond the Moon and planets was static and unchanging. Johannes Kepler began observing SN 1604 at its peak on 17 October 1604, and continued to make estimates of its brightness until it faded from naked eye view a year later. It was the second supernova to be observed in a generation, after Tycho Brahe observed SN 1572 in Cassiopeia."
+    },
+    {
+     "id": "A2.14",
+     "section": "Observation history",
+     "text": "There is some evidence that the youngest known supernova in our galaxy, G1.9+0.3, occurred in the late 19th century, considerably more recently than Cassiopeia A from around 1680. Neither was noted at the time. In the case of G1.9+0.3, high extinction from dust along the plane of the galactic disk could have dimmed the event sufficiently for it to go unnoticed. The situation for Cassiopeia A is less clear; infrared light echoes have been detected showing that it was not in a region of especially high extinction."
+    },
+    {
+     "id": "A2.15",
+     "section": "Observation history",
+     "text": "With the development of the astronomical telescope, observation and discovery of fainter and more distant supernovae became possible. The first such observation was of SN 1885A in the Andromeda Galaxy. A decade later, two further supernovae, SN 1895A and SN 1895B, were discovered in NGC 4424 and NGC 5253 respectively. Early work on what was originally believed to be simply a new category of novae was performed during the 1920s. These were variously called \"upper-class Novae\", \"Hauptnovae\", or \"giant novae\". The name \"supernovae\" is thought to have been coined by Walter Baade and Fritz Zwicky in lectures at Caltech in 1931. It was used, as \"super-Novae\", in a journal paper published by Knut Lundmark in 1933, and in a 1934 paper by Baade and Zwicky. By 1938, the hyphen was no longer used and the modern name was in use."
+    },
+    {
+     "id": "A2.16",
+     "section": "Observation history",
+     "text": "Rudolph Minkowski and Fritz Zwicky developed the modern supernova classification scheme beginning in 1941. During the 1960s, astronomers found that the maximum intensities of supernovae could be used as standard candles, hence indicators of astronomical distances. Some of the most distant supernovae observed in 2003 appeared dimmer than expected. This supports the view that the expansion of the universe is accelerating. Techniques were developed for reconstructing supernovae events that have no written records of being observed. The date of the Cassiopeia A supernova event was determined from light echoes off nebulae, while the age of supernova remnant RX J0852.0-4622 was estimated from temperature measurements and the gamma ray emissions from the radioactive decay of 44Ti."
+    },
+    {
+     "id": "A2.17",
+     "section": "Observation history",
+     "text": "The most luminous supernova ever recorded is ASASSN-15lh, at a distance of 3.82 gigalight-years. It was first detected in June 2015 and peaked at 570 billion L☉, which is twice the bolometric luminosity of any other known supernova. The nature of this supernova is debated and several alternative explanations, such as tidal disruption of a star by a black hole, have been suggested."
+    },
+    {
+     "id": "A2.18",
+     "section": "Observation history",
+     "text": "SN 2013fs was recorded three hours after the supernova event on 6 October 2013, by the Intermediate Palomar Transient Factory. This is among the earliest supernovae caught after detonation, and it is the earliest for which spectra have been obtained, beginning six hours after the actual explosion. The star is located in a spiral galaxy named NGC 7610, 160 million light-years away in the constellation of Pegasus."
+    },
+    {
+     "id": "A2.19",
+     "section": "Observation history",
+     "text": "The supernova SN 2016gkg was detected by amateur astronomer Victor Buso from Rosario, Argentina, on 20 September 2016. It was the first time that the initial \"shock breakout\" from an optical supernova had been observed. The progenitor star has been identified in Hubble Space Telescope images from before its collapse. Astronomer Alex Filippenko noted: \"Observations of stars in the first moments they begin exploding provide information that cannot be directly obtained in any other way.\""
+    },
+    {
+     "id": "A2.20",
+     "section": "Observation history",
+     "text": "Because supernovae are relatively rare events within a galaxy, occurring about three times a century in the Milky Way, obtaining a good sample of supernovae to study requires regular monitoring of many galaxies. Today, amateur and professional astronomers are finding about two thousand every year, some when near maximum brightness, others on old astronomical photographs or plates. Supernovae in other galaxies cannot be predicted with any meaningful accuracy. Normally, when they are discovered, they are already in progress. To use supernovae as standard candles for measuring distance, observation of their peak luminosity is required. It is therefore important to discover them well before they reach their maximum. Amateur astronomers, who greatly outnumber professional astronomers, have played an important role in finding supernovae, typically by looking at some of the closer galaxies through an optical telescope and comparing them to earlier photographs."
+    },
+    {
+     "id": "A2.21",
+     "section": "Observation history",
+     "text": "Toward the end of the 20th century, astronomers increasingly turned to computer-controlled telescopes and CCDs for hunting supernovae. While such systems are popular with amateurs, there are also professional installations such as the Katzman Automatic Imaging Telescope. The Supernova Early Warning System (SNEWS) project uses a network of neutrino detectors to give early warning of a supernova in the Milky Way galaxy. Neutrinos are subatomic particles that are produced in great quantities by a supernova, and they are not significantly absorbed by the interstellar gas and dust of the galactic disk."
+    },
+    {
+     "id": "A2.22",
+     "section": "Observation history",
+     "text": "Supernova searches fall into two classes: those focused on relatively nearby events and those looking farther away. Because of the expansion of the universe, the distance to a remote object with a known emission spectrum can be estimated by measuring its Doppler shift (or redshift); on average, more-distant objects recede with greater velocity than those nearby, and so have a higher redshift. Thus the search is split between high redshift and low redshift, with the boundary falling around a redshift range of z=0.1–0.3, where z is a dimensionless measure of the spectrum's frequency shift."
+    },
+    {
+     "id": "A2.23",
+     "section": "Observation history",
+     "text": "High-redshift searches for supernovae usually involve the observation of supernova light curves. These are useful for standard or calibrated candles to generate Hubble diagrams and make cosmological predictions. Supernova spectroscopy, used to study the physics and environments of supernovae, is more practical at low than at high redshift. Low redshift observations also anchor the low-distance end of the Hubble curve, which is a plot of distance versus redshift for visible galaxies."
+    },
+    {
+     "id": "A2.24",
+     "section": "Observation history",
+     "text": "As survey programmes rapidly increase the number of detected supernovae, collated collections of observations (light decay curves, astrometry, pre-supernova observations, spectroscopy) have been assembled. The Pantheon data set, assembled in 2018, detailed 1048 supernovae. In 2021, this data set was expanded to 1701 light curves for 1550 supernovae taken from 18 different surveys, a 50% increase in under 3 years."
+    },
+    {
+     "id": "A2.25",
+     "section": "Naming convention",
+     "text": "Supernova discoveries are reported to the International Astronomical Union's Central Bureau for Astronomical Telegrams, which sends out a circular with the name it assigns to that supernova. The name is formed from the prefix SN, followed by the year of discovery, suffixed with a one- to four-letter designation. The first 26 supernovae of the year are designated with a capital letter from A to Z. Next, pairs of lower-case letters are used: aa, ab, and so on. After zz comes aaa, then aab, aac, and so on."
+    },
+    {
+     "id": "A2.26",
+     "section": "Naming convention",
+     "text": "Hence, for example, SN 2003C designates the third supernova reported in the year 2003. The last reported supernova of 2005, SN 2005nc, was the 367th (14 × 26 + 3 = 367). The last supernova retained in the Asiago Supernova Catalogue when it was terminated on 31 December 2017 bears the designation SN 2017jzp. SN 2021afdx is an example of a four-letter suffix."
+    },
+    {
+     "id": "A2.27",
+     "section": "Naming convention",
+     "text": "Historical supernovae are known simply by the year they occurred: SN 185, SN 1006, SN 1054, SN 1572 (called Tycho's Nova) and SN 1604 (Kepler's Star). Since 1885 the additional letter notation has been used, even if there was only one supernova discovered that year (for example, SN 1885A, SN 1907A, etc.); this last happened with SN 1947A."
+    },
+    {
+     "id": "A2.28",
+     "section": "Naming convention",
+     "text": "Until 1987, two-letter designations were rarely needed; after 1988 they were needed every year. Since 2000, professional and amateur astronomers have been finding several hundred supernovae each year (572 in 2007, 261 in 2008, 390 in 2009; 231 in 2013). In 2016, the increasing number of discoveries led to the use of three-letter designations. Since 2019, the use of four-letter designations has been needed."
+    },
+    {
+     "id": "A2.29",
+     "section": "Classification",
+     "text": "Astronomers classify supernovae according to their light curves and the absorption lines of different chemical elements that appear in their spectra. If a supernova's spectrum contains lines of hydrogen (known as the Balmer series in the visual portion of the spectrum) it is classified Type II; otherwise it is Type I. In each of these two types there are subdivisions according to the presence of lines from other elements or the shape of the light curve (a graph of the supernova's apparent magnitude as a function of time)."
+    },
+    {
+     "id": "A2.30",
+     "section": "Classification",
+     "text": "Type I supernovae are subdivided on the basis of their spectra, with Type Ia showing a strong ionised silicon absorption line. Type I supernovae without this strong line are classified as Type Ib and Ic, with Type Ib showing strong neutral helium lines and Type Ic lacking them. Historically, the light curves of Type I supernovae were seen as all broadly similar, too much so to make useful distinctions. While variations in light curves have been studied, classification continues to be made on spectral grounds rather than light-curve shape."
+    },
+    {
+     "id": "A2.31",
+     "section": "Classification",
+     "text": "A small number of Type Ia supernovae exhibit unusual features, such as non-standard luminosity or broadened light curves, and these are typically categorised by referring to the earliest example showing similar features. For example, the sub-luminous SN 2008ha is often referred to as SN 2002cx-like or class Ia-2002cx."
+    },
+    {
+     "id": "A2.32",
+     "section": "Classification",
+     "text": "A small proportion of Type Ic supernovae show highly broadened and blended emission lines which are taken to indicate very high expansion velocities for the ejecta. These have been classified as Type Ic-BL or Ic-bl."
+    },
+    {
+     "id": "A2.33",
+     "section": "Classification",
+     "text": "Calcium-rich supernovae are a rare type of very fast supernova with unusually strong calcium lines in their spectra. Models suggest they occur when material is accreted from a helium-rich companion rather than a hydrogen-rich star. Because of helium lines in their spectra, they can resemble Type Ib supernovae, but are thought to have very different progenitors."
+    },
+    {
+     "id": "A2.34",
+     "section": "Classification",
+     "text": "Type Ien has been proposed to explain observations of the supernova SN 2021yfj. Having lost its outer layers of hydrogen, helium and carbon, the star, just before the explosion, released an unusual, hidden layer of silicon, sulfur and argon, elements that are not often seen in dying stars. During the explosion, the material from the star's core collided with the gaseous shell, and the heat of the collision caused the silicon and sulfur layer to glow. The explosion showed that stars can be completely stripped down and still produce a brilliant explosion observable from very far distance. The discovery provided direct evidence of the long-theorized, but difficult to observe, internal structure of massive stars. In the type's name, \"e\" describes the position of the silicon/sulfur layer in the internal structure, while \"n\" signifies narrow emission lines."
+    },
+    {
+     "id": "A2.35",
+     "section": "Classification",
+     "text": "The supernovae of Type II can also be sub-divided based on their spectra. While most Type II supernovae show very broad emission lines which indicate expansion velocities of many thousands of kilometres per second, some, such as SN 2005gl, have relatively narrow features in their spectra. These are called Type IIn, where the \"n\" stands for \"narrow\"."
+    },
+    {
+     "id": "A2.36",
+     "section": "Classification",
+     "text": "A few supernovae, such as SN 1987K and SN 1993J, appear to change types: they show lines of hydrogen at early times, but, over a period of weeks to months, become dominated by lines of helium. The term \"Type IIb\" is used to describe the combination of features normally associated with Type II and Type Ib."
+    },
+    {
+     "id": "A2.37",
+     "section": "Classification",
+     "text": "Type II supernovae with normal spectra dominated by broad hydrogen lines that remain for the life of the decline are classified on the basis of their light curves. The most common type shows a distinctive \"plateau\" in the light curve shortly after peak brightness where the visual luminosity stays relatively constant for several months before the decline resumes. These are called Type II-P referring to the plateau. Less common are Type II-L supernovae that lack a distinct plateau. The \"L\" signifies \"linear\" although the light curve is not actually a straight line."
+    },
+    {
+     "id": "A2.38",
+     "section": "Classification",
+     "text": "Supernovae that do not fit into the normal classifications are designated peculiar, or \"pec\"."
+    },
+    {
+     "id": "A2.39",
+     "section": "Classification",
+     "text": "Zwicky defined additional supernovae types based on a very few examples that did not cleanly fit the parameters for Type I or Type II supernovae. SN 1961i in NGC 4303 was the prototype and only member of the Type III supernova class, noted for its broad light curve maximum and broad hydrogen Balmer lines that were slow to develop in the spectrum. SN 1961f in NGC 3003 was the prototype and only member of the Type IV class, with a light curve similar to a Type II-P supernova, with hydrogen absorption lines but weak hydrogen emission lines. The Type V class was coined for SN 1961V in NGC 1058, an unusual faint supernova or supernova impostor with a slow rise to brightness, a maximum lasting many months, and an unusual emission spectrum. The similarity of SN 1961V to the Eta Carinae Great Outburst was noted. Supernovae in M101 (1909) and M83 (1923 and 1957) were also suggested as possible Type IV or Type V supernovae."
+    },
+    {
+     "id": "A2.40",
+     "section": "Classification",
+     "text": "These types would now all be treated as peculiar Type II supernovae (IIpec), of which many more examples have been discovered, although it is still debated whether SN 1961V was a true supernova following an LBV outburst or an impostor."
+    },
+    {
+     "id": "A2.41",
+     "section": "Current models",
+     "text": "Supernova type codes, as summarised in the table above, are taxonomic: the type number is based on the light observed from the supernova, not necessarily its cause. For example, Type Ia supernovae are produced by runaway fusion ignited on degenerate white dwarf progenitors, while the spectrally similar Type Ib/c are produced from massive stripped progenitor stars by core collapse."
+    },
+    {
+     "id": "A2.42",
+     "section": "Current models",
+     "text": "A white dwarf star may accumulate sufficient material from a stellar companion to raise its core temperature enough to ignite carbon fusion, at which point it undergoes runaway nuclear fusion, completely disrupting it. There are three avenues by which this detonation is theorised to happen: stable accretion of material from a companion, the collision of two white dwarfs, or accretion that causes ignition in a shell that then ignites the core. The dominant mechanism by which Type Ia supernovae are produced remains unclear. Despite this uncertainty in how Type Ia supernovae are produced, Type Ia supernovae have very uniform properties and are useful standard candles over intergalactic distances. Some calibrations are required to compensate for the gradual change in properties or different frequencies of abnormal luminosity supernovae at high redshift, and for small variations in brightness identified by light curve shape or spectrum."
+    },
+    {
+     "id": "A2.43",
+     "section": "Current models",
+     "text": "There are several means by which a supernova of this type can form, but they share a common underlying mechanism. If a carbon-oxygen white dwarf accreted enough matter to reach the Chandrasekhar limit of about 1.44 solar masses (for a non-rotating star), then it would no longer be able to support the bulk of its mass through electron degeneracy pressure and would begin to collapse. However, the current view is that this limit is not normally attained; increasing temperature and density inside the core ignite carbon fusion as the star approaches the limit (to within about 1%) before collapse is initiated. In contrast, for a core primarily composed of oxygen, neon and magnesium, the collapsing white dwarf will typically form a neutron star. In this case, only a fraction of the star's mass will be ejected during the collapse."
+    },
+    {
+     "id": "A2.44",
+     "section": "Current models",
+     "text": "Within a few seconds of the collapse process, a substantial fraction of the matter in the white dwarf undergoes nuclear fusion, releasing enough energy (1–2×1044 J) to unbind the star in a supernova. An outwardly expanding shock wave is generated, with matter reaching velocities on the order of 5,000–20,000 km/s, or roughly 3% of the speed of light. There is also a significant increase in luminosity, reaching an absolute magnitude of −19.3 (or 5 billion times brighter than the Sun), with little variation."
+    },
+    {
+     "id": "A2.45",
+     "section": "Current models",
+     "text": "The model for the formation of this category of supernova is a close binary star system. The more massive of the two stars is the first to evolve off the main sequence, and it expands to form a red giant. The two stars now share a common envelope, causing their mutual orbit to shrink. The giant star then sheds most of its envelope, losing mass until it can no longer continue nuclear fusion. At this point, it becomes a white dwarf star, composed primarily of carbon and oxygen. Eventually, the secondary star also evolves off the main sequence to form a red giant. Matter from the giant is accreted by the white dwarf, causing the latter to increase in mass. The exact details of initiation and of the heavy elements produced in the catastrophic event remain unclear."
+    },
+    {
+     "id": "A2.46",
+     "section": "Current models",
+     "text": "Type Ia supernovae produce a characteristic light curve—the graph of luminosity as a function of time—after the event. This luminosity is generated by the radioactive decay of 56Ni through 56Co to 56Fe. The peak luminosity of the light curve is extremely consistent across normal Type Ia supernovae, having a maximum absolute magnitude of about −19.3. This is because typical Type Ia supernovae arise from a consistent type of progenitor star by gradual mass acquisition, and explode when they acquire a consistent typical mass, giving rise to very similar supernova conditions and behaviour. This allows them to be used as a secondary standard candle to measure the distance to their host galaxies."
+    },
+    {
+     "id": "A2.47",
+     "section": "Current models",
+     "text": "A second model for the formation of Type Ia supernovae involves the merger of two white dwarf stars, with the combined mass momentarily exceeding the Chandrasekhar limit. This is sometimes referred to as the double-degenerate model, as both stars are degenerate white dwarfs. Due to the possible combinations of mass and chemical composition of the pair there is much variation in this type of event, and, in many cases, there may be no supernova at all, in which case they will have a less luminous light curve than the more normal SN Type Ia."
+    },
+    {
+     "id": "A2.48",
+     "section": "Current models",
+     "text": "Abnormally bright Type Ia supernovae occur when the white dwarf already has a mass higher than the Chandrasekhar limit, possibly enhanced further by asymmetry, but the ejected material will have less than normal kinetic energy. This super-Chandrasekhar-mass scenario can occur, for example, when the extra mass is supported by differential rotation."
+    },
+    {
+     "id": "A2.49",
+     "section": "Current models",
+     "text": "There is no formal sub-classification for non-standard Type Ia supernovae. It has been proposed that a group of sub-luminous supernovae that occur when helium accretes onto a white dwarf should be classified as Type Iax. This type of supernova may not always completely destroy the white dwarf progenitor and could leave behind a zombie star."
+    },
+    {
+     "id": "A2.50",
+     "section": "Current models",
+     "text": "One specific type of supernova originates from exploding white dwarfs, like Type Ia, but contains hydrogen lines in their spectra, possibly because the white dwarf is surrounded by an envelope of hydrogen-rich circumstellar material. These supernovae have been dubbed Type Ia/IIn, Type Ian, Type IIa and Type IIan, with the type Ia-CSM label being more widely used for these objects in the modern literature."
+    },
+    {
+     "id": "A2.51",
+     "section": "Current models",
+     "text": "The quadruple star HD 74438, belonging to the open cluster IC 2391 the Vela constellation, has been predicted to become a non-standard Type Ia supernova."
+    },
+    {
+     "id": "A2.52",
+     "section": "Current models",
+     "text": "Very massive stars can undergo core collapse when nuclear fusion becomes unable to sustain the core against its own gravity; passing this threshold is the cause of all types of supernova except Type Ia. The collapse may cause violent expulsion of the outer layers of the star resulting in a supernova. However, if the release of gravitational potential energy is insufficient, the star may instead collapse into a black hole or neutron star with little radiated energy."
+    },
+    {
+     "id": "A2.53",
+     "section": "Current models",
+     "text": "Core collapse can be caused by several different mechanisms: exceeding the Chandrasekhar limit; electron capture; pair-instability; or photodisintegration."
+    },
+    {
+     "id": "A2.54",
+     "section": "Current models",
+     "text": "When a massive star develops an iron core larger than the Chandrasekhar mass it will no longer be able to support itself by electron degeneracy pressure and will collapse further to a neutron star or black hole."
+    },
+    {
+     "id": "A2.55",
+     "section": "Current models",
+     "text": "Electron capture by magnesium in a degenerate O/Ne/Mg core (about 9–10 solar mass progenitor star under solar Z) removes support and causes gravitational collapse followed by explosive oxygen fusion, with very similar results."
+    },
+    {
+     "id": "A2.56",
+     "section": "Current models",
+     "text": "Electron-positron pair production in a large post-helium burning core removes thermodynamic support and causes initial collapse followed by runaway fusion, resulting in a pair-instability supernova."
+    },
+    {
+     "id": "A2.57",
+     "section": "Current models",
+     "text": "A sufficiently large and hot stellar core may generate gamma-rays energetic enough to initiate photodisintegration directly, which will cause a complete collapse of the core."
+    },
+    {
+     "id": "A2.58",
+     "section": "Current models",
+     "text": "The table below lists the known reasons for core collapse in massive stars, the types of stars in which they occur, their associated supernova type, and the remnant produced. The metallicity is the proportion of elements other than hydrogen or helium, as compared to the Sun. The initial mass is the mass of the star prior to the supernova event, given in multiples of the Sun's mass, although the mass at the time of the supernova may be much lower."
+    },
+    {
+     "id": "A2.59",
+     "section": "Current models",
+     "text": "Type IIn supernovae are not listed in the table. They can be produced by various types of core collapse in different progenitor stars, possibly even by Type Ia white dwarf ignitions, although it seems that most will be from iron core collapse in luminous supergiants or hypergiants (including LBVs). The narrow spectral lines for which they are named occur because the supernova is expanding into a small dense cloud of circumstellar material. It appears that a significant proportion of supposed Type IIn supernovae are supernova impostors, massive eruptions of LBV-like stars similar to the Great Eruption of Eta Carinae. In these events, material previously ejected from the star creates the narrow absorption lines and causes a shock wave through interaction with the newly ejected material."
+    },
+    {
+     "id": "A2.60",
+     "section": "Current models",
+     "text": "When a stellar core is no longer supported against gravity, it collapses in on itself with velocities reaching 70,000 km/s (0.23c), resulting in a rapid increase in temperature and density. What follows depends on the mass and structure of the collapsing core, with low-mass degenerate cores forming neutron stars, higher-mass degenerate cores mostly collapsing completely to black holes, and non-degenerate cores undergoing runaway fusion."
+    },
+    {
+     "id": "A2.61",
+     "section": "Current models",
+     "text": "The initial collapse of degenerate cores is accelerated by beta decay, photodisintegration and electron capture, which causes a burst of electron neutrinos. As the density increases, neutrino emission is cut off as they become trapped in the core. The inner core eventually reaches typically 30 km in diameter with a density comparable to that of an atomic nucleus, and neutron degeneracy pressure tries to halt the collapse. If the core mass is more than about 15 solar masses then neutron degeneracy is insufficient to stop the collapse and a black hole forms directly with no supernova."
+    },
+    {
+     "id": "A2.62",
+     "section": "Current models",
+     "text": "In lower mass cores the collapse is stopped and the newly formed neutron core has an initial temperature of about 100 billion Ks, 6,000 times the temperature of the Sun's core. At this temperature, neutrino-antineutrino pairs of all flavours are efficiently formed by thermal emission. These thermal neutrinos are several times more abundant than the electron-capture neutrinos. About 1046 joules, approximately 10% of the star's rest mass, is converted into a ten-second burst of neutrinos, which is the main output of the event. The suddenly halted core collapse rebounds and produces a shock wave that stalls in the outer core within milliseconds as energy is lost through the dissociation of heavy elements. A process that is not clearly understood is necessary to allow the outer layers of the core to reabsorb around 1044 joules (1 foe) from the neutrino pulse, producing the visible brightness, although there are other theories that could power the explosion."
+    },
+    {
+     "id": "A2.63",
+     "section": "Current models",
+     "text": "Some material from the outer envelope falls back onto the neutron star, and, for cores beyond about 8 M☉, there is sufficient fallback to form a black hole. This fallback will reduce the kinetic energy created and the mass of expelled radioactive material, but in some situations, it may also generate relativistic jets that result in a gamma-ray burst or an exceptionally luminous supernova."
+    },
+    {
+     "id": "A2.64",
+     "section": "Current models",
+     "text": "The collapse of a massive non-degenerate core will ignite further fusion. When the core collapse is initiated by pair instability (photons turning into electron-positron pairs, thereby reducing the radiation pressure) oxygen fusion begins and the collapse may be halted. For core masses of 40–60 M☉, the collapse halts and the star remains intact, but collapse will occur again when a larger core has formed. For cores of around 60–130 M☉, the fusion of oxygen and heavier elements is so energetic that the entire star is disrupted, causing a supernova. At the upper end of the mass range, the supernova is unusually luminous and extremely long-lived due to many solar masses of ejected 56Ni. For even larger core masses, the core temperature becomes high enough to allow photodisintegration and the core collapses completely into a black hole."
+    }
+   ],
+   "licence": "CC BY-SA 4.0 (Wikipedia text; facts used, wording not copied)",
+   "retrieved": "2026-10-27"
+  },
+  {
+   "title": "Ozone depletion",
+   "url": "https://en.wikipedia.org/wiki/Ozone_depletion",
+   "revision_id": 1381721748,
+   "revision_time": "2026-10-24T10:19:37Z",
+   "id": "A3",
+   "passages": [
+    {
+     "id": "A3.1",
+     "section": "Introduction",
+     "text": "Ozone depletion in the stratosphere (the ozone layer) consists of two related phenomena observed since the late 1970s: a lowered total amount of ozone in Earth's upper stratosphere, and a much larger springtime decrease in around Earth's polar regions. The latter phenomenon over the south pole is referred to as the ozone hole. There are also springtime polar tropospheric ozone depletion events in addition to these stratospheric events."
+    },
+    {
+     "id": "A3.2",
+     "section": "Introduction",
+     "text": "The main causes of ozone depletion and the ozone hole are manufactured chemicals, especially manufactured halocarbon refrigerants, solvents, propellants, and foam-blowing agents (chlorofluorocarbons (CFCs), HCFCs, halons), referred to as ozone-depleting substances (ODS). These compounds are transported into the stratosphere by turbulent mixing after being emitted from the surface, mixing much faster than the molecules can settle. Once in the stratosphere, they release atoms from the halogen group through photodissociation, which catalyze the breakdown of ozone (O3) into oxygen (O2). Ozone depletion in both the upper and lower stratosphere were observed to increase as emissions of halocarbons increased."
+    },
+    {
+     "id": "A3.3",
+     "section": "Introduction",
+     "text": "Ozone depletion and the ozone hole have generated worldwide concern over increased cancer risks and other negative effects. The ozone layer prevents harmful wavelengths of ultraviolet (UVB) light from passing through the Earth's atmosphere. These wavelengths cause skin cancer, sunburn, permanent blindness, and cataracts, which were projected to increase dramatically as a result of thinning ozone, as well as harming plants and animals. These concerns led to the adoption of the Montreal Protocol in 1987, which bans the production of CFCs, halons, and other ozone-depleting chemicals. Over time, scientists have developed new refrigerants with lower global warming potential (GWP) to replace older ones. For example, in new automobiles, R-1234yf systems are now common, being chosen over refrigerants with much higher GWP such as R-134a and R-12."
+    },
+    {
+     "id": "A3.4",
+     "section": "Introduction",
+     "text": "The controls on ozone-depleting substances came into effect in 1989. Ozone levels stabilized by the mid-1990s and began to recover in the 2000s, as the shifting of the jet stream in the Southern Hemisphere towards the South Pole has stopped and might even be reversing. Recovery was projected to continue over the next century, with the ozone hole expected to reach pre-1980 levels by around 2075. In 2019, NASA reported that the ozone hole was the smallest ever since it was first discovered in 1982. The UN now projects that under the current regulations the ozone layer will completely regenerate by 2045. The Montreal Protocol is considered the most successful international environmental agreement to date."
+    },
+    {
+     "id": "A3.5",
+     "section": "Ozone cycle overview",
+     "text": "Three forms (or allotropes) of oxygen are involved in the ozone-oxygen cycle: oxygen atoms (O or atomic oxygen), oxygen gas (O2 or diatomic oxygen), and ozone gas (O3 or triatomic oxygen). Ozone is formed in the stratosphere when oxygen gas molecules photodissociate after absorbing UVC photons. This converts a single O2 into two atomic oxygen radicals. The atomic oxygen radicals then combine with separate O2 molecules to create two O3 molecules. These ozone molecules absorb UVB light, following which ozone splits into a molecule of O2 and an oxygen atom. The oxygen atom then joins up with an oxygen molecule to regenerate ozone. This is a continuing process that terminates when an oxygen atom recombines with an ozone molecule to make two O2 molecules. It is worth noting that ozone is the only atmospheric gas that absorbs UVB light."
+    },
+    {
+     "id": "A3.6",
+     "section": "Ozone cycle overview",
+     "text": "The total amount of ozone in the stratosphere is determined by a balance between photochemical production and recombination."
+    },
+    {
+     "id": "A3.7",
+     "section": "Ozone cycle overview",
+     "text": "Ozone can be destroyed by a number of free radical catalysts; the most important are the hydroxyl radical (OH·), nitric oxide radical (NO·), chlorine radical (Cl·) and bromine radical (Br·). The dot is a notation to indicate that each species has an unpaired electron and is thus extremely reactive. The effectiveness of different halogens and pseudohalogens as catalysts for ozone destruction varies, in part due to differing routes to regenerate the original radical after reacting with ozone or dioxygen."
+    },
+    {
+     "id": "A3.8",
+     "section": "Ozone cycle overview",
+     "text": "While all of the relevant radicals have both natural and man-made sources, human activity has impacted some more than others. As of 2020, most of the OH· and NO· in the stratosphere is naturally occurring, but human activity has drastically increased the levels of chlorine and bromine. These elements are found in stable organic compounds, especially chlorofluorocarbons, which can travel to the stratosphere without being destroyed in the troposphere due to their low reactivity. Once in the stratosphere, the Cl and Br atoms are released from the parent compounds by the action of ultraviolet light, e.g."
+    },
+    {
+     "id": "A3.9",
+     "section": "Ozone cycle overview",
+     "text": "Ozone is a highly reactive molecule that easily reduces to the more stable oxygen form with the assistance of a catalyst. Cl and Br atoms destroy ozone molecules through a variety of catalytic cycles. In the simplest example of such a cycle, a chlorine atom reacts with an ozone molecule (O3), taking an oxygen atom to form chlorine monoxide (ClO) and leaving an oxygen molecule (O2). The ClO can react with a second molecule of ozone, releasing the chlorine atom and yielding two molecules of oxygen. The chemical shorthand for these gas-phase reactions is:"
+    },
+    {
+     "id": "A3.10",
+     "section": "Ozone cycle overview",
+     "text": "Cl· + O3 → ClO + O2 A chlorine atom removes an oxygen atom from an ozone molecule to make a ClO molecule"
+    },
+    {
+     "id": "A3.11",
+     "section": "Ozone cycle overview",
+     "text": "ClO + O → Cl· +  O2 This ClO can react with an oxygen atom to form an oxygen molecule; the chlorine is free to repeat this two-step cycle. The net effect of these two reactions is to catalyse the termination reaction given above which converts ozone and O to molecular oxygen."
+    },
+    {
+     "id": "A3.12",
+     "section": "Ozone cycle overview",
+     "text": "The overall effect is a decrease in the amount of ozone, though the rate of these processes can be decreased by the effects of null cycles. More complicated mechanisms have also been discovered that lead to ozone destruction in the lower stratosphere."
+    },
+    {
+     "id": "A3.13",
+     "section": "Ozone cycle overview",
+     "text": "A single chlorine atom would continuously destroy ozone (thus a catalyst) for up to two years (the time scale for transport back down to the troposphere) except for reactions that remove it from this cycle by forming reservoir species such as hydrogen chloride (HCl) and chlorine nitrate (ClONO2). Bromine is even more efficient than chlorine at destroying ozone on a per-atom basis, but there is much less bromine in the atmosphere at present. Both chlorine and bromine contribute significantly to overall ozone depletion. Laboratory studies have also shown that fluorine and iodine atoms participate in analogous catalytic cycles. However, fluorine atoms react rapidly with water vapour, methane and hydrogen to form strongly bound hydrogen fluoride (HF) in the Earth's stratosphere, while organic molecules containing iodine react so rapidly in the lower atmosphere that they do not reach the stratosphere in significant quantities."
+    },
+    {
+     "id": "A3.14",
+     "section": "Ozone cycle overview",
+     "text": "A single chlorine atom is able to react with an average of 100,000 ozone molecules before it is removed from the catalytic cycle. This fact plus the amount of chlorine released into the atmosphere yearly by chlorofluorocarbons (CFCs) and hydrochlorofluorocarbons (HCFCs) demonstrates the danger of CFCs and HCFCs to the environment."
+    },
+    {
+     "id": "A3.15",
+     "section": "Observations on ozone layer depletion",
+     "text": "The ozone hole is usually measured by reduction in the total column ozone above a point on the Earth's surface. This is normally expressed in Dobson units; abbreviated as \"DU\". The most prominent decrease in ozone has been in the lower stratosphere. Marked decreases in column ozone in the Antarctic spring and early summer compared to the early 1970s and before have been observed using instruments such as the Total Ozone Mapping Spectrometer (TOMS)."
+    },
+    {
+     "id": "A3.16",
+     "section": "Observations on ozone layer depletion",
+     "text": "Reductions of up to 70 percent in the ozone column observed in the austral (Southern Hemispheric) spring over Antarctica and first reported in 1985 (Farman et al.) are continuing. As of 2010, Antarctic total column ozone in September and October continued to be 40–50 percent lower than pre-ozone-hole values since the 1990s. A gradual trend toward \"healing\" was reported in 2016. In 2017, NASA announced that the ozone hole was the weakest since 1988 because of warm stratospheric conditions. It is expected to recover around 2070."
+    },
+    {
+     "id": "A3.17",
+     "section": "Observations on ozone layer depletion",
+     "text": "The amount lost is more variable year-to-year in the Arctic than in the Antarctic. The greatest Arctic declines are in the winter and spring, reaching up to 30 percent when the stratosphere is coldest."
+    },
+    {
+     "id": "A3.18",
+     "section": "Observations on ozone layer depletion",
+     "text": "Reactions that take place on polar stratospheric clouds (PSCs) play an important role in enhancing ozone depletion. PSCs form more readily in the extreme cold of the Arctic and Antarctic stratosphere. This is why ozone holes first formed, and are deeper, over Antarctica. Early models failed to take PSCs into account and predicted a gradual global depletion, which is why the sudden Antarctic ozone hole was such a surprise to many scientists."
+    },
+    {
+     "id": "A3.19",
+     "section": "Observations on ozone layer depletion",
+     "text": "It is more accurate to speak of ozone depletion in middle latitudes rather than holes. Total column ozone declined below pre-1980 values between 1980 and 1996 for mid-latitudes. In the northern mid-latitudes, it then increased from the minimum value by about two percent from 1996 to 2009 as regulations took effect and the amount of chlorine in the stratosphere decreased. In the Southern Hemisphere's mid-latitudes, total ozone remained constant over that time period. There are no significant trends in the tropics, largely because halogen-containing compounds have not had time to break down and release chlorine and bromine atoms at tropical latitudes."
+    },
+    {
+     "id": "A3.20",
+     "section": "Observations on ozone layer depletion",
+     "text": "Large volcanic eruptions have been shown to have substantial albeit uneven ozone-depleting effects, as observed with the 1991 eruption of Mt. Pinatubo in the Philippines."
+    },
+    {
+     "id": "A3.21",
+     "section": "Observations on ozone layer depletion",
+     "text": "Ozone depletion also explains much of the observed reduction in stratospheric and upper tropospheric temperatures. The source of the warmth of the stratosphere is the absorption of UV radiation by ozone, hence reduced ozone leads to cooling. Some stratospheric cooling is also predicted from increases in greenhouse gases such as CO2 and CFCs themselves; however, the ozone-induced cooling appears to be dominant."
+    },
+    {
+     "id": "A3.22",
+     "section": "Observations on ozone layer depletion",
+     "text": "Predictions of ozone levels remain difficult, but the precision of models' predictions of observed values and the agreement among different modeling techniques have increased steadily. The World Meteorological Organization Global Ozone Research and Monitoring Project—Report No. 44 is strongly in favor of the Montreal Protocol, but notes that a UNEP 1994 Assessment overestimated ozone loss for the 1994–1997 period."
+    },
+    {
+     "id": "A3.23",
+     "section": "Observations on ozone layer depletion",
+     "text": "Chlorofluorocarbons (CFCs) and other halogenated ozone-depleting substances (ODS) are mainly responsible for man-made chemical ozone depletion. The total amount of effective halogens (chlorine and bromine) in the stratosphere can be calculated and are known as the equivalent effective stratospheric chlorine (EESC)."
+    },
+    {
+     "id": "A3.24",
+     "section": "Observations on ozone layer depletion",
+     "text": "CFCs as refrigerants were invented by Thomas Midgley Jr. in the 1930s. They were used in air conditioning and cooling units, as aerosol spray propellants prior to the 1970s, and in the cleaning processes of delicate electronic equipment. They also occur as by-products of some chemical processes. No significant natural sources have ever been identified for these compounds—their presence in the atmosphere is due almost entirely to human manufacture. As mentioned above, when such ozone-depleting chemicals reach the stratosphere, they are dissociated by ultraviolet light to release chlorine atoms. The chlorine atoms act as a catalyst, and each can break down tens of thousands of ozone molecules before being removed from the stratosphere. Given the longevity of CFC molecules, recovery times are measured in decades. It is calculated that a CFC molecule takes an average of about five to seven years to go from the ground level up to the upper atmosphere, and it can stay there for about a century, destroying up to one hundred thousand ozone molecules during that time."
+    },
+    {
+     "id": "A3.25",
+     "section": "Observations on ozone layer depletion",
+     "text": "1,1,1-Trichloro-2,2,2-trifluoroethane, also known as CFC-113a, is one of four man-made chemicals newly discovered in the atmosphere by a team at the University of East Anglia. CFC-113a is the only known CFC whose abundance in the atmosphere is still growing. Its source remains a mystery, but illegal manufacturing is suspected by some. CFC-113a seems to have been accumulating unabated since 1960. Between 2012 and 2017, concentrations of the gas jumped by 40 percent."
+    },
+    {
+     "id": "A3.26",
+     "section": "Observations on ozone layer depletion",
+     "text": "A study by an international team of researchers published in Nature found that since 2013 emissions that are predominately from north-eastern China have released large quantities of the banned chemical Chlorofluorocarbon-11 (CFC-11) into the atmosphere. Scientists estimate that without action, these CFC-11 emissions will delay the recovery of the planet's ozone hole by a decade."
+    },
+    {
+     "id": "A3.27",
+     "section": "Observations on ozone layer depletion",
+     "text": "Satellites burning up upon re-entry into Earth's atmosphere produce aluminum oxide (Al2O3) nanoparticles that endure in the atmosphere for decades. Estimates for 2022 alone were ~17 metric tons (~30 kg of nanoparticles per ~250 kg satellite). Increasing populations of satellite constellations can eventually lead to significant ozone depletion."
+    },
+    {
+     "id": "A3.28",
+     "section": "Observations on ozone layer depletion",
+     "text": "\"Very short-lived substances\" are a class of ozone-depleting chemicals, allowed by the Montreal Protocol, that degrade in under 6 months. 90% are naturally produced, for example bromine-based chemicals generated by seaweed and phytoplankton, but 10% are manmade, for example dichloromethane."
+    },
+    {
+     "id": "A3.29",
+     "section": "Observations on ozone layer depletion",
+     "text": "Scientists have attributed ozone depletion to the increase of man-made (anthropogenic) halogen compounds from CFCs by combining observational data with computer models. These complex chemistry transport models (e.g. SLIMCAT, CLaMS—Chemical Lagrangian Model of the Stratosphere) work by combining measurements of chemicals and meteorological fields with chemical reaction rate constants. They identify key chemical reactions and transport processes that bring CFC photolysis products into contact with ozone."
+    },
+    {
+     "id": "A3.30",
+     "section": "Ozone hole and its causes",
+     "text": "The Antarctic ozone hole is an area of the Antarctic stratosphere in which the recent ozone levels have dropped to as low as 33 percent of their pre-1975 values. The ozone hole occurs during the Antarctic spring, from September to early December, as strong westerly winds start to circulate around the continent and create an atmospheric container. Within this polar vortex, over 50 percent of the lower stratospheric ozone is destroyed during the Antarctic spring."
+    },
+    {
+     "id": "A3.31",
+     "section": "Ozone hole and its causes",
+     "text": "As explained above, the primary cause of ozone depletion is the presence of chlorine-containing source gases (primarily CFCs and related halocarbons). In the presence of UV light, these gases dissociate, releasing chlorine atoms, which then go on to catalyze ozone destruction. The Cl-catalyzed ozone depletion can take place in the gas phase, but it is substantially enhanced in the presence of polar stratospheric clouds (PSCs)."
+    },
+    {
+     "id": "A3.32",
+     "section": "Ozone hole and its causes",
+     "text": "These polar stratospheric clouds form during winter, in the extreme cold. Polar winters are dark, consisting of three months without solar radiation (sunlight). The lack of sunlight contributes to a decrease in temperature and the polar vortex traps and chills the air. Temperatures are around or below −80 °C. These low temperatures form cloud particles. There are three types of PSC clouds—nitric acid trihydrate clouds, slowly cooling water-ice clouds, and rapid cooling water-ice (nacreous) clouds—that provide surfaces for chemical reactions whose products will, in the spring lead to ozone destruction."
+    },
+    {
+     "id": "A3.33",
+     "section": "Ozone hole and its causes",
+     "text": "The photochemical processes involved are complex but well understood. The key observation is that, ordinarily, most of the chlorine in the stratosphere resides in \"reservoir\" compounds, primarily chlorine nitrate (ClONO2) as well as stable end products such as HCl. The formation of end products essentially removes Cl from the ozone depletion process. Reservoir compounds sequester Cl, which can later be made available via absorption of light at wavelengths shorter than 400 nm. During the Antarctic winter and spring, reactions on the surface of the polar stratospheric cloud particles convert these \"reservoir\" compounds into reactive free radicals (Cl and ClO). Denitrification is the process by which the clouds remove NO2 from the stratosphere by converting it to nitric acid in PSC particles, which then are lost by sedimentation. This prevents newly formed ClO from being converted back into ClONO2."
+    },
+    {
+     "id": "A3.34",
+     "section": "Ozone hole and its causes",
+     "text": "The role of sunlight in ozone depletion is the reason why the Antarctic ozone depletion is greatest during spring. During winter, even though PSCs are at their most abundant, there is no light over the pole to drive chemical reactions. During the spring, however, sunlight returns and provides energy to drive photochemical reactions and melt the polar stratospheric clouds, releasing considerable ClO, which drives the hole mechanism. Further warming temperatures near the end of spring break up the vortex around mid-December. As warm, ozone and NO2-rich air flows in from lower latitudes, the PSCs are destroyed, the enhanced ozone depletion process shuts down, and the ozone hole closes."
+    },
+    {
+     "id": "A3.35",
+     "section": "Ozone hole and its causes",
+     "text": "Most of the ozone that is destroyed is in the lower stratosphere, in contrast to the much smaller ozone depletion through homogeneous gas-phase reactions, which occurs primarily in the upper stratosphere."
+    },
+    {
+     "id": "A3.36",
+     "section": "Effects",
+     "text": "Since the ozone layer absorbs UVB ultraviolet light from the sun, ozone layer depletion increases surface UVB levels (all else equal), which could lead to damage, including an increase in skin cancer. This was the reason for the Montreal Protocol. Although decreases in stratospheric ozone are well-tied to CFCs and increases in surface UVB, there is no direct observational evidence linking ozone depletion to higher incidence of skin cancer and eye damage in human beings. This is partly because UVA, which has also been implicated in some forms of skin cancer, is not absorbed by ozone, and because it is nearly impossible to control statistics for lifestyle changes over time. Ozone depletion may also influence wind patterns."
+    },
+    {
+     "id": "A3.37",
+     "section": "Effects",
+     "text": "Ozone, while a minority constituent in Earth's atmosphere, is responsible for most of the absorption of UVB radiation. The amount of UVB radiation that penetrates through the ozone layer decreases exponentially with the slant-path thickness and density of the layer. When stratospheric ozone levels decrease, higher levels of UVB reach the Earth's surface. UV-driven phenolic formation in tree rings has dated the start of ozone depletion in northern latitudes to the late 1700s."
+    },
+    {
+     "id": "A3.38",
+     "section": "Effects",
+     "text": "In October 2008, the Ecuadorian Space Agency published a report called HIPERION. The study used ground instruments in Ecuador and the last 28 years' data from 12 satellites of several countries, and found that the UV radiation reaching equatorial latitudes was far greater than expected, with the ultraviolet index climbing as high as 24 in Quito; the WHO considers 11 as an extreme index and a great risk to health. The report concluded that depleted ozone levels around the mid-latitudes of the planet are already endangering large populations in these areas. Later, the CONIDA, the Peruvian Space Agency, published its own study, which yielded almost the same findings as the Ecuadorian study."
+    },
+    {
+     "id": "A3.39",
+     "section": "Effects",
+     "text": "The main public concern regarding the ozone hole has been the effects of increased surface UV radiation on human health. So far, ozone depletion in most locations has been typically a few percent and, as noted above, no direct evidence of health damage is available in most latitudes. If the high levels of depletion seen in the ozone hole were to be common across the globe, the effects could be substantially more dramatic. As the ozone hole over Antarctica has in some instances grown so large as to affect parts of Australia, New Zealand, Chile, Argentina, and South Africa, environmentalists have been concerned that the increase in surface UV could be significant. Excessive ultraviolet radiation (UVR) has reducing effects on the rates of photosynthesis and growth of benthic diatom communities (microalgae species that increase water quality and are pollution resistant) that are present in shallow freshwater. Ozone depletion not only affects human health but also has a profound impact on biodiversity. It damages plants and trees at the cellular level, affecting their growth, vitality, photosynthesis, water balance, and defense mechanisms against pests and diseases. This sets off a cascade of ecological impacts, harming soil microbes, insects, wildlife, and entire ecosystems."
+    },
+    {
+     "id": "A3.40",
+     "section": "Effects",
+     "text": "Ozone depletion would magnify all of the effects of UV on human health, both positive (including production of vitamin D) and negative (including sunburn, skin cancer, and cataracts). In addition, increased surface UV leads to increased tropospheric ozone, which is a health risk to humans."
+    },
+    {
+     "id": "A3.41",
+     "section": "Effects",
+     "text": "The most common forms of skin cancer in humans, basal and squamous cell carcinomas, have been strongly linked to UV-B exposure. The mechanism by which UVB induces these cancers is well understood—absorption of UV-B radiation causes the pyrimidine bases in the DNA molecule to form dimers, resulting in transcription errors when the DNA replicates. These cancers are relatively mild and rarely fatal, although the treatment of squamous cell carcinoma sometimes requires extensive reconstructive surgery. By combining epidemiological data with results of animal studies, scientists have estimated that every one percent decrease in long-term stratospheric ozone would increase the incidence of these cancers by 2%."
+    },
+    {
+     "id": "A3.42",
+     "section": "Effects",
+     "text": "Another form of skin cancer, melanoma, is much less common but far more dangerous, being lethal in about 15–20 percent of the cases diagnosed. The relationship between melanoma and ultraviolet exposure is not yet fully understood, but it appears that both UV-B and UV-A are involved. Because of this uncertainty, it is difficult to estimate the effect of ozone depletion on melanoma incidence. One study showed that a 10 percent increase in UV-B radiation was associated with a 19 percent increase in melanomas for men and 16 percent for women. A study of people in Punta Arenas, at the southern tip of Chile, showed a 56 percent increase in melanoma and a 46 percent increase in non-melanoma skin cancer over a period of seven years, along with decreased ozone and increased UVB levels."
+    },
+    {
+     "id": "A3.43",
+     "section": "Effects",
+     "text": "Epidemiological studies suggest an association between ocular cortical cataracts and UV-B exposure, using crude approximations of exposure and various cataract assessment techniques. A detailed assessment of ocular exposure to UV-B was carried out in a study on Chesapeake Bay Watermen, where increases in average annual ocular exposure were associated with increasing risk of cortical opacity. In this highly exposed group of predominantly white males, the evidence linking cortical opacities to sunlight exposure was the strongest to date. Based on these results, ozone depletion is predicted to cause hundreds of thousands of additional cataracts by 2050."
+    },
+    {
+     "id": "A3.44",
+     "section": "Effects",
+     "text": "Increased surface UV leads to increased tropospheric ozone. Ground-level ozone is generally recognized to be a health risk, as ozone is toxic due to its strong oxidant properties. The risks are particularly high for young children, the elderly, and those with asthma or other respiratory difficulties. At this time, ozone at ground level is produced mainly by the action of UV radiation on combustion gases from vehicle exhausts."
+    },
+    {
+     "id": "A3.45",
+     "section": "Effects",
+     "text": "Vitamin D is produced in the skin by ultraviolet light. Thus, higher UVB exposure raises human vitamin D in those deficient in it. Recent research (primarily since the Montreal Protocol) shows that many humans have less than optimal vitamin D levels. In particular, in the U.S. population, the lowest quarter of vitamin D (<17.8 ng/ml) were found using information from the National Health and Nutrition Examination Survey to be associated with an increase in all-cause mortality in the general population. While blood level of vitamin D in excess of 100 ng/ml appear to raise blood calcium excessively and to be associated with higher mortality, the body has mechanisms that prevent sunlight from producing vitamin D in excess of the body's requirements."
+    },
+    {
+     "id": "A3.46",
+     "section": "Effects",
+     "text": "A November 2011 report by scientists at the Institute of Zoology in London, England found that whales off the coast of California have shown a sharp rise in sun damage, and these scientists \"fear that the thinning ozone layer is to blame\". The study photographed and took skin biopsies from over 150 whales in the Gulf of California and found \"widespread evidence of epidermal damage commonly associated with acute and severe sunburn\", having cells that form when the DNA is damaged by UV radiation. The findings suggest \"rising UV levels as a result of ozone depletion are to blame for the observed skin damage, in the same way that human skin cancer rates have been on the increase in recent decades.\" Apart from whales many other animals such as dogs, cats, sheep and terrestrial ecosystems also suffer the negative effects of increased UV-B radiations."
+    },
+    {
+     "id": "A3.47",
+     "section": "Effects",
+     "text": "An increase of UV radiation would be expected to affect crops. A number of economically important species of plants, such as rice, depend on cyanobacteria residing on their roots for the retention of nitrogen. Cyanobacteria are sensitive to UV radiation and would be affected by its increase. \"Despite mechanisms to reduce or repair the effects of increased ultraviolet radiation, plants have a limited ability to adapt to increased levels of UVB, therefore plant growth can be directly affected by UVB radiation.\""
+    },
+    {
+     "id": "A3.48",
+     "section": "Effects",
+     "text": "Over the years, the Arctic ozone layer has depleted severely. As a consequence species that live above the snow cover or in areas where snow has melted abundantly, due to hot temperatures, are negatively impacted due to UV radiation that reaches the ground. Depletion of the ozone layer and allowing excess UVB radiation would initially be assumed to increase damage to plant DNA. Reports have found that when plants are exposed to UVB radiation similar to stratospheric ozone depletion, there was no significant change in plant height or leaf mass, but showed a response in shoot biomass and leaf area with a small decrease. However, UVB radiation has been shown to decrease quantum yield of photosystem II. UVB damage only occurs under extreme exposure, and most plants also have UVB absorbing flavonoids which allow them to acclimatize to the radiation present. Plants experience different levels of UV radiation throughout the day. It is known that they are able to shift the levels and types of UV sunscreens (i.e. flavonoids), that they contain, throughout the day. This allows them to increase their protection against UV radiation. Plants that have been affected by radiation throughout development are more affected by the inability to intercept light with a larger leaf area than having photosynthetic systems compromised. Damage from UVB radiation is more likely to be significant on species interactions than on plants themselves."
+    },
+    {
+     "id": "A3.49",
+     "section": "Effects",
+     "text": "Another significant impact of ozone depletion on plant life is the stress experienced by plants when exposed to UV radiation. This can cause a decrease in plant growth and an increase in oxidative stress, due to the production of nitric oxide and hydrogen peroxide. In areas where substantial ozone depletion has occurred, increased UV-B radiation reduces terrestrial plant productivity (and likewise carbon sequestration) by about 6%."
+    },
+    {
+     "id": "A3.50",
+     "section": "Effects",
+     "text": "Moreover, if plants are exposed to high levels of UV radiation, it can elicit the production of harmful volatile organic compounds, like isoprenes. The emission of isoprenes into the air, by plants, can severely impact the environment by adding to air pollution and increasing the amount of carbon in the atmosphere, ultimately contributing to climate change."
+    },
+    {
+     "id": "A3.51",
+     "section": "Public policy",
+     "text": "The full extent of the damage that CFCs have caused to the ozone layer is not known and will not be known for decades; however, marked decreases in column ozone have already been observed. The Montreal and Vienna conventions were installed long before a scientific consensus was established or important uncertainties in the science field were being resolved. The ozone case was understood comparably well by lay persons as e.g. Ozone shield or ozone hole were useful \"easy-to-understand bridging metaphors\". Americans voluntarily switched away from aerosol sprays, resulting in a 50 percent sales loss even before legislation was enforced."
+    },
+    {
+     "id": "A3.52",
+     "section": "Public policy",
+     "text": "After a 1976 report by the United States National Academy of Sciences concluded that credible scientific evidence supported the ozone depletion hypothesis a few countries, including the United States, Canada, Sweden, Denmark, and Norway, moved to eliminate the use of CFCs in aerosol spray cans. At the time this was widely regarded as a first step towards a more comprehensive regulation policy, but progress in this direction slowed in subsequent years, due to a combination of political factors (continued resistance from the halocarbon industry and a general change in attitude towards environmental regulation during the first two years of the Reagan administration) and scientific developments (subsequent National Academy assessments that indicated that the first estimates of the magnitude of ozone depletion had been overly large)."
+    },
+    {
+     "id": "A3.53",
+     "section": "Public policy",
+     "text": "A critical DuPont manufacturing patent for Freon was set to expire in 1979. The United States banned the use of CFCs in aerosol cans in 1978. The European Community rejected proposals to ban CFCs in aerosol sprays, and in the U.S., CFCs continued to be used as refrigerants and for cleaning circuit boards. Worldwide CFC production fell sharply after the U.S. aerosol ban, but by 1986 had returned nearly to its 1976 level. In 1993, DuPont Canada closed its CFC facility."
+    },
+    {
+     "id": "A3.54",
+     "section": "Public policy",
+     "text": "The U.S. government's attitude began to change again in 1983, when William Ruckelshaus replaced Anne M. Burford as Administrator of the United States Environmental Protection Agency (EPA). Under Ruckelshaus and his successor, Lee Thomas, the EPA pushed for an international approach to halocarbon regulations. In 1985 twenty nations, including most of the major CFC producers, signed the Vienna Convention for the Protection of the Ozone Layer, which established a framework for negotiating international regulations on ozone-depleting substances. That same year, the discovery of the Antarctic ozone hole was announced, causing a revival in public attention to the issue."
+    }
+   ],
+   "licence": "CC BY-SA 4.0 (Wikipedia text; facts used, wording not copied)",
+   "retrieved": "2026-10-27"
+  },
+  {
+   "title": "Isotopes of iron",
+   "url": "https://en.wikipedia.org/wiki/Isotopes_of_iron",
+   "revision_id": 1378634523,
+   "revision_time": "2026-10-05T10:24:47Z",
+   "id": "A4",
+   "passages": [
+    {
+     "id": "A4.1",
+     "section": "Introduction",
+     "text": "Natural iron (26Fe) consists of four stable isotopes: 5.85% 54Fe, 91.75% 56Fe, 2.12% 57Fe and 0.28% 58Fe. There are 28 known radioisotopes and 8 nuclear isomers, the most stable of which are 60Fe (half-life 2.62 million years) and 55Fe (half-life 2.7562 years)."
+    },
+    {
+     "id": "A4.2",
+     "section": "Introduction",
+     "text": "Much of the past work on measuring the isotopic composition of iron has centered on determining 60Fe variations due to processes accompanying nucleosynthesis (e.g., meteorite studies) and ore formation. In the last decade however, advances in mass spectrometry technology have allowed the detection and quantification of minute, naturally occurring variations in the ratios of the stable isotopes of iron. Much of this work has been driven by the Earth and planetary science communities, though applications to biological and industrial systems are beginning to emerge."
+    },
+    {
+     "id": "A4.3",
+     "section": "Iron-56",
+     "text": "56Fe is the most abundant isotope of iron. It is also the isotope with the lowest mass per nucleon, 930.412 MeV/c2, though not the isotope with the highest nuclear binding energy per nucleon, which is nickel-62. However, because of the details of how nucleosynthesis works, 56Fe is a more common endpoint of fusion inside supernovae, where it is mostly produced as 56Ni, which subsequently decays to 56Co and then iron. Thus, 56Fe is more common in the universe, relative to other heavy elements, including 62Ni, 58Fe, and 60Ni, all of which have a comparably high binding energy."
+    },
+    {
+     "id": "A4.4",
+     "section": "Iron-57",
+     "text": "57Fe is widely used in Mössbauer spectroscopy and the related nuclear resonance vibrational spectroscopy due to the low natural variation in energy of the 14.4 keV nuclear transition."
+    },
+    {
+     "id": "A4.5",
+     "section": "Iron-57",
+     "text": "The transition was famously used to make the first definitive measurement of gravitational redshift, in the 1960 Pound–Rebka experiment."
+    },
+    {
+     "id": "A4.6",
+     "section": "Iron-60",
+     "text": "Iron-60 has a half-life of 2.62 million years, but was thought until 2009 to have a half-life of 1.5 million years. It undergoes beta decay to 60Co, which then decays with the much shorter half-life of about 5 years to stable 60Ni."
+    },
+    {
+     "id": "A4.7",
+     "section": "Iron-60",
+     "text": "In phases of the meteorites Semarkona and Chervony Kut, a correlation between the excess concentration of 60Ni, the granddaughter isotope of 60Fe, and the abundance of the stable iron isotopes could be found, which is evidence for the existence of 60Fe at the time of formation of the Solar System. Depending on its original abundance, the energy from the decay of 60Fe may have been significant, along with that of 26Al, to the remelting and differentiation of asteroids and planetesimals after their formation. These nickel abundances in extraterrestrial materials may also provide further insight into the origin of the Solar System and its early history."
+    },
+    {
+     "id": "A4.8",
+     "section": "Iron-60",
+     "text": "Live (interstellar) iron-60 was first identified in deep sea sediments in 1999. These are deep sea ferromanganese crusts, which are constantly growing, aggregating iron, manganese, and other elements. Iron-60 has been found in fossilized bacteria in sea floor sediments. In 2019, researchers found 60Fe in Antarctica. Iron-60 shows two peaks in deep sea sediments, the first 1.7–3.2 million years ago and the second 6.5–8.7 million years ago. The peaks are related to the passage of the Solar System through the Local Bubble and likely the Orion–Eridanus Superbubble. These superbubbles were created by multiple supernovae. Traces of iron-60 have also been found in lunar samples."
+    },
+    {
+     "id": "A4.9",
+     "section": "Iron-60",
+     "text": "The distance to the supernova of origin can be estimated by relating the amount of iron-60 intercepted as Earth passes through the expanding supernova ejecta. Assuming that the material ejected in a supernova expands uniformly out from its origin as a sphere with surface area 4πr2. The fraction of the material intercepted by the Earth is dependent on its cross-sectional area (πR 2Earth ) as it passes through the expanding debris:"
+    },
+    {
+     "id": "A4.10",
+     "section": "Iron-60",
+     "text": "where Mej is the mass of ejected material. Assuming the intercepted material is distributed uniformly across the surface of the Earth (4πR 2Earth ), the mass surface density (Σej) of the supernova ejecta on Earth is:"
+    },
+    {
+     "id": "A4.11",
+     "section": "Iron-60",
+     "text": "The number of 60Fe atoms per unit area found on Earth can be estimated if the typical amount of 60Fe ejected from a supernova is known. This can be done by dividing the surface mass density (Σej) by the atomic mass of 60Fe."
+    },
+    {
+     "id": "A4.12",
+     "section": "Iron-60",
+     "text": "An example calculation for the distance to the supernova point of origin is given below. This calculation uses speculative values for terrestrial 60Fe atom surface density (N60 ≈ 4 × 1011 atoms/m2) and a rough estimate of the mass of 60Fe ejected by a supernova (10×10−5 M☉)."
+    },
+    {
+     "id": "A4.13",
+     "section": "Iron-60",
+     "text": "More sophisticated analyses have been reported that take into consideration the flux and deposition of 60Fe as well as possible interfering background sources."
+    },
+    {
+     "id": "A4.14",
+     "section": "Iron-60",
+     "text": "Cobalt-60, the decay product of iron-60, emits 1.173 MeV and 1.332 MeV gamma rays as it decays. These lines have long been important targets for gamma-ray astronomy, and have been detected by the gamma-ray observatory INTEGRAL. The signal traces the Galactic plane, showing that 60Fe synthesis is ongoing in our galaxy, and probing element production in massive stars."
+    }
+   ],
+   "licence": "CC BY-SA 4.0 (Wikipedia text; facts used, wording not copied)",
+   "retrieved": "2026-10-27"
+  }
+ ]
+}

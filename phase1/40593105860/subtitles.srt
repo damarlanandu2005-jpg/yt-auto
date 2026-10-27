@@ -1,0 +1,480 @@
+1
+00:00:00,000 --> 00:00:04,860
+Could a dying star explode near our solar
+system and rip Earth's atmosphere away
+
+2
+00:00:04,860 --> 00:00:05,660
+into space?
+
+3
+00:00:06,200 --> 00:00:11,500
+Do science fiction movies show a fiery
+blast wave sweeping our planet bare within
+
+4
+00:00:11,500 --> 00:00:12,300
+seconds?
+
+5
+00:00:12,710 --> 00:00:16,220
+Why does this question matter when
+considering terrestrial life?
+
+6
+00:00:16,900 --> 00:00:19,900
+How essential is our oxygen
+atmosphere for survival?
+
+7
+00:00:20,740 --> 00:00:25,600
+In reality, a supernova is a powerful
+explosion marking the death of a star.
+
+8
+00:00:26,394 --> 00:00:28,280
+When a massive star runs out of fuel,
+
+9
+00:00:28,280 --> 00:00:31,920
+its core collapses under
+immense gravitational force.
+
+10
+00:00:32,680 --> 00:00:37,720
+Alternatively, an exploding white dwarf
+star undergoes runaway nuclear fusion.
+
+11
+00:00:38,453 --> 00:00:43,620
+These stellar detonations expel several
+solar masses of matter into the surrounding
+
+12
+00:00:43,620 --> 00:00:44,880
+interstellar medium.
+
+13
+00:00:45,641 --> 00:00:50,660
+The ejected material travels outward at
+speeds reaching several per cent of the
+
+14
+00:00:50,660 --> 00:00:51,460
+speed of light.
+
+15
+00:00:51,948 --> 00:00:56,940
+This creates an expanding shock wave that
+sweeps up a shell of interstellar gas and
+
+16
+00:00:56,940 --> 00:00:57,740
+dust.
+
+17
+00:00:58,944 --> 00:01:02,533
+Where are the nearest stars that might
+explode in our stellar neighbourhood?
+
+18
+00:01:03,040 --> 00:01:08,100
+Astronomers define a near-Earth supernova
+as one occurring within roughly 33
+
+19
+00:01:08,100 --> 00:01:10,695
+to 978 light-years.
+
+20
+00:01:11,144 --> 00:01:16,180
+Currently, our galaxy holds up to 14
+potential near-Earth supernovas inside
+
+21
+00:01:16,180 --> 00:01:17,440
+that broader distance.
+
+22
+00:01:18,225 --> 00:01:23,240
+A few famous stars located within several
+hundred light-years could explode in just
+
+23
+00:01:23,240 --> 00:01:24,300
+1,000 years.
+
+24
+00:01:25,050 --> 00:01:27,360
+Although these dying stars
+will shine brilliantly,
+
+25
+00:01:28,180 --> 00:01:30,320
+they pose little direct
+threat to our planet.
+
+26
+00:01:31,100 --> 00:01:34,328
+What about the famous red
+supergiant star Betelgeuse?
+
+27
+00:01:34,840 --> 00:01:39,920
+Scientists estimate that Betelgeuse
+could require as long as 1.5 million
+
+28
+00:01:39,920 --> 00:01:42,080
+years to explode as a supernova.
+
+29
+00:01:42,857 --> 00:01:47,700
+When it detonates, its particle stream
+will reach Earth about 100,000 years
+
+30
+00:01:47,700 --> 00:01:49,260
+after the initial light.
+
+31
+00:01:49,954 --> 00:01:54,860
+Looking back in time, other relatively
+nearby stars have exploded in Earth's past.
+
+32
+00:01:55,651 --> 00:02:00,400
+The Vela supernova exploded about
+12,000 years ago roughly 800
+
+33
+00:02:00,400 --> 00:02:02,160
+light-years away from our Sun.
+
+34
+00:02:02,835 --> 00:02:08,260
+Another explosion called Geminga
+occurred roughly 300,000 years ago at
+
+35
+00:02:08,260 --> 00:02:11,048
+a distance of 550 light-years.
+
+36
+00:02:11,507 --> 00:02:13,540
+The closest known white dwarf candidate,
+
+37
+00:02:14,140 --> 00:02:17,760
+IK Pegasi, is currently moving
+away to a safe distance.
+
+38
+00:02:19,525 --> 00:02:21,880
+If a blast wave cannot
+destroy our atmosphere,
+
+39
+00:02:21,880 --> 00:02:24,040
+what makes a supernova dangerous?
+
+40
+00:02:24,999 --> 00:02:27,940
+Supernovae act as a major
+source of cosmic rays.
+
+41
+00:02:28,828 --> 00:02:31,840
+They also emit fluxes of
+X-rays and gamma rays.
+
+42
+00:02:32,607 --> 00:02:35,000
+When gamma radiation hits
+the upper atmosphere,
+
+43
+00:02:35,600 --> 00:02:36,860
+it causes chemical reactions.
+
+44
+00:02:37,904 --> 00:02:43,180
+Radiolysis breaks apart these common
+gas molecules and recombines them into
+
+45
+00:02:43,180 --> 00:02:44,860
+harmful nitrogen oxides.
+
+46
+00:02:45,579 --> 00:02:50,220
+These newly created nitrogen oxides
+notably deplete ozone molecules.
+
+47
+00:02:51,134 --> 00:02:56,060
+In this way, atmospheric chemistry depletes
+our planet's protective ozone layer.
+
+48
+00:02:56,766 --> 00:03:01,540
+The atmosphere's protective ozone composition
+is transformed by these reactions.
+
+49
+00:03:02,409 --> 00:03:06,140
+Do invisible chemical reactions
+occur instead of a shockwave?
+
+50
+00:03:07,861 --> 00:03:11,280
+How close must a star be for
+this lethal chemistry to occur?
+
+51
+00:03:12,040 --> 00:03:17,460
+An explosion within 33 light-years
+happens on average only once every 240
+
+52
+00:03:17,460 --> 00:03:18,760
+million years.
+
+53
+00:03:19,551 --> 00:03:24,260
+At this lethal distance, the incoming
+radiation would destroy more than half of
+
+54
+00:03:24,260 --> 00:03:25,440
+Earth's ozone layer.
+
+55
+00:03:26,044 --> 00:03:31,420
+Researchers derived this calculation from
+atmospheric models and radiation data
+
+56
+00:03:31,420 --> 00:03:34,740
+from supernova 1987A.
+
+57
+00:03:35,342 --> 00:03:40,560
+These events occur when an exploding white
+dwarf releases tremendous energy within
+
+58
+00:03:40,560 --> 00:03:41,360
+mere seconds.
+
+59
+00:03:41,980 --> 00:03:47,000
+At peak brightness, such an explosion can
+shine 5 billion times brighter than our
+
+60
+00:03:47,000 --> 00:03:47,800
+Sun.
+
+61
+00:03:47,921 --> 00:03:50,080
+Because white dwarfs are dim and common,
+
+62
+00:03:50,740 --> 00:03:53,700
+they can detonate unpredictably
+in unstudied systems.
+
+63
+00:03:54,430 --> 00:03:58,200
+Does that distance boundary mark where
+atmospheric protection collapses?
+
+64
+00:04:00,097 --> 00:04:04,280
+What happens to the world below when
+half of the ozone layer is wiped out?
+
+65
+00:04:04,930 --> 00:04:10,360
+Ozone is the only atmospheric gas capable
+of absorbing dangerous ultraviolet
+
+66
+00:04:10,360 --> 00:04:12,260
+B radiation from sunlight.
+
+67
+00:04:13,014 --> 00:04:15,020
+When stratospheric ozone levels drop,
+
+68
+00:04:15,480 --> 00:04:19,380
+intense ultraviolet B light
+penetrates directly to the surface.
+
+69
+00:04:20,240 --> 00:04:23,620
+This extreme radiation
+damages cellular DNA,
+
+70
+00:04:24,400 --> 00:04:28,360
+causing pyrimidine bases to form
+transcription errors during replication.
+
+71
+00:04:29,460 --> 00:04:34,560
+In humans and animals, excess
+ultraviolet exposure causes severe skin
+
+72
+00:04:34,560 --> 00:04:36,060
+cancers and cataracts.
+
+73
+00:04:36,656 --> 00:04:41,900
+Marine ecosystems suffer harm because
+ultraviolet rays affect surface
+
+74
+00:04:41,900 --> 00:04:42,820
+and reef communities.
+
+75
+00:04:43,648 --> 00:04:48,260
+Phytoplankton and reef communities are
+particularly vulnerable to this elevated
+
+76
+00:04:48,260 --> 00:04:49,060
+radiation.
+
+77
+00:04:49,887 --> 00:04:54,340
+Their collapse would seriously damage
+the foundation of the ocean food web.
+
+78
+00:04:55,040 --> 00:05:00,400
+At the same time, elevated cosmic rays
+can alter climate patterns and cool
+
+79
+00:05:00,400 --> 00:05:01,440
+the global temperature.
+
+80
+00:05:02,245 --> 00:05:06,760
+Gamma ray bursts from dangerously
+close stars may have caused the ancient
+
+81
+00:05:06,760 --> 00:05:07,840
+end-Ordovician extinction.
+
+82
+00:05:08,875 --> 00:05:14,140
+That prehistoric cataclysm resulted
+in the death of nearly 60 per cent of
+
+83
+00:05:14,140 --> 00:05:15,420
+all oceanic life.
+
+84
+00:05:16,126 --> 00:05:21,040
+Rapid successive supernovae have also
+been proposed as triggers for the Late
+
+85
+00:05:21,040 --> 00:05:21,940
+Devonian extinction.
+
+86
+00:05:23,881 --> 00:05:29,060
+Did nearby exploding stars actually bombard
+our planet during geological history?
+
+87
+00:05:29,635 --> 00:05:34,380
+Proof of past supernovae was discovered
+by examining deep seabed sediments.
+
+88
+00:05:34,984 --> 00:05:39,580
+Dying stars forge heavy elements and
+disperse them into space during their
+
+89
+00:05:39,580 --> 00:05:41,040
+catastrophic final moments.
+
+90
+00:05:41,795 --> 00:05:45,560
+One isotope produced during
+these events is iron-60,
+
+91
+00:05:45,560 --> 00:05:49,260
+which has a half-life
+spanning 2.62 million years.
+
+92
+00:05:50,036 --> 00:05:54,840
+They identified these stellar atoms within
+the top two centimetres of the oceanic
+
+93
+00:05:54,840 --> 00:05:55,640
+crust.
+
+94
+00:05:55,856 --> 00:06:00,820
+This detection indicates an explosion
+likely occurred within the last 5 million
+
+95
+00:06:00,820 --> 00:06:01,620
+years.
+
+96
+00:06:01,965 --> 00:06:07,220
+Similar interstellar traces have also
+appeared in Antarctic surface snow and in
+
+97
+00:06:07,220 --> 00:06:08,020
+lunar samples.
+
+98
+00:06:08,708 --> 00:06:13,420
+Iron-60 atoms were even found
+preserved inside fossilised bacteria
+
+99
+00:06:13,420 --> 00:06:15,500
+living in seabed sediments.
+
+100
+00:06:16,221 --> 00:06:20,520
+So how close would a dying star need to
+be to wipe out our protective atmospheric
+
+101
+00:06:20,520 --> 00:06:21,320
+shield?
+
+102
+00:06:21,846 --> 00:06:26,180
+Gamma rays convert nitrogen and
+oxygen into nitrogen oxides,
+
+103
+00:06:26,600 --> 00:06:27,920
+depleting the ozone layer.
+
+104
+00:06:28,680 --> 00:06:31,700
+What delicate balance protects
+our planet from cosmic events?

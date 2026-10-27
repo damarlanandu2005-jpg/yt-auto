@@ -1,0 +1,154 @@
+{
+ "card_number_fixes": [
+  "v004: numbers ['21'] not in narration; card replaced",
+  "v005: numbers ['1'] not in narration; card replaced",
+  "v021: numbers ['1500000'] not in narration; card replaced",
+  "v044: numbers ['50'] not in narration; card replaced"
+ ],
+ "photo_slots": 33,
+ "candidates": {
+  "v003": 12,
+  "v005": 11,
+  "v007": 12,
+  "v009": 12,
+  "v013": 12,
+  "v016": 12,
+  "v018": 12,
+  "v019": 12,
+  "v024": 12,
+  "v029": 8,
+  "v032": 12,
+  "v033": 12,
+  "v038": 12,
+  "v045": 12,
+  "v046": 7,
+  "v049": 12,
+  "v052": 12,
+  "v053": 12,
+  "v055": 12,
+  "v058": 12,
+  "v060": 12,
+  "v061": 12,
+  "v062": 12,
+  "v064": 9,
+  "v066": 12,
+  "v071": 9,
+  "v072": 12,
+  "v073": 9,
+  "v075": 12,
+  "v077": 12,
+  "v078": 10,
+  "v079": 4,
+  "v082": 12
+ },
+ "downloaded": 33,
+ "seen": {
+  "v003": "A full view of planet Earth from space, showing the African continent and surrounding oceans.",
+  "v005": "A colorful nebula in outer space, filled with glowing gas, filaments, and scattered stars.",
+  "v007": "An artistic illustration of a brown planet next to a debris disk orbiting a bright star in space.",
+  "v009": "A dense cosmic region of glowing green and dark nebulae studded with bright blue stars.",
+  "v013": "A view from space showing the curved horizon of Earth below a dark starry sky and a solar panel.",
+  "v016": "A night landscape showing dark mountain peaks under a brilliant starry sky with the Milky Way galaxy arching across it, and a small yellow tent with a camper.",
+  "v018": "A grayscale view of intricate, parallel planetary rings with a small moonlet visible.",
+  "v019": "A dark field of space with a few scattered white stars against a black background.",
+  "v024": "A composite deep-field view of space showing numerous distant galaxies and stars of various shapes.",
+  "v029": "A multi-panel line chart showing normalized TESS flux over time for IK Pegasi, complete with axes and date labels.",
+  "v032": "A completely blank white image.",
+  "v033": "A digital illustration of an orbiting space telescope with gold solar panels and visible beam paths.",
+  "v038": "A globe showing atmospheric data over Antarctica, depicted with color-coded contours from green to blue and purple.",
+  "v045": "A glowing orange 3D globe representing carbon dioxide concentrations, accompanied by line charts on the left and Spanish text captions.",
+  "v046": "A starry celestial region with glowing red nebulae clouds and various scattered stars.",
+  "v049": "An illustration of a bright white star surrounded by a dark disk with ring structures and a rocky body at the edge.",
+  "v052": "Three representations of an ozone molecule, showing a space-filling 3D model, a ball-and-stick model, and a Lewis structure diagram with formal charges.",
+  "v053": "A dark photo showing an orange rectangular block and a faint blue glowing light feature on a dark surface.",
+  "v055": "A grayscale image of an irregularly shaped asteroid floating against a completely black background.",
+  "v058": "A white egret standing in green foliage while holding a dark rodent in its beak.",
+  "v060": "An underwater scene showing bright coral formations in the foreground and sun rays filtering down through clear blue water.",
+  "v061": "A vibrant coral reef ecosystem under blue water, teeming with various colorful fish swimming above.",
+  "v062": "A satellite view of the ocean showing a swirling turquoise and blue phytoplankton bloom.",
+  "v064": "A view from space showing the curved horizon of Earth with a glowing green aurora and starry night sky above.",
+  "v066": "A large dark fossilized tooth mounted against a light wall, with a blue label below containing text in Hindi and English reading 'FOSSIL TEETH'.",
+  "v071": "An educational figure featuring a diagram of ocean core sampling, jars of sediment samples, and microscopic images of foraminifera shells.",
+  "v072": "An informational graphic titled 'SUPERNOVA EXPLOSIONS MINTED THE IRON IN OUR BLOOD' with the ESA logo, illustrations, and numbered steps.",
+  "v073": "A periodic table element tile for Iron (Fe) labeled with atomic number Z (26) and atomic mass (55.85) against a black background.",
+  "v075": "A 3D globe depicting ocean floor age through color coding, with red representing young crust and blue representing older crust.",
+  "v077": "An aerial view of a massive ice shelf ending in a sheer cliff face over dark blue ocean water with floating icebergs.",
+  "v078": "A scanning electron microscope image showing textured microbial structures and filaments on a dark surface.",
+  "v079": "A detailed scientific diagram illustrating various marine sulfur cycle processes, chemical species, and sediment layers.",
+  "v082": "A photograph taken from space showing the bright blue horizon of Earth's atmosphere over a cloudy ocean surface with sun glint."
+ },
+ "rejected_after_looking": [
+  {
+   "id": "v007",
+   "title": "Polluted White Dwarf (Artist's Concept)",
+   "seen": "An artistic illustration of a brown planet next to a debris disk orbiting a bright star in space.",
+   "reason": "The narration asks for an exploding white dwarf star, but this shows a generic planet and debris disk."
+  },
+  {
+   "id": "v013",
+   "title": "A yellow‑green airglow blanketing Earth’s atmosphere beneath a starry sky",
+   "seen": "A view from space showing the curved horizon of Earth below a dark starry sky and a solar panel.",
+   "reason": "The narration calls for a starry night sky, but this prominently features Earth's horizon and a solar panel."
+  },
+  {
+   "id": "v018",
+   "title": "Flickering Aldebaran #1",
+   "seen": "A grayscale view of intricate, parallel planetary rings with a small moonlet visible.",
+   "reason": "Narration expects a bright star, but planetary rings are shown."
+  },
+  {
+   "id": "v019",
+   "title": "Stars in Orion as Seen from Mars",
+   "seen": "A dark field of space with a few scattered white stars against a black background.",
+   "reason": "Narration asks for the Betelgeuse star in Orion, but this is a generic star field."
+  },
+  {
+   "id": "v032",
+   "title": "2024-(08-09)-(30-01-02) - Muons detection map",
+   "seen": "A completely blank white image.",
+   "reason": "A blank white image does not show cosmic rays."
+  },
+  {
+   "id": "v033",
+   "title": "Chandra X-ray space observatory - LightpathQ202",
+   "seen": "A digital illustration of an orbiting space telescope with gold solar panels and visible beam paths.",
+   "reason": "Narration is about X-rays and gamma rays, but an illustration of a generic space telescope is shown."
+  },
+  {
+   "id": "v045",
+   "title": "Global Atmospheric Carbon Dioxide (CO₂) (SVS5115 - CO2 OCO2 Comp 5760x3240 ES)",
+   "seen": "A glowing orange 3D globe representing carbon dioxide concentrations, accompanied by line charts on the left and Spanish text captions.",
+   "reason": "Includes foreign text captions and is about carbon dioxide, not scientific research computers."
+  },
+  {
+   "id": "v053",
+   "title": "First Night Image of MAHLI Calibration Target Under Ultraviolet Lights",
+   "seen": "A dark photo showing an orange rectangular block and a faint blue glowing light feature on a dark surface.",
+   "reason": "Does not show sunlight shining through clouds."
+  },
+  {
+   "id": "v055",
+   "title": "Ring Shadows on Janus",
+   "seen": "A grayscale image of an irregularly shaped asteroid floating against a completely black background.",
+   "reason": "Narration relates to sunlight hitting Earth's surface, but an asteroid is shown."
+  },
+  {
+   "id": "v061",
+   "title": "Reef habitats at Palmyra Atoll - Peerj-81-fig-3C",
+   "seen": "A vibrant coral reef ecosystem under blue water, teeming with various colorful fish swimming above.",
+   "reason": "Narration specifically mentions ocean surface waves, but an underwater coral scene is shown."
+  },
+  {
+   "id": "v066",
+   "title": "Prehistoric Animal Fossil Teeth Specimen",
+   "seen": "A large dark fossilized tooth mounted against a light wall, with a blue label below containing text in Hindi and English reading 'FOSSIL TEETH'.",
+   "reason": "Narration discusses the end-Ordovician extinction, but this shows a generic fossil tooth with bilingual museum labels."
+  },
+  {
+   "id": "v073",
+   "title": "Elemendi numbrite nimetused",
+   "seen": "A periodic table element tile for Iron (Fe) labeled with atomic number Z (26) and atomic mass (55.85) against a black background.",
+   "reason": "Shows an element tile instead of an iron metal sample."
+  }
+ ]
+}

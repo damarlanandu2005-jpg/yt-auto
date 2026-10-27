@@ -1,0 +1,114 @@
+{
+ "verdict": "FLAG",
+ "checks": [
+  {
+   "check": "audio_silence",
+   "status": "PASS",
+   "detail": "no long silent gaps",
+   "gaps": []
+  },
+  {
+   "check": "audio_loudness",
+   "status": "PASS",
+   "detail": "-16.3 LUFS (target -16 ± 2), true peak -1.3 dBTP",
+   "lufs": -16.3,
+   "true_peak": -1.3
+  },
+  {
+   "check": "video_black",
+   "status": "PASS",
+   "detail": "no black stretches",
+   "blacks": []
+  },
+  {
+   "check": "av_length",
+   "status": "PASS",
+   "detail": "audio 393.5 s, video 393.5 s (differ by 0.0 s)"
+  },
+  {
+   "check": "video_minutes",
+   "status": "PASS",
+   "detail": "6.6 min (target 5-8)"
+  },
+  {
+   "check": "scenes_complete",
+   "status": "PASS",
+   "detail": "all 6 scenes have visuals"
+  },
+  {
+   "check": "rights",
+   "status": "PASS",
+   "detail": "36 pictures, voice and font all have allowed licences",
+   "problems": []
+  },
+  {
+   "check": "metadata",
+   "status": "PASS",
+   "detail": "title 55 chars, description 2387 chars, sources listed"
+  },
+  {
+   "check": "pronunciation",
+   "status": "FLAG",
+   "detail": "listen for: ['DNA', 'IK', 'X-'] (add them to pronunciation.json once checked)",
+   "terms": [
+    "DNA",
+    "IK",
+    "X-"
+   ]
+  },
+  {
+   "check": "facts_linked",
+   "status": "PASS",
+   "detail": "every fact sentence has a checked source",
+   "bad": []
+  },
+  {
+   "check": "editorial_brief",
+   "status": "PASS",
+   "detail": "brief complete"
+  },
+  {
+   "check": "originality",
+   "status": "PASS",
+   "detail": "closest past video 2026-10-27-gps-satellite-timestamps: topic 0.13, template 0.00, copy 0.00",
+   "compared": [
+    {
+     "past": "2026-10-27-gps-satellite-timestamps",
+     "topic": 0.126,
+     "template": 0.0,
+     "copy": 0.0
+    }
+   ]
+  },
+  {
+   "check": "hook_question",
+   "status": "PASS",
+   "detail": "The first 30 seconds explicitly ask if a dying star could explode near our solar system and rip Earth's atmosphere away."
+  },
+  {
+   "check": "hook_why",
+   "status": "PASS",
+   "detail": "The script explicitly asks why this question matters when considering terrestrial life and the essential nature of our oxygen atmosphere."
+  },
+  {
+   "check": "title_promise",
+   "status": "PASS",
+   "detail": "The script directly answers how close a supernova must be to destroy atmospheric protection (33 light-years) fulfilling the title's premise."
+  },
+  {
+   "check": "scene_relevance",
+   "status": "PASS",
+   "detail": "All text cards accurately reflect the narration at that moment without generic or unrelated content."
+  },
+  {
+   "check": "sensitive",
+   "status": "PASS",
+   "detail": "There is no financial, legal, or health advice, nor any accusations against real named persons or companies."
+  },
+  {
+   "check": "adds_value",
+   "status": "PASS",
+   "detail": "The video successfully explains connections such as how gamma rays create nitrogen oxides, deplete ozone, and subsequently cause biological and ecological damage."
+  }
+ ]
+}

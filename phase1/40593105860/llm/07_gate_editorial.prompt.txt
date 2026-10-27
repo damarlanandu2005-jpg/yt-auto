@@ -1,0 +1,84 @@
+[model] gemini-3.5-flash-lite
+[system]
+
+
+[user]
+You review a finished explainer video before a human checks it. Judge each item strictly,
+using only what is given. Answer every check.
+
+- hook_question: do the first 30 seconds clearly state the question the video answers?
+- hook_why: do the first 30 seconds also say why the question matters to the viewer?
+- title_promise: does the script actually deliver what the title promises (no promise the video doesn't keep,
+  no claim the video contradicts)?
+- scene_relevance: does each text card below show something the narration at that moment is saying? List any card
+  ids that are generic or unrelated in the reason.
+- sensitive: is there financial, legal or health ADVICE, or an accusation against a real named person or company?
+  ok=true means none.
+- adds_value: does the video explain and connect ideas (examples, comparisons, why), rather than only listing
+  facts in a new order?
+
+TITLE: How Close Can a Supernova Get Before It Destroys Earth?
+QUESTION (from the brief): How close would a dying star need to explode to wipe out Earth's protective atmosphere?
+FIRST 30 SECONDS: Could a dying star explode near our solar system and rip Earth's atmosphere away into space? Do science fiction movies show a fiery blast wave sweeping our planet bare within seconds? Why does this question matter when considering terrestrial life? How essential is our oxygen atmosphere for survival? In reality, a supernova is a powerful explosion marking the death of a star. When a massive star runs out of fuel, its core collapses under immense gravitational force.
+
+SCRIPT:
+## The Hollywood Shockwave Myth
+Could a dying star explode near our solar system and rip Earth's atmosphere away into space? Do science fiction movies show a fiery blast wave sweeping our planet bare within seconds? Why does this question matter when considering terrestrial life? How essential is our oxygen atmosphere for survival? In reality, a supernova is a powerful explosion marking the death of a star. When a massive star runs out of fuel, its core collapses under immense gravitational force. Alternatively, an exploding white dwarf star undergoes runaway nuclear fusion. These stellar detonations expel several solar masses of matter into the surrounding interstellar medium. The ejected material travels outward at speeds reaching several per cent of the speed of light. This creates an expanding shock wave that sweeps up a shell of interstellar gas and dust.
+## The Stellar Safety Line
+Where are the nearest stars that might explode in our stellar neighbourhood? Astronomers define a near-Earth supernova as one occurring within roughly 33 to 978 light-years. Currently, our galaxy holds up to 14 potential near-Earth supernovas inside that broader distance. A few famous stars located within several hundred light-years could explode in just 1,000 years. Although these dying stars will shine brilliantly, they pose little direct threat to our planet. What about the famous red supergiant star Betelgeuse? Scientists estimate that Betelgeuse could require as long as 1.5 million years to explode as a supernova. When it detonates, its particle stream will reach Earth about 100,000 years after the initial light. Looking back in time, other relatively nearby stars have exploded in Earth's past. The Vela supernova exploded about 12,000 years ago roughly 800 light-years away from our Sun. Another explosion called Geminga occurred roughly 300,000 years ago at a distance of 550 light-years. The closest known white dwarf candidate, IK Pegasi, is currently moving away to a safe distance.
+## The Primary Weapon: Invisible Radiation
+If a blast wave cannot destroy our atmosphere, what makes a supernova dangerous? Supernovae act as a major source of cosmic rays. They also emit fluxes of X-rays and gamma rays. When gamma radiation hits the upper atmosphere, it causes chemical reactions. Radiolysis breaks apart these common gas molecules and recombines them into harmful nitrogen oxides. These newly created nitrogen oxides notably deplete ozone molecules. In this way, atmospheric chemistry depletes our planet's protective ozone layer. The atmosphere's protective ozone composition is transformed by these reactions. Do invisible chemical reactions occur instead of a shockwave?
+## The Kill Zone Threshold
+How close must a star be for this lethal chemistry to occur? An explosion within 33 light-years happens on average only once every 240 million years. At this lethal distance, the incoming radiation would destroy more than half of Earth's ozone layer. Researchers derived this calculation from atmospheric models and radiation data from supernova 1987A. These events occur when an exploding white dwarf releases tremendous energy within mere seconds. At peak brightness, such an explosion can shine 5 billion times brighter than our Sun. Because white dwarfs are dim and common, they can detonate unpredictably in unstudied systems. Does that distance boundary mark where atmospheric protection collapses?
+## A Poisoned Sky
+What happens to the world below when half of the ozone layer is wiped out? Ozone is the only atmospheric gas capable of absorbing dangerous ultraviolet B radiation from sunlight. When stratospheric ozone levels drop, intense ultraviolet B light penetrates directly to the surface. This extreme radiation damages cellular DNA, causing pyrimidine bases to form transcription errors during replication. In humans and animals, excess ultraviolet exposure causes severe skin cancers and cataracts. Marine ecosystems suffer harm because ultraviolet rays affect surface and reef communities. Phytoplankton and reef communities are particularly vulnerable to this elevated radiation. Their collapse would seriously damage the foundation of the ocean food web. At the same time, elevated cosmic rays can alter climate patterns and cool the global temperature. Gamma ray bursts from dangerously close stars may have caused the ancient end-Ordovician extinction. That prehistoric cataclysm resulted in the death of nearly 60 per cent of all oceanic life. Rapid successive supernovae have also been proposed as triggers for the Late Devonian extinction.
+## Ocean Floor Clues and the Final Verdict
+Did nearby exploding stars actually bombard our planet during geological history? Proof of past supernovae was discovered by examining deep seabed sediments. Dying stars forge heavy elements and disperse them into space during their catastrophic final moments. One isotope produced during these events is iron-60, which has a half-life spanning 2.62 million years. They identified these stellar atoms within the top two centimetres of the oceanic crust. This detection indicates an explosion likely occurred within the last 5 million years. Similar interstellar traces have also appeared in Antarctic surface snow and in lunar samples. Iron-60 atoms were even found preserved inside fossilised bacteria living in seabed sediments. So how close would a dying star need to be to wipe out our protective atmospheric shield? Gamma rays convert nitrogen and oxygen into nitrogen oxides, depleting the ozone layer. What delicate balance protects our planet from cosmic events?
+
+TEXT CARDS SHOWN:
+v001: narration: Could a dying star explode near our solar system and rip Earth's atmosphere away into space? | card: {"type": "title", "title": "How Close Can a Supernova Get Before It Destroys Earth?", "subtitle": "The Hollywood Shockwave Myth"}
+v002: narration: Do science fiction movies show a fiery blast wave sweeping our planet bare within seconds? | card: {"type": "bullets", "title": "Supernova Myths", "items": ["Fiery blast wave", "Atmosphere stripped bare", "Instant planetary destruction"]}
+v004: narration: How essential is our oxygen atmosphere for survival? | card: {"type": "title", "title": "Oxygen Atmosphere", "subtitle": ""}
+v007: narration: Alternatively, an exploding white dwarf star undergoes runaway nuclear fusion. | card: {"type": "title", "title": "White Dwarf Star", "subtitle": "Runaway nuclear fusion"}
+v008: narration: These stellar detonations expel several solar masses | card: {"type": "stat", "title": "Stellar Ejecta", "value": "Several", "label": "Solar masses expelled", "note": "Matter thrown into space"}
+v010: narration: The ejected material travels outward at speeds reaching several per cent of the speed of light. | card: {"type": "stat", "title": "Ejected Material Speed", "value": "Several %", "label": "Speed of light", "note": "Outward travel speed"}
+v012: narration: Where are the nearest stars that might explode in our stellar neighbourhood? | card: {"type": "title", "title": "The Stellar Safety Line", "subtitle": "Nearby Stars"}
+v013: narration: Astronomers define a near-Earth supernova as one | card: {"type": "title", "title": "Near-Earth Supernova"}
+v014: narration: occurring within roughly 33 to 978 light-years. | card: {"type": "stat", "title": "Distance Range", "value": "33 - 978", "unit": "light-years", "left_title": "Near-Earth boundary"}
+v015: narration: Currently, our galaxy holds up to 14 | card: {"type": "stat", "title": "Candidate Stars", "value": "14", "label": "Potential near-Earth supernovas", "note": "Inside our galaxy"}
+v017: narration: A few famous stars located within several hundred light-years could explode in just 1,000 years. | card: {"type": "timeline", "title": "Future Supernovas", "events": [{"when": "Several hundred light-years", "label": "Famous nearby stars"}, {"when": "1,000 years", "
+v018: narration: Although these dying stars will shine brilliantly, they pose little direct threat to our planet. | card: {"type": "title", "title": "Stellar Shine", "subtitle": "Little direct threat"}
+v019: narration: What about the famous red supergiant star Betelgeuse? | card: {"type": "title", "title": "Red Supergiant", "subtitle": "Betelgeuse"}
+v020: narration: Scientists estimate that Betelgeuse could require as long | card: {"type": "stat", "title": "Betelgeuse Explosion Estimate", "value": "1.5 Million", "unit": "years", "left_title": "Time required"}
+v021: narration: as 1.5 million years to explode as a supernova. | card: {"type": "title", "title": "Explosion Timeline", "subtitle": ""}
+v023: narration: Earth about 100,000 years after the initial light. | card: {"type": "stat", "title": "Earth Arrival Delay", "value": "100,000", "unit": "years", "left_title": "After initial light"}
+v025: narration: The Vela supernova exploded about 12,000 years ago | card: {"type": "timeline", "title": "Vela Supernova", "events": [{"when": "12,000 years ago", "label": "Vela exploded"}]}
+v026: narration: roughly 800 light-years away from our Sun. | card: {"type": "stat", "title": "Vela Distance", "value": "800", "unit": "light-years", "left_title": "Distance from Sun"}
+v027: narration: Another explosion called Geminga occurred roughly 300,000 years | card: {"type": "timeline", "title": "Geminga Explosion", "events": [{"when": "300,000 years ago", "label": "Geminga occurred"}]}
+v028: narration: ago at a distance of 550 light-years. | card: {"type": "stat", "title": "Geminga Distance", "value": "550", "unit": "light-years", "left_title": "Distance from Earth"}
+v031: narration: If a blast wave cannot destroy our atmosphere, what makes a supernova dangerous? | card: {"type": "title", "title": "The Primary Weapon: Invisible Radiation", "subtitle": "Supernova Dangers"}
+v032: narration: Supernovae act as a major source of cosmic rays. | card: {"type": "title", "title": "Cosmic Rays", "subtitle": "Major source from supernovae"}
+v033: narration: They also emit fluxes of X-rays and gamma rays. | card: {"type": "title", "title": "X-Rays and Gamma Rays", "subtitle": "Stellar emissions"}
+v034: narration: When gamma radiation hits the upper atmosphere, it causes chemical reactions. | card: {"type": "flow", "title": "Atmospheric Impact", "steps": ["Gamma radiation hits", "Upper atmosphere reached", "Chemical reactions start"]}
+v037: narration: These newly created nitrogen oxides notably deplete ozone molecules. | card: {"type": "stat", "title": "Ozone Depletion", "value": "Nitrogen Oxides", "label": "Deplete ozone molecules", "note": "Atmospheric reaction"}
+v040: narration: Do invisible chemical reactions occur instead of a shockwave? | card: {"type": "bullets", "title": "Invisible Reactions", "items": ["Chemical changes occur", "No shockwave needed", "Radiation is key"]}
+v041: narration: How close must a star be for this lethal chemistry to occur? | card: {"type": "title", "title": "The Kill Zone Threshold", "subtitle": "Lethal Distance"}
+v042: narration: An explosion within 33 light-years happens on | card: {"type": "stat", "title": "Close Explosion Distance", "value": "33", "unit": "light-years", "left_title": "Lethal proximity"}
+v043: narration: average only once every 240 million years. | card: {"type": "stat", "title": "Explosion Frequency", "value": "240 Million", "unit": "years", "left_title": "Average interval"}
+v044: narration: At this lethal distance, the incoming radiation would destroy more than half of Earth's ozone layer. | card: {"type": "title", "title": "Ozone Destruction", "subtitle": ""}
+v045: narration: Researchers derived this calculation from atmospheric | card: {"type": "title", "title": "Atmospheric Models", "subtitle": "Researcher calculations"}
+v047: narration: These events occur when an exploding white dwarf releases tremendous energy within mere seconds. | card: {"type": "stat", "title": "White Dwarf Release", "value": "Mere Seconds", "label": "Tremendous energy release", "note": "Exploding white dwarf"}
+v048: narration: At peak brightness, such an explosion can shine 5 billion times brighter than our Sun. | card: {"type": "stat", "title": "Peak Brightness", "value": "5 Billion", "label": "Times brighter than Sun", "note": "Maximum explosion output"}
+v051: narration: What happens to the world below when half of the ozone layer is wiped out? | card: {"type": "title", "title": "A Poisoned Sky", "subtitle": "Ozone Depletion Consequences"}
+v053: narration: absorbing dangerous ultraviolet B radiation from sunlight. | card: {"type": "title", "title": "Ultraviolet B Radiation", "subtitle": "Absorbed by ozone"}
+v055: narration: B light penetrates directly to the surface. | card: {"type": "title", "title": "Surface Radiation", "subtitle": "Intense ultraviolet B light"}
+v057: narration: bases to form transcription errors during replication. | card: {"type": "flow", "title": "Replication Errors", "steps": ["DNA damaged", "Pyrimidine bases form", "Transcription errors"]}
+v059: narration: exposure causes severe skin cancers and cataracts. | card: {"type": "bullets", "title": "Health Impacts", "items": ["Severe skin cancers", "Cataracts in eyes", "Ultraviolet damage"]}
+v061: narration: rays affect surface and reef communities. | card: {"type": "title", "title": "Surface and Reef Communities", "subtitle": "Affected by UV rays"}
+v066: narration: Gamma ray bursts from dangerously close stars may have caused the ancient end-Ordovician extinction. | card: {"type": "title", "title": "End-Ordovician Extinction", "subtitle": "Ancient gamma ray bursts"}
+v068: narration: nearly 60 per cent of all oceanic life. | card: {"type": "stat", "title": "Extinction Toll", "value": "60%", "label": "Oceanic life perished", "note": "Ancient extinction event"}
+v069: narration: Rapid successive supernovae have also been proposed as triggers for the Late Devonian extinction. | card: {"type": "timeline", "title": "Extinction Triggers", "events": [{"when": "End-Ordovician", "label": "Gamma ray bursts"}, {"when": "Late Devonian", "label": "Rap
+v070: narration: Did nearby exploding stars actually bombard our planet during geological history? | card: {"type": "title", "title": "Ocean Floor Clues and Final Verdict", "subtitle": "Geological History"}
+v073: narration: One isotope produced during these events is iron-60, | card: {"type": "title", "title": "Iron-60 Isotope", "subtitle": "Supernova product"}
+v074: narration: which has a half-life spanning 2.62 million years. | card: {"type": "stat", "title": "Iron-60 Half-Life", "value": "2.62 Million", "unit": "years", "left_title": "Radioactive decay half-life"}
+v076: narration: This detection indicates an explosion likely occurred within the last 5 million years. | card: {"type": "stat", "title": "Recent Explosion Window", "value": "5 Million", "unit": "years", "left_title": "Within the last"}

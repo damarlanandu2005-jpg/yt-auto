@@ -1,0 +1,23 @@
+{
+ "question": "How close would a dying star need to explode to wipe out Earth's protective atmosphere?",
+ "angle": "Popular films imagine a supernova shockwave physically blowing air into space, but the real killer is invisible chemistry.",
+ "structure": "A step-by-step approach scenario moving from safe cosmic distances down into the lethal zone to reveal each stage of atmospheric destruction.",
+ "answer": "A supernova would need to explode within roughly 25 to 30 light years of Earth to strip away our protective ozone layer. Intense radiation and cosmic rays at that distance would trigger chemical reactions that destroy the ozone shield and poison the air.",
+ "evidence": "Atmospheric models show that high-energy photons and cosmic rays from an explosion within 10 parsecs would deplete the global ozone layer by more than half for years. Deep-sea deposits of iron 60 prove stars have exploded within 150 to 300 light years of Earth without ending life.",
+ "unique_examples": "A side-by-side graphic contrasting a fictional physical shockwave with the real invisible radiation wave, an animation showing nitrogen atoms turning into brown toxic smog in the stratosphere, and microscopic views of ancient deep-sea ferromanganese crusts containing alien star dust.",
+ "why_watch": "Viewers learn the true mechanism of cosmic extinction through chemistry rather than science fiction tropes, backed by physical clues sitting on our own ocean floor.",
+ "outline": [
+  "The Hollywood picture: why a physical blast wave from a star cannot blow our atmosphere into space.",
+  "The stellar safety line: why famous nearby candidates like Betelgeuse are too far away to hurt us.",
+  "The primary weapon: how invisible X-rays, gamma rays, and cosmic rays smash atmospheric molecules.",
+  "The kill zone threshold: what happens when an explosion occurs within 30 light years.",
+  "A poisoned sky: how ozone disappears and leaves the planet exposed to lethal ultraviolet light.",
+  "Ocean floor clues: how scientists used deep-sea iron isotopes to track ancient nearby supernovae."
+ ],
+ "wikipedia_titles": [
+  "Near-Earth supernova",
+  "Supernova",
+  "Ozone depletion",
+  "Iron-60"
+ ]
+}

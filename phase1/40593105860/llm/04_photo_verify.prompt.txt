@@ -1,0 +1,112 @@
+[model] gemini-3.5-flash-lite
+[system]
+
+
+[user]
+Step 2 of a picture check for a science video. Someone looked at each picture WITHOUT knowing
+what it should show and described it. Decide for each image whether the picture fits.
+A photo fits only if the description shows it clearly depicts what it should show: not mostly text,
+not a test target, not a different planet or object than the narration is about, no watermark, nothing
+misleading. A chart or graph fits ONLY if its labels show it is about exactly what the narration says (a graph
+of Mars data, or with unexplained labels like 'RHOS', does not fit a sentence about Earth or a star).
+When unsure, answer fits = false (a chart or plain card is shown instead, which is fine).
+Copy the description into "seen".
+Image 1: described as: A full view of planet Earth from space, showing the African continent and surrounding oceans.
+  should show: Earth seen from space
+  narration: Why does this question matter when considering terrestrial life?
+Image 2: described as: A colorful nebula in outer space, filled with glowing gas, filaments, and scattered stars.
+  should show: a supernova remnant
+  narration: In reality, a supernova is a powerful explosion marking the death of a star.
+Image 3: described as: An artistic illustration of a brown planet next to a debris disk orbiting a bright star in space.
+  should show: a white dwarf star
+  narration: Alternatively, an exploding white dwarf star undergoes runaway nuclear fusion.
+Image 4: described as: A dense cosmic region of glowing green and dark nebulae studded with bright blue stars.
+  should show: interstellar gas clouds
+  narration: of matter into the surrounding interstellar medium.
+Image 5: described as: A view from space showing the curved horizon of Earth below a dark starry sky and a solar panel.
+  should show: a starry night sky
+  narration: Astronomers define a near-Earth supernova as one
+Image 6: described as: A night landscape showing dark mountain peaks under a brilliant starry sky with the Milky Way galaxy arching across it, and a small yellow tent with a camper.
+  should show: the Milky Way galaxy
+  narration: potential near-Earth supernovas inside that broader distance.
+Image 7: described as: A grayscale view of intricate, parallel planetary rings with a small moonlet visible.
+  should show: a bright star in the sky
+  narration: Although these dying stars will shine brilliantly, they pose little direct threat to our planet.
+Image 8: described as: A dark field of space with a few scattered white stars against a black background.
+  should show: Betelgeuse star in constellation Orion
+  narration: What about the famous red supergiant star Betelgeuse?
+Image 9: described as: A composite deep-field view of space showing numerous distant galaxies and stars of various shapes.
+  should show: distant galaxies
+  narration: Looking back in time, other relatively nearby stars have exploded in Earth's past.
+Image 10: described as: A multi-panel line chart showing normalized TESS flux over time for IK Pegasi, complete with axes and date labels.
+  should show: binary star system
+  narration: The closest known white dwarf candidate, IK Pegasi,
+Image 11: described as: A completely blank white image.
+  should show: cosmic rays in space
+  narration: Supernovae act as a major source of cosmic rays.
+Image 12: described as: A digital illustration of an orbiting space telescope with gold solar panels and visible beam paths.
+  should show: X-ray telescope image of space
+  narration: They also emit fluxes of X-rays and gamma rays.
+Image 13: described as: A globe showing atmospheric data over Antarctica, depicted with color-coded contours from green to blue and purple.
+  should show: Earth ozone layer from space
+  narration: In this way, atmospheric chemistry depletes our planet's protective ozone layer.
+Image 14: described as: A glowing orange 3D globe representing carbon dioxide concentrations, accompanied by line charts on the left and Spanish text captions.
+  should show: scientific research computers
+  narration: Researchers derived this calculation from atmospheric
+Image 15: described as: A starry celestial region with glowing red nebulae clouds and various scattered stars.
+  should show: supernova 1987A remnant
+  narration: models and radiation data from supernova 1987A.
+Image 16: described as: An illustration of a bright white star surrounded by a dark disk with ring structures and a rocky body at the edge.
+  should show: dim white dwarf star
+  narration: Because white dwarfs are dim and common, they can detonate unpredictably in unstudied systems.
+Image 17: described as: Three representations of an ozone molecule, showing a space-filling 3D model, a ball-and-stick model, and a Lewis structure diagram with formal charges.
+  should show: Earth ozone layer stratosphere
+  narration: Ozone is the only atmospheric gas capable of
+Image 18: described as: A dark photo showing an orange rectangular block and a faint blue glowing light feature on a dark surface.
+  should show: sunlight shining through clouds
+  narration: absorbing dangerous ultraviolet B radiation from sunlight.
+Image 19: described as: A grayscale image of an irregularly shaped asteroid floating against a completely black background.
+  should show: sunlight hitting Earth surface
+  narration: B light penetrates directly to the surface.
+Image 20: described as: A white egret standing in green foliage while holding a dark rodent in its beak.
+  should show: animals in nature
+  narration: In humans and animals, excess ultraviolet
+Image 21: described as: An underwater scene showing bright coral formations in the foreground and sun rays filtering down through clear blue water.
+  should show: coral reef underwater
+  narration: Marine ecosystems suffer harm because ultraviolet
+Image 22: described as: A vibrant coral reef ecosystem under blue water, teeming with various colorful fish swimming above.
+  should show: ocean surface waves
+  narration: rays affect surface and reef communities.
+Image 23: described as: A satellite view of the ocean showing a swirling turquoise and blue phytoplankton bloom.
+  should show: ocean phytoplankton microscopic view
+  narration: Phytoplankton and reef communities are particularly vulnerable to this elevated radiation.
+Image 24: described as: A view from space showing the curved horizon of Earth with a glowing green aurora and starry night sky above.
+  should show: aurora borealis cosmic rays
+  narration: At the same time, elevated cosmic rays can
+Image 25: described as: A large dark fossilized tooth mounted against a light wall, with a blue label below containing text in Hindi and English reading 'FOSSIL TEETH'.
+  should show: fossil ammonite prehistoric
+  narration: Gamma ray bursts from dangerously close stars may have caused the ancient end-Ordovician extinction.
+Image 26: described as: An educational figure featuring a diagram of ocean core sampling, jars of sediment samples, and microscopic images of foraminifera shells.
+  should show: deep sea sediment core sample
+  narration: Proof of past supernovae was discovered by examining deep seabed sediments.
+Image 27: described as: An informational graphic titled 'SUPERNOVA EXPLOSIONS MINTED THE IRON IN OUR BLOOD' with the ESA logo, illustrations, and numbered steps.
+  should show: stellar nebula heavy elements
+  narration: Dying stars forge heavy elements and disperse them into space during their catastrophic final moments.
+Image 28: described as: A periodic table element tile for Iron (Fe) labeled with atomic number Z (26) and atomic mass (55.85) against a black background.
+  should show: iron metal sample
+  narration: One isotope produced during these events is iron-60,
+Image 29: described as: A 3D globe depicting ocean floor age through color coding, with red representing young crust and blue representing older crust.
+  should show: ocean floor crust sample
+  narration: They identified these stellar atoms within the top two centimetres of the oceanic crust.
+Image 30: described as: An aerial view of a massive ice shelf ending in a sheer cliff face over dark blue ocean water with floating icebergs.
+  should show: Antarctic snow ice core
+  narration: Similar interstellar traces have also appeared in Antarctic surface snow and in lunar samples.
+Image 31: described as: A scanning electron microscope image showing textured microbial structures and filaments on a dark surface.
+  should show: fossilized bacteria microscope view
+  narration: Iron-60 atoms were even found preserved
+Image 32: described as: A detailed scientific diagram illustrating various marine sulfur cycle processes, chemical species, and sediment layers.
+  should show: marine sediment core under microscope
+  narration: inside fossilised bacteria living in seabed sediments.
+Image 33: described as: A photograph taken from space showing the bright blue horizon of Earth's atmosphere over a cloudy ocean surface with sun glint.
+  should show: Earth horizon with atmosphere glow
+  narration: What delicate balance protects our planet from cosmic events?

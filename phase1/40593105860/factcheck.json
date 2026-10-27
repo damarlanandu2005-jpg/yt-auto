@@ -1,0 +1,292 @@
+{
+ "checked": 74,
+ "supported_first_pass": 36,
+ "fixed": [
+  {
+   "id": "s01.02",
+   "old": "Science fiction movies often show a fiery blast wave sweeping our planet entirely bare within seconds.",
+   "new": "Do science fiction movies show a fiery blast wave sweeping our planet bare within seconds?",
+   "problem": "Framing sentence makes a factual claim about science fiction movies without cited passages."
+  },
+  {
+   "id": "s01.03",
+   "old": "This question matters to you because that fragile layer of air makes all terrestrial life possible.",
+   "new": "Why does this question matter when considering terrestrial life?",
+   "problem": "Framing sentence makes factual claims about atmospheric life support without cited passages."
+  },
+  {
+   "id": "s01.04",
+   "old": "Without an atmosphere to provide oxygen, survival would be impossible.",
+   "new": "How essential is our oxygen atmosphere for survival?",
+   "problem": "Framing sentence makes a factual claim about oxygen and survival without cited passages."
+  },
+  {
+   "id": "s01.05",
+   "old": "In reality, a supernova is an unimaginably powerful explosion marking the death of a star.",
+   "new": "In reality, a supernova is a powerful explosion marking the death of a star.",
+   "problem": "The cited passage describes a supernova as a powerful explosion, not an unimaginably powerful one."
+  },
+  {
+   "id": "s02.06",
+   "old": "Take the famous red supergiant Betelgeuse, which fascinates skywatchers.",
+   "new": "What about the famous red supergiant star Betelgeuse?",
+   "problem": "Framing sentence makes factual claims about Betelgeuse and skywatchers without cited passages."
+  },
+  {
+   "id": "s02.08",
+   "old": "When it finally detonates, its stream of charged particles will take 100,000 years to reach Earth.",
+   "new": "When it detonates, its particle stream will reach Earth about 100,000 years after the initial light.",
+   "problem": "The charged particles will reach Earth about 100,000 years after the initial light, not 100,000 years after the detonation itself."
+  },
+  {
+   "id": "s02.09",
+   "old": "Looking back in time, other relatively nearby stars have exploded without harming our biosphere.",
+   "new": "Looking back in time, other relatively nearby stars have exploded in Earth's past.",
+   "problem": "The cited passage names nearby supernovae examples but does not state that they caused no harm to the biosphere."
+  },
+  {
+   "id": "s03.03",
+   "old": "Supernovae act as primary cosmic factories, generating immense amounts of high-energy cosmic rays.",
+   "new": "Supernovae act as a major source of cosmic rays.",
+   "problem": "The cited passage describes supernovae as a major source of cosmic rays, not primary cosmic factories generating immense amounts."
+  },
+  {
+   "id": "s03.04",
+   "old": "They also emit intense pulses of penetrating X-rays and highly energetic gamma rays.",
+   "new": "They also emit fluxes of X-rays and gamma rays.",
+   "problem": "The cited passages mention gamma rays and X-rays, but do not describe them as intense pulses of penetrating radiation."
+  },
+  {
+   "id": "s03.06",
+   "old": "When gamma radiation strikes the upper atmosphere, it does not push the gases into space.",
+   "new": "When gamma radiation hits the upper atmosphere, it causes chemical reactions.",
+   "problem": "The cited passage describes chemical reactions in the upper atmosphere, but does not mention whether gases are pushed into space."
+  },
+  {
+   "id": "s03.09",
+   "old": "These newly created nitrogen oxides act as powerful catalysts that rapidly destroy ozone molecules.",
+   "new": "These newly created nitrogen oxides notably deplete ozone molecules.",
+   "problem": "The cited passage says nitrogen oxides notably deplete ozone, without mentioning catalysts or rapid destruction."
+  },
+  {
+   "id": "s03.10",
+   "old": "In this way, the star uses invisible chemistry to dismantle our planet's vital stratospheric shield.",
+   "new": "In this way, atmospheric chemistry depletes our planet's protective ozone layer.",
+   "problem": "The passage describes chemical ozone depletion leading to radiation exposure, not a star intentionally dismantling a shield."
+  },
+  {
+   "id": "s03.11",
+   "old": "The air remains bound to Earth, but its protective composition is transformed.",
+   "new": "The atmosphere's protective ozone composition is transformed by these reactions.",
+   "problem": "The cited passage describes nitrogen conversion and ozone depletion, but does not state that air remains bound to Earth."
+  },
+  {
+   "id": "s03.12",
+   "old": "Invisible atomic reactions take the place of the Hollywood shockwave.",
+   "new": "Do invisible chemical reactions occur instead of a shockwave?",
+   "problem": "Framing sentence makes a claim about shockwaves and atomic reactions without cited passages."
+  },
+  {
+   "id": "s04.12",
+   "old": "That narrow boundary represents the cosmic line where atmospheric protection completely collapses.",
+   "new": "Does that distance boundary mark where atmospheric protection collapses?",
+   "problem": "Framing sentence makes a claim about cosmic boundaries and atmospheric collapse without cited passages."
+  },
+  {
+   "id": "s05.06",
+   "old": "Marine ecosystems suffer catastrophic harm because ultraviolet rays penetrate into shallow waters.",
+   "new": "Marine ecosystems suffer harm because ultraviolet rays affect surface and reef communities.",
+   "problem": "The cited passages mention ultraviolet harm to shallow freshwater communities, but do not state that rays penetrate marine shallow waters."
+  },
+  {
+   "id": "s05.07",
+   "old": "Phytoplankton and delicate coral reef communities are particularly vulnerable to this sudden radiation spike.",
+   "new": "Phytoplankton and reef communities are particularly vulnerable to this elevated radiation.",
+   "problem": "The cited passage states that phytoplankton and reef communities are particularly affected, without describing them as delicate or mentioning a sudden radiation spike."
+  },
+  {
+   "id": "s06.02",
+   "old": "The definitive proof came not from looking upward, but by digging deep into the seabed.",
+   "new": "Proof of past supernovae was discovered by examining deep seabed sediments.",
+   "problem": "The cited passages mention finding iron-60 in seabed sediments, but do not state that definitive proof came from seabed digging rather than looking upward."
+  },
+  {
+   "id": "s06.07",
+   "old": "This detection proves an explosion occurred within the last 5 million years.",
+   "new": "This detection indicates an explosion likely occurred within the last 5 million years.",
+   "problem": "The cited passage says scientists estimate the explosion occurred in the last 5 million years, rather than proving it."
+  },
+  {
+   "id": "s06.13",
+   "old": "Lethal gamma rays convert atmospheric oxygen into nitrogen oxides, stripping away our shield through invisible chemistry.",
+   "new": "Gamma rays convert nitrogen and oxygen into nitrogen oxides, depleting the ozone layer.",
+   "problem": "The cited passage specifies converting both molecular nitrogen and oxygen into nitrogen oxides, rather than just oxygen."
+  },
+  {
+   "id": "s06.14",
+   "old": "Next time you gaze at the night sky, consider the fragile invisible balance protecting our world.",
+   "new": "What delicate balance protects our planet from cosmic events?",
+   "problem": "Framing sentence makes a factual statement about an atmospheric balance without cited passages."
+  },
+  {
+   "id": "s02.03",
+   "old": "At present, our galaxy contains up to 14 near-Earth supernova candidates within that wider distance.",
+   "new": "Currently, our galaxy holds up to 14 potential near-Earth supernovas inside that broader distance.",
+   "problem": "reworded: too close to source wording"
+  },
+  {
+   "id": "s02.04",
+   "old": "Several prominent stars within a few hundred light-years could explode in as little as 1,000 years.",
+   "new": "A few famous stars located within several hundred light-years could explode in just 1,000 years.",
+   "problem": "reworded: too close to source wording"
+  },
+  {
+   "id": "s02.07",
+   "old": "Scientists estimate that Betelgeuse may take up to 1.5 million years to undergo a supernova.",
+   "new": "Scientists estimate that Betelgeuse could require as long as 1.5 million years to explode as a supernova.",
+   "problem": "reworded: too close to source wording"
+  },
+  {
+   "id": "s05.08",
+   "old": "Their collapse would severely deplete the base of the marine food chain.",
+   "new": "Their collapse would seriously damage the foundation of the ocean food web.",
+   "problem": "reworded: too close to source wording"
+  },
+  {
+   "id": "s06.04",
+   "old": "One isotope created in these events is iron-60, with a half-life of 2.62 million years.",
+   "new": "One isotope produced during these events is iron-60, which has a half-life spanning 2.62 million years.",
+   "problem": "reworded: too close to source wording"
+  }
+ ],
+ "dropped": [
+  {
+   "id": "s01.11",
+   "text": "Yet space is so vast that this physical debris spreads out across dozens of light-years.",
+   "problem": "The cited passages do not state that debris spreads out across dozens of light-years."
+  },
+  {
+   "id": "s01.12",
+   "text": "By the time it reaches us, the physical blast wave cannot blow away our planetary air.",
+   "problem": "The cited passages do not mention whether a physical blast wave can blow away planetary air."
+  },
+  {
+   "id": "s03.02",
+   "text": "The real threat comes from invisible electromagnetic radiation travelling across interstellar space at light speed.",
+   "problem": "The cited passages mention electromagnetic radiation and gamma rays, but do not state that radiation travels across space at light speed."
+  },
+  {
+   "id": "s03.05",
+   "text": "Gamma rays are responsible for most of the catastrophic damage to any life-bearing terrestrial world.",
+   "problem": "The cited passage says gamma rays cause most adverse effects, not catastrophic damage."
+  },
+  {
+   "id": "s03.07",
+   "text": "Instead, these energetic photons cause radiolysis of diatomic nitrogen and diatomic oxygen molecules.",
+   "problem": "The cited passage specifies gamma rays rather than energetic photons."
+  },
+  {
+   "id": "s04.02",
+   "text": "Scientists calculate that the genuine danger zone begins within a few dozen light-years of Earth.",
+   "problem": "The cited passages give specific distance estimates of 26 to 33 light-years, rather than defining a genuine danger zone."
+  },
+  {
+   "id": "s04.04",
+   "text": "If a Type 2 supernova explodes closer than 26 light-years, severe damage follows.",
+   "problem": "The cited passage specifically states that a supernova closer than 26 light-years would destroy more than half of the ozone layer, rather than using the phrase severe damage follows."
+  },
+  {
+   "id": "s04.07",
+   "text": "Type 1a supernovae can be even more dangerous to our planet if they occur nearby.",
+   "problem": "number 1 is not in the cited sources"
+  },
+  {
+   "id": "s04.11",
+   "text": "Any stellar detonation occurring inside 30 light-years would cross the critical threshold of survival.",
+   "problem": "The cited passage mentions 30 parsecs (roughly 98 light-years), not 30 light-years, and does not mention a critical threshold of survival."
+  },
+  {
+   "id": "s06.05",
+   "text": "Researchers examining deep-sea rocks in the Pacific Ocean discovered 23 atoms of this rare isotope.",
+   "problem": "number 23 is not in the cited sources"
+  },
+  {
+   "id": "s06.08",
+   "text": "The recovered iron indicates the dying star exploded less than 98 light-years away.",
+   "problem": "number 98 is not in the cited sources"
+  },
+  {
+   "id": "s06.12",
+   "text": "A supernova does not blow away our air, but one inside 26 to 33 light-years destroys our ozone layer.",
+   "problem": "The passages do not mention blowing away air, and state that a supernova closer than 26 light-years would destroy more than half of the ozone layer."
+  }
+ ],
+ "bad_ids": [],
+ "copied": [
+  {
+   "id": "s02.03",
+   "phrases": [
+    "up to 14 near earth supernova candidates within"
+   ]
+  },
+  {
+   "id": "s02.04",
+   "phrases": [
+    "prominent stars within a few hundred light years",
+    "several prominent stars within a few hundred light"
+   ]
+  },
+  {
+   "id": "s02.07",
+   "phrases": [
+    "may take up to 1 5 million years"
+   ]
+  },
+  {
+   "id": "s03.05",
+   "phrases": [
+    "gamma rays are responsible for most of the"
+   ]
+  },
+  {
+   "id": "s05.08",
+   "phrases": [
+    "deplete the base of the marine food chain",
+    "severely deplete the base of the marine food"
+   ]
+  },
+  {
+   "id": "s06.04",
+   "phrases": [
+    "a half life of 2 62 million years"
+   ]
+  }
+ ],
+ "guard": [
+  {
+   "id": "s04.04",
+   "problems": [
+    "number 2 is not in the cited sources"
+   ]
+  },
+  {
+   "id": "s04.07",
+   "problems": [
+    "number 1 is not in the cited sources"
+   ]
+  },
+  {
+   "id": "s06.05",
+   "problems": [
+    "number 23 is not in the cited sources"
+   ]
+  },
+  {
+   "id": "s06.08",
+   "problems": [
+    "number 98 is not in the cited sources"
+   ]
+  }
+ ],
+ "words_after": 818
+}

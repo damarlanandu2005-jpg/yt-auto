@@ -1,0 +1,946 @@
+{
+  "visuals": [
+    {
+      "id": "v001",
+      "kind": "card",
+      "card": {
+        "type": "title",
+        "title": "How Close Can a Supernova Get Before It Destroys Earth?",
+        "subtitle": "The Hollywood Shockwave Myth"
+      }
+    },
+    {
+      "id": "v002",
+      "kind": "drawing",
+      "drawing_subject": "a huge exploding star beside a small blue planet",
+      "card": {
+        "type": "bullets",
+        "title": "Supernova Myths",
+        "items": [
+          "Fiery blast wave",
+          "Atmosphere stripped bare",
+          "Instant planetary destruction"
+        ]
+      }
+    },
+    {
+      "id": "v003",
+      "kind": "photo",
+      "photo_subject": "Earth seen from space",
+      "photo_queries": ["Earth from space", "planet Earth"],
+      "card": {
+        "type": "title",
+        "title": "Terrestrial Life Protection"
+      }
+    },
+    {
+      "id": "v004",
+      "kind": "card",
+      "card": {
+        "type": "stat",
+        "title": "Oxygen Atmosphere",
+        "value": "21%",
+        "label": "Oxygen in air",
+        "note": "Essential for survival"
+      }
+    },
+    {
+      "id": "v005",
+      "kind": "photo",
+      "photo_subject": "a supernova remnant",
+      "photo_queries": ["supernova remnant", "Crab Nebula"],
+      "card": {
+        "type": "stat",
+        "title": "Supernova Explosion",
+        "value": "1 Star",
+        "label": "Stellar death"
+      }
+    },
+    {
+      "id": "v006",
+      "kind": "drawing",
+      "drawing_subject": "a massive star collapsing inward under intense gravity",
+      "card": {
+        "type": "flow",
+        "title": "Core Collapse",
+        "steps": [
+          "Runs out of fuel",
+          "Core collapses",
+          "Gravitational force"
+        ]
+      }
+    },
+    {
+      "id": "v007",
+      "kind": "photo",
+      "photo_subject": "a white dwarf star",
+      "photo_queries": ["white dwarf", "Sirius B"],
+      "card": {
+        "type": "title",
+        "title": "White Dwarf Star",
+        "subtitle": "Runaway nuclear fusion"
+      }
+    },
+    {
+      "id": "v008",
+      "kind": "card",
+      "card": {
+        "type": "stat",
+        "title": "Stellar Ejecta",
+        "value": "Several",
+        "label": "Solar masses expelled",
+        "note": "Matter thrown into space"
+      }
+    },
+    {
+      "id": "v009",
+      "kind": "photo",
+      "photo_subject": "interstellar gas clouds",
+      "photo_queries": ["interstellar medium", "nebula gas"],
+      "card": {
+        "type": "title",
+        "title": "Interstellar Medium"
+      }
+    },
+    {
+      "id": "v010",
+      "kind": "card",
+      "card": {
+        "type": "stat",
+        "title": "Ejected Material Speed",
+        "value": "Several %",
+        "label": "Speed of light",
+        "note": "Outward travel speed"
+      }
+    },
+    {
+      "id": "v011",
+      "kind": "drawing",
+      "drawing_subject": "an expanding shock wave sweeping up gas and dust",
+      "card": {
+        "type": "flow",
+        "title": "Shock Wave Formation",
+        "steps": [
+          "Material ejects",
+          "Expands outward",
+          "Sweeps up gas and dust"
+        ]
+      }
+    },
+    {
+      "id": "v012",
+      "kind": "card",
+      "card": {
+        "type": "title",
+        "title": "The Stellar Safety Line",
+        "subtitle": "Nearby Stars"
+      }
+    },
+    {
+      "id": "v013",
+      "kind": "photo",
+      "photo_subject": "a starry night sky",
+      "photo_queries": ["starry sky", "milky way stars"],
+      "card": {
+        "type": "title",
+        "title": "Near-Earth Supernova"
+      }
+    },
+    {
+      "id": "v014",
+      "kind": "card",
+      "card": {
+        "type": "stat",
+        "title": "Distance Range",
+        "value": "33 - 978",
+        "unit": "light-years",
+        "left_title": "Near-Earth boundary"
+      }
+    },
+    {
+      "id": "v015",
+      "kind": "card",
+      "card": {
+        "type": "stat",
+        "title": "Candidate Stars",
+        "value": "14",
+        "label": "Potential near-Earth supernovas",
+        "note": "Inside our galaxy"
+      }
+    },
+    {
+      "id": "v016",
+      "kind": "photo",
+      "photo_subject": "the Milky Way galaxy",
+      "photo_queries": ["Milky Way", "galaxy view"],
+      "card": {
+        "type": "title",
+        "title": "Galactic Neighborhood",
+        "subtitle": "Potential supernovas"
+      }
+    },
+    {
+      "id": "v017",
+      "kind": "card",
+      "card": {
+        "type": "timeline",
+        "title": "Future Supernovas",
+        "events": [
+          {
+            "when": "Several hundred light-years",
+            "label": "Famous nearby stars"
+          },
+          {
+            "when": "1,000 years",
+            "label": "Estimated explosion timeframe"
+          }
+        ]
+      }
+    },
+    {
+      "id": "v018",
+      "kind": "photo",
+      "photo_subject": "a bright star in the sky",
+      "photo_queries": ["bright star", "stellar shine"],
+      "card": {
+        "type": "title",
+        "title": "Stellar Shine",
+        "subtitle": "Little direct threat"
+      }
+    },
+    {
+      "id": "v019",
+      "kind": "photo",
+      "photo_subject": "Betelgeuse star in constellation Orion",
+      "photo_queries": ["Betelgeuse star", "Orion constellation"],
+      "card": {
+        "type": "title",
+        "title": "Red Supergiant",
+        "subtitle": "Betelgeuse"
+      }
+    },
+    {
+      "id": "v020",
+      "kind": "card",
+      "card": {
+        "type": "stat",
+        "title": "Betelgeuse Explosion Estimate",
+        "value": "1.5 Million",
+        "unit": "years",
+        "left_title": "Time required"
+      }
+    },
+    {
+      "id": "v021",
+      "kind": "card",
+      "card": {
+        "type": "stat",
+        "title": "Explosion Timeline",
+        "value": "1,500,000",
+        "unit": "years",
+        "left_title": "Until supernova"
+      }
+    },
+    {
+      "id": "v022",
+      "kind": "drawing",
+      "drawing_subject": "particles streaming across space towards a planet",
+      "card": {
+        "type": "flow",
+        "title": "Particle Stream Arrival",
+        "steps": [
+          "Detonation occurs",
+          "Particle stream emits",
+          "Travels across space"
+        ]
+      }
+    },
+    {
+      "id": "v023",
+      "kind": "card",
+      "card": {
+        "type": "stat",
+        "title": "Earth Arrival Delay",
+        "value": "100,000",
+        "unit": "years",
+        "left_title": "After initial light"
+      }
+    },
+    {
+      "id": "v024",
+      "kind": "photo",
+      "photo_subject": "distant galaxies",
+      "photo_queries": ["distant galaxies", "universe past"],
+      "card": {
+        "type": "title",
+        "title": "Past Supernovas",
+        "subtitle": "Looking back in time"
+      }
+    },
+    {
+      "id": "v025",
+      "kind": "card",
+      "card": {
+        "type": "timeline",
+        "title": "Vela Supernova",
+        "events": [
+          {
+            "when": "12,000 years ago",
+            "label": "Vela exploded"
+          }
+        ]
+      }
+    },
+    {
+      "id": "v026",
+      "kind": "card",
+      "card": {
+        "type": "stat",
+        "title": "Vela Distance",
+        "value": "800",
+        "unit": "light-years",
+        "left_title": "Distance from Sun"
+      }
+    },
+    {
+      "id": "v027",
+      "kind": "card",
+      "card": {
+        "type": "timeline",
+        "title": "Geminga Explosion",
+        "events": [
+          {
+            "when": "300,000 years ago",
+            "label": "Geminga occurred"
+          }
+        ]
+      }
+    },
+    {
+      "id": "v028",
+      "kind": "card",
+      "card": {
+        "type": "stat",
+        "title": "Geminga Distance",
+        "value": "550",
+        "unit": "light-years",
+        "left_title": "Distance from Earth"
+      }
+    },
+    {
+      "id": "v029",
+      "kind": "photo",
+      "photo_subject": "binary star system",
+      "photo_queries": ["binary star", "IK Pegasi"],
+      "card": {
+        "type": "title",
+        "title": "IK Pegasi",
+        "subtitle": "White dwarf candidate"
+      }
+    },
+    {
+      "id": "v030",
+      "kind": "drawing",
+      "drawing_subject": "two stars moving apart in space",
+      "card": {
+        "type": "flow",
+        "title": "Stellar Movement",
+        "steps": [
+          "Candidate identified",
+          "Moving away",
+          "Safe distance reached"
+        ]
+      }
+    },
+    {
+      "id": "v031",
+      "kind": "card",
+      "card": {
+        "type": "title",
+        "title": "The Primary Weapon: Invisible Radiation",
+        "subtitle": "Supernova Dangers"
+      }
+    },
+    {
+      "id": "v032",
+      "kind": "photo",
+      "photo_subject": "cosmic rays in space",
+      "photo_queries": ["cosmic rays", "space radiation"],
+      "card": {
+        "type": "title",
+        "title": "Cosmic Rays",
+        "subtitle": "Major source from supernovae"
+      }
+    },
+    {
+      "id": "v033",
+      "kind": "photo",
+      "photo_subject": "X-ray telescope image of space",
+      "photo_queries": ["X-ray space", "gamma rays"],
+      "card": {
+        "type": "title",
+        "title": "X-Rays and Gamma Rays",
+        "subtitle": "Stellar emissions"
+      }
+    },
+    {
+      "id": "v034",
+      "kind": "drawing",
+      "drawing_subject": "gamma radiation hitting Earth upper atmosphere",
+      "card": {
+        "type": "flow",
+        "title": "Atmospheric Impact",
+        "steps": [
+          "Gamma radiation hits",
+          "Upper atmosphere reached",
+          "Chemical reactions start"
+        ]
+      }
+    },
+    {
+      "id": "v035",
+      "kind": "drawing",
+      "drawing_subject": "gas molecules breaking apart into smaller pieces",
+      "card": {
+        "type": "title",
+        "title": "Radiolysis",
+        "subtitle": "Breaking gas molecules"
+      }
+    },
+    {
+      "id": "v036",
+      "kind": "drawing",
+      "drawing_subject": "molecules recombining into nitrogen oxide clusters",
+      "card": {
+        "type": "flow",
+        "title": "Molecule Recombination",
+        "steps": [
+          "Molecules break",
+          "Atoms recombine",
+          "Nitrogen oxides form"
+        ]
+      }
+    },
+    {
+      "id": "v037",
+      "kind": "card",
+      "card": {
+        "type": "stat",
+        "title": "Ozone Depletion",
+        "value": "Nitrogen Oxides",
+        "label": "Deplete ozone molecules",
+        "note": "Atmospheric reaction"
+      }
+    },
+    {
+      "id": "v038",
+      "kind": "photo",
+      "photo_subject": "Earth ozone layer from space",
+      "photo_queries": ["ozone layer", "Earth atmosphere"],
+      "card": {
+        "type": "title",
+        "title": "Protective Ozone Layer",
+        "subtitle": "Atmospheric chemistry"
+      }
+    },
+    {
+      "id": "v039",
+      "kind": "drawing",
+      "drawing_subject": "ozone layer transforming under chemical reactions",
+      "card": {
+        "type": "title",
+        "title": "Ozone Composition",
+        "subtitle": "Transformed by reactions"
+      }
+    },
+    {
+      "id": "v040",
+      "kind": "card",
+      "card": {
+        "type": "bullets",
+        "title": "Invisible Reactions",
+        "items": [
+          "Chemical changes occur",
+          "No shockwave needed",
+          "Radiation is key"
+        ]
+      }
+    },
+    {
+      "id": "v041",
+      "kind": "card",
+      "card": {
+        "type": "title",
+        "title": "The Kill Zone Threshold",
+        "subtitle": "Lethal Distance"
+      }
+    },
+    {
+      "id": "v042",
+      "kind": "card",
+      "card": {
+        "type": "stat",
+        "title": "Close Explosion Distance",
+        "value": "33",
+        "unit": "light-years",
+        "left_title": "Lethal proximity"
+      }
+    },
+    {
+      "id": "v043",
+      "kind": "card",
+      "card": {
+        "type": "stat",
+        "title": "Explosion Frequency",
+        "value": "240 Million",
+        "unit": "years",
+        "left_title": "Average interval"
+      }
+    },
+    {
+      "id": "v044",
+      "kind": "card",
+      "card": {
+        "type": "stat",
+        "title": "Ozone Destruction",
+        "value": "50%+",
+        "label": "Ozone layer destroyed",
+        "note": "At lethal distance"
+      }
+    },
+    {
+      "id": "v045",
+      "kind": "photo",
+      "photo_subject": "scientific research computers",
+      "photo_queries": ["atmospheric models", "science lab"],
+      "card": {
+        "type": "title",
+        "title": "Atmospheric Models",
+        "subtitle": "Researcher calculations"
+      }
+    },
+    {
+      "id": "v046",
+      "kind": "photo",
+      "photo_subject": "supernova 1987A remnant",
+      "photo_queries": ["supernova 1987A", "SN 1987A"],
+      "card": {
+        "type": "title",
+        "title": "Supernova 1987A",
+        "subtitle": "Radiation data source"
+      }
+    },
+    {
+      "id": "v047",
+      "kind": "card",
+      "card": {
+        "type": "stat",
+        "title": "White Dwarf Release",
+        "value": "Mere Seconds",
+        "label": "Tremendous energy release",
+        "note": "Exploding white dwarf"
+      }
+    },
+    {
+      "id": "v048",
+      "kind": "card",
+      "card": {
+        "type": "stat",
+        "title": "Peak Brightness",
+        "value": "5 Billion",
+        "label": "Times brighter than Sun",
+        "note": "Maximum explosion output"
+      }
+    },
+    {
+      "id": "v049",
+      "kind": "photo",
+      "photo_subject": "dim white dwarf star",
+      "photo_queries": ["white dwarf star", "dim star"],
+      "card": {
+        "type": "title",
+        "title": "Unstudied Systems",
+        "subtitle": "Unpredictable detonations"
+      }
+    },
+    {
+      "id": "v050",
+      "kind": "drawing",
+      "drawing_subject": "a protective shield around a planet fading away",
+      "card": {
+        "type": "title",
+        "title": "Atmospheric Protection",
+        "subtitle": "Distance boundary"
+      }
+    },
+    {
+      "id": "v051",
+      "kind": "card",
+      "card": {
+        "type": "title",
+        "title": "A Poisoned Sky",
+        "subtitle": "Ozone Depletion Consequences"
+      }
+    },
+    {
+      "id": "v052",
+      "kind": "photo",
+      "photo_subject": "Earth ozone layer stratosphere",
+      "photo_queries": ["stratosphere", "ozone gas"],
+      "card": {
+        "type": "title",
+        "title": "Ozone Gas",
+        "subtitle": "Atmospheric shield"
+      }
+    },
+    {
+      "id": "v053",
+      "kind": "photo",
+      "photo_subject": "sunlight shining through clouds",
+      "photo_queries": ["sunlight UV rays", "ultraviolet light"],
+      "card": {
+        "type": "title",
+        "title": "Ultraviolet B Radiation",
+        "subtitle": "Absorbed by ozone"
+      }
+    },
+    {
+      "id": "v054",
+      "kind": "drawing",
+      "drawing_subject": "ultraviolet light rays piercing through a thinning atmosphere",
+      "card": {
+        "type": "flow",
+        "title": "UV Penetration",
+        "steps": [
+          "Ozone levels drop",
+          "UV-B light enters",
+          "Reaches surface"
+        ]
+      }
+    },
+    {
+      "id": "v055",
+      "kind": "photo",
+      "photo_subject": "sunlight hitting Earth surface",
+      "photo_queries": ["sunlight surface", "surface light"],
+      "card": {
+        "type": "title",
+        "title": "Surface Radiation",
+        "subtitle": "Intense ultraviolet B light"
+      }
+    },
+    {
+      "id": "v056",
+      "kind": "drawing",
+      "drawing_subject": "a DNA double helix with a broken rung",
+      "card": {
+        "type": "title",
+        "title": "Cellular DNA Damage",
+        "subtitle": "Extreme radiation effects"
+      }
+    },
+    {
+      "id": "v057",
+      "kind": "drawing",
+      "drawing_subject": "strands of genetic material misaligning",
+      "card": {
+        "type": "flow",
+        "title": "Replication Errors",
+        "steps": [
+          "DNA damaged",
+          "Pyrimidine bases form",
+          "Transcription errors"
+        ]
+      }
+    },
+    {
+      "id": "v058",
+      "kind": "photo",
+      "photo_subject": "animals in nature",
+      "photo_queries": ["wildlife animals", "nature animals"],
+      "card": {
+        "type": "title",
+        "title": "Humans and Animals",
+        "subtitle": "Excess ultraviolet exposure"
+      }
+    },
+    {
+      "id": "v059",
+      "kind": "card",
+      "card": {
+        "type": "bullets",
+        "title": "Health Impacts",
+        "items": [
+          "Severe skin cancers",
+          "Cataracts in eyes",
+          "Ultraviolet damage"
+        ]
+      }
+    },
+    {
+      "id": "v060",
+      "kind": "photo",
+      "photo_subject": "coral reef underwater",
+      "photo_queries": ["coral reef", "marine ecosystem"],
+      "card": {
+        "type": "title",
+        "title": "Marine Ecosystems",
+        "subtitle": "Ultraviolet ray damage"
+      }
+    },
+    {
+      "id": "v061",
+      "kind": "photo",
+      "photo_subject": "ocean surface waves",
+      "photo_queries": ["ocean surface", "reef community"],
+      "card": {
+        "type": "title",
+        "title": "Surface and Reef Communities",
+        "subtitle": "Affected by UV rays"
+      }
+    },
+    {
+      "id": "v062",
+      "kind": "photo",
+      "photo_subject": "ocean phytoplankton microscopic view",
+      "photo_queries": ["phytoplankton", "marine algae"],
+      "card": {
+        "type": "title",
+        "title": "Phytoplankton",
+        "subtitle": "Vulnerable to radiation"
+      }
+    },
+    {
+      "id": "v063",
+      "kind": "drawing",
+      "drawing_subject": "an ocean food web collapsing from the bottom up",
+      "card": {
+        "type": "flow",
+        "title": "Food Web Collapse",
+        "steps": [
+          "Phytoplankton die",
+          "Foundation damaged",
+          "Ocean food web fails"
+        ]
+      }
+    },
+    {
+      "id": "v064",
+      "kind": "photo",
+      "photo_subject": "aurora borealis cosmic rays",
+      "photo_queries": ["cosmic rays aurora", "upper atmosphere"],
+      "card": {
+        "type": "title",
+        "title": "Cosmic Rays",
+        "subtitle": "Elevated levels"
+      }
+    },
+    {
+      "id": "v065",
+      "kind": "drawing",
+      "drawing_subject": "cloudy climate patterns shifting over a globe",
+      "card": {
+        "type": "flow",
+        "title": "Climate Alteration",
+        "steps": [
+          "Cosmic rays arrive",
+          "Climate patterns alter",
+          "Global temperature cools"
+        ]
+      }
+    },
+    {
+      "id": "v066",
+      "kind": "photo",
+      "photo_subject": "fossil ammonite prehistoric",
+      "photo_queries": ["prehistoric fossil", "ancient extinction"],
+      "card": {
+        "type": "title",
+        "title": "End-Ordovician Extinction",
+        "subtitle": "Ancient gamma ray bursts"
+      }
+    },
+    {
+      "id": "v067",
+      "kind": "drawing",
+      "drawing_subject": "prehistoric sea creatures disappearing from a seabed",
+      "card": {
+        "type": "title",
+        "title": "Prehistoric Cataclysm",
+        "subtitle": "Mass extinction event"
+      }
+    },
+    {
+      "id": "v068",
+      "kind": "card",
+      "card": {
+        "type": "stat",
+        "title": "Extinction Toll",
+        "value": "60%",
+        "label": "Oceanic life perished",
+        "note": "Ancient extinction event"
+      }
+    },
+    {
+      "id": "v069",
+      "kind": "card",
+      "card": {
+        "type": "timeline",
+        "title": "Extinction Triggers",
+        "events": [
+          {
+            "when": "End-Ordovician",
+            "label": "Gamma ray bursts"
+          },
+          {
+            "when": "Late Devonian",
+            "label": "Rapid successive supernovae"
+          }
+        ]
+      }
+    },
+    {
+      "id": "v070",
+      "kind": "card",
+      "card": {
+        "type": "title",
+        "title": "Ocean Floor Clues and Final Verdict",
+        "subtitle": "Geological History"
+      }
+    },
+    {
+      "id": "v071",
+      "kind": "photo",
+      "photo_subject": "deep sea sediment core sample",
+      "photo_queries": ["seabed sediment", "ocean floor core"],
+      "card": {
+        "type": "title",
+        "title": "Seabed Sediments",
+        "subtitle": "Proof of past supernovae"
+      }
+    },
+    {
+      "id": "v072",
+      "kind": "photo",
+      "photo_subject": "stellar nebula heavy elements",
+      "photo_queries": ["heavy elements space", "stellar nucleosynthesis"],
+      "card": {
+        "type": "title",
+        "title": "Heavy Elements",
+        "subtitle": "Forged in dying stars"
+      }
+    },
+    {
+      "id": "v073",
+      "kind": "photo",
+      "photo_subject": "iron metal sample",
+      "photo_queries": ["iron isotope", "iron-60"],
+      "card": {
+        "type": "title",
+        "title": "Iron-60 Isotope",
+        "subtitle": "Supernova product"
+      }
+    },
+    {
+      "id": "v074",
+      "kind": "card",
+      "card": {
+        "type": "stat",
+        "title": "Iron-60 Half-Life",
+        "value": "2.62 Million",
+        "unit": "years",
+        "left_title": "Radioactive decay half-life"
+      }
+    },
+    {
+      "id": "v075",
+      "kind": "photo",
+      "photo_subject": "ocean floor crust sample",
+      "photo_queries": ["oceanic crust", "seabed crust"],
+      "card": {
+        "type": "title",
+        "title": "Oceanic Crust",
+        "subtitle": "Stellar atoms detected"
+      }
+    },
+    {
+      "id": "v076",
+      "kind": "card",
+      "card": {
+        "type": "stat",
+        "title": "Recent Explosion Window",
+        "value": "5 Million",
+        "unit": "years",
+        "left_title": "Within the last"
+      }
+    },
+    {
+      "id": "v077",
+      "kind": "photo",
+      "photo_subject": "Antarctic snow ice core",
+      "photo_queries": ["Antarctic snow", "lunar sample rock"],
+      "card": {
+        "type": "title",
+        "title": "Antarctic Snow and Lunar Samples",
+        "subtitle": "Interstellar traces"
+      }
+    },
+    {
+      "id": "v078",
+      "kind": "photo",
+      "photo_subject": "fossilized bacteria microscope view",
+      "photo_queries": ["fossilized bacteria", "microscopic bacteria"],
+      "card": {
+        "type": "title",
+        "title": "Fossilised Bacteria",
+        "subtitle": "Iron-60 atoms preserved"
+      }
+    },
+    {
+      "id": "v079",
+      "kind": "photo",
+      "photo_subject": "marine sediment core under microscope",
+      "photo_queries": ["seabed sediments", "marine bacteria"],
+      "card": {
+        "type": "title",
+        "title": "Seabed Bacteria",
+        "subtitle": "Living in sediments"
+      }
+    },
+    {
+      "id": "v080",
+      "kind": "drawing",
+      "drawing_subject": "an atmospheric shield protecting a planet from rays",
+      "card": {
+        "type": "title",
+        "title": "Atmospheric Shield",
+        "subtitle": "Stellar distance required"
+      }
+    },
+    {
+      "id": "v081",
+      "kind": "drawing",
+      "drawing_subject": "gamma rays converting gas molecules into nitrogen oxides",
+      "card": {
+        "type": "flow",
+        "title": "Ozone Depletion Process",
+        "steps": [
+          "Gamma rays convert gas",
+          "Nitrogen oxides form",
+          "Ozone layer depletes"
+        ]
+      }
+    },
+    {
+      "id": "v082",
+      "kind": "photo",
+      "photo_subject": "Earth horizon with atmosphere glow",
+      "photo_queries": ["Earth atmosphere balance", "planet horizon"],
+      "card": {
+        "type": "title",
+        "title": "Delicate Balance",
+        "subtitle": "Protecting our planet"
+      }
+    }
+  ]
+}

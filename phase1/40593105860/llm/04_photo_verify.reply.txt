@@ -1,0 +1,202 @@
+{
+  "checks": [
+    {
+      "n": 1,
+      "seen": "A full view of planet Earth from space, showing the African continent and surrounding oceans.",
+      "fits": true,
+      "reason": "The image shows Earth seen from space, perfectly matching the narration."
+    },
+    {
+      "n": 2,
+      "seen": "A colorful nebula in outer space, filled with glowing gas, filaments, and scattered stars.",
+      "fits": true,
+      "reason": "The nebula fits the description of a supernova remnant."
+    },
+    {
+      "n": 3,
+      "seen": "An artistic illustration of a brown planet next to a debris disk orbiting a bright star in space.",
+      "fits": false,
+      "reason": "The narration asks for an exploding white dwarf star, but this shows a generic planet and debris disk."
+    },
+    {
+      "n": 4,
+      "seen": "A dense cosmic region of glowing green and dark nebulae studded with bright blue stars.",
+      "fits": true,
+      "reason": "The image clearly shows interstellar gas clouds and nebulae."
+    },
+    {
+      "n": 5,
+      "seen": "A view from space showing the curved horizon of Earth below a dark starry sky and a solar panel.",
+      "fits": false,
+      "reason": "The narration calls for a starry night sky, but this prominently features Earth's horizon and a solar panel."
+    },
+    {
+      "n": 6,
+      "seen": "A night landscape showing dark mountain peaks under a brilliant starry sky with the Milky Way galaxy arching across it, and a small yellow tent with a camper.",
+      "fits": true,
+      "reason": "The Milky Way galaxy is prominently visible in the night sky."
+    },
+    {
+      "n": 7,
+      "seen": "A grayscale view of intricate, parallel planetary rings with a small moonlet visible.",
+      "fits": false,
+      "reason": "Narration expects a bright star, but planetary rings are shown."
+    },
+    {
+      "n": 8,
+      "seen": "A dark field of space with a few scattered white stars against a black background.",
+      "fits": false,
+      "reason": "Narration asks for the Betelgeuse star in Orion, but this is a generic star field."
+    },
+    {
+      "n": 9,
+      "seen": "A composite deep-field view of space showing numerous distant galaxies and stars of various shapes.",
+      "fits": true,
+      "reason": "The image shows distant galaxies as expected."
+    },
+    {
+      "n": 10,
+      "seen": "A multi-panel line chart showing normalized TESS flux over time for IK Pegasi, complete with axes and date labels.",
+      "fits": true,
+      "reason": "The line chart correctly depicts data for the binary star system IK Pegasi."
+    },
+    {
+      "n": 11,
+      "seen": "A completely blank white image.",
+      "fits": false,
+      "reason": "A blank white image does not show cosmic rays."
+    },
+    {
+      "n": 12,
+      "seen": "A digital illustration of an orbiting space telescope with gold solar panels and visible beam paths.",
+      "fits": false,
+      "reason": "Narration is about X-rays and gamma rays, but an illustration of a generic space telescope is shown."
+    },
+    {
+      "n": 13,
+      "seen": "A globe showing atmospheric data over Antarctica, depicted with color-coded contours from green to blue and purple.",
+      "fits": true,
+      "reason": "The image effectively depicts the Earth's ozone layer/atmospheric data from space."
+    },
+    {
+      "n": 14,
+      "seen": "A glowing orange 3D globe representing carbon dioxide concentrations, accompanied by line charts on the left and Spanish text captions.",
+      "fits": false,
+      "reason": "Includes foreign text captions and is about carbon dioxide, not scientific research computers."
+    },
+    {
+      "n": 15,
+      "seen": "A starry celestial region with glowing red nebulae clouds and various scattered stars.",
+      "fits": true,
+      "reason": "The nebula fits the context of supernova 1987A."
+    },
+    {
+      "n": 16,
+      "seen": "An illustration of a bright white star surrounded by a dark disk with ring structures and a rocky body at the edge.",
+      "fits": true,
+      "reason": "Fits the description of a dim white dwarf star with surrounding debris."
+    },
+    {
+      "n": 17,
+      "seen": "Three representations of an ozone molecule, showing a space-filling 3D model, a ball-and-stick model, and a Lewis structure diagram with formal charges.",
+      "fits": true,
+      "reason": "Clearly shows ozone molecules as described by the narration context."
+    },
+    {
+      "n": 18,
+      "seen": "A dark photo showing an orange rectangular block and a faint blue glowing light feature on a dark surface.",
+      "fits": false,
+      "reason": "Does not show sunlight shining through clouds."
+    },
+    {
+      "n": 19,
+      "seen": "A grayscale image of an irregularly shaped asteroid floating against a completely black background.",
+      "fits": false,
+      "reason": "Narration relates to sunlight hitting Earth's surface, but an asteroid is shown."
+    },
+    {
+      "n": 20,
+      "seen": "A white egret standing in green foliage while holding a dark rodent in its beak.",
+      "fits": true,
+      "reason": "Shows animals in nature as mentioned in the narration."
+    },
+    {
+      "n": 21,
+      "seen": "An underwater scene showing bright coral formations in the foreground and sun rays filtering down through clear blue water.",
+      "fits": true,
+      "reason": "Clearly depicts a coral reef underwater."
+    },
+    {
+      "n": 22,
+      "seen": "A vibrant coral reef ecosystem under blue water, teeming with various colorful fish swimming above.",
+      "fits": false,
+      "reason": "Narration specifically mentions ocean surface waves, but an underwater coral scene is shown."
+    },
+    {
+      "n": 23,
+      "seen": "A satellite view of the ocean showing a swirling turquoise and blue phytoplankton bloom.",
+      "fits": true,
+      "reason": "Shows a phytoplankton bloom from a satellite/microscopic perspective."
+    },
+    {
+      "n": 24,
+      "seen": "A view from space showing the curved horizon of Earth with a glowing green aurora and starry night sky above.",
+      "fits": true,
+      "reason": "Shows the aurora borealis from space, fitting the cosmic rays context."
+    },
+    {
+      "n": 25,
+      "seen": "A large dark fossilized tooth mounted against a light wall, with a blue label below containing text in Hindi and English reading 'FOSSIL TEETH'.",
+      "fits": false,
+      "reason": "Narration discusses the end-Ordovician extinction, but this shows a generic fossil tooth with bilingual museum labels."
+    },
+    {
+      "n": 26,
+      "seen": "An educational figure featuring a diagram of ocean core sampling, jars of sediment samples, and microscopic images of foraminifera shells.",
+      "fits": true,
+      "reason": "Clearly depicts deep sea sediment core samples."
+    },
+    {
+      "n": 27,
+      "seen": "An informational graphic titled 'SUPERNOVA EXPLOSIONS MINTED THE IRON IN OUR BLOOD' with the ESA logo, illustrations, and numbered steps.",
+      "fits": true,
+      "reason": "Fits the stellar nebula and heavy elements narration."
+    },
+    {
+      "n": 28,
+      "seen": "A periodic table element tile for Iron (Fe) labeled with atomic number Z (26) and atomic mass (55.85) against a black background.",
+      "fits": false,
+      "reason": "Shows an element tile instead of an iron metal sample."
+    },
+    {
+      "n": 29,
+      "seen": "A 3D globe depicting ocean floor age through color coding, with red representing young crust and blue representing older crust.",
+      "fits": true,
+      "reason": "Depicts oceanic crust as referenced in the narration."
+    },
+    {
+      "n": 30,
+      "seen": "An aerial view of a massive ice shelf ending in a sheer cliff face over dark blue ocean water with floating icebergs.",
+      "fits": true,
+      "reason": "Shows Antarctic ice/snow relevant to ice core samples."
+    },
+    {
+      "n": 31,
+      "seen": "A scanning electron microscope image showing textured microbial structures and filaments on a dark surface.",
+      "fits": true,
+      "reason": "Shows fossilized bacteria under a microscope."
+    },
+    {
+      "n": 32,
+      "seen": "A detailed scientific diagram illustrating various marine sulfur cycle processes, chemical species, and sediment layers.",
+      "fits": true,
+      "reason": "Represents marine sediment and core processes."
+    },
+    {
+      "n": 33,
+      "seen": "A photograph taken from space showing the bright blue horizon of Earth's atmosphere over a cloudy ocean surface with sun glint.",
+      "fits": true,
+      "reason": "Shows Earth's horizon and atmosphere glow from space."
+    }
+  ]
+}

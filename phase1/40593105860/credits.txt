@@ -1,0 +1,37 @@
+Image credits:
+- "The Earth seen from Apollo 17" by NASA/Apollo 17 crew; taken by either Harrison Schmitt or Ron Evans, Public domain, via Wikimedia Commons. https://commons.wikimedia.org/wiki/File:The_Earth_seen_from_Apollo_17.jpg
+- "Crab Nebula" by NASA, ESA, J. Hester and A. Loll (Arizona State University), Public domain, via Wikimedia Commons. https://commons.wikimedia.org/wiki/File:Crab_Nebula.jpg
+- Illustration generated with Segmind-Vega (Apache-2.0): a massive star collapsing inward under intense gravity
+- Blowin in the Stellar Wind — NASA/JPL-Caltech/UCLA, NASA, public domain. https://images.nasa.gov/details/PIA14103
+- Illustration generated with Segmind-Vega (Apache-2.0): an expanding shock wave sweeping up gas and dust
+- "Milky way in Elbrus" by oliwok, CC BY 4.0, via Wikimedia Commons. https://commons.wikimedia.org/wiki/File:Milky_way_in_Elbrus.jpg
+- Illustration generated with Segmind-Vega (Apache-2.0): particles streaming across space towards a planet
+- "WFPC2 Image of Distant Galaxies (1994-52-239)" by Credit: Duccio Macchetto (ESA/STScI), Mauro Giavalisco (STScI), and NASA, Public domain, via Wikimedia Commons. https://commons.wikimedia.org/wiki/File:WFPC2_Image_of_Distant_Galaxies_(1994-52-239).jpg
+- "IKPegLightCurve" by PopePompus, CC BY-SA 4.0, via Wikimedia Commons. https://commons.wikimedia.org/wiki/File:IKPegLightCurve.png
+- Illustration generated with Segmind-Vega (Apache-2.0): two stars moving apart in space
+- Illustration generated with Segmind-Vega (Apache-2.0): gas molecules breaking apart into smaller pieces
+- Illustration generated with Segmind-Vega (Apache-2.0): molecules recombining into nitrogen oxide clusters
+- Snapshot of the Antarctic Ozone Hole 2010 — NASA (GSFC), NASA, public domain. https://images.nasa.gov/details/GSFC_20171208_Archive_e001962
+- Illustration generated with Segmind-Vega (Apache-2.0): ozone layer transforming under chemical reactions
+- The Dawn of a New Era for Supernova 1987a — NASA (GSFC), NASA, public domain. https://images.nasa.gov/details/GSFC_20171208_Archive_e000102
+- "Artist’s impression of debris around a white dwarf star" by NASA, ESA, STScI, and G. Bacon (STScI), CC BY 4.0, via Wikimedia Commons. https://commons.wikimedia.org/wiki/File:Artist%E2%80%99s_impression_of_debris_around_a_white_dwarf_star.jpg
+- Illustration generated with Segmind-Vega (Apache-2.0): a protective shield around a planet fading away
+- "Ozone-montage" by Public domainPublic domainfalsefalse This work has been released into the public domain by its author, Benjah-bmm27. This applies worldwide. In some countries this may not be legally possible; if so: Benjah-bmm27 grants anyone the right to use this work for any purpose, without any conditions, unless such conditions are required by law., Public domain, via Wikimedia Commons. https://commons.wikimedia.org/wiki/File:Ozone-montage.png
+- Illustration generated with Segmind-Vega (Apache-2.0): ultraviolet light rays piercing through a thinning atmosphere
+- Illustration generated with Segmind-Vega (Apache-2.0): a DNA double helix with a broken rung
+- "Ardea alba with prey at Sacramento National Wildlife Refuge-1670" by Frank Schulenburg, CC BY-SA 4.0, via Wikimedia Commons. https://commons.wikimedia.org/wiki/File:Ardea_alba_with_prey_at_Sacramento_National_Wildlife_Refuge-1670.jpg
+- "Coral reef with healthy corals and corals with signs of bleaching" by Unidentified NOAA photographer, Public domain, via Wikimedia Commons. https://commons.wikimedia.org/wiki/File:Coral_reef_with_healthy_corals_and_corals_with_signs_of_bleaching.png
+- Phytoplankton bloom off Newfoundland — NASA (GSFC), NASA, public domain. https://images.nasa.gov/details/GSFC_20171208_Archive_e001997
+- Illustration generated with Segmind-Vega (Apache-2.0): an ocean food web collapsing from the bottom up
+- "Iss064e024075" by NASA Johnson Space Center, Public domain, via Wikimedia Commons. https://commons.wikimedia.org/wiki/File:Iss064e024075.jpg
+- Illustration generated with Segmind-Vega (Apache-2.0): cloudy climate patterns shifting over a globe
+- Illustration generated with Segmind-Vega (Apache-2.0): prehistoric sea creatures disappearing from a seabed
+- "Sediment core collection and processing" by Moriaki Yasuhara, Huai-Hsuan May Huang, Pincelli Hull, Marina C. Rillo, Fabien L. Condamine, Derek P. Tittensor, Michal Kučera, Mark J. Costello, Seth Finnegan, Aaron O’Dea, Yuanyuan Hong, Timothy C. Bonebrake, N. Ryan McKenzie, Hideyuki Doi, Chih-Lin Wei, Yasuhiro Kubota and Erin E. Saupe. Illustrations by Simon J. Crowhurst and the Godwin Laboratory., CC BY-SA 4.0, via Wikimedia Commons. https://commons.wikimedia.org/wiki/File:Sediment_core_collection_and_processing.jpg
+- "Supernovas blast iron into interstellar space ESA506803" by European Space Agency, CC BY-SA 3.0 igo, via Wikimedia Commons. https://commons.wikimedia.org/wiki/File:Supernovas_blast_iron_into_interstellar_space_ESA506803.jpg
+- "Oceanic Crust Sphere Map1" by Earth_seafloor_crust_age_poster.gif: National Oceanic and Atmospheric Administration derivative work: Rapture2018, Public domain, via Wikimedia Commons. https://commons.wikimedia.org/wiki/File:Oceanic_Crust_Sphere_Map1.jpg
+- Thurston Island — NASA (GSFC), NASA, public domain. https://images.nasa.gov/details/GSFC_20171208_Archive_e000910
+- Mars Life? - Microscopic Tubular Structures — NASA/JSC/Stanford University, NASA, public domain. https://images.nasa.gov/details/PIA00285
+- "Biogeochemical sulfur cycle of marine sediments" by Bo Barker Jørgensen, Alyssa J. Findlay and André Pellerin, CC BY-SA 4.0, via Wikimedia Commons. https://commons.wikimedia.org/wiki/File:Biogeochemical_sulfur_cycle_of_marine_sediments.jpg
+- Illustration generated with Segmind-Vega (Apache-2.0): an atmospheric shield protecting a planet from rays
+- Illustration generated with Segmind-Vega (Apache-2.0): gamma rays converting gas molecules into nitrogen oxides
+- Earth's thin blue atmosphere traces the planet's horizon above the Pacific Ocean — NASA (JSC), NASA, public domain. https://images.nasa.gov/details/iss074e0089803

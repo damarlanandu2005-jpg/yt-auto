@@ -1,0 +1,76 @@
+{
+  "images": [
+    {
+      "n": 1,
+      "seen": "An abstract digital illustration depicting two dark planetary orbs colliding against a grey background, surrounded by white splatters and red droplets of liquid."
+    },
+    {
+      "n": 2,
+      "seen": "A symmetrical abstract design resembling a glowing star or flower with intricate white petals edged in red against a dark black background dotted with tiny white specks."
+    },
+    {
+      "n": 3,
+      "seen": "An abstract composition showing swirling grey and white smoke-like clouds erupting upwards from a dynamic, striated red formation against a black background."
+    },
+    {
+      "n": 4,
+      "seen": "An abstract black and white image capturing the curved edge of a large celestial body alongside a dense trail of light and scattered particles against a dark background."
+    },
+    {
+      "n": 5,
+      "seen": "An abstract arrangement of two bright red circular bodies connected to a central red starburst shape by thin white lines, set against a dark, starry backdrop with a small grey moon."
+    },
+    {
+      "n": 6,
+      "seen": "An abstract illustration of a mountainous terrain below a massive, glowing red celestial sphere fractured with white lightning-like streaks and surrounded by clouds and faint streaks of light."
+    },
+    {
+      "n": 7,
+      "seen": "A dense cluster of numerous small grey spheres intermixed with several prominent, smooth red spheres floating against a black background."
+    },
+    {
+      "n": 8,
+      "seen": "An abstract image showing two separated groups of clustered spheres against a black background, with one cluster predominantly solid red and the other composed of various grey and white bubbles."
+    },
+    {
+      "n": 9,
+      "seen": "An abstract monochrome illustration of a large, layered disc-like planet with a subtle red crescent detail at its center, enveloped by stylized grey clouds and a dark starry sky."
+    },
+    {
+      "n": 10,
+      "seen": "A detailed monochrome illustration of a textured, spherical planet illuminated on one side against a pitch-black background with a few faint stars."
+    },
+    {
+      "n": 11,
+      "seen": "An abstract black and white composition showing numerous fine, radial lines extending downwards from a brilliant white light source at the top center."
+    },
+    {
+      "n": 12,
+      "seen": "An abstract, curved ribbon-like structure outlined in dark ink with internal cross-hatching, featuring a small highlighted red section along its lower curve."
+    },
+    {
+      "n": 13,
+      "seen": "An abstract composition of dynamic, flowing white and grey linear brushstrokes against a dark background, accented by a glowing red streak in the middle."
+    },
+    {
+      "n": 14,
+      "seen": "An abstract underwater or biological scene rendered in monochrome with reddish-pink highlights, featuring various organic shapes, coral-like structures, and floating organisms."
+    },
+    {
+      "n": 15,
+      "seen": "A monochromatic illustration of a textured planet surrounded by a dense ring of stylized white clouds, all set against a dark background."
+    },
+    {
+      "n": 16,
+      "seen": "An abstract monochromatic marine scene depicting several unusual prehistoric fish and aquatic plants against a dark background, with one prominent fish colored vibrant red."
+    },
+    {
+      "n": 17,
+      "seen": "An abstract celestial view of a textured, cratered moon encircled by a swirling, textured ring resembling dust or debris against a dark background."
+    },
+    {
+      "n": 18,
+      "seen": "An abstract composition featuring a network of connected white spheres, a vibrant red splatter effect, and wispy organic shapes floating across a dark background."
+    }
+  ]
+}

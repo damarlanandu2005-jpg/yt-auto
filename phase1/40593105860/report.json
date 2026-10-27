@@ -1,0 +1,300 @@
+{
+  "total_seconds": 2038.48,
+  "stages_seconds": {
+    "script": 0.0,
+    "narration": 151.71,
+    "visual_plan": 74.86,
+    "photos": 163.05,
+    "drawings": 1419.95,
+    "keyframes": 31.15,
+    "segments": 122.47,
+    "assemble": 11.41,
+    "subtitles": 29.77,
+    "preview": 7.03,
+    "gate": 20.91
+  },
+  "peak_memory_mb": {
+    "python": 753.3,
+    "largest_child": 8927.8
+  },
+  "machine": {
+    "arch": "x86_64",
+    "cpus": 4,
+    "python": "3.13.17",
+    "runner": "GitHub Actions 1000000268",
+    "cpu_model": "AMD EPYC 7763 64-Core Processor",
+    "ffmpeg": "ffmpeg version n8.1.3-24-g92611900bb-20261026 Copyright (c) 2000-2026 the FFmpeg developers"
+  },
+  "voice": "kokoro",
+  "subtitle_cues": 104,
+  "whisper_words": 832,
+  "topic": "How close would an exploding star need to be to strip away Earth's protective atmosphere?",
+  "title": "How Close Can a Supernova Get Before It Destroys Earth?",
+  "words": 818,
+  "video_seconds": 393.5,
+  "visuals": 82,
+  "photos": 21,
+  "drawings": 15,
+  "cards": 46,
+  "drawing_log": {
+    "load_s": 10.9,
+    "torch": "2.14.1+cpu",
+    "diffusers": "0.42.1",
+    "skipped_for_time": [],
+    "total_s": 1407.8,
+    "asked": 18,
+    "drawn": 18,
+    "drawings_rejected": [
+      {
+        "id": "v002",
+        "title": "a huge exploding star beside a small blue planet",
+        "seen": "An abstract digital illustration depicting two dark planetary orbs colliding against a grey background, surrounded by white splatters and red droplets of liquid.",
+        "reason": "Shows two colliding planets instead of an exploding star beside a small blue planet."
+      },
+      {
+        "id": "v034",
+        "title": "gamma radiation hitting Earth upper atmosphere",
+        "seen": "An abstract illustration of a mountainous terrain below a massive, glowing red celestial sphere fractured with white lightning-like streaks and surrounded by clouds and faint streaks of light.",
+        "reason": "Shows a mountainous terrain which is a canyon/landscape instead of the upper atmosphere with radiation."
+      },
+      {
+        "id": "v057",
+        "title": "strands of genetic material misaligning",
+        "seen": "An abstract composition of dynamic, flowing white and grey linear brushstrokes against a dark background, accented by a glowing red streak in the middle.",
+        "reason": "Only shows abstract linear brushstrokes without clearly recognisable genetic material strands."
+      }
+    ],
+    "drawings_used": 15
+  },
+  "seconds_per_visual": 4.8,
+  "photo_log": {
+    "card_number_fixes": [
+      "v004: numbers ['21'] not in narration; card replaced",
+      "v005: numbers ['1'] not in narration; card replaced",
+      "v021: numbers ['1500000'] not in narration; card replaced",
+      "v044: numbers ['50'] not in narration; card replaced"
+    ],
+    "photo_slots": 33,
+    "downloaded": 33,
+    "seen": {
+      "v003": "A full view of planet Earth from space, showing the African continent and surrounding oceans.",
+      "v005": "A colorful nebula in outer space, filled with glowing gas, filaments, and scattered stars.",
+      "v007": "An artistic illustration of a brown planet next to a debris disk orbiting a bright star in space.",
+      "v009": "A dense cosmic region of glowing green and dark nebulae studded with bright blue stars.",
+      "v013": "A view from space showing the curved horizon of Earth below a dark starry sky and a solar panel.",
+      "v016": "A night landscape showing dark mountain peaks under a brilliant starry sky with the Milky Way galaxy arching across it, and a small yellow tent with a camper.",
+      "v018": "A grayscale view of intricate, parallel planetary rings with a small moonlet visible.",
+      "v019": "A dark field of space with a few scattered white stars against a black background.",
+      "v024": "A composite deep-field view of space showing numerous distant galaxies and stars of various shapes.",
+      "v029": "A multi-panel line chart showing normalized TESS flux over time for IK Pegasi, complete with axes and date labels.",
+      "v032": "A completely blank white image.",
+      "v033": "A digital illustration of an orbiting space telescope with gold solar panels and visible beam paths.",
+      "v038": "A globe showing atmospheric data over Antarctica, depicted with color-coded contours from green to blue and purple.",
+      "v045": "A glowing orange 3D globe representing carbon dioxide concentrations, accompanied by line charts on the left and Spanish text captions.",
+      "v046": "A starry celestial region with glowing red nebulae clouds and various scattered stars.",
+      "v049": "An illustration of a bright white star surrounded by a dark disk with ring structures and a rocky body at the edge.",
+      "v052": "Three representations of an ozone molecule, showing a space-filling 3D model, a ball-and-stick model, and a Lewis structure diagram with formal charges.",
+      "v053": "A dark photo showing an orange rectangular block and a faint blue glowing light feature on a dark surface.",
+      "v055": "A grayscale image of an irregularly shaped asteroid floating against a completely black background.",
+      "v058": "A white egret standing in green foliage while holding a dark rodent in its beak.",
+      "v060": "An underwater scene showing bright coral formations in the foreground and sun rays filtering down through clear blue water.",
+      "v061": "A vibrant coral reef ecosystem under blue water, teeming with various colorful fish swimming above.",
+      "v062": "A satellite view of the ocean showing a swirling turquoise and blue phytoplankton bloom.",
+      "v064": "A view from space showing the curved horizon of Earth with a glowing green aurora and starry night sky above.",
+      "v066": "A large dark fossilized tooth mounted against a light wall, with a blue label below containing text in Hindi and English reading 'FOSSIL TEETH'.",
+      "v071": "An educational figure featuring a diagram of ocean core sampling, jars of sediment samples, and microscopic images of foraminifera shells.",
+      "v072": "An informational graphic titled 'SUPERNOVA EXPLOSIONS MINTED THE IRON IN OUR BLOOD' with the ESA logo, illustrations, and numbered steps.",
+      "v073": "A periodic table element tile for Iron (Fe) labeled with atomic number Z (26) and atomic mass (55.85) against a black background.",
+      "v075": "A 3D globe depicting ocean floor age through color coding, with red representing young crust and blue representing older crust.",
+      "v077": "An aerial view of a massive ice shelf ending in a sheer cliff face over dark blue ocean water with floating icebergs.",
+      "v078": "A scanning electron microscope image showing textured microbial structures and filaments on a dark surface.",
+      "v079": "A detailed scientific diagram illustrating various marine sulfur cycle processes, chemical species, and sediment layers.",
+      "v082": "A photograph taken from space showing the bright blue horizon of Earth's atmosphere over a cloudy ocean surface with sun glint."
+    },
+    "rejected_after_looking": [
+      {
+        "id": "v007",
+        "title": "Polluted White Dwarf (Artist's Concept)",
+        "seen": "An artistic illustration of a brown planet next to a debris disk orbiting a bright star in space.",
+        "reason": "The narration asks for an exploding white dwarf star, but this shows a generic planet and debris disk."
+      },
+      {
+        "id": "v013",
+        "title": "A yellow\u2011green airglow blanketing Earth\u2019s atmosphere beneath a starry sky",
+        "seen": "A view from space showing the curved horizon of Earth below a dark starry sky and a solar panel.",
+        "reason": "The narration calls for a starry night sky, but this prominently features Earth's horizon and a solar panel."
+      },
+      {
+        "id": "v018",
+        "title": "Flickering Aldebaran #1",
+        "seen": "A grayscale view of intricate, parallel planetary rings with a small moonlet visible.",
+        "reason": "Narration expects a bright star, but planetary rings are shown."
+      },
+      {
+        "id": "v019",
+        "title": "Stars in Orion as Seen from Mars",
+        "seen": "A dark field of space with a few scattered white stars against a black background.",
+        "reason": "Narration asks for the Betelgeuse star in Orion, but this is a generic star field."
+      },
+      {
+        "id": "v032",
+        "title": "2024-(08-09)-(30-01-02) - Muons detection map",
+        "seen": "A completely blank white image.",
+        "reason": "A blank white image does not show cosmic rays."
+      },
+      {
+        "id": "v033",
+        "title": "Chandra X-ray space observatory - LightpathQ202",
+        "seen": "A digital illustration of an orbiting space telescope with gold solar panels and visible beam paths.",
+        "reason": "Narration is about X-rays and gamma rays, but an illustration of a generic space telescope is shown."
+      },
+      {
+        "id": "v045",
+        "title": "Global Atmospheric Carbon Dioxide (CO\u2082) (SVS5115 - CO2 OCO2 Comp 5760x3240 ES)",
+        "seen": "A glowing orange 3D globe representing carbon dioxide concentrations, accompanied by line charts on the left and Spanish text captions.",
+        "reason": "Includes foreign text captions and is about carbon dioxide, not scientific research computers."
+      },
+      {
+        "id": "v053",
+        "title": "First Night Image of MAHLI Calibration Target Under Ultraviolet Lights",
+        "seen": "A dark photo showing an orange rectangular block and a faint blue glowing light feature on a dark surface.",
+        "reason": "Does not show sunlight shining through clouds."
+      },
+      {
+        "id": "v055",
+        "title": "Ring Shadows on Janus",
+        "seen": "A grayscale image of an irregularly shaped asteroid floating against a completely black background.",
+        "reason": "Narration relates to sunlight hitting Earth's surface, but an asteroid is shown."
+      },
+      {
+        "id": "v061",
+        "title": "Reef habitats at Palmyra Atoll - Peerj-81-fig-3C",
+        "seen": "A vibrant coral reef ecosystem under blue water, teeming with various colorful fish swimming above.",
+        "reason": "Narration specifically mentions ocean surface waves, but an underwater coral scene is shown."
+      },
+      {
+        "id": "v066",
+        "title": "Prehistoric Animal Fossil Teeth Specimen",
+        "seen": "A large dark fossilized tooth mounted against a light wall, with a blue label below containing text in Hindi and English reading 'FOSSIL TEETH'.",
+        "reason": "Narration discusses the end-Ordovician extinction, but this shows a generic fossil tooth with bilingual museum labels."
+      },
+      {
+        "id": "v073",
+        "title": "Elemendi numbrite nimetused",
+        "seen": "A periodic table element tile for Iron (Fe) labeled with atomic number Z (26) and atomic mass (55.85) against a black background.",
+        "reason": "Shows an element tile instead of an iron metal sample."
+      }
+    ]
+  },
+  "gate": {
+    "verdict": "FLAG",
+    "not_pass": {
+      "pronunciation": "FLAG"
+    }
+  },
+  "llm_calls": [
+    {
+      "name": "visual_plan",
+      "model": "gemma-4-31b-it",
+      "prompt_chars": 11914,
+      "images": 0,
+      "status": 503,
+      "attempt": 1,
+      "error": "{\n  \"error\": {\n    \"code\": 503,\n    \"message\": \"This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.\",\n    \"status\": \"UNAVAILABLE\"\n  }\n}\n"
+    },
+    {
+      "name": "visual_plan",
+      "model": "gemini-3.5-flash-lite",
+      "prompt_chars": 11914,
+      "images": 0,
+      "status": 200,
+      "seconds": 15.1,
+      "attempts": 1,
+      "finish": "STOP",
+      "in_tokens": 3335,
+      "out_tokens": 7357,
+      "thought_tokens": null
+    },
+    {
+      "name": "photo_pick",
+      "model": "gemini-3.5-flash-lite",
+      "prompt_chars": 76343,
+      "images": 0,
+      "status": 200,
+      "seconds": 2.5,
+      "attempts": 1,
+      "finish": "STOP",
+      "in_tokens": 19467,
+      "out_tokens": 908,
+      "thought_tokens": null
+    },
+    {
+      "name": "photo_describe",
+      "model": "gemini-3.5-flash-lite",
+      "prompt_chars": 321,
+      "images": 33,
+      "status": 200,
+      "seconds": 8.8,
+      "attempts": 1,
+      "finish": "STOP",
+      "in_tokens": 36074,
+      "out_tokens": 1387,
+      "thought_tokens": null
+    },
+    {
+      "name": "photo_verify",
+      "model": "gemini-3.5-flash-lite",
+      "prompt_chars": 9043,
+      "images": 0,
+      "status": 200,
+      "seconds": 5.1,
+      "attempts": 1,
+      "finish": "STOP",
+      "in_tokens": 1995,
+      "out_tokens": 2244,
+      "thought_tokens": null
+    },
+    {
+      "name": "drawing_describe",
+      "model": "gemini-3.5-flash-lite",
+      "prompt_chars": 321,
+      "images": 18,
+      "status": 200,
+      "seconds": 6.8,
+      "attempts": 1,
+      "finish": "STOP",
+      "in_tokens": 19964,
+      "out_tokens": 892,
+      "thought_tokens": null
+    },
+    {
+      "name": "drawing_verify",
+      "model": "gemini-3.5-flash-lite",
+      "prompt_chars": 6893,
+      "images": 0,
+      "status": 200,
+      "seconds": 3.6,
+      "attempts": 1,
+      "finish": "STOP",
+      "in_tokens": 1402,
+      "out_tokens": 1323,
+      "thought_tokens": null
+    },
+    {
+      "name": "gate_editorial",
+      "model": "gemini-3.5-flash-lite",
+      "prompt_chars": 16405,
+      "images": 0,
+      "status": 200,
+      "seconds": 2.0,
+      "attempts": 1,
+      "finish": "STOP",
+      "in_tokens": 4001,
+      "out_tokens": 322,
+      "thought_tokens": null
+    }
+  ],
+  "llm_calls_ok_by_model": {
+    "gemini-3.5-flash-lite": 7
+  }
+}

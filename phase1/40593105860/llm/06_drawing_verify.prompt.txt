@@ -1,0 +1,69 @@
+[model] gemini-3.5-flash-lite
+[system]
+
+
+[user]
+Step 2 of a picture check for a science video. Someone looked at each picture WITHOUT knowing
+what it should show and described it. Decide for each image whether the picture fits.
+The pictures are ink drawings made by an AI image model, which often misses. A drawing fits if a
+viewer hearing the narration would recognise its main object(s) (a star, a planet, a blast, molecules, DNA,
+fish...). It does NOT need to show the action or process (collapsing, moving, changing): a still picture of
+the right thing is enough. It does NOT fit if it is only shapes or texture with no recognisable object, shows
+a different thing (a volcano or canyon for the atmosphere, a red diamond for a star), has text or labels, looks
+like a logo/emblem/badge/flag, or has deformed bodies.
+When unsure, answer fits = false (a chart or plain card is shown instead, which is fine).
+Copy the description into "seen".
+Image 1: described as: An abstract digital illustration depicting two dark planetary orbs colliding against a grey background, surrounded by white splatters and red droplets of liquid.
+  should show: a huge exploding star beside a small blue planet
+  narration: Do science fiction movies show a fiery blast wave sweeping our planet bare within seconds?
+Image 2: described as: A symmetrical abstract design resembling a glowing star or flower with intricate white petals edged in red against a dark black background dotted with tiny white specks.
+  should show: a massive star collapsing inward under intense gravity
+  narration: When a massive star runs out of fuel, its core collapses under immense gravitational force.
+Image 3: described as: An abstract composition showing swirling grey and white smoke-like clouds erupting upwards from a dynamic, striated red formation against a black background.
+  should show: an expanding shock wave sweeping up gas and dust
+  narration: This creates an expanding shock wave that sweeps up a shell of interstellar gas and dust.
+Image 4: described as: An abstract black and white image capturing the curved edge of a large celestial body alongside a dense trail of light and scattered particles against a dark background.
+  should show: particles streaming across space towards a planet
+  narration: When it detonates, its particle stream will reach
+Image 5: described as: An abstract arrangement of two bright red circular bodies connected to a central red starburst shape by thin white lines, set against a dark, starry backdrop with a small grey moon.
+  should show: two stars moving apart in space
+  narration: is currently moving away to a safe distance.
+Image 6: described as: An abstract illustration of a mountainous terrain below a massive, glowing red celestial sphere fractured with white lightning-like streaks and surrounded by clouds and faint streaks of light.
+  should show: gamma radiation hitting Earth upper atmosphere
+  narration: When gamma radiation hits the upper atmosphere, it causes chemical reactions.
+Image 7: described as: A dense cluster of numerous small grey spheres intermixed with several prominent, smooth red spheres floating against a black background.
+  should show: gas molecules breaking apart into smaller pieces
+  narration: Radiolysis breaks apart these common gas molecules
+Image 8: described as: An abstract image showing two separated groups of clustered spheres against a black background, with one cluster predominantly solid red and the other composed of various grey and white bubbles.
+  should show: molecules recombining into nitrogen oxide clusters
+  narration: and recombines them into harmful nitrogen oxides.
+Image 9: described as: An abstract monochrome illustration of a large, layered disc-like planet with a subtle red crescent detail at its center, enveloped by stylized grey clouds and a dark starry sky.
+  should show: ozone layer transforming under chemical reactions
+  narration: The atmosphere's protective ozone composition is transformed by these reactions.
+Image 10: described as: A detailed monochrome illustration of a textured, spherical planet illuminated on one side against a pitch-black background with a few faint stars.
+  should show: a protective shield around a planet fading away
+  narration: Does that distance boundary mark where atmospheric protection collapses?
+Image 11: described as: An abstract black and white composition showing numerous fine, radial lines extending downwards from a brilliant white light source at the top center.
+  should show: ultraviolet light rays piercing through a thinning atmosphere
+  narration: When stratospheric ozone levels drop, intense ultraviolet
+Image 12: described as: An abstract, curved ribbon-like structure outlined in dark ink with internal cross-hatching, featuring a small highlighted red section along its lower curve.
+  should show: a DNA double helix with a broken rung
+  narration: This extreme radiation damages cellular DNA, causing pyrimidine
+Image 13: described as: An abstract composition of dynamic, flowing white and grey linear brushstrokes against a dark background, accented by a glowing red streak in the middle.
+  should show: strands of genetic material misaligning
+  narration: bases to form transcription errors during replication.
+Image 14: described as: An abstract underwater or biological scene rendered in monochrome with reddish-pink highlights, featuring various organic shapes, coral-like structures, and floating organisms.
+  should show: an ocean food web collapsing from the bottom up
+  narration: Their collapse would seriously damage the foundation of the ocean food web.
+Image 15: described as: A monochromatic illustration of a textured planet surrounded by a dense ring of stylized white clouds, all set against a dark background.
+  should show: cloudy climate patterns shifting over a globe
+  narration: alter climate patterns and cool the global temperature.
+Image 16: described as: An abstract monochromatic marine scene depicting several unusual prehistoric fish and aquatic plants against a dark background, with one prominent fish colored vibrant red.
+  should show: prehistoric sea creatures disappearing from a seabed
+  narration: That prehistoric cataclysm resulted in the death of
+Image 17: described as: An abstract celestial view of a textured, cratered moon encircled by a swirling, textured ring resembling dust or debris against a dark background.
+  should show: an atmospheric shield protecting a planet from rays
+  narration: So how close would a dying star need to be to wipe out our protective atmospheric shield?
+Image 18: described as: An abstract composition featuring a network of connected white spheres, a vibrant red splatter effect, and wispy organic shapes floating across a dark background.
+  should show: gamma rays converting gas molecules into nitrogen oxides
+  narration: Gamma rays convert nitrogen and oxygen into nitrogen oxides, depleting the ozone layer.

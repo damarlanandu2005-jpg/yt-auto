@@ -1,0 +1,30 @@
+[diag] machine: {'arch': 'x86_64', 'cpus': 4, 'python': '3.13.17', 'runner': 'GitHub Actions 1000000268', 'cpu_model': 'AMD EPYC 7763 64-Core Processor', 'ffmpeg': 'ffmpeg version n8.1.3-24-g92611900bb-20261026 Copyright (c) 2000-2026 the FFmpeg developers'}
+[resume] using saved plan.json
+[resume] using saved sources.json
+[resume] using saved script_draft.json
+[script] 'How Close Can a Supernova Get Before It Destroys Earth?': 818 words; fact-check: 36/74 passed first time, 26 fixed, 12 dropped
+[bench] script: 0.0 s
+[0;93m2026-10-27 22:15:13.514979783 [W:onnxruntime:Default, device_discovery.cc:95 GetPciBusId] Skipping pci_bus_id for PCI path at "/sys/devices/LNXSYSTM:00/LNXSYBUS:00/ACPI0004:00/MSFT1000:00/5620e0c7-8062-4dce-aeb7-520c7ef76171" because filename "5620e0c7-8062-4dce-aeb7-520c7ef76171" did not match expected pattern of [0-9a-f]+:[0-9a-f]+:[0-9a-f]+[.][0-9a-f]+[m
+[bench] narration: 151.71 s
+[llm] visual_plan: gemma-4-31b-it unavailable (HTTP 503 (busy)); trying next model
+[bench] visual_plan: 74.86 s
+[bench] photos: 163.05 s
+[drawings] asked 18, drawn 18, used after looking 15
+[bench] drawings: 1419.95 s
+[bench] keyframes: 31.15 s
+[bench] segments: 122.47 s
+[bench] assemble: 11.41 s
+[bench] subtitles: 29.77 s
+[bench] preview: 7.03 s
+[gate] FLAG: {'pronunciation': 'FLAG'}
+[bench] gate: 20.91 s
+{
+  "title": "How Close Can a Supernova Get Before It Destroys Earth?",
+  "words": 818,
+  "video_seconds": 393.5,
+  "visuals": 82,
+  "photos": 21,
+  "drawings": 15,
+  "cards": 46,
+  "seconds_per_visual": 4.8
+}

@@ -1,0 +1,34 @@
+{
+  "checks": [
+    {
+      "check": "hook_question",
+      "ok": true,
+      "reason": "The first 30 seconds explicitly ask if a dying star could explode near our solar system and rip Earth's atmosphere away."
+    },
+    {
+      "check": "hook_why",
+      "ok": true,
+      "reason": "The script explicitly asks why this question matters when considering terrestrial life and the essential nature of our oxygen atmosphere."
+    },
+    {
+      "check": "title_promise",
+      "ok": true,
+      "reason": "The script directly answers how close a supernova must be to destroy atmospheric protection (33 light-years) fulfilling the title's premise."
+    },
+    {
+      "check": "scene_relevance",
+      "ok": true,
+      "reason": "All text cards accurately reflect the narration at that moment without generic or unrelated content."
+    },
+    {
+      "check": "sensitive",
+      "ok": true,
+      "reason": "There is no financial, legal, or health advice, nor any accusations against real named persons or companies."
+    },
+    {
+      "check": "adds_value",
+      "ok": true,
+      "reason": "The video successfully explains connections such as how gamma rays create nitrogen oxides, deplete ozone, and subsequently cause biological and ecological damage."
+    }
+  ]
+}

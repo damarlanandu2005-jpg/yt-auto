@@ -1,0 +1,70 @@
+{
+ "load_s": 10.9,
+ "torch": "2.14.1+cpu",
+ "diffusers": "0.42.1",
+ "seconds": {
+  "v002": 78.0,
+  "v006": 77.3,
+  "v011": 77.4,
+  "v022": 77.4,
+  "v030": 77.4,
+  "v034": 77.2,
+  "v035": 77.3,
+  "v036": 77.2,
+  "v039": 77.1,
+  "v050": 77.1,
+  "v054": 77.4,
+  "v056": 77.5,
+  "v057": 77.5,
+  "v063": 78.4,
+  "v065": 78.3,
+  "v067": 78.3,
+  "v080": 77.9,
+  "v081": 78.3
+ },
+ "skipped_for_time": [],
+ "total_s": 1407.8,
+ "asked": 18,
+ "drawn": 18,
+ "drawings_seen": {
+  "v002": "An abstract digital illustration depicting two dark planetary orbs colliding against a grey background, surrounded by white splatters and red droplets of liquid.",
+  "v006": "A symmetrical abstract design resembling a glowing star or flower with intricate white petals edged in red against a dark black background dotted with tiny white specks.",
+  "v011": "An abstract composition showing swirling grey and white smoke-like clouds erupting upwards from a dynamic, striated red formation against a black background.",
+  "v022": "An abstract black and white image capturing the curved edge of a large celestial body alongside a dense trail of light and scattered particles against a dark background.",
+  "v030": "An abstract arrangement of two bright red circular bodies connected to a central red starburst shape by thin white lines, set against a dark, starry backdrop with a small grey moon.",
+  "v034": "An abstract illustration of a mountainous terrain below a massive, glowing red celestial sphere fractured with white lightning-like streaks and surrounded by clouds and faint streaks of light.",
+  "v035": "A dense cluster of numerous small grey spheres intermixed with several prominent, smooth red spheres floating against a black background.",
+  "v036": "An abstract image showing two separated groups of clustered spheres against a black background, with one cluster predominantly solid red and the other composed of various grey and white bubbles.",
+  "v039": "An abstract monochrome illustration of a large, layered disc-like planet with a subtle red crescent detail at its center, enveloped by stylized grey clouds and a dark starry sky.",
+  "v050": "A detailed monochrome illustration of a textured, spherical planet illuminated on one side against a pitch-black background with a few faint stars.",
+  "v054": "An abstract black and white composition showing numerous fine, radial lines extending downwards from a brilliant white light source at the top center.",
+  "v056": "An abstract, curved ribbon-like structure outlined in dark ink with internal cross-hatching, featuring a small highlighted red section along its lower curve.",
+  "v057": "An abstract composition of dynamic, flowing white and grey linear brushstrokes against a dark background, accented by a glowing red streak in the middle.",
+  "v063": "An abstract underwater or biological scene rendered in monochrome with reddish-pink highlights, featuring various organic shapes, coral-like structures, and floating organisms.",
+  "v065": "A monochromatic illustration of a textured planet surrounded by a dense ring of stylized white clouds, all set against a dark background.",
+  "v067": "An abstract monochromatic marine scene depicting several unusual prehistoric fish and aquatic plants against a dark background, with one prominent fish colored vibrant red.",
+  "v080": "An abstract celestial view of a textured, cratered moon encircled by a swirling, textured ring resembling dust or debris against a dark background.",
+  "v081": "An abstract composition featuring a network of connected white spheres, a vibrant red splatter effect, and wispy organic shapes floating across a dark background."
+ },
+ "drawings_rejected": [
+  {
+   "id": "v002",
+   "title": "a huge exploding star beside a small blue planet",
+   "seen": "An abstract digital illustration depicting two dark planetary orbs colliding against a grey background, surrounded by white splatters and red droplets of liquid.",
+   "reason": "Shows two colliding planets instead of an exploding star beside a small blue planet."
+  },
+  {
+   "id": "v034",
+   "title": "gamma radiation hitting Earth upper atmosphere",
+   "seen": "An abstract illustration of a mountainous terrain below a massive, glowing red celestial sphere fractured with white lightning-like streaks and surrounded by clouds and faint streaks of light.",
+   "reason": "Shows a mountainous terrain which is a canyon/landscape instead of the upper atmosphere with radiation."
+  },
+  {
+   "id": "v057",
+   "title": "strands of genetic material misaligning",
+   "seen": "An abstract composition of dynamic, flowing white and grey linear brushstrokes against a dark background, accented by a glowing red streak in the middle.",
+   "reason": "Only shows abstract linear brushstrokes without clearly recognisable genetic material strands."
+  }
+ ],
+ "drawings_used": 15
+}
