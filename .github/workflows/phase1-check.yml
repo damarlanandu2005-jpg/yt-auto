@@ -39,8 +39,8 @@ jobs:
         timeout-minutes: 5
         env:
           GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
-          # Only secret NAMES are printed/saved; values stay masked and are used to test each key.
-          ALL_SECRETS: ${{ toJSON(secrets) }}
+          # Each Gemini key to test goes here as KEY_<secret name>. Only names are printed/saved.
+          KEY_GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
           FULL_CHECK: ${{ inputs.full }}
         run: python phase1/check_apis.py out/check
 

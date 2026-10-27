@@ -182,11 +182,8 @@ def keys() -> dict:
     """
     import hashlib
 
-    try:
-        secrets = json.loads(os.environ.get("ALL_SECRETS") or "{}")
-    except ValueError:
-        secrets = {}
-    res = {"secret_names": sorted(k for k in secrets if k != "github_token"), "keys": {}}
+    secrets = {k[4:]: v for k, v in os.environ.items() if k.startswith("KEY_") and v}
+    res = {"secret_names": sorted(secrets), "keys": {}}
     for name, value in secrets.items():
         if not isinstance(value, str) or not value.startswith("AIza"):
             continue  # not a Google API key
