@@ -1,0 +1,38 @@
+[model] gemini-3.5-flash-lite
+[system]
+
+
+[user]
+You review a finished explainer video before a human checks it. Judge each item strictly,
+using only what is given. Answer every check.
+
+- hook_question: do the first 30 seconds clearly state the question the video answers?
+- hook_why: do the first 30 seconds also say why the question matters to the viewer?
+- title_promise: does the script actually deliver what the title promises (no promise the video doesn't keep,
+  no claim the video contradicts)?
+- scene_relevance: does each text card below show something the narration at that moment is saying? List any card
+  ids that are generic or unrelated in the reason.
+- sensitive: is there financial, legal or health ADVICE, or an accusation against a real named person or company?
+  ok=true means none.
+- adds_value: does the video explain and connect ideas (examples, comparisons, why), rather than only listing
+  facts in a new order?
+
+TITLE: How GPS Finds Your Location Using Satellite Timestamps
+QUESTION (from the brief): How can your phone find your exact location on Earth just by listening to the time?
+FIRST 30 SECONDS: How can your smartphone pinpoint your exact location anywhere on Earth just by receiving silent radio signals? In reality, the Global Positioning System is a completely one-way passive broadcast network. GPS operates independently of telephone or Internet reception. Owned by the United States Space Force, the satellite system is freely accessible to anyone. The constellation consists of at least 24 active satellites arranged across six distinct orbital planes.
+
+SCRIPT:
+## The passive listener: why GPS satellites do not track you or receive signals from your phone
+How can your smartphone pinpoint your exact location anywhere on Earth just by receiving silent radio signals? In reality, the Global Positioning System is a completely one-way passive broadcast network. GPS operates independently of telephone or Internet reception. Owned by the United States Space Force, the satellite system is freely accessible to anyone. The constellation consists of at least 24 active satellites arranged across six distinct orbital planes. The first prototype spacecraft went into orbit in 1978 before reaching full operational status in 1995. Each satellite completes two full orbits around Earth during every sidereal day. As they orbit, these satellites continuously broadcast radio signals containing their exact position and precise time. Your phone acts as a silent receiver, quietly catching these incoming radio transmissions from the sky.
+## Turning time into space: how measuring radio travel times reveals your distance from an orbit
+To figure out your exact location, your device converts time measurements directly into distance measurements. GPS satellites circle the Earth in medium orbit at an altitude of approximately 20,200 kilometres. Radio signals broadcast from these satellites travel through space at the constant speed of light. Crucially, the speed of radio waves is constant and completely independent of the satellite's speed. Each satellite continually broadcasts a pseudorandom sequence of ones and zeros known to the receiver. The transmission message includes a timestamp recording the exact time the signal left the satellite. When your device receives the signal, it records the arrival time using its own internal clock. By subtracting the transmission time from the arrival time, the receiver calculates the signal delay. Multiplying this time value by the speed of light yields a pseudorange rather than an exact distance. Because light moves so fast, a tiny timing offset of just 10 nanoseconds causes a 3 metre distance error.
+
+TEXT CARDS SHOWN:
+v001: narration: How can your smartphone pinpoint your exact location | card: {"type": "title", "title": "How GPS Finds Your Location", "subtitle": "Using Satellite Timestamps"}
+v004: narration: GPS operates independently of telephone or Internet reception. | card: {"type": "compare", "title": "GPS Connectivity", "left_title": "GPS", "left_points": ["Passive broadcast", "No internet needed"], "right_title": "Cellular", "ri
+v006: narration: The constellation consists of at least 24 active | card: {"type": "stat", "title": "Satellite Count", "value": "24", "label": "Active Satellites"}
+v009: narration: 1978 before reaching full operational status in 1995. | card: {"type": "timeline", "title": "GPS Deployment", "events": [{"when": "1978", "label": "Prototype orbit"}, {"when": "1995", "label": "Full operation"}]}
+v012: narration: signals containing their exact position and precise time. | card: {"type": "bullets", "title": "Signal Data", "items": ["Exact position", "Precise time"]}
+v015: narration: To figure out your exact location, your device | card: {"type": "title", "title": "Turning Time into Space"}
+v018: narration: at an altitude of approximately 20,200 kilometres. | card: {"type": "stat", "title": "Satellite Altitude", "value": "20,200 km", "label": "Average Height"}
+v028: narration: just 10 nanoseconds causes a 3 metre distance error. | card: {"type": "stat", "title": "Timing Precision", "value": "3 m", "label": "Distance Error", "note": "per 10 nanoseconds"}

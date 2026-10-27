@@ -1,0 +1,28 @@
+{
+  "checks": [
+    {
+      "n": 1,
+      "seen": "a beam of light",
+      "fits": true,
+      "reason": "The image clearly shows a streak of light traveling across a dark space, fitting the narration well."
+    },
+    {
+      "n": 2,
+      "seen": "two clock-like circular dials side by side",
+      "fits": true,
+      "reason": "The image clearly depicts two round clock faces side by side with hands and markings, fitting the narration."
+    },
+    {
+      "n": 3,
+      "seen": "a complex red and white symbol inside a circle",
+      "fits": true,
+      "reason": "The design resembles a stylized emblem or logo with geometric shapes, though not precisely the official US Space Force logo, it represents a symbolic insignia clearly enough without garbled text."
+    },
+    {
+      "n": 4,
+      "seen": "an analog clock face with hands",
+      "fits": false,
+      "reason": "The narration asks for a digital clock, but this image displays an analog clock with hands and numbers."
+    }
+  ]
+}

@@ -1,0 +1,21 @@
+Image credits:
+- "Smartphone Use" by Océanos y dados, CC0, via Wikimedia Commons. https://commons.wikimedia.org/wiki/File:Smartphone_Use.jpg
+- Earth Observations taken by STS-127 Crew — NASA (JSC), NASA, public domain. https://images.nasa.gov/details/s127e012776
+- Illustration generated with Segmind-Vega (Apache-2.0): US Space Force logo
+- "The Earth seen from Apollo 17" by NASA/Apollo 17 crew; taken by either Harrison Schmitt or Ron Evans, Public domain, via Wikimedia Commons. https://commons.wikimedia.org/wiki/File:The_Earth_seen_from_Apollo_17.jpg
+- Rocket Lab PREFIRE-1 Launch — Rocket Lab, NASA, public domain. https://images.nasa.gov/details/KSC-20240525-PH-RKL01_0005
+- View of the Syncom IV satellite in orbit over the earth — NASA (JSC), NASA, public domain. https://images.nasa.gov/details/41d-32-0067
+- "Erdfunkstelle Raisting 2" by Richard Bartz, Munich aka Makro Freak, CC BY-SA 2.5, via Wikimedia Commons. https://commons.wikimedia.org/wiki/File:Erdfunkstelle_Raisting_2.jpg
+- "Smartphone di varie marche" by The Tech Cheat, CC BY-SA 4.0, via Wikimedia Commons. https://commons.wikimedia.org/wiki/File:Smartphone_di_varie_marche.png
+- "DTH Satellite Dish - India - IMG 3474" by VicFic2006, CC BY-SA 4.0, via Wikimedia Commons. https://commons.wikimedia.org/wiki/File:DTH_Satellite_Dish_-_India_-_IMG_3474.jpg
+- "Magellan Triton 2000 handheld GPS receiver 02" by Siarhei Besarab, CC BY-SA 4.0, via Wikimedia Commons. https://commons.wikimedia.org/wiki/File:Magellan_Triton_2000_handheld_GPS_receiver_02.jpg
+- Earth Observation from the International Space Station — NASA (JSC), NASA, public domain. https://images.nasa.gov/details/iss045e013851
+- Illustration generated with Segmind-Vega (Apache-2.0): a beam of light traveling through space
+- "GPS Satellite NASA art-iif" by NASA, Public domain, via Wikimedia Commons. https://commons.wikimedia.org/wiki/File:GPS_Satellite_NASA_art-iif.jpg
+- "Printed Circuit Board 2" by Balurbala, CC BY-SA 3.0, via Wikimedia Commons. https://commons.wikimedia.org/wiki/File:Printed_Circuit_Board_2.jpg
+- "BCM4750GpsChip" by GpsFrank, CC BY-SA 4.0, via Wikimedia Commons. https://commons.wikimedia.org/wiki/File:BCM4750GpsChip.jpg
+- Deep Space Atomic Clock Hardware — NASA/JPL-Caltech, NASA, public domain. https://images.nasa.gov/details/PIA24573
+- Illustration generated with Segmind-Vega (Apache-2.0): two clocks side by side
+- "Sharp Scientific Calculator" by Matti Blume, CC BY-SA 2.0, via Wikimedia Commons. https://commons.wikimedia.org/wiki/File:Sharp_Scientific_Calculator.jpg
+- GOES-U Unboxing, Lift to Vertical, Move to Stand — NASA/Ben Smegelsky, NASA, public domain. https://images.nasa.gov/details/KSC-20240124-PH-JBS01_0100
+- "Beidou atomic clock at CSTM 02" by Shujianyang, CC BY-SA 4.0, via Wikimedia Commons. https://commons.wikimedia.org/wiki/File:Beidou_atomic_clock_at_CSTM_02.jpg

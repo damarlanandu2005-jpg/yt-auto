@@ -1,0 +1,62 @@
+[model] gemma-4-31b-it
+[system]
+
+
+[user]
+Video: How GPS Finds Your Location Using Satellite Timestamps
+Plan one visual for each slot of narration below. The viewer sees it while hearing that text.
+Rules:
+- Real photos first: use kind=photo for at least 65 per cent of slots, whenever a real photo could show the
+  thing being talked about (objects, places, spacecraft, machines, nature, historical photos).
+  Ask for SIMPLE subjects an archive surely has ("a handheld GPS receiver", "a rocket launch", "an atomic
+  clock"), never a detailed scene ("a hiker with a GPS in remote mountains with no signal"). A photo of the
+  object being discussed is better than a text card.
+- Use kind=drawing (at most 12 in the whole video) for an idea no real photo can show: an invisible
+  process, a view nobody photographed, a comparison of two things (e.g. "a radio wave travelling from a satellite
+  down to a phone", "two clocks side by side, one in orbit and one on the ground"). drawing_subject: one simple
+  scene of objects. No people's faces or hands, no text, no numbers, no maps with labels.
+- Use kind=card when a number, comparison, process or list is the point, or at scene starts (title card).
+- The first slot is a title card with the video title.
+- Every number on a card MUST appear in that slot's text or earlier in the same scene. Never invent data.
+- Vary: never the same card type twice in a row; never more than 2 cards in a row.
+- Text cards are the last choice: at most one bullets card per scene, and a bare title card only at scene starts.
+  Prefer stat, bars, timeline, flow or compare when a card is needed.
+- For kind=photo and kind=drawing still give a fallback card (used if no good picture is made).
+Card types (all text short; big and readable on a phone):
+- title: title (+ subtitle). Use for scene openings.
+- stat: value (a number with unit, e.g. "20,200 km") + label (+ note).
+- bullets: title + 2-4 items (each under 6 words).
+- flow: title + 2-5 steps (cause -> effect, process).
+- bars: title + labels + values (+ unit). Compare 2-6 quantities.
+- timeline: title + 2-5 events {when, label}.
+- compare: title + left_title/left_points vs right_title/right_points.
+
+SLOTS:
+v001 [3.4s] (scene: The passive listener: why GPS satellites do not track you or receive signals from your phone, SCENE START) How can your smartphone pinpoint your exact location
+v002 [4.2s] (scene: The passive listener: why GPS satellites do not track you or receive signals from your phone) anywhere on Earth just by receiving silent radio signals?
+v003 [6.6s] (scene: The passive listener: why GPS satellites do not track you or receive signals from your phone) In reality, the Global Positioning System is a completely one-way passive broadcast network.
+v004 [5.0s] (scene: The passive listener: why GPS satellites do not track you or receive signals from your phone) GPS operates independently of telephone or Internet reception.
+v005 [6.3s] (scene: The passive listener: why GPS satellites do not track you or receive signals from your phone) Owned by the United States Space Force, the satellite system is freely accessible to anyone.
+v006 [3.8s] (scene: The passive listener: why GPS satellites do not track you or receive signals from your phone) The constellation consists of at least 24 active
+v007 [3.8s] (scene: The passive listener: why GPS satellites do not track you or receive signals from your phone) satellites arranged across six distinct orbital planes.
+v008 [4.7s] (scene: The passive listener: why GPS satellites do not track you or receive signals from your phone) The first prototype spacecraft went into orbit in
+v009 [5.1s] (scene: The passive listener: why GPS satellites do not track you or receive signals from your phone) 1978 before reaching full operational status in 1995.
+v010 [5.4s] (scene: The passive listener: why GPS satellites do not track you or receive signals from your phone) Each satellite completes two full orbits around Earth during every sidereal day.
+v011 [4.0s] (scene: The passive listener: why GPS satellites do not track you or receive signals from your phone) As they orbit, these satellites continuously broadcast radio
+v012 [4.5s] (scene: The passive listener: why GPS satellites do not track you or receive signals from your phone) signals containing their exact position and precise time.
+v013 [3.3s] (scene: The passive listener: why GPS satellites do not track you or receive signals from your phone) Your phone acts as a silent receiver, quietly
+v014 [4.7s] (scene: The passive listener: why GPS satellites do not track you or receive signals from your phone) catching these incoming radio transmissions from the sky.
+v015 [3.6s] (scene: Turning time into space: how measuring radio travel times reveals your distance from an orbit, SCENE START) To figure out your exact location, your device
+v016 [3.6s] (scene: Turning time into space: how measuring radio travel times reveals your distance from an orbit) converts time measurements directly into distance measurements.
+v017 [4.2s] (scene: Turning time into space: how measuring radio travel times reveals your distance from an orbit) GPS satellites circle the Earth in medium orbit
+v018 [4.1s] (scene: Turning time into space: how measuring radio travel times reveals your distance from an orbit) at an altitude of approximately 20,200 kilometres.
+v019 [6.6s] (scene: Turning time into space: how measuring radio travel times reveals your distance from an orbit) Radio signals broadcast from these satellites travel through space at the constant speed of light.
+v020 [6.7s] (scene: Turning time into space: how measuring radio travel times reveals your distance from an orbit) Crucially, the speed of radio waves is constant and completely independent of the satellite's speed.
+v021 [3.7s] (scene: Turning time into space: how measuring radio travel times reveals your distance from an orbit) Each satellite continually broadcasts a pseudorandom sequence of
+v022 [3.7s] (scene: Turning time into space: how measuring radio travel times reveals your distance from an orbit) ones and zeros known to the receiver.
+v023 [6.7s] (scene: Turning time into space: how measuring radio travel times reveals your distance from an orbit) The transmission message includes a timestamp recording the exact time the signal left the satellite.
+v024 [6.7s] (scene: Turning time into space: how measuring radio travel times reveals your distance from an orbit) When your device receives the signal, it records the arrival time using its own internal clock.
+v025 [6.5s] (scene: Turning time into space: how measuring radio travel times reveals your distance from an orbit) By subtracting the transmission time from the arrival time, the receiver calculates the signal delay.
+v026 [6.8s] (scene: Turning time into space: how measuring radio travel times reveals your distance from an orbit) Multiplying this time value by the speed of light yields a pseudorange rather than an exact distance.
+v027 [3.9s] (scene: Turning time into space: how measuring radio travel times reveals your distance from an orbit) Because light moves so fast, a tiny timing offset of
+v028 [5.0s] (scene: Turning time into space: how measuring radio travel times reveals your distance from an orbit) just 10 nanoseconds causes a 3 metre distance error.

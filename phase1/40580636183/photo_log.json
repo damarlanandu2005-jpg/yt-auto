@@ -1,0 +1,63 @@
+{
+ "card_number_fixes": [
+  "v019: numbers ['299792'] not in narration; card replaced"
+ ],
+ "photo_slots": 19,
+ "candidates": {
+  "v002": 12,
+  "v003": 12,
+  "v005": 12,
+  "v007": 12,
+  "v008": 12,
+  "v010": 12,
+  "v011": 12,
+  "v012": 12,
+  "v013": 12,
+  "v014": 12,
+  "v016": 11,
+  "v017": 12,
+  "v020": 12,
+  "v021": 12,
+  "v022": 12,
+  "v023": 8,
+  "v025": 12,
+  "v026": 12,
+  "v027": 11
+ },
+ "downloaded": 19,
+ "seen": {
+  "v002": "a smartphone",
+  "v003": "a GPS satellite in space",
+  "v005": "US Space Force logo and explanation",
+  "v007": "Earth from space",
+  "v008": "a rocket launch",
+  "v010": "a satellite in orbit",
+  "v011": "a large satellite antenna",
+  "v012": "an old electronic device with glowing tubes",
+  "v013": "multiple smartphones",
+  "v014": "a satellite dish on a rooftop",
+  "v016": "a handheld GPS receiver",
+  "v017": "Earth at night from space",
+  "v020": "a GPS satellite rendering",
+  "v021": "a circuit board",
+  "v022": "a tiny microchip next to a pencil tip",
+  "v023": "a satellite component or payload box",
+  "v025": "a scientific calculator",
+  "v026": "technicians in cleanroom suits working on a satellite",
+  "v027": "an atomic clock module in a display case"
+ },
+ "rejected_after_looking": [
+  {
+   "id": "v005",
+   "title": "United States Space Force logo symbolism diagram",
+   "seen": "US Space Force logo and explanation",
+   "reason": "The image contains too much text and a logo diagram rather than illustrating the active satellite network."
+  },
+  {
+   "id": "v012",
+   "title": "Polytechnical Museum digital clock 20150214 164229",
+   "seen": "an old electronic device with glowing tubes",
+   "reason": "It shows an antique electronic display device, not a digital clock showing precise time."
+  }
+ ]
+}

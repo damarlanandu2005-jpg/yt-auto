@@ -1,0 +1,30 @@
+{
+ "load_s": 51.5,
+ "torch": "2.14.1+cpu",
+ "diffusers": "0.42.1",
+ "seconds": {
+  "v019": 72.1,
+  "v024": 71.7,
+  "v005": 71.5,
+  "v012": 71.3
+ },
+ "skipped_for_time": [],
+ "total_s": 338.2,
+ "asked": 4,
+ "drawn": 4,
+ "drawings_seen": {
+  "v019": "a beam of light",
+  "v024": "two clock-like circular dials side by side",
+  "v005": "a complex red and white symbol inside a circle",
+  "v012": "an analog clock face with hands"
+ },
+ "drawings_rejected": [
+  {
+   "id": "v012",
+   "title": "a digital clock",
+   "seen": "an analog clock face with hands",
+   "reason": "The narration asks for a digital clock, but this image displays an analog clock with hands and numbers."
+  }
+ ],
+ "drawings_used": 3
+}

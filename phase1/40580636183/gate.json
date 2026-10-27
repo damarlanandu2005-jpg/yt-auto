@@ -1,0 +1,102 @@
+{
+ "verdict": "FAIL",
+ "checks": [
+  {
+   "check": "audio_silence",
+   "status": "PASS",
+   "detail": "no long silent gaps",
+   "gaps": []
+  },
+  {
+   "check": "audio_loudness",
+   "status": "PASS",
+   "detail": "-16.3 LUFS (target -16 ± 2), true peak -1.5 dBTP",
+   "lufs": -16.3,
+   "true_peak": -1.5
+  },
+  {
+   "check": "video_black",
+   "status": "PASS",
+   "detail": "no black stretches",
+   "blacks": []
+  },
+  {
+   "check": "av_length",
+   "status": "PASS",
+   "detail": "audio 136.4 s, video 136.4 s (differ by 0.0 s)"
+  },
+  {
+   "check": "video_minutes",
+   "status": "FLAG",
+   "detail": "2.3 min (target 5-8)"
+  },
+  {
+   "check": "scenes_complete",
+   "status": "PASS",
+   "detail": "all 2 scenes have visuals"
+  },
+  {
+   "check": "rights",
+   "status": "PASS",
+   "detail": "20 pictures, voice and font all have allowed licences",
+   "problems": []
+  },
+  {
+   "check": "metadata",
+   "status": "PASS",
+   "detail": "title 54 chars, description 2017 chars, sources listed"
+  },
+  {
+   "check": "pronunciation",
+   "status": "PASS",
+   "detail": "no new hard terms",
+   "terms": []
+  },
+  {
+   "check": "facts_linked",
+   "status": "PASS",
+   "detail": "every fact sentence has a checked source",
+   "bad": []
+  },
+  {
+   "check": "editorial_brief",
+   "status": "FAIL",
+   "detail": "brief is missing ['answer', 'evidence', 'unique_examples', 'why_watch']"
+  },
+  {
+   "check": "originality",
+   "status": "PASS",
+   "detail": "no past videos to compare with yet"
+  },
+  {
+   "check": "hook_question",
+   "status": "PASS",
+   "detail": "The first 30 seconds clearly state how a smartphone pinpoints its location using radio signals."
+  },
+  {
+   "check": "hook_why",
+   "status": "FLAG",
+   "detail": "The first 30 seconds explain how the system works technically, but do not state why knowing this matters to the viewer."
+  },
+  {
+   "check": "title_promise",
+   "status": "PASS",
+   "detail": "The script successfully explains how GPS finds your location using satellite timestamps."
+  },
+  {
+   "check": "scene_relevance",
+   "status": "PASS",
+   "detail": "All text cards directly correspond to the narration playing at that moment."
+  },
+  {
+   "check": "sensitive",
+   "status": "PASS",
+   "detail": "There is no financial, legal, or health advice, nor any accusations against named persons or companies."
+  },
+  {
+   "check": "adds_value",
+   "status": "PASS",
+   "detail": "The script explains the mechanism of converting time into distance and the effect of timing offsets, rather than just listing facts."
+  }
+ ]
+}

@@ -1,0 +1,188 @@
+{
+  "total_seconds": 1035.9,
+  "stages_seconds": {
+    "script": 0.0,
+    "narration": 52.69,
+    "visual_plan": 215.92,
+    "photos": 247.39,
+    "drawings": 342.17,
+    "keyframes": 15.21,
+    "segments": 43.23,
+    "assemble": 4.04,
+    "subtitles": 11.22,
+    "preview": 6.89,
+    "gate": 94.76
+  },
+  "peak_memory_mb": {
+    "python": 681.1,
+    "largest_child": 9065.7
+  },
+  "machine": {
+    "arch": "x86_64",
+    "cpus": 4,
+    "python": "3.13.16",
+    "runner": "GitHub Actions 1000000262",
+    "cpu_model": "AMD EPYC 7763 64-Core Processor",
+    "ffmpeg": "ffmpeg version n8.1.3-24-g92611900bb-20261026 Copyright (c) 2000-2026 the FFmpeg developers"
+  },
+  "voice": "kokoro",
+  "subtitle_cues": 36,
+  "whisper_words": 289,
+  "topic": "How does GPS know where you are?",
+  "title": "How GPS Finds Your Location Using Satellite Timestamps",
+  "words": 285,
+  "video_seconds": 136.4,
+  "visuals": 28,
+  "photos": 17,
+  "drawings": 3,
+  "cards": 8,
+  "drawing_log": {
+    "load_s": 51.5,
+    "torch": "2.14.1+cpu",
+    "diffusers": "0.42.1",
+    "skipped_for_time": [],
+    "total_s": 338.2,
+    "asked": 4,
+    "drawn": 4,
+    "drawings_rejected": [
+      {
+        "id": "v012",
+        "title": "a digital clock",
+        "seen": "an analog clock face with hands",
+        "reason": "The narration asks for a digital clock, but this image displays an analog clock with hands and numbers."
+      }
+    ],
+    "drawings_used": 3
+  },
+  "seconds_per_visual": 4.87,
+  "photo_log": {
+    "card_number_fixes": [
+      "v019: numbers ['299792'] not in narration; card replaced"
+    ],
+    "photo_slots": 19,
+    "downloaded": 19,
+    "seen": {
+      "v002": "a smartphone",
+      "v003": "a GPS satellite in space",
+      "v005": "US Space Force logo and explanation",
+      "v007": "Earth from space",
+      "v008": "a rocket launch",
+      "v010": "a satellite in orbit",
+      "v011": "a large satellite antenna",
+      "v012": "an old electronic device with glowing tubes",
+      "v013": "multiple smartphones",
+      "v014": "a satellite dish on a rooftop",
+      "v016": "a handheld GPS receiver",
+      "v017": "Earth at night from space",
+      "v020": "a GPS satellite rendering",
+      "v021": "a circuit board",
+      "v022": "a tiny microchip next to a pencil tip",
+      "v023": "a satellite component or payload box",
+      "v025": "a scientific calculator",
+      "v026": "technicians in cleanroom suits working on a satellite",
+      "v027": "an atomic clock module in a display case"
+    },
+    "rejected_after_looking": [
+      {
+        "id": "v005",
+        "title": "United States Space Force logo symbolism diagram",
+        "seen": "US Space Force logo and explanation",
+        "reason": "The image contains too much text and a logo diagram rather than illustrating the active satellite network."
+      },
+      {
+        "id": "v012",
+        "title": "Polytechnical Museum digital clock 20150214 164229",
+        "seen": "an old electronic device with glowing tubes",
+        "reason": "It shows an antique electronic display device, not a digital clock showing precise time."
+      }
+    ]
+  },
+  "gate": {
+    "verdict": "FAIL",
+    "not_pass": {
+      "video_minutes": "FLAG",
+      "editorial_brief": "FAIL",
+      "hook_why": "FLAG"
+    }
+  },
+  "llm_calls": [
+    {
+      "name": "visual_plan",
+      "model": "gemma-4-31b-it",
+      "prompt_chars": 7282,
+      "images": 0,
+      "status": 200,
+      "seconds": 215.9,
+      "attempts": 1,
+      "finish": "STOP",
+      "in_tokens": 2412,
+      "out_tokens": 2844,
+      "thought_tokens": 4449
+    },
+    {
+      "name": "photo_pick",
+      "model": "gemma-4-31b-it",
+      "prompt_chars": 42750,
+      "images": 0,
+      "status": 200,
+      "seconds": 160.6,
+      "attempts": 1,
+      "finish": "STOP",
+      "in_tokens": 11425,
+      "out_tokens": 334,
+      "thought_tokens": 4256
+    },
+    {
+      "name": "photo_verify",
+      "model": "gemini-3.5-flash-lite",
+      "prompt_chars": 2669,
+      "images": 19,
+      "status": 200,
+      "seconds": 7.9,
+      "attempts": 1,
+      "finish": "STOP",
+      "in_tokens": 21256,
+      "out_tokens": 1038,
+      "thought_tokens": null
+    },
+    {
+      "name": "drawing_verify",
+      "model": "gemini-3.5-flash-lite",
+      "prompt_chars": 1047,
+      "images": 4,
+      "status": 200,
+      "seconds": 2.9,
+      "attempts": 1,
+      "finish": "STOP",
+      "in_tokens": 4652,
+      "out_tokens": 269,
+      "thought_tokens": null
+    },
+    {
+      "name": "gate_editorial",
+      "model": "gemma-4-31b-it",
+      "prompt_chars": 5149,
+      "images": 0,
+      "status": 503,
+      "attempt": 1,
+      "error": "{\n  \"error\": {\n    \"code\": 503,\n    \"message\": \"This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.\",\n    \"status\": \"UNAVAILABLE\"\n  }\n}\n"
+    },
+    {
+      "name": "gate_editorial",
+      "model": "gemini-3.5-flash-lite",
+      "prompt_chars": 5149,
+      "images": 0,
+      "status": 200,
+      "seconds": 1.4,
+      "attempts": 1,
+      "finish": "STOP",
+      "in_tokens": 1162,
+      "out_tokens": 298,
+      "thought_tokens": null
+    }
+  ],
+  "llm_calls_ok_by_model": {
+    "gemma-4-31b-it": 2,
+    "gemini-3.5-flash-lite": 3
+  }
+}

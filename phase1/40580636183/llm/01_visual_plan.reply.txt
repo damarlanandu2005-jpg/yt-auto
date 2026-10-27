@@ -1,0 +1,437 @@
+```json
+{
+  "visuals": [
+    {
+      "id": "v001",
+      "kind": "card",
+      "card": {
+        "type": "title",
+        "title": "How GPS Finds Your Location",
+        "subtitle": "Using Satellite Timestamps"
+      }
+    },
+    {
+      "id": "v002",
+      "kind": "photo",
+      "photo_subject": "a smartphone",
+      "photo_queries": [
+        "smartphone",
+        "mobile phone"
+      ],
+      "card": {
+        "type": "bullets",
+        "title": "GPS Location",
+        "items": [
+          "Exact coordinates",
+          "Real-time tracking"
+        ]
+      }
+    },
+    {
+      "id": "v003",
+      "kind": "photo",
+      "photo_subject": "a GPS satellite",
+      "photo_queries": [
+        "GPS satellite",
+        "navigation satellite"
+      ],
+      "card": {
+        "type": "bullets",
+        "title": "GPS Network",
+        "items": [
+          "One-way broadcast",
+          "Passive system"
+        ]
+      }
+    },
+    {
+      "id": "v004",
+      "kind": "card",
+      "card": {
+        "type": "compare",
+        "title": "GPS Connectivity",
+        "left_title": "GPS",
+        "left_points": [
+          "Passive broadcast",
+          "No internet needed"
+        ],
+        "right_title": "Cellular",
+        "right_points": [
+          "Two-way signal",
+          "Needs network"
+        ]
+      }
+    },
+    {
+      "id": "v005",
+      "kind": "photo",
+      "photo_subject": "US Space Force logo",
+      "photo_queries": [
+        "US Space Force logo",
+        "Space Force emblem"
+      ],
+      "card": {
+        "type": "bullets",
+        "title": "Ownership",
+        "items": [
+          "US Space Force",
+          "Free access"
+        ]
+      }
+    },
+    {
+      "id": "v006",
+      "kind": "card",
+      "card": {
+        "type": "stat",
+        "title": "Satellite Count",
+        "value": "24",
+        "label": "Active Satellites"
+      }
+    },
+    {
+      "id": "v007",
+      "kind": "photo",
+      "photo_subject": "Earth from space",
+      "photo_queries": [
+        "Earth from space",
+        "planet Earth"
+      ],
+      "card": {
+        "type": "bullets",
+        "title": "Orbital Planes",
+        "items": [
+          "Six distinct planes",
+          "Global coverage"
+        ]
+      }
+    },
+    {
+      "id": "v008",
+      "kind": "photo",
+      "photo_subject": "a rocket launch",
+      "photo_queries": [
+        "rocket launch",
+        "satellite launch"
+      ],
+      "card": {
+        "type": "bullets",
+        "title": "Deployment",
+        "items": [
+          "Prototype orbit",
+          "Early spacecraft"
+        ]
+      }
+    },
+    {
+      "id": "v009",
+      "kind": "card",
+      "card": {
+        "type": "timeline",
+        "title": "GPS Deployment",
+        "events": [
+          {
+            "when": "1978",
+            "label": "Prototype orbit"
+          },
+          {
+            "when": "1995",
+            "label": "Full operation"
+          }
+        ]
+      }
+    },
+    {
+      "id": "v010",
+      "kind": "photo",
+      "photo_subject": "a satellite in orbit",
+      "photo_queries": [
+        "satellite orbit",
+        "satellite in space"
+      ],
+      "card": {
+        "type": "stat",
+        "title": "Orbit Frequency",
+        "value": "2",
+        "label": "Orbits per day"
+      }
+    },
+    {
+      "id": "v011",
+      "kind": "photo",
+      "photo_subject": "a satellite antenna",
+      "photo_queries": [
+        "satellite antenna",
+        "satellite transmitter"
+      ],
+      "card": {
+        "type": "bullets",
+        "title": "Broadcasting",
+        "items": [
+          "Radio signals",
+          "Continuous stream"
+        ]
+      }
+    },
+    {
+      "id": "v012",
+      "kind": "photo",
+      "photo_subject": "a digital clock",
+      "photo_queries": [
+        "digital clock",
+        "precise time"
+      ],
+      "card": {
+        "type": "bullets",
+        "title": "Signal Data",
+        "items": [
+          "Exact position",
+          "Precise time"
+        ]
+      }
+    },
+    {
+      "id": "v013",
+      "kind": "photo",
+      "photo_subject": "a smartphone",
+      "photo_queries": [
+        "smartphone",
+        "mobile phone"
+      ],
+      "card": {
+        "type": "bullets",
+        "title": "The Receiver",
+        "items": [
+          "Silent listener",
+          "Passive receiver"
+        ]
+      }
+    },
+    {
+      "id": "v014",
+      "kind": "photo",
+      "photo_subject": "a satellite dish",
+      "photo_queries": [
+        "satellite dish",
+        "radio antenna"
+      ],
+      "card": {
+        "type": "bullets",
+        "title": "Signal Capture",
+        "items": [
+          "Incoming transmissions",
+          "Radio waves"
+        ]
+      }
+    },
+    {
+      "id": "v015",
+      "kind": "card",
+      "card": {
+        "type": "title",
+        "title": "Turning Time into Space"
+      }
+    },
+    {
+      "id": "v016",
+      "kind": "photo",
+      "photo_subject": "a handheld GPS receiver",
+      "photo_queries": [
+        "GPS receiver",
+        "handheld GPS"
+      ],
+      "card": {
+        "type": "flow",
+        "title": "Conversion",
+        "steps": [
+          "Time measurement",
+          "Distance calculation"
+        ]
+      }
+    },
+    {
+      "id": "v017",
+      "kind": "photo",
+      "photo_subject": "Earth from space",
+      "photo_queries": [
+        "Earth from space",
+        "Earth orbit"
+      ],
+      "card": {
+        "type": "bullets",
+        "title": "Orbit Type",
+        "items": [
+          "Medium Earth Orbit",
+          "Circular path"
+        ]
+      }
+    },
+    {
+      "id": "v018",
+      "kind": "card",
+      "card": {
+        "type": "stat",
+        "title": "Satellite Altitude",
+        "value": "20,200 km",
+        "label": "Average Height"
+      }
+    },
+    {
+      "id": "v019",
+      "kind": "drawing",
+      "drawing_subject": "a beam of light traveling through space",
+      "card": {
+        "type": "stat",
+        "title": "Signal Speed",
+        "value": "299,792 km/s",
+        "label": "Speed of Light"
+      }
+    },
+    {
+      "id": "v020",
+      "kind": "photo",
+      "photo_subject": "a GPS satellite",
+      "photo_queries": [
+        "GPS satellite",
+        "navigation satellite"
+      ],
+      "card": {
+        "type": "bullets",
+        "title": "Signal Constant",
+        "items": [
+          "Constant speed",
+          "Independent of motion"
+        ]
+      }
+    },
+    {
+      "id": "v021",
+      "kind": "photo",
+      "photo_subject": "a circuit board",
+      "photo_queries": [
+        "circuit board",
+        "computer chip"
+      ],
+      "card": {
+        "type": "bullets",
+        "title": "Binary Sequence",
+        "items": [
+          "Ones and zeros",
+          "Pseudorandom code"
+        ]
+      }
+    },
+    {
+      "id": "v022",
+      "kind": "photo",
+      "photo_subject": "a GPS receiver chip",
+      "photo_queries": [
+        "GPS chip",
+        "integrated circuit"
+      ],
+      "card": {
+        "type": "bullets",
+        "title": "Receiver Knowledge",
+        "items": [
+          "Pre-known sequence",
+          "Pattern matching"
+        ]
+      }
+    },
+    {
+      "id": "v023",
+      "kind": "photo",
+      "photo_subject": "an atomic clock",
+      "photo_queries": [
+        "atomic clock",
+        "cesium clock"
+      ],
+      "card": {
+        "type": "bullets",
+        "title": "Timestamp",
+        "items": [
+          "Departure time",
+          "Nanosecond precision"
+        ]
+      }
+    },
+    {
+      "id": "v024",
+      "kind": "drawing",
+      "drawing_subject": "two clocks side by side",
+      "card": {
+        "type": "bullets",
+        "title": "Clock Sync",
+        "items": [
+          "Satellite clock",
+          "Receiver clock"
+        ]
+      }
+    },
+    {
+      "id": "v025",
+      "kind": "photo",
+      "photo_subject": "a calculator",
+      "photo_queries": [
+        "calculator",
+        "electronic calculator"
+      ],
+      "card": {
+        "type": "flow",
+        "title": "Delay Calculation",
+        "steps": [
+          "Arrival Time",
+          "Minus Transmission Time",
+          "Equals Signal Delay"
+        ]
+      }
+    },
+    {
+      "id": "v026",
+      "kind": "photo",
+      "photo_subject": "a GPS satellite",
+      "photo_queries": [
+        "GPS satellite",
+        "satellite spacecraft"
+      ],
+      "card": {
+        "type": "flow",
+        "title": "Pseudorange",
+        "steps": [
+          "Time Delay",
+          "Multiply by Light Speed",
+          "Pseudorange distance"
+        ]
+      }
+    },
+    {
+      "id": "v027",
+      "kind": "photo",
+      "photo_subject": "an atomic clock",
+      "photo_queries": [
+        "atomic clock",
+        "scientific clock"
+      ],
+      "card": {
+        "type": "bullets",
+        "title": "Timing Offset",
+        "items": [
+          "Minute error",
+          "Large distance shift"
+        ]
+      }
+    },
+    {
+      "id": "v028",
+      "kind": "card",
+      "card": {
+        "type": "stat",
+        "title": "Timing Precision",
+        "value": "3 m",
+        "label": "Distance Error",
+        "note": "per 10 nanoseconds"
+      }
+    }
+  ]
+}
+```

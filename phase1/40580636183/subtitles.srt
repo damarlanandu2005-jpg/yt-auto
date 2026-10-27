@@ -1,0 +1,162 @@
+1
+00:00:00,018 --> 00:00:05,060
+How can your smartphone pinpoint your
+exact location anywhere on Earth just by
+
+2
+00:00:05,060 --> 00:00:06,760
+receiving silent radio signals?
+
+3
+00:00:07,611 --> 00:00:12,860
+In reality, the Global Positioning System
+is a completely one-way passive broadcast
+
+4
+00:00:12,860 --> 00:00:13,660
+network.
+
+5
+00:00:14,213 --> 00:00:18,500
+GPS operates independently of
+telephone or Internet reception.
+
+6
+00:00:19,300 --> 00:00:21,220
+Owned by the United States Space Force,
+
+7
+00:00:21,740 --> 00:00:24,840
+the satellite system is
+freely accessible to anyone.
+
+8
+00:00:25,534 --> 00:00:30,980
+The constellation consists of at least
+24 active satellites arranged across six
+
+9
+00:00:30,980 --> 00:00:32,320
+distinct orbital planes.
+
+10
+00:00:33,098 --> 00:00:38,380
+The first prototype spacecraft
+went into orbit in 1978 before
+
+11
+00:00:38,380 --> 00:00:41,780
+reaching full operational status in 1995.
+
+12
+00:00:42,919 --> 00:00:47,600
+Each satellite completes two full orbits
+around Earth during every sidereal day.
+
+13
+00:00:48,282 --> 00:00:53,440
+As they orbit, these satellites continuously
+broadcast radio signals containing
+
+14
+00:00:53,440 --> 00:00:56,040
+their exact position and precise time.
+
+15
+00:00:56,734 --> 00:00:58,740
+Your phone acts as a silent receiver,
+
+16
+00:00:59,400 --> 00:01:02,980
+quietly catching these incoming
+radio transmissions from the sky.
+
+17
+00:01:04,739 --> 00:01:06,380
+To figure out your exact location,
+
+18
+00:01:07,200 --> 00:01:11,020
+your device converts time measurements
+directly into distance measurements.
+
+19
+00:01:11,866 --> 00:01:17,260
+GPS satellites circle the Earth in medium
+orbit at an altitude of approximately
+
+20
+00:01:17,260 --> 00:01:19,779
+20,200 kilometres.
+
+21
+00:01:20,224 --> 00:01:25,340
+Radio signals broadcast from these satellites
+travel through space at the constant
+
+22
+00:01:25,340 --> 00:01:26,140
+speed of light.
+
+23
+00:01:26,781 --> 00:01:31,920
+Crucially, the speed of radio waves is
+constant and completely independent of the
+
+24
+00:01:31,920 --> 00:01:32,720
+satellite's speed.
+
+25
+00:01:33,462 --> 00:01:38,860
+Each satellite continually broadcasts a
+pseudorandom sequence of ones and zeros
+
+26
+00:01:38,860 --> 00:01:40,020
+known to the receiver.
+
+27
+00:01:40,820 --> 00:01:45,900
+The transmission message includes a
+timestamp recording the exact time the signal
+
+28
+00:01:45,900 --> 00:01:46,700
+left the satellite.
+
+29
+00:01:47,526 --> 00:01:49,240
+When your device receives the signal,
+
+30
+00:01:49,600 --> 00:01:53,460
+it records the arrival time
+using its own internal clock.
+
+31
+00:01:54,206 --> 00:01:57,240
+By subtracting the transmission
+time from the arrival time,
+
+32
+00:01:57,600 --> 00:02:00,020
+the receiver calculates the signal delay.
+
+33
+00:02:00,701 --> 00:02:05,800
+Multiplying this time value by the speed
+of light yields a pseudorange rather than
+
+34
+00:02:05,800 --> 00:02:06,760
+an exact distance.
+
+35
+00:02:07,503 --> 00:02:12,640
+Because light moves so fast, a tiny
+timing offset of just 10 nanoseconds
+
+36
+00:02:12,640 --> 00:02:14,740
+causes a 3 metre distance error.

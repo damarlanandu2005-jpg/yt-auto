@@ -1,0 +1,34 @@
+{
+  "checks": [
+    {
+      "check": "hook_question",
+      "ok": true,
+      "reason": "The first 30 seconds clearly state how a smartphone pinpoints its location using radio signals."
+    },
+    {
+      "check": "hook_why",
+      "ok": false,
+      "reason": "The first 30 seconds explain how the system works technically, but do not state why knowing this matters to the viewer."
+    },
+    {
+      "check": "title_promise",
+      "ok": true,
+      "reason": "The script successfully explains how GPS finds your location using satellite timestamps."
+    },
+    {
+      "check": "scene_relevance",
+      "ok": true,
+      "reason": "All text cards directly correspond to the narration playing at that moment."
+    },
+    {
+      "check": "sensitive",
+      "ok": true,
+      "reason": "There is no financial, legal, or health advice, nor any accusations against named persons or companies."
+    },
+    {
+      "check": "adds_value",
+      "ok": true,
+      "reason": "The script explains the mechanism of converting time into distance and the effect of timing offsets, rather than just listing facts."
+    }
+  ]
+}

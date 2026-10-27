@@ -1,0 +1,24 @@
+How GPS Finds Your Location Using Satellite Timestamps
+
+How can your phone find your exact location on Earth just by listening to the time?
+
+Sources (facts checked against these):
+- Global Positioning System — Wikipedia, revision 1381199385: https://en.wikipedia.org/wiki/Global_Positioning_System?oldid=1381199385
+- Error analysis for the Global Positioning System — Wikipedia, revision 1377400056: https://en.wikipedia.org/wiki/Error_analysis_for_the_Global_Positioning_System?oldid=1377400056
+
+Image credits:
+- 6 images: NASA (public domain)
+- 3 images: public domain / CC0, via Wikimedia Commons
+- 3 illustrations: AI-generated drawings (Segmind-Vega, Apache-2.0)
+- Richard Bartz, Munich aka Makro Freak, CC BY-SA 2.5: https://commons.wikimedia.org/wiki/File:Erdfunkstelle_Raisting_2.jpg
+- The Tech Cheat, CC BY-SA 4.0: https://commons.wikimedia.org/wiki/File:Smartphone_di_varie_marche.png
+- VicFic2006, CC BY-SA 4.0: https://commons.wikimedia.org/wiki/File:DTH_Satellite_Dish_-_India_-_IMG_3474.jpg
+- Siarhei Besarab, CC BY-SA 4.0: https://commons.wikimedia.org/wiki/File:Magellan_Triton_2000_handheld_GPS_receiver_02.jpg
+- Balurbala, CC BY-SA 3.0: https://commons.wikimedia.org/wiki/File:Printed_Circuit_Board_2.jpg
+- GpsFrank, CC BY-SA 4.0: https://commons.wikimedia.org/wiki/File:BCM4750GpsChip.jpg
+- Matti Blume, CC BY-SA 2.0: https://commons.wikimedia.org/wiki/File:Sharp_Scientific_Calculator.jpg
+- Shujianyang, CC BY-SA 4.0: https://commons.wikimedia.org/wiki/File:Beidou_atomic_clock_at_CSTM_02.jpg
+Licences: CC BY-SA 2.0 https://creativecommons.org/licenses/by-sa/2.0; CC BY-SA 2.5 https://creativecommons.org/licenses/by-sa/2.5; CC BY-SA 3.0 https://creativecommons.org/licenses/by-sa/3.0; CC BY-SA 4.0 https://creativecommons.org/licenses/by-sa/4.0
+
+NASA images are used for education and do not imply NASA endorsement.
+Narration voice: Kokoro text-to-speech (synthetic voice). Script researched and written with AI help, fact-checked against the sources above and reviewed by a human before upload.

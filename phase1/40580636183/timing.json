@@ -1,0 +1,152 @@
+{
+ "sentences": [
+  {
+   "id": "s01.01",
+   "scene": "s01",
+   "text": "How can your smartphone pinpoint your exact location anywhere on Earth just by receiving silent radio signals?",
+   "start": 0.018,
+   "end": 7.165
+  },
+  {
+   "id": "s01.03",
+   "scene": "s01",
+   "text": "In reality, the Global Positioning System is a completely one-way passive broadcast network.",
+   "start": 7.611,
+   "end": 13.757
+  },
+  {
+   "id": "s01.05",
+   "scene": "s01",
+   "text": "GPS operates independently of telephone or Internet reception.",
+   "start": 14.213,
+   "end": 18.787
+  },
+  {
+   "id": "s01.06",
+   "scene": "s01",
+   "text": "Owned by the United States Space Force, the satellite system is freely accessible to anyone.",
+   "start": 19.262,
+   "end": 25.045
+  },
+  {
+   "id": "s01.07",
+   "scene": "s01",
+   "text": "The constellation consists of at least 24 active satellites arranged across six distinct orbital planes.",
+   "start": 25.534,
+   "end": 32.641
+  },
+  {
+   "id": "s01.08",
+   "scene": "s01",
+   "text": "The first prototype spacecraft went into orbit in 1978 before reaching full operational status in 1995.",
+   "start": 33.098,
+   "end": 42.463
+  },
+  {
+   "id": "s01.09",
+   "scene": "s01",
+   "text": "Each satellite completes two full orbits around Earth during every sidereal day.",
+   "start": 42.919,
+   "end": 47.79
+  },
+  {
+   "id": "s01.10",
+   "scene": "s01",
+   "text": "As they orbit, these satellites continuously broadcast radio signals containing their exact position and precise time.",
+   "start": 48.282,
+   "end": 56.255
+  },
+  {
+   "id": "s01.11",
+   "scene": "s01",
+   "text": "Your phone acts as a silent receiver, quietly catching these incoming radio transmissions from the sky.",
+   "start": 56.734,
+   "end": 63.266
+  },
+  {
+   "id": "s02.01",
+   "scene": "s02",
+   "text": "To figure out your exact location, your device converts time measurements directly into distance measurements.",
+   "start": 64.739,
+   "end": 71.423
+  },
+  {
+   "id": "s02.02",
+   "scene": "s02",
+   "text": "GPS satellites circle the Earth in medium orbit at an altitude of approximately 20,200 kilometres.",
+   "start": 71.866,
+   "end": 79.779
+  },
+  {
+   "id": "s02.03",
+   "scene": "s02",
+   "text": "Radio signals broadcast from these satellites travel through space at the constant speed of light.",
+   "start": 80.224,
+   "end": 86.313
+  },
+  {
+   "id": "s02.04",
+   "scene": "s02",
+   "text": "Crucially, the speed of radio waves is constant and completely independent of the satellite's speed.",
+   "start": 86.781,
+   "end": 92.978
+  },
+  {
+   "id": "s02.05",
+   "scene": "s02",
+   "text": "Each satellite continually broadcasts a pseudorandom sequence of ones and zeros known to the receiver.",
+   "start": 93.462,
+   "end": 100.336
+  },
+  {
+   "id": "s02.06",
+   "scene": "s02",
+   "text": "The transmission message includes a timestamp recording the exact time the signal left the satellite.",
+   "start": 100.82,
+   "end": 107.04
+  },
+  {
+   "id": "s02.07",
+   "scene": "s02",
+   "text": "When your device receives the signal, it records the arrival time using its own internal clock.",
+   "start": 107.526,
+   "end": 113.722
+  },
+  {
+   "id": "s02.08",
+   "scene": "s02",
+   "text": "By subtracting the transmission time from the arrival time, the receiver calculates the signal delay.",
+   "start": 114.206,
+   "end": 120.22
+  },
+  {
+   "id": "s02.09",
+   "scene": "s02",
+   "text": "Multiplying this time value by the speed of light yields a pseudorange rather than an exact distance.",
+   "start": 120.701,
+   "end": 127.05
+  },
+  {
+   "id": "s02.11",
+   "scene": "s02",
+   "text": "Because light moves so fast, a tiny timing offset of just 10 nanoseconds causes a 3 metre distance error.",
+   "start": 127.503,
+   "end": 134.958
+  }
+ ],
+ "scenes": [
+  {
+   "id": "s01",
+   "heading": "The passive listener: why GPS satellites do not track you or receive signals from your phone",
+   "start": 0.0,
+   "end": 64.73866666666666
+  },
+  {
+   "id": "s02",
+   "heading": "Turning time into space: how measuring radio travel times reveals your distance from an orbit",
+   "start": 64.73866666666666,
+   "end": 136.42666666666668
+  }
+ ],
+ "total": 136.426667
+}

@@ -1,0 +1,685 @@
+[
+ {
+  "scene": "s01",
+  "start": 0.0,
+  "text": "How can your smartphone pinpoint your exact location",
+  "sentences": [
+   "s01.01"
+  ],
+  "id": "v001",
+  "end": 3.381294117647059,
+  "seconds": 3.38,
+  "scene_start": true,
+  "kind": "card",
+  "card": {
+   "type": "title",
+   "title": "How GPS Finds Your Location",
+   "subtitle": "Using Satellite Timestamps"
+  }
+ },
+ {
+  "scene": "s01",
+  "start": 3.381294117647059,
+  "text": "anywhere on Earth just by receiving silent radio signals?",
+  "sentences": [
+   "s01.01"
+  ],
+  "id": "v002",
+  "end": 7.611,
+  "seconds": 4.23,
+  "scene_start": false,
+  "kind": "photo",
+  "photo_subject": "a smartphone",
+  "photo_queries": [
+   "smartphone",
+   "mobile phone"
+  ],
+  "card": {
+   "type": "bullets",
+   "title": "GPS Location",
+   "items": [
+    "Exact coordinates",
+    "Real-time tracking"
+   ]
+  }
+ },
+ {
+  "scene": "s01",
+  "start": 7.611,
+  "text": "In reality, the Global Positioning System is a completely one-way passive broadcast network.",
+  "sentences": [
+   "s01.03"
+  ],
+  "id": "v003",
+  "end": 14.213,
+  "seconds": 6.6,
+  "scene_start": false,
+  "kind": "photo",
+  "photo_subject": "a GPS satellite",
+  "photo_queries": [
+   "GPS satellite",
+   "navigation satellite"
+  ],
+  "card": {
+   "type": "bullets",
+   "title": "GPS Network",
+   "items": [
+    "One-way broadcast",
+    "Passive system"
+   ]
+  }
+ },
+ {
+  "scene": "s01",
+  "start": 14.213,
+  "text": "GPS operates independently of telephone or Internet reception.",
+  "sentences": [
+   "s01.05"
+  ],
+  "id": "v004",
+  "end": 19.262,
+  "seconds": 5.05,
+  "scene_start": false,
+  "kind": "card",
+  "card": {
+   "type": "compare",
+   "title": "GPS Connectivity",
+   "left_title": "GPS",
+   "left_points": [
+    "Passive broadcast",
+    "No internet needed"
+   ],
+   "right_title": "Cellular",
+   "right_points": [
+    "Two-way signal",
+    "Needs network"
+   ]
+  }
+ },
+ {
+  "scene": "s01",
+  "start": 19.262,
+  "text": "Owned by the United States Space Force, the satellite system is freely accessible to anyone.",
+  "sentences": [
+   "s01.06"
+  ],
+  "id": "v005",
+  "end": 25.534,
+  "seconds": 6.27,
+  "scene_start": false,
+  "kind": "photo",
+  "photo_subject": "US Space Force logo",
+  "photo_queries": [
+   "US Space Force logo",
+   "Space Force emblem"
+  ],
+  "card": {
+   "type": "bullets",
+   "title": "Ownership",
+   "items": [
+    "US Space Force",
+    "Free access"
+   ]
+  }
+ },
+ {
+  "scene": "s01",
+  "start": 25.534,
+  "text": "The constellation consists of at least 24 active",
+  "sentences": [
+   "s01.07"
+  ],
+  "id": "v006",
+  "end": 29.324399999999997,
+  "seconds": 3.79,
+  "scene_start": false,
+  "kind": "card",
+  "card": {
+   "type": "stat",
+   "title": "Satellite Count",
+   "value": "24",
+   "label": "Active Satellites"
+  }
+ },
+ {
+  "scene": "s01",
+  "start": 29.324399999999997,
+  "text": "satellites arranged across six distinct orbital planes.",
+  "sentences": [
+   "s01.07"
+  ],
+  "id": "v007",
+  "end": 33.098,
+  "seconds": 3.77,
+  "scene_start": false,
+  "kind": "photo",
+  "photo_subject": "Earth from space",
+  "photo_queries": [
+   "Earth from space",
+   "planet Earth"
+  ],
+  "card": {
+   "type": "bullets",
+   "title": "Orbital Planes",
+   "items": [
+    "Six distinct planes",
+    "Global coverage"
+   ]
+  }
+ },
+ {
+  "scene": "s01",
+  "start": 33.098,
+  "text": "The first prototype spacecraft went into orbit in",
+  "sentences": [
+   "s01.08"
+  ],
+  "id": "v008",
+  "end": 37.7805,
+  "seconds": 4.68,
+  "scene_start": false,
+  "kind": "photo",
+  "photo_subject": "a rocket launch",
+  "photo_queries": [
+   "rocket launch",
+   "satellite launch"
+  ],
+  "card": {
+   "type": "bullets",
+   "title": "Deployment",
+   "items": [
+    "Prototype orbit",
+    "Early spacecraft"
+   ]
+  }
+ },
+ {
+  "scene": "s01",
+  "start": 37.7805,
+  "text": "1978 before reaching full operational status in 1995.",
+  "sentences": [
+   "s01.08"
+  ],
+  "id": "v009",
+  "end": 42.919,
+  "seconds": 5.14,
+  "scene_start": false,
+  "kind": "card",
+  "card": {
+   "type": "timeline",
+   "title": "GPS Deployment",
+   "events": [
+    {
+     "when": "1978",
+     "label": "Prototype orbit"
+    },
+    {
+     "when": "1995",
+     "label": "Full operation"
+    }
+   ]
+  }
+ },
+ {
+  "scene": "s01",
+  "start": 42.919,
+  "text": "Each satellite completes two full orbits around Earth during every sidereal day.",
+  "sentences": [
+   "s01.09"
+  ],
+  "id": "v010",
+  "end": 48.282,
+  "seconds": 5.36,
+  "scene_start": false,
+  "kind": "photo",
+  "photo_subject": "a satellite in orbit",
+  "photo_queries": [
+   "satellite orbit",
+   "satellite in space"
+  ],
+  "card": {
+   "type": "stat",
+   "title": "Orbit Frequency",
+   "value": "2",
+   "label": "Orbits per day"
+  }
+ },
+ {
+  "scene": "s01",
+  "start": 48.282,
+  "text": "As they orbit, these satellites continuously broadcast radio",
+  "sentences": [
+   "s01.10"
+  ],
+  "id": "v011",
+  "end": 52.2685,
+  "seconds": 3.99,
+  "scene_start": false,
+  "kind": "photo",
+  "photo_subject": "a satellite antenna",
+  "photo_queries": [
+   "satellite antenna",
+   "satellite transmitter"
+  ],
+  "card": {
+   "type": "bullets",
+   "title": "Broadcasting",
+   "items": [
+    "Radio signals",
+    "Continuous stream"
+   ]
+  }
+ },
+ {
+  "scene": "s01",
+  "start": 52.2685,
+  "text": "signals containing their exact position and precise time.",
+  "sentences": [
+   "s01.10"
+  ],
+  "id": "v012",
+  "end": 56.734,
+  "seconds": 4.47,
+  "scene_start": false,
+  "kind": "photo",
+  "photo_subject": "a digital clock",
+  "photo_queries": [
+   "digital clock",
+   "precise time"
+  ],
+  "card": {
+   "type": "bullets",
+   "title": "Signal Data",
+   "items": [
+    "Exact position",
+    "Precise time"
+   ]
+  }
+ },
+ {
+  "scene": "s01",
+  "start": 56.734,
+  "text": "Your phone acts as a silent receiver, quietly",
+  "sentences": [
+   "s01.11"
+  ],
+  "id": "v013",
+  "end": 60.0,
+  "seconds": 3.27,
+  "scene_start": false,
+  "kind": "photo",
+  "photo_subject": "a smartphone",
+  "photo_queries": [
+   "smartphone",
+   "mobile phone"
+  ],
+  "card": {
+   "type": "bullets",
+   "title": "The Receiver",
+   "items": [
+    "Silent listener",
+    "Passive receiver"
+   ]
+  }
+ },
+ {
+  "scene": "s01",
+  "start": 60.0,
+  "text": "catching these incoming radio transmissions from the sky.",
+  "sentences": [
+   "s01.11"
+  ],
+  "id": "v014",
+  "end": 64.739,
+  "seconds": 4.74,
+  "scene_start": false,
+  "kind": "photo",
+  "photo_subject": "a satellite dish",
+  "photo_queries": [
+   "satellite dish",
+   "radio antenna"
+  ],
+  "card": {
+   "type": "bullets",
+   "title": "Signal Capture",
+   "items": [
+    "Incoming transmissions",
+    "Radio waves"
+   ]
+  }
+ },
+ {
+  "scene": "s02",
+  "start": 64.739,
+  "text": "To figure out your exact location, your device",
+  "sentences": [
+   "s02.01"
+  ],
+  "id": "v015",
+  "end": 68.30380000000001,
+  "seconds": 3.56,
+  "scene_start": true,
+  "kind": "card",
+  "card": {
+   "type": "title",
+   "title": "Turning Time into Space"
+  }
+ },
+ {
+  "scene": "s02",
+  "start": 68.30380000000001,
+  "text": "converts time measurements directly into distance measurements.",
+  "sentences": [
+   "s02.01"
+  ],
+  "id": "v016",
+  "end": 71.866,
+  "seconds": 3.56,
+  "scene_start": false,
+  "kind": "photo",
+  "photo_subject": "a handheld GPS receiver",
+  "photo_queries": [
+   "GPS receiver",
+   "handheld GPS"
+  ],
+  "card": {
+   "type": "flow",
+   "title": "Conversion",
+   "steps": [
+    "Time measurement",
+    "Distance calculation"
+   ]
+  }
+ },
+ {
+  "scene": "s02",
+  "start": 71.866,
+  "text": "GPS satellites circle the Earth in medium orbit",
+  "sentences": [
+   "s02.02"
+  ],
+  "id": "v017",
+  "end": 76.08626666666666,
+  "seconds": 4.22,
+  "scene_start": false,
+  "kind": "photo",
+  "photo_subject": "Earth from space",
+  "photo_queries": [
+   "Earth from space",
+   "Earth orbit"
+  ],
+  "card": {
+   "type": "bullets",
+   "title": "Orbit Type",
+   "items": [
+    "Medium Earth Orbit",
+    "Circular path"
+   ]
+  }
+ },
+ {
+  "scene": "s02",
+  "start": 76.08626666666666,
+  "text": "at an altitude of approximately 20,200 kilometres.",
+  "sentences": [
+   "s02.02"
+  ],
+  "id": "v018",
+  "end": 80.224,
+  "seconds": 4.14,
+  "scene_start": false,
+  "kind": "card",
+  "card": {
+   "type": "stat",
+   "title": "Satellite Altitude",
+   "value": "20,200 km",
+   "label": "Average Height"
+  }
+ },
+ {
+  "scene": "s02",
+  "start": 80.224,
+  "text": "Radio signals broadcast from these satellites travel through space at the constant speed of light.",
+  "sentences": [
+   "s02.03"
+  ],
+  "id": "v019",
+  "end": 86.781,
+  "seconds": 6.56,
+  "scene_start": false,
+  "kind": "drawing",
+  "drawing_subject": "a beam of light traveling through space",
+  "card": {
+   "type": "stat",
+   "title": "Signal Speed",
+   "value": "299,792 km/s",
+   "label": "Speed of Light"
+  }
+ },
+ {
+  "scene": "s02",
+  "start": 86.781,
+  "text": "Crucially, the speed of radio waves is constant and completely independent of the satellite's speed.",
+  "sentences": [
+   "s02.04"
+  ],
+  "id": "v020",
+  "end": 93.462,
+  "seconds": 6.68,
+  "scene_start": false,
+  "kind": "photo",
+  "photo_subject": "a GPS satellite",
+  "photo_queries": [
+   "GPS satellite",
+   "navigation satellite"
+  ],
+  "card": {
+   "type": "bullets",
+   "title": "Signal Constant",
+   "items": [
+    "Constant speed",
+    "Independent of motion"
+   ]
+  }
+ },
+ {
+  "scene": "s02",
+  "start": 93.462,
+  "text": "Each satellite continually broadcasts a pseudorandom sequence of",
+  "sentences": [
+   "s02.05"
+  ],
+  "id": "v021",
+  "end": 97.12813333333334,
+  "seconds": 3.67,
+  "scene_start": false,
+  "kind": "photo",
+  "photo_subject": "a circuit board",
+  "photo_queries": [
+   "circuit board",
+   "computer chip"
+  ],
+  "card": {
+   "type": "bullets",
+   "title": "Binary Sequence",
+   "items": [
+    "Ones and zeros",
+    "Pseudorandom code"
+   ]
+  }
+ },
+ {
+  "scene": "s02",
+  "start": 97.12813333333334,
+  "text": "ones and zeros known to the receiver.",
+  "sentences": [
+   "s02.05"
+  ],
+  "id": "v022",
+  "end": 100.82,
+  "seconds": 3.69,
+  "scene_start": false,
+  "kind": "photo",
+  "photo_subject": "a GPS receiver chip",
+  "photo_queries": [
+   "GPS chip",
+   "integrated circuit"
+  ],
+  "card": {
+   "type": "bullets",
+   "title": "Receiver Knowledge",
+   "items": [
+    "Pre-known sequence",
+    "Pattern matching"
+   ]
+  }
+ },
+ {
+  "scene": "s02",
+  "start": 100.82,
+  "text": "The transmission message includes a timestamp recording the exact time the signal left the satellite.",
+  "sentences": [
+   "s02.06"
+  ],
+  "id": "v023",
+  "end": 107.526,
+  "seconds": 6.71,
+  "scene_start": false,
+  "kind": "photo",
+  "photo_subject": "an atomic clock",
+  "photo_queries": [
+   "atomic clock",
+   "cesium clock"
+  ],
+  "card": {
+   "type": "bullets",
+   "title": "Timestamp",
+   "items": [
+    "Departure time",
+    "Nanosecond precision"
+   ]
+  }
+ },
+ {
+  "scene": "s02",
+  "start": 107.526,
+  "text": "When your device receives the signal, it records the arrival time using its own internal clock.",
+  "sentences": [
+   "s02.07"
+  ],
+  "id": "v024",
+  "end": 114.206,
+  "seconds": 6.68,
+  "scene_start": false,
+  "kind": "drawing",
+  "drawing_subject": "two clocks side by side",
+  "card": {
+   "type": "bullets",
+   "title": "Clock Sync",
+   "items": [
+    "Satellite clock",
+    "Receiver clock"
+   ]
+  }
+ },
+ {
+  "scene": "s02",
+  "start": 114.206,
+  "text": "By subtracting the transmission time from the arrival time, the receiver calculates the signal delay.",
+  "sentences": [
+   "s02.08"
+  ],
+  "id": "v025",
+  "end": 120.701,
+  "seconds": 6.49,
+  "scene_start": false,
+  "kind": "photo",
+  "photo_subject": "a calculator",
+  "photo_queries": [
+   "calculator",
+   "electronic calculator"
+  ],
+  "card": {
+   "type": "flow",
+   "title": "Delay Calculation",
+   "steps": [
+    "Arrival Time",
+    "Minus Transmission Time",
+    "Equals Signal Delay"
+   ]
+  }
+ },
+ {
+  "scene": "s02",
+  "start": 120.701,
+  "text": "Multiplying this time value by the speed of light yields a pseudorange rather than an exact distance.",
+  "sentences": [
+   "s02.09"
+  ],
+  "id": "v026",
+  "end": 127.503,
+  "seconds": 6.8,
+  "scene_start": false,
+  "kind": "photo",
+  "photo_subject": "a GPS satellite",
+  "photo_queries": [
+   "GPS satellite",
+   "satellite spacecraft"
+  ],
+  "card": {
+   "type": "flow",
+   "title": "Pseudorange",
+   "steps": [
+    "Time Delay",
+    "Multiply by Light Speed",
+    "Pseudorange distance"
+   ]
+  }
+ },
+ {
+  "scene": "s02",
+  "start": 127.503,
+  "text": "Because light moves so fast, a tiny timing offset of",
+  "sentences": [
+   "s02.11"
+  ],
+  "id": "v027",
+  "end": 131.4266842105263,
+  "seconds": 3.92,
+  "scene_start": false,
+  "kind": "photo",
+  "photo_subject": "an atomic clock",
+  "photo_queries": [
+   "atomic clock",
+   "scientific clock"
+  ],
+  "card": {
+   "type": "bullets",
+   "title": "Timing Offset",
+   "items": [
+    "Minute error",
+    "Large distance shift"
+   ]
+  }
+ },
+ {
+  "scene": "s02",
+  "start": 131.4266842105263,
+  "text": "just 10 nanoseconds causes a 3 metre distance error.",
+  "sentences": [
+   "s02.11"
+  ],
+  "id": "v028",
+  "end": 136.426667,
+  "seconds": 5.0,
+  "scene_start": false,
+  "kind": "card",
+  "card": {
+   "type": "stat",
+   "title": "Timing Precision",
+   "value": "3 m",
+   "label": "Distance Error",
+   "note": "per 10 nanoseconds"
+  }
+ }
+]

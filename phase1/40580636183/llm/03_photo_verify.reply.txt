@@ -1,0 +1,118 @@
+{
+  "checks": [
+    {
+      "n": 1,
+      "seen": "a smartphone",
+      "fits": true,
+      "reason": "The image shows a person holding a smartphone, matching the narration about receiving signals."
+    },
+    {
+      "n": 2,
+      "seen": "a GPS satellite in space",
+      "fits": true,
+      "reason": "The image clearly shows a satellite in space against the Earth's curvature, aligning with the topic."
+    },
+    {
+      "n": 3,
+      "seen": "US Space Force logo and explanation",
+      "fits": false,
+      "reason": "The image contains too much text and a logo diagram rather than illustrating the active satellite network."
+    },
+    {
+      "n": 4,
+      "seen": "Earth from space",
+      "fits": true,
+      "reason": "Shows a full view of the Earth from space, matching the orbital planes context."
+    },
+    {
+      "n": 5,
+      "seen": "a rocket launch",
+      "fits": true,
+      "reason": "Clearly shows a rocket launching at night, matching the prototype spacecraft orbit topic."
+    },
+    {
+      "n": 6,
+      "seen": "a satellite in orbit",
+      "fits": true,
+      "reason": "Shows a satellite against the backdrop of Earth, fitting the orbit narration."
+    },
+    {
+      "n": 7,
+      "seen": "a large satellite antenna",
+      "fits": true,
+      "reason": "Displays a large ground station satellite dish, relevant to radio broadcasts."
+    },
+    {
+      "n": 8,
+      "seen": "an old electronic device with glowing tubes",
+      "fits": false,
+      "reason": "It shows an antique electronic display device, not a digital clock showing precise time."
+    },
+    {
+      "n": 9,
+      "seen": "multiple smartphones",
+      "fits": true,
+      "reason": "Shows smartphones lying flat, fitting the receiver context."
+    },
+    {
+      "n": 10,
+      "seen": "a satellite dish on a rooftop",
+      "fits": true,
+      "reason": "Shows a satellite television or communication dish, matching the radio transmission topic."
+    },
+    {
+      "n": 11,
+      "seen": "a handheld GPS receiver",
+      "fits": true,
+      "reason": "Shows a dedicated handheld navigation unit, fitting the distance measurements context."
+    },
+    {
+      "n": 12,
+      "seen": "Earth at night from space",
+      "fits": true,
+      "reason": "Shows city lights on Earth from the ISS, fitting medium Earth orbit."
+    },
+    {
+      "n": 13,
+      "seen": "a GPS satellite rendering",
+      "fits": true,
+      "reason": "Shows a realistic satellite rendering over Earth, fitting the constant radio waves description."
+    },
+    {
+      "n": 14,
+      "seen": "a circuit board",
+      "fits": true,
+      "reason": "Shows an electronic printed circuit board, fitting the hardware processing context."
+    },
+    {
+      "n": 15,
+      "seen": "a tiny microchip next to a pencil tip",
+      "fits": true,
+      "reason": "Clearly illustrates a microscopic BGA chip, fitting the receiver chip context."
+    },
+    {
+      "n": 16,
+      "seen": "a satellite component or payload box",
+      "fits": true,
+      "reason": "Shows an aerospace electronics box assembly, fitting the atomic clock/payload transmission topic."
+    },
+    {
+      "n": 17,
+      "seen": "a scientific calculator",
+      "fits": true,
+      "reason": "Shows a graphing/scientific calculator, fitting the calculation context."
+    },
+    {
+      "n": 18,
+      "seen": "technicians in cleanroom suits working on a satellite",
+      "fits": true,
+      "reason": "Shows cleanroom assembly, fitting the GPS satellite construction context."
+    },
+    {
+      "n": 19,
+      "seen": "an atomic clock module in a display case",
+      "fits": true,
+      "reason": "Shows an exhibition piece of an atomic clock, fitting the timing offset narration."
+    }
+  ]
+}
