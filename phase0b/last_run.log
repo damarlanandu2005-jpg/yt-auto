@@ -1,55 +1,55 @@
 YOUTUBE_API_KEY works: True (83 languages listed, 1 unit)
 [quota] 1 calls, 1 units
-[select] 954 candidate channels from 24 searches (2400 units)
-[select] technology: 7 chosen (of 7 eligible)
-[select] science_space: 20 chosen (of 23 eligible)
-[select] money_economics: 4 chosen (of 4 eligible)
-[select] units used: 2782
-[quota] 406 calls, 2782 units
-[snapshot] 2026-10-27.json: 31 channels, 63 units
-[quota] 63 calls, 63 units
+[select] 1530 candidate channels from 24 searches (3600 units)
+[select] technology: 12 chosen (of 5 eligible)
+[select] science_space: 20 chosen (of 34 eligible)
+[select] money_economics: 11 chosen (of 7 eligible)
+[select] units used: 4073
+[quota] 509 calls, 4073 units
+[snapshot] 2026-10-27.json: 43 channels, 87 units
+[quota] 87 calls, 87 units
 # Niche data test — report (1 snapshot, 0.0 weeks of change)
 
-Rules: phase0b/RULES.md (version 1). Channels chosen 2026-10-27 from 954 candidates (34 eligible).
+Rules: phase0b/RULES.md (version 2). Channels chosen 2026-10-27 from 2356 candidates (80 eligible).
 
 | Niche | Channels | Weekly view growth (median) | Subs grew | Videos beating normal |
 | --- | --- | --- | --- | --- |
-| How technology works | 7 | needs 2+ snapshots | - | 25% |
-| Science and space | 20 | needs 2+ snapshots | - | 26% |
-| Money and economics (education only) | 4 | needs 2+ snapshots | - | 24% |
+| How technology works | 12 | needs 2+ snapshots | - | 30% |
+| Science and space | 20 | needs 2+ snapshots | - | 27% |
+| Money and economics (education only) | 11 | needs 2+ snapshots | - | 27% |
 
 ## How technology works: videos beating their channel's normal
 
-- 318.0x · Flying Roadster Explained: How Tesla's flying car works and what the technology is useful for?! — SpaceEyeTech (2,360 subs)
-- 35.9x · How AI works, Explained with Mushrooms ! (Easiest Explanation ) — Xplained with MUSHROOMS (1,950 subs)
-- 19.4x · Bakit Libu-libo ang Wika sa Mundo? — The Build Era (7,190 subs)
-- 17.4x · The Teenager Who Invented TV (And How RCA Stole It) — The Build Era (7,190 subs)
-- 12.0x · How AGI works? (Easiest Explanation) — Xplained with MUSHROOMS (1,950 subs)
+- 312.6x · Flying Roadster Explained: How Tesla's flying car works and what the technology is useful for?! — SpaceEyeTech (2,360 subs)
+- 58.3x · How Bicycle Gears Work — Quasar-Ed (43,300 subs)
+- 36.4x · How AI works, Explained with Mushrooms ! (Easiest Explanation ) — Xplained with MUSHROOMS (1,950 subs)
+- 19.1x · Bakit Libu-libo ang Wika sa Mundo? — The Build Era (7,190 subs)
+- 17.5x · The Teenager Who Invented TV (And How RCA Stole It) — The Build Era (7,190 subs)
+- 11.9x · How AGI works? (Easiest Explanation) — Xplained with MUSHROOMS (1,950 subs)
 - 10.1x · All Of Mechanical Engineering Explained in 10 Minutes — Simplex Academy (13,800 subs)
-- 9.7x · Everything About Car Engines Explained – From Diesel Giants to Electric — Drive Explained (5,940 subs)
-- 9.1x · Audi Quattro vs BMW xDrive vs Mercedes 4MATIC – Engineering Explained — Motoring Masters (99,700 subs)
+- 9.6x · Everything About Car Engines Explained – From Diesel Giants to Electric — Drive Explained (5,940 subs)
 
 ## Science and space: videos beating their channel's normal
 
-- 768.0x · How Huge Is the Universe? (The Answer Breaks Physics) — Curio (3,970 subs)
-- 106.5x · The Darkest Truth About Cryosleep Nobody Tells You — The Gravity Well (3,870 subs)
-- 64.1x · Artemis II Explained | 2026 Mission to the Moon — Digital Astronaut (51,800 subs)
-- 54.3x · The Truth About Dying in Space Nobody Tells You — The Gravity Well (3,870 subs)
-- 42.9x · Every Crazy Temperature in the Universe — Space Explainer (23,300 subs)
+- 764.2x · How Huge Is the Universe? (The Answer Breaks Physics) — Curio (3,970 subs)
+- 106.3x · The Darkest Truth About Cryosleep Nobody Tells You — The Gravity Well (3,870 subs)
+- 64.2x · Artemis II Explained | 2026 Mission to the Moon — Digital Astronaut (51,800 subs)
+- 54.5x · The Truth About Dying in Space Nobody Tells You — The Gravity Well (3,870 subs)
+- 43.0x · Every Crazy Temperature in the Universe — Space Explainer (23,300 subs)
 - 35.9x · The new telescope 100x better than Hubble | Nancy Grace Roman Explained — Digital Astronaut (51,800 subs)
 - 26.0x · Every Crazy Level of Gravity in the Universe — Space Explainer (23,300 subs)
-- 20.2x · How Big Is the Solar System, Really? — Curio (3,970 subs)
+- 20.0x · How Big Is the Solar System, Really? — Curio (3,970 subs)
 
 ## Money and economics (education only): videos beating their channel's normal
 
-- 402.7x · What Happens When Economists Run a Country — False Profit (7,800 subs)
-- 48.4x · Why Rome Never Industrialized — False Profit (7,800 subs)
-- 33.4x · Stop Sharing This Graph — False Profit (7,800 subs)
-- 28.5x · How Banks Obtain Funding: Deposits, Capital and Borrowing — BANKING & FINANCE ACADEMY (2,780 subs)
+- 404.2x · What Happens When Economists Run a Country — False Profit (7,800 subs)
+- 48.6x · Why Rome Never Industrialized — False Profit (7,800 subs)
+- 33.5x · Stop Sharing This Graph — False Profit (7,800 subs)
+- 27.8x · How Banks Obtain Funding: Deposits, Capital and Borrowing — BANKING & FINANCE ACADEMY (2,780 subs)
 - 25.1x · Economics Explained Is A Junk Channel — False Profit (7,800 subs)
-- 13.4x · Will AI Replace Banking Jobs? Skills Bankers Need to Survive — BANKING & FINANCE ACADEMY (2,780 subs)
-- 9.9x · How Many SCHD Shares Do You Need to Retire?| The Answer Is Smaller Than You Think — BANKING & FINANCE ACADEMY (2,780 subs)
-- 9.9x · Which G7 Country Will Go Bankrupt First? — Economics Help (98,000 subs)
+- 13.6x · Will AI Replace Banking Jobs? Skills Bankers Need to Survive — BANKING & FINANCE ACADEMY (2,780 subs)
+- 9.8x · Which G7 Country Will Go Bankrupt First? — Economics Help (98,000 subs)
+- 9.5x · How Many SCHD Shares Do You Need to Retire?| The Answer Is Smaller Than You Think — BANKING & FINANCE ACADEMY (2,780 subs)
 
 Final choice: after 5 snapshots (4 weeks), by the rule in RULES.md. Owner confirms.
 [quota] 0 calls, 0 units
