@@ -1,0 +1,306 @@
+{
+ "title": "How Close Must a Supernova Be to Destroy Earth's Atmosphere?",
+ "scenes": [
+  {
+   "heading": "Part 1: Cosmic Beauty and Invisible Danger",
+   "sentences": [
+    {
+     "text": "But how close would an exploding star need to be to completely strip away Earth's protective atmosphere?",
+     "kind": "framing",
+     "sources": [],
+     "id": "s01.02",
+     "check": "supported"
+    },
+    {
+     "text": "At peak optical brightness, a single supernova can be comparable to an entire galaxy.",
+     "kind": "fact",
+     "sources": [
+      "A2.1"
+     ],
+     "id": "s01.04",
+     "check": "supported (after fix)"
+    },
+    {
+     "text": "Within our Milky Way galaxy, these violent stellar events occur roughly 1.6 to 4.6 times every century on average.",
+     "kind": "fact",
+     "sources": [
+      "A2.8"
+     ],
+     "id": "s01.06",
+     "check": "supported"
+    },
+    {
+     "text": "Billions of years ago, ancient supernovae formed heavy elements that enabled the chemical processes for life on Earth.",
+     "kind": "fact",
+     "sources": [
+      "A1.9"
+     ],
+     "id": "s01.09",
+     "check": "supported (after fix)"
+    }
+   ],
+   "id": "s01"
+  },
+  {
+   "heading": "Part 2: The First Wave of High-Energy Radiation",
+   "sentences": [
+    {
+     "text": "What would happen if a massive star exploded only a few dozen light-years away from our solar system?",
+     "kind": "framing",
+     "sources": [],
+     "id": "s02.01",
+     "check": "supported"
+    },
+    {
+     "text": "Earth's atmosphere is remarkably effective at absorbing high-energy electromagnetic radiation like X-rays and gamma rays.",
+     "kind": "fact",
+     "sources": [
+      "A4.45"
+     ],
+     "id": "s02.02",
+     "check": "supported"
+    },
+    {
+     "text": "Surviving that initial burst of light might make it seem like our planet escaped the catastrophe completely unharmed.",
+     "kind": "framing",
+     "sources": [],
+     "id": "s02.05",
+     "check": "supported"
+    },
+    {
+     "text": "However, the real destruction is caused by complex chemical reactions initiated in the upper layers of our air.",
+     "kind": "fact",
+     "sources": [
+      "A1.3",
+      "A4.46"
+     ],
+     "id": "s02.06",
+     "check": "supported"
+    },
+    {
+     "text": "High above us, intense energy from incoming gamma rays begins breaking apart stable gas molecules in the upper atmosphere.",
+     "kind": "fact",
+     "sources": [
+      "A1.3",
+      "A4.46"
+     ],
+     "id": "s02.08",
+     "check": "supported"
+    }
+   ],
+   "id": "s02"
+  },
+  {
+   "heading": "Part 3: Chemical Destruction of the Ozone Shield",
+   "sentences": [
+    {
+     "text": "Incoming gamma radiation causes radiolysis, breaking apart standard diatomic nitrogen and oxygen molecules high in the atmosphere.",
+     "kind": "fact",
+     "sources": [
+      "A1.3"
+     ],
+     "id": "s03.01",
+     "check": "supported"
+    },
+    {
+     "text": "This reaction recombines molecular nitrogen and oxygen into dangerous gaseous compounds known as nitrogen oxides.",
+     "kind": "fact",
+     "sources": [
+      "A1.3",
+      "A4.46"
+     ],
+     "id": "s03.02",
+     "check": "supported"
+    },
+    {
+     "text": "Nitrogen oxides deplete protective stratospheric ozone molecules.",
+     "kind": "fact",
+     "sources": [
+      "A1.3",
+      "A3.7",
+      "A4.46"
+     ],
+     "id": "s03.03",
+     "check": "supported (after fix)"
+    },
+    {
+     "text": "Computer models show that a nearby explosion could cause a global ozone reduction of 25 to 35 per cent.",
+     "kind": "fact",
+     "sources": [
+      "A4.46"
+     ],
+     "id": "s03.04",
+     "check": "supported"
+    },
+    {
+     "text": "In specific regional locations of the upper atmosphere, local ozone loss could reach up to 75 per cent for years.",
+     "kind": "fact",
+     "sources": [
+      "A4.46"
+     ],
+     "id": "s03.05",
+     "check": "supported"
+    },
+    {
+     "text": "Depleting this shield exposes Earth's surface to bio-harmful solar ultraviolet radiation, causing widespread biological damage.",
+     "kind": "fact",
+     "sources": [
+      "A1.3",
+      "A3.37"
+     ],
+     "id": "s03.06",
+     "check": "supported"
+    }
+   ],
+   "id": "s03"
+  },
+  {
+   "heading": "Part 4: The Second Wave from Cosmic Rays",
+   "sentences": [
+    {
+     "text": "Supernovae expel several solar masses of stellar material into space at speeds reaching several per cent of light speed.",
+     "kind": "fact",
+     "sources": [
+      "A2.6"
+     ],
+     "id": "s04.02",
+     "check": "supported"
+    },
+    {
+     "text": "In the case of a Betelgeuse supernova, the stream of charged particles would reach Earth about 100,000 years after the initial light.",
+     "kind": "fact",
+     "sources": [
+      "A1.5"
+     ],
+     "id": "s04.04",
+     "check": "supported (after fix)"
+    }
+   ],
+   "id": "s04"
+  },
+  {
+   "heading": "Part 5: Calculating the Safe Threshold Distance",
+   "sentences": [
+    {
+     "text": "How close would a dying star actually need to be to permanently destroy Earth's protective atmospheric shield?",
+     "kind": "framing",
+     "sources": [],
+     "id": "s05.01",
+     "check": "supported"
+    },
+    {
+     "text": "Scientists calculate dangerous stellar distances using atmospheric computer models and measured radiation flux from Supernova 1987A.",
+     "kind": "fact",
+     "sources": [
+      "A1.7"
+     ],
+     "id": "s05.02",
+     "check": "supported"
+    },
+    {
+     "text": "Fortunately, a supernova explosion occurring within 33 light-years of Earth is estimated to happen only once every 240 million years.",
+     "kind": "fact",
+     "sources": [
+      "A1.3"
+     ],
+     "id": "s05.04",
+     "check": "supported"
+    },
+    {
+     "text": "If a highly focused gamma-ray burst pointed directly at Earth, its focused beam could vapourise anything within 200 light-years.",
+     "kind": "fact",
+     "sources": [
+      "A4.43"
+     ],
+     "id": "s05.05",
+     "check": "supported"
+    },
+    {
+     "text": "In fact, a nearby gamma-ray burst may have triggered the Late Ordovician mass extinction on Earth.",
+     "kind": "fact",
+     "sources": [
+      "A1.11",
+      "A4.3"
+     ],
+     "id": "s05.06",
+     "check": "supported (after fix)"
+    },
+    {
+     "text": "That ancient cosmic event resulted in the death of nearly 60 per cent of oceanic life on Earth.",
+     "kind": "fact",
+     "sources": [
+      "A1.11"
+     ],
+     "id": "s05.07",
+     "check": "supported (after fix)"
+    }
+   ],
+   "id": "s05"
+  },
+  {
+   "heading": "Part 6: Mapping Our Stellar Neighbourhood",
+   "sentences": [
+    {
+     "text": "Are there any dangerous candidate stars close enough to threaten Earth with an atmospheric collapse today?",
+     "kind": "framing",
+     "sources": [],
+     "id": "s06.01",
+     "check": "supported"
+    },
+    {
+     "text": "The famous red supergiant star Betelgeuse sits at a distance of roughly 400 to 600 light-years from our Sun.",
+     "kind": "fact",
+     "sources": [
+      "A5.2"
+     ],
+     "id": "s06.02",
+     "check": "supported"
+    },
+    {
+     "text": "When Betelgeuse detonates as a brilliant supernova within the next 100,000 years, it will shine as bright as a half-Moon.",
+     "kind": "fact",
+     "sources": [
+      "A5.2"
+     ],
+     "id": "s06.03",
+     "check": "supported"
+    },
+    {
+     "text": "Because Betelgeuse is hundreds of light-years away, life on Earth will be completely unharmed by its eventual explosion.",
+     "kind": "fact",
+     "sources": [
+      "A5.2"
+     ],
+     "id": "s06.04",
+     "check": "supported"
+    },
+    {
+     "text": "The closest known candidate for a white dwarf supernova is IK Pegasi, but it is moving away to a safe distance.",
+     "kind": "fact",
+     "sources": [
+      "A1.8"
+     ],
+     "id": "s06.05",
+     "check": "supported"
+    },
+    {
+     "text": "Even if other famous stars a few hundred light-years away explode in 1,000 years, Earth is in little danger.",
+     "kind": "fact",
+     "sources": [
+      "A1.6"
+     ],
+     "id": "s06.06",
+     "check": "supported (after fix)"
+    },
+    {
+     "text": "As you gaze up at the night sky, how does it feel knowing our atmosphere keeps us safe from distant cosmic explosions?",
+     "kind": "framing",
+     "sources": [],
+     "id": "s06.09",
+     "check": "supported"
+    }
+   ],
+   "id": "s06"
+  }
+ ]
+}

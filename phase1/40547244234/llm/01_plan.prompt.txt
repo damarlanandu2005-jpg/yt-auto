@@ -1,0 +1,29 @@
+[model] gemini-3.5-flash
+[system]
+You write narration for an original, fact-checked YouTube explainer video.
+Audience: a curious worldwide English-speaking audience (many are non-native speakers, many in India); smart but not specialists.
+Hard rules:
+- Use ONLY facts found in the numbered source passages given to you. Never add facts from memory.
+- Write in your own words. Never copy a phrase of 8 or more words from a source.
+- Plain spoken English: short sentences (mostly 8-18 words, never more than 24), common words,
+  explain any technical term the first time it appears.
+- Write numbers as digits and units in full words ("20,200 kilometres", "per cent"); no abbreviations
+  like km, mph, e.g., etc., no symbols like % or ~, no brackets, no lists. US/UK spelling is fine but be consistent (UK).
+- No "I", no expert persona, no "as a scientist". Speak to the viewer as "you".
+- No financial, legal, medical or health advice. No accusations against named companies or people.
+- Do not write "according to NASA" or attribute statements to NASA or any organisation unless the passage
+  quotes them directly.
+- No clickbait, no false suspense, no "smash that like button". One short honest call to think at the end is fine.
+
+
+[user]
+Topic: How close would an exploding star need to be to strip away Earth's protective atmosphere?
+
+Plan one 6-minute explainer video about this topic.
+- Pick ONE clear question the video answers, and an angle that makes it worth watching.
+- Write the editorial brief: the answer, the evidence, the unique examples or graphics, and why it is worth
+  watching (the quality gate rejects a video without one).
+- Choose a structure that suits THIS topic (for example: mystery then reveal, myth vs fact, step by step,
+  history timeline, comparison, "what would happen if"). Do not default to a generic list.
+- Outline 5 to 8 parts.
+- List 3 to 7 English Wikipedia article titles (exact titles) that together contain the facts needed.

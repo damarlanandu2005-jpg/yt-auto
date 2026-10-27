@@ -1,0 +1,136 @@
+{
+  "results": [
+    {
+      "id": "s01.04",
+      "verdict": "supported",
+      "problem": "",
+      "fixed_text": ""
+    },
+    {
+      "id": "s01.05",
+      "verdict": "supported",
+      "problem": "",
+      "fixed_text": ""
+    },
+    {
+      "id": "s01.08",
+      "verdict": "partly",
+      "problem": "The cited passages do not state that this occurs up close.",
+      "fixed_text": "A supernova drives an expanding shock wave that sweeps up gas and dust."
+    },
+    {
+      "id": "s02.03",
+      "verdict": "supported",
+      "problem": "",
+      "fixed_text": ""
+    },
+    {
+      "id": "s02.04",
+      "verdict": "supported",
+      "problem": "",
+      "fixed_text": ""
+    },
+    {
+      "id": "s02.07",
+      "verdict": "partly",
+      "problem": "The cited passages specify UVB radiation rather than all solar ultraviolet radiation.",
+      "fixed_text": "Earth's stratospheric ozone layer normally absorbs most UVB radiation before it reaches the surface."
+    },
+    {
+      "id": "s03.03",
+      "verdict": "supported",
+      "problem": "",
+      "fixed_text": ""
+    },
+    {
+      "id": "s03.07",
+      "verdict": "supported",
+      "problem": "",
+      "fixed_text": ""
+    },
+    {
+      "id": "s03.08",
+      "verdict": "partly",
+      "problem": "The passages specify UV-B exposure rather than general ultraviolet exposure, and do not attribute cataract formation to DNA damage.",
+      "fixed_text": "Excessive UV-B exposure damages DNA molecules and increases rates of skin cancer and cataracts."
+    },
+    {
+      "id": "s03.09",
+      "verdict": "partly",
+      "problem": "The cited passage states nitrogen oxides cause photochemical smog that blocks out parts of the sunlight spectrum, rather than blocking sunlight in general.",
+      "fixed_text": "Nitrogen oxides cause photochemical smog that blocks out parts of the sunlight spectrum, while elevated nitrogen dioxide produces toxic nitric acid rain."
+    },
+    {
+      "id": "s04.03",
+      "verdict": "partly",
+      "problem": "The cited passage specifies expanding shock waves rather than blast waves.",
+      "fixed_text": "These expanding shock waves sweep up gas and dust, with supernovae serving as a major source of cosmic rays."
+    },
+    {
+      "id": "s04.04",
+      "verdict": "supported",
+      "problem": "",
+      "fixed_text": ""
+    },
+    {
+      "id": "s04.05",
+      "verdict": "partly",
+      "problem": "The cited passage specifies nearby supernova events rather than past supernova events in general.",
+      "fixed_text": "Geological records suggest that nearby supernova events led to an increase in cosmic rays, which produced a cooler climate."
+    },
+    {
+      "id": "s04.06",
+      "verdict": "partly",
+      "problem": "The passage states that stronger winds were created by a greater temperature difference between the poles and equator resulting from a cooler climate, rather than directly by cosmic ray increases.",
+      "fixed_text": "Geological records suggest nearby supernovae increased cosmic rays and cooled the climate, creating temperature differences that caused stronger winds."
+    },
+    {
+      "id": "s04.07",
+      "verdict": "partly",
+      "problem": "The passage states that there was only about a 5% probability for a supernova within 30 parsecs, so it was not likely.",
+      "fixed_text": "Scientists found iron-60 isotopes in deep-sea Pacific Ocean rock, indicating a supernova may have occurred less than 30 parsecs away millions of years ago."
+    },
+    {
+      "id": "s04.08",
+      "verdict": "supported",
+      "problem": "",
+      "fixed_text": ""
+    },
+    {
+      "id": "s05.06",
+      "verdict": "supported",
+      "problem": "",
+      "fixed_text": ""
+    },
+    {
+      "id": "s05.07",
+      "verdict": "supported",
+      "problem": "",
+      "fixed_text": ""
+    },
+    {
+      "id": "s05.08",
+      "verdict": "partly",
+      "problem": "The passage states explosions occurring less than roughly 33 to 978 light-years away are close enough, rather than between 33 and 978 light-years.",
+      "fixed_text": "Supernova explosions occurring less than roughly 33 to 978 light-years away are close enough to have noticeable effects on Earth's biosphere."
+    },
+    {
+      "id": "s06.07",
+      "verdict": "supported",
+      "problem": "",
+      "fixed_text": ""
+    },
+    {
+      "id": "s01.09",
+      "verdict": "supported",
+      "problem": "",
+      "fixed_text": ""
+    },
+    {
+      "id": "s06.06",
+      "verdict": "supported",
+      "problem": "",
+      "fixed_text": ""
+    }
+  ]
+}

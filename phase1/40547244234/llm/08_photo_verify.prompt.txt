@@ -1,0 +1,46 @@
+[model] gemini-3.5-flash-lite
+[system]
+
+
+[user]
+Above are 37 images, each right after its label "Image n:". For EVERY image, first
+write in "seen" what that image actually shows (a few words), then decide if it fits: it must clearly show
+what it should show, be a real usable picture (not mostly text, not a blank or broken image, no watermark),
+and not be misleading next to the narration.
+Image 1: should show: a glowing spiral galaxy (narration: At peak optical brightness, a single supernova can be comparable to an entire galaxy.)
+Image 2: should show: the Milky Way arching across the night sky (narration: Within our Milky Way galaxy, these violent stellar events occur)
+Image 3: should show: the Crab Nebula supernova remnant (narration: Billions of years ago, ancient supernovae formed heavy elements)
+Image 4: should show: planet Earth viewed from space (narration: that enabled the chemical processes for life on Earth.)
+Image 5: should show: the glowing blue atmospheric limb of Earth (narration: Earth's atmosphere is remarkably effective at absorbing high-energy)
+Image 6: should show: an orbiting gamma ray space telescope (narration: electromagnetic radiation like X-rays and gamma rays.)
+Image 7: should show: a starry night sky over mountains (narration: Surviving that initial burst of light might make it)
+Image 8: should show: a lush green forest under sunlight (narration: seem like our planet escaped the catastrophe completely unharmed.)
+Image 9: should show: an aurora glowing in the upper atmosphere (narration: However, the real destruction is caused by complex chemical)
+Image 10: should show: the stratospheric layer seen from high altitude (narration: reactions initiated in the upper layers of our air.)
+Image 11: should show: noctilucent clouds high in the mesosphere (narration: High above us, intense energy from incoming gamma rays begins)
+Image 12: should show: auroral emission ribbons in the upper sky (narration: breaking apart stable gas molecules in the upper atmosphere.)
+Image 13: should show: a high-altitude weather balloon ascending (narration: diatomic nitrogen and oxygen molecules high in the atmosphere.)
+Image 14: should show: an ionized electric plasma discharge (narration: This reaction recombines molecular nitrogen and oxygen into)
+Image 15: should show: a brown layer of atmospheric nitrogen dioxide haze (narration: dangerous gaseous compounds known as nitrogen oxides.)
+Image 16: should show: a satellite mapping Earth's ozone layer (narration: Nitrogen oxides deplete protective stratospheric ozone molecules.)
+Image 17: should show: a supercomputer server rack glowing with data lights (narration: Computer models show that a nearby explosion could cause a)
+Image 18: should show: polar stratospheric clouds illuminated by twilight (narration: In specific regional locations of the upper atmosphere, local ozone)
+Image 19: should show: a blazing solar disk in space (narration: Depleting this shield exposes Earth's surface to bio-harmful)
+Image 20: should show: ocean phytoplankton blooming in coastal water (narration: solar ultraviolet radiation, causing widespread biological damage.)
+Image 21: should show: the expanding Cassiopeia A supernova remnant (narration: at speeds reaching several per cent of light speed.)
+Image 22: should show: the giant red star Betelgeuse (narration: In the case of a Betelgeuse supernova, the stream of charged)
+Image 23: should show: planet Earth surrounded by dark star-filled space (narration: to be to permanently destroy Earth's protective atmospheric shield?)
+Image 24: should show: a mountaintop optical telescope dome at dusk (narration: Scientists calculate dangerous stellar distances using atmospheric computer)
+Image 25: should show: the glowing rings of Supernova 1987A (narration: models and measured radiation flux from Supernova 1987A.)
+Image 26: should show: a dense starry field in deep space (narration: Fortunately, a supernova explosion occurring within 33 light-years of Earth)
+Image 27: should show: a distant galaxy emitting an astrophysical relativistic jet (narration: If a highly focused gamma-ray burst pointed directly at Earth,)
+Image 28: should show: a fossilized Ordovician trilobite in rock (narration: In fact, a nearby gamma-ray burst may have triggered the Late Ordovician mass extinction on Earth.)
+Image 29: should show: the constellation Orion shining in the night sky (narration: The famous red supergiant star Betelgeuse sits at a distance)
+Image 30: should show: an astronomical photograph of a red supergiant star (narration: When Betelgeuse detonates as a brilliant supernova within the next)
+Image 31: should show: a crisp half-Moon against a dark sky (narration: 100,000 years, it will shine as bright as a half-Moon.)
+Image 32: should show: a vibrant coral reef full of marine life (narration: Earth will be completely unharmed by its eventual explosion.)
+Image 33: should show: a white dwarf star next to a companion star (narration: The closest known candidate for a white dwarf supernova is)
+Image 34: should show: the constellation Pegasus in the night sky (narration: IK Pegasi, but it is moving away to a safe distance.)
+Image 35: should show: the Pleiades open star cluster surrounded by blue nebula (narration: Even if other famous stars a few hundred light-years away)
+Image 36: should show: a silhouette of a person looking at the starry night sky (narration: As you gaze up at the night sky, how does it)
+Image 37: should show: Earth's glowing blue atmospheric horizon seen from orbit (narration: feel knowing our atmosphere keeps us safe from distant cosmic explosions?)

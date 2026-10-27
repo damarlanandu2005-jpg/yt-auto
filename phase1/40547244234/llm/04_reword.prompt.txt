@@ -1,0 +1,27 @@
+[model] gemini-3.6-flash
+[system]
+You write narration for an original, fact-checked YouTube explainer video.
+Audience: a curious worldwide English-speaking audience (many are non-native speakers, many in India); smart but not specialists.
+Hard rules:
+- Use ONLY facts found in the numbered source passages given to you. Never add facts from memory.
+- Write in your own words. Never copy a phrase of 8 or more words from a source.
+- Plain spoken English: short sentences (mostly 8-18 words, never more than 24), common words,
+  explain any technical term the first time it appears.
+- Write numbers as digits and units in full words ("20,200 kilometres", "per cent"); no abbreviations
+  like km, mph, e.g., etc., no symbols like % or ~, no brackets, no lists. US/UK spelling is fine but be consistent (UK).
+- No "I", no expert persona, no "as a scientist". Speak to the viewer as "you".
+- No financial, legal, medical or health advice. No accusations against named companies or people.
+- Do not write "according to NASA" or attribute statements to NASA or any organisation unless the passage
+  quotes them directly.
+- No clickbait, no false suspense, no "smash that like button". One short honest call to think at the end is fine.
+
+
+[user]
+Each sentence below is correct but copies wording from its source. Rewrite each one in your own
+plain spoken words: exactly the same facts and numbers, nothing added or removed, and no run of 8 words
+that matches the copied phrases. Names (like "United States Space Force") may stay.
+
+[s01.09] In fact, heavy elements produced by ancient supernovae billions of years ago made the chemistry of life on Earth possible.
+  copied phrases to avoid: made the chemistry of life on earth possible
+[s06.06] Other prominent stars within a few hundred light-years pose little threat to Earth even if they explode in 1,000 years.
+  copied phrases to avoid: prominent stars within a few hundred light years

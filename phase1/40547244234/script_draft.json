@@ -1,0 +1,408 @@
+{
+ "title": "How Close Must a Supernova Be to Destroy Earth's Atmosphere?",
+ "scenes": [
+  {
+   "heading": "Part 1: Cosmic Beauty and Invisible Danger",
+   "sentences": [
+    {
+     "text": "A dying star exploding in deep space is one of the most breathtaking visual spectacles in the entire universe.",
+     "kind": "framing",
+     "sources": []
+    },
+    {
+     "text": "But how close would an exploding star need to be to completely strip away Earth's protective atmosphere?",
+     "kind": "framing",
+     "sources": []
+    },
+    {
+     "text": "Understanding this critical safety threshold shows how our fragile atmosphere shields your everyday life from lethal radiation.",
+     "kind": "framing",
+     "sources": []
+    },
+    {
+     "text": "At peak optical brightness, a single supernova can shine as brightly as an entire galaxy of billions of stars.",
+     "kind": "fact",
+     "sources": [
+      "A2.1"
+     ]
+    },
+    {
+     "text": "Fortunately, only a tiny fraction of the 100 billion stars in a typical galaxy ever become supernovae.",
+     "kind": "fact",
+     "sources": [
+      "A2.11"
+     ]
+    },
+    {
+     "text": "Within our Milky Way galaxy, these violent stellar events occur roughly 1.6 to 4.6 times every century on average.",
+     "kind": "fact",
+     "sources": [
+      "A2.8"
+     ]
+    },
+    {
+     "text": "From billions of light-years away, an exploding star looks like a peaceful point of light appearing in the dark sky.",
+     "kind": "framing",
+     "sources": []
+    },
+    {
+     "text": "Up close, however, a supernova acts as a cosmic particle accelerator that destroys everything in its surrounding environment.",
+     "kind": "fact",
+     "sources": [
+      "A2.1",
+      "A2.6"
+     ]
+    },
+    {
+     "text": "In fact, heavy elements produced by ancient supernovae billions of years ago made the chemistry of life on Earth possible.",
+     "kind": "fact",
+     "sources": [
+      "A1.9"
+     ]
+    },
+    {
+     "text": "Yet, if an explosion happens too close to us today, that same energy could destroy our sky completely.",
+     "kind": "framing",
+     "sources": []
+    }
+   ]
+  },
+  {
+   "heading": "Part 2: The First Wave of High-Energy Radiation",
+   "sentences": [
+    {
+     "text": "What would happen if a massive star exploded only a few dozen light-years away from our solar system?",
+     "kind": "framing",
+     "sources": []
+    },
+    {
+     "text": "Earth's atmosphere is remarkably effective at absorbing high-energy electromagnetic radiation like X-rays and gamma rays.",
+     "kind": "fact",
+     "sources": [
+      "A4.45"
+     ]
+    },
+    {
+     "text": "Because of this atmospheric filtering, lethal gamma radiation would not reach the ground directly during the explosion event.",
+     "kind": "fact",
+     "sources": [
+      "A4.45"
+     ]
+    },
+    {
+     "text": "The immediate effect at ground level would only be a short burst of increased ultraviolet radiation lasting several seconds.",
+     "kind": "fact",
+     "sources": [
+      "A4.45"
+     ]
+    },
+    {
+     "text": "Surviving that initial burst of light might make it seem like our planet escaped the catastrophe completely unharmed.",
+     "kind": "framing",
+     "sources": []
+    },
+    {
+     "text": "However, the real destruction is caused by complex chemical reactions initiated in the upper layers of our air.",
+     "kind": "fact",
+     "sources": [
+      "A1.3",
+      "A4.46"
+     ]
+    },
+    {
+     "text": "Earth's stratospheric ozone layer normally absorbs harmful solar ultraviolet light and prevents it from reaching the ground.",
+     "kind": "fact",
+     "sources": [
+      "A3.5",
+      "A3.37"
+     ]
+    },
+    {
+     "text": "High above us, intense energy from incoming gamma rays begins breaking apart stable gas molecules in the upper atmosphere.",
+     "kind": "fact",
+     "sources": [
+      "A1.3",
+      "A4.46"
+     ]
+    },
+    {
+     "text": "This invisible chemical chain reaction sets off a slow atmospheric collapse that threatens all surface life.",
+     "kind": "framing",
+     "sources": []
+    }
+   ]
+  },
+  {
+   "heading": "Part 3: Chemical Destruction of the Ozone Shield",
+   "sentences": [
+    {
+     "text": "Incoming gamma radiation causes radiolysis, breaking apart standard diatomic nitrogen and oxygen molecules high in the atmosphere.",
+     "kind": "fact",
+     "sources": [
+      "A1.3"
+     ]
+    },
+    {
+     "text": "This reaction recombines molecular nitrogen and oxygen into dangerous gaseous compounds known as nitrogen oxides.",
+     "kind": "fact",
+     "sources": [
+      "A1.3",
+      "A4.46"
+     ]
+    },
+    {
+     "text": "Nitrogen oxides act as persistent chemical catalysts that rapidly consume and deplete protective stratospheric ozone molecules.",
+     "kind": "fact",
+     "sources": [
+      "A1.3",
+      "A3.7",
+      "A4.46"
+     ]
+    },
+    {
+     "text": "Computer models show that a nearby explosion could cause a global ozone reduction of 25 to 35 per cent.",
+     "kind": "fact",
+     "sources": [
+      "A4.46"
+     ]
+    },
+    {
+     "text": "In specific regional locations of the upper atmosphere, local ozone loss could reach up to 75 per cent for years.",
+     "kind": "fact",
+     "sources": [
+      "A4.46"
+     ]
+    },
+    {
+     "text": "Depleting this shield exposes Earth's surface to bio-harmful solar ultraviolet radiation, causing widespread biological damage.",
+     "kind": "fact",
+     "sources": [
+      "A1.3",
+      "A3.37"
+     ]
+    },
+    {
+     "text": "Increased ultraviolet light damages marine phytoplankton and coral reef communities, severely threatening the base of the marine food chain.",
+     "kind": "fact",
+     "sources": [
+      "A1.3"
+     ]
+    },
+    {
+     "text": "On land, excessive ultraviolet exposure damages cellular DNA, driving up rates of skin cancer and permanent eye cataracts.",
+     "kind": "fact",
+     "sources": [
+      "A3.41",
+      "A3.43"
+     ]
+    },
+    {
+     "text": "Elevated nitrogen dioxide creates brown photochemical smog that blocks sunlight, while also producing toxic nitric acid rain.",
+     "kind": "fact",
+     "sources": [
+      "A4.46"
+     ]
+    }
+   ]
+  },
+  {
+   "heading": "Part 4: The Second Wave from Cosmic Rays",
+   "sentences": [
+    {
+     "text": "Long after the initial flash of gamma radiation fades, a secondary wave of destruction begins traveling toward Earth.",
+     "kind": "framing",
+     "sources": []
+    },
+    {
+     "text": "Supernovae expel several solar masses of stellar material into space at speeds reaching several per cent of light speed.",
+     "kind": "fact",
+     "sources": [
+      "A2.6"
+     ]
+    },
+    {
+     "text": "These expanding blast waves sweep up gas and dust, serving as a primary cosmic source of energetic cosmic rays.",
+     "kind": "fact",
+     "sources": [
+      "A2.6"
+     ]
+    },
+    {
+     "text": "Because these charged energetic particles travel slower than light, they arrive roughly 100,000 years after the initial flash.",
+     "kind": "fact",
+     "sources": [
+      "A1.5"
+     ]
+    },
+    {
+     "text": "When this delayed stream of high-speed cosmic rays hits Earth, it delivers a second prolonged assault on our atmosphere.",
+     "kind": "fact",
+     "sources": [
+      "A1.4",
+      "A1.5"
+     ]
+    },
+    {
+     "text": "Geological evidence suggests that past cosmic ray increases produced cooler global climates and created stronger surface winds.",
+     "kind": "fact",
+     "sources": [
+      "A1.4"
+     ]
+    },
+    {
+     "text": "Scientists found iron-60 isotopes in deep-sea Pacific Ocean rocks, proving a supernova exploded within 98 light-years millions of years ago.",
+     "kind": "fact",
+     "sources": [
+      "A1.10"
+     ]
+    },
+    {
+     "text": "The low quantity of iron-60 indicates that the ancient star exploded far enough away to avoid causing a mass extinction.",
+     "kind": "fact",
+     "sources": [
+      "A1.10"
+     ]
+    },
+    {
+     "text": "But if a star detonated much closer, this second wave would devastate a planet already struggling to recover.",
+     "kind": "framing",
+     "sources": []
+    }
+   ]
+  },
+  {
+   "heading": "Part 5: Calculating the Safe Threshold Distance",
+   "sentences": [
+    {
+     "text": "How close would a dying star actually need to be to permanently destroy Earth's protective atmospheric shield?",
+     "kind": "framing",
+     "sources": []
+    },
+    {
+     "text": "Scientists calculate dangerous stellar distances using atmospheric computer models and measured radiation flux from Supernova 1987A.",
+     "kind": "fact",
+     "sources": [
+      "A1.7"
+     ]
+    },
+    {
+     "text": "A Type II supernova occurring closer than 26 light-years, or 8 parsecs, would destroy over half of Earth's ozone layer.",
+     "kind": "fact",
+     "sources": [
+      "A1.7"
+     ]
+    },
+    {
+     "text": "Fortunately, a supernova explosion occurring within 33 light-years of Earth is estimated to happen only once every 240 million years.",
+     "kind": "fact",
+     "sources": [
+      "A1.3"
+     ]
+    },
+    {
+     "text": "If a highly focused gamma-ray burst pointed directly at Earth, its focused beam could vapourise anything within 200 light-years.",
+     "kind": "fact",
+     "sources": [
+      "A4.43"
+     ]
+    },
+    {
+     "text": "In fact, a nearby gamma-ray burst 440 million years ago may have triggered the end-Ordovician mass extinction on Earth.",
+     "kind": "fact",
+     "sources": [
+      "A1.11",
+      "A4.3"
+     ]
+    },
+    {
+     "text": "That ancient cosmic event killed nearly 60 per cent of all marine life species in Earth's oceans.",
+     "kind": "fact",
+     "sources": [
+      "A1.11"
+     ]
+    },
+    {
+     "text": "Un-beamed supernova explosions occurring between 33 and 978 light-years away produce noticeable atmospheric changes without complete destruction.",
+     "kind": "fact",
+     "sources": [
+      "A1.1",
+      "A1.3"
+     ]
+    },
+    {
+     "text": "This establishes a clear safety threshold, showing that a star must explode within 26 to 33 light-years to strip our atmosphere.",
+     "kind": "framing",
+     "sources": []
+    }
+   ]
+  },
+  {
+   "heading": "Part 6: Mapping Our Stellar Neighbourhood",
+   "sentences": [
+    {
+     "text": "Are there any dangerous candidate stars close enough to threaten Earth with an atmospheric collapse today?",
+     "kind": "framing",
+     "sources": []
+    },
+    {
+     "text": "The famous red supergiant star Betelgeuse sits at a distance of roughly 400 to 600 light-years from our Sun.",
+     "kind": "fact",
+     "sources": [
+      "A5.2"
+     ]
+    },
+    {
+     "text": "When Betelgeuse detonates as a brilliant supernova within the next 100,000 years, it will shine as bright as a half-Moon.",
+     "kind": "fact",
+     "sources": [
+      "A5.2"
+     ]
+    },
+    {
+     "text": "Because Betelgeuse is hundreds of light-years away, life on Earth will be completely unharmed by its eventual explosion.",
+     "kind": "fact",
+     "sources": [
+      "A5.2"
+     ]
+    },
+    {
+     "text": "The closest known candidate for a white dwarf supernova is IK Pegasi, but it is moving away to a safe distance.",
+     "kind": "fact",
+     "sources": [
+      "A1.8"
+     ]
+    },
+    {
+     "text": "Other prominent stars within a few hundred light-years pose little threat to Earth even if they explode in 1,000 years.",
+     "kind": "fact",
+     "sources": [
+      "A1.6"
+     ]
+    },
+    {
+     "text": "To destroy Earth's atmosphere, an exploding star must be located closer than 26 to 33 light-years away from us.",
+     "kind": "fact",
+     "sources": [
+      "A1.3",
+      "A1.7"
+     ]
+    },
+    {
+     "text": "Because no supernova candidate star currently exists within that lethal boundary, our protective atmosphere remains entirely secure.",
+     "kind": "fact",
+     "sources": [
+      "A1.1",
+      "A1.2",
+      "A1.6",
+      "A1.8"
+     ]
+    },
+    {
+     "text": "As you gaze up at the night sky, how does it feel knowing our atmosphere keeps us safe from distant cosmic explosions?",
+     "kind": "framing",
+     "sources": []
+    }
+   ]
+  }
+ ]
+}

@@ -1,0 +1,253 @@
+{
+ "sentences": [
+  {
+   "id": "s01.02",
+   "scene": "s01",
+   "text": "But how close would an exploding star need to be to completely strip away Earth's protective atmosphere?",
+   "start": 0.012,
+   "end": 6.085
+  },
+  {
+   "id": "s01.04",
+   "scene": "s01",
+   "text": "At peak optical brightness, a single supernova can be comparable to an entire galaxy.",
+   "start": 6.545,
+   "end": 12.151
+  },
+  {
+   "id": "s01.06",
+   "scene": "s01",
+   "text": "Within our Milky Way galaxy, these violent stellar events occur roughly 1.6 to 4.6 times every century on average.",
+   "start": 12.631,
+   "end": 21.729
+  },
+  {
+   "id": "s01.09",
+   "scene": "s01",
+   "text": "Billions of years ago, ancient supernovae formed heavy elements that enabled the chemical processes for life on Earth.",
+   "start": 22.233,
+   "end": 29.818
+  },
+  {
+   "id": "s02.01",
+   "scene": "s02",
+   "text": "What would happen if a massive star exploded only a few dozen light-years away from our solar system?",
+   "start": 31.377,
+   "end": 37.163
+  },
+  {
+   "id": "s02.02",
+   "scene": "s02",
+   "text": "Earth's atmosphere is remarkably effective at absorbing high-energy electromagnetic radiation like X-rays and gamma rays.",
+   "start": 37.634,
+   "end": 46.581
+  },
+  {
+   "id": "s02.05",
+   "scene": "s02",
+   "text": "Surviving that initial burst of light might make it seem like our planet escaped the catastrophe completely unharmed.",
+   "start": 47.012,
+   "end": 54.57
+  },
+  {
+   "id": "s02.06",
+   "scene": "s02",
+   "text": "However, the real destruction is caused by complex chemical reactions initiated in the upper layers of our air.",
+   "start": 55.043,
+   "end": 62.263
+  },
+  {
+   "id": "s02.08",
+   "scene": "s02",
+   "text": "High above us, intense energy from incoming gamma rays begins breaking apart stable gas molecules in the upper atmosphere.",
+   "start": 62.739,
+   "end": 71.268
+  },
+  {
+   "id": "s03.01",
+   "scene": "s03",
+   "text": "Incoming gamma radiation causes radiolysis, breaking apart standard diatomic nitrogen and oxygen molecules high in the atmosphere.",
+   "start": 72.748,
+   "end": 82.585
+  },
+  {
+   "id": "s03.02",
+   "scene": "s03",
+   "text": "This reaction recombines molecular nitrogen and oxygen into dangerous gaseous compounds known as nitrogen oxides.",
+   "start": 83.041,
+   "end": 91.841
+  },
+  {
+   "id": "s03.03",
+   "scene": "s03",
+   "text": "Nitrogen oxides deplete protective stratospheric ozone molecules.",
+   "start": 92.303,
+   "end": 97.001
+  },
+  {
+   "id": "s03.04",
+   "scene": "s03",
+   "text": "Computer models show that a nearby explosion could cause a global ozone reduction of 25 to 35 per cent.",
+   "start": 97.455,
+   "end": 105.545
+  },
+  {
+   "id": "s03.05",
+   "scene": "s03",
+   "text": "In specific regional locations of the upper atmosphere, local ozone loss could reach up to 75 per cent for years.",
+   "start": 105.995,
+   "end": 114.038
+  },
+  {
+   "id": "s03.06",
+   "scene": "s03",
+   "text": "Depleting this shield exposes Earth's surface to bio-harmful solar ultraviolet radiation, causing widespread biological damage.",
+   "start": 114.48,
+   "end": 123.773
+  },
+  {
+   "id": "s04.02",
+   "scene": "s04",
+   "text": "Supernovae expel several solar masses of stellar material into space at speeds reaching several per cent of light speed.",
+   "start": 125.213,
+   "end": 133.35
+  },
+  {
+   "id": "s04.04",
+   "scene": "s04",
+   "text": "In the case of a Betelgeuse supernova, the stream of charged particles would reach Earth about 100,000 years after the initial light.",
+   "start": 133.821,
+   "end": 142.494
+  },
+  {
+   "id": "s05.01",
+   "scene": "s05",
+   "text": "How close would a dying star actually need to be to permanently destroy Earth's protective atmospheric shield?",
+   "start": 143.961,
+   "end": 150.799
+  },
+  {
+   "id": "s05.02",
+   "scene": "s05",
+   "text": "Scientists calculate dangerous stellar distances using atmospheric computer models and measured radiation flux from Supernova 1987A.",
+   "start": 151.258,
+   "end": 162.018
+  },
+  {
+   "id": "s05.04",
+   "scene": "s05",
+   "text": "Fortunately, a supernova explosion occurring within 33 light-years of Earth is estimated to happen only once every 240 million years.",
+   "start": 162.514,
+   "end": 172.32
+  },
+  {
+   "id": "s05.05",
+   "scene": "s05",
+   "text": "If a highly focused gamma-ray burst pointed directly at Earth, its focused beam could vapourise anything within 200 light-years.",
+   "start": 172.747,
+   "end": 181.079
+  },
+  {
+   "id": "s05.06",
+   "scene": "s05",
+   "text": "In fact, a nearby gamma-ray burst may have triggered the Late Ordovician mass extinction on Earth.",
+   "start": 181.509,
+   "end": 187.442
+  },
+  {
+   "id": "s05.07",
+   "scene": "s05",
+   "text": "That ancient cosmic event resulted in the death of nearly 60 per cent of oceanic life on Earth.",
+   "start": 187.952,
+   "end": 194.359
+  },
+  {
+   "id": "s06.01",
+   "scene": "s06",
+   "text": "Are there any dangerous candidate stars close enough to threaten Earth with an atmospheric collapse today?",
+   "start": 195.905,
+   "end": 202.11
+  },
+  {
+   "id": "s06.02",
+   "scene": "s06",
+   "text": "The famous red supergiant star Betelgeuse sits at a distance of roughly 400 to 600 light-years from our Sun.",
+   "start": 202.586,
+   "end": 210.881
+  },
+  {
+   "id": "s06.03",
+   "scene": "s06",
+   "text": "When Betelgeuse detonates as a brilliant supernova within the next 100,000 years, it will shine as bright as a half-Moon.",
+   "start": 211.336,
+   "end": 219.248
+  },
+  {
+   "id": "s06.04",
+   "scene": "s06",
+   "text": "Because Betelgeuse is hundreds of light-years away, life on Earth will be completely unharmed by its eventual explosion.",
+   "start": 219.717,
+   "end": 227.275
+  },
+  {
+   "id": "s06.05",
+   "scene": "s06",
+   "text": "The closest known candidate for a white dwarf supernova is IK Pegasi, but it is moving away to a safe distance.",
+   "start": 227.765,
+   "end": 235.341
+  },
+  {
+   "id": "s06.06",
+   "scene": "s06",
+   "text": "Even if other famous stars a few hundred light-years away explode in 1,000 years, Earth is in little danger.",
+   "start": 235.795,
+   "end": 242.811
+  },
+  {
+   "id": "s06.09",
+   "scene": "s06",
+   "text": "As you gaze up at the night sky, how does it feel knowing our atmosphere keeps us safe from distant cosmic explosions?",
+   "start": 243.327,
+   "end": 250.195
+  }
+ ],
+ "scenes": [
+  {
+   "id": "s01",
+   "heading": "Part 1: Cosmic Beauty and Invisible Danger",
+   "start": 0.0,
+   "end": 31.357333333333333
+  },
+  {
+   "id": "s02",
+   "heading": "Part 2: The First Wave of High-Energy Radiation",
+   "start": 31.357333333333333,
+   "end": 72.736
+  },
+  {
+   "id": "s03",
+   "heading": "Part 3: Chemical Destruction of the Ozone Shield",
+   "start": 72.736,
+   "end": 125.20266666666667
+  },
+  {
+   "id": "s04",
+   "heading": "Part 4: The Second Wave from Cosmic Rays",
+   "start": 125.20266666666667,
+   "end": 143.94133333333335
+  },
+  {
+   "id": "s05",
+   "heading": "Part 5: Calculating the Safe Threshold Distance",
+   "start": 143.94133333333335,
+   "end": 195.89600000000002
+  },
+  {
+   "id": "s06",
+   "heading": "Part 6: Mapping Our Stellar Neighbourhood",
+   "start": 195.89600000000002,
+   "end": 251.64266666666668
+  }
+ ],
+ "total": 251.642667
+}

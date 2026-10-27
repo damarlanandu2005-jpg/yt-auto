@@ -1,0 +1,1 @@
+{"sentences":[{"id":"s01.09","text":"Billions of years ago, ancient supernovae formed heavy elements that enabled the chemical processes for life on Earth."},{"id":"s06.06","text":"Even if other famous stars a few hundred light-years away explode in 1,000 years, Earth is in little danger."}]}

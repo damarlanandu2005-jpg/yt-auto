@@ -1,0 +1,226 @@
+{
+  "checks": [
+    {
+      "n": 1,
+      "seen": "a glowing spiral galaxy",
+      "fits": true,
+      "reason": "clearly shows a spiral galaxy as required by the narration"
+    },
+    {
+      "n": 2,
+      "seen": "the Milky Way arching across the night sky",
+      "fits": true,
+      "reason": "shows the Milky Way arching over a landscape matching the narration"
+    },
+    {
+      "n": 3,
+      "seen": "the Crab Nebula supernova remnant",
+      "fits": true,
+      "reason": "accurately shows the Crab Nebula supernova remnant"
+    },
+    {
+      "n": 4,
+      "seen": "planet Earth viewed from space",
+      "fits": true,
+      "reason": "clearly shows planet Earth from space"
+    },
+    {
+      "n": 5,
+      "seen": "the glowing blue atmospheric limb of Earth",
+      "fits": true,
+      "reason": "shows Earth's atmospheric limb from orbit"
+    },
+    {
+      "n": 6,
+      "seen": "an orbiting gamma ray space telescope illustration",
+      "fits": true,
+      "reason": "depicts a space telescope in orbit"
+    },
+    {
+      "n": 7,
+      "seen": "a spacecraft docked with the International Space Station over Earth",
+      "fits": false,
+      "reason": "shows the ISS and spacecraft, not a starry night sky over mountains as requested by the narration prompt"
+    },
+    {
+      "n": 8,
+      "seen": "an aerial view of a volcanic island",
+      "fits": false,
+      "reason": "shows an island from above instead of a lush green forest under sunlight"
+    },
+    {
+      "n": 9,
+      "seen": "an aurora glowing in the upper atmosphere",
+      "fits": true,
+      "reason": "shows an aurora glowing in the atmosphere from space"
+    },
+    {
+      "n": 10,
+      "seen": "the Moon above Earth's atmospheric layers",
+      "fits": true,
+      "reason": "shows the Moon above the stratospheric horizon"
+    },
+    {
+      "n": 11,
+      "seen": "Earth's thin atmospheric layer from space",
+      "fits": true,
+      "reason": "shows the high atmosphere rim"
+    },
+    {
+      "n": 12,
+      "seen": "a beam of light in the night sky over a tree",
+      "fits": false,
+      "reason": "shows a light beam/phenomenon, but not clearly auroral ribbons as specified"
+    },
+    {
+      "n": 13,
+      "seen": "a high-altitude weather balloon ascending",
+      "fits": true,
+      "reason": "shows a weather balloon in the blue sky"
+    },
+    {
+      "n": 14,
+      "seen": "an ionized electric plasma discharge",
+      "fits": true,
+      "reason": "shows electrical plasma discharge filaments"
+    },
+    {
+      "n": 15,
+      "seen": "a planetary body or haze layer",
+      "fits": true,
+      "reason": "shows a hazy spherical celestial or atmospheric image"
+    },
+    {
+      "n": 16,
+      "seen": "a website banner with text 'How Weather Satellites Changed the World'",
+      "fits": false,
+      "reason": "contains prominent website text and UI elements, making it unsuitable"
+    },
+    {
+      "n": 17,
+      "seen": "a server room corridor with colored lights",
+      "fits": true,
+      "reason": "shows a supercomputer data center hallway matching computer models context"
+    },
+    {
+      "n": 18,
+      "seen": "nacreous polar stratospheric clouds at sunset",
+      "fits": true,
+      "reason": "shows colorful polar stratospheric clouds"
+    },
+    {
+      "n": 19,
+      "seen": "a blazing solar disk in space",
+      "fits": true,
+      "reason": "shows the Sun in detail"
+    },
+    {
+      "n": 20,
+      "seen": "ocean phytoplankton blooming in coastal water",
+      "fits": true,
+      "reason": "shows large ocean phytoplankton blooms from satellite view"
+    },
+    {
+      "n": 21,
+      "seen": "the expanding Cassiopeia A supernova remnant",
+      "fits": true,
+      "reason": "shows a colorful supernova remnant"
+    },
+    {
+      "n": 22,
+      "seen": "the giant red star Betelgeuse",
+      "fits": true,
+      "reason": "shows an image of the red supergiant star Betelgeuse"
+    },
+    {
+      "n": 23,
+      "seen": "planet Earth with a meteor trail seen from space",
+      "fits": true,
+      "reason": "shows Earth from space with a streak/trail matching the destruction of atmospheric shield context"
+    },
+    {
+      "n": 24,
+      "seen": "a mountaintop optical telescope dome interior",
+      "fits": true,
+      "reason": "shows the interior of a telescope observatory dome"
+    },
+    {
+      "n": 25,
+      "seen": "the glowing rings of Supernova 1987A",
+      "fits": true,
+      "reason": "shows Supernova 1987A with descriptive text label"
+    },
+    {
+      "n": 26,
+      "seen": "a dense starry field in deep space",
+      "fits": true,
+      "reason": "shows a deep field image full of galaxies"
+    },
+    {
+      "n": 27,
+      "seen": "a galaxy emitting an astrophysical relativistic jet",
+      "fits": true,
+      "reason": "shows a jet emitting from a galaxy core"
+    },
+    {
+      "n": 28,
+      "seen": "a fossilized trilobite embedded in rock",
+      "fits": true,
+      "reason": "shows a fossil, fitting the mass extinction context"
+    },
+    {
+      "n": 29,
+      "seen": "a star field showing a constellation",
+      "fits": true,
+      "reason": "shows stars against a dark background"
+    },
+    {
+      "n": 30,
+      "seen": "an illustration of a red supergiant star",
+      "fits": true,
+      "reason": "shows a simulated image of a red supergiant star"
+    },
+    {
+      "n": 31,
+      "seen": "a crisp half-Moon against a dark sky",
+      "fits": true,
+      "reason": "shows a cratered moon phase"
+    },
+    {
+      "n": 32,
+      "seen": "a vibrant coral reef full of marine life",
+      "fits": true,
+      "reason": "shows underwater coral and fish"
+    },
+    {
+      "n": 33,
+      "seen": "a binary star system in space",
+      "fits": true,
+      "reason": "shows two stars shining in space"
+    },
+    {
+      "n": 34,
+      "seen": "a star field with the Milky Way visible",
+      "fits": true,
+      "reason": "shows a wide field astrophotography shot"
+    },
+    {
+      "n": 35,
+      "seen": "a colorful reflection nebula in space",
+      "fits": true,
+      "reason": "shows a detailed nebula field"
+    },
+    {
+      "n": 36,
+      "seen": "a silhouette of a person looking at the Milky Way",
+      "fits": true,
+      "reason": "shows a person gazing at the starry night sky"
+    },
+    {
+      "n": 37,
+      "seen": "Earth's atmospheric horizon seen from orbit at night",
+      "fits": true,
+      "reason": "shows Earth's thin atmospheric glow from space"
+    }
+  ]
+}

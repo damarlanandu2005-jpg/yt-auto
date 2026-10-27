@@ -1,0 +1,286 @@
+1
+00:00:00,012 --> 00:00:04,820
+But how close would an exploding star need
+to be to completely strip away Earth's
+
+2
+00:00:04,820 --> 00:00:05,840
+protective atmosphere?
+
+3
+00:00:06,580 --> 00:00:11,200
+At peak optical brightness, a single
+supernova can be comparable to an entire
+
+4
+00:00:11,200 --> 00:00:12,000
+galaxy.
+
+5
+00:00:12,631 --> 00:00:16,940
+Within our Milky Way galaxy, these
+violent stellar events occur roughly
+
+6
+00:00:16,940 --> 00:00:21,400
+1.6 to 4.6 times every century on average.
+
+7
+00:00:22,340 --> 00:00:27,480
+Billions of years ago, ancient supernovae
+formed heavy elements that enabled the
+
+8
+00:00:27,480 --> 00:00:29,660
+chemical processes for life on Earth.
+
+9
+00:00:31,377 --> 00:00:36,240
+What would happen if a massive star exploded
+only a few dozen light-years away from
+
+10
+00:00:36,240 --> 00:00:37,040
+our solar system?
+
+11
+00:00:37,640 --> 00:00:42,700
+Earth's atmosphere is remarkably effective
+at absorbing high-energy electromagnetic
+
+12
+00:00:42,700 --> 00:00:46,300
+radiation like X-rays and gamma rays.
+
+13
+00:00:47,100 --> 00:00:52,240
+Surviving that initial burst of light might
+make it seem like our planet escaped the
+
+14
+00:00:52,240 --> 00:00:54,460
+catastrophe completely unharmed.
+
+15
+00:00:55,043 --> 00:01:00,220
+However, the real destruction is caused
+by complex chemical reactions initiated
+
+16
+00:01:00,220 --> 00:01:02,080
+in the upper layers of our air.
+
+17
+00:01:02,739 --> 00:01:07,900
+High above us, intense energy from
+incoming gamma rays begins breaking apart
+
+18
+00:01:07,900 --> 00:01:11,040
+stable gas molecules in
+the upper atmosphere.
+
+19
+00:01:12,748 --> 00:01:16,480
+Incoming gamma radiation
+causes radiolysis,
+
+20
+00:01:16,480 --> 00:01:21,860
+breaking apart standard diatomic nitrogen
+and oxygen molecules high in the
+
+21
+00:01:21,860 --> 00:01:22,660
+atmosphere.
+
+22
+00:01:23,041 --> 00:01:28,120
+This reaction recombines molecular
+nitrogen and oxygen into dangerous
+
+23
+00:01:28,120 --> 00:01:31,620
+gaseous compounds known
+as nitrogen oxides.
+
+24
+00:01:32,303 --> 00:01:36,620
+Nitrogen oxides deplete protective
+stratospheric ozone molecules.
+
+25
+00:01:37,455 --> 00:01:42,400
+Computer models show that a nearby explosion
+could cause a global ozone reduction
+
+26
+00:01:42,400 --> 00:01:45,545
+of 25 to 35 per cent.
+
+27
+00:01:45,995 --> 00:01:49,040
+In specific regional locations
+of the upper atmosphere,
+
+28
+00:01:49,660 --> 00:01:53,760
+local ozone loss could reach
+up to 75 per cent for years.
+
+29
+00:01:54,480 --> 00:01:59,660
+Depleting this shield exposes Earth's
+surface to bio-harmful solar ultraviolet
+
+30
+00:01:59,660 --> 00:02:03,620
+radiation, causing widespread
+biological damage.
+
+31
+00:02:05,213 --> 00:02:10,560
+Supernovae expel several solar masses of
+stellar material into space at speeds
+
+32
+00:02:10,560 --> 00:02:13,020
+reaching several per cent of light speed.
+
+33
+00:02:13,821 --> 00:02:15,560
+In the case of a Betelgeuse supernova,
+
+34
+00:02:15,820 --> 00:02:20,760
+the stream of charged particles
+would reach Earth about 100,000 years
+
+35
+00:02:20,760 --> 00:02:22,280
+after the initial light.
+
+36
+00:02:23,961 --> 00:02:28,780
+How close would a dying star actually
+need to be to permanently destroy Earth's
+
+37
+00:02:28,780 --> 00:02:30,480
+protective atmospheric shield?
+
+38
+00:02:31,260 --> 00:02:36,660
+Scientists calculate dangerous stellar
+distances using atmospheric computer models
+
+39
+00:02:36,920 --> 00:02:41,840
+and measured radiation
+flux from Supernova 1987A.
+
+40
+00:02:42,514 --> 00:02:47,380
+Fortunately, a supernova explosion
+occurring within 33 light-years of Earth
+
+41
+00:02:47,670 --> 00:02:52,020
+is estimated to happen only
+once every 240 million years.
+
+42
+00:02:52,747 --> 00:02:56,220
+If a highly focused gamma-ray
+burst pointed directly at Earth,
+
+43
+00:02:56,820 --> 00:03:01,079
+its focused beam could vapourise
+anything within 200 light-years.
+
+44
+00:03:01,509 --> 00:03:06,080
+In fact, a nearby gamma-ray burst may
+have triggered the Late Ordovician mass
+
+45
+00:03:06,080 --> 00:03:07,220
+extinction on Earth.
+
+46
+00:03:07,952 --> 00:03:13,420
+That ancient cosmic event resulted in the
+death of nearly 60 per cent of oceanic
+
+47
+00:03:13,420 --> 00:03:14,220
+life on Earth.
+
+48
+00:03:15,905 --> 00:03:20,460
+Are there any dangerous candidate stars
+close enough to threaten Earth with an
+
+49
+00:03:20,460 --> 00:03:21,880
+atmospheric collapse today?
+
+50
+00:03:22,586 --> 00:03:28,020
+The famous red supergiant star Betelgeuse
+sits at a distance of roughly 400
+
+51
+00:03:28,020 --> 00:03:30,660
+to 600 light-years from our Sun.
+
+52
+00:03:31,336 --> 00:03:36,320
+When Betelgeuse detonates as a brilliant
+supernova within the next 100,000 years,
+
+53
+00:03:36,980 --> 00:03:39,248
+it will shine as bright as a half-Moon.
+
+54
+00:03:39,717 --> 00:03:42,140
+Because Betelgeuse is
+hundreds of light-years away,
+
+55
+00:03:42,740 --> 00:03:46,780
+life on Earth will be completely
+unharmed by its eventual explosion.
+
+56
+00:03:47,765 --> 00:03:52,340
+The closest known candidate for a
+white dwarf supernova is IK Pegasi,
+
+57
+00:03:52,640 --> 00:03:55,000
+but it is moving away to a safe distance.
+
+58
+00:03:55,795 --> 00:04:00,680
+Even if other famous stars a few hundred
+light-years away explode in 1,000 years,
+
+59
+00:04:01,200 --> 00:04:02,500
+Earth is in little danger.
+
+60
+00:04:03,327 --> 00:04:04,640
+As you gaze up at the night sky,
+
+61
+00:04:05,140 --> 00:04:09,120
+how does it feel knowing our atmosphere
+keeps us safe from distant cosmic
+
+62
+00:04:09,120 --> 00:04:09,920
+explosions?

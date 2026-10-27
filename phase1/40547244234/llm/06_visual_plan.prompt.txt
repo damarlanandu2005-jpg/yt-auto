@@ -1,0 +1,83 @@
+[model] gemini-3.8-flash
+[system]
+
+
+[user]
+Video: How Close Must a Supernova Be to Destroy Earth's Atmosphere?
+Plan one visual for each slot of narration below. The viewer sees it while hearing that text.
+Rules:
+- Real photos first: use kind=photo for at least 65 per cent of slots, whenever a real photo could show the
+  thing being talked about (objects, places, spacecraft, machines, nature, historical photos).
+  Ask for SIMPLE subjects an archive surely has ("a handheld GPS receiver", "a rocket launch", "an atomic
+  clock"), never a detailed scene ("a hiker with a GPS in remote mountains with no signal"). A photo of the
+  object being discussed is better than a text card.
+- Use kind=card when a number, comparison, process or list is the point, or at scene starts (title card).
+- The first slot is a title card with the video title.
+- Every number on a card MUST appear in that slot's text or earlier in the same scene. Never invent data.
+- Vary: never the same card type twice in a row; never more than 2 cards in a row.
+- Text cards are the last choice: at most one bullets card per scene, and a bare title card only at scene starts.
+  Prefer stat, bars, timeline, flow or compare when a card is needed.
+- For kind=photo still give a fallback card (used if no good photo exists).
+Card types (all text short; big and readable on a phone):
+- title: title (+ subtitle). Use for scene openings.
+- stat: value (a number with unit, e.g. "20,200 km") + label (+ note).
+- bullets: title + 2-4 items (each under 6 words).
+- flow: title + 2-5 steps (cause -> effect, process).
+- bars: title + labels + values (+ unit). Compare 2-6 quantities.
+- timeline: title + 2-5 events {when, label}.
+- compare: title + left_title/left_points vs right_title/right_points.
+
+SLOTS:
+v001 [6.5s] (scene: Part 1: Cosmic Beauty and Invisible Danger, SCENE START) But how close would an exploding star need to be to completely strip away Earth's protective atmosphere?
+v002 [6.1s] (scene: Part 1: Cosmic Beauty and Invisible Danger) At peak optical brightness, a single supernova can be comparable to an entire galaxy.
+v003 [4.8s] (scene: Part 1: Cosmic Beauty and Invisible Danger) Within our Milky Way galaxy, these violent stellar events occur
+v004 [4.8s] (scene: Part 1: Cosmic Beauty and Invisible Danger) roughly 1.6 to 4.6 times every century on average.
+v005 [3.8s] (scene: Part 1: Cosmic Beauty and Invisible Danger) Billions of years ago, ancient supernovae formed heavy elements
+v006 [5.3s] (scene: Part 1: Cosmic Beauty and Invisible Danger) that enabled the chemical processes for life on Earth.
+v007 [6.3s] (scene: Part 2: The First Wave of High-Energy Radiation, SCENE START) What would happen if a massive star exploded only a few dozen light-years away from our solar system?
+v008 [4.8s] (scene: Part 2: The First Wave of High-Energy Radiation) Earth's atmosphere is remarkably effective at absorbing high-energy
+v009 [4.6s] (scene: Part 2: The First Wave of High-Energy Radiation) electromagnetic radiation like X-rays and gamma rays.
+v010 [3.8s] (scene: Part 2: The First Wave of High-Energy Radiation) Surviving that initial burst of light might make it
+v011 [4.2s] (scene: Part 2: The First Wave of High-Energy Radiation) seem like our planet escaped the catastrophe completely unharmed.
+v012 [3.6s] (scene: Part 2: The First Wave of High-Energy Radiation) However, the real destruction is caused by complex chemical
+v013 [4.1s] (scene: Part 2: The First Wave of High-Energy Radiation) reactions initiated in the upper layers of our air.
+v014 [4.5s] (scene: Part 2: The First Wave of High-Energy Radiation) High above us, intense energy from incoming gamma rays begins
+v015 [5.5s] (scene: Part 2: The First Wave of High-Energy Radiation) breaking apart stable gas molecules in the upper atmosphere.
+v016 [4.6s] (scene: Part 3: Chemical Destruction of the Ozone Shield, SCENE START) Incoming gamma radiation causes radiolysis, breaking apart standard
+v017 [5.7s] (scene: Part 3: Chemical Destruction of the Ozone Shield) diatomic nitrogen and oxygen molecules high in the atmosphere.
+v018 [4.7s] (scene: Part 3: Chemical Destruction of the Ozone Shield) This reaction recombines molecular nitrogen and oxygen into
+v019 [4.6s] (scene: Part 3: Chemical Destruction of the Ozone Shield) dangerous gaseous compounds known as nitrogen oxides.
+v020 [5.2s] (scene: Part 3: Chemical Destruction of the Ozone Shield) Nitrogen oxides deplete protective stratospheric ozone molecules.
+v021 [4.3s] (scene: Part 3: Chemical Destruction of the Ozone Shield) Computer models show that a nearby explosion could cause a
+v022 [4.3s] (scene: Part 3: Chemical Destruction of the Ozone Shield) global ozone reduction of 25 to 35 per cent.
+v023 [4.0s] (scene: Part 3: Chemical Destruction of the Ozone Shield) In specific regional locations of the upper atmosphere, local ozone
+v024 [4.5s] (scene: Part 3: Chemical Destruction of the Ozone Shield) loss could reach up to 75 per cent for years.
+v025 [5.0s] (scene: Part 3: Chemical Destruction of the Ozone Shield) Depleting this shield exposes Earth's surface to bio-harmful
+v026 [5.8s] (scene: Part 3: Chemical Destruction of the Ozone Shield) solar ultraviolet radiation, causing widespread biological damage.
+v027 [4.3s] (scene: Part 4: The Second Wave from Cosmic Rays, SCENE START) Supernovae expel several solar masses of stellar material into space
+v028 [4.3s] (scene: Part 4: The Second Wave from Cosmic Rays) at speeds reaching several per cent of light speed.
+v029 [4.3s] (scene: Part 4: The Second Wave from Cosmic Rays) In the case of a Betelgeuse supernova, the stream of charged
+v030 [5.8s] (scene: Part 4: The Second Wave from Cosmic Rays) particles would reach Earth about 100,000 years after the initial light.
+v031 [3.2s] (scene: Part 5: Calculating the Safe Threshold Distance, SCENE START) How close would a dying star actually need
+v032 [4.1s] (scene: Part 5: Calculating the Safe Threshold Distance) to be to permanently destroy Earth's protective atmospheric shield?
+v033 [5.4s] (scene: Part 5: Calculating the Safe Threshold Distance) Scientists calculate dangerous stellar distances using atmospheric computer
+v034 [5.9s] (scene: Part 5: Calculating the Safe Threshold Distance) models and measured radiation flux from Supernova 1987A.
+v035 [4.9s] (scene: Part 5: Calculating the Safe Threshold Distance) Fortunately, a supernova explosion occurring within 33 light-years of Earth
+v036 [5.3s] (scene: Part 5: Calculating the Safe Threshold Distance) is estimated to happen only once every 240 million years.
+v037 [4.4s] (scene: Part 5: Calculating the Safe Threshold Distance) If a highly focused gamma-ray burst pointed directly at Earth,
+v038 [4.4s] (scene: Part 5: Calculating the Safe Threshold Distance) its focused beam could vapourise anything within 200 light-years.
+v039 [6.4s] (scene: Part 5: Calculating the Safe Threshold Distance) In fact, a nearby gamma-ray burst may have triggered the Late Ordovician mass extinction on Earth.
+v040 [8.0s] (scene: Part 5: Calculating the Safe Threshold Distance) That ancient cosmic event resulted in the death of nearly 60 per cent of oceanic life on Earth.
+v041 [6.7s] (scene: Part 6: Mapping Our Stellar Neighbourhood, SCENE START) Are there any dangerous candidate stars close enough to threaten Earth with an atmospheric collapse today?
+v042 [4.4s] (scene: Part 6: Mapping Our Stellar Neighbourhood) The famous red supergiant star Betelgeuse sits at a distance
+v043 [4.4s] (scene: Part 6: Mapping Our Stellar Neighbourhood) of roughly 400 to 600 light-years from our Sun.
+v044 [4.0s] (scene: Part 6: Mapping Our Stellar Neighbourhood) When Betelgeuse detonates as a brilliant supernova within the next
+v045 [4.4s] (scene: Part 6: Mapping Our Stellar Neighbourhood) 100,000 years, it will shine as bright as a half-Moon.
+v046 [3.8s] (scene: Part 6: Mapping Our Stellar Neighbourhood) Because Betelgeuse is hundreds of light-years away, life on
+v047 [4.3s] (scene: Part 6: Mapping Our Stellar Neighbourhood) Earth will be completely unharmed by its eventual explosion.
+v048 [3.6s] (scene: Part 6: Mapping Our Stellar Neighbourhood) The closest known candidate for a white dwarf supernova is
+v049 [4.4s] (scene: Part 6: Mapping Our Stellar Neighbourhood) IK Pegasi, but it is moving away to a safe distance.
+v050 [3.7s] (scene: Part 6: Mapping Our Stellar Neighbourhood) Even if other famous stars a few hundred light-years away
+v051 [3.8s] (scene: Part 6: Mapping Our Stellar Neighbourhood) explode in 1,000 years, Earth is in little danger.
+v052 [3.4s] (scene: Part 6: Mapping Our Stellar Neighbourhood) As you gaze up at the night sky, how does it
+v053 [4.9s] (scene: Part 6: Mapping Our Stellar Neighbourhood) feel knowing our atmosphere keeps us safe from distant cosmic explosions?

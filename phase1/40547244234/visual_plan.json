@@ -1,0 +1,1206 @@
+[
+ {
+  "scene": "s01",
+  "start": 0.0,
+  "text": "But how close would an exploding star need to be to completely strip away Earth's protective atmosphere?",
+  "sentences": [
+   "s01.02"
+  ],
+  "id": "v001",
+  "end": 6.545,
+  "seconds": 6.54,
+  "scene_start": true,
+  "kind": "card",
+  "card": {
+   "type": "title",
+   "title": "How Close Must a Supernova Be to Destroy Earth's Atmosphere?",
+   "subtitle": "Cosmic Beauty and Invisible Danger"
+  }
+ },
+ {
+  "scene": "s01",
+  "start": 6.545,
+  "text": "At peak optical brightness, a single supernova can be comparable to an entire galaxy.",
+  "sentences": [
+   "s01.04"
+  ],
+  "id": "v002",
+  "end": 12.631,
+  "seconds": 6.09,
+  "scene_start": false,
+  "kind": "photo",
+  "photo_subject": "a glowing spiral galaxy",
+  "photo_queries": [
+   "spiral galaxy",
+   "supernova galaxy"
+  ],
+  "card": {
+   "type": "stat",
+   "title": "Peak Optical Output",
+   "value": "1 Galaxy",
+   "label": "Brightness equivalent of a supernova"
+  }
+ },
+ {
+  "scene": "s01",
+  "start": 12.631,
+  "text": "Within our Milky Way galaxy, these violent stellar events occur",
+  "sentences": [
+   "s01.06"
+  ],
+  "id": "v003",
+  "end": 17.419421052631577,
+  "seconds": 4.79,
+  "scene_start": false,
+  "kind": "photo",
+  "photo_subject": "the Milky Way arching across the night sky",
+  "photo_queries": [
+   "milky way",
+   "night sky stars"
+  ],
+  "card": {
+   "type": "title",
+   "title": "Our Galaxy",
+   "subtitle": "Milky Way Stellar Activity"
+  }
+ },
+ {
+  "scene": "s01",
+  "start": 17.419421052631577,
+  "text": "roughly 1.6 to 4.6 times every century on average.",
+  "sentences": [
+   "s01.06"
+  ],
+  "id": "v004",
+  "end": 22.233,
+  "seconds": 4.81,
+  "scene_start": false,
+  "kind": "card",
+  "card": {
+   "type": "stat",
+   "title": "Milky Way Supernova Frequency",
+   "value": "1.6 - 4.6",
+   "label": "Supernovae per century"
+  }
+ },
+ {
+  "scene": "s01",
+  "start": 22.233,
+  "text": "Billions of years ago, ancient supernovae formed heavy elements",
+  "sentences": [
+   "s01.09"
+  ],
+  "id": "v005",
+  "end": 26.0255,
+  "seconds": 3.79,
+  "scene_start": false,
+  "kind": "photo",
+  "photo_subject": "the Crab Nebula supernova remnant",
+  "photo_queries": [
+   "crab nebula",
+   "supernova remnant"
+  ],
+  "card": {
+   "type": "title",
+   "title": "Stellar Nucleosynthesis",
+   "subtitle": "Forging heavy elements in ancient explosions"
+  }
+ },
+ {
+  "scene": "s01",
+  "start": 26.0255,
+  "text": "that enabled the chemical processes for life on Earth.",
+  "sentences": [
+   "s01.09"
+  ],
+  "id": "v006",
+  "end": 31.377,
+  "seconds": 5.35,
+  "scene_start": false,
+  "kind": "photo",
+  "photo_subject": "planet Earth viewed from space",
+  "photo_queries": [
+   "earth from space",
+   "blue marble"
+  ],
+  "card": {
+   "type": "bullets",
+   "title": "Cosmic Seeds of Life",
+   "items": [
+    "Heavy elements forged in stars",
+    "Seeded terrestrial planets",
+    "Enabled living chemistry"
+   ]
+  }
+ },
+ {
+  "scene": "s02",
+  "start": 31.377,
+  "text": "What would happen if a massive star exploded only a few dozen light-years away from our solar system?",
+  "sentences": [
+   "s02.01"
+  ],
+  "id": "v007",
+  "end": 37.634,
+  "seconds": 6.26,
+  "scene_start": true,
+  "kind": "card",
+  "card": {
+   "type": "title",
+   "title": "The First Wave",
+   "subtitle": "High-Energy Electromagnetic Blast"
+  }
+ },
+ {
+  "scene": "s02",
+  "start": 37.634,
+  "text": "Earth's atmosphere is remarkably effective at absorbing high-energy",
+  "sentences": [
+   "s02.02"
+  ],
+  "id": "v008",
+  "end": 42.40573333333334,
+  "seconds": 4.77,
+  "scene_start": false,
+  "kind": "photo",
+  "photo_subject": "the glowing blue atmospheric limb of Earth",
+  "photo_queries": [
+   "earth limb orbit",
+   "earth atmosphere"
+  ],
+  "card": {
+   "type": "title",
+   "title": "Earth's Shield",
+   "subtitle": "Atmospheric absorption of cosmic energy"
+  }
+ },
+ {
+  "scene": "s02",
+  "start": 42.40573333333334,
+  "text": "electromagnetic radiation like X-rays and gamma rays.",
+  "sentences": [
+   "s02.02"
+  ],
+  "id": "v009",
+  "end": 47.012,
+  "seconds": 4.61,
+  "scene_start": false,
+  "kind": "photo",
+  "photo_subject": "an orbiting gamma ray space telescope",
+  "photo_queries": [
+   "space telescope",
+   "satellite orbit"
+  ],
+  "card": {
+   "type": "bullets",
+   "title": "High-Energy Wavefront",
+   "items": [
+    "X-ray flash",
+    "Gamma-ray burst",
+    "Swift atmospheric interaction"
+   ]
+  }
+ },
+ {
+  "scene": "s02",
+  "start": 47.012,
+  "text": "Surviving that initial burst of light might make it",
+  "sentences": [
+   "s02.05"
+  ],
+  "id": "v010",
+  "end": 50.791,
+  "seconds": 3.78,
+  "scene_start": false,
+  "kind": "photo",
+  "photo_subject": "a starry night sky over mountains",
+  "photo_queries": [
+   "starry sky",
+   "night mountains"
+  ],
+  "card": {
+   "type": "title",
+   "title": "The Initial Flash",
+   "subtitle": "Surviving the initial light burst"
+  }
+ },
+ {
+  "scene": "s02",
+  "start": 50.791,
+  "text": "seem like our planet escaped the catastrophe completely unharmed.",
+  "sentences": [
+   "s02.05"
+  ],
+  "id": "v011",
+  "end": 55.043,
+  "seconds": 4.25,
+  "scene_start": false,
+  "kind": "photo",
+  "photo_subject": "a lush green forest under sunlight",
+  "photo_queries": [
+   "lush forest",
+   "green forest canopy"
+  ],
+  "card": {
+   "type": "title",
+   "title": "Deceptive Calm",
+   "subtitle": "Surface appears untouched initially"
+  }
+ },
+ {
+  "scene": "s02",
+  "start": 55.043,
+  "text": "However, the real destruction is caused by complex chemical",
+  "sentences": [
+   "s02.06"
+  ],
+  "id": "v012",
+  "end": 58.653,
+  "seconds": 3.61,
+  "scene_start": false,
+  "kind": "photo",
+  "photo_subject": "an aurora glowing in the upper atmosphere",
+  "photo_queries": [
+   "aurora borealis",
+   "aurora space"
+  ],
+  "card": {
+   "type": "title",
+   "title": "Upper Atmosphere",
+   "subtitle": "Triggering catastrophic chemistry"
+  }
+ },
+ {
+  "scene": "s02",
+  "start": 58.653,
+  "text": "reactions initiated in the upper layers of our air.",
+  "sentences": [
+   "s02.06"
+  ],
+  "id": "v013",
+  "end": 62.739,
+  "seconds": 4.09,
+  "scene_start": false,
+  "kind": "photo",
+  "photo_subject": "the stratospheric layer seen from high altitude",
+  "photo_queries": [
+   "stratosphere horizon",
+   "high altitude horizon"
+  ],
+  "card": {
+   "type": "bullets",
+   "title": "Chemical Cascade",
+   "items": [
+    "Stratospheric disruption",
+    "Molecular ionization",
+    "Long-term reactions"
+   ]
+  }
+ },
+ {
+  "scene": "s02",
+  "start": 62.739,
+  "text": "High above us, intense energy from incoming gamma rays begins",
+  "sentences": [
+   "s02.08"
+  ],
+  "id": "v014",
+  "end": 67.22794736842106,
+  "seconds": 4.49,
+  "scene_start": false,
+  "kind": "photo",
+  "photo_subject": "noctilucent clouds high in the mesosphere",
+  "photo_queries": [
+   "noctilucent clouds",
+   "high atmosphere"
+  ],
+  "card": {
+   "type": "title",
+   "title": "Gamma Ray Influx",
+   "subtitle": "High-energy photons enter upper air"
+  }
+ },
+ {
+  "scene": "s02",
+  "start": 67.22794736842106,
+  "text": "breaking apart stable gas molecules in the upper atmosphere.",
+  "sentences": [
+   "s02.08"
+  ],
+  "id": "v015",
+  "end": 72.748,
+  "seconds": 5.52,
+  "scene_start": false,
+  "kind": "photo",
+  "photo_subject": "auroral emission ribbons in the upper sky",
+  "photo_queries": [
+   "aurora ribbons",
+   "polar aurora"
+  ],
+  "card": {
+   "type": "flow",
+   "title": "Radiation Dissociation",
+   "steps": [
+    "Gamma radiation enters",
+    "Collides with gas",
+    "Molecules break apart"
+   ]
+  }
+ },
+ {
+  "scene": "s03",
+  "start": 72.748,
+  "text": "Incoming gamma radiation causes radiolysis, breaking apart standard",
+  "sentences": [
+   "s03.01"
+  ],
+  "id": "v016",
+  "end": 77.37717647058824,
+  "seconds": 4.63,
+  "scene_start": true,
+  "kind": "card",
+  "card": {
+   "type": "title",
+   "title": "Chemical Destruction of the Ozone Shield",
+   "subtitle": "Radiolysis and Nitrogen Oxides"
+  }
+ },
+ {
+  "scene": "s03",
+  "start": 77.37717647058824,
+  "text": "diatomic nitrogen and oxygen molecules high in the atmosphere.",
+  "sentences": [
+   "s03.01"
+  ],
+  "id": "v017",
+  "end": 83.041,
+  "seconds": 5.66,
+  "scene_start": false,
+  "kind": "photo",
+  "photo_subject": "a high-altitude weather balloon ascending",
+  "photo_queries": [
+   "weather balloon",
+   "stratospheric balloon"
+  ],
+  "card": {
+   "type": "flow",
+   "title": "Radiolysis Process",
+   "steps": [
+    "Gamma rays hit N2 and O2",
+    "Chemical bonds shatter",
+    "Free radicals form"
+   ]
+  }
+ },
+ {
+  "scene": "s03",
+  "start": 83.041,
+  "text": "This reaction recombines molecular nitrogen and oxygen into",
+  "sentences": [
+   "s03.02"
+  ],
+  "id": "v018",
+  "end": 87.73433333333332,
+  "seconds": 4.69,
+  "scene_start": false,
+  "kind": "photo",
+  "photo_subject": "an ionized electric plasma discharge",
+  "photo_queries": [
+   "plasma discharge",
+   "ionized gas"
+  ],
+  "card": {
+   "type": "title",
+   "title": "Molecular Recombination",
+   "subtitle": "Forming toxic nitrogen compounds"
+  }
+ },
+ {
+  "scene": "s03",
+  "start": 87.73433333333332,
+  "text": "dangerous gaseous compounds known as nitrogen oxides.",
+  "sentences": [
+   "s03.02"
+  ],
+  "id": "v019",
+  "end": 92.303,
+  "seconds": 4.57,
+  "scene_start": false,
+  "kind": "photo",
+  "photo_subject": "a brown layer of atmospheric nitrogen dioxide haze",
+  "photo_queries": [
+   "nitrogen dioxide haze",
+   "atmospheric haze"
+  ],
+  "card": {
+   "type": "bullets",
+   "title": "Nitrogen Oxides (NOx)",
+   "items": [
+    "Formed by recombination",
+    "Catalytic destruction agent",
+    "Persistent greenhouse pollutant"
+   ]
+  }
+ },
+ {
+  "scene": "s03",
+  "start": 92.303,
+  "text": "Nitrogen oxides deplete protective stratospheric ozone molecules.",
+  "sentences": [
+   "s03.03"
+  ],
+  "id": "v020",
+  "end": 97.455,
+  "seconds": 5.15,
+  "scene_start": false,
+  "kind": "photo",
+  "photo_subject": "a satellite mapping Earth's ozone layer",
+  "photo_queries": [
+   "weather satellite",
+   "earth satellite orbit"
+  ],
+  "card": {
+   "type": "title",
+   "title": "Ozone Depletion",
+   "subtitle": "Catalytic destruction by nitrogen oxides"
+  }
+ },
+ {
+  "scene": "s03",
+  "start": 97.455,
+  "text": "Computer models show that a nearby explosion could cause a",
+  "sentences": [
+   "s03.04"
+  ],
+  "id": "v021",
+  "end": 101.7128947368421,
+  "seconds": 4.26,
+  "scene_start": false,
+  "kind": "photo",
+  "photo_subject": "a supercomputer server rack glowing with data lights",
+  "photo_queries": [
+   "supercomputer",
+   "data center server"
+  ],
+  "card": {
+   "type": "title",
+   "title": "Atmospheric Modeling",
+   "subtitle": "Supercomputer simulation of supernova impact"
+  }
+ },
+ {
+  "scene": "s03",
+  "start": 101.7128947368421,
+  "text": "global ozone reduction of 25 to 35 per cent.",
+  "sentences": [
+   "s03.04"
+  ],
+  "id": "v022",
+  "end": 105.995,
+  "seconds": 4.28,
+  "scene_start": false,
+  "kind": "card",
+  "card": {
+   "type": "stat",
+   "title": "Global Ozone Reduction",
+   "value": "25% - 35%",
+   "label": "Depletion worldwide"
+  }
+ },
+ {
+  "scene": "s03",
+  "start": 105.995,
+  "text": "In specific regional locations of the upper atmosphere, local ozone",
+  "sentences": [
+   "s03.05"
+  ],
+  "id": "v023",
+  "end": 110.01650000000001,
+  "seconds": 4.02,
+  "scene_start": false,
+  "kind": "photo",
+  "photo_subject": "polar stratospheric clouds illuminated by twilight",
+  "photo_queries": [
+   "polar stratospheric clouds",
+   "stratosphere clouds"
+  ],
+  "card": {
+   "type": "title",
+   "title": "Regional Hotspots",
+   "subtitle": "Localized extreme ozone loss"
+  }
+ },
+ {
+  "scene": "s03",
+  "start": 110.01650000000001,
+  "text": "loss could reach up to 75 per cent for years.",
+  "sentences": [
+   "s03.05"
+  ],
+  "id": "v024",
+  "end": 114.48,
+  "seconds": 4.46,
+  "scene_start": false,
+  "kind": "card",
+  "card": {
+   "type": "bars",
+   "title": "Ozone Shield Depletion",
+   "labels": [
+    "Global Average",
+    "Regional Maximum"
+   ],
+   "values": [
+    35,
+    75
+   ],
+   "unit": "%"
+  }
+ },
+ {
+  "scene": "s03",
+  "start": 114.48,
+  "text": "Depleting this shield exposes Earth's surface to bio-harmful",
+  "sentences": [
+   "s03.06"
+  ],
+  "id": "v025",
+  "end": 119.43626666666667,
+  "seconds": 4.96,
+  "scene_start": false,
+  "kind": "photo",
+  "photo_subject": "a blazing solar disk in space",
+  "photo_queries": [
+   "sun in space",
+   "solar flare"
+  ],
+  "card": {
+   "type": "title",
+   "title": "Solar Radiation Penetration",
+   "subtitle": "Unfiltered ultraviolet light reaches ground"
+  }
+ },
+ {
+  "scene": "s03",
+  "start": 119.43626666666667,
+  "text": "solar ultraviolet radiation, causing widespread biological damage.",
+  "sentences": [
+   "s03.06"
+  ],
+  "id": "v026",
+  "end": 125.213,
+  "seconds": 5.78,
+  "scene_start": false,
+  "kind": "photo",
+  "photo_subject": "ocean phytoplankton blooming in coastal water",
+  "photo_queries": [
+   "phytoplankton bloom",
+   "coral reef sun"
+  ],
+  "card": {
+   "type": "bullets",
+   "title": "Ecological Toll",
+   "items": [
+    "Phytoplankton collapse",
+    "Marine food chain disrupted",
+    "Severe cellular mutations"
+   ]
+  }
+ },
+ {
+  "scene": "s04",
+  "start": 125.213,
+  "text": "Supernovae expel several solar masses of stellar material into space",
+  "sentences": [
+   "s04.02"
+  ],
+  "id": "v027",
+  "end": 129.49563157894735,
+  "seconds": 4.28,
+  "scene_start": true,
+  "kind": "card",
+  "card": {
+   "type": "title",
+   "title": "The Second Wave",
+   "subtitle": "Cosmic Rays and Fast Stellar Ejecta"
+  }
+ },
+ {
+  "scene": "s04",
+  "start": 129.49563157894735,
+  "text": "at speeds reaching several per cent of light speed.",
+  "sentences": [
+   "s04.02"
+  ],
+  "id": "v028",
+  "end": 133.821,
+  "seconds": 4.33,
+  "scene_start": false,
+  "kind": "photo",
+  "photo_subject": "the expanding Cassiopeia A supernova remnant",
+  "photo_queries": [
+   "cassiopeia a",
+   "supernova shockwave"
+  ],
+  "card": {
+   "type": "stat",
+   "title": "Ejecta Velocity",
+   "value": "Several %",
+   "label": "Of the speed of light"
+  }
+ },
+ {
+  "scene": "s04",
+  "start": 133.821,
+  "text": "In the case of a Betelgeuse supernova, the stream of charged",
+  "sentences": [
+   "s04.04"
+  ],
+  "id": "v029",
+  "end": 138.1575,
+  "seconds": 4.34,
+  "scene_start": false,
+  "kind": "photo",
+  "photo_subject": "the giant red star Betelgeuse",
+  "photo_queries": [
+   "betelgeuse star",
+   "red supergiant"
+  ],
+  "card": {
+   "type": "title",
+   "title": "Betelgeuse Scenario",
+   "subtitle": "Particle wave propagation"
+  }
+ },
+ {
+  "scene": "s04",
+  "start": 138.1575,
+  "text": "particles would reach Earth about 100,000 years after the initial light.",
+  "sentences": [
+   "s04.04"
+  ],
+  "id": "v030",
+  "end": 143.961,
+  "seconds": 5.8,
+  "scene_start": false,
+  "kind": "card",
+  "card": {
+   "type": "stat",
+   "title": "Charged Particle Delay",
+   "value": "100,000 yrs",
+   "label": "Arrival after initial flash"
+  }
+ },
+ {
+  "scene": "s05",
+  "start": 143.961,
+  "text": "How close would a dying star actually need",
+  "sentences": [
+   "s05.01"
+  ],
+  "id": "v031",
+  "end": 147.17888235294117,
+  "seconds": 3.22,
+  "scene_start": true,
+  "kind": "card",
+  "card": {
+   "type": "title",
+   "title": "Calculating the Safe Threshold Distance",
+   "subtitle": "Where Does the Danger Zone End?"
+  }
+ },
+ {
+  "scene": "s05",
+  "start": 147.17888235294117,
+  "text": "to be to permanently destroy Earth's protective atmospheric shield?",
+  "sentences": [
+   "s05.01"
+  ],
+  "id": "v032",
+  "end": 151.258,
+  "seconds": 4.08,
+  "scene_start": false,
+  "kind": "photo",
+  "photo_subject": "planet Earth surrounded by dark star-filled space",
+  "photo_queries": [
+   "earth space dark",
+   "earth from moon"
+  ],
+  "card": {
+   "type": "title",
+   "title": "Atmospheric Resilience",
+   "subtitle": "Defining the threshold distance"
+  }
+ },
+ {
+  "scene": "s05",
+  "start": 151.258,
+  "text": "Scientists calculate dangerous stellar distances using atmospheric computer",
+  "sentences": [
+   "s05.02"
+  ],
+  "id": "v033",
+  "end": 156.638,
+  "seconds": 5.38,
+  "scene_start": false,
+  "kind": "photo",
+  "photo_subject": "a mountaintop optical telescope dome at dusk",
+  "photo_queries": [
+   "astronomical observatory",
+   "telescope dome night"
+  ],
+  "card": {
+   "type": "title",
+   "title": "Astrophysical Modeling",
+   "subtitle": "Calculating dangerous distances"
+  }
+ },
+ {
+  "scene": "s05",
+  "start": 156.638,
+  "text": "models and measured radiation flux from Supernova 1987A.",
+  "sentences": [
+   "s05.02"
+  ],
+  "id": "v034",
+  "end": 162.514,
+  "seconds": 5.88,
+  "scene_start": false,
+  "kind": "photo",
+  "photo_subject": "the glowing rings of Supernova 1987A",
+  "photo_queries": [
+   "supernova 1987a",
+   "sn 1987a"
+  ],
+  "card": {
+   "type": "title",
+   "title": "Supernova 1987A",
+   "subtitle": "Benchmark radiation flux measurements"
+  }
+ },
+ {
+  "scene": "s05",
+  "start": 162.514,
+  "text": "Fortunately, a supernova explosion occurring within 33 light-years of Earth",
+  "sentences": [
+   "s05.04"
+  ],
+  "id": "v035",
+  "end": 167.417,
+  "seconds": 4.9,
+  "scene_start": false,
+  "kind": "photo",
+  "photo_subject": "a dense starry field in deep space",
+  "photo_queries": [
+   "deep space stars",
+   "star field hubble"
+  ],
+  "card": {
+   "type": "stat",
+   "title": "Kill Zone Distance",
+   "value": "33 ly",
+   "label": "Supernova threshold for severe destruction"
+  }
+ },
+ {
+  "scene": "s05",
+  "start": 167.417,
+  "text": "is estimated to happen only once every 240 million years.",
+  "sentences": [
+   "s05.04"
+  ],
+  "id": "v036",
+  "end": 172.747,
+  "seconds": 5.33,
+  "scene_start": false,
+  "kind": "card",
+  "card": {
+   "type": "stat",
+   "title": "Occurrence Rate Within 33 Light-Years",
+   "value": "1 in 240M yrs",
+   "label": "Expected frequency near Earth"
+  }
+ },
+ {
+  "scene": "s05",
+  "start": 172.747,
+  "text": "If a highly focused gamma-ray burst pointed directly at Earth,",
+  "sentences": [
+   "s05.05"
+  ],
+  "id": "v037",
+  "end": 177.13226315789476,
+  "seconds": 4.39,
+  "scene_start": false,
+  "kind": "photo",
+  "photo_subject": "a distant galaxy emitting an astrophysical relativistic jet",
+  "photo_queries": [
+   "relativistic jet",
+   "galaxy relativistic jet"
+  ],
+  "card": {
+   "type": "title",
+   "title": "Gamma-Ray Bursts",
+   "subtitle": "Highly focused directional beams"
+  }
+ },
+ {
+  "scene": "s05",
+  "start": 177.13226315789476,
+  "text": "its focused beam could vapourise anything within 200 light-years.",
+  "sentences": [
+   "s05.05"
+  ],
+  "id": "v038",
+  "end": 181.509,
+  "seconds": 4.38,
+  "scene_start": false,
+  "kind": "card",
+  "card": {
+   "type": "compare",
+   "title": "Lethal Blast Thresholds",
+   "left_title": "Standard Supernova",
+   "left_points": [
+    "Isotropic blast",
+    "33 light-years safe zone"
+   ],
+   "right_title": "Directed GRB",
+   "right_points": [
+    "Narrow focused beam",
+    "Lethal to 200 light-years"
+   ]
+  }
+ },
+ {
+  "scene": "s05",
+  "start": 181.509,
+  "text": "In fact, a nearby gamma-ray burst may have triggered the Late Ordovician mass extinction on Earth.",
+  "sentences": [
+   "s05.06"
+  ],
+  "id": "v039",
+  "end": 187.952,
+  "seconds": 6.44,
+  "scene_start": false,
+  "kind": "photo",
+  "photo_subject": "a fossilized Ordovician trilobite in rock",
+  "photo_queries": [
+   "trilobite fossil",
+   "ordovician fossil"
+  ],
+  "card": {
+   "type": "title",
+   "title": "Ordovician Extinction",
+   "subtitle": "Possible ancient cosmic burst event"
+  }
+ },
+ {
+  "scene": "s05",
+  "start": 187.952,
+  "text": "That ancient cosmic event resulted in the death of nearly 60 per cent of oceanic life on Earth.",
+  "sentences": [
+   "s05.07"
+  ],
+  "id": "v040",
+  "end": 195.905,
+  "seconds": 7.95,
+  "scene_start": false,
+  "kind": "card",
+  "card": {
+   "type": "stat",
+   "title": "Late Ordovician Extinction",
+   "value": "60%",
+   "label": "Oceanic life lost"
+  }
+ },
+ {
+  "scene": "s06",
+  "start": 195.905,
+  "text": "Are there any dangerous candidate stars close enough to threaten Earth with an atmospheric collapse today?",
+  "sentences": [
+   "s06.01"
+  ],
+  "id": "v041",
+  "end": 202.586,
+  "seconds": 6.68,
+  "scene_start": true,
+  "kind": "card",
+  "card": {
+   "type": "title",
+   "title": "Mapping Our Stellar Neighbourhood",
+   "subtitle": "Are Any Local Stars a Threat?"
+  }
+ },
+ {
+  "scene": "s06",
+  "start": 202.586,
+  "text": "The famous red supergiant star Betelgeuse sits at a distance",
+  "sentences": [
+   "s06.02"
+  ],
+  "id": "v042",
+  "end": 206.95178947368422,
+  "seconds": 4.37,
+  "scene_start": false,
+  "kind": "photo",
+  "photo_subject": "the constellation Orion shining in the night sky",
+  "photo_queries": [
+   "orion constellation",
+   "betelgeuse orion"
+  ],
+  "card": {
+   "type": "title",
+   "title": "Betelgeuse",
+   "subtitle": "Red supergiant in Orion"
+  }
+ },
+ {
+  "scene": "s06",
+  "start": 206.95178947368422,
+  "text": "of roughly 400 to 600 light-years from our Sun.",
+  "sentences": [
+   "s06.02"
+  ],
+  "id": "v043",
+  "end": 211.336,
+  "seconds": 4.38,
+  "scene_start": false,
+  "kind": "card",
+  "card": {
+   "type": "stat",
+   "title": "Betelgeuse Distance",
+   "value": "400 - 600 ly",
+   "label": "Distance from our Sun"
+  }
+ },
+ {
+  "scene": "s06",
+  "start": 211.336,
+  "text": "When Betelgeuse detonates as a brilliant supernova within the next",
+  "sentences": [
+   "s06.03"
+  ],
+  "id": "v044",
+  "end": 215.292,
+  "seconds": 3.96,
+  "scene_start": false,
+  "kind": "photo",
+  "photo_subject": "an astronomical photograph of a red supergiant star",
+  "photo_queries": [
+   "red giant star",
+   "supergiant star"
+  ],
+  "card": {
+   "type": "stat",
+   "title": "Time to Detonation",
+   "value": "< 100,000 yrs",
+   "label": "Predicted Betelgeuse collapse window"
+  }
+ },
+ {
+  "scene": "s06",
+  "start": 215.292,
+  "text": "100,000 years, it will shine as bright as a half-Moon.",
+  "sentences": [
+   "s06.03"
+  ],
+  "id": "v045",
+  "end": 219.717,
+  "seconds": 4.43,
+  "scene_start": false,
+  "kind": "photo",
+  "photo_subject": "a crisp half-Moon against a dark sky",
+  "photo_queries": [
+   "half moon",
+   "crescent moon"
+  ],
+  "card": {
+   "type": "stat",
+   "title": "Future Supernova Brightness",
+   "value": "Half-Moon",
+   "label": "Apparent brightness in Earth's sky"
+  }
+ },
+ {
+  "scene": "s06",
+  "start": 219.717,
+  "text": "Because Betelgeuse is hundreds of light-years away, life on",
+  "sentences": [
+   "s06.04"
+  ],
+  "id": "v046",
+  "end": 223.496,
+  "seconds": 3.78,
+  "scene_start": false,
+  "kind": "photo",
+  "photo_subject": "Earth floating in deep space with glowing atmosphere",
+  "photo_queries": [
+   "earth space",
+   "blue planet orbit"
+  ],
+  "card": {
+   "type": "title",
+   "title": "Safe Distance",
+   "subtitle": "Hundreds of light-years buffer Earth"
+  }
+ },
+ {
+  "scene": "s06",
+  "start": 223.496,
+  "text": "Earth will be completely unharmed by its eventual explosion.",
+  "sentences": [
+   "s06.04"
+  ],
+  "id": "v047",
+  "end": 227.765,
+  "seconds": 4.27,
+  "scene_start": false,
+  "kind": "photo",
+  "photo_subject": "a vibrant coral reef full of marine life",
+  "photo_queries": [
+   "vibrant coral reef",
+   "ocean marine life"
+  ],
+  "card": {
+   "type": "title",
+   "title": "Biosphere Unharmed",
+   "subtitle": "Terrestrial and oceanic life safe"
+  }
+ },
+ {
+  "scene": "s06",
+  "start": 227.765,
+  "text": "The closest known candidate for a white dwarf supernova is",
+  "sentences": [
+   "s06.05"
+  ],
+  "id": "v048",
+  "end": 231.37261904761905,
+  "seconds": 3.61,
+  "scene_start": false,
+  "kind": "photo",
+  "photo_subject": "a white dwarf star next to a companion star",
+  "photo_queries": [
+   "binary star system",
+   "white dwarf star"
+  ],
+  "card": {
+   "type": "title",
+   "title": "Type Ia Candidate",
+   "subtitle": "White dwarf binary systems"
+  }
+ },
+ {
+  "scene": "s06",
+  "start": 231.37261904761905,
+  "text": "IK Pegasi, but it is moving away to a safe distance.",
+  "sentences": [
+   "s06.05"
+  ],
+  "id": "v049",
+  "end": 235.795,
+  "seconds": 4.42,
+  "scene_start": false,
+  "kind": "photo",
+  "photo_subject": "the constellation Pegasus in the night sky",
+  "photo_queries": [
+   "pegasus constellation",
+   "starry constellation"
+  ],
+  "card": {
+   "type": "title",
+   "title": "IK Pegasi",
+   "subtitle": "Moving away to safe stellar distance"
+  }
+ },
+ {
+  "scene": "s06",
+  "start": 235.795,
+  "text": "Even if other famous stars a few hundred light-years away",
+  "sentences": [
+   "s06.06"
+  ],
+  "id": "v050",
+  "end": 239.48763157894737,
+  "seconds": 3.69,
+  "scene_start": false,
+  "kind": "photo",
+  "photo_subject": "the Pleiades open star cluster surrounded by blue nebula",
+  "photo_queries": [
+   "pleiades star cluster",
+   "open star cluster"
+  ],
+  "card": {
+   "type": "title",
+   "title": "Nearby Stars",
+   "subtitle": "Distant stellar neighbours"
+  }
+ },
+ {
+  "scene": "s06",
+  "start": 239.48763157894737,
+  "text": "explode in 1,000 years, Earth is in little danger.",
+  "sentences": [
+   "s06.06"
+  ],
+  "id": "v051",
+  "end": 243.327,
+  "seconds": 3.84,
+  "scene_start": false,
+  "kind": "card",
+  "card": {
+   "type": "bullets",
+   "title": "Stellar Security",
+   "items": [
+    "Closest candidates 400+ ly away",
+    "Explosions in 1,000 yrs pose no threat",
+    "Atmosphere fully shields life"
+   ]
+  }
+ },
+ {
+  "scene": "s06",
+  "start": 243.327,
+  "text": "As you gaze up at the night sky, how does it",
+  "sentences": [
+   "s06.09"
+  ],
+  "id": "v052",
+  "end": 246.761,
+  "seconds": 3.43,
+  "scene_start": false,
+  "kind": "photo",
+  "photo_subject": "a silhouette of a person looking at the starry night sky",
+  "photo_queries": [
+   "stargazer night sky",
+   "person night stars"
+  ],
+  "card": {
+   "type": "title",
+   "title": "Looking Skyward",
+   "subtitle": "Marveling at the cosmos"
+  }
+ },
+ {
+  "scene": "s06",
+  "start": 246.761,
+  "text": "feel knowing our atmosphere keeps us safe from distant cosmic explosions?",
+  "sentences": [
+   "s06.09"
+  ],
+  "id": "v053",
+  "end": 251.642667,
+  "seconds": 4.88,
+  "scene_start": false,
+  "kind": "photo",
+  "photo_subject": "Earth's glowing blue atmospheric horizon seen from orbit",
+  "photo_queries": [
+   "earth horizon space",
+   "earth atmosphere glow"
+  ],
+  "card": {
+   "type": "title",
+   "title": "Protected Planet",
+   "subtitle": "Our atmosphere keeps life safe"
+  }
+ }
+]

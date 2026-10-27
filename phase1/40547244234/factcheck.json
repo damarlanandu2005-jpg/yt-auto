@@ -1,0 +1,222 @@
+{
+ "checked": 55,
+ "supported_first_pass": 23,
+ "fixed": [
+  {
+   "id": "s01.04",
+   "old": "At peak optical brightness, a single supernova can shine as brightly as an entire galaxy of billions of stars.",
+   "new": "At peak optical brightness, a single supernova can be comparable to an entire galaxy.",
+   "problem": "The passage states peak optical luminosity can be comparable to an entire galaxy, but does not specify billions of stars."
+  },
+  {
+   "id": "s03.03",
+   "old": "Nitrogen oxides act as persistent chemical catalysts that rapidly consume and deplete protective stratospheric ozone molecules.",
+   "new": "Nitrogen oxides deplete protective stratospheric ozone molecules.",
+   "problem": "The passages do not state that nitrogen oxides act as persistent catalysts or rapidly consume ozone."
+  },
+  {
+   "id": "s04.04",
+   "old": "Because these charged energetic particles travel slower than light, they arrive roughly 100,000 years after the initial flash.",
+   "new": "In the case of a Betelgeuse supernova, the stream of charged particles would reach Earth about 100,000 years after the initial light.",
+   "problem": "The cited passage specifically discusses the arrival time of particles from a Betelgeuse supernova rather than charged particles in general."
+  },
+  {
+   "id": "s05.06",
+   "old": "In fact, a nearby gamma-ray burst 440 million years ago may have triggered the end-Ordovician mass extinction on Earth.",
+   "new": "In fact, a nearby gamma-ray burst may have triggered the Late Ordovician mass extinction on Earth.",
+   "problem": "The cited passages do not state that the end-Ordovician extinction occurred 440 million years ago."
+  },
+  {
+   "id": "s05.07",
+   "old": "That ancient cosmic event killed nearly 60 per cent of all marine life species in Earth's oceans.",
+   "new": "That ancient cosmic event resulted in the death of nearly 60 per cent of oceanic life on Earth.",
+   "problem": "The cited passage states it resulted in the death of nearly 60% of oceanic life, not 60% of all marine life species."
+  },
+  {
+   "id": "s01.09",
+   "old": "In fact, heavy elements produced by ancient supernovae billions of years ago made the chemistry of life on Earth possible.",
+   "new": "Billions of years ago, ancient supernovae formed heavy elements that enabled the chemical processes for life on Earth.",
+   "problem": "reworded: too close to source wording"
+  },
+  {
+   "id": "s06.06",
+   "old": "Other prominent stars within a few hundred light-years pose little threat to Earth even if they explode in 1,000 years.",
+   "new": "Even if other famous stars a few hundred light-years away explode in 1,000 years, Earth is in little danger.",
+   "problem": "reworded: too close to source wording"
+  }
+ ],
+ "dropped": [
+  {
+   "id": "s01.01",
+   "text": "A dying star exploding in deep space is one of the most breathtaking visual spectacles in the entire universe.",
+   "problem": "The framing sentence states factual claims without cited passages."
+  },
+  {
+   "id": "s01.03",
+   "text": "Understanding this critical safety threshold shows how our fragile atmosphere shields your everyday life from lethal radiation.",
+   "problem": "The framing sentence states factual claims without cited passages."
+  },
+  {
+   "id": "s01.05",
+   "text": "Fortunately, only a tiny fraction of the 100 billion stars in a typical galaxy ever become supernovae.",
+   "problem": "The cited passage states that only a tiny fraction have the capacity to become a supernova, not that they ever become one."
+  },
+  {
+   "id": "s01.07",
+   "text": "From billions of light-years away, an exploding star looks like a peaceful point of light appearing in the dark sky.",
+   "problem": "The framing sentence states factual claims without cited passages."
+  },
+  {
+   "id": "s01.08",
+   "text": "Up close, however, a supernova acts as a cosmic particle accelerator that destroys everything in its surrounding environment.",
+   "problem": "The passages state that supernovae drive expanding shock waves and produce cosmic rays, but do not state that they act as particle accelerators or destroy everything around them."
+  },
+  {
+   "id": "s01.10",
+   "text": "Yet, if an explosion happens too close to us today, that same energy could destroy our sky completely.",
+   "problem": "The framing sentence states factual claims without cited passages."
+  },
+  {
+   "id": "s02.03",
+   "text": "Because of this atmospheric filtering, lethal gamma radiation would not reach the ground directly during the explosion event.",
+   "problem": "The cited passage states that radiation would not reach dangerous levels at the surface during the burst event, rather than that lethal gamma radiation would not reach the ground directly."
+  },
+  {
+   "id": "s02.04",
+   "text": "The immediate effect at ground level would only be a short burst of increased ultraviolet radiation lasting several seconds.",
+   "problem": "The passage states the radiation increase lasts from less than a second to tens of seconds, not several seconds."
+  },
+  {
+   "id": "s02.07",
+   "text": "Earth's stratospheric ozone layer normally absorbs harmful solar ultraviolet light and prevents it from reaching the ground.",
+   "problem": "The passages state that stratospheric ozone absorbs most UVB radiation, rather than completely preventing it from reaching the ground."
+  },
+  {
+   "id": "s02.09",
+   "text": "This invisible chemical chain reaction sets off a slow atmospheric collapse that threatens all surface life.",
+   "problem": "The framing sentence states factual claims without cited passages."
+  },
+  {
+   "id": "s03.07",
+   "text": "Increased ultraviolet light damages marine phytoplankton and coral reef communities, severely threatening the base of the marine food chain.",
+   "problem": "The passage refers to reef communities rather than coral reef communities, and states this could severely deplete the base of the marine food chain."
+  },
+  {
+   "id": "s03.08",
+   "text": "On land, excessive ultraviolet exposure damages cellular DNA, driving up rates of skin cancer and permanent eye cataracts.",
+   "problem": "The cited passages do not state that cataracts are permanent or specify on land."
+  },
+  {
+   "id": "s03.09",
+   "text": "Elevated nitrogen dioxide creates brown photochemical smog that blocks sunlight, while also producing toxic nitric acid rain.",
+   "problem": "The cited passage does not state that the photochemical smog is brown."
+  },
+  {
+   "id": "s04.01",
+   "text": "Long after the initial flash of gamma radiation fades, a secondary wave of destruction begins traveling toward Earth.",
+   "problem": "The framing sentence states factual claims without cited passages."
+  },
+  {
+   "id": "s04.03",
+   "text": "These expanding blast waves sweep up gas and dust, serving as a primary cosmic source of energetic cosmic rays.",
+   "problem": "The passage states supernovae are a major source of cosmic rays, not a primary cosmic source of energetic cosmic rays."
+  },
+  {
+   "id": "s04.05",
+   "text": "When this delayed stream of high-speed cosmic rays hits Earth, it delivers a second prolonged assault on our atmosphere.",
+   "problem": "The cited passages do not state that cosmic rays deliver a second prolonged assault on our atmosphere."
+  },
+  {
+   "id": "s04.06",
+   "text": "Geological evidence suggests that past cosmic ray increases produced cooler global climates and created stronger surface winds.",
+   "problem": "The passage specifies a cooler climate and stronger winds, but does not explicitly state global climates or surface winds."
+  },
+  {
+   "id": "s04.07",
+   "text": "Scientists found iron-60 isotopes in deep-sea Pacific Ocean rocks, proving a supernova exploded within 98 light-years millions of years ago.",
+   "problem": "The passage states the iron quantity seems to indicate a supernova occurred less than 30 parsecs away, not that it is proven."
+  },
+  {
+   "id": "s04.08",
+   "text": "The low quantity of iron-60 indicates that the ancient star exploded far enough away to avoid causing a mass extinction.",
+   "problem": "The passage refers to an iron-60 enrichment and so much iron-60, rather than a low quantity of iron-60."
+  },
+  {
+   "id": "s04.09",
+   "text": "But if a star detonated much closer, this second wave would devastate a planet already struggling to recover.",
+   "problem": "The framing sentence states factual claims without cited passages."
+  },
+  {
+   "id": "s05.03",
+   "text": "A Type II supernova occurring closer than 26 light-years, or 8 parsecs, would destroy over half of Earth's ozone layer.",
+   "problem": "number 8 is not in the cited sources"
+  },
+  {
+   "id": "s05.08",
+   "text": "Un-beamed supernova explosions occurring between 33 and 978 light-years away produce noticeable atmospheric changes without complete destruction.",
+   "problem": "The cited passages do not mention un-beamed explosions or state that they produce noticeable atmospheric changes without complete destruction."
+  },
+  {
+   "id": "s05.09",
+   "text": "This establishes a clear safety threshold, showing that a star must explode within 26 to 33 light-years to strip our atmosphere.",
+   "problem": "The framing sentence states factual claims without cited passages."
+  },
+  {
+   "id": "s06.07",
+   "text": "To destroy Earth's atmosphere, an exploding star must be located closer than 26 to 33 light-years away from us.",
+   "problem": "The cited passages state that a Type II supernova closer than 26 light-years would destroy more than half of the ozone layer, not that an exploding star must be closer than 26 to 33 light-years to destroy Earth's atmosphere."
+  },
+  {
+   "id": "s06.08",
+   "text": "Because no supernova candidate star currently exists within that lethal boundary, our protective atmosphere remains entirely secure.",
+   "problem": "The cited passages do not state that no candidate star exists within that boundary or that our atmosphere is entirely secure."
+  }
+ ],
+ "bad_ids": [],
+ "copied": [
+  {
+   "id": "s01.05",
+   "phrases": [
+    "a tiny fraction of the 100 billion stars",
+    "fraction of the 100 billion stars in a",
+    "of the 100 billion stars in a typical",
+    "only a tiny fraction of the 100 billion",
+    "the 100 billion stars in a typical galaxy",
+    "tiny fraction of the 100 billion stars in"
+   ]
+  },
+  {
+   "id": "s01.09",
+   "phrases": [
+    "made the chemistry of life on earth possible"
+   ]
+  },
+  {
+   "id": "s06.06",
+   "phrases": [
+    "prominent stars within a few hundred light years"
+   ]
+  }
+ ],
+ "guard": [
+  {
+   "id": "s04.07",
+   "problems": [
+    "number 98 is not in the cited sources"
+   ]
+  },
+  {
+   "id": "s05.03",
+   "problems": [
+    "number 8 is not in the cited sources"
+   ]
+  },
+  {
+   "id": "s05.06",
+   "problems": [
+    "number 440 is not in the cited sources"
+   ]
+  }
+ ],
+ "words_after": 531
+}

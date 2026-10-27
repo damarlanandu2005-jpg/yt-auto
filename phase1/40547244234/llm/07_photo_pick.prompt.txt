@@ -1,0 +1,522 @@
+[model] gemini-3.5-flash-lite
+[system]
+
+
+[user]
+Pick the best photo for each slot from its numbered candidates (title | description).
+Choose a candidate if it shows the slot's subject or something closely related that fits the narration
+(it does not need to match every detail: a photo of a real handheld GPS receiver fits "a hiker's GPS").
+Answer "" only when no candidate is related, or the only related ones would mislead the viewer.
+Prefer real photographs over diagrams with small text, logos, or maps with dense labels. Avoid close-up
+faces of private people. Do not use the same photo twice.
+Answer choice = the candidate number as text, or "".
+
+[v002] needs: a glowing spiral galaxy | narration: At peak optical brightness, a single supernova can be comparable to an entire galaxy.
+  nasa:0: Gargantuan Super Spiral Galaxies Loom Large in the Cosmos | In archived NASA data, researchers have discovered "super spiral" galaxies that dwarf our own spiral galaxy, the Milky Way, and compete in size and brightness w
+  wiki:1: Hubble2005-01-barred-spiral-galaxy-NGC1300 | Barred spiral galaxy NGC 1300 photographed by Hubble telescope. In the core of the larger spiral structure of NGC 1300, the nucleus shows its own extraordinary 
+  wiki:2: NGC 4414 (NASA-med) | In 1995, the majestic spiral galaxy NGC 4414 was imaged by the Hubble Space Telescope as part of the HST Key Project on the Extragalactic Distance Scale. An int
+  wiki:3: NGC 2683 Spiral galaxy | The NASA Hubble Space Telescope has spotted the "UFO Galaxy." NGC 2683 is a spiral galaxy seen almost edge-on, giving it the shape of a classic science fiction 
+  wiki:4: Messier83 - Heic1403a | This new Hubble image shows the scatterings of bright stars and thick dust that make up spiral galaxy Messier 83, otherwise known as the Southern Pinwheel Galax
+  wiki:5: Andromeda Galaxy M31 - Heic1502a Full resolution | This image, captured with the NASA/ESA Hubble Space Telescope, is the largest and sharpest image ever taken of the Andromeda galaxy — otherwise known as M31. Yo
+  nasa:6: Fires of Galactic Youth Artist Animation | This artist's animation shows a typical young galaxy, teeming with hot, newborn stars and exploding supernovas. The supernovas are seen as white flashes of ligh
+  nasa:7: Little Galaxies Pack a Big Punch | These postage-stamp images taken by NASA Galaxy Evolution Explorer are helping to solve a mystery -- why do the littlest of galaxies produce the biggest of star
+  wiki:8: Supernova 2012Z in spiral galaxy NGC 1309, annotated | This image shows spiral galaxy NGC 1309. The inset panel shows a pair of NASA/ESA Hubble Space Telescope images of the galaxy that were taken before and after t
+  wiki:9: NGC 2403 - A Galaxy of Birth and Death (iotw2221a) | Captured by the Mosaic camera on the Nicholas U. Mayall 4-meter Telescope at the Kitt Peak National Observatory (KPNO), a Program of NSF’s NOIRLab, the spiral g
+  wiki:10: Cluster of Galaxies with Recent Supernova (2006-36-1965) | Cluster of Galaxies with Recent Supernova
+
+[v003] needs: the Milky Way arching across the night sky | narration: Within our Milky Way galaxy, these violent stellar events occur
+  nasa:0: A Break in the Milky Way's Sagittarius Arm | A contingent of young stars and star-forming gas clouds is sticking out of one of the Milky Way's spiral arms like a splinter protruding from a plank of wood. S
+  nasa:1: A Glimpse of the Milky Way | In visible light, the bulk of our Milky Way galaxy stars are eclipsed behind thick clouds of galactic dust and gas. But to the infrared eyes of NASA Spitzer Spa
+  nasa:2: The Milky Way Center Aglow with Dust | Our Milky Way is a dusty place. So dusty that we cannot see the center of the galaxy in visible light. Thanks to NASA Spitzer Space Telescope excellent resoluti
+  wiki:3: Milky Way IR Spitzer | The center of our Milky Way galaxy is hidden from the prying eyes of optical telescopes by clouds of obscuring dust and gas. But in this stunning vista, the Spi
+  wiki:4: Laser Towards Milky Ways Centre | In mid-August 2010 ESO Photo Ambassador Yuri Beletsky snapped this photo at ESO’s Paranal Observatory, Chile. A group of astronomers were observing the centre o
+  wiki:5: Bontecou Lake Milky Way panorama | Panorama of the Milky Way galactic plane stretching over Bontecou Lake in Dutchess County, New York.
+  wiki:6: Milky way in Elbrus | The Milky Way over Mount Elbrus, the highest mountain in the Caucasus Mountains. The Serpens-Aquila Rift stands in the center of the view: a group of dark inter
+  wiki:7: 018 Human looking at the stars during Perseids with the Milky Way in the background Photo  | A human, aligned with the Milky Way, looks at the stars from Oeschinensee (Switzerland) during Perseids in search of shooting stars.
+  wiki:8: 036 Milky Way during Perseids seen from Oeschinensee with water reflections Photo by Giles | Vertical panorama of the Milky Way during Perseids photographed from Oeschinensee with water reflections. Here is a step by step guide to do astrophotography. E
+  nasa:9: Fantastic Four Galaxies with Planet Artist Concept | This artist concept shows what the night sky might look like from a hypothetical planet around a star tossed out of an ongoing four-way collision between big ga
+  nasa:10: Supergiant Star Near Giraffe Hind Foot | NASA Wide-field Infrared Survey Explorer captured this colorful image of the nebula BFS 29 surrounding the star CE-Camelopardalis, found hovering in the band of
+  nasa:11: Alien Asteroid Belt Compared to our Own  Artist Concept | This artist concept shows what the night sky might look like from a hypothetical alien planet in a star system with an asteroid belt 25 times as massive as the 
+
+[v005] needs: the Crab Nebula supernova remnant | narration: Billions of years ago, ancient supernovae formed heavy elements
+  wiki:0: Crab Nebula | This is a mosaic image, one of the largest ever taken by NASA's Hubble Space Telescope, of the Crab Nebula, a six-light-year-wide expanding remnant of a star's 
+  wiki:1: Crab nebula and crab pulsar composite | A combination of optical and X-ray images of the Crab Nebula. The X-ray image reveals evidence of a spinning disc of super-hot gas with high-speed jets shooting
+  wiki:2: The Crab Nebula (weic2326a) | The NASA/ESA/CSA James Webb Space Telescope has gazed at the Crab Nebula in the search for answers about the supernova remnant’s origins. Webb’s NIRCam (Near-In
+  nasa:3: Supernova Remnant W49B | Release date Dec. 30, 2009 In the supernova remnant W49B, Suzaku found another fossil fireball. It detected X-rays produced when heavily ionized iron atoms reca
+  nasa:4: Vivid View of Tycho Supernova Remnant | This composite image of the Tycho supernova remnant combines infrared and X-ray observations obtained with NASA Spitzer and Chandra space observatories, respect
+  nasa:5: Supernova Remnant in 3-D | For the first time, a multiwavelength three-dimensional reconstruction of a supernova remnant has been created. This visualization of Cassiopeia A, or Cas A, th
+  wiki:6: Tycho-supernova-xray | The Chandra X-ray Observatory image of Tycho's Supernova Remnant depicts a glowing, multi-colored sphere that appears to be suspended in the blackness of space.
+  wiki:7: Supernova Remnant SN 1006 | This image is a composite of visible (or optical), radio, and X-ray data of the full shell of the supernova remnant from SN 1006. The radio data show much of th
+  wiki:8: NASA-SNR0519690-ChandraXRayObservatory-20150122 | X-ray &amp; Optical Images of SNR E0519-69.0 - When a massive star exploded in the Large Magellanic Cloud, a satellite galaxy to the Milky Way, it left behind a
+  wiki:9: Vela supernova - VST - Eso2214a | The Vela supernova remnant imaged by the VLT Survey Telescope The image shows stringy clouds of hot pink and golden orange, nested together all over the frame, 
+  wiki:10: Vela Supernova Remnant - Noirlab2406a | Vela Supernova Remnant, using line filters for OIII, SII, H-alpha &amp; NII Ghostly Stellar Tendrils of the Vela Supernova Remnant This colorful web of wispy ga
+
+[v006] needs: planet Earth viewed from space | narration: that enabled the chemical processes for life on Earth.
+  nasa:0: View of Skylab space station cluster in Earth orbit from CSM | SL4-143-4707 (8 Feb. 1974) --- An overhead view of the Skylab space station cluster in Earth orbit as photographed from the Skylab 4 Command and Service Modules
+  nasa:1: View of Skylab space station cluster in Earth orbit from CSM | SL4-143-4706 (8 Feb. 1974) --- An overhead view of the Skylab space station cluster in Earth orbit as photographed from the Skylab 4 Command and Service Modules
+  nasa:2: NASA Google+ Hangout: 'Earthrise' A New Visualization - 45th Anniversary of Apollo 8 Viewi | Join NASA's Google+ Hangout on Friday, December 20th 2:00 - 3:00 PM (EST) at go.nasa.gov/18S2TbC It was 45 years ago, on December 24, 1968 when Apollo 8 astrona
+  nasa:3: Earth Observation from the International Space Station | Night Earth Observation from the International Space Station
+  nasa:4: Earth observations taken during STS-75 | Earth observations taken during the STS-75 mission from the space shuttle Columbia.
+  nasa:5: Aurora Australis, Sinuous Loop | STS039-23-020 (28 April-6 May 1991) --- A 35mm frame of the Aurora Australis, also known as the Southern Lights, photographed from Space Shuttle Discovery's fli
+  wiki:6: Space Shuttle Columbia launching | The April 12 launch at Pad 39A of STS-1, just seconds past 7 a.m., carries astronauts John Young and Robert Crippen into an Earth orbital mission scheduled to l
+  wiki:7: Earth's City Lights by DMSP, 1994-1995 (large) | This image of Earth’s city lights was created with data from the Defense Meteorological Satellite Program (DMSP) Operational Linescan System (OLS). Originally d
+  wiki:8: NASA-Apollo8-Dec24-Earthrise | Taken by Apollo 8 crewmember Bill Anders on December 24, 1968, at mission time 075:49:07 [8] (16:40 UTC), while in orbit around the Moon, showing the Earth risi
+  wiki:9: STS-135 final flyaround of ISS 1 | STS-135 final flyaround of ISSThis picture of the International Space Station was photographed from the space shuttle Atlantis as the orbiting complex and the s
+  wiki:10: North America from low orbiting satellite Suomi NPP | A view of most of North America taken from a low orbit of about 826 km altitude. The whole hemisphere is not visible owing to the low orbit, and the horizon is 
+  wiki:11: The Earth seen from Apollo 17 | "The Blue Marble" is a famous photograph of the Earth taken on December 7, 1972, by the crew of the Apollo 17 spacecraft en route to the Moon at a distance of a
+
+[v008] needs: the glowing blue atmospheric limb of Earth | narration: Earth's atmosphere is remarkably effective at absorbing high-energy
+  nasa:0: Orbital Boom Sensor System with a cloudy Earth limb | S114-E-5712 (28 July 2005) --- This view of the Orbital Boom Sensor System, backdropped by clouds and Earth&#0146;s limb, was taken by the STS-114 crew during a
+  nasa:1: STS-43 Earth observation of a colorful sunrise | STS-43 Earth observation taken aboard Atlantis, Orbiter Vehicle (OV) 104, captures the Earth's limb at sunrise with unusual cloud patterns silhouetted by the su
+  nasa:2: STS-45 Earth observation of the Aurora Australis or Southern Lights | STS-45 Earth observation taken onboard Atlantis, Orbiter Vehicle (OV) 104, is of the Aurora Australis or Southern Lights. The green appearing auroral activity e
+  nasa:3: View of the Earth's limb with an aurora | iss058e005282 (Jan. 19, 2019) --- A portion of the International Space Station's solar arrays caps this nighttime view of the Earth's limb with an aurora as the
+  nasa:4: STS-26 Discovery, Orbiter Vehicle (OV) 103, IUS / TDRS-C deployment | During STS-26, inertial upper stage (IUS) with tracking and data relay satellite C (TDRS-C) located in the payload bay (PLB) of Discovery, Orbiter Vehicle (OV) 
+  nasa:5: Space Shuttle Endeavour Arrival to the ISS during Expedition 22 | ISS022-E-062673 (9 Feb. 2010) --- Though astronauts and cosmonauts often encounter striking scenes of Earth's limb, this very unique image, part of a series ove
+  wiki:6: Skylab and Earth Limb - GPN-2000-001055 | An overhead view of the Skylab Orbital Workshop in Earth orbit as photographed from the Skylab 4 Command and Service Modules (CSM) during the final fly-around b
+  nasa:7: Earth Atmosphere Observations taken by the Expedition 35 Crew | Earth atmosphere observation taken by the Expedition 35 crew aboard the ISS. The colors roughly denote the layers of the atmosphere (the orange troposphere, the
+  nasa:8: Atmospheric Circulation Cells on Earth and Jupiter | This graphic compares the atmospheric circulations of Earth and Jupiter. Earth contains one Ferrel cell (a mid-latitudinal cell where air flows poleward and eas
+  nasa:9: NASA Sees Tohoku-Oki Earthquake and Tsunami in Earth Upper Atmosphere | NASA Sees Tohoku-Oki Earthquake and Tsunami in Earth Upper Atmosphere
+  nasa:10: Earth's thin blue atmosphere traces the planet's horizon above the Pacific Ocean | iss074e0089803 (Jan. 16, 2026) --- Earth's thin blue atmosphere traces the planet's horizon as the sun's glint beams off a partly cloudy Pacific Ocean west of C
+  nasa:11: Apollo 13 Service Module and Lunar Module as entering Earth's atmosphere | S70-17646 (18 April 1970) --- An unidentified airline passenger snapped these bright objects, believed to be the Apollo 13 Service Module (SM) and Lunar Module 
+
+[v009] needs: an orbiting gamma ray space telescope | narration: electromagnetic radiation like X-rays and gamma rays.
+  nasa:0: Spitzer Space Telescope Ready for Launch | The Spitzer Space Telescope (formerly the Space Infrared Telescope Facility or SIRTF) is readied for launch at Cape Canaveral Air Force Station, in 2003. https:
+  nasa:1: Hubble Space Telescope Resolves Volcanoes on Io | Hubble Space Telescope Resolves Volcanoes on Io
+  nasa:2: Spitzer Space Telescope (Illustration) | In this artist's rendering of NASA's Spitzer Space Telescope in space, the background is shown in infrared light. https://photojournal.jpl.nasa.gov/catalog/PIA2
+  nasa:3: By the Dozen: NASA's James Webb Space Telescope Mirrors | A view of the one dozen (out of 18) flight mirror segments that make up the primary mirror on NASA's James Webb Space Telescope have been installed at NASA's Go
+  nasa:4: Finishing Touches for Space Infrared Telescope Facility SIRTF | Technicians put final touches on NASA Space Infrared Telescope Facility at Lockheed Martin Aeronautics in Sunnyvale, Calif., which launched on August 25, 2003. 
+  wiki:5: Hubble 2009 close-up | An STS-125 crewmember aboard the Space Shuttle Atlantis captured this still image of the Hubble Space Telescope as the two spacecraft continue their relative se
+  wiki:6: Sombrero Galaxy in infrared light (Hubble Space Telescope and Spitzer Space Telescope) | NASA/ESA Hubble Space Telescope and NASA's Spitzer Space Telescope joined forces to create this striking composite image of one of the most popular sights in th
+  wiki:7: Grand star-forming region R136 in NGC 2070 (captured by the Hubble Space Telescope) | A Hubble Space Telescope image of the R136 super star cluster, near the center of the 30 Doradus Nebula, also known as the Tarantula Nebula or NGC 2070. (Conver
+  wiki:8: James Webb Space Telescope Mirror37 | Caption: During cryogenic testing, the mirrors will be subjected to temperatures dipping to 24 Kelvins, permitting engineers to measure in extreme detail how th
+  wiki:9: NASA-HS201427a-HubbleUltraDeepField2014-20140603 | June 3, 2014 RELEASE 14-151 Hubble Team Unveils Most Colorful View of Universe Captured by Space Telescope http://www.nasa.gov/press/2014/june/hubble-team-unvei
+  wiki:10: James Webb Space Telescope Mirrors Will Piece Together Cosmic Puzzles (30108124923) | The primary mirror of NASA's James Webb Space Telescope consisting of 18 hexagonal mirrors looks like a giant puzzle piece standing in the massive clean room of
+  nasa:11: Aqua Satellite Orbiting Earth Artist Concept | NASA Aqua satellite carries six state-of-the-art instruments in a near-polar low-Earth orbit. Aqua is seen in this artist concept orbiting Earth. The six instru
+
+[v010] needs: a starry night sky over mountains | narration: Surviving that initial burst of light might make it
+  nasa:0: A yellow‑green airglow blanketing Earth’s atmosphere beneath a starry sky | iss074e0472536 (April 12, 2026) --- This serene image, taken from the International Space Station as it orbited 265 miles above the Indian Ocean, highlights a y
+  nasa:1: The city lights of New Delhi, India, underneath a starry night sky | iss073e0685684 (Aug. 21, 2025) --- Underneath a starry night sky, the city lights of New Delhi, India, and its surrounding suburbs glitter below Earth's atmosph
+  nasa:2: Airglow on the horizon against the starry sky view taken by the Expedition 29 crew | ISS029-E-005853 (17 Sept. 2011) --- This is one of a series of night time images photographed by one of the Expedition 29 crew members from the International Sp
+  nasa:3: A green and red aurora australis shimmers beneath a starry sky | iss073e0831259 (Sept. 27, 2025) --- A green and red aurora australis shimmers beneath a starry sky and above Earth's airglow, creating a pinkish hue above the s
+  nasa:4: NEOWISE Next Light | NASA NEOWISE spacecraft opened its eyes after more than two years of slumber to see the starry sky with the same clarity achieved during its prime mission. This
+  wiki:5: Van Gogh - Starry Night - Google Art Project | 
+  wiki:6: Starry Sky off Westport, WA 01 | Starry Sky off Westport, Washington, U.S.
+  wiki:7: Purple starry sky (Unsplash) | Dawid Zawiła 2017-01-20
+  wiki:8: Starry sky during blackouts | Photo of a starry sky made in November in Lviv, Ukraine. Photo is made using a smartphone on a long exposure, during a blackout after the bombings of Ukraine. T
+  wiki:9: Starry sky from Tekapo | The starry sky on the night of April 27th.
+  wiki:10: Starry sky over Kalvebod Fælled | January starry sky over Kalvebod Fælled, Ørestad, Copenhagen with the observation tower
+  nasa:11: Io, the South Polar Region | This archival image mosaic from NASA Voyager 1 shows Io south polar region. The South Pole is near the terminator line between daylight and night at right cente
+
+[v011] needs: a lush green forest under sunlight | narration: seem like our planet escaped the catastrophe completely unharmed.
+  nasa:0: Ascension Island | Two hundred years ago, Ascension Island was a barren volcanic edifice. This image from NASA Terra spacecraft shows that today its peaks are covered by lush trop
+  nasa:1: The snow‑capped Himalayas separate Nepal from China | iss074e0603570 (May 20, 2026) --- The snow‑capped Himalayas separate Nepal from China in this photograph from the International Space Station as it orbited 259 
+  nasa:2: Seattle, Washington, sits between Puget Sound and Lake Washington | iss074e0723716 (June 16, 2026) --- Seattle, Washington, with a metropolitan population of over 4.15 million, sits between Puget Sound and Lake Washington and is
+  nasa:3: Anchorage, AK | Anchorage, Alaska and Cook Inlet are seen in this 30 by 30 km (19 by 19 miles) sub-image, acquired May 12, 2000 by the Advanced Spaceborne Thermal Emission and 
+  nasa:4: Olympic National Park | It has to be one of America’s most diverse national park landscapes. If you walked from west to east across Olympic National Park, you would start at the rocky 
+  nasa:5: Mount Kilimanjaro, Tanzania | STS072-722-004 (11-20 Jan. 1996) --- Mount Kilimanjaro in Tanzania is featured in this 70mm frame exposed from the Earth-orbiting Space Shuttle Endeavour. Orien
+  nasa:6: Space Radar Image of Yellowstone Park, Wyoming | These two radar images show the majestic Yellowstone National Park, Wyoming, the oldest national park in the United States and home to the world's most spectacu
+  nasa:7: Uele River, Cleared Pasture Lands, Zaire, Africa | STS049-91-079 (7 - 16 May 1992) --- This 70mm frame, photographed from the Earth-orbiting Space Shuttle Endeavour, features a dendritic drainage pattern in Zair
+  nasa:8: Space Radar Image of Bahia | This is a color composite image of southern Bahia, Brazil, centered at 15.22 degree south latitude and 39.07 degrees west longitude. The image was acquired by t
+  nasa:9: Space Radar Image of Prince Albert, Canada, seasonal | This is a comparison of images over Prince Albert, produced by NASA Spaceborne Imaging Radar-C and X-band Synthetic Aperture Radar aboard the space shuttle Ende
+  nasa:10: Space Radar Image of Manaus, Brazil | These two false-color images of the Manaus region of Brazil in South America were acquired by the Spaceborne Imaging Radar-C and X-band Synthetic Aperture Radar
+  wiki:11: VANILLA LEAVES AS FOREST FLOOR CANOPY AT GREEN MOUNTAIN IN A PRIVATE FOREST PRESERVE IN KI | 
+
+[v012] needs: an aurora glowing in the upper atmosphere | narration: However, the real destruction is caused by complex chemical
+  nasa:0: Nighttime View of Aurora Borealis | This is a composite image of Suomi NPP VIIRS Day/Night Band images show the bright and complex signature of the aurora borealis across southern Canada and the n
+  nasa:1: Aurora Borealis at Kennedy Space Center | The faint glow of an aurora is seen over Launch Complex 39B at NASA’s Kennedy Space Center in Florida on Tuesday, Nov. 11, 2025. Auroras are created by energeti
+  nasa:2: Aurora Borealis at Kennedy Space Center | The faint glow of an aurora is seen over Launch Complex 39B at NASA’s Kennedy Space Center in Florida on Tuesday, Nov. 11, 2025. Auroras are created by energeti
+  nasa:3: Aurora Borealis at Kennedy Space Center | The faint glow of an aurora is seen over Launch Complex 39B at NASA’s Kennedy Space Center in Florida on Tuesday, Nov. 11, 2025. Auroras are created by energeti
+  nasa:4: The aurora borealis blankets the Earth | iss072e159172 (Oct. 30, 2024) --- The aurora borealis blankets the Earth in this photograph from the International Space Station as it soared 257 miles above Ca
+  nasa:5: The aurora borealis blankets the Earth | iss072e159516 (Oct. 30, 2024) --- The aurora borealis blankets the Earth in this photograph from the International Space Station as it soared into an orbital su
+  wiki:6: Aurora borealis over Eielson Air Force Base, Alaska | Eielson Air Force Base, Alaska — The Aurora Borealis, or Northern Lights, shines above Bear Lake
+  wiki:7: Aurora borealis above Storfjorden and the Lyngen Alps in moonlight, 2012 March | A wide view over Storfjorden (a part of Lyngen fjord) in a winter night in 2012 March. Some Aurora borealis (known as the northern lights) are running across th
+  wiki:8: Frederic Edwin Church - Aurora Borealis - Google Art Project | 
+  wiki:9: Aurora in Abisko near Torneträsk | Aurora borealis in Abisko National Park near Torneträsk lake in Sweden.
+  wiki:10: Multicolored aurora borealis pillar over Brastad | Multicolored aurora borealis, northern lights over Brastad, Lysekil Municipality, Sweden. Photo taken from Tuntorp. Sometimes you are lucky enough to get these 
+  wiki:11: Aurora and perseids | Aurora and perseids seen at the beach of Norderney, Germany. The image is a composite of 64 individual exposures of meteors, one of these images was used as a b
+
+[v013] needs: the stratospheric layer seen from high altitude | narration: reactions initiated in the upper layers of our air.
+  nasa:0: Earth observations taken from Space Shuttle Columbia during STS-80 mission | STS080-759-038 (19 Nov.-7 Dec. 1996) --- As photographed by the crewmembers aboard the space shuttle Columbia, a full moon is about to set beyond the limb of Ea
+  nasa:1: Space Shuttle Endeavour Arrival to the ISS during Expedition 22 | ISS022-E-062673 (9 Feb. 2010) --- Though astronauts and cosmonauts often encounter striking scenes of Earth's limb, this very unique image, part of a series ove
+  nasa:2: Space Shuttle Endeavour Arrival to the ISS during Expedition 22 | ISS022-E-062674 (9 Feb. 2010) --- Though astronauts and cosmonauts often encounter striking scenes of Earth's limb, this very unique image, part of a series ove
+  nasa:3: Space Shuttle Endeavour Arrival to the ISS during Expedition 22 | ISS022-E-062675 (9 Feb. 2010) --- Though astronauts and cosmonauts often encounter striking scenes of Earth's limb, this very unique image, part of a series ove
+  nasa:4: Space Shuttle Endeavour Arrival to the ISS during Expedition 22 | ISS022-E-062672 (9 Feb. 2010) --- Though astronauts and cosmonauts often encounter striking scenes of Earth's limb, this very unique image, part of a series ove
+  nasa:5: Sunrise, Earth Limb | STS052-23-022 (22 Oct.-1 Nov. 1992) --- As the Space Shuttle Columbia orbited Earth in an easterly direction over the Indian Ocean, moonrise was followed quickl
+  wiki:6: Endeavour silhouette STS-130 | Though astronauts and cosmonauts often encounter striking scenes of Earth's limb, this unique image, part of a series over Earth's colorful horizon, has the add
+  wiki:7: Hovering on the Horizon - NASA Earth Observatory | The limb of the Earth is a work of awesome beauty and a gift to science. When observed from space, the palette of gaseous layers of atmosphere reminds us of the
+  wiki:8: Nacreous clouds, Aberdeenshire, UK. 9 December 2012. | Nacreous clouds, Aberdeenshire, UK. 9 December 2012. Taken 16:05 9 December 2012 about 30 minutes after sunset looking south-west. The sun would have set at 15:
+  wiki:9: Nacreous cloud close-up, Aberdeenshire, UK. 9 December 2012. | Nacreous cloud, Aberdeenshire, UK. 9 December 2012. Taken 15:59 9 December 2012. About 30 minutes after sunset looking south-west. The sun would have set at 15:
+  wiki:10: A Halo Above the Horizon (154679) | An astronaut aboard the International Space Station took this photo while orbiting over the Indian Ocean. The Earth appears black in the lower half of this imag
+  nasa:11: Pluto in Twilight | This image of Pluto from NASA's New Horizons spacecraft, processed in two different ways, shows how Pluto's bright, high-altitude atmospheric haze produces a tw
+
+[v014] needs: noctilucent clouds high in the mesosphere | narration: High above us, intense energy from incoming gamma rays begins
+  nasa:0: Noctilucent clouds illuminated when the sun is below Earth's horizon | iss071e364425 (July 16, 2024) --- Noctilucent clouds, high-altutude clouds visible during the summer months and illuminated when the sun is below Earth's horizo
+  nasa:1: Noctilucent Clouds | View of noctilucent clouds over Earth.
+  nasa:2: Noctilucent clouds are pictured above the North Pacific Ocean | iss073e0257194 (June 28, 2025) --- Noctilucent clouds, upper atmospheric clouds illuminated by the sun below Earth's horizon and composed of water vapor crystal
+  nasa:3: Noctilucent clouds are pictured `above far western Kazakhstan | iss074e0796136 (July 10, 2026) --- Noctilucent clouds—polar mesospheric clouds illuminated by sunlight just after the Sun has set below the horizon—are pictured
+  nasa:4: Noctilucent clouds are illuminated by sunlight just after the Sun has set below the horizo | iss074e0784418 (June 29, 2026) --- Noctilucent clouds—polar mesospheric clouds illuminated by sunlight just after the Sun has set below the horizon—are pictured
+  nasa:5: Noctilucent clouds are illuminated by sunlight just after the Sun has set below the horizo | iss074e0784417 (June 29, 2026) --- Noctilucent clouds—polar mesospheric clouds illuminated by sunlight just after the Sun has set below the horizon—are pictured
+  wiki:6: Helkivad ööpilved Kuresoo kohal | Noctilucent clouds, Kuresoo bog, Soomaa National Park, Estonia.
+  wiki:7: Noctilucent-clouds-msu-6813 | Noctilucent clouds in Laboe, Germany
+  wiki:8: Noctilucent-clouds-msu-6817 | Noctilucent clouds in Laboe, Germany
+  wiki:9: Noctilucent clouds over Slovakia in 21st of June, 2019 (3) | Noctilucent cloud observed over western Slovakia in 21st of June, 2019.
+  wiki:10: Noctilucent clouds over Slovakia in 21st of June, 2019 (1) | Noctilucent cloud observed over western Slovakia in 21st of June, 2019.
+  wiki:11: Obłoki srebrzyste nad Krakowem, 20240708 2211 0616 | Noctilucent clouds over Krakow
+
+[v015] needs: auroral emission ribbons in the upper sky | narration: breaking apart stable gas molecules in the upper atmosphere.
+  nasa:0: Earth Observations taken by the Expedition 23 Crew | ISS023-E-058455 (29 May 2010) --- Aurora Australis is featured in this image photographed by an Expedition 23 crew member on the International Space Station. Am
+  wiki:1: Aurora Australis From ISS | Aurora Australis Observed From the International Space Station Among the views of Earth afforded astronauts aboard the International Space Station (ISS), surely
+  wiki:2: Proton arc over lake Superior | Second place winner. Proton arc over lake Superior. Image ID: con00054, NOAA's National Weather Service (NWS) Collection Location: Michigan, Clio Photographer: 
+  wiki:3: Optical Steve | Steve is an atmospheric optical phenomenon, which appears as a light ribbon across the sky.
+  wiki:4: Steve Jobs and Macintosh computer, January 1984, by Bernard Gotfryd - edited | Steve Jobs and Macintosh computer, January 1984, by Bernard Gotfryd.The image on the computer screen is 髪梳ける女 (A Woman Combing Her Hair) [media], by Hashiguchi 
+  wiki:5: Jupiter Showcases Auroras, Hazes (NIRCam Closeup) | Jupiter dominates the black background of space. The image is a composite, and shows Jupiter in enhanced color, featuring the planet’s turbulent Great Red Spot,
+  wiki:6: Aurora with STEVE | Intense aurora on March 23rd, 2023 led to it being seen quite far south. This example of STEVE was captured from Columbia Hills in southern Washington. This par
+  nasa:7: Saturn Polar Aurora | Saturn Polar Aurora
+  nasa:8: Aurorae on Jupiter and Earth | This illustration depicts ultraviolet polar aurorae on Jupiter and Earth. While the diameter of the Jovian world is 10 times larger than that of Earth, both pla
+  nasa:9: Glowing Southern Lights | This false-color composite image, constructed from data obtained by NASA Cassini spacecraft, shows the glow of auroras streaking out about 1,000 kilometers 600 
+  nasa:10: Earth Observations taken by Expedition 30 crewmember | iss030e119777 (3/3/2012) --- A view of the night earth taken aboard the International Space Station (ISS) showing an aurora. An aurora sometimes referred to as 
+  nasa:11: Moving THEMIS to a spin table for testing at Astrotech | At Astrotech Space Operations, workers look over the integrated THEMIS spacecraft before spin-balance testing. THEMIS consists of five identical probes, the lar
+
+[v017] needs: a high-altitude weather balloon ascending | narration: diatomic nitrogen and oxygen molecules high in the atmosphere.
+  nasa:0: Launching a Weather Balloon to check conditions for the THEMIS L | A weather balloon is prepared for release at the Cape Canaveral Air Force Station weather station. The balloon is equipped with a radiosonde, an instrument that
+  nasa:1: Launching a Weather Balloon to check conditions for the THEMIS L | A worker releases a weather balloon at the Cape Canaveral Air Force Station weather station. The balloon is equipped with a radiosonde, an instrument that trans
+  nasa:2: Launching a Weather Balloon to check conditions for the THEMIS L | A worker releases a weather balloon at the Cape Canaveral Air Force Station weather station. The balloon is equipped with a radiosonde, an instrument that trans
+  nasa:3: Launching a Weather Balloon to check conditions for the THEMIS L | A weather balloon takes flight from the Cape Canaveral Air Force Station weather station. The balloon is equipped with a radiosonde, an instrument that transmit
+  nasa:4: Launching a Weather Balloon to check conditions for the THEMIS L | A radiosonde, an instrument that transmits measurements on atmospheric pressure, humidity, temperature and winds, is prepared for use on a weather balloon at th
+  nasa:5: NASA Meteorologists Launch Weather Balloon Before Research Flight | In order to make sure weather conditions are acceptable at multiple altitudes, NASA meteorologists on the ground conduct constant monitoring operations, and lau
+  wiki:6: 2020-11 Kerguelen Islands - Weather balloon 01 | The inflation of a weather balloon at the Port-aux-Français scientific station on Kerguelen Islands, TAAF, France.
+  wiki:7: 2020-11 Kerguelen Islands - Weather balloon 02 | The inflation of a weather balloon at the Port-aux-Français scientific station on Kerguelen Islands, TAAF, France.
+  wiki:8: 2020-11 Kerguelen Islands - Weather balloon 03 | The inflation of a weather balloon at the Port-aux-Français scientific station on Kerguelen Islands, TAAF, France.
+  wiki:9: 2020-11 Kerguelen Islands - Weather balloon 04 | The inflation of a weather balloon at the Port-aux-Français scientific station on Kerguelen Islands, TAAF, France.
+  wiki:10: 2020-11 Kerguelen Islands - Weather balloon 05 | The inflation of a weather balloon at the Port-aux-Français scientific station on Kerguelen Islands, TAAF, France.
+  wiki:11: Photo Meteorology. Launching weather balloons 1954 - Touring Club Italiano 07 0498 | Meteorology: launching weather balloons.
+
+[v018] needs: an ionized electric plasma discharge | narration: This reaction recombines molecular nitrogen and oxygen into
+  wiki:0: Plasma-filaments | en:Z-pinches constrain the plasma filaments in an en:electrical discharge from a en:Tesla coil. Photo taken by Ian Tresman at the UK Teslathon in Derby, UK, on 
+  wiki:1: Plasma Trees | This is a cold plasma ignited at atmospheric pressure using a high electric potential difference applied to a couple of metal electrodes and a feed gas differen
+  wiki:2: Plasma creation | Plasma creation inside a small capillary of 30 mm in length and 500 μm in radius by using high-voltage electrical discharges up to 25 kV . In the picture, this 
+  wiki:3: Plasma globe with looped filament | This is a difficult-to-capture photograph I took of my miniature (7.62 cm = 3 in) plasma globe, albeit a low-resolution one. Impressively-stretched, vividly-vio
+  nasa:4: STS-39 Critical Ionization Velocity (CIV) gas release from OV-103 payload bay | STS039-367-006 (1 May 1991) --- One of the four compressed gas canisters on the forward port side of Discovery's cargo bay releases gas on flight day 4 of the S
+  nasa:5: Voyager 1 Entering Interstellar Space Artist Concept | This artist concept depicts NASA Voyager 1 spacecraft entering interstellar space. Interstellar space is dominated by the plasma, or ionized gas, that was eject
+  nasa:6: Laser Plasmas on Earth and Mars | This image shows laser plasmas in a test lab at Los Alamos National Laboratory, N.M., under typical atmospheric pressures on Earth and Mars. A plasma is an ioni
+  nasa:7: Curiosity First Rock Star | This mosaic image shows the first target NASA Curiosity rover aims to zap ChemCam instrument. ChemCam will be firing a laser at this rock, provisionally named N
+  nasa:8: Plasma Flow Near Voyager 1 Artist Animation | This artist concept shows plasma flows around NASA Voyager 1 spacecraft as it approaches interstellar space. Voyager 1 low-energy charged particle instrument de
+  nasa:9: Ghostly Remnant of an Explosive Past | This enhanced image from the far-ultraviolet detector on NASA Galaxy Evolution shows a ghostly shell of ionized gas around Z Camelopardalis, a binary, or double
+  wiki:10: Plasma-lamp | Plasma globe
+  wiki:11: Plasma-lamp 2 | plasma lamp.
+
+[v019] needs: a brown layer of atmospheric nitrogen dioxide haze | narration: dangerous gaseous compounds known as nitrogen oxides.
+  wiki:0: Aerosols over India and Bangladesh (MODIS) | A thick gray haze hung over India and Bangladesh in late February 2023, obscuring much of the land from satellite view and raising levels of aerosol pollution n
+  wiki:1: Smoke and Haze over Southeast Asia (MODIS 2024-04-07) | On April 4, 2024, the Moderate Resolution Imaging Spectroradiometer (MODIS) on NASA’s Terra satellite acquired a true-color image of smoke and haze over Southea
+  wiki:2: Maug Island - as seen from Navy P-3 cockpit on SAR mission - 1988 | Maug Island - Commonwealth of the Northern Mariana Islands In early 1988, as part of a Familiarization / Search and Rescue Flight our P-3 crew launched from Gua
+  nasa:3: Uranus Upper Atmosphere | This computer enhancement of a NASA Voyager 2 image, emphasizes the high-level haze in Uranus upper atmosphere. Clouds are obscured by the overlying atmosphere.
+  nasa:4: Shifting Northern Hazes | The complex and dynamic atmosphere of Titan displays multiple haze layers near the north pole in this view, which also provides an excellent look at the detache
+  nasa:5: Titan Polar Atmosphere | Titan atmosphere puts on a display with the detached haze to the north top of image and the polar vortex to the south as seen by NASA Cassini spacecraft.
+  nasa:6: Titan Cocoon | Sunlight scatters through Titan atmosphere, illuminating high hazes and bathing the entire moon in a soft glow
+  nasa:7: Titan Halo | With its thick, distended atmosphere, Titan orange globe shines softly, encircled by a thin halo of purple light-scattering haze
+  nasa:8: Details of Dark Senkyo | The low albedo feature known as Senkyo is visible through the haze of Titan atmosphere in this image captured by NASA Cassini spacecraft.
+  wiki:9: Staudammkrone Lünersee 2 | Walkers on the Staudammkrone dam at Lüner Lake, Austria.
+  wiki:10: Museo marítimo Ósvör, Bolungarvík, Vestfirðir, Islandia, 2014-08-15, DD 066 | View of the Ósvör maritime museum, located in the village of Bolungarvík, Vestfirðir, Iceland. The museum consists of a double 19th century fishing base, a salt
+  wiki:11: Arrizala - Sorgiñetxe 02 | Dolmen "Sorgiñetxe" ("witch's house") near Arrizala. Álava, Basque Country, Spain
+
+[v020] needs: a satellite mapping Earth's ozone layer | narration: Nitrogen oxides deplete protective stratospheric ozone molecules.
+  nasa:0: KSC-2009-2213 | CAPE CANAVERAL, Fla. – At the Astrotech payload processing facility in Titusville, Fla., the GOES-O satellite is lifted out of its shipping container. It will b
+  nasa:1: KSC-2009-2217 | CAPE CANAVERAL, Fla. – At the Astrotech payload processing facility in Titusville, Fla., the GOES-O satellite is lowered toward a stand. The satellite will unde
+  nasa:2: KSC-2009-2218 | CAPE CANAVERAL, Fla. – At the Astrotech payload processing facility in Titusville, Fla., the GOES-O satellite is lowered toward a test stand. The satellite will
+  nasa:3: KSC-2009-2219 | CAPE CANAVERAL, Fla. – At the Astrotech payload processing facility in Titusville, Fla., technicians move the test stand with the GOES-O satellite. The satellit
+  nasa:4: KSC-2009-2221 | CAPE CANAVERAL, Fla. – At the Astrotech payload processing facility in Titusville, Fla., technicians remove the protective cover wrapped around the GOES-O satel
+  nasa:5: KSC-2009-2220 | CAPE CANAVERAL, Fla. – At the Astrotech payload processing facility in Titusville, Fla., technicians remove the protective cover wrapped around the GOES-O satel
+  wiki:6: Synchronous Meteorological Satellite illustration | Illustration of a Synchronous Meteorological Satellite
+  wiki:7: Arctic Weather Satellite ESA23198428 | Embracing the New Space approach to prove new concepts in a cost-effective and timely manner, ESA is developing a prototype Arctic Weather Mission satellite. Th
+  wiki:8: Global Weather Satellites (29832071145) | Global Weather Satellites
+  wiki:9: Celebrating 60 Years of the World’s First Weather Satellite (NESDIS 2021-04-01 TIROSstorym | Tuesday, March 31, 2020 On April 1, 1960, the National Aeronautics and Space Administration (NASA) launched TIROS-1, the world’s first successful meteorological
+  wiki:10: The launching of TIROS I, the first meteorological satellite (2268-122) | The launching of TIROS I, the first meteorological satellite.In: Weather Analysis from Satellite Observations, U.S. Navy ResearchFacility, December 1960. Figure
+  wiki:11: Artist's conception of the AEROS meteorological satellite system (2297-16) | Artist's conception of the AEROS meteorological satellite system. Basically,this is the concept for the GOES series of satellites. In: Plan for aNational Meteor
+
+[v021] needs: a supercomputer server rack glowing with data lights | narration: Computer models show that a nearby explosion could cause a
+  nasa:0: Discover Supercomputer 3 | The heart of the NASA Center for Climate Simulation (NCCS) is the “Discover” supercomputer. In 2009, NCCS added more than 8,000 computer processors to Discover,
+  nasa:1: Discover Supercomputer 1 | The heart of the NASA Center for Climate Simulation (NCCS) is the “Discover” supercomputer. In 2009, NCCS added more than 8,000 computer processors to Discover,
+  nasa:2: Discover Supercomputer 5 | Two rows of the “Discover” supercomputer at the NASA Center for Climate Simulation (NCCS) contain more than 4,000 computer processors. Discover has a total of n
+  nasa:3: Discover Supercomputer 4 | This close-up view highlights one row—approximately 2,000 computer processors—of the “Discover” supercomputer at the NASA Center for Climate Simulation (NCCS). 
+  nasa:4: Discover Supercomputer 2 | The heart of the NASA Center for Climate Simulation (NCCS) is the “Discover” supercomputer. In 2009, NCCS added more than 8,000 computer processors to Discover,
+  nasa:5: ARC-1988-AC88-0514-42 | Cray YMP supercomputer Nas N-258 facility
+  nasa:6: TG-14 Flight Tests Support the Advanced Air Mobility Project's National Campaign | Mark Snycerski, senior research associate at NASA's Ames Research Center in California, monitored inbound telemetry data through collection servers during the A
+
+[v023] needs: polar stratospheric clouds illuminated by twilight | narration: In specific regional locations of the upper atmosphere, local ozone
+  nasa:0: ARC-1989-AC89-0114-592 | Airborne Arctic Stratospheric (Ozone) Expedition Stavanger Norway Jan-Feb 1989: The clouds seen from the NASA DC-8 aircraft at nearly 39,000 feet in the polar r
+  nasa:1: ARC-1989-AC89-0114-324 | Arctic Ozone Expedition Stavanger Norway These clouds in the polar regions north of Stravanger, Norway are representative of what are called 'Type 1' and Type 2
+  nasa:2: iss031e116058 | ISS031-E-116058 (13 June 2012) --- Polar mesospheric clouds in the Northern Hemisphere are featured in this image photographed by an Expedition 31 crew member o
+  nasa:3: Earth Observations taken by Expedition 34 crewmember | ISS034-E-024622 (5 Jan. 2013) --- Polar mesospheric clouds over the South Pacific Ocean are featured in this image photographed by an Expedition 34 crew member 
+  nasa:4: 2009 Antarctic Ozone Hole | The annual ozone hole has started developing over the South Pole, and it appears that it will be comparable to ozone depletions over the past decade. This compo
+  nasa:5: KSC-05pd-0662 | VANDENBERG AIR FORCE BASE, CALIF. - In the launch service tower on Space Launch Complex 2 at Vandenberg Air Force Base in California, the interstage of a Boeing
+  wiki:6: Nacreous clouds Antarctica | Nacreous clouds over the NASA Radome, McMurdo Station, Antarctica. This radome cover a telecommunication antenna used for space-to-ground communications support
+  wiki:7: Polar stratospheric clouds over Oslo, Norway | Polar stratospheric clouds over Oslo, Norway
+  wiki:8: Polar stratospheric cloud | Polar stratospheric cloud, Oslo December 19th 2023
+  wiki:9: Aeroplane in front of polar stratospheric clouds | Eit fly passerer framfor perlemorskyer. Frå Tysnes i Vestland.
+  wiki:10: Polar stratospheric cloud Windischgarsten Austria 20240114a | Possible Polar stratospheric cloud over Windischgarsten, Austria
+  wiki:11: Polar stratospheric clouds | Polar stratospheric clouds above the ionosonde antennas and the weather station of the Ukrainian Antarctic Akademik Vernadsky station
+
+[v025] needs: a blazing solar disk in space | narration: Depleting this shield exposes Earth's surface to bio-harmful
+  nasa:0: From the Sun with Love | This Solar Dynamics Observatory image of the Sun taken on February 1, 2013 in extreme ultraviolet light captures a heart-shaped dark coronal hole. Coronal holes
+  nasa:1: Comet Plunge and CME on the Sun | A small comet was streaking towards the Sun when the Sun blew out a &quot;halo&quot; coronal mass ejection (CME) Aug. 19-20, 2013). The CME originated from the 
+  nasa:2: From the Sun with Love | This Solar Dynamics Observatory (SDO) image of the Sun taken on January 20, 2012 in extreme ultraviolet light captures a heart-shaped dark coronal hole. Coronal
+  nasa:3: From the Sun with Love | This Solar Dynamics Observatory (SDO) image of the Sun taken on January 20, 2012 in extreme ultraviolet light captures a heart-shaped dark coronal hole. Coronal
+  nasa:4: Endeavour backdropped against space with Sun displaying rayed effect | STS061-105-024 (2-13 Dec. 1993) --- One of Endeavour's space walkers captured this view of Endeavour backdropped against the blackness of space, with the Sun di
+  nasa:5: International Space Station (ISS) | The setting sun and the thin blue airglow line at Earth's horizon was captured by the International Space Station's (ISS) Expedition Three crewmembers with a di
+  wiki:6: The Sun by the Atmospheric Imaging Assembly of NASA's Solar Dynamics Observatory - 2010081 | The Sun photographed at 304 angstroms by the Atmospheric Imaging Assembly (AIA 304) of NASA's Solar Dynamics Observatory (SDO). This is a false-color image of t
+  wiki:7: FullMoon2010 | Full Moon photograph taken 10-22-2010 from Madison, Alabama, USA. Photographed with a Celestron 9.25 Schmidt-Cassegrain telescope. Acquired with a Canon EOS Reb
+  wiki:8: Magnificent CME Erupts on the Sun - August 31 | On August 31, 2012 a long filament of solar material that had been hovering in the sun's atmosphere, the corona, erupted out into space at 4:36 p.m. EDT. The co
+  wiki:9: The sun and the moon in South New Brighton's beach, New Zealand | Panorama showing both the sun and the moon around the winter solstice (see also June solstice). South New Brighton's beach, New Zealand
+  wiki:10: The Sun in white light | The Sun photographed on the 8th of May, 2019 in white light (true color). Sunspots AR2740 (to the right) and AR2741 (to the left) visible. Some other interestin
+  wiki:11: Solar Orbiter’s widest high-res view of the Sun ESA508430 | Five years into its mission, Solar Orbiter stuns again with this detailed view of the Sun. What you see is the Sun’s million-degree hot atmosphere, called the c
+
+[v026] needs: ocean phytoplankton blooming in coastal water | narration: solar ultraviolet radiation, causing widespread biological damage.
+  nasa:0: Phytoplankton bloom off Newfoundland | NASA image acquired August 9, 2010 Phytoplankton are microscopic organisms that live in watery environments. When conditions are right, phytoplankton undergo ex
+  nasa:1: Phytoplankton bloom off Iceland | A massive phytoplankton bloom stained the waters of the Atlantic Ocean north of Iceland with brilliant jewel tones in late summer, 2014. The Moderate Resolution
+  nasa:2: Phytoplankton bloom in the North Atlantic Ocean | On July 23, 2013 the deep blue waters of the central North Atlantic Ocean provided a background for a spectacular bloom of phytoplankton. The Moderate Resolutio
+  nasa:3: Phytoplankton bloom in the Bay of Biscay | Springtime in the Bay of Biscay, off the coast of France, as in most places, is a season of abundant growth. On April 20, 2013, the Moderate Resolution Imaging 
+  nasa:4: Phytoplankton bloom off western Iceland | NASA image captured 06/24/2010 at 14 :30 UTC Phytoplankton bloom off western Iceland Satellite: Aqua NASA/GSFC/Jeff Schmaltz/MODIS Land Rapid Response Team To l
+  nasa:5: Phytoplankton bloom off South Africa | NASA image acquired December 26, 2011 Off the coast of South Africa, near where the South Atlantic meets the Southern Indian Ocean, a massive summer phytoplankt
+  wiki:6: Algal bloom(akasio) by Noctiluca in Nagasaki | Algal bloom by Noctiluca in Isahaya Bay.
+  wiki:7: Ocean phytoplankton bloom feed by the Amazon River | Rivers, such as the Amazon, deposit nutrients from land into South America's tropical ocean waters, leading to thick blooms along the coastline Turbulent storms
+  wiki:8: Coastal phytoplankton bloom change 2003–2020 | Coastal phytoplankton bloom change 2003–2020 Blooms of the plant-like organisms near coastal areas have become more frequent in the 21st century
+  wiki:9: A Swirl of a Day for Phytoplankton (154086) | The Gulf of Oman is a funnel-shaped body of water between Oman and Iran that connects to the Strait of Hormuz and Persian Gulf to the east and the Arabian Sea t
+  wiki:10: Great Barrier Reef ESA378130 | The Copernicus Sentinel-2A satellite takes us over part of the Great Barrier Reef off Australia’s northeast coast on 1 April 2017. Extending more than 2000 km a
+  wiki:11: Bright coral - Flickr - Christian Gloor | This coral formation, found on our house reef was beautifully positioned to create a nice composition backlit by the sun.
+
+[v028] needs: the expanding Cassiopeia A supernova remnant | narration: at speeds reaching several per cent of light speed.
+  nasa:0: Cassiopeia A: Death Becomes Her | This false-color image from three of NASA Great Observatories provides one example of a star that died in a fiery supernova blast. Called Cassiopeia A, this sup
+  nasa:1: The Case of Missing Iron in Cassiopeia A | When astronomers first looked at images of a supernova remnant called Cassiopeia A, captured by NASA NuSTAR. The mystery of Cassiopeia A Cas A, a massive star t
+  nasa:2: Sizzling Remains of a Dead Star | This new view of the historical supernova remnant Cassiopeia A, located 11,000 light-years away, was taken by NASA Nuclear Spectroscopic Telescope Array, or NuS
+  nasa:3: Cassiopeia A supernova | NASA's Fermi Closes on Source of Cosmic Rays New images from NASA's Fermi Gamma-ray Space Telescope show where supernova remnants emit radiation a billion times
+  nasa:4: A Year in the Life of an Infrared Echo | These images from NASA Spitzer Space Telescope, taken one year apart, show the supernova remnant Cassiopeia A yellow ball and surrounding clouds of dust reddish
+  nasa:5: Dance of the Light Echoes | This composite image from NASA Spitzer Space Telescope shows the remnant of a star that exploded, called Cassiopeia A center and its surrounding light echoes --
+  wiki:6: Cassiopeia charta | Cassiopeia constellation map, with DSOs
+  wiki:7: Sidney Hall - Urania's Mirror - Cassiopeia (image right side up) | "Cassiopeia", plate 3 in Urania's Mirror, a set of celestial cards accompanied by A familiar treatise on astronomy ... by Jehoshaphat Aspin. London. Astronomica
+  wiki:8: Cassiopeia constellation | Kassiopeia tähdistö.
+  wiki:9: Cassiopeia A NW | The picture shows the north west part of the Cassiopeia A (also known as Cas A, SNR G111.7-02.1, 3C 461 and AJG 109) supernova remnant (SNR) in the constellatio
+  wiki:10: Emission nebulae in Cassiopeia | Emission nebulae in the constellation Cassiopeia seen by the Northern Sky Narrowband Survey. In this false color image, doubly ionized oxygen ([OIII] at 500.7 n
+  nasa:11: A Supernova Shockwaves | Supernovae are the explosive deaths of the universe most massive stars. This false-color composite from NASA Spitzer Space Telescope and NASA Chandra X-ray Obse
+
+[v029] needs: the giant red star Betelgeuse | narration: In the case of a Betelgeuse supernova, the stream of charged
+  nasa:0: Stars in Orion as Seen from Mars | Stars in the upper portion of the constellation Orion the Hunter, including the bright shoulder star Betelgeuse and Orion three-star belt, appear in this image 
+  nasa:1: Jupiter Ring, With Orion | As NASA's Juno spacecraft flew through the narrow gap between Jupiter's radiation belts and the planet during its first science flyby, Perijove 1, on August 27,
+  wiki:2: Betelgeuse captured by ALMA | This orange blob shows the nearby star Betelgeuse, as seen by the Atacama Large Millimeter/submillimeter Array (ALMA). This is the first time that ALMA has ever
+  wiki:3: Arcturus to Betelgeuse comparison | A size comparison between the Sun, red giant Arcturus, blue supergiant Rigel, blue hypergiant S Doradus, and red supergiants Antares (at minimum) and Betelgeuse
+  wiki:4: Betelgeuse – and its newfound companion star | A century-old hypothesis that Betelgeuse, the 10th brightest star in our night sky, is orbited by a very close companion star was proved true by a team of astro
+  wiki:5: Location of the binary system of Betelgeuse in constellation Orion | Photo of the constellation Orion produced by NOIRLab in collaboration with Eckhard Slawik, a German astrophotographer. This is the annotated version. Steve Howe
+  nasa:6: The Tarantula Nebula | NASA Spitzer Space Telescope, formerly known as the Space Infrared Telescope Facility, has captured in stunning detail the spidery filaments and newborn stars o
+  wiki:7: V838 Mon HST | Light echo around V838 Monocerotis In January 2002, a dull star in an obscure constellation suddenly became 600,000 times more luminous than our Sun, temporaril
+  wiki:8: Red supergiant star surrounded by a veil of circumstellar material before explosion as sug | Red supergiant star surrounded by a veil of circumstellar material before explosion as suggested by early time observations of type II supernova
+  wiki:9: The Garnet Star (HD 206936, HR 8316, HIP 107259, SAO 33693), Cepheus | The Garnet Star (HD 206936, HR 8316, HIP 107259, SAO 33693), Cepheus Mu Cephei, referred to as the "garnet star" by Herschel in 1783, is thought to be the large
+  wiki:10: Stars Larger than Betelgeuse | A diagram of large, red supergiant stars by sizes measured with solar radii, that are larger than Betelgeuse; including HV 888, WOH S170, W60 B90, VX Sagitarii,
+
+[v032] needs: planet Earth surrounded by dark star-filled space | narration: to be to permanently destroy Earth's protective atmospheric shield?
+  nasa:0: Monitoring the Arctic during Polar Darkness | Image acquired October 30, 2012 Scientists watched the Arctic with particular interest in the summer of 2012, when Arctic sea ice set a new record low. The beha
+  nasa:1: Voyager the Explorer | This artist concept shows NASA Voyager spacecraft against a field of stars in the darkness of space as they travel farther away from Earth, on a journey to inte
+  nasa:2: Young Stars in Their Baby Blanket of Dust | Newborn stars peek out from beneath their natal blanket of dust in this dynamic image of the Rho Ophiuchi dark cloud from NASA Spitzer Space Telescope. This neb
+  nasa:3: Hubble Finds New Dark Spot on Neptune | In 1995, NASA Hubble Space Telescope discovered a new great dark spot, located in the northern hemisphere of the planet Neptune. Because the planet northern hem
+  nasa:4: Shuttle Atlantis enters Earth's Atmosphere | ISS028-E-018216 (21 July 2011) --- This unprecedented view of the space shuttle Atlantis, appearing like a bean sprout against the darkness of space, a faint li
+  nasa:5: Hurricane Sandy Viewed in the Dark of Night | NASA image acquired October 28, 2012 For the latest info from NASA on Hurricane Sandy go to: 1.usa.gov/Ti5SgS This image of Hurricane Sandy was acquired by the 
+  wiki:6: The Day the Earth Smiled - PIA17172 | On July 19, 2013, in an event celebrated the world over, NASA's Cassini spacecraft slipped into Saturn's shadow and turned to image the planet, seven of its moo
+  wiki:7: James Webb Space Telescope Mirrors Will Piece Together Cosmic Puzzles (30108124923) | The primary mirror of NASA's James Webb Space Telescope consisting of 18 hexagonal mirrors looks like a giant puzzle piece standing in the massive clean room of
+  wiki:8: Dark Energy in Terms of Cavitating Star Bubbles | How red shift is generated without stars physically moving further apart
+  wiki:9: Dark Energy in Terms of Cavitating Star Bubbles | How red shift is generated without stars physically moving further apart
+  nasa:10: The Earth from the Moon | The Earth from the Moon
+  nasa:11: Earth and Moon from 114 Million Miles | Earth and Moon from 114 Million Miles
+
+[v033] needs: a mountaintop optical telescope dome at dusk | narration: Scientists calculate dangerous stellar distances using atmospheric computer
+  nasa:0: Atlas-Centaur Orbiting Astronomical Observatory Shroud Test | Researchers at the National Aeronautics and Space Administration (NASA) Lewis Research Center conducted a series of shroud jettison tests for the second Orbitin
+  nasa:1: Orbiting Astronomical Observatory-1 Shroud Test in Space Power Chambers | Preparations for a shroud jettison test for the Orbiting Astronomical Observatory-1 (OAO-1) satellite in the Space Power Chambers facility at the National Aeron
+  nasa:2: Heavy and Light Just Right | Using NASA Herschel Space Observatory, astronomers have discovered that comet Hartley 2 possesses a ratio of heavy water to light, or normal, water that matches
+  nasa:3: Weighing Planetary Disks Artist Concept | This artist illustration shows a planetary disk left that weighs the equivalent of 50 Jupiter-mass planets. It demonstrates a first-of-its-kind feat from astron
+  wiki:4: The Astronomical Observatory of the Aosta Valley | The beautiful night sky over Astronomical Observatory of the Aosta Valley, in Saint-Barthelemy, Nus, Italy, host to the first ESO Astronomy Camp. The camp will 
+  wiki:5: Observatorio Mojon del Trigo 2014-08-07 | Mohón del Trigo Observatory as seen from the SW from near Monument of Our Lady of the Snows (Sierra Nevada), Spain. For a wider view see also this version creat
+  wiki:6: Kopenhagen (DK), Runder Turm -- 2017 -- 1633 | This is a photo of a monument in Denmark identified by the ID
+  wiki:7: Laser Towards Milky Ways Centre | In mid-August 2010 ESO Photo Ambassador Yuri Beletsky snapped this photo at ESO’s Paranal Observatory, Chile. A group of astronomers were observing the centre o
+  wiki:8: Hamilton Astronomical Observatory - New Zealand | The Hamilton Astronomical Observatory, New Zealand.
+  wiki:9: Rotating Dome of the Mayall 4-m Telescope (noao-mayallrotating-5000x3333) | The dome of the NOAO Mayall 4-meter telescope rotates as it views the night sky on Kitt Peak National Observatory.
+  wiki:10: Mayall 4-m Telescope at Night (noao1306b) | The NOAO Mayall 4-meter telescope on Kitt Peak National Observatory gazes up at the night sky as a full moon lights up the dome at night.
+  wiki:11: The Test-Bed Telescope 2 dome at night (eso2107h) | This photograph shows a night-time view of the dome of the Test-Bed Telescope 2, a European Space Agency telescope located at ESO’s La Silla Observatory in Chil
+
+[v034] needs: the glowing rings of Supernova 1987A | narration: models and measured radiation flux from Supernova 1987A.
+  nasa:0: The Dawn of a New Era for Supernova 1987a | Three decades ago, astronomers spotted one of the brightest exploding stars in more than 400 years. The titanic supernova, called Supernova 1987A (SN 1987A), bl
+  nasa:1: History of Hubble Space Telescope (HST) | This image of SN 1987A, taken November 28, 2003 by the Advanced Camera for Surveys aboard NASA's Hubble Space Telescope (HST), shows many bright spots along a r
+  nasa:2: Tracing Titanium Escape | The plot of data from NASA's Nuclear Spectroscopic Telescope Array, or NuSTAR (right), amounts to a "smoking gun" of evidence in the mystery of how massive star
+  wiki:3: SN 1987A (NIRCam image, annotated) (SN1987a-2) | The NASA/ESA/CSA James Webb Space Telescope has begun the study of one of the most renowned supernovae, SN 1987A (Supernova 1987A). Located 168,000 light-years 
+  wiki:4: SN 1987A (NIRCam image) (SN1987a-1) | The NASA/ESA/CSA James Webb Space Telescope has begun the study of one of the most renowned supernovae, SN 1987A (Supernova 1987A). Located 168,000 light-years 
+
+[v035] needs: a dense starry field in deep space | narration: Fortunately, a supernova explosion occurring within 33 light-years of Earth
+  nasa:0: White Dwarf Stars | Peering deep inside a cluster of several hundred thousand stars, NASA Hubble Space Telescope has uncovered the oldest burned-out stars in our Milky Way Galaxy, 
+  nasa:1: Goldstone’s DSS-15 Antenna and the Milky Way | Deep Space Station 15 (DSS-15), one of the 112-foot (34-meter) antennas at the Goldstone Deep Space Communications Complex near Barstow, California, looks skywa
+  nasa:2: Spitzer Sees Water Loud and Clear | This plot of infrared data, called a spectrum, shows the strong signature of water vapor deep within the core of an embryonic star system, called NGC 1333-IRAS 
+  nasa:3: An Unexpected Scattering of Light | This series of images from NASA Spitzer Space Telescope shows a dark mass of gas and dust, called a core, where new stars and planets will likely spring up. Thi
+  nasa:4: Rho Ophiuchi Imaged by IRAS | This image of the star-forming region Rho Ophiuchi was taken in 1983 by the Infrared Astronomical Satellite (IRAS), the first infrared telescope ever launched i
+  nasa:5: Around Marshall | The Shooting Star Experiment (SSE) is designed to develop and demonstrate the technology required to focus the sun's energy and use the energy for inexpensive s
+  wiki:6: Hubble ultra deep field | The Hubble Ultra Deep Field, is an image of a small region of space in the constellation Fornax, composited from Hubble Space Telescope data accumulated over a 
+  wiki:7: Hubble ultra deep field high rez edit1 | The Hubble Ultra Deep Field, is an image of a small region of space in the constellation Fornax, composited from Hubble Space Telescope data accumulated over a 
+  wiki:8: NASA-HS201427a-HubbleUltraDeepField2014-20140603 | June 3, 2014 RELEASE 14-151 Hubble Team Unveils Most Colorful View of Universe Captured by Space Telescope http://www.nasa.gov/press/2014/june/hubble-team-unvei
+  nasa:9: History of Hubble Space Telescope (HST) | This is a color Hubble Space Telescope (HST) heritage image of supernova remnant N49, a neighboring galaxy, that was taken with Hubble's Wide Field Planetary Ca
+  nasa:10: History of Hubble Space Telescope (HST) | This is a photograph of giant twisters and star wisps in the Lagoon Nebula. This superb Hubble Space Telescope (HST) image reveals a pair of one-half light-year
+  wiki:11: Stephan's Quintet Hubble 2009.full | Galactic Wreckage in Stephan's Quintet A clash among members of a famous galaxy quintet reveals an assortment of stars across a wide color range, from young, bl
+
+[v037] needs: a distant galaxy emitting an astrophysical relativistic jet | narration: If a highly focused gamma-ray burst pointed directly at Earth,
+  nasa:0: Black Hole vs. Star: A Tidal Disruption Event (Artist's Concept) | An artist's concept of a tidal disruption event (TDE) that happens when a star passes fatally close to a supermassive black hole, which reacts by launching a re
+  wiki:1: M87 jet | The jet emerging from the galactic core of M87 (NGC 4486). The jet extends to about 20 arc seconds (absolute length ca. 5 kly). Composite image of Hubble Telesc
+  wiki:2: HH 221 Laser-Sharp Jet Splits Water | A jet of gas firing out of a very young star can be seen ramming into a wall of material in this infrared image from NASA's Spitzer Space Telescope. The young s
+  wiki:3: Artist’s illustration of galaxy with jets from a supermassive black hole | This artist’s impression illustrates how high-speed jets from supermassive black holes would look. These outflows of plasma are the result of the extraction of 
+  wiki:4: Quasar 3C273 Full Ground-Based Color Image | Credit: Adam Block Total integration: 22h 3m Integration per filter: - Lum/Clear: 12h 45m (255 × 180") - R: 3h 6m (62 × 180") - G: 3h 6m (62 × 180") - B: 3h 6m 
+
+[v039] needs: a fossilized Ordovician trilobite in rock | narration: In fact, a nearby gamma-ray burst may have triggered the Late Ordovician mass extinction on Earth.
+  wiki:0: Trilobite fossil, Desert Museum | Trilobite fossil at Desert Museum. Saltillo, Coahuila, Mexico.
+  wiki:1: Fossil Trilobite | Henan Geological Museum, Zhengzhou, China. Complete indexed photo collection at WorldHistoryPics.com.
+  wiki:2: Fossil Trilobite Cast | Henan Geological Museum, Zhengzhou, China. Complete indexed photo collection at WorldHistoryPics.com.
+  wiki:3: Fossil Trilobite (with cast) | Henan Geological Museum, Zhengzhou, China. Complete indexed photo collection at WorldHistoryPics.com.
+  wiki:4: Trilobites (Austerops speculator), Jebel Oufatene, Marruecos, 2021-01-18, DD 137-195 FS | Focus stacked image (composed of 59 frames) of a complete stock of a trilobites of the species Austerops speculator found in Jebel Oufatene, Morocco. The length
+  wiki:5: Trilobite Fossil | Image of a Trilobite fossil I found at a fossil store, likely Flexicalymene ouzregui.
+  nasa:6: Earth observations of the Himalayan Mountains taken during STS-99 | STS099-735-046 (11-22 February 2000) ---Mt. Everest (29,028 feet or 8,848 meters), is featured in the center of this 70mm frame photographed by one of the STS-9
+  nasa:7: Earth observations during STS-89 | STS089-742-014 (22-31 Jan. 1998) --- This near-nadir picture of the central Andes, showing Santiago and other parts of Chile and Argentina, was photographed wit
+  wiki:8: Ceraurus sp. (fossil trilobite) (Ordovician; Picton, Ontario, Canada) | Ceraurus sp. - fossil trilobite from the Ordovician of Ontario, Canada. Trilobites are extinct marine arthropods. They first appear in Lower Cambrian rocks and 
+  wiki:9: Damghan Ampyx ghobadipour fossil from Lashkark Formation, Ordovician, Damghan, Iran | Damghanampyx ghobadipour Class: Trilobita, Order: Asaphida, Family:Raphiophoridae,Range:L.Ordo., Formation:Lashkarak, Locality:N.W.Damghan Eastern Alborz, Lengt
+  wiki:10: Asaphellus fossil from Mila formation, Ordovician period, Damghan, Iran 02 | Asaphellus sp. Class: Trilobita, Order: Asaphida, Family:Asaphidae Range:L.Ordo., Formation:Mila,Locality:Damghan N.E.Iran,Length 4 to 10 cm
+  wiki:11: Asaphellus fossil from Mila formation, Ordovician period, Damghan, Iran 01 | Asaphellus sp. Class: Trilobita, Order: Asaphida, Family:Asaphidae Range:L.Ordo., Formation:Mila,Locality:Damghan N.E.Iran,Length 4 to 10 cm
+
+[v042] needs: the constellation Orion shining in the night sky | narration: The famous red supergiant star Betelgeuse sits at a distance
+  nasa:0: STS-54 astronomical observation of the constellation Orion | STS054-97-018 (13-19 Jan 1993) --- The STS-54 crew used a handheld 70mm camera to record this view of the constellation Orion. Five astronauts spent six days ab
+  nasa:1: KSC-08pd3660 | CAPE CANAVERAL, Fla. – Segments of a crane are being offloaded at the Operations and Checkout Building at NASA's Kennedy Space Center in Florida. The new O&C lo
+  nasa:2: KSC-08pd4137 | CAPE CANAVERAL, Fla. – Segments of a new crane are tested inside the Operations and Checkout Building at NASA's Kennedy Space Center in Florida. The new O&C low
+  nasa:3: KSC-08pd3659 | CAPE CANAVERAL, Fla. – Segments of a crane arrive at the Operations and Checkout Building at NASA's Kennedy Space Center in Florida. The new O&C low-bay crane i
+  nasa:4: KSC-08pd3661 | CAPE CANAVERAL, Fla. – Segments of a crane are lowered onto the floor of the Operations and Checkout Building at NASA's Kennedy Space Center in Florida. The new
+  nasa:5: KSC-08pd3662 | CAPE CANAVERAL, Fla. – Segments of a crane are moved into the Operations and Checkout Building at NASA's Kennedy Space Center in Florida. The new O&C low-bay cr
+  wiki:6: Orion Nebula - Hubble 2006 mosaic 18000 | In one of the most detailed astronomical images ever produced, NASA/ESA's Hubble Space Telescope captured an unprecedented look at the Orion Nebula. ... This ex
+  wiki:7: Aurora borealis above Storfjorden and the Lyngen Alps in moonlight, 2012 March | A wide view over Storfjorden (a part of Lyngen fjord) in a winter night in 2012 March. Some Aurora borealis (known as the northern lights) are running across th
+  wiki:8: Orion Head to Toe | Photo taken by Rogelio Bernal Andreo in October 2010 of the Orion constellation showing the surrounding nebulas of the Orion Molecular Cloud complex. Also captu
+  wiki:9: The Great Orion Nebula in Narrowband | Here's an image I captured this last week of the Orion Nebula M42. Everyone who has done any astronomy is probably quite familiar with this star-forming region 
+  wiki:10: Orion Nebula in NIRCam long-wavelength channel | Orion Nebula in NIRCam long-wavelength channel This image shows the full survey of the inner Orion Nebula and Trapezium Cluster made using the NIRCam instrument
+  wiki:11: Orion sw clean proc 8bit 20230925 | Orion Nebula in NIRCam short-wavelength channel This image shows the full survey of the inner Orion Nebula and Trapezium Cluster made using the NIRCam instrumen
+
+[v044] needs: an astronomical photograph of a red supergiant star | narration: When Betelgeuse detonates as a brilliant supernova within the next
+  nasa:0: Flickering Aldebaran #1 | As Cassini watches the rings pass in front of the bright red giant star Aldebaran, the star light fluctuates, providing information about the concentrations of 
+  nasa:1: Speedster Star Shocks the Galaxy | The red arc in this infrared image from NASA Spitzer Space Telescope is a giant shock wave, created by a speeding star known as Kappa Cassiopeiae.
+  nasa:2: Flickering Aldebaran #3 | As Cassini watches the rings pass in front of bright red giant star Aldebaran, the star light fluctuates, providing information about the concentrations of ring
+  nasa:3: Flickering Aldebaran #2 | As Cassini watches the rings pass in front of bright red giant star Aldebaran, the star light fluctuates, providing information about the concentrations of ring
+  nasa:4: Brown Dwarf Weather (Artist's Concept) | This artist's concept shows what the weather might look like on cool star-like bodies known as brown dwarfs. These giant balls of gas start out life like stars,
+  wiki:5: Giant Red Star 1 | Artistic representation of a giant star. Originally intended as a video game asset.
+  wiki:6: Giant Red Star 3 | Artistic representation of a giant star. Originally intended as a video game asset.
+  wiki:7: Giant Red Star 2 | Artistic representation of a giant star. Originally intended as a video game asset.
+  wiki:8: Giant Red Star 4 | Artistic representation of a giant star. Originally intended as a video game asset.
+  wiki:9: A Comparison of Star Sizes | Description from original source: "This illustration compares the different masses of stars. The lightest-weight stars are red dwarfs. They can be as small as o
+  nasa:10: Supergiant Star Near Giraffe Hind Foot | NASA Wide-field Infrared Survey Explorer captured this colorful image of the nebula BFS 29 surrounding the star CE-Camelopardalis, found hovering in the band of
+  nasa:11: The Tarantula Nebula | NASA Spitzer Space Telescope, formerly known as the Space Infrared Telescope Facility, has captured in stunning detail the spidery filaments and newborn stars o
+
+[v045] needs: a crisp half-Moon against a dark sky | narration: 100,000 years, it will shine as bright as a half-Moon.
+  nasa:0: Half-Moon | Half-Moon
+  nasa:1: Hanging Half-Moon | Hanging Half-Moon
+  nasa:2: Titan Changing Seasons | NASA Cassini spacecraft records Titan seasonal hemispheric dichotomy, with the moon northern half appearing slightly lighter than the southern half in this imag
+  nasa:3: Conjoined Moons | Looking like half of a figure eight, two of Saturn moons appear conjoined in this image from NASA Cassini spacecraft. The moon Dione, at the top in the image, i
+  nasa:4: Two Halves of Titan | Seasonal changes in the atmosphere of Saturn largest moon are captured by NASA Cassini spacecraft, which shows Titan with a slightly darker top half and a sligh
+  nasa:5: Halving Titan | Titan seasonal hemispheric dichotomy is chronicled in black and white, with the moon northern half appearing slightly lighter than the dark southern half in thi
+  wiki:6: Half Moon, Herne Hill, SE24 (2479462949) | Another large pub in Herne Hill, which does pizzas, and has a room out the back which is used for gigs, etc. There's a boxing studio upstairs, I believe.
+  wiki:7: Waxing half moon over Brofjorden 1 | Waxing half moon over Brofjorden as seen from Sandvik, Lysekil Municipality, Sweden. In addition to the mångata ("moon street") there is a reflection of the moo
+  wiki:8: Pygoscelis antarcticus on the Half Moon Island 02 | Pygoscelis antarcticus on the Half Moon Island
+  wiki:9: Pygoscelis antarcticus on the Half Moon Island 01 | Pygoscelis antarcticus on the Half Moon Island
+  wiki:10: Half-Moon battery Edinburgh Castle dec.23 | Half-Moon battery in Edinburgh Castle.
+  nasa:11: A Glowing Crescent Moon | A Glowing Crescent Moon
+
+[v046] needs: Earth floating in deep space with glowing atmosphere | narration: Because Betelgeuse is hundreds of light-years away, life on
+  nasa:0: NASA Earth & Space Air Prize Demonstration Event | NASA Earth & Space Air Prize Demonstration Event
+  nasa:1: NASA Earth & Space Air Prize Demonstration Event | NASA Earth & Space Air Prize Demonstration Event
+  nasa:2: Earth Observation from the International Space Station | Night Earth Observation from the International Space Station
+  nasa:3: NASA Earth & Space Air Prize Demonstration Event | NASA Earth & Space Air Prize Demonstration Event
+  nasa:4: NASA Earth & Space Air Prize Demonstration Event | NASA Earth & Space Air Prize Demonstration Event
+  nasa:5: NASA Earth & Space Air Prize Demonstration Event | NASA Earth & Space Air Prize Demonstration Event
+  wiki:6: Space Shuttle Columbia launching | The April 12 launch at Pad 39A of STS-1, just seconds past 7 a.m., carries astronauts John Young and Robert Crippen into an Earth orbital mission scheduled to l
+  wiki:7: Earth's City Lights by DMSP, 1994-1995 (large) | This image of Earth’s city lights was created with data from the Defense Meteorological Satellite Program (DMSP) Operational Linescan System (OLS). Originally d
+  wiki:8: STS-135 final flyaround of ISS 1 | STS-135 final flyaround of ISSThis picture of the International Space Station was photographed from the space shuttle Atlantis as the orbiting complex and the s
+  wiki:9: North America from low orbiting satellite Suomi NPP | A view of most of North America taken from a low orbit of about 826 km altitude. The whole hemisphere is not visible owing to the low orbit, and the horizon is 
+  wiki:10: Earth, Moon and Lunar Module, AS11-44-6643 | Earth, Moon and Lunar Module, in lunar orbit after return from the moon and before rendezvous with the Apollo 11 Command/Service Module. Mars is visible as the 
+  wiki:11: The Earth seen from Apollo 17 | "The Blue Marble" is a famous photograph of the Earth taken on December 7, 1972, by the crew of the Apollo 17 spacecraft en route to the Moon at a distance of a
+
+[v047] needs: a vibrant coral reef full of marine life | narration: Earth will be completely unharmed by its eventual explosion.
+  nasa:0: Study Uses MODIS Data to Determine Belize Coral Reef Risk | The Moderate Resolution Imaging Spectroradiometer (MODIS) instrument aboard NASA's Aqua satellite captured this image of the Yucatán Peninsula on Feb. 3, 2022. 
+  nasa:1: Map Shows Belizean Protected Areas Assessed for Risk | In a paper published in November 2022 in Frontiers in Remote Sensing, researchers at NASA's Jet Propulsion Laboratory, with colleagues in Belize, used data from
+  wiki:2: Colorful Coral Bleaching | A rare moment caught on camera when corals under heat stress turn vibrant colors usually preceding full coral bleaching and death.
+  wiki:3: Colorful Coral Bleaching Event | A rare moment caught on camera when corals under heat stress turn vibrant colors usually preceding full coral bleaching and death.
+  wiki:4: Sea fans coral reef Pagan 2022 | Sea fans surrounded by reef fish on a coral reef off the southwest coast of Pagan.
+  wiki:5: Tabuk's Coastline; A Bridge Spans Turquoise Waters, Surrounded by Natural Beauty, Vibrant  | شواطئ تبوك شمال غرب المملكة ويظهر جسر يربط بين ضفتي المياه الفيروزية وتحيط به تضاريس طبيعية وشعاب مرجانية (2021)
+  nasa:6: Phytoplankton bloom off Iceland | A massive phytoplankton bloom stained the waters of the Atlantic Ocean north of Iceland with brilliant jewel tones in late summer, 2014. The Moderate Resolution
+  nasa:7: Crew Earth Observations (CEO) taken during Expedition Six | ISS006-E-51456 (2003) --- Marias Islands, Mexico is featured in this image photographed by an Expedition Six crewmember on the International Space Station. The 
+  nasa:8: Bloom in the Ross Sea | NASA image acquired January 22, 2011 To see a detail of this image go to: www.flickr.com/photos/gsfc/5398237910 Every southern spring and summer, after the Sun 
+  nasa:9: Bloom in the Ross Sea [detail] | NASA image acquired January 22, 2011 To view the full image go to: www.flickr.com/photos/gsfc/5397636843 Every southern spring and summer, after the Sun has ris
+  nasa:10: Blooms in the Sea of Marmara | Situated between the Black Sea and the Aegean Sea, the Sea of Marmara is full of a rich soup of nutrients and life and surrounded by a rich history of civilizat
+  nasa:11: Bloom in the Ross Sea | NASA image acquired January 22, 2011 Every southern spring and summer, after the Sun has risen into its 24-hour circuit around the skies of Antarctica, the Ross
+
+[v048] needs: a white dwarf star next to a companion star | narration: The closest known candidate for a white dwarf supernova is
+  nasa:0: Birth of an Earth-like Planet Artist Xoncept | This artist conception shows a binary-star, or two-star, system, called HD 113766, where astronomers suspect a rocky Earth-like planet is forming around one of 
+  nasa:1: Brown Dwarfs in our Backyard | The third closest star system to the sun, called WISE J104915.57-531906, center of large image, which was taken by NASA WISE. It appeared to be a single object,
+  nasa:2: Before the Smashup Artist Concept | This artist concept illustrates an imminent planetary collision around a pair of double stars. NASA Spitzer Space Telescope found evidence that such collisions 
+  nasa:3: Ghostly Remnant of an Explosive Past | This enhanced image from the far-ultraviolet detector on NASA Galaxy Evolution shows a ghostly shell of ionized gas around Z Camelopardalis, a binary, or double
+  nasa:4: Where Planets Take up Residence | This diagram illustrates that mature planetary systems like our own might be more common around twin, or binary, stars that are either really close together, or
+  wiki:5: Menkalinan | Binary star system 81 ly away in the constellation of Auriga - The two stars are metallic-lined hot blue-white subgiants roughly the same mass and diameter - Ev
+  wiki:6: Planet Lost in the Glare of Binary Stars | This illustration depicts a planet partially hidden in the glare of its host star and a nearby companion star. After examining a number of binary stars, astrono
+  wiki:7: Artist's interpretation of a close binary star system (geminiann18004a) | Artist's interpretation of a close binary star system in which several planets orbit the brighter star. The fainter companion star looms brightly in the sky (up
+  nasa:8: Kepler Beyond Planets: Finding Exploding Stars (Type Ia Supernova from a White Dwarf Merge | This frame from an animation shows the merger of two white dwarfs. A white dwarf is an extremely dense remnant of a star that can no longer burn nuclear fuel at
+  nasa:9: Scene of Multiple Explosions | This composite image NASA Galaxy Evolution Explorer shows Z Camelopardalis, or Z Cam, a double-star system featuring a collapsed, dead star, called a white dwar
+  nasa:10: Comet Bites the Dust Around Dead Star  Artist Concept | This artist concept illustrates a comet being torn to shreds around a dead star, or white dwarf, called G29-38. NASA Spitzer Space Telescope observed a cloud of
+  nasa:11: Silicates in Alien Asteroids | This plot of data from NASA Spitzer Space Telescopes shows that asteroid dust around a dead white dwarf star contains silicates -- a common mineral on Earth.
+
+[v049] needs: the constellation Pegasus in the night sky | narration: IK Pegasi, but it is moving away to a safe distance.
+  nasa:0: A Picture of Unsettled Planetary Youth | NASA Spitzer Space Telescope captured this infrared image of a giant halo of very fine dust around the young star HR 8799, located 129 light-years away in the c
+  nasa:1: KSC-06pd0262 | VANDENBERG AIR FORCE BASE, CALIF. - Inside Orbital Sciences Building 1555 at Vandenberg Air Force Base in California, a worker underneath the tail of the Pegasu
+  nasa:2: KSC-06pd0258 | VANDENBERG AIR FORCE BASE, CALIF. - Inside Orbital Sciences Building 1555 at Vandenberg Air Force Base in California, workers move the aft skirt toward the Pega
+  nasa:3: Space Shuttle Projects | The Space Shuttle Discovery and its science module payload are featured in the insignia for the STS-51B / Spacelab-3 mission. The seven stars of the constellati
+  nasa:4: KSC-06pd0260 | VANDENBERG AIR FORCE BASE, CALIF. - Inside Orbital Sciences Building 1555 at Vandenberg Air Force Base in California, workers get ready to install one of the fi
+  nasa:5: KSC-06pd0259 | VANDENBERG AIR FORCE BASE, CALIF. - Inside Orbital Sciences Building 1555 at Vandenberg Air Force Base in California, workers attach segments of the Pegasus XL 
+  wiki:6: Pegasus constellation map ru lite | Pegasus constellation map in Russian
+  wiki:7: Pegasus Uranometria | ヨハン・バイエルの『ウラノメトリア』では、ペガスス座には23個の星があるとされた。このうち δ は、1930年に全ての星座の境界線が定められた際にアンドロメダ座α星とされ、ペガスス座と切り離された。
+  wiki:8: Photo of the constellation Pegasus produced by NOIRLab in collaboration with Eckhard Slawi | Photo of the constellation Pegasus produced by NOIRLab in collaboration with Eckhard Slawik, a German astrophotographer. Here is the annotated version.
+  nasa:9: NEOWISE Next Light | NASA NEOWISE spacecraft opened its eyes after more than two years of slumber to see the starry sky with the same clarity achieved during its prime mission. This
+  nasa:10: NASA Unveils Celestial Fireworks as Official Image for Hubble 25th Anniversary | The brilliant tapestry of young stars flaring to life resemble a glittering fireworks display in the 25th anniversary NASA Hubble Space Telescope image, release
+  wiki:11: Anji County Starry Sky | Photograph of the starry sky taken at night in Anji County, Huzhou City, Zhejiang Province, with the Milky Way clearly visible.
+
+[v050] needs: the Pleiades open star cluster surrounded by blue nebula | narration: Even if other famous stars a few hundred light-years away
+  nasa:0: Star Cluster Overshadowed by Infrared Objects | Star clusters such as the Pleiades are often considered some of the most beautiful objects in the sky. This image of the star cluster NGC 2259 is from NASA Wide
+  nasa:1: Pink Pleiades | The Seven Sisters, also known as the Pleiades star cluster, seem to float on a bed of feathers in a new infrared image from NASA Spitzer Space Telescope. Clouds
+  nasa:2: The Seven Sisters Pose for Spitzer | The Seven Sisters, also known as the Pleiades star cluster, seem to float on a bed of feathers in a new infrared image from NASA Spitzer Space Telescope. Clouds
+  nasa:3: Seven Sisters Get WISE | This image shows the famous Pleiades cluster of stars as seen through the eyes of NASA Wide-field Infrared Survey Explorer; they are what astronomers call an op
+  nasa:4: The Seven Sisters | The stars of the Pleiades cluster, also known by the names M45 and the
+  nasa:5: Zodiacal Light | This photo shows the zodiacal light as it appeared on March 1, 2021, in Skull Valley, Utah. The Pleiades star cluster is visible near the top of the light colum
+  nasa:6: Star Treatment | NASA New Horizons team calibrates the Long Range Reconnaissance Imager LORRI by taking pictures of the open star cluster M7.
+  nasa:7: NGC 7380 | This picture of the open star cluster NGC 7380 is a mosaic of images from NASA Wide-field Infrared Survey Explorer mission spanning an area on the sky of about 
+  nasa:8: Soul Nebula | This mosaic from NASA WISE Telescope is of the Soul Nebula. It is an open cluster of stars surrounded by a cloud of dust and gas located about 6,500 light-years
+  nasa:9: Cluster of Stars in Kepler Sight | This image zooms into a small portion of NASA Kepler full field of view, an expansive, 100-square-degree patch of sky in our Milky Way galaxy. An eight-billion-
+  nasa:10: Earth Observations taken by Expedition 41 crewmember | ISS041-E-009477 (13 Sept. 2014) --- One of the Expedition 41 crew members aboard the Earth-orbiting International Space Station on Sept. 13, 2014 captured this 
+  wiki:11: Pleiades large | The Pleiades, an open cluster consisting of approximately 3,000 stars at a distance of 400 light-years (120 parsecs) from Earth in the constellation of Taurus. 
+
+[v052] needs: a silhouette of a person looking at the starry night sky | narration: As you gaze up at the night sky, how does it
+  nasa:0: KSC-2012-3523 | KWAJALEIN ATOLL, Marshall Islands - The lights of Orbital Sciences' L-1011 "Stargazer" aircraft illuminates the night sky as it takes off from the runway at Kwa
+  nasa:1: KSC-2012-3522 | KWAJALEIN ATOLL, Marshall Islands - In this time-lapse image, the lights of Orbital Sciences' L-1011 "Stargazer" streak across the night sky as the aircraft tak
+  wiki:2: Sky's The Limit Stargazers (48904790313) | NPS / Alessandra Puig-Santana Night Sky Festival 2019
+  wiki:3: Sky's The Limit Stargazers (48905311236) | NPS / Alessandra Puig-Santana Night Sky Festival 2019
+  wiki:4: Trails Through the Night Sky (iotw2033a) | Although this appears to be a daytime scene, star trails circle and illuminate the night sky in this long-exposure photo of Kitt Peak National Observatory (KPNO
+  wiki:5: Star Trails and Stargazers at Cerro Tololo (CTIO 20180824 Startails in Stargazing Dmunizag | Teasing the stargazers for a night of wonderful observing, the twilight sky over the Cerro Tololo Inter-American Observatory (CTIO) shows off some of its bright
+  nasa:6: G-2010-0104-124 | A person cosplays a storm trooper at the Visitor Center at NASA's Goddard Space Flight Center in Greenbelt, Md. Members of the 501st Legion Star Wars cosplaying
+  wiki:7: Stars in the night sky (Unsplash) | Shazia Mirza 2017
+  wiki:8: Cévennes France night sky with stars 02 | Photo of the night sky in Cévennes, France. Taken with a Lumix FZ-82.
+  wiki:9: Night sky with moon and stars over cotton field in Batesville, Texas | The moon, stars or even the 'Big Dipper' does not mark the end of a day, as cotton harvesters work into the night, at the Ernie Schirmer Farms, in Batesville, T
+  wiki:10: 018 Human looking at the stars during Perseids with the Milky Way in the background Photo  | A human, aligned with the Milky Way, looks at the stars from Oeschinensee (Switzerland) during Perseids in search of shooting stars.
+  wiki:11: Stars in the Night Sky at Big Meadows (51834249781) | NPS | M. O'Neill Night photography shoot. Stars in the night sky in Big Meadows. (20170922_BigMeadows_Night_DSC5587_mo.tif)
+
+[v053] needs: Earth's glowing blue atmospheric horizon seen from orbit | narration: feel knowing our atmosphere keeps us safe from distant cosmic explosions?
+  nasa:0: Noctilucent clouds illuminated when the sun is below Earth's horizon | iss071e364425 (July 16, 2024) --- Noctilucent clouds, high-altutude clouds visible during the summer months and illuminated when the sun is below Earth's horizo
+  nasa:1: The setting sun highlights Earth's horizon | iss071e581260_alt (Sept. 1, 2024) --- The setting sun highlights Earth's horizon and reveals NASA astronaut Tracy C. Dyson's profile as she looks out the cupola
+  nasa:2: Mir space station as seen after undocking from the shuttle Atlantis | STS79-E-5355 (16-26 September 1996) --- Several minutes later, the STS-79 astronauts enjoyed this view of the Russia's Mir Space Station complex backdropped aga
+  nasa:3: Earth Observation taken by the STS-125 Crew | S125-E-012183 (19 May 2009) --- Earth?s horizon and the blackness of space are featured in this image photographed by an STS-125 crewmember on the Earth-orbitin
+  nasa:4: Earth Observations take by the STS-131 Crew | S131-E-006087 (6 April 2010) --- Earth?s horizon and the blackness of space are featured in this image photographed by an STS-131 crew member on the Earth-orbit
+  wiki:5: New Horizons encapsulation | KENNEDY SPACE CENTER, FLA. – In the Payload Hazardous Servicing Facility, clean-suit garbed workers prepare the first fairing section (in the background) that w
+  wiki:6: ISS-20 Thunderstorms on the Brazilian Horizon | A picturesque line of thunderstorms and numerous circular cloud patterns filled the view as the International Space Station (ISS) Expedition 20 crew members loo
+  wiki:7: Deepwater Horizon oil spill - May 24, 2010 | Description from NASA (source): "NASA's Terra Satellites Sees Spill on May 24 Sunlight illuminated the lingering oil slick off the Mississippi Delta on May 24, 
+  wiki:8: International Space Station star trails - JSC2012E039800 | Star trail composite image created by International Space Station Expedition 30 crew member Don Pettit using images ISS030E171842 through ISS030E171889. Expedit
+  wiki:9: Encounter 01 lg | Artist's concept of the New Horizons spacecraft during its planned encounter with Pluto and its moon, Charon. The craft's miniature cameras, radio science exper
+  nasa:10: An atmospheric glow blankets Earth's horizon | iss072e724819 (March 5, 2025) --- An atmospheric glow blankets Earth's horizon above the Pacific Ocean in this nighttime photograph from the International Space
+  nasa:11: The Milky Way rises above Earth's atmospheric glow | iss074e0521637 (April 13, 2026) --- This celestial image captured from a window on a SpaceX Dragon spacecraft docked to the International Space Station highligh
