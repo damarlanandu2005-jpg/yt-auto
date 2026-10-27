@@ -1,0 +1,50 @@
+{
+ "technology": {
+  "channels": 7,
+  "median_weekly_view_growth_pct": null,
+  "share_subs_grew": null,
+  "share_videos_beat_normal": 0.246,
+  "top_outliers": [
+   "318.0x · Flying Roadster Explained: How Tesla's flying car works and what the technology is useful for?! — SpaceEyeTech (2,360 subs)",
+   "35.9x · How AI works, Explained with Mushrooms ! (Easiest Explanation ) — Xplained with MUSHROOMS (1,950 subs)",
+   "19.4x · Bakit Libu-libo ang Wika sa Mundo? — The Build Era (7,190 subs)",
+   "17.4x · The Teenager Who Invented TV (And How RCA Stole It) — The Build Era (7,190 subs)",
+   "12.0x · How AGI works? (Easiest Explanation) — Xplained with MUSHROOMS (1,950 subs)",
+   "10.1x · All Of Mechanical Engineering Explained in 10 Minutes — Simplex Academy (13,800 subs)",
+   "9.7x · Everything About Car Engines Explained – From Diesel Giants to Electric — Drive Explained (5,940 subs)",
+   "9.1x · Audi Quattro vs BMW xDrive vs Mercedes 4MATIC – Engineering Explained — Motoring Masters (99,700 subs)"
+  ]
+ },
+ "science_space": {
+  "channels": 20,
+  "median_weekly_view_growth_pct": null,
+  "share_subs_grew": null,
+  "share_videos_beat_normal": 0.259,
+  "top_outliers": [
+   "768.0x · How Huge Is the Universe? (The Answer Breaks Physics) — Curio (3,970 subs)",
+   "106.5x · The Darkest Truth About Cryosleep Nobody Tells You — The Gravity Well (3,870 subs)",
+   "64.1x · Artemis II Explained | 2026 Mission to the Moon — Digital Astronaut (51,800 subs)",
+   "54.3x · The Truth About Dying in Space Nobody Tells You — The Gravity Well (3,870 subs)",
+   "42.9x · Every Crazy Temperature in the Universe — Space Explainer (23,300 subs)",
+   "35.9x · The new telescope 100x better than Hubble | Nancy Grace Roman Explained — Digital Astronaut (51,800 subs)",
+   "26.0x · Every Crazy Level of Gravity in the Universe — Space Explainer (23,300 subs)",
+   "20.2x · How Big Is the Solar System, Really? — Curio (3,970 subs)"
+  ]
+ },
+ "money_economics": {
+  "channels": 4,
+  "median_weekly_view_growth_pct": null,
+  "share_subs_grew": null,
+  "share_videos_beat_normal": 0.242,
+  "top_outliers": [
+   "402.7x · What Happens When Economists Run a Country — False Profit (7,800 subs)",
+   "48.4x · Why Rome Never Industrialized — False Profit (7,800 subs)",
+   "33.4x · Stop Sharing This Graph — False Profit (7,800 subs)",
+   "28.5x · How Banks Obtain Funding: Deposits, Capital and Borrowing — BANKING & FINANCE ACADEMY (2,780 subs)",
+   "25.1x · Economics Explained Is A Junk Channel — False Profit (7,800 subs)",
+   "13.4x · Will AI Replace Banking Jobs? Skills Bankers Need to Survive — BANKING & FINANCE ACADEMY (2,780 subs)",
+   "9.9x · How Many SCHD Shares Do You Need to Retire?| The Answer Is Smaller Than You Think — BANKING & FINANCE ACADEMY (2,780 subs)",
+   "9.9x · Which G7 Country Will Go Bankrupt First? — Economics Help (98,000 subs)"
+  ]
+ }
+}
