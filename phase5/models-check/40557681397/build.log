@@ -1,0 +1,12 @@
+[llm] vision_gemma-4-31b-it: gemma-4-31b-it unavailable (HTTP 500 (busy)); trying next model
+[llm] vision_gemma-4-31b-it: every model busy; waiting 120s (round 1)
+[llm] vision_gemma-4-31b-it: gemma-4-31b-it unavailable (HTTP 500 (busy)); trying next model
+[llm] vision_gemma-4-31b-it: every model busy; waiting 120s (round 2)
+[llm] vision_gemma-4-31b-it: gemma-4-31b-it unavailable (HTTP 500 (busy)); trying next model
+[llm] json_gemini-3.1-flash-lite: gemini-3.1-flash-lite unavailable (HTTP 503 (busy)); trying next model
+[llm] json_gemini-3.1-flash-lite: every model busy; waiting 120s (round 1)
+gemma-4-31b-it: json ok | vision failed: vision_gemma-4-31b-it: no model available: ['gemma-4-31b-it: HTTP 500 (b
+gemini-3.5-flash-lite: json ok | vision ok
+gemini-3.1-flash-lite: json ok | vision ok
+github:openai/gpt-4.1-mini: json failed: Expecting value: line 1 column 1 (char 0) | vision failed: Expecting value: line 1 column 1 (char 0)
+GitHub catalog: 1 models

@@ -1,0 +1,103 @@
+{
+ "models": {
+  "gemma-4-31b-it": {
+   "json": "ok",
+   "vision": "failed: vision_gemma-4-31b-it: no model available: ['gemma-4-31b-it: HTTP 500 (busy)', 'gemma-4-31b-it: HTTP 500 (busy)', 'gemma-4-31b-it: HTTP 500 (busy)']"
+  },
+  "gemini-3.5-flash-lite": {
+   "json": "ok",
+   "vision": "ok"
+  },
+  "gemini-3.1-flash-lite": {
+   "json": "ok",
+   "vision": "ok"
+  },
+  "github:openai/gpt-4.1-mini": {
+   "json": "failed: Expecting value: line 1 column 1 (char 0)",
+   "vision": "failed: Expecting value: line 1 column 1 (char 0)"
+  }
+ },
+ "errors": [
+  {
+   "model": "gemma-4-31b-it",
+   "status": 500,
+   "error": "{\n  \"error\": {\n    \"code\": 500,\n    \"message\": \"Internal error encountered.\",\n    \"status\": \"INTERNAL\"\n  }\n}\n"
+  },
+  {
+   "model": "gemma-4-31b-it",
+   "status": 500,
+   "error": "{\n  \"error\": {\n    \"code\": 500,\n    \"message\": \"Internal error encountered.\",\n    \"status\": \"INTERNAL\"\n  }\n}\n"
+  },
+  {
+   "model": "gemma-4-31b-it",
+   "status": 500,
+   "error": "{\n  \"error\": {\n    \"code\": 500,\n    \"message\": \"Internal error encountered.\",\n    \"status\": \"INTERNAL\"\n  }\n}\n"
+  },
+  {
+   "model": "gemini-3.1-flash-lite",
+   "status": 503,
+   "error": "{\n  \"error\": {\n    \"code\": 503,\n    \"message\": \"This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.\",\n    \"status\": \"UNAVAILABLE\"\n  }\n}\n"
+  }
+ ],
+ "github_catalog": [
+  {
+   "error": "JSONDecodeError('Expecting value: line 1 column 1 (char 0)')"
+  }
+ ],
+ "calls": [
+  {
+   "name": "json_gemma-4-31b-it",
+   "model": "gemma-4-31b-it",
+   "status": 200,
+   "seconds": 30.3
+  },
+  {
+   "name": "vision_gemma-4-31b-it",
+   "model": "gemma-4-31b-it",
+   "status": 500,
+   "seconds": null
+  },
+  {
+   "name": "vision_gemma-4-31b-it",
+   "model": "gemma-4-31b-it",
+   "status": 500,
+   "seconds": null
+  },
+  {
+   "name": "vision_gemma-4-31b-it",
+   "model": "gemma-4-31b-it",
+   "status": 500,
+   "seconds": null
+  },
+  {
+   "name": "json_gemini-3.5-flash-lite",
+   "model": "gemini-3.5-flash-lite",
+   "status": 200,
+   "seconds": 0.8
+  },
+  {
+   "name": "vision_gemini-3.5-flash-lite",
+   "model": "gemini-3.5-flash-lite",
+   "status": 200,
+   "seconds": 4.7
+  },
+  {
+   "name": "json_gemini-3.1-flash-lite",
+   "model": "gemini-3.1-flash-lite",
+   "status": 503,
+   "seconds": null
+  },
+  {
+   "name": "json_gemini-3.1-flash-lite",
+   "model": "gemini-3.1-flash-lite",
+   "status": 200,
+   "seconds": 6.3
+  },
+  {
+   "name": "vision_gemini-3.1-flash-lite",
+   "model": "gemini-3.1-flash-lite",
+   "status": 200,
+   "seconds": 2.3
+  }
+ ]
+}
