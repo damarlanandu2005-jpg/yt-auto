@@ -1,0 +1,70 @@
+name: Phase 4 topic ideas
+
+# Finds and scores video topics for a niche (phase4/find_topics.py).
+# Uses 2 Gemini requests and about 6 YouTube units. About 2-5 minutes.
+# Results go to the bench-results branch under phase4/<niche>/<run_id>/ (ideas.md, ideas.json, signals.json, llm/).
+on:
+  workflow_dispatch:
+    inputs:
+      niche:
+        description: "Niche (settings in niches/)"
+        type: choice
+        options: ["science_space", "technology", "money_economics"]
+        default: "science_space"
+
+permissions:
+  contents: write
+
+concurrency:
+  group: phase4-topics
+  cancel-in-progress: false
+
+jobs:
+  topics:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 20
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.13"
+
+      - name: Get niche-test data from bench-results
+        timeout-minutes: 3
+        run: |
+          git fetch --depth 1 origin bench-results
+          git worktree add results FETCH_HEAD
+          git -C results checkout -B bench-results
+
+      - name: Find topics
+        timeout-minutes: 12
+        env:
+          GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
+          YOUTUBE_API_KEY: ${{ secrets.YOUTUBE_API_KEY }}
+          NICHE: ${{ inputs.niche }}
+        run: |
+          set -o pipefail
+          mkdir -p out/topics
+          python phase4/find_topics.py --niche "$NICHE" --out out/topics --phase0b results/phase0b 2>&1 | tee out/topics/build.log
+
+      - name: Save to bench-results
+        if: always()
+        timeout-minutes: 3
+        env:
+          NICHE: ${{ inputs.niche }}
+        run: |
+          set -e
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          dest="results/phase4/$NICHE/${{ github.run_id }}"
+          mkdir -p "$dest"
+          cp -r out/topics/. "$dest/"
+          cd results
+          git add -A phase4
+          git commit -m "Phase 4 topics $NICHE ${{ github.run_id }}" || echo "nothing to save"
+          for i in 1 2 3 4 5; do
+            git push origin bench-results && break
+            git pull --rebase origin bench-results
+            sleep 5
+          done

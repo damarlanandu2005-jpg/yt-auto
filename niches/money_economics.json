@@ -1,0 +1,65 @@
+{
+  "_about": "Niche settings for Phase 4 topic finding (blueprint 'niche.yaml'; JSON so no extra package is needed). Keywords come from the Phase 0b niche test.",
+  "key": "money_economics",
+  "label": "Money and economics (education only)",
+  "keywords": [
+    "economy",
+    "economics",
+    "economic",
+    "money",
+    "inflation",
+    "bank",
+    "banks",
+    "market",
+    "trade",
+    "gdp",
+    "debt",
+    "tax",
+    "price",
+    "prices",
+    "currency",
+    "recession",
+    "wealth",
+    "poverty",
+    "budget",
+    "interest",
+    "dollar",
+    "rupee"
+  ],
+  "exclude_words": [
+    "stocks to buy",
+    "invest",
+    "investing",
+    "crypto",
+    "bitcoin",
+    "trading",
+    "trader",
+    "get rich",
+    "passive income",
+    "side hustle",
+    "make money",
+    "forex",
+    "signals",
+    "portfolio",
+    "buy now",
+    "dividend"
+  ],
+  "youtube_categories": [
+    28,
+    27
+  ],
+  "youtube_regions": [
+    "US",
+    "GB",
+    "IN"
+  ],
+  "rss_feeds": [
+    "https://www.imf.org/en/Blogs/rss",
+    "https://www.sciencedaily.com/rss/science_society/economics.xml"
+  ],
+  "rules": [
+    "education only: no financial, legal or health advice",
+    "no accusations against named companies or people",
+    "a worldwide English audience; explain, don't report breaking news"
+  ]
+}

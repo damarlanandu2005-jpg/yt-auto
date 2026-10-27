@@ -1,0 +1,47 @@
+{
+  "_about": "Niche settings for Phase 4 topic finding (blueprint 'niche.yaml'; JSON so no extra package is needed). Keywords come from the Phase 0b niche test.",
+  "key": "technology",
+  "label": "How technology works",
+  "keywords": [
+    "engineering",
+    "technology",
+    "tech",
+    "computer",
+    "chip",
+    "processor",
+    "internet",
+    "smartphone",
+    "phone",
+    "battery",
+    "machine",
+    "engine",
+    "invention",
+    "electric",
+    "electricity",
+    "software",
+    "hardware",
+    "robot",
+    "camera",
+    "screen",
+    "signal"
+  ],
+  "exclude_words": [],
+  "youtube_categories": [
+    28,
+    27
+  ],
+  "youtube_regions": [
+    "US",
+    "GB",
+    "IN"
+  ],
+  "rss_feeds": [
+    "https://www.sciencedaily.com/rss/computers_math.xml",
+    "https://www.sciencedaily.com/rss/matter_energy/engineering.xml"
+  ],
+  "rules": [
+    "education only: no financial, legal or health advice",
+    "no accusations against named companies or people",
+    "a worldwide English audience; explain, don't report breaking news"
+  ]
+}

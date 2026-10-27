@@ -623,5 +623,13 @@
     "id": "s06"
    }
   ]
- }
+ },
+ "articles": [
+  "Global Positioning System",
+  "Trilateration",
+  "Atomic clock",
+  "Error analysis for the Global Positioning System",
+  "Satellite navigation"
+ ],
+ "title": "How GPS Finds Your Location Using Satellite Timestamps"
 }

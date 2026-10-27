@@ -1,0 +1,52 @@
+{
+  "_about": "Niche settings for Phase 4 topic finding (blueprint 'niche.yaml'; JSON so no extra package is needed). Keywords come from the Phase 0b niche test.",
+  "key": "science_space",
+  "label": "Science and space",
+  "keywords": [
+    "space",
+    "universe",
+    "planet",
+    "star",
+    "stars",
+    "galaxy",
+    "black hole",
+    "moon",
+    "mars",
+    "sun",
+    "earth",
+    "physics",
+    "quantum",
+    "rocket",
+    "orbit",
+    "science",
+    "chemistry",
+    "atom",
+    "light",
+    "gravity",
+    "cosmos",
+    "solar",
+    "nasa",
+    "telescope",
+    "asteroid"
+  ],
+  "exclude_words": [],
+  "youtube_categories": [
+    28,
+    27
+  ],
+  "youtube_regions": [
+    "US",
+    "GB",
+    "IN"
+  ],
+  "rss_feeds": [
+    "https://www.nasa.gov/news-release/feed/",
+    "https://www.sciencedaily.com/rss/space_time.xml",
+    "https://www.sciencedaily.com/rss/matter_energy.xml"
+  ],
+  "rules": [
+    "education only: no financial, legal or health advice",
+    "no accusations against named companies or people",
+    "a worldwide English audience; explain, don't report breaking news"
+  ]
+}
