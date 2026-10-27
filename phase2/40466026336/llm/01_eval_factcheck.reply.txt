@@ -1,0 +1,280 @@
+{
+  "results": [
+    {
+      "id": "u1",
+      "verdict": "partly",
+      "problem": "The cited passage does not mention that NASA designed and built TRANSIT.",
+      "fixed_text": "TRANSIT was first successfully tested in 1960."
+    },
+    {
+      "id": "u2",
+      "verdict": "partly",
+      "problem": "The passage does not state that the handheld GPS receiver cost less than 1,000 dollars.",
+      "fixed_text": "In 1991, DARPA finished its project to create a small handheld GPS receiver."
+    },
+    {
+      "id": "u3",
+      "verdict": "partly",
+      "problem": "The passage does not mention airlines pushing for GPS to become a dual-use system.",
+      "fixed_text": "Bill Clinton declared GPS a dual-use system in 1996 after recognizing its importance to civilian and military users."
+    },
+    {
+      "id": "u4",
+      "verdict": "partly",
+      "problem": "The passage does not state that assisted GPS was in every smartphone by 2008.",
+      "fixed_text": "Qualcomm announced successful tests of assisted GPS for mobile phones in 2004."
+    },
+    {
+      "id": "u5",
+      "verdict": "unsupported",
+      "problem": "The cited passage does not mention hydrogen masers being used inside GPS satellites.",
+      "fixed_text": "Hydrogen masers are precise atomic clocks used in applications such as radio astronomy."
+    },
+    {
+      "id": "u6",
+      "verdict": "unsupported",
+      "problem": "Framing sentence makes a factual claim without cited passages.",
+      "fixed_text": ""
+    },
+    {
+      "id": "o1",
+      "verdict": "unsupported",
+      "problem": "Passages state that as of 2026, the GPS constellation has 31 operational satellites rather than 24.",
+      "fixed_text": "As of 2026, the GPS constellation has 31 operational satellites."
+    },
+    {
+      "id": "o2",
+      "verdict": "unsupported",
+      "problem": "Passages state that operation of the GPS constellation was transferred to the U.S. Space Force in 2020.",
+      "fixed_text": "In 2020, operation of the GPS constellation was transferred to the U.S. Space Force."
+    },
+    {
+      "id": "o3",
+      "verdict": "unsupported",
+      "problem": "Passages state that a trapped aluminium ion optical clock, rather than NIST-F2, set the record for accuracy in 2025.",
+      "fixed_text": "A trapped aluminium ion clock built by NIST researchers set a record for accuracy in 2025."
+    },
+    {
+      "id": "o4",
+      "verdict": "unsupported",
+      "problem": "Passages state that Selective Availability was discontinued on May 2, 2000.",
+      "fixed_text": "Selective Availability formerly added errors of up to 100 metres to civilian GPS signals before being discontinued in 2000."
+    },
+    {
+      "id": "o5",
+      "verdict": "unsupported",
+      "problem": "Passage A1.5 states that 21 GPS satellites broadcast L5 signals as of March 2026.",
+      "fixed_text": "As of March 2026, 21 GPS satellites broadcast L5 signals."
+    },
+    {
+      "id": "o6",
+      "verdict": "unsupported",
+      "problem": "Passage A3.6 states that the United States' primary standard is the NIST-F2 caesium clock, not NIST-F1.",
+      "fixed_text": "The United States' primary time standard is the NIST-F2 caesium clock."
+    },
+    {
+      "id": "q1",
+      "verdict": "partly",
+      "problem": "The quotation is inaccurate; Air Force Space Command stated there was \"only a small risk\" of not continuing to exceed performance standards.",
+      "fixed_text": "In 2009, Air Force Space Command said there was only a small risk that GPS would not continue to exceed its performance standard."
+    },
+    {
+      "id": "q2",
+      "verdict": "partly",
+      "problem": "The phrase \"only a small risk\" was stated by Air Force Space Command, while the Government Accountability Office warned that satellites could fail.",
+      "fixed_text": "In 2009, the Government Accountability Office warned that some GPS satellites could fail as soon as 2010."
+    },
+    {
+      "id": "q3",
+      "verdict": "partly",
+      "problem": "The 2015 review lamented \"the pernicious influence of the Dick effect\", rather than praising a beneficial influence.",
+      "fixed_text": "A 2015 review lamented \"the pernicious influence of the Dick effect\" on optical standards."
+    },
+    {
+      "id": "q4",
+      "verdict": "unsupported",
+      "problem": "The passage does not record Bill Clinton calling GPS \"a gift to the whole world\".",
+      "fixed_text": "In 1996, Bill Clinton declared GPS a dual-use system and established an Interagency GPS Executive Board to manage it."
+    },
+    {
+      "id": "q5",
+      "verdict": "partly",
+      "problem": "Al Gore was Vice President, not President, in 1998.",
+      "fixed_text": "In 1998, Vice President Al Gore announced plans for two new civilian GPS signals."
+    },
+    {
+      "id": "q6",
+      "verdict": "partly",
+      "problem": "NIST researchers called their clock a \"quantum logic\" clock, not a \"quantum leap\" clock.",
+      "fixed_text": "NIST researchers called their record-breaking clock a \"quantum logic\" clock."
+    },
+    {
+      "id": "c1",
+      "verdict": "partly",
+      "problem": "sources conflict (A1.32 states December 1993, while X3 states 1995).",
+      "fixed_text": "Sources conflict on whether GPS reached initial operational capability in December 1993 or in 1995."
+    },
+    {
+      "id": "c2",
+      "verdict": "partly",
+      "problem": "sources conflict (A3.16 states more than 50 units were sold, while X4 states only about 20 were sold).",
+      "fixed_text": "Sources conflict on whether about 20 or more than 50 Atomichron clocks were sold."
+    },
+    {
+      "id": "c3",
+      "verdict": "partly",
+      "problem": "sources conflict (A4.64 states 38.6 microseconds per day, while X5 states about 45 microseconds a day).",
+      "fixed_text": "Sources conflict on whether GPS satellite clocks run fast by 38.6 or about 45 microseconds a day."
+    },
+    {
+      "id": "c4",
+      "verdict": "partly",
+      "problem": "sources conflict (A1.10 states 1960, while X6 states 1964).",
+      "fixed_text": "Sources conflict on whether TRANSIT was first successfully tested in 1960 or 1964."
+    },
+    {
+      "id": "c5",
+      "verdict": "partly",
+      "problem": "sources conflict (A3.52 states around 450 clocks, while X7 states about 300 clocks).",
+      "fixed_text": "Sources conflict on whether International Atomic Time is based on about 300 or around 450 clocks."
+    },
+    {
+      "id": "c6",
+      "verdict": "partly",
+      "problem": "sources conflict (A1.51 states 1978, while X8 states 1980).",
+      "fixed_text": "Sources conflict on whether Bradford Parkinson retired from the Air Force in 1978 or 1980."
+    },
+    {
+      "id": "w1",
+      "verdict": "partly",
+      "problem": "The passage states that an error of 1 nanosecond, not 1 microsecond, corresponds to a positional error of roughly 30 centimetres.",
+      "fixed_text": "A timing error of just 1 nanosecond puts your position out by roughly 30 centimetres."
+    },
+    {
+      "id": "w2",
+      "verdict": "partly",
+      "problem": "A 10 nanosecond error corresponds to a positional error of about 3 metres, not 3 kilometres.",
+      "fixed_text": "An error of about 10 nanoseconds in the code means a position error of about 3 metres."
+    },
+    {
+      "id": "w3",
+      "verdict": "partly",
+      "problem": "The clocks fall behind by 7,214 nanoseconds a day, not microseconds.",
+      "fixed_text": "Because of their speed, the satellites' clocks fall behind by 7,214 nanoseconds a day."
+    },
+    {
+      "id": "w4",
+      "verdict": "partly",
+      "problem": "The military receivers replaced weighed 16 kilograms (35 pounds), not 16 pounds.",
+      "fixed_text": "In 1991, 16-kilogram military receivers were replaced by a handheld unit of 1.25 kilograms."
+    },
+    {
+      "id": "w5",
+      "verdict": "partly",
+      "problem": "GPS satellites move at 3,874 metres per second, not kilometres per second.",
+      "fixed_text": "GPS satellites move at 3,874 metres per second relative to the centre of the Earth."
+    },
+    {
+      "id": "w6",
+      "verdict": "partly",
+      "problem": "Strontium optical clocks operate at 429 terahertz, not gigahertz.",
+      "fixed_text": "Strontium optical clocks work at 429 terahertz."
+    },
+    {
+      "id": "k1",
+      "verdict": "supported",
+      "problem": "",
+      "fixed_text": ""
+    },
+    {
+      "id": "k2",
+      "verdict": "supported",
+      "problem": "",
+      "fixed_text": ""
+    },
+    {
+      "id": "k3",
+      "verdict": "supported",
+      "problem": "",
+      "fixed_text": ""
+    },
+    {
+      "id": "k4",
+      "verdict": "supported",
+      "problem": "",
+      "fixed_text": ""
+    },
+    {
+      "id": "k5",
+      "verdict": "supported",
+      "problem": "",
+      "fixed_text": ""
+    },
+    {
+      "id": "k6",
+      "verdict": "supported",
+      "problem": "",
+      "fixed_text": ""
+    },
+    {
+      "id": "k7",
+      "verdict": "supported",
+      "problem": "",
+      "fixed_text": ""
+    },
+    {
+      "id": "k8",
+      "verdict": "supported",
+      "problem": "",
+      "fixed_text": ""
+    },
+    {
+      "id": "k9",
+      "verdict": "supported",
+      "problem": "",
+      "fixed_text": ""
+    },
+    {
+      "id": "k10",
+      "verdict": "supported",
+      "problem": "",
+      "fixed_text": ""
+    },
+    {
+      "id": "k11",
+      "verdict": "supported",
+      "problem": "",
+      "fixed_text": ""
+    },
+    {
+      "id": "k12",
+      "verdict": "supported",
+      "problem": "",
+      "fixed_text": ""
+    },
+    {
+      "id": "k13",
+      "verdict": "supported",
+      "problem": "",
+      "fixed_text": ""
+    },
+    {
+      "id": "k14",
+      "verdict": "supported",
+      "problem": "",
+      "fixed_text": ""
+    },
+    {
+      "id": "k15",
+      "verdict": "supported",
+      "problem": "",
+      "fixed_text": ""
+    },
+    {
+      "id": "k16",
+      "verdict": "supported",
+      "problem": "",
+      "fixed_text": ""
+    }
+  ]
+}

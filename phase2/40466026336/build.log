@@ -1,0 +1,17 @@
+[llm] eval_factcheck: gemini-3.8-flash HTTP 503, retry 1 in 30s
+[llm] eval_factcheck: gemini-3.8-flash unavailable (HTTP 503 after 2 tries); trying next model
+[llm] eval_factcheck: gemini-3.6-flash HTTP 503, retry 1 in 30s
+# Fact-check test (Phase 2)
+
+Pass rule: catch at least 80% of errors overall and 60% in every type; at most 1 false alarm.
+
+**Result: PASS**
+
+| Checker | Caught | conflict | misquote | outdated | units | unsupported | False alarms |
+| --- | --- | --- | --- | --- | --- | --- | --- |
+| ai_only | 30/30 | 6/6 | 6/6 | 6/6 | 6/6 | 6/6 | 0/16  |
+| guard_only | 8/30 | 0/6 | 0/6 | 0/6 | 6/6 | 2/6 | 0/16  |
+| combined | 30/30 | 6/6 | 6/6 | 6/6 | 6/6 | 6/6 | 0/16  |
+
+## Misses and false alarms (combined)
+
