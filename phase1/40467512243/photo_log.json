@@ -1,0 +1,161 @@
+{
+ "card_number_fixes": [
+  "v002: numbers ['100'] not in narration; card replaced",
+  "v004: numbers ['0'] not in narration; card replaced",
+  "v019: numbers ['299792'] not in narration; card replaced",
+  "v036: numbers ['1'] not in narration; card replaced",
+  "v037: numbers ['4'] not in narration; card replaced"
+ ],
+ "photo_slots": 71,
+ "candidates": {
+  "v002": 11,
+  "v004": 12,
+  "v005": 12,
+  "v007": 12,
+  "v008": 12,
+  "v011": 12,
+  "v012": 12,
+  "v013": 11,
+  "v014": 12,
+  "v017": 12,
+  "v019": 12,
+  "v020": 12,
+  "v021": 12,
+  "v022": 12,
+  "v023": 12,
+  "v024": 12,
+  "v026": 8,
+  "v027": 5,
+  "v030": 10,
+  "v031": 12,
+  "v032": 8,
+  "v033": 12,
+  "v034": 12,
+  "v035": 12,
+  "v037": 12,
+  "v038": 12,
+  "v041": 12,
+  "v042": 8,
+  "v043": 12,
+  "v044": 12,
+  "v046": 12,
+  "v047": 12,
+  "v048": 12,
+  "v050": 12,
+  "v052": 9,
+  "v053": 7,
+  "v054": 12,
+  "v055": 12,
+  "v056": 6,
+  "v057": 12,
+  "v059": 9,
+  "v060": 12,
+  "v061": 12,
+  "v062": 12,
+  "v064": 2,
+  "v066": 12,
+  "v067": 12,
+  "v068": 9,
+  "v069": 12,
+  "v071": 12,
+  "v073": 6,
+  "v075": 12,
+  "v076": 12,
+  "v077": 12,
+  "v079": 12,
+  "v081": 12,
+  "v082": 12,
+  "v083": 11,
+  "v085": 12,
+  "v086": 6,
+  "v087": 12,
+  "v089": 12,
+  "v090": 9,
+  "v091": 12,
+  "v092": 12,
+  "v094": 8,
+  "v095": 10,
+  "v096": 12,
+  "v097": 12,
+  "v098": 6,
+  "v099": 12
+ },
+ "downloaded": 54,
+ "rejected_after_looking": [
+  {
+   "id": "v005",
+   "title": "U S Space Force (2002230265)",
+   "reason": "Image consists primarily of text overlay rather than a symbol or picture."
+  },
+  {
+   "id": "v030",
+   "title": "Parametric surface illustration (sphere)",
+   "reason": "Shows a solid rendered sphere instead of a 3D wireframe model."
+  },
+  {
+   "id": "v038",
+   "title": "All That Remains of Exploded Star",
+   "reason": "Shows laboratory optics equipment rather than a surveyor with a transit telescope."
+  },
+  {
+   "id": "v042",
+   "title": "NIST-F2 cesium fountain atomic clock",
+   "reason": "Shows a large ground antenna dish rather than a lab atomic clock."
+  },
+  {
+   "id": "v043",
+   "title": "The Deep Space Network's New DSS-53 at Night",
+   "reason": "Shows a processor chip instead of a satellite ground tracking dish."
+  },
+  {
+   "id": "v044",
+   "title": "Wiko Rainbow 4G - main printed circuit board - Mediatek MT6582V-8620",
+   "reason": "Shows a handheld GPS device outdoors rather than a phone circuit motherboard."
+  },
+  {
+   "id": "v048",
+   "title": "Benchmark and GPS unit on canal edge - geograph.org.uk - 5291490",
+   "reason": "Shows 3D coordinate axes instead of a handheld GPS receiver outdoors."
+  },
+  {
+   "id": "v052",
+   "title": "Right-handed coordinate system (x to back)",
+   "reason": "Shows a 2D mathematical iteration plot instead of a 3D coordinate axis diagram."
+  },
+  {
+   "id": "v054",
+   "title": "Jacobi iteration",
+   "reason": "Shows a quartz crystal oscillator component instead of a computer code matrix."
+  },
+  {
+   "id": "v055",
+   "title": "Crystal oscillator 16MHz",
+   "reason": "Shows smartphones displaying websites instead of a quartz timing crystal."
+  },
+  {
+   "id": "v056",
+   "title": "Samsung Galaxy Note 10 (Wiki)",
+   "reason": "Shows an outdoor street scene instead of a modern smartphone."
+  },
+  {
+   "id": "v057",
+   "title": "A woman in Punjab using a smartphone whilst walking",
+   "reason": "Shows Albert Einstein instead of a person using a map outdoors."
+  },
+  {
+   "id": "v059",
+   "title": "Albert Einstein 1921 by F Schmutzer",
+   "reason": "Shows a satellite in space instead of a photograph of Einstein."
+  },
+  {
+   "id": "v060",
+   "title": "Aqua Satellite Orbiting Earth Artist Concept",
+   "reason": "Shows the Space Station rather than a satellite moving rapidly in orbit."
+  },
+  {
+   "id": "v066",
+   "title": "**Published thought experiment on a reader with a book and an atomic clock in a spaceship near a massive object showing invariant consciousness clock and reading ratios in curved spacetime at constant speed V1 - 2026.png**",
+   "reason": "Shows a conceptual relativity diagram instead of spacetime curvature around Earth."
+  }
+ ]
+}

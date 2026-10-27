@@ -1,0 +1,547 @@
+1
+00:00:00,018 --> 00:00:05,060
+How can your smartphone pinpoint your
+exact location anywhere on Earth just by
+
+2
+00:00:05,060 --> 00:00:06,780
+receiving silent radio signals?
+
+3
+00:00:07,611 --> 00:00:12,840
+In reality, the Global Positioning System
+is a completely one-way passive broadcast
+
+4
+00:00:12,840 --> 00:00:13,640
+network.
+
+5
+00:00:14,213 --> 00:00:18,480
+GPS operates independently of
+telephone or Internet reception.
+
+6
+00:00:19,300 --> 00:00:21,220
+Owned by the United States Space Force,
+
+7
+00:00:21,740 --> 00:00:24,840
+the satellite system is
+freely accessible to anyone.
+
+8
+00:00:25,534 --> 00:00:30,980
+The constellation consists of at least
+24 active satellites arranged across six
+
+9
+00:00:30,980 --> 00:00:32,320
+distinct orbital planes.
+
+10
+00:00:33,098 --> 00:00:38,400
+The first prototype spacecraft
+went into orbit in 1978 before
+
+11
+00:00:38,400 --> 00:00:41,220
+reaching full operational status in 1995.
+
+12
+00:00:42,919 --> 00:00:47,600
+Each satellite completes two full orbits
+around Earth during every sidereal day.
+
+13
+00:00:48,282 --> 00:00:53,340
+As they orbit, these satellites continuously
+broadcast radio signals containing
+
+14
+00:00:53,340 --> 00:00:56,040
+their exact position and precise time.
+
+15
+00:00:56,734 --> 00:00:58,760
+Your phone acts as a silent receiver,
+
+16
+00:00:59,400 --> 00:01:02,980
+quietly catching these incoming
+radio transmissions from the sky.
+
+17
+00:01:04,739 --> 00:01:06,380
+To figure out your exact location,
+
+18
+00:01:07,200 --> 00:01:11,020
+your device converts time measurements
+directly into distance measurements.
+
+19
+00:01:11,866 --> 00:01:17,300
+GPS satellites circle the Earth in medium
+orbit at an altitude of approximately
+
+20
+00:01:17,300 --> 00:01:19,779
+20,200 kilometres.
+
+21
+00:01:20,224 --> 00:01:25,320
+Radio signals broadcast from these satellites
+travel through space at the constant
+
+22
+00:01:25,320 --> 00:01:26,120
+speed of light.
+
+23
+00:01:26,781 --> 00:01:31,920
+Crucially, the speed of radio waves is
+constant and completely independent of the
+
+24
+00:01:31,920 --> 00:01:32,720
+satellite's speed.
+
+25
+00:01:33,462 --> 00:01:38,860
+Each satellite continually broadcasts a
+pseudorandom sequence of ones and zeros
+
+26
+00:01:38,860 --> 00:01:40,020
+known to the receiver.
+
+27
+00:01:40,820 --> 00:01:45,900
+The transmission message includes a
+timestamp recording the exact time the signal
+
+28
+00:01:45,900 --> 00:01:46,700
+left the satellite.
+
+29
+00:01:47,526 --> 00:01:49,260
+When your device receives the signal,
+
+30
+00:01:49,610 --> 00:01:53,460
+it records the arrival time
+using its own internal clock.
+
+31
+00:01:54,206 --> 00:01:57,240
+By subtracting the transmission
+time from the arrival time,
+
+32
+00:01:57,660 --> 00:02:00,040
+the receiver calculates the signal delay.
+
+33
+00:02:00,701 --> 00:02:05,820
+Multiplying this time value by the speed
+of light yields a pseudorange rather than
+
+34
+00:02:05,820 --> 00:02:06,760
+an exact distance.
+
+35
+00:02:07,503 --> 00:02:12,700
+Because light moves so fast, a tiny
+timing offset of just 10 nanoseconds
+
+36
+00:02:12,700 --> 00:02:14,740
+causes a 3 metre distance error.
+
+37
+00:02:16,431 --> 00:02:20,720
+A single distance measurement places your
+device somewhere on a giant spherical
+
+38
+00:02:20,720 --> 00:02:22,860
+shell centred on that satellite.
+
+39
+00:02:23,614 --> 00:02:28,220
+To narrow down your location, your phone
+needs signals from additional satellites
+
+40
+00:02:28,220 --> 00:02:29,080
+orbiting above.
+
+41
+00:02:29,874 --> 00:02:32,600
+When you receive a distance
+measurement from a second satellite,
+
+42
+00:02:33,140 --> 00:02:34,520
+a second sphere is created.
+
+43
+00:02:35,540 --> 00:02:39,880
+Taking several distance measurements allows
+a receiver to find the point where the
+
+44
+00:02:39,880 --> 00:02:40,940
+spherical shells meet.
+
+45
+00:02:41,680 --> 00:02:46,540
+Your receiver generates a position fix by
+finding where multiple spherical shells
+
+46
+00:02:46,540 --> 00:02:47,340
+meet.
+
+47
+00:02:47,577 --> 00:02:52,260
+Adding a third satellite creates a third
+spherical surface around that third
+
+48
+00:02:52,260 --> 00:02:53,480
+broadcasting source.
+
+49
+00:02:54,030 --> 00:02:58,760
+Combining multiple distance measurements
+allows the receiver to determine the point
+
+50
+00:02:58,760 --> 00:02:59,740
+where the shells meet.
+
+51
+00:03:00,423 --> 00:03:03,220
+In special cases where
+elevation is already known,
+
+52
+00:03:03,820 --> 00:03:05,860
+three satellites can determine a position.
+
+53
+00:03:06,653 --> 00:03:12,120
+This geometric technique of calculating
+positions using measured distances is
+
+54
+00:03:12,120 --> 00:03:13,932
+known as trilateration.
+
+55
+00:03:15,384 --> 00:03:20,160
+Trilateration with three spheres assumes
+that your receiver clock is perfectly
+
+56
+00:03:20,160 --> 00:03:21,800
+synchronized with the satellites.
+
+57
+00:03:22,617 --> 00:03:28,080
+GPS satellites carry extremely stable
+atomic clocks that are monitored and
+
+58
+00:03:28,080 --> 00:03:30,300
+synchronized regularly by ground stations.
+
+59
+00:03:31,275 --> 00:03:32,920
+Because your phone clock is inaccurate,
+
+60
+00:03:33,560 --> 00:03:38,102
+measured travel times produce biased
+distances called pseudoranges.
+
+61
+00:03:38,541 --> 00:03:42,260
+To solve this problem without needing
+an impractical receiver clock,
+
+62
+00:03:42,860 --> 00:03:45,200
+the system uses signals
+from a fourth satellite.
+
+63
+00:03:46,100 --> 00:03:51,500
+Your GPS receiver requires signals from
+at least four satellites to solve its
+
+64
+00:03:51,500 --> 00:03:52,540
+navigation equations.
+
+65
+00:03:53,431 --> 00:03:57,900
+With four satellite signals, your phone
+calculates four unknown mathematical
+
+66
+00:03:57,900 --> 00:03:59,320
+quantities simultaneously.
+
+67
+00:04:00,758 --> 00:04:05,740
+These unknowns are three spatial coordinates
+representing position and the exact
+
+68
+00:04:05,740 --> 00:04:07,480
+deviation of your phone clock.
+
+69
+00:04:08,200 --> 00:04:12,620
+Solving the navigation equations gives
+receiver position and clock deviation,
+
+70
+00:04:13,280 --> 00:04:16,040
+providing cheap and
+highly accurate timing.
+
+71
+00:04:16,800 --> 00:04:20,900
+This clever mathematical approach
+keeps consumer receivers light,
+
+72
+00:04:21,340 --> 00:04:23,820
+affordable, and practical for daily use.
+
+73
+00:04:25,507 --> 00:04:27,240
+Even with four satellite signals,
+
+74
+00:04:27,800 --> 00:04:32,700
+GPS would fail quickly without accounting
+for Albert Einstein's theories of
+
+75
+00:04:32,700 --> 00:04:33,500
+relativity.
+
+76
+00:04:33,947 --> 00:04:39,420
+Special relativity predicts that time
+passes slower for objects moving at higher
+
+77
+00:04:39,420 --> 00:04:41,320
+speeds relative to an observer.
+
+78
+00:04:42,157 --> 00:04:47,200
+Because satellites travel at
+roughly 3,874 metres per second,
+
+79
+00:04:47,700 --> 00:04:49,240
+their atomic clocks tick slower.
+
+80
+00:04:49,952 --> 00:04:55,300
+This speed effect causes orbital clocks
+to lose about 7.2 microseconds per
+
+81
+00:04:55,300 --> 00:04:56,860
+day compared to ground clocks.
+
+82
+00:04:57,678 --> 00:05:02,780
+Meanwhile, general relativity shows that
+gravity slows down time closer to massive
+
+83
+00:05:02,780 --> 00:05:03,940
+bodies like Earth.
+
+84
+00:05:04,603 --> 00:05:07,420
+Because satellites operate
+high above Earth's surface,
+
+85
+00:05:08,080 --> 00:05:11,400
+they experience weaker gravity
+than receivers on the ground.
+
+86
+00:05:12,179 --> 00:05:16,120
+This weaker gravity causes satellite
+clocks to tick faster by about
+
+87
+00:05:16,120 --> 00:05:18,880
+45.8 microseconds per day.
+
+88
+00:05:19,550 --> 00:05:21,320
+Combining both relativistic effects,
+
+89
+00:05:21,860 --> 00:05:26,900
+satellite clocks run faster by
+approximately 38.6 microseconds
+
+90
+00:05:26,900 --> 00:05:27,700
+every day.
+
+91
+00:05:28,353 --> 00:05:33,167
+If uncorrected, this timing difference
+would cause location errors of roughly 11.4
+
+92
+00:05:33,167 --> 00:05:35,160
+kilometres per day.
+
+93
+00:05:35,826 --> 00:05:41,200
+To correct this, engineers pre-adjust the
+atomic clock frequencies before launching
+
+94
+00:05:41,200 --> 00:05:42,500
+the satellites into space.
+
+95
+00:05:43,303 --> 00:05:47,300
+They slow the clock rate
+from 10.23 megahertz down to
+
+96
+00:05:47,300 --> 00:05:52,140
+10.22999999543 megahertz.
+
+97
+00:05:52,689 --> 00:05:57,600
+This pre-launch adjustment allows orbital
+clocks to stay synchronized with time on
+
+98
+00:05:57,600 --> 00:05:58,400
+Earth's surface.
+
+99
+00:06:00,077 --> 00:06:02,540
+Once your device processes
+the satellite signals,
+
+100
+00:06:03,100 --> 00:06:06,340
+it calculates raw three-dimensional
+position coordinates.
+
+101
+00:06:07,180 --> 00:06:10,680
+The receiver then converts these
+spatial numbers into standard latitude,
+
+102
+00:06:11,560 --> 00:06:12,800
+longitude, and height.
+
+103
+00:06:13,560 --> 00:06:18,600
+Consumer devices like smartphones can
+achieve horizontal positioning accuracy of
+
+104
+00:06:18,600 --> 00:06:20,860
+4.9 metres or better.
+
+105
+00:06:21,660 --> 00:06:24,760
+When paired with assistive
+services like Wi-Fi positioning,
+
+106
+00:06:25,490 --> 00:06:28,160
+positioning performance
+becomes even more reliable.
+
+107
+00:06:29,046 --> 00:06:34,020
+High-end applications like land surveying
+can even achieve sub-millimetre accuracy
+
+108
+00:06:34,510 --> 00:06:35,860
+with long-term measurements.
+
+109
+00:06:36,806 --> 00:06:41,900
+These calculated coordinates may be
+displayed on a moving map display or used by
+
+110
+00:06:41,900 --> 00:06:42,700
+another system.
+
+111
+00:06:43,360 --> 00:06:48,000
+An internal tracker algorithm combines
+successive measurements to predict movement
+
+112
+00:06:48,000 --> 00:06:50,140
+and filter out random errors.
+
+113
+00:06:50,973 --> 00:06:53,640
+By analyzing signal
+Doppler frequency shifts,
+
+114
+00:06:54,080 --> 00:06:57,980
+your device can also calculate
+your exact velocity and direction.
+
+115
+00:06:58,801 --> 00:07:03,460
+More advanced navigation systems combine
+these satellite data with internal
+
+116
+00:07:03,460 --> 00:07:05,620
+compasses or motion sensors.
+
+117
+00:07:06,404 --> 00:07:11,040
+Your phone finds your exact location
+by listening to broadcast timestamps,
+
+118
+00:07:11,660 --> 00:07:14,820
+measuring radio travel times,
+and calculating geometry.
+
+119
+00:07:15,916 --> 00:07:18,280
+Next time you follow that
+blue dot on your screen,
+
+120
+00:07:18,680 --> 00:07:23,320
+consider how orbital geometry and
+atomic time keeping guide your path.

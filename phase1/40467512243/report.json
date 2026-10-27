@@ -1,0 +1,177 @@
+{
+  "total_seconds": 866.92,
+  "stages_seconds": {
+    "script": 0.0,
+    "narration": 170.29,
+    "visual_plan": 62.78,
+    "photos": 402.83,
+    "keyframes": 34.07,
+    "segments": 135.28,
+    "assemble": 12.51,
+    "subtitles": 35.49,
+    "preview": 6.78
+  },
+  "peak_memory_mb": {
+    "python": 807.8,
+    "largest_child": 807.8
+  },
+  "machine": {
+    "arch": "x86_64",
+    "cpus": 4,
+    "python": "3.13.16",
+    "runner": "GitHub Actions 1000000245",
+    "cpu_model": "AMD EPYC 7763 64-Core Processor",
+    "ffmpeg": "ffmpeg version n8.1.3-24-g92611900bb-20261026 Copyright (c) 2000-2026 the FFmpeg developers"
+  },
+  "subtitle_cues": 120,
+  "whisper_words": 919,
+  "topic": "How does GPS know where you are?",
+  "title": "How GPS Finds Your Location Using Satellite Timestamps",
+  "words": 900,
+  "video_seconds": 445.0,
+  "visuals": 99,
+  "photos": 39,
+  "cards": 60,
+  "seconds_per_visual": 4.49,
+  "photo_log": {
+    "card_number_fixes": [
+      "v002: numbers ['100'] not in narration; card replaced",
+      "v004: numbers ['0'] not in narration; card replaced",
+      "v019: numbers ['299792'] not in narration; card replaced",
+      "v036: numbers ['1'] not in narration; card replaced",
+      "v037: numbers ['4'] not in narration; card replaced"
+    ],
+    "photo_slots": 71,
+    "downloaded": 54,
+    "rejected_after_looking": [
+      {
+        "id": "v005",
+        "title": "U S Space Force (2002230265)",
+        "reason": "Image consists primarily of text overlay rather than a symbol or picture."
+      },
+      {
+        "id": "v030",
+        "title": "Parametric surface illustration (sphere)",
+        "reason": "Shows a solid rendered sphere instead of a 3D wireframe model."
+      },
+      {
+        "id": "v038",
+        "title": "All That Remains of Exploded Star",
+        "reason": "Shows laboratory optics equipment rather than a surveyor with a transit telescope."
+      },
+      {
+        "id": "v042",
+        "title": "NIST-F2 cesium fountain atomic clock",
+        "reason": "Shows a large ground antenna dish rather than a lab atomic clock."
+      },
+      {
+        "id": "v043",
+        "title": "The Deep Space Network's New DSS-53 at Night",
+        "reason": "Shows a processor chip instead of a satellite ground tracking dish."
+      },
+      {
+        "id": "v044",
+        "title": "Wiko Rainbow 4G - main printed circuit board - Mediatek MT6582V-8620",
+        "reason": "Shows a handheld GPS device outdoors rather than a phone circuit motherboard."
+      },
+      {
+        "id": "v048",
+        "title": "Benchmark and GPS unit on canal edge - geograph.org.uk - 5291490",
+        "reason": "Shows 3D coordinate axes instead of a handheld GPS receiver outdoors."
+      },
+      {
+        "id": "v052",
+        "title": "Right-handed coordinate system (x to back)",
+        "reason": "Shows a 2D mathematical iteration plot instead of a 3D coordinate axis diagram."
+      },
+      {
+        "id": "v054",
+        "title": "Jacobi iteration",
+        "reason": "Shows a quartz crystal oscillator component instead of a computer code matrix."
+      },
+      {
+        "id": "v055",
+        "title": "Crystal oscillator 16MHz",
+        "reason": "Shows smartphones displaying websites instead of a quartz timing crystal."
+      },
+      {
+        "id": "v056",
+        "title": "Samsung Galaxy Note 10 (Wiki)",
+        "reason": "Shows an outdoor street scene instead of a modern smartphone."
+      },
+      {
+        "id": "v057",
+        "title": "A woman in Punjab using a smartphone whilst walking",
+        "reason": "Shows Albert Einstein instead of a person using a map outdoors."
+      },
+      {
+        "id": "v059",
+        "title": "Albert Einstein 1921 by F Schmutzer",
+        "reason": "Shows a satellite in space instead of a photograph of Einstein."
+      },
+      {
+        "id": "v060",
+        "title": "Aqua Satellite Orbiting Earth Artist Concept",
+        "reason": "Shows the Space Station rather than a satellite moving rapidly in orbit."
+      },
+      {
+        "id": "v066",
+        "title": "**Published thought experiment on a reader with a book and an atomic clock in a spaceship near a massive object showing invariant consciousness clock and reading ratios in curved spacetime at constant speed V1 - 2026.png**",
+        "reason": "Shows a conceptual relativity diagram instead of spacetime curvature around Earth."
+      }
+    ]
+  },
+  "llm_calls": [
+    {
+      "name": "visual_plan",
+      "model": "gemini-3.6-flash",
+      "prompt_chars": 19116,
+      "images": 0,
+      "status": 200,
+      "seconds": 62.8,
+      "attempts": 1,
+      "finish": "STOP",
+      "in_tokens": 4663,
+      "out_tokens": 9065,
+      "thought_tokens": 5299
+    },
+    {
+      "name": "photo_pick",
+      "model": "gemini-3.6-flash",
+      "prompt_chars": 149480,
+      "images": 0,
+      "status": 503,
+      "attempt": 1,
+      "error": "{\n  \"error\": {\n    \"code\": 503,\n    \"message\": \"This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.\",\n    \"status\": \"UNAVAILABLE\"\n  }\n}\n"
+    },
+    {
+      "name": "photo_pick",
+      "model": "gemini-3.6-flash",
+      "prompt_chars": 149480,
+      "images": 0,
+      "status": 200,
+      "seconds": 87.7,
+      "attempts": 2,
+      "finish": "STOP",
+      "in_tokens": 40455,
+      "out_tokens": 1056,
+      "thought_tokens": 9731
+    },
+    {
+      "name": "photo_verify",
+      "model": "gemini-3.6-flash",
+      "prompt_chars": 7579,
+      "images": 54,
+      "status": 200,
+      "seconds": 39.3,
+      "attempts": 1,
+      "finish": "STOP",
+      "in_tokens": 60242,
+      "out_tokens": 1200,
+      "thought_tokens": 4926
+    }
+  ],
+  "llm_calls_ok_by_model": {
+    "gemini-3.6-flash": 3
+  }
+}

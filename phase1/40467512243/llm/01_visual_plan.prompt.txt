@@ -1,0 +1,129 @@
+[model] gemini-3.6-flash
+[system]
+
+
+[user]
+Video: How GPS Finds Your Location Using Satellite Timestamps
+Plan one visual for each slot of narration below. The viewer sees it while hearing that text.
+Rules:
+- Real photos first: use kind=photo for at least 65 per cent of slots, whenever a real photo could show the
+  thing being talked about (objects, places, spacecraft, machines, nature, historical photos).
+  Ask for SIMPLE subjects an archive surely has ("a handheld GPS receiver", "a rocket launch", "an atomic
+  clock"), never a detailed scene ("a hiker with a GPS in remote mountains with no signal"). A photo of the
+  object being discussed is better than a text card.
+- Use kind=card when a number, comparison, process or list is the point, or at scene starts (title card).
+- The first slot is a title card with the video title.
+- Every number on a card MUST appear in that slot's text or earlier in the same scene. Never invent data.
+- Vary: never the same card type twice in a row; never more than 2 cards in a row.
+- Text cards are the last choice: at most one bullets card per scene, and a bare title card only at scene starts.
+  Prefer stat, bars, timeline, flow or compare when a card is needed.
+- For kind=photo still give a fallback card (used if no good photo exists).
+Card types (all text short; big and readable on a phone):
+- title: title (+ subtitle). Use for scene openings.
+- stat: value (a number with unit, e.g. "20,200 km") + label (+ note).
+- bullets: title + 2-4 items (each under 6 words).
+- flow: title + 2-5 steps (cause -> effect, process).
+- bars: title + labels + values (+ unit). Compare 2-6 quantities.
+- timeline: title + 2-5 events {when, label}.
+- compare: title + left_title/left_points vs right_title/right_points.
+
+SLOTS:
+v001 [3.4s] (scene: The passive listener: why GPS satellites do not track you or receive signals from your phone, SCENE START) How can your smartphone pinpoint your exact location
+v002 [4.2s] (scene: The passive listener: why GPS satellites do not track you or receive signals from your phone) anywhere on Earth just by receiving silent radio signals?
+v003 [6.6s] (scene: The passive listener: why GPS satellites do not track you or receive signals from your phone) In reality, the Global Positioning System is a completely one-way passive broadcast network.
+v004 [5.0s] (scene: The passive listener: why GPS satellites do not track you or receive signals from your phone) GPS operates independently of telephone or Internet reception.
+v005 [6.3s] (scene: The passive listener: why GPS satellites do not track you or receive signals from your phone) Owned by the United States Space Force, the satellite system is freely accessible to anyone.
+v006 [3.8s] (scene: The passive listener: why GPS satellites do not track you or receive signals from your phone) The constellation consists of at least 24 active
+v007 [3.8s] (scene: The passive listener: why GPS satellites do not track you or receive signals from your phone) satellites arranged across six distinct orbital planes.
+v008 [4.7s] (scene: The passive listener: why GPS satellites do not track you or receive signals from your phone) The first prototype spacecraft went into orbit in
+v009 [5.1s] (scene: The passive listener: why GPS satellites do not track you or receive signals from your phone) 1978 before reaching full operational status in 1995.
+v010 [5.4s] (scene: The passive listener: why GPS satellites do not track you or receive signals from your phone) Each satellite completes two full orbits around Earth during every sidereal day.
+v011 [4.0s] (scene: The passive listener: why GPS satellites do not track you or receive signals from your phone) As they orbit, these satellites continuously broadcast radio
+v012 [4.5s] (scene: The passive listener: why GPS satellites do not track you or receive signals from your phone) signals containing their exact position and precise time.
+v013 [3.3s] (scene: The passive listener: why GPS satellites do not track you or receive signals from your phone) Your phone acts as a silent receiver, quietly
+v014 [4.7s] (scene: The passive listener: why GPS satellites do not track you or receive signals from your phone) catching these incoming radio transmissions from the sky.
+v015 [3.6s] (scene: Turning time into space: how measuring radio travel times reveals your distance from an orbit, SCENE START) To figure out your exact location, your device
+v016 [3.6s] (scene: Turning time into space: how measuring radio travel times reveals your distance from an orbit) converts time measurements directly into distance measurements.
+v017 [4.2s] (scene: Turning time into space: how measuring radio travel times reveals your distance from an orbit) GPS satellites circle the Earth in medium orbit
+v018 [4.1s] (scene: Turning time into space: how measuring radio travel times reveals your distance from an orbit) at an altitude of approximately 20,200 kilometres.
+v019 [6.6s] (scene: Turning time into space: how measuring radio travel times reveals your distance from an orbit) Radio signals broadcast from these satellites travel through space at the constant speed of light.
+v020 [6.7s] (scene: Turning time into space: how measuring radio travel times reveals your distance from an orbit) Crucially, the speed of radio waves is constant and completely independent of the satellite's speed.
+v021 [3.7s] (scene: Turning time into space: how measuring radio travel times reveals your distance from an orbit) Each satellite continually broadcasts a pseudorandom sequence of
+v022 [3.7s] (scene: Turning time into space: how measuring radio travel times reveals your distance from an orbit) ones and zeros known to the receiver.
+v023 [6.7s] (scene: Turning time into space: how measuring radio travel times reveals your distance from an orbit) The transmission message includes a timestamp recording the exact time the signal left the satellite.
+v024 [6.7s] (scene: Turning time into space: how measuring radio travel times reveals your distance from an orbit) When your device receives the signal, it records the arrival time using its own internal clock.
+v025 [6.5s] (scene: Turning time into space: how measuring radio travel times reveals your distance from an orbit) By subtracting the transmission time from the arrival time, the receiver calculates the signal delay.
+v026 [6.8s] (scene: Turning time into space: how measuring radio travel times reveals your distance from an orbit) Multiplying this time value by the speed of light yields a pseudorange rather than an exact distance.
+v027 [3.9s] (scene: Turning time into space: how measuring radio travel times reveals your distance from an orbit) Because light moves so fast, a tiny timing offset of
+v028 [5.0s] (scene: Turning time into space: how measuring radio travel times reveals your distance from an orbit) just 10 nanoseconds causes a 3 metre distance error.
+v029 [3.2s] (scene: The sphere intersection: using trilateration to narrow your place on Earth to two points, SCENE START) A single distance measurement places your device somewhere
+v030 [4.0s] (scene: The sphere intersection: using trilateration to narrow your place on Earth to two points) on a giant spherical shell centred on that satellite.
+v031 [6.3s] (scene: The sphere intersection: using trilateration to narrow your place on Earth to two points) To narrow down your location, your phone needs signals from additional satellites orbiting above.
+v032 [5.4s] (scene: The sphere intersection: using trilateration to narrow your place on Earth to two points) When you receive a distance measurement from a second satellite, a second sphere is created.
+v033 [6.4s] (scene: The sphere intersection: using trilateration to narrow your place on Earth to two points) Taking several distance measurements allows a receiver to find the point where the spherical shells meet.
+v034 [5.9s] (scene: The sphere intersection: using trilateration to narrow your place on Earth to two points) Your receiver generates a position fix by finding where multiple spherical shells meet.
+v035 [6.5s] (scene: The sphere intersection: using trilateration to narrow your place on Earth to two points) Adding a third satellite creates a third spherical surface around that third broadcasting source.
+v036 [6.4s] (scene: The sphere intersection: using trilateration to narrow your place on Earth to two points) Combining multiple distance measurements allows the receiver to determine the point where the shells meet.
+v037 [6.2s] (scene: The sphere intersection: using trilateration to narrow your place on Earth to two points) In special cases where elevation is already known, three satellites can determine a position.
+v038 [3.4s] (scene: The sphere intersection: using trilateration to narrow your place on Earth to two points) This geometric technique of calculating positions
+v039 [5.4s] (scene: The sphere intersection: using trilateration to narrow your place on Earth to two points) using measured distances is known as trilateration.
+v040 [3.6s] (scene: The fourth satellite trick: how an extra signal fixes the cheap quartz clock in your pocket, SCENE START) Trilateration with three spheres assumes that your receiver
+v041 [3.6s] (scene: The fourth satellite trick: how an extra signal fixes the cheap quartz clock in your pocket) clock is perfectly synchronized with the satellites.
+v042 [4.1s] (scene: The fourth satellite trick: how an extra signal fixes the cheap quartz clock in your pocket) GPS satellites carry extremely stable atomic clocks that
+v043 [4.6s] (scene: The fourth satellite trick: how an extra signal fixes the cheap quartz clock in your pocket) are monitored and synchronized regularly by ground stations.
+v044 [3.4s] (scene: The fourth satellite trick: how an extra signal fixes the cheap quartz clock in your pocket) Because your phone clock is inaccurate, measured
+v045 [3.9s] (scene: The fourth satellite trick: how an extra signal fixes the cheap quartz clock in your pocket) travel times produce biased distances called pseudoranges.
+v046 [3.5s] (scene: The fourth satellite trick: how an extra signal fixes the cheap quartz clock in your pocket) To solve this problem without needing an impractical receiver
+v047 [4.0s] (scene: The fourth satellite trick: how an extra signal fixes the cheap quartz clock in your pocket) clock, the system uses signals from a fourth satellite.
+v048 [3.7s] (scene: The fourth satellite trick: how an extra signal fixes the cheap quartz clock in your pocket) Your GPS receiver requires signals from at least
+v049 [3.7s] (scene: The fourth satellite trick: how an extra signal fixes the cheap quartz clock in your pocket) four satellites to solve its navigation equations.
+v050 [3.4s] (scene: The fourth satellite trick: how an extra signal fixes the cheap quartz clock in your pocket) With four satellite signals, your phone
+v051 [3.9s] (scene: The fourth satellite trick: how an extra signal fixes the cheap quartz clock in your pocket) calculates four unknown mathematical quantities simultaneously.
+v052 [3.5s] (scene: The fourth satellite trick: how an extra signal fixes the cheap quartz clock in your pocket) These unknowns are three spatial coordinates representing position
+v053 [4.0s] (scene: The fourth satellite trick: how an extra signal fixes the cheap quartz clock in your pocket) and the exact deviation of your phone clock.
+v054 [4.1s] (scene: The fourth satellite trick: how an extra signal fixes the cheap quartz clock in your pocket) Solving the navigation equations gives receiver position and
+v055 [4.5s] (scene: The fourth satellite trick: how an extra signal fixes the cheap quartz clock in your pocket) clock deviation, providing cheap and highly accurate timing.
+v056 [3.6s] (scene: The fourth satellite trick: how an extra signal fixes the cheap quartz clock in your pocket) This clever mathematical approach keeps consumer receivers
+v057 [5.1s] (scene: The fourth satellite trick: how an extra signal fixes the cheap quartz clock in your pocket) light, affordable, and practical for daily use.
+v058 [3.8s] (scene: Einstein in orbit: why satellite clocks tick faster and how engineers correct for relativity, SCENE START) Even with four satellite signals, GPS would fail
+v059 [4.7s] (scene: Einstein in orbit: why satellite clocks tick faster and how engineers correct for relativity) quickly without accounting for Albert Einstein's theories of relativity.
+v060 [3.6s] (scene: Einstein in orbit: why satellite clocks tick faster and how engineers correct for relativity) Special relativity predicts that time passes slower for
+v061 [4.6s] (scene: Einstein in orbit: why satellite clocks tick faster and how engineers correct for relativity) objects moving at higher speeds relative to an observer.
+v062 [3.6s] (scene: Einstein in orbit: why satellite clocks tick faster and how engineers correct for relativity) Because satellites travel at roughly 3,874 metres
+v063 [4.1s] (scene: Einstein in orbit: why satellite clocks tick faster and how engineers correct for relativity) per second, their atomic clocks tick slower.
+v064 [3.4s] (scene: Einstein in orbit: why satellite clocks tick faster and how engineers correct for relativity) This speed effect causes orbital clocks to lose
+v065 [4.3s] (scene: Einstein in orbit: why satellite clocks tick faster and how engineers correct for relativity) about 7.2 microseconds per day compared to ground clocks.
+v066 [6.9s] (scene: Einstein in orbit: why satellite clocks tick faster and how engineers correct for relativity) Meanwhile, general relativity shows that gravity slows down time closer to massive bodies like Earth.
+v067 [3.5s] (scene: Einstein in orbit: why satellite clocks tick faster and how engineers correct for relativity) Because satellites operate high above Earth's surface, they
+v068 [4.0s] (scene: Einstein in orbit: why satellite clocks tick faster and how engineers correct for relativity) experience weaker gravity than receivers on the ground.
+v069 [3.7s] (scene: Einstein in orbit: why satellite clocks tick faster and how engineers correct for relativity) This weaker gravity causes satellite clocks to tick
+v070 [3.7s] (scene: Einstein in orbit: why satellite clocks tick faster and how engineers correct for relativity) faster by about 45.8 microseconds per day.
+v071 [4.2s] (scene: Einstein in orbit: why satellite clocks tick faster and how engineers correct for relativity) Combining both relativistic effects, satellite clocks run
+v072 [4.6s] (scene: Einstein in orbit: why satellite clocks tick faster and how engineers correct for relativity) faster by approximately 38.6 microseconds every day.
+v073 [3.7s] (scene: Einstein in orbit: why satellite clocks tick faster and how engineers correct for relativity) If uncorrected, this timing difference would cause location
+v074 [3.8s] (scene: Einstein in orbit: why satellite clocks tick faster and how engineers correct for relativity) errors of roughly 11.4 kilometres per day.
+v075 [3.7s] (scene: Einstein in orbit: why satellite clocks tick faster and how engineers correct for relativity) To correct this, engineers pre-adjust the atomic clock
+v076 [3.8s] (scene: Einstein in orbit: why satellite clocks tick faster and how engineers correct for relativity) frequencies before launching the satellites into space.
+v077 [4.5s] (scene: Einstein in orbit: why satellite clocks tick faster and how engineers correct for relativity) They slow the clock rate from
+v078 [4.9s] (scene: Einstein in orbit: why satellite clocks tick faster and how engineers correct for relativity) 10.23 megahertz down to 10.22999999543 megahertz.
+v079 [7.4s] (scene: Einstein in orbit: why satellite clocks tick faster and how engineers correct for relativity) This pre-launch adjustment allows orbital clocks to stay synchronized with time on Earth's surface.
+v080 [3.1s] (scene: Mapping the numbers: how raw coordinates turn into a moving blue dot on your screen, SCENE START) Once your device processes the satellite
+v081 [4.0s] (scene: Mapping the numbers: how raw coordinates turn into a moving blue dot on your screen) signals, it calculates raw three-dimensional position coordinates.
+v082 [6.4s] (scene: Mapping the numbers: how raw coordinates turn into a moving blue dot on your screen) The receiver then converts these spatial numbers into standard latitude, longitude, and height.
+v083 [3.8s] (scene: Mapping the numbers: how raw coordinates turn into a moving blue dot on your screen) Consumer devices like smartphones can achieve horizontal
+v084 [4.3s] (scene: Mapping the numbers: how raw coordinates turn into a moving blue dot on your screen) positioning accuracy of 4.9 metres or better.
+v085 [3.5s] (scene: Mapping the numbers: how raw coordinates turn into a moving blue dot on your screen) When paired with assistive services like Wi-Fi
+v086 [4.0s] (scene: Mapping the numbers: how raw coordinates turn into a moving blue dot on your screen) positioning, positioning performance becomes even more reliable.
+v087 [3.4s] (scene: Mapping the numbers: how raw coordinates turn into a moving blue dot on your screen) High-end applications like land surveying can
+v088 [4.4s] (scene: Mapping the numbers: how raw coordinates turn into a moving blue dot on your screen) even achieve sub-millimetre accuracy with long-term measurements.
+v089 [6.5s] (scene: Mapping the numbers: how raw coordinates turn into a moving blue dot on your screen) These calculated coordinates may be displayed on a moving map display or used by another system.
+v090 [3.8s] (scene: Mapping the numbers: how raw coordinates turn into a moving blue dot on your screen) An internal tracker algorithm combines successive measurements to
+v091 [3.8s] (scene: Mapping the numbers: how raw coordinates turn into a moving blue dot on your screen) predict movement and filter out random errors.
+v092 [3.7s] (scene: Mapping the numbers: how raw coordinates turn into a moving blue dot on your screen) By analyzing signal Doppler frequency shifts, your device
+v093 [4.1s] (scene: Mapping the numbers: how raw coordinates turn into a moving blue dot on your screen) can also calculate your exact velocity and direction.
+v094 [3.6s] (scene: Mapping the numbers: how raw coordinates turn into a moving blue dot on your screen) More advanced navigation systems combine these satellite
+v095 [4.0s] (scene: Mapping the numbers: how raw coordinates turn into a moving blue dot on your screen) data with internal compasses or motion sensors.
+v096 [4.5s] (scene: Mapping the numbers: how raw coordinates turn into a moving blue dot on your screen) Your phone finds your exact location by listening to
+v097 [5.0s] (scene: Mapping the numbers: how raw coordinates turn into a moving blue dot on your screen) broadcast timestamps, measuring radio travel times, and calculating geometry.
+v098 [3.6s] (scene: Mapping the numbers: how raw coordinates turn into a moving blue dot on your screen) Next time you follow that blue dot on your screen,
+v099 [5.5s] (scene: Mapping the numbers: how raw coordinates turn into a moving blue dot on your screen) consider how orbital geometry and atomic time keeping guide your path.
