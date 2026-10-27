@@ -4,6 +4,11 @@ name: AI models check
 # and their limits. About 2 requests per model. Results: bench-results/phase5/models-check/<run_id>/.
 on:
   workflow_dispatch:
+    inputs:
+      github_only:
+        description: "Only probe GitHub Models at network level (no Gemini requests)"
+        type: boolean
+        default: false
 
 permissions:
   contents: write
@@ -21,7 +26,19 @@ jobs:
       - name: Install Pillow
         timeout-minutes: 3
         run: pip install Pillow
+      - name: Probe GitHub Models (network level)
+        timeout-minutes: 3
+        env:
+          TOK: ${{ github.token }}
+        run: |
+          mkdir -p out/check
+          { getent hosts models.github.ai; env | grep -i _proxy | sed 's/=.*/=(set)/';
+            for u in https://models.github.ai/catalog/models https://models.inference.ai.azure.com/models; do
+              echo "== $u"; curl -sS -m 30 -o /tmp/body -D - -H "Authorization: Bearer $TOK" \
+                -H "Accept: application/vnd.github+json" -H "X-GitHub-Api-Version: 2022-11-28" "$u" -w '\nremote_ip=%{remote_ip} code=%{http_code}\n' || true
+              head -c 400 /tmp/body; echo; done; } 2>&1 | grep -iv authorization | tee out/check/github_probe.txt
       - name: Check models
+        if: ${{ !inputs.github_only }}
         timeout-minutes: 12
         env:
           GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
