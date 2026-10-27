@@ -1,0 +1,85 @@
+name: Phase 0b niche test
+
+# Niche data test (phase0b/RULES.md). Uses only the YouTube Data API (free quota), no Gemini.
+#   start    = check the key, choose channels (once), take snapshot week 0, report
+#   snapshot = take this week's snapshot, report
+#   report   = report only
+# Weekly snapshots run on Mondays by schedule (GitHub runs schedules only from the main branch).
+# Data and reports live on the bench-results branch under phase0b/.
+on:
+  workflow_dispatch:
+    inputs:
+      command:
+        description: "start, snapshot or report"
+        type: choice
+        options: ["start", "snapshot", "report"]
+        default: "snapshot"
+  schedule:
+    - cron: "17 3 * * 1"   # Mondays 03:17 UTC (08:47 IST)
+  # Only to register this new workflow (GitHub can't start it by hand from a branch until it
+  # has run there once). Remove after the first run.
+  push:
+    branches: ["claude/phase-1-**"]
+    paths: [".github/workflows/phase0b-niche.yml"]
+
+permissions:
+  contents: write
+
+concurrency:
+  group: phase0b-niche
+  cancel-in-progress: false
+
+jobs:
+  niche:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 30
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.13"
+
+      - name: Get earlier data from bench-results
+        timeout-minutes: 3
+        run: |
+          git fetch --depth 1 origin bench-results
+          git worktree add results FETCH_HEAD
+          git -C results checkout -B bench-results
+          mkdir -p results/phase0b
+
+      - name: Run
+        timeout-minutes: 20
+        env:
+          YOUTUBE_API_KEY: ${{ secrets.YOUTUBE_API_KEY }}
+          # push and schedule runs have no input: push = first run (start), schedule = weekly snapshot
+          COMMAND: ${{ inputs.command || (github.event_name == 'push' && 'start') || 'snapshot' }}
+        run: |
+          set -o pipefail
+          D=results/phase0b
+          {
+            if [ "$COMMAND" = "start" ]; then
+              python phase0b/niche_test.py check "$D"
+              python phase0b/niche_test.py select "$D"
+            fi
+            if [ "$COMMAND" != "report" ]; then
+              python phase0b/niche_test.py snapshot "$D"
+            fi
+            python phase0b/niche_test.py report "$D"
+          } 2>&1 | tee "$D/last_run.log"
+
+      - name: Save to bench-results
+        if: always()
+        timeout-minutes: 3
+        run: |
+          set -e
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          cd results
+          git add -A phase0b
+          git commit -m "Phase 0b niche test ${{ github.run_id }}" || echo "nothing to save"
+          for i in 1 2 3 4 5; do
+            git push origin bench-results && break
+            git pull --rebase origin bench-results
+            sleep 5
+          done
