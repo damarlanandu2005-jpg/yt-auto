@@ -6,11 +6,6 @@ name: Phase 3 quality gate test
 # Results go to the bench-results branch under phase3/<run_id>/.
 on:
   workflow_dispatch:
-  # Only to register this new workflow (GitHub can't start it by hand from a branch until it
-  # has run there once). Remove after the first run.
-  push:
-    branches: ["claude/phase-1-**"]
-    paths: [".github/workflows/phase3-gate-eval.yml"]
 
 permissions:
   contents: write

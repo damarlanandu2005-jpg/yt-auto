@@ -122,7 +122,8 @@ Structure: {the_plan['structure']}
 Outline: {json.dumps(the_plan['outline'])}
 
 Write the full narration: {words[0]} to {words[1]} words in total, in 5 to 8 scenes that follow the outline.
-- Scene 1 opens with a hook in the first 2 sentences that sets up the question. The last scene answers it clearly
+- Scene 1 opens with a hook in the first 2 sentences that sets up the question, and within the first 30 seconds
+  says why it matters to the viewer (the quality gate checks both). The last scene answers it clearly
   and recaps in one or two sentences.
 - Split the narration into single sentences. Mark each as "fact" (with the passage ids that support EVERY detail
   in it) or "framing" (no checkable content at all). When in doubt, it is a fact and needs sources.

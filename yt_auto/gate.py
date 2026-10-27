@@ -283,7 +283,8 @@ def load_library(library_dir: Path | None, exclude_title: str = "") -> list[tupl
 
 AI_SCHEMA = {"type": "object", "properties": {"checks": {"type": "array", "items": {
     "type": "object", "properties": {
-        "check": {"type": "string", "enum": ["hook", "title_promise", "scene_relevance", "sensitive", "adds_value"]},
+        "check": {"type": "string", "enum": ["hook_question", "hook_why", "title_promise", "scene_relevance",
+                                             "sensitive", "adds_value"]},
         "ok": {"type": "boolean"}, "reason": {"type": "string"}},
     "required": ["check", "ok", "reason"]}}}, "required": ["checks"]}
 
@@ -299,7 +300,8 @@ def ai_checks(title: str, plan: dict, script: dict, timing: dict, visuals: list[
     prompt = f"""You review a finished explainer video before a human checks it. Judge each item strictly,
 using only what is given. Answer every check.
 
-- hook: do the first 30 seconds state the viewer's question and why it matters?
+- hook_question: do the first 30 seconds clearly state the question the video answers?
+- hook_why: do the first 30 seconds also say why the question matters to the viewer?
 - title_promise: does the script actually deliver what the title promises (no promise the video doesn't keep,
   no claim the video contradicts)?
 - scene_relevance: does each text card below show something the narration at that moment is saying? List any card
@@ -324,9 +326,10 @@ TEXT CARDS SHOWN:
         return [check("editorial_ai", FLAG, f"AI review not available: {e}")]
     out = []
     for c in res["checks"]:
-        status = PASS if c["ok"] else (FLAG if c["check"] in ("sensitive", "adds_value", "scene_relevance") else FAIL)
+        # Blueprint: the hook FAILS only with "no clear question up front"; the rest is the owner's call.
+        status = PASS if c["ok"] else (FAIL if c["check"] in ("hook_question", "title_promise") else FLAG)
         out.append(check(c["check"], status, c["reason"]))
-    for name in ("hook", "title_promise", "scene_relevance", "sensitive", "adds_value"):
+    for name in ("hook_question", "hook_why", "title_promise", "scene_relevance", "sensitive", "adds_value"):
         if name not in {c["check"] for c in out}:
             out.append(check(name, FLAG, "AI reviewer gave no answer"))
     return out
