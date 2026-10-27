@@ -1,0 +1,22 @@
+{
+  "keys": {
+    "secret_names": [
+      "GEMINI_API_KEY"
+    ],
+    "keys": {},
+    "same_project": null
+  },
+  "pages": {
+    "gemini_pricing.html": 200,
+    "google_apis_terms.html": 200,
+    "gemini_rate_limits.html": 200,
+    "gemini_models.html": 200,
+    "gemini_deprecations.html": 200,
+    "gemini_terms.html": 200,
+    "nasa_media_guidelines.html": 200,
+    "nasa_api_docs.pdf": 200,
+    "wikimedia_api_etiquette.html": 200,
+    "wikimedia_user_agent_policy.html": 200,
+    "wikimedia_api_access_policy.html": 200
+  }
+}
