@@ -127,12 +127,14 @@ Rules:
 - Real photos first: use kind=photo for at least 65 per cent of slots, whenever a real photo could show the
   thing being talked about (objects, places, spacecraft, machines, nature, historical photos).
   Ask for SIMPLE subjects an archive surely has ("a handheld GPS receiver", "a rocket launch", "an atomic
-  clock"), never a detailed scene ("a hiker with a GPS in remote mountains with no signal"). A photo of the
+  clock"), never a detailed scene ("a hiker with a GPS in remote mountains with no signal"). Never ask for a
+  photo of a chart, graph, diagram or data: archive charts are about other things; use a card instead. A photo of the
   object being discussed is better than a text card.
 - Use kind=drawing (at most {max_drawings} in the whole video) for an idea no real photo can show: an invisible
   process, a view nobody photographed, a comparison of two things (e.g. "a radio wave travelling from a satellite
   down to a phone", "two clocks side by side, one in orbit and one on the ground"). drawing_subject: one simple
-  scene of objects. No people, faces or hands, no logos, emblems or flags, no text, no numbers, no maps.
+  scene of CONCRETE objects a viewer recognises at once ("a huge exploding star beside a small blue planet",
+  "a DNA double helix with a broken rung"), never a process word ("composition changing", "errors"). No people, faces or hands, no logos, emblems or flags, no text, no numbers, no maps.
 - Use kind=card when a number, comparison, process or list is the point, or at scene starts (title card).
 - The first slot is a title card with the video title.
 - Every number on a card MUST appear in that slot's text or earlier in the same scene. Never invent data.
@@ -199,8 +201,16 @@ VERIFY_SCHEMA = {"type": "object", "properties": {"checks": {"type": "array", "i
     "required": ["n", "seen", "fits", "reason"]}}}, "required": ["checks"]}
 
 
+CHART_WORDS = re.compile(r"\b(chart|graph|plot|diagram|data|infographic|table)s?\b", re.I)
+
+
 def find_photos(visuals: list[dict], photo_dir: Path, log: dict) -> None:
     """Fill v["photo"] (path + licence record) for photo slots; others keep their card."""
+    for v in visuals:  # pilot video 1 v045: "scientific data graph" found a Mars density chart
+        if v["kind"] == "photo" and CHART_WORDS.search(v.get("photo_subject", "") + " " +
+                                                         " ".join(v.get("photo_queries") or [])):
+            v["kind"] = "card"
+            log.setdefault("chart_photos_to_cards", []).append(v["id"])
     want = [v for v in visuals if v["kind"] == "photo" and v.get("photo_queries")]
     cands: dict[str, list[dict]] = {}
     for v in want:
@@ -325,14 +335,17 @@ hands, faces or bodies.""", images=[(f"Image {i + 1}:", _thumb(v["photo"]["path"
         return
     seen_by_n = {x["n"]: x["seen"] for x in desc["images"]}
     if drawings:
-        rules = """The pictures are ink drawings made by an AI image model, which often misses. A drawing fits only
-if the description shows the subject would be recognised at a glance by a viewer hearing the narration. Abstract
-shapes, unclear blobs, a scene about something else, any text or labels, a logo/emblem/badge/flag, or deformed
-bodies do NOT fit."""
+        rules = """The pictures are ink drawings made by an AI image model, which often misses. A drawing fits if a
+viewer hearing the narration would recognise its main object(s) (a star, a planet, a blast, molecules, DNA,
+fish...). It does NOT need to show the action or process (collapsing, moving, changing): a still picture of
+the right thing is enough. It does NOT fit if it is only shapes or texture with no recognisable object, shows
+a different thing (a volcano or canyon for the atmosphere, a red diamond for a star), has text or labels, looks
+like a logo/emblem/badge/flag, or has deformed bodies."""
     else:
         rules = """A photo fits only if the description shows it clearly depicts what it should show: not mostly text,
-not a chart or test target about something else, not a different planet or object than the narration is about,
-no watermark, nothing misleading."""
+not a test target, not a different planet or object than the narration is about, no watermark, nothing
+misleading. A chart or graph fits ONLY if its labels show it is about exactly what the narration says (a graph
+of Mars data, or with unexplained labels like 'RHOS', does not fit a sentence about Earth or a star)."""
     listing = "\n".join(f"Image {i + 1}: described as: {seen_by_n.get(i + 1, '(no description)')}\n"
                         f"  should show: {v.get('photo_subject', '')}\n  narration: {v['text']}"
                         for i, v in enumerate(chosen))
