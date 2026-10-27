@@ -1,0 +1,34 @@
+{
+  "checks": [
+    {
+      "check": "hook_question",
+      "ok": true,
+      "reason": "The opening sentence directly and clearly states the question of how a smartphone can pinpoint your exact location on Earth just by receiving radio signals."
+    },
+    {
+      "check": "hook_why",
+      "ok": false,
+      "reason": "The first 30 seconds launch immediately into technical facts about satellite constellations and the US Space Force without explaining why the question matters to the viewer."
+    },
+    {
+      "check": "title_promise",
+      "ok": false,
+      "reason": "The title claims GPS secretly tracks everything you do, but the script directly contradicts this claim by explaining that GPS is a passive one-way broadcast and satellites do not track receivers."
+    },
+    {
+      "check": "scene_relevance",
+      "ok": true,
+      "reason": "All text cards accurately match and reinforce the specific facts, terminology, and equations spoken in the narration at that moment."
+    },
+    {
+      "check": "sensitive",
+      "ok": true,
+      "reason": "There is no financial, legal, or health advice, and mentioning the US Space Force as the operator of GPS contains no accusations or defamatory claims."
+    },
+    {
+      "check": "adds_value",
+      "ok": true,
+      "reason": "The video thoroughly explains underlying principles and connections, such as converting time to distance, why a fourth satellite resolves quartz clock offset, and the competing effects of special and general relativity."
+    }
+  ]
+}

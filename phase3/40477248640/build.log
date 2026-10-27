@@ -1,0 +1,35 @@
+[llm] gate_editorial: gemini-3.8-flash HTTP 503, retry 1 in 30s
+[llm] gate_editorial: gemini-3.8-flash unavailable (HTTP 503 after 2 tries); trying next model
+[llm] gate_editorial: gemini-3.6-flash unavailable (daily free quota used up); trying next model
+[llm] gate_editorial: gemini-3.5-flash unavailable (daily free quota used up); trying next model
+[llm] gate_editorial: every model busy; waiting 60s (round 1)
+# Quality gate test (Phase 3)
+
+Done when: every planted fault from the blueprint is caught (silent gap, unlicensed image, wrong title promise, near-duplicate script) and clean packages get no FAIL.
+
+**Result: PASS** · blueprint faults 6/6 · all faults 17/17 · clean controls 5/5
+
+| Case | Expected FAIL | Got FAIL | FLAG | OK |
+| --- | --- | --- | --- | --- |
+| silent_gap | audio_silence | audio_silence | video_minutes | ✅ |
+| unlicensed_image | rights | rights | - | ✅ |
+| near_duplicate_template | originality | originality | - | ✅ |
+| near_duplicate_shuffled | originality | originality | - | ✅ |
+| near_duplicate_same_topic | originality | originality, scenes_complete | - | ✅ |
+| black_frames | video_black | video_black | video_minutes | ✅ |
+| length_mismatch | av_length | av_length | video_minutes | ✅ |
+| too_quiet | audio_loudness | audio_loudness | video_minutes | ✅ |
+| nc_licence | rights | rights | - | ✅ |
+| title_too_long | metadata | metadata | - | ✅ |
+| title_angle_brackets | metadata | metadata | - | ✅ |
+| no_sources_in_description | metadata | metadata | - | ✅ |
+| description_too_long_real | metadata | metadata | - | ✅ |
+| unsupported_fact | facts_linked | facts_linked | - | ✅ |
+| missing_scene | scenes_complete | scenes_complete | - | ✅ |
+| no_brief | editorial_brief | editorial_brief | - | ✅ |
+| clean_media | (none: control) | - | video_minutes | ✅ |
+| clean_files | (none: control) | - | - | ✅ |
+| different_topic_orbit | (none: control) | - | - | ✅ |
+| different_topic_microwave | (none: control) | - | - | ✅ |
+| wrong_title_promise | title_promise | title_promise | hook_why | ✅ |
+| clean_ai | (none: control) | - | hook_why | ✅ |

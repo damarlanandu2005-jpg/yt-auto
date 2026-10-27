@@ -1,0 +1,402 @@
+{
+ "summary": {
+  "pass": true,
+  "faults_caught": "17/17",
+  "blueprint_faults_caught": "6/6",
+  "controls_clean": "5/5",
+  "ai_skipped": false,
+  "llm_calls": [
+   {
+    "name": "gate_editorial",
+    "model": "gemini-3.8-flash",
+    "prompt_chars": 19149,
+    "images": 0,
+    "status": 200,
+    "seconds": 283.0,
+    "attempts": 1,
+    "finish": "STOP",
+    "in_tokens": 4341,
+    "out_tokens": 362,
+    "thought_tokens": 3425
+   },
+   {
+    "name": "gate_editorial",
+    "model": "gemini-3.8-flash",
+    "prompt_chars": 19162,
+    "images": 0,
+    "status": 503,
+    "attempt": 1,
+    "error": "{\n  \"error\": {\n    \"code\": 503,\n    \"message\": \"This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.\",\n    \"status\": \"UNAVAILABLE\"\n  }\n}\n"
+   },
+   {
+    "name": "gate_editorial",
+    "model": "gemini-3.8-flash",
+    "prompt_chars": 19162,
+    "images": 0,
+    "status": 503,
+    "attempt": 2,
+    "error": "{\n  \"error\": {\n    \"code\": 503,\n    \"message\": \"This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.\",\n    \"status\": \"UNAVAILABLE\"\n  }\n}\n"
+   },
+   {
+    "name": "gate_editorial",
+    "model": "gemini-3.6-flash",
+    "prompt_chars": 19162,
+    "images": 0,
+    "status": 429,
+    "attempt": 1,
+    "error": "{\n  \"error\": {\n    \"code\": 429,\n    \"message\": \"You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \\n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 20, model: gemini-3.6-flash, description: Generate content requests per day limit exceeded on Free Tier. See https://ai.google.dev/gemini-api/docs/rate-limits.\\nPlease retry in 21h55m32.350386492s.\",\n    \"status\": \"RESOURCE_EXHAUSTED\",\n    \"details\": [\n      {\n        \"@type\": \"type.googleapis.com/google.rpc.Help\",\n        \"links\": [\n          {\n            \"description\": \"Learn more about Gemini API quotas\",\n            \"url\": \"https://ai.google.dev/gemini-api/docs/rate-limits\"\n          }\n        ]\n      },\n      {\n        \"@type\": \"type.googleapis.com/google.rpc.QuotaFailure\",\n        \"violations\": [\n          {\n            \"description\": \"Generate content requests per day limit exceeded on Free Tier. See https://ai.google.dev/gemini-api/docs/rate-limits.\",\n            \"quotaMetric\": \"generativelanguage.googleapis.com/generate_content_free_tier_requests\",\n            \"quotaId\": \"GenerateRequestsPerDayPerProjectPerModel-FreeTier\",\n            \"quotaDimensions\": {\n              \"location\": \"global\",\n              \"model\": \"gemini-3.6-flash\"\n            },\n            \"quotaValue\": \"20\""
+   },
+   {
+    "name": "gate_editorial",
+    "model": "gemini-3.5-flash",
+    "prompt_chars": 19162,
+    "images": 0,
+    "status": 429,
+    "attempt": 1,
+    "error": "{\n  \"error\": {\n    \"code\": 429,\n    \"message\": \"You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \\n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 20, model: gemini-3.6-flash, description: Generate content requests per day limit exceeded on Free Tier. See https://ai.google.dev/gemini-api/docs/rate-limits.\\nPlease retry in 21h55m32.242845322s.\",\n    \"status\": \"RESOURCE_EXHAUSTED\",\n    \"details\": [\n      {\n        \"@type\": \"type.googleapis.com/google.rpc.Help\",\n        \"links\": [\n          {\n            \"description\": \"Learn more about Gemini API quotas\",\n            \"url\": \"https://ai.google.dev/gemini-api/docs/rate-limits\"\n          }\n        ]\n      },\n      {\n        \"@type\": \"type.googleapis.com/google.rpc.QuotaFailure\",\n        \"violations\": [\n          {\n            \"description\": \"Generate content requests per day limit exceeded on Free Tier. See https://ai.google.dev/gemini-api/docs/rate-limits.\",\n            \"quotaMetric\": \"generativelanguage.googleapis.com/generate_content_free_tier_requests\",\n            \"quotaId\": \"GenerateRequestsPerDayPerProjectPerModel-FreeTier\",\n            \"quotaDimensions\": {\n              \"location\": \"global\",\n              \"model\": \"gemini-3.6-flash\"\n            },\n            \"quotaValue\": \"20\""
+   },
+   {
+    "name": "gate_editorial",
+    "model": "gemini-3.8-flash",
+    "prompt_chars": 19162,
+    "images": 0,
+    "status": 200,
+    "seconds": 172.9,
+    "attempts": 1,
+    "finish": "STOP",
+    "in_tokens": 4342,
+    "out_tokens": 323,
+    "thought_tokens": 2379
+   }
+  ]
+ },
+ "cases": [
+  {
+   "case": "silent_gap",
+   "expect": [
+    "audio_silence"
+   ],
+   "fails": [
+    "audio_silence"
+   ],
+   "flags": [
+    "video_minutes"
+   ],
+   "ok": true,
+   "extra_fails": [],
+   "details": {
+    "audio_silence": "silent gaps over 2 s at [(9.6, 13.5)]",
+    "video_minutes": "0.4 min (target 5-8)"
+   }
+  },
+  {
+   "case": "unlicensed_image",
+   "expect": [
+    "rights"
+   ],
+   "fails": [
+    "rights"
+   ],
+   "flags": [],
+   "ok": true,
+   "extra_fails": [],
+   "details": {
+    "rights": "v004: picture v004.jpg has no licence record"
+   }
+  },
+  {
+   "case": "near_duplicate_template",
+   "expect": [
+    "originality"
+   ],
+   "fails": [
+    "originality"
+   ],
+   "flags": [],
+   "ok": true,
+   "extra_fails": [],
+   "details": {
+    "originality": "same topic as 2026-10-27-gps (word similarity 0.64 ≥ 0.45); 100% of sentences follow 2026-10-27-gps with only numbers/words changed; 54% of 5-word phrases copied from 2026-10-27-gps"
+   }
+  },
+  {
+   "case": "near_duplicate_shuffled",
+   "expect": [
+    "originality"
+   ],
+   "fails": [
+    "originality"
+   ],
+   "flags": [],
+   "ok": true,
+   "extra_fails": [],
+   "details": {
+    "originality": "same topic as 2026-10-27-gps (word similarity 0.62 ≥ 0.45); 100% of sentences follow 2026-10-27-gps with only numbers/words changed; 46% of 5-word phrases copied from 2026-10-27-gps"
+   }
+  },
+  {
+   "case": "near_duplicate_same_topic",
+   "expect": [
+    "originality"
+   ],
+   "fails": [
+    "originality",
+    "scenes_complete"
+   ],
+   "flags": [],
+   "ok": true,
+   "extra_fails": [
+    "scenes_complete"
+   ],
+   "details": {
+    "scenes_complete": "scenes with no visuals: ['s01_hook', 's02_constellation', 's03_signal', 's04_time_to_distance', 's05_one_sphere', 's06_intersection', 's07_clock_problem', 's08_fourth_satellite', 's09_atomic_clocks', 's10_relativity', 's11_limits', 's12_recap']; visuals with no frame: []",
+    "originality": "same topic as 2026-10-27-gps (word similarity 0.57 ≥ 0.45)"
+   }
+  },
+  {
+   "case": "black_frames",
+   "expect": [
+    "video_black"
+   ],
+   "fails": [
+    "video_black"
+   ],
+   "flags": [
+    "video_minutes"
+   ],
+   "ok": true,
+   "extra_fails": [],
+   "details": {
+    "video_black": "black frames at [(12.0, 16.0)]",
+    "video_minutes": "0.4 min (target 5-8)"
+   }
+  },
+  {
+   "case": "length_mismatch",
+   "expect": [
+    "av_length"
+   ],
+   "fails": [
+    "av_length"
+   ],
+   "flags": [
+    "video_minutes"
+   ],
+   "ok": true,
+   "extra_fails": [],
+   "details": {
+    "av_length": "audio 27.0 s, video 24.0 s (differ by 3.0 s)",
+    "video_minutes": "0.4 min (target 5-8)"
+   }
+  },
+  {
+   "case": "too_quiet",
+   "expect": [
+    "audio_loudness"
+   ],
+   "fails": [
+    "audio_loudness"
+   ],
+   "flags": [
+    "video_minutes"
+   ],
+   "ok": true,
+   "extra_fails": [],
+   "details": {
+    "audio_loudness": "-53.8 LUFS (target -16 ± 2), true peak -47.2 dBTP",
+    "video_minutes": "0.4 min (target 5-8)"
+   }
+  },
+  {
+   "case": "nc_licence",
+   "expect": [
+    "rights"
+   ],
+   "fails": [
+    "rights"
+   ],
+   "flags": [],
+   "ok": true,
+   "extra_fails": [],
+   "details": {
+    "rights": "v004: licence 'CC BY-NC 4.0' is not allowed"
+   }
+  },
+  {
+   "case": "title_too_long",
+   "expect": [
+    "metadata"
+   ],
+   "fails": [
+    "metadata"
+   ],
+   "flags": [],
+   "ok": true,
+   "extra_fails": [],
+   "details": {
+    "metadata": "title is 140 characters (1-100 allowed)"
+   }
+  },
+  {
+   "case": "title_angle_brackets",
+   "expect": [
+    "metadata"
+   ],
+   "fails": [
+    "metadata"
+   ],
+   "flags": [],
+   "ok": true,
+   "extra_fails": [],
+   "details": {
+    "metadata": "title contains < or >, which YouTube rejects"
+   }
+  },
+  {
+   "case": "no_sources_in_description",
+   "expect": [
+    "metadata"
+   ],
+   "fails": [
+    "metadata"
+   ],
+   "flags": [],
+   "ok": true,
+   "extra_fails": [],
+   "details": {
+    "metadata": "description lists no sources"
+   }
+  },
+  {
+   "case": "description_too_long_real",
+   "expect": [
+    "metadata"
+   ],
+   "fails": [
+    "metadata"
+   ],
+   "flags": [],
+   "ok": true,
+   "extra_fails": [],
+   "details": {
+    "metadata": "description is 9850 characters (max 5000)"
+   }
+  },
+  {
+   "case": "unsupported_fact",
+   "expect": [
+    "facts_linked"
+   ],
+   "fails": [
+    "facts_linked"
+   ],
+   "flags": [],
+   "ok": true,
+   "extra_fails": [],
+   "details": {
+    "facts_linked": "unlinked or unsupported: [\"s01.03 (unsupported, sources ['A1.1'])\"]"
+   }
+  },
+  {
+   "case": "missing_scene",
+   "expect": [
+    "scenes_complete"
+   ],
+   "fails": [
+    "scenes_complete"
+   ],
+   "flags": [],
+   "ok": true,
+   "extra_fails": [],
+   "details": {
+    "scenes_complete": "scenes with no visuals: ['s06']; visuals with no frame: []"
+   }
+  },
+  {
+   "case": "no_brief",
+   "expect": [
+    "editorial_brief"
+   ],
+   "fails": [
+    "editorial_brief"
+   ],
+   "flags": [],
+   "ok": true,
+   "extra_fails": [],
+   "details": {
+    "editorial_brief": "brief is missing ['answer', 'evidence', 'unique_examples', 'why_watch']"
+   }
+  },
+  {
+   "case": "clean_media",
+   "expect": [],
+   "fails": [],
+   "flags": [
+    "video_minutes"
+   ],
+   "ok": true,
+   "extra_fails": [],
+   "details": {
+    "video_minutes": "0.4 min (target 5-8)"
+   }
+  },
+  {
+   "case": "clean_files",
+   "expect": [],
+   "fails": [],
+   "flags": [],
+   "ok": true,
+   "extra_fails": [],
+   "details": {}
+  },
+  {
+   "case": "different_topic_orbit",
+   "expect": [],
+   "fails": [],
+   "flags": [],
+   "ok": true,
+   "extra_fails": [],
+   "details": {}
+  },
+  {
+   "case": "different_topic_microwave",
+   "expect": [],
+   "fails": [],
+   "flags": [],
+   "ok": true,
+   "extra_fails": [],
+   "details": {}
+  },
+  {
+   "case": "wrong_title_promise",
+   "expect": [
+    "title_promise"
+   ],
+   "fails": [
+    "title_promise"
+   ],
+   "flags": [
+    "hook_why"
+   ],
+   "ok": true,
+   "extra_fails": [],
+   "details": {
+    "hook_why": "The first 30 seconds launch immediately into technical facts about satellite constellations and the US Space Force without explaining why the question matters to the viewer.",
+    "title_promise": "The title claims GPS secretly tracks everything you do, but the script directly contradicts this claim by explaining that GPS is a passive one-way broadcast and satellites do not track receivers."
+   }
+  },
+  {
+   "case": "clean_ai",
+   "expect": [],
+   "fails": [],
+   "flags": [
+    "hook_why"
+   ],
+   "ok": true,
+   "extra_fails": [],
+   "details": {
+    "hook_why": "The first 30 seconds jump directly into technical and historical facts without explaining why the question matters to the viewer."
+   }
+  }
+ ]
+}

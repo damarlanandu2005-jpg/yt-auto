@@ -1,0 +1,34 @@
+{
+  "checks": [
+    {
+      "check": "hook_question",
+      "ok": true,
+      "reason": "The opening line clearly poses the central question: how a smartphone pinpoints location using silent radio signals."
+    },
+    {
+      "check": "hook_why",
+      "ok": false,
+      "reason": "The first 30 seconds jump directly into technical and historical facts without explaining why the question matters to the viewer."
+    },
+    {
+      "check": "title_promise",
+      "ok": true,
+      "reason": "The script thoroughly explains the mechanism of using satellite timestamps, time-delay distance calculations, trilateration, and clock bias corrections to determine location."
+    },
+    {
+      "check": "scene_relevance",
+      "ok": true,
+      "reason": "All text cards directly reflect and support the specific information spoken in the narration at each timestamp."
+    },
+    {
+      "check": "sensitive",
+      "ok": true,
+      "reason": "The script contains no financial, legal, or medical advice, nor any accusations against named entities."
+    },
+    {
+      "check": "adds_value",
+      "ok": true,
+      "reason": "The video connects underlying physical and mathematical concepts, clearly explaining why multiple satellites are needed, how clock drift is corrected, and the impact of relativity."
+    }
+  ]
+}
