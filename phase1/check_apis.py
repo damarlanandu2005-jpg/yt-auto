@@ -10,6 +10,7 @@ The API key is sent in a header and never printed or saved.
 from __future__ import annotations
 
 import json
+import re
 import os
 import sys
 import time
@@ -147,6 +148,7 @@ def save_pages(out: Path) -> dict:
     """Official pages, saved so the limits can be read from Google/NASA/Wikimedia directly."""
     pages = {
         "gemini_pricing.html": "https://ai.google.dev/gemini-api/docs/pricing",
+        "google_apis_terms.html": "https://developers.google.com/terms",
         "gemini_rate_limits.html": "https://ai.google.dev/gemini-api/docs/rate-limits",
         "gemini_models.html": "https://ai.google.dev/gemini-api/docs/models",
         "gemini_deprecations.html": "https://ai.google.dev/gemini-api/docs/deprecations",
@@ -171,17 +173,55 @@ def save_pages(out: Path) -> dict:
     return status
 
 
+def keys() -> dict:
+    """Which Gemini-looking repo secrets exist, does each key work, and do they share a Google project?
+
+    Uses no generate quota: listing models is free, and the project number comes from the
+    error a key gets when calling an API its project hasn't enabled (YouTube Data API).
+    Only secret NAMES and a short project fingerprint are saved, never key values.
+    """
+    import hashlib
+
+    try:
+        secrets = json.loads(os.environ.get("ALL_SECRETS") or "{}")
+    except ValueError:
+        secrets = {}
+    res = {"secret_names": sorted(k for k in secrets if k != "github_token"), "keys": {}}
+    for name, value in secrets.items():
+        if not isinstance(value, str) or not value.startswith("AIza"):
+            continue  # not a Google API key
+        hdr = {"x-goog-api-key": value}
+        r = http(f"{GEMINI}/models?pageSize=200", headers=hdr)
+        info = {"list_models_status": r["status"], "models": len((r.get("json") or {}).get("models", [])),
+                "error": ((r.get("json") or {}).get("error") or {}).get("message", "")[:200]}
+        y = http("https://youtube.googleapis.com/youtube/v3/i18nLanguages?part=snippet&hl=en", headers=hdr)
+        msg = json.dumps(y.get("json") or y.get("text") or "")
+        m = re.search(r"project[s]?[ /](\d{6,})", msg)
+        info["youtube_api"] = "enabled" if y["status"] == 200 else f"HTTP {y['status']}"
+        info["project_fingerprint"] = hashlib.sha256(m.group(1).encode()).hexdigest()[:8] if m else None
+        res["keys"][name] = info
+    fps = {v["project_fingerprint"] for v in res["keys"].values() if v["project_fingerprint"]}
+    res["same_project"] = (len(fps) == 1) if len(fps) == len(res["keys"]) and len(fps) else None
+    return res
+
+
 def main() -> None:
     out = Path(sys.argv[1] if len(sys.argv) > 1 else "out/check")
     out.mkdir(parents=True, exist_ok=True)
-    result = {"gemini": gemini(out), "nasa": nasa(), "commons": commons(), "pages": save_pages(out)}
+    full = os.environ.get("FULL_CHECK") == "true"  # model calls spend free daily quota; off by default
+    result = {"keys": keys(), "pages": save_pages(out)}
+    if full:
+        result.update(gemini=gemini(out), nasa=nasa(), commons=commons())
     (out / "check.json").write_text(json.dumps(result, indent=2))
-    g = result["gemini"]
-    print("GEMINI_API_KEY present:", g["key_present"])
-    for n, c in (g.get("calls") or {}).items():
-        print(f"  {n}: {c['status']}", (c.get("error") or {}).get("message", "")[:150] if isinstance(c.get("error"), dict) else "")
-    print("NASA:", result["nasa"]["status"], "hits:", result["nasa"].get("total_hits"))
-    print("Commons:", result["commons"]["status"], [s["licence"] for s in result["commons"]["sample"]])
+    k = result["keys"]
+    print("Secrets:", k["secret_names"])
+    for n, v in k["keys"].items():
+        print(f"  {n}: list models HTTP {v['list_models_status']} ({v['models']} models), project {v['project_fingerprint']}")
+    print("Same Google project:", k["same_project"])
+    if full:
+        for n, c in (result["gemini"].get("calls") or {}).items():
+            print(f"  {n}: {c['status']}")
+        print("NASA:", result["nasa"]["status"], "Commons:", result["commons"]["status"])
 
 
 if __name__ == "__main__":

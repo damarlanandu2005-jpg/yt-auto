@@ -6,6 +6,11 @@ name: Phase 1 API check
 # The key is never printed.
 on:
   workflow_dispatch:
+    inputs:
+      full:
+        description: "Also test every model with one call (spends free daily quota)"
+        type: boolean
+        default: false
   push:
     # Only when the check itself changes on a Phase 1 branch (a manual-run workflow
     # can't be started from a branch until GitHub has seen it run once).
@@ -34,6 +39,9 @@ jobs:
         timeout-minutes: 5
         env:
           GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
+          # Only secret NAMES are printed/saved; values stay masked and are used to test each key.
+          ALL_SECRETS: ${{ toJSON(secrets) }}
+          FULL_CHECK: ${{ inputs.full }}
         run: python phase1/check_apis.py out/check
 
       - name: Save results to the bench-results branch
