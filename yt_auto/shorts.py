@@ -24,7 +24,7 @@ from .llm import LIGHT, llm
 W, H, FPS = 1080, 1920, 30
 XFADE = 0.5                  # dissolve between drawings
 LONG_S = 6.5                 # longest time one view stays on screen
-MAX_S, MIN_WORDS, MAX_WORDS = 58.0, 55, 115
+MAX_S, MIN_WORDS, MAX_WORDS = 58.0, 55, 105
 END_LINE = "The full story is in our long video on this channel."
 ROADMAP = re.compile(r"\bin this video\b|\byou will (discover|learn|see|find)\b|\bwe will\b", re.I)
 STYLE = drawings.STYLE + ", tall vertical composition with the subject in the centre"
@@ -303,6 +303,19 @@ def make(p: dict, n: int, script: dict, sources: dict, delivery: dict, key: dict
     out.mkdir(parents=True, exist_ok=True)
     log: dict = {"title": p["title"], "hook": p["hook"], "sentences": p["sentences"], "subject": p["subject"]}
     lines, total = _speech(p, script, delivery, narrator, out / "narration.wav")
+    while total > MAX_S:  # too long: drop a middle sentence (never the opening, answer or last) and speak again
+        middle = [i for i in p["sentences"][1:-1] if i != p.get("answer")]
+        if not middle:
+            break
+        gone = middle[len(middle) // 2]
+        keep = [i for i in p["sentences"] if i != gone]
+        for s in p["shots"]:  # its pictures move to the sentence before
+            if s["sentence"] == gone:
+                s["sentence"] = keep[max(0, p["sentences"].index(gone) - 1)]
+        p = {**p, "sentences": keep}
+        log.setdefault("dropped_for_length", []).append(gone)
+        lines, total = _speech(p, script, delivery, narrator, out / "narration.wav")
+    log["sentences"] = p["sentences"]
     log["seconds"] = round(total, 1)
     if total > MAX_S + 2:
         log["error"] = f"{total:.1f} s is too long for a Short"
