@@ -116,6 +116,8 @@ niches/<niche>.json    per-niche settings (blueprint's niche.yaml, JSON to avoid
 phase4/find_topics.py  entry; .github/workflows/phase4-topics.yml manual (niche choice)
 yt_auto/owner_voice.py own-voice: recording_script.md; phone files → cleaned (highpass, afftdn, numpy pause shortening: FFmpeg silenceremove misbehaved on 6.1) → whisper word times → sentence times from our text → voice_match.json
 voice/                 owner's recordings, one folder per video (see voice/README.md)
+yt_auto/shorts.py      vertical "zoom journey" Shorts (owner's study of "How Stitches Work", 28 Oct): sentences reused verbatim from the long video's checked script + one hook question (no claim) + closing line; 6-8 FLUX drawings of ONE subject wide -> close -> inside -> back out, blind-checked (a rejected one = closer crop of the one before); slow zoom + 0.5 s dissolves (no hard cuts), a view held >6.5 s becomes closer views; captions 1-3 words, numbers/key word red; whoosh at changes; -13 LUFS
+phase5/make_shorts.py  entry; .github/workflows/shorts.yml manual (long_run, count 1-3); release short-<run_id>, results bench-results/shorts/<run_id>/
 pilot/pilot.json       Phase 5 tracker; pilot/summary.py → pilot/report.md
 study/study_video.py   learn from another video (facts, captions, frames, shot changes); .github/workflows/study-video.yml manual, results bench-results/study/<id>/<run_id>/ (video not kept)
 phase5/drawing_test.py free open image model on the runner CPU: licence, seconds per drawing, memory, sample sheet; .github/workflows/drawing-test.yml manual, results bench-results/phase5/drawing-test/<run_id>/
