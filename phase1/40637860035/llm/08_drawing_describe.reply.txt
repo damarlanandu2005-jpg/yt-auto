@@ -1,0 +1,36 @@
+{
+  "images": [
+    {
+      "n": 1,
+      "seen": "An abstract digital illustration showing two dark circular planetary or celestial bodies on a grey background, separated by a white splash-like or starburst pattern with red dots scattered around."
+    },
+    {
+      "n": 2,
+      "seen": "An abstract black background featuring a large, intricate star-like or floral geometric object made of pointed, layered white and gray petals with a vibrant red center, surrounded by tiny white dots resembling stars."
+    },
+    {
+      "n": 3,
+      "seen": "An abstract illustration against a black background showing an undulating, seashell-like or organic form composed of fine white or silver wavy lines, with a patch of vibrant red near its center."
+    },
+    {
+      "n": 4,
+      "seen": "A black and white image showing the curved limb of a planet or moon against a black starry background, crossed by a prominent bright white ring system or atmospheric band."
+    },
+    {
+      "n": 5,
+      "seen": "An abstract space scene with a black starry background, featuring three red circular shapes connected by white lines, a central jagged red starburst shape, and a small gray planet-like object on the right."
+    },
+    {
+      "n": 6,
+      "seen": "A black and white night sky filled with stylized, detailed billowing clouds and a few small stars scattered across the dark space."
+    },
+    {
+      "n": 7,
+      "seen": "A black and white illustration of a globe floating in a dark, starry space, with landmasses resembling parts of Africa, Europe, and the Middle East rendered in light gray."
+    },
+    {
+      "n": 8,
+      "seen": "An abstract space illustration featuring sweeping, glowing white nebulous curved ribbons or galactic arms against a black starry background, with a prominent red highlight on the left curve."
+    }
+  ]
+}

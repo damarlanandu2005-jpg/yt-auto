@@ -1,0 +1,34 @@
+{
+  "checks": [
+    {
+      "n": 1,
+      "seen": "Image 1 shows an aircraft flying against a bright blue sky.",
+      "fits": false,
+      "reason": "The image shows an aircraft, not clouds in the sky as required by the narration about oxygen atmosphere."
+    },
+    {
+      "n": 2,
+      "seen": "Image 2 shows a view of space with two bright stars and numerous smaller stars scattered across a black background.",
+      "fits": true,
+      "reason": "The image clearly depicts stars in space, matching the narration about an exploding white dwarf star."
+    },
+    {
+      "n": 3,
+      "seen": "Image 3 shows a reddish space nebula or gas cloud with several bright stars and dark dusty patches.",
+      "fits": true,
+      "reason": "The image shows stars and a nebula, fitting the narration context about shining dying stars."
+    },
+    {
+      "n": 4,
+      "seen": "Image 4 shows a large white satellite dish or radio telescope set against a blue sky, with trees and hills in the foreground and background.",
+      "fits": false,
+      "reason": "The image shows a radio telescope on Earth, whereas it should show a deep space galaxy cluster."
+    },
+    {
+      "n": 5,
+      "seen": "Image 5 shows an orange-toned astronomical image with a glowing central object and an inset square magnifying a pair of bright objects.",
+      "fits": true,
+      "reason": "The image shows a pair of bright objects with a magnifying inset, which visually fits a binary star system mentioned in the narration."
+    }
+  ]
+}

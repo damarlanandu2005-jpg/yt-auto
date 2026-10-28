@@ -1,0 +1,73 @@
+[model] gemini-3.5-flash-lite
+[system]
+
+
+[user]
+Video: How Close Can a Supernova Get Before It Destroys Earth?
+Plan one visual for each slot of narration below. The viewer sees it while hearing that text.
+Rules:
+- Real photos first: use kind=photo for at least 65 per cent of slots, whenever a real photo could show the
+  thing being talked about (objects, places, spacecraft, machines, nature, historical photos).
+  Ask for SIMPLE subjects an archive surely has ("a handheld GPS receiver", "a rocket launch", "an atomic
+  clock"), never a detailed scene ("a hiker with a GPS in remote mountains with no signal"). Never ask for a
+  photo of a chart, graph, diagram or data: archive charts are about other things; use a card instead. A photo of the
+  object being discussed is better than a text card.
+- Use kind=drawing (at most 8 in the whole video) for an idea no real photo can show: an invisible
+  process, a view nobody photographed, a comparison of two things (e.g. "a radio wave travelling from a satellite
+  down to a phone", "two clocks side by side, one in orbit and one on the ground"). drawing_subject: one simple
+  scene of CONCRETE objects a viewer recognises at once ("a huge exploding star beside a small blue planet",
+  "a DNA double helix with a broken rung"), never a process word ("composition changing", "errors"). No people, faces or hands, no logos, emblems or flags, no text, no numbers, no maps.
+- Step by step (owner's rule): when the narration explains ONE object or scene in parts over several slots, use
+  kind=step for the next 1 or 2 slots: they show the SAME picture as the slot before, moved closer to the part
+  being explained (focus: center, left, right, top or bottom). Wide view first, then closer, then detail.
+  Use steps for about 10 to 20 per cent of slots; never more than 2 steps in a row; a step needs a photo or
+  drawing right before it.
+- Use kind=card when a number, comparison, process or list is the point, or at scene starts (title card).
+- The first slot is a title card with the video title.
+- Every number on a card MUST appear in that slot's text or earlier in the same scene. Never invent data.
+- Vary: never the same card type twice in a row; never more than 2 cards in a row.
+- Text cards are the last choice: at most one bullets card per scene, and a bare title card only at scene starts.
+  Prefer stat, bars, timeline, flow or compare when a card is needed.
+- For kind=photo and kind=drawing still give a fallback card (used if no good picture is made).
+Card types (all text short; big and readable on a phone):
+- title: title (+ subtitle). Use for scene openings.
+- stat: value (a number with unit, e.g. "20,200 km") + label (+ note).
+- bullets: title + 2-4 items (each under 6 words).
+- flow: title + 2-5 steps (cause -> effect, process).
+- bars: title + labels + values (+ unit). Compare 2-6 quantities.
+- timeline: title + 2-5 events {when, label}.
+- compare: title + left_title/left_points vs right_title/right_points.
+
+SLOTS:
+v001 [3.5s] (scene: The Hollywood Shockwave Myth, SCENE START) Could a dying star explode near our solar
+v002 [4.4s] (scene: The Hollywood Shockwave Myth) system and rip Earth's atmosphere away into space?
+v003 [6.9s] (scene: The Hollywood Shockwave Myth) Do science fiction movies show a fiery blast wave sweeping our planet bare within seconds?
+v004 [4.7s] (scene: The Hollywood Shockwave Myth) Why does this question matter when considering terrestrial life?
+v005 [4.2s] (scene: The Hollywood Shockwave Myth) How essential is our oxygen atmosphere for survival?
+v006 [5.6s] (scene: The Hollywood Shockwave Myth) In reality, a supernova is a powerful explosion marking the death of a star.
+v007 [6.3s] (scene: The Hollywood Shockwave Myth) When a massive star runs out of fuel, its core collapses under immense gravitational force.
+v008 [5.8s] (scene: The Hollywood Shockwave Myth) Alternatively, an exploding white dwarf star undergoes runaway nuclear fusion.
+v009 [3.3s] (scene: The Hollywood Shockwave Myth) These stellar detonations expel several solar masses
+v010 [3.9s] (scene: The Hollywood Shockwave Myth) of matter into the surrounding interstellar medium.
+v011 [6.3s] (scene: The Hollywood Shockwave Myth) The ejected material travels outward at speeds reaching several per cent of the speed of light.
+v012 [7.0s] (scene: The Hollywood Shockwave Myth) This creates an expanding shock wave that sweeps up a shell of interstellar gas and dust.
+v013 [4.5s] (scene: The Stellar Safety Line, SCENE START) Where are the nearest stars that might explode in our stellar neighbourhood?
+v014 [3.9s] (scene: The Stellar Safety Line) Astronomers define a near-Earth supernova as one
+v015 [4.4s] (scene: The Stellar Safety Line) occurring within roughly 33 to 978 light-years.
+v016 [3.3s] (scene: The Stellar Safety Line) Currently, our galaxy holds up to 14
+v017 [3.7s] (scene: The Stellar Safety Line) potential near-Earth supernovas inside that broader distance.
+v018 [7.4s] (scene: The Stellar Safety Line) A few famous stars located within several hundred light-years could explode in just 1,000 years.
+v019 [3.7s] (scene: The Stellar Safety Line) Although these dying stars will shine brilliantly, they
+v020 [3.7s] (scene: The Stellar Safety Line) pose little direct threat to our planet.
+v021 [4.1s] (scene: The Stellar Safety Line) What about the famous red supergiant star Betelgeuse?
+v022 [3.5s] (scene: The Stellar Safety Line) Scientists estimate that Betelgeuse could require as long
+v023 [4.4s] (scene: The Stellar Safety Line) as 1.5 million years to explode as a supernova.
+v024 [3.3s] (scene: The Stellar Safety Line) When it detonates, its particle stream will reach
+v025 [3.8s] (scene: The Stellar Safety Line) Earth about 100,000 years after the initial light.
+v026 [5.7s] (scene: The Stellar Safety Line) Looking back in time, other relatively nearby stars have exploded in Earth's past.
+v027 [3.6s] (scene: The Stellar Safety Line) The Vela supernova exploded about 12,000 years ago
+v028 [3.6s] (scene: The Stellar Safety Line) roughly 800 light-years away from our Sun.
+v029 [4.5s] (scene: The Stellar Safety Line) Another explosion called Geminga occurred roughly 300,000 years
+v030 [4.9s] (scene: The Stellar Safety Line) ago at a distance of 550 light-years.
+v031 [4.2s] (scene: The Stellar Safety Line) The closest known white dwarf candidate, IK Pegasi,
+v032 [5.6s] (scene: The Stellar Safety Line) is currently moving away to a safe distance.

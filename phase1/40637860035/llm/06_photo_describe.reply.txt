@@ -1,0 +1,24 @@
+{
+  "images": [
+    {
+      "n": 1,
+      "seen": "Image 1 shows an aircraft flying against a bright blue sky."
+    },
+    {
+      "n": 2,
+      "seen": "Image 2 shows a view of space with two bright stars and numerous smaller stars scattered across a black background."
+    },
+    {
+      "n": 3,
+      "seen": "Image 3 shows a reddish space nebula or gas cloud with several bright stars and dark dusty patches."
+    },
+    {
+      "n": 4,
+      "seen": "Image 4 shows a large white satellite dish or radio telescope set against a blue sky, with trees and hills in the foreground and background."
+    },
+    {
+      "n": 5,
+      "seen": "Image 5 shows an orange-toned astronomical image with a glowing central object and an inset square magnifying a pair of bright objects."
+    }
+  ]
+}

@@ -1,0 +1,29 @@
+[model] gemini-3.5-flash-lite
+[system]
+
+
+[user]
+Step 2 of a picture check for a science video. Someone looked at each picture WITHOUT knowing
+what it should show and described it. Decide for each image whether the picture fits.
+A photo fits only if the description shows it clearly depicts what it should show: not mostly text,
+not a test target, not a different planet or object than the narration is about, no watermark, nothing
+misleading. A diagram, infographic or poster with many labels or much text does NOT fit (too small to read
+in a video, and made for another purpose). A chart or graph fits ONLY if its labels show it is about exactly what the narration says (a graph
+of Mars data, or with unexplained labels like 'RHOS', does not fit a sentence about Earth or a star).
+When unsure, answer fits = false (a chart or plain card is shown instead, which is fine).
+Copy the description into "seen".
+Image 1: described as: Image 1 shows an aircraft flying against a bright blue sky.
+  should show: clouds in the sky
+  narration: How essential is our oxygen atmosphere for survival?
+Image 2: described as: Image 2 shows a view of space with two bright stars and numerous smaller stars scattered across a black background.
+  should show: a white dwarf star
+  narration: Alternatively, an exploding white dwarf star undergoes runaway nuclear fusion.
+Image 3: described as: Image 3 shows a reddish space nebula or gas cloud with several bright stars and dark dusty patches.
+  should show: a bright star in the night sky
+  narration: Although these dying stars will shine brilliantly, they
+Image 4: described as: Image 4 shows a large white satellite dish or radio telescope set against a blue sky, with trees and hills in the foreground and background.
+  should show: deep space galaxy cluster
+  narration: Looking back in time, other relatively nearby stars have exploded in Earth's past.
+Image 5: described as: Image 5 shows an orange-toned astronomical image with a glowing central object and an inset square magnifying a pair of bright objects.
+  should show: a binary star system
+  narration: The closest known white dwarf candidate, IK Pegasi,

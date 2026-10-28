@@ -1,0 +1,61 @@
+{
+ "load_s": 8.3,
+ "torch": "2.14.1+cpu",
+ "diffusers": "0.42.1",
+ "seconds": {
+  "v003": 60.6,
+  "v007": 60.2,
+  "v012": 60.5,
+  "v024": 60.1,
+  "v032": 60.0,
+  "v005": 60.2,
+  "v020": 60.1,
+  "v026": 60.0
+ },
+ "skipped_for_time": [],
+ "total_s": 490.0,
+ "asked": 8,
+ "drawn": 8,
+ "drawings_seen": {
+  "v003": "An abstract digital illustration showing two dark circular planetary or celestial bodies on a grey background, separated by a white splash-like or starburst pattern with red dots scattered around.",
+  "v007": "An abstract black background featuring a large, intricate star-like or floral geometric object made of pointed, layered white and gray petals with a vibrant red center, surrounded by tiny white dots resembling stars.",
+  "v012": "An abstract illustration against a black background showing an undulating, seashell-like or organic form composed of fine white or silver wavy lines, with a patch of vibrant red near its center.",
+  "v024": "A black and white image showing the curved limb of a planet or moon against a black starry background, crossed by a prominent bright white ring system or atmospheric band.",
+  "v032": "An abstract space scene with a black starry background, featuring three red circular shapes connected by white lines, a central jagged red starburst shape, and a small gray planet-like object on the right.",
+  "v005": "A black and white night sky filled with stylized, detailed billowing clouds and a few small stars scattered across the dark space.",
+  "v020": "A black and white illustration of a globe floating in a dark, starry space, with landmasses resembling parts of Africa, Europe, and the Middle East rendered in light gray.",
+  "v026": "An abstract space illustration featuring sweeping, glowing white nebulous curved ribbons or galactic arms against a black starry background, with a prominent red highlight on the left curve."
+ },
+ "drawings_rejected": [
+  {
+   "id": "v003",
+   "title": "a huge exploding star beside a small blue planet",
+   "seen": "An abstract digital illustration showing two dark circular planetary or celestial bodies on a grey background, separated by a white splash-like or starburst pattern with red dots scattered around.",
+   "reason": "Shows two dark bodies and a starburst instead of a huge exploding star beside a small blue planet."
+  },
+  {
+   "id": "v012",
+   "title": "an expanding shock wave sweeping up a shell of gas",
+   "seen": "An abstract illustration against a black background showing an undulating, seashell-like or organic form composed of fine white or silver wavy lines, with a patch of vibrant red near its center.",
+   "reason": "Shows an abstract seashell-like organic form instead of an expanding shell of gas."
+  },
+  {
+   "id": "v024",
+   "title": "a particle stream travelling through space towards a planet",
+   "seen": "A black and white image showing the curved limb of a planet or moon against a black starry background, crossed by a prominent bright white ring system or atmospheric band.",
+   "reason": "Shows a planet with a ring system instead of a particle stream travelling through space."
+  },
+  {
+   "id": "v032",
+   "title": "two stars moving apart in space",
+   "seen": "An abstract space scene with a black starry background, featuring three red circular shapes connected by white lines, a central jagged red starburst shape, and a small gray planet-like object on the right.",
+   "reason": "Shows abstract connected shapes and a starburst instead of two distinct stars moving apart."
+  }
+ ],
+ "drawings_used": 4,
+ "steps": 1,
+ "steps_without_picture": [
+  "v017",
+  "v023"
+ ]
+}

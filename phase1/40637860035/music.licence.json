@@ -1,0 +1,15 @@
+{
+  "file": "music.wav",
+  "kind": "music",
+  "source": "wikimedia_commons",
+  "title": "Steve Combs - 10 - Ambient 507050",
+  "source_page": "https://commons.wikimedia.org/wiki/File:Steve_Combs_-_10_-_Ambient_507050.ogg",
+  "download_url": "https://upload.wikimedia.org/wikipedia/commons/8/89/Steve_Combs_-_10_-_Ambient_507050.ogg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+  "licence": "CC BY 4.0",
+  "licence_url": "https://creativecommons.org/licenses/by/4.0",
+  "author": "Steve Combs",
+  "attribution": "Music: \"Steve Combs - 10 - Ambient 507050\" by Steve Combs, CC BY 4.0, via Wikimedia Commons. https://commons.wikimedia.org/wiki/File:Steve_Combs_-_10_-_Ambient_507050.ogg",
+  "downloaded": "2026-10-28",
+  "seconds": 390.9,
+  "path": "out/run/music/music.wav"
+}

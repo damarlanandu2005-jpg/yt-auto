@@ -1,0 +1,86 @@
+{
+ "card_number_fixes": [
+  "v002: numbers ['1'] not in narration; card replaced",
+  "v005: numbers ['21'] not in narration; card replaced",
+  "v006: numbers ['1'] not in narration; card replaced",
+  "v008: numbers ['1'] not in narration; card replaced"
+ ],
+ "photo_slots": 11,
+ "candidates": {
+  "v002": 12,
+  "v005": 12,
+  "v006": 11,
+  "v008": 11,
+  "v010": 12,
+  "v014": 12,
+  "v019": 12,
+  "v020": 12,
+  "v021": 12,
+  "v026": 12,
+  "v031": 9
+ },
+ "downloaded": 10,
+ "seen": {
+  "v002": "A full view of planet Earth against a black background, showing Africa and parts of the surrounding oceans and clouds.",
+  "v005": "An experimental aircraft, the Boeing X-48B, flying overhead against a clear blue sky, showing its blended wing body design.",
+  "v006": "A colorful nebula in outer space with wispy filaments of gas and dust glowing in shades of blue, orange, and white.",
+  "v008": "An artist's illustration of a star with a surrounding debris disk and an asteroid-like body colliding with or disrupting the ring structure.",
+  "v010": "A dense star field and glowing green cosmic dust cloud with intricate patterns, captured by an infrared telescope.",
+  "v014": "A wide infrared view of the central region of the Milky Way galaxy, filled with countless stars and reddish cosmic dust clouds.",
+  "v019": "A cosmic landscape showing bright blue stars scattered across dramatic green and red nebulous dust clouds.",
+  "v021": "A close-up image of the supergiant star Betelgeuse, appearing as a mottled, irregular orange-red sphere against a black background.",
+  "v026": "The Hubble Ultra Deep Field image, showcasing thousands of distant galaxies of various shapes, sizes, and colors scattered across space.",
+  "v031": "An artist's illustration of a double debris ring system around a central star in a dark, star-filled region of space."
+ },
+ "rejected_after_looking": [
+  {
+   "id": "v005",
+   "title": "A pristine blue sky backdrops the X-48B Blended Wing Body aircraft during the aircraft's first flight July 20, 2007, from NASA's Dryden Flight Research Center",
+   "seen": "An experimental aircraft, the Boeing X-48B, flying overhead against a clear blue sky, showing its blended wing body design.",
+   "reason": "The narration is about oxygen atmosphere, but the image shows an experimental aircraft instead of relevant atmospheric science."
+  },
+  {
+   "id": "v008",
+   "title": "Artist’s impression of debris around a white dwarf star",
+   "seen": "An artist's illustration of a star with a surrounding debris disk and an asteroid-like body colliding with or disrupting the ring structure.",
+   "reason": "The image shows a debris disk illustration, but the narration specifically mentions an exploding white dwarf star."
+  },
+  {
+   "id": "v019",
+   "title": "Menkhib and the California Nebula",
+   "seen": "A cosmic landscape showing bright blue stars scattered across dramatic green and red nebulous dust clouds.",
+   "reason": "The narration mentions a dying star shining brilliantly, but the image shows general nebular dust rather than a specific bright star in the night sky."
+  },
+  {
+   "id": "v026",
+   "title": "Hubble ultra deep field",
+   "seen": "The Hubble Ultra Deep Field image, showcasing thousands of distant galaxies of various shapes, sizes, and colors scattered across space.",
+   "reason": "The image shows a deep field of galaxies, but the narration discusses nearby stars exploding in Earth's past."
+  },
+  {
+   "id": "v031",
+   "title": "Birth of an Earth-like Planet Artist Xoncept",
+   "seen": "An artist's illustration of a double debris ring system around a central star in a dark, star-filled region of space.",
+   "reason": "The image shows a debris ring system, whereas the narration specifically refers to the binary star system candidate IK Pegasi."
+  }
+ ],
+ "second_try": {
+  "tried": 5,
+  "kept": 3,
+  "rejected": [
+   {
+    "id": "v005",
+    "title": "With sensor booms projecting ahead of the wing, the Pathfinder-Plus soars under a blue sky on a turbulence measurement research flight.",
+    "seen": "Image 1 shows an aircraft flying against a bright blue sky.",
+    "reason": "The image shows an aircraft, not clouds in the sky as required by the narration about oxygen atmosphere."
+   },
+   {
+    "id": "v026",
+    "title": "NASA's Deep Space Antenna Upgrade to Affect Voyager",
+    "seen": "Image 4 shows a large white satellite dish or radio telescope set against a blue sky, with trees and hills in the foreground and background.",
+    "reason": "The image shows a radio telescope on Earth, whereas it should show a deep space galaxy cluster."
+   }
+  ],
+  "error": null
+ }
+}

@@ -1,0 +1,15 @@
+Image credits:
+- "The Earth seen from Apollo 17" by NASA/Apollo 17 crew; taken by either Harrison Schmitt or Ron Evans, Public domain, via Wikimedia Commons. https://commons.wikimedia.org/wiki/File:The_Earth_seen_from_Apollo_17.jpg
+- Illustration generated with Segmind-Vega (Apache-2.0): clouds in the sky
+- "The Crab Nebula (weic2326a)" by NASA, ESA, CSA, STScI, T. Temim (Princeton University), CC BY 4.0, via Wikimedia Commons. https://commons.wikimedia.org/wiki/File:The_Crab_Nebula_(weic2326a).jpg
+- Illustration generated with Segmind-Vega (Apache-2.0): a massive star with a collapsing core
+- Kepler Beyond Planets: Finding Exploding Stars (Type Ia Supernova from a White Dwarf Merger) — NASA/JPL-Caltech, NASA, public domain. https://images.nasa.gov/details/PIA22353
+- Blowin in the Stellar Wind — NASA/JPL-Caltech/UCLA, NASA, public domain. https://images.nasa.gov/details/PIA14103
+- "Milky Way IR Spitzer" by Credit: NASA/JPL-Caltech/S. Stolovy (Spitzer Science Center/Caltech), Public domain, via Wikimedia Commons. https://commons.wikimedia.org/wiki/File:Milky_Way_IR_Spitzer.jpg
+- Thackeray Globules — NASA and The Hubble Heritage TeamNASA and The Hubble Heritage Team STScI/AURA Acknowledgment: Bo Reipurth University of Hawaii STScI/AURA, NASA, public domain. https://images.nasa.gov/details/PIA04223
+- Illustration generated with Segmind-Vega (Apache-2.0): planet Earth viewed from space
+- "Betelgeuse captured by ALMA" by ALMA (ESO/NAOJ/NRAO)/E. O’Gorman/P. Kervella, CC BY 4.0, via Wikimedia Commons. https://commons.wikimedia.org/wiki/File:Betelgeuse_captured_by_ALMA.jpg
+- Illustration generated with Segmind-Vega (Apache-2.0): deep space galaxy cluster
+- Brown Dwarfs in our Backyard — NASA/JPL-Caltech/Gemini Observatory/AURA/NSF, NASA, public domain. https://images.nasa.gov/details/PIA17992
+
+Music: "Steve Combs - 10 - Ambient 507050" by Steve Combs, CC BY 4.0, via Wikimedia Commons. https://commons.wikimedia.org/wiki/File:Steve_Combs_-_10_-_Ambient_507050.ogg

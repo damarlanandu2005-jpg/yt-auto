@@ -1,0 +1,44 @@
+[model] gemini-3.5-flash-lite
+[system]
+
+
+[user]
+Step 2 of a picture check for a science video. Someone looked at each picture WITHOUT knowing
+what it should show and described it. Decide for each image whether the picture fits.
+A photo fits only if the description shows it clearly depicts what it should show: not mostly text,
+not a test target, not a different planet or object than the narration is about, no watermark, nothing
+misleading. A diagram, infographic or poster with many labels or much text does NOT fit (too small to read
+in a video, and made for another purpose). A chart or graph fits ONLY if its labels show it is about exactly what the narration says (a graph
+of Mars data, or with unexplained labels like 'RHOS', does not fit a sentence about Earth or a star).
+When unsure, answer fits = false (a chart or plain card is shown instead, which is fine).
+Copy the description into "seen".
+Image 1: described as: A full view of planet Earth against a black background, showing Africa and parts of the surrounding oceans and clouds.
+  should show: Earth seen from space
+  narration: system and rip Earth's atmosphere away into space?
+Image 2: described as: An experimental aircraft, the Boeing X-48B, flying overhead against a clear blue sky, showing its blended wing body design.
+  should show: clouds in the sky
+  narration: How essential is our oxygen atmosphere for survival?
+Image 3: described as: A colorful nebula in outer space with wispy filaments of gas and dust glowing in shades of blue, orange, and white.
+  should show: a bright supernova remnant
+  narration: In reality, a supernova is a powerful explosion marking the death of a star.
+Image 4: described as: An artist's illustration of a star with a surrounding debris disk and an asteroid-like body colliding with or disrupting the ring structure.
+  should show: a white dwarf star
+  narration: Alternatively, an exploding white dwarf star undergoes runaway nuclear fusion.
+Image 5: described as: A dense star field and glowing green cosmic dust cloud with intricate patterns, captured by an infrared telescope.
+  should show: interstellar gas and dust
+  narration: of matter into the surrounding interstellar medium.
+Image 6: described as: A wide infrared view of the central region of the Milky Way galaxy, filled with countless stars and reddish cosmic dust clouds.
+  should show: the Milky Way galaxy
+  narration: Astronomers define a near-Earth supernova as one
+Image 7: described as: A cosmic landscape showing bright blue stars scattered across dramatic green and red nebulous dust clouds.
+  should show: a bright star in the night sky
+  narration: Although these dying stars will shine brilliantly, they
+Image 8: described as: A close-up image of the supergiant star Betelgeuse, appearing as a mottled, irregular orange-red sphere against a black background.
+  should show: Betelgeuse star in Orion constellation
+  narration: What about the famous red supergiant star Betelgeuse?
+Image 9: described as: The Hubble Ultra Deep Field image, showcasing thousands of distant galaxies of various shapes, sizes, and colors scattered across space.
+  should show: deep space galaxy cluster
+  narration: Looking back in time, other relatively nearby stars have exploded in Earth's past.
+Image 10: described as: An artist's illustration of a double debris ring system around a central star in a dark, star-filled region of space.
+  should show: a binary star system
+  narration: The closest known white dwarf candidate, IK Pegasi,

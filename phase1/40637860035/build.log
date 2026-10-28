@@ -1,0 +1,34 @@
+[diag] machine: {'arch': 'x86_64', 'cpus': 4, 'python': '3.13.16', 'runner': 'GitHub Actions 1000000275', 'cpu_model': 'AMD EPYC 9V74 80-Core Processor', 'ffmpeg': 'ffmpeg version n8.1.3-24-g92611900bb-20261026 Copyright (c) 2000-2026 the FFmpeg developers'}
+[resume] using saved plan.json
+[resume] using saved sources.json
+[resume] using saved script_draft.json
+[script] 'How Close Can a Supernova Get Before It Destroys Earth?': 818 words; fact-check: 36/74 passed first time, 26 fixed, 12 dropped
+[llm] delivery: gemma-4-31b-it unavailable (HTTP 500 (busy)); trying next model
+[bench] script: 41.99 s
+[0;93m2026-10-28 05:28:07.796338861 [W:onnxruntime:Default, device_discovery.cc:95 GetPciBusId] Skipping pci_bus_id for PCI path at "/sys/devices/LNXSYSTM:00/LNXSYBUS:00/ACPI0004:00/MSFT1000:00/5620e0c7-8062-4dce-aeb7-520c7ef76171" because filename "5620e0c7-8062-4dce-aeb7-520c7ef76171" did not match expected pattern of [0-9a-f]+:[0-9a-f]+:[0-9a-f]+[.][0-9a-f]+[m
+[bench] narration: 45.55 s
+[visual_plan] saved plan has 82 slots, narration now gives 32 (or different times): making a new plan
+[bench] visual_plan: 6.38 s
+[photos] search_commons('planet Earth') failed: <HTTPError 503: 'Service Unavailable'>
+[bench] photos: 412.33 s
+[drawings] asked 8, drawn 8, used after looking 4
+[bench] drawings: 496.04 s
+[bench] keyframes: 8.76 s
+[bench] segments: 35.4 s
+[bench] subtitles: 8.9 s
+[keywords] 3 key words on screen
+[sound] music: {'title': 'Steve Combs - 10 - Ambient 507050', 'author': 'Steve Combs', 'licence': 'CC BY 4.0', 'source_page': 'https://commons.wikimedia.org/wiki/File:Steve_Combs_-_10_-_Ambient_507050.ogg'}; 31 transition sounds
+[bench] assemble: 37.87 s
+[bench] preview: 5.98 s
+[gate] FAIL: {'video_minutes': 'FLAG', 'pronunciation': 'FLAG', 'thumbnail': 'FAIL'}
+[bench] gate: 7.42 s
+{
+  "title": "How Close Can a Supernova Get Before It Destroys Earth?",
+  "words": 303,
+  "video_seconds": 147.5,
+  "visuals": 32,
+  "photos": 9,
+  "drawings": 4,
+  "cards": 19,
+  "seconds_per_visual": 4.61
+}

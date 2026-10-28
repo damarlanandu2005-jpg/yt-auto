@@ -1,0 +1,161 @@
+[model] gemini-3.5-flash-lite
+[system]
+
+
+[user]
+Pick the best photo for each slot from its numbered candidates (title | description).
+Choose a candidate if it shows the slot's subject or something closely related that fits the narration
+(it does not need to match every detail: a photo of a real handheld GPS receiver fits "a hiker's GPS").
+Answer "" only when no candidate is related, or the only related ones would mislead the viewer.
+Prefer real photographs over diagrams with small text, logos, or maps with dense labels. Avoid close-up
+faces of private people. Do not use the same photo twice.
+Answer choice = the candidate number as text, or "".
+
+[v002] needs: Earth seen from space | narration: system and rip Earth's atmosphere away into space?
+  nasa:0: View of Skylab space station cluster in Earth orbit from CSM | SL4-143-4707 (8 Feb. 1974) --- An overhead view of the Skylab space station cluster in Earth orbit as photographed from the Skylab 4 Command and Service Modules
+  nasa:1: View of Skylab space station cluster in Earth orbit from CSM | SL4-143-4706 (8 Feb. 1974) --- An overhead view of the Skylab space station cluster in Earth orbit as photographed from the Skylab 4 Command and Service Modules
+  nasa:2: NASA Google+ Hangout: 'Earthrise' A New Visualization - 45th Anniversary of Apollo 8 Viewi | Join NASA's Google+ Hangout on Friday, December 20th 2:00 - 3:00 PM (EST) at go.nasa.gov/18S2TbC It was 45 years ago, on December 24, 1968 when Apollo 8 astrona
+  nasa:3: Earth Observation from the International Space Station | Night Earth Observation from the International Space Station
+  nasa:4: Earth observations taken during STS-75 | Earth observations taken during the STS-75 mission from the space shuttle Columbia.
+  nasa:5: Aurora Australis, Sinuous Loop | STS039-23-020 (28 April-6 May 1991) --- A 35mm frame of the Aurora Australis, also known as the Southern Lights, photographed from Space Shuttle Discovery's fli
+  wiki:6: Space Shuttle Columbia launching | The April 12 launch at Pad 39A of STS-1, just seconds past 7 a.m., carries astronauts John Young and Robert Crippen into an Earth orbital mission scheduled to l
+  wiki:7: Earth's City Lights by DMSP, 1994-1995 (large) | This image of Earth’s city lights was created with data from the Defense Meteorological Satellite Program (DMSP) Operational Linescan System (OLS). Originally d
+  wiki:8: NASA-Apollo8-Dec24-Earthrise | Taken by Apollo 8 crewmember Bill Anders on December 24, 1968, at mission time 075:49:07 [8] (16:40 UTC), while in orbit around the Moon, showing the Earth risi
+  wiki:9: STS-135 final flyaround of ISS 1 | STS-135 final flyaround of ISSThis picture of the International Space Station was photographed from the space shuttle Atlantis as the orbiting complex and the s
+  wiki:10: North America from low orbiting satellite Suomi NPP | A view of most of North America taken from a low orbit of about 826 km altitude. The whole hemisphere is not visible owing to the low orbit, and the horizon is 
+  wiki:11: The Earth seen from Apollo 17 | "The Blue Marble" is a famous photograph of the Earth taken on December 7, 1972, by the crew of the Apollo 17 spacecraft en route to the Moon at a distance of a
+
+[v005] needs: clouds in the sky | narration: How essential is our oxygen atmosphere for survival?
+  nasa:0: With sensor booms projecting ahead of the wing, the Pathfinder-Plus soars under a blue sky | With its sensor booms projecting ahead of the wing, the Pathfinder-Plus solar-electric aircraft soars under a blue sky on a turbulence measurement research flig
+  nasa:1: With sensor booms projecting ahead of the wing, the Pathfinder-Plus soars under a blue sky | With its sensor booms projecting ahead of the wing, the Pathfinder-Plus solar wing soars under a blue sky on its final turbulence measurement research flight.
+  nasa:2: Stars fill the sky above a serene, blue-green airglow blanketing Earth's horizon | iss073e0830977 (Sept. 27, 2025) --- Stars fill the sky above a serene, blue-green airglow blanketing Earth's horizon in this photograph taken from the Internati
+  nasa:3: A pristine blue sky backdrops the X-48B Blended Wing Body aircraft during the aircraft's f | A pristine blue sky backdrops the X-48B Blended Wing Body aircraft during the aircraft's first flight July 20, 2007, from NASA's Dryden Flight Research Center.
+  nasa:4: KENNEDY SPACE CENTER, FLA. - A successful controlled burn near KSC’s Launch Complex 39 are | KENNEDY SPACE CENTER, FLA. - A successful controlled burn near KSC’s Launch Complex 39 area creates clouds of smoke in a clear blue sky. The water seen is the B
+  nasa:5: Pluto Blue Sky | Pluto's haze layer shows its blue color in this picture taken by the New Horizons Ralph/Multispectral Visible Imaging Camera (MVIC). The high-altitude haze is t
+  wiki:6: Trees rising out of Cheow Lan Lake, blue sky, eternal summer in Surat Thani edited | Old submerged trees on Cheow Lan Reservoir Lake in Surat Thani, Thailand. Remnants of the old Shorea Dipterocarp forest. The lake shores still harbour forests w
+  wiki:7: Burimun gate and pine under blue sky at Beomeosa temple in Busan, South Korea | Burimun gate and high Japanese black pine at Beomeosa Buddhist temple, under a blue sky in Busan, South Korea.
+  wiki:8: Front view of the Imperial Throne Hall Geunjeongjeon at Gyeongbokgung Palace with blue sky | Front view of the Imperial Throne Hall Geunjeongjeon, at Gyeongbokgung Palace, with blue sky in Seoul, South Korea.
+  wiki:9: Front view of Jibokjae Hall under blue sky at Gyeongbokgung Palace in Seoul | Front view of Jibokjae Hall under blue sky at Gyeongbokgung Palace in Seoul, South Korea.
+  wiki:10: Cheomseongdae Observatory under blue sky in Gyeongju South Korea | Cheomseongdae Observatory, under blue sky in Gyeongju, South Korea. In stone, it was constructed in the 7th century.
+  wiki:11: Bulguksa temple entrance gate stairs flower bed and blue sky in Gyeongju South Korea | Cheongungyo and Baegungyo Stairs at Bulguksa Buddhist temple entrance, flower bed and blue sky, in Gyeongju, South Korea.
+
+[v006] needs: a bright supernova remnant | narration: In reality, a supernova is a powerful explosion marking the death of a star.
+  nasa:0: Supernova Remnant W49B | Release date Dec. 30, 2009 In the supernova remnant W49B, Suzaku found another fossil fireball. It detected X-rays produced when heavily ionized iron atoms reca
+  nasa:1: Vivid View of Tycho Supernova Remnant | This composite image of the Tycho supernova remnant combines infrared and X-ray observations obtained with NASA Spitzer and Chandra space observatories, respect
+  nasa:2: Supernova Remnant in 3-D | For the first time, a multiwavelength three-dimensional reconstruction of a supernova remnant has been created. This visualization of Cassiopeia A, or Cas A, th
+  wiki:3: Tycho-supernova-xray | The Chandra X-ray Observatory image of Tycho's Supernova Remnant depicts a glowing, multi-colored sphere that appears to be suspended in the blackness of space.
+  wiki:4: Supernova Remnant SN 1006 | This image is a composite of visible (or optical), radio, and X-ray data of the full shell of the supernova remnant from SN 1006. The radio data show much of th
+  wiki:5: NASA-SNR0519690-ChandraXRayObservatory-20150122 | X-ray &amp; Optical Images of SNR E0519-69.0 - When a massive star exploded in the Large Magellanic Cloud, a satellite galaxy to the Milky Way, it left behind a
+  wiki:6: Vela supernova - VST - Eso2214a | The Vela supernova remnant imaged by the VLT Survey Telescope The image shows stringy clouds of hot pink and golden orange, nested together all over the frame, 
+  wiki:7: Vela Supernova Remnant - Noirlab2406a | Vela Supernova Remnant, using line filters for OIII, SII, H-alpha &amp; NII Ghostly Stellar Tendrils of the Vela Supernova Remnant This colorful web of wispy ga
+  wiki:8: Crab Nebula | This is a mosaic image, one of the largest ever taken by NASA's Hubble Space Telescope, of the Crab Nebula, a six-light-year-wide expanding remnant of a star's 
+  wiki:9: Crab nebula and crab pulsar composite | A combination of optical and X-ray images of the Crab Nebula. The X-ray image reveals evidence of a spinning disc of super-hot gas with high-speed jets shooting
+  wiki:10: The Crab Nebula (weic2326a) | The NASA/ESA/CSA James Webb Space Telescope has gazed at the Crab Nebula in the search for answers about the supernova remnant’s origins. Webb’s NIRCam (Near-In
+
+[v008] needs: a white dwarf star | narration: Alternatively, an exploding white dwarf star undergoes runaway nuclear fusion.
+  nasa:0: Kepler Beyond Planets: Finding Exploding Stars (Type Ia Supernova from a White Dwarf Merge | This frame from an animation shows the merger of two white dwarfs. A white dwarf is an extremely dense remnant of a star that can no longer burn nuclear fuel at
+  nasa:1: Scene of Multiple Explosions | This composite image NASA Galaxy Evolution Explorer shows Z Camelopardalis, or Z Cam, a double-star system featuring a collapsed, dead star, called a white dwar
+  nasa:2: Comet Bites the Dust Around Dead Star  Artist Concept | This artist concept illustrates a comet being torn to shreds around a dead star, or white dwarf, called G29-38. NASA Spitzer Space Telescope observed a cloud of
+  nasa:3: Silicates in Alien Asteroids | This plot of data from NASA Spitzer Space Telescopes shows that asteroid dust around a dead white dwarf star contains silicates -- a common mineral on Earth.
+  nasa:4: Coolest Orbs on the Block Artist Concept | This artist concept shows hundreds of brown dwarfs deep red, expected to be added to the population of known stars in our solar neighborhood. Our sun and other 
+  wiki:5: Artist’s impression of debris around a white dwarf star | This is an artist’s impression of a white dwarf (burned-out) star accreting rocky debris left behind by the star’s surviving planetary system. It was observed b
+  wiki:6: White Dwarf Resurrection | The bright star in the centre of this image is not the star of this show. At the bottom centre is a rather unremarkable smudge of red which is in fact a rare an
+  wiki:7: White Dwarf Population in Globular Cluster M4 (1995-32-328) | White Dwarf Population in Globular Cluster M4
+  wiki:8: Sirius A and B artwork | This picture is an artist's impression showing how the binary star system of Sirius A and its diminutive blue companion, Sirius B, might appear to an interstell
+  wiki:9: Sirius B-Earth comparison | Sirius B and Earth in scale.
+  wiki:10: Artist's impression of the sizes of Sirius B and the Earth | Based on the Hubble measurements made with the Space Telescope Imaging Spectrograph, an international team found that Sirius B has a mass that is 98 percent tha
+
+[v010] needs: interstellar gas and dust | narration: of matter into the surrounding interstellar medium.
+  nasa:0: KSC-02pd2055 | KENNEDY SPACE CENTER, FLA. - The Cosmic Hot Interstellar Plasma Spectrometer, or CHIPSat, undergoes final processing before launch. CHIPSat, a suitcase-size 131
+  nasa:1: KSC-02pd2056 | KENNEDY SPACE CENTER, FLA. - The Cosmic Hot Interstellar Plasma Spectrometer, or CHIPSat, undergoes final processing before launch. CHIPSat, a suitcase-size 131
+  nasa:2: KSC-02pd2054 | KENNEDY SPACE CENTER, FLA. - The Cosmic Hot Interstellar Plasma Spectrometer, or CHIPSat, undergoes final processing before launch. CHIPSat, a suitcase-size 131
+  nasa:3: KSC-02pd2053 | KENNEDY SPACE CENTER, FLA. - The Cosmic Hot Interstellar Plasma Spectrometer, or CHIPSat, undergoes final processing before launch. CHIPSat, a suitcase-size 131
+  nasa:4: Bow Shock Around Young Star | This image, taken by the Hubble Space Telescope, shows a bow shock around a very young star, LL Ori. The bow shock shows where the star's heliosphere collides w
+  nasa:5: KSC-02pd2060 | KENNEDY SPACE CENTER, FLA. - A second stage is lifted at NASA's Space Launch Complex 2 (SLC-2) at Vandenberg Air Force Base, Calif., for placement atop a Delta 
+  wiki:6: Uncertain size-frequency distribution of interstellar visitors | Interstellar visitors in the Solar System cover the whole range of sizes - from kilometer large objects down to submicron particles. Also, interstellar dust and
+  wiki:7: Milky Way 360 equirectangular rendering with foreground stars removed | This image was rendered by bsrender (https://github.com/kevinloch/bsrender) using the star records from the Gaia EDR3 dataset (https://www.cosmos.esa.int/web/ga
+  wiki:8: Milky Way 360-degree rendering with foreground stars removed | This image was rendered by bsrender (https://github.com/kevinloch/bsrender) using the star records from the Gaia EDR3 dataset (https://www.cosmos.esa.int/web/ga
+  wiki:9: Interstellar medium annotated | An annotated illustration of the interstellar medium on a logarithmic scale. The solar gravity lens marks the point where a conceptual spacecraft in interstella
+  nasa:10: Blowin in the Stellar Wind | This image of the Elephant Trunk nebula from NASA Wide-field Survey Explorer shows clouds of dust and gas being pushed and eroded by a massive star. The bright 
+  nasa:11: In the Grip of the Scorpion Claw | Gripped in the claw of the constellation Scorpius sits the reflection nebula DG 129, a cloud of gas and dust that reflects light from nearby, bright stars. This
+
+[v014] needs: the Milky Way galaxy | narration: Astronomers define a near-Earth supernova as one
+  nasa:0: A Break in the Milky Way's Sagittarius Arm | A contingent of young stars and star-forming gas clouds is sticking out of one of the Milky Way's spiral arms like a splinter protruding from a plank of wood. S
+  nasa:1: A Glimpse of the Milky Way | In visible light, the bulk of our Milky Way galaxy stars are eclipsed behind thick clouds of galactic dust and gas. But to the infrared eyes of NASA Spitzer Spa
+  nasa:2: The Milky Way Center Aglow with Dust | Our Milky Way is a dusty place. So dusty that we cannot see the center of the galaxy in visible light. Thanks to NASA Spitzer Space Telescope excellent resoluti
+  wiki:3: Milky Way IR Spitzer | The center of our Milky Way galaxy is hidden from the prying eyes of optical telescopes by clouds of obscuring dust and gas. But in this stunning vista, the Spi
+  wiki:4: Laser Towards Milky Ways Centre | In mid-August 2010 ESO Photo Ambassador Yuri Beletsky snapped this photo at ESO’s Paranal Observatory, Chile. A group of astronomers were observing the centre o
+  wiki:5: Bontecou Lake Milky Way panorama | Panorama of the Milky Way galactic plane stretching over Bontecou Lake in Dutchess County, New York.
+  wiki:6: Milky way in Elbrus | The Milky Way over Mount Elbrus, the highest mountain in the Caucasus Mountains. The Serpens-Aquila Rift stands in the center of the view: a group of dark inter
+  wiki:7: 018 Human looking at the stars during Perseids with the Milky Way in the background Photo  | A human, aligned with the Milky Way, looks at the stars from Oeschinensee (Switzerland) during Perseids in search of shooting stars.
+  wiki:8: 036 Milky Way during Perseids seen from Oeschinensee with water reflections Photo by Giles | Vertical panorama of the Milky Way during Perseids photographed from Oeschinensee with water reflections. Here is a step by step guide to do astrophotography. E
+  nasa:9: Adding up Stars in a Galaxy | NASA Galaxy Evolution Explorer spacecraft and Cerro Tololo Inter-American Observatory combined data making this diagram illustratrating the extent to which astr
+  nasa:10: Galaxy Packs Big Star-Making Punch | The tiny red spot in this image is one of the most efficient star-making galaxies ever observed, converting gas into stars at the maximum possible rate. The gal
+  nasa:11: A Cauldron of Stars at the Galaxy Center | This dazzling infrared image from NASA Spitzer Space Telescope shows hundreds of thousands of stars crowded into the swirling core of our spiral Milky Way galax
+
+[v019] needs: a bright star in the night sky | narration: Although these dying stars will shine brilliantly, they
+  nasa:0: Thackeray Globules | Strangely glowing, floating dark clouds are silhouetted against nearby bright stars in a busy star-forming region viewed by NASA Hubble Space Telescope
+  nasa:1: Wish Upon a Star | What's that bright point of light in the outer A ring? It's a star, bright enough to be visible through the ring! Quick, make a wish! This star -- seen in the l
+  nasa:2: Flickering Aldebaran #1 | As Cassini watches the rings pass in front of the bright red giant star Aldebaran, the star light fluctuates, providing information about the concentrations of 
+  nasa:3: White Dwarfs: Small and Strong | This chart shows data from NASA Kepler space telescope, which looks for planets by monitoring changes in the brightness of stars. As planets orbit in front of a
+  nasa:4: Gas Giants Form Quickly  Artist Concept | This is an artist concept of a hypothetical 10-million-year-old star system. The bright blur at the center is a star much like our sun. The other orb in the ima
+  nasa:5: Menkhib and the California Nebula | This infrared image from NASA Wide-field Infrared Survey Explorer features one of the bright stars in the constellation Perseus, named Menkhib, along with a lar
+  wiki:6: The Bright Star Public House sign - geograph.org.uk - 5725790 | The Bright Star Public House sign
+  wiki:7: Bright Star at Peters Green | The Bright Star, Peters Green, Kimpton, Hertfordshire
+  wiki:8: BRIGHT STAR 25- Amphibious Assault (9315821) | Egyptian Armed Forces service members participate in an amphibious assault exercise as part of exercise BRIGHT STAR 25 in Alexandria, Egypt, Sept. 10, 2025. Mul
+  nasa:9: The Night Sky on Mars | The Night Sky on Mars
+  nasa:10: Creative Photography - Night Sky | Sea oats are backdropped by the night sky and the Milky Way in this view from the Atlantic shoreline at NASA’s Kennedy Space Center in Florida on Oct. 31, 2019.
+  nasa:11: Creative Photography - Night Sky | Sea oats frame the night sky, bisected by the Milky Way, in this view from the Atlantic shoreline at NASA’s Kennedy Space Center in Florida on Oct. 31, 2019. Th
+
+[v020] needs: planet Earth viewed from space | narration: pose little direct threat to our planet.
+  nasa:0: View of Skylab space station cluster in Earth orbit from CSM | SL4-143-4707 (8 Feb. 1974) --- An overhead view of the Skylab space station cluster in Earth orbit as photographed from the Skylab 4 Command and Service Modules
+  nasa:1: View of Skylab space station cluster in Earth orbit from CSM | SL4-143-4706 (8 Feb. 1974) --- An overhead view of the Skylab space station cluster in Earth orbit as photographed from the Skylab 4 Command and Service Modules
+  nasa:2: NASA Google+ Hangout: 'Earthrise' A New Visualization - 45th Anniversary of Apollo 8 Viewi | Join NASA's Google+ Hangout on Friday, December 20th 2:00 - 3:00 PM (EST) at go.nasa.gov/18S2TbC It was 45 years ago, on December 24, 1968 when Apollo 8 astrona
+  nasa:3: Earth Observation from the International Space Station | Night Earth Observation from the International Space Station
+  nasa:4: Earth observations taken during STS-75 | Earth observations taken during the STS-75 mission from the space shuttle Columbia.
+  nasa:5: Aurora Australis, Sinuous Loop | STS039-23-020 (28 April-6 May 1991) --- A 35mm frame of the Aurora Australis, also known as the Southern Lights, photographed from Space Shuttle Discovery's fli
+  wiki:6: Space Shuttle Columbia launching | The April 12 launch at Pad 39A of STS-1, just seconds past 7 a.m., carries astronauts John Young and Robert Crippen into an Earth orbital mission scheduled to l
+  wiki:7: Earth's City Lights by DMSP, 1994-1995 (large) | This image of Earth’s city lights was created with data from the Defense Meteorological Satellite Program (DMSP) Operational Linescan System (OLS). Originally d
+  wiki:8: NASA-Apollo8-Dec24-Earthrise | Taken by Apollo 8 crewmember Bill Anders on December 24, 1968, at mission time 075:49:07 [8] (16:40 UTC), while in orbit around the Moon, showing the Earth risi
+  wiki:9: STS-135 final flyaround of ISS 1 | STS-135 final flyaround of ISSThis picture of the International Space Station was photographed from the space shuttle Atlantis as the orbiting complex and the s
+  wiki:10: North America from low orbiting satellite Suomi NPP | A view of most of North America taken from a low orbit of about 826 km altitude. The whole hemisphere is not visible owing to the low orbit, and the horizon is 
+  wiki:11: The Earth seen from Apollo 17 | "The Blue Marble" is a famous photograph of the Earth taken on December 7, 1972, by the crew of the Apollo 17 spacecraft en route to the Moon at a distance of a
+
+[v021] needs: Betelgeuse star in Orion constellation | narration: What about the famous red supergiant star Betelgeuse?
+  nasa:0: Stars in Orion as Seen from Mars | Stars in the upper portion of the constellation Orion the Hunter, including the bright shoulder star Betelgeuse and Orion three-star belt, appear in this image 
+  nasa:1: Jupiter Ring, With Orion | As NASA's Juno spacecraft flew through the narrow gap between Jupiter's radiation belts and the planet during its first science flyby, Perijove 1, on August 27,
+  wiki:2: Betelgeuse captured by ALMA | This orange blob shows the nearby star Betelgeuse, as seen by the Atacama Large Millimeter/submillimeter Array (ALMA). This is the first time that ALMA has ever
+  wiki:3: Arcturus to Betelgeuse comparison | A size comparison between the Sun, red giant Arcturus, blue supergiant Rigel, blue hypergiant S Doradus, and red supergiants Antares (at minimum) and Betelgeuse
+  wiki:4: Betelgeuse – and its newfound companion star | A century-old hypothesis that Betelgeuse, the 10th brightest star in our night sky, is orbited by a very close companion star was proved true by a team of astro
+  wiki:5: Location of the binary system of Betelgeuse in constellation Orion | Photo of the constellation Orion produced by NOIRLab in collaboration with Eckhard Slawik, a German astrophotographer. This is the annotated version. Steve Howe
+  nasa:6: STS-54 astronomical observation of the constellation Orion | STS054-97-018 (13-19 Jan 1993) --- The STS-54 crew used a handheld 70mm camera to record this view of the constellation Orion. Five astronauts spent six days ab
+  nasa:7: KSC-08pd3660 | CAPE CANAVERAL, Fla. – Segments of a crane are being offloaded at the Operations and Checkout Building at NASA's Kennedy Space Center in Florida. The new O&C lo
+  nasa:8: KSC-08pd4137 | CAPE CANAVERAL, Fla. – Segments of a new crane are tested inside the Operations and Checkout Building at NASA's Kennedy Space Center in Florida. The new O&C low
+  nasa:9: KSC-08pd3659 | CAPE CANAVERAL, Fla. – Segments of a crane arrive at the Operations and Checkout Building at NASA's Kennedy Space Center in Florida. The new O&C low-bay crane i
+  nasa:10: KSC-08pd3661 | CAPE CANAVERAL, Fla. – Segments of a crane are lowered onto the floor of the Operations and Checkout Building at NASA's Kennedy Space Center in Florida. The new
+  nasa:11: KSC-08pd3662 | CAPE CANAVERAL, Fla. – Segments of a crane are moved into the Operations and Checkout Building at NASA's Kennedy Space Center in Florida. The new O&C low-bay cr
+
+[v026] needs: deep space galaxy cluster | narration: Looking back in time, other relatively nearby stars have exploded in Earth's past.
+  nasa:0: NASA's Deep Space Antenna Upgrade to Affect Voyager | DSS43 is a 70-meter-wide (230-feet-wide) radio antenna at the Deep Space Network's Canberra facility in Australia. It is the only antenna that can send commands
+  nasa:1: New All-in-One Antenna for the Deep Space Network | Deep Space Station 56, or DSS-56, is a powerful 34-meter-wide (112-foot-wide) antenna that was added to the Deep Space Network's Madrid Deep Space Communication
+  nasa:2: Artist Concept of Deep Space 1 | Artist concept of the Deep Space 1 spacecraft from December, 2002. http://photojournal.jpl.nasa.gov/catalog/PIA04242
+  nasa:3: Deep Space Atomic Clock Hardware | NASA's Deep Space Atomic Clock could revolutionize deep space navigation. One key requirement for the technology demonstration was a compact design. The complet
+  nasa:4: Artist Concept of Deep Space 1 Encounter with Comet Borrelly | Artist concept of NASA Deep Space 1 Encounter with Comet Borrelly.
+  nasa:5: A New Antenna for NASA's Deep Space Network | Deep Space Station 53, or DSS-53, is a new 34-meter (111-foot) beam waveguide antenna that went online in February 2022 at NASA's Deep Space Network's ground st
+  wiki:6: Hubble ultra deep field | The Hubble Ultra Deep Field, is an image of a small region of space in the constellation Fornax, composited from Hubble Space Telescope data accumulated over a 
+  wiki:7: Webb's First Deep Field | SMACS 0723-73 (1RXS J072319.7-732735, SMACS J0723.3-7327) NASA’s James Webb Space Telescope has produced the deepest and sharpest infrared image of the distant 
+  wiki:8: Deep Space Nine filming model - Star Trek - Exploring New Worlds Exhibit at the Henry Ford | The Deep Space 9 space station filming miniature used in Star Trek: Deep Space Nine from 1993-1999. Although it is called a miniature, the model is a good 5 fee
+  nasa:9: Virgo Galaxy Cluster | This ultraviolet image from NASA Galaxy Evolution Explorer is of a small area of the Virgo Cluster of galaxies. http://photojournal.jpl.nasa.gov/catalog/PIA0790
+  nasa:10: Monster in the Middle: Brightest Cluster Galaxy | This image shows two of the galaxy clusters observed by NASA WISE and Spitzer Space Telescope missions. Galaxy clusters are among the most massive structures in
+  nasa:11: Gigantic Wave Discovered in Perseus Galaxy Cluster | Combining data from NASA's Chandra X-ray Observatory with radio observations and computer simulations, an international team of scientists has discovered a vast
+
+[v031] needs: a binary star system | narration: The closest known white dwarf candidate, IK Pegasi,
+  nasa:0: Birth of an Earth-like Planet Artist Xoncept | This artist conception shows a binary-star, or two-star, system, called HD 113766, where astronomers suspect a rocky Earth-like planet is forming around one of 
+  nasa:1: Brown Dwarfs in our Backyard | The third closest star system to the sun, called WISE J104915.57-531906, center of large image, which was taken by NASA WISE. It appeared to be a single object,
+  nasa:2: Before the Smashup Artist Concept | This artist concept illustrates an imminent planetary collision around a pair of double stars. NASA Spitzer Space Telescope found evidence that such collisions 
+  nasa:3: Ghostly Remnant of an Explosive Past | This enhanced image from the far-ultraviolet detector on NASA Galaxy Evolution shows a ghostly shell of ionized gas around Z Camelopardalis, a binary, or double
+  nasa:4: Where Planets Take up Residence | This diagram illustrates that mature planetary systems like our own might be more common around twin, or binary, stars that are either really close together, or
+  wiki:5: Menkalinan | Binary star system 81 ly away in the constellation of Auriga - The two stars are metallic-lined hot blue-white subgiants roughly the same mass and diameter - Ev
+  wiki:6: Planet Lost in the Glare of Binary Stars | This illustration depicts a planet partially hidden in the glare of its host star and a nearby companion star. After examining a number of binary stars, astrono
+  wiki:7: Artist's interpretation of a close binary star system (geminiann18004a) | Artist's interpretation of a close binary star system in which several planets orbit the brighter star. The fainter companion star looms brightly in the sky (up
+  wiki:8: IKPegLightCurve | A light curve for IK Pegasi, plotted from TESS satellite data

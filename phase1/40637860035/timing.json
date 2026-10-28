@@ -1,0 +1,173 @@
+{
+ "sentences": [
+  {
+   "id": "s01.01",
+   "scene": "s01",
+   "text": "Could a dying star explode near our solar system and rip Earth's atmosphere away into space?",
+   "start": 0.01,
+   "end": 7.086
+  },
+  {
+   "id": "s01.02",
+   "scene": "s01",
+   "text": "Do science fiction movies show a fiery blast wave sweeping our planet bare within seconds?",
+   "start": 7.939,
+   "end": 14.007
+  },
+  {
+   "id": "s01.03",
+   "scene": "s01",
+   "text": "Why does this question matter when considering terrestrial life?",
+   "start": 14.854,
+   "end": 18.633
+  },
+  {
+   "id": "s01.04",
+   "scene": "s01",
+   "text": "How essential is our oxygen atmosphere for survival?",
+   "start": 19.508,
+   "end": 22.831
+  },
+  {
+   "id": "s01.05",
+   "scene": "s01",
+   "text": "In reality, a supernova is a powerful explosion marking the death of a star.",
+   "start": 23.756,
+   "end": 28.896
+  },
+  {
+   "id": "s01.06",
+   "scene": "s01",
+   "text": "When a massive star runs out of fuel, its core collapses under immense gravitational force.",
+   "start": 29.359,
+   "end": 35.185
+  },
+  {
+   "id": "s01.07",
+   "scene": "s01",
+   "text": "Alternatively, an exploding white dwarf star undergoes runaway nuclear fusion.",
+   "start": 35.618,
+   "end": 40.913
+  },
+  {
+   "id": "s01.08",
+   "scene": "s01",
+   "text": "These stellar detonations expel several solar masses of matter into the surrounding interstellar medium.",
+   "start": 41.397,
+   "end": 48.083
+  },
+  {
+   "id": "s01.09",
+   "scene": "s01",
+   "text": "The ejected material travels outward at speeds reaching several per cent of the speed of light.",
+   "start": 48.585,
+   "end": 54.391
+  },
+  {
+   "id": "s01.10",
+   "scene": "s01",
+   "text": "This creates an expanding shock wave that sweeps up a shell of interstellar gas and dust.",
+   "start": 54.849,
+   "end": 60.413
+  },
+  {
+   "id": "s02.01",
+   "scene": "s02",
+   "text": "Where are the nearest stars that might explode in our stellar neighbourhood?",
+   "start": 61.867,
+   "end": 65.456
+  },
+  {
+   "id": "s02.02",
+   "scene": "s02",
+   "text": "Astronomers define a near-Earth supernova as one occurring within roughly 33 to 978 light-years.",
+   "start": 66.346,
+   "end": 74.176
+  },
+  {
+   "id": "s02.03",
+   "scene": "s02",
+   "text": "Currently, our galaxy holds up to 14 potential near-Earth supernovas inside that broader distance.",
+   "start": 74.616,
+   "end": 81.161
+  },
+  {
+   "id": "s02.04",
+   "scene": "s02",
+   "text": "A few famous stars located within several hundred light-years could explode in just 1,000 years.",
+   "start": 81.611,
+   "end": 88.002
+  },
+  {
+   "id": "s02.05",
+   "scene": "s02",
+   "text": "Although these dying stars will shine brilliantly, they pose little direct threat to our planet.",
+   "start": 88.989,
+   "end": 95.866
+  },
+  {
+   "id": "s02.06",
+   "scene": "s02",
+   "text": "What about the famous red supergiant star Betelgeuse?",
+   "start": 96.331,
+   "end": 99.559
+  },
+  {
+   "id": "s02.07",
+   "scene": "s02",
+   "text": "Scientists estimate that Betelgeuse could require as long as 1.5 million years to explode as a supernova.",
+   "start": 100.469,
+   "end": 107.924
+  },
+  {
+   "id": "s02.08",
+   "scene": "s02",
+   "text": "When it detonates, its particle stream will reach Earth about 100,000 years after the initial light.",
+   "start": 108.403,
+   "end": 115.072
+  },
+  {
+   "id": "s02.09",
+   "scene": "s02",
+   "text": "Looking back in time, other relatively nearby stars have exploded in Earth's past.",
+   "start": 115.542,
+   "end": 120.802
+  },
+  {
+   "id": "s02.10",
+   "scene": "s02",
+   "text": "The Vela supernova exploded about 12,000 years ago roughly 800 light-years away from our Sun.",
+   "start": 121.239,
+   "end": 127.961
+  },
+  {
+   "id": "s02.11",
+   "scene": "s02",
+   "text": "Another explosion called Geminga occurred roughly 300,000 years ago at a distance of 550 light-years.",
+   "start": 128.438,
+   "end": 136.782
+  },
+  {
+   "id": "s02.12",
+   "scene": "s02",
+   "text": "The closest known white dwarf candidate, IK Pegasi, is currently moving away to a safe distance.",
+   "start": 137.769,
+   "end": 146.078
+  }
+ ],
+ "scenes": [
+  {
+   "id": "s01",
+   "heading": "The Hollywood Shockwave Myth",
+   "start": 0.0,
+   "end": 61.85333333333333
+  },
+  {
+   "id": "s02",
+   "heading": "The Stellar Safety Line",
+   "start": 61.85333333333333,
+   "end": 147.512
+  }
+ ],
+ "total": 147.512
+}
