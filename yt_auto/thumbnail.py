@@ -22,7 +22,7 @@ SCHEMA = {"type": "object", "properties": {
     "required": ["picture", "text", "red_word"]}
 
 
-def choose(title: str, question: str, seen: dict[str, str]) -> dict:
+def choose(title: str, question: str, seen: dict[str, str], key_lines: str = "") -> dict:
     lines = "\n".join(f"{k}: {v}" for k, v in seen.items())
     prompt = f"""Make a YouTube thumbnail for this video.
 Title: {title}
