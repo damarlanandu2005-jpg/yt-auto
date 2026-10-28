@@ -1,0 +1,5 @@
+[llm] shorts_plan: gemma-4-31b-it unavailable (HTTP 503 (busy)); trying next model
+[plan] 1 Short(s): Why Is Our Universe 93 Billion Light-Years Across?
+[0;93m2026-10-28 15:11:12.599885372 [W:onnxruntime:Default, device_discovery.cc:95 GetPciBusId] Skipping pci_bus_id for PCI path at "/sys/devices/LNXSYSTM:00/LNXSYBUS:00/ACPI0004:00/MSFT1000:00/5620e0c7-8062-4dce-aeb7-520c7ef76171" because filename "5620e0c7-8062-4dce-aeb7-520c7ef76171" did not match expected pattern of [0-9a-f]+:[0-9a-f]+:[0-9a-f]+[.][0-9a-f]+[m
+[short 1] {"title": "Why Is Our Universe 93 Billion Light-Years Across?", "hook": "How can light travel across billions of years if time started sooner?", "sentences": ["s01.03", "s01.08", "s01.10", "s03.09", "s04.09", "s07.08"], "subject": "a rubber band with dots on it", "seconds": 62.4, "error": "62.4 s is too long for a Short", "build_s": 23.3}
+no Short was made (see report.json)

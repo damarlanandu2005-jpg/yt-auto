@@ -1,0 +1,74 @@
+{
+ "long_title": "Why the Observable Universe Is 93 Billion Light-Years Wide",
+ "started": "2026-10-28 15:09:27 UTC",
+ "music": {
+  "title": "Kevin MacLeod - Dream Culture",
+  "author": "Kevin MacLeod",
+  "licence": "CC BY 3.0",
+  "source_page": "https://commons.wikimedia.org/wiki/File:Kevin_MacLeod_-_Dream_Culture.ogg"
+ },
+ "shorts": [
+  {
+   "title": "Why Is Our Universe 93 Billion Light-Years Across?",
+   "hook": "How can light travel across billions of years if time started sooner?",
+   "sentences": [
+    "s01.03",
+    "s01.08",
+    "s01.10",
+    "s03.09",
+    "s04.09",
+    "s07.08"
+   ],
+   "subject": "a rubber band with dots on it",
+   "seconds": 62.4,
+   "error": "62.4 s is too long for a Short",
+   "build_s": 23.3
+  }
+ ],
+ "llm_calls": [
+  {
+   "name": "shorts_plan",
+   "model": "gemma-4-31b-it",
+   "prompt_chars": 8757,
+   "images": 0,
+   "status": 503,
+   "attempt": 1,
+   "error": "{\n  \"error\": {\n    \"code\": 503,\n    \"message\": \"This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.\",\n    \"status\": \"UNAVAILABLE\"\n  }\n}\n"
+  },
+  {
+   "name": "shorts_plan",
+   "model": "gemini-3.5-flash-lite",
+   "prompt_chars": 8757,
+   "images": 0,
+   "status": 200,
+   "seconds": 11.3,
+   "attempts": 1,
+   "finish": "STOP",
+   "in_tokens": 2245,
+   "out_tokens": 439,
+   "thought_tokens": null
+  }
+ ],
+ "sfx": {
+  "kind": "sound effects",
+  "name": "transition click and whoosh, generated in code (yt_auto/sound.py)",
+  "source_page": "own work",
+  "licence": "own work (all rights held by the channel owner)",
+  "attribution": "none required"
+ },
+ "music_record": {
+  "file": "music.wav",
+  "kind": "music",
+  "source": "wikimedia_commons",
+  "title": "Kevin MacLeod - Dream Culture",
+  "source_page": "https://commons.wikimedia.org/wiki/File:Kevin_MacLeod_-_Dream_Culture.ogg",
+  "download_url": "https://upload.wikimedia.org/wikipedia/commons/e/e0/Kevin_MacLeod_-_Dream_Culture.ogg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+  "licence": "CC BY 3.0",
+  "licence_url": "https://creativecommons.org/licenses/by/3.0",
+  "author": "Kevin MacLeod",
+  "attribution": "Music: \"Kevin MacLeod - Dream Culture\" by Kevin MacLeod, CC BY 3.0, via Wikimedia Commons. https://commons.wikimedia.org/wiki/File:Kevin_MacLeod_-_Dream_Culture.ogg",
+  "downloaded": "2026-10-28",
+  "seconds": 214.4,
+  "path": "out/shorts/music/music.wav"
+ }
+}

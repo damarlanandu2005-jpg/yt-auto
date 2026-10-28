@@ -1,0 +1,49 @@
+{
+  "shorts": [
+    {
+      "title": "Why Is Our Universe 93 Billion Light-Years Across?",
+      "hook": "How can light travel across billions of years if time started sooner?",
+      "sentences": [
+        "s01.03",
+        "s01.08",
+        "s01.10",
+        "s02.07",
+        "s03.09",
+        "s04.09",
+        "s07.08"
+      ],
+      "answer": "s07.08",
+      "subject": "a rubber band with dots on it",
+      "shots": [
+        {
+          "sentence": "s01.03",
+          "view": "a rubber band with dots on it laid flat on a plain wooden table"
+        },
+        {
+          "sentence": "s01.08",
+          "view": "a rubber band with two dark marker dots in the center close up"
+        },
+        {
+          "sentence": "s01.10",
+          "view": "fingers stretching the rubber band wider on both ends"
+        },
+        {
+          "sentence": "s02.07",
+          "view": "the rubber band stretched long with the dots moving farther apart"
+        },
+        {
+          "sentence": "s03.09",
+          "view": "extreme close up of the rubber surface stretching between two black dots"
+        },
+        {
+          "sentence": "s04.09",
+          "view": "fingers slowly letting the rubber band relax back to medium length"
+        },
+        {
+          "sentence": "s07.08",
+          "view": "a rubber band with dots on it resting flat on the wooden table again"
+        }
+      ]
+    }
+  ]
+}
