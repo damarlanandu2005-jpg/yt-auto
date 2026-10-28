@@ -1,0 +1,40 @@
+[model] gemini-3.5-flash-lite
+[system]
+
+
+[user]
+For each YouTube title, give the MAIN emotion it uses to make people click, and the kind of promise it makes.
+1. The Engineering Behind Delhi Metro | Delhi Metro Case Study
+2. Everything About BANK LOANS in 18 Min | 2D Animation
+3. The AI Collapse Explained | Business Case Study
+4. The Economics Of Real Estate | How Real Estate Works
+5. Women Can’t Resist Men Over 60 Who Still Do This (Rare Trait) | Female Psychology & Stoicism
+6. 5_body_parts_women_instantly_notice_in_men_over_60_Female_Psychology
+7. The_Manly_Gesture_That_Melts_Any_Woman_And_Almost_Nobody_Uses__Female_Psychology
+8. Signs_A_Woman_Likes_You_And_Is_Trying_Not_To_Show_It_FEMALE_PSYCHOLOGY
+9. Top 4 “Forbidden” Compliments That Make Women Desire You Instantly | Female Psychology |
+10. How Every Roman Hero Died
+11. 1+ Hour of How Every Greek Hero, Monster & Army Fell
+12. How Every Greek Army Was Destroyed
+13. The Most Overrated Warriors in History
+14. 6 Ancient Civilizations That Were Pure Nightmare Fuel
+15. How the Insane Were Treated in Every Civilization
+16. How Every Major Persian Dynasty Fell
+17. How Every Japanese Hero Died
+18. 1+ Hours of History's Most Dangerous Warriors & Weapons
+19. The Most Overrated Armies In History
+20. 1+ Hour of How Every Viking & Norse Legend Died
+21. Why Shell Doesn't Care About Gas Prices
+22. Why McDonald's Isn't Cheap Anymore
+23. How the Dutch Humiliated Europe’s Most Powerful King
+24. The Teacher Recruitment Scam That Cost 26,000 Jobs | 2D Animation Documentary
+25. Amit Shah Was Jailed in 2010… Then His Political Journey Took a New Turn | 2D Animation
+26. 270 Raat Tak Tunnel Khodkar Kaise Bhaage 3 Bharatiya Pilots | 2D Documentary
+27. क्यों ब्रिटिश इस भारतीय राजा से डरते थे | महाराजा रिपुदमन सिंह | 2D Documentary
+28. Bina Lock Tode ₹1000 Crore Kaise Chori Hue | 2D Documentary
+29. ​जब एक ठग ने 'एफिल टॉवर' को कबाड़ में बेच दिया! (1925 का सबसे बड़ा फ्रॉड) | 2D Animation
+30. कैसे 120 भारतीय जवान पूरी पाकिस्तानी सेना के सामने डट गए | Battle of Longewala | 2D Documentary
+31. Ek Kashmiri Ladki Ne Kaise Bani RAW Agent | Spy Story | 2D Animated Documentary
+32. The Most Traumatizing Flash Animations Explained In 9 Minutes
+33. Every YouTuber Who Became a Killer Explained In 8 Minutes
+34. The Most Unsettling YouTube Rabbit Holes Explained

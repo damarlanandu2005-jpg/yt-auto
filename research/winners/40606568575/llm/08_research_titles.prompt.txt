@@ -1,0 +1,86 @@
+[model] gemini-3.5-flash-lite
+[system]
+
+
+[user]
+For each YouTube title, give the MAIN emotion it uses to make people click, and the kind of promise it makes.
+1. Every Monster from Chinese Mythology Explained
+2. Every Monster From Norse Mythology Explained in 10 Minutes
+3. Every Monster From Japanese Mythology Explained in 10 Minutes
+4. Every Monster From Greek Mythology Explained in 12 Minutes
+5. Every Filipino Monster Villagers Feared Explained
+6. Every Sea Monster Sailors Feared Explained in 16 Minutes
+7. Every BIZARRE Tree Explained in 8 Minutes
+8. Every BIZARRE Plant Explained in 8 Minutes
+9. Japan Tsunami 2011: उस दिन की पूरी कहानी। 
+10. Kedarnath Disaster 2013: उस दिन की पूरी कहानी। 
+11. Indian Ocean Tsunami: उस दिन की पूरी कहानी। 
+12. Why Columbo Pretends He Isn’t in Charge (Psychological Analysis)
+13. Why Is The Killer Revealed at the Start of Each Columbo Episode?
+14. What Did Ancient Humans Actually Do All Day?
+15. What Did Ancient Humans Do When It Rained All Week?
+16. Why Are We the Only Human Species Left? What happened to others...
+17. Only 1% people reach this level of Thinking
+18. Unlock Your Intuition in 16 Minutes
+19. Every BIZARRE Spider Explained
+20. Every WEIRD Ant Species Explained
+21. Every BIZARRE Bamboo That Shouldn’t Exist Explained
+22. The Weirdest Mushrooms on Earth Explained
+23. Every BIZARRE Bee Species Explained
+24. The WEIRDEST Plants That Shouldn’t Exist Explained
+25. Every Plant That Can MOVE Explained in 8 Minutes
+26. Every PREHISTORIC Plant Still Alive Explained
+27. Every ANCIENT Plant That Shouldn’t Exist Explained in 8 Minutes
+28. Somewhere Far From Everything | Ambient Fantasy Music (Skyrim)
+29. A Place to Go When Life Feels Too Heavy | Ambient Fantasy (Skyrim) Music
+30. 7 Brutal Truths About Human Nature You Must Accept — Arthur Schopenhauer
+31. ఛార్జింగ్ టెన్షన్ లేని జపనీస్ అద్భుతం! | Mazda Rotary Engine EV Story in Telugu | MX-30 R-EV Truth
+32. కొత్త పవర్ పాడ్ టర్బైన్! 24 గంటల ఉచిత కరెంట్ సాధ్యమేనా? | PowerPod Wind Turbine Reality In Telugu
+33. టాటా వారి ఈ బ్యాటరీతో 24 గంటలూ ఉచిత కరెంటా? 🤔 Tata Power MySine Prime Battery Full Review in Telugu
+34. పొలాల్లో ఫ్లవర్ టర్బైన్.. 20 ఏళ్లు ఉచిత నీరు నిజమా? | Flower Turbine For Agriculture Explained
+35. 1.5 KM రైలు పట్టాలు వేసే అద్భుతం! | Indian Railways NTC Machine Explained In Telugu
+36. ఇండియాలో ఎలక్ట్రిక్ ట్రాక్టర్ విప్లవం! TAFE EV28 Full Details | Diesel vs Electric Tractor Telugu
+37. టాటా కొత్త అద్భుత కారు! Tata Sierra EV Full Review in Telugu | Price, Range & Safety Features
+38. సోలార్ కంటే బెస్ట్? Tulip Flower Wind Turbine India | Cost, Setup & Reality Explained in Telugu
+39. టాటా వేసిన మాస్టర్ ప్లాన్.. Tesla & BMW ఫ్యూజ్ అవుట్! 😱 | Tata Avinya Big Strategy Change Explained
+40. టాటా బ్యాటరీ విప్లవం! ⚡ Tata’s Game Changer EV Battery Plan
+41. భారత్‌లో తొలి తామర పువ్వు ఎయిర్‌పోర్ట్! 😱 చూసి విదేశీయులూ ఆశ్చర్యపోతున్నారు! | Shivamogga Airport
+42. ప్లాస్టిక్ ఆట ముగిసింది! 😱 How India Turns Sugarcane Waste Into Gold!
+43. బ్రెజిల్ టెక్నాలజీ వచ్చేసింది! ఫ్యాక్టరీలోనే రోడ్ల తయారీ | Steel Slag & Plastic Waste Roads
+44. आख़िर Homo Sapiens ही क्यों बचे? | Why Only Homo Sapiens Survived? 
+45. अफ्रीका में आदिमानव का जीवन कैसा था? | The Rise of Homo Sapiens (Documentary) 
+46. अमेज़न जंगल के सबसे खतरनाक रहस्य | Amazon Rainforest Documentary | World's Deadliest Jungle
+47. डायनासोर के खत्म होने के बाद क्या हुआ? | How Humans Took Over Earth
+48. 30 Cute Animal Sounds for Kids 🐈🐎🐹 | Real Sounds for Toddlers 
+49.  Animal Sounds for Kids 🐱🐶🐔 | Real Sounds for Toddlers | Farm & Wild Animals | 4K
+50. Travel to Balochistan | Full History & Complete Documentary |بلوچستان کی سیر
+51. Travel to Bahrain 🇧🇭 | Full History & Documentary 2026|بحرین کی سیر
+52. WW2 Historian Reacts to Movies | Science vs Fiction
+53. Survivalist and Wilderness Expert Reacts to Movies | Science vs Fiction
+54. Nuclear Historian Reacts to Movies | Science vs Fiction
+55. 26/11 Mumbai Attack: The Night Taj Hotel Was Attacked | Mumbai Terror Attack Documentary
+56. Osama Bin Laden: 9/11 Attack | Hindi Animated Documentary (Full Detailed Story)
+57. Ajit Doval Ki Full Story — Pakistan Mein 7 Saal Jasoosi | 2D Animated Documentary
+58. Real Prison Escape Story
+59. America vs Osama: Tora Bora Se Abbottabad Tak | DocuFrame 2D
+60. Battle of Khaybar Full History | അലി (റ) വിന്റെ ധീരത | True History Cinema
+61. ഫിർഔന്റെ അഹങ്കാരവും മൂസാ നബിയുടെ അത്ഭുതങ്ങളും | Ep-2 | True History Cinema
+62. Unexpected Discoveries That Confirm The Bible
+63. UNSOLVED Bible Mysteries Explained
+64. The Worst Deaths Of Jesus’s Disciples
+65. Funeral In Every Religion Explained in 10 Minutes
+66. Where The SOUL Goes To After Death
+67. TERRIFYING Creatures In The Bible 😱
+68. The Anunnaki Tablet That Says Enki Marked Certain Humans With His Own Hand— And Who Still Carries It
+69. The Anunnaki Tablet That Says Cats Carry a Mark Humans Can’t See — And What It  Protects Them From
+70. The Anunnaki Tablet That Says Humans Age Because of a Single Code That Was Turned Off
+71. The Anunnaki Tablet That Says Certain Humans Carry a Mark — And It Activates at a Specific Age
+72. Sumerian Text Reveals What Enki Saw on Mars That He Refused to Tell the Other Gods
+73. Sumerian Text Reveals What Gold Does to the Anunnaki That It Does Not Do to Humans
+74. The 12 Things Enki Said About the Species That Won the War — And Why He Sided Against Them
+75. Sumerian Text Reveals the Anunnaki Said the Sun Is Not a Star — And Describes What Powers It
+76. Sumerian Text Reveals What Happened to the Civilization on Mars When the Anunnaki Arrived
+77. The Dark Side of Human Psychology Explained (The Truth About Human Behavior)
+78. Why Women Chase Men Who Don't Need Them | Female Psychology Explained (Part 1)
+79. Machiavellian Secrets to Master Female Psychology | Dark Psychology & Seduction
+80. Most Dangerous Personality Type | Machiavelli & Dark Empath Explained (Dark Psychology)

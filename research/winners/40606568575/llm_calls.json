@@ -1,0 +1,527 @@
+[
+ {
+  "name": "research_titles",
+  "model": "gemma-4-31b-it",
+  "status": 500
+ },
+ {
+  "name": "research_titles",
+  "model": "gemini-3.5-flash-lite",
+  "status": 200
+ },
+ {
+  "name": "research_titles",
+  "model": "gemini-3.5-flash-lite",
+  "status": 200
+ },
+ {
+  "name": "research_titles",
+  "model": "gemini-3.5-flash-lite",
+  "status": 200
+ },
+ {
+  "name": "research_titles",
+  "model": "gemini-3.5-flash-lite",
+  "status": 200
+ },
+ {
+  "name": "research_titles",
+  "model": "gemini-3.5-flash-lite",
+  "status": 200
+ },
+ {
+  "name": "research_titles",
+  "model": "gemini-3.5-flash-lite",
+  "status": 200
+ },
+ {
+  "name": "research_titles",
+  "model": "gemini-3.5-flash-lite",
+  "status": 200
+ },
+ {
+  "name": "research_titles",
+  "model": "gemini-3.5-flash-lite",
+  "status": 200
+ },
+ {
+  "name": "research_titles",
+  "model": "gemini-3.5-flash-lite",
+  "status": 200
+ },
+ {
+  "name": "research_titles",
+  "model": "gemini-3.5-flash-lite",
+  "status": 200
+ },
+ {
+  "name": "research_titles",
+  "model": "gemini-3.5-flash-lite",
+  "status": 200
+ },
+ {
+  "name": "research_titles",
+  "model": "gemini-3.5-flash-lite",
+  "status": 200
+ },
+ {
+  "name": "research_titles",
+  "model": "gemini-3.5-flash-lite",
+  "status": 200
+ },
+ {
+  "name": "research_titles",
+  "model": "gemini-3.5-flash-lite",
+  "status": 200
+ },
+ {
+  "name": "research_titles",
+  "model": "gemini-3.5-flash-lite",
+  "status": 200
+ },
+ {
+  "name": "research_titles",
+  "model": "gemini-3.5-flash-lite",
+  "status": 200
+ },
+ {
+  "name": "research_titles",
+  "model": "gemini-3.5-flash-lite",
+  "status": 200
+ },
+ {
+  "name": "research_thumbs",
+  "model": "gemini-3.5-flash-lite",
+  "status": 200
+ },
+ {
+  "name": "research_thumbs",
+  "model": "gemini-3.5-flash-lite",
+  "status": 200
+ },
+ {
+  "name": "research_thumbs",
+  "model": "gemini-3.5-flash-lite",
+  "status": 200
+ },
+ {
+  "name": "research_thumbs",
+  "model": "gemini-3.5-flash-lite",
+  "status": 200
+ },
+ {
+  "name": "research_thumbs",
+  "model": "gemini-3.5-flash-lite",
+  "status": 503
+ },
+ {
+  "name": "research_thumbs",
+  "model": "gemini-3.1-flash-lite",
+  "status": 200
+ },
+ {
+  "name": "research_thumbs",
+  "model": "gemini-3.1-flash-lite",
+  "status": 200
+ },
+ {
+  "name": "research_thumbs",
+  "model": "gemini-3.1-flash-lite",
+  "status": 200
+ },
+ {
+  "name": "research_thumbs",
+  "model": "gemini-3.1-flash-lite",
+  "status": 200
+ },
+ {
+  "name": "research_thumbs",
+  "model": "gemini-3.1-flash-lite",
+  "status": 200
+ },
+ {
+  "name": "research_thumbs",
+  "model": "gemini-3.1-flash-lite",
+  "status": 200
+ },
+ {
+  "name": "research_thumbs",
+  "model": "gemini-3.1-flash-lite",
+  "status": 200
+ },
+ {
+  "name": "research_thumbs",
+  "model": "gemini-3.1-flash-lite",
+  "status": 200
+ },
+ {
+  "name": "research_thumbs",
+  "model": "gemini-3.1-flash-lite",
+  "status": 200
+ },
+ {
+  "name": "research_thumbs",
+  "model": "gemini-3.1-flash-lite",
+  "status": 200
+ },
+ {
+  "name": "research_thumbs",
+  "model": "gemini-3.1-flash-lite",
+  "status": 200
+ },
+ {
+  "name": "research_thumbs",
+  "model": "gemini-3.1-flash-lite",
+  "status": 200
+ },
+ {
+  "name": "research_thumbs",
+  "model": "gemini-3.1-flash-lite",
+  "status": 200
+ },
+ {
+  "name": "research_thumbs",
+  "model": "gemini-3.1-flash-lite",
+  "status": 200
+ },
+ {
+  "name": "research_thumbs",
+  "model": "gemini-3.1-flash-lite",
+  "status": 200
+ },
+ {
+  "name": "research_thumbs",
+  "model": "gemini-3.1-flash-lite",
+  "status": 200
+ },
+ {
+  "name": "research_thumbs",
+  "model": "gemini-3.1-flash-lite",
+  "status": 503
+ },
+ {
+  "name": "research_thumbs",
+  "model": "gemini-3.5-flash-lite",
+  "status": 200
+ },
+ {
+  "name": "research_thumbs",
+  "model": "gemini-3.5-flash-lite",
+  "status": 200
+ },
+ {
+  "name": "research_thumbs",
+  "model": "gemini-3.5-flash-lite",
+  "status": 200
+ },
+ {
+  "name": "research_thumbs",
+  "model": "gemini-3.5-flash-lite",
+  "status": 200
+ },
+ {
+  "name": "research_thumbs",
+  "model": "gemini-3.5-flash-lite",
+  "status": 200
+ },
+ {
+  "name": "research_thumbs",
+  "model": "gemini-3.5-flash-lite",
+  "status": 200
+ },
+ {
+  "name": "research_thumbs",
+  "model": "gemini-3.5-flash-lite",
+  "status": 200
+ },
+ {
+  "name": "research_thumbs",
+  "model": "gemini-3.5-flash-lite",
+  "status": 200
+ },
+ {
+  "name": "research_thumbs",
+  "model": "gemini-3.5-flash-lite",
+  "status": 200
+ },
+ {
+  "name": "research_thumbs",
+  "model": "gemini-3.5-flash-lite",
+  "status": 200
+ },
+ {
+  "name": "research_thumbs",
+  "model": "gemini-3.5-flash-lite",
+  "status": 200
+ },
+ {
+  "name": "research_thumbs",
+  "model": "gemini-3.5-flash-lite",
+  "status": 200
+ },
+ {
+  "name": "research_thumbs",
+  "model": "gemini-3.5-flash-lite",
+  "status": 200
+ },
+ {
+  "name": "research_thumbs",
+  "model": "gemini-3.5-flash-lite",
+  "status": 200
+ },
+ {
+  "name": "research_thumbs",
+  "model": "gemini-3.5-flash-lite",
+  "status": 200
+ },
+ {
+  "name": "research_thumbs",
+  "model": "gemini-3.5-flash-lite",
+  "status": 200
+ },
+ {
+  "name": "research_thumbs",
+  "model": "gemini-3.5-flash-lite",
+  "status": 200
+ },
+ {
+  "name": "research_thumbs",
+  "model": "gemini-3.5-flash-lite",
+  "status": 200
+ },
+ {
+  "name": "research_thumbs",
+  "model": "gemini-3.5-flash-lite",
+  "status": 200
+ },
+ {
+  "name": "research_thumbs",
+  "model": "gemini-3.5-flash-lite",
+  "status": 200
+ },
+ {
+  "name": "research_thumbs",
+  "model": "gemini-3.5-flash-lite",
+  "status": 200
+ },
+ {
+  "name": "research_thumbs",
+  "model": "gemini-3.5-flash-lite",
+  "status": 200
+ },
+ {
+  "name": "research_thumbs",
+  "model": "gemini-3.5-flash-lite",
+  "status": 200
+ },
+ {
+  "name": "research_thumbs",
+  "model": "gemini-3.5-flash-lite",
+  "status": 200
+ },
+ {
+  "name": "research_thumbs",
+  "model": "gemini-3.5-flash-lite",
+  "status": 200
+ },
+ {
+  "name": "research_thumbs",
+  "model": "gemini-3.5-flash-lite",
+  "status": 200
+ },
+ {
+  "name": "research_thumbs",
+  "model": "gemini-3.5-flash-lite",
+  "status": 200
+ },
+ {
+  "name": "research_thumbs",
+  "model": "gemini-3.5-flash-lite",
+  "status": 200
+ },
+ {
+  "name": "research_thumbs",
+  "model": "gemini-3.5-flash-lite",
+  "status": 200
+ },
+ {
+  "name": "research_thumbs",
+  "model": "gemini-3.5-flash-lite",
+  "status": 200
+ },
+ {
+  "name": "research_thumbs",
+  "model": "gemini-3.5-flash-lite",
+  "status": 200
+ },
+ {
+  "name": "research_thumbs",
+  "model": "gemini-3.5-flash-lite",
+  "status": 200
+ },
+ {
+  "name": "research_thumbs",
+  "model": "gemini-3.5-flash-lite",
+  "status": 200
+ },
+ {
+  "name": "research_thumbs",
+  "model": "gemini-3.5-flash-lite",
+  "status": 200
+ },
+ {
+  "name": "research_thumbs",
+  "model": "gemini-3.5-flash-lite",
+  "status": 200
+ },
+ {
+  "name": "research_thumbs",
+  "model": "gemini-3.5-flash-lite",
+  "status": 200
+ },
+ {
+  "name": "research_thumbs",
+  "model": "gemini-3.5-flash-lite",
+  "status": 200
+ },
+ {
+  "name": "research_thumbs",
+  "model": "gemini-3.5-flash-lite",
+  "status": 200
+ },
+ {
+  "name": "research_thumbs",
+  "model": "gemini-3.5-flash-lite",
+  "status": 200
+ },
+ {
+  "name": "research_thumbs",
+  "model": "gemini-3.5-flash-lite",
+  "status": 503
+ },
+ {
+  "name": "research_thumbs",
+  "model": "gemini-3.1-flash-lite",
+  "status": 503
+ },
+ {
+  "name": "research_thumbs",
+  "model": "gemini-3.5-flash-lite",
+  "status": 200
+ },
+ {
+  "name": "research_thumbs",
+  "model": "gemini-3.5-flash-lite",
+  "status": 200
+ },
+ {
+  "name": "research_thumbs",
+  "model": "gemini-3.5-flash-lite",
+  "status": 200
+ },
+ {
+  "name": "research_thumbs",
+  "model": "gemini-3.5-flash-lite",
+  "status": 200
+ },
+ {
+  "name": "research_thumbs",
+  "model": "gemini-3.5-flash-lite",
+  "status": 200
+ },
+ {
+  "name": "research_thumbs",
+  "model": "gemini-3.5-flash-lite",
+  "status": 200
+ },
+ {
+  "name": "research_thumbs",
+  "model": "gemini-3.5-flash-lite",
+  "status": 200
+ },
+ {
+  "name": "research_thumbs",
+  "model": "gemini-3.5-flash-lite",
+  "status": 200
+ },
+ {
+  "name": "research_thumbs",
+  "model": "gemini-3.5-flash-lite",
+  "status": 200
+ },
+ {
+  "name": "research_thumbs",
+  "model": "gemini-3.5-flash-lite",
+  "status": 200
+ },
+ {
+  "name": "research_thumbs",
+  "model": "gemini-3.5-flash-lite",
+  "status": 200
+ },
+ {
+  "name": "research_thumbs",
+  "model": "gemini-3.5-flash-lite",
+  "status": 200
+ },
+ {
+  "name": "research_thumbs",
+  "model": "gemini-3.5-flash-lite",
+  "status": 200
+ },
+ {
+  "name": "research_thumbs",
+  "model": "gemini-3.5-flash-lite",
+  "status": 200
+ },
+ {
+  "name": "research_thumbs",
+  "model": "gemini-3.5-flash-lite",
+  "status": 200
+ },
+ {
+  "name": "research_thumbs",
+  "model": "gemini-3.5-flash-lite",
+  "status": 200
+ },
+ {
+  "name": "research_thumbs",
+  "model": "gemini-3.5-flash-lite",
+  "status": 200
+ },
+ {
+  "name": "research_thumbs",
+  "model": "gemini-3.5-flash-lite",
+  "status": 200
+ },
+ {
+  "name": "research_thumbs",
+  "model": "gemini-3.5-flash-lite",
+  "status": 200
+ },
+ {
+  "name": "research_thumbs",
+  "model": "gemini-3.5-flash-lite",
+  "status": 200
+ },
+ {
+  "name": "research_thumbs",
+  "model": "gemini-3.5-flash-lite",
+  "status": 200
+ },
+ {
+  "name": "research_thumbs",
+  "model": "gemini-3.5-flash-lite",
+  "status": 200
+ },
+ {
+  "name": "research_thumbs",
+  "model": "gemini-3.5-flash-lite",
+  "status": 200
+ },
+ {
+  "name": "research_thumbs",
+  "model": "gemini-3.5-flash-lite",
+  "status": 200
+ }
+]

@@ -1,0 +1,86 @@
+[model] gemini-3.5-flash-lite
+[system]
+
+
+[user]
+For each YouTube title, give the MAIN emotion it uses to make people click, and the kind of promise it makes.
+1. The Psychology of Thinking Big (Why Some People See Possibilities Others Don't)
+2. The Psychology of Wealth: Why Some People Build Wealth and Others Don't.
+3. Why You Act Differently When You Know Who You Are (The Psychology of Identity)
+4. Why Some People Succeed More Than Others (The Psychology Behind It)
+5. Psychology Behind Multidisciplinary Intelligence and Its Advantage People Don't Talk About.
+6. Psychology of Fast Thinking: Why Some People Always Know What to Say (It's Not Quickness, It's This)
+7. The 7 Levels of Consciousness.
+8. The Psychology of Character: How You Become the Person You Repeatedly Practice Being.
+9. Psychology of Intelligence: Why Some People Learn Instantly (It's Not Talent, It's this.)
+10. Could a Polar Bear Beat Every Ice Age Predator?
+11. Would Orcas Dominate Every Prehistoric Ocean?
+12. Which Human Species Could You Beat in a Fight?
+13. How Long You’d Last in Every Prehistoric Era
+14. FREE Claude Prompt That Creates VOX Style Videos AUTOMATICALLY | Here's How
+15. Create UNLIMITED Stickman Animations with AI | 100% FREE Forever
+16. Part 2: This Secret AI Timelapse YouTube Niche Is BLOWING UP Right Now | Full Guide
+17. Part 1: How This Timelapse Remodeling Niche Got 137 Million VIEWS in a Month!
+18. The Secret Liquid That Melts Leaves Into Compost in Just Days!
+19. 7 Forgotten Soil Amendments NOBODY Uses That Can Transform Your Garden This Fall!
+20. 5 Forgotten Fruit Trees NOBODY PLANTS That Can Feed Your Family for Decades!
+21. Vida Salvaje: La Brutal Lucha Por La Supervivencia En La Sabana
+22. What Would Happen If The Sun Disappeared For One Week?
+23. What would happen If the Moon Crashed Into Earth?
+24. What Happens to Earth If Humans Disappear Tomorrow?
+25. What Would Happen If an Asteroid Hit the Ocean?
+26. Nepal's 2026 Disaster Explained: The Glacier That Wiped Out a Valley
+27. The Wave That Was Taller Than a Skyscraper
+28. 5 LIBROS PARA ENTENDER A LAS PERSONAS Y GANAR INFLUENCIA
+29. This One Habit Can Change Your Life! 🔥 | The Now Habit | Groww Up
+30. The Power of Self-Discipline 🔥 | This Book Can Change Your Life | Groww Up
+31. Making a Dog Immortal
+32. Turning a Crocodile into Pacific Rim's Kaiju
+33. Turning an Earthworm into Dune's Sandworm
+34. Creating Gojo in Real Life
+35. Creating Spider-Man in Real Life
+36. Creating Homelander in Real Life
+37. Dots vs Grok vs Muse: Which AI Agent Is Better?
+38. I Made a Viral AI Video for FREE: Here’s How
+39. GPT-6 Astra Is Here: The End Of Human-Only Work?
+40. I Let ChatGPT Edit My Entire Video… This Changes Everything
+41. Moltbot / Clawdbot Full Guide: From Overview to Installation
+42. Proxima Centauri b: Humanity's First Colony FULL EPISODE | Science Fiction Documentary
+43. Humanity Finally Meets an Alien Probe | Science Fiction Documentary
+44. Kepler-442b: The Perfect World FULL EPISODE | Science Fiction Documentary
+45. The Last Generation of Human Workers FULL EPISODE | Science Fiction Documentary
+46. The World in 2000 Years FULL EPISODE | Science Fiction Documentary
+47. Every BIZZARE Whale Species Explained
+48. Every EXTINCT Snake That Once Ruled Earth Explained
+49. Cats with Strange BEHAVIOURS Explained
+50. Animals that are Too Dangerous to Keep in Captivity
+51. Every Strange Cattle Breed Explained
+52. Cats Born with BIZZARE Mutations Explained
+53. Animals Born with Bizarre MUTATIONS Explained
+54. Every Bizarre Crab Type Explained
+55. Every Octopus Explained in 10 Minutes
+56. Every Deadliest Snake Explained in 8 Minutes
+57. Every Wild Cattle Explained in 8 Minutes
+58. Every Whale Type Explained in 11 Minutes
+59. Every SHARK Type Explained in 9 Minutes
+60. Every SHARK Type Explained Simply
+61. Every Big WILD Cat Explained in 9 Minutes
+62. 15 Hidden Truths About Women That Will Change How You See Them | Stoicism
+63. 29 Psychological Facts About Women Most Men Never Understand | Stoicism
+64. Why Her Regret Starts When You Finally Walk Away | Female Psychology
+65. 3 Forbidden Compliments That Women Secretly Crave | Stoicism
+66. The 20 SECRET WEAKNESSES Women Hide From Men
+67. Women Don’t Value What You Do for Them… They Value THIS Instead
+68. 10 Hidden Truths About Female Psychology Every Man Should Understand
+69. Why Stephenson 2-18 is the Scariest Star
+70. Why TON 618 is The Scariest Black Hole in the Universe
+71. 150 साल पहले भारत में ऐसी ज़िंदगी थी, देखकर यकीन नहीं होगा! | Life in India 1876 😱
+72. 1877 का महा अकाल | जब भारत भूख से मर रहा था और अनाज इंग्लैंड भेजा जा रहा था!
+73. EVERY OLDER MAN SHOULD WATCH THIS VIDEO | Female Psychology | Stoicism
+74. Why Interstellar Feels More Real Than Reality | हिंदी
+75. Is Time Travel Finally Possible? | हिंदी
+76. Pluto The Lost Ninth Planet | हिंदी
+77. Can We Survive Mars? | हिंदी
+78. Scientists Discovered Life on a Pandora-Like Planet | हिंदी
+79. Scientists Discovered Life on Jupiter's Moon | हिंदी
+80. Women Can’t Resist Men Over 60 Who Still Do This (Rare Trait)  Female Psychology & Stoicism

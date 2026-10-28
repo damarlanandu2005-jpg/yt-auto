@@ -1,0 +1,164 @@
+{
+  "thumbs": [
+    {
+      "n": 1,
+      "words": 3,
+      "face": "none",
+      "subjects": 1,
+      "style": "3d_render",
+      "mood": "dark",
+      "highlight": true,
+      "emotion": "curiosity"
+    },
+    {
+      "n": 2,
+      "words": 4,
+      "face": "none",
+      "subjects": 1,
+      "style": "3d_render",
+      "mood": "dark",
+      "highlight": true,
+      "emotion": "curiosity"
+    },
+    {
+      "n": 3,
+      "words": 7,
+      "face": "none",
+      "subjects": 2,
+      "style": "drawing",
+      "mood": "bright",
+      "highlight": true,
+      "emotion": "curiosity"
+    },
+    {
+      "n": 4,
+      "words": 7,
+      "face": "none",
+      "subjects": 2,
+      "style": "drawing",
+      "mood": "bright",
+      "highlight": true,
+      "emotion": "curiosity"
+    },
+    {
+      "n": 5,
+      "words": 15,
+      "face": "none",
+      "subjects": 2,
+      "style": "drawing",
+      "mood": "bright",
+      "highlight": true,
+      "emotion": "curiosity"
+    },
+    {
+      "n": 6,
+      "words": 5,
+      "face": "drawn_character",
+      "subjects": 3,
+      "style": "drawing",
+      "mood": "dark",
+      "highlight": false,
+      "emotion": "surprise"
+    },
+    {
+      "n": 7,
+      "words": 11,
+      "face": "human",
+      "subjects": 4,
+      "style": "drawing",
+      "mood": "bright",
+      "highlight": false,
+      "emotion": "curiosity"
+    },
+    {
+      "n": 8,
+      "words": 8,
+      "face": "human",
+      "subjects": 2,
+      "style": "photo",
+      "mood": "bright",
+      "highlight": false,
+      "emotion": "surprise"
+    },
+    {
+      "n": 9,
+      "words": 8,
+      "face": "human",
+      "subjects": 2,
+      "style": "3d_render",
+      "mood": "bright",
+      "highlight": false,
+      "emotion": "curiosity"
+    },
+    {
+      "n": 10,
+      "words": 5,
+      "face": "none",
+      "subjects": 1,
+      "style": "3d_render",
+      "mood": "bright",
+      "highlight": false,
+      "emotion": "curiosity"
+    },
+    {
+      "n": 11,
+      "words": 5,
+      "face": "none",
+      "subjects": 1,
+      "style": "3d_render",
+      "mood": "bright",
+      "highlight": false,
+      "emotion": "curiosity"
+    },
+    {
+      "n": 12,
+      "words": 3,
+      "face": "none",
+      "subjects": 5,
+      "style": "3d_render",
+      "mood": "dark",
+      "highlight": false,
+      "emotion": "fear"
+    },
+    {
+      "n": 13,
+      "words": 5,
+      "face": "none",
+      "subjects": 1,
+      "style": "3d_render",
+      "mood": "dark",
+      "highlight": false,
+      "emotion": "awe"
+    },
+    {
+      "n": 14,
+      "words": 5,
+      "face": "none",
+      "subjects": 1,
+      "style": "3d_render",
+      "mood": "bright",
+      "highlight": false,
+      "emotion": "awe"
+    },
+    {
+      "n": 15,
+      "words": 5,
+      "face": "none",
+      "subjects": 1,
+      "style": "3d_render",
+      "mood": "bright",
+      "highlight": false,
+      "emotion": "awe"
+    },
+    {
+      "n": 16,
+      "words": 5,
+      "face": "none",
+      "subjects": 1,
+      "style": "3d_render",
+      "mood": "bright",
+      "highlight": false,
+      "emotion": "curiosity"
+    }
+  ]
+}

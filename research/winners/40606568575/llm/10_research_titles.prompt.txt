@@ -1,0 +1,86 @@
+[model] gemini-3.5-flash-lite
+[system]
+
+
+[user]
+For each YouTube title, give the MAIN emotion it uses to make people click, and the kind of promise it makes.
+1. A Hungry Predator Is Devouring Pythons in Florida — The Footage Is Terrifying
+2. 5 Sign You’re More Handsome Than You Think After 60 #fypシ
+3. 5 Body Parts She Shows If She Likes You | Female Psychology
+4. 10 Saddest Deaths in Hollywood History 
+5. Every Disappearance that still has no Explanation 
+6. Every STAGE Of Civilization Explained in 9 Minutes
+7. Every Way The Universe Could End Explained in 9 Minutes
+8. Every Horrifying Distance In Space Explained in 9 Minutes
+9. Every Way Time Travel Could Work Explained in 9 Minutes
+10. Every Type Of Solar System Explained in 13 Minutes
+11. Every BIZARRE Ant Explained in 8 Minutes
+12. Every Ocean Giant Explained in 8 Minutes
+13. Every Rare Animal Mutation Explained in 8 Minutes
+14. Every Type of Scorpion Explained in 8 Minutes
+15. Every Bizarre Mantis Explained in 10 Minutes
+16. Every Deadliest Snake Explained in 9 Minutes
+17. Every Wild Dog Explained in 8 Minutes
+18. Every Bizarre Wasp Explained in 10 Minutes
+19. This Storm Just Took a HUGE Turn… And No One Saw This Coming
+20. This Pacific Volcano Just Broke Its Own Eruption Record — What Happens Next?
+21. पद्मनाभस्वामी मंदिर: बंद दरवाज़े के पीछे आखिर क्या है? | Padmanabhaswamy Temple Biggest Mystery
+22. Jagannath Mandir Ka Raaz Jo Science Nahi Suljha Paayi
+23. Akbar Jise Nahi Jhuka Paya | Maharana Pratap Ki Ansuni Kahani |
+24. The TERRIFYING First 30 Days Every Vietnam LRRP Faced
+25. The TERRIFYING First Days Every Vietnam MACV-SOG Recruit Faced
+26. 7 Rules Nobody Told The New Guys Before Their First Patrol in Vietnam
+27. What His TERRIFYING First 30 Days As Vietnam LRRP Actually Looked Like
+28. The Vietnam War Unit That Hunted The VC With Dogs (You've Never Heard Of Them)
+29. The Most Untraceable Weapons The Elite MACV-SOG Used In Vietnam
+30. The Most TERRIFYING Vietnam War Squadron You've Never Heard Of
+31. Why Were the Viet Cong Just So Much Better at Warfare?
+32. The Truth About the Bermuda Triangle They Don't Want You to Know
+33. The Untold Truth About Congo | Amazing Facts & Hidden Secrets | Amazing Facts About Congo 🇨🇩
+34. The Gippsland Puma Sightings Haunting Victoria No One Can Explain
+35. What Divers Found in the Wreck of HMAS Sydney Doesn't Add Up
+36. 5 People Vanished in Tasmania's Wilderness and Were Never Found
+37. This Carb Melts Visceral Fat Better Than Exercise
+38. 8 Miraculous Things Happen When You Eat Boiled Eggs Everyday
+39. Pros and Cons of Your Brown Eye Color Type
+40. The #1 WORST Food for Your Kidneys
+41. 130,000-Year-Old Mastodon Bone Mystery Reveals Who the REAL First Americans Were
+42. Scientists Finally Uncovered What the Terracotta Army Was Built To Hide — But Refuse to Open It
+43. The DNA of the Most Isolated Tribe on Earth is Rewriting Human History
+44. What DNA Revealed About The Melungeons Changes Everything We Know About American History
+45. Scientists Opened a Cave Sealed for 40,000 Years — What Was Inside Rewrites History
+46. The Great Pyramid Construction Mystery Solved — Cosmic Particle Evidence
+47. The Roanoke Colony Mystery Finally Solved — With Proof
+48. Modern DNA Analysis Unmasked the Real Jack the Ripper
+49. DNA Reveals a Hidden Truth About Abraham Lincoln's Mother's Ancestry
+50. The Ramesses Mystery Solved - After 3,000 Years
+51. The Psychological Disorder Behind Every SITH Lord
+52. The PSYCHOLOGICAL Disorder Behind Every Spider-Man Villain
+53. Iconic Horror Villains That Modern Therapy Could've SAVED
+54. The PSYCHOLOGICAL Disorder Behind Every Dexter character
+55. Why Your Brain Loves Bad News and How to Stop Doomscrolling
+56. How I Cloned a USA YouTube Channel Using AI (Full Breakdown)
+57. How I Create AI Kids Videos That Actually Earn 💰
+58. 4 Illegal Techniques To Control Anyone 💀 | Shadow Manipulation
+59. 5 RUTHLESS Rules To Become DANGEROUSLY CHALAK 💀
+60. When They Start Seeing You Differently, Watch for These Signs | Love Psychology ❤️
+61. Why Some People Prefer Doing EVERYTHING Alone (Psychology Explained)
+62. Every Technique To Detect A Liar Explained
+63. Every TERRIFYING Extinct Predator That Once Ruled Earth Explained in 12 Minutes
+64. What If Moon Hits Earth | What If the Moon Crashes Into Earth? | 4K Documentary
+65. What If All Oceans Dried Up? | The Earth Without Oceans | 4K Documentary
+66. क्या होगा अगर तेज़ाब की बारिश हो? | What If It Rained Pure Acid? | Documentary
+67. आख़िर समुद्र में 60KM लंबा डैम क्यों बनाया जा रहा है?
+68. Ola Is in BIG Trouble! | What Went Wrong? | The Rise & Fall of Ola | Business Case Study
+69. How Tukram Munde Expose The food mafia? | Real Singham | Indian Case Study | 2d Animation
+70. The Economics of a सब्ज़ी मंडी | Business Case Study
+71. Zomato Exposed : How Deepindra Goyal Fooling Are Everyone  | Business Case Study
+72. Latest DNA Discovery at Pompeii Rewrites 2,000 Years of History — The Results Are Shocking
+73. Geneticists Discovered Something About the Easter Island That Changes Slave History
+74. The Autopsy of King Tut’s Father Revealed the Shocking TRUTH About His Family
+75. Researchers Unearthed Something in Montana That Contradicts What We Know About the Blackfoot
+76. Geneticists Finally Traced South African Coloured DNA — What They Found Was Unexpected
+77. Archaeologists Unearthed Something in Virginia — And It Changes Powhatan History
+78. If You Have These 15 RARE Black Surnames — DNA Finally Revealed Your True Bloodline
+79. Radar Scanned King Tut's Painted Walls — Revealing a Discovery Hidden for 3,300 Years
+80. Camera Lowered Into 410ft GREAT BLUE HOLE — What It Captured At The Bottom Terrifies The World

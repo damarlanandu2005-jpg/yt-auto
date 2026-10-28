@@ -1,0 +1,60 @@
+[research] young channels 249, videos 5921, hits 680, normal 634
+[llm] research_titles: gemma-4-31b-it unavailable (HTTP 500 (busy)); trying next model
+[llm] research_thumbs: gemini-3.5-flash-lite unavailable (HTTP 503 (busy)); trying next model
+[llm] research_thumbs: gemini-3.1-flash-lite unavailable (HTTP 503 (busy)); trying next model
+[llm] research_thumbs: gemini-3.5-flash-lite unavailable (HTTP 503 (busy)); trying next model
+[llm] research_thumbs: gemini-3.1-flash-lite unavailable (HTTP 503 (busy)); trying next model
+[llm] research_thumbs: every model busy; waiting 120s (round 1)
+# What makes videos win: hits vs normal videos of the same young channels
+
+Pulled 2026-10-28T00:06 UTC · rules: research/RULES.md (fixed before the data) · YouTube units: 2311
+
+- Channels found: 619; young (≤ 2 years): 249
+- Long videos measured: 5921
+- **Hits** (≥ 5× channel median and ≥ 10,000 views): 680 from 151 channels; normal videos compared: 634
+- Struggling young channels (≥ 20 long videos, median < 100 views): 9
+
+A **winning signal** is ≥ 10 points more common in hits, with ≥ 30 hits measured.
+
+## Signals
+
+| Feature | Hits | Normal | Diff | Verdict |
+| --- | --- | --- | --- | --- |
+| length: over 15 min | 41% | 34% | +7 | no clear difference |
+| thumb: 4+ words | 67% | 62% | +5 | no clear difference |
+| title emotion: curiosity | 59% | 53% | +5 | no clear difference |
+| thumb: 3+ subjects | 47% | 44% | +3 | no clear difference |
+| thumb: arrow/circle highlight | 19% | 16% | +3 | no clear difference |
+| title: question mark | 15% | 12% | +3 | no clear difference |
+| title emotion: nostalgia | 3% | 1% | +2 | no clear difference |
+| thumb emotion: awe | 8% | 7% | +1 | no clear difference |
+| thumb: human face | 47% | 46% | +1 | no clear difference |
+| title promise: answer | 44% | 43% | +1 | no clear difference |
+| title promise: story | 32% | 31% | +1 | no clear difference |
+| thumb: drawing | 26% | 27% | +0 | no clear difference |
+| title emotion: anger | 2% | 2% | +0 | no clear difference |
+| title emotion: humour | 0% | 0% | +0 | no clear difference |
+| title emotion: surprise | 7% | 7% | +0 | no clear difference |
+| title promise: list | 16% | 16% | +0 | no clear difference |
+| title promise: warning | 2% | 2% | +0 | no clear difference |
+| title: mostly CAPITALS | 2% | 1% | +0 | no clear difference |
+| title: short (8 words or less) | 26% | 26% | +0 | no clear difference |
+| thumb emotion: surprise | 4% | 5% | -1 | no clear difference |
+| thumb: drawn character | 12% | 13% | -1 | no clear difference |
+| thumb: no text | 10% | 11% | -1 | no clear difference |
+| title promise: challenge | 2% | 3% | -1 | no clear difference |
+| title: has a number | 38% | 38% | -1 | no clear difference |
+| title: some CAPITAL words | 25% | 25% | -1 | no clear difference |
+| thumb: no face | 32% | 33% | -2 | no clear difference |
+| title emotion: awe | 8% | 10% | -2 | no clear difference |
+| title emotion: fear | 17% | 19% | -2 | no clear difference |
+| title emotion: none | 1% | 2% | -2 | no clear difference |
+| title: curiosity word (why/how/secret/...) | 34% | 35% | -2 | no clear difference |
+| thumb: dark mood | 37% | 40% | -3 | no clear difference |
+| thumb: one main subject | 24% | 27% | -3 | no clear difference |
+| title emotion: personal_stakes | 2% | 5% | -3 | no clear difference |
+| title: dash or colon | 48% | 51% | -3 | no clear difference |
+| title: says you/your | 6% | 9% | -3 | no clear difference |
+| length: 8 to 15 min | 55% | 59% | -4 | no clear difference |
+| thumb: 3D render | 16% | 21% | -4 | no clear difference |
+| thumb emotion: fe

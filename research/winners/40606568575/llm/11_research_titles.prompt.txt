@@ -1,0 +1,86 @@
+[model] gemini-3.5-flash-lite
+[system]
+
+
+[user]
+For each YouTube title, give the MAIN emotion it uses to make people click, and the kind of promise it makes.
+1. Something That Shouldn't Exist Was Buried in This 10,000-Year-Old Alabama Cave
+2. ISIS Blew Up Jonah's Tomb On Camera... And Fulfilled a Bible Prophecy
+3. Create This New Niche & Go Viral In 48hrs | 100% FREE With Ai
+4. Create This Long 2D Horror Animation Niche| 100% FREE with Ai
+5. Make the Stickman Animation & Go Viral In Just 7 Day's
+6. 57 Satisfying ASMR Brass Works | Lathe Machine Works | Engineering Tips | Metal Workings | Ep 57
+7. 59 Satisfying ASMR Brass Works | Lathe Machine Works | Engineering Tips | Metal Workings | Ep 59
+8. Wild Boars Documentary | The Hidden Forest Life of Wild Boars | First Days of Life in the Wild
+9. The Secret Life of Platypuses | Wild Platypus Documentary | Life in the Wild
+10. This Baby Beaver Is Born Helpless — Then Learns to Survive in the Wild
+11. The Hidden Life of Rabbits | Wild Rabbit Documentary | First Days in the Wild
+12. This Baby Meerkat Is Born Helpless — Then Learns to Survive in the Wild
+13. The Incredible Journey of Life in the Wild | From Birth to Survival — Lion Cub
+14. Black Holes: Giants of Darkness | Black Holes Explained in 10 Minutes |
+15. एक छोटी सी चीज़ ने बढ़ा दी फोन की कीमत! 😱 | Your Phone & Laptop Prices Are About to Explode!
+16. James Webb Just Saw A Galaxy Absorbing Other Galaxies — What Is Happening?
+17. How Big Is the Universe Compared To Our Galaxy...
+18. Webb Just Found 200 Galaxies That Shouldn’t Exist… Are We Inside a Black Hole?
+19. James Webb JUST CONFIRMED What WE ALL FEARED!
+20. We Could Travel at Light Speed… And STILL Never Arrive
+21. James Webb Finds Objects So Far Away: Nobel Winner Says It’s Another Universe
+22. Betelgeuse Is NOT a Star — It's Something Worse (IT JUST ERUPTED)
+23. Woman REGRETS Divorce INSTANTLY — He Didn't FIGHT BACK
+24. Men Figured Out THE SYSTEM. NOW WHAT?
+25. Why Dating Doesn't Make FINANCIAL Sense for Men Anymore..
+26. SHAHEED KI VIDHWA | शहीद की विधवा |AANJANA SINGH | RAKESH BABU | BHUJPURI MOVIE NEW 2026 
+27. TRAILER  / जोरू का गुलाम / BHUJPURI MOVIE /PREM SINGH RAKSHA GUPTA FAMILY DRAMA CONDEY
+28. How Vijay Mallya Destroyed Kingfisher Airlines - 9,000 crore Scam - 2D Animation
+29. How Police Caught India's Most Mysterious Serial Killer | Raja Kolander Case 2D Animation
+30. Mansa Musa: The Golden Hajj That Rewrote History - 2D Animation
+31. Tracking the $2 Billion Nirav Modi Fraud | 2D Animation
+32. The True Story of Thugs of Hindustan They Don"t Show in Movie | 2D Animation
+33. What Happened in lighthouse | The 1900 Lighthouse Mystery | 2D Animation | Hindi Explain |
+34. The Psychology of Anger (Why You Get Angry and How to Control It)
+35. How To Hack Self Sabotage.
+36. Why You Suddenly Forget Someone's Name the Second You're Introduced.( And How To Fix It)
+37. The Psychology Of Languishing: When You Quietly Quit Your Own Life.
+38. The Loneliness Epidemic Nobody Is Talking About — Why Friendship Gets Harder After 25
+39. Why Your Brain Doesn't Want to Read After Exams.
+40. Why Some People Steal Things They Don't Need: The Psychology of Kleptomania.
+41. The Psychology of 'Situationships' (Why Undefined Relationships Feel Worse Than Breakups)
+42. The Psychology of Tribalism — Why Group Loyalty Turns Into Hatred So Fast And How To Fix It.
+43. I Simulated 7 Orcas in Prehistoric Oceans… It Was Chaos
+44. FREE & UNLIMITED | How to Turn Storyboards into FULL AI Videos in Minutes
+45. FREE Prompt That Creates VOX Style Videos AUTOMATICALLY ( Not clickbait ) 
+46. How I Make VIRAL Fitness Videos With AI | 100% FREE & Unlimited
+47. Claude Code Just Changed Animated Videos Forever | Claude + Seedance 2.0
+48. The Worm Magnet Method That Turns Bad Soil Into Black Gold
+49. 9 Vegetables You Should Plant In Late October (Last Chance)
+50. This Amish Plant Can Ease Everyday Aches - Why Nobody Grow It?
+51. HIMALAYA SALVAJE | ¿Quién Puede Sobrevivir en las Montañas Más Extremas del Planeta?
+52. What a T-REX Actually Did All Day | 4K Realistic Animation
+53. Nepal's 2026 Disaster: Nine Meters in 30 Minutes
+54. How the Netherlands Lives Below Sea Level and Doesn't Go Underwater
+55. The Last Day of the Dinosaurs: What Happened in the 24 Hours Before Extinction
+56. 5 LIBROS POLÉMICOS QUE CAMBIARON LA FORMA DE PENSAR DEL MUNDO
+57. 🔥The 80/20 Principle – Work Smarter, Not Harder | Book Summary | Groww Up
+58. Are You Really Free | Freedom From The Known By Jiddu Krishnamurtin | Explained In Telugu | Groww Up
+59. How to Build a Viltrumite (with real science)
+60. How to Create a Vampire (in real life)
+61. Creating the Deadliest Animal Possible
+62. Creating Naruto in Real Life
+63. Creating Every Bankai in Real Life
+64. Why Denmark Rebuilt Their Entire Country in Minecraft
+65. Something Big Just Happened in AI.. Elon’s AGI Warning, War AI & New Tools
+66. I Fired My Designer After Watching ChatGPT Images 2 Do This
+67. Claude Fable 5 Built EVERYTHING in 1 Prompt
+68. $200 Claude vs $55 ChatGPT vs $14 Kimi — Who Actually Won?
+69. Why Everyone's Talking About Moltbook
+70. Engineered Humans: The Next Evolution FULL EPISODE | Science Fiction Documentary
+71. Humanity Begins Colonizing the Solar System | Science Fiction Documentary
+72. TOI-700 d: The Living Planet FULL EPISODE | Science Fiction Documentary
+73. Humanity Decodes the First Alien Message | Science Fiction Documentary
+74. The Day Humanity Received an Alien Signal | Science Fiction Documentary
+75. Animals Born With Almost Impossible MUTATIONS Explained
+76. Every Deadliest Mantis Explained in 8 Minutes
+77. Every Security Guard Dog Explained in 11 Minutes
+78. Bizarre Deep-Sea Creatures That Look Completely Impossible 
+79. Every BEAR Type Explained in 8 Minutes
+80. Every MYTHICAL Creature Explained in 8 Minutes 

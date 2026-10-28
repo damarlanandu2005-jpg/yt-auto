@@ -1,0 +1,8 @@
+[model] gemini-3.1-flash-lite
+[system]
+
+
+[user]
+Above are 16 YouTube thumbnails, each right after "Image n:". For EVERY one,
+describe it: how many words of text are on it, any face, how many main subjects, its style, mood,
+whether an arrow/circle/box points at something, and the main emotion it shows.

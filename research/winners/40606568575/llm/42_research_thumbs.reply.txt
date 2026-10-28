@@ -1,0 +1,164 @@
+{
+  "thumbs": [
+    {
+      "n": 1,
+      "words": 8,
+      "face": "drawn_character",
+      "subjects": 3,
+      "style": "drawing",
+      "mood": "bright",
+      "highlight": true,
+      "emotion": "curiosity"
+    },
+    {
+      "n": 2,
+      "words": 4,
+      "face": "human",
+      "subjects": 2,
+      "style": "photo",
+      "mood": "bright",
+      "highlight": true,
+      "emotion": "none"
+    },
+    {
+      "n": 3,
+      "words": 14,
+      "face": "human",
+      "subjects": 4,
+      "style": "photo",
+      "mood": "dark",
+      "highlight": false,
+      "emotion": "fear"
+    },
+    {
+      "n": 4,
+      "words": 7,
+      "face": "human",
+      "subjects": 2,
+      "style": "photo",
+      "mood": "bright",
+      "highlight": true,
+      "emotion": "curiosity"
+    },
+    {
+      "n": 5,
+      "words": 6,
+      "face": "human",
+      "subjects": 2,
+      "style": "photo",
+      "mood": "bright",
+      "highlight": true,
+      "emotion": "curiosity"
+    },
+    {
+      "n": 6,
+      "words": 11,
+      "face": "human",
+      "subjects": 3,
+      "style": "photo",
+      "mood": "bright",
+      "highlight": true,
+      "emotion": "curiosity"
+    },
+    {
+      "n": 7,
+      "words": 10,
+      "face": "human",
+      "subjects": 5,
+      "style": "photo",
+      "mood": "bright",
+      "highlight": true,
+      "emotion": "curiosity"
+    },
+    {
+      "n": 8,
+      "words": 7,
+      "face": "human",
+      "subjects": 1,
+      "style": "photo",
+      "mood": "bright",
+      "highlight": true,
+      "emotion": "curiosity"
+    },
+    {
+      "n": 9,
+      "words": 11,
+      "face": "human",
+      "subjects": 1,
+      "style": "photo",
+      "mood": "bright",
+      "highlight": true,
+      "emotion": "curiosity"
+    },
+    {
+      "n": 10,
+      "words": 5,
+      "face": "animal",
+      "subjects": 2,
+      "style": "photo",
+      "mood": "bright",
+      "highlight": false,
+      "emotion": "curiosity"
+    },
+    {
+      "n": 11,
+      "words": 3,
+      "face": "drawn_character",
+      "subjects": 3,
+      "style": "drawing",
+      "mood": "bright",
+      "highlight": false,
+      "emotion": "surprise"
+    },
+    {
+      "n": 12,
+      "words": 2,
+      "face": "drawn_character",
+      "subjects": 3,
+      "style": "drawing",
+      "mood": "bright",
+      "highlight": false,
+      "emotion": "surprise"
+    },
+    {
+      "n": 13,
+      "words": 3,
+      "face": "drawn_character",
+      "subjects": 3,
+      "style": "drawing",
+      "mood": "bright",
+      "highlight": false,
+      "emotion": "surprise"
+    },
+    {
+      "n": 14,
+      "words": 2,
+      "face": "drawn_character",
+      "subjects": 2,
+      "style": "drawing",
+      "mood": "bright",
+      "highlight": true,
+      "emotion": "curiosity"
+    },
+    {
+      "n": 15,
+      "words": 2,
+      "face": "human",
+      "subjects": 0,
+      "style": "drawing",
+      "mood": "bright",
+      "highlight": false,
+      "emotion": "none"
+    },
+    {
+      "n": 16,
+      "words": 2,
+      "face": "human",
+      "subjects": 0,
+      "style": "drawing",
+      "mood": "bright",
+      "highlight": false,
+      "emotion": "none"
+    }
+  ]
+}

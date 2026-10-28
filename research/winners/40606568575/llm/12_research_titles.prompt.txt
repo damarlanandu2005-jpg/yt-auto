@@ -1,0 +1,86 @@
+[model] gemini-3.5-flash-lite
+[system]
+
+
+[user]
+For each YouTube title, give the MAIN emotion it uses to make people click, and the kind of promise it makes.
+1. 7 Rare Snakes You Probably Didn't Know Existed
+2. Dogs Born with BIZZARE MUTATIONS Explained
+3. This Is How We Feel WHEN YOU Enter Inside | Female Psychology
+4. The Hidden Truth About Women Most Men Never Discover | Stoicism
+5. Don’t Watch This If You’re in a Relationship — You’ll See Everything Differently
+6. The Psychology Behind What Makes a Man Truly Unforgettable | Carl Jung
+7. What She Thinks When You Finally Stop Chasing Her | Female Psychology
+8. She Wants You More Than You Think — Watch for These 3 Signs | Female Psychology
+9. Why Younger Women Lose Attraction to Older Men | 7 Mistakes
+10. Why Io Is the Scariest Moon in the Solar System
+11. Why Magnetar Is The Scariest Star in the Universe
+12. नादिर शाह भारत में घुसा और 3 घंटे में मुगलों की 3 लाख सेना खत्म कर दी
+13. सिनौली के 4,000 साल पुराने रथ का रहस्य | Sinauli Mystery
+14. If a Guy Is on Your Mind Every Day, These 5 Things Are Actually Happening to Him
+15. Will an Asteroid Hit Earth in 2028? | हिंदी
+16. Why Russia Never Returned | हिंदी
+17. Planets Which Are Better Than Earth | हिंदी
+18. Searching for Life on Titan | हिंदी 
+19. He Found Glitch in the Matrix | हिंदी
+20. The Reality of Planet 9 | हिंदी
+21. Psychology Facts About Women’s Body Language & Love | Female Psychology Explained | MAGDAKAY
+22. 7 Touches That Will Make a Mature Woman Fall Deeply in Love with You - The Luxe Connection |
+23. If a Woman Touches This in Front of You, She Really Likes You | MAGDAKAY Motivation
+24. 7 SHOCKING TRUTHS About Men Who DON'T POST on SOCIAL MEDIA  Female Psychology
+25. Every name on the map of UK and Ireland Explained
+26. Why Islands Breed Giant Animals
+27. The Most Terrifying Bear That Ever Lived
+28. Why Titanoboa Was The Weirdest Apex Predator on Earth
+29. Why We Can't Truly Explore the Antarctic Desert
+30. Why We Can't Truly Explore the Deep Sahara Desert
+31. जिन लोगों ने कभी Tattoo नहीं बनवाया उनकी Psychology | Hidden Truth
+32. बड़े सपने देखने वाले लेकिन कुछ न करने वाले लोगों का Psychology
+33. जो लोग कभी शिकायत नहीं करते उनकी Secret Psychology | The Unshakeable Mind
+34. जो लोग Hurt होने पर Quiet हो जाते हैं — उनकी Psychology
+35. School Intelligent लोगों के लिए एक Jail क्यों है? | Why Smart People Drop Out (Nietzsche Philosophy)
+36. Taoism: सब कुछ पाने की दौड़ छोड़ो | Lao Tzu Wu Wei Philosophy
+37. अगर इस साल सिर्फ एक Video देखनी है तो यही देखो | Carl Jung Psychology Explained in Hindi
+38. जिसकी आप सबसे ज्यादा मदद करते हैं वही धोखा क्यों देता है | Nietzsche Psychology On Betrayal
+39. तुम्हें वो हमेशा मिलता है जो तुम सच में चाहते हो | Alan Watts Life-Changing Truth in Hindi
+40. बारिश पसंद करने वाले लोगों की Psychology | The Secret Mind of Pluviophiles
+41. बिना किसी पर निर्भर हुए खुद को कैसे Heal करें | Carl Jung
+42. The Secret History Of Wales (35 Facts You Didn't Know)
+43. Why Living In London Is Impossible
+44. Greater Manchester Is Hiding Something Nobody Talks About
+45. 15 Insane Myths That Will Change How You See The UK
+46. 25 Things You Didn't Know Were Hidden In The North West
+47. 15 Geography Facts So Crazy They’ll Change How You See The Great Lakes
+48. 25 Wild Yorkshire Facts You Didn't Know
+49. বন্যায় কচুপাতার তিন তলা বাড়ি | Bengali Fairy Tales Cartoon | Rupkothar Notun Golpo |Thakumar Jhuli
+50. 🌳✨ জাদুর চুড়ির গাছ | বাংলা রূপকথার কার্টুন | Magic Bracelet Tree | fox cartoon| Bangla Fairy Tales
+51. জাদুর সোনার ডালিম বাড়ি | Jadur sonar dalim bari | Bangla cartoon | Rupkothar golpo | Carcartoon 
+52. Africa's Best Airport in 2026 — and Why Everyone Flies Through It
+53. African Countries Building the Most Impressive Mega Projects
+54. I Recreated a Viral MrBeast Video Using Only AI
+55. Make Viral AI Avatar For Free & Unlimited
+56. Make Viral USA News Videos Using AI || Youtube Automation
+57. Create Viral History Videos Using Ai | YouTube Automatiom
+58. The BEST YouTube Niche For Beginners 🔥
+59. Create Viral AI Movies Using Cinema Studio 2.0 || Cinema Studio 2.0 For Free || Unlimited AI Videos
+60. Create Viral AI Movies Using Seedance 2.0 || Seedance 2.0 For Free || Unlimited AI Videos
+61. The EASIEST Faceless Niche to Make $60K/Month on YouTube (Just Copy Me)
+62. THE PLANE THAT VANISHED WITHOUT A TRACE
+63. যাদুর চকলেট গাছ | Jadur chocolates gas | Rupkothar golpo | Cartoon Video | Cartoon | Bangla cartoon
+64. জাদুর লিপস্টিক গাছ | Magic lipstick Tree | Fox cartoon | Rupkothar golpo | Bangla cartoon | cartoon
+65. BEST Designed Cities in the World Explained by Urban Planner
+66. Every American State FAILING at Urban Planning Explained
+67. Every Suburban LIE Explained in 9 Minutes
+68. Every City RUINED By Suburbs Explained in 9 Minutes
+69. Did Ethiopia Really Build This? 🇪🇹
+70. 9 Signs You’re a Rare Type of Human (Backed by Science)
+71. The Dark Psychology Behind Why Gen X Never Trusts Anyone With Their Money
+72. Gen X Became Everyone's Caretaker. Nobody Noticed.
+73. 7 Reasons People FAKE Being Poor — And How To Spot Them
+74. Why Some Men Prefer Living Alone to Being in a Relationship
+75. Why Smart People Explain Things So Badly (And Never Notice)
+76. Why Gen X Is the Only Generation Engineered to Fail (7 Brutal Truths)
+77. 6 Psychology Tricks That Make You Seem Smarter and More Charismatic
+78. How to Let Go of the Past: 8 Habits That Actually Rewire Your Brain
+79. The Hidden Trauma That Made Gen X Emotionally Bulletproof
+80. The Hidden Psychology Behind Classic Car Obsession (Boomers Explained)

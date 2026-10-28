@@ -1,0 +1,86 @@
+[model] gemini-3.5-flash-lite
+[system]
+
+
+[user]
+For each YouTube title, give the MAIN emotion it uses to make people click, and the kind of promise it makes.
+1. This Is How We Feel When You Enter Inside | Female Psychology Explained | MAGDAKAY Motivation
+2. Why Senior Men Cut Everyone Off After 60 Psychology Explained - The Luxe Connection | MAGDAKAY
+3. A Woman Who Is Deeply Attracted To You Is Always Doing This In Front Of You | MAGDAKAY Motivation
+4. The Languages That Will Dominate the World by 2050 (Ranked)
+5. The Only Four Animals That Hunt Humans
+6. Why We Can't Truly Explore the Deep Congo Jungle
+7. Why We Can't Truly Explore the Deep Amazon
+8. Why Apex Predators Are Still Afraid of Crows
+9. Why Were Prehistoric Sloths So Much More Terrifying Than Modern Sloths?
+10. सोने से पहले Fake Scenarios Imagine करने वालों का असली Psychology
+11. घर से बाहर न निकलने वाले लोगों की Psychology 
+12. Psychology of people who cut everyone off | Sabse naata todne waale log
+13. जो लोग अपना घर साफ रखते हैं, उनकी Psychology
+14. Friedrich Nietzsche: How Average Parents Ruin Their Children
+15. नाम आसानी से भूल जाने वाले लोगों का Psychology 
+16. सरल जीवन जीना ही सबसे SMART फैसला है | Thoreau की वह सच्चाई जो कोई नहीं बताता
+17. बुद्धिमान लोग मूर्ख लोगों से कैसे निपटते हैं — Schopenhauer
+18. Critical Thinking क्यों खत्म हो रही है? Collective Stupidity का सच 
+19. Plato's Warning: Why Democracy Rewards Fools | Political Psychology Explained
+20. Too Many Interests? आप Confused नहीं — M-Shaped Future के लिए बने हैं
+21. Why the UK Is Sitting On The Most Valuable Land In Human History
+22. All 13 Canadian Provinces & Territories Explained
+23. 15 Insane Facts About The Lake District That You Never Knew
+24. Scotland is Hiding Something Nobody Talks About
+25. The Most Dangerous Geographic Place in the Mid West
+26. 25 Wild Lancashire Facts You Didn't Know
+27. 30 UK Facts That Sound FAKE (But Are 100% REAL)
+28. জাদুর আঙ্গুর গাছ  | Fairy Tales Cartoon | Rupkothar Notun Golpo |Thakumar jhuli | Fox Cartoon | Seal
+29. জাদুর সোনার হাস |৷ Bangla Fox Cartoon | Rupkothar Golpo | Fox STORY | Fairy tale #banglacartoon
+30. জাদুর নেলপলিশের গাছ | Magic nailpolish |Siyaler cartoon | Bangla cartoon | Rupkothar golpo |Cartoon
+31. BURKINA FASO PART 2 10 MORE MEGA PROJECTS NOBODY TALKS ABOUT
+32. BURKINA FASO’S MEGA PROJECTS WHAT IS CHANGING ON THE GROUND
+33. How I Made Viral 3D Story Videos Using AI (FULL COURSE)
+34. I Turned NotebookLM Into A Viral Faceless Video Engine (Here's How)
+35. The EASIEST Faceless Niche to Make $16K/Month on YouTube (Just Copy Me)
+36. Make VIRAL History Videos Using AI | Youtube Automation | History Videos Using Ai
+37. Create Jungle Survival AI ASMR Videos for free in 2026
+38. Create Ghibli Style AI ASMR Videos for free in 2026
+39. Create Room Transformation time lapse videos with Ai | 100% FREE
+40. How to Make Viral History Documentaries Using Ai | YouTube Automation | Full Course
+41. The Scientist Who Tried to Erase God
+42. জাদুর আঙ্গুর গাছ | Fox Cartoon | Siyaler Cartoon | Bangla Cartoon | Rupkothar golpo |Cartoon New |
+43. অহংকারী আম | Ohongkari Aam | Bangla Cartoon | Bangla Golpo | Tuntuni Golpo | Thakurmar Jhuli | Golpo
+44. Every Insanely Well Designed COUNTRY Explained in 9 Minutes
+45. Every WORST Designed US City Explained in 9 Minutes
+46. Every WORST Designed City Explained in 9 Minutes
+47. Every Cities Skylines Pro Tip From a REAL Urban Planner Explained in 9 Minutes
+48. I Investigated Why Some Ethiopians Feel Like They’re Not Black or African
+49. Gen X Was Taught to Work. Millennials Were Taught to Brand Themselves.
+50. The Unspoken Gen X Rule That Exposes Fake People
+51. Gen X Got a Second Chance. Their Brain Refused to Accept It.
+52. Why Gen X Refuses to Play the Modern Corporate Game
+53. Why Gen X Treats Loyalty Differently Than Any Other Generation
+54. Why Gen X Stopped Trying to Save Other People
+55. Gen X Isn't Cynical. It's Something Much Darker.
+56. Gen X Doesn't Cut People Off. They Do Something Colder.
+57. Why Intelligent People Are No Longer 'Nice' to Stupid People
+58. Why Smart People Can't Pretend to Like Sports or Celebrity Gossip
+59. Why People Act Weird Around You — 8 Signs You're Intimidating
+60. 7 Things You Only Do Alone If Your Intelligence Is Extremely Rare
+61. Salman Khan House is Haunted | Real Story
+62. Govinda Talks to his De*d Mother | Creepy Horror Story
+63. Divya Bharti and Sri Devi Mysterious Connection
+64. Most Creepy YouTuber Case
+65. Something Br*tal Happened with Her
+66. Most Scary Real Fear Files Episode
+67. Most Disturbing Doraemon Episode
+68. Sushant Singh Real Black Magic Case
+69. Unsolved Mysteries of BiggBoss House
+70. “Every HIGH-FLYING Pigeon Explained 
+71. 12 Rarest Pigeon Breeds in the World
+72. Every Tornado Shape Explained
+73. What Every Tornado Type Is SECRETLY Warning You About
+74. Every TERRIFYING Tornado Type Explained In 26 Minutes
+75. The MOST DANGEROUS Tornado Shapes Explained
+76. Every TERRIFYING Tornado Shape Explained in 9 Minutes
+77. Every MIND-BLOWING Tornado in Space Explained in 10 minutes
+78. Every FASCINATING Tornado Type Explained In 11 Minutes
+79. Every BRUTAL Tornado in U.S. History Explained In 10 Minutes
+80. अगर आप रोशनी बन जाएँ तो ब्रह्मांड पार करने में कितना समय लगेगा?

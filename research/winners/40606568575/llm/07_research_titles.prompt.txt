@@ -1,0 +1,86 @@
+[model] gemini-3.5-flash-lite
+[system]
+
+
+[user]
+For each YouTube title, give the MAIN emotion it uses to make people click, and the kind of promise it makes.
+1. MH370 Was Reanalyzed by AI — And the Findings Shocked Everyone
+2. The Terracotta Army Was Reanalysed by AI — And Nobody Expected This
+3. Easter Island Was Reanalyzed by AI — And the Statues Were Hiding Something Disturbing
+4. The Bermuda Triangle Was Reanalyzed by AI — And the Findings Shocked Everyone
+5. The Pyramids Were Reanalyzed by AI - And the Findings Shocked Everyone
+6. The Titanic Wreck Was Re-analyzed by AI - What It Found Changes Everything
+7. Человеческая природа, объяснённая за 10 минут | Грасиан, Ларошфуко
+8. Психология мужчин, которые добиваются успеха поздно | Карл Юнг
+9. 5 паттернов, которые создают гениев | Макиавелли
+10. Жизнь объяснённая за 23 минуты | Макиавелли
+11. A Grizzly Bear Tried to Follow a Mountain Goat… Big Mistake!
+12. The Baboons Chose the Wrong Prey… And Paid the Price | Nature Documentary
+13. The Snake Had Deadly Venom. The Roadrunner Had a Plan | Nature Documentary
+14. The Leopard Thought It Found Easy Prey… Then the Baboons Turned on Him | Nature Documentary
+15. The Grizzly Bear Chased a Mountain Goat… Then the Mountain Changed Everything | Nature Documentary
+16. The Python Invaded Her Nest… Then the Mother Eagle Fought Back | Nature Documentary
+17. The Baby Geese That Jump Off Cliffs to Survive | Nature Documentary
+18. 3 Coyotes Chased This Roadrunner… Then Everything Changed | Nature Documentary
+19. The Baboons Thought It Was Easy Prey… They Were Wrong | Nature Documentary
+20. Three Chicks Entered This Nest… Only One Made It to the Sky
+21. One Wrong Step Could Have Cost Her Baby’s Life
+22. KERALA: God's Own Country — The Complete Story | Backwaters, History, Culture & The Kerala Model
+23. HIMALAYA: The Roof of the World — Full Documentary
+24. Congo River: The World's Deepest and Most Mysterious River | Secrets of Africa Explained
+25. Southern Ocean: Earth's Biggest Secret Hiding at the Bottom of the World
+26. Antarctica: The Hidden World Beneath the Ice ❄️🌍
+27. NILE RIVER The World's Most Mysterious And Dangerous River 
+28. Dark Mystery of AMAZON Rainforest [documentary in Hindi]
+29. The Terrifying Truth of the Pacific Ocean 😨 | 95% of It Is Still Unexplored
+30. Indian Ocean: Trade, Mystery & Power 
+31. Amazon River: The Biggest River, the Biggest Danger? || Amazon River: Life, Danger and Future
+32. अटलांटिक महासागर कितना विशाल है? चौंकाने वाले तथ्य | अटलांटिक महासागर | रहस्य, इतिहास और विज्ञान
+33. भारत के 20 गुप्त और प्राचीन शिव मंदिर | Hidden Shiva Temples
+34. He Swallows Vipers Whole: How Africa's Giant Bullfrog Saved 10,000 Offspring
+35. The Armored Egg: Why Neither a Honey Badger nor an Eagle Can Crack an Ostrich Nest
+36. No Teeth, Zero Aggression: How the Pangolin’s Pure Armor Outlasts Africa’s Deadliest Pack
+37. How 6 Birds Discovered the Honey Badger’s Hidden Weakness
+38. Petted a Porcupine, Stolen by an Eagle: 24 Hours of a Baby Baboon
+39. Why Is the Giraffe's Tongue Pitch Black? (Nature’s Dark Secret)
+40. 0.04-Second Strike: Why the Caracal Outmatches Cobras and Birds
+41. This Tongue Is Anchored at the Hip — And It's 40cm Long (Pangolin)
+42. Why Africa's Fiercest Predator Couldn't Eat a Newborn Porcupine
+43. Western Ghats Explained | Block Mountains, Rivers, Biodiversity & Kasturirangan | UPSC | KPSC
+44. Kaveri River Complete Course | Source to Sea | Tributaries, Dams & Map Explained | BaseIAS
+45. History of India: 40+ Kingdoms in One Video | Ancient & Medieval India Explained with Map Animation
+46. The Famine Britain Ignored — 1876, India's Darkest Chapter | Full Documentary
+47. The History of Gold — From Cave Rocks to World Wars | Full Documentary
+48. India Was Enslaved for Centuries, Now It's the World's 5th Biggest Power — How
+49. ताजमहल की सच्ची कहानी | How Taj Mahal Was Really Built
+50. The Insult That Built India's Most Iconic Palace | True Story
+51. The Indian Maharaja Who Brought Rolls-Royce to Its Knees | AI Documentary
+52. A Little Pony’s Big Heart
+53. One Brave Trunk
+54. The Lost Penguin | A Short Story.
+55. Ye Monster Jitna Bada Hota Gaya Utna Hi Khatarnaak || Movie Explained Hindi
+56. Is Khatarnaak Planet Par Akela Phas Gaya Ye Aadmi || Movie Explained Hindi
+57. Maut Ke Baad Narak Mein Milti Hain saat Bhayanak Sazaayein || Movie Explained Hindi
+58. Jab Insano Ko Khane Deewar Todkar Aa Gaye Titans || Movie Explained in Hindi
+59. जिन पुरुषों की Girlfriend नहीं होती, उनकी साइकोलॉजी आपको चौंका देगी
+60. बुद्धिमान लोग अचानक सबसे दूर क्यों हो जाते हैं? | Psychology Explained | Psychology Facts
+61. The Killer Clown 🤡: John Wayne Gacy’s Dark Secret | True Crime Documentary 
+62. Yhan Se Zinda Bach Pana IMPOSSIBLE hai | Zombie Movie Explained in Hindi
+63. Agle 5 Seconds me jo Hoga Wo Koi Nhi Janta | Movie Explained in Hindi Urdu | Movie Story
+64. জলের নিচে ব্রিজের পিলার কীভাবে তৈরি হয়? | How Bridge Pillars are Built Underwater
+65. কেন এই ৫টি মেগা প্রজেক্ট ব্যর্থ হলো? ১০০ বিলিয়ন ডলারের ক্ষতি! | Failed Projects
+66. বুর্জ খলিফার ১৬৩ তলায় পানি কীভাবে পৌঁছায়? 🤯 | Burj Khalifa Engineering Secrets
+67. কেন মানব ইতিহাসের সবচেয়ে বড় ফ্যাক্টরি বানাচ্ছেন ইলন মাস্ক? | AI Chip Factory
+68. সোনা-হীরা নয়, এই দেশের সবচেয়ে বড় সম্পদ 'পানি' | বিশ্বের লুকানো সত্য
+69. সমুদ্রের তলদেশে লুকিয়ে থাকা মানব ইতিহাসের সবচেয়ে বড় প্রজেক্ট | বিশ্বের লুকানো সত্য
+70. দক্ষিণ কোরিয়া কেন সমুদ্রকে শুকিয়ে শহর বানাচ্ছে? | World's Longest Saemangeum Seawall
+71. মিশরের অসম্ভব নদী নির্মাণ! সাহারা মরুভূমিকে সবুজে পরিণত করার মহাপরিকল্পনা
+72. নরওয়ে কীভাবে ৪৭ বিলিয়ন ডলারের পানির নিচে ভাসমান টানেল তৈরি করছে?
+73. সমুদ্রের তলদেশে হংকংয়ের বিস্ময়কর মেগা প্রজেক্ট! | Hong Kong Underwater Train Tunnel
+74. ভারত ও বাংলাদেশের জন্য হুমকি? চীনের ১৬৭ বিলিয়ন ডলারের মেডগ ড্যাম | Yarlung Tsangpo Mega Dam
+75. জাপান কেন সমুদ্রের মাঝখানে এই বিশাল বিমানবন্দর বানাতে বাধ্য হয়েছিল? | Floating Airport Japan
+76. সমুদ্রকে হার মানানো এক অবিশ্বাস্য দেশের গল্প! | Netherlands Mega Projects
+77. Every Greek God Explained
+78. Every Mythology in the World Explained
+79. Every Type of Undead Monster Explained
+80. Every Type of Dragon in Mythology Explained

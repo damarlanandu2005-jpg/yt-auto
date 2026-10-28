@@ -1,0 +1,86 @@
+[model] gemini-3.5-flash-lite
+[system]
+
+
+[user]
+For each YouTube title, give the MAIN emotion it uses to make people click, and the kind of promise it makes.
+1. Something About Western Australia’s Wolfe Creek Crater No Longer Makes Sense
+2. The Burrunjor Sightings Haunting Arnhem Land No One Can Explain
+3. If You Have Type O Positive Blood, Your DNA Has a Dark Secret
+4. Gut Detox: How To Repair & Clean Your Gut Naturally
+5. What Happens To Your Body When You Eat Once A Day (Hour By Hour)
+6. What's Your Eye Color REALLY Saying About You?
+7. AI Just Solved the Herculaneum Scrolls — After 2,000 Years
+8. The D.B. Cooper Mystery Finally Solved — After 54 Years
+9. Ancient DNA Reveals Jamestown Settlers' Shocking Family Secret
+10. The Dyatlov Pass Mystery Solved - With Proof
+11. AI Just Solved the Alcatraz Escape After 64 Years — With Proof
+12. The Baltic Sea Anomaly Mystery Solved - With Proof
+13. Scientists Finally Solved The Roanoke Colony Mystery - After 400 Years
+14. King Richard III's DNA Reveals a Shocking Truth That Rewrites 500 Years of History
+15. Modern Science Finally Reveals What Happened at Dyatlov Pass
+16. Ancient DNA Reveals Tutankhamun’s Shocking Family Secret
+17. The Psychological Disorder Behind EVERY Batman Villain
+18. The Psychological Disorder Behind Each ICONIC Horror Villain (Pt. 2)
+19. The Psychological Disorder Behind Each ICONIC Horror Villain
+20. The PSYCHOLOGICAL Disorder Behind Every ‘THE BOYS’ Character
+21. The Psychology of Peace: How to Stay Calm in a World That Never Stops
+22. How I Cloned Khooni Monday with AI (Full Tutorial)
+23. How I Cloned Zack D Films Using AI (Full Course)
+24. 5 Illegal Hacks To Attract Anyone In Class 💀
+25. DON’T FIGHT 💀 | Until You Know These 6 RULES 
+26. What People Do When Their Feelings Start Getting Stronger | Love Psychology
+27. Psychology of Men Who NEVER GROW UP (And How to fix it)
+28. Every Toxic Zodiac Trait Explained in 16 Minutes
+29. The Truth About the World's Most Dangerous Dog Breeds in 12 Minutes
+30. 500 साल पहले भारत कैसा दिखता था? | Life in India 500 Years Ago | Documentary
+31. What If Technology Never Existed? | A World Without Inventions | 4K Documentary
+32. भारत के इस द्वीप पर जो भी गया वह वापस नहीं आया! | The Mystery of North Sentinel Island | Documentary
+33. What If Humans Suddenly Disappeared? | The Earth Without Humans | 4K Documentary
+34. What If Humans Never Existed? | The Earth Without Humans | 4K Documentary
+35. Rapido Riders Are in Trouble | The Dark Side of Rapido | Business Case Study
+36. Patanjali Is in Trouble: What Went Wrong? | The Rise and Fall of Patanjali | Business Case Study
+37. Blinkit Expose : How Blinkit Fooling Are Everyone | Business Case Study | 2d Animation
+38. D Mart Is in Trouble : What Went Wrong? Business Case Study | 2d Animation
+39. AI Just Reanalyzed the Black Pharaohs' Stones — The Results Are TERRIFYING!
+40. Oldest Human DNA EVER Finally Sequenced by Scientists — Shocking Results Nobody Expected
+41. Archaeologists Just Find What Tut's Tomb Was Always Hiding — Scans Left Everyone Terrified
+42. Archaeologists Discovered Something About the Olmec Heads That Changes Black History
+43. They Scanned Beneath the Pyramids From Space — And Made a Discovery Nobody Can Explain
+44. This African Tribe Speaks Hebrew — Not Even Scientists Can Explain Why
+45. They Discovered Why Black Americans Have a DNA Signature No Other Population on Earth Carries
+46. The Terracotta Army Was Scanned By Scientists — What They Found Changed Everything
+47. Camera Lowered Into A 2,000-Year-OLD SUNKEN CITY — What It Found Terrifies The Whole World
+48. A 2,300-Year-Old Pyramid Just Uncovered Forbidden Paintings Archaeologists Can't Explain
+49. Archaeologists Just Unearthed Mysterious Paintings In a Nubian Pharaoh's Tomb Nobody Can Explain
+50. How to Create Stickman Animation with AI 100% FREE
+51. Create This New Ai Niche & Go Viral In 48hrs | 100% FREE Tools
+52. How To Create VOX STYLE Animation 100% FREE (NO PAID TOOLS)
+53. 79 Machining Skills | Brass Works | Lathe Machine Works | Engineering Tips | Metal Workings | Ep 79
+54. 77 Machining Skills | Brass Works | Lathe Machine Works | Engineering Tips | Metal Workings | Ep 77
+55. Pangolin | First Days in the Wild – Wildlife Documentary
+56. The Secret Life of Platypuses | Wild Platypus Documentary | First Days in the Wild
+57. The Hidden Life of Capybaras | Wild Capybara Documentary | First Days in the Wild
+58. The Hidden Forest Life of a Pangolin
+59. Life Inside a Wild Rabbit Burrow
+60. Inside a Platypus Burrow | Nature Documentary
+61. Chaliye Aaj Ghar Ghumaate Hain! 🏠🔥 | Home Tour | हमारे Crazy XYZ स्टूडियो की सैर 🎥
+62. A BIG Thank You to Everyone! ❤️ आप सभी के प्यार और सपोर्ट के लिए दिल से धन्यवाद ❤️
+63. BREAKING! We Finally Know What Triggered the Big Bang
+64. Nobel Laureates Warn There’s Another Explanation for What James Webb Just Found
+65. The Shocking Truth About Trillions Of Galaxies...
+66. The Distance Between Galaxies Is Worse Than You Think
+67. The Universe Is MUCH Bigger Than We Thought — 2 Trillion Galaxies
+68. Astronomers Have Now Spotted Galaxies So Far Away, It Raises Troubling Questions
+69. JUST NOW! We FINALLY Know What Happened Before the Big Bang
+70. MEN STOPPED MARRYING... NOW GOVERNMENTS WANT NEW RULES
+71. MEN WHO LIKE TO BE ALONE Have These 7 TRAITS
+72. The TRUTH About The Man Who PREFERS Being Alone
+73. BHUJPURI FILM/AGNI PARIKSHA #KESARILALYADAV ACTRESS AKANKSHA PURI AND NEELAM GIRI MOVIE REVIEW 
+74. Bahan Ho To Aisi Bhojpuri Movie | Sanjana Pandey | #Full Movie | Story Explain 2026
+75. T-Series Founder Murder | Biggest Black Money Scandal in Bollywood | 2D Animation
+76. The True Story of Mirzapur They Don’t Show in Movies - 2D Animation Documentary
+77. How America's 7th Largest Company Vanished in 24 Days | Corporate Fraud | Financial Scam
+78. The Impossible Train Robbers in American History | 2D Animation | True Crime
+79. The $9.2 Billion Banking Scandal - Financial Scam - True Crime Documentary
+80. How One Company Defrauded 27 Banks of ₹28,000 Crore

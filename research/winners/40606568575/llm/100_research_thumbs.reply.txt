@@ -1,0 +1,24 @@
+{
+  "thumbs": [
+    {
+      "n": 1,
+      "words": 9,
+      "face": "human",
+      "subjects": 5,
+      "style": "photo",
+      "mood": "mixed",
+      "highlight": false,
+      "emotion": "none"
+    },
+    {
+      "n": 2,
+      "words": 7,
+      "face": "human",
+      "subjects": 5,
+      "style": "photo",
+      "mood": "mixed",
+      "highlight": false,
+      "emotion": "none"
+    }
+  ]
+}

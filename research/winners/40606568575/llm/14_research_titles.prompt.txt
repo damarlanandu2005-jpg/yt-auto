@@ -1,0 +1,86 @@
+[model] gemini-3.5-flash-lite
+[system]
+
+
+[user]
+For each YouTube title, give the MAIN emotion it uses to make people click, and the kind of promise it makes.
+1. Everyday Habits That Boost Brain Power
+2. Every Common Cause of Death & How to Avoid It, Explained
+3. Every Human Instinct Explained
+4. Every Level of Wealth Explained
+5. Every Phobia & How It Effects YOUR Life, Explained
+6. Psychology of People Who Are Hyper Aware |Psychology Explain
+7. Kidnapped, Chased, Arrested: The Terrifying Night in Lansing
+8. Megan Boswell: The Missing Toddler Hidden Just Feet From Home
+9. Why Did China Hide a Massive Data Center Beneath the Sea?
+10. How Egypt Plans to Bring the Sea Into the Desert | A $Billion Engineering Marvel
+11. Heavy Rain In Pakistan Latest Update | Punjab Flash Flood Emergency 2026
+12. What Happens to Dead Bodies Around the World? The Strange Rituals Nobody Talks About
+13. What Happened When ChatGPT Was Asked to Write a Quranic Surah?
+14. How Do They Build Bridges Over Deep Water? The Engineering Secrets Will Shock You!
+15. How Does the Internet Reach Us Through the Ocean? The Hidden Undersea Network
+16. Nepal Ki Sharmnak Rasmein Jo Azab-e-Ilahi Ka Sabab Bani | The Truth Behind the Nepal Disaster
+17. We Asked CATS: 5 Things HUMANS Need to STOP Doing | Cat Interview
+18. Why Do We Dream? What Your Brain Really Does While You Sleep
+19. How We Discovered Uranium (and Why Nobody Knew It Was Radioactive)
+20. How Did Humans Start Eating Salt?
+21. The Strange Evolutionary Secret of the Clitoris
+22. Blood Relations Reasoning in Telugu | Complete Master Class | Short Tricks for SSC, Bank, APPSC
+23. గుప్తుల స్వర్ణయుగం Complete Masterclass | Gupta Empire History in Telugu for APPSC, TSPSC, UPSC
+24. భారతదేశంలో పేదరికం | Poverty in India Telugu | APPSC / TSPSC Group 1 & 2 Indian Economy Classes
+25. When Someone Wants You Out Of Their Life, THESE 3 Signs Appear   Personality Psychology
+26. Ask Her These 6 Questions That Instantly Build Attraction
+27. Why Jupiter Is Way Stranger Than You Think
+28. Altın Gerçekte Nereden Geldi?
+29. Something Giant Is Still Hiding in the Amazon
+30. History’s Biggest Creatures You Never Learned...
+31. The Monster That Made Megalodon Look Small
+32. The Most AMAZING Dinosaurs Ever Discovered
+33. The Forgotten Disaster That Changed Dinosaur History
+34. 74,000 Years Ago… Humanity Almost Ended
+35. 4.5 Billion Years of Earth in 25 Minutes | Full Documentary
+36. The Deadliest Prey of the Prehistoric World
+37. धरती की सबसे ख़तरनाक जगह! जहाँ ज़िंदा रहना नामुमकिन है 😱 | Danakil Depression
+38. अमेज़न का खौफनाक जल्लाद, जिसके पंजों से कोई नहीं बचता! | The Deadliest Harpy Eagle Mystery 😱
+39. 306 लोग, 1 विशाल जहाज़ और कोई सुराग नहीं | The Unsolved Mystery of USS Cyclops | #Everythingzone01
+40. धरती के नीचे बहती गुप्त नदी!😱 | Rio Hamza Mystery Explained in Hindi | Hidden River Under Amazon
+41. The Biggest Bets of Rakesh Jhunjhunwala — And What Happened ? 2D Animation
+42. पैसे की क्रांति से बर्बादी तक Tata Docomo की पूरी कहानी | Airtel | Case Study
+43. Renting vs Buying a Home — The Math Will Shock You | FULL EXPLAINED
+44. The Dark Truth Behind Jet Airways’ Fall — Who Killed India’s Biggest Airline?
+45. Mukesh Ambani vs Amul: The ₹10 Ice Cream Game That Will Change India! | 2D Animation
+46. The Hidden Profit Game of Vishal Mega Mart | Case Study | 2D Animation
+47. Decathlon का सामान India में इतना सस्ता क्यों, Nike और Adidas को कैसे हराया? | Case Study
+48. The ₹22,842 Crore ABG Shipyard Scam: Bigger Than Mallya & Nirav Modi?
+49. Dulhan Hum Le Jayenge — The ₹390 Crore Wedding That Triggered India's Biggest Raid
+50. यह War आपके घर तक आ गई — But You Never Noticed | 2D Animation
+51. The Real Truth Of Haldiram's  ₹0 -- ₹12,800 Crore Empire | 2D Animation
+52. ₹50,000 Crore Scam | The Real Story of Gurmeet Ram Rahim's (Godman) Fall | 2D Animation
+53. 9 Signs You Have a "Quiet Brain" (And Why You Crave Solitude)
+54. 9 Signs You're a Highly Sensitive Person — Not "Too Sensitive"
+55. 11 Signs You Have a Rare Type of Intelligence — How Many Are You?
+56. 7 Secret Strengths Only Highly Sensitive People Have — How Many Are Yours?
+57. Why Intelligent People Quietly Disappear From Everyone's Life (And When It's a Mistake)
+58. सूर्य का संपूर्ण विज्ञान |Structure of Sun|Sun Layers Explained in Hindi|Solar System Geography|UPSC
+59. Tricky|मानव नेत्र (Human Eye) 👁️ | 3D Mapping से समझें|Mypio,Hypermetropia| For All Exams
+60. Tricky|भारत के मरुस्थल|Indian Deserts|Indian Geography| Geography for UPSC, SSC, PCS
+61. Complete अक्षांश, देशांतर,Timezone, Cancer,(Latitude & Longitude)| कर्क, मकर व भूमध्य रेखा |Tick 3D
+62. Tricky 3D|Animal Tissue|For All Exams|जंतु ऊतक|Human Tissue|Biology |UPSC|NEET|BPSC| Science By LGL
+63. Tricky|अनुच्छेद(1 to 395)|Articles Constitution trick|Anuched|Indian Polity|UPSC|SI
+64. Tricky 3D |आधुनिक आवर्त सारणी|Modern Periodic Table|Science| Chemistry|@LGLResearchAcademy 
+65. World Lakes 3D Mapping & Tricks In Hindi| विश्व की प्रमुख झीलें|World Geography|UPSC, BPSC, SSC|LGL
+66. संपूर्ण पोषण विज्ञान|The Science of Nutrition|Biology|Poshan|UPSC|BPSC|NEET
+67. Trick|चाँद के Complete विज्ञान(Selenology)|World Geography|Celestial Mechanics:Eclipse Phases,Lunar 
+68. Tricky 3D|मानव रोग|Human Diseases|Biology|Virus, Bacteria|NEET,UPSC, Railway By LGL
+69. V63 | I Didn't Expect This in Sarajevo 🇧🇦 | Bosnia & Herzegovina Day 1 | Saki The Wanderer
+70. V65 | Sarajevo Siege & Bosnian War 🇧🇦 | Bosnia & Herzegovina Day 3 | Saki The Wanderer
+71. V85 | Santa Claus in Turkey? 🇹🇷 | Myra, Roman Theatre & Sunken City | Saki The Wanderer | తెలుగు
+72. How Fried Chicken Went From Ancient Kitchens to a Global Obsession
+73. How Refrigerators Saved Lives from Food Poisoning?
+74. The 1,000-Year History of Ironing Clothes
+75. The Heart of Central Europe: Why Americans Are Falling in Love With Hungary
+76. AI Made This Entire Video by Itself... (Claude Opus 5.5)
+77. GPT-6 Astra: Automate Your Entire DaVinci Resolve Pipeline
+78. I Built a $10,000 Website in Minutes With Claude Code (No Code)
+79. How an Advanced Civilization Disappeared 5000 Years Ago (The Harappa Civilization)
+80. Was This Lost Civilization Real The Greatest Ancient Mystery Explained

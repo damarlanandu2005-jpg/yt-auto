@@ -1,0 +1,86 @@
+[model] gemini-3.5-flash-lite
+[system]
+
+
+[user]
+For each YouTube title, give the MAIN emotion it uses to make people click, and the kind of promise it makes.
+1. WHITE ROOM PROTOCOL – Episode 1: Emotion Control Training | Ayanokoji White Room Method
+2. इन जगहों से इंसान भाग क्यों नहीं जाते? | दुनिया के सबसे खतरनाक गांव
+3. चीन के 7 ऐसे मेगाप्रोजेक्ट्स जो बनाना नामुमकिन था। 
+4. पृथ्वी से दूर अंतरिक्ष में कैसे जीते हैं इंसान? सच जानकर हैरान रह जाएंगे!
+5. The Economics of Owning a Bus Business | Business Case Study
+6. The Economics of Owning a Petrol Pump | Business Case Study
+7. Renting vs Buying a Home — The Math Will Shock You
+8. How Two Salaries Are Making Indian Families POORER 
+9. 4_Best_SEX_Positions_Every_Man_Should_Try_at_Least_Once_Base laurin ponce
+10. How Many Inches Women Actually Want, Based on Science  UROLOGIST Explained
+11. When a Woman Craves an Older Man, She Tests Him With These Two Questions Laurin Ponce Motivation
+12. Every Woman Over 40 Wants to Be Touched Here First - But Most Men Have No Idea
+13. How to Make Her WANT You   Even When She s Not Interested
+14. How Every Major Indian Empire Collapsed
+15. How Every Chinese Dynasty Fell
+16. How Every Indian Hero Died
+17. How Every Chinese Hero Died
+18. How Every Norse Hero Died
+19. How Every Nazi Army Was Destroyed
+20. How Every Roman Legion Was Destroyed
+21. How Every Greek Hero Died
+22. The Craziest Soldiers in History Explained
+23. How Every Famous Outlaw Died
+24. 2+ Hours of How Every Civilization Worked
+25. The Dutch Millionaire Belt Nobody Talks About
+26. Why Everyone is Moving to the Netherlands ?
+27. How The Netherlands Secretly Dominates Global Trade
+28. BSF ने कैसे रोकी Chicken Neck तोड़ने की साजिश? | Indian Spy Story | 2D Animation
+29. हर रात 50,000L तेल की चोरी! जब Indian Oil को पता चला तो उड़ गए होश | Mathura Pipeline Heist
+30. Ajit Doval Ne Kaise 15 August Par Delhi Ko Hamle Se Bachaya | Indian Secret Spy Story 
+31. Ek Charwahe Ne Kaise Bachaya Bharat Ko Hamle Se? | Spy Story | 2D Animation Documentary
+32. Ek Chaiwala Ne Kaise Pakda Bangladesh Ka Jasoos? | Border Spy Story | 2D Animation
+33. Godrej Success Story: From ₹3,000 to a ₹2,300 Billion Empire | 2D Documentary
+34. The Indian Maharaja Who Challenged Rolls-Royce | 2D Animated Documentary
+35. The Insult That Built India's Greatest Hotel | True Story | 2D Animated Documentary
+36. Pandit Bankar Chhupa Tha Pakistan Ka Sabse Khatarnak Jasoos | Spy Documentary
+37. India's ₹550 Crore Heist | The Untold Story of The Phantom Network | 2D Documentary
+38. The Most Traumatizing Flash Games Explained In 9 Minutes (Pt. 2)
+39. The Most Unsettling Internet Rabbit Holes Explained (Pt. 1)
+40. The Most Unsettling YouTube Channels Explained In 8 Minutes
+41. Why American Retirees Are Moving to These 5 Countries (No Visa Required and No Tax)
+42. The ENTIRE History of China in 20 Minutes
+43. Mother Honey Badger Saves Her Cub From a Venomous Snake—Then 10,000 Bees Save Them From a Lioness
+44. Black Hole Explained Simply (Everything About Black Holes)
+45. Quantum Physics Accidentally Discovered the Multiverse
+46. Quantum Immortality: The Theory That Says You’ll Never Die
+47. Operation Dwarka 1965 | Pakistan Navy's Most Daring Mission
+48. Who Really Killed Fatima Jinnah? | The Mysterious Death That Shocked Pakistan
+49. Every MAJOR Nuclear Disaster Explained in 9 minutes
+50. The DEADLIEST Natural Disasters in History Explained
+51. The Deadliest Tornadoes in US History Explained in 19 minutes (Part 4)
+52. Every BIZARRE Space Tornadoes and Vortices Explained
+53. The Most TERRIFYING Nocturnal Tornadoes in US History Explained
+54. The DEADLIEST Volcanic Eruptions in History Explained in Detail
+55. The DEADLIEST Earthquakes in Recorded History Explained
+56. Every Black Hole Type Explained In Detail
+57. The COSTLIEST Hurricanes in US History
+58. Every TERRIFYING Tornado Type Explained in Detail
+59. The MIND-BLOWING Evolution of Tornado Sirens Explained In Detail
+60. Every Tornado-Like Weather Phenomenon Explained in 10 minutes
+61. HONEY BADGERS FOUND A WARTHOG COVERED IN TICKS!
+62. This Mountain Animal Can’t Reach What’s Feeding on It
+63. What Did This Mongoose Find on a White Rhino?
+64. What’s Hiding Beneath a Musk Ox’s Thick Fur?
+65. A Pride of Lions Attacks an Adult Giraffe… Can They Bring Him Down
+66. These Birds Seem to Have Found Something on This Impala’s Neck
+67. This Bird Found Something Hidden on a Red River Hog
+68. WHAT IS DRIVING THIS BISON CRAZY?
+69. Wild Dogs vs Ostrich Chicks: Every Opening Comes With Risk
+70. IS THIS WHAT’S DRIVING THIS CAMEL CRAZY?
+71. Israel के वो 7 Ancient Mysteries जो आज तक नहीं सुलझे | Untold Mysteries of Israel
+72. Aakhir Titanic Ko Samundar Se Wapas Kyun Nahi Laya Gaya?
+73. Amazon जंगल के 7 Unsolved Mysteries | Hindi Documentary
+74. British Empire इतना ताक़तवर कैसे बना? | 400 साल की पूरी कहानी
+75. Fire Ants Are Vanishing Across Texas — The Hunter Isn't What Anyone Expected
+76. Hunter Shot Florida’s BIGGEST Python Ever Recorded — And The Shocking Photos BROKE The Internet!
+77. AMERICA Is Releasing 2-Meter River Monsters Into Carp-Infested Waters — Results Are Coming In!
+78. Israel Released Thousands of Hungry Predators Into Its Fields — What Happened Next Stunned Farmers
+79. Brazil Released 150,000 Hungry Predators Into a Dead River — What Happened Next Shocked Scientists
+80. Hunters Captured Florida’s LARGEST Crocodile — But What Officials Found Next Terrified Locals!

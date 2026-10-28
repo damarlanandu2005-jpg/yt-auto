@@ -1,0 +1,86 @@
+[model] gemini-3.5-flash-lite
+[system]
+
+
+[user]
+For each YouTube title, give the MAIN emotion it uses to make people click, and the kind of promise it makes.
+1. Every Greek Sea Monster Sailors Feared Explained
+2. Every Mythical Creature You've Never Heard Of
+3. Every Monster in the Bible Explained
+4. Every Type of Werewolf Explained
+5. Every Monster Hercules Had to Defeat Explained in 10 Minutes
+6. Every American Cryptid Explained
+7. Every Giant in Mythology Explained
+8. Every Forest Monster Travelers Feared Explained in 8 Minutes
+9. Every Deep Sea Monster That's Actually Real Explained
+10. Every Mythical Sea Monster Sailors Feared Explained in 13 Minutes
+11. The Most BIZARRE Animals That Broke the RULES of DEATH
+12. 8 Mutated Animals That BROKE THE RULES of Nature Explained
+13. RMS Titanic Sinking: उस रात की पूरी कहानी। 
+14. Bhola Cyclone 1970: उस दिन की पूरी कहानी। 
+15. The Killers Who ALMOST Beat Columbo
+16. The Columbo Mystery: Why He LET A MURDERER WALK FREE
+17. Do Animals Know When Another Animal is a Baby?
+18. The Real Reason Humans Started Wearing Clothes
+19. Why Ancient Humans Were The Most TERRIFYING Animal Alive
+20. 3.6 Billion People Suffer From This 
+21. He Manipulated YOU  @Holisticunderstanding 
+22. Every WEIRD Butterfly Species Explained
+23. Every POISONOUS Berry That Looks Edible Explained
+24. The RAREST Plants You’ll Probably Never See Explained
+25. Every Tree You Should NEVER Touch Explained
+26. Every Plant That Looks Like a MUTANT Explained
+27. Every Famous Carnivorous Plant Explained in 8 Minutes
+28. Every Insect That Tricks You With Its Appearance Explained
+29. Every Unreal Tree Explained
+30. Every Plant With a DEADLY Defense Explained
+31. 1 Hour Silent Hill Halloween Ambience 🎃 Dark Music, Wind & Fog for Sleep
+32. The Witcher Lore: The Lesser Evil Explained | The Last Wish - Illustrated Edition
+33. If Someone Disrespects You, Don't Make These 3 Mistakes — Arthur Schopenhauer
+34. ప్రపంచంలోనే అత్యంత పొడవైన డ్యామ్! 🤯 | Kalpasar Project Gujarat Full Details In Telugu 
+35. ఎవరికి మిత్రుడు? ఎవరికి శత్రువు? | Pew Research Global Survey on India | India Geopolitics Telugu
+36. గాలి నుంచే కరెంట్! 🌪️ ఇక మోటార్లకు కరెంట్ బిల్లే ఉండదా? PowerPod Reality for Telugu Farmers 
+37. 180 KMPH వేగంతో వందే భారత్ సంచలనం! నీళ్ళ గ్లాస్ కూడా కదలలేదు | Vande Bharat Story Telugu
+38. కొత్త ధారావి రాబోతోంది! 🏙️ | ₹95,000 Cr Adani Transformation Project | Mithi River & Dharavi 
+39. Tesla కి అసలైన దెబ్బ! Toyota bZ5 & Solid State Battery Master Plan | Toyota EV Strategy Telugu
+40. భారత్ ఫ్యూచర్ టెక్నాలజీ రియాలిటీ! | Flying Taxis, Hyperloop & Maglev in India 
+41. కంటికి కనపడని గాలితోనే కరెంట్ తయారు చేసే విండ్ ట్రీ! | Aeroleaf Wind Tree In India Explained
+42. టాటా అసలు ఆటనే మార్చేసింది! ⚡ Tata Altroz EV Details, Range & Price in Telugu
+43. రన్ అవుతున్న రైళ్లపై 16 అంతస్తులా? 😱 | Ahmedabad Station Redevelopment | Bullet Train India
+44. టెలికాం రంగంలో రైల్వేల రహస్య షార్ట్‌కట్! | RailTel Case Study
+45. India’s $500B Infrastructure Revolution Explained! 🔥 | 2000 Mega Projects & Real Truth
+46. చైనా మైండ్ బ్లాంక్! 😱 India Beats China's Rare Earth Monopoly | Vimarg Labs VMSM Motor
+47. जंगल से पहिए तक का सफर | The Journey to the Invention of the Wheel
+48. Great Pyramid of Giza कैसे बना? 4500 साल पुराना रहस्य | Egypt Pyramid Documentary
+49. क्या मंगल पर जिंदगी आसान होगी😨 | Why Is Living on Mars So Dangerous?क्या Mars पर जिना आसन होगा
+50. आदिमानव का शुरुआती जीवन कैसा था? | The Rise of Homo Sapiens | (Full Documentary)
+51. Animal Sounds for Kids 🐨🐻🐴 | Learn wild & farm animals
+52. 30 Cute Animal Sounds for Kids 🐱🐶🐔 | Real Sounds for Toddlers | Farm & Wild Animals | 4K
+53. Travel To Nepal | Full History and Documentary | Explore Nepal | نیپال کی سیر
+54. Travel To Pakistan | Why Everyone Loves This Country | پاکستان کی سیر | 
+55. Former DEA Agent Reacts to Movies | Science vs Fiction
+56. Tukaram Mundhe Story | Full Story Hindi Documentary | 2D Animated Documentary
+57. Pakistan Ki Jail Se Kaise Bhage 3 Indian Pilots? | 1971 War Ki True Story | Hindi Documentary
+58. Alamul Ghaib: Ep-2, അദൃശ്യ ലോകത്തെ മലക്കുകൾ | Islamic Documentary Malayalam | True history cinema
+59. യൂസുഫ് (അ) | Ep-2 | കൊട്ടാരത്തിലെ പരീക്ഷണം! | True History Cinema
+60. What Every Stage Of Judgement Day Will Look Like 
+61. How Christians Are Being Prepared for the ANTICHRIST Explained in 16 Minutes
+62. The Strangest Parts Of The Book Of Enoch (that few people know)
+63. Strange AMERICAN Christian Practices
+64. Sumerian Text Reveals Mars Is Not a Planet But an Anunnaki Prison — And Who's Still Trapped There
+65. Sumerian Text Reveals What the Anunnaki Said Is Inside the Sun — And Why It Was Placed There
+66. Sumerian Text Reveals the One Thing Enki Said the Winning Species Fears
+67. Sumerian Text Reveals What the Anunnaki Found on Earth That Was Worth Going to War Over
+68. Sumerian Text Reveals What the Anunnaki Used Gold For — And Why Humans Were Never Told
+69. Sumerian Text Reveals the Species the Anunnaki Defeated Is Still Alive — And Where It Hides
+70. Sumerian Text Reveals the One Place on Earth Even the Anunnaki Were Afraid to Enter
+71. The Anunnaki Tablet That Says Human Blood Remembers Where It Came From — And What Triggers It
+72. The Anunnaki Tablets Were Reanalyzed by AI — And What It Found Was Never Supposed to Be There
+73. Law 18: Isolation Is Dangerous — The Fortress That Became a Grave | 48 Laws of Power
+74. Word Manipulation: How People Secretly Control Your Mind | Dark Psychology Explained
+75. Is Love Real or Just Brain Chemistry? | The Science of Love, Dopamine & Attraction
+76. Emotional Control & Detachment Psychology Explained
+77. What Schools Never Teach You About Intelligence | The White Room Mindset Part 3
+78. धरती के आखिरी छोर पर ज़िंदगी 😱 दुनिया के 7 सबसे अलग-थलग गांव | Isolated Villages
+79. धरती के 5 सबसे ISOLATED गांव — जहाँ इंसान आज भी अकेला जी रहा है 😨
+80. वो समुद्री रास्ते जहाँ जहाज़ जाने से डरते हैं — Cape Horn का खौफनाक सच!

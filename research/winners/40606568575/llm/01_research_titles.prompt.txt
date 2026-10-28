@@ -1,0 +1,86 @@
+[model] gemini-3.5-flash-lite
+[system]
+
+
+[user]
+For each YouTube title, give the MAIN emotion it uses to make people click, and the kind of promise it makes.
+1. Why Almost Nobody Lives in Uruguay (And Why American Retirees Love It)
+2. The ENTIRE History of Iran in 11 Minutes
+3. A Martial Eagle Attacks at the Worst Possible Moment for the Secretary Bird
+4. All 7 Dimensions Explained Simply (From 0D to 7D)
+5. The 4th Dimension Explained (Everything About 4D)
+6. 11 Dimensions Explained Simply (0D to 11D)
+7. Gen Asim Munir & Pakistan’s Democracy | The Untold Story of Imran Khan & Form 47
+8. The Unsolved Mystery of Benazir Bhutto | What Really Happened on December 27?
+9. The Night That Changed Pakistan: The Execution of Zulfikar Ali Bhutto
+10. Pakistan’s Longest Night: The Complete Story of April 9, 2022
+11. Every RARE Lightning Type Explained in Detail
+12. Every TERRIFYING Tornado Sound Explained In Detail
+13. Every DANGEROUS Lightning Type Explained in Detail
+14. The Most Bizarre Tornado Behavior Explained in Detail
+15. The Most DANGEROUS Tornado Colors Explained In Detail.
+16. Every Part of a Tornado Explained In Detail
+17. The TERRIFYING Stages Of A Tornado Formation Explained in Detail
+18. Every Terrifying Tornado Type Explained in 15 minutes
+19. The Most TERRIFYING Tornado Shapes Explained
+20. Every RARE Tornado Type Explained in Detail (Part 2)
+21. Every DEVASTATING Hurricane Category Explained in 13 minutes
+22. The DEADLIEST Volcano Eruption Explained in Detail (Part 1)
+23. The baboons tease a porcupine.
+24. The Wild Dogs Had Them Cornered… But Chose the Wrong Terrain
+25. A Crowned Eagle Drops Toward a Baboon Infant… The Adult Males Climb After It
+26. Wild Dogs Had the Numbers—Then the Hyena Clan Arrived
+27. Wild Dogs Surround a Porcupine
+28. The Lion and the Tough Prey – The Steel-Armored Pangolin
+29. Why Is This Bird So Interested in the Horse’s Tail?
+30. Why Is This Mongoose Hanging From a Giant Elephant’s Tail?
+31. WHY ARE RAVENS FOLLOWING THIS MUSK OX?
+32. WHAT'S MAKING THIS BISON GO CRAZY?
+33. Australia का इतिहास: जिस देश की शुरुआत एक जेल से हुई | The Entire History of Australia
+34. Vatican City के नीचे दफ़न 1600 साल पुराना रहस्य | Hindi Documentary
+35. Ghost Ship Mystery | 25 लोग Ship से गायब | 78 साल से Unsolved
+36. Antarctica में 2 साल फंसे 28 लोग | कैसे Survive कर गए? | Hindi Documentary
+37. Iran के 7 रहस्य जिन्हें Science भी नहीं समझ पाया | Hindi Documentary
+38. वो Lighthouse जहाँ से 3 आदमी बिना निशान गायब हो गए
+39. Alaska's New Predator Isn't a Grizzly — And It HUNTS Humans
+40. Florida Kept Losing Its Giant Pythons — When Scientists Found The Killer They Evacuated!
+41. Argentina Released 3 Starving Assassins into a Wetland Full of Capybaras and Nobody Expected This
+42. Crocodiles Vanished in Florida for Months Until Scientists Revealed What Was Hunting Them
+43. Scientists Finally Found Florida's New Predator — And It's Swallowing Pythons Whole
+44. Scientists Finally Found What's HUNTING Florida's Giant Pythons — Nature's Secret Predator
+45. America Introduced an African Animal Into the Desert — And an Ecological Disaster Followed
+46. What Women Really Mean When They Call Fit Older Men “Intimidating”
+47. 5 Signs You’re Still a Handsome Older Man (And You Don’t Even Know It)
+48. Every Celebrity Still Rotting in Jail in 2026
+49. 6 Murder Mysteries Solved after More than 50 years
+50. Every Cold Case Solved Decades Later
+51. Every Black Hole That Shouldn’t Exist Explained in 14 Minutes
+52. Every DIMENSION Explained in 9 Minutes 
+53. The Most Disturbing Space Theories Explained
+54. Every Type Of Black Hole Explained in 11 Minutes
+55. Every Type Of Star Explained in 10 minutes
+56. Every Crocodile Type Explained in 9 Minutes
+57. Every Impossible Deep Sea Creature Explained in 8 Minutes
+58. Every Type of Crab Explained in 9 Minutes
+59. Every Type of Spider Explained in 8 Minutes
+60. Every Type of Guard Dog Explained in 8 Minutes
+61. Every Type of Wasp Explained in 7 Minutes
+62. Every Bee You Should Keep Distance From Explained in 10 Minutes
+63. Every Wild Cattle Explained in 8 Minutes
+64. Explaining Every Type of Whale in 8 Minutes
+65. A Major Weather Shift Is Coming to America This October
+66. This Storm Is About to Divide the Country — HERE’S WHY
+67. पारस पत्थर की कहानी | RAISEN FORT Mystery | Full Hindi Documentary
+68. मध्य प्रदेश के 10 रहस्यमयी गाँव | Madhya Pradesh Mystery Villages Documentary
+69. Maharana Pratap vs Akbar | The Untold Truth of Battle of HALDIGHATI |
+70. Why Every Vietnam Grunt Wore a Towel Around His Neck
+71. The Most TERRIFYING Bullet of Vietnam You've Never Heard Of
+72. The TERRIFYING First Days MACV-SOG Recon Teams Faced Inside Laos
+73. The TERRIFYING First 30 Days Every Vietnam FNG (F**king New Guy) Faced
+74. Why Vietnam LRRPs Wore No Underwear
+75. In 1967, 2,500 VC Soldiers Charged Firebase Gold, It Was Terrifying
+76. Why the Most Dangerous SEALs Wore Pantyhose and Levi's Jeans
+77. The Forbidden Weapons Only MACV-SOG Was Allowed To Carry
+78. Five Hottest City in The World | Inside the World's Hottest Place Where Life Is Almost Impossible
+79. The Last Corner of the World | Which is the Last Corner of the World | Edge of the World
+80. Something About Australia’s Henbury Craters No Longer Makes Sense

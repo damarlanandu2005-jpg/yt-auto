@@ -1,0 +1,86 @@
+[model] gemini-3.5-flash-lite
+[system]
+
+
+[user]
+For each YouTube title, give the MAIN emotion it uses to make people click, and the kind of promise it makes.
+1. How the Persian Empire Conquered the World ? | The Complete History of the Persian Empire
+2. The Ghost Soldier of WW2 Who Refused to Surrender
+3. How 900 Children Escaped The Nepal Flood Before Their School Was Swept Away
+4. Krakatoa Eruption 2026 Explained: Is a Tsunami Actually Possible?
+5. How is Guwahati secretly becoming next semiconductor hub of Asia? TATA's ₹27,000 crore investment.
+6. Why Indians Are Getting Shorter? | The Height Paradox Explained
+7. India’s $10 Billion Great Nicobar Mega-Project: China के Malacca Dilemma का ताला! (Map Analysis) TIO
+8. Mumbai Metro: Project of the Century | Complete Map Explained | $15 Billion Project
+9. What WWII Took From Tom Landry Would Break Most Men — It Built a Legend Instead
+10. Child Protection & Welfare Bureau (CPWB) Jobs 2026 Apply Online | Child Supervisors, Social
+11. Antarctica Was Reanalyzed by AI — And What's Under the Ice Shocked Everyone
+12. What Scientists Found at the Bottom of the Ocean Shouldn't Exist
+13. Machu Pichu Was Analyzed by AI - And What Lies Underneath Shocked Everyone
+14. Scientists Used AI to Decode the Dead Sea Scrolls - What the Fragments Were Hiding Is Shocking
+15. The First Americans Were Never What We Thought — DNA Reveals Who Came First
+16. Why the Great Pyramid Still Terrifies Engineers
+17. The Book of Enoch Was Reanalyzed by AI - And It Was Telling a Different Story
+18. We Were Completely WRONG About What's Hidden In Unexplored Caves
+19. The Alcatraz Escape Mystery Was FINALLY Solved by AI
+20. Why the Voynich Manuscript Still Terrifies Cryptographers
+21. The Baltic Sea Anomaly Was Reanalyzed by AI - And What's Down There Shocked Everyone
+22. 5 архетипов Юнга. Выбери один — и узнай, что говорит твоё бессознательное
+23. Как гении становятся монстрами | Макиавелли
+24. 5 вопросов, которые разрушат тебя | Макиавелли
+25. Ты стал избегать людей? Ты редчайший тип личности — 1 из тысячи | Карл Юнг
+26. The Swamp Predator That Will Eat Almost Anything
+27. They Have No Choice But to Keep Moving | Nature Documentary
+28. The Eagle Tried to Steal Her Baby… But Picked the WRONG Mother | Wildlife Documentary
+29. Mountain Gorillas: The Hidden Rules of the Silverback Kingdom
+30. It Survives Where Water Almost Doesn’t Exist | Nature Documentary
+31. A Mother’s Worst Nightmare: Tiger Steals Hyena’s Cub
+32. The Pangolin’s Armor Was Built to Survive Everything… Except Us
+33. She Hid Her Nest in the Sagebrush… But Predators Were Watching | Nature Documentary
+34. The Elephant’s Secret Mating Ritual… It’s More Complicated Than You Think | Nature Documentary
+35. Born to Run: The Newborn Calf’s First Race for Survival | Nature Documentary
+36. A Mother’s Only Mission: Keep Her Cubs Alive
+37. Sahara Desert: Extreme Heat Explained 🥵 
+38. CONGO RAINFOREST : The World's Last Hidden Wilderness
+39. Gujarat Earthquake: The disaster that changed thousands of lives
+40. भारत के प्राचीन मंदिर जो सदियों से छिपे हुए हैं | Hidden Temples of India
+41. The Cat That Hears Through the Earth: The Incredible Senses of the Serval
+42. Sahara's Radar: The Secret Weapon of Earth's Smallest Fox
+43. 45°C Desert Duel: How an Oryx Cools Her Brain to Save a Scentless Calf from 3 Predators
+44. Dung Beetle vs Savanna Giants: The Greatest Heist in Nature
+45. Born in Badger Skin: Why Cheetah Cubs Wear the Armor of Africa’s Most Fearless Animal
+46. A Leopard Found an Orphaned Baby Baboon. What She Did Next Shocked Scientists.
+47. The Tail Parasol vs The Deadly Cobra: How the Cape Ground Squirrel Defeats Kalahari Predators
+48. Operation Noah: The 6,000 Animals Trapped in History's Greatest Flood
+49. The Mammal That Lives Like a Plant: The Naked Mole-Rat's Secret to Surviving a Cave-In
+50. Mountain Ranges Of World For UPSC Prelims | Revision | BaseIAS Mapping Course
+51. Mahanadi River System  Complete Course, Tributaries & Map  UPSC Geography
+52. Rivers Of the World For UPSC Prelims | Revision |Master 40 World Rivers in 15 Minutes
+53. He Was Humiliated by Ford — Then Bought Jaguar & Land Rover | Ratan Tata True Story
+54. The Bengal Famine of 1943 — When 3 Million Died While Britain Looked Away
+55. Operation Blue Star — इंदिरा गांधी का वो फैसला जिसने पूरे देश को हिला दिया
+56. Why Can’t India Get the Kohinoor Back? | The Shocking History Behind the Diamond
+57. The Complete History of Russia — From Vikings to Putin | Full Documentary
+58. One Curious Lamb
+59. Dhundh Mein Chhupe The Khaufnaak Monster || Movie Explained Hindi
+60. Monsters aur Demons Se Bhari Duniya Ki Kahani || Film/Movie Explained Hindi/Urdu
+61. Barf Mein Shuru Hua Zombie Apocalypse || Movie Explained in Hindi
+62. Ek Hi Raat Mein Pura Kingdom Zombie Ban Gaya || Movie Explained in Hindi
+63. कोई आपको Ignore करे तो आप उसी के बारे में ज्यादा क्यों सोचते हैं?
+64. ऐसी स्त्री मिल जाए तो कभी मत छोड़ना | हर पुरुष को जाननी चाहिए ये सच्चाई
+65. The Cyanide Killer Kerala 🚨| Serial Killer Jolly Joseph mystery | Koodathayi Case Explained 
+66. Aaj Tak in ZOMBIES se Koi nhi bach paya | Zombie Film Movie Explained in Hindi
+67. Pta nhi Kahan se Agya Ye DANAV | Movie Explained in Hindi
+68. সমুদ্রের বুকে চীনের ট্রিলিয়ন ডলারের মিলিটারি বেস | China’s Mega Project
+69. উপরে নদী, নিচে রাস্তা! নেদারল্যান্ডসের এক অসম্ভব ইঞ্জিনিয়ারিং বিস্ময় | Veluwemeer Aqueduct
+70. সৌদি আরবের মরুভূমিতে সমুদ্রের পানি! অবিশ্বাস্য মেগাপ্রজেক্ট | Saudi Arabia Water Pipeline
+71. ৯ কোটি মানুষকে হতবাক করা ইলন মাস্কের ট্র্যাফিক-মুক্ত শহর! Elon Musk Smart City
+72. ইরানকে পাশ কাটাতে আরব আমিরাতের মাস্টারপ্ল্যান! The Strait of Hormuz Bypass
+73. সাগরের বুক চিরে নতুন ইতিহাস! বিশ্বের মানচিত্র বদলে দেওয়া ইস্তাম্বুল খাল মেগাপ্রজেক্ট
+74. জাপানের সমুদ্রের নিচে কাঁচের টানেল! | Japan's Future Underwater Tunnel
+75. ধ্বংসস্তূপ থেকে চীনের সবচেয়ে বড় স্টেডিয়াম! | Guangzhou Football Park Megaproject
+76. মেঘের ওপর বিলাসবহুল এক জাদুর বাড়ি! হারাইজন পিকের অজানা সত্য | Most Dangerous Architecture
+77. বিশ্বের সবচেয়ে সাহসী মেগা প্রজেক্ট: সমুদ্রের বুকে নতুন বাংলাদেশ | Cross Dam Project
+78. পানির নিচে রাস্তা, মেঘের উপর ব্রিজ! চীনের অবিশ্বাস্য ৭ ইঞ্জিনিয়ারিং বিস্ময়  |  Mega Projects
+79. জাকার্তা ডুবে যাচ্ছে! ১ কোটি মানুষকে বাঁচাতে সমুদ্রে তৈরি হচ্ছে ৮০ বিলিয়ন ডলারের দেয়াল
+80. ট্রেন নয়, চীনের গোপন অস্ত্র! ৮০০ কি.মি. বেগের ভ্যাকুয়াম টিউবের আসল কাজ কী? | China Mega Project

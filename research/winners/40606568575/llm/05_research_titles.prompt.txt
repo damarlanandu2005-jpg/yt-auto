@@ -1,0 +1,86 @@
+[model] gemini-3.5-flash-lite
+[system]
+
+
+[user]
+For each YouTube title, give the MAIN emotion it uses to make people click, and the kind of promise it makes.
+1. क्या इंसान का जन्म एक कॉस्मिक ग़लती है? | Are We an Accident | हिंदी
+2. ब्रह्मांड में हमारी जगह कहाँ है? | Laniakea Supercluster | Space Documentary Hindi
+3. Kepler-22b — क्या ये है दूसरी पृथ्वी? | Earth से बड़ी रहने लायक दुनिया | हिंदी
+4. ब्रह्मांड कितना बड़ा है? | Earth से Observable Universe तक | Universe Size Comparison
+5. Voyager कहाँ तक जाएगा? | Where Is Voyager Now | हिंदी
+6. 22,00,000 km/h की रफ़्तार से हम कहाँ जा रहे हैं? | The Great Attractor
+7. THEY SUFFERED A NIGHT WORST THAN HELL | THE CHANNON-NEWSOM CASE
+8. Every Star System Closest To Earth Explained in 10 Minutes
+9. Every Type of Planet Explained in 12 Minutes
+10. Every Type Of Solar System Explained in 9 Minutes
+11. The Biggest Black Holes Explained in 8 Minutes
+12. 12 Ice Age Giants That Ruled the Earth
+13. 12 Ancient Monsters That Ruled the Earth
+14. 42 Extinct Animals That Might Still Be Alive | Full Series
+15. 15 Extinct Animals That Might STILL Be Alive Right Now !
+16. 10 "Extinct" Animals That Might Still Be Alive
+17. 7 last videos of extinct animals 
+18. Mysterious Dinosaur Videos Caught on Camera (Real or Fake?)
+19. 28 Last Photos of Extinct Animals | Full Series
+20. 7 Last Photos of Extinct Animals From Around the World!
+21. Last Photos OF EXTINCT BIRDS
+22. 7 Last Photos of Extinct Animals Ever Taken
+23. #Yamini Singh Ka Bhojpuri Film# SAS Sarkar Bahu Chaukidar Akash Singh# New Movie Riview Facts #
+24. #Khilauna Bhojpuri film# 2025 ka naya Pariwarik picture# Kajal Yadav Maya Yadav# movie explain
+25. INDIAN GEOGRAPHY || INDIA LOCATION & EXTENTION PART-1|| APPSC | TGPSC | EPFO | UPSC | RRB | SSC |NDA
+26. Atlanta’s Biggest MEGAPROJECTS Explained
+27. Kalpasar (કલ્પસર) Project: માંડી વાળવા જેવો Gujaratનો MegaProject | #Nagendra Vijay | #safari
+28. NotebookLM Just Became a VIRAL Stickman Video Engine (FREE)
+29. Create Unlimited AI Finance Videos in Bulk | 100% FREE Tools (2026)
+30. Clone ANY YouTube Channel With AI (NotebookLM Hack) | Automation 2.0
+31. Ye Admi Mangal Grah Par Akela Phas Gia (THE MARTIAN 2015 Explained In Hindi/Urdu )
+32. Ye Monster Bachi Ko Zinda Nigal Gia (JOURNEY TO THE WEST Movie Explained In Hindi/Urdu)
+33. Es Qaidi Ko Rokna Impossible (RIKI OH 1991 Movie Explained In Hindi/Urdu)
+34. Ye SAANP Kisi Ko Bhi Zinda Nahi Chhorta ( SNAKE CAVE 2023 Movie Explained in Hindi/Urdu )
+35. The Speed of Light Was NEVER About Light. Here's Why!
+36. Nobody Explained Maxwell's Equations Like THIS!
+37. बिना एक भी नदी वाला देश : Saudi Arabia पानी कैसे पीता है?
+38. रेत से 2nm Chip: How the World’s Most Advanced Semiconductor Is Made
+39. नदी के बीच इतना मजबूत Pillar कैसे बनता है? पानी को मात देने वाली Engineering 😳
+40. Factory में Pencil कैसे बनती है? 😳 लकड़ी से Pencil बनने का पूरा Process | How Pencils Are Made
+41. 163वीं मंजिल पर पानी पहुंचने का राज! वो इंजीनियरिंग जो आज भी लोगों को हैरान कर देती है
+42. Kingfisher बियर कैसे बनती है? 😳 Factory का कड़वा सच | Beer Manufacturing Process
+43. MRI Machine कैसे काम करती है? 😳 शरीर के अंदर कैसे देख लेती है?
+44. How Did Bhiwandi Become India's Hidden Muslim Powerloom Capital? The Untold Story
+45. Why Is This Gujarat Town 85% Muslim? The Real Reason Even Historians Overlook
+46. Why Hyderabad's Old City Has Over 1,000 Mosques? 
+47. Why Is Melvisharam Called Tamil Nadu's Hidden Muslim Education Hub? The Real Story
+48. The Forgotten Manipuri Muslims Who Guarded Royal Arsenals And Created Unique Scripts
+49. Why Do Muslims in Mangaluru Speak a Language Nobody Else Understands? | The Beary Secret
+50. How Did Kargil Become a Muslim Town in the Himalayas? | The Silk Road Secret
+51. Mewat's Hidden Muslims: The Meo Community India Rarely Talks About | Hidden Muslim Community
+52. Why Does This Karnataka Town Speak a Language Nobody Else Does? | Bhatkal's 1,300-Year-Old Secret
+53. Why Do Muslims in Drass Live at -45°C? | India's Second-Coldest Town Has a Secret
+54. Why Is This Kerala Town 90% Muslim? | The Answer Surprised Even Locals
+55. How Did Bhatkal Become Karnataka's Hidden Muslim Port Town? Hidden Muslim Community | India
+56. The 7 Levels of Animal Parasites — Level 7 Controls the Host's Behavior
+57. F4 Visa Could Be ELIMINATED Forever — Is Your Sibling's Case at Risk? (2026 Bill Explained)
+58. F4 October 2026 Bulletin: Did Your Priority Date Just Get Reversed?
+59. Everyday Things You DONT Understand, Explained
+60. Every Rare DNA Trait You Might Have Without Knowing
+61. Sleep Glitches YOU Might Experience
+62. Every Major Religion & What They Actually Believe Explained
+63. Common Deformities You Might Have Without Knowing
+64. Every Negotiation Tactic & How To Use Them Yourself, Explained
+65. The Psychology of Men Who Live Alone Without a Girlfriend or Wife | Psychology Explained
+66. Mamta Kafle Bhatt: Her Phone Went Silent Two Days Before the Wednesday He Said She Left
+67. Tate Brothers' Bail Hearing Collapsed Over a Grocery Receipt
+68. China Replaced Plastic Bags With This Amazing New Technology
+69. The Big Mistake Behind Jeddah Tower | What Engineers Got Wrong?
+70. How Sting Energy Drink Is Made | Inside a Modern $Million Beverage Factory
+71. How the Netherlands Lives Below Sea Level | A $Billion Engineering Marve
+72. The Truth About the Zamzam Well | What Happened When a Camera Entered  in The Zam Zam  Well?
+73. How Japan Turned Snakes Into a Billion-Dollar Industry
+74. China's Secret Technology Is Defeating Extreme Heat!
+75. Why Is the Great Wall of China Called the World's Largest Graveyard?
+76. We Asked Cats: Why Do You Keep Your Humans Around? Cat interview 😸
+77. How Did Humans Invent the Toilet?
+78. What Evolution Made Women Actually Want. (Why Women Never Want Alpha Male)
+79. Why Did Humans Start Hiding Sex-and When?
+80. Why Did Humans Start Wearing Clothes?

@@ -1,0 +1,86 @@
+[model] gemini-3.5-flash-lite
+[system]
+
+
+[user]
+For each YouTube title, give the MAIN emotion it uses to make people click, and the kind of promise it makes.
+1. 7 Reasons Polymaths Have an Unfair Advantage Over Specialists
+2. Sunsaan Raste Ki Chudail | MP Horror Story
+3. The Bloody Oath - 1915 Horror Story
+4. Chaukidar of Meerut GP Block - Haunted Story
+5. Trapped Inside Bhangarh Fort - Haunted Story
+6. My Goa Flat is Haunted - Real Horror Story
+7. My Family Resort is Haunted : Mussoorie Resort HORROR !
+8. Dhankundra : The Haunted Child Spirit - Real Story
+9. Scariest Urban Legend That Turned Out to Be True | Real Horror Case
+10. Indore's Haunted Abandoned Apartment - Real Story
+11. Every Pigeon That Looks FAKE Explained 1n 14 minutes 
+12. Every COLORFUL Pigeon Breed Explained
+13. The Most POWERFUL Tornadoes of All Time Explained In 10 Minutes
+14. Every TERRIFYING Tornado Size Explained In 10 Minutes
+15. The Most Frightening Tornado Shapes Explained In 10 Minutes
+16. Every CRAZY Tornado Type Explained In 12 Minutes
+17. The Tornado Warning Signs You Should NEVER Ignore
+18. The Most DECEPTIVE Tornado Behavior Explained in 8 Minutes
+19. The Most DANGEROUS Tornado Colors Explained In 12 Minutes
+20. Every EXTREME Tornado in Space Explained In 19 Minutes
+21. ब्रह्मांड की खोज कैसे हुई? | Aryabhata से Hawking तक | Discovery of the Universe in Hindi
+22. इसके सामने TON 618 भी छोटा है! | Phoenix A Black Hole | हिंदी
+23. ब्रह्मांड में कितनी पृथ्वी हैं? | How Many Earths Exist | हिंदी
+24. ब्रह्मांड कितना बड़ा है? | How Big is the Universe in Hindi | Cosmic Door
+25. नर्क बन चुका है Venus लेकिन क्यों? | What Happened to Venus | हिंदी
+26. हमारा Solar System एक विशाल बर्फीले कैद में है? | Oort Cloud | हिंदी
+27. सौरमंडल की आख़िरी दीवार | Voyager को 30,000 साल लगेंगे! | हिंदी
+28. ALL FAMILY MEMBERS WENT MISSING ONE BY ONE | THE ANDRÁS & ÁGNES PÁNDY CASE
+29. Every Type of Nebula Explained in 11 Minutes
+30. The SCARIEST Sounds in Space
+31. Every Level of Danger in Space Explained in 12 Minutes
+32. Every Type of Black Hole Explained in 10 Minutes
+33. 6 LAST Photos of EXTINCT Ice Age Animals !
+34. 7 Final Recordings of EXTINCT Animals
+35. Mysterious Dinosaur Videos Caught on Camera (Real or Fake?) | Part 2 
+36. 7 "EXTINCT" Animals That Might Be Alive in the Deep Sea!
+37. 10 "Extinct" Ice Age Giants That Might STILL Be Alive!
+38. 7 Last photos of Mythical creatures 
+39. 7 Extinct Animals CAUGHT ALIVE on Camera
+40. 7 Last Photos of Extinct Animals Ever Taken | part 2
+41. 33 Ancient Monsters That Ruled the Earth | Full Series
+42. 7 last videos of extinct animals from Around the World !
+43. 7 'Extinct' Animals That Might Still Be Hiding  in the Amazon (2026)
+44. Sanghatiya (संघतिया) Bhojpuri Film| Raksha Gupta# Ritesh Upadhyay# Full Story Explain Facts
+45. #Full Movie | Garib Beti Ke Amir Sasural Bhojpuri Film | #Richa Dixit | Rakesh Babu | Story Explain 
+46. Indian Geography | Multi-Purpose Project on River | Lecture 33 - Free Series | UPSC | TGPSC | APPSC
+47. Ranking Atlanta Neighborhoods (#1 Spot SURPRISED Me)
+48. Nepalની હોનારતના મૂળમાં રહેલું વિજ્ઞાન | Permafrost, Glacier Collapse & Flash Flood #nagendra vijay
+49. NotebookLM Can Now Create Unlimited Shorts | 100% FREE
+50. This FREE AI Music Generator Beats Suno AI!
+51. Use Google Veo 3 to Generate 100+ Shorts for FREE ( 3D Fruit Talking Videos)
+52. Is Jail Me Qadion Ko Sabse Zyada Torture Kia Jata He ( Movie Explained In Hindi )
+53. Is Qaidi Ne Bnaya Jail Se Bhagne Ka MasterPlan (ESCAPIST 2008 Movie Explained In Hindi/Urdu )
+54. Experiment Ne Bnaya Sab Ko Monster ( Rise of the Planet of the Apes 2011 Explained In Hindi/Urdu )
+55. Yeh Monster Lab Se Azaad Ho Gia ( Movie Explained In Hindi )
+56. What ACTUALLY Happens During Quantum Tunneling?
+57. The 80-Year Mystery of Brownian Motion That Proved Atoms Exist
+58. CT Scan कैसे काम करता है? 😳 Body के अंदर कैसे देख लेता है?
+59. दूध से Milk Powder कैसे बनता है? 😳 Factory का पूरा Process | How Milk Powder Is Made in Factory
+60. TRAIN ENGINE कैसे चलता है? हजारों टन वजन कैसे खींचता है? Train Engine Explained
+61. समुद्र के नीचे Japan ने Bullet Train की सुरंग कैसे बनाई? 😱 | Underwater Tunnel Engineering
+62. Drone हवा में कैसे उड़ता है? 😳 Drone Working Process
+63. Factory में Eraser कैसे बनता है? 😱 दूध से Rubber बनने का पूरा Process | How Erasers Are Made
+64. LED TV कैसे काम करती है? 😳 Screen पर तस्वीर कैसे बनती है | Science Behind LED TV
+65. This Indian Muslim City Was Among the Richest Trade Hubs in Asia | Ahmedabad
+66. Why Is This Kerala Town 90% Muslim? The Real Hidden Answer
+67. Why Do Thousands of Muslims In India Live on Water in Kashmir - 40°C?
+68. The Polish Forest Villages Where Muslim Lipka Tatars Preserved Six Hundred Years Of Heritage
+69. How Did Kayalpatnam Become Tamil Nadu's Hidden Muslim Trade Capital? | Untold History
+70. The Village Where Hindus Built a Mosque - Gujarat
+71. The Hidden Muslim City the Sahara Is Swallowing In Chinguetti
+72. Inside Varanasi's Silent Muslim Quarter Next to the Temples - Varanasi 
+73. Why Is This Tamil Nadu Town 90% Muslim? The Answer Will Shock You 
+74. Brazil's Hidden Muslim Community Deep in the Rainforest
+75. Why Do Arctic Muslims Fast 22 Hours a Day? Their Answer Will Shock You
+76. How Did Dagestan's Muslims Keep Their Faith Alive Under Soviet Union? Secret Networks That Survived
+77. The 7 Levels of Fungal Parasites — Level 7 Controls the Host's Behavior
+78. N 400 New USCIS Rule 2026  Home Checks Just Became Permanent — Here's Who Gets Investigated
+79. Trump to Revoke 200,000 Visas Over Asylum Claims — Report
+80. Sleep Mistakes People Make & How To Fix Them

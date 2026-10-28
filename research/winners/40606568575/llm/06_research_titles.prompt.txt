@@ -1,0 +1,86 @@
+[model] gemini-3.5-flash-lite
+[system]
+
+
+[user]
+For each YouTube title, give the MAIN emotion it uses to make people click, and the kind of promise it makes.
+1. Himalayas & Major Mountain Passes in Telugu | Indian Geography Tricks for APPSC, TSPSC, UPSC
+2. Indian Geography in Telugu | Location, Extent & Size | APPSC & TSPSC Group 1, 2, UPSC Preparation
+3. Indus Valley Civilization in Telugu | సింధు లోయ నాగరికత | Ancient Indian History for UPSC, APPSC
+4. Why Senior Men Love Staying Home After 60   Psychology Explained
+5. Why Senior Men Cut Everyone Off After 60   Psychology Explained
+6. How the Soviets Landed on Venus!
+7. The Ocean Is Much Deeper Than You Think!
+8. The Last Hours of the Dinosaurs Were Worse Than We Thought
+9. How Long Would You Survive in Every Prehistoric Era?
+10. The Real T. Rex Was More Disturbing Than the Movies
+11. Scientists Were Wrong About Megalodon...
+12. T. Rex Was Evolution’s Biggest Mistake
+13. Larger Than T-Rex and Twice as Deadly
+14. The Extinction Event That Changed Earth Forever
+15. Earth Before Dinosaurs Was Terrifying
+16. SS Central America अटलांटिक में डूबा सोने का जहाज़😱1857 Shipwreck Documentary in Hindi |🛳️🌊
+17. बंगाल की खाड़ी के नीचे क्या छिपा है? 🌊 The Dark Secrets of Bay of Bengal | EverythingZone01
+18. दुनिया का सबसे खतरनाक टापू जहाँ जाना मौत है! 🚫 North Sentinel Island Mystery 😱
+19. 2026 असम बाढ़ का खौफनाक सच: जमीन, घर और जिंदगी सब तबाह 🌧️💔 | Assam Floods Untold Documentary 🎬
+20. 496 दिन बिना इंसान के कैसे चला ये जहाज़? 🤯 The Abandoned Ghost Ship Caught on Camera
+21. The Fall of Mumbai Dabbawala: Who Killed a 136-Year-Old Delivery Empire?
+22. Patanjali in Trouble? The Rise and Fall of Baba Ramdev’s Empire | 2D Animation
+23. DMart Is in Trouble: What Went Wrong?  2D Animation
+24. ₹30,000 Crore Hidden Gold Economy | The Real Story of India's Biggest Smuggling Network |
+25. The Rise And Fall Of Anil Ambani | The Untold Story | 2D Animation
+26. Seekho App Scam: ₹1 का लालच और ₹1,540 Crore की लूट की पूरी कहानी
+27. How Nirav Modi Looted ₹14,356 Crore from India's Biggest Bank | 2D Animation
+28. ₹24,000 Crore Scam — Harshad Mehta's Big Bull Story | Scam 1992 | 2D Animation
+29. The Real Story Behind Jio’s $84,000 Crore Rise | Government Policy Exposed | 2D Animation
+30. How Vijay Mallya Looted ₹9,000 Crore & Escaped! | India's Biggest Bank Fraud | 2D Animation
+31. The Real Truth of Demonetization That Nobody Told You — ₹15 Lakh Crore Gone in 1 Night
+32. “The Untold Story of ₹38,000 Crore Recovery | Modi & Ajit Doval | 2D Animation”
+33. Snow Leopard Takes Down the Biggest Ibex… Then the Wolf Pack Corners Him | CTTV Video
+34. Roadrunner Holds Off a Rattlesnake… Then the Hawk Drops In | CTTV Video
+35. They Escaped the Cougar on the Cliff… Then the Grizzly Stepped Out | CTTV Video
+36. 3 Coyotes Chased 1 Roadrunner All Afternoon — And Never Touched It | Wildlife Documentary
+37. A Lion Follows the Noise to a Honey Badger That Wouldn't Back Down
+38. Honey Badger vs Cheetah, Then a Python | Fearless Honey Badger Documentary
+39. Tricky 3D Map|बिहार की नदियाँ:बाढ़ आने का पुरा विज्ञान|Rivers Of Bihar| Bihar Geography|GK|BPSC Tre|
+40. Tricky 3D|सौरमंडल का विज्ञान(Solar System) | World Geography Completely | All Competitive Exams
+41. भारत के पठार|Peninsula Plateaus| Indian Geography|Praduwipye Pathar|UPSC|BPSC|ALL EXAMS By LGL
+42. मानव हृदय कैसे काम करता है?|Human Heart Anatomy & Working in Hindi|3D Animation |SSC, UPSC, NEET|Bio
+43. Tricky|मानव ग्रंथियां Enzyme और हॉर्मोन|Human Glands & Hormones |Endocrine System|UPSC|NEET|Biology
+44. Tricky 3D Animation|Ganga Nadi(Ganga River System Masterclass)Indian Geography|yamuna, kosi |LGL
+45. Tricky 3D Animation|श्वसन तंत्र (Respiratory System) |For All Exams|Biology|NEET|UPSC|Railway|LGL
+46. विटामीन|Vitamins(A,B,C,D,E,K)Chemical Names, Diseases & Sources| SSC, UPSC, NEET|Biology|
+47. Tricky|मानव मस्तिस्क|Human Brain|Biology|Nervous System|Manav Mastishk|UPSC, SSC ,BPSC & Railway
+48. Tricky| पृथ्वी की आंतरिक संरचना|Internal Structure of Earth | World Geography|pirthvi ka sanrachna
+49. Tricky|Cell|All Exams|कोशिका |3D Animation |NEET|UPSC|SSC|Biology@LGLResearchAcademy #bpsc 
+50. V77 | Luxembourg 🇱🇺 | Why Is This Tiny Country So Rich? | FREE Transport | అందమైన Europe’s Balcony
+51. V76 | Driving UNDER the Sea! 🌊 UK to Luxembourg in Tesla | Camping & Sleeping Car | Telugu Travel
+52. V72 | Crossing Into Transnistria | ప్రపంచం గుర్తించని దేశం | A Country That Doesn't Exist!
+53. How a Man  Risked Everything to Build the First Steam Train
+54. How a Fearless Engineer Built the World's First Car
+55. How One Mistake Created Coca-Cola's Famous Bottle
+56. Life in FINLAND — The Country With THE MOST BEAUTIFUL WOMEN and Happiest Country on Earth
+57. I Turned Claude Into a $880/Day Motion Graphics Skill (No After Effects)
+58. GPT-6 Astra + Blender: Lock the Camera Before You Pay for the Video
+59. I Made a $500 AI Commercial in 20 Minutes With Seedance 2.5
+60. The Complete History of India — Part 1 | 9000 BC to 700 AD Explained
+61. The Complete History OF Ancient Egypt | The Rise and Fall Explained
+62. The Unsolved Mystery of the Great Pyramids| Full Documentary
+63. Full Documentary: The Unsolved Mystery of Charles Sobraj | True Crime Story
+64. Nepal Flood 2026 Explained: Where did all the water come from?
+65. Nepal’s Flood Isn’t Over: The Dangerous Lake Left Behind
+66. Nepal Floods 2026 Explained: What Caused the Deadly Flash Flood?
+67. Why India Needs a Mumbai–Patna Expressway? | The Missing Link Explained
+68. Why is Delhi-Raipur-Vizag the most important Expressway for India’s manufacturing ambitions? TIO
+69. Game-Changer Expressway for India? Delhi-Bangalore high-speed, access-controlled Economic Corridor
+70. High-Protein Diets & Testosterone: What Science Actually Says
+71. How Raipur is Secretly Becoming India’s Central Logistics Hub of India? | ₹50,000 Cr Infrastructure
+72. Brian's Song LIED to You — The Real Story Made Even Vince Lombardi Cry
+73. Water & Power Development Authority (WAPDA) Jobs 2026 Apply Online | Engineers, Accounts Officers
+74. AI Decoded the Voynich Manuscript - And It's Not the Hoax Everyone Assumed
+75. The Antikythera Mechanism Was Reanalyzed by AI - And What It Found Changes Everything
+76. The Voynich Manuscript Was Reanalyzed by AI - Nobody Expected the Findings
+77. Scientists Used AI to Decode Cave Symbols — What Ancient Humans Wrote Is Shocking
+78. The Great Pyramid Was Analyzed by Grok — And What It Found Shocked Everyone
+79. The Sphinx Was Reanalyzed by AI - And the Findings Shocked Everyone
+80. We Were Completely WRONG About How The Pyramids Were Built

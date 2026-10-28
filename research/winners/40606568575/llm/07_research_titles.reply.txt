@@ -1,0 +1,404 @@
+{
+  "titles": [
+    {
+      "n": 1,
+      "emotion": "surprise",
+      "promise": "answer"
+    },
+    {
+      "n": 2,
+      "emotion": "surprise",
+      "promise": "answer"
+    },
+    {
+      "n": 3,
+      "emotion": "fear",
+      "promise": "answer"
+    },
+    {
+      "n": 4,
+      "emotion": "surprise",
+      "promise": "answer"
+    },
+    {
+      "n": 5,
+      "emotion": "surprise",
+      "promise": "answer"
+    },
+    {
+      "n": 6,
+      "emotion": "surprise",
+      "promise": "answer"
+    },
+    {
+      "n": 7,
+      "emotion": "curiosity",
+      "promise": "answer"
+    },
+    {
+      "n": 8,
+      "emotion": "curiosity",
+      "promise": "answer"
+    },
+    {
+      "n": 9,
+      "emotion": "curiosity",
+      "promise": "list"
+    },
+    {
+      "n": 10,
+      "emotion": "curiosity",
+      "promise": "answer"
+    },
+    {
+      "n": 11,
+      "emotion": "surprise",
+      "promise": "story"
+    },
+    {
+      "n": 12,
+      "emotion": "surprise",
+      "promise": "story"
+    },
+    {
+      "n": 13,
+      "emotion": "curiosity",
+      "promise": "story"
+    },
+    {
+      "n": 14,
+      "emotion": "surprise",
+      "promise": "story"
+    },
+    {
+      "n": 15,
+      "emotion": "surprise",
+      "promise": "story"
+    },
+    {
+      "n": 16,
+      "emotion": "fear",
+      "promise": "story"
+    },
+    {
+      "n": 17,
+      "emotion": "fear",
+      "promise": "story"
+    },
+    {
+      "n": 18,
+      "emotion": "surprise",
+      "promise": "story"
+    },
+    {
+      "n": 19,
+      "emotion": "surprise",
+      "promise": "story"
+    },
+    {
+      "n": 20,
+      "emotion": "fear",
+      "promise": "story"
+    },
+    {
+      "n": 21,
+      "emotion": "fear",
+      "promise": "story"
+    },
+    {
+      "n": 22,
+      "emotion": "awe",
+      "promise": "story"
+    },
+    {
+      "n": 23,
+      "emotion": "awe",
+      "promise": "story"
+    },
+    {
+      "n": 24,
+      "emotion": "curiosity",
+      "promise": "answer"
+    },
+    {
+      "n": 25,
+      "emotion": "curiosity",
+      "promise": "answer"
+    },
+    {
+      "n": 26,
+      "emotion": "curiosity",
+      "promise": "answer"
+    },
+    {
+      "n": 27,
+      "emotion": "fear",
+      "promise": "answer"
+    },
+    {
+      "n": 28,
+      "emotion": "fear",
+      "promise": "answer"
+    },
+    {
+      "n": 29,
+      "emotion": "fear",
+      "promise": "answer"
+    },
+    {
+      "n": 30,
+      "emotion": "curiosity",
+      "promise": "answer"
+    },
+    {
+      "n": 31,
+      "emotion": "fear",
+      "promise": "answer"
+    },
+    {
+      "n": 32,
+      "emotion": "surprise",
+      "promise": "list"
+    },
+    {
+      "n": 33,
+      "emotion": "curiosity",
+      "promise": "list"
+    },
+    {
+      "n": 34,
+      "emotion": "awe",
+      "promise": "answer"
+    },
+    {
+      "n": 35,
+      "emotion": "curiosity",
+      "promise": "answer"
+    },
+    {
+      "n": 36,
+      "emotion": "awe",
+      "promise": "answer"
+    },
+    {
+      "n": 37,
+      "emotion": "curiosity",
+      "promise": "answer"
+    },
+    {
+      "n": 38,
+      "emotion": "fear",
+      "promise": "story"
+    },
+    {
+      "n": 39,
+      "emotion": "curiosity",
+      "promise": "answer"
+    },
+    {
+      "n": 40,
+      "emotion": "awe",
+      "promise": "answer"
+    },
+    {
+      "n": 41,
+      "emotion": "curiosity",
+      "promise": "answer"
+    },
+    {
+      "n": 42,
+      "emotion": "awe",
+      "promise": "answer"
+    },
+    {
+      "n": 43,
+      "emotion": "curiosity",
+      "promise": "answer"
+    },
+    {
+      "n": 44,
+      "emotion": "curiosity",
+      "promise": "answer"
+    },
+    {
+      "n": 45,
+      "emotion": "awe",
+      "promise": "story"
+    },
+    {
+      "n": 46,
+      "emotion": "anger",
+      "promise": "story"
+    },
+    {
+      "n": 47,
+      "emotion": "curiosity",
+      "promise": "story"
+    },
+    {
+      "n": 48,
+      "emotion": "curiosity",
+      "promise": "answer"
+    },
+    {
+      "n": 49,
+      "emotion": "curiosity",
+      "promise": "answer"
+    },
+    {
+      "n": 50,
+      "emotion": "anger",
+      "promise": "story"
+    },
+    {
+      "n": 51,
+      "emotion": "awe",
+      "promise": "story"
+    },
+    {
+      "n": 52,
+      "emotion": "nostalgia",
+      "promise": "story"
+    },
+    {
+      "n": 53,
+      "emotion": "awe",
+      "promise": "story"
+    },
+    {
+      "n": 54,
+      "emotion": "nostalgia",
+      "promise": "story"
+    },
+    {
+      "n": 55,
+      "emotion": "fear",
+      "promise": "story"
+    },
+    {
+      "n": 56,
+      "emotion": "fear",
+      "promise": "story"
+    },
+    {
+      "n": 57,
+      "emotion": "fear",
+      "promise": "answer"
+    },
+    {
+      "n": 58,
+      "emotion": "fear",
+      "promise": "story"
+    },
+    {
+      "n": 59,
+      "emotion": "surprise",
+      "promise": "answer"
+    },
+    {
+      "n": 60,
+      "emotion": "curiosity",
+      "promise": "answer"
+    },
+    {
+      "n": 61,
+      "emotion": "fear",
+      "promise": "story"
+    },
+    {
+      "n": 62,
+      "emotion": "fear",
+      "promise": "story"
+    },
+    {
+      "n": 63,
+      "emotion": "fear",
+      "promise": "story"
+    },
+    {
+      "n": 64,
+      "emotion": "curiosity",
+      "promise": "answer"
+    },
+    {
+      "n": 65,
+      "emotion": "fear",
+      "promise": "list"
+    },
+    {
+      "n": 66,
+      "emotion": "awe",
+      "promise": "answer"
+    },
+    {
+      "n": 67,
+      "emotion": "curiosity",
+      "promise": "answer"
+    },
+    {
+      "n": 68,
+      "emotion": "curiosity",
+      "promise": "answer"
+    },
+    {
+      "n": 69,
+      "emotion": "awe",
+      "promise": "answer"
+    },
+    {
+      "n": 70,
+      "emotion": "curiosity",
+      "promise": "answer"
+    },
+    {
+      "n": 71,
+      "emotion": "awe",
+      "promise": "answer"
+    },
+    {
+      "n": 72,
+      "emotion": "awe",
+      "promise": "answer"
+    },
+    {
+      "n": 73,
+      "emotion": "awe",
+      "promise": "answer"
+    },
+    {
+      "n": 74,
+      "emotion": "fear",
+      "promise": "answer"
+    },
+    {
+      "n": 75,
+      "emotion": "curiosity",
+      "promise": "answer"
+    },
+    {
+      "n": 76,
+      "emotion": "awe",
+      "promise": "story"
+    },
+    {
+      "n": 77,
+      "emotion": "curiosity",
+      "promise": "answer"
+    },
+    {
+      "n": 78,
+      "emotion": "curiosity",
+      "promise": "answer"
+    },
+    {
+      "n": 79,
+      "emotion": "curiosity",
+      "promise": "answer"
+    },
+    {
+      "n": 80,
+      "emotion": "curiosity",
+      "promise": "answer"
+    }
+  ]
+}
