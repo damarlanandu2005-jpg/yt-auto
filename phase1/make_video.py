@@ -336,7 +336,7 @@ def run(args, out: Path, bench: Bench) -> None:
         for k, v in ((photo_log.get("second_try") or {}).get("seen") or {}).items():
             seen[k] = v
         try:
-            bench.info["thumbnail"] = thumbnail.make(out, script["title"], the_plan["question"], visuals, seen)
+            bench.info["thumbnail"] = thumbnail.make(out, script["title"], the_plan["question"], visuals, seen, script)
         except Exception as e:  # noqa: BLE001 — the gate will FAIL the video without one
             bench.info["thumbnail"] = {"error": repr(e)[:300]}
         print(f"[thumbnail] {bench.info['thumbnail']}", flush=True)

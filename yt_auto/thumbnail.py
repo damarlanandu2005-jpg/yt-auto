@@ -30,7 +30,11 @@ Question it answers: {question}
 
 Pick ONE picture (by its id) that will read best at phone size: one clear, dramatic subject that fits the
 title. Then write 2 to 4 big words to put on it: honest (true, kept by the video), not the title repeated,
-no fake urgency, no question marks or punctuation. Pick one of those words to show in red.
+no fake urgency, no question marks or punctuation. Use words the narration itself uses (pilot video 2 got
+'universe grew faster', which the video never says). Pick one of those words to show in red.
+
+KEY LINES OF THE NARRATION:
+{key_lines}
 
 PICTURES (what a viewer sees in each):
 {lines}"""
@@ -74,10 +78,14 @@ def compose(picture: Path, text: str, red_word: str, out: Path) -> None:
     im.save(out, quality=92)
 
 
-def make(out_dir: Path, title: str, question: str, visuals: list[dict], seen: dict[str, str]) -> dict:
+def make(out_dir: Path, title: str, question: str, visuals: list[dict], seen: dict[str, str],
+         script: dict | None = None) -> dict:
     pics = {v["id"]: v for v in visuals if v.get("photo") and float(v.get("zoom") or 1.0) == 1.0}
     seen = {k: s for k, s in seen.items() if k in pics and s}
-    res = choose(title, question, seen) if seen else {"error": "no checked pictures"}
+    key = ""
+    if script:  # the hook and the answer: the first and last scene
+        key = "\n".join(s["text"] for sc in (script["scenes"][:1] + script["scenes"][-1:]) for s in sc["sentences"])
+    res = choose(title, question, seen, key) if seen else {"error": "no checked pictures"}
     pick = res.get("picture", "").strip()
     if pick not in pics:  # fall back: the first checked picture, words from the title
         pick = next(iter(seen), None) or next(iter(pics), None)
