@@ -1,0 +1,16 @@
+{
+  "file": "galaxy_1.jpg",
+  "kind": "video",
+  "source": "nasa_image_library",
+  "title": "20 Years of Hubble Science: Galaxies",
+  "source_page": "https://images.nasa.gov/details/GSFC_20100722_Hubble_m10619_Galaxies",
+  "download_url": "https://images-assets.nasa.gov/video/GSFC_20100722_Hubble_m10619_Galaxies/GSFC_20100722_Hubble_m10619_Galaxies~medium.mp4",
+  "licence": "Public domain (NASA media, not copyrighted in the US)",
+  "licence_url": "https://www.nasa.gov/nasa-brand-center/images-and-media/",
+  "author": "Jamal Smith",
+  "attribution": "20 Years of Hubble Science: Galaxies \u2014 Jamal Smith, NASA, public domain (video). https://images.nasa.gov/details/GSFC_20100722_Hubble_m10619_Galaxies",
+  "downloaded": "2026-10-28",
+  "clip_start_s": 106.72,
+  "clip_seconds": 5.5,
+  "video_clip": "out/f/galaxy_1.clip.mp4"
+}

@@ -1,0 +1,16 @@
+{
+  "file": "black_hole_0.jpg",
+  "kind": "video",
+  "source": "nasa_image_library",
+  "title": "What is a Black Hole | We Asked a NASA Expert",
+  "source_page": "https://images.nasa.gov/details/What%20is%20a%20Black%20Hole",
+  "download_url": "https://images-assets.nasa.gov/video/What%20is%20a%20Black%20Hole/What%20is%20a%20Black%20Hole~medium.mp4",
+  "licence": "Public domain (NASA media, not copyrighted in the US)",
+  "licence_url": "https://www.nasa.gov/nasa-brand-center/images-and-media/",
+  "author": "NASA (LaRC)",
+  "attribution": "What is a Black Hole | We Asked a NASA Expert \u2014 NASA (LaRC), NASA, public domain (video). https://images.nasa.gov/details/What%20is%20a%20Black%20Hole",
+  "downloaded": "2026-10-28",
+  "clip_start_s": 43.85,
+  "clip_seconds": 5.5,
+  "video_clip": "out/f/black_hole_0.clip.mp4"
+}

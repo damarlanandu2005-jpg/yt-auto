@@ -1,0 +1,16 @@
+{
+  "file": "rocket_launch_0.jpg",
+  "kind": "video",
+  "source": "nasa_image_library",
+  "title": "TROPICS Rocket Launch",
+  "source_page": "https://images.nasa.gov/details/KSC-20230507-MH-RLS01-TROPICS_Rocket_Launch-Rocket_Lab-WON_3330130",
+  "download_url": "https://images-assets.nasa.gov/video/KSC-20230507-MH-RLS01-TROPICS_Rocket_Launch-Rocket_Lab-WON_3330130/KSC-20230507-MH-RLS01-TROPICS_Rocket_Launch-Rocket_Lab-WON_3330130~medium.mp4",
+  "licence": "Public domain (NASA media, not copyrighted in the US)",
+  "licence_url": "https://www.nasa.gov/nasa-brand-center/images-and-media/",
+  "author": "Rocket Lab",
+  "attribution": "TROPICS Rocket Launch \u2014 Rocket Lab, NASA, public domain (video). https://images.nasa.gov/details/KSC-20230507-MH-RLS01-TROPICS_Rocket_Launch-Rocket_Lab-WON_3330130",
+  "downloaded": "2026-10-28",
+  "clip_start_s": 12.3,
+  "clip_seconds": 5.5,
+  "video_clip": "out/f/rocket_launch_0.clip.mp4"
+}

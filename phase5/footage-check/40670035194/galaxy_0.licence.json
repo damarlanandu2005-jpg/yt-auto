@@ -1,0 +1,16 @@
+{
+  "file": "galaxy_0.jpg",
+  "kind": "video",
+  "source": "nasa_image_library",
+  "title": "Evolution of Galaxies",
+  "source_page": "https://images.nasa.gov/details/Evolution_of_Galaxies_H264",
+  "download_url": "https://images-assets.nasa.gov/video/Evolution_of_Galaxies_H264/Evolution_of_Galaxies_H264~medium.mp4",
+  "licence": "Public domain (NASA media, not copyrighted in the US)",
+  "licence_url": "https://www.nasa.gov/nasa-brand-center/images-and-media/",
+  "author": "Robert Andreoli, John Caldwell",
+  "attribution": "Evolution of Galaxies \u2014 Robert Andreoli, John Caldwell, NASA, public domain (video). https://images.nasa.gov/details/Evolution_of_Galaxies_H264",
+  "downloaded": "2026-10-28",
+  "clip_start_s": 27.27,
+  "clip_seconds": 5.5,
+  "video_clip": "out/f/galaxy_0.clip.mp4"
+}

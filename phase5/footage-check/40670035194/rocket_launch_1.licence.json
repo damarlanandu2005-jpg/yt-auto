@@ -1,0 +1,16 @@
+{
+  "file": "rocket_launch_1.jpg",
+  "kind": "video",
+  "source": "nasa_image_library",
+  "title": "Rocket Lab PREFIRE-1 Launch",
+  "source_page": "https://images.nasa.gov/details/KSC-20240525-MH-RKL01-0001-Rocket_Lab_PREFIRE_1_Launch_1080p-M6988",
+  "download_url": "https://images-assets.nasa.gov/video/KSC-20240525-MH-RKL01-0001-Rocket_Lab_PREFIRE_1_Launch_1080p-M6988/KSC-20240525-MH-RKL01-0001-Rocket_Lab_PREFIRE_1_Launch_1080p-M6988~medium.mp4",
+  "licence": "Public domain (NASA media, not copyrighted in the US)",
+  "licence_url": "https://www.nasa.gov/nasa-brand-center/images-and-media/",
+  "author": "Rocket Lab",
+  "attribution": "Rocket Lab PREFIRE-1 Launch \u2014 Rocket Lab, NASA, public domain (video). https://images.nasa.gov/details/KSC-20240525-MH-RKL01-0001-Rocket_Lab_PREFIRE_1_Launch_1080p-M6988",
+  "downloaded": "2026-10-28",
+  "clip_start_s": 23.0,
+  "clip_seconds": 5.5,
+  "video_clip": "out/f/rocket_launch_1.clip.mp4"
+}

@@ -1,0 +1,16 @@
+{
+  "file": "black_hole_1.jpg",
+  "kind": "video",
+  "source": "nasa_image_library",
+  "title": "OSIRIS-REx Observes a Black Hole",
+  "source_page": "https://images.nasa.gov/details/GSFC_20200302_M13568_OIRISRExBH",
+  "download_url": "https://images-assets.nasa.gov/video/GSFC_20200302_M13568_OIRISRExBH/GSFC_20200302_M13568_OIRISRExBH~medium.mp4",
+  "licence": "Public domain (NASA media, not copyrighted in the US)",
+  "licence_url": "https://www.nasa.gov/nasa-brand-center/images-and-media/",
+  "author": "NASA (GSFC)",
+  "attribution": "OSIRIS-REx Observes a Black Hole \u2014 NASA (GSFC), NASA, public domain (video). https://images.nasa.gov/details/GSFC_20200302_M13568_OIRISRExBH",
+  "downloaded": "2026-10-28",
+  "clip_start_s": 52.13,
+  "clip_seconds": 5.5,
+  "video_clip": "out/f/black_hole_1.clip.mp4"
+}

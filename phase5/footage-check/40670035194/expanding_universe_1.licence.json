@@ -1,0 +1,16 @@
+{
+  "file": "expanding_universe_1.jpg",
+  "kind": "video",
+  "source": "nasa_image_library",
+  "title": "NASA 2021 Let's Go to the Moon",
+  "source_page": "https://images.nasa.gov/details/NASA%202021%20Let%27s%20Go%20to%20the%20Moon",
+  "download_url": "https://images-assets.nasa.gov/video/NASA%202021%20Let%27s%20Go%20to%20the%20Moon/NASA%202021%20Let%27s%20Go%20to%20the%20Moon~medium.mp4",
+  "licence": "Public domain (NASA media, not copyrighted in the US)",
+  "licence_url": "https://www.nasa.gov/nasa-brand-center/images-and-media/",
+  "author": "NASA (HQ)",
+  "attribution": "NASA 2021 Let's Go to the Moon \u2014 NASA (HQ), NASA, public domain (video). https://images.nasa.gov/details/NASA%202021%20Let%27s%20Go%20to%20the%20Moon",
+  "downloaded": "2026-10-28",
+  "clip_start_s": 99.08,
+  "clip_seconds": 5.5,
+  "video_clip": "out/f/expanding_universe_1.clip.mp4"
+}

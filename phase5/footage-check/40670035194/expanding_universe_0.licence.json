@@ -1,0 +1,16 @@
+{
+  "file": "expanding_universe_0.jpg",
+  "kind": "video",
+  "source": "nasa_image_library",
+  "title": "KSC-04-S-00174",
+  "source_page": "https://images.nasa.gov/details/ksc_052004_chandra",
+  "download_url": "https://images-assets.nasa.gov/video/ksc_052004_chandra/ksc_052004_chandra~orig.mp4",
+  "licence": "Public domain (NASA media, not copyrighted in the US)",
+  "licence_url": "https://www.nasa.gov/nasa-brand-center/images-and-media/",
+  "author": "NASA or National Aeronautics and Space Administration",
+  "attribution": "KSC-04-S-00174 \u2014 NASA or National Aeronautics and Space Administration, NASA, public domain (video). https://images.nasa.gov/details/ksc_052004_chandra",
+  "downloaded": "2026-10-28",
+  "clip_start_s": 23.12,
+  "clip_seconds": 5.5,
+  "video_clip": "out/f/expanding_universe_0.clip.mp4"
+}
