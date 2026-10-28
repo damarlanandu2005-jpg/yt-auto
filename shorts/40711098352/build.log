@@ -1,0 +1,5 @@
+[llm] shorts_plan: gemma-4-31b-it unavailable (HTTP 500 (busy)); trying next model
+[plan] 1 Short(s): Why is the observable universe 93 billion light-years wide?
+[0;93m2026-10-28 14:59:15.251545471 [W:onnxruntime:Default, device_discovery.cc:95 GetPciBusId] Skipping pci_bus_id for PCI path at "/sys/devices/LNXSYSTM:00/LNXSYBUS:00/ACPI0004:00/MSFT1000:00/5620e0c7-8062-4dce-aeb7-520c7ef76171" because filename "5620e0c7-8062-4dce-aeb7-520c7ef76171" did not match expected pattern of [0-9a-f]+:[0-9a-f]+:[0-9a-f]+[.][0-9a-f]+[m
+[short 1] {"title": "Why is the observable universe 93 billion light-years wide?", "hook": "", "sentences": ["s01.03", "s01.04", "s01.05", "s01.06", "s01.08", "s01.09"], "subject": "a beam of light crossing stretching space", "seconds": 54.1, "drawn": 8, "passed": 0, "rejected": [{"id": "shot1", "title": "a beam of light crossing stretching space: Wide view of starry night sky with deep space", "seen": "An abstract black background featuring a bright white star or light source at the center with thin white and red beams radiating downward and a straight vertical beam shooting upward, surrounded by tiny 
+no Short was made (see report.json)

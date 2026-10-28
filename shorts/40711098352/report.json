@@ -1,0 +1,154 @@
+{
+ "long_title": "Why the Observable Universe Is 93 Billion Light-Years Wide",
+ "started": "2026-10-28 14:58:16 UTC",
+ "music": {
+  "title": "Kevin MacLeod - Dream Culture",
+  "author": "Kevin MacLeod",
+  "licence": "CC BY 3.0",
+  "source_page": "https://commons.wikimedia.org/wiki/File:Kevin_MacLeod_-_Dream_Culture.ogg"
+ },
+ "shorts": [
+  {
+   "title": "Why is the observable universe 93 billion light-years wide?",
+   "hook": "",
+   "sentences": [
+    "s01.03",
+    "s01.04",
+    "s01.05",
+    "s01.06",
+    "s01.08",
+    "s01.09"
+   ],
+   "subject": "a beam of light crossing stretching space",
+   "seconds": 54.1,
+   "drawn": 8,
+   "passed": 0,
+   "rejected": [
+    {
+     "id": "shot1",
+     "title": "a beam of light crossing stretching space: Wide view of starry night sky with deep space",
+     "seen": "An abstract black background featuring a bright white star or light source at the center with thin white and red beams radiating downward and a straight vertical beam shooting upward, surrounded by tiny white specks resembling stars.",
+     "reason": "The image is too abstract and looks more like a symbol or decorative graphic than a clear wide view of a starry night sky."
+    },
+    {
+     "id": "shot2",
+     "title": "a beam of light crossing stretching space: Broader view of the vast observable universe diameter",
+     "seen": "An abstract black space scene with a central red dot surrounded by concentric white circular rings and radiating white beams, with a long white diagonal line crossing through the center against a field of scattered white dots.",
+     "reason": "It resembles an emblem, logo, or abstract diagram rather than a recognizable view of the observable universe."
+    },
+    {
+     "id": "shot3",
+     "title": "a beam of light crossing stretching space: Medium shot of distant galaxies moving apart",
+     "seen": "An abstract black image showing a bright white shooting light beam coming from the upper center toward a glowing white and red star-like explosion on the left, and a circular textured planetary ring object on the right.",
+     "reason": "Shows abstract shapes and an explosion rather than a clear medium shot of distant galaxies moving apart."
+    },
+    {
+     "id": "shot4",
+     "title": "a beam of light crossing stretching space: Zoom in on expanding regions of space between galaxies",
+     "seen": "An abstract black background depicting an irregular, glowing white and red celestial entity near the top right with a long, thin white beam extending diagonally downward to the left, surrounded by scattered white specks.",
+     "reason": "The drawing is abstract and lacks a clear, recognizable object representing expanding space."
+    },
+    {
+     "id": "shot5",
+     "title": "a beam of light crossing stretching space: Macro view focusing purely on the space expanding between objects",
+     "seen": "An abstract black image with two textured white abstract shapes in the upper corners, a small red dot in the middle, and a horizontal white wavy reflection line at the bottom center.",
+     "reason": "Consists only of ambiguous abstract shapes and textures with no recognizable objects."
+    },
+    {
+     "id": "shot6",
+     "title": "a beam of light crossing stretching space: Deep zoom into the stretching cosmic fabric increasing distance",
+     "seen": "An abstract black background showing a bright white and red explosion on the left side with a thick horizontal white beam extending to the left and a thin red horizontal beam extending across to the right.",
+     "reason": "It is an abstract composition of lines and a blast rather than a clear depiction of the cosmic fabric."
+    },
+    {
+     "id": "shot7",
+     "title": "a beam of light crossing stretching space: Final pull back out to the wide cosmic landscape",
+     "seen": "An abstract black image featuring a large vertical white glowing cloud of specks at the top with a tiny silhouette of a person standing at its base, from which several thin white lines extend downward.",
+     "reason": "The silhouette of a person and abstract lines do not clearly convey a wide cosmic landscape."
+    },
+    {
+     "id": "shot8",
+     "title": "a beam of light crossing stretching space: Close-up of a single photon of light moving through local space",
+     "seen": "An abstract black background displaying a central red dot surrounded by dense clusters of thin white lines radiating outwards in four main diagonal directions, resembling an explosion or cosmic event.",
+     "reason": "Resembles a logo or abstract badge rather than a clear close-up of a photon moving through space."
+    }
+   ],
+   "verify_error": null,
+   "stand_ins": 8,
+   "error": "only 0 usable drawings",
+   "build_s": 89.6
+  }
+ ],
+ "llm_calls": [
+  {
+   "name": "shorts_plan",
+   "model": "gemma-4-31b-it",
+   "prompt_chars": 7819,
+   "images": 0,
+   "status": 500,
+   "attempt": 1,
+   "error": "{\n  \"error\": {\n    \"code\": 500,\n    \"message\": \"Internal error encountered.\",\n    \"status\": \"INTERNAL\"\n  }\n}\n"
+  },
+  {
+   "name": "shorts_plan",
+   "model": "gemini-3.5-flash-lite",
+   "prompt_chars": 7819,
+   "images": 0,
+   "status": 200,
+   "seconds": 18.9,
+   "attempts": 1,
+   "finish": "STOP",
+   "in_tokens": 2028,
+   "out_tokens": 452,
+   "thought_tokens": null
+  },
+  {
+   "name": "drawing_describe",
+   "model": "gemini-3.5-flash-lite",
+   "prompt_chars": 320,
+   "images": 8,
+   "status": 200,
+   "seconds": 34.3,
+   "attempts": 1,
+   "finish": "STOP",
+   "in_tokens": 8826,
+   "out_tokens": 473,
+   "thought_tokens": null
+  },
+  {
+   "name": "drawing_verify",
+   "model": "gemini-3.5-flash-lite",
+   "prompt_chars": 4225,
+   "images": 0,
+   "status": 200,
+   "seconds": 15.9,
+   "attempts": 1,
+   "finish": "STOP",
+   "in_tokens": 868,
+   "out_tokens": 728,
+   "thought_tokens": null
+  }
+ ],
+ "sfx": {
+  "kind": "sound effects",
+  "name": "transition click and whoosh, generated in code (yt_auto/sound.py)",
+  "source_page": "own work",
+  "licence": "own work (all rights held by the channel owner)",
+  "attribution": "none required"
+ },
+ "music_record": {
+  "file": "music.wav",
+  "kind": "music",
+  "source": "wikimedia_commons",
+  "title": "Kevin MacLeod - Dream Culture",
+  "source_page": "https://commons.wikimedia.org/wiki/File:Kevin_MacLeod_-_Dream_Culture.ogg",
+  "download_url": "https://upload.wikimedia.org/wikipedia/commons/e/e0/Kevin_MacLeod_-_Dream_Culture.ogg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+  "licence": "CC BY 3.0",
+  "licence_url": "https://creativecommons.org/licenses/by/3.0",
+  "author": "Kevin MacLeod",
+  "attribution": "Music: \"Kevin MacLeod - Dream Culture\" by Kevin MacLeod, CC BY 3.0, via Wikimedia Commons. https://commons.wikimedia.org/wiki/File:Kevin_MacLeod_-_Dream_Culture.ogg",
+  "downloaded": "2026-10-28",
+  "seconds": 214.4,
+  "path": "out/shorts/music/music.wav"
+ }
+}

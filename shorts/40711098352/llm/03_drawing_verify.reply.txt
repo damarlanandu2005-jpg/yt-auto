@@ -1,0 +1,52 @@
+{
+  "checks": [
+    {
+      "n": 1,
+      "seen": "An abstract black background featuring a bright white star or light source at the center with thin white and red beams radiating downward and a straight vertical beam shooting upward, surrounded by tiny white specks resembling stars.",
+      "fits": false,
+      "reason": "The image is too abstract and looks more like a symbol or decorative graphic than a clear wide view of a starry night sky."
+    },
+    {
+      "n": 2,
+      "seen": "An abstract black space scene with a central red dot surrounded by concentric white circular rings and radiating white beams, with a long white diagonal line crossing through the center against a field of scattered white dots.",
+      "fits": false,
+      "reason": "It resembles an emblem, logo, or abstract diagram rather than a recognizable view of the observable universe."
+    },
+    {
+      "n": 3,
+      "seen": "An abstract black image showing a bright white shooting light beam coming from the upper center toward a glowing white and red star-like explosion on the left, and a circular textured planetary ring object on the right.",
+      "fits": false,
+      "reason": "Shows abstract shapes and an explosion rather than a clear medium shot of distant galaxies moving apart."
+    },
+    {
+      "n": 4,
+      "seen": "An abstract black background depicting an irregular, glowing white and red celestial entity near the top right with a long, thin white beam extending diagonally downward to the left, surrounded by scattered white specks.",
+      "fits": false,
+      "reason": "The drawing is abstract and lacks a clear, recognizable object representing expanding space."
+    },
+    {
+      "n": 5,
+      "seen": "An abstract black image with two textured white abstract shapes in the upper corners, a small red dot in the middle, and a horizontal white wavy reflection line at the bottom center.",
+      "fits": false,
+      "reason": "Consists only of ambiguous abstract shapes and textures with no recognizable objects."
+    },
+    {
+      "n": 6,
+      "seen": "An abstract black background showing a bright white and red explosion on the left side with a thick horizontal white beam extending to the left and a thin red horizontal beam extending across to the right.",
+      "fits": false,
+      "reason": "It is an abstract composition of lines and a blast rather than a clear depiction of the cosmic fabric."
+    },
+    {
+      "n": 7,
+      "seen": "An abstract black image featuring a large vertical white glowing cloud of specks at the top with a tiny silhouette of a person standing at its base, from which several thin white lines extend downward.",
+      "fits": false,
+      "reason": "The silhouette of a person and abstract lines do not clearly convey a wide cosmic landscape."
+    },
+    {
+      "n": 8,
+      "seen": "An abstract black background displaying a central red dot surrounded by dense clusters of thin white lines radiating outwards in four main diagonal directions, resembling an explosion or cosmic event.",
+      "fits": false,
+      "reason": "Resembles a logo or abstract badge rather than a clear close-up of a photon moving through space."
+    }
+  ]
+}

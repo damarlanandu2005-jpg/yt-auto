@@ -1,0 +1,52 @@
+{
+  "shorts": [
+    {
+      "title": "Why is the observable universe 93 billion light-years wide?",
+      "hook": "How can light travel 93 billion light-years if time began 13.8 billion years ago?",
+      "sentences": [
+        "s01.03",
+        "s01.06",
+        "s01.10",
+        "s02.06",
+        "s02.07",
+        "s02.10",
+        "s03.05"
+      ],
+      "subject": "a beam of light crossing stretching space",
+      "shots": [
+        {
+          "sentence": "s01.03",
+          "view": "Wide view of starry night sky with deep space"
+        },
+        {
+          "sentence": "s01.06",
+          "view": "Close-up of a single photon of light moving through local space"
+        },
+        {
+          "sentence": "s01.10",
+          "view": "Broader view of the vast observable universe diameter"
+        },
+        {
+          "sentence": "s02.06",
+          "view": "Medium shot of distant galaxies moving apart"
+        },
+        {
+          "sentence": "s02.07",
+          "view": "Zoom in on expanding regions of space between galaxies"
+        },
+        {
+          "sentence": "s02.10",
+          "view": "Macro view focusing purely on the space expanding between objects"
+        },
+        {
+          "sentence": "s03.05",
+          "view": "Deep zoom into the stretching cosmic fabric increasing distance"
+        },
+        {
+          "sentence": "s03.05",
+          "view": "Final pull back out to the wide cosmic landscape"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,39 @@
+[model] gemini-3.5-flash-lite
+[system]
+
+
+[user]
+Step 2 of a picture check for a science video. Someone looked at each picture WITHOUT knowing
+what it should show and described it. Decide for each image whether the picture fits.
+The pictures are ink drawings made by an AI image model, which often misses. A drawing fits if a
+viewer hearing the narration would recognise its main object(s) (a star, a planet, a blast, molecules, DNA,
+fish...). It does NOT need to show the action or process (collapsing, moving, changing): a still picture of
+the right thing is enough. It does NOT fit if it is only shapes or texture with no recognisable object, shows
+a different thing (a volcano or canyon for the atmosphere, a red diamond for a star), has text or labels, looks
+like a logo/emblem/badge/flag, or has deformed bodies.
+When unsure, answer fits = false (a chart or plain card is shown instead, which is fine).
+Copy the description into "seen".
+Image 1: described as: An abstract black background featuring a bright white star or light source at the center with thin white and red beams radiating downward and a straight vertical beam shooting upward, surrounded by tiny white specks resembling stars.
+  should show: a beam of light crossing stretching space: Wide view of starry night sky with deep space
+  narration: Wide view of starry night sky with deep space
+Image 2: described as: An abstract black space scene with a central red dot surrounded by concentric white circular rings and radiating white beams, with a long white diagonal line crossing through the center against a field of scattered white dots.
+  should show: a beam of light crossing stretching space: Broader view of the vast observable universe diameter
+  narration: Broader view of the vast observable universe diameter
+Image 3: described as: An abstract black image showing a bright white shooting light beam coming from the upper center toward a glowing white and red star-like explosion on the left, and a circular textured planetary ring object on the right.
+  should show: a beam of light crossing stretching space: Medium shot of distant galaxies moving apart
+  narration: Medium shot of distant galaxies moving apart
+Image 4: described as: An abstract black background depicting an irregular, glowing white and red celestial entity near the top right with a long, thin white beam extending diagonally downward to the left, surrounded by scattered white specks.
+  should show: a beam of light crossing stretching space: Zoom in on expanding regions of space between galaxies
+  narration: Zoom in on expanding regions of space between galaxies
+Image 5: described as: An abstract black image with two textured white abstract shapes in the upper corners, a small red dot in the middle, and a horizontal white wavy reflection line at the bottom center.
+  should show: a beam of light crossing stretching space: Macro view focusing purely on the space expanding between objects
+  narration: Macro view focusing purely on the space expanding between objects
+Image 6: described as: An abstract black background showing a bright white and red explosion on the left side with a thick horizontal white beam extending to the left and a thin red horizontal beam extending across to the right.
+  should show: a beam of light crossing stretching space: Deep zoom into the stretching cosmic fabric increasing distance
+  narration: Deep zoom into the stretching cosmic fabric increasing distance
+Image 7: described as: An abstract black image featuring a large vertical white glowing cloud of specks at the top with a tiny silhouette of a person standing at its base, from which several thin white lines extend downward.
+  should show: a beam of light crossing stretching space: Final pull back out to the wide cosmic landscape
+  narration: Final pull back out to the wide cosmic landscape
+Image 8: described as: An abstract black background displaying a central red dot surrounded by dense clusters of thin white lines radiating outwards in four main diagonal directions, resembling an explosion or cosmic event.
+  should show: a beam of light crossing stretching space: Close-up of a single photon of light moving through local space
+  narration: Close-up of a single photon of light moving through local space
