@@ -1,0 +1,70 @@
+[model] gemini-3.5-flash-lite
+[system]
+
+
+[user]
+Video: Why Is the Observable Universe 93 Billion Light-Years Wide?
+Plan one visual for each slot of narration below. The viewer sees it while hearing that text.
+Rules:
+- Real photos first: use kind=photo for at least 65 per cent of slots, whenever a real photo could show the
+  thing being talked about (objects, places, spacecraft, machines, nature, historical photos).
+  Ask for SIMPLE subjects an archive surely has ("a handheld GPS receiver", "a rocket launch", "an atomic
+  clock"), never a detailed scene ("a hiker with a GPS in remote mountains with no signal"). Never ask for a
+  photo of a chart, graph, diagram or data: archive charts are about other things; use a card instead. A photo of the
+  object being discussed is better than a text card.
+- Moving footage first for the big moments: kind=video = real NASA footage or NASA animation (rocket launches,
+  spacecraft, astronauts, Earth from orbit, the Sun, planets, galaxies, black hole or star animations). Use it
+  for about 20 to 30 per cent of slots, like a documentary. Give photo_subject and photo_queries (simple words a
+  NASA video archive has: "black hole animation", "galaxy flythrough", "rocket launch").
+- Use kind=drawing (at most 24 in the whole video) for an idea no real photo can show: an invisible
+  process, a view nobody photographed, a comparison of two things (e.g. "a radio wave travelling from a satellite
+  down to a phone", "two clocks side by side, one in orbit and one on the ground"). drawing_subject: one simple
+  scene of CONCRETE objects a viewer recognises at once ("a huge exploding star beside a small blue planet",
+  "a DNA double helix with a broken rung"), never a process word ("composition changing", "errors"). No people, faces or hands, no logos, emblems or flags, no text, no numbers, no maps.
+- Step by step (owner's rule): when the narration explains ONE object or scene in parts over several slots, use
+  kind=step for the next 1 or 2 slots: they show the SAME picture as the slot before, moved closer to the part
+  being explained (focus: center, left, right, top or bottom). Wide view first, then closer, then detail.
+  Use steps for about 10 to 20 per cent of slots; never more than 2 steps in a row; a step needs a photo or
+  drawing right before it.
+- Use kind=card when a number, comparison, process or list is the point, or at scene starts (title card).
+- The first slot is a title card with the video title.
+- Every number on a card MUST appear in that slot's text or earlier in the same scene. Never invent data.
+- Vary: never the same card type twice in a row; never more than 2 cards in a row.
+- Text cards are the last choice: at most one bullets card per scene, and a bare title card only at scene starts.
+  Prefer stat, bars, timeline, flow or compare when a card is needed.
+- For kind=photo and kind=drawing still give a fallback card (used if no good picture is made).
+Card types (all text short; big and readable on a phone):
+- title: title (+ subtitle). Use for scene openings.
+- stat: value (a number with unit, e.g. "20,200 km") + label (+ note).
+- bullets: title + 2-4 items (each under 6 words).
+- flow: title + 2-5 steps (cause -> effect, process).
+- bars: title + labels + values (+ unit). Compare 2-6 quantities.
+- timeline: title + 2-5 events {when, label}.
+- compare: title + left_title/left_points vs right_title/right_points.
+
+SLOTS:
+v001 [5.0s] (scene: The Paradox of Time and Distance in the Universe, SCENE START) How can the observable universe be 93 billion light-years
+v002 [5.8s] (scene: The Paradox of Time and Distance in the Universe) across if it is only 13.8 billion years old?
+v003 [3.3s] (scene: The Paradox of Time and Distance in the Universe) If light travels at a constant speed, this
+v004 [3.8s] (scene: The Paradox of Time and Distance in the Universe) vast cosmic scale sounds like an impossible contradiction.
+v005 [5.0s] (scene: The Paradox of Time and Distance in the Universe) So why does this cosmic puzzle matter so much when we look out into space?
+v006 [3.7s] (scene: The Paradox of Time and Distance in the Universe) Objects beyond this physical boundary cannot be detected yet because
+v007 [4.2s] (scene: The Paradox of Time and Distance in the Universe) their light has not had enough time to reach Earth.
+v008 [6.9s] (scene: The Paradox of Time and Distance in the Universe) In this video, we will answer three fundamental questions about our cosmic horizon in plain words.
+v009 [5.1s] (scene: The Paradox of Time and Distance in the Universe) How does space stretch while light is actively traveling across the universe?
+v010 [4.4s] (scene: The Paradox of Time and Distance in the Universe) How does a travel time of 13.8 billion years
+v011 [5.2s] (scene: The Paradox of Time and Distance in the Universe) convert into a physical radius of 46.5 billion light-years?
+v012 [6.4s] (scene: The Paradox of Time and Distance in the Universe) And what mysterious regions lie forever beyond the edge of our current observable cosmos?
+v013 [6.4s] (scene: The Paradox of Time and Distance in the Universe) To solve this mystery, we must reframe how we imagine cosmic space and time.
+v014 [6.9s] (scene: The False Picture of Galaxies Flying Through Empty Space, SCENE START) Many people visualize the universe as a huge empty room where galaxies rocket through a dark void.
+v015 [6.9s] (scene: The False Picture of Galaxies Flying Through Empty Space) In that false mental picture, galaxies are racing through a fixed, static space like cosmic shrapnel.
+v016 [7.3s] (scene: The False Picture of Galaxies Flying Through Empty Space) If that picture were correct, nothing could ever appear farther away than 13.8 billion light-years.
+v017 [5.4s] (scene: The False Picture of Galaxies Flying Through Empty Space) But this common picture of cosmic expansion is completely wrong.
+v018 [5.6s] (scene: The False Picture of Galaxies Flying Through Empty Space) Cosmic expansion is not galaxies moving through a pre-existing empty space.
+v019 [4.2s] (scene: The False Picture of Galaxies Flying Through Empty Space) Instead, general relativity describes expansion as an intrinsic
+v020 [4.7s] (scene: The False Picture of Galaxies Flying Through Empty Space) increase in distance between cosmic objects over time.
+v021 [6.0s] (scene: The False Picture of Galaxies Flying Through Empty Space) Most galaxies are nearly at rest relative to their local comoving spatial coordinates.
+v022 [6.6s] (scene: The False Picture of Galaxies Flying Through Empty Space) The velocity of a galaxy relative to its local comoving grid is called its peculiar velocity.
+v023 [6.2s] (scene: The False Picture of Galaxies Flying Through Empty Space) These local peculiar velocities are caused mostly by gravity and are usually quite small.
+v024 [5.0s] (scene: The False Picture of Galaxies Flying Through Empty Space) So how should we picture the movement of galaxies as the universe expands?
+v025 [7.3s] (scene: The False Picture of Galaxies Flying Through Empty Space) Understanding this key distinction changes everything about how we calculate cosmic distances.

@@ -1,0 +1,130 @@
+{
+ "verdict": "FAIL",
+ "checks": [
+  {
+   "check": "audio_silence",
+   "status": "PASS",
+   "detail": "no long silent gaps",
+   "gaps": []
+  },
+  {
+   "check": "audio_loudness",
+   "status": "PASS",
+   "detail": "-16.3 LUFS (target -16 ± 2), true peak -1.5 dBTP",
+   "lufs": -16.3,
+   "true_peak": -1.5
+  },
+  {
+   "check": "video_black",
+   "status": "FAIL",
+   "detail": "black frames at [(22.9, 29.9)]",
+   "blacks": [
+    [
+     22.9,
+     29.9
+    ]
+   ]
+  },
+  {
+   "check": "av_length",
+   "status": "PASS",
+   "detail": "audio 137.5 s, video 137.5 s (differ by 0.0 s)"
+  },
+  {
+   "check": "video_minutes",
+   "status": "FLAG",
+   "detail": "2.3 min (target 5-8)"
+  },
+  {
+   "check": "scenes_complete",
+   "status": "PASS",
+   "detail": "all 2 scenes have visuals"
+  },
+  {
+   "check": "rights",
+   "status": "PASS",
+   "detail": "15 pictures, voice and font all have allowed licences",
+   "problems": []
+  },
+  {
+   "check": "metadata",
+   "status": "PASS",
+   "detail": "title 59 chars, description 1390 chars, sources listed"
+  },
+  {
+   "check": "pronunciation",
+   "status": "PASS",
+   "detail": "no new hard terms",
+   "terms": []
+  },
+  {
+   "check": "facts_linked",
+   "status": "PASS",
+   "detail": "every fact sentence has a checked source",
+   "bad": []
+  },
+  {
+   "check": "editorial_brief",
+   "status": "PASS",
+   "detail": "brief complete"
+  },
+  {
+   "check": "originality",
+   "status": "PASS",
+   "detail": "closest past video 2026-10-27-gps-satellite-timestamps: topic 0.17, template 0.00, copy 0.00",
+   "compared": [
+    {
+     "past": "2026-10-27-gps-satellite-timestamps",
+     "topic": 0.17,
+     "template": 0.0,
+     "copy": 0.0
+    }
+   ]
+  },
+  {
+   "check": "plain_cards",
+   "status": "FAIL",
+   "detail": "7 of 25 visuals are plain text cards (28%; max 25%): v001, v013, v014, v018, v022, v023, v025"
+  },
+  {
+   "check": "pictures_checked",
+   "status": "PASS",
+   "detail": "all 16 photos and drawings were looked at; rejected ones are not used"
+  },
+  {
+   "check": "thumbnail",
+   "status": "PASS",
+   "detail": "'space stretches over time' on picture v002"
+  },
+  {
+   "check": "hook_question",
+   "status": "PASS",
+   "detail": "The first 30 seconds clearly state how the observable universe can be 93 billion light-years across if it is only 13.8 billion years old."
+  },
+  {
+   "check": "hook_why",
+   "status": "PASS",
+   "detail": "The first 30 seconds explicitly ask why the puzzle matters and explain that objects beyond the boundary cannot be detected yet because their light has not reached Earth."
+  },
+  {
+   "check": "title_promise",
+   "status": "PASS",
+   "detail": "The script directly addresses why the observable universe is 93 billion light-years wide and sets up the explanation of cosmic expansion."
+  },
+  {
+   "check": "scene_relevance",
+   "status": "PASS",
+   "detail": "All text cards directly match the narration spoken at the moment they appear."
+  },
+  {
+   "check": "sensitive",
+   "status": "PASS",
+   "detail": "There is no financial, legal, or health advice, nor any accusations against named persons or companies."
+  },
+  {
+   "check": "adds_value",
+   "status": "PASS",
+   "detail": "The video explains the conceptual distinction between galaxies moving through space versus space itself stretching, rather than just listing facts."
+  }
+ ]
+}

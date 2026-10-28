@@ -1,0 +1,988 @@
+[
+ {
+  "scene": "s01",
+  "start": 0.0,
+  "text": "How can the observable universe be 93 billion light-years",
+  "sentences": [
+   "s01.01"
+  ],
+  "id": "v001",
+  "end": 4.949,
+  "seconds": 4.95,
+  "scene_start": true,
+  "kind": "card",
+  "card": {
+   "type": "title",
+   "title": "Why Is the Observable Universe 93 Billion Light-Years Wide?",
+   "subtitle": "The Paradox of Time and Distance"
+  },
+  "frame": "out/run/frames/v001.png"
+ },
+ {
+  "scene": "s01",
+  "start": 4.949,
+  "text": "across if it is only 13.8 billion years old?",
+  "sentences": [
+   "s01.01"
+  ],
+  "id": "v002",
+  "end": 10.776,
+  "seconds": 5.83,
+  "scene_start": false,
+  "kind": "photo",
+  "photo_subject": "a deep space galaxy field",
+  "photo_queries": [
+   "deep field galaxies",
+   "universe space"
+  ],
+  "card": {
+   "type": "stat",
+   "title": "Cosmic Age",
+   "value": "13.8 billion",
+   "label": "Years old",
+   "unit": "years"
+  },
+  "photo": {
+   "path": "out/run/photos/v002.jpg",
+   "file": "v002.jpg",
+   "kind": "photo",
+   "source": "wikimedia_commons",
+   "title": "Hubble ultra deep field",
+   "source_page": "https://commons.wikimedia.org/wiki/File:Hubble_ultra_deep_field.jpg",
+   "download_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/2f/Hubble_ultra_deep_field.jpg/1920px-Hubble_ultra_deep_field.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "licence": "Public domain",
+   "licence_url": "",
+   "author": "NASA and the European Space Agency.",
+   "attribution": "\"Hubble ultra deep field\" by NASA and the European Space Agency., Public domain, via Wikimedia Commons. https://commons.wikimedia.org/wiki/File:Hubble_ultra_deep_field.jpg",
+   "downloaded": "2026-10-28"
+  },
+  "frame": "out/run/frames/v002.png"
+ },
+ {
+  "scene": "s01",
+  "start": 10.776,
+  "text": "If light travels at a constant speed, this",
+  "sentences": [
+   "s01.02"
+  ],
+  "id": "v003",
+  "end": 14.105,
+  "seconds": 3.33,
+  "scene_start": false,
+  "kind": "drawing",
+  "drawing_subject": "a beam of light travelling across starry space",
+  "card": {
+   "type": "stat",
+   "title": "Speed of Light",
+   "value": "Constant",
+   "label": "Light speed"
+  },
+  "photo": {
+   "path": "out/run/drawings/v003.png",
+   "file": "v003.png",
+   "kind": "drawing",
+   "source": "ai_drawing",
+   "title": "a beam of light travelling across starry space",
+   "source_page": "https://huggingface.co/segmind/Segmind-Vega",
+   "licence": "AI-generated drawing; model licence Apache-2.0",
+   "model_licence": "Apache-2.0",
+   "licence_url": "https://www.apache.org/licenses/LICENSE-2.0",
+   "author": "AI-generated with segmind/Segmind-Vega + segmind/Segmind-VegaRT",
+   "attribution": "Illustration generated with Segmind-Vega (Apache-2.0): a beam of light travelling across starry space",
+   "downloaded": "2026-10-28",
+   "prompt": "a beam of light travelling across starry space, pure black background, detailed ink illustration, white and grey pen linework, one bright red accent, high contrast, simple clear composition, no text, no letters, no numbers"
+  },
+  "photo_subject": "a beam of light travelling across starry space",
+  "frame": "out/run/frames/v003.png"
+ },
+ {
+  "scene": "s01",
+  "start": 14.105,
+  "text": "vast cosmic scale sounds like an impossible contradiction.",
+  "sentences": [
+   "s01.02"
+  ],
+  "id": "v004",
+  "end": 17.92,
+  "seconds": 3.82,
+  "scene_start": false,
+  "kind": "photo",
+  "photo_subject": "spiral galaxy",
+  "photo_queries": [
+   "spiral galaxy",
+   "distant cosmos"
+  ],
+  "card": {
+   "type": "stat",
+   "title": "Cosmic Scale",
+   "value": "93 billion",
+   "label": "Light-years wide",
+   "unit": "light-years"
+  },
+  "photo": {
+   "path": "out/run/photos/v004.jpg",
+   "file": "v004.jpg",
+   "kind": "photo",
+   "source": "wikimedia_commons",
+   "title": "Hubble2005-01-barred-spiral-galaxy-NGC1300",
+   "source_page": "https://commons.wikimedia.org/wiki/File:Hubble2005-01-barred-spiral-galaxy-NGC1300.jpg",
+   "download_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/52/Hubble2005-01-barred-spiral-galaxy-NGC1300.jpg/1920px-Hubble2005-01-barred-spiral-galaxy-NGC1300.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "licence": "Public domain",
+   "licence_url": "",
+   "author": "NASA, ESA, and The Hubble Heritage Team STScI/AURA)",
+   "attribution": "\"Hubble2005-01-barred-spiral-galaxy-NGC1300\" by NASA, ESA, and The Hubble Heritage Team STScI/AURA), Public domain, via Wikimedia Commons. https://commons.wikimedia.org/wiki/File:Hubble2005-01-barred-spiral-galaxy-NGC1300.jpg",
+   "downloaded": "2026-10-28"
+  },
+  "frame": "out/run/frames/v004.png"
+ },
+ {
+  "scene": "s01",
+  "start": 17.92,
+  "text": "So why does this cosmic puzzle matter so much when we look out into space?",
+  "sentences": [
+   "s01.03"
+  ],
+  "id": "v005",
+  "end": 22.931,
+  "seconds": 5.01,
+  "scene_start": false,
+  "kind": "video",
+  "photo_subject": "galaxy cluster in space",
+  "photo_queries": [
+   "galaxy cluster",
+   "deep space"
+  ],
+  "card": {
+   "type": "stat",
+   "title": "Observable Universe",
+   "value": "93 billion",
+   "label": "Light-years wide"
+  },
+  "photo": {
+   "path": "out/run/photos/v005.jpg",
+   "file": "v005.jpg",
+   "kind": "photo",
+   "source": "nasa_image_library",
+   "title": "Virgo Galaxy Cluster",
+   "source_page": "https://images.nasa.gov/details/PIA07906",
+   "download_url": "https://images-assets.nasa.gov/image/PIA07906/PIA07906~large.jpg",
+   "licence": "Public domain (NASA media, not copyrighted in the US)",
+   "licence_url": "https://www.nasa.gov/nasa-brand-center/images-and-media/",
+   "author": "NASA/JPL-Caltech/SSC",
+   "attribution": "Virgo Galaxy Cluster — NASA/JPL-Caltech/SSC, NASA, public domain. https://images.nasa.gov/details/PIA07906",
+   "downloaded": "2026-10-28"
+  },
+  "frame": "out/run/frames/v005.png"
+ },
+ {
+  "scene": "s01",
+  "start": 22.931,
+  "text": "Objects beyond this physical boundary cannot be detected yet because",
+  "sentences": [
+   "s01.04"
+  ],
+  "id": "v006",
+  "end": 26.648500000000002,
+  "seconds": 3.72,
+  "scene_start": false,
+  "kind": "photo",
+  "photo_subject": "distant star field",
+  "photo_queries": [
+   "star field",
+   "space stars"
+  ],
+  "card": {
+   "type": "bullets",
+   "title": "Cosmic Limits",
+   "items": [
+    "Beyond physical boundary",
+    "Cannot be detected yet",
+    "Light not reached Earth"
+   ]
+  },
+  "photo": {
+   "path": "out/run/photos/v006.jpg",
+   "file": "v006.jpg",
+   "kind": "photo",
+   "source": "nasa_image_library",
+   "title": "Star Field in the Constellation Cepheus",
+   "source_page": "https://images.nasa.gov/details/PIA12066",
+   "download_url": "https://images-assets.nasa.gov/image/PIA12066/PIA12066~orig.jpg",
+   "licence": "Public domain (NASA media, not copyrighted in the US)",
+   "licence_url": "https://www.nasa.gov/nasa-brand-center/images-and-media/",
+   "author": "NASA/JPL/MPS/DLR/IDA",
+   "attribution": "Star Field in the Constellation Cepheus — NASA/JPL/MPS/DLR/IDA, NASA, public domain. https://images.nasa.gov/details/PIA12066",
+   "downloaded": "2026-10-28"
+  },
+  "frame": "out/run/frames/v006.png"
+ },
+ {
+  "scene": "s01",
+  "start": 26.648500000000002,
+  "text": "their light has not had enough time to reach Earth.",
+  "sentences": [
+   "s01.04"
+  ],
+  "id": "v007",
+  "end": 30.831,
+  "seconds": 4.18,
+  "scene_start": false,
+  "kind": "step",
+  "focus": "center",
+  "card": {
+   "type": "stat",
+   "title": "Travel Time",
+   "value": "13.8 billion",
+   "label": "Years for light",
+   "unit": "years"
+  },
+  "photo": {
+   "path": "out/run/photos/v006.jpg",
+   "file": "v006.jpg",
+   "kind": "photo",
+   "source": "nasa_image_library",
+   "title": "Star Field in the Constellation Cepheus",
+   "source_page": "https://images.nasa.gov/details/PIA12066",
+   "download_url": "https://images-assets.nasa.gov/image/PIA12066/PIA12066~orig.jpg",
+   "licence": "Public domain (NASA media, not copyrighted in the US)",
+   "licence_url": "https://www.nasa.gov/nasa-brand-center/images-and-media/",
+   "author": "NASA/JPL/MPS/DLR/IDA",
+   "attribution": "Star Field in the Constellation Cepheus — NASA/JPL/MPS/DLR/IDA, NASA, public domain. https://images.nasa.gov/details/PIA12066",
+   "downloaded": "2026-10-28"
+  },
+  "zoom": 1.4,
+  "step_of": "v006",
+  "frame": "out/run/frames/v007.png"
+ },
+ {
+  "scene": "s01",
+  "start": 30.831,
+  "text": "In this video, we will answer three fundamental questions about our cosmic horizon in plain words.",
+  "sentences": [
+   "s01.05"
+  ],
+  "id": "v008",
+  "end": 37.773,
+  "seconds": 6.94,
+  "scene_start": false,
+  "kind": "card",
+  "card": {
+   "type": "flow",
+   "title": "Three Questions",
+   "steps": [
+    "Space stretching",
+    "Radius conversion",
+    "Distant regions"
+   ]
+  },
+  "frame": "out/run/frames/v008.png"
+ },
+ {
+  "scene": "s01",
+  "start": 37.773,
+  "text": "How does space stretch while light is actively traveling across the universe?",
+  "sentences": [
+   "s01.06"
+  ],
+  "id": "v009",
+  "end": 42.85,
+  "seconds": 5.08,
+  "scene_start": false,
+  "kind": "drawing",
+  "drawing_subject": "a grid stretching out with light waves moving across it",
+  "card": {
+   "type": "bullets",
+   "title": "Light Travel",
+   "items": [
+    "Space stretches",
+    "Light travels across",
+    "Expanding universe"
+   ]
+  },
+  "photo": {
+   "path": "out/run/drawings/v009.png",
+   "file": "v009.png",
+   "kind": "drawing",
+   "source": "ai_drawing",
+   "title": "a grid stretching out with light waves moving across it",
+   "source_page": "https://huggingface.co/segmind/Segmind-Vega",
+   "licence": "AI-generated drawing; model licence Apache-2.0",
+   "model_licence": "Apache-2.0",
+   "licence_url": "https://www.apache.org/licenses/LICENSE-2.0",
+   "author": "AI-generated with segmind/Segmind-Vega + segmind/Segmind-VegaRT",
+   "attribution": "Illustration generated with Segmind-Vega (Apache-2.0): a grid stretching out with light waves moving across it",
+   "downloaded": "2026-10-28",
+   "prompt": "a grid stretching out with light waves moving across it, pure black background, detailed ink illustration, white and grey pen linework, one bright red accent, high contrast, simple clear composition, no text, no letters, no numbers"
+  },
+  "photo_subject": "a grid stretching out with light waves moving across it",
+  "frame": "out/run/frames/v009.png"
+ },
+ {
+  "scene": "s01",
+  "start": 42.85,
+  "text": "How does a travel time of 13.8 billion years",
+  "sentences": [
+   "s01.07"
+  ],
+  "id": "v010",
+  "end": 47.213,
+  "seconds": 4.36,
+  "scene_start": false,
+  "kind": "photo",
+  "photo_subject": "cosmic microwave background map",
+  "photo_queries": [
+   "cosmic background",
+   "universe map"
+  ],
+  "card": {
+   "type": "stat",
+   "title": "Travel Time",
+   "value": "13.8 billion",
+   "label": "Years travel time"
+  },
+  "photo": {
+   "path": "out/run/photos/v010.jpg",
+   "file": "v010.jpg",
+   "kind": "photo",
+   "source": "wikimedia_commons",
+   "title": "Cosmic Microwave Background (CMB)",
+   "source_page": "https://commons.wikimedia.org/wiki/File:Cosmic_Microwave_Background_(CMB).jpeg",
+   "download_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/04/Cosmic_Microwave_Background_%28CMB%29.jpeg/1920px-Cosmic_Microwave_Background_%28CMB%29.jpeg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "licence": "CC BY 4.0",
+   "licence_url": "https://creativecommons.org/licenses/by/4.0",
+   "author": "ESA and the Planck Collaboration",
+   "attribution": "\"Cosmic Microwave Background (CMB)\" by ESA and the Planck Collaboration, CC BY 4.0, via Wikimedia Commons. https://commons.wikimedia.org/wiki/File:Cosmic_Microwave_Background_(CMB).jpeg",
+   "downloaded": "2026-10-28"
+  },
+  "frame": "out/run/frames/v010.png"
+ },
+ {
+  "scene": "s01",
+  "start": 47.213,
+  "text": "convert into a physical radius of 46.5 billion light-years?",
+  "sentences": [
+   "s01.07"
+  ],
+  "id": "v011",
+  "end": 52.434,
+  "seconds": 5.22,
+  "scene_start": false,
+  "kind": "drawing",
+  "drawing_subject": "a glowing sphere expanding outwards in space",
+  "card": {
+   "type": "stat",
+   "title": "Physical Radius",
+   "value": "46.5 billion",
+   "label": "Light-years radius",
+   "unit": "light-years"
+  },
+  "photo": {
+   "path": "out/run/drawings/v011.png",
+   "file": "v011.png",
+   "kind": "drawing",
+   "source": "ai_drawing",
+   "title": "a glowing sphere expanding outwards in space",
+   "source_page": "https://huggingface.co/segmind/Segmind-Vega",
+   "licence": "AI-generated drawing; model licence Apache-2.0",
+   "model_licence": "Apache-2.0",
+   "licence_url": "https://www.apache.org/licenses/LICENSE-2.0",
+   "author": "AI-generated with segmind/Segmind-Vega + segmind/Segmind-VegaRT",
+   "attribution": "Illustration generated with Segmind-Vega (Apache-2.0): a glowing sphere expanding outwards in space",
+   "downloaded": "2026-10-28",
+   "prompt": "a glowing sphere expanding outwards in space, pure black background, detailed ink illustration, white and grey pen linework, one bright red accent, high contrast, simple clear composition, no text, no letters, no numbers"
+  },
+  "photo_subject": "a glowing sphere expanding outwards in space",
+  "frame": "out/run/frames/v011.png"
+ },
+ {
+  "scene": "s01",
+  "start": 52.434,
+  "text": "And what mysterious regions lie forever beyond the edge of our current observable cosmos?",
+  "sentences": [
+   "s01.08"
+  ],
+  "id": "v012",
+  "end": 58.853,
+  "seconds": 6.42,
+  "scene_start": false,
+  "kind": "photo",
+  "photo_subject": "nebula clouds in deep space",
+  "photo_queries": [
+   "nebula cloud",
+   "deep space edge"
+  ],
+  "card": {
+   "type": "bullets",
+   "title": "Beyond the Edge",
+   "items": [
+    "Forever beyond",
+    "Current observable cosmos",
+    "Distant regions"
+   ]
+  },
+  "photo": {
+   "path": "out/run/photos/v012.jpg",
+   "file": "v012.jpg",
+   "kind": "photo",
+   "source": "nasa_image_library",
+   "title": "Blowin in the Stellar Wind",
+   "source_page": "https://images.nasa.gov/details/PIA14103",
+   "download_url": "https://images-assets.nasa.gov/image/PIA14103/PIA14103~large.jpg",
+   "licence": "Public domain (NASA media, not copyrighted in the US)",
+   "licence_url": "https://www.nasa.gov/nasa-brand-center/images-and-media/",
+   "author": "NASA/JPL-Caltech/UCLA",
+   "attribution": "Blowin in the Stellar Wind — NASA/JPL-Caltech/UCLA, NASA, public domain. https://images.nasa.gov/details/PIA14103",
+   "downloaded": "2026-10-28"
+  },
+  "frame": "out/run/frames/v012.png"
+ },
+ {
+  "scene": "s01",
+  "start": 58.853,
+  "text": "To solve this mystery, we must reframe how we imagine cosmic space and time.",
+  "sentences": [
+   "s01.09"
+  ],
+  "id": "v013",
+  "end": 65.229,
+  "seconds": 6.38,
+  "scene_start": false,
+  "kind": "video",
+  "photo_subject": "universe expansion simulation",
+  "photo_queries": [
+   "universe expansion",
+   "cosmic web"
+  ],
+  "card": {
+   "type": "bullets",
+   "title": "Reframing Space",
+   "items": [
+    "Solve the mystery",
+    "Reframe imagination",
+    "Space and time"
+   ]
+  },
+  "photo_rejected": {
+   "path": "out/run/photos/v013b.jpg",
+   "file": "v013b.jpg",
+   "kind": "video",
+   "source": "nasa_image_library",
+   "title": "KSC-04-S-00174",
+   "source_page": "https://images.nasa.gov/details/ksc_052004_chandra",
+   "download_url": "https://images-assets.nasa.gov/video/ksc_052004_chandra/ksc_052004_chandra~orig.mp4",
+   "licence": "Public domain (NASA media, not copyrighted in the US)",
+   "licence_url": "https://www.nasa.gov/nasa-brand-center/images-and-media/",
+   "author": "NASA or National Aeronautics and Space Administration",
+   "attribution": "KSC-04-S-00174 — NASA or National Aeronautics and Space Administration, NASA, public domain (video). https://images.nasa.gov/details/ksc_052004_chandra",
+   "downloaded": "2026-10-28",
+   "clip_start_s": 22.43,
+   "clip_seconds": 6.88,
+   "video_clip": "out/run/photos/v013b.clip.mp4"
+  },
+  "drawing_rejected": {
+   "path": "out/run/drawings/v013.png",
+   "file": "v013.png",
+   "kind": "drawing",
+   "source": "ai_drawing",
+   "title": "universe expansion",
+   "source_page": "https://huggingface.co/segmind/Segmind-Vega",
+   "licence": "AI-generated drawing; model licence Apache-2.0",
+   "model_licence": "Apache-2.0",
+   "licence_url": "https://www.apache.org/licenses/LICENSE-2.0",
+   "author": "AI-generated with segmind/Segmind-Vega + segmind/Segmind-VegaRT",
+   "attribution": "Illustration generated with Segmind-Vega (Apache-2.0): universe expansion",
+   "downloaded": "2026-10-28",
+   "prompt": "universe expansion, pure black background, detailed ink illustration, white and grey pen linework, one bright red accent, high contrast, simple clear composition, no text, no letters, no numbers"
+  },
+  "frame": "out/run/frames/v013.png"
+ },
+ {
+  "scene": "s02",
+  "start": 65.229,
+  "text": "Many people visualize the universe as a huge empty room where galaxies rocket through a dark void.",
+  "sentences": [
+   "s02.01"
+  ],
+  "id": "v014",
+  "end": 72.106,
+  "seconds": 6.88,
+  "scene_start": true,
+  "kind": "card",
+  "card": {
+   "type": "title",
+   "title": "The False Picture",
+   "subtitle": "Galaxies Flying Through Empty Space"
+  },
+  "frame": "out/run/frames/v014.png"
+ },
+ {
+  "scene": "s02",
+  "start": 72.106,
+  "text": "In that false mental picture, galaxies are racing through a fixed, static space like cosmic shrapnel.",
+  "sentences": [
+   "s02.02"
+  ],
+  "id": "v015",
+  "end": 78.969,
+  "seconds": 6.86,
+  "scene_start": false,
+  "kind": "drawing",
+  "drawing_subject": "glowing dots moving rapidly through a dark void",
+  "card": {
+   "type": "bullets",
+   "title": "Mental Picture",
+   "items": [
+    "Huge empty room",
+    "Galaxies rocket through",
+    "Dark void"
+   ]
+  },
+  "photo": {
+   "path": "out/run/drawings/v015.png",
+   "file": "v015.png",
+   "kind": "drawing",
+   "source": "ai_drawing",
+   "title": "glowing dots moving rapidly through a dark void",
+   "source_page": "https://huggingface.co/segmind/Segmind-Vega",
+   "licence": "AI-generated drawing; model licence Apache-2.0",
+   "model_licence": "Apache-2.0",
+   "licence_url": "https://www.apache.org/licenses/LICENSE-2.0",
+   "author": "AI-generated with segmind/Segmind-Vega + segmind/Segmind-VegaRT",
+   "attribution": "Illustration generated with Segmind-Vega (Apache-2.0): glowing dots moving rapidly through a dark void",
+   "downloaded": "2026-10-28",
+   "prompt": "glowing dots moving rapidly through a dark void, pure black background, detailed ink illustration, white and grey pen linework, one bright red accent, high contrast, simple clear composition, no text, no letters, no numbers"
+  },
+  "photo_subject": "glowing dots moving rapidly through a dark void",
+  "frame": "out/run/frames/v015.png"
+ },
+ {
+  "scene": "s02",
+  "start": 78.969,
+  "text": "If that picture were correct, nothing could ever appear farther away than 13.8 billion light-years.",
+  "sentences": [
+   "s02.03"
+  ],
+  "id": "v016",
+  "end": 86.28,
+  "seconds": 7.31,
+  "scene_start": false,
+  "kind": "photo",
+  "photo_subject": "hubble deep field galaxies",
+  "photo_queries": [
+   "hubble deep field",
+   "galaxy field"
+  ],
+  "card": {
+   "type": "stat",
+   "title": "Distance Limit",
+   "value": "13.8 billion",
+   "label": "Light-years limit",
+   "unit": "light-years"
+  },
+  "photo": {
+   "path": "out/run/photos/v016.jpg",
+   "file": "v016.jpg",
+   "kind": "photo",
+   "source": "nasa_image_library",
+   "title": "Hubble Deep Field Image Unveils Myriad Galaxies Back to the Beginning of Time",
+   "source_page": "https://images.nasa.gov/details/PIA12110",
+   "download_url": "https://images-assets.nasa.gov/image/PIA12110/PIA12110~orig.jpg",
+   "licence": "Public domain (NASA media, not copyrighted in the US)",
+   "licence_url": "https://www.nasa.gov/nasa-brand-center/images-and-media/",
+   "author": "NASA/JPL/STScI Hubble Deep Field Team",
+   "attribution": "Hubble Deep Field Image Unveils Myriad Galaxies Back to the Beginning of Time — NASA/JPL/STScI Hubble Deep Field Team, NASA, public domain. https://images.nasa.gov/details/PIA12110",
+   "downloaded": "2026-10-28"
+  },
+  "frame": "out/run/frames/v016.png"
+ },
+ {
+  "scene": "s02",
+  "start": 86.28,
+  "text": "But this common picture of cosmic expansion is completely wrong.",
+  "sentences": [
+   "s02.04"
+  ],
+  "id": "v017",
+  "end": 91.713,
+  "seconds": 5.43,
+  "scene_start": false,
+  "kind": "card",
+  "card": {
+   "type": "compare",
+   "title": "Cosmic Expansion",
+   "left_title": "Wrong View",
+   "left_points": [
+    "Moving through space",
+    "Static void"
+   ],
+   "right_title": "Right View",
+   "right_points": [
+    "Space itself stretches",
+    "Expanding fabric"
+   ]
+  },
+  "frame": "out/run/frames/v017.png"
+ },
+ {
+  "scene": "s02",
+  "start": 91.713,
+  "text": "Cosmic expansion is not galaxies moving through a pre-existing empty space.",
+  "sentences": [
+   "s02.05"
+  ],
+  "id": "v018",
+  "end": 97.326,
+  "seconds": 5.61,
+  "scene_start": false,
+  "kind": "video",
+  "photo_subject": "galaxy cluster rotation and expansion",
+  "photo_queries": [
+   "galaxy cluster",
+   "space expansion"
+  ],
+  "card": {
+   "type": "bullets",
+   "title": "Expansion Facts",
+   "items": [
+    "Not moving through space",
+    "Pre-existing void",
+    "Dynamic expansion"
+   ]
+  },
+  "drawing_rejected": {
+   "path": "out/run/drawings/v018.png",
+   "file": "v018.png",
+   "kind": "drawing",
+   "source": "ai_drawing",
+   "title": "galaxy cluster rotation and expansion",
+   "source_page": "https://huggingface.co/segmind/Segmind-Vega",
+   "licence": "AI-generated drawing; model licence Apache-2.0",
+   "model_licence": "Apache-2.0",
+   "licence_url": "https://www.apache.org/licenses/LICENSE-2.0",
+   "author": "AI-generated with segmind/Segmind-Vega + segmind/Segmind-VegaRT",
+   "attribution": "Illustration generated with Segmind-Vega (Apache-2.0): galaxy cluster rotation and expansion",
+   "downloaded": "2026-10-28",
+   "prompt": "galaxy cluster rotation and expansion, pure black background, detailed ink illustration, white and grey pen linework, one bright red accent, high contrast, simple clear composition, no text, no letters, no numbers"
+  },
+  "frame": "out/run/frames/v018.png"
+ },
+ {
+  "scene": "s02",
+  "start": 97.326,
+  "text": "Instead, general relativity describes expansion as an intrinsic",
+  "sentences": [
+   "s02.06"
+  ],
+  "id": "v019",
+  "end": 101.55449999999999,
+  "seconds": 4.23,
+  "scene_start": false,
+  "kind": "photo",
+  "photo_subject": "albert einstein portrait",
+  "photo_queries": [
+   "albert einstein",
+   "relativity portrait"
+  ],
+  "card": {
+   "type": "bullets",
+   "title": "General Relativity",
+   "items": [
+    "Describes expansion",
+    "Intrinsic increase",
+    "Curved spacetime"
+   ]
+  },
+  "photo": {
+   "path": "out/run/photos/v019.jpg",
+   "file": "v019.jpg",
+   "kind": "photo",
+   "source": "wikimedia_commons",
+   "title": "Albert Einstein Head",
+   "source_page": "https://commons.wikimedia.org/wiki/File:Albert_Einstein_Head.jpg",
+   "download_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/d3/Albert_Einstein_Head.jpg/1920px-Albert_Einstein_Head.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "licence": "Public domain",
+   "licence_url": "",
+   "author": "Photograph by Orren Jack Turner, Princeton, N.J. Modified with Photoshop by PM_Poon and later by Dantadd.",
+   "attribution": "\"Albert Einstein Head\" by Photograph by Orren Jack Turner, Princeton, N.J. Modified with Photoshop by PM_Poon and later by Dantadd., Public domain, via Wikimedia Commons. https://commons.wikimedia.org/wiki/File:Albert_Einstein_Head.jpg",
+   "downloaded": "2026-10-28"
+  },
+  "frame": "out/run/frames/v019.png"
+ },
+ {
+  "scene": "s02",
+  "start": 101.55449999999999,
+  "text": "increase in distance between cosmic objects over time.",
+  "sentences": [
+   "s02.06"
+  ],
+  "id": "v020",
+  "end": 106.257,
+  "seconds": 4.7,
+  "scene_start": false,
+  "kind": "drawing",
+  "drawing_subject": "a grid of space expanding with two dots moving apart",
+  "card": {
+   "type": "flow",
+   "title": "Increase in Distance",
+   "steps": [
+    "Cosmic objects",
+    "More distance",
+    "Over time"
+   ]
+  },
+  "photo": {
+   "path": "out/run/drawings/v020.png",
+   "file": "v020.png",
+   "kind": "drawing",
+   "source": "ai_drawing",
+   "title": "a grid of space expanding with two dots moving apart",
+   "source_page": "https://huggingface.co/segmind/Segmind-Vega",
+   "licence": "AI-generated drawing; model licence Apache-2.0",
+   "model_licence": "Apache-2.0",
+   "licence_url": "https://www.apache.org/licenses/LICENSE-2.0",
+   "author": "AI-generated with segmind/Segmind-Vega + segmind/Segmind-VegaRT",
+   "attribution": "Illustration generated with Segmind-Vega (Apache-2.0): a grid of space expanding with two dots moving apart",
+   "downloaded": "2026-10-28",
+   "prompt": "a grid of space expanding with two dots moving apart, pure black background, detailed ink illustration, white and grey pen linework, one bright red accent, high contrast, simple clear composition, no text, no letters, no numbers"
+  },
+  "photo_subject": "a grid of space expanding with two dots moving apart",
+  "frame": "out/run/frames/v020.png"
+ },
+ {
+  "scene": "s02",
+  "start": 106.257,
+  "text": "Most galaxies are nearly at rest relative to their local comoving spatial coordinates.",
+  "sentences": [
+   "s02.07"
+  ],
+  "id": "v021",
+  "end": 112.299,
+  "seconds": 6.04,
+  "scene_start": false,
+  "kind": "video",
+  "photo_subject": "cosmic web animation",
+  "photo_queries": [
+   "cosmic web",
+   "galaxy filaments"
+  ],
+  "card": {
+   "type": "bullets",
+   "title": "Galactic Rest",
+   "items": [
+    "Nearly at rest",
+    "Local coordinates",
+    "Comoving spatial grid"
+   ]
+  },
+  "photo_rejected": {
+   "path": "out/run/photos/v021b.jpg",
+   "file": "v021b.jpg",
+   "kind": "video",
+   "source": "nasa_image_library",
+   "title": "HST SM4 COS Installation EVA",
+   "source_page": "https://images.nasa.gov/details/GSFC_20080822_HST_m10232_COS_EVA",
+   "download_url": "https://images-assets.nasa.gov/video/GSFC_20080822_HST_m10232_COS_EVA/GSFC_20080822_HST_m10232_COS_EVA~medium.mp4",
+   "licence": "Public domain (NASA media, not copyrighted in the US)",
+   "licence_url": "https://www.nasa.gov/nasa-brand-center/images-and-media/",
+   "author": "Michael McClare, Bob Sauls",
+   "attribution": "HST SM4 COS Installation EVA — Michael McClare, Bob Sauls, NASA, public domain (video). https://images.nasa.gov/details/GSFC_20080822_HST_m10232_COS_EVA",
+   "downloaded": "2026-10-28",
+   "clip_start_s": 17.0,
+   "clip_seconds": 6.54,
+   "video_clip": "out/run/photos/v021b.clip.mp4"
+  },
+  "photo": {
+   "path": "out/run/drawings/v021.png",
+   "file": "v021.png",
+   "kind": "drawing",
+   "source": "ai_drawing",
+   "title": "cosmic web",
+   "source_page": "https://huggingface.co/segmind/Segmind-Vega",
+   "licence": "AI-generated drawing; model licence Apache-2.0",
+   "model_licence": "Apache-2.0",
+   "licence_url": "https://www.apache.org/licenses/LICENSE-2.0",
+   "author": "AI-generated with segmind/Segmind-Vega + segmind/Segmind-VegaRT",
+   "attribution": "Illustration generated with Segmind-Vega (Apache-2.0): cosmic web",
+   "downloaded": "2026-10-28",
+   "prompt": "cosmic web, pure black background, detailed ink illustration, white and grey pen linework, one bright red accent, high contrast, simple clear composition, no text, no letters, no numbers"
+  },
+  "frame": "out/run/frames/v021.png"
+ },
+ {
+  "scene": "s02",
+  "start": 112.299,
+  "text": "The velocity of a galaxy relative to its local comoving grid is called its peculiar velocity.",
+  "sentences": [
+   "s02.08"
+  ],
+  "id": "v022",
+  "end": 118.942,
+  "seconds": 6.64,
+  "scene_start": false,
+  "kind": "card",
+  "card": {
+   "type": "title",
+   "title": "Peculiar Velocity",
+   "subtitle": ""
+  },
+  "frame": "out/run/frames/v022.png"
+ },
+ {
+  "scene": "s02",
+  "start": 118.942,
+  "text": "These local peculiar velocities are caused mostly by gravity and are usually quite small.",
+  "sentences": [
+   "s02.09"
+  ],
+  "id": "v023",
+  "end": 125.192,
+  "seconds": 6.25,
+  "scene_start": false,
+  "kind": "photo",
+  "photo_subject": "colliding galaxies merging",
+  "photo_queries": [
+   "colliding galaxies",
+   "galaxy collision"
+  ],
+  "card": {
+   "type": "bullets",
+   "title": "Peculiar Velocities",
+   "items": [
+    "Caused by gravity",
+    "Usually quite small",
+    "Local movements"
+   ]
+  },
+  "photo_rejected": {
+   "path": "out/run/photos/v023b.jpg",
+   "file": "v023b.jpg",
+   "kind": "photo",
+   "source": "nasa_image_library",
+   "title": "Dwarf Galaxies Swimming in Tidal Tails",
+   "source_page": "https://images.nasa.gov/details/PIA03605",
+   "download_url": "https://images-assets.nasa.gov/image/PIA03605/PIA03605~orig.jpg",
+   "licence": "Public domain (NASA media, not copyrighted in the US)",
+   "licence_url": "https://www.nasa.gov/nasa-brand-center/images-and-media/",
+   "author": "NASA/JPL-Caltech/Cornell Univ.",
+   "attribution": "Dwarf Galaxies Swimming in Tidal Tails — NASA/JPL-Caltech/Cornell Univ., NASA, public domain. https://images.nasa.gov/details/PIA03605",
+   "downloaded": "2026-10-28"
+  },
+  "drawing_rejected": {
+   "path": "out/run/drawings/v023.png",
+   "file": "v023.png",
+   "kind": "drawing",
+   "source": "ai_drawing",
+   "title": "colliding galaxies merging",
+   "source_page": "https://huggingface.co/segmind/Segmind-Vega",
+   "licence": "AI-generated drawing; model licence Apache-2.0",
+   "model_licence": "Apache-2.0",
+   "licence_url": "https://www.apache.org/licenses/LICENSE-2.0",
+   "author": "AI-generated with segmind/Segmind-Vega + segmind/Segmind-VegaRT",
+   "attribution": "Illustration generated with Segmind-Vega (Apache-2.0): colliding galaxies merging",
+   "downloaded": "2026-10-28",
+   "prompt": "colliding galaxies merging, pure black background, detailed ink illustration, white and grey pen linework, one bright red accent, high contrast, simple clear composition, no text, no letters, no numbers"
+  },
+  "frame": "out/run/frames/v023.png"
+ },
+ {
+  "scene": "s02",
+  "start": 125.192,
+  "text": "So how should we picture the movement of galaxies as the universe expands?",
+  "sentences": [
+   "s02.10"
+  ],
+  "id": "v024",
+  "end": 130.234,
+  "seconds": 5.04,
+  "scene_start": false,
+  "kind": "step",
+  "drawing_subject": "a expanding balloon surface with painted dots",
+  "card": {
+   "type": "flow",
+   "title": "Galaxy Movement",
+   "steps": [
+    "Universe expands",
+    "Space stretches",
+    "Galaxies separate"
+   ]
+  },
+  "photo_subject": "a expanding balloon surface with painted dots",
+  "drawing_rejected": {
+   "path": "out/run/drawings/v024.png",
+   "file": "v024.png",
+   "kind": "drawing",
+   "source": "ai_drawing",
+   "title": "a expanding balloon surface with painted dots",
+   "source_page": "https://huggingface.co/segmind/Segmind-Vega",
+   "licence": "AI-generated drawing; model licence Apache-2.0",
+   "model_licence": "Apache-2.0",
+   "licence_url": "https://www.apache.org/licenses/LICENSE-2.0",
+   "author": "AI-generated with segmind/Segmind-Vega + segmind/Segmind-VegaRT",
+   "attribution": "Illustration generated with Segmind-Vega (Apache-2.0): a expanding balloon surface with painted dots",
+   "downloaded": "2026-10-28",
+   "prompt": "a expanding balloon surface with painted dots, pure black background, detailed ink illustration, white and grey pen linework, one bright red accent, high contrast, simple clear composition, no text, no letters, no numbers"
+  },
+  "photo": {
+   "path": "out/run/drawings/v021.png",
+   "file": "v021.png",
+   "kind": "drawing",
+   "source": "ai_drawing",
+   "title": "cosmic web",
+   "source_page": "https://huggingface.co/segmind/Segmind-Vega",
+   "licence": "AI-generated drawing; model licence Apache-2.0",
+   "model_licence": "Apache-2.0",
+   "licence_url": "https://www.apache.org/licenses/LICENSE-2.0",
+   "author": "AI-generated with segmind/Segmind-Vega + segmind/Segmind-VegaRT",
+   "attribution": "Illustration generated with Segmind-Vega (Apache-2.0): cosmic web",
+   "downloaded": "2026-10-28",
+   "prompt": "cosmic web, pure black background, detailed ink illustration, white and grey pen linework, one bright red accent, high contrast, simple clear composition, no text, no letters, no numbers"
+  },
+  "zoom": 1.4,
+  "focus": "left",
+  "step_of": "v021",
+  "frame": "out/run/frames/v024.png"
+ },
+ {
+  "scene": "s02",
+  "start": 130.234,
+  "text": "Understanding this key distinction changes everything about how we calculate cosmic distances.",
+  "sentences": [
+   "s02.12"
+  ],
+  "id": "v025",
+  "end": 137.508,
+  "seconds": 7.27,
+  "scene_start": false,
+  "kind": "video",
+  "photo_subject": "universe zoom out animation",
+  "photo_queries": [
+   "universe zoom",
+   "cosmic scale"
+  ],
+  "card": {
+   "type": "bullets",
+   "title": "Key Distinction",
+   "items": [
+    "Understand distinction",
+    "Changes everything",
+    "Calculate distances"
+   ]
+  },
+  "drawing_rejected": {
+   "path": "out/run/drawings/v025.png",
+   "file": "v025.png",
+   "kind": "drawing",
+   "source": "ai_drawing",
+   "title": "universe zoom out",
+   "source_page": "https://huggingface.co/segmind/Segmind-Vega",
+   "licence": "AI-generated drawing; model licence Apache-2.0",
+   "model_licence": "Apache-2.0",
+   "licence_url": "https://www.apache.org/licenses/LICENSE-2.0",
+   "author": "AI-generated with segmind/Segmind-Vega + segmind/Segmind-VegaRT",
+   "attribution": "Illustration generated with Segmind-Vega (Apache-2.0): universe zoom out",
+   "downloaded": "2026-10-28",
+   "prompt": "universe zoom out, pure black background, detailed ink illustration, white and grey pen linework, one bright red accent, high contrast, simple clear composition, no text, no letters, no numbers"
+  },
+  "frame": "out/run/frames/v025.png"
+ }
+]

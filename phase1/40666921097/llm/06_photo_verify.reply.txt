@@ -1,0 +1,22 @@
+{
+  "checks": [
+    {
+      "n": 1,
+      "seen": "A 3D pie chart against a black background, labeled with percentages and text components: 75% Dark Energy in green, 21% Dark Matter in blue, and 4% Normal Matter in red.",
+      "fits": false,
+      "reason": "The image shows a pie chart about dark energy and dark matter, whereas the narration is about cosmic space and time, and it should show a universe expansion simulation."
+    },
+    {
+      "n": 2,
+      "seen": "An outer space photograph showing astronauts working on a large satellite component from the cargo bay of a space shuttle, with Earth's curvature and clouds visible in the background.",
+      "fits": false,
+      "reason": "The image shows astronauts working on a satellite, whereas the narration is about galaxies, and it should show a cosmic web animation."
+    },
+    {
+      "n": 3,
+      "seen": "A deep-space telescopic image against a black background showing numerous distant stars, galaxies, and star clusters in various shades of blue, white, and red, framed within an irregular outlined boundary.",
+      "fits": false,
+      "reason": "The image shows a deep-space telescopic view of stars and galaxies, whereas it should show colliding galaxies merging."
+    }
+  ]
+}

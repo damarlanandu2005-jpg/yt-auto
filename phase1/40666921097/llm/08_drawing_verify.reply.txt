@@ -1,0 +1,70 @@
+{
+  "checks": [
+    {
+      "n": 1,
+      "seen": "This abstract image shows white streaks and thin lines diagonally crossing a black field that is speckled with tiny white dots resembling stars.",
+      "fits": true,
+      "reason": "Shows streaks resembling a beam of light across starry space."
+    },
+    {
+      "n": 2,
+      "seen": "This abstract image features a black background overlaid with a grid of white lines and diagonal hatching. The top section is filled with dense red and white cross-hatching.",
+      "fits": true,
+      "reason": "Shows a grid with pattern resembling light waves."
+    },
+    {
+      "n": 3,
+      "seen": "This abstract image depicts a dark sphere set against a black background, with the lower half wrapped in a textured red and white pattern punctuated by small dots.",
+      "fits": true,
+      "reason": "Shows a sphere with a pattern that could represent an expanding sphere."
+    },
+    {
+      "n": 4,
+      "seen": "This abstract image shows a dense cluster of white dots and circles against a black background, with a bright white streak cutting diagonally through the upper right.",
+      "fits": true,
+      "reason": "Shows glowing dots and a streak in a void."
+    },
+    {
+      "n": 5,
+      "seen": "This abstract image displays a dark grey background with thin white grid lines and several solid red circular dots scattered across the frame.",
+      "fits": true,
+      "reason": "Shows a grid with dots representing cosmic objects."
+    },
+    {
+      "n": 6,
+      "seen": "This abstract image is filled with numerous light grey and white circular shapes of varying sizes randomly scattered across a dark grey background.",
+      "fits": false,
+      "reason": "Only shapes and circles, does not clearly show an expanding balloon with dots."
+    },
+    {
+      "n": 7,
+      "seen": "This abstract image features a swirling planetary or cosmic formation with concentric white rings, a central grey celestial body, and a reddish accent arc against a starry black background.",
+      "fits": false,
+      "reason": "Abstract cosmic formation, does not clearly depict a universe expansion simulation."
+    },
+    {
+      "n": 8,
+      "seen": "This abstract image shows sweeping, elongated grey and red ribbon-like formations against a black space background speckled with tiny white stars.",
+      "fits": false,
+      "reason": "Shows ribbon-like formations rather than galaxy rotation."
+    },
+    {
+      "n": 9,
+      "seen": "This abstract image presents a complex white spiderweb pattern centered over a bright light source, set against a dark background dotted with small white points.",
+      "fits": true,
+      "reason": "Shows a spiderweb pattern resembling the cosmic web."
+    },
+    {
+      "n": 10,
+      "seen": "This abstract image depicts a swirling vortex of white and grey rings around a dark center, with a lone red dot visible on the left side against a black, starry backdrop.",
+      "fits": false,
+      "reason": "Shows a vortex rather than colliding or merging galaxies."
+    },
+    {
+      "n": 11,
+      "seen": "This abstract image shows a large, finely lined circular disk like a record, with a small grey moon to its lower right and a red streak extending from the left, all set in a starry black space.",
+      "fits": false,
+      "reason": "Looks more like a record or abstract disk than a universe zoom-out."
+    }
+  ]
+}

@@ -1,0 +1,26 @@
+[drawings] v003: 72 s  a beam of light travelling across starry space
+[drawings] v009: 71 s  a grid stretching out with light waves moving across it
+[drawings] v011: 71 s  a glowing sphere expanding outwards in space
+[drawings] v015: 72 s  glowing dots moving rapidly through a dark void
+[drawings] v020: 72 s  a grid of space expanding with two dots moving apart
+[drawings] v024: 73 s  a expanding balloon surface with painted dots
+[drawings] v013: 73 s  universe expansion
+[drawings] v018: 72 s  galaxy cluster rotation and expansion
+[drawings] v021: 71 s  cosmic web
+[drawings] v023: 71 s  colliding galaxies merging
+[drawings] v025: 71 s  universe zoom out
+
+[transformers] `CLIPImageProcessor` requires torchvision (not installed); falling back to `CLIPImageProcessorPil` for backward compatibility. Install torchvision to use the default backend, or import `CLIPImageProcessorPil` directly to silence this warning.
+[transformers] `SiglipImageProcessor` requires torchvision (not installed); falling back to `SiglipImageProcessorPil` for backward compatibility. Install torchvision to use the default backend, or import `SiglipImageProcessorPil` directly to silence this warning.
+/opt/hostedtoolcache/Python/3.13.16/x64/lib/python3.13/site-packages/diffusers/utils/deprecation_utils.py:23: FutureWarning: `torch_dtype` is deprecated and will be removed in version 1.0.0. Please use `dtype` instead.
+  deprecate("torch_dtype", "1.0.0", _TORCH_DTYPE_DEPRECATION_MESSAGE)
+
+Loading pipeline components...:   0%|          | 0/7 [00:00<?, ?it/s][0;93m2026-10-28 09:52:53.593051165 [W:onnxruntime:Default, device_discovery.cc:95 GetPciBusId] Skipping pci_bus_id for PCI path at "/sys/devices/LNXSYSTM:00/LNXSYBUS:00/ACPI0004:00/MSFT1000:00/5620e0c7-8062-4dce-aeb7-520c7ef76171" because filename "5620e0c7-8062-4dce-aeb7-520c7ef76171" did not match expected pattern of [0-9a-f]+:[0-9a-f]+:[0-9a-f]+[.][0-9a-f]+[m
+
+Loading pipeline components...:  43%|████▎     | 3/7 [00:00<00:00,  6.40it/s]
+Loading pipeline components...:  71%|███████▏  | 5/7 [00:00<00:00,  9.13it/s]
+Loading pipeline components...: 100%|██████████| 7/7 [00:00<00:00, 11.10it/s]
+Loading pipeline components...: 100%|██████████| 7/7 [00:00<00:00,  9.80it/s]
+No LoRA keys associated to CLIPTextModel found with the prefix='text_encoder'. This is safe to ignore if LoRA state dict didn't originally have any CLIPTextModel related params. You can also try specifying `prefix=None` to resolve the warning. Otherwise, open an issue if you think it's unexpected: https://github.com/huggingface/diffusers/issues/new
+No LoRA keys associated to CLIPTextModelWithProjection found with the prefix='text_encoder_2'. This is safe to ignore if LoRA state dict didn't originally have any CLIPTextModelWithProjection related params. You can also try specifying `prefix=None` to resolve the warning. Otherwise, open an issue if you think it's unexpected: https://github.com/huggingface/diffusers/issues/new
+The config attributes {'skip_prk_steps': True} were passed to LCMScheduler, but are not expected and will be ignored. Please verify your scheduler_config.json configuration file.

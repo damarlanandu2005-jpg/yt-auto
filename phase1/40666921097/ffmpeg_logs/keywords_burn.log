@@ -1,0 +1,155 @@
+ffmpeg version n8.1.3-24-g92611900bb-20261026 Copyright (c) 2000-2026 the FFmpeg developers
+  built with gcc 16.2.0 (crosstool-NG 1.29.0.7_b1a94f6)
+  configuration: --prefix=/ffbuild/prefix --pkg-config-flags=--static --pkg-config=pkg-config --cross-prefix=x86_64-ffbuild-linux-gnu- --arch=x86_64 --target-os=linux --enable-gpl --enable-version3 --disable-debug --enable-iconv --enable-zlib --enable-libxml2 --enable-libsoxr --enable-openssl --enable-libvmaf --enable-libxcb --enable-xlib --enable-fontconfig --enable-libharfbuzz --enable-libfreetype --enable-libfribidi --enable-lcms2 --enable-vulkan --enable-libshaderc --enable-libdav1d --enable-libvorbis --enable-librav1e --enable-librsvg --enable-libpulse --enable-gmp --enable-lzma --enable-liblcevc-dec --enable-opencl --enable-amf --enable-libaom --enable-avisynth --enable-chromaprint --enable-libdavs2 --enable-libdvdread --enable-libdvdnav --disable-libfdk-aac --enable-ffnvcodec --enable-cuda-llvm --enable-frei0r --enable-libgme --enable-libkvazaar --enable-libaribb24 --enable-libaribcaption --enable-libass --enable-libbluray --enable-libjxl --enable-libmp3lame --enable-libopus --enable-libplacebo --enable-librist --enable-libssh --enable-libtheora --enable-libvpx --enable-libwebp --enable-libzmq --enable-lv2 --enable-libvpl --enable-openal --enable-liboapv --enable-libopencore-amrnb --enable-libopencore-amrwb --enable-libopenh264 --enable-libopenjpeg --enable-libopenmpt --enable-librubberband --disable-schannel --enable-sdl2 --enable-libsnappy --enable-libsrt --enable-libsvtav1 --enable-libtwolame --enable-libuavs3d --enable-libdrm --enable-vaapi --enable-vapoursynth --enable-libvidstab --enable-libvvenc --disable-whisper --enable-libx264 --enable-libx265 --enable-libxavs2 --enable-libxvid --enable-libzimg --enable-libzvbi --extra-cflags=-DLIBTWOLAME_STATIC --extra-cxxflags= --extra-libs='-lgomp -ldl' --extra-ldflags=-pthread --extra-ldexeflags= --cc=x86_64-ffbuild-linux-gnu-gcc --cxx=x86_64-ffbuild-linux-gnu-g++ --ar=x86_64-ffbuild-linux-gnu-gcc-ar --ranlib=x86_64-ffbuild-linux-gnu-gcc-ranlib --nm=x86_64-ffbuild-linux-gnu-gcc-nm --extra-version=20261026
+  libavutil      60. 26.103 / 60. 26.103
+  libavcodec     62. 28.103 / 62. 28.103
+  libavformat    62. 12.103 / 62. 12.103
+  libavdevice    62.  3.103 / 62.  3.103
+  libavfilter    11. 14.103 / 11. 14.103
+  libswscale      9.  5.103 /  9.  5.103
+  libswresample   6.  3.103 /  6.  3.103
+Input #0, mov,mp4,m4a,3gp,3g2,mj2, from 'out/run/video_noaudio.mp4':
+  Metadata:
+    major_brand     : isom
+    minor_version   : 512
+    compatible_brands: isomiso2avc1mp41
+    encoder         : Lavf62.12.103
+  Duration: 00:02:17.50, start: 0.000000, bitrate: 1610 kb/s
+  Stream #0:0[0x1](und): Video: h264 (High) (avc1 / 0x31637661), yuv420p(progressive), 1920x1080 [SAR 1:1 DAR 16:9], 1607 kb/s, 30 fps, 30 tbr, 15360 tbn (default)
+    Metadata:
+      handler_name    : VideoHandler
+      encoder         : Lavc62.28.103 libx264
+[Parsed_ass_0 @ 0x559bc47dae80] libass API version: 0x1705000
+[Parsed_ass_0 @ 0x559bc47dae80] libass source: meson, commit: f61db567e6593df3470e91594bcd4ad2d0473aff
+[Parsed_ass_0 @ 0x559bc47dae80] Shaper: FriBidi 1.0.17 (SIMPLE) HarfBuzz-ng 14.5.0 (COMPLEX)
+[Parsed_ass_0 @ 0x559bc47dae80] Loading font file '/opt/hostedtoolcache/Python/3.13.16/x64/lib/python3.13/site-packages/matplotlib/mpl-data/fonts/ttf/DejaVuSans-BoldOblique.ttf'
+[Parsed_ass_0 @ 0x559bc47dae80] Loading font file '/opt/hostedtoolcache/Python/3.13.16/x64/lib/python3.13/site-packages/matplotlib/mpl-data/fonts/ttf/LICENSE_STIX'
+[Parsed_ass_0 @ 0x559bc47dae80] Loading font file '/opt/hostedtoolcache/Python/3.13.16/x64/lib/python3.13/site-packages/matplotlib/mpl-data/fonts/ttf/LICENSE_DEJAVU'
+[Parsed_ass_0 @ 0x559bc47dae80] Loading font file '/opt/hostedtoolcache/Python/3.13.16/x64/lib/python3.13/site-packages/matplotlib/mpl-data/fonts/ttf/DejaVuSans-Oblique.ttf'
+[Parsed_ass_0 @ 0x559bc47dae80] Loading font file '/opt/hostedtoolcache/Python/3.13.16/x64/lib/python3.13/site-packages/matplotlib/mpl-data/fonts/ttf/DejaVuSans-Bold.ttf'
+[Parsed_ass_0 @ 0x559bc47dae80] Loading font file '/opt/hostedtoolcache/Python/3.13.16/x64/lib/python3.13/site-packages/matplotlib/mpl-data/fonts/ttf/DejaVuSansMono.ttf'
+[Parsed_ass_0 @ 0x559bc47dae80] Loading font file '/opt/hostedtoolcache/Python/3.13.16/x64/lib/python3.13/site-packages/matplotlib/mpl-data/fonts/ttf/DejaVuSerif-BoldItalic.ttf'
+[Parsed_ass_0 @ 0x559bc47dae80] Loading font file '/opt/hostedtoolcache/Python/3.13.16/x64/lib/python3.13/site-packages/matplotlib/mpl-data/fonts/ttf/STIXGeneral.ttf'
+[Parsed_ass_0 @ 0x559bc47dae80] Loading font file '/opt/hostedtoolcache/Python/3.13.16/x64/lib/python3.13/site-packages/matplotlib/mpl-data/fonts/ttf/cmss10.ttf'
+[Parsed_ass_0 @ 0x559bc47dae80] Loading font file '/opt/hostedtoolcache/Python/3.13.16/x64/lib/python3.13/site-packages/matplotlib/mpl-data/fonts/ttf/STIXGeneralBol.ttf'
+[Parsed_ass_0 @ 0x559bc47dae80] Loading font file '/opt/hostedtoolcache/Python/3.13.16/x64/lib/python3.13/site-packages/matplotlib/mpl-data/fonts/ttf/DejaVuSerif-Bold.ttf'
+[Parsed_ass_0 @ 0x559bc47dae80] Loading font file '/opt/hostedtoolcache/Python/3.13.16/x64/lib/python3.13/site-packages/matplotlib/mpl-data/fonts/ttf/STIXSizTwoSymReg.ttf'
+[Parsed_ass_0 @ 0x559bc47dae80] Loading font file '/opt/hostedtoolcache/Python/3.13.16/x64/lib/python3.13/site-packages/matplotlib/mpl-data/fonts/ttf/STIXNonUniBol.ttf'
+[Parsed_ass_0 @ 0x559bc47dae80] Loading font file '/opt/hostedtoolcache/Python/3.13.16/x64/lib/python3.13/site-packages/matplotlib/mpl-data/fonts/ttf/DejaVuSansMono-BoldOblique.ttf'
+[Parsed_ass_0 @ 0x559bc47dae80] Loading font file '/opt/hostedtoolcache/Python/3.13.16/x64/lib/python3.13/site-packages/matplotlib/mpl-data/fonts/ttf/STIXSizOneSymReg.ttf'
+[Parsed_ass_0 @ 0x559bc47dae80] Loading font file '/opt/hostedtoolcache/Python/3.13.16/x64/lib/python3.13/site-packages/matplotlib/mpl-data/fonts/ttf/cmmi10.ttf'
+[Parsed_ass_0 @ 0x559bc47dae80] Loading font file '/opt/hostedtoolcache/Python/3.13.16/x64/lib/python3.13/site-packages/matplotlib/mpl-data/fonts/ttf/STIXSizThreeSymReg.ttf'
+[Parsed_ass_0 @ 0x559bc47dae80] Loading font file '/opt/hostedtoolcache/Python/3.13.16/x64/lib/python3.13/site-packages/matplotlib/mpl-data/fonts/ttf/STIXNonUniIta.ttf'
+[Parsed_ass_0 @ 0x559bc47dae80] Loading font file '/opt/hostedtoolcache/Python/3.13.16/x64/lib/python3.13/site-packages/matplotlib/mpl-data/fonts/ttf/STIXSizThreeSymBol.ttf'
+[Parsed_ass_0 @ 0x559bc47dae80] Loading font file '/opt/hostedtoolcache/Python/3.13.16/x64/lib/python3.13/site-packages/matplotlib/mpl-data/fonts/ttf/cmr10.ttf'
+[Parsed_ass_0 @ 0x559bc47dae80] Loading font file '/opt/hostedtoolcache/Python/3.13.16/x64/lib/python3.13/site-packages/matplotlib/mpl-data/fonts/ttf/DejaVuSansDisplay.ttf'
+[Parsed_ass_0 @ 0x559bc47dae80] Loading font file '/opt/hostedtoolcache/Python/3.13.16/x64/lib/python3.13/site-packages/matplotlib/mpl-data/fonts/ttf/STIXGeneralBolIta.ttf'
+[Parsed_ass_0 @ 0x559bc47dae80] Loading font file '/opt/hostedtoolcache/Python/3.13.16/x64/lib/python3.13/site-packages/matplotlib/mpl-data/fonts/ttf/STIXSizFiveSymReg.ttf'
+[Parsed_ass_0 @ 0x559bc47dae80] Loading font file '/opt/hostedtoolcache/Python/3.13.16/x64/lib/python3.13/site-packages/matplotlib/mpl-data/fonts/ttf/STIXSizFourSymBol.ttf'
+[Parsed_ass_0 @ 0x559bc47dae80] Loading font file '/opt/hostedtoolcache/Python/3.13.16/x64/lib/python3.13/site-packages/matplotlib/mpl-data/fonts/ttf/DejaVuSerifDisplay.ttf'
+[Parsed_ass_0 @ 0x559bc47dae80] Loading font file '/opt/hostedtoolcache/Python/3.13.16/x64/lib/python3.13/site-packages/matplotlib/mpl-data/fonts/ttf/STIXNonUni.ttf'
+[Parsed_ass_0 @ 0x559bc47dae80] Loading font file '/opt/hostedtoolcache/Python/3.13.16/x64/lib/python3.13/site-packages/matplotlib/mpl-data/fonts/ttf/DejaVuSerif-Italic.ttf'
+[Parsed_ass_0 @ 0x559bc47dae80] Loading font file '/opt/hostedtoolcache/Python/3.13.16/x64/lib/python3.13/site-packages/matplotlib/mpl-data/fonts/ttf/STIXNonUniBolIta.ttf'
+[Parsed_ass_0 @ 0x559bc47dae80] Loading font file '/opt/hostedtoolcache/Python/3.13.16/x64/lib/python3.13/site-packages/matplotlib/mpl-data/fonts/ttf/STIXSizFourSymReg.ttf'
+[Parsed_ass_0 @ 0x559bc47dae80] Loading font file '/opt/hostedtoolcache/Python/3.13.16/x64/lib/python3.13/site-packages/matplotlib/mpl-data/fonts/ttf/cmti10.ttf'
+[Parsed_ass_0 @ 0x559bc47dae80] Loading font file '/opt/hostedtoolcache/Python/3.13.16/x64/lib/python3.13/site-packages/matplotlib/mpl-data/fonts/ttf/STIXGeneralItalic.ttf'
+[Parsed_ass_0 @ 0x559bc47dae80] Loading font file '/opt/hostedtoolcache/Python/3.13.16/x64/lib/python3.13/site-packages/matplotlib/mpl-data/fonts/ttf/cmtt10.ttf'
+[Parsed_ass_0 @ 0x559bc47dae80] Loading font file '/opt/hostedtoolcache/Python/3.13.16/x64/lib/python3.13/site-packages/matplotlib/mpl-data/fonts/ttf/DejaVuSans.ttf'
+[Parsed_ass_0 @ 0x559bc47dae80] Loading font file '/opt/hostedtoolcache/Python/3.13.16/x64/lib/python3.13/site-packages/matplotlib/mpl-data/fonts/ttf/cmex10.ttf'
+[Parsed_ass_0 @ 0x559bc47dae80] Loading font file '/opt/hostedtoolcache/Python/3.13.16/x64/lib/python3.13/site-packages/matplotlib/mpl-data/fonts/ttf/DejaVuSerif.ttf'
+[Parsed_ass_0 @ 0x559bc47dae80] Loading font file '/opt/hostedtoolcache/Python/3.13.16/x64/lib/python3.13/site-packages/matplotlib/mpl-data/fonts/ttf/LastResortHE-Regular.ttf'
+[Parsed_ass_0 @ 0x559bc47dae80] Loading font file '/opt/hostedtoolcache/Python/3.13.16/x64/lib/python3.13/site-packages/matplotlib/mpl-data/fonts/ttf/DejaVuSansMono-Bold.ttf'
+[Parsed_ass_0 @ 0x559bc47dae80] Loading font file '/opt/hostedtoolcache/Python/3.13.16/x64/lib/python3.13/site-packages/matplotlib/mpl-data/fonts/ttf/DejaVuSansMono-Oblique.ttf'
+[Parsed_ass_0 @ 0x559bc47dae80] Loading font file '/opt/hostedtoolcache/Python/3.13.16/x64/lib/python3.13/site-packages/matplotlib/mpl-data/fonts/ttf/cmb10.ttf'
+[Parsed_ass_0 @ 0x559bc47dae80] Loading font file '/opt/hostedtoolcache/Python/3.13.16/x64/lib/python3.13/site-packages/matplotlib/mpl-data/fonts/ttf/STIXSizTwoSymBol.ttf'
+[Parsed_ass_0 @ 0x559bc47dae80] Loading font file '/opt/hostedtoolcache/Python/3.13.16/x64/lib/python3.13/site-packages/matplotlib/mpl-data/fonts/ttf/cmsy10.ttf'
+[Parsed_ass_0 @ 0x559bc47dae80] Loading font file '/opt/hostedtoolcache/Python/3.13.16/x64/lib/python3.13/site-packages/matplotlib/mpl-data/fonts/ttf/STIXSizOneSymBol.ttf'
+[Parsed_ass_0 @ 0x559bc47dae80] Error opening memory font 'LICENSE_STIX'
+[Parsed_ass_0 @ 0x559bc47dae80] Error opening memory font 'LICENSE_DEJAVU'
+[Parsed_ass_0 @ 0x559bc47dae80] Using font provider fontconfig
+[Parsed_ass_0 @ 0x559bc47dae80] Added subtitle file: '/home/runner/work/yt-auto/yt-auto/out/run/keywords.ass' (2 styles, 3 events)
+Stream mapping:
+  Stream #0:0 -> #0:0 (h264 (native) -> h264 (libx264))
+[Parsed_ass_0 @ 0x7f49a0001d80] libass API version: 0x1705000
+[Parsed_ass_0 @ 0x7f49a0001d80] libass source: meson, commit: f61db567e6593df3470e91594bcd4ad2d0473aff
+[Parsed_ass_0 @ 0x7f49a0001d80] Shaper: FriBidi 1.0.17 (SIMPLE) HarfBuzz-ng 14.5.0 (COMPLEX)
+[Parsed_ass_0 @ 0x7f49a0001d80] Loading font file '/opt/hostedtoolcache/Python/3.13.16/x64/lib/python3.13/site-packages/matplotlib/mpl-data/fonts/ttf/DejaVuSans-BoldOblique.ttf'
+[Parsed_ass_0 @ 0x7f49a0001d80] Loading font file '/opt/hostedtoolcache/Python/3.13.16/x64/lib/python3.13/site-packages/matplotlib/mpl-data/fonts/ttf/LICENSE_STIX'
+[Parsed_ass_0 @ 0x7f49a0001d80] Loading font file '/opt/hostedtoolcache/Python/3.13.16/x64/lib/python3.13/site-packages/matplotlib/mpl-data/fonts/ttf/LICENSE_DEJAVU'
+[Parsed_ass_0 @ 0x7f49a0001d80] Loading font file '/opt/hostedtoolcache/Python/3.13.16/x64/lib/python3.13/site-packages/matplotlib/mpl-data/fonts/ttf/DejaVuSans-Oblique.ttf'
+[Parsed_ass_0 @ 0x7f49a0001d80] Loading font file '/opt/hostedtoolcache/Python/3.13.16/x64/lib/python3.13/site-packages/matplotlib/mpl-data/fonts/ttf/DejaVuSans-Bold.ttf'
+[Parsed_ass_0 @ 0x7f49a0001d80] Loading font file '/opt/hostedtoolcache/Python/3.13.16/x64/lib/python3.13/site-packages/matplotlib/mpl-data/fonts/ttf/DejaVuSansMono.ttf'
+[Parsed_ass_0 @ 0x7f49a0001d80] Loading font file '/opt/hostedtoolcache/Python/3.13.16/x64/lib/python3.13/site-packages/matplotlib/mpl-data/fonts/ttf/DejaVuSerif-BoldItalic.ttf'
+[Parsed_ass_0 @ 0x7f49a0001d80] Loading font file '/opt/hostedtoolcache/Python/3.13.16/x64/lib/python3.13/site-packages/matplotlib/mpl-data/fonts/ttf/STIXGeneral.ttf'
+[Parsed_ass_0 @ 0x7f49a0001d80] Loading font file '/opt/hostedtoolcache/Python/3.13.16/x64/lib/python3.13/site-packages/matplotlib/mpl-data/fonts/ttf/cmss10.ttf'
+[Parsed_ass_0 @ 0x7f49a0001d80] Loading font file '/opt/hostedtoolcache/Python/3.13.16/x64/lib/python3.13/site-packages/matplotlib/mpl-data/fonts/ttf/STIXGeneralBol.ttf'
+[Parsed_ass_0 @ 0x7f49a0001d80] Loading font file '/opt/hostedtoolcache/Python/3.13.16/x64/lib/python3.13/site-packages/matplotlib/mpl-data/fonts/ttf/DejaVuSerif-Bold.ttf'
+[Parsed_ass_0 @ 0x7f49a0001d80] Loading font file '/opt/hostedtoolcache/Python/3.13.16/x64/lib/python3.13/site-packages/matplotlib/mpl-data/fonts/ttf/STIXSizTwoSymReg.ttf'
+[Parsed_ass_0 @ 0x7f49a0001d80] Loading font file '/opt/hostedtoolcache/Python/3.13.16/x64/lib/python3.13/site-packages/matplotlib/mpl-data/fonts/ttf/STIXNonUniBol.ttf'
+[Parsed_ass_0 @ 0x7f49a0001d80] Loading font file '/opt/hostedtoolcache/Python/3.13.16/x64/lib/python3.13/site-packages/matplotlib/mpl-data/fonts/ttf/DejaVuSansMono-BoldOblique.ttf'
+[Parsed_ass_0 @ 0x7f49a0001d80] Loading font file '/opt/hostedtoolcache/Python/3.13.16/x64/lib/python3.13/site-packages/matplotlib/mpl-data/fonts/ttf/STIXSizOneSymReg.ttf'
+[Parsed_ass_0 @ 0x7f49a0001d80] Loading font file '/opt/hostedtoolcache/Python/3.13.16/x64/lib/python3.13/site-packages/matplotlib/mpl-data/fonts/ttf/cmmi10.ttf'
+[Parsed_ass_0 @ 0x7f49a0001d80] Loading font file '/opt/hostedtoolcache/Python/3.13.16/x64/lib/python3.13/site-packages/matplotlib/mpl-data/fonts/ttf/STIXSizThreeSymReg.ttf'
+[Parsed_ass_0 @ 0x7f49a0001d80] Loading font file '/opt/hostedtoolcache/Python/3.13.16/x64/lib/python3.13/site-packages/matplotlib/mpl-data/fonts/ttf/STIXNonUniIta.ttf'
+[Parsed_ass_0 @ 0x7f49a0001d80] Loading font file '/opt/hostedtoolcache/Python/3.13.16/x64/lib/python3.13/site-packages/matplotlib/mpl-data/fonts/ttf/STIXSizThreeSymBol.ttf'
+[Parsed_ass_0 @ 0x7f49a0001d80] Loading font file '/opt/hostedtoolcache/Python/3.13.16/x64/lib/python3.13/site-packages/matplotlib/mpl-data/fonts/ttf/cmr10.ttf'
+[Parsed_ass_0 @ 0x7f49a0001d80] Loading font file '/opt/hostedtoolcache/Python/3.13.16/x64/lib/python3.13/site-packages/matplotlib/mpl-data/fonts/ttf/DejaVuSansDisplay.ttf'
+[Parsed_ass_0 @ 0x7f49a0001d80] Loading font file '/opt/hostedtoolcache/Python/3.13.16/x64/lib/python3.13/site-packages/matplotlib/mpl-data/fonts/ttf/STIXGeneralBolIta.ttf'
+[Parsed_ass_0 @ 0x7f49a0001d80] Loading font file '/opt/hostedtoolcache/Python/3.13.16/x64/lib/python3.13/site-packages/matplotlib/mpl-data/fonts/ttf/STIXSizFiveSymReg.ttf'
+[Parsed_ass_0 @ 0x7f49a0001d80] Loading font file '/opt/hostedtoolcache/Python/3.13.16/x64/lib/python3.13/site-packages/matplotlib/mpl-data/fonts/ttf/STIXSizFourSymBol.ttf'
+[Parsed_ass_0 @ 0x7f49a0001d80] Loading font file '/opt/hostedtoolcache/Python/3.13.16/x64/lib/python3.13/site-packages/matplotlib/mpl-data/fonts/ttf/DejaVuSerifDisplay.ttf'
+[Parsed_ass_0 @ 0x7f49a0001d80] Loading font file '/opt/hostedtoolcache/Python/3.13.16/x64/lib/python3.13/site-packages/matplotlib/mpl-data/fonts/ttf/STIXNonUni.ttf'
+[Parsed_ass_0 @ 0x7f49a0001d80] Loading font file '/opt/hostedtoolcache/Python/3.13.16/x64/lib/python3.13/site-packages/matplotlib/mpl-data/fonts/ttf/DejaVuSerif-Italic.ttf'
+[Parsed_ass_0 @ 0x7f49a0001d80] Loading font file '/opt/hostedtoolcache/Python/3.13.16/x64/lib/python3.13/site-packages/matplotlib/mpl-data/fonts/ttf/STIXNonUniBolIta.ttf'
+[Parsed_ass_0 @ 0x7f49a0001d80] Loading font file '/opt/hostedtoolcache/Python/3.13.16/x64/lib/python3.13/site-packages/matplotlib/mpl-data/fonts/ttf/STIXSizFourSymReg.ttf'
+[Parsed_ass_0 @ 0x7f49a0001d80] Loading font file '/opt/hostedtoolcache/Python/3.13.16/x64/lib/python3.13/site-packages/matplotlib/mpl-data/fonts/ttf/cmti10.ttf'
+[Parsed_ass_0 @ 0x7f49a0001d80] Loading font file '/opt/hostedtoolcache/Python/3.13.16/x64/lib/python3.13/site-packages/matplotlib/mpl-data/fonts/ttf/STIXGeneralItalic.ttf'
+[Parsed_ass_0 @ 0x7f49a0001d80] Loading font file '/opt/hostedtoolcache/Python/3.13.16/x64/lib/python3.13/site-packages/matplotlib/mpl-data/fonts/ttf/cmtt10.ttf'
+[Parsed_ass_0 @ 0x7f49a0001d80] Loading font file '/opt/hostedtoolcache/Python/3.13.16/x64/lib/python3.13/site-packages/matplotlib/mpl-data/fonts/ttf/DejaVuSans.ttf'
+[Parsed_ass_0 @ 0x7f49a0001d80] Loading font file '/opt/hostedtoolcache/Python/3.13.16/x64/lib/python3.13/site-packages/matplotlib/mpl-data/fonts/ttf/cmex10.ttf'
+[Parsed_ass_0 @ 0x7f49a0001d80] Loading font file '/opt/hostedtoolcache/Python/3.13.16/x64/lib/python3.13/site-packages/matplotlib/mpl-data/fonts/ttf/DejaVuSerif.ttf'
+[Parsed_ass_0 @ 0x7f49a0001d80] Loading font file '/opt/hostedtoolcache/Python/3.13.16/x64/lib/python3.13/site-packages/matplotlib/mpl-data/fonts/ttf/LastResortHE-Regular.ttf'
+[Parsed_ass_0 @ 0x7f49a0001d80] Loading font file '/opt/hostedtoolcache/Python/3.13.16/x64/lib/python3.13/site-packages/matplotlib/mpl-data/fonts/ttf/DejaVuSansMono-Bold.ttf'
+[Parsed_ass_0 @ 0x7f49a0001d80] Loading font file '/opt/hostedtoolcache/Python/3.13.16/x64/lib/python3.13/site-packages/matplotlib/mpl-data/fonts/ttf/DejaVuSansMono-Oblique.ttf'
+[Parsed_ass_0 @ 0x7f49a0001d80] Loading font file '/opt/hostedtoolcache/Python/3.13.16/x64/lib/python3.13/site-packages/matplotlib/mpl-data/fonts/ttf/cmb10.ttf'
+[Parsed_ass_0 @ 0x7f49a0001d80] Loading font file '/opt/hostedtoolcache/Python/3.13.16/x64/lib/python3.13/site-packages/matplotlib/mpl-data/fonts/ttf/STIXSizTwoSymBol.ttf'
+[Parsed_ass_0 @ 0x7f49a0001d80] Loading font file '/opt/hostedtoolcache/Python/3.13.16/x64/lib/python3.13/site-packages/matplotlib/mpl-data/fonts/ttf/cmsy10.ttf'
+[Parsed_ass_0 @ 0x7f49a0001d80] Loading font file '/opt/hostedtoolcache/Python/3.13.16/x64/lib/python3.13/site-packages/matplotlib/mpl-data/fonts/ttf/STIXSizOneSymBol.ttf'
+[Parsed_ass_0 @ 0x7f49a0001d80] Error opening memory font 'LICENSE_STIX'
+[Parsed_ass_0 @ 0x7f49a0001d80] Error opening memory font 'LICENSE_DEJAVU'
+[Parsed_ass_0 @ 0x7f49a0001d80] Using font provider fontconfig
+[Parsed_ass_0 @ 0x7f49a0001d80] Added subtitle file: '/home/runner/work/yt-auto/yt-auto/out/run/keywords.ass' (2 styles, 3 events)
+[libx264 @ 0x559bc47d9e00] using SAR=1/1
+[libx264 @ 0x559bc47d9e00] using cpu capabilities: MMX2 SSE2Fast SSSE3 SSE4.2 AVX FMA3 BMI2 AVX2
+[libx264 @ 0x559bc47d9e00] profile High, level 4.0, 4:2:0, 8-bit
+[libx264 @ 0x559bc47d9e00] 264 - core 165 - H.264/MPEG-4 AVC codec - Copyleft 2003-2025 - http://www.videolan.org/x264.html - options: cabac=1 ref=1 deblock=1:0:0 analyse=0x3:0x113 me=hex subme=2 psy=1 psy_rd=1.00:0.00 mixed_ref=0 me_range=16 chroma_me=1 trellis=0 8x8dct=1 cqm=0 deadzone=21,11 fast_pskip=1 chroma_qp_offset=0 threads=6 lookahead_threads=2 sliced_threads=0 nr=0 decimate=1 interlaced=0 bluray_compat=0 constrained_intra=0 bframes=3 b_pyramid=2 b_adapt=1 b_bias=0 direct=1 weightb=1 open_gop=0 weightp=1 keyint=250 keyint_min=25 scenecut=40 intra_refresh=0 rc_lookahead=10 rc=crf mbtree=1 crf=20.0 qcomp=0.60 qpmin=0 qpmax=69 qpstep=4 ip_ratio=1.40 aq=1:1.00
+Output #0, mp4, to 'out/run/video_keywords.mp4':
+  Metadata:
+    major_brand     : isom
+    minor_version   : 512
+    compatible_brands: isomiso2avc1mp41
+    encoder         : Lavf62.12.103
+  Stream #0:0(und): Video: h264 (avc1 / 0x31637661), yuv420p(tv, progressive), 1920x1080 [SAR 1:1 DAR 16:9], q=2-31, 30 fps, 15360 tbn (default)
+    Metadata:
+      encoder         : Lavc62.28.103 libx264
+      handler_name    : VideoHandler
+    Side data:
+      CPB properties: bitrate max/min/avg: 0/0/0 buffer size: 0 vbv_delay: N/A
+frame=   37 fps=0.0 q=26.0 size=       0KiB time=00:00:01.16 bitrate=   0.3kbits/s speed=2.33x elapsed=0:00:00.50    frame=   97 fps= 97 q=26.0 size=     256KiB time=00:00:03.16 bitrate= 662.4kbits/s speed=3.17x elapsed=0:00:01.00    frame=  152 fps=101 q=26.0 size=     512KiB time=00:00:05.00 bitrate= 838.9kbits/s speed=3.33x elapsed=0:00:01.50    frame=  205 fps=102 q=26.0 size=    1024KiB time=00:00:06.80 bitrate=1233.7kbits/s speed= 3.4x elapsed=0:00:02.00    frame=  256 fps=102 q=26.0 size=    1536KiB time=00:00:08.46 bitrate=1486.2kbits/s speed=3.38x elapsed=0:00:02.50    frame=  308 fps=103 q=26.0 size=    2048KiB time=00:00:10.20 bitrate=1644.9kbits/s speed= 3.4x elapsed=0:00:03.00    frame=  353 fps=101 q=26.0 size=    2560KiB time=00:00:11.70 bitrate=1792.5kbits/s speed=3.34x elapsed=0:00:03.50    frame=  398 fps= 99 q=26.0 size=    2560KiB time=00:00:13.20 bitrate=1588.8kbits/s speed= 3.3x elapsed=0:00:04.00    frame=  437 fps= 97 q=26.0 size=    3328KiB time=00:00:14.50 bitrate=1880.2kbits/s speed=3.22x elapsed=0:00:04.50    frame=  474 fps= 95 q=26.0 size=    3840KiB time=00:00:15.73 bitrate=1999.4kbits/s speed=3.14x elapsed=0:00:05.00    frame=  512 fps= 93 q=26.0 size=    4352KiB time=00:00:17.00 bitrate=2097.2kbits/s speed=3.09x elapsed=0:00:05.50    frame=  559 fps= 93 q=26.0 size=    4864KiB time=00:00:18.56 bitrate=2146.1kbits/s speed=3.09x elapsed=0:00:06.00    frame=  618 fps= 95 q=26.0 size=    5120KiB time=00:00:20.53 bitrate=2042.7kbits/s speed=3.16x elapsed=0:00:06.50    frame=  674 fps= 96 q=26.0 size=    5632KiB time=00:00:22.40 bitrate=2059.7kbits/s speed= 3.2x elapsed=0:00:07.00    frame=  730 fps= 97 q=26.0 size=    5888KiB time=00:00:24.26 bitrate=1987.7kbits/s speed=3.23x elapsed=0:00:07.50    frame=  784 fps= 98 q=26.0 size=    5888KiB time=00:00:26.06 bitrate=1850.4kbits/s speed=3.26x elapsed=0:00:08.00    frame=  833 fps= 98 q=26.0 size=    6144KiB time=00:00:27.70 bitrate=1817.0kbits/s speed=3.26x elapsed=0:00:08.50    [Parsed_ass_0 @ 0x7f49a0001d80] fontselect: (DejaVu Sans, 700, 0) -> DejaVuSans-Bold, 0, DejaVuSans-Bold
+frame=  881 fps= 98 q=26.0 size=    6400KiB time=00:00:29.30 bitrate=1789.4kbits/s speed=3.25x elapsed=0:00:09.00    frame=  931 fps= 98 q=26.0 size=    6400KiB time=00:00:30.96 bitrate=1693.1kbits/s speed=3.26x elapsed=0:00:09.50    frame=  995 fps= 99 q=26.0 size=    6656KiB time=00:00:33.10 bitrate=1647.3kbits/s speed=3.31x elapsed=0:00:10.00    frame= 1061 fps=101 q=26.0 size=    6656KiB time=00:00:35.30 bitrate=1544.7kbits/s speed=3.36x elapsed=0:00:10.50    frame= 1124 fps=102 q=26.0 size=    6912KiB time=00:00:37.40 bitrate=1514.0kbits/s speed= 3.4x elapsed=0:00:11.00    frame= 1165 fps=101 q=26.0 size=    7168KiB time=00:00:38.76 bitrate=1514.7kbits/s speed=3.37x elapsed=0:00:11.50    frame= 1207 fps=101 q=26.0 size=    7424KiB time=00:00:40.16 bitrate=1514.1kbits/s speed=3.34x elapsed=0:00:12.00    frame= 1247 fps=100 q=26.0 size=    7680KiB time=00:00:41.50 bitrate=1516.0kbits/s speed=3.32x elapsed=0:00:12.50    frame= 1286 fps= 99 q=26.0 size=    7936KiB time=00:00:42.80 bitrate=1519.0kbits/s speed=3.29x elapsed=0:00:13.00    frame= 1321 fps= 98 q=26.0 size=    9728KiB time=00:00:43.96 bitrate=1812.6kbits/s speed=3.25x elapsed=0:00:13.50    frame= 1360 fps= 97 q=26.0 size=   11008KiB time=00:00:45.26 bitrate=1992.1kbits/s speed=3.23x elapsed=0:00:14.00    frame= 1400 fps= 96 q=26.0 size=   11776KiB time=00:00:46.60 bitrate=2070.2kbits/s speed=3.21x elapsed=0:00:14.50    frame= 1459 fps= 97 q=26.0 size=   12288KiB time=00:00:48.56 bitrate=2072.7kbits/s speed=3.24x elapsed=0:00:15.01    frame= 1516 fps= 98 q=26.0 size=   12544KiB time=00:00:50.46 bitrate=2036.2kbits/s speed=3.25x elapsed=0:00:15.51    frame= 1570 fps= 98 q=26.0 size=   12800KiB time=00:00:52.26 bitrate=2006.2kbits/s speed=3.26x elapsed=0:00:16.01    frame= 1622 fps= 98 q=26.0 size=   13568KiB time=00:00:54.00 bitrate=2058.3kbits/s speed=3.27x elapsed=0:00:16.51    frame= 1674 fps= 98 q=26.0 size=   13824KiB time=00:00:55.73 bitrate=2031.9kbits/s speed=3.28x elapsed=0:00:17.01    frame= 1723 fps= 98 q=26.0 size=   14336KiB time=00:00:57.36 bitrate=2047.2kbits/s speed=3.28x elapsed=0:00:17.51    frame= 1782 fps= 99 q=26.0 size=   14592KiB time=00:00:59.36 bitrate=2013.6kbits/s speed= 3.3x elapsed=0:00:18.01    frame= 1866 fps=101 q=26.0 size=   14848KiB time=00:01:02.13 bitrate=1957.6kbits/s speed=3.36x elapsed=0:00:18.51    frame= 1944 fps=102 q=26.0 size=   14848KiB time=00:01:04.73 bitrate=1879.0kbits/s speed= 3.4x elapsed=0:00:19.01    frame= 2008 fps=103 q=26.0 size=   15104KiB time=00:01:06.86 bitrate=1850.4kbits/s speed=3.43x elapsed=0:00:19.51    frame= 2088 fps=104 q=26.0 size=   15104KiB time=00:01:09.53 bitrate=1779.5kbits/s speed=3.47x elapsed=0:00:20.01    frame= 2156 fps=105 q=26.0 size=   15360KiB time=00:01:11.80 bitrate=1752.5kbits/s speed= 3.5x elapsed=0:00:20.51    frame= 2208 fps=105 q=26.0 size=   15616KiB time=00:01:13.53 bitrate=1739.7kbits/s speed= 3.5x elapsed=0:00:21.01    frame= 2258 fps=105 q=26.0 size=   16128KiB time=00:01:15.20 bitrate=1756.9kbits/s speed=3.49x elapsed=0:00:21.51    frame= 2305 fps=105 q=26.0 size=   16384KiB time=00:01:16.76 bitrate=1748.4kbits/s speed=3.49x elapsed=0:00:22.01    frame= 2353 fps=104 q=26.0 size=   16640KiB time=00:01:18.36 bitrate=1739.5kbits/s speed=3.48x elapsed=0:00:22.51    frame= 2402 fps=104 q=26.0 size=   17664KiB time=00:01:20.00 bitrate=1808.8kbits/s speed=3.48x elapsed=0:00:23.01    frame= 2452 fps=104 q=26.0 size=   18432KiB time=00:01:21.66 bitrate=1848.9kbits/s speed=3.47x elapsed=0:00:23.51    frame= 2503 fps=104 q=26.0 size=   19200KiB time=00:01:23.36 bitrate=1886.7kbits/s speed=3.47x elapsed=0:00:24.01    frame= 2553 fps=104 q=26.0 size=   19968KiB time=00:01:25.03 bitrate=1923.7kbits/s speed=3.47x elapsed=0:00:24.51    frame= 2607 fps=104 q=26.0 size=   20480KiB time=00:01:26.83 bitrate=1932.1kbits/s speed=3.47x elapsed=0:00:25.01    frame= 2664 fps=104 q=26.0 size=   20736KiB time=00:01:28.73 bitrate=1914.4kbits/s speed=3.48x elapsed=0:00:25.52    frame= 2720 fps=105 q=26.0 size=   20992KiB time=00:01:30.60 bitrate=1898.1kbits/s speed=3.48x elapsed=0:00:26.02    frame= 2791 fps=105 q=26.0 size=   20992KiB time=00:01:32.96 bitrate=1849.8kbits/s speed=3.51x elapsed=0:00:26.52    frame= 2871 fps=106 q=26.0 size=   21248KiB time=00:01:35.63 bitrate=1820.1kbits/s speed=3.54x elapsed=0:00:27.02    frame= 2933 fps=107 q=26.0 size=   21504KiB time=00:01:37.70 bitrate=1803.1kbits/s speed=3.55x elapsed=0:00:27.52    frame= 2984 fps=106 q=26.0 size=   21760KiB time=00:01:39.40 bitrate=1793.3kbits/s speed=3.55x elapsed=0:00:28.02    frame= 3036 fps=106 q=26.0 size=   22016KiB time=00:01:41.13 bitrate=1783.3kbits/s speed=3.55x elapsed=0:00:28.52    frame= 3083 fps=106 q=26.0 size=   22528KiB time=00:01:42.70 bitrate=1797.0kbits/s speed=3.54x elapsed=0:00:29.02    frame= 3133 fps=106 q=26.0 size=   22784KiB time=00:01:44.36 bitrate=1788.4kbits/s speed=3.53x elapsed=0:00:29.52    frame= 3179 fps=106 q=26.0 size=   22784KiB time=00:01:45.90 bitrate=1762.5kbits/s speed=3.53x elapsed=0:00:30.02    frame= 3220 fps=105 q=26.0 size=   23552KiB time=00:01:47.26 bitrate=1798.7kbits/s speed=3.51x elapsed=0:00:30.52    frame= 3260 fps=105 q=26.0 size=   23808KiB time=00:01:48.60 bitrate=1795.9kbits/s speed= 3.5x elapsed=0:00:31.02    frame= 3302 fps=105 q=26.0 size=   24320KiB time=00:01:50.00 bitrate=1811.2kbits/s speed=3.49x elapsed=0:00:31.52    frame= 3344 fps=104 q=26.0 size=   24832KiB time=00:01:51.40 bitrate=1826.1kbits/s speed=3.48x elapsed=0:00:32.02    frame= 3409 fps=105 q=26.0 size=   25088KiB time=00:01:53.56 bitrate=1809.7kbits/s speed=3.49x elapsed=0:00:32.52    frame= 3492 fps=106 q=26.0 size=   25088KiB time=00:01:56.33 bitrate=1766.7kbits/s speed=3.52x elapsed=0:00:33.02    frame= 3572 fps=107 q=26.0 size=   25088KiB time=00:01:59.00 bitrate=1727.1kbits/s speed=3.55x elapsed=0:00:33.53    frame= 3654 fps=107 q=26.0 size=   25344KiB time=00:02:01.73 bitrate=1705.5kbits/s speed=3.58x elapsed=0:00:34.03    frame= 3734 fps=108 q=26.0 size=   25344KiB time=00:02:04.40 bitrate=1669.0kbits/s speed= 3.6x elapsed=0:00:34.53    frame= 3784 fps=108 q=26.0 size=   25856KiB time=00:02:06.06 bitrate=1680.2kbits/s speed= 3.6x elapsed=0:00:35.03    frame= 3832 fps=108 q=26.0 size=   26112KiB time=00:02:07.66 bitrate=1675.5kbits/s speed=3.59x elapsed=0:00:35.53    frame= 3881 fps=108 q=26.0 size=   26368KiB time=00:02:09.30 bitrate=1670.6kbits/s speed=3.59x elapsed=0:00:36.03    frame= 3946 fps=108 q=26.0 size=   26624KiB time=00:02:11.46 bitrate=1659.0kbits/s speed= 3.6x elapsed=0:00:36.53    frame= 4032 fps=109 q=26.0 size=   26880KiB time=00:02:14.33 bitrate=1639.2kbits/s speed=3.63x elapsed=0:00:37.03    frame= 4115 fps=110 q=26.0 size=   26880KiB time=00:02:17.10 bitrate=1606.1kbits/s speed=3.65x elapsed=0:00:37.53    [out#0/mp4 @ 0x559bc47b5a00] video:27139KiB audio:0KiB subtitle:0KiB other streams:0KiB global headers:0KiB muxing overhead: 0.180583%
+frame= 4125 fps=110 q=-1.0 Lsize=   27188KiB time=00:02:17.43 bitrate=1620.6kbits/s speed=3.66x elapsed=0:00:37.59    
+[libx264 @ 0x559bc47d9e00] frame I:26    Avg QP:10.95  size:184239
+[libx264 @ 0x559bc47d9e00] frame P:1257  Avg QP:17.30  size: 15631
+[libx264 @ 0x559bc47d9e00] frame B:2842  Avg QP:20.55  size:  1179
+[libx264 @ 0x559bc47d9e00] consecutive B-frames:  4.1% 10.8%  4.1% 81.1%
+[libx264 @ 0x559bc47d9e00] mb I  I16..4: 54.9% 13.1% 31.9%
+[libx264 @ 0x559bc47d9e00] mb P  I16..4:  2.4%  0.2%  0.1%  P16..4: 21.7%  4.5%  2.7%  0.0%  0.0%    skip:68.4%
+[libx264 @ 0x559bc47d9e00] mb B  I16..4:  0.3%  0.0%  0.0%  B16..8:  4.8%  0.7%  0.1%  direct: 1.0%  skip:93.1%  L0:44.3% L1:43.7% BI:12.0%
+[libx264 @ 0x559bc47d9e00] 8x8 transform intra:9.7% inter:39.2%
+[libx264 @ 0x559bc47d9e00] coded y,uvDC,uvAC intra: 27.1% 24.9% 14.2% inter: 3.1% 2.7% 0.8%
+[libx264 @ 0x559bc47d9e00] i16 v,h,dc,p: 71% 18%  9%  2%
+[libx264 @ 0x559bc47d9e00] i8 v,h,dc,ddl,ddr,vr,hd,vl,hu: 22% 15% 39%  5%  4%  3%  4%  3%  4%
+[libx264 @ 0x559bc47d9e00] i4 v,h,dc,ddl,ddr,vr,hd,vl,hu: 21% 15% 16%  9% 10%  7%  8%  6%  8%
+[libx264 @ 0x559bc47d9e00] i8c dc,h,v,p: 70% 14% 14%  2%
+[libx264 @ 0x559bc47d9e00] Weighted P-Frames: Y:1.3% UV:1.0%
+[libx264 @ 0x559bc47d9e00] kb/s:1616.86

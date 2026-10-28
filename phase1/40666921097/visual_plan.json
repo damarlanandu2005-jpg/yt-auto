@@ -1,0 +1,599 @@
+[
+ {
+  "scene": "s01",
+  "start": 0.0,
+  "text": "How can the observable universe be 93 billion light-years",
+  "sentences": [
+   "s01.01"
+  ],
+  "id": "v001",
+  "end": 4.949,
+  "seconds": 4.95,
+  "scene_start": true,
+  "kind": "card",
+  "card": {
+   "type": "title",
+   "title": "Why Is the Observable Universe 93 Billion Light-Years Wide?",
+   "subtitle": "The Paradox of Time and Distance"
+  }
+ },
+ {
+  "scene": "s01",
+  "start": 4.949,
+  "text": "across if it is only 13.8 billion years old?",
+  "sentences": [
+   "s01.01"
+  ],
+  "id": "v002",
+  "end": 10.776,
+  "seconds": 5.83,
+  "scene_start": false,
+  "kind": "photo",
+  "photo_subject": "a deep space galaxy field",
+  "photo_queries": [
+   "deep field galaxies",
+   "universe space"
+  ],
+  "card": {
+   "type": "stat",
+   "title": "Cosmic Age",
+   "value": "13.8 billion",
+   "label": "Years old",
+   "unit": "years"
+  }
+ },
+ {
+  "scene": "s01",
+  "start": 10.776,
+  "text": "If light travels at a constant speed, this",
+  "sentences": [
+   "s01.02"
+  ],
+  "id": "v003",
+  "end": 14.105,
+  "seconds": 3.33,
+  "scene_start": false,
+  "kind": "drawing",
+  "drawing_subject": "a beam of light travelling across starry space",
+  "card": {
+   "type": "stat",
+   "title": "Speed of Light",
+   "value": "Constant",
+   "label": "Light speed"
+  }
+ },
+ {
+  "scene": "s01",
+  "start": 14.105,
+  "text": "vast cosmic scale sounds like an impossible contradiction.",
+  "sentences": [
+   "s01.02"
+  ],
+  "id": "v004",
+  "end": 17.92,
+  "seconds": 3.82,
+  "scene_start": false,
+  "kind": "photo",
+  "photo_subject": "spiral galaxy",
+  "photo_queries": [
+   "spiral galaxy",
+   "distant cosmos"
+  ],
+  "card": {
+   "type": "stat",
+   "title": "Cosmic Scale",
+   "value": "93 billion",
+   "label": "Light-years wide",
+   "unit": "light-years"
+  }
+ },
+ {
+  "scene": "s01",
+  "start": 17.92,
+  "text": "So why does this cosmic puzzle matter so much when we look out into space?",
+  "sentences": [
+   "s01.03"
+  ],
+  "id": "v005",
+  "end": 22.931,
+  "seconds": 5.01,
+  "scene_start": false,
+  "kind": "video",
+  "photo_subject": "galaxy cluster in space",
+  "photo_queries": [
+   "galaxy cluster",
+   "deep space"
+  ],
+  "card": {
+   "type": "stat",
+   "title": "Observable Universe",
+   "value": "93 billion",
+   "label": "Light-years wide"
+  }
+ },
+ {
+  "scene": "s01",
+  "start": 22.931,
+  "text": "Objects beyond this physical boundary cannot be detected yet because",
+  "sentences": [
+   "s01.04"
+  ],
+  "id": "v006",
+  "end": 26.648500000000002,
+  "seconds": 3.72,
+  "scene_start": false,
+  "kind": "photo",
+  "photo_subject": "distant star field",
+  "photo_queries": [
+   "star field",
+   "space stars"
+  ],
+  "card": {
+   "type": "bullets",
+   "title": "Cosmic Limits",
+   "items": [
+    "Beyond physical boundary",
+    "Cannot be detected yet",
+    "Light not reached Earth"
+   ]
+  }
+ },
+ {
+  "scene": "s01",
+  "start": 26.648500000000002,
+  "text": "their light has not had enough time to reach Earth.",
+  "sentences": [
+   "s01.04"
+  ],
+  "id": "v007",
+  "end": 30.831,
+  "seconds": 4.18,
+  "scene_start": false,
+  "kind": "step",
+  "focus": "center",
+  "card": {
+   "type": "stat",
+   "title": "Travel Time",
+   "value": "13.8 billion",
+   "label": "Years for light",
+   "unit": "years"
+  }
+ },
+ {
+  "scene": "s01",
+  "start": 30.831,
+  "text": "In this video, we will answer three fundamental questions about our cosmic horizon in plain words.",
+  "sentences": [
+   "s01.05"
+  ],
+  "id": "v008",
+  "end": 37.773,
+  "seconds": 6.94,
+  "scene_start": false,
+  "kind": "card",
+  "card": {
+   "type": "flow",
+   "title": "Three Questions",
+   "steps": [
+    "Space stretching",
+    "Radius conversion",
+    "Distant regions"
+   ]
+  }
+ },
+ {
+  "scene": "s01",
+  "start": 37.773,
+  "text": "How does space stretch while light is actively traveling across the universe?",
+  "sentences": [
+   "s01.06"
+  ],
+  "id": "v009",
+  "end": 42.85,
+  "seconds": 5.08,
+  "scene_start": false,
+  "kind": "drawing",
+  "drawing_subject": "a grid stretching out with light waves moving across it",
+  "card": {
+   "type": "bullets",
+   "title": "Light Travel",
+   "items": [
+    "Space stretches",
+    "Light travels across",
+    "Expanding universe"
+   ]
+  }
+ },
+ {
+  "scene": "s01",
+  "start": 42.85,
+  "text": "How does a travel time of 13.8 billion years",
+  "sentences": [
+   "s01.07"
+  ],
+  "id": "v010",
+  "end": 47.213,
+  "seconds": 4.36,
+  "scene_start": false,
+  "kind": "photo",
+  "photo_subject": "cosmic microwave background map",
+  "photo_queries": [
+   "cosmic background",
+   "universe map"
+  ],
+  "card": {
+   "type": "stat",
+   "title": "Travel Time",
+   "value": "13.8 billion",
+   "label": "Years travel time"
+  }
+ },
+ {
+  "scene": "s01",
+  "start": 47.213,
+  "text": "convert into a physical radius of 46.5 billion light-years?",
+  "sentences": [
+   "s01.07"
+  ],
+  "id": "v011",
+  "end": 52.434,
+  "seconds": 5.22,
+  "scene_start": false,
+  "kind": "drawing",
+  "drawing_subject": "a glowing sphere expanding outwards in space",
+  "card": {
+   "type": "stat",
+   "title": "Physical Radius",
+   "value": "46.5 billion",
+   "label": "Light-years radius",
+   "unit": "light-years"
+  }
+ },
+ {
+  "scene": "s01",
+  "start": 52.434,
+  "text": "And what mysterious regions lie forever beyond the edge of our current observable cosmos?",
+  "sentences": [
+   "s01.08"
+  ],
+  "id": "v012",
+  "end": 58.853,
+  "seconds": 6.42,
+  "scene_start": false,
+  "kind": "photo",
+  "photo_subject": "nebula clouds in deep space",
+  "photo_queries": [
+   "nebula cloud",
+   "deep space edge"
+  ],
+  "card": {
+   "type": "bullets",
+   "title": "Beyond the Edge",
+   "items": [
+    "Forever beyond",
+    "Current observable cosmos",
+    "Distant regions"
+   ]
+  }
+ },
+ {
+  "scene": "s01",
+  "start": 58.853,
+  "text": "To solve this mystery, we must reframe how we imagine cosmic space and time.",
+  "sentences": [
+   "s01.09"
+  ],
+  "id": "v013",
+  "end": 65.229,
+  "seconds": 6.38,
+  "scene_start": false,
+  "kind": "video",
+  "photo_subject": "universe expansion simulation",
+  "photo_queries": [
+   "universe expansion",
+   "cosmic web"
+  ],
+  "card": {
+   "type": "bullets",
+   "title": "Reframing Space",
+   "items": [
+    "Solve the mystery",
+    "Reframe imagination",
+    "Space and time"
+   ]
+  }
+ },
+ {
+  "scene": "s02",
+  "start": 65.229,
+  "text": "Many people visualize the universe as a huge empty room where galaxies rocket through a dark void.",
+  "sentences": [
+   "s02.01"
+  ],
+  "id": "v014",
+  "end": 72.106,
+  "seconds": 6.88,
+  "scene_start": true,
+  "kind": "card",
+  "card": {
+   "type": "title",
+   "title": "The False Picture",
+   "subtitle": "Galaxies Flying Through Empty Space"
+  }
+ },
+ {
+  "scene": "s02",
+  "start": 72.106,
+  "text": "In that false mental picture, galaxies are racing through a fixed, static space like cosmic shrapnel.",
+  "sentences": [
+   "s02.02"
+  ],
+  "id": "v015",
+  "end": 78.969,
+  "seconds": 6.86,
+  "scene_start": false,
+  "kind": "drawing",
+  "drawing_subject": "glowing dots moving rapidly through a dark void",
+  "card": {
+   "type": "bullets",
+   "title": "Mental Picture",
+   "items": [
+    "Huge empty room",
+    "Galaxies rocket through",
+    "Dark void"
+   ]
+  }
+ },
+ {
+  "scene": "s02",
+  "start": 78.969,
+  "text": "If that picture were correct, nothing could ever appear farther away than 13.8 billion light-years.",
+  "sentences": [
+   "s02.03"
+  ],
+  "id": "v016",
+  "end": 86.28,
+  "seconds": 7.31,
+  "scene_start": false,
+  "kind": "photo",
+  "photo_subject": "hubble deep field galaxies",
+  "photo_queries": [
+   "hubble deep field",
+   "galaxy field"
+  ],
+  "card": {
+   "type": "stat",
+   "title": "Distance Limit",
+   "value": "13.8 billion",
+   "label": "Light-years limit",
+   "unit": "light-years"
+  }
+ },
+ {
+  "scene": "s02",
+  "start": 86.28,
+  "text": "But this common picture of cosmic expansion is completely wrong.",
+  "sentences": [
+   "s02.04"
+  ],
+  "id": "v017",
+  "end": 91.713,
+  "seconds": 5.43,
+  "scene_start": false,
+  "kind": "card",
+  "card": {
+   "type": "compare",
+   "title": "Cosmic Expansion",
+   "left_title": "Wrong View",
+   "left_points": [
+    "Moving through space",
+    "Static void"
+   ],
+   "right_title": "Right View",
+   "right_points": [
+    "Space itself stretches",
+    "Expanding fabric"
+   ]
+  }
+ },
+ {
+  "scene": "s02",
+  "start": 91.713,
+  "text": "Cosmic expansion is not galaxies moving through a pre-existing empty space.",
+  "sentences": [
+   "s02.05"
+  ],
+  "id": "v018",
+  "end": 97.326,
+  "seconds": 5.61,
+  "scene_start": false,
+  "kind": "video",
+  "photo_subject": "galaxy cluster rotation and expansion",
+  "photo_queries": [
+   "galaxy cluster",
+   "space expansion"
+  ],
+  "card": {
+   "type": "bullets",
+   "title": "Expansion Facts",
+   "items": [
+    "Not moving through space",
+    "Pre-existing void",
+    "Dynamic expansion"
+   ]
+  }
+ },
+ {
+  "scene": "s02",
+  "start": 97.326,
+  "text": "Instead, general relativity describes expansion as an intrinsic",
+  "sentences": [
+   "s02.06"
+  ],
+  "id": "v019",
+  "end": 101.55449999999999,
+  "seconds": 4.23,
+  "scene_start": false,
+  "kind": "photo",
+  "photo_subject": "albert einstein portrait",
+  "photo_queries": [
+   "albert einstein",
+   "relativity portrait"
+  ],
+  "card": {
+   "type": "bullets",
+   "title": "General Relativity",
+   "items": [
+    "Describes expansion",
+    "Intrinsic increase",
+    "Curved spacetime"
+   ]
+  }
+ },
+ {
+  "scene": "s02",
+  "start": 101.55449999999999,
+  "text": "increase in distance between cosmic objects over time.",
+  "sentences": [
+   "s02.06"
+  ],
+  "id": "v020",
+  "end": 106.257,
+  "seconds": 4.7,
+  "scene_start": false,
+  "kind": "drawing",
+  "drawing_subject": "a grid of space expanding with two dots moving apart",
+  "card": {
+   "type": "flow",
+   "title": "Increase in Distance",
+   "steps": [
+    "Cosmic objects",
+    "More distance",
+    "Over time"
+   ]
+  }
+ },
+ {
+  "scene": "s02",
+  "start": 106.257,
+  "text": "Most galaxies are nearly at rest relative to their local comoving spatial coordinates.",
+  "sentences": [
+   "s02.07"
+  ],
+  "id": "v021",
+  "end": 112.299,
+  "seconds": 6.04,
+  "scene_start": false,
+  "kind": "video",
+  "photo_subject": "cosmic web animation",
+  "photo_queries": [
+   "cosmic web",
+   "galaxy filaments"
+  ],
+  "card": {
+   "type": "bullets",
+   "title": "Galactic Rest",
+   "items": [
+    "Nearly at rest",
+    "Local coordinates",
+    "Comoving spatial grid"
+   ]
+  }
+ },
+ {
+  "scene": "s02",
+  "start": 112.299,
+  "text": "The velocity of a galaxy relative to its local comoving grid is called its peculiar velocity.",
+  "sentences": [
+   "s02.08"
+  ],
+  "id": "v022",
+  "end": 118.942,
+  "seconds": 6.64,
+  "scene_start": false,
+  "kind": "card",
+  "card": {
+   "type": "stat",
+   "title": "Peculiar Velocity",
+   "value": "Velocity",
+   "label": "Relative to comoving grid"
+  }
+ },
+ {
+  "scene": "s02",
+  "start": 118.942,
+  "text": "These local peculiar velocities are caused mostly by gravity and are usually quite small.",
+  "sentences": [
+   "s02.09"
+  ],
+  "id": "v023",
+  "end": 125.192,
+  "seconds": 6.25,
+  "scene_start": false,
+  "kind": "photo",
+  "photo_subject": "colliding galaxies merging",
+  "photo_queries": [
+   "colliding galaxies",
+   "galaxy collision"
+  ],
+  "card": {
+   "type": "bullets",
+   "title": "Peculiar Velocities",
+   "items": [
+    "Caused by gravity",
+    "Usually quite small",
+    "Local movements"
+   ]
+  }
+ },
+ {
+  "scene": "s02",
+  "start": 125.192,
+  "text": "So how should we picture the movement of galaxies as the universe expands?",
+  "sentences": [
+   "s02.10"
+  ],
+  "id": "v024",
+  "end": 130.234,
+  "seconds": 5.04,
+  "scene_start": false,
+  "kind": "drawing",
+  "drawing_subject": "a expanding balloon surface with painted dots",
+  "card": {
+   "type": "flow",
+   "title": "Galaxy Movement",
+   "steps": [
+    "Universe expands",
+    "Space stretches",
+    "Galaxies separate"
+   ]
+  }
+ },
+ {
+  "scene": "s02",
+  "start": 130.234,
+  "text": "Understanding this key distinction changes everything about how we calculate cosmic distances.",
+  "sentences": [
+   "s02.12"
+  ],
+  "id": "v025",
+  "end": 137.508,
+  "seconds": 7.27,
+  "scene_start": false,
+  "kind": "video",
+  "photo_subject": "universe zoom out animation",
+  "photo_queries": [
+   "universe zoom",
+   "cosmic scale"
+  ],
+  "card": {
+   "type": "bullets",
+   "title": "Key Distinction",
+   "items": [
+    "Understand distinction",
+    "Changes everything",
+    "Calculate distances"
+   ]
+  }
+ }
+]

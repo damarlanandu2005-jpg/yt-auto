@@ -1,0 +1,47 @@
+[model] gemini-3.5-flash-lite
+[system]
+
+
+[user]
+Step 2 of a picture check for a science video. Someone looked at each picture WITHOUT knowing
+what it should show and described it. Decide for each image whether the picture fits.
+A photo fits only if the description shows it clearly depicts what it should show: not mostly text,
+not a test target, not a different planet or object than the narration is about, no watermark, nothing
+misleading. A diagram, infographic or poster with many labels or much text does NOT fit (too small to read
+in a video, and made for another purpose). A chart or graph fits ONLY if its labels show it is about exactly what the narration says (a graph
+of Mars data, or with unexplained labels like 'RHOS', does not fit a sentence about Earth or a star).
+When unsure, answer fits = false (a chart or plain card is shown instead, which is fine).
+Copy the description into "seen".
+Image 1: described as: A deep space photograph filled with numerous distant galaxies of various shapes, sizes, and colors scattered across a dark background.
+  should show: a deep space galaxy field
+  narration: across if it is only 13.8 billion years old?
+Image 2: described as: A detailed close-up image of a majestic barred spiral galaxy, showcasing its bright central bar, glowing core, and prominent dust lanes weaving through glowing blue spiral arms.
+  should show: spiral galaxy
+  narration: vast cosmic scale sounds like an impossible contradiction.
+Image 3: described as: A deep space image framed in a circular aperture, revealing scattered distant galaxies and a few prominent edge-on spiral galaxies against a black cosmic background.
+  should show: galaxy cluster in space
+  narration: So why does this cosmic puzzle matter so much when we look out into space?
+Image 4: described as: A dark astronomical image showing a sparse field of faint stars against a black background.
+  should show: distant star field
+  narration: Objects beyond this physical boundary cannot be detected yet because
+Image 5: described as: An elliptical, oval-shaped map of the Cosmic Microwave Background showing temperature fluctuations across the early universe in mottled patterns of orange, yellow, blue, and green.
+  should show: cosmic microwave background map
+  narration: How does a travel time of 13.8 billion years
+Image 6: described as: A vibrant infrared space photograph showing glowing green and yellow interstellar gas clouds and dust pillars dotted with numerous blue and red stars.
+  should show: nebula clouds in deep space
+  narration: And what mysterious regions lie forever beyond the edge of our current observable cosmos?
+Image 7: described as: A digital rendering of a space satellite with a large, funnel-shaped reflective solar shield, positioned in orbit above the curved blue limb of Earth against a starry background with a bright sun glare.
+  should show: universe expansion simulation
+  narration: To solve this mystery, we must reframe how we imagine cosmic space and time.
+Image 8: described as: A deep space Hubble-style view showing a dense galaxy cluster, featuring several large elliptical and spiral galaxies alongside numerous faint, distant background galaxies and a prominent foreground star with diffraction spikes.
+  should show: hubble deep field galaxies
+  narration: If that picture were correct, nothing could ever appear farther away than 13.8 billion light-years.
+Image 9: described as: A classic black and white portrait of physicist Albert Einstein looking directly at the camera with characteristic messy hair and a thoughtful expression.
+  should show: albert einstein portrait
+  narration: Instead, general relativity describes expansion as an intrinsic
+Image 10: described as: A wide-field digital simulation or photograph of deep space, featuring numerous scattered galaxies and a prominent spiral galaxy on the far right side against a black background.
+  should show: cosmic web animation
+  narration: Most galaxies are nearly at rest relative to their local comoving spatial coordinates.
+Image 11: described as: A composite space telescope image of a celestial object resembling a glowing, curved cosmic question mark or horseshoe-shaped gravitational lens structure with reddish star-forming clumps and bright central cores.
+  should show: colliding galaxies merging
+  narration: These local peculiar velocities are caused mostly by gravity and are usually quite small.

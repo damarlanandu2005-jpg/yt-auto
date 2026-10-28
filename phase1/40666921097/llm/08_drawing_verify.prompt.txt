@@ -1,0 +1,48 @@
+[model] gemini-3.5-flash-lite
+[system]
+
+
+[user]
+Step 2 of a picture check for a science video. Someone looked at each picture WITHOUT knowing
+what it should show and described it. Decide for each image whether the picture fits.
+The pictures are ink drawings made by an AI image model, which often misses. A drawing fits if a
+viewer hearing the narration would recognise its main object(s) (a star, a planet, a blast, molecules, DNA,
+fish...). It does NOT need to show the action or process (collapsing, moving, changing): a still picture of
+the right thing is enough. It does NOT fit if it is only shapes or texture with no recognisable object, shows
+a different thing (a volcano or canyon for the atmosphere, a red diamond for a star), has text or labels, looks
+like a logo/emblem/badge/flag, or has deformed bodies.
+When unsure, answer fits = false (a chart or plain card is shown instead, which is fine).
+Copy the description into "seen".
+Image 1: described as: This abstract image shows white streaks and thin lines diagonally crossing a black field that is speckled with tiny white dots resembling stars.
+  should show: a beam of light travelling across starry space
+  narration: If light travels at a constant speed, this
+Image 2: described as: This abstract image features a black background overlaid with a grid of white lines and diagonal hatching. The top section is filled with dense red and white cross-hatching.
+  should show: a grid stretching out with light waves moving across it
+  narration: How does space stretch while light is actively traveling across the universe?
+Image 3: described as: This abstract image depicts a dark sphere set against a black background, with the lower half wrapped in a textured red and white pattern punctuated by small dots.
+  should show: a glowing sphere expanding outwards in space
+  narration: convert into a physical radius of 46.5 billion light-years?
+Image 4: described as: This abstract image shows a dense cluster of white dots and circles against a black background, with a bright white streak cutting diagonally through the upper right.
+  should show: glowing dots moving rapidly through a dark void
+  narration: In that false mental picture, galaxies are racing through a fixed, static space like cosmic shrapnel.
+Image 5: described as: This abstract image displays a dark grey background with thin white grid lines and several solid red circular dots scattered across the frame.
+  should show: a grid of space expanding with two dots moving apart
+  narration: increase in distance between cosmic objects over time.
+Image 6: described as: This abstract image is filled with numerous light grey and white circular shapes of varying sizes randomly scattered across a dark grey background.
+  should show: a expanding balloon surface with painted dots
+  narration: So how should we picture the movement of galaxies as the universe expands?
+Image 7: described as: This abstract image features a swirling planetary or cosmic formation with concentric white rings, a central grey celestial body, and a reddish accent arc against a starry black background.
+  should show: universe expansion simulation
+  narration: To solve this mystery, we must reframe how we imagine cosmic space and time.
+Image 8: described as: This abstract image shows sweeping, elongated grey and red ribbon-like formations against a black space background speckled with tiny white stars.
+  should show: galaxy cluster rotation and expansion
+  narration: Cosmic expansion is not galaxies moving through a pre-existing empty space.
+Image 9: described as: This abstract image presents a complex white spiderweb pattern centered over a bright light source, set against a dark background dotted with small white points.
+  should show: cosmic web animation
+  narration: Most galaxies are nearly at rest relative to their local comoving spatial coordinates.
+Image 10: described as: This abstract image depicts a swirling vortex of white and grey rings around a dark center, with a lone red dot visible on the left side against a black, starry backdrop.
+  should show: colliding galaxies merging
+  narration: These local peculiar velocities are caused mostly by gravity and are usually quite small.
+Image 11: described as: This abstract image shows a large, finely lined circular disk like a record, with a small grey moon to its lower right and a red streak extending from the left, all set in a starry black space.
+  should show: universe zoom out animation
+  narration: Understanding this key distinction changes everything about how we calculate cosmic distances.

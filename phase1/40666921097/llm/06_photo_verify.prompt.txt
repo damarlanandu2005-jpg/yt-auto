@@ -1,0 +1,23 @@
+[model] gemini-3.5-flash-lite
+[system]
+
+
+[user]
+Step 2 of a picture check for a science video. Someone looked at each picture WITHOUT knowing
+what it should show and described it. Decide for each image whether the picture fits.
+A photo fits only if the description shows it clearly depicts what it should show: not mostly text,
+not a test target, not a different planet or object than the narration is about, no watermark, nothing
+misleading. A diagram, infographic or poster with many labels or much text does NOT fit (too small to read
+in a video, and made for another purpose). A chart or graph fits ONLY if its labels show it is about exactly what the narration says (a graph
+of Mars data, or with unexplained labels like 'RHOS', does not fit a sentence about Earth or a star).
+When unsure, answer fits = false (a chart or plain card is shown instead, which is fine).
+Copy the description into "seen".
+Image 1: described as: A 3D pie chart against a black background, labeled with percentages and text components: 75% Dark Energy in green, 21% Dark Matter in blue, and 4% Normal Matter in red.
+  should show: universe expansion simulation
+  narration: To solve this mystery, we must reframe how we imagine cosmic space and time.
+Image 2: described as: An outer space photograph showing astronauts working on a large satellite component from the cargo bay of a space shuttle, with Earth's curvature and clouds visible in the background.
+  should show: cosmic web animation
+  narration: Most galaxies are nearly at rest relative to their local comoving spatial coordinates.
+Image 3: described as: A deep-space telescopic image against a black background showing numerous distant stars, galaxies, and star clusters in various shades of blue, white, and red, framed within an irregular outlined boundary.
+  should show: colliding galaxies merging
+  narration: These local peculiar velocities are caused mostly by gravity and are usually quite small.

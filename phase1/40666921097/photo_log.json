@@ -1,0 +1,83 @@
+{
+ "card_number_fixes": [],
+ "photo_slots": 13,
+ "candidates": {
+  "v002": 10,
+  "v004": 12,
+  "v005": 12,
+  "v006": 12,
+  "v010": 10,
+  "v012": 9,
+  "v013": 12,
+  "v016": 11,
+  "v018": 12,
+  "v019": 9,
+  "v021": 12,
+  "v023": 10,
+  "v025": 12
+ },
+ "downloaded": 11,
+ "seen": {
+  "v002": "A deep space photograph filled with numerous distant galaxies of various shapes, sizes, and colors scattered across a dark background.",
+  "v004": "A detailed close-up image of a majestic barred spiral galaxy, showcasing its bright central bar, glowing core, and prominent dust lanes weaving through glowing blue spiral arms.",
+  "v005": "A deep space image framed in a circular aperture, revealing scattered distant galaxies and a few prominent edge-on spiral galaxies against a black cosmic background.",
+  "v006": "A dark astronomical image showing a sparse field of faint stars against a black background.",
+  "v010": "An elliptical, oval-shaped map of the Cosmic Microwave Background showing temperature fluctuations across the early universe in mottled patterns of orange, yellow, blue, and green.",
+  "v012": "A vibrant infrared space photograph showing glowing green and yellow interstellar gas clouds and dust pillars dotted with numerous blue and red stars.",
+  "v013": "A digital rendering of a space satellite with a large, funnel-shaped reflective solar shield, positioned in orbit above the curved blue limb of Earth against a starry background with a bright sun glare.",
+  "v016": "A deep space Hubble-style view showing a dense galaxy cluster, featuring several large elliptical and spiral galaxies alongside numerous faint, distant background galaxies and a prominent foreground star with diffraction spikes.",
+  "v019": "A classic black and white portrait of physicist Albert Einstein looking directly at the camera with characteristic messy hair and a thoughtful expression.",
+  "v021": "A wide-field digital simulation or photograph of deep space, featuring numerous scattered galaxies and a prominent spiral galaxy on the far right side against a black background.",
+  "v023": "A composite space telescope image of a celestial object resembling a glowing, curved cosmic question mark or horseshoe-shaped gravitational lens structure with reddish star-forming clumps and bright central cores."
+ },
+ "rejected_after_looking": [
+  {
+   "id": "v013",
+   "title": "SPHEREx Preliminary Design (Illustration)",
+   "seen": "A digital rendering of a space satellite with a large, funnel-shaped reflective solar shield, positioned in orbit above the curved blue limb of Earth against a starry background with a bright sun glare.",
+   "reason": "The description is a satellite, but the expected object is a universe expansion simulation."
+  },
+  {
+   "id": "v021",
+   "title": "Cosmic Origins Spectrograph: Large Scale Structure of the Universe",
+   "seen": "A wide-field digital simulation or photograph of deep space, featuring numerous scattered galaxies and a prominent spiral galaxy on the far right side against a black background.",
+   "reason": "The description is a wide-field space photo, but it should show a cosmic web animation."
+  },
+  {
+   "id": "v023",
+   "title": "Life at the Intersection of Colliding Galaxies",
+   "seen": "A composite space telescope image of a celestial object resembling a glowing, curved cosmic question mark or horseshoe-shaped gravitational lens structure with reddish star-forming clumps and bright central cores.",
+   "reason": "The image is a gravitational lens structure, but it should show colliding galaxies merging."
+  }
+ ],
+ "second_try": {
+  "tried": 3,
+  "kept": 0,
+  "seen": {
+   "v013": "A 3D pie chart against a black background, labeled with percentages and text components: 75% Dark Energy in green, 21% Dark Matter in blue, and 4% Normal Matter in red.",
+   "v021": "An outer space photograph showing astronauts working on a large satellite component from the cargo bay of a space shuttle, with Earth's curvature and clouds visible in the background.",
+   "v023": "A deep-space telescopic image against a black background showing numerous distant stars, galaxies, and star clusters in various shades of blue, white, and red, framed within an irregular outlined boundary."
+  },
+  "rejected": [
+   {
+    "id": "v013",
+    "title": "KSC-04-S-00174",
+    "seen": "A 3D pie chart against a black background, labeled with percentages and text components: 75% Dark Energy in green, 21% Dark Matter in blue, and 4% Normal Matter in red.",
+    "reason": "The image shows a pie chart about dark energy and dark matter, whereas the narration is about cosmic space and time, and it should show a universe expansion simulation."
+   },
+   {
+    "id": "v021",
+    "title": "HST SM4 COS Installation EVA",
+    "seen": "An outer space photograph showing astronauts working on a large satellite component from the cargo bay of a space shuttle, with Earth's curvature and clouds visible in the background.",
+    "reason": "The image shows astronauts working on a satellite, whereas the narration is about galaxies, and it should show a cosmic web animation."
+   },
+   {
+    "id": "v023",
+    "title": "Dwarf Galaxies Swimming in Tidal Tails",
+    "seen": "A deep-space telescopic image against a black background showing numerous distant stars, galaxies, and star clusters in various shades of blue, white, and red, framed within an irregular outlined boundary.",
+    "reason": "The image shows a deep-space telescopic view of stars and galaxies, whereas it should show colliding galaxies merging."
+   }
+  ],
+  "error": null
+ }
+}

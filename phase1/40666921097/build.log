@@ -1,0 +1,37 @@
+[diag] machine: {'arch': 'x86_64', 'cpus': 4, 'python': '3.13.16', 'runner': 'GitHub Actions 1000000289', 'cpu_model': 'AMD EPYC 7763 64-Core Processor', 'ffmpeg': 'ffmpeg version n8.1.3-24-g92611900bb-20261026 Copyright (c) 2000-2026 the FFmpeg developers'}
+[resume] using saved plan.json
+[resume] using saved sources.json
+[resume] using saved script_draft.json
+[script] 'Why Is the Observable Universe 93 Billion Light-Years Wide?': 995 words; fact-check: 64/75 passed first time, 4 fixed, 7 dropped
+[resume] using saved delivery.json
+[bench] script: 0.0 s
+[0;93m2026-10-28 09:48:44.816793209 [W:onnxruntime:Default, device_discovery.cc:95 GetPciBusId] Skipping pci_bus_id for PCI path at "/sys/devices/LNXSYSTM:00/LNXSYBUS:00/ACPI0004:00/MSFT1000:00/5620e0c7-8062-4dce-aeb7-520c7ef76171" because filename "5620e0c7-8062-4dce-aeb7-520c7ef76171" did not match expected pattern of [0-9a-f]+:[0-9a-f]+:[0-9a-f]+[.][0-9a-f]+[m
+[bench] narration: 51.36 s
+[llm] visual_plan: gemma-4-31b-it unavailable (HTTP 500 (busy)); trying next model
+[bench] visual_plan: 41.5 s
+[photos] download failed for v018: InvalidURL("URL can't contain control characters. '/video/GSFC_20101028_JWST_m10660_Webb Deploy_Short/collection.json' (found at least ' ')")
+[bench] photos: 150.7 s
+[drawings] asked 11, drawn 11, used after looking 6
+[bench] drawings: 811.01 s
+[bench] keyframes: 12.57 s
+[bench] segments: 41.34 s
+[bench] subtitles: 10.43 s
+[resume] using saved keywords.json
+[keywords] 3 key words on screen
+[sound] music: {'title': 'Kevin MacLeod - Calmant', 'author': 'Kevin MacLeod', 'licence': 'CC BY 3.0', 'source_page': 'https://commons.wikimedia.org/wiki/File:Kevin_MacLeod_-_Calmant.ogg'}; 24 transition sounds
+[bench] assemble: 45.63 s
+[bench] preview: 7.76 s
+[thumbnail] {'picture': 'v002', 'text': 'space stretches over time', 'red_word': 'stretches', 'seen': 'A deep space photograph filled with numerous distant galaxies of various shapes, sizes, and colors scattered across a dark background.', 'picture_source': 'https://commons.wikimedia.org/wiki/File:Hubble_ultra_deep_field.jpg'}
+[bench] thumbnail: 1.08 s
+[gate] FAIL: {'video_black': 'FAIL', 'video_minutes': 'FLAG', 'plain_cards': 'FAIL'}
+[bench] gate: 10.24 s
+{
+  "title": "Why Is the Observable Universe 93 Billion Light-Years Wide?",
+  "words": 296,
+  "video_seconds": 137.5,
+  "visuals": 25,
+  "photos": 9,
+  "drawings": 7,
+  "cards": 9,
+  "seconds_per_visual": 5.5
+}

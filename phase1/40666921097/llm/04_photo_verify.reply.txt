@@ -1,0 +1,70 @@
+{
+  "checks": [
+    {
+      "n": 1,
+      "seen": "A deep space photograph filled with numerous distant galaxies of various shapes, sizes, and colors scattered across a dark background.",
+      "fits": true,
+      "reason": "The description clearly depicts a deep space galaxy field which matches what the picture should show."
+    },
+    {
+      "n": 2,
+      "seen": "A detailed close-up image of a majestic barred spiral galaxy, showcasing its bright central bar, glowing core, and prominent dust lanes weaving through glowing blue spiral arms.",
+      "fits": true,
+      "reason": "The description accurately matches a spiral galaxy."
+    },
+    {
+      "n": 3,
+      "seen": "A deep space image framed in a circular aperture, revealing scattered distant galaxies and a few prominent edge-on spiral galaxies against a black cosmic background.",
+      "fits": true,
+      "reason": "The image matches the expected galaxy cluster in space."
+    },
+    {
+      "n": 4,
+      "seen": "A dark astronomical image showing a sparse field of faint stars against a black background.",
+      "fits": true,
+      "reason": "The description fits a distant star field."
+    },
+    {
+      "n": 5,
+      "seen": "An elliptical, oval-shaped map of the Cosmic Microwave Background showing temperature fluctuations across the early universe in mottled patterns of orange, yellow, blue, and green.",
+      "fits": true,
+      "reason": "The description clearly depicts a cosmic microwave background map."
+    },
+    {
+      "n": 6,
+      "seen": "A vibrant infrared space photograph showing glowing green and yellow interstellar gas clouds and dust pillars dotted with numerous blue and red stars.",
+      "fits": true,
+      "reason": "The image clearly shows nebula clouds in deep space."
+    },
+    {
+      "n": 7,
+      "seen": "A digital rendering of a space satellite with a large, funnel-shaped reflective solar shield, positioned in orbit above the curved blue limb of Earth against a starry background with a bright sun glare.",
+      "fits": false,
+      "reason": "The description is a satellite, but the expected object is a universe expansion simulation."
+    },
+    {
+      "n": 8,
+      "seen": "A deep space Hubble-style view showing a dense galaxy cluster, featuring several large elliptical and spiral galaxies alongside numerous faint, distant background galaxies and a prominent foreground star with diffraction spikes.",
+      "fits": true,
+      "reason": "The description matches Hubble deep field galaxies."
+    },
+    {
+      "n": 9,
+      "seen": "A classic black and white portrait of physicist Albert Einstein looking directly at the camera with characteristic messy hair and a thoughtful expression.",
+      "fits": true,
+      "reason": "The image correctly depicts an Albert Einstein portrait."
+    },
+    {
+      "n": 10,
+      "seen": "A wide-field digital simulation or photograph of deep space, featuring numerous scattered galaxies and a prominent spiral galaxy on the far right side against a black background.",
+      "fits": false,
+      "reason": "The description is a wide-field space photo, but it should show a cosmic web animation."
+    },
+    {
+      "n": 11,
+      "seen": "A composite space telescope image of a celestial object resembling a glowing, curved cosmic question mark or horseshoe-shaped gravitational lens structure with reddish star-forming clumps and bright central cores.",
+      "fits": false,
+      "reason": "The image is a gravitational lens structure, but it should show colliding galaxies merging."
+    }
+  ]
+}

@@ -1,0 +1,376 @@
+{
+  "visuals": [
+    {
+      "id": "v001",
+      "kind": "card",
+      "card": {
+        "type": "title",
+        "title": "Why Is the Observable Universe 93 Billion Light-Years Wide?",
+        "subtitle": "The Paradox of Time and Distance"
+      }
+    },
+    {
+      "id": "v002",
+      "kind": "photo",
+      "photo_subject": "a deep space galaxy field",
+      "photo_queries": [
+        "deep field galaxies",
+        "universe space"
+      ],
+      "card": {
+        "type": "stat",
+        "title": "Cosmic Age",
+        "value": "13.8 billion",
+        "label": "Years old",
+        "unit": "years"
+      }
+    },
+    {
+      "id": "v003",
+      "kind": "drawing",
+      "drawing_subject": "a beam of light travelling across starry space",
+      "card": {
+        "type": "stat",
+        "title": "Speed of Light",
+        "value": "Constant",
+        "label": "Light speed"
+      }
+    },
+    {
+      "id": "v004",
+      "kind": "photo",
+      "photo_subject": "spiral galaxy",
+      "photo_queries": [
+        "spiral galaxy",
+        "distant cosmos"
+      ],
+      "card": {
+        "type": "stat",
+        "title": "Cosmic Scale",
+        "value": "93 billion",
+        "label": "Light-years wide",
+        "unit": "light-years"
+      }
+    },
+    {
+      "id": "v005",
+      "kind": "video",
+      "photo_subject": "galaxy cluster in space",
+      "photo_queries": [
+        "galaxy cluster",
+        "deep space"
+      ],
+      "card": {
+        "type": "stat",
+        "title": "Observable Universe",
+        "value": "93 billion",
+        "label": "Light-years wide"
+      }
+    },
+    {
+      "id": "v006",
+      "kind": "photo",
+      "photo_subject": "distant star field",
+      "photo_queries": [
+        "star field",
+        "space stars"
+      ],
+      "card": {
+        "type": "bullets",
+        "title": "Cosmic Limits",
+        "items": [
+          "Beyond physical boundary",
+          "Cannot be detected yet",
+          "Light not reached Earth"
+        ]
+      }
+    },
+    {
+      "id": "v007",
+      "kind": "step",
+      "focus": "center",
+      "card": {
+        "type": "stat",
+        "title": "Travel Time",
+        "value": "13.8 billion",
+        "label": "Years for light",
+        "unit": "years"
+      }
+    },
+    {
+      "id": "v008",
+      "kind": "card",
+      "card": {
+        "type": "flow",
+        "title": "Three Questions",
+        "steps": [
+          "Space stretching",
+          "Radius conversion",
+          "Distant regions"
+        ]
+      }
+    },
+    {
+      "id": "v009",
+      "kind": "drawing",
+      "drawing_subject": "a grid stretching out with light waves moving across it",
+      "card": {
+        "type": "bullets",
+        "title": "Light Travel",
+        "items": [
+          "Space stretches",
+          "Light travels across",
+          "Expanding universe"
+        ]
+      }
+    },
+    {
+      "id": "v010",
+      "kind": "photo",
+      "photo_subject": "cosmic microwave background map",
+      "photo_queries": [
+        "cosmic background",
+        "universe map"
+      ],
+      "card": {
+        "type": "stat",
+        "title": "Travel Time",
+        "value": "13.8 billion",
+        "label": "Years travel time"
+      }
+    },
+    {
+      "id": "v011",
+      "kind": "drawing",
+      "drawing_subject": "a glowing sphere expanding outwards in space",
+      "card": {
+        "type": "stat",
+        "title": "Physical Radius",
+        "value": "46.5 billion",
+        "label": "Light-years radius",
+        "unit": "light-years"
+      }
+    },
+    {
+      "id": "v012",
+      "kind": "photo",
+      "photo_subject": "nebula clouds in deep space",
+      "photo_queries": [
+        "nebula cloud",
+        "deep space edge"
+      ],
+      "card": {
+        "type": "bullets",
+        "title": "Beyond the Edge",
+        "items": [
+          "Forever beyond",
+          "Current observable cosmos",
+          "Distant regions"
+        ]
+      }
+    },
+    {
+      "id": "v013",
+      "kind": "video",
+      "photo_subject": "universe expansion simulation",
+      "photo_queries": [
+        "universe expansion",
+        "cosmic web"
+      ],
+      "card": {
+        "type": "bullets",
+        "title": "Reframing Space",
+        "items": [
+          "Solve the mystery",
+          "Reframe imagination",
+          "Space and time"
+        ]
+      }
+    },
+    {
+      "id": "v014",
+      "kind": "card",
+      "card": {
+        "type": "title",
+        "title": "The False Picture",
+        "subtitle": "Galaxies Flying Through Empty Space"
+      }
+    },
+    {
+      "id": "v015",
+      "kind": "drawing",
+      "drawing_subject": "glowing dots moving rapidly through a dark void",
+      "card": {
+        "type": "bullets",
+        "title": "Mental Picture",
+        "items": [
+          "Huge empty room",
+          "Galaxies rocket through",
+          "Dark void"
+        ]
+      }
+    },
+    {
+      "id": "v016",
+      "kind": "photo",
+      "photo_subject": "hubble deep field galaxies",
+      "photo_queries": [
+        "hubble deep field",
+        "galaxy field"
+      ],
+      "card": {
+        "type": "stat",
+        "title": "Distance Limit",
+        "value": "13.8 billion",
+        "label": "Light-years limit",
+        "unit": "light-years"
+      }
+    },
+    {
+      "id": "v017",
+      "kind": "card",
+      "card": {
+        "type": "compare",
+        "title": "Cosmic Expansion",
+        "left_title": "Wrong View",
+        "left_points": [
+          "Moving through space",
+          "Static void"
+        ],
+        "right_title": "Right View",
+        "right_points": [
+          "Space itself stretches",
+          "Expanding fabric"
+        ]
+      }
+    },
+    {
+      "id": "v018",
+      "kind": "video",
+      "photo_subject": "galaxy cluster rotation and expansion",
+      "photo_queries": [
+        "galaxy cluster",
+        "space expansion"
+      ],
+      "card": {
+        "type": "bullets",
+        "title": "Expansion Facts",
+        "items": [
+          "Not moving through space",
+          "Pre-existing void",
+          "Dynamic expansion"
+        ]
+      }
+    },
+    {
+      "id": "v019",
+      "kind": "photo",
+      "photo_subject": "albert einstein portrait",
+      "photo_queries": [
+        "albert einstein",
+        "relativity portrait"
+      ],
+      "card": {
+        "type": "bullets",
+        "title": "General Relativity",
+        "items": [
+          "Describes expansion",
+          "Intrinsic increase",
+          "Curved spacetime"
+        ]
+      }
+    },
+    {
+      "id": "v020",
+      "kind": "drawing",
+      "drawing_subject": "a grid of space expanding with two dots moving apart",
+      "card": {
+        "type": "flow",
+        "title": "Increase in Distance",
+        "steps": [
+          "Cosmic objects",
+          "More distance",
+          "Over time"
+        ]
+      }
+    },
+    {
+      "id": "v021",
+      "kind": "video",
+      "photo_subject": "cosmic web animation",
+      "photo_queries": [
+        "cosmic web",
+        "galaxy filaments"
+      ],
+      "card": {
+        "type": "bullets",
+        "title": "Galactic Rest",
+        "items": [
+          "Nearly at rest",
+          "Local coordinates",
+          "Comoving spatial grid"
+        ]
+      }
+    },
+    {
+      "id": "v022",
+      "kind": "card",
+      "card": {
+        "type": "stat",
+        "title": "Peculiar Velocity",
+        "value": "Velocity",
+        "label": "Relative to comoving grid"
+      }
+    },
+    {
+      "id": "v023",
+      "kind": "photo",
+      "photo_subject": "colliding galaxies merging",
+      "photo_queries": [
+        "colliding galaxies",
+        "galaxy collision"
+      ],
+      "card": {
+        "type": "bullets",
+        "title": "Peculiar Velocities",
+        "items": [
+          "Caused by gravity",
+          "Usually quite small",
+          "Local movements"
+        ]
+      }
+    },
+    {
+      "id": "v024",
+      "kind": "drawing",
+      "drawing_subject": "a expanding balloon surface with painted dots",
+      "card": {
+        "type": "flow",
+        "title": "Galaxy Movement",
+        "steps": [
+          "Universe expands",
+          "Space stretches",
+          "Galaxies separate"
+        ]
+      }
+    },
+    {
+      "id": "v025",
+      "kind": "video",
+      "photo_subject": "universe zoom out animation",
+      "photo_queries": [
+        "universe zoom",
+        "cosmic scale"
+      ],
+      "card": {
+        "type": "bullets",
+        "title": "Key Distinction",
+        "items": [
+          "Understand distinction",
+          "Changes everything",
+          "Calculate distances"
+        ]
+      }
+    }
+  ]
+}
