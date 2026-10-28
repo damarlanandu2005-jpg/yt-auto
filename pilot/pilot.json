@@ -25,18 +25,19 @@
    "phase4_score": 3.8,
    "phase4_run": 40641008955,
    "voice": "kokoro",
-   "status": "retry",
+   "status": "ready_for_review",
    "runs": [
     40641566457,
     40649876590,
     40650276445,
     40652575249,
-    40670200956
+    40670200956,
+    40692715659
    ],
    "owner_minutes": null,
    "uploaded": null,
    "youtube_id": null,
-   "notes": "Run 40641566457 (28 Oct 06:10 UTC): plan + sources saved, script step got 429 'daily free quota used up' on all strong models (the 05:58 check had answered 200: only a few requests were left). Resume with resume_from 40641566457 after 07:00 UTC. Run 40649876590 crashed at start (MAX_DRAWINGS line lost in an edit; no quota). Run 40650276445: 995 words, 7.8 min, gate FAIL plain_cards 52/88 (stat cards with unit but no label became titles; planned drawings capped at 12). Remake 40652575249 (same script): 88 visuals = 20 photos + 34 drawings (Cloudflare FLUX, 39 drawn, 28 passed) + 34 cards, 12 key words, gate FLAG only (thumbnail words 'universe grew faster' not in the script). Release video-40652575249. Remake with new script rules (run 40670200956): 1000 words, fact-check 64/68 first pass, 4 dropped; gate FAIL plain_cards 37 %: Cloudflare free neurons ran out (tests used them), local fallback 7/26 drawings, only 1 NASA video slot planned. Pictures to be remade after the 00:00 UTC Cloudflare reset with resume_from 40670200956."
+   "notes": "Run 40641566457 (28 Oct 06:10 UTC): plan + sources saved, script step got 429 'daily free quota used up' on all strong models (the 05:58 check had answered 200: only a few requests were left). Resume with resume_from 40641566457 after 07:00 UTC. Run 40649876590 crashed at start (MAX_DRAWINGS line lost in an edit; no quota). Run 40650276445: 995 words, 7.8 min, gate FAIL plain_cards 52/88 (stat cards with unit but no label became titles; planned drawings capped at 12). Remake 40652575249 (same script): 88 visuals = 20 photos + 34 drawings (Cloudflare FLUX, 39 drawn, 28 passed) + 34 cards, 12 key words, gate FLAG only (thumbnail words 'universe grew faster' not in the script). Release video-40652575249. Remake with new script rules (run 40670200956): 1000 words, fact-check 64/68 first pass, 4 dropped; gate FAIL plain_cards 37 %: Cloudflare free neurons ran out (tests used them), local fallback 7/26 drawings, only 1 NASA video slot planned. Pictures to be remade after the 00:00 UTC Cloudflare reset with resume_from 40670200956. Picture remake 40692715659 (same script): gate PASS with no flags; 95 visuals = 22 photos + 40 drawings (Cloudflare, 36/38 passed) + 33 cards; 8 key words; but 0 NASA video clips (18 video slots, the picker wasn't told which slots wanted video: fixed). Release video-40692715659."
   },
   {
    "n": 3,

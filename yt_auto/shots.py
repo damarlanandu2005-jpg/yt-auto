@@ -259,7 +259,10 @@ def find_photos(visuals: list[dict], photo_dir: Path, log: dict) -> None:
         opts = "\n".join(f"  {c['source'][:4]}{' VIDEO' if c.get('kind') == 'video' else ''}:{i}: {c['title'][:90]} | "
                          f"{c['description'][:160]}"
                          for i, c in enumerate(cands[v["id"]]))
-        blocks.append(f"[{v['id']}] needs: {v.get('photo_subject', '')} | narration: {v['text']}\n{opts}")
+        # say which slots want moving footage: in run 40692715659 the picker saw 139 VIDEO candidates but no slot
+        # was marked, and it chose 0 videos
+        want_video = " | VIDEO SLOT: choose a VIDEO candidate if one shows the subject" if v["kind"] == "video" else ""
+        blocks.append(f"[{v['id']}] needs: {v.get('photo_subject', '')}{want_video} | narration: {v['text']}\n{opts}")
     prompt = """Pick the best photo for each slot from its numbered candidates (title | description).
 Choose a candidate if it shows the slot's subject or something closely related that fits the narration
 (it does not need to match every detail: a photo of a real handheld GPS receiver fits "a hiker's GPS").
@@ -403,19 +406,22 @@ def limit_cards(visuals: list[dict], log: dict) -> None:
     """Code rules (step 2 test run 40637860035 had 4 number cards in a row and '1.5 million years' twice):
     never more than 2 cards in a row, and no number card repeating a number already shown in its scene.
     An extra card becomes a closer look at the last picture of its scene (or stays a card if there is none)."""
-    fixed, run, seen = [], 0, {}
+    fixed, run, seen, shown = [], 0, {}, {}
     for i, v in enumerate(visuals):
         if v.get("photo"):
             run = 0
             continue
         run += 1
         num = _card_number(v)
-        repeat = num is not None and num in seen.get(v["scene"], set())
+        # run 40692715659 showed "13.8B" 6 times, 3 in a row: a number gets at most 2 cards in the whole video
+        repeat = num is not None and (num in seen.get(v["scene"], set()) or shown.get(num, 0) >= 2)
         if num is not None:
             seen.setdefault(v["scene"], set()).add(num)
+            shown[num] = shown.get(num, 0) + 1
         if run <= 2 and not repeat:
             continue
-        last = next((u for u in reversed(visuals[:i]) if u.get("photo") and u["scene"] == v["scene"]), None)
+        last = next((u for u in reversed(visuals[:i]) if u.get("photo") and u["scene"] == v["scene"]), None) or \
+            next((u for u in reversed(visuals[:i]) if u.get("photo")), None)  # else the last picture before it
         if last is None:
             continue
         v["photo"] = {k: x for k, x in last["photo"].items() if k != "video_clip"}
