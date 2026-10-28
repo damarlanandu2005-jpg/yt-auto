@@ -1,0 +1,47 @@
+name: Fetch official pages
+
+# Saves official documentation pages (Claude's sandbox can't reach some sites) to
+# bench-results/pages/<run_id>/ so facts can be checked against the source.
+on:
+  workflow_dispatch:
+    inputs:
+      urls:
+        description: "Space-separated https URLs"
+        required: true
+
+permissions:
+  contents: write
+
+jobs:
+  fetch:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v4
+      - name: Fetch
+        timeout-minutes: 5
+        env:
+          URLS: ${{ inputs.urls }}
+        run: |
+          mkdir -p out
+          i=0
+          for u in $URLS; do
+            [[ "$u" =~ ^https://[A-Za-z0-9./_?=\&%-]+$ ]] || { echo "skip $u"; continue; }
+            i=$((i+1))
+            name=$(echo "$u" | sed 's|https://||; s|[^A-Za-z0-9]|_|g' | cut -c1-120)
+            curl -sSL -m 40 -A "Mozilla/5.0 (yt-auto docs check)" "$u" -o "out/$i-$name.html" -w "$u -> %{http_code} %{size_download}\n" | tee -a out/index.txt || true
+          done
+      - name: Save to bench-results
+        if: always()
+        timeout-minutes: 3
+        run: |
+          set -e
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git fetch --depth 1 origin bench-results
+          git worktree add results FETCH_HEAD
+          git -C results checkout -B bench-results
+          dest="results/pages/${{ github.run_id }}"
+          mkdir -p "$dest" && cp -r out/. "$dest/"
+          cd results && git add -A && git commit -m "Pages ${{ github.run_id }}"
+          for i in 1 2 3 4 5; do git push origin bench-results && break; git pull --rebase origin bench-results; sleep 5; done
