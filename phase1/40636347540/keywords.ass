@@ -1,0 +1,15 @@
+[Script Info]
+ScriptType: v4.00+
+PlayResX: 1920
+PlayResY: 1080
+WrapStyle: 2
+
+[V4+ Styles]
+Format: Name, Fontname, Fontsize, PrimaryColour, SecondaryColour, OutlineColour, BackColour, Bold, Italic, Underline, StrikeOut, ScaleX, ScaleY, Spacing, Angle, BorderStyle, Outline, Shadow, Alignment, MarginL, MarginR, MarginV, Encoding
+Style: Key,DejaVu Sans,108,&H00FFFFFF,&H00FFFFFF,&H00000000,&H96000000,1,0,0,0,100,100,1,0,1,6,3,2,80,80,190,1
+
+[Events]
+Format: Layer, Start, End, Style, Name, MarginL, MarginR, MarginV, Effect, Text
+Dialogue: 0,0:00:24.92,0:00:27.52,Key,,0,0,0,,{\fad(120,160)\fscx80\fscy80\t(0,140,\fscx100\fscy100)}SUPERNOVA
+Dialogue: 0,0:01:07.80,0:01:10.40,Key,,0,0,0,,{\fad(120,160)\fscx80\fscy80\t(0,140,\fscx100\fscy100)}NEAR-EARTH SUPERNOVA
+Dialogue: 0,0:02:02.88,0:02:05.48,Key,,0,0,0,,{\fad(120,160)\fscx80\fscy80\t(0,140,\fscx100\fscy100)}VELA SUPERNOVA

@@ -1,0 +1,105 @@
+{
+ "card_number_fixes": [
+  "v002: numbers ['1'] not in narration; card replaced",
+  "v004: numbers ['100'] not in narration; card replaced",
+  "v005: numbers ['21'] not in narration; card replaced",
+  "v006: numbers ['1'] not in narration; card replaced",
+  "v008: numbers ['1'] not in narration; card replaced",
+  "v010: numbers ['1'] not in narration; card replaced",
+  "v021: numbers ['0'] not in narration; card replaced"
+ ],
+ "photo_slots": 16,
+ "candidates": {
+  "v002": 12,
+  "v005": 12,
+  "v006": 11,
+  "v008": 12,
+  "v009": 12,
+  "v011": 12,
+  "v014": 12,
+  "v016": 12,
+  "v018": 12,
+  "v020": 12,
+  "v022": 12,
+  "v025": 12,
+  "v027": 12,
+  "v028": 4,
+  "v030": 12,
+  "v032": 8
+ },
+ "downloaded": 16,
+ "seen": {
+  "v002": "A photograph showing the curved horizon of the Earth with white clouds and water reflecting sunlight, set against the blackness of space with a thin blue atmospheric layer.",
+  "v005": "A rectangular solar-powered aircraft or wing-like structure angled upward against a clear blue sky, showing multiple small propellers and instrumentation.",
+  "v006": "A colorful nebula against a star-studded black space background, featuring glowing filaments of orange, green, and blue gas.",
+  "v008": "An astronomical illustration showing a large reddish-brown planet on the left, a bright star with a protoplanetary disk on the right, and numerous small asteroids scattered in the dark space.",
+  "v009": "A detailed astronomical photograph of a bright star-forming region, the Carina Nebula, filled with glowing clouds of cosmic gas, dust, and numerous scattered stars.",
+  "v011": "An illustration or rendering of a large, mottled orange-red star set against a dark background with scattered distant stars and faint nebulae.",
+  "v014": "A night photograph looking up at a starry sky, with the silhouette of grassy beach plants and water visible at the bottom.",
+  "v016": "A detailed photograph of a spiral galaxy's arm, showcasing a bright golden galactic core on the left fading into dark dust lanes, blue stellar clusters, and numerous stars.",
+  "v018": "A black-and-white image showing parallel rings of Saturn separated by a dark gap, with a small, bright moon visible within one of the gaps.",
+  "v020": "A false-color image of the Sun showing intricate magnetic loops, bright active regions, and coronal plasma, set against a black background with a glowing corona.",
+  "v022": "A deep-field astronomical image showing numerous faint, distant galaxies and stars scattered across a pure black background.",
+  "v025": "A scientific diagram illustrating the heliosphere and solar wind interacting with the interstellar flow, complete with labeled text such as 'Interstellar Flow', 'Solar Wind', and 'Heliopause'.",
+  "v027": "A composite image titled 'Veil Nebula Details' featuring three distinct horizontal panels of colorful nebulosity and stars, complete with text credits and the Hubble Heritage logo in the corners.",
+  "v028": "A vibrant wide-field photograph of the Veil Nebula, featuring intricate glowing filaments of blue, orange, and red gas interlaced with numerous background stars.",
+  "v030": "A four-panel astronomical composite showing two observational images labeled 'GEMINGA' and 'B0355' in X-ray and infrared on top, and corresponding scientific illustrations of pulsar wind nebulae below.",
+  "v032": "An artistic illustration of multiple planetary systems with glowing stars and orbiting planets with rings, scattered across a deep purple starry background."
+ },
+ "rejected_after_looking": [
+  {
+   "id": "v005",
+   "title": "With sensor booms projecting ahead of the wing, the Pathfinder-Plus soars under a blue sky on a turbulence measurement research flight.",
+   "seen": "A rectangular solar-powered aircraft or wing-like structure angled upward against a clear blue sky, showing multiple small propellers and instrumentation.",
+   "reason": "The narration asks about oxygen atmosphere, but the image shows an aircraft/drone rather than a simple blue sky and clouds as requested."
+  },
+  {
+   "id": "v008",
+   "title": "Polluted White Dwarf (Artist's Concept)",
+   "seen": "An astronomical illustration showing a large reddish-brown planet on the left, a bright star with a protoplanetary disk on the right, and numerous small asteroids scattered in the dark space.",
+   "reason": "The image shows a planetary system with a protoplanetary disk rather than specifically an exploding white dwarf star."
+  },
+  {
+   "id": "v011",
+   "title": "A Real Shooting Star Artist Concept",
+   "seen": "An illustration or rendering of a large, mottled orange-red star set against a dark background with scattered distant stars and faint nebulae.",
+   "reason": "The image depicts a star, not a fast-moving cosmic ray streak as specified by the target."
+  },
+  {
+   "id": "v018",
+   "title": "Flickering Aldebaran #1",
+   "seen": "A black-and-white image showing parallel rings of Saturn separated by a dark gap, with a small, bright moon visible within one of the gaps.",
+   "reason": "The image depicts Saturn and its rings, not a bright giant star as required."
+  },
+  {
+   "id": "v022",
+   "title": "Stars in Orion as Seen from Mars",
+   "seen": "A deep-field astronomical image showing numerous faint, distant galaxies and stars scattered across a pure black background.",
+   "reason": "The image shows a deep-field view with many distant galaxies, not specifically the Betelgeuse star."
+  },
+  {
+   "id": "v025",
+   "title": "Streams of Charged Particles",
+   "seen": "A scientific diagram illustrating the heliosphere and solar wind interacting with the interstellar flow, complete with labeled text such as 'Interstellar Flow', 'Solar Wind', and 'Heliopause'.",
+   "reason": "The image is a scientific diagram with text and labels, which does not fit video requirements."
+  },
+  {
+   "id": "v027",
+   "title": "Uncovering the Veil Nebula (2007-30-2164)",
+   "seen": "A composite image titled 'Veil Nebula Details' featuring three distinct horizontal panels of colorful nebulosity and stars, complete with text credits and the Hubble Heritage logo in the corners.",
+   "reason": "The image contains multiple panels, text credits, and a logo, which makes it unsuitable for the video."
+  },
+  {
+   "id": "v030",
+   "title": "Geminga and PSR B0355+54 by Chandra and Spitzer",
+   "seen": "A four-panel astronomical composite showing two observational images labeled 'GEMINGA' and 'B0355' in X-ray and infrared on top, and corresponding scientific illustrations of pulsar wind nebulae below.",
+   "reason": "The image consists of multiple labeled panels, which does not fit video standards."
+  },
+  {
+   "id": "v032",
+   "title": "Star System Bonanza Illustration",
+   "seen": "An artistic illustration of multiple planetary systems with glowing stars and orbiting planets with rings, scattered across a deep purple starry background.",
+   "reason": "The image shows general planetary systems rather than the specific IK Pegasi binary star system."
+  }
+ ]
+}

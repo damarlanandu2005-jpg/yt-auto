@@ -1,0 +1,48 @@
+{
+  "keys": [
+    {
+      "id": "s01.01",
+      "phrase": "dying star explode"
+    },
+    {
+      "id": "s01.05",
+      "phrase": "supernova"
+    },
+    {
+      "id": "s01.07",
+      "phrase": "runaway nuclear fusion"
+    },
+    {
+      "id": "s01.09",
+      "phrase": "speed of light"
+    },
+    {
+      "id": "s02.02",
+      "phrase": "near-Earth supernova"
+    },
+    {
+      "id": "s02.04",
+      "phrase": "1,000 years"
+    },
+    {
+      "id": "s02.06",
+      "phrase": "Betelgeuse"
+    },
+    {
+      "id": "s02.07",
+      "phrase": "1.5 million years"
+    },
+    {
+      "id": "s02.10",
+      "phrase": "Vela supernova"
+    },
+    {
+      "id": "s02.11",
+      "phrase": "Geminga"
+    },
+    {
+      "id": "s02.12",
+      "phrase": "IK Pegasi"
+    }
+  ]
+}

@@ -1,0 +1,32 @@
+[model] gemini-3.5-flash-lite
+[system]
+
+
+[user]
+This is the narration of an explainer video, one sentence per line. For about HALF of the
+sentences (the important ones), pick the ONE key word or short phrase (1 to 3 words) a viewer should see on
+screen while hearing it: a number with its unit, a name, or the main idea. Copy it EXACTLY as written in the
+sentence. Skip filler sentences. Never pick small words like "this" or "it".
+
+s01.01: Could a dying star explode near our solar system and rip Earth's atmosphere away into space?
+s01.02: Do science fiction movies show a fiery blast wave sweeping our planet bare within seconds?
+s01.03: Why does this question matter when considering terrestrial life?
+s01.04: How essential is our oxygen atmosphere for survival?
+s01.05: In reality, a supernova is a powerful explosion marking the death of a star.
+s01.06: When a massive star runs out of fuel, its core collapses under immense gravitational force.
+s01.07: Alternatively, an exploding white dwarf star undergoes runaway nuclear fusion.
+s01.08: These stellar detonations expel several solar masses of matter into the surrounding interstellar medium.
+s01.09: The ejected material travels outward at speeds reaching several per cent of the speed of light.
+s01.10: This creates an expanding shock wave that sweeps up a shell of interstellar gas and dust.
+s02.01: Where are the nearest stars that might explode in our stellar neighbourhood?
+s02.02: Astronomers define a near-Earth supernova as one occurring within roughly 33 to 978 light-years.
+s02.03: Currently, our galaxy holds up to 14 potential near-Earth supernovas inside that broader distance.
+s02.04: A few famous stars located within several hundred light-years could explode in just 1,000 years.
+s02.05: Although these dying stars will shine brilliantly, they pose little direct threat to our planet.
+s02.06: What about the famous red supergiant star Betelgeuse?
+s02.07: Scientists estimate that Betelgeuse could require as long as 1.5 million years to explode as a supernova.
+s02.08: When it detonates, its particle stream will reach Earth about 100,000 years after the initial light.
+s02.09: Looking back in time, other relatively nearby stars have exploded in Earth's past.
+s02.10: The Vela supernova exploded about 12,000 years ago roughly 800 light-years away from our Sun.
+s02.11: Another explosion called Geminga occurred roughly 300,000 years ago at a distance of 550 light-years.
+s02.12: The closest known white dwarf candidate, IK Pegasi, is currently moving away to a safe distance.

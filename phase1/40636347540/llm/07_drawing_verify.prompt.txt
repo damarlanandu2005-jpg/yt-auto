@@ -1,0 +1,27 @@
+[model] gemini-3.5-flash-lite
+[system]
+
+
+[user]
+Step 2 of a picture check for a science video. Someone looked at each picture WITHOUT knowing
+what it should show and described it. Decide for each image whether the picture fits.
+The pictures are ink drawings made by an AI image model, which often misses. A drawing fits if a
+viewer hearing the narration would recognise its main object(s) (a star, a planet, a blast, molecules, DNA,
+fish...). It does NOT need to show the action or process (collapsing, moving, changing): a still picture of
+the right thing is enough. It does NOT fit if it is only shapes or texture with no recognisable object, shows
+a different thing (a volcano or canyon for the atmosphere, a red diamond for a star), has text or labels, looks
+like a logo/emblem/badge/flag, or has deformed bodies.
+When unsure, answer fits = false (a chart or plain card is shown instead, which is fine).
+Copy the description into "seen".
+Image 1: described as: This abstract image shows two spherical objects, one large and dark grey and one smaller with a glowing blue surface, separated by a white splash-like design against a plain grey background, with scattered red dots.
+  should show: a huge exploding star beside a small blue planet
+  narration: Do science fiction movies show a fiery blast wave sweeping our planet bare within seconds?
+Image 2: described as: This abstract image depicts a star-like explosion of white and red pointed lines radiating from a central point against a black background, with scattered white and red specks.
+  should show: a massive glowing star collapsing inward
+  narration: When a massive star runs out of fuel, its core collapses under immense gravitational force.
+Image 3: described as: This abstract image features circular, concentric swirl patterns in shades of grey, white, and red surrounding a dark void in the center against a black background.
+  should show: an expanding ring of gas sweeping through space
+  narration: This creates an expanding shock wave that sweeps up a shell of interstellar gas and dust.
+Image 4: described as: This image shows stylized, fluffy white and grey clouds set against a dark black sky, rendered in a sketched, illustrative style.
+  should show: blue sky and clouds
+  narration: How essential is our oxygen atmosphere for survival?

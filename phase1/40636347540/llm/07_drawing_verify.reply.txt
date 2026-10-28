@@ -1,0 +1,28 @@
+{
+  "checks": [
+    {
+      "n": 1,
+      "seen": "This abstract image shows two spherical objects, one large and dark grey and one smaller with a glowing blue surface, separated by a white splash-like design against a plain grey background, with scattered red dots.",
+      "fits": true,
+      "reason": "The image shows a large dark star-like object and a smaller blue planet, matching the required objects."
+    },
+    {
+      "n": 2,
+      "seen": "This abstract image depicts a star-like explosion of white and red pointed lines radiating from a central point against a black background, with scattered white and red specks.",
+      "fits": true,
+      "reason": "The image shows a glowing star object radiating lines, which is recognizable as a star even if the collapse action is not dynamic."
+    },
+    {
+      "n": 3,
+      "seen": "This abstract image features circular, concentric swirl patterns in shades of grey, white, and red surrounding a dark void in the center against a black background.",
+      "fits": true,
+      "reason": "The concentric swirl patterns visually represent a ring of gas or shock wave in space."
+    },
+    {
+      "n": 4,
+      "seen": "This image shows stylized, fluffy white and grey clouds set against a dark black sky, rendered in a sketched, illustrative style.",
+      "fits": false,
+      "reason": "The narration asks about our oxygen atmosphere, but the drawing depicts clouds against a black sky rather than a clear blue sky context."
+    }
+  ]
+}

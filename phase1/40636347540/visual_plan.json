@@ -1,0 +1,744 @@
+[
+ {
+  "scene": "s01",
+  "start": 0.0,
+  "text": "Could a dying star explode near our solar",
+  "sentences": [
+   "s01.01"
+  ],
+  "id": "v001",
+  "end": 3.548,
+  "seconds": 3.55,
+  "scene_start": true,
+  "kind": "card",
+  "card": {
+   "type": "title",
+   "title": "How Close Can a Supernova Get",
+   "subtitle": "Before It Destroys Earth?"
+  }
+ },
+ {
+  "scene": "s01",
+  "start": 3.548,
+  "text": "system and rip Earth's atmosphere away into space?",
+  "sentences": [
+   "s01.01"
+  ],
+  "id": "v002",
+  "end": 7.939,
+  "seconds": 4.39,
+  "scene_start": false,
+  "kind": "photo",
+  "photo_subject": "planet Earth viewed from space",
+  "photo_queries": [
+   "planet Earth",
+   "Earth from space"
+  ],
+  "card": {
+   "type": "stat",
+   "title": "Earth's Atmosphere",
+   "value": "1",
+   "label": "fragile protective layer"
+  }
+ },
+ {
+  "scene": "s01",
+  "start": 7.939,
+  "text": "Do science fiction movies show a fiery blast wave sweeping our planet bare within seconds?",
+  "sentences": [
+   "s01.02"
+  ],
+  "id": "v003",
+  "end": 14.854,
+  "seconds": 6.91,
+  "scene_start": false,
+  "kind": "drawing",
+  "drawing_subject": "a huge exploding star beside a small blue planet",
+  "card": {
+   "type": "bullets",
+   "title": "The Hollywood Myth",
+   "items": [
+    "Fiery blast wave",
+    "Sweeps planet bare",
+    "Destruction in seconds"
+   ]
+  }
+ },
+ {
+  "scene": "s01",
+  "start": 14.854,
+  "text": "Why does this question matter when considering terrestrial life?",
+  "sentences": [
+   "s01.03"
+  ],
+  "id": "v004",
+  "end": 19.444,
+  "seconds": 4.59,
+  "scene_start": false,
+  "kind": "card",
+  "card": {
+   "type": "stat",
+   "title": "Terrestrial Life",
+   "value": "100%",
+   "label": "dependent on atmosphere",
+   "note": "protection from space"
+  }
+ },
+ {
+  "scene": "s01",
+  "start": 19.444,
+  "text": "How essential is our oxygen atmosphere for survival?",
+  "sentences": [
+   "s01.04"
+  ],
+  "id": "v005",
+  "end": 23.671,
+  "seconds": 4.23,
+  "scene_start": false,
+  "kind": "photo",
+  "photo_subject": "blue sky and clouds",
+  "photo_queries": [
+   "blue sky",
+   "clouds atmosphere"
+  ],
+  "card": {
+   "type": "stat",
+   "title": "Oxygen",
+   "value": "21%",
+   "label": "atmospheric composition"
+  }
+ },
+ {
+  "scene": "s01",
+  "start": 23.671,
+  "text": "In reality, a supernova is a powerful explosion marking the death of a star.",
+  "sentences": [
+   "s01.05"
+  ],
+  "id": "v006",
+  "end": 29.338,
+  "seconds": 5.67,
+  "scene_start": false,
+  "kind": "photo",
+  "photo_subject": "supernova remnant nebula",
+  "photo_queries": [
+   "supernova remnant",
+   "Crab Nebula"
+  ],
+  "card": {
+   "type": "stat",
+   "title": "Supernova",
+   "value": "1",
+   "label": "stellar explosion"
+  }
+ },
+ {
+  "scene": "s01",
+  "start": 29.338,
+  "text": "When a massive star runs out of fuel, its core collapses under immense gravitational force.",
+  "sentences": [
+   "s01.06"
+  ],
+  "id": "v007",
+  "end": 35.595,
+  "seconds": 6.26,
+  "scene_start": false,
+  "kind": "drawing",
+  "drawing_subject": "a massive glowing star collapsing inward",
+  "card": {
+   "type": "flow",
+   "title": "Core Collapse",
+   "steps": [
+    "Fuel runs out",
+    "Gravity takes over",
+    "Core collapses"
+   ]
+  }
+ },
+ {
+  "scene": "s01",
+  "start": 35.595,
+  "text": "Alternatively, an exploding white dwarf star undergoes runaway nuclear fusion.",
+  "sentences": [
+   "s01.07"
+  ],
+  "id": "v008",
+  "end": 41.397,
+  "seconds": 5.8,
+  "scene_start": false,
+  "kind": "photo",
+  "photo_subject": "white dwarf star in space",
+  "photo_queries": [
+   "white dwarf",
+   "binary star system"
+  ],
+  "card": {
+   "type": "stat",
+   "title": "White Dwarf",
+   "value": "1",
+   "label": "runaway nuclear fusion"
+  }
+ },
+ {
+  "scene": "s01",
+  "start": 41.397,
+  "text": "These stellar detonations expel several solar masses",
+  "sentences": [
+   "s01.08"
+  ],
+  "id": "v009",
+  "end": 44.7395,
+  "seconds": 3.34,
+  "scene_start": false,
+  "kind": "photo",
+  "photo_subject": "glowing stellar gas cloud",
+  "photo_queries": [
+   "nebula cloud",
+   "stellar gas"
+  ],
+  "card": {
+   "type": "stat",
+   "title": "Ejected Matter",
+   "value": "several",
+   "label": "solar masses"
+  }
+ },
+ {
+  "scene": "s01",
+  "start": 44.7395,
+  "text": "of matter into the surrounding interstellar medium.",
+  "sentences": [
+   "s01.08"
+  ],
+  "id": "v010",
+  "end": 48.585,
+  "seconds": 3.85,
+  "scene_start": false,
+  "kind": "step",
+  "focus": "center",
+  "card": {
+   "type": "stat",
+   "title": "Interstellar Medium",
+   "value": "1",
+   "label": "surrounding space"
+  }
+ },
+ {
+  "scene": "s01",
+  "start": 48.585,
+  "text": "The ejected material travels outward at speeds reaching several per cent of the speed of light.",
+  "sentences": [
+   "s01.09"
+  ],
+  "id": "v011",
+  "end": 54.892,
+  "seconds": 6.31,
+  "scene_start": false,
+  "kind": "photo",
+  "photo_subject": "fast moving cosmic ray streak",
+  "photo_queries": [
+   "light speed",
+   "cosmic rays"
+  ],
+  "card": {
+   "type": "stat",
+   "title": "Expansion Speed",
+   "value": "per cent",
+   "label": "speed of light"
+  }
+ },
+ {
+  "scene": "s01",
+  "start": 54.892,
+  "text": "This creates an expanding shock wave that sweeps up a shell of interstellar gas and dust.",
+  "sentences": [
+   "s01.10"
+  ],
+  "id": "v012",
+  "end": 61.888,
+  "seconds": 7.0,
+  "scene_start": false,
+  "kind": "drawing",
+  "drawing_subject": "an expanding ring of gas sweeping through space",
+  "card": {
+   "type": "flow",
+   "title": "Shock Wave",
+   "steps": [
+    "Expansion",
+    "Sweeping gas",
+    "Dust shell"
+   ]
+  }
+ },
+ {
+  "scene": "s02",
+  "start": 61.888,
+  "text": "Where are the nearest stars that might explode in our stellar neighbourhood?",
+  "sentences": [
+   "s02.01"
+  ],
+  "id": "v013",
+  "end": 66.367,
+  "seconds": 4.48,
+  "scene_start": true,
+  "kind": "card",
+  "card": {
+   "type": "title",
+   "title": "The Stellar Safety Line",
+   "subtitle": "Distance from dangerous explosions"
+  }
+ },
+ {
+  "scene": "s02",
+  "start": 66.367,
+  "text": "Astronomers define a near-Earth supernova as one",
+  "sentences": [
+   "s02.02"
+  ],
+  "id": "v014",
+  "end": 70.203,
+  "seconds": 3.84,
+  "scene_start": false,
+  "kind": "photo",
+  "photo_subject": "starry night sky",
+  "photo_queries": [
+   "night sky",
+   "milky way stars"
+  ],
+  "card": {
+   "type": "stat",
+   "title": "Near-Earth Supernova",
+   "value": "1",
+   "label": "definition threshold"
+  }
+ },
+ {
+  "scene": "s02",
+  "start": 70.203,
+  "text": "occurring within roughly 33 to 978 light-years.",
+  "sentences": [
+   "s02.02"
+  ],
+  "id": "v015",
+  "end": 74.488,
+  "seconds": 4.28,
+  "scene_start": false,
+  "kind": "card",
+  "card": {
+   "type": "stat",
+   "title": "Distance Range",
+   "value": "33 - 978",
+   "label": "light-years",
+   "note": "near-Earth zone"
+  }
+ },
+ {
+  "scene": "s02",
+  "start": 74.488,
+  "text": "Currently, our galaxy holds up to 14",
+  "sentences": [
+   "s02.03"
+  ],
+  "id": "v016",
+  "end": 77.81049999999999,
+  "seconds": 3.32,
+  "scene_start": false,
+  "kind": "photo",
+  "photo_subject": "spiral galaxy view from outside",
+  "photo_queries": [
+   "spiral galaxy",
+   "Milky Way galaxy"
+  ],
+  "card": {
+   "type": "stat",
+   "title": "Galaxy Candidates",
+   "value": "14",
+   "label": "potential supernovas"
+  }
+ },
+ {
+  "scene": "s02",
+  "start": 77.81049999999999,
+  "text": "potential near-Earth supernovas inside that broader distance.",
+  "sentences": [
+   "s02.03"
+  ],
+  "id": "v017",
+  "end": 81.565,
+  "seconds": 3.75,
+  "scene_start": false,
+  "kind": "step",
+  "focus": "center",
+  "card": {
+   "type": "stat",
+   "title": "Broader Distance",
+   "value": "14",
+   "label": "stars in range"
+  }
+ },
+ {
+  "scene": "s02",
+  "start": 81.565,
+  "text": "A few famous stars located within several hundred",
+  "sentences": [
+   "s02.04"
+  ],
+  "id": "v018",
+  "end": 85.8194,
+  "seconds": 4.25,
+  "scene_start": false,
+  "kind": "photo",
+  "photo_subject": "bright giant star",
+  "photo_queries": [
+   "red giant star",
+   "giant star"
+  ],
+  "card": {
+   "type": "stat",
+   "title": "Nearby Stars",
+   "value": "several",
+   "label": "hundred light-years"
+  }
+ },
+ {
+  "scene": "s02",
+  "start": 85.8194,
+  "text": "light-years could explode in just 1,000 years.",
+  "sentences": [
+   "s02.04"
+  ],
+  "id": "v019",
+  "end": 90.55,
+  "seconds": 4.73,
+  "scene_start": false,
+  "kind": "card",
+  "card": {
+   "type": "stat",
+   "title": "Timeframe",
+   "value": "1,000",
+   "label": "years",
+   "note": "until potential explosion"
+  }
+ },
+ {
+  "scene": "s02",
+  "start": 90.55,
+  "text": "Although these dying stars will shine brilliantly, they",
+  "sentences": [
+   "s02.05"
+  ],
+  "id": "v020",
+  "end": 94.198,
+  "seconds": 3.65,
+  "scene_start": false,
+  "kind": "photo",
+  "photo_subject": "bright stellar flare",
+  "photo_queries": [
+   "bright star",
+   "stellar flare"
+  ],
+  "card": {
+   "type": "stat",
+   "title": "Brightness",
+   "value": "1",
+   "label": "brilliant shine"
+  }
+ },
+ {
+  "scene": "s02",
+  "start": 94.198,
+  "text": "pose little direct threat to our planet.",
+  "sentences": [
+   "s02.05"
+  ],
+  "id": "v021",
+  "end": 97.867,
+  "seconds": 3.67,
+  "scene_start": false,
+  "kind": "card",
+  "card": {
+   "type": "stat",
+   "title": "Threat Level",
+   "value": "0",
+   "label": "little direct threat"
+  }
+ },
+ {
+  "scene": "s02",
+  "start": 97.867,
+  "text": "What about the famous red supergiant star Betelgeuse?",
+  "sentences": [
+   "s02.06"
+  ],
+  "id": "v022",
+  "end": 102.007,
+  "seconds": 4.14,
+  "scene_start": false,
+  "kind": "photo",
+  "photo_subject": "Betelgeuse star in Orion constellation",
+  "photo_queries": [
+   "Betelgeuse star",
+   "Orion constellation"
+  ],
+  "card": {
+   "type": "stat",
+   "title": "Betelgeuse",
+   "value": "1",
+   "label": "red supergiant"
+  }
+ },
+ {
+  "scene": "s02",
+  "start": 102.007,
+  "text": "Scientists estimate that Betelgeuse could require as long",
+  "sentences": [
+   "s02.07"
+  ],
+  "id": "v023",
+  "end": 105.55617647058824,
+  "seconds": 3.55,
+  "scene_start": false,
+  "kind": "step",
+  "focus": "center",
+  "card": {
+   "type": "stat",
+   "title": "Estimate",
+   "value": "1",
+   "label": "scientific projection"
+  }
+ },
+ {
+  "scene": "s02",
+  "start": 105.55617647058824,
+  "text": "as 1.5 million years to explode as a supernova.",
+  "sentences": [
+   "s02.07"
+  ],
+  "id": "v024",
+  "end": 110.024,
+  "seconds": 4.47,
+  "scene_start": false,
+  "kind": "card",
+  "card": {
+   "type": "stat",
+   "title": "Explosion Timeline",
+   "value": "1.5M",
+   "label": "years",
+   "note": "until Betelgeuse explodes"
+  }
+ },
+ {
+  "scene": "s02",
+  "start": 110.024,
+  "text": "When it detonates, its particle stream will reach",
+  "sentences": [
+   "s02.08"
+  ],
+  "id": "v025",
+  "end": 113.3335,
+  "seconds": 3.31,
+  "scene_start": false,
+  "kind": "photo",
+  "photo_subject": "particle beam stream in space",
+  "photo_queries": [
+   "particle stream",
+   "cosmic jet"
+  ],
+  "card": {
+   "type": "stat",
+   "title": "Particle Stream",
+   "value": "1",
+   "label": "outbound flow"
+  }
+ },
+ {
+  "scene": "s02",
+  "start": 113.3335,
+  "text": "Earth about 100,000 years after the initial light.",
+  "sentences": [
+   "s02.08"
+  ],
+  "id": "v026",
+  "end": 117.121,
+  "seconds": 3.79,
+  "scene_start": false,
+  "kind": "card",
+  "card": {
+   "type": "stat",
+   "title": "Earth Arrival",
+   "value": "100,000",
+   "label": "years",
+   "note": "after initial light"
+  }
+ },
+ {
+  "scene": "s02",
+  "start": 117.121,
+  "text": "Looking back in time, other relatively nearby stars have exploded in Earth's past.",
+  "sentences": [
+   "s02.09"
+  ],
+  "id": "v027",
+  "end": 122.817,
+  "seconds": 5.7,
+  "scene_start": false,
+  "kind": "photo",
+  "photo_subject": "ancient supernova remnant in the sky",
+  "photo_queries": [
+   "supernova remnant",
+   "ancient nebula"
+  ],
+  "card": {
+   "type": "bullets",
+   "title": "Past Supernovas",
+   "items": [
+    "Exploded in Earth's past",
+    "Relatively nearby",
+    "Studied by astronomers"
+   ]
+  }
+ },
+ {
+  "scene": "s02",
+  "start": 122.817,
+  "text": "The Vela supernova exploded about 12,000 years ago",
+  "sentences": [
+   "s02.10"
+  ],
+  "id": "v028",
+  "end": 126.40206666666666,
+  "seconds": 3.59,
+  "scene_start": false,
+  "kind": "photo",
+  "photo_subject": "Vela supernova remnant nebula",
+  "photo_queries": [
+   "Vela supernova",
+   "Vela remnant"
+  ],
+  "card": {
+   "type": "timeline",
+   "title": "Vela Supernova",
+   "events": [
+    {
+     "when": "12,000 yrs ago",
+     "label": "Exploded"
+    }
+   ]
+  }
+ },
+ {
+  "scene": "s02",
+  "start": 126.40206666666666,
+  "text": "roughly 800 light-years away from our Sun.",
+  "sentences": [
+   "s02.10"
+  ],
+  "id": "v029",
+  "end": 130.001,
+  "seconds": 3.6,
+  "scene_start": false,
+  "kind": "step",
+  "focus": "center",
+  "card": {
+   "type": "stat",
+   "title": "Vela Distance",
+   "value": "800",
+   "label": "light-years",
+   "note": "from our Sun"
+  }
+ },
+ {
+  "scene": "s02",
+  "start": 130.001,
+  "text": "Another explosion called Geminga occurred roughly 300,000 years",
+  "sentences": [
+   "s02.11"
+  ],
+  "id": "v030",
+  "end": 134.3818,
+  "seconds": 4.38,
+  "scene_start": false,
+  "kind": "photo",
+  "photo_subject": "Geminga pulsar region in space",
+  "photo_queries": [
+   "Geminga pulsar",
+   "gamma ray source"
+  ],
+  "card": {
+   "type": "timeline",
+   "title": "Geminga Explosion",
+   "events": [
+    {
+     "when": "300,000 yrs ago",
+     "label": "Exploded"
+    }
+   ]
+  }
+ },
+ {
+  "scene": "s02",
+  "start": 134.3818,
+  "text": "ago at a distance of 550 light-years.",
+  "sentences": [
+   "s02.11"
+  ],
+  "id": "v031",
+  "end": 138.674,
+  "seconds": 4.29,
+  "scene_start": false,
+  "kind": "step",
+  "focus": "center",
+  "card": {
+   "type": "stat",
+   "title": "Geminga Distance",
+   "value": "550",
+   "label": "light-years",
+   "note": "distance from Earth"
+  }
+ },
+ {
+  "scene": "s02",
+  "start": 138.674,
+  "text": "The closest known white dwarf candidate, IK Pegasi,",
+  "sentences": [
+   "s02.12"
+  ],
+  "id": "v032",
+  "end": 141.9675,
+  "seconds": 3.29,
+  "scene_start": false,
+  "kind": "photo",
+  "photo_subject": "IK Pegasi binary star system",
+  "photo_queries": [
+   "IK Pegasi",
+   "binary star"
+  ],
+  "card": {
+   "type": "stat",
+   "title": "IK Pegasi",
+   "value": "1",
+   "label": "white dwarf candidate"
+  }
+ },
+ {
+  "scene": "s02",
+  "start": 141.9675,
+  "text": "is currently moving away to a safe distance.",
+  "sentences": [
+   "s02.12"
+  ],
+  "id": "v033",
+  "end": 146.692,
+  "seconds": 4.72,
+  "scene_start": false,
+  "kind": "step",
+  "focus": "center",
+  "card": {
+   "type": "stat",
+   "title": "Safe Distance",
+   "value": "1",
+   "label": "moving away",
+   "note": "no collision risk"
+  }
+ }
+]

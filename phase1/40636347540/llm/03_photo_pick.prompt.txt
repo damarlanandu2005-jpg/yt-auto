@@ -1,0 +1,223 @@
+[model] gemini-3.5-flash-lite
+[system]
+
+
+[user]
+Pick the best photo for each slot from its numbered candidates (title | description).
+Choose a candidate if it shows the slot's subject or something closely related that fits the narration
+(it does not need to match every detail: a photo of a real handheld GPS receiver fits "a hiker's GPS").
+Answer "" only when no candidate is related, or the only related ones would mislead the viewer.
+Prefer real photographs over diagrams with small text, logos, or maps with dense labels. Avoid close-up
+faces of private people. Do not use the same photo twice.
+Answer choice = the candidate number as text, or "".
+
+[v002] needs: planet Earth viewed from space | narration: system and rip Earth's atmosphere away into space?
+  nasa:0: Earth-class Planets Line Up | This chart compares the first Earth-size planets found around a sun-like star to planets in our own solar system, Earth and Venus. NASA Kepler mission discovere
+  nasa:1: K2 Finds Earth-Sized Planets Artist Concept | This artist's concept shows NASA's Kepler Space Telescope on its K2 mission. In July 2016, an international team of astronomers announced they had discovered mo
+  nasa:2: Kepler-186f, the First Earth-size Planet in the Habitable Zone Artist Concept | This artist concept depicts Kepler-186f, the first validated Earth-size planet to orbit a distant star in the habitable zone, a range of distance from a star wh
+  nasa:3: Birth of an Earth-like Planet Artist Xoncept | This artist conception shows a binary-star, or two-star, system, called HD 113766, where astronomers suspect a rocky Earth-like planet is forming around one of 
+  nasa:4: Pantheon of Planets Similar to Earth Artist Concept | A newly discovered exoplanet, Kepler-452b, comes the closest of any found so far to matching our Earth-sun system. This artist's conception of a planetary lineu
+  nasa:5: Earth's thin blue atmosphere traces the planet's horizon above the Pacific Ocean | iss074e0089803 (Jan. 16, 2026) --- Earth's thin blue atmosphere traces the planet's horizon as the sun's glint beams off a partly cloudy Pacific Ocean west of C
+  wiki:6: Earth's City Lights by DMSP, 1994-1995 (large) | This image of Earth’s city lights was created with data from the Defense Meteorological Satellite Program (DMSP) Operational Linescan System (OLS). Originally d
+  wiki:7: NASA-Apollo8-Dec24-Earthrise | Taken by Apollo 8 crewmember Bill Anders on December 24, 1968, at mission time 075:49:07 [8] (16:40 UTC), while in orbit around the Moon, showing the Earth risi
+  wiki:8: STS-135 final flyaround of ISS 1 | STS-135 final flyaround of ISSThis picture of the International Space Station was photographed from the space shuttle Atlantis as the orbiting complex and the s
+  wiki:9: North America from low orbiting satellite Suomi NPP | A view of most of North America taken from a low orbit of about 826 km altitude. The whole hemisphere is not visible owing to the low orbit, and the horizon is 
+  wiki:10: The Earth seen from Apollo 17 | "The Blue Marble" is a famous photograph of the Earth taken on December 7, 1972, by the crew of the Apollo 17 spacecraft en route to the Moon at a distance of a
+  wiki:11: Africa and Europe from a Million Miles Away | July 29, 2015 Africa and Europe from a Million Miles Away http://www.nasa.gov/image-feature/africa-and-europe-from-a-million-miles-away Africa is front and cent
+
+[v005] needs: blue sky and clouds | narration: How essential is our oxygen atmosphere for survival?
+  nasa:0: With sensor booms projecting ahead of the wing, the Pathfinder-Plus soars under a blue sky | With its sensor booms projecting ahead of the wing, the Pathfinder-Plus solar-electric aircraft soars under a blue sky on a turbulence measurement research flig
+  nasa:1: With sensor booms projecting ahead of the wing, the Pathfinder-Plus soars under a blue sky | With its sensor booms projecting ahead of the wing, the Pathfinder-Plus solar wing soars under a blue sky on its final turbulence measurement research flight.
+  nasa:2: Stars fill the sky above a serene, blue-green airglow blanketing Earth's horizon | iss073e0830977 (Sept. 27, 2025) --- Stars fill the sky above a serene, blue-green airglow blanketing Earth's horizon in this photograph taken from the Internati
+  nasa:3: A pristine blue sky backdrops the X-48B Blended Wing Body aircraft during the aircraft's f | A pristine blue sky backdrops the X-48B Blended Wing Body aircraft during the aircraft's first flight July 20, 2007, from NASA's Dryden Flight Research Center.
+  nasa:4: KENNEDY SPACE CENTER, FLA. - A successful controlled burn near KSC’s Launch Complex 39 are | KENNEDY SPACE CENTER, FLA. - A successful controlled burn near KSC’s Launch Complex 39 area creates clouds of smoke in a clear blue sky. The water seen is the B
+  nasa:5: Pluto Blue Sky | Pluto's haze layer shows its blue color in this picture taken by the New Horizons Ralph/Multispectral Visible Imaging Camera (MVIC). The high-altitude haze is t
+  wiki:6: Trees rising out of Cheow Lan Lake, blue sky, eternal summer in Surat Thani edited | Old submerged trees on Cheow Lan Reservoir Lake in Surat Thani, Thailand. Remnants of the old Shorea Dipterocarp forest. The lake shores still harbour forests w
+  wiki:7: Burimun gate and pine under blue sky at Beomeosa temple in Busan, South Korea | Burimun gate and high Japanese black pine at Beomeosa Buddhist temple, under a blue sky in Busan, South Korea.
+  wiki:8: Front view of the Imperial Throne Hall Geunjeongjeon at Gyeongbokgung Palace with blue sky | Front view of the Imperial Throne Hall Geunjeongjeon, at Gyeongbokgung Palace, with blue sky in Seoul, South Korea.
+  wiki:9: Front view of Jibokjae Hall under blue sky at Gyeongbokgung Palace in Seoul | Front view of Jibokjae Hall under blue sky at Gyeongbokgung Palace in Seoul, South Korea.
+  wiki:10: Cheomseongdae Observatory under blue sky in Gyeongju South Korea | Cheomseongdae Observatory, under blue sky in Gyeongju, South Korea. In stone, it was constructed in the 7th century.
+  wiki:11: Bulguksa temple entrance gate stairs flower bed and blue sky in Gyeongju South Korea | Cheongungyo and Baegungyo Stairs at Bulguksa Buddhist temple entrance, flower bed and blue sky, in Gyeongju, South Korea.
+
+[v006] needs: supernova remnant nebula | narration: In reality, a supernova is a powerful explosion marking the death of a star.
+  nasa:0: Supernova Remnant W49B | Release date Dec. 30, 2009 In the supernova remnant W49B, Suzaku found another fossil fireball. It detected X-rays produced when heavily ionized iron atoms reca
+  nasa:1: Vivid View of Tycho Supernova Remnant | This composite image of the Tycho supernova remnant combines infrared and X-ray observations obtained with NASA Spitzer and Chandra space observatories, respect
+  nasa:2: Supernova Remnant in 3-D | For the first time, a multiwavelength three-dimensional reconstruction of a supernova remnant has been created. This visualization of Cassiopeia A, or Cas A, th
+  wiki:3: Tycho-supernova-xray | The Chandra X-ray Observatory image of Tycho's Supernova Remnant depicts a glowing, multi-colored sphere that appears to be suspended in the blackness of space.
+  wiki:4: Supernova Remnant SN 1006 | This image is a composite of visible (or optical), radio, and X-ray data of the full shell of the supernova remnant from SN 1006. The radio data show much of th
+  wiki:5: NASA-SNR0519690-ChandraXRayObservatory-20150122 | X-ray &amp; Optical Images of SNR E0519-69.0 - When a massive star exploded in the Large Magellanic Cloud, a satellite galaxy to the Milky Way, it left behind a
+  wiki:6: Vela supernova - VST - Eso2214a | The Vela supernova remnant imaged by the VLT Survey Telescope The image shows stringy clouds of hot pink and golden orange, nested together all over the frame, 
+  wiki:7: Vela Supernova Remnant - Noirlab2406a | Vela Supernova Remnant, using line filters for OIII, SII, H-alpha &amp; NII Ghostly Stellar Tendrils of the Vela Supernova Remnant This colorful web of wispy ga
+  wiki:8: Crab Nebula | This is a mosaic image, one of the largest ever taken by NASA's Hubble Space Telescope, of the Crab Nebula, a six-light-year-wide expanding remnant of a star's 
+  wiki:9: Crab nebula and crab pulsar composite | A combination of optical and X-ray images of the Crab Nebula. The X-ray image reveals evidence of a spinning disc of super-hot gas with high-speed jets shooting
+  wiki:10: The Crab Nebula (weic2326a) | The NASA/ESA/CSA James Webb Space Telescope has gazed at the Crab Nebula in the search for answers about the supernova remnant’s origins. Webb’s NIRCam (Near-In
+
+[v008] needs: white dwarf star in space | narration: Alternatively, an exploding white dwarf star undergoes runaway nuclear fusion.
+  nasa:0: Kepler Beyond Planets: Finding Exploding Stars (Type Ia Supernova from a White Dwarf Merge | This frame from an animation shows the merger of two white dwarfs. A white dwarf is an extremely dense remnant of a star that can no longer burn nuclear fuel at
+  nasa:1: Polluted White Dwarf (Artist's Concept) | This artist's concept shows an exoplanet and debris disk orbiting a polluted white dwarf. White dwarfs are dim, dense remnants of stars similar to the Sun that 
+  nasa:2: Citizen Scientist Finds Ancient White Dwarf Star Encircled by Puzzling Rings | In this illustration, an asteroid (bottom left) breaks apart under the powerful gravity of LSPM J0207+3331, the oldest, coldest white dwarf known to be surround
+  nasa:3: Comet Bites the Dust Around Dead Star  Artist Concept | This artist concept illustrates a comet being torn to shreds around a dead star, or white dwarf, called G29-38. NASA Spitzer Space Telescope observed a cloud of
+  nasa:4: Silicates in Alien Asteroids | This plot of data from NASA Spitzer Space Telescopes shows that asteroid dust around a dead white dwarf star contains silicates -- a common mineral on Earth.
+  wiki:5: White Dwarf Resurrection | The bright star in the centre of this image is not the star of this show. At the bottom centre is a rather unremarkable smudge of red which is in fact a rare an
+  wiki:6: Illustration of Rocky Debris around a White Dwarf | Rocky debris, the pieces of a former rocky planet that has broken up, spiral inward toward a white dwarf in this illustration. Studying the atmospheres of white
+  wiki:7: Artist's impression of an evolving white dwarf and millisecond pulsar binary system | Artist's impression of an evolving white dwarf (foreground) and millisecond pulsar (background) binary system. Using the 4.1-meter SOAR Telescope on Cerro Pachó
+  wiki:8: Illustration of an ultracool dwarf with a companion white dwarf | Illustration of an ultracool dwarf with a companion white dwarf. Ace citizen scientist Frank Kiwy used the Astro Data Lab science platform at NSF’s NOIRLab to d
+  wiki:9: Dwarf White Bauhinia Flowers in Gujarat, India | Dwarf White Bauhinia (Bauhinia Acuminata) Flowers in Gujarat, India
+  nasa:10: Birth of an Earth-like Planet Artist Xoncept | This artist conception shows a binary-star, or two-star, system, called HD 113766, where astronomers suspect a rocky Earth-like planet is forming around one of 
+  nasa:11: Brown Dwarfs in our Backyard | The third closest star system to the sun, called WISE J104915.57-531906, center of large image, which was taken by NASA WISE. It appeared to be a single object,
+
+[v009] needs: glowing stellar gas cloud | narration: These stellar detonations expel several solar masses
+  nasa:0: Blowin in the Stellar Wind | This image of the Elephant Trunk nebula from NASA Wide-field Survey Explorer shows clouds of dust and gas being pushed and eroded by a massive star. The bright 
+  nasa:1: A Flame in Orion Belt | This mosaic image taken by NASA Wide-field Infrared Survey Explorer, features three nebulae that are part of the giant Orion Molecular Cloud. Included in this v
+  nasa:2: Celestial Sea of Stars | NASA Spitzer Space Telescope has captured a new, infrared view of the choppy star-making cloud called M17, also known as Omega Nebula or the Swan nebula.
+  nasa:3: Chasing Chickens in the Lambda Centauri Nebula | This infrared image from NASA Wide-field Infrared Survey Explorer shows the Lambda Centauri nebula, a star-forming cloud in our Milky Way galaxy, also known as 
+  nasa:4: Into the Depths of the Lagoon Nebula | Swirling dust clouds and bright newborn stars dominate the view in this image of the Lagoon nebula from NASA Spitzer Space Telescope. The nebula lies in the gen
+  nasa:5: A New View of the Tarantula Nebula | This composite of 30 Doradus, the Tarantula Nebula, contains data from Chandra blue, Hubble green, and Spitzer red. Located in the Large Magellanic Cloud, the T
+  wiki:6: Cone Nebula (NGC 2264) Star-Forming Pillar of Gas and Dust | Resembling a nightmarish beast rearing its head from a crimson sea, this monstrous object is actually an innocuous pillar of gas and dust. Called the Cone Nebul
+  wiki:7: ESO - The Carina Nebula (by) | The Carina Nebula is a large bright nebula that surrounds several clusters of stars. It contains two of the most massive and luminous stars in our Milky Way gal
+  wiki:8: A New View of the Tarantula Nebula | To celebrate its 22nd anniversary in orbit, the Hubble Space Telescope released a dramatic new image of the star-forming region 30 Doradus, also known as the Ta
+  wiki:9: VISTA's infrared view of the Lagoon Nebula (Messier 8) | This new infrared view of the star formation region Messier 8, often called the Lagoon Nebula, was captured by the VISTA telescope at ESO’s Paranal Observatory 
+  wiki:10: VST images the Lagoon Nebula | The VLT Survey Telescope (VST) at ESO's Paranal Observatory in Chile has captured this richly detailed new image of the Lagoon Nebula. This giant cloud of gas a
+  wiki:11: Orion Nebula in NIRCam long-wavelength channel | Orion Nebula in NIRCam long-wavelength channel This image shows the full survey of the inner Orion Nebula and Trapezium Cluster made using the NIRCam instrument
+
+[v011] needs: fast moving cosmic ray streak | narration: The ejected material travels outward at speeds reaching several per cent of the speed of light.
+  nasa:0: Cosmic Jets Coming at You Artist Concept | This artist concept shows a feeding, or active, supermassive black hole with a jet streaming outward at nearly the speed of light. Such active black holes are o
+  nasa:1: A Real Shooting Star Artist Concept | This artist concept illustrates a star flying through our galaxy at supersonic speeds, leaving a 13-light-year-long trail of glowing material in its wake. The s
+  nasa:2: Bow Shocks in Space | Bow shocks thought to mark the paths of massive, speeding stars are highlighted in these images from NASA's Spitzer Space Telescope and Wide-field Infrared Surv
+  nasa:3: Shifting Coronas Around Black Holes Artist Concept | A supermassive black hole is depicted in this artist's concept, surrounded by a swirling disk of material falling onto it. The purplish ball of light above the 
+  nasa:4: Painted Saturn | Saturn many cloud patterns, swept along by high-speed winds, look as if they were painted on by some eager alien artist in this image from NASA Cassini spacecra
+  nasa:5: Magnetic Black Hole Waves | This cartoon shows how magnetic waves, called Alfvén S-waves, propagate outward from the base of black hole jets. The jet is a flow of charged particles, called
+  wiki:6: Michelson speed of light measurement 1930 | Apparatus used in physicist Albert A. Michelson, Fred Pease and astronomer Francis Pearson's 1930-35 determination of the speed of light. It consists of a mile 
+  nasa:7: Cosmic Rays Liberate Neutrons | Cosmic Rays Liberate Neutrons
+  nasa:8: Cosmic Rays Near Mercury | Cosmic Rays Near Mercury
+  nasa:9: Cosmic-Ray Energetics and Mass (CREAM) Processing - Bonding | In the Space Station Processing Facility at NASA's Kennedy Space Center in Florida, technicians and engineers remove a protective cover on the Cosmic-Ray Energe
+  nasa:10: Cosmic-Ray Energetics and Mass (CREAM) Processing - Bonding | In the Space Station Processing Facility at NASA's Kennedy Space Center in Florida, a technician remove a protective cover on the Cosmic-Ray Energetics and Mass
+  nasa:11: Cosmic-Ray Energetics and Mass (CREAM) Processing - Bonding | In the Space Station Processing Facility at NASA's Kennedy Space Center in Florida, technicians and engineers remove a protective cover on the Cosmic-Ray Energe
+
+[v014] needs: starry night sky | narration: Astronomers define a near-Earth supernova as one
+  nasa:0: The Night Sky on Mars | The Night Sky on Mars
+  nasa:1: Creative Photography - Night Sky | Sea oats are backdropped by the night sky and the Milky Way in this view from the Atlantic shoreline at NASA’s Kennedy Space Center in Florida on Oct. 31, 2019.
+  nasa:2: Creative Photography - Night Sky | Sea oats frame the night sky, bisected by the Milky Way, in this view from the Atlantic shoreline at NASA’s Kennedy Space Center in Florida on Oct. 31, 2019. Th
+  nasa:3: Creative Photography - Night Sky | Lights from Launch Complexes 39A and B, left, glow against the night sky in this view from the Atlantic shoreline at NASA’s Kennedy Space Center in Florida on O
+  nasa:4: Creative Photography - Night Sky | Sea oats are backdropped by the night sky and the Milky Way in this view from the Atlantic shoreline at NASA’s Kennedy Space Center in Florida on Oct. 31, 2019.
+  nasa:5: Creative Photography - Night Sky | Lights from Launch Complexes 39A and B, left, glow against the night sky in this view from the Atlantic shoreline at NASA’s Kennedy Space Center in Florida on O
+  wiki:6: Dülmen, Viktorkirmes auf dem Overbergplatz -- 2014 -- 3738 (2) | Light traces of a Ferris wheel, Viktorkirmes in Dülmen, North Rhine-Westphalia, GermanyTwo traditional folk festivals are particularly important in Dülmen: the 
+  wiki:7: Hamburg, Speicherstadt, Wasserschloss -- 2016 -- 3265-71 | Wasserschloss (view from the Poggenmühlenbrücke) in the night, Speicherstadt, Hamburg, GermanyThe Speicherstadt was built between 1885 and 1927 as the world’s l
+  wiki:8: Virmalised 15.09.2017 - Aurora Borealis 15.09.2017 copy | Northern lights in Lääneranna Parish, West-Estonia.
+  wiki:9: Münster, Schlossplatz, Frühjahrssend -- 2019 -- 4208 | Swing “Nessy” and Ferris wheel at the funfair “Send” in Münster, North Rhine-Westphalia, GermanyThe Send is Münster’s big folk festival and takes place three ti
+  wiki:10: Perth (AU), Elizabeth Quay Bridge -- 2019 -- 0346-8 (crop 2) | Elizabeth Quay Bridge, Perth, Western Australia, AustraliaThe Elizabeth Quay Bridge is a striking pedestrian bridge in Perth city center. It was built as part o
+  wiki:11: Sydney (AU), Darling Harbour -- 2019 -- 3193-5 | Night in Darling Harbour, Sydney, New South Wales, AustraliaDarling Harbour in Sydney is located on the eastern edge of the city center and has a long and varie
+
+[v016] needs: spiral galaxy view from outside | narration: Currently, our galaxy holds up to 14
+  nasa:0: Gargantuan Super Spiral Galaxies Loom Large in the Cosmos | In archived NASA data, researchers have discovered "super spiral" galaxies that dwarf our own spiral galaxy, the Milky Way, and compete in size and brightness w
+  wiki:1: Hubble2005-01-barred-spiral-galaxy-NGC1300 | Barred spiral galaxy NGC 1300 photographed by Hubble telescope. In the core of the larger spiral structure of NGC 1300, the nucleus shows its own extraordinary 
+  wiki:2: NGC 4414 (NASA-med) | In 1995, the majestic spiral galaxy NGC 4414 was imaged by the Hubble Space Telescope as part of the HST Key Project on the Extragalactic Distance Scale. An int
+  wiki:3: NGC 2683 Spiral galaxy | The NASA Hubble Space Telescope has spotted the "UFO Galaxy." NGC 2683 is a spiral galaxy seen almost edge-on, giving it the shape of a classic science fiction 
+  wiki:4: Messier83 - Heic1403a | This new Hubble image shows the scatterings of bright stars and thick dust that make up spiral galaxy Messier 83, otherwise known as the Southern Pinwheel Galax
+  wiki:5: Andromeda Galaxy M31 - Heic1502a Full resolution | This image, captured with the NASA/ESA Hubble Space Telescope, is the largest and sharpest image ever taken of the Andromeda galaxy — otherwise known as M31. Yo
+  nasa:6: Astronomers Discover Dizzying Spin of the Milky Way Galaxy’s “Halo” | Our Milky Way galaxy and its small companions are surrounded by a giant halo of million-degree gas (seen in blue in this artists' rendition) that is only visibl
+  nasa:7: KSC-2009-1124 | CAPE CANAVERAL, Fla. -- Lights are reflected on the solar array panels of NASA's Kepler spacecraft during illumination testing. A NASA Discovery mission, Kepler
+  nasa:8: KSC-2009-1127 | CAPE CANAVERAL, Fla. -- A Ball Aerospace and Technology worker conducts a light sensor test on NASA's Kepler spacecraft. A NASA Discovery mission, Kepler is spe
+  nasa:9: KSC-2009-1129 | CAPE CANAVERAL, Fla. -- Ball Aerospace and Technology workers conduct a light test on the solar array panels of NASA's Kepler spacecraft. A NASA Discovery missi
+  wiki:10: Milky Way IR Spitzer | The center of our Milky Way galaxy is hidden from the prying eyes of optical telescopes by clouds of obscuring dust and gas. But in this stunning vista, the Spi
+  wiki:11: Center of the Milky Way Galaxy IV – Composite | In celebration of the International Year of Astronomy 2009, NASA's Great Observatories -- the Hubble Space Telescope, the Spitzer Space Telescope, and the Chand
+
+[v018] needs: bright giant star | narration: A few famous stars located within several hundred
+  nasa:0: Flickering Aldebaran #1 | As Cassini watches the rings pass in front of the bright red giant star Aldebaran, the star light fluctuates, providing information about the concentrations of 
+  nasa:1: Speedster Star Shocks the Galaxy | The red arc in this infrared image from NASA Spitzer Space Telescope is a giant shock wave, created by a speeding star known as Kappa Cassiopeiae.
+  nasa:2: Flickering Aldebaran #3 | As Cassini watches the rings pass in front of bright red giant star Aldebaran, the star light fluctuates, providing information about the concentrations of ring
+  nasa:3: Flickering Aldebaran #2 | As Cassini watches the rings pass in front of bright red giant star Aldebaran, the star light fluctuates, providing information about the concentrations of ring
+  nasa:4: Brown Dwarf Weather (Artist's Concept) | This artist's concept shows what the weather might look like on cool star-like bodies known as brown dwarfs. These giant balls of gas start out life like stars,
+  wiki:5: Giant Red Star 1 | Artistic representation of a giant star. Originally intended as a video game asset.
+  wiki:6: Giant Red Star 3 | Artistic representation of a giant star. Originally intended as a video game asset.
+  wiki:7: Giant Red Star 2 | Artistic representation of a giant star. Originally intended as a video game asset.
+  wiki:8: Giant Red Star 4 | Artistic representation of a giant star. Originally intended as a video game asset.
+  wiki:9: A Comparison of Star Sizes | Description from original source: "This illustration compares the different masses of stars. The lightest-weight stars are red dwarfs. They can be as small as o
+  nasa:10: Giant Star Goes Supernova, Smothered by its own Dust Artist Concept | A giant star in a faraway galaxy recently ended its life with a dust-shrouded whimper instead of the more typical bang in this artist concept based on data from
+  nasa:11: Starry Starry Skies Artist Concept | Astronomers have discovered two gas giant planets orbiting stars in the Beehive cluster, a collection of about 1,000 tightly packed stars.
+
+[v020] needs: bright stellar flare | narration: Although these dying stars will shine brilliantly, they
+  nasa:0: Thackeray Globules | Strangely glowing, floating dark clouds are silhouetted against nearby bright stars in a busy star-forming region viewed by NASA Hubble Space Telescope
+  nasa:1: Wish Upon a Star | What's that bright point of light in the outer A ring? It's a star, bright enough to be visible through the ring! Quick, make a wish! This star -- seen in the l
+  nasa:2: Flickering Aldebaran #1 | As Cassini watches the rings pass in front of the bright red giant star Aldebaran, the star light fluctuates, providing information about the concentrations of 
+  nasa:3: White Dwarfs: Small and Strong | This chart shows data from NASA Kepler space telescope, which looks for planets by monitoring changes in the brightness of stars. As planets orbit in front of a
+  nasa:4: Gas Giants Form Quickly  Artist Concept | This is an artist concept of a hypothetical 10-million-year-old star system. The bright blur at the center is a star much like our sun. The other orb in the ima
+  nasa:5: Menkhib and the California Nebula | This infrared image from NASA Wide-field Infrared Survey Explorer features one of the bright stars in the constellation Perseus, named Menkhib, along with a lar
+  wiki:6: The Bright Star Public House sign - geograph.org.uk - 5725790 | The Bright Star Public House sign
+  wiki:7: Bright Star at Peters Green | The Bright Star, Peters Green, Kimpton, Hertfordshire
+  wiki:8: BRIGHT STAR 25- Amphibious Assault (9315821) | Egyptian Armed Forces service members participate in an amphibious assault exercise as part of exercise BRIGHT STAR 25 in Alexandria, Egypt, Sept. 10, 2025. Mul
+  nasa:9: Infrared Echoes of a Black Hole Eating a Star Illustration | This illustration shows a glowing stream of material from a star as it is being devoured by a supermassive black hole in a tidal disruption flare. When a star p
+  nasa:10: Great Ball of Fire - Activity from August 1 CME Subsides | NASA image release August 6, 2010 On August 1, 2010, almost the entire Earth-facing side of the sun erupted in a tumult of activity. This image from the Solar D
+  nasa:11: NASA's Swift Mission Observes Mega Flares from a Mini Star | Caption: DG CVn, a binary consisting of two red dwarf stars shown here in an artist's rendering, unleashed a series of powerful flares seen by NASA's Swift. At 
+
+[v022] needs: Betelgeuse star in Orion constellation | narration: What about the famous red supergiant star Betelgeuse?
+  nasa:0: Stars in Orion as Seen from Mars | Stars in the upper portion of the constellation Orion the Hunter, including the bright shoulder star Betelgeuse and Orion three-star belt, appear in this image 
+  nasa:1: Jupiter Ring, With Orion | As NASA's Juno spacecraft flew through the narrow gap between Jupiter's radiation belts and the planet during its first science flyby, Perijove 1, on August 27,
+  wiki:2: Betelgeuse captured by ALMA | This orange blob shows the nearby star Betelgeuse, as seen by the Atacama Large Millimeter/submillimeter Array (ALMA). This is the first time that ALMA has ever
+  wiki:3: Arcturus to Betelgeuse comparison | A size comparison between the Sun, red giant Arcturus, blue supergiant Rigel, blue hypergiant S Doradus, and red supergiants Antares (at minimum) and Betelgeuse
+  wiki:4: Betelgeuse – and its newfound companion star | A century-old hypothesis that Betelgeuse, the 10th brightest star in our night sky, is orbited by a very close companion star was proved true by a team of astro
+  wiki:5: Location of the binary system of Betelgeuse in constellation Orion | Photo of the constellation Orion produced by NOIRLab in collaboration with Eckhard Slawik, a German astrophotographer. This is the annotated version. Steve Howe
+  nasa:6: STS-54 astronomical observation of the constellation Orion | STS054-97-018 (13-19 Jan 1993) --- The STS-54 crew used a handheld 70mm camera to record this view of the constellation Orion. Five astronauts spent six days ab
+  nasa:7: KSC-08pd3660 | CAPE CANAVERAL, Fla. – Segments of a crane are being offloaded at the Operations and Checkout Building at NASA's Kennedy Space Center in Florida. The new O&C lo
+  nasa:8: KSC-08pd4137 | CAPE CANAVERAL, Fla. – Segments of a new crane are tested inside the Operations and Checkout Building at NASA's Kennedy Space Center in Florida. The new O&C low
+  nasa:9: KSC-08pd3659 | CAPE CANAVERAL, Fla. – Segments of a crane arrive at the Operations and Checkout Building at NASA's Kennedy Space Center in Florida. The new O&C low-bay crane i
+  nasa:10: KSC-08pd3661 | CAPE CANAVERAL, Fla. – Segments of a crane are lowered onto the floor of the Operations and Checkout Building at NASA's Kennedy Space Center in Florida. The new
+  nasa:11: KSC-08pd3662 | CAPE CANAVERAL, Fla. – Segments of a crane are moved into the Operations and Checkout Building at NASA's Kennedy Space Center in Florida. The new O&C low-bay cr
+
+[v025] needs: particle beam stream in space | narration: When it detonates, its particle stream will reach
+  nasa:0: Streams of Charged Particles | This graphic shows the different streams of charged particles inside the bubble around our sun and outside, in the unexplored territory of interstellar space. T
+  nasa:1: Mapping the Heliosphere | Data from NASA Cassini spacecraft have enabled scientists to create this map of the heliosphere, the bubble of charged particles around our sun. Charged particl
+  nasa:2: Unfocused F Ring | The F ring dissolves into a fuzzy stream of particles -- rather different from its usual appearance of a narrow, bright core flanked by dimmer ringlets. Also no
+  nasa:3: Eiffel Tower Plume | This still image from an animation from NASA GSFC Solar Dynamics Observatory shows a single plume of plasma, many times taller than the diameter of Earth, spewi
+  nasa:4: Coronal Hole Rotating Towards Us | A good-sized coronal hole came around to where it is just about facing Earth (May 16-18, 2018). Coronal holes are areas of open magnetic field from which solar 
+  nasa:5: Lengthy Coronal Hole | An elongated coronal hole rotated across the face of the sun this past week so that it is now streaming solar wind towards Earth (Jan. 2-5, 2017). Coronal holes
+  wiki:6: MERS Coronavirus Particle (14702606627) | A colorized micrograph of the Middle East Respiratory Syndrome Coronavirus particle envelope proteins immunolabeled with Rabbit HCoV-EMC/2012 primary antibody a
+  wiki:7: Paint by Particle (8189069758) | NASA models and supercomputing have created a colorful new view of aerosol movement. Satellites, balloon-borne instruments and ground-based devices make 30 mill
+  wiki:8: Nipah Virus Particles (29014537657) | A Nipah virus particle budding from a cell used to grow viruses. Credit: NIAID
+  wiki:9: Particle Analysis (08010098) (33727141714) | After the particle analysis is conducted, Gihan Kamel checks the data at the infrared beamline lab. SESAME International Research Centre. Allan Area, Salt City,
+  wiki:10: Mpox Virus Particle - 53951406461 | Colorized transmission electron micrograph of an mpox virus particle (red) cultivated and purified from cell culture. Image captured at the NIAID Integrated Res
+  wiki:11: Mpox Virus Particle - 53951735414 | Colorized transmission electron micrograph of an mpox virus particle (teal) cultivated and purified from cell culture. Image captured at the NIAID Integrated Re
+
+[v027] needs: ancient supernova remnant in the sky | narration: Looking back in time, other relatively nearby stars have exploded in Earth's past.
+  nasa:0: Supernova Remnant W49B | Release date Dec. 30, 2009 In the supernova remnant W49B, Suzaku found another fossil fireball. It detected X-rays produced when heavily ionized iron atoms reca
+  nasa:1: Vivid View of Tycho Supernova Remnant | This composite image of the Tycho supernova remnant combines infrared and X-ray observations obtained with NASA Spitzer and Chandra space observatories, respect
+  nasa:2: Supernova Remnant in 3-D | For the first time, a multiwavelength three-dimensional reconstruction of a supernova remnant has been created. This visualization of Cassiopeia A, or Cas A, th
+  wiki:3: Tycho-supernova-xray | The Chandra X-ray Observatory image of Tycho's Supernova Remnant depicts a glowing, multi-colored sphere that appears to be suspended in the blackness of space.
+  wiki:4: Supernova Remnant SN 1006 | This image is a composite of visible (or optical), radio, and X-ray data of the full shell of the supernova remnant from SN 1006. The radio data show much of th
+  wiki:5: NASA-SNR0519690-ChandraXRayObservatory-20150122 | X-ray &amp; Optical Images of SNR E0519-69.0 - When a massive star exploded in the Large Magellanic Cloud, a satellite galaxy to the Milky Way, it left behind a
+  wiki:6: Vela supernova - VST - Eso2214a | The Vela supernova remnant imaged by the VLT Survey Telescope The image shows stringy clouds of hot pink and golden orange, nested together all over the frame, 
+  wiki:7: Vela Supernova Remnant - Noirlab2406a | Vela Supernova Remnant, using line filters for OIII, SII, H-alpha &amp; NII Ghostly Stellar Tendrils of the Vela Supernova Remnant This colorful web of wispy ga
+  wiki:8: Great Carina Nebula Processed | This is colloquially known as the “Coalsack” as it looks a bit like a black bag. To the indigenous people of Australia however, it was the head of the Emu looki
+  wiki:9: Dark Doodad Nebula Processed | This is colloquially known as the “Coalsack” as it looks a bit like a black bag. To the indigenous people of Australia however, it was the head of the Emu looki
+  wiki:10: Nebulous, but no nebula Messier 28 | This Hubble Picture of the Week shows Messier 28, a globular cluster in the constellation of Sagittarius (The Archer), in jewel-bright detail. It is about 18 00
+  wiki:11: Uncovering the Veil Nebula (2007-30-2164) | NASA's Hubble Space Telescope photographed three magnificent sections of the Veil Nebula – the shattered remains of a supernova that exploded thousands of years
+
+[v028] needs: Vela supernova remnant nebula | narration: The Vela supernova exploded about 12,000 years ago
+  nasa:0: High Energy Astronomy Observatory (HEAO) | Like the Crab Nebula, the Vela Supernova Remnant has a radio pulsar at its center. In this image taken by the High Energy Astronomy Observatory (HEAO)-2/Einstei
+  wiki:1: Vela Supernova Remnant by Harel Boren (155256626) | Long exposure photograph of the Vela Supernova Remnant, taken from the Kalahari Desert in Namibia. This image shows the supernova remnant's northern section. Th
+  wiki:2: Vela supernova - VST - Eso2214a | The Vela supernova remnant imaged by the VLT Survey Telescope The image shows stringy clouds of hot pink and golden orange, nested together all over the frame, 
+  wiki:3: Vela Supernova Remnant - Noirlab2406a | Vela Supernova Remnant, using line filters for OIII, SII, H-alpha &amp; NII Ghostly Stellar Tendrils of the Vela Supernova Remnant This colorful web of wispy ga
+
+[v030] needs: Geminga pulsar region in space | narration: Another explosion called Geminga occurred roughly 300,000 years
+  wiki:0: Geminga and PSR B0355+54 by Chandra and Spitzer | NASA'S Chandra X-ray Observatory has taken deep exposures of two nearby energetic pulsars flying through the Milky Way galaxy. The shape of their X-ray emission
+  wiki:1: Fermi 5 year Vela Pulsar, Geminga, Crab-Pulsar encircled | Fermi's Five-year View of the Gamma-ray Sky Released on August 21, 2013 Share on facebook Share on twitter More Sharing Services This all-sky view shows how the
+  wiki:2: Halo around pulsar Geminga | These images show a region of the sky centered on the pulsar Geminga. Left: The total number of gamma rays detected by Fermi’s Large Area Telescope at energies 
+  wiki:3: Geminga by Chandra and Spitzer (cropped) | NASA'S Chandra X-ray Observatory has taken deep exposures of two nearby energetic pulsars flying through the Milky Way galaxy. The shape of their X-ray emission
+  nasa:4: Space Shuttle Projects | This photograph shows the Compton Gamma-Ray Observatory being released from the Remote Manipulator System (RMS) arm aboard the Space Shuttle Atlantis during the
+  nasa:5: Space Science | In this photograph, Dr. Gerald Fishman of the Marshall Space Flight Center (MSFC), a principal investigator of the Compton Gamma-Ray Observatory's (GRO's) instr
+  nasa:6: n/a | This photograph shows the Compton Gamma-Ray Observatory (GRO) being deployed by the Remote Manipulator System (RMS) arm aboard the Space Shuttle Atlantis during
+  nasa:7: Space Science | In this photograph, Dr. Gerald Fishman of the Marshall Space Flight Center (MSFC), a principal investigator of the Compton Gamma-Ray Observatory's (GRO's) instr
+  nasa:8: Blazar Artist Concept | Black-hole-powered galaxies called blazars are the most common sources detected by NASA's Fermi Gamma-ray Space Telescope. As matter falls toward the supermassi
+  nasa:9: Gamma-Ray "Raindrops" from Flaring Blazar | This visualization shows gamma rays detected during 3C 279's big flare by the LAT instrument on NASA's Fermi satellite. Gamma rays are represented as expanding 
+  wiki:10: Artist’s impression of a gamma-ray burst | Artist’s impression of a gamma-ray burst. Gamma-ray bursts (GRBs) are powerful flashes of energetic gamma-rays lasting from less than a second to several minute
+  wiki:11: Artist’s impression of a gamma-ray burst shining through two young galaxies in the early U | This artist’s impression shows two galaxies in the early Universe. The brilliant explosion on the left is a gamma-ray burst. As the light from the burst passes 
+
+[v032] needs: IK Pegasi binary star system | narration: The closest known white dwarf candidate, IK Pegasi,
+  wiki:0: IKPegLightCurve | A light curve for IK Pegasi, plotted from TESS satellite data
+  nasa:1: Birth of an Earth-like Planet Artist Xoncept | This artist conception shows a binary-star, or two-star, system, called HD 113766, where astronomers suspect a rocky Earth-like planet is forming around one of 
+  nasa:2: Star System Bonanza Illustration | This illustration shows the unusual orbit of planet Kepler-413b around a close pair of orange and red dwarf stars. The planet 66-day orbit is tilted 2.5 degrees
+  nasa:3: Before the Smashup Artist Concept | This artist concept illustrates an imminent planetary collision around a pair of double stars. NASA Spitzer Space Telescope found evidence that such collisions 
+  nasa:4: Brown Dwarfs in our Backyard | The third closest star system to the sun, called WISE J104915.57-531906, center of large image, which was taken by NASA WISE. It appeared to be a single object,
+  wiki:5: Planet Lost in the Glare of Binary Stars | This illustration depicts a planet partially hidden in the glare of its host star and a nearby companion star. After examining a number of binary stars, astrono
+  wiki:6: Location of binary star D9 in the Milky Way (eso2418a) | This image indicates the location of the newly discovered binary star D9, which is orbiting Sagittarius A*, the supermassive black hole at the centre of our gal
+  wiki:7: Evolutionary paths of detached neutron star + main-sequence binaries | A diagram of the evolutionary paths of detached NS/MS binaries, showing how they can evolve into either LMXBs or SyXBs and then eventually into neutron star/whi

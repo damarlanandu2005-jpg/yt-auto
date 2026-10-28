@@ -1,0 +1,34 @@
+{
+  "checks": [
+    {
+      "check": "hook_question",
+      "ok": true,
+      "reason": "The first 30 seconds clearly state whether a dying star could explode near our solar system and rip Earth's atmosphere away."
+    },
+    {
+      "check": "hook_why",
+      "ok": true,
+      "reason": "The first 30 seconds ask why this question matters when considering terrestrial life and the survival of our oxygen atmosphere."
+    },
+    {
+      "check": "title_promise",
+      "ok": true,
+      "reason": "The script delivers on how close a supernova needs to be by discussing the near-Earth supernova distance range and specific stars like Betelgeuse and IK Pegasi."
+    },
+    {
+      "check": "scene_relevance",
+      "ok": true,
+      "reason": "All text cards directly match the narration spoken at that moment."
+    },
+    {
+      "check": "sensitive",
+      "ok": true,
+      "reason": "There is no financial, legal, or health advice, nor any accusations against real named persons or companies."
+    },
+    {
+      "check": "adds_value",
+      "ok": true,
+      "reason": "The script explains mechanisms of supernovas, timelines, and stellar safety zones rather than just listing facts."
+    }
+  ]
+}

@@ -1,0 +1,16 @@
+{
+  "marks": [
+    {
+      "id": "s01.01",
+      "delivery": "slow"
+    },
+    {
+      "id": "s02.04",
+      "delivery": "slow"
+    },
+    {
+      "id": "s02.05",
+      "delivery": "reveal"
+    }
+  ]
+}

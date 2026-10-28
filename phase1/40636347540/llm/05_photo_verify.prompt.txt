@@ -1,0 +1,62 @@
+[model] gemini-3.5-flash-lite
+[system]
+
+
+[user]
+Step 2 of a picture check for a science video. Someone looked at each picture WITHOUT knowing
+what it should show and described it. Decide for each image whether the picture fits.
+A photo fits only if the description shows it clearly depicts what it should show: not mostly text,
+not a test target, not a different planet or object than the narration is about, no watermark, nothing
+misleading. A diagram, infographic or poster with many labels or much text does NOT fit (too small to read
+in a video, and made for another purpose). A chart or graph fits ONLY if its labels show it is about exactly what the narration says (a graph
+of Mars data, or with unexplained labels like 'RHOS', does not fit a sentence about Earth or a star).
+When unsure, answer fits = false (a chart or plain card is shown instead, which is fine).
+Copy the description into "seen".
+Image 1: described as: A photograph showing the curved horizon of the Earth with white clouds and water reflecting sunlight, set against the blackness of space with a thin blue atmospheric layer.
+  should show: planet Earth viewed from space
+  narration: system and rip Earth's atmosphere away into space?
+Image 2: described as: A rectangular solar-powered aircraft or wing-like structure angled upward against a clear blue sky, showing multiple small propellers and instrumentation.
+  should show: blue sky and clouds
+  narration: How essential is our oxygen atmosphere for survival?
+Image 3: described as: A colorful nebula against a star-studded black space background, featuring glowing filaments of orange, green, and blue gas.
+  should show: supernova remnant nebula
+  narration: In reality, a supernova is a powerful explosion marking the death of a star.
+Image 4: described as: An astronomical illustration showing a large reddish-brown planet on the left, a bright star with a protoplanetary disk on the right, and numerous small asteroids scattered in the dark space.
+  should show: white dwarf star in space
+  narration: Alternatively, an exploding white dwarf star undergoes runaway nuclear fusion.
+Image 5: described as: A detailed astronomical photograph of a bright star-forming region, the Carina Nebula, filled with glowing clouds of cosmic gas, dust, and numerous scattered stars.
+  should show: glowing stellar gas cloud
+  narration: These stellar detonations expel several solar masses
+Image 6: described as: An illustration or rendering of a large, mottled orange-red star set against a dark background with scattered distant stars and faint nebulae.
+  should show: fast moving cosmic ray streak
+  narration: The ejected material travels outward at speeds reaching several per cent of the speed of light.
+Image 7: described as: A night photograph looking up at a starry sky, with the silhouette of grassy beach plants and water visible at the bottom.
+  should show: starry night sky
+  narration: Astronomers define a near-Earth supernova as one
+Image 8: described as: A detailed photograph of a spiral galaxy's arm, showcasing a bright golden galactic core on the left fading into dark dust lanes, blue stellar clusters, and numerous stars.
+  should show: spiral galaxy view from outside
+  narration: Currently, our galaxy holds up to 14
+Image 9: described as: A black-and-white image showing parallel rings of Saturn separated by a dark gap, with a small, bright moon visible within one of the gaps.
+  should show: bright giant star
+  narration: A few famous stars located within several hundred
+Image 10: described as: A false-color image of the Sun showing intricate magnetic loops, bright active regions, and coronal plasma, set against a black background with a glowing corona.
+  should show: bright stellar flare
+  narration: Although these dying stars will shine brilliantly, they
+Image 11: described as: A deep-field astronomical image showing numerous faint, distant galaxies and stars scattered across a pure black background.
+  should show: Betelgeuse star in Orion constellation
+  narration: What about the famous red supergiant star Betelgeuse?
+Image 12: described as: A scientific diagram illustrating the heliosphere and solar wind interacting with the interstellar flow, complete with labeled text such as 'Interstellar Flow', 'Solar Wind', and 'Heliopause'.
+  should show: particle beam stream in space
+  narration: When it detonates, its particle stream will reach
+Image 13: described as: A composite image titled 'Veil Nebula Details' featuring three distinct horizontal panels of colorful nebulosity and stars, complete with text credits and the Hubble Heritage logo in the corners.
+  should show: ancient supernova remnant in the sky
+  narration: Looking back in time, other relatively nearby stars have exploded in Earth's past.
+Image 14: described as: A vibrant wide-field photograph of the Veil Nebula, featuring intricate glowing filaments of blue, orange, and red gas interlaced with numerous background stars.
+  should show: Vela supernova remnant nebula
+  narration: The Vela supernova exploded about 12,000 years ago
+Image 15: described as: A four-panel astronomical composite showing two observational images labeled 'GEMINGA' and 'B0355' in X-ray and infrared on top, and corresponding scientific illustrations of pulsar wind nebulae below.
+  should show: Geminga pulsar region in space
+  narration: Another explosion called Geminga occurred roughly 300,000 years
+Image 16: described as: An artistic illustration of multiple planetary systems with glowing stars and orbiting planets with rings, scattered across a deep purple starry background.
+  should show: IK Pegasi binary star system
+  narration: The closest known white dwarf candidate, IK Pegasi,

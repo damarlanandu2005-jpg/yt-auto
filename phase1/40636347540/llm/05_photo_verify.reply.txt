@@ -1,0 +1,100 @@
+{
+  "checks": [
+    {
+      "n": 1,
+      "seen": "A photograph showing the curved horizon of the Earth with white clouds and water reflecting sunlight, set against the blackness of space with a thin blue atmospheric layer.",
+      "fits": true,
+      "reason": "The image clearly shows planet Earth from space, matching the narration about Earth's atmosphere."
+    },
+    {
+      "n": 2,
+      "seen": "A rectangular solar-powered aircraft or wing-like structure angled upward against a clear blue sky, showing multiple small propellers and instrumentation.",
+      "fits": false,
+      "reason": "The narration asks about oxygen atmosphere, but the image shows an aircraft/drone rather than a simple blue sky and clouds as requested."
+    },
+    {
+      "n": 3,
+      "seen": "A colorful nebula against a star-studded black space background, featuring glowing filaments of orange, green, and blue gas.",
+      "fits": true,
+      "reason": "The image depicts a supernova remnant nebula, which fits the mention of a supernova."
+    },
+    {
+      "n": 4,
+      "seen": "An astronomical illustration showing a large reddish-brown planet on the left, a bright star with a protoplanetary disk on the right, and numerous small asteroids scattered in the dark space.",
+      "fits": false,
+      "reason": "The image shows a planetary system with a protoplanetary disk rather than specifically an exploding white dwarf star."
+    },
+    {
+      "n": 5,
+      "seen": "A detailed astronomical photograph of a bright star-forming region, the Carina Nebula, filled with glowing clouds of cosmic gas, dust, and numerous scattered stars.",
+      "fits": true,
+      "reason": "The image shows a glowing stellar gas cloud, fitting the narration about stellar detonations expelling mass."
+    },
+    {
+      "n": 6,
+      "seen": "An illustration or rendering of a large, mottled orange-red star set against a dark background with scattered distant stars and faint nebulae.",
+      "fits": false,
+      "reason": "The image depicts a star, not a fast-moving cosmic ray streak as specified by the target."
+    },
+    {
+      "n": 7,
+      "seen": "A night photograph looking up at a starry sky, with the silhouette of grassy beach plants and water visible at the bottom.",
+      "fits": true,
+      "reason": "The image shows a starry night sky, matching the context of near-Earth supernovae."
+    },
+    {
+      "n": 8,
+      "seen": "A detailed photograph of a spiral galaxy's arm, showcasing a bright golden galactic core on the left fading into dark dust lanes, blue stellar clusters, and numerous stars.",
+      "fits": true,
+      "reason": "The image shows a spiral galaxy view from outside, matching the narration about our galaxy."
+    },
+    {
+      "n": 9,
+      "seen": "A black-and-white image showing parallel rings of Saturn separated by a dark gap, with a small, bright moon visible within one of the gaps.",
+      "fits": false,
+      "reason": "The image depicts Saturn and its rings, not a bright giant star as required."
+    },
+    {
+      "n": 10,
+      "seen": "A false-color image of the Sun showing intricate magnetic loops, bright active regions, and coronal plasma, set against a black background with a glowing corona.",
+      "fits": true,
+      "reason": "The image shows solar activity and flares, fitting the mention of dying stars shining brilliantly."
+    },
+    {
+      "n": 11,
+      "seen": "A deep-field astronomical image showing numerous faint, distant galaxies and stars scattered across a pure black background.",
+      "fits": false,
+      "reason": "The image shows a deep-field view with many distant galaxies, not specifically the Betelgeuse star."
+    },
+    {
+      "n": 12,
+      "seen": "A scientific diagram illustrating the heliosphere and solar wind interacting with the interstellar flow, complete with labeled text such as 'Interstellar Flow', 'Solar Wind', and 'Heliopause'.",
+      "fits": false,
+      "reason": "The image is a scientific diagram with text and labels, which does not fit video requirements."
+    },
+    {
+      "n": 13,
+      "seen": "A composite image titled 'Veil Nebula Details' featuring three distinct horizontal panels of colorful nebulosity and stars, complete with text credits and the Hubble Heritage logo in the corners.",
+      "fits": false,
+      "reason": "The image contains multiple panels, text credits, and a logo, which makes it unsuitable for the video."
+    },
+    {
+      "n": 14,
+      "seen": "A vibrant wide-field photograph of the Veil Nebula, featuring intricate glowing filaments of blue, orange, and red gas interlaced with numerous background stars.",
+      "fits": true,
+      "reason": "The image shows a supernova remnant nebula, matching the Vela supernova narration."
+    },
+    {
+      "n": 15,
+      "seen": "A four-panel astronomical composite showing two observational images labeled 'GEMINGA' and 'B0355' in X-ray and infrared on top, and corresponding scientific illustrations of pulsar wind nebulae below.",
+      "fits": false,
+      "reason": "The image consists of multiple labeled panels, which does not fit video standards."
+    },
+    {
+      "n": 16,
+      "seen": "An artistic illustration of multiple planetary systems with glowing stars and orbiting planets with rings, scattered across a deep purple starry background.",
+      "fits": false,
+      "reason": "The image shows general planetary systems rather than the specific IK Pegasi binary star system."
+    }
+  ]
+}

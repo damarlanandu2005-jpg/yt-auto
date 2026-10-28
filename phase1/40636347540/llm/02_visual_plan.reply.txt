@@ -1,0 +1,401 @@
+{
+  "visuals": [
+    {
+      "id": "v001",
+      "kind": "card",
+      "card": {
+        "type": "title",
+        "title": "How Close Can a Supernova Get",
+        "subtitle": "Before It Destroys Earth?"
+      }
+    },
+    {
+      "id": "v002",
+      "kind": "photo",
+      "photo_subject": "planet Earth viewed from space",
+      "photo_queries": ["planet Earth", "Earth from space"],
+      "card": {
+        "type": "stat",
+        "title": "Earth's Atmosphere",
+        "value": "1",
+        "label": "fragile protective layer"
+      }
+    },
+    {
+      "id": "v003",
+      "kind": "drawing",
+      "drawing_subject": "a huge exploding star beside a small blue planet",
+      "card": {
+        "type": "bullets",
+        "title": "The Hollywood Myth",
+        "items": [
+          "Fiery blast wave",
+          "Sweeps planet bare",
+          "Destruction in seconds"
+        ]
+      }
+    },
+    {
+      "id": "v004",
+      "kind": "card",
+      "card": {
+        "type": "stat",
+        "title": "Terrestrial Life",
+        "value": "100%",
+        "label": "dependent on atmosphere",
+        "note": "protection from space"
+      }
+    },
+    {
+      "id": "v005",
+      "kind": "photo",
+      "photo_subject": "blue sky and clouds",
+      "photo_queries": ["blue sky", "clouds atmosphere"],
+      "card": {
+        "type": "stat",
+        "title": "Oxygen",
+        "value": "21%",
+        "label": "atmospheric composition"
+      }
+    },
+    {
+      "id": "v006",
+      "kind": "photo",
+      "photo_subject": "supernova remnant nebula",
+      "photo_queries": ["supernova remnant", "Crab Nebula"],
+      "card": {
+        "type": "stat",
+        "title": "Supernova",
+        "value": "1",
+        "label": "stellar explosion"
+      }
+    },
+    {
+      "id": "v007",
+      "kind": "drawing",
+      "drawing_subject": "a massive glowing star collapsing inward",
+      "card": {
+        "type": "flow",
+        "title": "Core Collapse",
+        "steps": [
+          "Fuel runs out",
+          "Gravity takes over",
+          "Core collapses"
+        ]
+      }
+    },
+    {
+      "id": "v008",
+      "kind": "photo",
+      "photo_subject": "white dwarf star in space",
+      "photo_queries": ["white dwarf", "binary star system"],
+      "card": {
+        "type": "stat",
+        "title": "White Dwarf",
+        "value": "1",
+        "label": "runaway nuclear fusion"
+      }
+    },
+    {
+      "id": "v009",
+      "kind": "photo",
+      "photo_subject": "glowing stellar gas cloud",
+      "photo_queries": ["nebula cloud", "stellar gas"],
+      "card": {
+        "type": "stat",
+        "title": "Ejected Matter",
+        "value": "several",
+        "label": "solar masses"
+      }
+    },
+    {
+      "id": "v010",
+      "kind": "step",
+      "focus": "center",
+      "card": {
+        "type": "stat",
+        "title": "Interstellar Medium",
+        "value": "1",
+        "label": "surrounding space"
+      }
+    },
+    {
+      "id": "v011",
+      "kind": "photo",
+      "photo_subject": "fast moving cosmic ray streak",
+      "photo_queries": ["light speed", "cosmic rays"],
+      "card": {
+        "type": "stat",
+        "title": "Expansion Speed",
+        "value": "per cent",
+        "label": "speed of light"
+      }
+    },
+    {
+      "id": "v012",
+      "kind": "drawing",
+      "drawing_subject": "an expanding ring of gas sweeping through space",
+      "card": {
+        "type": "flow",
+        "title": "Shock Wave",
+        "steps": [
+          "Expansion",
+          "Sweeping gas",
+          "Dust shell"
+        ]
+      }
+    },
+    {
+      "id": "v013",
+      "kind": "card",
+      "card": {
+        "type": "title",
+        "title": "The Stellar Safety Line",
+        "subtitle": "Distance from dangerous explosions"
+      }
+    },
+    {
+      "id": "v014",
+      "kind": "photo",
+      "photo_subject": "starry night sky",
+      "photo_queries": ["night sky", "milky way stars"],
+      "card": {
+        "type": "stat",
+        "title": "Near-Earth Supernova",
+        "value": "1",
+        "label": "definition threshold"
+      }
+    },
+    {
+      "id": "v015",
+      "kind": "card",
+      "card": {
+        "type": "stat",
+        "title": "Distance Range",
+        "value": "33 - 978",
+        "label": "light-years",
+        "note": "near-Earth zone"
+      }
+    },
+    {
+      "id": "v016",
+      "kind": "photo",
+      "photo_subject": "spiral galaxy view from outside",
+      "photo_queries": ["spiral galaxy", "Milky Way galaxy"],
+      "card": {
+        "type": "stat",
+        "title": "Galaxy Candidates",
+        "value": "14",
+        "label": "potential supernovas"
+      }
+    },
+    {
+      "id": "v017",
+      "kind": "step",
+      "focus": "center",
+      "card": {
+        "type": "stat",
+        "title": "Broader Distance",
+        "value": "14",
+        "label": "stars in range"
+      }
+    },
+    {
+      "id": "v018",
+      "kind": "photo",
+      "photo_subject": "bright giant star",
+      "photo_queries": ["red giant star", "giant star"],
+      "card": {
+        "type": "stat",
+        "title": "Nearby Stars",
+        "value": "several",
+        "label": "hundred light-years"
+      }
+    },
+    {
+      "id": "v019",
+      "kind": "card",
+      "card": {
+        "type": "stat",
+        "title": "Timeframe",
+        "value": "1,000",
+        "label": "years",
+        "note": "until potential explosion"
+      }
+    },
+    {
+      "id": "v020",
+      "kind": "photo",
+      "photo_subject": "bright stellar flare",
+      "photo_queries": ["bright star", "stellar flare"],
+      "card": {
+        "type": "stat",
+        "title": "Brightness",
+        "value": "1",
+        "label": "brilliant shine"
+      }
+    },
+    {
+      "id": "v021",
+      "kind": "card",
+      "card": {
+        "type": "stat",
+        "title": "Threat Level",
+        "value": "0",
+        "label": "little direct threat"
+      }
+    },
+    {
+      "id": "v022",
+      "kind": "photo",
+      "photo_subject": "Betelgeuse star in Orion constellation",
+      "photo_queries": ["Betelgeuse star", "Orion constellation"],
+      "card": {
+        "type": "stat",
+        "title": "Betelgeuse",
+        "value": "1",
+        "label": "red supergiant"
+      }
+    },
+    {
+      "id": "v023",
+      "kind": "step",
+      "focus": "center",
+      "card": {
+        "type": "stat",
+        "title": "Estimate",
+        "value": "1",
+        "label": "scientific projection"
+      }
+    },
+    {
+      "id": "v024",
+      "kind": "card",
+      "card": {
+        "type": "stat",
+        "title": "Explosion Timeline",
+        "value": "1.5M",
+        "label": "years",
+        "note": "until Betelgeuse explodes"
+      }
+    },
+    {
+      "id": "v025",
+      "kind": "photo",
+      "photo_subject": "particle beam stream in space",
+      "photo_queries": ["particle stream", "cosmic jet"],
+      "card": {
+        "type": "stat",
+        "title": "Particle Stream",
+        "value": "1",
+        "label": "outbound flow"
+      }
+    },
+    {
+      "id": "v026",
+      "kind": "card",
+      "card": {
+        "type": "stat",
+        "title": "Earth Arrival",
+        "value": "100,000",
+        "label": "years",
+        "note": "after initial light"
+      }
+    },
+    {
+      "id": "v027",
+      "kind": "photo",
+      "photo_subject": "ancient supernova remnant in the sky",
+      "photo_queries": ["supernova remnant", "ancient nebula"],
+      "card": {
+        "type": "bullets",
+        "title": "Past Supernovas",
+        "items": [
+          "Exploded in Earth's past",
+          "Relatively nearby",
+          "Studied by astronomers"
+        ]
+      }
+    },
+    {
+      "id": "v028",
+      "kind": "photo",
+      "photo_subject": "Vela supernova remnant nebula",
+      "photo_queries": ["Vela supernova", "Vela remnant"],
+      "card": {
+        "type": "timeline",
+        "title": "Vela Supernova",
+        "events": [
+          {
+            "when": "12,000 yrs ago",
+            "label": "Exploded"
+          }
+        ]
+      }
+    },
+    {
+      "id": "v029",
+      "kind": "step",
+      "focus": "center",
+      "card": {
+        "type": "stat",
+        "title": "Vela Distance",
+        "value": "800",
+        "label": "light-years",
+        "note": "from our Sun"
+      }
+    },
+    {
+      "id": "v030",
+      "kind": "photo",
+      "photo_subject": "Geminga pulsar region in space",
+      "photo_queries": ["Geminga pulsar", "gamma ray source"],
+      "card": {
+        "type": "timeline",
+        "title": "Geminga Explosion",
+        "events": [
+          {
+            "when": "300,000 yrs ago",
+            "label": "Exploded"
+          }
+        ]
+      }
+    },
+    {
+      "id": "v031",
+      "kind": "step",
+      "focus": "center",
+      "card": {
+        "type": "stat",
+        "title": "Geminga Distance",
+        "value": "550",
+        "label": "light-years",
+        "note": "distance from Earth"
+      }
+    },
+    {
+      "id": "v032",
+      "kind": "photo",
+      "photo_subject": "IK Pegasi binary star system",
+      "photo_queries": ["IK Pegasi", "binary star"],
+      "card": {
+        "type": "stat",
+        "title": "IK Pegasi",
+        "value": "1",
+        "label": "white dwarf candidate"
+      }
+    },
+    {
+      "id": "v033",
+      "kind": "step",
+      "focus": "center",
+      "card": {
+        "type": "stat",
+        "title": "Safe Distance",
+        "value": "1",
+        "label": "moving away",
+        "note": "no collision risk"
+      }
+    }
+  ]
+}

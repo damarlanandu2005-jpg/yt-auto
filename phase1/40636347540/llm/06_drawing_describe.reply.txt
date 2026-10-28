@@ -1,0 +1,20 @@
+{
+  "images": [
+    {
+      "n": 1,
+      "seen": "This abstract image shows two spherical objects, one large and dark grey and one smaller with a glowing blue surface, separated by a white splash-like design against a plain grey background, with scattered red dots."
+    },
+    {
+      "n": 2,
+      "seen": "This abstract image depicts a star-like explosion of white and red pointed lines radiating from a central point against a black background, with scattered white and red specks."
+    },
+    {
+      "n": 3,
+      "seen": "This abstract image features circular, concentric swirl patterns in shades of grey, white, and red surrounding a dark void in the center against a black background."
+    },
+    {
+      "n": 4,
+      "seen": "This image shows stylized, fluffy white and grey clouds set against a dark black sky, rendered in a sketched, illustrative style."
+    }
+  ]
+}

@@ -1,0 +1,33 @@
+[diag] machine: {'arch': 'x86_64', 'cpus': 4, 'python': '3.13.16', 'runner': 'GitHub Actions 1000000274', 'cpu_model': 'AMD EPYC 7763 64-Core Processor', 'ffmpeg': 'ffmpeg version n8.1.3-24-g92611900bb-20261026 Copyright (c) 2000-2026 the FFmpeg developers'}
+[resume] using saved plan.json
+[resume] using saved sources.json
+[resume] using saved script_draft.json
+[script] 'How Close Can a Supernova Get Before It Destroys Earth?': 818 words; fact-check: 36/74 passed first time, 26 fixed, 12 dropped
+[llm] delivery: gemma-4-31b-it unavailable (HTTP 503 (busy)); trying next model
+[bench] script: 40.96 s
+[0;93m2026-10-28 05:12:55.881475263 [W:onnxruntime:Default, device_discovery.cc:95 GetPciBusId] Skipping pci_bus_id for PCI path at "/sys/devices/LNXSYSTM:00/LNXSYBUS:00/ACPI0004:00/MSFT1000:00/5620e0c7-8062-4dce-aeb7-520c7ef76171" because filename "5620e0c7-8062-4dce-aeb7-520c7ef76171" did not match expected pattern of [0-9a-f]+:[0-9a-f]+:[0-9a-f]+[.][0-9a-f]+[m
+[bench] narration: 55.0 s
+[visual_plan] saved plan has 82 slots, narration now gives 33 (or different times): making a new plan
+[bench] visual_plan: 6.99 s
+[bench] photos: 87.48 s
+[drawings] asked 4, drawn 4, used after looking 3
+[bench] drawings: 302.26 s
+[bench] keyframes: 11.57 s
+[bench] segments: 43.27 s
+[bench] subtitles: 12.33 s
+[keywords] 3 key words on screen
+[sound] music: {'title': 'Steve Combs - 10 - Ambient 507050', 'author': 'Steve Combs', 'licence': 'CC BY 4.0', 'source_page': 'https://commons.wikimedia.org/wiki/File:Steve_Combs_-_10_-_Ambient_507050.ogg'}; 32 transition sounds
+[bench] assemble: 45.47 s
+[bench] preview: 7.39 s
+[gate] FAIL: {'video_minutes': 'FLAG', 'pronunciation': 'FLAG', 'thumbnail': 'FAIL'}
+[bench] gate: 8.76 s
+{
+  "title": "How Close Can a Supernova Get Before It Destroys Earth?",
+  "words": 303,
+  "video_seconds": 146.7,
+  "visuals": 33,
+  "photos": 10,
+  "drawings": 3,
+  "cards": 20,
+  "seconds_per_visual": 4.45
+}
