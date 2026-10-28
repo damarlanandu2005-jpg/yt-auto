@@ -1,0 +1,88 @@
+{
+  "keys": [
+    {
+      "id": "s01.03",
+      "phrase": "93 billion light-years"
+    },
+    {
+      "id": "s01.05",
+      "phrase": "cosmic expansion"
+    },
+    {
+      "id": "s01.06",
+      "phrase": "speed of light"
+    },
+    {
+      "id": "s01.10",
+      "phrase": "93 billion light-years"
+    },
+    {
+      "id": "s02.04",
+      "phrase": "speed of light"
+    },
+    {
+      "id": "s02.06",
+      "phrase": "recessional speeds"
+    },
+    {
+      "id": "s02.10",
+      "phrase": "special relativity"
+    },
+    {
+      "id": "s03.02",
+      "phrase": "expansion of the universe"
+    },
+    {
+      "id": "s03.04",
+      "phrase": "scale factor"
+    },
+    {
+      "id": "s03.06",
+      "phrase": "comoving coordinates"
+    },
+    {
+      "id": "s04.01",
+      "phrase": "rubber band"
+    },
+    {
+      "id": "s04.07",
+      "phrase": "42 million light-years"
+    },
+    {
+      "id": "s04.08",
+      "phrase": "13.8 billion years"
+    },
+    {
+      "id": "s05.02",
+      "phrase": "13.8 billion light-years"
+    },
+    {
+      "id": "s05.04",
+      "phrase": "proper distance"
+    },
+    {
+      "id": "s05.05",
+      "phrase": "46.5 billion light-years"
+    },
+    {
+      "id": "s06.04",
+      "phrase": "46.5 billion light-years"
+    },
+    {
+      "id": "s06.06",
+      "phrase": "93 billion light-years"
+    },
+    {
+      "id": "s07.03",
+      "phrase": "particle horizon"
+    },
+    {
+      "id": "s07.06",
+      "phrase": "dark energy"
+    },
+    {
+      "id": "s07.08",
+      "phrase": "93 billion light-years wide"
+    }
+  ]
+}

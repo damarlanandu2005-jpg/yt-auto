@@ -1,0 +1,442 @@
+[model] gemini-3.5-flash-lite
+[system]
+
+
+[user]
+Pick the best photo for each slot from its numbered candidates (title | description).
+Choose a candidate if it shows the slot's subject or something closely related that fits the narration
+(it does not need to match every detail: a photo of a real handheld GPS receiver fits "a hiker's GPS").
+Answer "" only when no candidate is related, or the only related ones would mislead the viewer.
+Prefer real photographs over diagrams with small text, logos, or maps with dense labels. Where the slot
+needs video, prefer a VIDEO candidate that shows the subject (footage or animation, not a talking person or a
+press conference). Avoid close-up
+faces of private people. Do not use the same photo twice.
+Answer choice = the candidate number as text, or "".
+
+[v002] needs: deep field galaxy cluster | narration: How can light travel across 93 billion light-years
+  nasa VIDEO:0: The Webb Space Telescope’s New Look at the Cosmos on This Week @NASA – July 15, 2022 | The Webb Space Telescope’s new look at the cosmos, technology used to fine tune Webb improves the vision of millions on Earth, and a new climate study heads to 
+  nasa VIDEO:1: HST Advance Camera For Surveys Power Flow | Hubble's Advanced Camera for Surveys (ACS) was responsible for many of Hubble's most impressive images of deep space. In January 2007, ACS experienced an electr
+  nasa VIDEO:2: HST Advance Camera For Surveys Repair Scenario | Hubble's Advanced Camera for Surveys (ACS) was responsible for many of Hubble's most impressive images of deep space. In January 2007, ACS experienced an electr
+  nasa:3: Hubble Deep Field Image Unveils Myriad Galaxies Back to the Beginning of Time | Several hundred never before seen galaxies are visible in this deepest-ever view of the universe, called the Hubble Deep Field, made with NASA Hubble Space Tele
+  wiki:4: Hubble ultra deep field | The Hubble Ultra Deep Field, is an image of a small region of space in the constellation Fornax, composited from Hubble Space Telescope data accumulated over a 
+  wiki:5: Hubble ultra deep field high rez edit1 | The Hubble Ultra Deep Field, is an image of a small region of space in the constellation Fornax, composited from Hubble Space Telescope data accumulated over a 
+  wiki:6: Hubble Extreme Deep Field (full resolution) | Hubble Extreme Deep Field image (full resolution). Exposure dates: July 2002 to March 2012[3], with main contributions from 2002–2003 (visible) and 2009 (infrar
+  wiki:7: Webb's First Deep Field | SMACS 0723-73 (1RXS J072319.7-732735, SMACS J0723.3-7327) NASA’s James Webb Space Telescope has produced the deepest and sharpest infrared image of the distant 
+  nasa:8: Beyond the Deep Field: Hubble’s Legacy and the Future of Cosmi | NASA Hubble Senior Project Scientist Jennifer Wiseman speaks about the history of the Hubble Space Telescope during an event titled “Beyond the Deep Field: Hubb
+  nasa:9: Beyond the Deep Field: Hubble’s Legacy and the Future of Cosmi | Matt Mountain, president of AURA, speaks about the history of the Hubble Space Telescope’s partnerships during an event titled “Beyond the Deep Field: Hubble’s 
+  nasa:10: Beyond the Deep Field: Hubble’s Legacy and the Future of Cosmi | NASA Deputy Project Scientist For Communications Amber Straughn speaks about the history of the Hubble Space Telescope during an event titled “Beyond the Deep F
+
+[v003] needs: nebula in space | narration: if time itself began only 13.8 billion years ago?
+  nasa:0: Weighing in on the Dumbbell Nebula | The Dumbbell nebula, also known as Messier 27, pumps out infrared light in this image from NASA Spitzer Space Telescope. Planetary nebulae are now known to be t
+  nasa:1: Ring Beholds a Delicate Flower | NASA Spitzer Space Telescope finds a delicate flower in the Ring Nebula, as shown in this image. The outer shell of this planetary nebula looks surprisingly sim
+  nasa:2: Spitzer Celebrates Fourth Anniversary with Celestial Fireworks | A newly expanded image of the Helix nebula lends a festive touch to the fourth anniversary of the launch of NASA Spitzer Space Telescope
+  nasa:3: Ant Nebula | This image from NASA Hubble Space Telescope image of a celestial object called the Ant Nebula may shed new light on the future demise of our Sun.
+  nasa:4: Highway to the Danger Zone  Artist Concept | NASA Spitzer Space Telescope surveyed the danger zones around five O-stars in the Rosette nebula. This artist animation illustrates how this process works.
+  nasa:5: Infrared Rose | This image from NASA Spitzer Space Telescope is of the Rosette nebula, a turbulent star-forming region located 5,000 light-years away in the constellation Monoc
+  wiki:6: Crab Nebula | This is a mosaic image, one of the largest ever taken by NASA's Hubble Space Telescope, of the Crab Nebula, a six-light-year-wide expanding remnant of a star's 
+  wiki:7: Orion Nebula - Hubble 2006 mosaic 18000 | In one of the most detailed astronomical images ever produced, NASA/ESA's Hubble Space Telescope captured an unprecedented look at the Orion Nebula. ... This ex
+  wiki:8: Comets Kick up Dust in Helix Nebula (PIA09178) | This infrared image from NASA's Spitzer Space Telescope shows the Helix Nebula, a cosmic starlet often photographed by amateur astronomers for its vivid colors 
+  nasa VIDEO:9: Stars of Cepheus as Seen by NASA's Spitzer Space Telescope | Soar through this cosmic landscape filled with bright nebulas, as well as runaway, massive and young stars. The image comes from NASA's Spitzer Space Telescope,
+  nasa VIDEO:10: Hubble's 29th Anniversary | On April 24, 2019, the Hubble Space Telescope celebrated its 29th year in orbit by premiering a never-before-seen view of the Southern Crab Nebula. Even after a
+  nasa VIDEO:11: KSC-04-S-00193 | The Hubble Space Telescope has trained its eyes on the Trifid Nebula, a dazzling star nursery 9,000 light-years from Earth. With its three huge intersecting dar
+
+[v004] needs: spiral galaxy | narration: Understanding this giant puzzle reveals your true place in a shifting cosmic landscape.
+  nasa:0: Gargantuan Super Spiral Galaxies Loom Large in the Cosmos | In archived NASA data, researchers have discovered "super spiral" galaxies that dwarf our own spiral galaxy, the Milky Way, and compete in size and brightness w
+  wiki:1: Hubble2005-01-barred-spiral-galaxy-NGC1300 | Barred spiral galaxy NGC 1300 photographed by Hubble telescope. In the core of the larger spiral structure of NGC 1300, the nucleus shows its own extraordinary 
+  wiki:2: NGC 4414 (NASA-med) | In 1995, the majestic spiral galaxy NGC 4414 was imaged by the Hubble Space Telescope as part of the HST Key Project on the Extragalactic Distance Scale. An int
+  wiki:3: NGC 2683 Spiral galaxy | The NASA Hubble Space Telescope has spotted the "UFO Galaxy." NGC 2683 is a spiral galaxy seen almost edge-on, giving it the shape of a classic science fiction 
+  wiki:4: Messier83 - Heic1403a | This new Hubble image shows the scatterings of bright stars and thick dust that make up spiral galaxy Messier 83, otherwise known as the Southern Pinwheel Galax
+  wiki:5: Andromeda Galaxy M31 - Heic1502a Full resolution | This image, captured with the NASA/ESA Hubble Space Telescope, is the largest and sharpest image ever taken of the Andromeda galaxy — otherwise known as M31. Yo
+  nasa:6: SST and the Milky Way, an Artist Concept | NASA Spitzer Space Telescope whizzes in front of a brilliant, infrared view of the Milky Way galaxy plane in this artistic depiction.
+  nasa:7: Taken Under the Wing of the Small Magellanic Cloud | The tip of the wing of the Small Magellanic Cloud galaxy is dazzling in this new view from NASA Great Observatories. The SMC, is a small galaxy about 200,000 li
+  nasa:8: Pointing X-ray Eyes at our Resident Supermassive Black Hole | NASA NuSTAR has captured these first, focused views of the supermassive black hole at the heart of our Milky Way galaxy in high-energy X-ray light.
+  nasa VIDEO:9: What's Up: February 2024 Skywatching Tips from NASA | What are some skywatching highlights in February 2024? Venus begins its exit from the morning sky, as Mars makes its comeback. Plus, now through May is a good t
+  nasa VIDEO:10: Onward and Upward! New Crew Launches to the Space Station on This Week @NASA – October 7,  | Launching a new crew to the space station, the plan moving forward for Artemis I, and Webb’s new look at a pair of galaxies … a few of the stories to tell you a
+  nasa VIDEO:11: New Simulation Sheds Light on Spiraling Supermassive Black Holes | A new model is bringing scientists a step closer to understanding the kinds of light signals produced when two supermassive black holes, which are millions to b
+
+[v005] needs: galaxy cluster | narration: In this video, you will discover how cosmic expansion turns a journey
+  nasa:0: Virgo Galaxy Cluster | This ultraviolet image from NASA Galaxy Evolution Explorer is of a small area of the Virgo Cluster of galaxies. http://photojournal.jpl.nasa.gov/catalog/PIA0790
+  nasa:1: Monster in the Middle: Brightest Cluster Galaxy | This image shows two of the galaxy clusters observed by NASA WISE and Spitzer Space Telescope missions. Galaxy clusters are among the most massive structures in
+  nasa:2: Gigantic Wave Discovered in Perseus Galaxy Cluster | Combining data from NASA's Chandra X-ray Observatory with radio observations and computer simulations, an international team of scientists has discovered a vast
+  nasa:3: Ancient Galaxy Cluster Still Producing Stars | Astronomers have found that stars are forming more rapidly in the center of a distant galaxy cluster than at its edges, which is completely reversed from galaxy
+  wiki:4: Hubble2005-01-barred-spiral-galaxy-NGC1300 | Barred spiral galaxy NGC 1300 photographed by Hubble telescope. In the core of the larger spiral structure of NGC 1300, the nucleus shows its own extraordinary 
+  wiki:5: M104 ngc4594 sombrero galaxy hi-res | The famous Sombrero galaxy (M104) is a bright nearby elliptical galaxy. The prominent dust lane and halo of stars and globular clusters give this galaxy its nam
+  wiki:6: Antennae galaxies xl | Original caption from NASA: “This NASA Hubble Space Telescope image of the Antennae galaxies (NGC 4038 &amp; 4039) is the sharpest yet of this merging pair of g
+  wiki:7: Firestorm of Star Birth in Galaxy Centaurus A | Resembling looming rain clouds on a stormy day, dark lanes of dust crisscross the giant elliptical galaxy Centaurus A. Hubble's panchromatic vision, stretching 
+  wiki:8: NGC 2683 Spiral galaxy | The NASA Hubble Space Telescope has spotted the "UFO Galaxy." NGC 2683 is a spiral galaxy seen almost edge-on, giving it the shape of a classic science fiction 
+  nasa VIDEO:9: KSC-04-S-00174 | New information from NASA's Chandra X-ray Observatory is teaching us about the destiny of the universe. A study of 26 galaxy clusters revealed that about 6 bill
+  nasa VIDEO:10: JWST Spacecraft Deploy Animation | The Webb Telescope will be the premier observatory of the next decade, serving thousands of astronomers worldwide. It will study every phase in the history of o
+  nasa VIDEO:11: Roman Space Telescope Transport from PHSF to LC 39A | NASA’s Nancy Grace Roman Space Telescope, encapsulated in its payload fairing, travels from the Payload Hazardous Servicing Facility to the SpaceX hangar at Lau
+
+[v008] needs: distant star field | narration: If light has only been traveling for 13.8 billion years,
+  nasa:0: Star Field in the Constellation Cepheus | A star field in the constellation Cepheus is a composite of two 600-second exposures by the Framing Camera acquired during tests on December 3, 2007.
+  nasa:1: NASA Sees Target Field, Minneapolis, Minnesota -- Home of 2014 MLB All-Star Game | Landsat satellites collect data along a wide ground track that spans 185 kilometers (115 miles) but with a spatial resolution that allows them to see the human 
+  nasa:2: The atmospheric glow blankets Earth beneath a sparkling field of stars | iss072e030147 (Oct. 7, 2024) --- The atmospheric glow, caused by atoms and moelcules excited by sunlight, blankets Earth's nighttime horizon with a sparkling fi
+  nasa:3: Beyond the Veil | This large mosaic image from NASA Wide-field Infrared Survey Explorer, features the wreckage of an exploded star, as well as other stars nearing the end of thei
+  nasa:4: Stellar Storm of Infrared Light | This infrared image taken by NASA Wide-field Infrared Survey Explorer shows a star-forming cloud teeming with gas, dust and massive newborn stars.
+  nasa:5: Fantastic Four Galaxies with Planet Artist Concept | This artist concept shows what the night sky might look like from a hypothetical planet around a star tossed out of an ongoing four-way collision between big ga
+  nasa:6: Supergiant Star Near Giraffe Hind Foot | NASA Wide-field Infrared Survey Explorer captured this colorful image of the nebula BFS 29 surrounding the star CE-Camelopardalis, found hovering in the band of
+  nasa:7: Alien Asteroid Belt Compared to our Own  Artist Concept | This artist concept shows what the night sky might look like from a hypothetical alien planet in a star system with an asteroid belt 25 times as massive as the 
+  nasa:8: Star Formation in the Heart of the Swan | Best known as a swan winging its way across the night, the constellation Cygnus is easily seen in the northern hemisphere summertime sky. NASA WISE telescope ca
+  nasa VIDEO:9: Simulations Create New Insights Into Pulsars | Scientists studying what amounts to a computer-simulated “pulsar in a box” are gaining a more detailed understanding of the complex, high-energy environment aro
+  nasa VIDEO:10: WFIRST's Wide Field Instrument | WFIRST is a next-generation space telescope that will survey the infrared universe from beyond the orbit of the Moon. The spacecraft's giant camera, the Wide Fi
+  nasa VIDEO:11: KSC-04-S-00193 | The Hubble Space Telescope has trained its eyes on the Trifid Nebula, a dazzling star nursery 9,000 light-years from Earth. With its three huge intersecting dar
+
+[v012] needs: astronomical telescope observatory | narration: Instead, astronomical observations reveal a
+  nasa:0: Spitzer Space Telescope Ready for Launch | The Spitzer Space Telescope (formerly the Space Infrared Telescope Facility or SIRTF) is readied for launch at Cape Canaveral Air Force Station, in 2003. https:
+  nasa:1: Hubble Space Telescope Resolves Volcanoes on Io | Hubble Space Telescope Resolves Volcanoes on Io
+  nasa:2: Spitzer Space Telescope (Illustration) | In this artist's rendering of NASA's Spitzer Space Telescope in space, the background is shown in infrared light. https://photojournal.jpl.nasa.gov/catalog/PIA2
+  nasa:3: By the Dozen: NASA's James Webb Space Telescope Mirrors | A view of the one dozen (out of 18) flight mirror segments that make up the primary mirror on NASA's James Webb Space Telescope have been installed at NASA's Go
+  nasa:4: Finishing Touches for Space Infrared Telescope Facility SIRTF | Technicians put final touches on NASA Space Infrared Telescope Facility at Lockheed Martin Aeronautics in Sunnyvale, Calif., which launched on August 25, 2003. 
+  wiki:5: Hubble 2009 close-up | An STS-125 crewmember aboard the Space Shuttle Atlantis captured this still image of the Hubble Space Telescope as the two spacecraft continue their relative se
+  wiki:6: Sombrero Galaxy in infrared light (Hubble Space Telescope and Spitzer Space Telescope) | NASA/ESA Hubble Space Telescope and NASA's Spitzer Space Telescope joined forces to create this striking composite image of one of the most popular sights in th
+  wiki:7: Grand star-forming region R136 in NGC 2070 (captured by the Hubble Space Telescope) | A Hubble Space Telescope image of the R136 super star cluster, near the center of the 30 Doradus Nebula, also known as the Tarantula Nebula or NGC 2070. (Conver
+  wiki:8: James Webb Space Telescope Mirror37 | Caption: During cryogenic testing, the mirrors will be subjected to temperatures dipping to 24 Kelvins, permitting engineers to measure in extreme detail how th
+  nasa VIDEO:9: James Webb Space Telescope: An Overview | The James Webb Space Telescope will be the largest telescope ever sent into space. It is the impressive result of efforts from NASA, the European Space Agency a
+  nasa VIDEO:10: Vibration Testing of NASA's James Webb Space Telescope | Inside NASA's Goddard Space Flight Center in Greenbelt, Maryland the James Webb Space Telescope team completed the environmental portion of vibration testing on
+  nasa VIDEO:11: Media Briefings: James Webb Space Telescope's First Full-Color Images and Data | Media Briefings: James Webb Space Telescope's First Full-Color Images and Data.
+
+[v014] needs: complex galaxy cluster | narration: This contradiction seems to break the most fundamental rules of motion.
+  nasa:0: Virgo Galaxy Cluster | This ultraviolet image from NASA Galaxy Evolution Explorer is of a small area of the Virgo Cluster of galaxies. http://photojournal.jpl.nasa.gov/catalog/PIA0790
+  nasa:1: Monster in the Middle: Brightest Cluster Galaxy | This image shows two of the galaxy clusters observed by NASA WISE and Spitzer Space Telescope missions. Galaxy clusters are among the most massive structures in
+  nasa:2: Gigantic Wave Discovered in Perseus Galaxy Cluster | Combining data from NASA's Chandra X-ray Observatory with radio observations and computer simulations, an international team of scientists has discovered a vast
+  nasa:3: Ancient Galaxy Cluster Still Producing Stars | Astronomers have found that stars are forming more rapidly in the center of a distant galaxy cluster than at its edges, which is completely reversed from galaxy
+  wiki:4: Hubble2005-01-barred-spiral-galaxy-NGC1300 | Barred spiral galaxy NGC 1300 photographed by Hubble telescope. In the core of the larger spiral structure of NGC 1300, the nucleus shows its own extraordinary 
+  wiki:5: M104 ngc4594 sombrero galaxy hi-res | The famous Sombrero galaxy (M104) is a bright nearby elliptical galaxy. The prominent dust lane and halo of stars and globular clusters give this galaxy its nam
+  wiki:6: Antennae galaxies xl | Original caption from NASA: “This NASA Hubble Space Telescope image of the Antennae galaxies (NGC 4038 &amp; 4039) is the sharpest yet of this merging pair of g
+  wiki:7: Firestorm of Star Birth in Galaxy Centaurus A | Resembling looming rain clouds on a stormy day, dark lanes of dust crisscross the giant elliptical galaxy Centaurus A. Hubble's panchromatic vision, stretching 
+  wiki:8: NGC 2683 Spiral galaxy | The NASA Hubble Space Telescope has spotted the "UFO Galaxy." NGC 2683 is a spiral galaxy seen almost edge-on, giving it the shape of a classic science fiction 
+  nasa VIDEO:9: KSC-04-S-00174 | New information from NASA's Chandra X-ray Observatory is teaching us about the destiny of the universe. A study of 26 galaxy clusters revealed that about 6 bill
+  nasa VIDEO:10: JWST Spacecraft Deploy Animation | The Webb Telescope will be the premier observatory of the next decade, serving thousands of astronomers worldwide. It will study every phase in the history of o
+  nasa VIDEO:11: Roman Space Telescope Transport from PHSF to LC 39A | NASA’s Nancy Grace Roman Space Telescope, encapsulated in its payload fairing, travels from the Payload Hazardous Servicing Facility to the SpaceX hangar at Lau
+
+[v018] needs: spiral galaxy arms | narration: If galaxies were simply speeding through static space, no galaxy could exceed the speed of light.
+  nasa:0: Gargantuan Super Spiral Galaxies Loom Large in the Cosmos | In archived NASA data, researchers have discovered "super spiral" galaxies that dwarf our own spiral galaxy, the Milky Way, and compete in size and brightness w
+  wiki:1: Hubble2005-01-barred-spiral-galaxy-NGC1300 | Barred spiral galaxy NGC 1300 photographed by Hubble telescope. In the core of the larger spiral structure of NGC 1300, the nucleus shows its own extraordinary 
+  wiki:2: NGC 4414 (NASA-med) | In 1995, the majestic spiral galaxy NGC 4414 was imaged by the Hubble Space Telescope as part of the HST Key Project on the Extragalactic Distance Scale. An int
+  wiki:3: NGC 2683 Spiral galaxy | The NASA Hubble Space Telescope has spotted the "UFO Galaxy." NGC 2683 is a spiral galaxy seen almost edge-on, giving it the shape of a classic science fiction 
+  wiki:4: Messier83 - Heic1403a | This new Hubble image shows the scatterings of bright stars and thick dust that make up spiral galaxy Messier 83, otherwise known as the Southern Pinwheel Galax
+  wiki:5: Andromeda Galaxy M31 - Heic1502a Full resolution | This image, captured with the NASA/ESA Hubble Space Telescope, is the largest and sharpest image ever taken of the Andromeda galaxy — otherwise known as M31. Yo
+  nasa:6: Backwards Spiral Galaxy | Astronomers using NASA Hubble Space Telescope have found a spiral galaxy that may rotate in the opposite direction from what was expected.
+  nasa:7: History of Hubble Space Telescope (HST) | Residing roughly 17 million light years from Earth, in the northern constellation Coma Berenices, is a merged star system known as Messier 64 (M64). First catal
+  nasa:8: KSC-03pd0476 | KENNEDY SPACE CENTER, FLA. -- In the Multi-Payload Processing Facility, the GALEX satellite has been moved to a rotation stand. The Galaxy Evolution Explorer (G
+  nasa VIDEO:9: What's Up: February 2024 Skywatching Tips from NASA | What are some skywatching highlights in February 2024? Venus begins its exit from the morning sky, as Mars makes its comeback. Plus, now through May is a good t
+  nasa VIDEO:10: Onward and Upward! New Crew Launches to the Space Station on This Week @NASA – October 7,  | Launching a new crew to the space station, the plan moving forward for Artemis I, and Webb’s new look at a pair of galaxies … a few of the stories to tell you a
+  nasa VIDEO:11: New Simulation Sheds Light on Spiraling Supermassive Black Holes | A new model is bringing scientists a step closer to understanding the kinds of light signals produced when two supermassive black holes, which are millions to b
+
+[v021] needs: redshift galaxy spectrum | narration: However, astronomical measurements show distant galaxies moving away
+  nasa:0: Life Starting Materials Found in Dusty Disk | This graph, or spectrum, from NASA Spitzer Space Telescope tells astronomers that some of the most basic ingredients of DNA and protein are concentrated in a du
+  nasa:1: Cracking the Code of Faraway Worlds | This infrared data from NASA's Spitzer Space Telescope -- called a spectrum -- tells astronomers that a distant gas planet, a so-called "hot Jupiter" called HD 
+  nasa:2: Cracking the Code of Faraway Worlds | This infrared data from NASA's Spitzer Space Telescope -- called a spectrum -- tells astronomers that a distant gas planet, a so-called "hot Jupiter" called HD 
+  nasa:3: Cracking the Code of Faraway Worlds | This infrared data from NASA's Spitzer Space Telescope -- called a spectrum -- tells astronomers that a distant gas planet, a so-called "hot Jupiter" called HD 
+  nasa:4: Saturn Apollo Program | The Apollo Telescope Mount (ATM), designed and developed by the Marshall Space Flight Center, served as the primary scientific instrument unit aboard the Skylab
+  nasa:5: Saturn Apollo Program | The Apollo Telescope Mount (ATM), designed and developed by the Marshall Space Flight Center, served as the primary scientific instrument unit aboard the Skylab
+  wiki:6: Spectrum of the Companion of GQ Lupi | NACO spectrum of the companion of GQ Lupi (thick line, bottom) in the near-infrared (around the Ks-band at 2.2 microns). For comparison, the spectrum of a young
+  wiki:7: Methane Absorption Spectrum (2008-11-2273) | Methane Absorption Spectrum
+  nasa VIDEO:8: James Webb Space Telescope’s Multifaceted MIRI | James Webb Space Telescope’s mid-infrared instrument (MIRI) has both a camera and a spectrograph that sees light in the mid-infrared region of the electromagnet
+  nasa VIDEO:9: 20 Years of Hubble Science: Exoplanets | This video series focuses on two areas of science that the Hubble Space Telescope has helped advance: thee formation and evolution of galaxies and detection of 
+  nasa VIDEO:10: 20 Years of Hubble Science: Galaxies | Three astronomers explain how Hubble acts like a time machine by detecting which galaxies are moving toward and away from us.
+
+[v023] needs: deep space galaxies | narration: In fact, very distant regions of space expand
+  nasa:0: White Dwarf Stars | Peering deep inside a cluster of several hundred thousand stars, NASA Hubble Space Telescope has uncovered the oldest burned-out stars in our Milky Way Galaxy, 
+  nasa:1: Missing Black Holes Found! | NASA Spitzer and Chandra space telescopes have uncovered a long-lost population of active supermassive black holes, or quasars located deep in the bellies of di
+  nasa:2: Hubble Deep Field Image Unveils Myriad Galaxies Back to the Beginning of Time | Several hundred never before seen galaxies are visible in this deepest-ever view of the universe, called the Hubble Deep Field, made with NASA Hubble Space Tele
+  wiki:3: Hubble ultra deep field | The Hubble Ultra Deep Field, is an image of a small region of space in the constellation Fornax, composited from Hubble Space Telescope data accumulated over a 
+  wiki:4: UGC 1810 and UGC 1813 in Arp 273 (captured by the Hubble Space Telescope) | This Hubble Space Telescope image shows a group of interacting galaxies called Arp 273. The larger of the spiral galaxies, known as UGC 1810, has a disk that is
+  wiki:5: Main image deep field smacs0723 | NASA’s James Webb Space Telescope has produced the deepest and sharpest infrared image of the distant universe to date. Known as Webb’s First Deep Field, this i
+  wiki:6: Webb's First Deep Field | SMACS 0723-73 (1RXS J072319.7-732735, SMACS J0723.3-7327) NASA’s James Webb Space Telescope has produced the deepest and sharpest infrared image of the distant 
+  wiki:7: Webb’s First Deep Field (MIRI and NIRCam Images Side by Side) | Galaxy cluster SMACS 0723 is a technicolor landscape when viewed in mid-infrared light by NASA’s James Webb Space Telescope. Compared to Webb’s near-infrared im
+  nasa:8: Galactic City at the Edge of the Universe | Astronomers have discovered a massive cluster of young galaxies forming in the distant universe. The growing galactic metropolis is known as COSMOS-AzTEC3. This
+  nasa VIDEO:9: Tracing the History of Starlight with NASA's Fermi Mission | Scientists using data from NASA’s Fermi Gamma-ray Space Telescope have measured all the starlight produced over 90 percent of the universe’s history. The analys
+  nasa VIDEO:10: NuSTAR-Hunting Hidden Black Holes | Most supermassive black holes in the universe are hiding, but NASA’s NuSTAR mission can find them by using high-energy X-rays. In this video, NuSTAR lead scient
+  nasa VIDEO:11: The Webb Space Telescope’s New Look at the Cosmos on This Week @NASA – July 15, 2022 | The Webb Space Telescope’s new look at the cosmos, technology used to fine tune Webb improves the vision of millions on Earth, and a new climate study heads to 
+
+[v025] needs: colliding galaxies | narration: How can distant galaxies recede faster than light without violating physical laws?
+  nasa:0: Life at the Intersection of Colliding Galaxies | This false-color image from NASA's Spitzer Space Telescope reveals hidden populations of newborn stars at the heart of the colliding "Antennae" galaxies. These 
+  nasa:1: Dwarf Galaxies Swimming in Tidal Tails | This false-color infrared image from NASA Spitzer Space Telescope shows little dwarf galaxies forming in the tails of two larger galaxies that are colliding tog
+  nasa:2: Antennae | Atlas Image mosaic, covering 7 x 7 on the sky of the interacting galaxies NGC 4038 and NGC 4039, better known as the Antennae, or Ring Tail galaxies. The two ga
+  nasa:3: Tale of Two Black Holes | The real monster black hole is revealed in this image from NASA Nuclear Spectroscopic Telescope Array of colliding galaxies Arp 299.
+  wiki:4: Antennae galaxies xl | Original caption from NASA: “This NASA Hubble Space Telescope image of the Antennae galaxies (NGC 4038 &amp; 4039) is the sharpest yet of this merging pair of g
+  wiki:5: NGC2207+IC2163 | Near colliding NGC 2207 and IC 2163 as seen by the NASA/ESA Hubble Space Telescope.
+  wiki:6: Galaxies Gone Wild! | Original NASA caption reads: "Astronomy textbooks typically present galaxies as staid, solitary, and majestic island worlds of glittering stars. But galaxies ha
+  wiki:7: Hubble Interacting Galaxy IC 2810 (2008-04-24) | IC 2810 is a disk galaxy viewed nearly edge-on. It is slightly disturbed by gravitational interaction with a smaller, dusty companion (located to the bottom of 
+  nasa:8: Interacting Group of Galaxies Known as Stephan Quintet | This ultraviolet image from NASA Galaxy Evolution Explorer is of the interacting group of galaxies known as Stephan Quintet NGC 7317, NGC 7318A, NGC 7318B, NGC 
+  nasa VIDEO:9: NASA's IBEX Spacecraft Reveals New Observations of Interstellar Matter | A great magnetic bubble surrounds the solar system as it cruises through the galaxy. The sun pumps the inside of the bubble full of solar particles that stream 
+
+[v032] needs: starry night sky | narration: This cosmic expansion does not mean the universe is expanding into any surrounding empty room.
+  nasa:0: The Night Sky on Mars | The Night Sky on Mars
+  nasa:1: Creative Photography - Night Sky | Sea oats are backdropped by the night sky and the Milky Way in this view from the Atlantic shoreline at NASA’s Kennedy Space Center in Florida on Oct. 31, 2019.
+  nasa:2: Creative Photography - Night Sky | Sea oats frame the night sky, bisected by the Milky Way, in this view from the Atlantic shoreline at NASA’s Kennedy Space Center in Florida on Oct. 31, 2019. Th
+  nasa:3: Creative Photography - Night Sky | Lights from Launch Complexes 39A and B, left, glow against the night sky in this view from the Atlantic shoreline at NASA’s Kennedy Space Center in Florida on O
+  nasa:4: Creative Photography - Night Sky | Sea oats are backdropped by the night sky and the Milky Way in this view from the Atlantic shoreline at NASA’s Kennedy Space Center in Florida on Oct. 31, 2019.
+  nasa:5: Creative Photography - Night Sky | Lights from Launch Complexes 39A and B, left, glow against the night sky in this view from the Atlantic shoreline at NASA’s Kennedy Space Center in Florida on O
+  wiki:6: Las Vegas (Nevada, USA), The Strip -- 2012 -- 6232 | “The Strip” (part of the Las Vegas Boulevard) in Las Vegas, Nevada, USAThe Las Vegas Strip is the most famous section of Las Vegas Boulevard in Las Vegas. It st
+  wiki:7: Dülmen, Viktorkirmes auf dem Overbergplatz -- 2014 -- 3738 (2) | Light traces of a Ferris wheel, Viktorkirmes in Dülmen, North Rhine-Westphalia, GermanyTwo traditional folk festivals are particularly important in Dülmen: the 
+  wiki:8: Virmalised 15.09.2017 - Aurora Borealis 15.09.2017 copy | Northern lights in Lääneranna Parish, West-Estonia.
+  nasa VIDEO:9: Marshall Night Stars | Time Lapse of night sky at Marshall Space Flight Center
+  nasa VIDEO:10: Mars After Dark: What NASA Rovers Really See | Would the night sky on Mars be filled with twinkling stars like we’re used to seeing on Earth? That depends on how you’re looking. If there was a space observat
+  nasa VIDEO:11: What's Up: October 2026 Skywatching Tips from NASA | Saturn takes center stage, a meteor shower lights up the sky, and the Moon visits the Seven Sisters. On October 4, Saturn reaches opposition, giving skywatchers
+
+[v033] needs: astronomer at desk | narration: Cosmologists describe physical distances using a
+  nasa:0: Map of Titan with Labeled Features | This map of Titan shows the names of many (but not all) features on the Saturnian moon that have been approved by the International Astronomical Union. This map
+  nasa:1: Kuiper Airborne Observatory (KAO) Demolition | The science instrument mount/telescope flange leading to the telescope cavity. The port work area is where science instruments were connected to the telescope. 
+  nasa:2: Roman Space Telescope - Lift to Work Stand | Technicians and engineers inside the Payload Hazardous Servicing Facility at NASA’s Kennedy Space Center in Florida use a crane to lift the agency’s Nancy Grace
+  nasa:3: Roman Space Telescope - Lift to Work Stand | Technicians and engineers inside the Payload Hazardous Servicing Facility at NASA’s Kennedy Space Center in Florida use a crane to lift the agency’s Nancy Grace
+  nasa:4: Roman Space Telescope - Lift to Work Stand | Technicians and engineers inside the Payload Hazardous Servicing Facility at NASA’s Kennedy Space Center in Florida use a crane to lift the agency’s Nancy Grace
+  wiki:5: Astronomers working at La Silla (ann12046a) | The control room of the ESO 3.6-metre telescope, where astronomer Diana Da Cunha and telescope operator Francisco Cacenes are working together.
+  nasa:6: HiRISE Views a Mars Impact Crater Surrounded by Water Ice | Boulder-size blocks of water ice can be seen around the rim of this giant meteoroid impact crater on Mars, as viewed by the High-Resolution Imaging Science Expe
+  nasa:7: Small Expanded Craters in the Northern Lowlands | This image shows many small craters over a larger degraded one in the northern lowlands. These small craters are smoother and shallower than their counterparts 
+  nasa:8: Under Jupiter's Cloud Tops | NASA's Juno spacecraft carries an instrument called the Microwave Radiometer, which examines Jupiter's atmosphere beneath the planet's cloud tops. This image sh
+  nasa VIDEO:9: Planetary Defenders (Official NASA Trailer) | How would humanity respond if we discovered an asteroid headed for Earth? NASA’s upcoming documentary, "Planetary Defenders," takes you inside the high-stakes w
+  nasa VIDEO:10: Space Station Crew Answers South Texas Astronomical Society Student Questions - Sept. 6, 2 | Aboard the International Space Station, Expedition 69 Flight Engineers Frank Rubio and Jasmin Moghbeli of NASA answered pre-recorded questions about life and wo
+  nasa VIDEO:11: Roman Space Telescope Processing at PHSF | NASA's Nancy Grace Roman Space Telescope after engineers and technicians working inside the Payload Hazardous Servicing Facility at NASA’s Kennedy Space Center 
+
+[v037] needs: isolated spiral galaxy | narration: Galaxies themselves remain nearly at rest relative
+  nasa:0: Gargantuan Super Spiral Galaxies Loom Large in the Cosmos | In archived NASA data, researchers have discovered "super spiral" galaxies that dwarf our own spiral galaxy, the Milky Way, and compete in size and brightness w
+  wiki:1: Hubble2005-01-barred-spiral-galaxy-NGC1300 | Barred spiral galaxy NGC 1300 photographed by Hubble telescope. In the core of the larger spiral structure of NGC 1300, the nucleus shows its own extraordinary 
+  wiki:2: NGC 4414 (NASA-med) | In 1995, the majestic spiral galaxy NGC 4414 was imaged by the Hubble Space Telescope as part of the HST Key Project on the Extragalactic Distance Scale. An int
+  wiki:3: NGC 2683 Spiral galaxy | The NASA Hubble Space Telescope has spotted the "UFO Galaxy." NGC 2683 is a spiral galaxy seen almost edge-on, giving it the shape of a classic science fiction 
+  wiki:4: Messier83 - Heic1403a | This new Hubble image shows the scatterings of bright stars and thick dust that make up spiral galaxy Messier 83, otherwise known as the Southern Pinwheel Galax
+  wiki:5: Andromeda Galaxy M31 - Heic1502a Full resolution | This image, captured with the NASA/ESA Hubble Space Telescope, is the largest and sharpest image ever taken of the Andromeda galaxy — otherwise known as M31. Yo
+  nasa:6: Frankenstein Galaxy | The galaxy UGC 1382 has been revealed to be far larger and stranger than previously thought. Astronomers relied on a combination of ground-based and space teles
+  nasa:7: Pointing a Finger at Star Formation | NASA Wide-field Infrared Survey Explorer, captured this image of a star-forming cloud of dust and gas located in the constellation of Monoceros. Sh2-284 is rela
+  nasa:8: A mysterious hermit | The drizzle of stars scattered across this image forms a galaxy known as UGC 4879. UGC 4879 is an irregular dwarf galaxy — as the name suggests, galaxies of thi
+  nasa VIDEO:9: What's Up: February 2024 Skywatching Tips from NASA | What are some skywatching highlights in February 2024? Venus begins its exit from the morning sky, as Mars makes its comeback. Plus, now through May is a good t
+  nasa VIDEO:10: Onward and Upward! New Crew Launches to the Space Station on This Week @NASA – October 7,  | Launching a new crew to the space station, the plan moving forward for Artemis I, and Webb’s new look at a pair of galaxies … a few of the stories to tell you a
+  nasa VIDEO:11: New Simulation Sheds Light on Spiraling Supermassive Black Holes | A new model is bringing scientists a step closer to understanding the kinds of light signals produced when two supermassive black holes, which are millions to b
+
+[v039] needs: galaxy filaments in space | narration: Yet the space between separated galaxies grows continuously as time passes.
+  nasa:0: Celestial Fireworks | Resembling sparks from a fireworks display, this image taken by a JPL camera onboard NASA Hubble Space Telescope shows delicate filaments that are sheets of deb
+  nasa:1: History of Hubble Space Telescope (HST) | NASA's Hubble Space Telescope (HST) captures a lumpy bubble of hot gas rising from a cauldron of glowing matter in Galaxy NGC 3079, located 50 million light-yea
+  wiki:2: 20090529 Great Wall 8185 | Great Wall of China near Jinshanling
+  wiki:3: 20090529 Great Wall 8219 | Great Wall of China near Jinshanling
+  wiki:4: Great Wall of China July 2006 | The Great Wall of China at Mutianyu, near Beijing, in July 2006.
+  wiki:5: Badaling China Great-Wall-of-China-01 | Badaling, China: Great Wall of China at Badaling
+  wiki:6: Galaxy fimament | Filament subtype of filaments have roughly similar major and minor axes in cross-section, along the lengthwise axis.
+  nasa:7: KSC-chandra-xo2 | The Chandra X-ray Observatory (CXO), NASA's newest space telescope, is seen above at the unveiling ceremony at TRW Space and Electronics Group in Redondo Beach,
+  nasa:8: KSC-08pd2181 | CAPE CANAVERAL, Fla. – In the airlock of the Payload Hazardous Servicing Facility at NASA's Kennedy Space Center, workers from NASA's Goddard Space Flight Cente
+
+[v043] needs: distant galaxy cluster | narration: Because space stretches, physical distances today are much
+  nasa:0: Virgo Galaxy Cluster | This ultraviolet image from NASA Galaxy Evolution Explorer is of a small area of the Virgo Cluster of galaxies. http://photojournal.jpl.nasa.gov/catalog/PIA0790
+  nasa:1: Monster in the Middle: Brightest Cluster Galaxy | This image shows two of the galaxy clusters observed by NASA WISE and Spitzer Space Telescope missions. Galaxy clusters are among the most massive structures in
+  nasa:2: Gigantic Wave Discovered in Perseus Galaxy Cluster | Combining data from NASA's Chandra X-ray Observatory with radio observations and computer simulations, an international team of scientists has discovered a vast
+  nasa:3: Ancient Galaxy Cluster Still Producing Stars | Astronomers have found that stars are forming more rapidly in the center of a distant galaxy cluster than at its edges, which is completely reversed from galaxy
+  wiki:4: Hubble2005-01-barred-spiral-galaxy-NGC1300 | Barred spiral galaxy NGC 1300 photographed by Hubble telescope. In the core of the larger spiral structure of NGC 1300, the nucleus shows its own extraordinary 
+  wiki:5: M104 ngc4594 sombrero galaxy hi-res | The famous Sombrero galaxy (M104) is a bright nearby elliptical galaxy. The prominent dust lane and halo of stars and globular clusters give this galaxy its nam
+  wiki:6: Antennae galaxies xl | Original caption from NASA: “This NASA Hubble Space Telescope image of the Antennae galaxies (NGC 4038 &amp; 4039) is the sharpest yet of this merging pair of g
+  wiki:7: Firestorm of Star Birth in Galaxy Centaurus A | Resembling looming rain clouds on a stormy day, dark lanes of dust crisscross the giant elliptical galaxy Centaurus A. Hubble's panchromatic vision, stretching 
+  wiki:8: NGC 2683 Spiral galaxy | The NASA Hubble Space Telescope has spotted the "UFO Galaxy." NGC 2683 is a spiral galaxy seen almost edge-on, giving it the shape of a classic science fiction 
+  nasa VIDEO:9: KSC-04-S-00174 | New information from NASA's Chandra X-ray Observatory is teaching us about the destiny of the universe. A study of 26 galaxy clusters revealed that about 6 bill
+  nasa VIDEO:10: JWST Spacecraft Deploy Animation | The Webb Telescope will be the premier observatory of the next decade, serving thousands of astronomers worldwide. It will study every phase in the history of o
+  nasa VIDEO:11: Roman Space Telescope Transport from PHSF to LC 39A | NASA’s Nancy Grace Roman Space Telescope, encapsulated in its payload fairing, travels from the Payload Hazardous Servicing Facility to the SpaceX hangar at Lau
+
+[v048] needs: laser beam in laboratory | narration: Locally, light always travels through space at its standard constant speed.
+  nasa:0: jsc2026e014318 | jsc2026e014318 (March 23, 2026) --- Preflight image of the SM-3X module as part of the Cold Atom Lab (CAL). NASA’s CAL hosts multiple experiments that explore t
+  nasa:1: ELaNa 19 / Venture Class CubeSats - CHOMPTT | The goal of the CHOMPTT mission is to demonstrate new technologies that could be used for navigation and satellite networking in deep space. For future explorer
+  nasa:2: ELaNa 19 / Venture Class CubeSats - CHOMPTT | The goal of the CHOMPTT mission is to demonstrate new technologies that could be used for navigation and satellite networking in deep space. For future explorer
+  nasa:3: ELaNa 19 / Venture Class CubeSats - CHOMPTT | The goal of the CHOMPTT mission is to demonstrate new technologies that could be used for navigation and satellite networking in deep space. For future explorer
+  wiki:4: Optical fiber in protective coating that transports a Laser beam - Laser Physics Lab - NTN | Optical fiber in protective coating that transports a laser beam. In this case, an invisible infrared beam. The red light belongs to the red Helium-neon (HeNe) 
+  wiki:5: LASER BEAM APPARATUS IN CHEMICAL LABORATORY CHEM LAB - NARA - 17421720 | Scope and content: The original finding aid described this as: Capture Date: 5/31/1974 Photographer: MARTIN BROWN Keywords: Larsen Scan Location Building No: 6
+  wiki:6: LASER BEAM APPARATUS IN CHEMICAL LABORATORY CHEM LAB - NARA - 17421723 | Scope and content: The original finding aid described this as: Capture Date: 5/31/1974 Photographer: MARTIN BROWN Keywords: Larsen Scan Location Building No: 6
+  wiki:7: LASER BEAM APPARATUS IN CHEMICAL LABORATORY CHEM LAB - NARA - 17421725 | Scope and content: The original finding aid described this as: Capture Date: 5/31/1974 Photographer: MARTIN BROWN Keywords: Larsen Scan Location Building No: 6
+  wiki:8: LASER BEAM APPARATUS IN CHEMICAL LABORATORY CHEM LAB - NARA - 17421727 | Scope and content: The original finding aid described this as: Capture Date: 5/31/1974 Photographer: MARTIN BROWN Keywords: c1974_01900s 1974_01928.jpg Larsen S
+
+[v049] needs: starlight from distant galaxy | narration: But as light travels toward us across billions of years,
+  nasa:0: Roman Coronagraph Focal Plane Mask | The focal plane mask for the Coronagraph Instrument on NASA's Nancy Grace Roman Space Telescope, shown here, is one of the components used to suppress starlight
+  nasa:1: Roman Coronagraph Digging the Dark Hole | The Roman Coronagraph Instrument on NASA's upcoming Nancy Grace Roman Space Telescope will test new tools that block starlight, revealing planets hidden by the 
+  nasa:2: Small-scale Starshade Test | A test of a small-scale starshade model (58 cm), made from metal, in a dry lake bed in central Nevada's Smith Creek, took place from May to June 2014. Nineteen 
+  nasa:3: Starshade Night Test | A night test of a small-scale starshade model, in a dry lake bed in central Nevada's Smith Creek by Northrup Grumman, took place in May to June 2014. A telescop
+  nasa:4: White Dwarfs: Small and Strong | This chart shows data from NASA Kepler space telescope, which looks for planets by monitoring changes in the brightness of stars. As planets orbit in front of a
+  wiki:5: Starlight Indiana Watertower | The water tower in Starlight, Indiana, the tallest structure in the community.
+  wiki:6: Fitz Hugh Lane, Ship Starlight | 
+  wiki:7: O&W Depot, Starlight PA | Starlight Station, New York, Ontario, and Western Railway
+  wiki:8: Rural Scene near Starlight, Indiana | A rural scene near Starlight, Indiana.
+  nasa VIDEO:9: Tracing the History of Starlight with NASA's Fermi Mission | Scientists using data from NASA’s Fermi Gamma-ray Space Telescope have measured all the starlight produced over 90 percent of the universe’s history. The analys
+  nasa VIDEO:10: How Do Stars Influence the Search for Life? We Asked a NASA Expert | How do stars influence the search for life? When astronomers search for life on other worlds, they look for atmospheric molecules called biosignatures, or gases
+  nasa VIDEO:11: How Do Stars Influence the Search for Life? We Asked a NASA Expert | How do stars influence the search for life? When astronomers search for life on other worlds, they look for atmospheric molecules called biosignatures, or gases
+
+[v051] needs: early universe glowing plasma | narration: When the ancient light from the early universe was first emitted, the source was actually very close to us.
+  nasa:0: Space Science | This is an artist's impression of how the very early universe (less than one billion years old) might have looked when it went through a voracious onset of star
+  nasa:1: Dust in the Quasar Wind Artist Concept | Astronomers using NASA Spitzer Space Telescope found evidence that such quasar winds might have forged these dusty particles in the very early universe.
+  nasa:2: Ancient Earth, Alien Earths Event | Dr. Christopher House, Professor of Geosciences, Pennsylvania State University, speaks on a panel at the “Ancient Earth, Alien Earths” Event at NASA Headquarter
+  nasa:3: Cooking up the First Stars | Scientists are simulating how the very first stars in our universe were born. The stars we see today formed out of collapsing clouds of gas and dust. In the ver
+  wiki:4: CMB Timeline300 no WMAP | Timeline of the universe. A representation of the evolution of the universe over 13.77 billion years. The far left depicts the earliest moment we can now probe,
+  wiki:5: Timeline of the Universe | This artist's timeline chronicles the history of the universe, from its explosive beginning to its mature, present-day state. Our universe began in a tremendous
+  wiki:6: Artist’s impression of a gamma-ray burst shining through two young galaxies in the early U | This artist’s impression shows two galaxies in the early Universe. The brilliant explosion on the left is a gamma-ray burst. As the light from the burst passes 
+  wiki:7: CMB universe expansion | Timeline of the universe. A representation of the evolution of the universe over 13.77 billion years. The far left depicts the earliest moment we can now probe,
+  wiki:8: Artist's Illustration of the Early Universe (2020-34-4671) | New results from the NASA/ESA Hubble Space Telescope suggest the formation of the first stars and galaxies in the early universe took place sooner than previous
+  nasa VIDEO:9: What the Webb Telescope Found Way Back in the Early Universe on This Week @NASA – July 7,  | What the Webb telescope found way back in the early Universe, another hot trip around the Sun for our Parker Solar Probe, and we’re back in touch with our helic
+  nasa VIDEO:10: Science For a Hungry World: NASA's Partners | Every day, NASA collects information vital to food production all over the world. This information is a valuable asset. NASA's mission: to give it away for free
+  nasa VIDEO:11: The Universe’s First Molecule Is Found at Last | Scientists on the airborne observatory SOFIA detected the first type of molecule that ever formed in the universe. They found the combination of helium and hydr
+
+[v052] needs: cosmic microwave background map | narration: Scientists estimate that matter emitting the cosmic microwave background was
+  wiki:0: WMAP 2012 | CMB Images IMAGES &gt; CMB IMAGES &gt; NINE YEAR MICROWAVE SKY http://map.gsfc.nasa.gov/media/121238/index.html Nine Year Microwave Sky The detailed, all-sky pi
+  wiki:1: Universe Antiuniverse model | A cosmology model which suggests that our Universe has a mirror image of itself in the form of an antiuniverse.
+  wiki:2: CMBsphere | The cosmic microwave background radiation is a faint radio waves glow filling all space radiated at 45,700 million ly - The oldest detectable radiation emitted 
+  wiki:3: Cosmic Microwave Background (CMB) | This map of the Cosmic Microwave Background radiation, imprinted on the sky when the universe was 370,000 years old, shows tiny temperature fluctuations that co
+  wiki:4: Cosmic Microwave Background (54445461354) | A crop of a vertically-oriented all-sky Mollweide projection of the cosmic microwave background temperature distribution as measured by ESA's Planck satellite. 
+  wiki:5: CMB World Map plain map no annotations | Emitted about 370,000 years after the Big Bang, the Cosmic Microwave Background (CMB) is the relic radiation filling the observable universe. Presented here as 
+  wiki:6: CMB World Map wide | Presented here as a World Map, the CMB features are named after continents and seas, with labels drawn from the constellations below. The concave, double-hemisp
+  wiki:7: CMB World Map 4-3 | Presented here as a World Map, the CMB features are named after continents and seas, with labels drawn from the constellations below. The concave, double-hemisp
+  wiki:8: CMB World Map plain map annotated features | Emitted about 370,000 years after the Big Bang, the Cosmic Microwave Background (CMB) is the relic radiation filling the observable universe. Presented here as 
+  nasa VIDEO:9: NASA-Funded Sounding Rocket Solves One Cosmic Mystery, Reveals Another | In the last century, humans realized that space is filled with types of light we can’t see – from infrared signals released by hot stars and galaxies, to the co
+
+[v057] needs: deep field galaxy view | narration: Consequently, the matter that emitted those photons is now located much farther away from Earth today.
+  nasa:0: Hubble Deep Field Image Unveils Myriad Galaxies Back to the Beginning of Time | Several hundred never before seen galaxies are visible in this deepest-ever view of the universe, called the Hubble Deep Field, made with NASA Hubble Space Tele
+  wiki:1: Hubble ultra deep field | The Hubble Ultra Deep Field, is an image of a small region of space in the constellation Fornax, composited from Hubble Space Telescope data accumulated over a 
+  wiki:2: Hubble ultra deep field high rez edit1 | The Hubble Ultra Deep Field, is an image of a small region of space in the constellation Fornax, composited from Hubble Space Telescope data accumulated over a 
+  wiki:3: UGC 1810 and UGC 1813 in Arp 273 (captured by the Hubble Space Telescope) | This Hubble Space Telescope image shows a group of interacting galaxies called Arp 273. The larger of the spiral galaxies, known as UGC 1810, has a disk that is
+  wiki:4: Hubble Extreme Deep Field (full resolution) | Hubble Extreme Deep Field image (full resolution). Exposure dates: July 2002 to March 2012[3], with main contributions from 2002–2003 (visible) and 2009 (infrar
+  wiki:5: Webb's First Deep Field | SMACS 0723-73 (1RXS J072319.7-732735, SMACS J0723.3-7327) NASA’s James Webb Space Telescope has produced the deepest and sharpest infrared image of the distant 
+  wiki:6: Spectra of Galaxies within the Hubble Ultra Deep Field (2022-018) | This Hubble image features four of the thousands of galaxies found within the Hubble Ultra Deep Field. All of the highlighted galaxies show evidence of vigorous
+  nasa:7: Galactic City at the Edge of the Universe | Astronomers have discovered a massive cluster of young galaxies forming in the distant universe. The growing galactic metropolis is known as COSMOS-AzTEC3. This
+  nasa:8: KSC-08pd2457 | CAPE CANAVERAL, Fla. – In the Payload Hazardous Servicing Facility at NASA's Kennedy Space Center, a technician checks the pick-off mirror on the Wide Field Cam
+  nasa VIDEO:9: The Webb Space Telescope’s New Look at the Cosmos on This Week @NASA – July 15, 2022 | The Webb Space Telescope’s new look at the cosmos, technology used to fine tune Webb improves the vision of millions on Earth, and a new climate study heads to 
+
+[v063] needs: cosmic ruler grid | narration: However, cosmologists define proper distance as the physical
+  nasa:0: http://www.nasa.gov/feature/goddard/2016/hubble-team-breaks-cosmic-distance-record | By pushing NASA’s Hubble Space Telescope to its limits, an international team of astronomers has shattered the cosmic distance record by measuring the farthest 
+  nasa:1: Climbing the Cosmic Distance Ladder Artist Concept | Astronomers using NASA Spitzer Space Telescope have greatly improved the cosmic distance ladder used to measure the expansion rate of the universe, its size and
+  nasa:2: http://www.nasa.gov/feature/goddard/2016/hubble-team-breaks-cosmic-distance-record | By pushing NASA’s Hubble Space Telescope to its limits, an international team of astronomers has shattered the cosmic distance record by measuring the farthest 
+  nasa:3: Bull-eye Moons | Like a cosmic bull's-eye, Enceladus and Tethys line up almost perfectly for Cassini's cameras. Since the two moons are not only aligned, but also at relatively 
+  nasa:4: Artist Concept of Galaxy Evolution Explorer | The Galaxy Evolution Explorer was launched on April 28, 2003. Its mission is to study the shape, brightness, size and distance of galaxies across 10 billion yea
+  wiki:5: Cosmic distance ladder | For the calibration of relatively short distances the team observed Cepheid variables. These are pulsating stars which fade and brighten at rates that are propo
+  wiki:6: Http---www.nasa.gov-feature-goddard-2016-hubble-team-breaks-cosmic-distance-record (254510 | By pushing NASA’s Hubble Space Telescope to its limits, an international team of astronomers has shattered the cosmic distance record by measuring the farthest 
+  wiki:7: Climbing the cosmic distance ladder NGC 1466 | This image from the NASA/ESA Hubble Space Telescope reveals an ancient, glimmering ball of stars called NGC 1466. It is a globular cluster — a gathering of star
+  wiki:8: The cosmic distance ladder used by the Supernovae and H0 for the Equation of State (SH0ES) | The cosmic distance ladder used by the Supernovae and H0 for the Equation of State (SH0ES) Collaboration to infer the Hubble constant H0 .
+  nasa VIDEO:9: HST SM4 STIS Removal | Space Telescope Imaging Spectrograph (STIS), the most versatile spectrograph ever to fly on Hubble, ceased operations in August 2004 due to failure of its power
+  nasa VIDEO:10: HST SM4 STIS Open Door | Space Telescope Imaging Spectrograph (STIS), the most versatile spectrograph ever to fly on Hubble, ceased operations in August 2004 due to failure of its power
+  nasa VIDEO:11: HST SM4 STIS Repair EVA | Space Telescope Imaging Spectrograph (STIS), the most versatile spectrograph ever to fly on Hubble, ceased operations in August 2004 due to failure of its power
+
+[v065] needs: hubble ultra deep field | narration: In today's standard model, the current proper distance to the
+  nasa:0: Hubble Reveals Stellar Fireworks in ‘Skyrocket’ Galaxy | Fireworks shows are not just confined to Earth’s skies. NASA’s Hubble Space Telescope has captured a spectacular fireworks display in a small, nearby galaxy, wh
+  wiki:1: Hubble ultra deep field | The Hubble Ultra Deep Field, is an image of a small region of space in the constellation Fornax, composited from Hubble Space Telescope data accumulated over a 
+  wiki:2: Hubble Ultra Deep Field part | Part of the Hubble Ultra Deep Field
+  wiki:3: Hubble ultra deep field high rez edit1 | The Hubble Ultra Deep Field, is an image of a small region of space in the constellation Fornax, composited from Hubble Space Telescope data accumulated over a 
+  wiki:4: NASA-HS201427a-HubbleUltraDeepField2014-20140603 | June 3, 2014 RELEASE 14-151 Hubble Team Unveils Most Colorful View of Universe Captured by Space Telescope http://www.nasa.gov/press/2014/june/hubble-team-unvei
+  wiki:5: ALMA probes the Hubble Ultra Deep Field | This image combines a background picture taken by the NASA/ESA Hubble Space Telescope (blue/green) with a new very deep ALMA view of this field (orange, marked 
+  wiki:6: Hubble Ultra Deep Field-Infrared | Taken simultaneously with the Hubble Ultra Deep Field, the Hubble Ultra Deep Field-Infrared image provides a look even farther back in time than the Hubble Ultr
+  nasa:7: KSC-99pp1059 | STS-93 Commander Eileen M. Collins signs autographs after a mission presentation for KSC employees. The five-day mission primarily released the Chandra X-ray Ob
+  nasa:8: KSC-99pp1058 | STS-93 Pilot Jeffrey S. Ashby signs autographs after a mission presentation for KSC employees. The five-day mission primarily released the Chandra X-ray Observa
+
+[v073] needs: full starry night sky dome | narration: Light has had equal time to travel toward Earth from all directions across the sky.
+  wiki:0: 360-degree Panorama of the Southern Sky | The Milky Way arches across this 360-degree panorama of the night sky above the Paranal Observatory, home of ESO’s Very Large Telescope. The Moon is just rising
+  wiki:1: Night Sky Through Dome (RubinNight-2) | A dark, starry sky is visible through the open dome of Rubin Observatory. No wonder Chile has so many observatories!
+  wiki:2: Night sky through Rubin dome (rubin-Nightsky-through-dome) | View of the night sky through the open Rubin dome.
+  wiki:3: 2024 Night Sky Festival (54071398922) | 9th Annual Night Sky Festival at Sky's the Limit in Twentynine Palms, California. Photo by NPS/Samantha Laarman Alt Text: A crowd stands outside a dome-shaped b
+  wiki:4: The sky of Starry Night Over the Rhone | 
+  wiki:5: NightSkyHDRI010 16K-TONEMAPPED | Panorama of a computer-generated starry sky.
+  wiki:6: NightSkyHDRI012 16K-TONEMAPPED | Panorama of a computer-generated starry sky.
+  wiki:7: Shooting the starry skies (uhd 01 aec 155) | Here, you can see a stitched panorama of glittering skies above Chile, with the distant mountaintops below. ESO builds and operates observatories in the Souther
+
+[v079] needs: observable universe graphic representation | narration: That is why the observable universe is 93 billion light-years across today.
+  nasa:0: Monster in the Middle: Brightest Cluster Galaxy | This image shows two of the galaxy clusters observed by NASA WISE and Spitzer Space Telescope missions. Galaxy clusters are among the most massive structures in
+  nasa:1: Hidden Patterns of Light Revealed by Spitzer | Astronomers have uncovered patterns of light that appear to be from the first stars and galaxies that formed in the universe. The light patterns were hidden wit
+  wiki:2: Observable universe logarithmic illustration | Artist's logarithmic scale conception of the observable universe with the Solar System at the center, inner and outer planets, Kuiper belt, Oort cloud, Alpha Ce
+  wiki:3: Observable Universe Logarithmic Map (horizontal layout no annotations) | Map of the observable universe. From left to right the known celestial bodies are arranged according to their proximity to the Earth. In the right border we fin
+  wiki:4: Observable Universe Logarithmic Map (horizontal layout english annotations) | Logarithmic scheme of the observable universe with some of the notable astronomical objects known today. From left to right the celestial bodies are arranged ac
+  wiki:5: Observable Universe logarithmic illustration (circular layout english annotations) | Logarithmic scale conception of the observable universe with the Solar System at the center, inner and outer planets, Kuiper belt objects, Alpha Centauri, Perse
+  wiki:6: Observable universe log illustration with infosheets | Logarithmic scale conception of the observable universe with the Solar System at the center, inner and outer planets, Kuiper belt objects, Alpha Centauri, Perse
+  wiki:7: Vertical Log Linear Diagram of the Observable Universe No Text | Logarithmic diagram of the observable universe, showing celestial bodies from Earth outward. The farthest edge features GRBs, quasars, galaxies, and the cosmic 
+  wiki:8: WMAP 2010 | The Cosmic Microwave Background temperature fluctuations from the 7-year Wilkinson Microwave Anisotropy Probe data seen over the full sky. The image is a mollwe
+  nasa VIDEO:9: MMS Tetrahedron Orbit | Scientist John Dorelli explains the MMS mission's orbit and why the four spacecraft fly in a tetrahedron formation. On its journey, MMS will observe a little-un
+  nasa VIDEO:10: Space Geodesy Profiles: Chopo Ma | Scientists from NASA's Space Geodesy Project discuss the techniques they use to precisely measure the Earth's position in the universe, determine the Earth's ce
+  nasa VIDEO:11: Space Geodesy Profiles: Carey Noll | Scientists from NASA's Space Geodesy Project discuss the techniques they use to precisely measure the Earth's position in the universe, determine the Earth's ce
+
+[v080] needs: dense star field in galaxy | narration: In today's standard model, that means there are more stars in
+  nasa:0: New Horizons Sees Pluto Sept. 21 | A white arrow marks Pluto in this NASA New Horizons Long Range Reconnaissance Imager picture taken Sept. 21, 2006. Pluto is little more than a faint point of li
+  nasa:1: Blowin in the Stellar Wind | This image of the Elephant Trunk nebula from NASA Wide-field Survey Explorer shows clouds of dust and gas being pushed and eroded by a massive star. The bright 
+  nasa:2: New Horizons Sees Pluto Sept. 24 | A white arrow marks Pluto in this NASA New Horizons Long Range Reconnaissance Imager picture taken Sept. 24, 2006. Pluto is little more than a faint point of li
+  nasa:3: New Horizons Sees Pluto | The Long Range Reconnaissance Imager on NASA New Horizons acquired images of the Pluto field three days apart in late September 2006, in order to see Pluto moti
+  nasa:4: Polluted White Dwarf (Artist's Concept) | This artist's concept shows an exoplanet and debris disk orbiting a polluted white dwarf. White dwarfs are dim, dense remnants of stars similar to the Sun that 
+  wiki:5: Dense blazing star (54734511562) | Dense blazing star (Liatris spicata) at sunrise on Svor Waterfowl Production Area in Swift County, Minnesota. Photo by Mike Budd/USFWS.
+  wiki:6: Dense blazing star (54735582014) | Dense blazing star (Liatris spicata) at sunset on Svor Waterfowl Production Area in Swift County, Minnesota. Photo by Mike Budd/USFWS.
+  wiki:7: Dense blazing star (54735713080) | Dense blazing star (Liatris spicata) at sunset on Svor Waterfowl Production Area in Swift County, Minnesota. Photo by Mike Budd/USFWS.
+  wiki:8: Dense blazing star (54735567313) | Dense blazing star (Liatris spicata) at sunset on Svor Waterfowl Production Area in Swift County, Minnesota. Photo by Mike Budd/USFWS.
+
+[v081] needs: sandy beach on Earth | narration: our observable sphere than grains of sand on all Earth beaches.
+  nasa:0: Earth Observations during Expedition 69 | iss069e031173 (July 11, 2023) -- The Sunshine Coast, located in Southern Queensland, Australia, displays its bright sandy beaches and coastal blue waters of the
+  nasa:1: Earth observations from shuttle Columbia during STS-73 mission | STS073-E-5098 (30 Oct. 1995) --- Long Island, New York stretches across the scene. The New York City metropolitan complex is at the left; Central Park can be se
+  nasa:2: 2014-2822 | CAPE CANAVERAL, Fla. -- Rich MacKenzie, who earned a doctorate in geological sciences at the University of Florida, collects Global Positioning System survey me
+  nasa:3: KSC Wildlife | A pair of brown pelicans rest on a wall near the turn basin at NASA's Kennedy Space Center. The turn basin was carved out of the Banana River when KSC was built
+  nasa:4: KSC-2014-2810 | CAPE CANAVERAL, Fla. -- University of Florida geologist, Pete Adams, discusses a six-month effort to restore the sand dunes along a 1.2 mile stretch of shorelin
+  nasa:5: 2014-2820 | CAPE CANAVERAL, Fla. -- University of Florida geologist, John Jaeger, left, and Steve Orlando, senior director Media Relations at the University, discuss a six-
+  wiki:6: 2020-12-18 Sandy Beach, NSW 1 | Sandy Beach, NSW
+  wiki:7: 2020-12-18 Sandy Beach, NSW 3 | Sandy Beach, NSW
+  wiki:8: 2020-12-18 Sandy Beach, NSW 6 | Sandy Beach, NSW
+  nasa VIDEO:9: Tour of Asteroid Bennu | When NASA’s OSIRIS-REx spacecraft arrived at asteroid Bennu in December 2018, its close-up images confirmed what mission planners had predicted nearly two decad
+  nasa VIDEO:10: Global Model of Asteroid Bennu | When NASA’s OSIRIS-REx spacecraft arrived at asteroid Bennu in December 2018, its close-up images confirmed what mission planners had predicted nearly two decad
+  nasa VIDEO:11: Asteroid Bennu Sample Site Flyovers | When NASA’s OSIRIS-REx spacecraft arrived at asteroid Bennu in December 2018, its close-up images confirmed what mission planners had predicted nearly two decad
+
+[v083] needs: dark empty space void | narration: Objects outside our observable sphere exist, but their light has
+  nasa:0: Microgravity | The bumpy exterior of the turnip yellow mosaic virus (TYMV) protein coat, or capsid, was defined in detail by Dr. Alexander McPherson of the University of Calif
+  nasa:1: Material Science | Pores and voids often form in metal castings on Earth (above) making them useless. A transparent material that behaves at a large scale in microgravity the way 
+  nasa:2: Mexico City, the capital and most-populous city of the Latin American nation | iss073e0075943 (May 16, 2025) --- Mexico City, the capital and most-populous city of the Latin American nation, surrounded by the dark voids of Lago de Texcoco 
+  nasa:3: Rio de Janiero, Brazil's capital and second most-populous city | iss073e0119293 (May 20, 2025) --- Rio de Janiero, Brazil's capital and second most-populous city, along with its surrounding suburbs, is pictured in between the
+  nasa:4: Material Science | Video images sent to the ground allow scientists to watch the behavior of the bubbles as they control the melting and freezing of the material during the Pore F
+  nasa:5: PBRE-WR Preflight Imagery | jsc2024e043916 (3/29/2024) ---The Packed Bed Reactor Experiment – Water Recovery (PBRE-WR) completed a series of tests in the Microgravity Science Glovebox on t
+  wiki:6: Galaxy superclusters and galaxy voids | Voids in Local Supercluster
+  wiki:7: Kbc void | KBC Void in an immense, comparatively empty region of space containing the Local Group, and a large part of the Laniakea Supercluster - 2,000 million ly diamete
+  wiki:8: Giant void | Giant Void is an extremely large region of space with an underdensity of galaxies 1,500 million ly away in the constellation Canes Venatici - The second-largest
+
+[v086] needs: endless galaxy expanse | narration: The total size of the entire universe is unknown, and it may even be infinite in extent.
+  wiki:0: Endless Stations 16 - Star Tripping | Hucks Lookout, Flinders Ranges, South Australia 12th of October, 2015 8:46PM
+  wiki:1: In The Heart Of A Star (156630723) | 500px provided description: More Photos: www.instagram.com/otwfu ourtragedywillfindus.tumblr.com [#Nature ,#Landscape ,#Love ,#Tree ,#Moon ,#Sky ,#Night ,#Night
+  wiki:2: Latest Hubble shot of galaxy fields (42166805162) | My antidote to the endless stream of phony Milky Way shots on the Internet. This is a new picture from the Hubble Space telescope showing a number of new, formi
+  wiki:3: Endless ways | Dieses Bild zeigt einen Weg, der durch ein Naturschutzgebiet näher der Heide.
+  wiki:4: Eksistensi di Bawah Bima Sakti | In this photographic work of art, I photographed myself looking in awe at the night sky which displays the beauty and greatness of the Milky Way Galaxy. A faint
+  wiki:5: This NASA-ESA Hubble Space Telescope image features a sparkling cloudscape from one of the | This NASA/ESA Hubble Space Telescope image features a sparkling cloudscape from one of the Milky Way’s galactic neighbors, a dwarf galaxy called the Large Magel
+  wiki:6: In the infinite universe | The wandering of the mind in the infinite universe
+  wiki:7: The Infinite Crystal Universe (49960552112) | The Infinite Crystal Universe
+
+[v088] needs: dark energy cosmic expansion | narration: In today's standard model, dark energy accelerates expansion,
+  nasa:0: Dark Energy and Gravity: Yin and Yang of the Universe Artist Concept | New results from NASA Galaxy Evolution Explorer and the Anglo-Australian Telescope atop Siding Spring Mountain in Australia confirm that dark energy is a smooth
+  nasa:1: Nancy Grace Roman Space Telescope Launch | A SpaceX Falcon Heavy rocket launches with NASA’S Nancy Grace Roman Space Telescope onboard from Launch Complex 39A, Sunday, Aug. 30, 2026, at NASA’s Kennedy Sp
+  nasa:2:  Roman Space Telescope Science Briefing | Lee Armus, Roman Science Support Center lead, Caltech/IPAC, participates in a science briefing for NASA’s Nancy Grace Roman Space Telescope inside the NASA News
+  nasa:3: Nancy Grace Roman Space Telescope Launch | A SpaceX Falcon Heavy rocket launches with NASA’S Nancy Grace Roman Space Telescope onboard from Launch Complex 39A, Sunday, Aug. 30, 2026, at NASA’s Kennedy Sp
+  nasa:4:  Roman Space Telescope Science Briefing | Shawn Domagal-Goldman, director, Astrophysics Division, NASA Headquarters in Washington, participates in a science briefing for NASA’s Nancy Grace Roman Space T
+  nasa:5: NASA's Nancy Grace Roman Space Telescope Launch | NASA’s Nancy Grace Roman Space Telescope rises to space atop a SpaceX Falcon Heavy rocket from Launch Complex 39A at the agency’s Kennedy Space Center in Florid
+  wiki:6: NASA’s Roman and ESA’s Euclid Will Team Up To Investigate Dark Energy (SVS14375) | Despite having similar mission goals, Euclid and Roman are different in many ways. Use this chart to compare key attributes of the two spacecraft.Credit: NASA's
+  wiki:7: Dark Energy in Terms of Cavitating Star Bubbles | How red shift is generated without stars physically moving further apart
+  wiki:8: Dark Energy in Terms of Cavitating Star Bubbles | How red shift is generated without stars physically moving further apart
+  nasa VIDEO:9: The Nancy Grace Roman Space Telescope Mission Trailer  | Our newest orbiting observatory, the Nancy Grace Roman Space Telescope, is scheduled to lift off on Aug. 30. After launching, it will start its journey to its n
+  nasa VIDEO:10: KSC-04-S-00174 | New information from NASA's Chandra X-ray Observatory is teaching us about the destiny of the universe. A study of 26 galaxy clusters revealed that about 6 bill
+  nasa VIDEO:11: Paul Rudd Explores the Quantum Realm with NASA | Journey into the quantum realm with Paul Rudd! The “Ant-Man and the Wasp: Quantumania” actor and NASA quantum physicist Ethan Elliott discuss what the quantum r
+
+[v090] needs: galaxy cluster in deep space | narration: This means the number of galaxies we can ever observe
+  nasa:0: Virgo Galaxy Cluster | This ultraviolet image from NASA Galaxy Evolution Explorer is of a small area of the Virgo Cluster of galaxies. http://photojournal.jpl.nasa.gov/catalog/PIA0790
+  nasa:1: Monster in the Middle: Brightest Cluster Galaxy | This image shows two of the galaxy clusters observed by NASA WISE and Spitzer Space Telescope missions. Galaxy clusters are among the most massive structures in
+  nasa:2: Gigantic Wave Discovered in Perseus Galaxy Cluster | Combining data from NASA's Chandra X-ray Observatory with radio observations and computer simulations, an international team of scientists has discovered a vast
+  nasa:3: Ancient Galaxy Cluster Still Producing Stars | Astronomers have found that stars are forming more rapidly in the center of a distant galaxy cluster than at its edges, which is completely reversed from galaxy
+  wiki:4: Hubble2005-01-barred-spiral-galaxy-NGC1300 | Barred spiral galaxy NGC 1300 photographed by Hubble telescope. In the core of the larger spiral structure of NGC 1300, the nucleus shows its own extraordinary 
+  wiki:5: M104 ngc4594 sombrero galaxy hi-res | The famous Sombrero galaxy (M104) is a bright nearby elliptical galaxy. The prominent dust lane and halo of stars and globular clusters give this galaxy its nam
+  wiki:6: Antennae galaxies xl | Original caption from NASA: “This NASA Hubble Space Telescope image of the Antennae galaxies (NGC 4038 &amp; 4039) is the sharpest yet of this merging pair of g
+  wiki:7: Firestorm of Star Birth in Galaxy Centaurus A | Resembling looming rain clouds on a stormy day, dark lanes of dust crisscross the giant elliptical galaxy Centaurus A. Hubble's panchromatic vision, stretching 
+  wiki:8: NGC 2683 Spiral galaxy | The NASA Hubble Space Telescope has spotted the "UFO Galaxy." NGC 2683 is a spiral galaxy seen almost edge-on, giving it the shape of a classic science fiction 
+  nasa VIDEO:9: KSC-04-S-00174 | New information from NASA's Chandra X-ray Observatory is teaching us about the destiny of the universe. A study of 26 galaxy clusters revealed that about 6 bill
+  nasa VIDEO:10: JWST Spacecraft Deploy Animation | The Webb Telescope will be the premier observatory of the next decade, serving thousands of astronomers worldwide. It will study every phase in the history of o
+  nasa VIDEO:11: Roman Space Telescope Transport from PHSF to LC 39A | NASA’s Nancy Grace Roman Space Telescope, encapsulated in its payload fairing, travels from the Payload Hazardous Servicing Facility to the SpaceX hangar at Lau
+
+[v094] needs: spiral galaxy arms glowing | narration: As you ponder this expanding cosmic fabric, consider how much
+  nasa:0: The Swirling Arms of the M100 Galaxy | This infrared image, from NASA Spitzer Space Telescope, of M100 is a classic example of a grand design spiral galaxy, with prominent and well-defined spiral arm
+  nasa:1: Large Face on Spiral Galaxy NGC 3344 | This ultraviolet image from NASA Galaxy Evolution Explorer is of the large face on spiral galaxy NGC 3344. The inner spiral arms are wrapped so tightly that the
+  nasa:2: Hello to Arms | This image highlights the hidden spiral arms blue that were discovered around the nearby galaxy NGC 4625 by the ultraviolet eyes of NASA Galaxy Evolution Explor
+  nasa:3: Long-Wavelength Infrared Views of Messier 81 | The magnificent and dusty spiral arms of the nearby galaxy Messier 81 are highlighted in these NASA Spitzer Space Telescope images.
+  nasa:4: Multi-Wavelength Views of Messier 81 | The magnificent spiral arms of the nearby galaxy Messier 81 are highlighted in this image from NASA Spitzer Space Telescope.
+  nasa:5: Warped Andromeda | This image from NASA Wide-field Infrared Survey Explorer highlights the Andromeda galaxy older stellar population in blue. A pronounced warp in the disk of the 
+  wiki:6: Hubble2005-01-barred-spiral-galaxy-NGC1300 | Barred spiral galaxy NGC 1300 photographed by Hubble telescope. In the core of the larger spiral structure of NGC 1300, the nucleus shows its own extraordinary 
+  wiki:7: NGC 4414 (NASA-med) | In 1995, the majestic spiral galaxy NGC 4414 was imaged by the Hubble Space Telescope as part of the HST Key Project on the Extragalactic Distance Scale. An int
+  wiki:8: Hubble ultra deep field | The Hubble Ultra Deep Field, is an image of a small region of space in the constellation Fornax, composited from Hubble Space Telescope data accumulated over a 
+
+[v095] needs: deep space star field | narration: of the cosmos will forever remain beyond our sight.
+  nasa:0: NASA's Deep Space Antenna Upgrade to Affect Voyager | DSS43 is a 70-meter-wide (230-feet-wide) radio antenna at the Deep Space Network's Canberra facility in Australia. It is the only antenna that can send commands
+  nasa:1: New All-in-One Antenna for the Deep Space Network | Deep Space Station 56, or DSS-56, is a powerful 34-meter-wide (112-foot-wide) antenna that was added to the Deep Space Network's Madrid Deep Space Communication
+  nasa:2: Artist Concept of Deep Space 1 | Artist concept of the Deep Space 1 spacecraft from December, 2002. http://photojournal.jpl.nasa.gov/catalog/PIA04242
+  nasa:3: Deep Space Atomic Clock Hardware | NASA's Deep Space Atomic Clock could revolutionize deep space navigation. One key requirement for the technology demonstration was a compact design. The complet
+  nasa:4: Artist Concept of Deep Space 1 Encounter with Comet Borrelly | Artist concept of NASA Deep Space 1 Encounter with Comet Borrelly.
+  nasa:5: A New Antenna for NASA's Deep Space Network | Deep Space Station 53, or DSS-53, is a new 34-meter (111-foot) beam waveguide antenna that went online in February 2022 at NASA's Deep Space Network's ground st
+  wiki:6: Hubble ultra deep field | The Hubble Ultra Deep Field, is an image of a small region of space in the constellation Fornax, composited from Hubble Space Telescope data accumulated over a 
+  wiki:7: Webb's First Deep Field | SMACS 0723-73 (1RXS J072319.7-732735, SMACS J0723.3-7327) NASA’s James Webb Space Telescope has produced the deepest and sharpest infrared image of the distant 
+  wiki:8: Deep Space Nine filming model - Star Trek - Exploring New Worlds Exhibit at the Henry Ford | The Deep Space 9 space station filming miniature used in Star Trek: Deep Space Nine from 1993-1999. Although it is called a miniature, the model is a good 5 fee
+  nasa VIDEO:9: How NASA’s Deep Space Atomic Clock Could Be the Next Space GPS | NASA has perfected new navigation technology that would make self-driving spacecraft and GPS beyond the Moon a reality. The Deep Space Atomic Clock is the first
+  nasa VIDEO:10: Video file: NASA’s Deep Space Atomic Clock to Launch on SpaceX Falcon Heavy Rocket | Video file for media and public use. Four NASA missions will launch on a SpaceX Falcon Heavy rocket no earlier than June 24, 2019. The Deep Space Atomic Clock i
+  nasa VIDEO:11: Why NASA is Sending Yeast to Deep Space | NASA’s BioSentinel mission will go beyond the Moon to perform the first long-duration deep space biology experiment. Set to launch with the first flight of the 

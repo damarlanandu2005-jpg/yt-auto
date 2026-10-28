@@ -1,0 +1,41 @@
+[drawings] v007: 74 s  a light beam travelling through space
+[drawings] v009: 74 s  a glowing sphere representing the cosmic horizon
+[drawings] v010: 73 s  a sphere with radius label
+[drawings] v016: 73 s  speedboats racing on a lake
+[drawings] v017: 73 s  galaxies flying apart from an explosion
+[drawings] v028: 72 s  space stretching between two distant points
+[drawings] v030: 72 s  a flexible grid stretching out
+[drawings] v034: 72 s  a grid expanding over time
+[drawings] v035: 72 s  two galaxies on a stretching grid
+[drawings] v040: 72 s  two dots on a stretching rubber sheet
+[drawings] v041: 72 s  two dots on a stretched sheet
+[drawings] v042: 72 s  a ruler measuring between two points
+[drawings] v046: 72 s  an ant crawling on a stretching rubber band
+[drawings] v047: 73 s  a light beam on an expanding line
+[drawings] v050: 73 s  a light ray crossing a stretching grid
+[drawings] v056: 73 s  space expanding behind a moving light particle
+[drawings] v062: 72 s  light moving through a curved spacetime grid
+[drawings] v064: 72 s  a frozen snapshot of a cosmic grid
+[drawings] v069: 72 s  space stretching behind a photon track
+[drawings] v074: 72 s  a sphere centered on a blue planet
+[drawings] v076: 72 s  a circle being doubled in width
+[drawings] v087: 72 s  overlapping spheres in space
+[drawings] v008: 73 s  distant star field
+[drawings] v021: 72 s  redshift galaxy spectrum
+[drawings] v051: 72 s  early universe glowing plasma
+[drawings] v057: 72 s  deep field galaxy view
+
+[transformers] `CLIPImageProcessor` requires torchvision (not installed); falling back to `CLIPImageProcessorPil` for backward compatibility. Install torchvision to use the default backend, or import `CLIPImageProcessorPil` directly to silence this warning.
+[transformers] `SiglipImageProcessor` requires torchvision (not installed); falling back to `SiglipImageProcessorPil` for backward compatibility. Install torchvision to use the default backend, or import `SiglipImageProcessorPil` directly to silence this warning.
+/opt/hostedtoolcache/Python/3.13.16/x64/lib/python3.13/site-packages/diffusers/utils/deprecation_utils.py:23: FutureWarning: `torch_dtype` is deprecated and will be removed in version 1.0.0. Please use `dtype` instead.
+  deprecate("torch_dtype", "1.0.0", _TORCH_DTYPE_DEPRECATION_MESSAGE)
+
+Loading pipeline components...:   0%|          | 0/7 [00:00<?, ?it/s][0;93m2026-10-28 10:24:55.350200601 [W:onnxruntime:Default, device_discovery.cc:95 GetPciBusId] Skipping pci_bus_id for PCI path at "/sys/devices/LNXSYSTM:00/LNXSYBUS:00/ACPI0004:00/MSFT1000:00/5620e0c7-8062-4dce-aeb7-520c7ef76171" because filename "5620e0c7-8062-4dce-aeb7-520c7ef76171" did not match expected pattern of [0-9a-f]+:[0-9a-f]+:[0-9a-f]+[.][0-9a-f]+[m
+
+Loading pipeline components...:  29%|██▊       | 2/7 [00:00<00:00,  9.04it/s]
+Loading pipeline components...:  57%|█████▋    | 4/7 [00:00<00:00, 12.22it/s]
+Loading pipeline components...:  86%|████████▌ | 6/7 [00:00<00:00, 14.57it/s]
+Loading pipeline components...: 100%|██████████| 7/7 [00:00<00:00,  9.50it/s]
+No LoRA keys associated to CLIPTextModel found with the prefix='text_encoder'. This is safe to ignore if LoRA state dict didn't originally have any CLIPTextModel related params. You can also try specifying `prefix=None` to resolve the warning. Otherwise, open an issue if you think it's unexpected: https://github.com/huggingface/diffusers/issues/new
+No LoRA keys associated to CLIPTextModelWithProjection found with the prefix='text_encoder_2'. This is safe to ignore if LoRA state dict didn't originally have any CLIPTextModelWithProjection related params. You can also try specifying `prefix=None` to resolve the warning. Otherwise, open an issue if you think it's unexpected: https://github.com/huggingface/diffusers/issues/new
+The config attributes {'skip_prk_steps': True} were passed to LCMScheduler, but are not expected and will be ignored. Please verify your scheduler_config.json configuration file.

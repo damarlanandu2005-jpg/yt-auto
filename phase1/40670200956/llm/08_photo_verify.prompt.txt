@@ -1,0 +1,101 @@
+[model] gemini-3.5-flash-lite
+[system]
+
+
+[user]
+Step 2 of a picture check for a science video. Someone looked at each picture WITHOUT knowing
+what it should show and described it. Decide for each image whether the picture fits.
+A photo fits only if the description shows it clearly depicts what it should show: not mostly text,
+not a test target, not a different planet or object than the narration is about, no watermark, nothing
+misleading. A diagram, infographic or poster with many labels or much text does NOT fit (too small to read
+in a video, and made for another purpose). A chart or graph fits ONLY if its labels show it is about exactly what the narration says (a graph
+of Mars data, or with unexplained labels like 'RHOS', does not fit a sentence about Earth or a star).
+When unsure, answer fits = false (a chart or plain card is shown instead, which is fine).
+Copy the description into "seen".
+Image 1: described as: A deep space photograph filled with numerous distant galaxies and stars against a black background, featuring a prominent large star with diffraction spikes near the top center.
+  should show: deep field galaxy cluster
+  narration: How can light travel across 93 billion light-years
+Image 2: described as: A detailed astronomical image of the Crab Nebula, showcasing complex filaments of expanding gas and dust glowing in orange, yellow, and blue colors against a black space filled with faint stars.
+  should show: nebula in space
+  narration: if time itself began only 13.8 billion years ago?
+Image 3: described as: A wide telescopic view of the outer region of a spiral galaxy, showing a glowing yellowish galactic core on the left and swirling cosmic dust lanes and bright stars extending to the right.
+  should show: spiral galaxy
+  narration: Understanding this giant puzzle reveals your true place in a shifting cosmic landscape.
+Image 4: described as: A side-by-side comparison of two galaxy clusters in space, featuring numerous glowing yellowish and reddish elliptical galaxies dotted across a dark background, separated by a thin vertical white line.
+  should show: galaxy cluster
+  narration: In this video, you will discover how cosmic expansion turns a journey
+Image 5: described as: A night sky view captured from space, showing the dark curve of Earth's horizon illuminated by an orange atmospheric glow, with parts of the International Space Station framework framing the scene.
+  should show: distant star field
+  narration: If light has only been traveling for 13.8 billion years,
+Image 6: described as: An abstract, angular geometric interior shot with metallic surfaces and reflective patterns creating a complex, dark tunnel-like perspective.
+  should show: astronomical telescope observatory
+  narration: Instead, astronomical observations reveal a
+Image 7: described as: A close-up astronomical view of a circular, swirling orange and red vortex of cosmic gas and dust surrounding a brilliant central light source against a black background.
+  should show: complex galaxy cluster
+  narration: This contradiction seems to break the most fundamental rules of motion.
+Image 8: described as: A face-on spiral galaxy photographed against the blackness of space, featuring a bright central white core surrounded by distinct winding arms filled with dark dust lanes and bright stellar clusters.
+  should show: spiral galaxy arms
+  narration: If galaxies were simply speeding through static space, no galaxy could exceed the speed of light.
+Image 9: described as: An abstract cosmic view depicting a bright central light source emerging from glowing orange and brown clouds or dust, with dark, stormy blue and black regions surrounding it.
+  should show: redshift galaxy spectrum
+  narration: However, astronomical measurements show distant galaxies moving away
+Image 10: described as: A deep space image displaying a dense field of distant galaxies and stars, centered around several prominent stars with sharp diffraction spikes and faint gravitational lensing arcs.
+  should show: deep space galaxies
+  narration: In fact, very distant regions of space expand
+Image 11: described as: An image of interacting galaxies forming a dramatic, hook-shaped bridge of stars and glowing pink and white star-forming regions, set against the black void of space.
+  should show: colliding galaxies
+  narration: How can distant galaxies recede faster than light without violating physical laws?
+Image 12: described as: A night landscape showing a starry sky over a dark ocean shore, with silhouettes of tall beach grass in the foreground and faint streaks of light from passing meteors or satellites.
+  should show: starry night sky
+  narration: This cosmic expansion does not mean the universe is expanding into any surrounding empty room.
+Image 13: described as: A wide-angle control room or laboratory interior with two people seated at computer desks facing multiple monitors displaying data and graphs, illuminated by ambient green and red lighting.
+  should show: astronomer at desk
+  narration: Cosmologists describe physical distances using a
+Image 14: described as: An edge-on view of a spiral galaxy in space, featuring a flattened disk with a bright central bulge, intricate dark dust lanes, and a backdrop of distant stars.
+  should show: isolated spiral galaxy
+  narration: Galaxies themselves remain nearly at rest relative
+Image 15: described as: An abstract scientific visualization of the cosmic web, showing a black background crossed by glowing filaments and clusters of white and golden light representing galaxies and dark matter.
+  should show: galaxy filaments in space
+  narration: Yet the space between separated galaxies grows continuously as time passes.
+Image 16: described as: A colorful astronomical field showing a dense distribution of tiny stars and galaxies in various shades of red, green, and blue against a black background.
+  should show: distant galaxy cluster
+  narration: Because space stretches, physical distances today are much
+Image 17: described as: A laboratory optical setup on a metal breadboard, featuring a spinning segmented wheel on the left, a red laser beam, and adjustable optical mounts with small circular lenses.
+  should show: laser beam in laboratory
+  narration: Locally, light always travels through space at its standard constant speed.
+Image 18: described as: Three circular astronomical ring images side by side against a black background, displaying a gradient from bright yellow-orange on the left to dark red on the right.
+  should show: starlight from distant galaxy
+  narration: But as light travels toward us across billions of years,
+Image 19: described as: An oval cosmic microwave background map of the entire universe, showing tiny temperature fluctuations as a multicolored pattern of orange, yellow, and blue spots.
+  should show: cosmic microwave background map
+  narration: Scientists estimate that matter emitting the cosmic microwave background was
+Image 20: described as: A multi-panel scientific chart illustrating the cosmic distance ladder, with axes labeled in magnitudes and distances, showing plotted data points and residuals for geometry, Cepheids, and Type Ia supernovae.
+  should show: cosmic ruler grid
+  narration: However, cosmologists define proper distance as the physical
+Image 21: described as: A deep field view of space captured by a telescope, revealing countless distant galaxies of various shapes and colors scattered across a dark background.
+  should show: hubble ultra deep field
+  narration: In today's standard model, the current proper distance to the
+Image 22: described as: A 360-degree panoramic night sky photograph featuring the arch of the Milky Way galaxy stretching across the horizon, with several astronomical observatory domes visible on the left.
+  should show: full starry night sky dome
+  narration: Light has had equal time to travel toward Earth from all directions across the sky.
+Image 23: described as: An illustrated linear timeline of the universe, starting with Earth on the far left and stretching across various astronomical objects and epochs to the glowing cosmic microwave background on the far right, accompanied by text labels.
+  should show: observable universe graphic representation
+  narration: That is why the observable universe is 93 billion light-years across today.
+Image 24: described as: An artistic space rendering showing a dark brownish planet on the left, scattered rocky asteroids, and a bright star surrounded by a protoplanetary disk of dust and gas on the right.
+  should show: dense star field in galaxy
+  narration: In today's standard model, that means there are more stars in
+Image 25: described as: A satellite photograph of a coastal region, showing a long spit of land and sandy beaches bordering a deep blue ocean.
+  should show: sandy beach on Earth
+  narration: our observable sphere than grains of sand on all Earth beaches.
+Image 26: described as: An abstract astronomical rendering or gravitational wave visualization showing a dark central void surrounded by an irregular ring of glowing white and multicolored light points.
+  should show: dark empty space void
+  narration: Objects outside our observable sphere exist, but their light has
+Image 27: described as: A close-up photograph of a modern decorative light installation, consisting of numerous blue-lit fiber optic strands radiating outward from a central point like a glowing burst.
+  should show: endless galaxy expanse
+  narration: The total size of the entire universe is unknown, and it may even be infinite in extent.
+Image 28: described as: An abstract conceptual graphic illustrating spacetime, with several spiral galaxies resting on a green warped grid floor under a purple grid ceiling.
+  should show: dark energy cosmic expansion
+  narration: In today's standard model, dark energy accelerates expansion,
+Image 29: described as: A detailed astronomical image of a face-on spiral galaxy with a prominent glowing core and vibrant pink star-forming regions along its spiral arms, set against a star-filled black sky.
+  should show: spiral galaxy arms glowing
+  narration: As you ponder this expanding cosmic fabric, consider how much

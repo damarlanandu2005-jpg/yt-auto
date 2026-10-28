@@ -1,0 +1,16 @@
+{
+  "results": [
+    {
+      "id": "s01.07",
+      "verdict": "partly",
+      "problem": "The cited passage does not define a photon as a single particle of light, and it specifies that the light was emitted shortly after the Big Bang rather than traveling over the entire age of the cosmos.",
+      "fixed_text": "A photon emitted shortly after the Big Bang has traveled 13.8 billion light-years to reach observers on Earth."
+    },
+    {
+      "id": "s05.08",
+      "verdict": "partly",
+      "problem": "The cited passages describe these distances as model-based calculations and estimates rather than plain certain facts.",
+      "fixed_text": "Scientists estimate that the matter that emitted the cosmic microwave background was about 42 million light-years away when emitted and is about 46 billion light-years away today."
+    }
+  ]
+}

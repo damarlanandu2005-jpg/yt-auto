@@ -1,0 +1,45 @@
+ffmpeg version n8.1.3-24-g92611900bb-20261026 Copyright (c) 2000-2026 the FFmpeg developers
+  built with gcc 16.2.0 (crosstool-NG 1.29.0.7_b1a94f6)
+  configuration: --prefix=/ffbuild/prefix --pkg-config-flags=--static --pkg-config=pkg-config --cross-prefix=x86_64-ffbuild-linux-gnu- --arch=x86_64 --target-os=linux --enable-gpl --enable-version3 --disable-debug --enable-iconv --enable-zlib --enable-libxml2 --enable-libsoxr --enable-openssl --enable-libvmaf --enable-libxcb --enable-xlib --enable-fontconfig --enable-libharfbuzz --enable-libfreetype --enable-libfribidi --enable-lcms2 --enable-vulkan --enable-libshaderc --enable-libdav1d --enable-libvorbis --enable-librav1e --enable-librsvg --enable-libpulse --enable-gmp --enable-lzma --enable-liblcevc-dec --enable-opencl --enable-amf --enable-libaom --enable-avisynth --enable-chromaprint --enable-libdavs2 --enable-libdvdread --enable-libdvdnav --disable-libfdk-aac --enable-ffnvcodec --enable-cuda-llvm --enable-frei0r --enable-libgme --enable-libkvazaar --enable-libaribb24 --enable-libaribcaption --enable-libass --enable-libbluray --enable-libjxl --enable-libmp3lame --enable-libopus --enable-libplacebo --enable-librist --enable-libssh --enable-libtheora --enable-libvpx --enable-libwebp --enable-libzmq --enable-lv2 --enable-libvpl --enable-openal --enable-liboapv --enable-libopencore-amrnb --enable-libopencore-amrwb --enable-libopenh264 --enable-libopenjpeg --enable-libopenmpt --enable-librubberband --disable-schannel --enable-sdl2 --enable-libsnappy --enable-libsrt --enable-libsvtav1 --enable-libtwolame --enable-libuavs3d --enable-libdrm --enable-vaapi --enable-vapoursynth --enable-libvidstab --enable-libvvenc --disable-whisper --enable-libx264 --enable-libx265 --enable-libxavs2 --enable-libxvid --enable-libzimg --enable-libzvbi --extra-cflags=-DLIBTWOLAME_STATIC --extra-cxxflags= --extra-libs='-lgomp -ldl' --extra-ldflags=-pthread --extra-ldexeflags= --cc=x86_64-ffbuild-linux-gnu-gcc --cxx=x86_64-ffbuild-linux-gnu-g++ --ar=x86_64-ffbuild-linux-gnu-gcc-ar --ranlib=x86_64-ffbuild-linux-gnu-gcc-ranlib --nm=x86_64-ffbuild-linux-gnu-gcc-nm --extra-version=20261026
+  libavutil      60. 26.103 / 60. 26.103
+  libavcodec     62. 28.103 / 62. 28.103
+  libavformat    62. 12.103 / 62. 12.103
+  libavdevice    62.  3.103 / 62.  3.103
+  libavfilter    11. 14.103 / 11. 14.103
+  libswscale      9.  5.103 /  9.  5.103
+  libswresample   6.  3.103 /  6.  3.103
+Input #0, mov,mp4,m4a,3gp,3g2,mj2, from 'out/run/video_keywords.mp4':
+  Metadata:
+    major_brand     : isom
+    minor_version   : 512
+    compatible_brands: isomiso2avc1mp41
+    encoder         : Lavf62.12.103
+  Duration: 00:07:42.27, start: 0.000000, bitrate: 1267 kb/s
+  Stream #0:0[0x1](und): Video: h264 (High) (avc1 / 0x31637661), yuv420p(progressive), 1920x1080 [SAR 1:1 DAR 16:9], 1264 kb/s, 30 fps, 30 tbr, 15360 tbn (default)
+    Metadata:
+      handler_name    : VideoHandler
+      encoder         : Lavc62.28.103 libx264
+[aist#1:0/pcm_s16le @ 0x555865131a40] Guessed Channel Layout: mono
+Input #1, wav, from 'out/run/mix.wav':
+  Duration: 00:07:42.27, bitrate: 384 kb/s
+  Stream #1:0: Audio: pcm_s16le ([1][0][0][0] / 0x0001), 24000 Hz, mono, s16, 384 kb/s
+Stream mapping:
+  Stream #0:0 -> #0:0 (copy)
+  Stream #1:0 -> #0:1 (pcm_s16le (native) -> aac (native))
+Output #0, mp4, to 'out/run/video.mp4':
+  Metadata:
+    major_brand     : isom
+    minor_version   : 512
+    compatible_brands: isomiso2avc1mp41
+    encoder         : Lavf62.12.103
+  Stream #0:0(und): Video: h264 (High) (avc1 / 0x31637661), yuv420p(progressive), 1920x1080 [SAR 1:1 DAR 16:9], q=2-31, 1264 kb/s, 30 fps, 30 tbr, 15360 tbn (default)
+    Metadata:
+      handler_name    : VideoHandler
+      encoder         : Lavc62.28.103 libx264
+  Stream #0:1: Audio: aac (LC) (mp4a / 0x6134706D), 48000 Hz, mono, fltp, 160 kb/s
+    Metadata:
+      encoder         : Lavc62.28.103 aac
+frame=  545 fps=0.0 q=-1.0 size=    5120KiB time=00:00:18.24 bitrate=2299.5kbits/s speed=36.5x elapsed=0:00:00.50    frame= 1151 fps=1151 q=-1.0 size=    9216KiB time=00:00:38.44 bitrate=1963.9kbits/s speed=38.4x elapsed=0:00:01.00    frame= 1780 fps=1186 q=-1.0 size=   12288KiB time=00:00:59.34 bitrate=1696.1kbits/s speed=39.6x elapsed=0:00:01.50    frame= 2431 fps=1215 q=-1.0 size=   15360KiB time=00:01:21.04 bitrate=1552.6kbits/s speed=40.5x elapsed=0:00:02.00    frame= 3060 fps=1224 q=-1.0 size=   19712KiB time=00:01:42.03 bitrate=1582.6kbits/s speed=40.8x elapsed=0:00:02.50    frame= 3687 fps=1229 q=-1.0 size=   22528KiB time=00:02:02.92 bitrate=1501.3kbits/s speed=  41x elapsed=0:00:03.00    frame= 4348 fps=1242 q=-1.0 size=   26624KiB time=00:02:24.96 bitrate=1504.6kbits/s speed=41.4x elapsed=0:00:03.50    frame= 4974 fps=1243 q=-1.0 size=   29184KiB time=00:02:45.84 bitrate=1441.6kbits/s speed=41.5x elapsed=0:00:04.00    frame= 5620 fps=1249 q=-1.0 size=   34048KiB time=00:03:07.41 bitrate=1488.3kbits/s speed=41.6x elapsed=0:00:04.50    frame= 6250 fps=1250 q=-1.0 size=   36608KiB time=00:03:28.34 bitrate=1439.4kbits/s speed=41.7x elapsed=0:00:05.00    frame= 6893 fps=1253 q=-1.0 size=   38912KiB time=00:03:49.78 bitrate=1387.3kbits/s speed=41.8x elapsed=0:00:05.50    frame= 7539 fps=1256 q=-1.0 size=   46080KiB time=00:04:11.34 bitrate=1501.8kbits/s speed=41.9x elapsed=0:00:06.00    frame= 8175 fps=1257 q=-1.0 size=   50944KiB time=00:04:32.55 bitrate=1531.2kbits/s speed=41.9x elapsed=0:00:06.50    frame= 8834 fps=1262 q=-1.0 size=   52992KiB time=00:04:54.50 bitrate=1474.0kbits/s speed=42.1x elapsed=0:00:07.00    frame= 9479 fps=1264 q=-1.0 size=   55552KiB time=00:05:16.07 bitrate=1439.8kbits/s speed=42.1x elapsed=0:00:07.50    frame=10148 fps=1268 q=-1.0 size=   61184KiB time=00:05:38.32 bitrate=1481.5kbits/s speed=42.3x elapsed=0:00:08.00    frame=10819 fps=1273 q=-1.0 size=   66816KiB time=00:06:00.64 bitrate=1517.7kbits/s speed=42.4x elapsed=0:00:08.50    frame=11468 fps=1274 q=-1.0 size=   69120KiB time=00:06:22.35 bitrate=1480.9kbits/s speed=42.5x elapsed=0:00:09.00    frame=12123 fps=1276 q=-1.0 size=   72192KiB time=00:06:44.18 bitrate=1463.2kbits/s speed=42.5x elapsed=0:00:09.50    frame=12718 fps=1272 q=-1.0 size=   75776KiB time=00:07:04.06 bitrate=1463.8kbits/s speed=42.4x elapsed=0:00:10.00    frame=13298 fps=1266 q=-1.0 size=   77568KiB time=00:07:23.39 bitrate=1433.1kbits/s speed=42.2x elapsed=0:00:10.50    [mp4 @ 0x555865131d00] Starting second pass: moving the moov atom to the beginning of the file
+[out#0/mp4 @ 0x55586511ff00] video:71334KiB audio:9168KiB subtitle:0KiB other streams:0KiB global headers:0KiB muxing overhead: 0.618113%
+frame=13868 fps=1262 q=-1.0 Lsize=   80999KiB time=00:07:42.20 bitrate=1435.6kbits/s speed=42.1x elapsed=0:00:10.98    
+[aac @ 0x555865123000] Qavg: 6500.058

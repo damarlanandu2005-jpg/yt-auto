@@ -1,0 +1,155 @@
+{
+ "card_number_fixes": [],
+ "photo_slots": 33,
+ "candidates": {
+  "v002": 11,
+  "v003": 12,
+  "v004": 12,
+  "v005": 12,
+  "v008": 12,
+  "v012": 12,
+  "v014": 12,
+  "v018": 12,
+  "v021": 11,
+  "v023": 12,
+  "v025": 10,
+  "v032": 12,
+  "v033": 12,
+  "v037": 12,
+  "v039": 9,
+  "v043": 12,
+  "v048": 9,
+  "v049": 12,
+  "v051": 12,
+  "v052": 10,
+  "v057": 10,
+  "v063": 12,
+  "v065": 9,
+  "v073": 8,
+  "v079": 12,
+  "v080": 9,
+  "v081": 12,
+  "v083": 9,
+  "v086": 8,
+  "v088": 12,
+  "v090": 12,
+  "v094": 9,
+  "v095": 12
+ },
+ "downloaded": 29,
+ "seen": {
+  "v002": "A deep space photograph filled with numerous distant galaxies and stars against a black background, featuring a prominent large star with diffraction spikes near the top center.",
+  "v003": "A detailed astronomical image of the Crab Nebula, showcasing complex filaments of expanding gas and dust glowing in orange, yellow, and blue colors against a black space filled with faint stars.",
+  "v004": "A wide telescopic view of the outer region of a spiral galaxy, showing a glowing yellowish galactic core on the left and swirling cosmic dust lanes and bright stars extending to the right.",
+  "v005": "A side-by-side comparison of two galaxy clusters in space, featuring numerous glowing yellowish and reddish elliptical galaxies dotted across a dark background, separated by a thin vertical white line.",
+  "v008": "A night sky view captured from space, showing the dark curve of Earth's horizon illuminated by an orange atmospheric glow, with parts of the International Space Station framework framing the scene.",
+  "v012": "An abstract, angular geometric interior shot with metallic surfaces and reflective patterns creating a complex, dark tunnel-like perspective.",
+  "v014": "A close-up astronomical view of a circular, swirling orange and red vortex of cosmic gas and dust surrounding a brilliant central light source against a black background.",
+  "v018": "A face-on spiral galaxy photographed against the blackness of space, featuring a bright central white core surrounded by distinct winding arms filled with dark dust lanes and bright stellar clusters.",
+  "v021": "An abstract cosmic view depicting a bright central light source emerging from glowing orange and brown clouds or dust, with dark, stormy blue and black regions surrounding it.",
+  "v023": "A deep space image displaying a dense field of distant galaxies and stars, centered around several prominent stars with sharp diffraction spikes and faint gravitational lensing arcs.",
+  "v025": "An image of interacting galaxies forming a dramatic, hook-shaped bridge of stars and glowing pink and white star-forming regions, set against the black void of space.",
+  "v032": "A night landscape showing a starry sky over a dark ocean shore, with silhouettes of tall beach grass in the foreground and faint streaks of light from passing meteors or satellites.",
+  "v033": "A wide-angle control room or laboratory interior with two people seated at computer desks facing multiple monitors displaying data and graphs, illuminated by ambient green and red lighting.",
+  "v037": "An edge-on view of a spiral galaxy in space, featuring a flattened disk with a bright central bulge, intricate dark dust lanes, and a backdrop of distant stars.",
+  "v039": "An abstract scientific visualization of the cosmic web, showing a black background crossed by glowing filaments and clusters of white and golden light representing galaxies and dark matter.",
+  "v043": "A colorful astronomical field showing a dense distribution of tiny stars and galaxies in various shades of red, green, and blue against a black background.",
+  "v048": "A laboratory optical setup on a metal breadboard, featuring a spinning segmented wheel on the left, a red laser beam, and adjustable optical mounts with small circular lenses.",
+  "v049": "Three circular astronomical ring images side by side against a black background, displaying a gradient from bright yellow-orange on the left to dark red on the right.",
+  "v052": "An oval cosmic microwave background map of the entire universe, showing tiny temperature fluctuations as a multicolored pattern of orange, yellow, and blue spots.",
+  "v063": "A multi-panel scientific chart illustrating the cosmic distance ladder, with axes labeled in magnitudes and distances, showing plotted data points and residuals for geometry, Cepheids, and Type Ia supernovae.",
+  "v065": "A deep field view of space captured by a telescope, revealing countless distant galaxies of various shapes and colors scattered across a dark background.",
+  "v073": "A 360-degree panoramic night sky photograph featuring the arch of the Milky Way galaxy stretching across the horizon, with several astronomical observatory domes visible on the left.",
+  "v079": "An illustrated linear timeline of the universe, starting with Earth on the far left and stretching across various astronomical objects and epochs to the glowing cosmic microwave background on the far right, accompanied by text labels.",
+  "v080": "An artistic space rendering showing a dark brownish planet on the left, scattered rocky asteroids, and a bright star surrounded by a protoplanetary disk of dust and gas on the right.",
+  "v081": "A satellite photograph of a coastal region, showing a long spit of land and sandy beaches bordering a deep blue ocean.",
+  "v083": "An abstract astronomical rendering or gravitational wave visualization showing a dark central void surrounded by an irregular ring of glowing white and multicolored light points.",
+  "v086": "A close-up photograph of a modern decorative light installation, consisting of numerous blue-lit fiber optic strands radiating outward from a central point like a glowing burst.",
+  "v088": "An abstract conceptual graphic illustrating spacetime, with several spiral galaxies resting on a green warped grid floor under a purple grid ceiling.",
+  "v094": "A detailed astronomical image of a face-on spiral galaxy with a prominent glowing core and vibrant pink star-forming regions along its spiral arms, set against a star-filled black sky."
+ },
+ "rejected_after_looking": [
+  {
+   "id": "v008",
+   "title": "The atmospheric glow blankets Earth beneath a sparkling field of stars",
+   "seen": "A night sky view captured from space, showing the dark curve of Earth's horizon illuminated by an orange atmospheric glow, with parts of the International Space Station framework framing the scene.",
+   "reason": "The image shows Earth's horizon and the ISS, whereas the target was a distant star field."
+  },
+  {
+   "id": "v012",
+   "title": "James Webb Space Telescope: An Overview",
+   "seen": "An abstract, angular geometric interior shot with metallic surfaces and reflective patterns creating a complex, dark tunnel-like perspective.",
+   "reason": "The image is an abstract interior shot and does not clearly show an astronomical telescope observatory."
+  },
+  {
+   "id": "v021",
+   "title": "20 Years of Hubble Science: Galaxies",
+   "seen": "An abstract cosmic view depicting a bright central light source emerging from glowing orange and brown clouds or dust, with dark, stormy blue and black regions surrounding it.",
+   "reason": "The image is abstract and does not clearly show a redshift galaxy spectrum."
+  },
+  {
+   "id": "v063",
+   "title": "The cosmic distance ladder used by the Supernovae and H0 for the Equation of State (SH0ES) Collaboration to infer the Hubble constant H0",
+   "seen": "A multi-panel scientific chart illustrating the cosmic distance ladder, with axes labeled in magnitudes and distances, showing plotted data points and residuals for geometry, Cepheids, and Type Ia supernovae.",
+   "reason": "A chart or graph with multiple text labels and axes does not fit unless it matches specific criteria; here it is too complex for video and is a chart."
+  },
+  {
+   "id": "v079",
+   "title": "Observable Universe Logarithmic Map (horizontal layout english annotations)",
+   "seen": "An illustrated linear timeline of the universe, starting with Earth on the far left and stretching across various astronomical objects and epochs to the glowing cosmic microwave background on the far right, accompanied by text labels.",
+   "reason": "The image contains text labels and acts as an infographic timeline, which does not fit."
+  },
+  {
+   "id": "v086",
+   "title": "In the infinite universe",
+   "seen": "A close-up photograph of a modern decorative light installation, consisting of numerous blue-lit fiber optic strands radiating outward from a central point like a glowing burst.",
+   "reason": "The image depicts a light installation on Earth rather than an endless galaxy expanse."
+  },
+  {
+   "id": "v088",
+   "title": "Dark Energy and Gravity: Yin and Yang of the Universe Artist Concept",
+   "seen": "An abstract conceptual graphic illustrating spacetime, with several spiral galaxies resting on a green warped grid floor under a purple grid ceiling.",
+   "reason": "The image is an abstract graphic with a grid floor, which does not fit."
+  }
+ ],
+ "second_try": {
+  "tried": 7,
+  "kept": 3,
+  "seen": {
+   "v008": "A high-angle satellite photograph shows a rugged landscape with diagonal striations, showing patches of sparse brownish earth intermixed with bands of green vegetation and bright white patches, all set against a black margin.",
+   "v012": "A tall cylindrical metallic structure is being assembled or tested indoors, with several technicians in white cleanroom suits visible on a grated floor to the right.",
+   "v021": "A scientific line chart displays relative brightness on the vertical axis against wavelength in microns on the horizontal axis, with several sharp downward peaks labeled with text reading Acetylene, Hydrogen Cyanide, and Carbon Dioxide.",
+   "v063": "An astronomical chart titled 'Hubble spectroscopically confirms farthest galaxy to date' illustrates a cosmic timeline with redshift and billions of years on the axes, featuring glowing galaxy illustrations, the Hubble telescope icon, and labeled markers for record-holding galaxies.",
+   "v079": "Two horizontal rectangular panels are stacked vertically; the top panel displays a dense field of glowing blue stars against a dark background, and the bottom panel shows a warm-toned multicolored abstract texture with mottled patches in red, yellow, and purple.",
+   "v086": "A night landscape photograph shows the silhouette of a car parked on a dirt path in the foreground, with distant dark hills and a bright starry sky overhead featuring the glowing arch of the Milky Way.",
+   "v088": "A tall rocket lifts off from a launch pad at dusk or dawn, producing a massive cloud of bright orange and white exhaust fire and smoke near the ground against a muted grey sky."
+  },
+  "rejected": [
+   {
+    "id": "v008",
+    "title": "NASA Sees Target Field, Minneapolis, Minnesota -- Home of 2014 MLB All-Star Game",
+    "seen": "A high-angle satellite photograph shows a rugged landscape with diagonal striations, showing patches of sparse brownish earth intermixed with bands of green vegetation and bright white patches, all set against a black margin.",
+    "reason": "The description shows a satellite photograph of Earth's landscape, whereas the narration and target are about a distant star field."
+   },
+   {
+    "id": "v021",
+    "title": "Life Starting Materials Found in Dusty Disk",
+    "seen": "A scientific line chart displays relative brightness on the vertical axis against wavelength in microns on the horizontal axis, with several sharp downward peaks labeled with text reading Acetylene, Hydrogen Cyanide, and Carbon Dioxide.",
+    "reason": "The chart shows chemical absorption spectra with labeled molecules, whereas it should show a redshift galaxy spectrum."
+   },
+   {
+    "id": "v063",
+    "title": "http://www.nasa.gov/feature/goddard/2016/hubble-team-breaks-cosmic-distance-record",
+    "seen": "An astronomical chart titled 'Hubble spectroscopically confirms farthest galaxy to date' illustrates a cosmic timeline with redshift and billions of years on the axes, featuring glowing galaxy illustrations, the Hubble telescope icon, and labeled markers for record-holding galaxies.",
+    "reason": "The chart contains extensive text, titles, and multiple infographic elements, making it unsuitable for a clear video visual of a cosmic ruler grid."
+   },
+   {
+    "id": "v088",
+    "title": "Nancy Grace Roman Space Telescope Launch",
+    "seen": "A tall rocket lifts off from a launch pad at dusk or dawn, producing a massive cloud of bright orange and white exhaust fire and smoke near the ground against a muted grey sky.",
+    "reason": "The image shows a rocket launch, whereas the narration is about dark energy and cosmic expansion."
+   }
+  ],
+  "error": null
+ }
+}

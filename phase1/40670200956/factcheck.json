@@ -1,0 +1,51 @@
+{
+ "checked": 68,
+ "supported_first_pass": 64,
+ "fixed": [],
+ "dropped": [
+  {
+   "id": "s01.02",
+   "text": "The observable universe measures about 93 billion light-years across, even though it is only 13.8 billion years old.",
+   "problem": "number 13.8 is not in the cited sources"
+  },
+  {
+   "id": "s01.07",
+   "text": "A single particle of light, called a photon, travels exactly 13.8 billion light-years over the entire age of the cosmos.",
+   "problem": "The cited passage states the light-travel distance is 13.8 billion light-years, not exactly 13.8 billion light-years."
+  },
+  {
+   "id": "s05.08",
+   "text": "The matter that emitted the ancient light has moved from 42 million light-years away to 46.5 billion light-years away today.",
+   "problem": "The cited passages state that the present distance of the matter that emitted the CMBR is about 46 billion light-years, not 46.5 billion light-years."
+  },
+  {
+   "id": "s06.08",
+   "text": "Within this gigantic sphere, scientists estimate there are up to 2 trillion galaxies and 10 to the power of 24 stars.",
+   "problem": "number 10 is not in the cited sources; number 24 is not in the cited sources"
+  }
+ ],
+ "bad_ids": [],
+ "copied": [],
+ "guard": [
+  {
+   "id": "s01.02",
+   "problems": [
+    "number 13.8 is not in the cited sources"
+   ]
+  },
+  {
+   "id": "s05.08",
+   "problems": [
+    "number 46.5 is not in the cited sources"
+   ]
+  },
+  {
+   "id": "s06.08",
+   "problems": [
+    "number 10 is not in the cited sources",
+    "number 24 is not in the cited sources"
+   ]
+  }
+ ],
+ "words_after": 1000
+}

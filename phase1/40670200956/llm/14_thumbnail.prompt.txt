@@ -1,0 +1,67 @@
+[model] gemini-3.5-flash-lite
+[system]
+
+
+[user]
+Make a YouTube thumbnail for this video.
+Title: Why the Observable Universe Is 93 Billion Light-Years Wide
+Question it answers: How can the observable universe be 93 billion light-years wide if it is only 13.8 billion years old?
+
+Pick ONE picture (by its id) that will read best at phone size: one clear, dramatic subject that fits the
+title. Then write 2 to 4 big words to put on it: honest (true, kept by the video), not the title repeated,
+no fake urgency, no question marks or punctuation. Use words the narration itself uses (pilot video 2 got
+'universe grew faster', which the video never says). Pick one of those words to show in red.
+
+KEY LINES OF THE NARRATION:
+Imagine you stand outdoors at night and look into the deepest reaches of space.
+How can light travel across 93 billion light-years if time itself began only 13.8 billion years ago?
+Understanding this giant puzzle reveals your true place in a shifting cosmic landscape.
+In this video, you will discover how cosmic expansion turns a journey of 13.8 billion years into a vast width of 93 billion light-years.
+Nothing in physics can travel faster than the speed of light through local space.
+If light has only been traveling for 13.8 billion years, a simple sum suggests our cosmic horizon should be much smaller.
+You might expect a sphere with a radius of 13.8 billion light-years and a width of 27.6 billion light-years.
+Instead, astronomical observations reveal a diameter of 93 billion light-years.
+This contradiction seems to break the most fundamental rules of motion.
+What lies beyond the edge of this 93 billion light-year boundary?
+Objects outside our observable sphere exist, but their light has not had enough time to reach Earth since the Big Bang.
+The limit of what we can see is called the particle horizon.
+The total size of the entire universe is unknown, and it may even be infinite in extent.
+Every location in space has its own unique observable universe sphere centered on itself.
+In today's standard model, dark energy accelerates expansion, creating a future visibility limit at 62 billion light-years.
+This means the number of galaxies we can ever observe in the infinite future is only 2.36 times larger than today.
+In summary, our observable universe is 93 billion light-years wide because space expanded while light traveled for 13.8 billion years.
+As you ponder this expanding cosmic fabric, consider how much of the cosmos will forever remain beyond our sight.
+
+PICTURES (what a viewer sees in each):
+v002: A deep space photograph filled with numerous distant galaxies and stars against a black background, featuring a prominent large star with diffraction spikes near the top center.
+v003: A detailed astronomical image of the Crab Nebula, showcasing complex filaments of expanding gas and dust glowing in orange, yellow, and blue colors against a black space filled with faint stars.
+v004: A wide telescopic view of the outer region of a spiral galaxy, showing a glowing yellowish galactic core on the left and swirling cosmic dust lanes and bright stars extending to the right.
+v005: A side-by-side comparison of two galaxy clusters in space, featuring numerous glowing yellowish and reddish elliptical galaxies dotted across a dark background, separated by a thin vertical white line.
+v008: A high-angle satellite photograph shows a rugged landscape with diagonal striations, showing patches of sparse brownish earth intermixed with bands of green vegetation and bright white patches, all set against a black margin.
+v012: A tall cylindrical metallic structure is being assembled or tested indoors, with several technicians in white cleanroom suits visible on a grated floor to the right.
+v014: A close-up astronomical view of a circular, swirling orange and red vortex of cosmic gas and dust surrounding a brilliant central light source against a black background.
+v018: A face-on spiral galaxy photographed against the blackness of space, featuring a bright central white core surrounded by distinct winding arms filled with dark dust lanes and bright stellar clusters.
+v023: A deep space image displaying a dense field of distant galaxies and stars, centered around several prominent stars with sharp diffraction spikes and faint gravitational lensing arcs.
+v025: An image of interacting galaxies forming a dramatic, hook-shaped bridge of stars and glowing pink and white star-forming regions, set against the black void of space.
+v032: A night landscape showing a starry sky over a dark ocean shore, with silhouettes of tall beach grass in the foreground and faint streaks of light from passing meteors or satellites.
+v033: A wide-angle control room or laboratory interior with two people seated at computer desks facing multiple monitors displaying data and graphs, illuminated by ambient green and red lighting.
+v037: An edge-on view of a spiral galaxy in space, featuring a flattened disk with a bright central bulge, intricate dark dust lanes, and a backdrop of distant stars.
+v039: An abstract scientific visualization of the cosmic web, showing a black background crossed by glowing filaments and clusters of white and golden light representing galaxies and dark matter.
+v043: A colorful astronomical field showing a dense distribution of tiny stars and galaxies in various shades of red, green, and blue against a black background.
+v048: A laboratory optical setup on a metal breadboard, featuring a spinning segmented wheel on the left, a red laser beam, and adjustable optical mounts with small circular lenses.
+v049: Three circular astronomical ring images side by side against a black background, displaying a gradient from bright yellow-orange on the left to dark red on the right.
+v052: An oval cosmic microwave background map of the entire universe, showing tiny temperature fluctuations as a multicolored pattern of orange, yellow, and blue spots.
+v065: A deep field view of space captured by a telescope, revealing countless distant galaxies of various shapes and colors scattered across a dark background.
+v073: A 360-degree panoramic night sky photograph featuring the arch of the Milky Way galaxy stretching across the horizon, with several astronomical observatory domes visible on the left.
+v079: Two horizontal rectangular panels are stacked vertically; the top panel displays a dense field of glowing blue stars against a dark background, and the bottom panel shows a warm-toned multicolored abstract texture with mottled patches in red, yellow, and purple.
+v080: An artistic space rendering showing a dark brownish planet on the left, scattered rocky asteroids, and a bright star surrounded by a protoplanetary disk of dust and gas on the right.
+v081: A satellite photograph of a coastal region, showing a long spit of land and sandy beaches bordering a deep blue ocean.
+v083: An abstract astronomical rendering or gravitational wave visualization showing a dark central void surrounded by an irregular ring of glowing white and multicolored light points.
+v086: A night landscape photograph shows the silhouette of a car parked on a dirt path in the foreground, with distant dark hills and a bright starry sky overhead featuring the glowing arch of the Milky Way.
+v094: A detailed astronomical image of a face-on spiral galaxy with a prominent glowing core and vibrant pink star-forming regions along its spiral arms, set against a star-filled black sky.
+v016: A stylized, high-contrast illustration of a red and white boat speeding across dark, rippled water under a pale sky.
+v017: A dynamic abstract composition with a central red burst, white streaks, and four scattered red circles on a dark background.
+v046: A stylized red and black ant-like mechanical creature resting on a light gray surface while holding a small red sphere.
+v074: A textured grey sphere with uneven red markings distributed across its surface, set against a dark background.
+v087: An abstract cosmic scene featuring a large central white sphere, surrounded by smaller textured globes, honeycomb patterns, and starry background elements.
+v057: An abstract cosmic view of a glowing central white star system surrounded by thin red orbital loops, set against a dense starry sky.

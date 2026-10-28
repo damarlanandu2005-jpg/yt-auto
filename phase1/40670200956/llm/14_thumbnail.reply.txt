@@ -1,0 +1,5 @@
+{
+  "picture": "v039",
+  "text": "space expanded while traveled",
+  "red_word": "expanded"
+}

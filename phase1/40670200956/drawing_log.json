@@ -1,0 +1,213 @@
+{
+ "load_s": 10.5,
+ "torch": "2.14.1+cpu",
+ "diffusers": "0.42.1",
+ "seconds": {
+  "v007": 74.3,
+  "v009": 73.6,
+  "v010": 73.4,
+  "v016": 73.0,
+  "v017": 72.6,
+  "v028": 72.1,
+  "v030": 72.2,
+  "v034": 72.2,
+  "v035": 72.4,
+  "v040": 72.3,
+  "v041": 72.2,
+  "v042": 72.4,
+  "v046": 72.3,
+  "v047": 72.6,
+  "v050": 73.0,
+  "v056": 72.6,
+  "v062": 72.1,
+  "v064": 72.0,
+  "v069": 71.9,
+  "v074": 71.8,
+  "v076": 71.9,
+  "v087": 72.3,
+  "v008": 72.6,
+  "v021": 72.3,
+  "v051": 71.9,
+  "v057": 71.9
+ },
+ "skipped_for_time": [
+  "v063",
+  "v088",
+  "v090",
+  "v095"
+ ],
+ "total_s": 1894.3,
+ "asked": 30,
+ "drawn": 26,
+ "cloud": {
+  "backend": "cloudflare",
+  "seconds": {},
+  "errors": [
+   "v007: HTTP 429 b'{\"errors\":[{\"message\":\"AiError: AiError: you have used up your daily free allocation of 10,000 neurons, please upgrade to Cloudflare\\'s Workers Paid plan if you would like to continue usage. (6183743d-'"
+  ],
+  "drawn": 0
+ },
+ "drawings_seen": {
+  "v007": "A close-up illustration of a glowing, curved white and red line cutting diagonally across a dark grey background.",
+  "v009": "A circular abstract graphic featuring concentric rings and a red central circle against a dark backdrop.",
+  "v010": "An abstract spherical object wrapped in horizontal red, white, and black bands, centered within an oval frame against a dark background.",
+  "v016": "A stylized, high-contrast illustration of a red and white boat speeding across dark, rippled water under a pale sky.",
+  "v017": "A dynamic abstract composition with a central red burst, white streaks, and four scattered red circles on a dark background.",
+  "v028": "An abstract, sweeping arch of white lines resembling a cosmic curve or landscape feature over a dark, starry sky.",
+  "v030": "An abstract pattern of vertical and horizontal grid lines layered closely together to form a dense, textured graphic.",
+  "v034": "A geometric abstract design composed of a black and white grid with varying vertical and horizontal rectangular panels.",
+  "v035": "An abstract white linear shape resembling a twisted ribbon looping across a dark, star-filled space with two faint nebula-like spots.",
+  "v040": "A solid, slightly textured dark gray surface filling the entire frame.",
+  "v041": "A wide, dark gray plane with a narrow horizontal lighter band running across the bottom.",
+  "v042": "An abstract minimalist drawing with a thin vertical line and a horizontal grid-like bar on a light gray background.",
+  "v046": "A stylized red and black ant-like mechanical creature resting on a light gray surface while holding a small red sphere.",
+  "v047": "An abstract composition showing a curved white pathway above, with several parallel white vertical drops hanging down against a black background.",
+  "v050": "A geometric pattern of overlapping white horizontal and vertical bars forming a structured grid on a dark textured background.",
+  "v056": "An abstract composition featuring a textured gray and white splatter form, red paint drips, and sharp white streaks against a black background.",
+  "v062": "An abstract black and white graphic resembling concentric fingerprint-like swirls leading toward a dark central void.",
+  "v064": "An abstract architectural line drawing showing a rectangular box crossed by multiple angled white lines against a black background.",
+  "v069": "A dynamic graphic showing white and red streak lines moving across a dark, starry space above a curved horizon.",
+  "v074": "A textured grey sphere with uneven red markings distributed across its surface, set against a dark background.",
+  "v076": "An abstract target-like graphic made of numerous concentric white and red rings surrounding a solid red center on a black background.",
+  "v087": "An abstract cosmic scene featuring a large central white sphere, surrounded by smaller textured globes, honeycomb patterns, and starry background elements.",
+  "v008": "A dark night sky filled with numerous small white stars and a faint, diagonal band resembling the Milky Way, with a few reddish spots.",
+  "v021": "A circular view of a starry space with a bright, glowing red and white bullseye pattern at the center, surrounded by concentric white rings.",
+  "v051": "An abstract space illustration featuring bold concentric rings of white and bright red surrounding a dark void, set against a starry black background.",
+  "v057": "An abstract cosmic view of a glowing central white star system surrounded by thin red orbital loops, set against a dense starry sky."
+ },
+ "drawings_rejected": [
+  {
+   "id": "v007",
+   "title": "a light beam travelling through space",
+   "seen": "A close-up illustration of a glowing, curved white and red line cutting diagonally across a dark grey background.",
+   "reason": "It shows an abstract line instead of a recognisable light beam traveling through space."
+  },
+  {
+   "id": "v009",
+   "title": "a glowing sphere representing the cosmic horizon",
+   "seen": "A circular abstract graphic featuring concentric rings and a red central circle against a dark backdrop.",
+   "reason": "It is an abstract graphic and does not clearly show a glowing sphere representing the cosmic horizon."
+  },
+  {
+   "id": "v010",
+   "title": "a sphere with radius label",
+   "seen": "An abstract spherical object wrapped in horizontal red, white, and black bands, centered within an oval frame against a dark background.",
+   "reason": "It shows bands rather than a clear sphere with a radius label."
+  },
+  {
+   "id": "v028",
+   "title": "space stretching between two distant points",
+   "seen": "An abstract, sweeping arch of white lines resembling a cosmic curve or landscape feature over a dark, starry sky.",
+   "reason": "It is just abstract shapes and lines rather than recognisable objects showing space stretching."
+  },
+  {
+   "id": "v030",
+   "title": "a flexible grid stretching out",
+   "seen": "An abstract pattern of vertical and horizontal grid lines layered closely together to form a dense, textured graphic.",
+   "reason": "It shows a texture and pattern rather than a clear flexible grid stretching out."
+  },
+  {
+   "id": "v034",
+   "title": "a grid expanding over time",
+   "seen": "A geometric abstract design composed of a black and white grid with varying vertical and horizontal rectangular panels.",
+   "reason": "It is an abstract design rather than a clear expanding grid."
+  },
+  {
+   "id": "v035",
+   "title": "two galaxies on a stretching grid",
+   "seen": "An abstract white linear shape resembling a twisted ribbon looping across a dark, star-filled space with two faint nebula-like spots.",
+   "reason": "It shows an abstract ribbon rather than two recognizable galaxies on a grid."
+  },
+  {
+   "id": "v040",
+   "title": "two dots on a stretching rubber sheet",
+   "seen": "A solid, slightly textured dark gray surface filling the entire frame.",
+   "reason": "It is just a plain surface showing nothing recognisable."
+  },
+  {
+   "id": "v041",
+   "title": "two dots on a stretched sheet",
+   "seen": "A wide, dark gray plane with a narrow horizontal lighter band running across the bottom.",
+   "reason": "It lacks any recognisable dots or sheet details."
+  },
+  {
+   "id": "v042",
+   "title": "a ruler measuring between two points",
+   "seen": "An abstract minimalist drawing with a thin vertical line and a horizontal grid-like bar on a light gray background.",
+   "reason": "It does not show a recognisable ruler measuring between two points."
+  },
+  {
+   "id": "v047",
+   "title": "a light beam on an expanding line",
+   "seen": "An abstract composition showing a curved white pathway above, with several parallel white vertical drops hanging down against a black background.",
+   "reason": "It shows abstract pathways and drops rather than a clear light beam."
+  },
+  {
+   "id": "v050",
+   "title": "a light ray crossing a stretching grid",
+   "seen": "A geometric pattern of overlapping white horizontal and vertical bars forming a structured grid on a dark textured background.",
+   "reason": "It is just a grid pattern without a visible light ray crossing it."
+  },
+  {
+   "id": "v056",
+   "title": "space expanding behind a moving light particle",
+   "seen": "An abstract composition featuring a textured gray and white splatter form, red paint drips, and sharp white streaks against a black background.",
+   "reason": "It is an abstract splatter and does not show space expanding behind a particle."
+  },
+  {
+   "id": "v062",
+   "title": "light moving through a curved spacetime grid",
+   "seen": "An abstract black and white graphic resembling concentric fingerprint-like swirls leading toward a dark central void.",
+   "reason": "It is an abstract swirl rather than light moving through a grid."
+  },
+  {
+   "id": "v064",
+   "title": "a frozen snapshot of a cosmic grid",
+   "seen": "An abstract architectural line drawing showing a rectangular box crossed by multiple angled white lines against a black background.",
+   "reason": "It is an abstract line drawing rather than a cosmic grid."
+  },
+  {
+   "id": "v069",
+   "title": "space stretching behind a photon track",
+   "seen": "A dynamic graphic showing white and red streak lines moving across a dark, starry space above a curved horizon.",
+   "reason": "It shows abstract streaks rather than a photon track."
+  },
+  {
+   "id": "v076",
+   "title": "a circle being doubled in width",
+   "seen": "An abstract target-like graphic made of numerous concentric white and red rings surrounding a solid red center on a black background.",
+   "reason": "It resembles a target rather than a circle clearly demonstrating width doubling."
+  },
+  {
+   "id": "v021",
+   "title": "redshift galaxy spectrum",
+   "seen": "A circular view of a starry space with a bright, glowing red and white bullseye pattern at the center, surrounded by concentric white rings.",
+   "reason": "It is an abstract bullseye pattern rather than a galaxy spectrum."
+  },
+  {
+   "id": "v051",
+   "title": "early universe glowing plasma",
+   "seen": "An abstract space illustration featuring bold concentric rings of white and bright red surrounding a dark void, set against a starry black background.",
+   "reason": "It is an abstract ring pattern rather than early universe glowing plasma."
+  }
+ ],
+ "drawings_used": 7,
+ "steps": 0,
+ "steps_without_picture": [],
+ "cards_to_pictures": [
+  "v011",
+  "v013",
+  "v020",
+  "v028",
+  "v036",
+  "v042",
+  "v055",
+  "v067",
+  "v068",
+  "v070",
+  "v071",
+  "v077",
+  "v090",
+  "v093"
+ ]
+}

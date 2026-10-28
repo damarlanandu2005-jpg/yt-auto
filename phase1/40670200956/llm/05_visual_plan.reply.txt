@@ -1,0 +1,1169 @@
+{
+  "visuals": [
+    {
+      "id": "v001",
+      "kind": "card",
+      "card": {
+        "type": "title",
+        "title": "Why the Observable Universe Is 93 Billion Light-Years Wide",
+        "subtitle": "The paradox of time and distance in the universe"
+      }
+    },
+    {
+      "id": "v002",
+      "kind": "video",
+      "photo_subject": "deep field galaxy cluster",
+      "photo_queries": [
+        "deep field galaxies",
+        "hubble deep field"
+      ],
+      "card": {
+        "type": "stat",
+        "title": "Light Travel",
+        "value": "93B",
+        "label": "Light-years wide"
+      }
+    },
+    {
+      "id": "v003",
+      "kind": "photo",
+      "photo_subject": "nebula in space",
+      "photo_queries": [
+        "space nebula",
+        "distant nebula"
+      ],
+      "card": {
+        "type": "stat",
+        "title": "Age of Universe",
+        "value": "13.8B",
+        "label": "Years since Big Bang"
+      }
+    },
+    {
+      "id": "v004",
+      "kind": "photo",
+      "photo_subject": "spiral galaxy",
+      "photo_queries": [
+        "spiral galaxy",
+        "milky way view"
+      ],
+      "card": {
+        "type": "bullets",
+        "title": "Cosmic Puzzle",
+        "items": [
+          "Light travelled 13.8B years",
+          "Universe width is 93B light-years",
+          "Space itself is expanding"
+        ]
+      }
+    },
+    {
+      "id": "v005",
+      "kind": "photo",
+      "photo_subject": "galaxy cluster",
+      "photo_queries": [
+        "galaxy cluster",
+        "cosmic web"
+      ],
+      "card": {
+        "type": "bullets",
+        "title": "In This Video",
+        "items": [
+          "Cosmic expansion",
+          "Light travel time",
+          "Observable horizon"
+        ]
+      }
+    },
+    {
+      "id": "v006",
+      "kind": "card",
+      "card": {
+        "type": "stat",
+        "title": "Scale Comparison",
+        "value": "93B",
+        "label": "Light-years diameter"
+      }
+    },
+    {
+      "id": "v007",
+      "kind": "drawing",
+      "drawing_subject": "a light beam travelling through space",
+      "card": {
+        "type": "stat",
+        "title": "Speed of Light",
+        "value": "Max",
+        "label": "Speed limit in local space"
+      }
+    },
+    {
+      "id": "v008",
+      "kind": "photo",
+      "photo_subject": "distant star field",
+      "photo_queries": [
+        "star field",
+        "night sky stars"
+      ],
+      "card": {
+        "type": "stat",
+        "title": "Travel Time",
+        "value": "13.8B",
+        "label": "Years light has travelled"
+      }
+    },
+    {
+      "id": "v009",
+      "kind": "drawing",
+      "drawing_subject": "a glowing sphere representing the cosmic horizon",
+      "card": {
+        "type": "stat",
+        "title": "Expected Horizon",
+        "value": "Smaller",
+        "label": "Based on simple sum"
+      }
+    },
+    {
+      "id": "v010",
+      "kind": "drawing",
+      "drawing_subject": "a sphere with radius label",
+      "card": {
+        "type": "stat",
+        "title": "Radius",
+        "value": "13.8",
+        "label": "Billion light-years radius"
+      }
+    },
+    {
+      "id": "v011",
+      "kind": "card",
+      "card": {
+        "type": "stat",
+        "title": "Width",
+        "value": "27.6",
+        "label": "Billion light-years width"
+      }
+    },
+    {
+      "id": "v012",
+      "kind": "photo",
+      "photo_subject": "astronomical telescope observatory",
+      "photo_queries": [
+        "space telescope",
+        "observatory dome"
+      ],
+      "card": {
+        "type": "bullets",
+        "title": "Observations",
+        "items": [
+          "Telescope data",
+          "Cosmic measurements"
+        ]
+      }
+    },
+    {
+      "id": "v013",
+      "kind": "card",
+      "card": {
+        "type": "stat",
+        "title": "Actual Diameter",
+        "value": "93",
+        "label": "Billion light-years"
+      }
+    },
+    {
+      "id": "v014",
+      "kind": "photo",
+      "photo_subject": "complex galaxy cluster",
+      "photo_queries": [
+        "galaxy cluster",
+        "deep space cluster"
+      ],
+      "card": {
+        "type": "bullets",
+        "title": "Contradiction",
+        "items": [
+          "Breaks simple rules",
+          "Requires expansion"
+        ]
+      }
+    },
+    {
+      "id": "v015",
+      "kind": "card",
+      "card": {
+        "type": "title",
+        "title": "Unlearning Misconceptions",
+        "subtitle": "The false picture of galaxies flying through empty space"
+      }
+    },
+    {
+      "id": "v016",
+      "kind": "drawing",
+      "drawing_subject": "speedboats racing on a lake",
+      "card": {
+        "type": "stat",
+        "title": "False Model",
+        "value": "Speedboats",
+        "label": "Moving through static air"
+      }
+    },
+    {
+      "id": "v017",
+      "kind": "drawing",
+      "drawing_subject": "galaxies flying apart from an explosion",
+      "card": {
+        "type": "bullets",
+        "title": "Static Space Model",
+        "items": [
+          "Galaxies fly apart",
+          "Fixed static space",
+          "Central explosion"
+        ]
+      }
+    },
+    {
+      "id": "v018",
+      "kind": "photo",
+      "photo_subject": "spiral galaxy arms",
+      "photo_queries": [
+        "spiral galaxy",
+        "galaxy rotation"
+      ],
+      "card": {
+        "type": "stat",
+        "title": "Speed Limit",
+        "value": "C",
+        "label": "Speed of light limit in static space"
+      }
+    },
+    {
+      "id": "v019",
+      "kind": "card",
+      "card": {
+        "type": "stat",
+        "title": "Lookback Time",
+        "value": "13.8B",
+        "label": "Years ago"
+      }
+    },
+    {
+      "id": "v020",
+      "kind": "card",
+      "card": {
+        "type": "stat",
+        "title": "Distance",
+        "value": "13.8B",
+        "label": "Light-years away today"
+      }
+    },
+    {
+      "id": "v021",
+      "kind": "photo",
+      "photo_subject": "redshift galaxy spectrum",
+      "photo_queries": [
+        "galaxy redshift",
+        "astronomical spectrum"
+      ],
+      "card": {
+        "type": "bullets",
+        "title": "Measurements",
+        "items": [
+          "Distant galaxies moving away",
+          "Recessional speeds"
+        ]
+      }
+    },
+    {
+      "id": "v022",
+      "kind": "card",
+      "card": {
+        "type": "bullets",
+        "title": "Recession",
+        "items": [
+          "Speed proportional to distance",
+          "Distant objects move faster"
+        ]
+      }
+    },
+    {
+      "id": "v023",
+      "kind": "photo",
+      "photo_subject": "deep space galaxies",
+      "photo_queries": [
+        "deep space galaxies",
+        "distant cosmos"
+      ],
+      "card": {
+        "type": "stat",
+        "title": "Distant Regions",
+        "value": "Expanding",
+        "label": "Moving away from us"
+      }
+    },
+    {
+      "id": "v024",
+      "kind": "card",
+      "card": {
+        "type": "stat",
+        "title": "Expansion Speed",
+        "value": "> C",
+        "label": "Faster than light"
+      }
+    },
+    {
+      "id": "v025",
+      "kind": "photo",
+      "photo_subject": "colliding galaxies",
+      "photo_queries": [
+        "colliding galaxies",
+        "galaxy interaction"
+      ],
+      "card": {
+        "type": "bullets",
+        "title": "The Big Question",
+        "items": [
+          "Recede faster than light",
+          "Without violating physics"
+        ]
+      }
+    },
+    {
+      "id": "v026",
+      "kind": "card",
+      "card": {
+        "type": "stat",
+        "title": "The Answer",
+        "value": "Space",
+        "label": "Space itself expands"
+      }
+    },
+    {
+      "id": "v027",
+      "kind": "card",
+      "card": {
+        "type": "bullets",
+        "title": "Relativity Rules",
+        "items": [
+          "Special relativity limits",
+          "Objects moving through space"
+        ]
+      }
+    },
+    {
+      "id": "v028",
+      "kind": "drawing",
+      "drawing_subject": "space stretching between two distant points",
+      "card": {
+        "type": "stat",
+        "title": "The Medium",
+        "value": "Between",
+        "label": "Not objects through space"
+      }
+    },
+    {
+      "id": "v029",
+      "kind": "card",
+      "card": {
+        "type": "title",
+        "title": "Stretching Fabric",
+        "subtitle": "Space as a stretching fabric rather than a static box"
+      }
+    },
+    {
+      "id": "v030",
+      "kind": "drawing",
+      "drawing_subject": "a flexible grid stretching out",
+      "card": {
+        "type": "stat",
+        "title": "Expansion",
+        "value": "Intrinsic",
+        "label": "Increase in distance"
+      }
+    },
+    {
+      "id": "v031",
+      "kind": "card",
+      "card": {
+        "type": "bullets",
+        "title": "Cosmic Objects",
+        "items": [
+          "Distance increases over time",
+          "Intrinsic expansion"
+        ]
+      }
+    },
+    {
+      "id": "v032",
+      "kind": "photo",
+      "photo_subject": "starry night sky",
+      "photo_queries": [
+        "night sky",
+        "stars background"
+      ],
+      "card": {
+        "type": "bullets",
+        "title": "No Edge Room",
+        "items": [
+          "Not expanding into empty room",
+          "All space is expanding"
+        ]
+      }
+    },
+    {
+      "id": "v033",
+      "kind": "photo",
+      "photo_subject": "astronomer at desk",
+      "photo_queries": [
+        "astronomer working",
+        "scientist equations"
+      ],
+      "card": {
+        "type": "stat",
+        "title": "Description",
+        "value": "Scale",
+        "label": "Cosmological scale factor"
+      }
+    },
+    {
+      "id": "v034",
+      "kind": "drawing",
+      "drawing_subject": "a grid expanding over time",
+      "card": {
+        "type": "stat",
+        "title": "Scale Factor",
+        "value": "Grows",
+        "label": "Over cosmic time"
+      }
+    },
+    {
+      "id": "v035",
+      "kind": "drawing",
+      "drawing_subject": "two galaxies on a stretching grid",
+      "card": {
+        "type": "stat",
+        "title": "Growth",
+        "value": "Automatic",
+        "label": "Separation increases"
+      }
+    },
+    {
+      "id": "v036",
+      "kind": "card",
+      "card": {
+        "type": "stat",
+        "title": "Galaxies",
+        "value": "Separated",
+        "label": "Physical distance increases"
+      }
+    },
+    {
+      "id": "v037",
+      "kind": "photo",
+      "photo_subject": "isolated spiral galaxy",
+      "photo_queries": [
+        "spiral galaxy",
+        "isolated galaxy"
+      ],
+      "card": {
+        "type": "stat",
+        "title": "Local Rest",
+        "value": "At Rest",
+        "label": "Relative to local surroundings"
+      }
+    },
+    {
+      "id": "v038",
+      "kind": "card",
+      "card": {
+        "type": "stat",
+        "title": "Coordinates",
+        "value": "Comoving",
+        "label": "Local surroundings coordinate system"
+      }
+    },
+    {
+      "id": "v039",
+      "kind": "photo",
+      "photo_subject": "galaxy filaments in space",
+      "photo_queries": [
+        "galaxy filaments",
+        "universe web"
+      ],
+      "card": {
+        "type": "stat",
+        "title": "Space Growth",
+        "value": "Continuous",
+        "label": "Between galaxies as time passes"
+      }
+    },
+    {
+      "id": "v040",
+      "kind": "drawing",
+      "drawing_subject": "two dots on a stretching rubber sheet",
+      "card": {
+        "type": "bullets",
+        "title": "Flexible Sheet",
+        "items": [
+          "Two marks on flexible sheet",
+          "Pulled in every direction"
+        ]
+      }
+    },
+    {
+      "id": "v041",
+      "kind": "drawing",
+      "drawing_subject": "two dots on a stretched sheet",
+      "card": {
+        "type": "stat",
+        "title": "Coordinate Distance",
+        "value": "Constant",
+        "label": "Marks stay in place on sheet"
+      }
+    },
+    {
+      "id": "v042",
+      "kind": "drawing",
+      "drawing_subject": "a ruler measuring between two points",
+      "card": {
+        "type": "stat",
+        "title": "Ruler Distance",
+        "value": "Grows",
+        "label": "Actual physical distance"
+      }
+    },
+    {
+      "id": "v043",
+      "kind": "photo",
+      "photo_subject": "distant galaxy cluster",
+      "photo_queries": [
+        "galaxy cluster",
+        "deep space universe"
+      ],
+      "card": {
+        "type": "stat",
+        "title": "Today vs Past",
+        "value": "Larger",
+        "label": "Physical distances today"
+      }
+    },
+    {
+      "id": "v044",
+      "kind": "card",
+      "card": {
+        "type": "stat",
+        "title": "Past vs Present",
+        "value": "Distant Past",
+        "label": "Smaller than today"
+      }
+    },
+    {
+      "id": "v045",
+      "kind": "card",
+      "card": {
+        "type": "title",
+        "title": "The Rubber Band Dynamic",
+        "subtitle": "Light traveling through expanding space"
+      }
+    },
+    {
+      "id": "v046",
+      "kind": "drawing",
+      "drawing_subject": "an ant crawling on a stretching rubber band",
+      "card": {
+        "type": "bullets",
+        "title": "Rubber Band Analogy",
+        "items": [
+          "Ant crawls forward",
+          "Path ahead expands"
+        ]
+      }
+    },
+    {
+      "id": "v047",
+      "kind": "drawing",
+      "drawing_subject": "a light beam on an expanding line",
+      "card": {
+        "type": "stat",
+        "title": "Light Beam",
+        "value": "Like Ant",
+        "label": "Behaves like crawling ant"
+      }
+    },
+    {
+      "id": "v048",
+      "kind": "photo",
+      "photo_subject": "laser beam in laboratory",
+      "photo_queries": [
+        "laser beam lab",
+        "speed of light"
+      ],
+      "card": {
+        "type": "stat",
+        "title": "Standard Speed",
+        "value": "Constant",
+        "label": "Locally travels at standard speed"
+      }
+    },
+    {
+      "id": "v049",
+      "kind": "photo",
+      "photo_subject": "starlight from distant galaxy",
+      "photo_queries": [
+        "starlight",
+        "galaxy light"
+      ],
+      "card": {
+        "type": "stat",
+        "title": "Journey",
+        "value": "Billions",
+        "label": "Years traveling toward us"
+      }
+    },
+    {
+      "id": "v050",
+      "kind": "drawing",
+      "drawing_subject": "a light ray crossing a stretching grid",
+      "card": {
+        "type": "stat",
+        "title": "Crossed Space",
+        "value": "Stretches",
+        "label": "Space behind light continues to grow"
+      }
+    },
+    {
+      "id": "v051",
+      "kind": "photo",
+      "photo_subject": "early universe glowing plasma",
+      "photo_queries": [
+        "early universe",
+        "cosmic microwave background"
+      ],
+      "card": {
+        "type": "stat",
+        "title": "Early Light",
+        "value": "Close",
+        "label": "Source was very close to us"
+      }
+    },
+    {
+      "id": "v052",
+      "kind": "photo",
+      "photo_subject": "cosmic microwave background map",
+      "photo_queries": [
+        "cosmic microwave background",
+        "planck CMB map"
+      ],
+      "card": {
+        "type": "bullets",
+        "title": "CMB Emission",
+        "items": [
+          "Emitting matter source",
+          "Scientists estimate distance"
+        ]
+      }
+    },
+    {
+      "id": "v053",
+      "kind": "card",
+      "card": {
+        "type": "stat",
+        "title": "Initial Distance",
+        "value": "42M",
+        "label": "Light-years away when emitted"
+      }
+    },
+    {
+      "id": "v054",
+      "kind": "card",
+      "card": {
+        "type": "stat",
+        "title": "Travel Time",
+        "value": "13.8B",
+        "label": "Years to reach Earth"
+      }
+    },
+    {
+      "id": "v055",
+      "kind": "card",
+      "card": {
+        "type": "stat",
+        "title": "Journey Duration",
+        "value": "13.8B",
+        "label": "Years of travel"
+      }
+    },
+    {
+      "id": "v056",
+      "kind": "drawing",
+      "drawing_subject": "space expanding behind a moving light particle",
+      "card": {
+        "type": "stat",
+        "title": "Space Behind",
+        "value": "Expanded",
+        "label": "Dramatic expansion during journey"
+      }
+    },
+    {
+      "id": "v057",
+      "kind": "photo",
+      "photo_subject": "deep field galaxy view",
+      "photo_queries": [
+        "deep field galaxies",
+        "distant cosmos"
+      ],
+      "card": {
+        "type": "stat",
+        "title": "Current Location",
+        "value": "Farther",
+        "label": "Much farther away from Earth today"
+      }
+    },
+    {
+      "id": "v058",
+      "kind": "card",
+      "card": {
+        "type": "title",
+        "title": "Mathematical Puzzle Solved",
+        "subtitle": "How 13.8 billion light-years of time turns into a 46.5 billion light-year radius"
+      }
+    },
+    {
+      "id": "v059",
+      "kind": "card",
+      "card": {
+        "type": "stat",
+        "title": "Light-Travel Distance",
+        "value": "13.8B",
+        "label": "Age times speed of light"
+      }
+    },
+    {
+      "id": "v060",
+      "kind": "card",
+      "card": {
+        "type": "stat",
+        "title": "Travel Distance",
+        "value": "13.8B",
+        "label": "Light-years total"
+      }
+    },
+    {
+      "id": "v061",
+      "kind": "card",
+      "card": {
+        "type": "stat",
+        "title": "Journey Time",
+        "value": "13.8B",
+        "label": "Years in expanding spacetime"
+      }
+    },
+    {
+      "id": "v062",
+      "kind": "drawing",
+      "drawing_subject": "light moving through a curved spacetime grid",
+      "card": {
+        "type": "bullets",
+        "title": "Spacetime Journey",
+        "items": [
+          "Expanding spacetime",
+          "Journey time of light"
+        ]
+      }
+    },
+    {
+      "id": "v063",
+      "kind": "photo",
+      "photo_subject": "cosmic ruler grid",
+      "photo_queries": [
+        "cosmic distance",
+        "astronomical ruler"
+      ],
+      "card": {
+        "type": "stat",
+        "title": "Proper Distance",
+        "value": "Physical",
+        "label": "Defined by cosmologists"
+      }
+    },
+    {
+      "id": "v064",
+      "kind": "drawing",
+      "drawing_subject": "a frozen snapshot of a cosmic grid",
+      "card": {
+        "type": "stat",
+        "title": "Frozen Moment",
+        "value": "Snapshot",
+        "label": "Measured at one time"
+      }
+    },
+    {
+      "id": "v065",
+      "kind": "photo",
+      "photo_subject": "hubble ultra deep field",
+      "photo_queries": [
+        "ultra deep field",
+        "observable universe edge"
+      ],
+      "card": {
+        "type": "bullets",
+        "title": "Standard Model",
+        "items": [
+          "Current proper distance",
+          "Edge of observable universe"
+        ]
+      }
+    },
+    {
+      "id": "v066",
+      "kind": "card",
+      "card": {
+        "type": "stat",
+        "title": "Proper Distance",
+        "value": "46.5B",
+        "label": "Light-years to edge"
+      }
+    },
+    {
+      "id": "v067",
+      "kind": "card",
+      "card": {
+        "type": "stat",
+        "title": "Comoving Radius",
+        "value": "46.5B",
+        "label": "Light-years radius"
+      }
+    },
+    {
+      "id": "v068",
+      "kind": "card",
+      "card": {
+        "type": "stat",
+        "title": "Photon Journey",
+        "value": "13.8B",
+        "label": "Years traveled"
+      }
+    },
+    {
+      "id": "v069",
+      "kind": "drawing",
+      "drawing_subject": "space stretching behind a photon track",
+      "card": {
+        "type": "stat",
+        "title": "Space Stretch",
+        "value": "Stretched",
+        "label": "Physical space behind photon"
+      }
+    },
+    {
+      "id": "v070",
+      "kind": "card",
+      "card": {
+        "type": "stat",
+        "title": "Conversion",
+        "value": "13.8B",
+        "label": "Years travel time"
+      }
+    },
+    {
+      "id": "v071",
+      "kind": "card",
+      "card": {
+        "type": "stat",
+        "title": "Current Radius",
+        "value": "46.5B",
+        "label": "Light-years physical radius"
+      }
+    },
+    {
+      "id": "v072",
+      "kind": "card",
+      "card": {
+        "type": "title",
+        "title": "The Observable Horizon",
+        "subtitle": "Doubling the radius to measure the 93 billion light-year observable horizon"
+      }
+    },
+    {
+      "id": "v073",
+      "kind": "photo",
+      "photo_subject": "full starry night sky dome",
+      "photo_queries": [
+        "night sky dome",
+        "starry sky panorama"
+      ],
+      "card": {
+        "type": "stat",
+        "title": "All Directions",
+        "value": "Equal Time",
+        "label": "Light traveling toward Earth"
+      }
+    },
+    {
+      "id": "v074",
+      "kind": "drawing",
+      "drawing_subject": "a sphere centered on a blue planet",
+      "card": {
+        "type": "stat",
+        "title": "Sphere Shape",
+        "value": "Centered on Earth",
+        "label": "Due to cosmic symmetry"
+      }
+    },
+    {
+      "id": "v075",
+      "kind": "card",
+      "card": {
+        "type": "stat",
+        "title": "Sphere Radius",
+        "value": "46.5B",
+        "label": "Light-years in any direction"
+      }
+    },
+    {
+      "id": "v076",
+      "kind": "drawing",
+      "drawing_subject": "a circle being doubled in width",
+      "card": {
+        "type": "stat",
+        "title": "Total Diameter",
+        "value": "Double",
+        "label": "Double the radius"
+      }
+    },
+    {
+      "id": "v077",
+      "kind": "card",
+      "card": {
+        "type": "stat",
+        "title": "Calculation",
+        "value": "46.5B",
+        "label": "Light-years base radius"
+      }
+    },
+    {
+      "id": "v078",
+      "kind": "card",
+      "card": {
+        "type": "stat",
+        "title": "Current Diameter",
+        "value": "93B",
+        "label": "Light-years total diameter"
+      }
+    },
+    {
+      "id": "v079",
+      "kind": "photo",
+      "photo_subject": "observable universe graphic representation",
+      "photo_queries": [
+        "observable universe",
+        "cosmic web sphere"
+      ],
+      "card": {
+        "type": "stat",
+        "title": "Universe Width",
+        "value": "93B",
+        "label": "Light-years across today"
+      }
+    },
+    {
+      "id": "v080",
+      "kind": "photo",
+      "photo_subject": "dense star field in galaxy",
+      "photo_queries": [
+        "dense star field",
+        "milky way stars"
+      ],
+      "card": {
+        "type": "stat",
+        "title": "Standard Model",
+        "value": "Stars",
+        "label": "More stars than sand grains"
+      }
+    },
+    {
+      "id": "v081",
+      "kind": "photo",
+      "photo_subject": "sandy beach on Earth",
+      "photo_queries": [
+        "sandy beach",
+        "sand grains"
+      ],
+      "card": {
+        "type": "stat",
+        "title": "Star Count",
+        "value": "All Beaches",
+        "label": "More stars than Earth sand grains"
+      }
+    },
+    {
+      "id": "v082",
+      "kind": "card",
+      "card": {
+        "type": "title",
+        "title": "Beyond the Horizon",
+        "subtitle": "What lies beyond our current cosmic horizon"
+      }
+    },
+    {
+      "id": "v083",
+      "kind": "photo",
+      "photo_subject": "dark empty space void",
+      "photo_queries": [
+        "space void",
+        "dark cosmos"
+      ],
+      "card": {
+        "type": "stat",
+        "title": "Beyond Sphere",
+        "value": "Exists",
+        "label": "Objects outside observable sphere"
+      }
+    },
+    {
+      "id": "v084",
+      "kind": "card",
+      "card": {
+        "type": "stat",
+        "title": "Light Travel",
+        "value": "Not Enough",
+        "label": "Time since Big Bang"
+      }
+    },
+    {
+      "id": "v085",
+      "kind": "card",
+      "card": {
+        "type": "stat",
+        "title": "Particle Horizon",
+        "value": "Limit",
+        "label": "Limit of what we can see"
+      }
+    },
+    {
+      "id": "v086",
+      "kind": "photo",
+      "photo_subject": "endless galaxy expanse",
+      "photo_queries": [
+        "endless galaxies",
+        "infinite universe"
+      ],
+      "card": {
+        "type": "stat",
+        "title": "Total Size",
+        "value": "Unknown",
+        "label": "May be infinite in extent"
+      }
+    },
+    {
+      "id": "v087",
+      "kind": "drawing",
+      "drawing_subject": "overlapping spheres in space",
+      "card": {
+        "type": "stat",
+        "title": "Every Location",
+        "value": "Unique",
+        "label": "Own observable universe sphere"
+      }
+    },
+    {
+      "id": "v088",
+      "kind": "photo",
+      "photo_subject": "dark energy cosmic expansion",
+      "photo_queries": [
+        "dark energy",
+        "accelerating universe"
+      ],
+      "card": {
+        "type": "stat",
+        "title": "Dark Energy",
+        "value": "Accelerates",
+        "label": "Cosmic expansion"
+      }
+    },
+    {
+      "id": "v089",
+      "kind": "card",
+      "card": {
+        "type": "stat",
+        "title": "Future Limit",
+        "value": "62B",
+        "label": "Light-years visibility limit"
+      }
+    },
+    {
+      "id": "v090",
+      "kind": "photo",
+      "photo_subject": "galaxy cluster in deep space",
+      "photo_queries": [
+        "galaxy cluster",
+        "deep space galaxies"
+      ],
+      "card": {
+        "type": "stat",
+        "title": "Observable Galaxies",
+        "value": "Future",
+        "label": "Number of galaxies we can observe"
+      }
+    },
+    {
+      "id": "v091",
+      "kind": "card",
+      "card": {
+        "type": "stat",
+        "title": "Future Growth",
+        "value": "2.36X",
+        "label": "Larger than today"
+      }
+    },
+    {
+      "id": "v092",
+      "kind": "card",
+      "card": {
+        "type": "stat",
+        "title": "Summary Width",
+        "value": "93B",
+        "label": "Light-years wide"
+      }
+    },
+    {
+      "id": "v093",
+      "kind": "card",
+      "card": {
+        "type": "stat",
+        "title": "Travel Duration",
+        "value": "13.8B",
+        "label": "Years light traveled"
+      }
+    },
+    {
+      "id": "v094",
+      "kind": "photo",
+      "photo_subject": "spiral galaxy arms glowing",
+      "photo_queries": [
+        "spiral galaxy arms",
+        "cosmic fabric"
+      ],
+      "card": {
+        "type": "stat",
+        "title": "Cosmic Fabric",
+        "value": "Expanding",
+        "label": "Pondering the cosmos"
+      }
+    },
+    {
+      "id": "v095",
+      "kind": "photo",
+      "photo_subject": "deep space star field",
+      "photo_queries": [
+        "deep space",
+        "cosmic background"
+      ],
+      "card": {
+        "type": "stat",
+        "title": "Forever Hidden",
+        "value": "Beyond",
+        "label": "Beyond our sight"
+      }
+    }
+  ]
+}

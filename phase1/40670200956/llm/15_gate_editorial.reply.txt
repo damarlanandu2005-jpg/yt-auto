@@ -1,0 +1,34 @@
+{
+  "checks": [
+    {
+      "check": "hook_question",
+      "ok": true,
+      "reason": "The first 30 seconds explicitly ask how light can travel across 93 billion light-years if time began 13.8 billion years ago."
+    },
+    {
+      "check": "hook_why",
+      "ok": true,
+      "reason": "The opening states that understanding this puzzle reveals your true place in a shifting cosmic landscape."
+    },
+    {
+      "check": "title_promise",
+      "ok": true,
+      "reason": "The script directly answers why the observable universe is 93 billion light-years wide through cosmic expansion and proper distance."
+    },
+    {
+      "check": "scene_relevance",
+      "ok": true,
+      "reason": "Every text card closely mirrors the narration at the moment it is displayed without unrelated or generic topics."
+    },
+    {
+      "check": "sensitive",
+      "ok": true,
+      "reason": "The script discusses astrophysics and cosmology without any financial, legal, or health advice, or accusations against real people or companies."
+    },
+    {
+      "check": "adds_value",
+      "ok": true,
+      "reason": "The video explains underlying concepts like the rubber band dynamic, comoving coordinates, and proper distance instead of merely listing facts."
+    }
+  ]
+}

@@ -1,0 +1,93 @@
+[model] gemini-3.5-flash-lite
+[system]
+
+
+[user]
+Step 2 of a picture check for a science video. Someone looked at each picture WITHOUT knowing
+what it should show and described it. Decide for each image whether the picture fits.
+The pictures are ink drawings made by an AI image model, which often misses. A drawing fits if a
+viewer hearing the narration would recognise its main object(s) (a star, a planet, a blast, molecules, DNA,
+fish...). It does NOT need to show the action or process (collapsing, moving, changing): a still picture of
+the right thing is enough. It does NOT fit if it is only shapes or texture with no recognisable object, shows
+a different thing (a volcano or canyon for the atmosphere, a red diamond for a star), has text or labels, looks
+like a logo/emblem/badge/flag, or has deformed bodies.
+When unsure, answer fits = false (a chart or plain card is shown instead, which is fine).
+Copy the description into "seen".
+Image 1: described as: A close-up illustration of a glowing, curved white and red line cutting diagonally across a dark grey background.
+  should show: a light beam travelling through space
+  narration: Nothing in physics can travel faster than the speed of light through local space.
+Image 2: described as: A circular abstract graphic featuring concentric rings and a red central circle against a dark backdrop.
+  should show: a glowing sphere representing the cosmic horizon
+  narration: a simple sum suggests our cosmic horizon should be much smaller.
+Image 3: described as: An abstract spherical object wrapped in horizontal red, white, and black bands, centered within an oval frame against a dark background.
+  should show: a sphere with radius label
+  narration: You might expect a sphere with a radius of 13.8
+Image 4: described as: A stylized, high-contrast illustration of a red and white boat speeding across dark, rippled water under a pale sky.
+  should show: speedboats racing on a lake
+  narration: Imagine an empty room where distant objects race through motionless air like speedboats on a lake.
+Image 5: described as: A dynamic abstract composition with a central red burst, white streaks, and four scattered red circles on a dark background.
+  should show: galaxies flying apart from an explosion
+  narration: In this false picture, galaxies fly apart through fixed and static space after a central explosion.
+Image 6: described as: An abstract, sweeping arch of white lines resembling a cosmic curve or landscape feature over a dark, starry sky.
+  should show: space stretching between two distant points
+  narration: through local space, not to the space between them.
+Image 7: described as: An abstract pattern of vertical and horizontal grid lines layered closely together to form a dense, textured graphic.
+  should show: a flexible grid stretching out
+  narration: The expansion of the universe is an intrinsic
+Image 8: described as: A geometric abstract design composed of a black and white grid with varying vertical and horizontal rectangular panels.
+  should show: a grid expanding over time
+  narration: scale factor that grows over cosmic time.
+Image 9: described as: An abstract white linear shape resembling a twisted ribbon looping across a dark, star-filled space with two faint nebula-like spots.
+  should show: two galaxies on a stretching grid
+  narration: As the cosmic scale factor grows, the
+Image 10: described as: A solid, slightly textured dark gray surface filling the entire frame.
+  should show: two dots on a stretching rubber sheet
+  narration: Imagine drawing two marks on a flexible sheet that is constantly pulled in every direction.
+Image 11: described as: A wide, dark gray plane with a narrow horizontal lighter band running across the bottom.
+  should show: two dots on a stretched sheet
+  narration: The coordinate distance between the two marks stays
+Image 12: described as: An abstract minimalist drawing with a thin vertical line and a horizontal grid-like bar on a light gray background.
+  should show: a ruler measuring between two points
+  narration: constant, but the actual physical ruler distance grows.
+Image 13: described as: A stylized red and black ant-like mechanical creature resting on a light gray surface while holding a small red sphere.
+  should show: an ant crawling on a stretching rubber band
+  narration: The ant crawls forward at a steady speed, but the path ahead and behind keeps expanding.
+Image 14: described as: An abstract composition showing a curved white pathway above, with several parallel white vertical drops hanging down against a black background.
+  should show: a light beam on an expanding line
+  narration: A light beam traveling through space behaves just like that ant.
+Image 15: described as: A geometric pattern of overlapping white horizontal and vertical bars forming a structured grid on a dark textured background.
+  should show: a light ray crossing a stretching grid
+  narration: the space it has already crossed continues to stretch.
+Image 16: described as: An abstract composition featuring a textured gray and white splatter form, red paint drips, and sharp white streaks against a black background.
+  should show: space expanding behind a moving light particle
+  narration: the space behind the light expanded dramatically.
+Image 17: described as: An abstract black and white graphic resembling concentric fingerprint-like swirls leading toward a dark central void.
+  should show: light moving through a curved spacetime grid
+  narration: journey time of light moving through an expanding spacetime.
+Image 18: described as: An abstract architectural line drawing showing a rectangular box crossed by multiple angled white lines against a black background.
+  should show: a frozen snapshot of a cosmic grid
+  narration: distance measured at one frozen moment of cosmic time.
+Image 19: described as: A dynamic graphic showing white and red streak lines moving across a dark, starry space above a curved horizon.
+  should show: space stretching behind a photon track
+  narration: stretched the physical space behind it along the way.
+Image 20: described as: A textured grey sphere with uneven red markings distributed across its surface, set against a dark background.
+  should show: a sphere centered on a blue planet
+  narration: Because of this symmetry, the observable universe forms a vast sphere centered on Earth.
+Image 21: described as: An abstract target-like graphic made of numerous concentric white and red rings surrounding a solid red center on a black background.
+  should show: a circle being doubled in width
+  narration: To calculate the total diameter of this spherical region, you double the radius.
+Image 22: described as: An abstract cosmic scene featuring a large central white sphere, surrounded by smaller textured globes, honeycomb patterns, and starry background elements.
+  should show: overlapping spheres in space
+  narration: Every location in space has its own unique observable universe sphere centered on itself.
+Image 23: described as: A dark night sky filled with numerous small white stars and a faint, diagonal band resembling the Milky Way, with a few reddish spots.
+  should show: distant star field
+  narration: If light has only been traveling for 13.8 billion years,
+Image 24: described as: A circular view of a starry space with a bright, glowing red and white bullseye pattern at the center, surrounded by concentric white rings.
+  should show: redshift galaxy spectrum
+  narration: However, astronomical measurements show distant galaxies moving away
+Image 25: described as: An abstract space illustration featuring bold concentric rings of white and bright red surrounding a dark void, set against a starry black background.
+  should show: early universe glowing plasma
+  narration: When the ancient light from the early universe was first emitted, the source was actually very close to us.
+Image 26: described as: An abstract cosmic view of a glowing central white star system surrounded by thin red orbital loops, set against a dense starry sky.
+  should show: deep field galaxy view
+  narration: Consequently, the matter that emitted those photons is now located much farther away from Earth today.

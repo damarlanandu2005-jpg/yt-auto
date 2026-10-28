@@ -1,0 +1,35 @@
+[model] gemini-3.5-flash-lite
+[system]
+
+
+[user]
+Step 2 of a picture check for a science video. Someone looked at each picture WITHOUT knowing
+what it should show and described it. Decide for each image whether the picture fits.
+A photo fits only if the description shows it clearly depicts what it should show: not mostly text,
+not a test target, not a different planet or object than the narration is about, no watermark, nothing
+misleading. A diagram, infographic or poster with many labels or much text does NOT fit (too small to read
+in a video, and made for another purpose). A chart or graph fits ONLY if its labels show it is about exactly what the narration says (a graph
+of Mars data, or with unexplained labels like 'RHOS', does not fit a sentence about Earth or a star).
+When unsure, answer fits = false (a chart or plain card is shown instead, which is fine).
+Copy the description into "seen".
+Image 1: described as: A high-angle satellite photograph shows a rugged landscape with diagonal striations, showing patches of sparse brownish earth intermixed with bands of green vegetation and bright white patches, all set against a black margin.
+  should show: distant star field
+  narration: If light has only been traveling for 13.8 billion years,
+Image 2: described as: A tall cylindrical metallic structure is being assembled or tested indoors, with several technicians in white cleanroom suits visible on a grated floor to the right.
+  should show: astronomical telescope observatory
+  narration: Instead, astronomical observations reveal a
+Image 3: described as: A scientific line chart displays relative brightness on the vertical axis against wavelength in microns on the horizontal axis, with several sharp downward peaks labeled with text reading Acetylene, Hydrogen Cyanide, and Carbon Dioxide.
+  should show: redshift galaxy spectrum
+  narration: However, astronomical measurements show distant galaxies moving away
+Image 4: described as: An astronomical chart titled 'Hubble spectroscopically confirms farthest galaxy to date' illustrates a cosmic timeline with redshift and billions of years on the axes, featuring glowing galaxy illustrations, the Hubble telescope icon, and labeled markers for record-holding galaxies.
+  should show: cosmic ruler grid
+  narration: However, cosmologists define proper distance as the physical
+Image 5: described as: Two horizontal rectangular panels are stacked vertically; the top panel displays a dense field of glowing blue stars against a dark background, and the bottom panel shows a warm-toned multicolored abstract texture with mottled patches in red, yellow, and purple.
+  should show: observable universe graphic representation
+  narration: That is why the observable universe is 93 billion light-years across today.
+Image 6: described as: A night landscape photograph shows the silhouette of a car parked on a dirt path in the foreground, with distant dark hills and a bright starry sky overhead featuring the glowing arch of the Milky Way.
+  should show: endless galaxy expanse
+  narration: The total size of the entire universe is unknown, and it may even be infinite in extent.
+Image 7: described as: A tall rocket lifts off from a launch pad at dusk or dawn, producing a massive cloud of bright orange and white exhaust fire and smoke near the ground against a muted grey sky.
+  should show: dark energy cosmic expansion
+  narration: In today's standard model, dark energy accelerates expansion,

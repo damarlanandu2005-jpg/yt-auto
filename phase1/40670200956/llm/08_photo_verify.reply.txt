@@ -1,0 +1,178 @@
+{
+  "checks": [
+    {
+      "n": 1,
+      "seen": "A deep space photograph filled with numerous distant galaxies and stars against a black background, featuring a prominent large star with diffraction spikes near the top center.",
+      "fits": true,
+      "reason": "The image clearly shows a deep field galaxy cluster matching the narration about light traveling across light-years."
+    },
+    {
+      "n": 2,
+      "seen": "A detailed astronomical image of the Crab Nebula, showcasing complex filaments of expanding gas and dust glowing in orange, yellow, and blue colors against a black space filled with faint stars.",
+      "fits": true,
+      "reason": "The image shows a nebula in space, matching the narration about the beginning of time."
+    },
+    {
+      "n": 3,
+      "seen": "A wide telescopic view of the outer region of a spiral galaxy, showing a glowing yellowish galactic core on the left and swirling cosmic dust lanes and bright stars extending to the right.",
+      "fits": true,
+      "reason": "The image depicts a spiral galaxy matching the narration."
+    },
+    {
+      "n": 4,
+      "seen": "A side-by-side comparison of two galaxy clusters in space, featuring numerous glowing yellowish and reddish elliptical galaxies dotted across a dark background, separated by a thin vertical white line.",
+      "fits": true,
+      "reason": "The image shows galaxy clusters as requested by the narration."
+    },
+    {
+      "n": 5,
+      "seen": "A night sky view captured from space, showing the dark curve of Earth's horizon illuminated by an orange atmospheric glow, with parts of the International Space Station framework framing the scene.",
+      "fits": false,
+      "reason": "The image shows Earth's horizon and the ISS, whereas the target was a distant star field."
+    },
+    {
+      "n": 6,
+      "seen": "An abstract, angular geometric interior shot with metallic surfaces and reflective patterns creating a complex, dark tunnel-like perspective.",
+      "fits": false,
+      "reason": "The image is an abstract interior shot and does not clearly show an astronomical telescope observatory."
+    },
+    {
+      "n": 7,
+      "seen": "A close-up astronomical view of a circular, swirling orange and red vortex of cosmic gas and dust surrounding a brilliant central light source against a black background.",
+      "fits": true,
+      "reason": "The image depicts a complex cosmic structure fitting the context."
+    },
+    {
+      "n": 8,
+      "seen": "A face-on spiral galaxy photographed against the blackness of space, featuring a bright central white core surrounded by distinct winding arms filled with dark dust lanes and bright stellar clusters.",
+      "fits": true,
+      "reason": "The image clearly shows spiral galaxy arms."
+    },
+    {
+      "n": 9,
+      "seen": "An abstract cosmic view depicting a bright central light source emerging from glowing orange and brown clouds or dust, with dark, stormy blue and black regions surrounding it.",
+      "fits": false,
+      "reason": "The image is abstract and does not clearly show a redshift galaxy spectrum."
+    },
+    {
+      "n": 10,
+      "seen": "A deep space image displaying a dense field of distant galaxies and stars, centered around several prominent stars with sharp diffraction spikes and faint gravitational lensing arcs.",
+      "fits": true,
+      "reason": "The image clearly shows deep space galaxies."
+    },
+    {
+      "n": 11,
+      "seen": "An image of interacting galaxies forming a dramatic, hook-shaped bridge of stars and glowing pink and white star-forming regions, set against the black void of space.",
+      "fits": true,
+      "reason": "The image shows colliding galaxies matching the narration."
+    },
+    {
+      "n": 12,
+      "seen": "A night landscape showing a starry sky over a dark ocean shore, with silhouettes of tall beach grass in the foreground and faint streaks of light from passing meteors or satellites.",
+      "fits": true,
+      "reason": "The image shows a starry night sky."
+    },
+    {
+      "n": 13,
+      "seen": "A wide-angle control room or laboratory interior with two people seated at computer desks facing multiple monitors displaying data and graphs, illuminated by ambient green and red lighting.",
+      "fits": true,
+      "reason": "The image shows astronomers at desks in a control room."
+    },
+    {
+      "n": 14,
+      "seen": "An edge-on view of a spiral galaxy in space, featuring a flattened disk with a bright central bulge, intricate dark dust lanes, and a backdrop of distant stars.",
+      "fits": true,
+      "reason": "The image shows an isolated spiral galaxy."
+    },
+    {
+      "n": 15,
+      "seen": "An abstract scientific visualization of the cosmic web, showing a black background crossed by glowing filaments and clusters of white and golden light representing galaxies and dark matter.",
+      "fits": true,
+      "reason": "The image shows galaxy filaments in space."
+    },
+    {
+      "n": 16,
+      "seen": "A colorful astronomical field showing a dense distribution of tiny stars and galaxies in various shades of red, green, and blue against a black background.",
+      "fits": true,
+      "reason": "The image shows a distant galaxy cluster."
+    },
+    {
+      "n": 17,
+      "seen": "A laboratory optical setup on a metal breadboard, featuring a spinning segmented wheel on the left, a red laser beam, and adjustable optical mounts with small circular lenses.",
+      "fits": true,
+      "reason": "The image shows a laser beam in a laboratory."
+    },
+    {
+      "n": 18,
+      "seen": "Three circular astronomical ring images side by side against a black background, displaying a gradient from bright yellow-orange on the left to dark red on the right.",
+      "fits": true,
+      "reason": "The image displays starlight analysis from distant galaxies."
+    },
+    {
+      "n": 19,
+      "seen": "An oval cosmic microwave background map of the entire universe, showing tiny temperature fluctuations as a multicolored pattern of orange, yellow, and blue spots.",
+      "fits": true,
+      "reason": "The image clearly shows the cosmic microwave background map."
+    },
+    {
+      "n": 20,
+      "seen": "A multi-panel scientific chart illustrating the cosmic distance ladder, with axes labeled in magnitudes and distances, showing plotted data points and residuals for geometry, Cepheids, and Type Ia supernovae.",
+      "fits": false,
+      "reason": "A chart or graph with multiple text labels and axes does not fit unless it matches specific criteria; here it is too complex for video and is a chart."
+    },
+    {
+      "n": 21,
+      "seen": "A deep field view of space captured by a telescope, revealing countless distant galaxies of various shapes and colors scattered across a dark background.",
+      "fits": true,
+      "reason": "The image shows a Hubble ultra deep field style view of distant galaxies."
+    },
+    {
+      "n": 22,
+      "seen": "A 360-degree panoramic night sky photograph featuring the arch of the Milky Way galaxy stretching across the horizon, with several astronomical observatory domes visible on the left.",
+      "fits": true,
+      "reason": "The image shows a full starry night sky dome."
+    },
+    {
+      "n": 23,
+      "seen": "An illustrated linear timeline of the universe, starting with Earth on the far left and stretching across various astronomical objects and epochs to the glowing cosmic microwave background on the far right, accompanied by text labels.",
+      "fits": false,
+      "reason": "The image contains text labels and acts as an infographic timeline, which does not fit."
+    },
+    {
+      "n": 24,
+      "seen": "An artistic space rendering showing a dark brownish planet on the left, scattered rocky asteroids, and a bright star surrounded by a protoplanetary disk of dust and gas on the right.",
+      "fits": true,
+      "reason": "The image shows a dense star field and planetary system rendering in space."
+    },
+    {
+      "n": 25,
+      "seen": "A satellite photograph of a coastal region, showing a long spit of land and sandy beaches bordering a deep blue ocean.",
+      "fits": true,
+      "reason": "The image shows a sandy beach on Earth, matching the narration."
+    },
+    {
+      "n": 26,
+      "seen": "An abstract astronomical rendering or gravitational wave visualization showing a dark central void surrounded by an irregular ring of glowing white and multicolored light points.",
+      "fits": true,
+      "reason": "The image depicts a dark empty space void."
+    },
+    {
+      "n": 27,
+      "seen": "A close-up photograph of a modern decorative light installation, consisting of numerous blue-lit fiber optic strands radiating outward from a central point like a glowing burst.",
+      "fits": false,
+      "reason": "The image depicts a light installation on Earth rather than an endless galaxy expanse."
+    },
+    {
+      "n": 28,
+      "seen": "An abstract conceptual graphic illustrating spacetime, with several spiral galaxies resting on a green warped grid floor under a purple grid ceiling.",
+      "fits": false,
+      "reason": "The image is an abstract graphic with a grid floor, which does not fit."
+    },
+    {
+      "n": 29,
+      "seen": "A detailed astronomical image of a face-on spiral galaxy with a prominent glowing core and vibrant pink star-forming regions along its spiral arms, set against a star-filled black sky.",
+      "fits": true,
+      "reason": "The image clearly shows spiral galaxy arms glowing."
+    }
+  ]
+}

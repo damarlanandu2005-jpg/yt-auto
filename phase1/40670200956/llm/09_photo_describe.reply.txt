@@ -1,0 +1,32 @@
+{
+  "images": [
+    {
+      "n": 1,
+      "seen": "A high-angle satellite photograph shows a rugged landscape with diagonal striations, showing patches of sparse brownish earth intermixed with bands of green vegetation and bright white patches, all set against a black margin."
+    },
+    {
+      "n": 2,
+      "seen": "A tall cylindrical metallic structure is being assembled or tested indoors, with several technicians in white cleanroom suits visible on a grated floor to the right."
+    },
+    {
+      "n": 3,
+      "seen": "A scientific line chart displays relative brightness on the vertical axis against wavelength in microns on the horizontal axis, with several sharp downward peaks labeled with text reading Acetylene, Hydrogen Cyanide, and Carbon Dioxide."
+    },
+    {
+      "n": 4,
+      "seen": "An astronomical chart titled 'Hubble spectroscopically confirms farthest galaxy to date' illustrates a cosmic timeline with redshift and billions of years on the axes, featuring glowing galaxy illustrations, the Hubble telescope icon, and labeled markers for record-holding galaxies."
+    },
+    {
+      "n": 5,
+      "seen": "Two horizontal rectangular panels are stacked vertically; the top panel displays a dense field of glowing blue stars against a dark background, and the bottom panel shows a warm-toned multicolored abstract texture with mottled patches in red, yellow, and purple."
+    },
+    {
+      "n": 6,
+      "seen": "A night landscape photograph shows the silhouette of a car parked on a dirt path in the foreground, with distant dark hills and a bright starry sky overhead featuring the glowing arch of the Milky Way."
+    },
+    {
+      "n": 7,
+      "seen": "A tall rocket lifts off from a launch pad at dusk or dawn, producing a massive cloud of bright orange and white exhaust fire and smoke near the ground against a muted grey sky."
+    }
+  ]
+}

@@ -1,0 +1,29 @@
+[model] gemini-3.8-flash
+[system]
+
+
+[user]
+You are a strict fact-checker. For each sentence below, decide using ONLY its cited passages
+(not your own knowledge):
+- supported: every detail (numbers, names, dates, causes, comparisons) is stated in or directly follows from them.
+- partly: the main point is backed but some detail is not, or it overstates / oversimplifies into something false.
+  Also partly: "every/all/always/never" the passages don't say, or a model-based estimate stated as a plain
+  certain fact (fixed_text adds "scientists estimate" or "in today's standard model").
+- unsupported: the cited passages do not back it, or there are none.
+- Conflict: if the cited passages DISAGREE with each other about any number, date or name the sentence
+  states, the sentence is at most "partly" even if it matches one of them; say "sources conflict". Its
+  fixed_text must not pick a side: state only what all passages agree on, or give both values.
+For partly/unsupported, give fixed_text: a corrected sentence in the same plain spoken style that the cited
+passages fully support (keep digits and full unit words; no copying 8+ words). Leave fixed_text empty if impossible.
+A FRAMING SENTENCE has no passages: it is "supported" only if it makes no checkable claim at all (a question,
+transition or invitation). If it states any fact, mark it "unsupported" and give fixed_text: the same idea as a
+pure question or transition with no claim (e.g. "So what would a nearby supernova do to us?").
+
+[s01.07] SENTENCE: A single particle of light, called a photon, travels 13.8 billion light-years over the entire age of the cosmos.
+CITED PASSAGES:
+A1.15: The light-travel distance to the edge of the observable universe is the age of the universe times the speed of light, 13.8 billion light years. This is the distance that a photon emitted shortly after the Big Bang, such as one from the cosmic microwave background, has traveled to reach observers on Earth. Because spacetime is curved, corresponding to the expansion of space, this distance does not correspond to the true distance at any moment in time.
+
+[s05.08] SENTENCE: The matter that emitted the ancient light was about 42 million light-years away when emitted and is about 46 billion light-years away today.
+CITED PASSAGES:
+A1.13: These are distances now (in cosmological time), not distances at the time the light was emitted. For example, the cosmic microwave background radiation that we see right now was emitted at the time of photon decoupling, estimated to have occurred about 380,000 years after the Big Bang, which occurred around 13.8 billion years ago. This radiation was emitted by matter that has, in the intervening time, mostly condensed into galaxies, and those galaxies are now calculated to be about 46 billion light-years from Earth. To estimate the distance to that matter at the time the light was emitted, we may first note that according to the Friedmann–Lemaître–Robertson–Walker metric, which is used to model the expanding universe, if we receive light with a redshift of z, then the scale factor at the time the light was originally emitted is given by
+A1.14: WMAP nine-year results combined with other measurements give the redshift of photon decoupling as z = 1091.64±0.47, which implies that the scale factor at the time of photon decoupling would be 1⁄1092.64. So if the matter that originally emitted the oldest CMBR photons has a present distance of 46 billion light-years, then the distance would have been only about 42 million light-years at the time of decoupling.
