@@ -26,16 +26,18 @@ XFADE = 0.5                  # dissolve between drawings
 LONG_S = 6.5                 # longest time one view stays on screen
 MAX_S, MIN_WORDS, MAX_WORDS = 58.0, 55, 115
 END_LINE = "The full story is in our long video on this channel."
+ROADMAP = re.compile(r"\bin this video\b|\byou will (discover|learn|see|find)\b|\bwe will\b", re.I)
 STYLE = drawings.STYLE + ", tall vertical composition with the subject in the centre"
 
 PLAN_SCHEMA = {"type": "object", "properties": {"shorts": {"type": "array", "items": {"type": "object", "properties": {
     "title": {"type": "string", "description": "Short title, at most 60 characters, honest"},
     "hook": {"type": "string", "description": "ONE short question (max 14 words), no numbers, no claim"},
-    "sentences": {"type": "array", "items": {"type": "string"}, "description": "ids of consecutive script sentences"},
+    "sentences": {"type": "array", "items": {"type": "string"}, "description": "ids of script sentences, in script order"},
+    "answer": {"type": "string", "description": "id of the sentence that answers the hook"},
     "subject": {"type": "string", "description": "ONE physical, drawable object"},
     "shots": {"type": "array", "minItems": 6, "maxItems": 8, "items": {"type": "object", "properties": {
         "sentence": {"type": "string"}, "view": {"type": "string"}}, "required": ["sentence", "view"]}}},
-    "required": ["title", "hook", "sentences", "subject", "shots"]}}}, "required": ["shorts"]}
+    "required": ["title", "hook", "sentences", "answer", "subject", "shots"]}}}, "required": ["shorts"]}
 
 
 def plan(script: dict, n: int) -> list[dict]:
@@ -44,8 +46,11 @@ def plan(script: dict, n: int) -> list[dict]:
 Plan {n} YouTube Short(s), each a "zoom journey" like the best science Shorts: one complete mini story
 (a puzzle, then the answer) told with drawings of ONE subject seen ever closer, then pulled back out.
 For each Short:
-- sentences: 4 to 9 CONSECUTIVE sentence ids that together tell a complete mini story and make sense alone,
-  {MIN_WORDS}-{MAX_WORDS} words in total. Use the sentences exactly as they are; do not invent new facts.
+- sentences: 4 to 9 sentence ids, in script order (you may skip sentences), that together tell a
+  complete mini story: the puzzle, then THE ANSWER, explained simply. {MIN_WORDS}-{MAX_WORDS} words in total.
+  A Short that asks a question and does not answer it is not allowed. Use the sentences exactly as they
+  are; do not invent new facts. Skip sentences that talk about "this video" or what viewers "will discover".
+- answer: the id of the sentence that answers the puzzle (it must be in "sentences").
 - hook: one short question that opens the Short and makes people stay. Plain words only: NO numbers,
   no claim, no fake urgency (the numbers come in the checked sentences).
 - title: honest, at most 60 characters.
@@ -57,6 +62,7 @@ For each Short:
   close up, then pull back out to a wide view at the end. Each view is one plain sentence naming the
   concrete objects in the picture and where they are, e.g. "planet Earth small in the centre, surrounded
   by many tiny spiral galaxies". No people's faces, no text, no logos, no abstract light rays.
+  Each view must look clearly different from the one before (a new distance, a new detail).
   Each shot names the sentence id it plays under; spread the shots over all the sentences.
 {"Different Shorts must use different sentences." if n > 1 else ""}
 
@@ -73,10 +79,16 @@ def _clean_plans(plans: list[dict], script: dict) -> list[dict]:
         ids = [i for i in p["sentences"] if i in text and i not in used]
         if not ids:
             continue
-        a, b = order.index(ids[0]), order.index(ids[-1])
-        ids = order[a:b + 1]  # consecutive, as asked
+        ids = sorted({i for i in ids if not ROADMAP.search(text[i]["text"])}, key=order.index)
+        answer = p.get("answer") if p.get("answer") in ids else None
+        if not answer:  # rule R2: the hook must be answered in the Short
+            continue
         while sum(len(text[i]["text"].split()) for i in ids) > MAX_WORDS and len(ids) > 3:
-            ids = ids[:-1]
+            # drop from the middle, never the opening, the answer or the last line
+            middle = [i for i in ids[1:-1] if i != answer]
+            if not middle:
+                break
+            ids.remove(middle[len(middle) // 2])
         if sum(len(text[i]["text"].split()) for i in ids) < MIN_WORDS - 20:
             continue
         hook = p["hook"].strip()
@@ -87,7 +99,7 @@ def _clean_plans(plans: list[dict], script: dict) -> list[dict]:
             for k, s in enumerate(shots_):
                 s["sentence"] = ids[min(len(ids) - 1, k * len(ids) // len(shots_))]
         shots_.sort(key=lambda s: ids.index(s["sentence"]))  # keep the story order
-        out.append({**p, "sentences": ids, "hook": hook, "shots": shots_})
+        out.append({**p, "sentences": ids, "answer": answer, "hook": hook, "shots": shots_})
         used.update(ids)
     return out
 
@@ -139,14 +151,14 @@ def _draw(p: dict, out: Path, log: dict) -> list[Path]:
     for k, s in enumerate(p["shots"]):
         f = raw / f"shot{k + 1}.png"
         try:
-            data = drawings.cloud_draw(f"{p['subject']}: {s['view']}, {STYLE}")
+            data = drawings.cloud_draw(f"black and white ink drawing of {p['subject']}: {s['view']}, {STYLE}")
         except Exception as e:  # noqa: BLE001
             log.setdefault("draw_errors", []).append(f"shot{k + 1}: {e!r}"[:200])
             continue
         f.write_bytes(data)
         made[k] = f
         rec = drawings.record(f, f"{p['subject']}: {s['view']}", cloud=True)
-        rec["prompt"] = f"{p['subject']}: {s['view']}, {STYLE}"
+        rec["prompt"] = f"black and white ink drawing of {p['subject']}: {s['view']}, {STYLE}"
         f.with_suffix(".licence.json").write_text(json.dumps(rec, indent=1, ensure_ascii=False))
         vis.append({"id": f"shot{k + 1}", "k": k, "photo": {"path": str(f), **rec},
                     "photo_subject": f"{p['subject']}: {s['view']}", "text": s["view"]})
