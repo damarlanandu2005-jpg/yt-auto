@@ -172,9 +172,17 @@ def run(args, out: Path, bench: Bench) -> None:
     headings = {sc["id"]: sc["heading"] for sc in script["scenes"]}
     scene_text = {sc["id"]: " ".join(s["text"] for s in sc["sentences"]) for sc in script["scenes"]}
     with bench.stage("visual_plan"):
-        visuals = cached(out / "visual_plan.json",
-                         lambda: shots.plan_visuals(script["title"], shots.slots(sentences, total), headings,
-                                                    max_drawings=min(12, args.max_drawings)))
+        the_slots = shots.slots(sentences, total)
+        plan_file = out / "visual_plan.json"
+        if plan_file.exists():  # a reused plan must match this narration's timing (slower lines move every slot)
+            old = json.loads(plan_file.read_text(encoding="utf-8"))
+            same = len(old) == len(the_slots) and all(abs(a["start"] - b["start"]) < 0.05 for a, b in zip(old, the_slots))
+            if not same:
+                print(f"[visual_plan] saved plan has {len(old)} slots, narration now gives {len(the_slots)} "
+                      f"(or different times): making a new plan", flush=True)
+                plan_file.unlink()
+        visuals = cached(plan_file, lambda: shots.plan_visuals(script["title"], the_slots, headings,
+                                                               max_drawings=min(12, args.max_drawings)))
     with bench.stage("photos"):
         if (out / "visuals.json").exists():
             visuals = json.loads((out / "visuals.json").read_text(encoding="utf-8"))
