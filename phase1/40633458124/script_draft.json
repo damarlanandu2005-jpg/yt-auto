@@ -1,0 +1,543 @@
+{
+ "title": "How Close Can a Supernova Get Before It Destroys Earth?",
+ "scenes": [
+  {
+   "heading": "The Hollywood Shockwave Myth",
+   "sentences": [
+    {
+     "text": "Could a dying star explode near our solar system and rip Earth's atmosphere away into space?",
+     "kind": "framing",
+     "sources": []
+    },
+    {
+     "text": "Science fiction movies often show a fiery blast wave sweeping our planet entirely bare within seconds.",
+     "kind": "framing",
+     "sources": []
+    },
+    {
+     "text": "This question matters to you because that fragile layer of air makes all terrestrial life possible.",
+     "kind": "framing",
+     "sources": []
+    },
+    {
+     "text": "Without an atmosphere to provide oxygen, survival would be impossible.",
+     "kind": "framing",
+     "sources": []
+    },
+    {
+     "text": "In reality, a supernova is an unimaginably powerful explosion marking the death of a star.",
+     "kind": "fact",
+     "sources": [
+      "A2.1"
+     ]
+    },
+    {
+     "text": "When a massive star runs out of fuel, its core collapses under immense gravitational force.",
+     "kind": "fact",
+     "sources": [
+      "A2.3",
+      "A2.5",
+      "A2.52"
+     ]
+    },
+    {
+     "text": "Alternatively, an exploding white dwarf star undergoes runaway nuclear fusion.",
+     "kind": "fact",
+     "sources": [
+      "A2.1",
+      "A2.4"
+     ]
+    },
+    {
+     "text": "These stellar detonations expel several solar masses of matter into the surrounding interstellar medium.",
+     "kind": "fact",
+     "sources": [
+      "A2.6"
+     ]
+    },
+    {
+     "text": "The ejected material travels outward at speeds reaching several per cent of the speed of light.",
+     "kind": "fact",
+     "sources": [
+      "A2.6"
+     ]
+    },
+    {
+     "text": "This creates an expanding shock wave that sweeps up a shell of interstellar gas and dust.",
+     "kind": "fact",
+     "sources": [
+      "A2.6"
+     ]
+    },
+    {
+     "text": "Yet space is so vast that this physical debris spreads out across dozens of light-years.",
+     "kind": "fact",
+     "sources": [
+      "A1.1",
+      "A2.6"
+     ]
+    },
+    {
+     "text": "By the time it reaches us, the physical blast wave cannot blow away our planetary air.",
+     "kind": "fact",
+     "sources": [
+      "A1.1",
+      "A2.6"
+     ]
+    }
+   ]
+  },
+  {
+   "heading": "The Stellar Safety Line",
+   "sentences": [
+    {
+     "text": "Where are the nearest stars that might explode in our stellar neighbourhood?",
+     "kind": "framing",
+     "sources": []
+    },
+    {
+     "text": "Astronomers define a near-Earth supernova as one occurring within roughly 33 to 978 light-years.",
+     "kind": "fact",
+     "sources": [
+      "A1.1"
+     ]
+    },
+    {
+     "text": "At present, our galaxy contains up to 14 near-Earth supernova candidates within that wider distance.",
+     "kind": "fact",
+     "sources": [
+      "A1.2"
+     ]
+    },
+    {
+     "text": "Several prominent stars within a few hundred light-years could explode in as little as 1,000 years.",
+     "kind": "fact",
+     "sources": [
+      "A1.6"
+     ]
+    },
+    {
+     "text": "Although these dying stars will shine brilliantly, they pose little direct threat to our planet.",
+     "kind": "fact",
+     "sources": [
+      "A1.6"
+     ]
+    },
+    {
+     "text": "Take the famous red supergiant Betelgeuse, which fascinates skywatchers.",
+     "kind": "framing",
+     "sources": []
+    },
+    {
+     "text": "Scientists estimate that Betelgeuse may take up to 1.5 million years to undergo a supernova.",
+     "kind": "fact",
+     "sources": [
+      "A1.5"
+     ]
+    },
+    {
+     "text": "When it finally detonates, its stream of charged particles will take 100,000 years to reach Earth.",
+     "kind": "fact",
+     "sources": [
+      "A1.5"
+     ]
+    },
+    {
+     "text": "Looking back in time, other relatively nearby stars have exploded without harming our biosphere.",
+     "kind": "fact",
+     "sources": [
+      "A1.7"
+     ]
+    },
+    {
+     "text": "The Vela supernova exploded about 12,000 years ago roughly 800 light-years away from our Sun.",
+     "kind": "fact",
+     "sources": [
+      "A1.7"
+     ]
+    },
+    {
+     "text": "Another explosion called Geminga occurred roughly 300,000 years ago at a distance of 550 light-years.",
+     "kind": "fact",
+     "sources": [
+      "A1.7"
+     ]
+    },
+    {
+     "text": "The closest known white dwarf candidate, IK Pegasi, is currently moving away to a safe distance.",
+     "kind": "fact",
+     "sources": [
+      "A1.8"
+     ]
+    }
+   ]
+  },
+  {
+   "heading": "The Primary Weapon: Invisible Radiation",
+   "sentences": [
+    {
+     "text": "If a blast wave cannot destroy our atmosphere, what makes a supernova dangerous?",
+     "kind": "framing",
+     "sources": []
+    },
+    {
+     "text": "The real threat comes from invisible electromagnetic radiation travelling across interstellar space at light speed.",
+     "kind": "fact",
+     "sources": [
+      "A1.3",
+      "A1.5"
+     ]
+    },
+    {
+     "text": "Supernovae act as primary cosmic factories, generating immense amounts of high-energy cosmic rays.",
+     "kind": "fact",
+     "sources": [
+      "A2.6"
+     ]
+    },
+    {
+     "text": "They also emit intense pulses of penetrating X-rays and highly energetic gamma rays.",
+     "kind": "fact",
+     "sources": [
+      "A1.3",
+      "A1.12"
+     ]
+    },
+    {
+     "text": "Gamma rays are responsible for most of the catastrophic damage to any life-bearing terrestrial world.",
+     "kind": "fact",
+     "sources": [
+      "A1.3"
+     ]
+    },
+    {
+     "text": "When gamma radiation strikes the upper atmosphere, it does not push the gases into space.",
+     "kind": "fact",
+     "sources": [
+      "A1.3"
+     ]
+    },
+    {
+     "text": "Instead, these energetic photons cause radiolysis of diatomic nitrogen and diatomic oxygen molecules.",
+     "kind": "fact",
+     "sources": [
+      "A1.3"
+     ]
+    },
+    {
+     "text": "Radiolysis breaks apart these common gas molecules and recombines them into harmful nitrogen oxides.",
+     "kind": "fact",
+     "sources": [
+      "A1.3"
+     ]
+    },
+    {
+     "text": "These newly created nitrogen oxides act as powerful catalysts that rapidly destroy ozone molecules.",
+     "kind": "fact",
+     "sources": [
+      "A1.3"
+     ]
+    },
+    {
+     "text": "In this way, the star uses invisible chemistry to dismantle our planet's vital stratospheric shield.",
+     "kind": "fact",
+     "sources": [
+      "A1.3"
+     ]
+    },
+    {
+     "text": "The air remains bound to Earth, but its protective composition is transformed.",
+     "kind": "fact",
+     "sources": [
+      "A1.3"
+     ]
+    },
+    {
+     "text": "Invisible atomic reactions take the place of the Hollywood shockwave.",
+     "kind": "framing",
+     "sources": []
+    }
+   ]
+  },
+  {
+   "heading": "The Kill Zone Threshold",
+   "sentences": [
+    {
+     "text": "How close must a star be for this lethal chemistry to occur?",
+     "kind": "framing",
+     "sources": []
+    },
+    {
+     "text": "Scientists calculate that the genuine danger zone begins within a few dozen light-years of Earth.",
+     "kind": "fact",
+     "sources": [
+      "A1.3",
+      "A1.7"
+     ]
+    },
+    {
+     "text": "An explosion within 33 light-years happens on average only once every 240 million years.",
+     "kind": "fact",
+     "sources": [
+      "A1.3"
+     ]
+    },
+    {
+     "text": "If a Type 2 supernova explodes closer than 26 light-years, severe damage follows.",
+     "kind": "fact",
+     "sources": [
+      "A1.7"
+     ]
+    },
+    {
+     "text": "At this lethal distance, the incoming radiation would destroy more than half of Earth's ozone layer.",
+     "kind": "fact",
+     "sources": [
+      "A1.7"
+     ]
+    },
+    {
+     "text": "Researchers derived this calculation from atmospheric models and radiation data from supernova 1987A.",
+     "kind": "fact",
+     "sources": [
+      "A1.7"
+     ]
+    },
+    {
+     "text": "Type 1a supernovae can be even more dangerous to our planet if they occur nearby.",
+     "kind": "fact",
+     "sources": [
+      "A1.8"
+     ]
+    },
+    {
+     "text": "These events occur when an exploding white dwarf releases tremendous energy within mere seconds.",
+     "kind": "fact",
+     "sources": [
+      "A2.44"
+     ]
+    },
+    {
+     "text": "At peak brightness, such an explosion can shine 5 billion times brighter than our Sun.",
+     "kind": "fact",
+     "sources": [
+      "A2.44"
+     ]
+    },
+    {
+     "text": "Because white dwarfs are dim and common, they can detonate unpredictably in unstudied systems.",
+     "kind": "fact",
+     "sources": [
+      "A1.8"
+     ]
+    },
+    {
+     "text": "Any stellar detonation occurring inside 30 light-years would cross the critical threshold of survival.",
+     "kind": "fact",
+     "sources": [
+      "A1.3",
+      "A1.7",
+      "A1.10"
+     ]
+    },
+    {
+     "text": "That narrow boundary represents the cosmic line where atmospheric protection completely collapses.",
+     "kind": "framing",
+     "sources": []
+    }
+   ]
+  },
+  {
+   "heading": "A Poisoned Sky",
+   "sentences": [
+    {
+     "text": "What happens to the world below when half of the ozone layer is wiped out?",
+     "kind": "framing",
+     "sources": []
+    },
+    {
+     "text": "Ozone is the only atmospheric gas capable of absorbing dangerous ultraviolet B radiation from sunlight.",
+     "kind": "fact",
+     "sources": [
+      "A3.5"
+     ]
+    },
+    {
+     "text": "When stratospheric ozone levels drop, intense ultraviolet B light penetrates directly to the surface.",
+     "kind": "fact",
+     "sources": [
+      "A3.37"
+     ]
+    },
+    {
+     "text": "This extreme radiation damages cellular DNA, causing pyrimidine bases to form transcription errors during replication.",
+     "kind": "fact",
+     "sources": [
+      "A3.41"
+     ]
+    },
+    {
+     "text": "In humans and animals, excess ultraviolet exposure causes severe skin cancers and cataracts.",
+     "kind": "fact",
+     "sources": [
+      "A3.3",
+      "A3.41",
+      "A3.43"
+     ]
+    },
+    {
+     "text": "Marine ecosystems suffer catastrophic harm because ultraviolet rays penetrate into shallow waters.",
+     "kind": "fact",
+     "sources": [
+      "A1.3",
+      "A3.39"
+     ]
+    },
+    {
+     "text": "Phytoplankton and delicate coral reef communities are particularly vulnerable to this sudden radiation spike.",
+     "kind": "fact",
+     "sources": [
+      "A1.3"
+     ]
+    },
+    {
+     "text": "Their collapse would severely deplete the base of the marine food chain.",
+     "kind": "fact",
+     "sources": [
+      "A1.3"
+     ]
+    },
+    {
+     "text": "At the same time, elevated cosmic rays can alter climate patterns and cool the global temperature.",
+     "kind": "fact",
+     "sources": [
+      "A1.4"
+     ]
+    },
+    {
+     "text": "Gamma ray bursts from dangerously close stars may have caused the ancient end-Ordovician extinction.",
+     "kind": "fact",
+     "sources": [
+      "A1.11"
+     ]
+    },
+    {
+     "text": "That prehistoric cataclysm resulted in the death of nearly 60 per cent of all oceanic life.",
+     "kind": "fact",
+     "sources": [
+      "A1.11"
+     ]
+    },
+    {
+     "text": "Rapid successive supernovae have also been proposed as triggers for the Late Devonian extinction.",
+     "kind": "fact",
+     "sources": [
+      "A1.11"
+     ]
+    }
+   ]
+  },
+  {
+   "heading": "Ocean Floor Clues and the Final Verdict",
+   "sentences": [
+    {
+     "text": "Did nearby exploding stars actually bombard our planet during geological history?",
+     "kind": "framing",
+     "sources": []
+    },
+    {
+     "text": "The definitive proof came not from looking upward, but by digging deep into the seabed.",
+     "kind": "fact",
+     "sources": [
+      "A1.10",
+      "A4.8"
+     ]
+    },
+    {
+     "text": "Dying stars forge heavy elements and disperse them into space during their catastrophic final moments.",
+     "kind": "fact",
+     "sources": [
+      "A1.9",
+      "A2.6"
+     ]
+    },
+    {
+     "text": "One isotope created in these events is iron-60, with a half-life of 2.62 million years.",
+     "kind": "fact",
+     "sources": [
+      "A4.1",
+      "A4.6"
+     ]
+    },
+    {
+     "text": "Researchers examining deep-sea rocks in the Pacific Ocean discovered 23 atoms of this rare isotope.",
+     "kind": "fact",
+     "sources": [
+      "A1.10"
+     ]
+    },
+    {
+     "text": "They identified these stellar atoms within the top two centimetres of the oceanic crust.",
+     "kind": "fact",
+     "sources": [
+      "A1.10"
+     ]
+    },
+    {
+     "text": "This detection proves an explosion occurred within the last 5 million years.",
+     "kind": "fact",
+     "sources": [
+      "A1.10"
+     ]
+    },
+    {
+     "text": "The recovered iron indicates the dying star exploded less than 98 light-years away.",
+     "kind": "fact",
+     "sources": [
+      "A1.10"
+     ]
+    },
+    {
+     "text": "Similar interstellar traces have also appeared in Antarctic surface snow and in lunar samples.",
+     "kind": "fact",
+     "sources": [
+      "A1.10",
+      "A4.8"
+     ]
+    },
+    {
+     "text": "Iron-60 atoms were even found preserved inside fossilised bacteria living in seabed sediments.",
+     "kind": "fact",
+     "sources": [
+      "A4.8"
+     ]
+    },
+    {
+     "text": "So how close would a dying star need to be to wipe out our protective atmospheric shield?",
+     "kind": "framing",
+     "sources": []
+    },
+    {
+     "text": "A supernova does not blow away our air, but one inside 26 to 33 light-years destroys our ozone layer.",
+     "kind": "fact",
+     "sources": [
+      "A1.3",
+      "A1.7"
+     ]
+    },
+    {
+     "text": "Lethal gamma rays convert atmospheric oxygen into nitrogen oxides, stripping away our shield through invisible chemistry.",
+     "kind": "fact",
+     "sources": [
+      "A1.3"
+     ]
+    },
+    {
+     "text": "Next time you gaze at the night sky, consider the fragile invisible balance protecting our world.",
+     "kind": "framing",
+     "sources": []
+    }
+   ]
+  }
+ ]
+}
