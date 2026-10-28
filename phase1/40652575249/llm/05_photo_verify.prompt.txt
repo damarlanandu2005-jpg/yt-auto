@@ -1,0 +1,23 @@
+[model] gemini-3.5-flash-lite
+[system]
+
+
+[user]
+Step 2 of a picture check for a science video. Someone looked at each picture WITHOUT knowing
+what it should show and described it. Decide for each image whether the picture fits.
+A photo fits only if the description shows it clearly depicts what it should show: not mostly text,
+not a test target, not a different planet or object than the narration is about, no watermark, nothing
+misleading. A diagram, infographic or poster with many labels or much text does NOT fit (too small to read
+in a video, and made for another purpose). A chart or graph fits ONLY if its labels show it is about exactly what the narration says (a graph
+of Mars data, or with unexplained labels like 'RHOS', does not fit a sentence about Earth or a star).
+When unsure, answer fits = false (a chart or plain card is shown instead, which is fine).
+Copy the description into "seen".
+Image 1: described as: This image shows a deep space view with numerous distant galaxies and stars scattered across a dark background.
+  should show: a cluster of galaxies
+  narration: But this common picture of cosmic expansion is completely wrong.
+Image 2: described as: This image shows a close-up, monochrome view of a rocky, cratered planetary surface, possibly a moon, with uneven lighting and shadows.
+  should show: a sandy beach
+  narration: That total count means there are more stars in our view than beach sand grains on Earth.
+Image 3: described as: This image shows a colorful nebula in outer space, featuring swirling clouds of gas and dust in shades of green, red, and brown.
+  should show: a star nursery nebula
+  narration: This ordinary matter includes stars, planets, interstellar gas,

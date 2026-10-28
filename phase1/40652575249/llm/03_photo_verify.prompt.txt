@@ -1,0 +1,71 @@
+[model] gemini-3.5-flash-lite
+[system]
+
+
+[user]
+Step 2 of a picture check for a science video. Someone looked at each picture WITHOUT knowing
+what it should show and described it. Decide for each image whether the picture fits.
+A photo fits only if the description shows it clearly depicts what it should show: not mostly text,
+not a test target, not a different planet or object than the narration is about, no watermark, nothing
+misleading. A diagram, infographic or poster with many labels or much text does NOT fit (too small to read
+in a video, and made for another purpose). A chart or graph fits ONLY if its labels show it is about exactly what the narration says (a graph
+of Mars data, or with unexplained labels like 'RHOS', does not fit a sentence about Earth or a star).
+When unsure, answer fits = false (a chart or plain card is shown instead, which is fine).
+Copy the description into "seen".
+Image 1: described as: A ground-based telescope emits a bright yellow laser beam into the night sky, which features the glowing band of the Milky Way galaxy filled with countless stars.
+  should show: a light beam
+  narration: If light travels at a constant speed, this
+Image 2: described as: A deep space field captured by the James Webb Space Telescope, displaying numerous distant galaxies, gravitational lensing arcs, and bright foreground stars with distinct diffraction spikes.
+  should show: a deep space galaxy
+  narration: So why does this cosmic puzzle matter so much when we look out into space?
+Image 3: described as: A spiral galaxy viewed from above, showcasing a prominent central bar, glowing core, and winding spiral arms dotted with star clusters against the blackness of space.
+  should show: a spiral galaxy
+  narration: To solve this mystery, we must reframe how we imagine cosmic space and time.
+Image 4: described as: An astronomical image titled 'The Coma Cluster of galaxies', showing a dense collection of numerous galaxy shapes against a dark background, with text and a small emblem at the bottom.
+  should show: a cluster of galaxies
+  narration: But this common picture of cosmic expansion is completely wrong.
+Image 5: described as: A black-and-white portrait of physicist Albert Einstein, looking directly at the camera with characteristic unruly white hair and a thoughtful expression.
+  should show: Albert Einstein
+  narration: Instead, general relativity describes expansion as an intrinsic
+Image 6: described as: A dense globular star cluster densely packed with thousands of glowing stars of various colors, mostly concentrated towards the center.
+  should show: a distant star cluster
+  narration: Most galaxies are nearly at rest relative to their local comoving spatial coordinates.
+Image 7: described as: An image of interacting galaxies known as the Antennae Galaxies, showing two large galaxies colliding with bright pink star-forming regions and long tidal tails of stars and gas.
+  should show: interacting galaxies
+  narration: These local peculiar velocities are caused mostly by gravity and are usually quite small.
+Image 8: described as: An amateur telescope rig mounted on a tripod under a starry night sky, with various cables, a red tracking light, and a silhouette of tree branches in the foreground.
+  should show: a scientific telescope
+  narration: Mathematically, cosmologists track this growth using a value called the cosmic scale factor.
+Image 9: described as: The Ring Nebula, a planetary nebula appearing as an oval ring of glowing colorful gas with a hot blue center and a dark void in the middle, set against a black background.
+  should show: a glowing plasma cloud
+  narration: Before recombination, the universe was filled with an opaque white-hot fog of plasma.
+Image 10: described as: An oval-shaped all-sky map of the cosmic microwave background radiation, displaying temperature fluctuations across the early universe in shades of blue, orange, and tan.
+  should show: the cosmic microwave background map
+  narration: These released photons created the cosmic microwave background radiation that fills space today.
+Image 11: described as: A dimly lit control room or operations center filled with computer monitors displaying various data and graphs, with two people seated at desks working.
+  should show: an observatory control room
+  narration: A local comoving observer will always measure the speed of light as the standard constant speed.
+Image 12: described as: A full view of planet Earth from space, showing the continent of Africa, swirling white cloud patterns over the oceans, and the blue atmosphere against a black background.
+  should show: planet Earth viewed from space
+  narration: billion years traveling across space to reach Earth.
+Image 13: described as: A composite space image featuring a distorted spiral galaxy shaped somewhat like a question mark, surrounded by numerous green and white foreground and background stars.
+  should show: a pair of distant galaxies
+  narration: two objects at a single moment in time.
+Image 14: described as: A deep field image of space showing a vast collection of distant galaxies of various shapes, sizes, and colors, along with several brighter stars featuring prominent diffraction spikes.
+  should show: a deep field galaxy survey
+  narration: distance at the present age of the universe.
+Image 15: described as: A landscape photograph of a calm body of water at sunset, with a golden sun casting a reflection on the water, silhouetted grass on a beach in the foreground, and a warm orange sky.
+  should show: a sandy beach
+  narration: That total count means there are more stars in our view than beach sand grains on Earth.
+Image 16: described as: A portion of the Carina Nebula known as the 'Mystic Mountain', showing pillars of cosmic dust and gas illuminated by newborn stars, with a black rectangular placeholder area in the bottom left.
+  should show: a star nursery nebula
+  narration: This ordinary matter includes stars, planets, interstellar gas,
+Image 17: described as: A dense star field filled with countless bright blue-white stars scattered uniformly across a dark space background.
+  should show: a distant galaxy cluster
+  narration: Every object within this sphere is visible because its light had time to travel to Earth.
+Image 18: described as: A scientific simulation visualization of cosmic filaments and the large-scale structure of the universe, represented as bright branching tendrils of light with a red marker point.
+  should show: a local galaxy supercluster
+  narration: Distant galaxies outside our local supercluster will eventually
+Image 19: described as: A wide-angle night sky photograph filled with stars, featuring the silhouette of dark tree canopies along the bottom edge.
+  should show: the starry night sky
+  narration: Take a moment to think about how much of our universe will remain forever beyond your reach.

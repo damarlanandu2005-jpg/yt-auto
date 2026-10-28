@@ -1,0 +1,132 @@
+[model] gemini-3.5-flash-lite
+[system]
+
+
+[user]
+Step 2 of a picture check for a science video. Someone looked at each picture WITHOUT knowing
+what it should show and described it. Decide for each image whether the picture fits.
+The pictures are ink drawings made by an AI image model, which often misses. A drawing fits if a
+viewer hearing the narration would recognise its main object(s) (a star, a planet, a blast, molecules, DNA,
+fish...). It does NOT need to show the action or process (collapsing, moving, changing): a still picture of
+the right thing is enough. It does NOT fit if it is only shapes or texture with no recognisable object, shows
+a different thing (a volcano or canyon for the atmosphere, a red diamond for a star), has text or labels, looks
+like a logo/emblem/badge/flag, or has deformed bodies.
+When unsure, answer fits = false (a chart or plain card is shown instead, which is fine).
+Copy the description into "seen".
+Image 1: described as: A tilted ringed galaxy or planet against a black starry background, with a glowing core.
+  should show: a glowing galaxy far away in deep space
+  narration: vast cosmic scale sounds like an impossible contradiction.
+Image 2: described as: A stylized swirling galaxy structure with textured outer rings on a dark background.
+  should show: a distant galaxy behind a dark cosmic dust cloud
+  narration: Objects beyond this physical boundary cannot be detected yet because
+Image 3: described as: A globe of the Earth on the right with a long white wedge-shaped beam extending from the left, ending in a red tip.
+  should show: a beam of light traveling through space toward Earth
+  narration: their light has not had enough time to reach Earth.
+Image 4: described as: Two connected ringed galaxy structures against a black background, with a prominent red sphere inside the left structure.
+  should show: a grid of space stretching apart between two galaxies
+  narration: How does space stretch while light is actively traveling across the universe?
+Image 5: described as: Several distinct ringed planets and star-like shapes scattered against a black background.
+  should show: galaxies flying through an empty dark room
+  narration: In that false mental picture, galaxies are racing through a fixed, static space like cosmic shrapnel.
+Image 6: described as: A planet with visible texture and rings on the left, next to a detailed swirling galaxy with a red center on the right.
+  should show: two galaxies drifting apart as space expands between them
+  narration: Cosmic expansion is not galaxies moving through a pre-existing empty space.
+Image 7: described as: A grid-like chart with stacked blocks and hatch-patterned tops, featuring red vertical bracket lines.
+  should show: a grid expanding in size over time
+  narration: increase in distance between cosmic objects over time.
+Image 8: described as: A close-up of a planetary ring system with a red arrow pointing toward the inner rings.
+  should show: a single galaxy with a velocity vector arrow
+  narration: The velocity of a galaxy relative to its local comoving grid is called its peculiar velocity.
+Image 9: described as: A central red sphere surrounded by concentric swirling rings and outward radiating lines on a black background.
+  should show: a galaxy surrounded by expanding space lines
+  narration: So how should we picture the movement of galaxies as the universe expands?
+Image 10: described as: Abstract flowing white curved lines against a dark background, resembling silky fabric or waves.
+  should show: a stretchy rubber fabric sheet representing space
+  narration: expanding fabric rather than a rigid stage.
+Image 11: described as: Nested square outlines and a grid of four squares drawn in white on a dark background.
+  should show: a grid expanding larger and larger in sequential steps
+  narration: The scale factor grows over time, describing how physical distances expand across the universe.
+Image 12: described as: A complex spherical structure glowing with red and white energy and jagged patterns.
+  should show: a tiny dense sphere of hot glowing plasma
+  narration: In the early history of the universe, the scale factor was extremely small.
+Image 13: described as: A dense cluster of spherical nodes with pin-like protrusions and a single red curved filament.
+  should show: packed glowing particles compressed tightly together
+  narration: That means all matter in the young cosmos was squeezed much closer together.
+Image 14: described as: A coiled white line forming a loop with a small black and white ant with a red head inside.
+  should show: a tiny ant crawling on a stretching rubber band
+  narration: Imagine an ant crawling along a stretching rubber band toward your hand.
+Image 15: described as: A white ant with a red head standing at the edge of a white platform against a dark background.
+  should show: an ant walking forward while the surface stretches
+  narration: The ant crawls forward at a steady pace relative to the rubber directly under its feet.
+Image 16: described as: A bright starburst with a red and white beam extending upward and trails of light extending diagonally downward.
+  should show: a light wave photon moving through space
+  narration: Similarly, a photon always travels through space locally at the exact speed of light.
+Image 17: described as: An abstract curling wave or crest shape surrounded by radiating lines and dots.
+  should show: space expanding behind a moving photon wave
+  narration: But while the photon travels forward, the space behind it continues to expand over time.
+Image 18: described as: A bright burst of light and lines emanating from a central red dot, with beams extending to the right.
+  should show: space stretching out ahead of a moving photon wave
+  narration: At the same time, the space ahead of the photon stretches as well.
+Image 19: described as: A straight white line extending from the lower left to a glowing red and white circular point in the upper right.
+  should show: growing distance between a photon and a glowing source
+  narration: Because space stretches everywhere, the distance between the photon and its source grows continuously.
+Image 20: described as: A bright starburst on the left shooting a stream of red and white horizontal lines toward the right.
+  should show: matter emitting light being pushed far away by expansion
+  narration: the matter that emitted those photons much farther away.
+Image 21: described as: A wall clock with numbers and hands, surrounded by dynamic radial lines suggesting speed or sound.
+  should show: a clock multiplying by the speed of light
+  narration: Light-travel distance is simply the age of the universe multiplied by the speed of light.
+Image 22: described as: A black ruler with white markings and numbers, a red dot positioned over the seven, and stars above.
+  should show: a giant ruler measuring the physical gap between two stars
+  narration: Proper distance represents the actual physical distance between
+Image 23: described as: A straight white ruler viewed in perspective against a solid black background.
+  should show: frozen rulers laid end to end across space
+  narration: You can imagine proper distance as the value measured by rulers if expansion suddenly froze.
+Image 24: described as: A long diagonal white line passing through a small red dot on a black background.
+  should show: a line stretching from Earth to the edge of the universe
+  narration: From Earth, the comoving distance to the edge
+Image 25: described as: A stylized globe showing North and South America, encircled by fine white ring lines.
+  should show: a glowing spherical boundary surrounding Earth in space
+  narration: This radial distance marks our particle horizon, which limits what signals can reach us.
+Image 26: described as: A symmetrical arrangement of circular patterned graphics connected by lines to a central hub containing a red sphere.
+  should show: multiple overlapping spheres centered on different galaxies
+  narration: Every point in the universe has its own distinct observable sphere centered on its location.
+Image 27: described as: A hand-drawn circular target or scope with crosshairs and a red dot at the exact center.
+  should show: multiplying a spherical radius by two
+  narration: Doubling that radius yields a full
+Image 28: described as: A cluster of fluffy, detailed clouds floating among small stars against a black sky.
+  should show: glowing gas clouds in interstellar space
+  narration: and intergalactic gas, but excludes dark matter.
+Image 29: described as: A bright starburst with a red center, emitting long horizontal rays to the left and fine radial lines in all directions.
+  should show: space stretching continuously while a light ray travels
+  narration: Space itself stretched continuously while light made its long journey across the expanding universe.
+Image 30: described as: A bright central starburst with a red dot, accompanied by two swirling nebula-like cloud formations and scattered stars.
+  should show: a galaxy beyond the particle horizon sending light
+  narration: Objects located beyond our particle horizon have emitted light that has not yet reached Earth.
+Image 31: described as: A completely black frame with a tiny, faint red dot near the center.
+  should show: an endless expanse of dark space stretching into infinity
+  narration: The unobservable portion of the entire universe may be far larger, or even infinite in size.
+Image 32: described as: A central red burst surrounded by numerous jagged white lightning-like or electric bolts radiating outward.
+  should show: glowing dark energy pushing cosmic grid lines apart rapidly
+  narration: Furthermore, dark energy is currently driving an accelerated expansion of space.
+Image 33: described as: A wide white vertical beam extending upward from the bottom, ending at a red crescent shape with radiating spikes.
+  should show: a light ray failing to bridge an expanding gap to Earth
+  narration: light-years will never reach us in the infinite future.
+Image 34: described as: A diagonally oriented spiral galaxy with a deep red and white core against a black background.
+  should show: a distant galaxy turning red and fading into darkness
+  narration: appear to freeze, turn redder, and fade away.
+Image 35: described as: A completely solid black image with no visible objects or details.
+  should show: a sandy beach
+  narration: That total count means there are more stars in our view than beach sand grains on Earth.
+Image 36: described as: A diagonal band of white textured light against a starry sky, with two small red dots nearby.
+  should show: a dark cosmic void at the edge of the universe
+  narration: And what mysterious regions lie forever beyond the edge of our current observable cosmos?
+Image 37: described as: A dense, rounded cluster of grey and red cloud-like shapes resembling a biological mass or explosion.
+  should show: neutral atoms forming out of a glowing cloud
+  narration: Once neutral atoms formed, ancient photons became free to travel freely through transparent space.
+Image 38: described as: An abstract drawing of tree-like branching structures in white with red floral or leaf elements.
+  should show: a spring stretching out across space
+  narration: expansion stretched that distance dramatically.
+Image 39: described as: A spherical object with internal lined patterns and a tiny red dot on its surface against a black background.
+  should show: a line measuring the radius of a spherical universe
+  narration: To find the diameter of Earth's observable sphere,

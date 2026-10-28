@@ -1,0 +1,2855 @@
+[
+ {
+  "scene": "s01",
+  "start": 0.0,
+  "text": "How can the observable universe be 93 billion light-years",
+  "sentences": [
+   "s01.01"
+  ],
+  "id": "v001",
+  "end": 4.949,
+  "seconds": 4.95,
+  "scene_start": true,
+  "kind": "card",
+  "card": {
+   "type": "title",
+   "title": "Why Is the Observable Universe 93 Billion Light-Years Wide?",
+   "subtitle": "The Paradox of Time and Distance in the Universe"
+  },
+  "frame": "out/run/frames/v001.png"
+ },
+ {
+  "scene": "s01",
+  "start": 4.949,
+  "text": "across if it is only 13.8 billion years old?",
+  "sentences": [
+   "s01.01"
+  ],
+  "id": "v002",
+  "end": 10.776,
+  "seconds": 5.83,
+  "scene_start": false,
+  "kind": "card",
+  "card": {
+   "type": "stat",
+   "title": "Cosmic Age",
+   "value": "13.8 billion",
+   "unit": "years",
+   "left_title": "Age",
+   "right_title": "Size",
+   "label": "years"
+  },
+  "frame": "out/run/frames/v002.png"
+ },
+ {
+  "scene": "s01",
+  "start": 10.776,
+  "text": "If light travels at a constant speed, this",
+  "sentences": [
+   "s01.02"
+  ],
+  "id": "v003",
+  "end": 14.105,
+  "seconds": 3.33,
+  "scene_start": false,
+  "kind": "photo",
+  "photo_subject": "a light beam",
+  "photo_queries": [
+   "laser beam",
+   "light speed"
+  ],
+  "card": {
+   "type": "title",
+   "title": "Speed of Light"
+  },
+  "photo": {
+   "path": "out/run/photos/v003.jpg",
+   "file": "v003.jpg",
+   "kind": "photo",
+   "source": "wikimedia_commons",
+   "title": "Laser Towards Milky Ways Centre",
+   "source_page": "https://commons.wikimedia.org/wiki/File:Laser_Towards_Milky_Ways_Centre.jpg",
+   "download_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/b8/Laser_Towards_Milky_Ways_Centre.jpg/1920px-Laser_Towards_Milky_Ways_Centre.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "licence": "CC BY 4.0",
+   "licence_url": "https://creativecommons.org/licenses/by/4.0",
+   "author": "ESO/Yuri Beletsky (ybialets at eso.org)",
+   "attribution": "\"Laser Towards Milky Ways Centre\" by ESO/Yuri Beletsky (ybialets at eso.org), CC BY 4.0, via Wikimedia Commons. https://commons.wikimedia.org/wiki/File:Laser_Towards_Milky_Ways_Centre.jpg",
+   "downloaded": "2026-10-28"
+  },
+  "frame": "out/run/frames/v003.png"
+ },
+ {
+  "scene": "s01",
+  "start": 14.105,
+  "text": "vast cosmic scale sounds like an impossible contradiction.",
+  "sentences": [
+   "s01.02"
+  ],
+  "id": "v004",
+  "end": 17.92,
+  "seconds": 3.82,
+  "scene_start": false,
+  "kind": "drawing",
+  "drawing_subject": "a glowing galaxy far away in deep space",
+  "card": {
+   "type": "title",
+   "title": "Cosmic Scale"
+  },
+  "photo": {
+   "path": "out/run/drawings/v004.png",
+   "file": "v004.png",
+   "kind": "drawing",
+   "source": "ai_drawing",
+   "title": "a glowing galaxy far away in deep space",
+   "source_page": "https://huggingface.co/black-forest-labs/FLUX.1-schnell",
+   "licence": "AI-generated drawing (no third-party rights)",
+   "model_licence": "Apache-2.0",
+   "licence_url": "https://www.apache.org/licenses/LICENSE-2.0",
+   "author": "AI-generated with FLUX.1 [schnell] (Black Forest Labs) on Cloudflare Workers AI",
+   "attribution": "Illustration generated with FLUX.1 schnell (Apache-2.0): a glowing galaxy far away in deep space",
+   "downloaded": "2026-10-28",
+   "prompt": "a glowing galaxy far away in deep space, pure black background, detailed ink illustration, white and grey pen linework, one bright red accent, high contrast, simple clear composition, no text, no letters, no numbers"
+  },
+  "photo_subject": "a glowing galaxy far away in deep space",
+  "frame": "out/run/frames/v004.png"
+ },
+ {
+  "scene": "s01",
+  "start": 17.92,
+  "text": "So why does this cosmic puzzle matter so much when we look out into space?",
+  "sentences": [
+   "s01.03"
+  ],
+  "id": "v005",
+  "end": 22.931,
+  "seconds": 5.01,
+  "scene_start": false,
+  "kind": "photo",
+  "photo_subject": "a deep space galaxy",
+  "photo_queries": [
+   "deep space galaxy",
+   "Hubble space telescope"
+  ],
+  "card": {
+   "type": "title",
+   "title": "Looking Into Space"
+  },
+  "photo": {
+   "path": "out/run/photos/v005.jpg",
+   "file": "v005.jpg",
+   "kind": "photo",
+   "source": "wikimedia_commons",
+   "title": "Main image deep field smacs0723",
+   "source_page": "https://commons.wikimedia.org/wiki/File:Main_image_deep_field_smacs0723.png",
+   "download_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/6e/Main_image_deep_field_smacs0723.png/1920px-Main_image_deep_field_smacs0723.png?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "licence": "Public domain",
+   "licence_url": "",
+   "author": "NASA, ESA, CSA, and STScI",
+   "attribution": "\"Main image deep field smacs0723\" by NASA, ESA, CSA, and STScI, Public domain, via Wikimedia Commons. https://commons.wikimedia.org/wiki/File:Main_image_deep_field_smacs0723.png",
+   "downloaded": "2026-10-28"
+  },
+  "frame": "out/run/frames/v005.png"
+ },
+ {
+  "scene": "s01",
+  "start": 22.931,
+  "text": "Objects beyond this physical boundary cannot be detected yet because",
+  "sentences": [
+   "s01.04"
+  ],
+  "id": "v006",
+  "end": 26.648500000000002,
+  "seconds": 3.72,
+  "scene_start": false,
+  "kind": "drawing",
+  "drawing_subject": "a distant galaxy behind a dark cosmic dust cloud",
+  "card": {
+   "type": "title",
+   "title": "Hidden Boundaries"
+  },
+  "photo": {
+   "path": "out/run/drawings/v006.png",
+   "file": "v006.png",
+   "kind": "drawing",
+   "source": "ai_drawing",
+   "title": "a distant galaxy behind a dark cosmic dust cloud",
+   "source_page": "https://huggingface.co/black-forest-labs/FLUX.1-schnell",
+   "licence": "AI-generated drawing (no third-party rights)",
+   "model_licence": "Apache-2.0",
+   "licence_url": "https://www.apache.org/licenses/LICENSE-2.0",
+   "author": "AI-generated with FLUX.1 [schnell] (Black Forest Labs) on Cloudflare Workers AI",
+   "attribution": "Illustration generated with FLUX.1 schnell (Apache-2.0): a distant galaxy behind a dark cosmic dust cloud",
+   "downloaded": "2026-10-28",
+   "prompt": "a distant galaxy behind a dark cosmic dust cloud, pure black background, detailed ink illustration, white and grey pen linework, one bright red accent, high contrast, simple clear composition, no text, no letters, no numbers"
+  },
+  "photo_subject": "a distant galaxy behind a dark cosmic dust cloud",
+  "frame": "out/run/frames/v006.png"
+ },
+ {
+  "scene": "s01",
+  "start": 26.648500000000002,
+  "text": "their light has not had enough time to reach Earth.",
+  "sentences": [
+   "s01.04"
+  ],
+  "id": "v007",
+  "end": 30.831,
+  "seconds": 4.18,
+  "scene_start": false,
+  "kind": "drawing",
+  "drawing_subject": "a beam of light traveling through space toward Earth",
+  "card": {
+   "type": "title",
+   "title": "Light Travel"
+  },
+  "photo": {
+   "path": "out/run/drawings/v007.png",
+   "file": "v007.png",
+   "kind": "drawing",
+   "source": "ai_drawing",
+   "title": "a beam of light traveling through space toward Earth",
+   "source_page": "https://huggingface.co/black-forest-labs/FLUX.1-schnell",
+   "licence": "AI-generated drawing (no third-party rights)",
+   "model_licence": "Apache-2.0",
+   "licence_url": "https://www.apache.org/licenses/LICENSE-2.0",
+   "author": "AI-generated with FLUX.1 [schnell] (Black Forest Labs) on Cloudflare Workers AI",
+   "attribution": "Illustration generated with FLUX.1 schnell (Apache-2.0): a beam of light traveling through space toward Earth",
+   "downloaded": "2026-10-28",
+   "prompt": "a beam of light traveling through space toward Earth, pure black background, detailed ink illustration, white and grey pen linework, one bright red accent, high contrast, simple clear composition, no text, no letters, no numbers"
+  },
+  "photo_subject": "a beam of light traveling through space toward Earth",
+  "frame": "out/run/frames/v007.png"
+ },
+ {
+  "scene": "s01",
+  "start": 30.831,
+  "text": "In this video, we will answer three fundamental questions about our cosmic horizon in plain words.",
+  "sentences": [
+   "s01.05"
+  ],
+  "id": "v008",
+  "end": 37.773,
+  "seconds": 6.94,
+  "scene_start": false,
+  "kind": "card",
+  "card": {
+   "type": "bullets",
+   "title": "Three Questions",
+   "items": [
+    "How space stretches",
+    "Time to radius conversion",
+    "Regions beyond the edge"
+   ]
+  },
+  "frame": "out/run/frames/v008.png"
+ },
+ {
+  "scene": "s01",
+  "start": 37.773,
+  "text": "How does space stretch while light is actively traveling across the universe?",
+  "sentences": [
+   "s01.06"
+  ],
+  "id": "v009",
+  "end": 42.85,
+  "seconds": 5.08,
+  "scene_start": false,
+  "kind": "drawing",
+  "drawing_subject": "a grid of space stretching apart between two galaxies",
+  "card": {
+   "type": "title",
+   "title": "Stretching Space"
+  },
+  "photo": {
+   "path": "out/run/drawings/v009.png",
+   "file": "v009.png",
+   "kind": "drawing",
+   "source": "ai_drawing",
+   "title": "a grid of space stretching apart between two galaxies",
+   "source_page": "https://huggingface.co/black-forest-labs/FLUX.1-schnell",
+   "licence": "AI-generated drawing (no third-party rights)",
+   "model_licence": "Apache-2.0",
+   "licence_url": "https://www.apache.org/licenses/LICENSE-2.0",
+   "author": "AI-generated with FLUX.1 [schnell] (Black Forest Labs) on Cloudflare Workers AI",
+   "attribution": "Illustration generated with FLUX.1 schnell (Apache-2.0): a grid of space stretching apart between two galaxies",
+   "downloaded": "2026-10-28",
+   "prompt": "a grid of space stretching apart between two galaxies, pure black background, detailed ink illustration, white and grey pen linework, one bright red accent, high contrast, simple clear composition, no text, no letters, no numbers"
+  },
+  "photo_subject": "a grid of space stretching apart between two galaxies",
+  "frame": "out/run/frames/v009.png"
+ },
+ {
+  "scene": "s01",
+  "start": 42.85,
+  "text": "How does a travel time of 13.8 billion years",
+  "sentences": [
+   "s01.07"
+  ],
+  "id": "v010",
+  "end": 47.213,
+  "seconds": 4.36,
+  "scene_start": false,
+  "kind": "step",
+  "card": {
+   "type": "stat",
+   "title": "Travel Time",
+   "value": "13.8 billion",
+   "unit": "years"
+  },
+  "photo": {
+   "path": "out/run/drawings/v009.png",
+   "file": "v009.png",
+   "kind": "drawing",
+   "source": "ai_drawing",
+   "title": "a grid of space stretching apart between two galaxies",
+   "source_page": "https://huggingface.co/black-forest-labs/FLUX.1-schnell",
+   "licence": "AI-generated drawing (no third-party rights)",
+   "model_licence": "Apache-2.0",
+   "licence_url": "https://www.apache.org/licenses/LICENSE-2.0",
+   "author": "AI-generated with FLUX.1 [schnell] (Black Forest Labs) on Cloudflare Workers AI",
+   "attribution": "Illustration generated with FLUX.1 schnell (Apache-2.0): a grid of space stretching apart between two galaxies",
+   "downloaded": "2026-10-28",
+   "prompt": "a grid of space stretching apart between two galaxies, pure black background, detailed ink illustration, white and grey pen linework, one bright red accent, high contrast, simple clear composition, no text, no letters, no numbers"
+  },
+  "zoom": 1.4,
+  "focus": "left",
+  "step_of": "v009",
+  "frame": "out/run/frames/v010.png"
+ },
+ {
+  "scene": "s01",
+  "start": 47.213,
+  "text": "convert into a physical radius of 46.5 billion light-years?",
+  "sentences": [
+   "s01.07"
+  ],
+  "id": "v011",
+  "end": 52.434,
+  "seconds": 5.22,
+  "scene_start": false,
+  "kind": "card",
+  "card": {
+   "type": "stat",
+   "title": "Physical Radius",
+   "value": "46.5 billion",
+   "unit": "light-years",
+   "label": "light-years"
+  },
+  "frame": "out/run/frames/v011.png"
+ },
+ {
+  "scene": "s01",
+  "start": 52.434,
+  "text": "And what mysterious regions lie forever beyond the edge of our current observable cosmos?",
+  "sentences": [
+   "s01.08"
+  ],
+  "id": "v012",
+  "end": 58.853,
+  "seconds": 6.42,
+  "scene_start": false,
+  "kind": "drawing",
+  "drawing_subject": "a dark cosmic void at the edge of the universe",
+  "card": {
+   "type": "title",
+   "title": "Beyond the Edge"
+  },
+  "photo": {
+   "path": "out/run/drawings/v012.png",
+   "file": "v012.png",
+   "kind": "drawing",
+   "source": "ai_drawing",
+   "title": "a dark cosmic void at the edge of the universe",
+   "source_page": "https://huggingface.co/segmind/Segmind-Vega",
+   "licence": "AI-generated drawing (no third-party rights)",
+   "model_licence": "Apache-2.0",
+   "licence_url": "https://www.apache.org/licenses/LICENSE-2.0",
+   "author": "AI-generated with segmind/Segmind-Vega + segmind/Segmind-VegaRT",
+   "attribution": "Illustration generated with Segmind-Vega (Apache-2.0): a dark cosmic void at the edge of the universe",
+   "downloaded": "2026-10-28",
+   "prompt": "a dark cosmic void at the edge of the universe, pure black background, detailed ink illustration, white and grey pen linework, one bright red accent, high contrast, simple clear composition, no text, no letters, no numbers"
+  },
+  "photo_subject": "a dark cosmic void at the edge of the universe",
+  "frame": "out/run/frames/v012.png"
+ },
+ {
+  "scene": "s01",
+  "start": 58.853,
+  "text": "To solve this mystery, we must reframe how we imagine cosmic space and time.",
+  "sentences": [
+   "s01.09"
+  ],
+  "id": "v013",
+  "end": 65.229,
+  "seconds": 6.38,
+  "scene_start": false,
+  "kind": "photo",
+  "photo_subject": "a spiral galaxy",
+  "photo_queries": [
+   "spiral galaxy",
+   "Andromeda galaxy"
+  ],
+  "card": {
+   "type": "title",
+   "title": "Reframing Space and Time"
+  },
+  "photo": {
+   "path": "out/run/photos/v013.jpg",
+   "file": "v013.jpg",
+   "kind": "photo",
+   "source": "wikimedia_commons",
+   "title": "Hubble2005-01-barred-spiral-galaxy-NGC1300",
+   "source_page": "https://commons.wikimedia.org/wiki/File:Hubble2005-01-barred-spiral-galaxy-NGC1300.jpg",
+   "download_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/52/Hubble2005-01-barred-spiral-galaxy-NGC1300.jpg/1920px-Hubble2005-01-barred-spiral-galaxy-NGC1300.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "licence": "Public domain",
+   "licence_url": "",
+   "author": "NASA, ESA, and The Hubble Heritage Team STScI/AURA)",
+   "attribution": "\"Hubble2005-01-barred-spiral-galaxy-NGC1300\" by NASA, ESA, and The Hubble Heritage Team STScI/AURA), Public domain, via Wikimedia Commons. https://commons.wikimedia.org/wiki/File:Hubble2005-01-barred-spiral-galaxy-NGC1300.jpg",
+   "downloaded": "2026-10-28"
+  },
+  "frame": "out/run/frames/v013.png"
+ },
+ {
+  "scene": "s02",
+  "start": 65.229,
+  "text": "Many people visualize the universe as a huge empty room where galaxies rocket through a dark void.",
+  "sentences": [
+   "s02.01"
+  ],
+  "id": "v014",
+  "end": 72.106,
+  "seconds": 6.88,
+  "scene_start": true,
+  "kind": "card",
+  "card": {
+   "type": "title",
+   "title": "The False Picture of Galaxies Flying Through Empty Space"
+  },
+  "frame": "out/run/frames/v014.png"
+ },
+ {
+  "scene": "s02",
+  "start": 72.106,
+  "text": "In that false mental picture, galaxies are racing through a fixed, static space like cosmic shrapnel.",
+  "sentences": [
+   "s02.02"
+  ],
+  "id": "v015",
+  "end": 78.969,
+  "seconds": 6.86,
+  "scene_start": false,
+  "kind": "drawing",
+  "drawing_subject": "galaxies flying through an empty dark room",
+  "card": {
+   "type": "title",
+   "title": "Static Space Myth"
+  },
+  "photo": {
+   "path": "out/run/drawings/v015.png",
+   "file": "v015.png",
+   "kind": "drawing",
+   "source": "ai_drawing",
+   "title": "galaxies flying through an empty dark room",
+   "source_page": "https://huggingface.co/black-forest-labs/FLUX.1-schnell",
+   "licence": "AI-generated drawing (no third-party rights)",
+   "model_licence": "Apache-2.0",
+   "licence_url": "https://www.apache.org/licenses/LICENSE-2.0",
+   "author": "AI-generated with FLUX.1 [schnell] (Black Forest Labs) on Cloudflare Workers AI",
+   "attribution": "Illustration generated with FLUX.1 schnell (Apache-2.0): galaxies flying through an empty dark room",
+   "downloaded": "2026-10-28",
+   "prompt": "galaxies flying through an empty dark room, pure black background, detailed ink illustration, white and grey pen linework, one bright red accent, high contrast, simple clear composition, no text, no letters, no numbers"
+  },
+  "photo_subject": "galaxies flying through an empty dark room",
+  "frame": "out/run/frames/v015.png"
+ },
+ {
+  "scene": "s02",
+  "start": 78.969,
+  "text": "If that picture were correct, nothing could ever appear farther away than 13.8 billion light-years.",
+  "sentences": [
+   "s02.03"
+  ],
+  "id": "v016",
+  "end": 86.28,
+  "seconds": 7.31,
+  "scene_start": false,
+  "kind": "card",
+  "card": {
+   "type": "stat",
+   "title": "Maximum Distance Limit",
+   "value": "13.8 billion",
+   "unit": "light-years",
+   "label": "light-years"
+  },
+  "frame": "out/run/frames/v016.png"
+ },
+ {
+  "scene": "s02",
+  "start": 86.28,
+  "text": "But this common picture of cosmic expansion is completely wrong.",
+  "sentences": [
+   "s02.04"
+  ],
+  "id": "v017",
+  "end": 91.713,
+  "seconds": 5.43,
+  "scene_start": false,
+  "kind": "photo",
+  "photo_subject": "a cluster of galaxies",
+  "photo_queries": [
+   "galaxy cluster",
+   "Coma cluster"
+  ],
+  "card": {
+   "type": "title",
+   "title": "Expanding Universe"
+  },
+  "photo_rejected": {
+   "path": "out/run/photos/v017.jpg",
+   "file": "v017.jpg",
+   "kind": "photo",
+   "source": "nasa_image_library",
+   "title": "Coma cluster of galaxies",
+   "source_page": "https://images.nasa.gov/details/PIA04210",
+   "download_url": "https://images-assets.nasa.gov/image/PIA04210/PIA04210~large.jpg",
+   "licence": "Public domain (NASA media, not copyrighted in the US)",
+   "licence_url": "https://www.nasa.gov/nasa-brand-center/images-and-media/",
+   "author": "2MASS",
+   "attribution": "Coma cluster of galaxies — 2MASS, NASA, public domain. https://images.nasa.gov/details/PIA04210",
+   "downloaded": "2026-10-28"
+  },
+  "photo": {
+   "path": "out/run/photos/v017b.jpg",
+   "file": "v017b.jpg",
+   "kind": "photo",
+   "source": "nasa_image_library",
+   "title": "Virgo Galaxy Cluster",
+   "source_page": "https://images.nasa.gov/details/PIA07906",
+   "download_url": "https://images-assets.nasa.gov/image/PIA07906/PIA07906~large.jpg",
+   "licence": "Public domain (NASA media, not copyrighted in the US)",
+   "licence_url": "https://www.nasa.gov/nasa-brand-center/images-and-media/",
+   "author": "NASA/JPL-Caltech/SSC",
+   "attribution": "Virgo Galaxy Cluster — NASA/JPL-Caltech/SSC, NASA, public domain. https://images.nasa.gov/details/PIA07906",
+   "downloaded": "2026-10-28"
+  },
+  "frame": "out/run/frames/v017.png"
+ },
+ {
+  "scene": "s02",
+  "start": 91.713,
+  "text": "Cosmic expansion is not galaxies moving through a pre-existing empty space.",
+  "sentences": [
+   "s02.05"
+  ],
+  "id": "v018",
+  "end": 97.326,
+  "seconds": 5.61,
+  "scene_start": false,
+  "kind": "drawing",
+  "drawing_subject": "two galaxies drifting apart as space expands between them",
+  "card": {
+   "type": "title",
+   "title": "Not Moving Through Space"
+  },
+  "photo": {
+   "path": "out/run/drawings/v018.png",
+   "file": "v018.png",
+   "kind": "drawing",
+   "source": "ai_drawing",
+   "title": "two galaxies drifting apart as space expands between them",
+   "source_page": "https://huggingface.co/black-forest-labs/FLUX.1-schnell",
+   "licence": "AI-generated drawing (no third-party rights)",
+   "model_licence": "Apache-2.0",
+   "licence_url": "https://www.apache.org/licenses/LICENSE-2.0",
+   "author": "AI-generated with FLUX.1 [schnell] (Black Forest Labs) on Cloudflare Workers AI",
+   "attribution": "Illustration generated with FLUX.1 schnell (Apache-2.0): two galaxies drifting apart as space expands between them",
+   "downloaded": "2026-10-28",
+   "prompt": "two galaxies drifting apart as space expands between them, pure black background, detailed ink illustration, white and grey pen linework, one bright red accent, high contrast, simple clear composition, no text, no letters, no numbers"
+  },
+  "photo_subject": "two galaxies drifting apart as space expands between them",
+  "frame": "out/run/frames/v018.png"
+ },
+ {
+  "scene": "s02",
+  "start": 97.326,
+  "text": "Instead, general relativity describes expansion as an intrinsic",
+  "sentences": [
+   "s02.06"
+  ],
+  "id": "v019",
+  "end": 101.55449999999999,
+  "seconds": 4.23,
+  "scene_start": false,
+  "kind": "photo",
+  "photo_subject": "Albert Einstein",
+  "photo_queries": [
+   "Albert Einstein",
+   "general relativity"
+  ],
+  "card": {
+   "type": "title",
+   "title": "General Relativity"
+  },
+  "photo": {
+   "path": "out/run/photos/v019.jpg",
+   "file": "v019.jpg",
+   "kind": "photo",
+   "source": "wikimedia_commons",
+   "title": "Albert Einstein Head",
+   "source_page": "https://commons.wikimedia.org/wiki/File:Albert_Einstein_Head.jpg",
+   "download_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/d3/Albert_Einstein_Head.jpg/1920px-Albert_Einstein_Head.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "licence": "Public domain",
+   "licence_url": "",
+   "author": "Photograph by Orren Jack Turner, Princeton, N.J. Modified with Photoshop by PM_Poon and later by Dantadd.",
+   "attribution": "\"Albert Einstein Head\" by Photograph by Orren Jack Turner, Princeton, N.J. Modified with Photoshop by PM_Poon and later by Dantadd., Public domain, via Wikimedia Commons. https://commons.wikimedia.org/wiki/File:Albert_Einstein_Head.jpg",
+   "downloaded": "2026-10-28"
+  },
+  "frame": "out/run/frames/v019.png"
+ },
+ {
+  "scene": "s02",
+  "start": 101.55449999999999,
+  "text": "increase in distance between cosmic objects over time.",
+  "sentences": [
+   "s02.06"
+  ],
+  "id": "v020",
+  "end": 106.257,
+  "seconds": 4.7,
+  "scene_start": false,
+  "kind": "drawing",
+  "drawing_subject": "a grid expanding in size over time",
+  "card": {
+   "type": "title",
+   "title": "Increase in Distance"
+  },
+  "photo": {
+   "path": "out/run/drawings/v020.png",
+   "file": "v020.png",
+   "kind": "drawing",
+   "source": "ai_drawing",
+   "title": "a grid expanding in size over time",
+   "source_page": "https://huggingface.co/black-forest-labs/FLUX.1-schnell",
+   "licence": "AI-generated drawing (no third-party rights)",
+   "model_licence": "Apache-2.0",
+   "licence_url": "https://www.apache.org/licenses/LICENSE-2.0",
+   "author": "AI-generated with FLUX.1 [schnell] (Black Forest Labs) on Cloudflare Workers AI",
+   "attribution": "Illustration generated with FLUX.1 schnell (Apache-2.0): a grid expanding in size over time",
+   "downloaded": "2026-10-28",
+   "prompt": "a grid expanding in size over time, pure black background, detailed ink illustration, white and grey pen linework, one bright red accent, high contrast, simple clear composition, no text, no letters, no numbers"
+  },
+  "photo_subject": "a grid expanding in size over time",
+  "frame": "out/run/frames/v020.png"
+ },
+ {
+  "scene": "s02",
+  "start": 106.257,
+  "text": "Most galaxies are nearly at rest relative to their local comoving spatial coordinates.",
+  "sentences": [
+   "s02.07"
+  ],
+  "id": "v021",
+  "end": 112.299,
+  "seconds": 6.04,
+  "scene_start": false,
+  "kind": "photo",
+  "photo_subject": "a distant star cluster",
+  "photo_queries": [
+   "star cluster",
+   "globular cluster"
+  ],
+  "card": {
+   "type": "title",
+   "title": "Comoving Coordinates"
+  },
+  "photo": {
+   "path": "out/run/photos/v021.jpg",
+   "file": "v021.jpg",
+   "kind": "photo",
+   "source": "wikimedia_commons",
+   "title": "Heart of M13 Hercules Globular Cluster",
+   "source_page": "https://commons.wikimedia.org/wiki/File:Heart_of_M13_Hercules_Globular_Cluster.jpg",
+   "download_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/60/Heart_of_M13_Hercules_Globular_Cluster.jpg/1920px-Heart_of_M13_Hercules_Globular_Cluster.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "licence": "Public domain",
+   "licence_url": "",
+   "author": "ESA/Hubble and NASA",
+   "attribution": "\"Heart of M13 Hercules Globular Cluster\" by ESA/Hubble and NASA, Public domain, via Wikimedia Commons. https://commons.wikimedia.org/wiki/File:Heart_of_M13_Hercules_Globular_Cluster.jpg",
+   "downloaded": "2026-10-28"
+  },
+  "frame": "out/run/frames/v021.png"
+ },
+ {
+  "scene": "s02",
+  "start": 112.299,
+  "text": "The velocity of a galaxy relative to its local comoving grid is called its peculiar velocity.",
+  "sentences": [
+   "s02.08"
+  ],
+  "id": "v022",
+  "end": 118.942,
+  "seconds": 6.64,
+  "scene_start": false,
+  "kind": "drawing",
+  "drawing_subject": "a single galaxy with a velocity vector arrow",
+  "card": {
+   "type": "title",
+   "title": "Peculiar Velocity"
+  },
+  "photo": {
+   "path": "out/run/drawings/v022.png",
+   "file": "v022.png",
+   "kind": "drawing",
+   "source": "ai_drawing",
+   "title": "a single galaxy with a velocity vector arrow",
+   "source_page": "https://huggingface.co/black-forest-labs/FLUX.1-schnell",
+   "licence": "AI-generated drawing (no third-party rights)",
+   "model_licence": "Apache-2.0",
+   "licence_url": "https://www.apache.org/licenses/LICENSE-2.0",
+   "author": "AI-generated with FLUX.1 [schnell] (Black Forest Labs) on Cloudflare Workers AI",
+   "attribution": "Illustration generated with FLUX.1 schnell (Apache-2.0): a single galaxy with a velocity vector arrow",
+   "downloaded": "2026-10-28",
+   "prompt": "a single galaxy with a velocity vector arrow, pure black background, detailed ink illustration, white and grey pen linework, one bright red accent, high contrast, simple clear composition, no text, no letters, no numbers"
+  },
+  "photo_subject": "a single galaxy with a velocity vector arrow",
+  "frame": "out/run/frames/v022.png"
+ },
+ {
+  "scene": "s02",
+  "start": 118.942,
+  "text": "These local peculiar velocities are caused mostly by gravity and are usually quite small.",
+  "sentences": [
+   "s02.09"
+  ],
+  "id": "v023",
+  "end": 125.192,
+  "seconds": 6.25,
+  "scene_start": false,
+  "kind": "photo",
+  "photo_subject": "interacting galaxies",
+  "photo_queries": [
+   "interacting galaxies",
+   "colliding galaxies"
+  ],
+  "card": {
+   "type": "title",
+   "title": "Gravity Effects"
+  },
+  "photo": {
+   "path": "out/run/photos/v023.jpg",
+   "file": "v023.jpg",
+   "kind": "photo",
+   "source": "wikimedia_commons",
+   "title": "Antennae galaxies xl",
+   "source_page": "https://commons.wikimedia.org/wiki/File:Antennae_galaxies_xl.jpg",
+   "download_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/f6/Antennae_galaxies_xl.jpg/1920px-Antennae_galaxies_xl.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "licence": "Public domain",
+   "licence_url": "",
+   "author": "NASA, ESA, and the Hubble Heritage Team (STScI/AURA)-ESA/Hubble Collaboration",
+   "attribution": "\"Antennae galaxies xl\" by NASA, ESA, and the Hubble Heritage Team (STScI/AURA)-ESA/Hubble Collaboration, Public domain, via Wikimedia Commons. https://commons.wikimedia.org/wiki/File:Antennae_galaxies_xl.jpg",
+   "downloaded": "2026-10-28"
+  },
+  "frame": "out/run/frames/v023.png"
+ },
+ {
+  "scene": "s02",
+  "start": 125.192,
+  "text": "So how should we picture the movement of galaxies as the universe expands?",
+  "sentences": [
+   "s02.10"
+  ],
+  "id": "v024",
+  "end": 130.234,
+  "seconds": 5.04,
+  "scene_start": false,
+  "kind": "drawing",
+  "drawing_subject": "a galaxy surrounded by expanding space lines",
+  "card": {
+   "type": "title",
+   "title": "Galaxy Movement"
+  },
+  "photo": {
+   "path": "out/run/drawings/v024.png",
+   "file": "v024.png",
+   "kind": "drawing",
+   "source": "ai_drawing",
+   "title": "a galaxy surrounded by expanding space lines",
+   "source_page": "https://huggingface.co/black-forest-labs/FLUX.1-schnell",
+   "licence": "AI-generated drawing (no third-party rights)",
+   "model_licence": "Apache-2.0",
+   "licence_url": "https://www.apache.org/licenses/LICENSE-2.0",
+   "author": "AI-generated with FLUX.1 [schnell] (Black Forest Labs) on Cloudflare Workers AI",
+   "attribution": "Illustration generated with FLUX.1 schnell (Apache-2.0): a galaxy surrounded by expanding space lines",
+   "downloaded": "2026-10-28",
+   "prompt": "a galaxy surrounded by expanding space lines, pure black background, detailed ink illustration, white and grey pen linework, one bright red accent, high contrast, simple clear composition, no text, no letters, no numbers"
+  },
+  "photo_subject": "a galaxy surrounded by expanding space lines",
+  "frame": "out/run/frames/v024.png"
+ },
+ {
+  "scene": "s02",
+  "start": 130.234,
+  "text": "Understanding this key distinction changes everything about how we calculate cosmic distances.",
+  "sentences": [
+   "s02.12"
+  ],
+  "id": "v025",
+  "end": 137.513,
+  "seconds": 7.28,
+  "scene_start": false,
+  "kind": "card",
+  "card": {
+   "type": "flow",
+   "title": "Cosmic Distances",
+   "steps": [
+    "Identify coordinates",
+    "Measure expansion",
+    "Calculate true distance"
+   ]
+  },
+  "frame": "out/run/frames/v025.png"
+ },
+ {
+  "scene": "s03",
+  "start": 137.513,
+  "text": "To understand cosmic distances, imagine space as an",
+  "sentences": [
+   "s03.01"
+  ],
+  "id": "v026",
+  "end": 141.21166666666667,
+  "seconds": 3.7,
+  "scene_start": true,
+  "kind": "card",
+  "card": {
+   "type": "title",
+   "title": "Space as an Expanding Fabric Rather Than a Static Box"
+  },
+  "frame": "out/run/frames/v026.png"
+ },
+ {
+  "scene": "s03",
+  "start": 141.21166666666667,
+  "text": "expanding fabric rather than a rigid stage.",
+  "sentences": [
+   "s03.01"
+  ],
+  "id": "v027",
+  "end": 144.888,
+  "seconds": 3.68,
+  "scene_start": false,
+  "kind": "drawing",
+  "drawing_subject": "a stretchy rubber fabric sheet representing space",
+  "card": {
+   "type": "title",
+   "title": "Expanding Fabric"
+  },
+  "photo_subject": "a stretchy rubber fabric sheet representing space",
+  "drawing_rejected": {
+   "path": "out/run/drawings/v027.png",
+   "file": "v027.png",
+   "kind": "drawing",
+   "source": "ai_drawing",
+   "title": "a stretchy rubber fabric sheet representing space",
+   "source_page": "https://huggingface.co/black-forest-labs/FLUX.1-schnell",
+   "licence": "AI-generated drawing (no third-party rights)",
+   "model_licence": "Apache-2.0",
+   "licence_url": "https://www.apache.org/licenses/LICENSE-2.0",
+   "author": "AI-generated with FLUX.1 [schnell] (Black Forest Labs) on Cloudflare Workers AI",
+   "attribution": "Illustration generated with FLUX.1 schnell (Apache-2.0): a stretchy rubber fabric sheet representing space",
+   "downloaded": "2026-10-28",
+   "prompt": "a stretchy rubber fabric sheet representing space, pure black background, detailed ink illustration, white and grey pen linework, one bright red accent, high contrast, simple clear composition, no text, no letters, no numbers"
+  },
+  "frame": "out/run/frames/v027.png"
+ },
+ {
+  "scene": "s03",
+  "start": 144.888,
+  "text": "Mathematically, cosmologists track this growth using a value called the cosmic scale factor.",
+  "sentences": [
+   "s03.02"
+  ],
+  "id": "v028",
+  "end": 151.019,
+  "seconds": 6.13,
+  "scene_start": false,
+  "kind": "photo",
+  "photo_subject": "a scientific telescope",
+  "photo_queries": [
+   "astronomical telescope",
+   "observatory dome"
+  ],
+  "card": {
+   "type": "title",
+   "title": "Cosmic Scale Factor"
+  },
+  "photo": {
+   "path": "out/run/photos/v028.jpg",
+   "file": "v028.jpg",
+   "kind": "photo",
+   "source": "wikimedia_commons",
+   "title": "Ritchey–Chrétien at Kickapoo Valley Reserve 2-b",
+   "source_page": "https://commons.wikimedia.org/wiki/File:Ritchey%E2%80%93Chr%C3%A9tien_at_Kickapoo_Valley_Reserve_2-b.jpg",
+   "download_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/74/Ritchey%E2%80%93Chr%C3%A9tien_at_Kickapoo_Valley_Reserve_2-b.jpg/1920px-Ritchey%E2%80%93Chr%C3%A9tien_at_Kickapoo_Valley_Reserve_2-b.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "licence": "CC BY 4.0",
+   "licence_url": "https://creativecommons.org/licenses/by/4.0",
+   "author": "Photo Brainandforce, edited from raw by Cart",
+   "attribution": "\"Ritchey–Chrétien at Kickapoo Valley Reserve 2-b\" by Photo Brainandforce, edited from raw by Cart, CC BY 4.0, via Wikimedia Commons. https://commons.wikimedia.org/wiki/File:Ritchey%E2%80%93Chr%C3%A9tien_at_Kickapoo_Valley_Reserve_2-b.jpg",
+   "downloaded": "2026-10-28"
+  },
+  "frame": "out/run/frames/v028.png"
+ },
+ {
+  "scene": "s03",
+  "start": 151.019,
+  "text": "The scale factor grows over time, describing how physical distances expand across the universe.",
+  "sentences": [
+   "s03.03"
+  ],
+  "id": "v029",
+  "end": 157.867,
+  "seconds": 6.85,
+  "scene_start": false,
+  "kind": "drawing",
+  "drawing_subject": "a grid expanding larger and larger in sequential steps",
+  "card": {
+   "type": "title",
+   "title": "Growth Over Time"
+  },
+  "photo_subject": "a grid expanding larger and larger in sequential steps",
+  "drawing_rejected": {
+   "path": "out/run/drawings/v029.png",
+   "file": "v029.png",
+   "kind": "drawing",
+   "source": "ai_drawing",
+   "title": "a grid expanding larger and larger in sequential steps",
+   "source_page": "https://huggingface.co/black-forest-labs/FLUX.1-schnell",
+   "licence": "AI-generated drawing (no third-party rights)",
+   "model_licence": "Apache-2.0",
+   "licence_url": "https://www.apache.org/licenses/LICENSE-2.0",
+   "author": "AI-generated with FLUX.1 [schnell] (Black Forest Labs) on Cloudflare Workers AI",
+   "attribution": "Illustration generated with FLUX.1 schnell (Apache-2.0): a grid expanding larger and larger in sequential steps",
+   "downloaded": "2026-10-28",
+   "prompt": "a grid expanding larger and larger in sequential steps, pure black background, detailed ink illustration, white and grey pen linework, one bright red accent, high contrast, simple clear composition, no text, no letters, no numbers"
+  },
+  "frame": "out/run/frames/v029.png"
+ },
+ {
+  "scene": "s03",
+  "start": 157.867,
+  "text": "In the early history of the universe, the scale factor was extremely small.",
+  "sentences": [
+   "s03.04"
+  ],
+  "id": "v030",
+  "end": 162.816,
+  "seconds": 4.95,
+  "scene_start": false,
+  "kind": "drawing",
+  "drawing_subject": "a tiny dense sphere of hot glowing plasma",
+  "card": {
+   "type": "title",
+   "title": "Early Universe"
+  },
+  "photo": {
+   "path": "out/run/drawings/v030.png",
+   "file": "v030.png",
+   "kind": "drawing",
+   "source": "ai_drawing",
+   "title": "a tiny dense sphere of hot glowing plasma",
+   "source_page": "https://huggingface.co/black-forest-labs/FLUX.1-schnell",
+   "licence": "AI-generated drawing (no third-party rights)",
+   "model_licence": "Apache-2.0",
+   "licence_url": "https://www.apache.org/licenses/LICENSE-2.0",
+   "author": "AI-generated with FLUX.1 [schnell] (Black Forest Labs) on Cloudflare Workers AI",
+   "attribution": "Illustration generated with FLUX.1 schnell (Apache-2.0): a tiny dense sphere of hot glowing plasma",
+   "downloaded": "2026-10-28",
+   "prompt": "a tiny dense sphere of hot glowing plasma, pure black background, detailed ink illustration, white and grey pen linework, one bright red accent, high contrast, simple clear composition, no text, no letters, no numbers"
+  },
+  "photo_subject": "a tiny dense sphere of hot glowing plasma",
+  "frame": "out/run/frames/v030.png"
+ },
+ {
+  "scene": "s03",
+  "start": 162.816,
+  "text": "That means all matter in the young cosmos was squeezed much closer together.",
+  "sentences": [
+   "s03.05"
+  ],
+  "id": "v031",
+  "end": 167.613,
+  "seconds": 4.8,
+  "scene_start": false,
+  "kind": "drawing",
+  "drawing_subject": "packed glowing particles compressed tightly together",
+  "card": {
+   "type": "title",
+   "title": "Matter Squeezed Together"
+  },
+  "photo": {
+   "path": "out/run/drawings/v031.png",
+   "file": "v031.png",
+   "kind": "drawing",
+   "source": "ai_drawing",
+   "title": "packed glowing particles compressed tightly together",
+   "source_page": "https://huggingface.co/black-forest-labs/FLUX.1-schnell",
+   "licence": "AI-generated drawing (no third-party rights)",
+   "model_licence": "Apache-2.0",
+   "licence_url": "https://www.apache.org/licenses/LICENSE-2.0",
+   "author": "AI-generated with FLUX.1 [schnell] (Black Forest Labs) on Cloudflare Workers AI",
+   "attribution": "Illustration generated with FLUX.1 schnell (Apache-2.0): packed glowing particles compressed tightly together",
+   "downloaded": "2026-10-28",
+   "prompt": "packed glowing particles compressed tightly together, pure black background, detailed ink illustration, white and grey pen linework, one bright red accent, high contrast, simple clear composition, no text, no letters, no numbers"
+  },
+  "photo_subject": "packed glowing particles compressed tightly together",
+  "frame": "out/run/frames/v031.png"
+ },
+ {
+  "scene": "s03",
+  "start": 167.613,
+  "text": "Before recombination, the universe was filled with an opaque white-hot fog of plasma.",
+  "sentences": [
+   "s03.07"
+  ],
+  "id": "v032",
+  "end": 173.47,
+  "seconds": 5.86,
+  "scene_start": false,
+  "kind": "photo",
+  "photo_subject": "a glowing plasma cloud",
+  "photo_queries": [
+   "plasma nebula",
+   "ionized gas"
+  ],
+  "card": {
+   "type": "title",
+   "title": "White-Hot Plasma Fog"
+  },
+  "photo": {
+   "path": "out/run/photos/v032.jpg",
+   "file": "v032.jpg",
+   "kind": "photo",
+   "source": "wikimedia_commons",
+   "title": "M57 The Ring Nebula",
+   "source_page": "https://commons.wikimedia.org/wiki/File:M57_The_Ring_Nebula.JPG",
+   "download_url": "https://upload.wikimedia.org/wikipedia/commons/1/13/M57_The_Ring_Nebula.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+   "licence": "Public domain",
+   "licence_url": "",
+   "author": "The Hubble Heritage Team (AURA/STScI/NASA)",
+   "attribution": "\"M57 The Ring Nebula\" by The Hubble Heritage Team (AURA/STScI/NASA), Public domain, via Wikimedia Commons. https://commons.wikimedia.org/wiki/File:M57_The_Ring_Nebula.JPG",
+   "downloaded": "2026-10-28"
+  },
+  "frame": "out/run/frames/v032.png"
+ },
+ {
+  "scene": "s03",
+  "start": 173.47,
+  "text": "Once neutral atoms formed, ancient photons became free to travel freely through transparent space.",
+  "sentences": [
+   "s03.08"
+  ],
+  "id": "v033",
+  "end": 180.397,
+  "seconds": 6.93,
+  "scene_start": false,
+  "kind": "drawing",
+  "drawing_subject": "neutral atoms forming out of a glowing cloud",
+  "card": {
+   "type": "title",
+   "title": "Neutral Atoms Form"
+  },
+  "photo": {
+   "path": "out/run/drawings/v033.png",
+   "file": "v033.png",
+   "kind": "drawing",
+   "source": "ai_drawing",
+   "title": "neutral atoms forming out of a glowing cloud",
+   "source_page": "https://huggingface.co/segmind/Segmind-Vega",
+   "licence": "AI-generated drawing (no third-party rights)",
+   "model_licence": "Apache-2.0",
+   "licence_url": "https://www.apache.org/licenses/LICENSE-2.0",
+   "author": "AI-generated with segmind/Segmind-Vega + segmind/Segmind-VegaRT",
+   "attribution": "Illustration generated with Segmind-Vega (Apache-2.0): neutral atoms forming out of a glowing cloud",
+   "downloaded": "2026-10-28",
+   "prompt": "neutral atoms forming out of a glowing cloud, pure black background, detailed ink illustration, white and grey pen linework, one bright red accent, high contrast, simple clear composition, no text, no letters, no numbers"
+  },
+  "photo_subject": "neutral atoms forming out of a glowing cloud",
+  "frame": "out/run/frames/v033.png"
+ },
+ {
+  "scene": "s03",
+  "start": 180.397,
+  "text": "These released photons created the cosmic microwave background radiation that fills space today.",
+  "sentences": [
+   "s03.09"
+  ],
+  "id": "v034",
+  "end": 187.345,
+  "seconds": 6.95,
+  "scene_start": false,
+  "kind": "photo",
+  "photo_subject": "the cosmic microwave background map",
+  "photo_queries": [
+   "cosmic microwave background",
+   "Planck satellite map"
+  ],
+  "card": {
+   "type": "title",
+   "title": "Cosmic Microwave Background"
+  },
+  "photo": {
+   "path": "out/run/photos/v034.jpg",
+   "file": "v034.jpg",
+   "kind": "photo",
+   "source": "wikimedia_commons",
+   "title": "Cosmic Microwave Background (CMB)",
+   "source_page": "https://commons.wikimedia.org/wiki/File:Cosmic_Microwave_Background_(CMB).jpeg",
+   "download_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/04/Cosmic_Microwave_Background_%28CMB%29.jpeg/1920px-Cosmic_Microwave_Background_%28CMB%29.jpeg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "licence": "CC BY 4.0",
+   "licence_url": "https://creativecommons.org/licenses/by/4.0",
+   "author": "ESA and the Planck Collaboration",
+   "attribution": "\"Cosmic Microwave Background (CMB)\" by ESA and the Planck Collaboration, CC BY 4.0, via Wikimedia Commons. https://commons.wikimedia.org/wiki/File:Cosmic_Microwave_Background_(CMB).jpeg",
+   "downloaded": "2026-10-28"
+  },
+  "frame": "out/run/frames/v034.png"
+ },
+ {
+  "scene": "s03",
+  "start": 187.345,
+  "text": "When this ancient light was first emitted, its source was only 42 million light-years from Earth.",
+  "sentences": [
+   "s03.10"
+  ],
+  "id": "v035",
+  "end": 193.652,
+  "seconds": 6.31,
+  "scene_start": false,
+  "kind": "card",
+  "card": {
+   "type": "stat",
+   "title": "Initial Source Distance",
+   "value": "42 million",
+   "unit": "light-years",
+   "label": "light-years"
+  },
+  "frame": "out/run/frames/v035.png"
+ },
+ {
+  "scene": "s03",
+  "start": 193.652,
+  "text": "Over 13.8 billion years, continuous",
+  "sentences": [
+   "s03.11"
+  ],
+  "id": "v036",
+  "end": 197.313,
+  "seconds": 3.66,
+  "scene_start": false,
+  "kind": "card",
+  "card": {
+   "type": "stat",
+   "title": "Timespan",
+   "value": "13.8 billion",
+   "unit": "years",
+   "label": "years"
+  },
+  "frame": "out/run/frames/v036.png"
+ },
+ {
+  "scene": "s03",
+  "start": 197.313,
+  "text": "expansion stretched that distance dramatically.",
+  "sentences": [
+   "s03.11"
+  ],
+  "id": "v037",
+  "end": 202.44,
+  "seconds": 5.13,
+  "scene_start": false,
+  "kind": "step",
+  "drawing_subject": "a spring stretching out across space",
+  "card": {
+   "type": "title",
+   "title": "Stretched Distance"
+  },
+  "photo_subject": "a spring stretching out across space",
+  "drawing_rejected": {
+   "path": "out/run/drawings/v037.png",
+   "file": "v037.png",
+   "kind": "drawing",
+   "source": "ai_drawing",
+   "title": "a spring stretching out across space",
+   "source_page": "https://huggingface.co/segmind/Segmind-Vega",
+   "licence": "AI-generated drawing (no third-party rights)",
+   "model_licence": "Apache-2.0",
+   "licence_url": "https://www.apache.org/licenses/LICENSE-2.0",
+   "author": "AI-generated with segmind/Segmind-Vega + segmind/Segmind-VegaRT",
+   "attribution": "Illustration generated with Segmind-Vega (Apache-2.0): a spring stretching out across space",
+   "downloaded": "2026-10-28",
+   "prompt": "a spring stretching out across space, pure black background, detailed ink illustration, white and grey pen linework, one bright red accent, high contrast, simple clear composition, no text, no letters, no numbers"
+  },
+  "photo": {
+   "path": "out/run/photos/v034.jpg",
+   "file": "v034.jpg",
+   "kind": "photo",
+   "source": "wikimedia_commons",
+   "title": "Cosmic Microwave Background (CMB)",
+   "source_page": "https://commons.wikimedia.org/wiki/File:Cosmic_Microwave_Background_(CMB).jpeg",
+   "download_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/04/Cosmic_Microwave_Background_%28CMB%29.jpeg/1920px-Cosmic_Microwave_Background_%28CMB%29.jpeg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "licence": "CC BY 4.0",
+   "licence_url": "https://creativecommons.org/licenses/by/4.0",
+   "author": "ESA and the Planck Collaboration",
+   "attribution": "\"Cosmic Microwave Background (CMB)\" by ESA and the Planck Collaboration, CC BY 4.0, via Wikimedia Commons. https://commons.wikimedia.org/wiki/File:Cosmic_Microwave_Background_(CMB).jpeg",
+   "downloaded": "2026-10-28"
+  },
+  "zoom": 1.4,
+  "focus": "left",
+  "step_of": "v034",
+  "frame": "out/run/frames/v037.png"
+ },
+ {
+  "scene": "s04",
+  "start": 202.44,
+  "text": "How does a light wave move through space that expands while the light is moving?",
+  "sentences": [
+   "s04.01"
+  ],
+  "id": "v038",
+  "end": 207.799,
+  "seconds": 5.36,
+  "scene_start": true,
+  "kind": "card",
+  "card": {
+   "type": "title",
+   "title": "Light Traveling Through Expanding Space"
+  },
+  "frame": "out/run/frames/v038.png"
+ },
+ {
+  "scene": "s04",
+  "start": 207.799,
+  "text": "Imagine an ant crawling along a stretching rubber band toward your hand.",
+  "sentences": [
+   "s04.02"
+  ],
+  "id": "v039",
+  "end": 212.493,
+  "seconds": 4.69,
+  "scene_start": false,
+  "kind": "drawing",
+  "drawing_subject": "a tiny ant crawling on a stretching rubber band",
+  "card": {
+   "type": "title",
+   "title": "Ant on a Rubber Band"
+  },
+  "photo": {
+   "path": "out/run/drawings/v039.png",
+   "file": "v039.png",
+   "kind": "drawing",
+   "source": "ai_drawing",
+   "title": "a tiny ant crawling on a stretching rubber band",
+   "source_page": "https://huggingface.co/black-forest-labs/FLUX.1-schnell",
+   "licence": "AI-generated drawing (no third-party rights)",
+   "model_licence": "Apache-2.0",
+   "licence_url": "https://www.apache.org/licenses/LICENSE-2.0",
+   "author": "AI-generated with FLUX.1 [schnell] (Black Forest Labs) on Cloudflare Workers AI",
+   "attribution": "Illustration generated with FLUX.1 schnell (Apache-2.0): a tiny ant crawling on a stretching rubber band",
+   "downloaded": "2026-10-28",
+   "prompt": "a tiny ant crawling on a stretching rubber band, pure black background, detailed ink illustration, white and grey pen linework, one bright red accent, high contrast, simple clear composition, no text, no letters, no numbers"
+  },
+  "photo_subject": "a tiny ant crawling on a stretching rubber band",
+  "frame": "out/run/frames/v039.png"
+ },
+ {
+  "scene": "s04",
+  "start": 212.493,
+  "text": "The ant crawls forward at a steady pace relative to the rubber directly under its feet.",
+  "sentences": [
+   "s04.03"
+  ],
+  "id": "v040",
+  "end": 218.043,
+  "seconds": 5.55,
+  "scene_start": false,
+  "kind": "drawing",
+  "drawing_subject": "an ant walking forward while the surface stretches",
+  "card": {
+   "type": "title",
+   "title": "Steady Crawl Pace"
+  },
+  "photo": {
+   "path": "out/run/drawings/v040.png",
+   "file": "v040.png",
+   "kind": "drawing",
+   "source": "ai_drawing",
+   "title": "an ant walking forward while the surface stretches",
+   "source_page": "https://huggingface.co/black-forest-labs/FLUX.1-schnell",
+   "licence": "AI-generated drawing (no third-party rights)",
+   "model_licence": "Apache-2.0",
+   "licence_url": "https://www.apache.org/licenses/LICENSE-2.0",
+   "author": "AI-generated with FLUX.1 [schnell] (Black Forest Labs) on Cloudflare Workers AI",
+   "attribution": "Illustration generated with FLUX.1 schnell (Apache-2.0): an ant walking forward while the surface stretches",
+   "downloaded": "2026-10-28",
+   "prompt": "an ant walking forward while the surface stretches, pure black background, detailed ink illustration, white and grey pen linework, one bright red accent, high contrast, simple clear composition, no text, no letters, no numbers"
+  },
+  "photo_subject": "an ant walking forward while the surface stretches",
+  "frame": "out/run/frames/v040.png"
+ },
+ {
+  "scene": "s04",
+  "start": 218.043,
+  "text": "Similarly, a photon always travels through space locally at the exact speed of light.",
+  "sentences": [
+   "s04.04"
+  ],
+  "id": "v041",
+  "end": 223.863,
+  "seconds": 5.82,
+  "scene_start": false,
+  "kind": "drawing",
+  "drawing_subject": "a light wave photon moving through space",
+  "card": {
+   "type": "title",
+   "title": "Local Speed of Light"
+  },
+  "photo": {
+   "path": "out/run/drawings/v041.png",
+   "file": "v041.png",
+   "kind": "drawing",
+   "source": "ai_drawing",
+   "title": "a light wave photon moving through space",
+   "source_page": "https://huggingface.co/black-forest-labs/FLUX.1-schnell",
+   "licence": "AI-generated drawing (no third-party rights)",
+   "model_licence": "Apache-2.0",
+   "licence_url": "https://www.apache.org/licenses/LICENSE-2.0",
+   "author": "AI-generated with FLUX.1 [schnell] (Black Forest Labs) on Cloudflare Workers AI",
+   "attribution": "Illustration generated with FLUX.1 schnell (Apache-2.0): a light wave photon moving through space",
+   "downloaded": "2026-10-28",
+   "prompt": "a light wave photon moving through space, pure black background, detailed ink illustration, white and grey pen linework, one bright red accent, high contrast, simple clear composition, no text, no letters, no numbers"
+  },
+  "photo_subject": "a light wave photon moving through space",
+  "frame": "out/run/frames/v041.png"
+ },
+ {
+  "scene": "s04",
+  "start": 223.863,
+  "text": "A local comoving observer will always measure the speed of light as the standard constant speed.",
+  "sentences": [
+   "s04.05"
+  ],
+  "id": "v042",
+  "end": 230.021,
+  "seconds": 6.16,
+  "scene_start": false,
+  "kind": "photo",
+  "photo_subject": "an observatory control room",
+  "photo_queries": [
+   "telescope control room",
+   "astronomy lab"
+  ],
+  "card": {
+   "type": "title",
+   "title": "Local Observer Measurement"
+  },
+  "photo": {
+   "path": "out/run/photos/v042.jpg",
+   "file": "v042.jpg",
+   "kind": "photo",
+   "source": "wikimedia_commons",
+   "title": "Nicholas U Mayall 4-meter Telescope control room (noirlab-4metercontrolroom)",
+   "source_page": "https://commons.wikimedia.org/wiki/File:Nicholas_U_Mayall_4-meter_Telescope_control_room_(noirlab-4metercontrolroom).jpg",
+   "download_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/1c/Nicholas_U_Mayall_4-meter_Telescope_control_room_%28noirlab-4metercontrolroom%29.jpg/1920px-Nicholas_U_Mayall_4-meter_Telescope_control_room_%28noirlab-4metercontrolroom%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "licence": "CC BY 4.0",
+   "licence_url": "https://creativecommons.org/licenses/by/4.0",
+   "author": "KPNO/NOIRLab/NSF/AURA/P. Marenfeld",
+   "attribution": "\"Nicholas U Mayall 4-meter Telescope control room (noirlab-4metercontrolroom)\" by KPNO/NOIRLab/NSF/AURA/P. Marenfeld, CC BY 4.0, via Wikimedia Commons. https://commons.wikimedia.org/wiki/File:Nicholas_U_Mayall_4-meter_Telescope_control_room_(noirlab-4metercontrolroom).jpg",
+   "downloaded": "2026-10-28"
+  },
+  "frame": "out/run/frames/v042.png"
+ },
+ {
+  "scene": "s04",
+  "start": 230.021,
+  "text": "But while the photon travels forward, the space behind it continues to expand over time.",
+  "sentences": [
+   "s04.06"
+  ],
+  "id": "v043",
+  "end": 235.734,
+  "seconds": 5.71,
+  "scene_start": false,
+  "kind": "drawing",
+  "drawing_subject": "space expanding behind a moving photon wave",
+  "card": {
+   "type": "title",
+   "title": "Space Expanding Behind"
+  },
+  "photo_subject": "space expanding behind a moving photon wave",
+  "drawing_rejected": {
+   "path": "out/run/drawings/v043.png",
+   "file": "v043.png",
+   "kind": "drawing",
+   "source": "ai_drawing",
+   "title": "space expanding behind a moving photon wave",
+   "source_page": "https://huggingface.co/black-forest-labs/FLUX.1-schnell",
+   "licence": "AI-generated drawing (no third-party rights)",
+   "model_licence": "Apache-2.0",
+   "licence_url": "https://www.apache.org/licenses/LICENSE-2.0",
+   "author": "AI-generated with FLUX.1 [schnell] (Black Forest Labs) on Cloudflare Workers AI",
+   "attribution": "Illustration generated with FLUX.1 schnell (Apache-2.0): space expanding behind a moving photon wave",
+   "downloaded": "2026-10-28",
+   "prompt": "space expanding behind a moving photon wave, pure black background, detailed ink illustration, white and grey pen linework, one bright red accent, high contrast, simple clear composition, no text, no letters, no numbers"
+  },
+  "frame": "out/run/frames/v043.png"
+ },
+ {
+  "scene": "s04",
+  "start": 235.734,
+  "text": "At the same time, the space ahead of the photon stretches as well.",
+  "sentences": [
+   "s04.07"
+  ],
+  "id": "v044",
+  "end": 240.053,
+  "seconds": 4.32,
+  "scene_start": false,
+  "kind": "drawing",
+  "drawing_subject": "space stretching out ahead of a moving photon wave",
+  "card": {
+   "type": "title",
+   "title": "Space Stretching Ahead"
+  },
+  "photo": {
+   "path": "out/run/drawings/v044.png",
+   "file": "v044.png",
+   "kind": "drawing",
+   "source": "ai_drawing",
+   "title": "space stretching out ahead of a moving photon wave",
+   "source_page": "https://huggingface.co/black-forest-labs/FLUX.1-schnell",
+   "licence": "AI-generated drawing (no third-party rights)",
+   "model_licence": "Apache-2.0",
+   "licence_url": "https://www.apache.org/licenses/LICENSE-2.0",
+   "author": "AI-generated with FLUX.1 [schnell] (Black Forest Labs) on Cloudflare Workers AI",
+   "attribution": "Illustration generated with FLUX.1 schnell (Apache-2.0): space stretching out ahead of a moving photon wave",
+   "downloaded": "2026-10-28",
+   "prompt": "space stretching out ahead of a moving photon wave, pure black background, detailed ink illustration, white and grey pen linework, one bright red accent, high contrast, simple clear composition, no text, no letters, no numbers"
+  },
+  "photo_subject": "space stretching out ahead of a moving photon wave",
+  "frame": "out/run/frames/v044.png"
+ },
+ {
+  "scene": "s04",
+  "start": 240.053,
+  "text": "Because space stretches everywhere, the distance between the photon and its source grows continuously.",
+  "sentences": [
+   "s04.08"
+  ],
+  "id": "v045",
+  "end": 246.473,
+  "seconds": 6.42,
+  "scene_start": false,
+  "kind": "drawing",
+  "drawing_subject": "growing distance between a photon and a glowing source",
+  "card": {
+   "type": "title",
+   "title": "Growing Distance"
+  },
+  "photo_subject": "growing distance between a photon and a glowing source",
+  "drawing_rejected": {
+   "path": "out/run/drawings/v045.png",
+   "file": "v045.png",
+   "kind": "drawing",
+   "source": "ai_drawing",
+   "title": "growing distance between a photon and a glowing source",
+   "source_page": "https://huggingface.co/black-forest-labs/FLUX.1-schnell",
+   "licence": "AI-generated drawing (no third-party rights)",
+   "model_licence": "Apache-2.0",
+   "licence_url": "https://www.apache.org/licenses/LICENSE-2.0",
+   "author": "AI-generated with FLUX.1 [schnell] (Black Forest Labs) on Cloudflare Workers AI",
+   "attribution": "Illustration generated with FLUX.1 schnell (Apache-2.0): growing distance between a photon and a glowing source",
+   "downloaded": "2026-10-28",
+   "prompt": "growing distance between a photon and a glowing source, pure black background, detailed ink illustration, white and grey pen linework, one bright red accent, high contrast, simple clear composition, no text, no letters, no numbers"
+  },
+  "frame": "out/run/frames/v045.png"
+ },
+ {
+  "scene": "s04",
+  "start": 246.473,
+  "text": "Photons from the cosmic microwave background spent 13.8",
+  "sentences": [
+   "s04.10"
+  ],
+  "id": "v046",
+  "end": 250.425,
+  "seconds": 3.95,
+  "scene_start": false,
+  "kind": "card",
+  "card": {
+   "type": "stat",
+   "title": "Photon Travel Time",
+   "value": "13.8",
+   "unit": "billion years",
+   "label": "billion years"
+  },
+  "frame": "out/run/frames/v046.png"
+ },
+ {
+  "scene": "s04",
+  "start": 250.425,
+  "text": "billion years traveling across space to reach Earth.",
+  "sentences": [
+   "s04.10"
+  ],
+  "id": "v047",
+  "end": 254.847,
+  "seconds": 4.42,
+  "scene_start": false,
+  "kind": "photo",
+  "photo_subject": "planet Earth viewed from space",
+  "photo_queries": [
+   "Earth from space",
+   "blue marble Earth"
+  ],
+  "card": {
+   "type": "title",
+   "title": "Reaching Earth"
+  },
+  "photo": {
+   "path": "out/run/photos/v047.jpg",
+   "file": "v047.jpg",
+   "kind": "photo",
+   "source": "wikimedia_commons",
+   "title": "The Earth seen from Apollo 17",
+   "source_page": "https://commons.wikimedia.org/wiki/File:The_Earth_seen_from_Apollo_17.jpg",
+   "download_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/97/The_Earth_seen_from_Apollo_17.jpg/1920px-The_Earth_seen_from_Apollo_17.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "licence": "Public domain",
+   "licence_url": "",
+   "author": "NASA/Apollo 17 crew; taken by either Harrison Schmitt or Ron Evans",
+   "attribution": "\"The Earth seen from Apollo 17\" by NASA/Apollo 17 crew; taken by either Harrison Schmitt or Ron Evans, Public domain, via Wikimedia Commons. https://commons.wikimedia.org/wiki/File:The_Earth_seen_from_Apollo_17.jpg",
+   "downloaded": "2026-10-28"
+  },
+  "frame": "out/run/frames/v047.png"
+ },
+ {
+  "scene": "s04",
+  "start": 254.847,
+  "text": "But during those 13.8 billion years, expansion pushed",
+  "sentences": [
+   "s04.11"
+  ],
+  "id": "v048",
+  "end": 258.27617647058827,
+  "seconds": 3.43,
+  "scene_start": false,
+  "kind": "step",
+  "card": {
+   "type": "stat",
+   "title": "Expansion Duration",
+   "value": "13.8 billion",
+   "unit": "years"
+  },
+  "photo": {
+   "path": "out/run/photos/v047.jpg",
+   "file": "v047.jpg",
+   "kind": "photo",
+   "source": "wikimedia_commons",
+   "title": "The Earth seen from Apollo 17",
+   "source_page": "https://commons.wikimedia.org/wiki/File:The_Earth_seen_from_Apollo_17.jpg",
+   "download_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/97/The_Earth_seen_from_Apollo_17.jpg/1920px-The_Earth_seen_from_Apollo_17.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "licence": "Public domain",
+   "licence_url": "",
+   "author": "NASA/Apollo 17 crew; taken by either Harrison Schmitt or Ron Evans",
+   "attribution": "\"The Earth seen from Apollo 17\" by NASA/Apollo 17 crew; taken by either Harrison Schmitt or Ron Evans, Public domain, via Wikimedia Commons. https://commons.wikimedia.org/wiki/File:The_Earth_seen_from_Apollo_17.jpg",
+   "downloaded": "2026-10-28"
+  },
+  "zoom": 1.4,
+  "focus": "left",
+  "step_of": "v047",
+  "frame": "out/run/frames/v048.png"
+ },
+ {
+  "scene": "s04",
+  "start": 258.27617647058827,
+  "text": "the matter that emitted those photons much farther away.",
+  "sentences": [
+   "s04.11"
+  ],
+  "id": "v049",
+  "end": 263.603,
+  "seconds": 5.33,
+  "scene_start": false,
+  "kind": "drawing",
+  "drawing_subject": "matter emitting light being pushed far away by expansion",
+  "card": {
+   "type": "title",
+   "title": "Emitting Matter Pushed Away"
+  },
+  "photo": {
+   "path": "out/run/drawings/v049.png",
+   "file": "v049.png",
+   "kind": "drawing",
+   "source": "ai_drawing",
+   "title": "matter emitting light being pushed far away by expansion",
+   "source_page": "https://huggingface.co/black-forest-labs/FLUX.1-schnell",
+   "licence": "AI-generated drawing (no third-party rights)",
+   "model_licence": "Apache-2.0",
+   "licence_url": "https://www.apache.org/licenses/LICENSE-2.0",
+   "author": "AI-generated with FLUX.1 [schnell] (Black Forest Labs) on Cloudflare Workers AI",
+   "attribution": "Illustration generated with FLUX.1 schnell (Apache-2.0): matter emitting light being pushed far away by expansion",
+   "downloaded": "2026-10-28",
+   "prompt": "matter emitting light being pushed far away by expansion, pure black background, detailed ink illustration, white and grey pen linework, one bright red accent, high contrast, simple clear composition, no text, no letters, no numbers"
+  },
+  "photo_subject": "matter emitting light being pushed far away by expansion",
+  "frame": "out/run/frames/v049.png"
+ },
+ {
+  "scene": "s05",
+  "start": 263.603,
+  "text": "So, how far away is that emitting matter located at the present cosmological time?",
+  "sentences": [
+   "s05.01"
+  ],
+  "id": "v050",
+  "end": 269.908,
+  "seconds": 6.31,
+  "scene_start": true,
+  "kind": "card",
+  "card": {
+   "type": "title",
+   "title": "How 13.8 Billion Light-Years Turns Into a 46.5 Billion Light-Year Radius"
+  },
+  "frame": "out/run/frames/v050.png"
+ },
+ {
+  "scene": "s05",
+  "start": 269.908,
+  "text": "To understand this, we must distinguish between light-travel distance and proper distance.",
+  "sentences": [
+   "s05.03"
+  ],
+  "id": "v051",
+  "end": 275.688,
+  "seconds": 5.78,
+  "scene_start": false,
+  "kind": "card",
+  "card": {
+   "type": "compare",
+   "title": "Distance Types",
+   "left_title": "Light-Travel",
+   "left_points": [
+    "Based on travel time"
+   ],
+   "right_title": "Proper Distance",
+   "right_points": [
+    "Actual space gap"
+   ]
+  },
+  "frame": "out/run/frames/v051.png"
+ },
+ {
+  "scene": "s05",
+  "start": 275.688,
+  "text": "Light-travel distance is simply the age of the universe multiplied by the speed of light.",
+  "sentences": [
+   "s05.04"
+  ],
+  "id": "v052",
+  "end": 281.781,
+  "seconds": 6.09,
+  "scene_start": false,
+  "kind": "drawing",
+  "drawing_subject": "a clock multiplying by the speed of light",
+  "card": {
+   "type": "title",
+   "title": "Light-Travel Distance Formula"
+  },
+  "photo": {
+   "path": "out/run/drawings/v052.png",
+   "file": "v052.png",
+   "kind": "drawing",
+   "source": "ai_drawing",
+   "title": "a clock multiplying by the speed of light",
+   "source_page": "https://huggingface.co/black-forest-labs/FLUX.1-schnell",
+   "licence": "AI-generated drawing (no third-party rights)",
+   "model_licence": "Apache-2.0",
+   "licence_url": "https://www.apache.org/licenses/LICENSE-2.0",
+   "author": "AI-generated with FLUX.1 [schnell] (Black Forest Labs) on Cloudflare Workers AI",
+   "attribution": "Illustration generated with FLUX.1 schnell (Apache-2.0): a clock multiplying by the speed of light",
+   "downloaded": "2026-10-28",
+   "prompt": "a clock multiplying by the speed of light, pure black background, detailed ink illustration, white and grey pen linework, one bright red accent, high contrast, simple clear composition, no text, no letters, no numbers"
+  },
+  "photo_subject": "a clock multiplying by the speed of light",
+  "frame": "out/run/frames/v052.png"
+ },
+ {
+  "scene": "s05",
+  "start": 281.781,
+  "text": "That calculation yields a light-travel distance of about 13.8 billion light-years.",
+  "sentences": [
+   "s05.05"
+  ],
+  "id": "v053",
+  "end": 288.084,
+  "seconds": 6.3,
+  "scene_start": false,
+  "kind": "card",
+  "card": {
+   "type": "stat",
+   "title": "Light-Travel Distance",
+   "value": "13.8 billion",
+   "unit": "light-years",
+   "label": "light-years"
+  },
+  "frame": "out/run/frames/v053.png"
+ },
+ {
+  "scene": "s05",
+  "start": 288.084,
+  "text": "Proper distance represents the actual physical distance between",
+  "sentences": [
+   "s05.06"
+  ],
+  "id": "v054",
+  "end": 291.571,
+  "seconds": 3.49,
+  "scene_start": false,
+  "kind": "drawing",
+  "drawing_subject": "a giant ruler measuring the physical gap between two stars",
+  "card": {
+   "type": "title",
+   "title": "Proper Distance Definition"
+  },
+  "photo": {
+   "path": "out/run/drawings/v054.png",
+   "file": "v054.png",
+   "kind": "drawing",
+   "source": "ai_drawing",
+   "title": "a giant ruler measuring the physical gap between two stars",
+   "source_page": "https://huggingface.co/black-forest-labs/FLUX.1-schnell",
+   "licence": "AI-generated drawing (no third-party rights)",
+   "model_licence": "Apache-2.0",
+   "licence_url": "https://www.apache.org/licenses/LICENSE-2.0",
+   "author": "AI-generated with FLUX.1 [schnell] (Black Forest Labs) on Cloudflare Workers AI",
+   "attribution": "Illustration generated with FLUX.1 schnell (Apache-2.0): a giant ruler measuring the physical gap between two stars",
+   "downloaded": "2026-10-28",
+   "prompt": "a giant ruler measuring the physical gap between two stars, pure black background, detailed ink illustration, white and grey pen linework, one bright red accent, high contrast, simple clear composition, no text, no letters, no numbers"
+  },
+  "photo_subject": "a giant ruler measuring the physical gap between two stars",
+  "frame": "out/run/frames/v054.png"
+ },
+ {
+  "scene": "s05",
+  "start": 291.571,
+  "text": "two objects at a single moment in time.",
+  "sentences": [
+   "s05.06"
+  ],
+  "id": "v055",
+  "end": 295.532,
+  "seconds": 3.96,
+  "scene_start": false,
+  "kind": "photo",
+  "photo_subject": "a pair of distant galaxies",
+  "photo_queries": [
+   "galaxy pair",
+   "binary galaxies"
+  ],
+  "card": {
+   "type": "title",
+   "title": "Single Moment in Time"
+  },
+  "photo": {
+   "path": "out/run/photos/v055.jpg",
+   "file": "v055.jpg",
+   "kind": "photo",
+   "source": "nasa_image_library",
+   "title": "Older Galaxy Pair Has Surprisingly Youthful Glow",
+   "source_page": "https://images.nasa.gov/details/PIA09106",
+   "download_url": "https://images-assets.nasa.gov/image/PIA09106/PIA09106~orig.jpg",
+   "licence": "Public domain (NASA media, not copyrighted in the US)",
+   "licence_url": "https://www.nasa.gov/nasa-brand-center/images-and-media/",
+   "author": "NASA/JPL-Caltech/ETSU",
+   "attribution": "Older Galaxy Pair Has Surprisingly Youthful Glow — NASA/JPL-Caltech/ETSU, NASA, public domain. https://images.nasa.gov/details/PIA09106",
+   "downloaded": "2026-10-28"
+  },
+  "frame": "out/run/frames/v055.png"
+ },
+ {
+  "scene": "s05",
+  "start": 295.532,
+  "text": "You can imagine proper distance as the value measured by rulers if expansion suddenly froze.",
+  "sentences": [
+   "s05.07"
+  ],
+  "id": "v056",
+  "end": 302.068,
+  "seconds": 6.54,
+  "scene_start": false,
+  "kind": "drawing",
+  "drawing_subject": "frozen rulers laid end to end across space",
+  "card": {
+   "type": "title",
+   "title": "Frozen Expansion Rulers"
+  },
+  "photo": {
+   "path": "out/run/drawings/v056.png",
+   "file": "v056.png",
+   "kind": "drawing",
+   "source": "ai_drawing",
+   "title": "frozen rulers laid end to end across space",
+   "source_page": "https://huggingface.co/black-forest-labs/FLUX.1-schnell",
+   "licence": "AI-generated drawing (no third-party rights)",
+   "model_licence": "Apache-2.0",
+   "licence_url": "https://www.apache.org/licenses/LICENSE-2.0",
+   "author": "AI-generated with FLUX.1 [schnell] (Black Forest Labs) on Cloudflare Workers AI",
+   "attribution": "Illustration generated with FLUX.1 schnell (Apache-2.0): frozen rulers laid end to end across space",
+   "downloaded": "2026-10-28",
+   "prompt": "frozen rulers laid end to end across space, pure black background, detailed ink illustration, white and grey pen linework, one bright red accent, high contrast, simple clear composition, no text, no letters, no numbers"
+  },
+  "photo_subject": "frozen rulers laid end to end across space",
+  "frame": "out/run/frames/v056.png"
+ },
+ {
+  "scene": "s05",
+  "start": 302.068,
+  "text": "Comoving distance factors out expansion and equals proper",
+  "sentences": [
+   "s05.08"
+  ],
+  "id": "v057",
+  "end": 305.4425,
+  "seconds": 3.37,
+  "scene_start": false,
+  "kind": "step",
+  "card": {
+   "type": "stat",
+   "title": "Cosmic Age",
+   "value": "13.8 billion",
+   "unit": "years"
+  },
+  "photo": {
+   "path": "out/run/drawings/v056.png",
+   "file": "v056.png",
+   "kind": "drawing",
+   "source": "ai_drawing",
+   "title": "frozen rulers laid end to end across space",
+   "source_page": "https://huggingface.co/black-forest-labs/FLUX.1-schnell",
+   "licence": "AI-generated drawing (no third-party rights)",
+   "model_licence": "Apache-2.0",
+   "licence_url": "https://www.apache.org/licenses/LICENSE-2.0",
+   "author": "AI-generated with FLUX.1 [schnell] (Black Forest Labs) on Cloudflare Workers AI",
+   "attribution": "Illustration generated with FLUX.1 schnell (Apache-2.0): frozen rulers laid end to end across space",
+   "downloaded": "2026-10-28",
+   "prompt": "frozen rulers laid end to end across space, pure black background, detailed ink illustration, white and grey pen linework, one bright red accent, high contrast, simple clear composition, no text, no letters, no numbers"
+  },
+  "zoom": 1.4,
+  "focus": "left",
+  "step_of": "v056",
+  "frame": "out/run/frames/v057.png"
+ },
+ {
+  "scene": "s05",
+  "start": 305.4425,
+  "text": "distance at the present age of the universe.",
+  "sentences": [
+   "s05.08"
+  ],
+  "id": "v058",
+  "end": 309.303,
+  "seconds": 3.86,
+  "scene_start": false,
+  "kind": "photo",
+  "photo_subject": "a deep field galaxy survey",
+  "photo_queries": [
+   "Hubble deep field",
+   "deep space survey"
+  ],
+  "card": {
+   "type": "title",
+   "title": "Present Age Universe"
+  },
+  "photo": {
+   "path": "out/run/photos/v058.jpg",
+   "file": "v058.jpg",
+   "kind": "photo",
+   "source": "nasa_image_library",
+   "title": "Hubble Deep Field Image Unveils Myriad Galaxies Back to the Beginning of Time",
+   "source_page": "https://images.nasa.gov/details/PIA12110",
+   "download_url": "https://images-assets.nasa.gov/image/PIA12110/PIA12110~orig.jpg",
+   "licence": "Public domain (NASA media, not copyrighted in the US)",
+   "licence_url": "https://www.nasa.gov/nasa-brand-center/images-and-media/",
+   "author": "NASA/JPL/STScI Hubble Deep Field Team",
+   "attribution": "Hubble Deep Field Image Unveils Myriad Galaxies Back to the Beginning of Time — NASA/JPL/STScI Hubble Deep Field Team, NASA, public domain. https://images.nasa.gov/details/PIA12110",
+   "downloaded": "2026-10-28"
+  },
+  "frame": "out/run/frames/v058.png"
+ },
+ {
+  "scene": "s05",
+  "start": 309.303,
+  "text": "From Earth, the comoving distance to the edge",
+  "sentences": [
+   "s05.09"
+  ],
+  "id": "v059",
+  "end": 313.59711764705884,
+  "seconds": 4.29,
+  "scene_start": false,
+  "kind": "drawing",
+  "drawing_subject": "a line stretching from Earth to the edge of the universe",
+  "card": {
+   "type": "title",
+   "title": "Comoving Distance from Earth"
+  },
+  "photo_subject": "a line stretching from Earth to the edge of the universe",
+  "drawing_rejected": {
+   "path": "out/run/drawings/v059.png",
+   "file": "v059.png",
+   "kind": "drawing",
+   "source": "ai_drawing",
+   "title": "a line stretching from Earth to the edge of the universe",
+   "source_page": "https://huggingface.co/black-forest-labs/FLUX.1-schnell",
+   "licence": "AI-generated drawing (no third-party rights)",
+   "model_licence": "Apache-2.0",
+   "licence_url": "https://www.apache.org/licenses/LICENSE-2.0",
+   "author": "AI-generated with FLUX.1 [schnell] (Black Forest Labs) on Cloudflare Workers AI",
+   "attribution": "Illustration generated with FLUX.1 schnell (Apache-2.0): a line stretching from Earth to the edge of the universe",
+   "downloaded": "2026-10-28",
+   "prompt": "a line stretching from Earth to the edge of the universe, pure black background, detailed ink illustration, white and grey pen linework, one bright red accent, high contrast, simple clear composition, no text, no letters, no numbers"
+  },
+  "frame": "out/run/frames/v059.png"
+ },
+ {
+  "scene": "s05",
+  "start": 313.59711764705884,
+  "text": "of our observable sphere is about 46.5 billion light-years.",
+  "sentences": [
+   "s05.09"
+  ],
+  "id": "v060",
+  "end": 318.871,
+  "seconds": 5.27,
+  "scene_start": false,
+  "kind": "card",
+  "card": {
+   "type": "stat",
+   "title": "Observable Sphere Radius",
+   "value": "46.5 billion",
+   "unit": "light-years",
+   "label": "light-years"
+  },
+  "frame": "out/run/frames/v060.png"
+ },
+ {
+  "scene": "s05",
+  "start": 318.871,
+  "text": "This radial distance marks our particle horizon, which limits what signals can reach us.",
+  "sentences": [
+   "s05.10"
+  ],
+  "id": "v061",
+  "end": 324.99,
+  "seconds": 6.12,
+  "scene_start": false,
+  "kind": "drawing",
+  "drawing_subject": "a glowing spherical boundary surrounding Earth in space",
+  "card": {
+   "type": "title",
+   "title": "Particle Horizon"
+  },
+  "photo": {
+   "path": "out/run/drawings/v061.png",
+   "file": "v061.png",
+   "kind": "drawing",
+   "source": "ai_drawing",
+   "title": "a glowing spherical boundary surrounding Earth in space",
+   "source_page": "https://huggingface.co/black-forest-labs/FLUX.1-schnell",
+   "licence": "AI-generated drawing (no third-party rights)",
+   "model_licence": "Apache-2.0",
+   "licence_url": "https://www.apache.org/licenses/LICENSE-2.0",
+   "author": "AI-generated with FLUX.1 [schnell] (Black Forest Labs) on Cloudflare Workers AI",
+   "attribution": "Illustration generated with FLUX.1 schnell (Apache-2.0): a glowing spherical boundary surrounding Earth in space",
+   "downloaded": "2026-10-28",
+   "prompt": "a glowing spherical boundary surrounding Earth in space, pure black background, detailed ink illustration, white and grey pen linework, one bright red accent, high contrast, simple clear composition, no text, no letters, no numbers"
+  },
+  "photo_subject": "a glowing spherical boundary surrounding Earth in space",
+  "frame": "out/run/frames/v061.png"
+ },
+ {
+  "scene": "s05",
+  "start": 324.99,
+  "text": "Thus, our observable universe is a sphere with a radius of 46.5 billion light-years.",
+  "sentences": [
+   "s05.11"
+  ],
+  "id": "v062",
+  "end": 332.837,
+  "seconds": 7.85,
+  "scene_start": false,
+  "kind": "step",
+  "card": {
+   "type": "stat",
+   "title": "Observable Universe Radius",
+   "value": "46.5 billion",
+   "unit": "light-years"
+  },
+  "photo": {
+   "path": "out/run/drawings/v061.png",
+   "file": "v061.png",
+   "kind": "drawing",
+   "source": "ai_drawing",
+   "title": "a glowing spherical boundary surrounding Earth in space",
+   "source_page": "https://huggingface.co/black-forest-labs/FLUX.1-schnell",
+   "licence": "AI-generated drawing (no third-party rights)",
+   "model_licence": "Apache-2.0",
+   "licence_url": "https://www.apache.org/licenses/LICENSE-2.0",
+   "author": "AI-generated with FLUX.1 [schnell] (Black Forest Labs) on Cloudflare Workers AI",
+   "attribution": "Illustration generated with FLUX.1 schnell (Apache-2.0): a glowing spherical boundary surrounding Earth in space",
+   "downloaded": "2026-10-28",
+   "prompt": "a glowing spherical boundary surrounding Earth in space, pure black background, detailed ink illustration, white and grey pen linework, one bright red accent, high contrast, simple clear composition, no text, no letters, no numbers"
+  },
+  "zoom": 1.4,
+  "focus": "left",
+  "step_of": "v061",
+  "frame": "out/run/frames/v062.png"
+ },
+ {
+  "scene": "s06",
+  "start": 332.837,
+  "text": "Because Earth receives light from all directions, our observable horizon forms a massive sphere.",
+  "sentences": [
+   "s06.01"
+  ],
+  "id": "v063",
+  "end": 339.248,
+  "seconds": 6.41,
+  "scene_start": true,
+  "kind": "card",
+  "card": {
+   "type": "title",
+   "title": "Measuring the 93 Billion Light-Year Horizon"
+  },
+  "frame": "out/run/frames/v063.png"
+ },
+ {
+  "scene": "s06",
+  "start": 339.248,
+  "text": "Every point in the universe has its own distinct observable sphere centered on its location.",
+  "sentences": [
+   "s06.02"
+  ],
+  "id": "v064",
+  "end": 345.701,
+  "seconds": 6.45,
+  "scene_start": false,
+  "kind": "drawing",
+  "drawing_subject": "multiple overlapping spheres centered on different galaxies",
+  "card": {
+   "type": "title",
+   "title": "Every Point Has a Sphere"
+  },
+  "photo_subject": "multiple overlapping spheres centered on different galaxies",
+  "drawing_rejected": {
+   "path": "out/run/drawings/v064.png",
+   "file": "v064.png",
+   "kind": "drawing",
+   "source": "ai_drawing",
+   "title": "multiple overlapping spheres centered on different galaxies",
+   "source_page": "https://huggingface.co/black-forest-labs/FLUX.1-schnell",
+   "licence": "AI-generated drawing (no third-party rights)",
+   "model_licence": "Apache-2.0",
+   "licence_url": "https://www.apache.org/licenses/LICENSE-2.0",
+   "author": "AI-generated with FLUX.1 [schnell] (Black Forest Labs) on Cloudflare Workers AI",
+   "attribution": "Illustration generated with FLUX.1 schnell (Apache-2.0): multiple overlapping spheres centered on different galaxies",
+   "downloaded": "2026-10-28",
+   "prompt": "multiple overlapping spheres centered on different galaxies, pure black background, detailed ink illustration, white and grey pen linework, one bright red accent, high contrast, simple clear composition, no text, no letters, no numbers"
+  },
+  "frame": "out/run/frames/v064.png"
+ },
+ {
+  "scene": "s06",
+  "start": 345.701,
+  "text": "To find the diameter of Earth's observable sphere,",
+  "sentences": [
+   "s06.03"
+  ],
+  "id": "v065",
+  "end": 349.493,
+  "seconds": 3.79,
+  "scene_start": false,
+  "kind": "drawing",
+  "drawing_subject": "a line measuring the radius of a spherical universe",
+  "card": {
+   "type": "title",
+   "title": "Earth Observable Sphere"
+  },
+  "photo": {
+   "path": "out/run/drawings/v065.png",
+   "file": "v065.png",
+   "kind": "drawing",
+   "source": "ai_drawing",
+   "title": "a line measuring the radius of a spherical universe",
+   "source_page": "https://huggingface.co/segmind/Segmind-Vega",
+   "licence": "AI-generated drawing (no third-party rights)",
+   "model_licence": "Apache-2.0",
+   "licence_url": "https://www.apache.org/licenses/LICENSE-2.0",
+   "author": "AI-generated with segmind/Segmind-Vega + segmind/Segmind-VegaRT",
+   "attribution": "Illustration generated with Segmind-Vega (Apache-2.0): a line measuring the radius of a spherical universe",
+   "downloaded": "2026-10-28",
+   "prompt": "a line measuring the radius of a spherical universe, pure black background, detailed ink illustration, white and grey pen linework, one bright red accent, high contrast, simple clear composition, no text, no letters, no numbers"
+  },
+  "photo_subject": "a line measuring the radius of a spherical universe",
+  "frame": "out/run/frames/v065.png"
+ },
+ {
+  "scene": "s06",
+  "start": 349.493,
+  "text": "we double the 46.5 billion light-year radius.",
+  "sentences": [
+   "s06.03"
+  ],
+  "id": "v066",
+  "end": 353.76,
+  "seconds": 4.27,
+  "scene_start": false,
+  "kind": "card",
+  "card": {
+   "type": "stat",
+   "title": "Sphere Radius",
+   "value": "46.5 billion",
+   "unit": "light-years",
+   "label": "light-years"
+  },
+  "frame": "out/run/frames/v066.png"
+ },
+ {
+  "scene": "s06",
+  "start": 353.76,
+  "text": "Doubling that radius yields a full",
+  "sentences": [
+   "s06.04"
+  ],
+  "id": "v067",
+  "end": 357.2824615384615,
+  "seconds": 3.52,
+  "scene_start": false,
+  "kind": "drawing",
+  "drawing_subject": "multiplying a spherical radius by two",
+  "card": {
+   "type": "title",
+   "title": "Doubling the Radius"
+  },
+  "photo_subject": "multiplying a spherical radius by two",
+  "drawing_rejected": {
+   "path": "out/run/drawings/v067.png",
+   "file": "v067.png",
+   "kind": "drawing",
+   "source": "ai_drawing",
+   "title": "multiplying a spherical radius by two",
+   "source_page": "https://huggingface.co/black-forest-labs/FLUX.1-schnell",
+   "licence": "AI-generated drawing (no third-party rights)",
+   "model_licence": "Apache-2.0",
+   "licence_url": "https://www.apache.org/licenses/LICENSE-2.0",
+   "author": "AI-generated with FLUX.1 [schnell] (Black Forest Labs) on Cloudflare Workers AI",
+   "attribution": "Illustration generated with FLUX.1 schnell (Apache-2.0): multiplying a spherical radius by two",
+   "downloaded": "2026-10-28",
+   "prompt": "multiplying a spherical radius by two, pure black background, detailed ink illustration, white and grey pen linework, one bright red accent, high contrast, simple clear composition, no text, no letters, no numbers"
+  },
+  "frame": "out/run/frames/v067.png"
+ },
+ {
+  "scene": "s06",
+  "start": 357.2824615384615,
+  "text": "cosmic diameter of 93 billion light-years across.",
+  "sentences": [
+   "s06.04"
+  ],
+  "id": "v068",
+  "end": 361.854,
+  "seconds": 4.57,
+  "scene_start": false,
+  "kind": "step",
+  "card": {
+   "type": "stat",
+   "title": "Cosmic Diameter",
+   "value": "93 billion",
+   "unit": "light-years"
+  },
+  "photo": {
+   "path": "out/run/drawings/v065.png",
+   "file": "v065.png",
+   "kind": "drawing",
+   "source": "ai_drawing",
+   "title": "a line measuring the radius of a spherical universe",
+   "source_page": "https://huggingface.co/segmind/Segmind-Vega",
+   "licence": "AI-generated drawing (no third-party rights)",
+   "model_licence": "Apache-2.0",
+   "licence_url": "https://www.apache.org/licenses/LICENSE-2.0",
+   "author": "AI-generated with segmind/Segmind-Vega + segmind/Segmind-VegaRT",
+   "attribution": "Illustration generated with Segmind-Vega (Apache-2.0): a line measuring the radius of a spherical universe",
+   "downloaded": "2026-10-28",
+   "prompt": "a line measuring the radius of a spherical universe, pure black background, detailed ink illustration, white and grey pen linework, one bright red accent, high contrast, simple clear composition, no text, no letters, no numbers"
+  },
+  "zoom": 1.4,
+  "focus": "left",
+  "step_of": "v065",
+  "frame": "out/run/frames/v068.png"
+ },
+ {
+  "scene": "s06",
+  "start": 361.854,
+  "text": "That total count means there are more stars in our view than beach sand grains on Earth.",
+  "sentences": [
+   "s06.07"
+  ],
+  "id": "v069",
+  "end": 367.555,
+  "seconds": 5.7,
+  "scene_start": false,
+  "kind": "photo",
+  "photo_subject": "a sandy beach",
+  "photo_queries": [
+   "sand beach",
+   "sand grains"
+  ],
+  "card": {
+   "type": "title",
+   "title": "More Stars Than Sand"
+  },
+  "photo_rejected": {
+   "path": "out/run/photos/v069b.jpg",
+   "file": "v069b.jpg",
+   "kind": "photo",
+   "source": "nasa_image_library",
+   "title": "Staring at the Sea, Staring at the Sand",
+   "source_page": "https://images.nasa.gov/details/PIA18800",
+   "download_url": "https://images-assets.nasa.gov/image/PIA18800/PIA18800~orig.jpg",
+   "licence": "Public domain (NASA media, not copyrighted in the US)",
+   "licence_url": "https://www.nasa.gov/nasa-brand-center/images-and-media/",
+   "author": "NASA/Johns Hopkins University Applied Physics Laboratory/Carnegie Institution of Washington",
+   "attribution": "Staring at the Sea, Staring at the Sand — NASA/Johns Hopkins University Applied Physics Laboratory/Carnegie Institution of Washington, NASA, public domain. https://images.nasa.gov/details/PIA18800",
+   "downloaded": "2026-10-28"
+  },
+  "drawing_rejected": {
+   "path": "out/run/drawings/v069.png",
+   "file": "v069.png",
+   "kind": "drawing",
+   "source": "ai_drawing",
+   "title": "a sandy beach",
+   "source_page": "https://huggingface.co/black-forest-labs/FLUX.1-schnell",
+   "licence": "AI-generated drawing (no third-party rights)",
+   "model_licence": "Apache-2.0",
+   "licence_url": "https://www.apache.org/licenses/LICENSE-2.0",
+   "author": "AI-generated with FLUX.1 [schnell] (Black Forest Labs) on Cloudflare Workers AI",
+   "attribution": "Illustration generated with FLUX.1 schnell (Apache-2.0): a sandy beach",
+   "downloaded": "2026-10-28",
+   "prompt": "a sandy beach, pure black background, detailed ink illustration, white and grey pen linework, one bright red accent, high contrast, simple clear composition, no text, no letters, no numbers"
+  },
+  "frame": "out/run/frames/v069.png"
+ },
+ {
+  "scene": "s06",
+  "start": 367.555,
+  "text": "This ordinary matter includes stars, planets, interstellar gas,",
+  "sentences": [
+   "s06.09"
+  ],
+  "id": "v070",
+  "end": 371.6787333333333,
+  "seconds": 4.12,
+  "scene_start": false,
+  "kind": "photo",
+  "photo_subject": "a star nursery nebula",
+  "photo_queries": [
+   "star nursery",
+   "Orion nebula"
+  ],
+  "card": {
+   "type": "title",
+   "title": "Ordinary Matter"
+  },
+  "photo_rejected": {
+   "path": "out/run/photos/v070.jpg",
+   "file": "v070.jpg",
+   "kind": "photo",
+   "source": "nasa_image_library",
+   "title": "History of Hubble Space Telescope (HST)",
+   "source_page": "https://images.nasa.gov/details/0302064",
+   "download_url": "https://images-assets.nasa.gov/image/0302064/0302064~large.jpg",
+   "licence": "Public domain (NASA media, not copyrighted in the US)",
+   "licence_url": "https://www.nasa.gov/nasa-brand-center/images-and-media/",
+   "author": "NASA (MSFC)",
+   "attribution": "History of Hubble Space Telescope (HST) — NASA (MSFC), NASA, public domain. https://images.nasa.gov/details/0302064",
+   "downloaded": "2026-10-28"
+  },
+  "photo": {
+   "path": "out/run/photos/v070b.jpg",
+   "file": "v070b.jpg",
+   "kind": "photo",
+   "source": "nasa_image_library",
+   "title": "Stars Adorn Orion Sword",
+   "source_page": "https://images.nasa.gov/details/PIA14101",
+   "download_url": "https://images-assets.nasa.gov/image/PIA14101/PIA14101~large.jpg",
+   "licence": "Public domain (NASA media, not copyrighted in the US)",
+   "licence_url": "https://www.nasa.gov/nasa-brand-center/images-and-media/",
+   "author": "NASA/JPL-Caltech",
+   "attribution": "Stars Adorn Orion Sword — NASA/JPL-Caltech, NASA, public domain. https://images.nasa.gov/details/PIA14101",
+   "downloaded": "2026-10-28"
+  },
+  "frame": "out/run/frames/v070.png"
+ },
+ {
+  "scene": "s06",
+  "start": 371.6787333333333,
+  "text": "and intergalactic gas, but excludes dark matter.",
+  "sentences": [
+   "s06.09"
+  ],
+  "id": "v071",
+  "end": 375.752,
+  "seconds": 4.07,
+  "scene_start": false,
+  "kind": "drawing",
+  "drawing_subject": "glowing gas clouds in interstellar space",
+  "card": {
+   "type": "title",
+   "title": "Interstellar Gas"
+  },
+  "photo": {
+   "path": "out/run/drawings/v071.png",
+   "file": "v071.png",
+   "kind": "drawing",
+   "source": "ai_drawing",
+   "title": "glowing gas clouds in interstellar space",
+   "source_page": "https://huggingface.co/black-forest-labs/FLUX.1-schnell",
+   "licence": "AI-generated drawing (no third-party rights)",
+   "model_licence": "Apache-2.0",
+   "licence_url": "https://www.apache.org/licenses/LICENSE-2.0",
+   "author": "AI-generated with FLUX.1 [schnell] (Black Forest Labs) on Cloudflare Workers AI",
+   "attribution": "Illustration generated with FLUX.1 schnell (Apache-2.0): glowing gas clouds in interstellar space",
+   "downloaded": "2026-10-28",
+   "prompt": "glowing gas clouds in interstellar space, pure black background, detailed ink illustration, white and grey pen linework, one bright red accent, high contrast, simple clear composition, no text, no letters, no numbers"
+  },
+  "photo_subject": "glowing gas clouds in interstellar space",
+  "frame": "out/run/frames/v071.png"
+ },
+ {
+  "scene": "s06",
+  "start": 375.752,
+  "text": "Every object within this sphere is visible because its light had time to travel to Earth.",
+  "sentences": [
+   "s06.10"
+  ],
+  "id": "v072",
+  "end": 382.43,
+  "seconds": 6.68,
+  "scene_start": false,
+  "kind": "photo",
+  "photo_subject": "a distant galaxy cluster",
+  "photo_queries": [
+   "distant galaxy cluster",
+   "galaxy filaments"
+  ],
+  "card": {
+   "type": "title",
+   "title": "Visible Objects in Sphere"
+  },
+  "photo": {
+   "path": "out/run/photos/v072.jpg",
+   "file": "v072.jpg",
+   "kind": "photo",
+   "source": "nasa_image_library",
+   "title": "Pandora Cluster Seen by Spitzer",
+   "source_page": "https://images.nasa.gov/details/PIA20920",
+   "download_url": "https://images-assets.nasa.gov/image/PIA20920/PIA20920~orig.jpg",
+   "licence": "Public domain (NASA media, not copyrighted in the US)",
+   "licence_url": "https://www.nasa.gov/nasa-brand-center/images-and-media/",
+   "author": "NASA/JPL-Caltech",
+   "attribution": "Pandora Cluster Seen by Spitzer — NASA/JPL-Caltech, NASA, public domain. https://images.nasa.gov/details/PIA20920",
+   "downloaded": "2026-10-28"
+  },
+  "frame": "out/run/frames/v072.png"
+ },
+ {
+  "scene": "s07",
+  "start": 382.43,
+  "text": "So, how can the observable universe be 93",
+  "sentences": [
+   "s07.01"
+  ],
+  "id": "v073",
+  "end": 387.257,
+  "seconds": 4.83,
+  "scene_start": true,
+  "kind": "card",
+  "card": {
+   "type": "title",
+   "title": "What Lies Beyond Our Cosmic Horizon"
+  },
+  "frame": "out/run/frames/v073.png"
+ },
+ {
+  "scene": "s07",
+  "start": 387.257,
+  "text": "billion light-years wide after only 13.8 billion years?",
+  "sentences": [
+   "s07.01"
+  ],
+  "id": "v074",
+  "end": 392.929,
+  "seconds": 5.67,
+  "scene_start": false,
+  "kind": "card",
+  "card": {
+   "type": "stat",
+   "title": "Universe Width",
+   "value": "93 billion",
+   "unit": "light-years",
+   "label": "light-years"
+  },
+  "frame": "out/run/frames/v074.png"
+ },
+ {
+  "scene": "s07",
+  "start": 392.929,
+  "text": "Space itself stretched continuously while light made its long journey across the expanding universe.",
+  "sentences": [
+   "s07.02"
+  ],
+  "id": "v075",
+  "end": 399.496,
+  "seconds": 6.57,
+  "scene_start": false,
+  "kind": "drawing",
+  "drawing_subject": "space stretching continuously while a light ray travels",
+  "card": {
+   "type": "title",
+   "title": "Continuous Space Stretching"
+  },
+  "photo": {
+   "path": "out/run/drawings/v075.png",
+   "file": "v075.png",
+   "kind": "drawing",
+   "source": "ai_drawing",
+   "title": "space stretching continuously while a light ray travels",
+   "source_page": "https://huggingface.co/black-forest-labs/FLUX.1-schnell",
+   "licence": "AI-generated drawing (no third-party rights)",
+   "model_licence": "Apache-2.0",
+   "licence_url": "https://www.apache.org/licenses/LICENSE-2.0",
+   "author": "AI-generated with FLUX.1 [schnell] (Black Forest Labs) on Cloudflare Workers AI",
+   "attribution": "Illustration generated with FLUX.1 schnell (Apache-2.0): space stretching continuously while a light ray travels",
+   "downloaded": "2026-10-28",
+   "prompt": "space stretching continuously while a light ray travels, pure black background, detailed ink illustration, white and grey pen linework, one bright red accent, high contrast, simple clear composition, no text, no letters, no numbers"
+  },
+  "photo_subject": "space stretching continuously while a light ray travels",
+  "frame": "out/run/frames/v075.png"
+ },
+ {
+  "scene": "s07",
+  "start": 399.496,
+  "text": "That cosmic expansion turned 13.8 billion years of",
+  "sentences": [
+   "s07.03"
+  ],
+  "id": "v076",
+  "end": 403.87670588235295,
+  "seconds": 4.38,
+  "scene_start": false,
+  "kind": "card",
+  "card": {
+   "type": "stat",
+   "title": "Light Travel Time",
+   "value": "13.8 billion",
+   "unit": "years",
+   "label": "years"
+  },
+  "frame": "out/run/frames/v076.png"
+ },
+ {
+  "scene": "s07",
+  "start": 403.87670588235295,
+  "text": "light travel into a 46.5 billion light-year physical radius.",
+  "sentences": [
+   "s07.03"
+  ],
+  "id": "v077",
+  "end": 409.272,
+  "seconds": 5.4,
+  "scene_start": false,
+  "kind": "card",
+  "card": {
+   "type": "stat",
+   "title": "Physical Radius",
+   "value": "46.5 billion",
+   "unit": "light-years",
+   "label": "light-years"
+  },
+  "frame": "out/run/frames/v077.png"
+ },
+ {
+  "scene": "s07",
+  "start": 409.272,
+  "text": "Doubling that radius gives the full observable diameter of 93 billion light-years today.",
+  "sentences": [
+   "s07.04"
+  ],
+  "id": "v078",
+  "end": 416.077,
+  "seconds": 6.81,
+  "scene_start": false,
+  "kind": "step",
+  "card": {
+   "type": "stat",
+   "title": "Observable Diameter",
+   "value": "93 billion",
+   "unit": "light-years"
+  },
+  "photo": {
+   "path": "out/run/drawings/v075.png",
+   "file": "v075.png",
+   "kind": "drawing",
+   "source": "ai_drawing",
+   "title": "space stretching continuously while a light ray travels",
+   "source_page": "https://huggingface.co/black-forest-labs/FLUX.1-schnell",
+   "licence": "AI-generated drawing (no third-party rights)",
+   "model_licence": "Apache-2.0",
+   "licence_url": "https://www.apache.org/licenses/LICENSE-2.0",
+   "author": "AI-generated with FLUX.1 [schnell] (Black Forest Labs) on Cloudflare Workers AI",
+   "attribution": "Illustration generated with FLUX.1 schnell (Apache-2.0): space stretching continuously while a light ray travels",
+   "downloaded": "2026-10-28",
+   "prompt": "space stretching continuously while a light ray travels, pure black background, detailed ink illustration, white and grey pen linework, one bright red accent, high contrast, simple clear composition, no text, no letters, no numbers"
+  },
+  "zoom": 1.4,
+  "focus": "left",
+  "step_of": "v075",
+  "frame": "out/run/frames/v078.png"
+ },
+ {
+  "scene": "s07",
+  "start": 416.077,
+  "text": "Objects located beyond our particle horizon have emitted light that has not yet reached Earth.",
+  "sentences": [
+   "s07.05"
+  ],
+  "id": "v079",
+  "end": 422.46,
+  "seconds": 6.38,
+  "scene_start": false,
+  "kind": "drawing",
+  "drawing_subject": "a galaxy beyond the particle horizon sending light",
+  "card": {
+   "type": "title",
+   "title": "Unreached Light"
+  },
+  "photo": {
+   "path": "out/run/drawings/v079.png",
+   "file": "v079.png",
+   "kind": "drawing",
+   "source": "ai_drawing",
+   "title": "a galaxy beyond the particle horizon sending light",
+   "source_page": "https://huggingface.co/black-forest-labs/FLUX.1-schnell",
+   "licence": "AI-generated drawing (no third-party rights)",
+   "model_licence": "Apache-2.0",
+   "licence_url": "https://www.apache.org/licenses/LICENSE-2.0",
+   "author": "AI-generated with FLUX.1 [schnell] (Black Forest Labs) on Cloudflare Workers AI",
+   "attribution": "Illustration generated with FLUX.1 schnell (Apache-2.0): a galaxy beyond the particle horizon sending light",
+   "downloaded": "2026-10-28",
+   "prompt": "a galaxy beyond the particle horizon sending light, pure black background, detailed ink illustration, white and grey pen linework, one bright red accent, high contrast, simple clear composition, no text, no letters, no numbers"
+  },
+  "photo_subject": "a galaxy beyond the particle horizon sending light",
+  "frame": "out/run/frames/v079.png"
+ },
+ {
+  "scene": "s07",
+  "start": 422.46,
+  "text": "The unobservable portion of the entire universe may be far larger, or even infinite in size.",
+  "sentences": [
+   "s07.06"
+  ],
+  "id": "v080",
+  "end": 429.318,
+  "seconds": 6.86,
+  "scene_start": false,
+  "kind": "drawing",
+  "drawing_subject": "an endless expanse of dark space stretching into infinity",
+  "card": {
+   "type": "title",
+   "title": "Unobservable Universe"
+  },
+  "photo_subject": "an endless expanse of dark space stretching into infinity",
+  "drawing_rejected": {
+   "path": "out/run/drawings/v080.png",
+   "file": "v080.png",
+   "kind": "drawing",
+   "source": "ai_drawing",
+   "title": "an endless expanse of dark space stretching into infinity",
+   "source_page": "https://huggingface.co/black-forest-labs/FLUX.1-schnell",
+   "licence": "AI-generated drawing (no third-party rights)",
+   "model_licence": "Apache-2.0",
+   "licence_url": "https://www.apache.org/licenses/LICENSE-2.0",
+   "author": "AI-generated with FLUX.1 [schnell] (Black Forest Labs) on Cloudflare Workers AI",
+   "attribution": "Illustration generated with FLUX.1 schnell (Apache-2.0): an endless expanse of dark space stretching into infinity",
+   "downloaded": "2026-10-28",
+   "prompt": "an endless expanse of dark space stretching into infinity, pure black background, detailed ink illustration, white and grey pen linework, one bright red accent, high contrast, simple clear composition, no text, no letters, no numbers"
+  },
+  "frame": "out/run/frames/v080.png"
+ },
+ {
+  "scene": "s07",
+  "start": 429.318,
+  "text": "Furthermore, dark energy is currently driving an accelerated expansion of space.",
+  "sentences": [
+   "s07.07"
+  ],
+  "id": "v081",
+  "end": 434.693,
+  "seconds": 5.38,
+  "scene_start": false,
+  "kind": "drawing",
+  "drawing_subject": "glowing dark energy pushing cosmic grid lines apart rapidly",
+  "card": {
+   "type": "title",
+   "title": "Accelerated Expansion"
+  },
+  "photo": {
+   "path": "out/run/drawings/v081.png",
+   "file": "v081.png",
+   "kind": "drawing",
+   "source": "ai_drawing",
+   "title": "glowing dark energy pushing cosmic grid lines apart rapidly",
+   "source_page": "https://huggingface.co/black-forest-labs/FLUX.1-schnell",
+   "licence": "AI-generated drawing (no third-party rights)",
+   "model_licence": "Apache-2.0",
+   "licence_url": "https://www.apache.org/licenses/LICENSE-2.0",
+   "author": "AI-generated with FLUX.1 [schnell] (Black Forest Labs) on Cloudflare Workers AI",
+   "attribution": "Illustration generated with FLUX.1 schnell (Apache-2.0): glowing dark energy pushing cosmic grid lines apart rapidly",
+   "downloaded": "2026-10-28",
+   "prompt": "glowing dark energy pushing cosmic grid lines apart rapidly, pure black background, detailed ink illustration, white and grey pen linework, one bright red accent, high contrast, simple clear composition, no text, no letters, no numbers"
+  },
+  "photo_subject": "glowing dark energy pushing cosmic grid lines apart rapidly",
+  "frame": "out/run/frames/v081.png"
+ },
+ {
+  "scene": "s07",
+  "start": 434.693,
+  "text": "Because expansion accelerates, astronomers calculate a future visibility",
+  "sentences": [
+   "s07.08"
+  ],
+  "id": "v082",
+  "end": 439.20553333333334,
+  "seconds": 4.51,
+  "scene_start": false,
+  "kind": "card",
+  "card": {
+   "type": "stat",
+   "title": "Future Visibility Limit",
+   "value": "62 billion",
+   "unit": "light-years",
+   "label": "light-years"
+  },
+  "frame": "out/run/frames/v082.png"
+ },
+ {
+  "scene": "s07",
+  "start": 439.20553333333334,
+  "text": "limit at 62 billion light-years comoving distance.",
+  "sentences": [
+   "s07.08"
+  ],
+  "id": "v083",
+  "end": 444.109,
+  "seconds": 4.9,
+  "scene_start": false,
+  "kind": "step",
+  "card": {
+   "type": "stat",
+   "title": "Comoving Distance Limit",
+   "value": "62 billion",
+   "unit": "light-years"
+  },
+  "photo": {
+   "path": "out/run/drawings/v081.png",
+   "file": "v081.png",
+   "kind": "drawing",
+   "source": "ai_drawing",
+   "title": "glowing dark energy pushing cosmic grid lines apart rapidly",
+   "source_page": "https://huggingface.co/black-forest-labs/FLUX.1-schnell",
+   "licence": "AI-generated drawing (no third-party rights)",
+   "model_licence": "Apache-2.0",
+   "licence_url": "https://www.apache.org/licenses/LICENSE-2.0",
+   "author": "AI-generated with FLUX.1 [schnell] (Black Forest Labs) on Cloudflare Workers AI",
+   "attribution": "Illustration generated with FLUX.1 schnell (Apache-2.0): glowing dark energy pushing cosmic grid lines apart rapidly",
+   "downloaded": "2026-10-28",
+   "prompt": "glowing dark energy pushing cosmic grid lines apart rapidly, pure black background, detailed ink illustration, white and grey pen linework, one bright red accent, high contrast, simple clear composition, no text, no letters, no numbers"
+  },
+  "zoom": 1.4,
+  "focus": "left",
+  "step_of": "v081",
+  "frame": "out/run/frames/v083.png"
+ },
+ {
+  "scene": "s07",
+  "start": 444.109,
+  "text": "Light emitted today by objects farther than 16 billion",
+  "sentences": [
+   "s07.09"
+  ],
+  "id": "v084",
+  "end": 448.5965,
+  "seconds": 4.49,
+  "scene_start": false,
+  "kind": "card",
+  "card": {
+   "type": "stat",
+   "title": "Distance Threshold",
+   "value": "16 billion",
+   "unit": "light-years",
+   "label": "light-years"
+  },
+  "frame": "out/run/frames/v084.png"
+ },
+ {
+  "scene": "s07",
+  "start": 448.5965,
+  "text": "light-years will never reach us in the infinite future.",
+  "sentences": [
+   "s07.09"
+  ],
+  "id": "v085",
+  "end": 453.604,
+  "seconds": 5.01,
+  "scene_start": false,
+  "kind": "drawing",
+  "drawing_subject": "a light ray failing to bridge an expanding gap to Earth",
+  "card": {
+   "type": "title",
+   "title": "Never Reaching Us"
+  },
+  "photo_subject": "a light ray failing to bridge an expanding gap to Earth",
+  "drawing_rejected": {
+   "path": "out/run/drawings/v085.png",
+   "file": "v085.png",
+   "kind": "drawing",
+   "source": "ai_drawing",
+   "title": "a light ray failing to bridge an expanding gap to Earth",
+   "source_page": "https://huggingface.co/black-forest-labs/FLUX.1-schnell",
+   "licence": "AI-generated drawing (no third-party rights)",
+   "model_licence": "Apache-2.0",
+   "licence_url": "https://www.apache.org/licenses/LICENSE-2.0",
+   "author": "AI-generated with FLUX.1 [schnell] (Black Forest Labs) on Cloudflare Workers AI",
+   "attribution": "Illustration generated with FLUX.1 schnell (Apache-2.0): a light ray failing to bridge an expanding gap to Earth",
+   "downloaded": "2026-10-28",
+   "prompt": "a light ray failing to bridge an expanding gap to Earth, pure black background, detailed ink illustration, white and grey pen linework, one bright red accent, high contrast, simple clear composition, no text, no letters, no numbers"
+  },
+  "frame": "out/run/frames/v085.png"
+ },
+ {
+  "scene": "s07",
+  "start": 453.604,
+  "text": "Distant galaxies outside our local supercluster will eventually",
+  "sentences": [
+   "s07.10"
+  ],
+  "id": "v086",
+  "end": 457.095,
+  "seconds": 3.49,
+  "scene_start": false,
+  "kind": "photo",
+  "photo_subject": "a local galaxy supercluster",
+  "photo_queries": [
+   "Laniakea supercluster",
+   "galaxy supercluster"
+  ],
+  "card": {
+   "type": "title",
+   "title": "Distant Superclusters"
+  },
+  "photo": {
+   "path": "out/run/photos/v086.jpg",
+   "file": "v086.jpg",
+   "kind": "photo",
+   "source": "wikimedia_commons",
+   "title": "Laniakea with Galaktika",
+   "source_page": "https://commons.wikimedia.org/wiki/File:Laniakea_with_Galaktika.jpg",
+   "download_url": "https://upload.wikimedia.org/wikipedia/commons/5/5e/Laniakea_with_Galaktika.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+   "licence": "CC BY-SA 4.0",
+   "licence_url": "https://creativecommons.org/licenses/by-sa/4.0",
+   "author": "Ivanov",
+   "attribution": "\"Laniakea with Galaktika\" by Ivanov, CC BY-SA 4.0, via Wikimedia Commons. https://commons.wikimedia.org/wiki/File:Laniakea_with_Galaktika.jpg",
+   "downloaded": "2026-10-28"
+  },
+  "frame": "out/run/frames/v086.png"
+ },
+ {
+  "scene": "s07",
+  "start": 457.095,
+  "text": "appear to freeze, turn redder, and fade away.",
+  "sentences": [
+   "s07.10"
+  ],
+  "id": "v087",
+  "end": 461.048,
+  "seconds": 3.95,
+  "scene_start": false,
+  "kind": "drawing",
+  "drawing_subject": "a distant galaxy turning red and fading into darkness",
+  "card": {
+   "type": "title",
+   "title": "Fading Galaxies"
+  },
+  "photo": {
+   "path": "out/run/drawings/v087.png",
+   "file": "v087.png",
+   "kind": "drawing",
+   "source": "ai_drawing",
+   "title": "a distant galaxy turning red and fading into darkness",
+   "source_page": "https://huggingface.co/black-forest-labs/FLUX.1-schnell",
+   "licence": "AI-generated drawing (no third-party rights)",
+   "model_licence": "Apache-2.0",
+   "licence_url": "https://www.apache.org/licenses/LICENSE-2.0",
+   "author": "AI-generated with FLUX.1 [schnell] (Black Forest Labs) on Cloudflare Workers AI",
+   "attribution": "Illustration generated with FLUX.1 schnell (Apache-2.0): a distant galaxy turning red and fading into darkness",
+   "downloaded": "2026-10-28",
+   "prompt": "a distant galaxy turning red and fading into darkness, pure black background, detailed ink illustration, white and grey pen linework, one bright red accent, high contrast, simple clear composition, no text, no letters, no numbers"
+  },
+  "photo_subject": "a distant galaxy turning red and fading into darkness",
+  "frame": "out/run/frames/v087.png"
+ },
+ {
+  "scene": "s07",
+  "start": 461.048,
+  "text": "Take a moment to think about how much of our universe will remain forever beyond your reach.",
+  "sentences": [
+   "s07.11"
+  ],
+  "id": "v088",
+  "end": 468.868,
+  "seconds": 7.82,
+  "scene_start": false,
+  "kind": "photo",
+  "photo_subject": "the starry night sky",
+  "photo_queries": [
+   "starry night sky",
+   "Milky Way night sky"
+  ],
+  "card": {
+   "type": "title",
+   "title": "Beyond Your Reach"
+  },
+  "photo": {
+   "path": "out/run/photos/v088.jpg",
+   "file": "v088.jpg",
+   "kind": "photo",
+   "source": "wikimedia_commons",
+   "title": "Starry night (175371483)",
+   "source_page": "https://commons.wikimedia.org/wiki/File:Starry_night_(175371483).jpg",
+   "download_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/2b/Starry_night_%28175371483%29.jpg/1920px-Starry_night_%28175371483%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "licence": "CC BY 3.0",
+   "licence_url": "https://creativecommons.org/licenses/by/3.0",
+   "author": "Chad Ajamian",
+   "attribution": "\"Starry night (175371483)\" by Chad Ajamian, CC BY 3.0, via Wikimedia Commons. https://commons.wikimedia.org/wiki/File:Starry_night_(175371483).jpg",
+   "downloaded": "2026-10-28"
+  },
+  "frame": "out/run/frames/v088.png"
+ }
+]

@@ -1,0 +1,22 @@
+{
+  "checks": [
+    {
+      "n": 1,
+      "seen": "This image shows a deep space view with numerous distant galaxies and stars scattered across a dark background.",
+      "fits": true,
+      "reason": "The description clearly depicts a cluster of galaxies matching the expected image for the narration."
+    },
+    {
+      "n": 2,
+      "seen": "This image shows a close-up, monochrome view of a rocky, cratered planetary surface, possibly a moon, with uneven lighting and shadows.",
+      "fits": false,
+      "reason": "The image shows a rocky planetary surface, but the narration requires a picture of a sandy beach."
+    },
+    {
+      "n": 3,
+      "seen": "This image shows a colorful nebula in outer space, featuring swirling clouds of gas and dust in shades of green, red, and brown.",
+      "fits": true,
+      "reason": "The description correctly shows a nebula which is a star nursery fitting the narration about ordinary matter and stars."
+    }
+  ]
+}

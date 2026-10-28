@@ -1,0 +1,60 @@
+[model] gemini-3.5-flash-lite
+[system]
+
+
+[user]
+Make a YouTube thumbnail for this video.
+Title: Why Is the Observable Universe 93 Billion Light-Years Wide?
+Question it answers: How can the observable universe be 93 billion light-years wide if it is only 13.8 billion years old?
+
+Pick ONE picture (by its id) that will read best at phone size: one clear, dramatic subject that fits the
+title. Then write 2 to 4 big words to put on it: honest (true, kept by the video), not the title repeated,
+no fake urgency, no question marks or punctuation. Pick one of those words to show in red.
+
+PICTURES (what a viewer sees in each):
+v003: A ground-based telescope emits a bright yellow laser beam into the night sky, which features the glowing band of the Milky Way galaxy filled with countless stars.
+v005: A deep space field captured by the James Webb Space Telescope, displaying numerous distant galaxies, gravitational lensing arcs, and bright foreground stars with distinct diffraction spikes.
+v013: A spiral galaxy viewed from above, showcasing a prominent central bar, glowing core, and winding spiral arms dotted with star clusters against the blackness of space.
+v017: This image shows a deep space view with numerous distant galaxies and stars scattered across a dark background.
+v019: A black-and-white portrait of physicist Albert Einstein, looking directly at the camera with characteristic unruly white hair and a thoughtful expression.
+v021: A dense globular star cluster densely packed with thousands of glowing stars of various colors, mostly concentrated towards the center.
+v023: An image of interacting galaxies known as the Antennae Galaxies, showing two large galaxies colliding with bright pink star-forming regions and long tidal tails of stars and gas.
+v028: An amateur telescope rig mounted on a tripod under a starry night sky, with various cables, a red tracking light, and a silhouette of tree branches in the foreground.
+v032: The Ring Nebula, a planetary nebula appearing as an oval ring of glowing colorful gas with a hot blue center and a dark void in the middle, set against a black background.
+v034: An oval-shaped all-sky map of the cosmic microwave background radiation, displaying temperature fluctuations across the early universe in shades of blue, orange, and tan.
+v042: A dimly lit control room or operations center filled with computer monitors displaying various data and graphs, with two people seated at desks working.
+v047: A full view of planet Earth from space, showing the continent of Africa, swirling white cloud patterns over the oceans, and the blue atmosphere against a black background.
+v055: A composite space image featuring a distorted spiral galaxy shaped somewhat like a question mark, surrounded by numerous green and white foreground and background stars.
+v058: A deep field image of space showing a vast collection of distant galaxies of various shapes, sizes, and colors, along with several brighter stars featuring prominent diffraction spikes.
+v070: This image shows a colorful nebula in outer space, featuring swirling clouds of gas and dust in shades of green, red, and brown.
+v072: A dense star field filled with countless bright blue-white stars scattered uniformly across a dark space background.
+v086: A scientific simulation visualization of cosmic filaments and the large-scale structure of the universe, represented as bright branching tendrils of light with a red marker point.
+v088: A wide-angle night sky photograph filled with stars, featuring the silhouette of dark tree canopies along the bottom edge.
+v004: A tilted ringed galaxy or planet against a black starry background, with a glowing core.
+v006: A stylized swirling galaxy structure with textured outer rings on a dark background.
+v007: A globe of the Earth on the right with a long white wedge-shaped beam extending from the left, ending in a red tip.
+v009: Two connected ringed galaxy structures against a black background, with a prominent red sphere inside the left structure.
+v015: Several distinct ringed planets and star-like shapes scattered against a black background.
+v018: A planet with visible texture and rings on the left, next to a detailed swirling galaxy with a red center on the right.
+v020: A grid-like chart with stacked blocks and hatch-patterned tops, featuring red vertical bracket lines.
+v022: A close-up of a planetary ring system with a red arrow pointing toward the inner rings.
+v024: A central red sphere surrounded by concentric swirling rings and outward radiating lines on a black background.
+v030: A complex spherical structure glowing with red and white energy and jagged patterns.
+v031: A dense cluster of spherical nodes with pin-like protrusions and a single red curved filament.
+v039: A coiled white line forming a loop with a small black and white ant with a red head inside.
+v040: A white ant with a red head standing at the edge of a white platform against a dark background.
+v041: A bright starburst with a red and white beam extending upward and trails of light extending diagonally downward.
+v044: A bright burst of light and lines emanating from a central red dot, with beams extending to the right.
+v049: A bright starburst on the left shooting a stream of red and white horizontal lines toward the right.
+v052: A wall clock with numbers and hands, surrounded by dynamic radial lines suggesting speed or sound.
+v054: A black ruler with white markings and numbers, a red dot positioned over the seven, and stars above.
+v056: A straight white ruler viewed in perspective against a solid black background.
+v061: A stylized globe showing North and South America, encircled by fine white ring lines.
+v071: A cluster of fluffy, detailed clouds floating among small stars against a black sky.
+v075: A bright starburst with a red center, emitting long horizontal rays to the left and fine radial lines in all directions.
+v079: A bright central starburst with a red dot, accompanied by two swirling nebula-like cloud formations and scattered stars.
+v081: A central red burst surrounded by numerous jagged white lightning-like or electric bolts radiating outward.
+v087: A diagonally oriented spiral galaxy with a deep red and white core against a black background.
+v012: A diagonal band of white textured light against a starry sky, with two small red dots nearby.
+v033: A dense, rounded cluster of grey and red cloud-like shapes resembling a biological mass or explosion.
+v065: A spherical object with internal lined patterns and a tiny red dot on its surface against a black background.

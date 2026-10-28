@@ -1,0 +1,160 @@
+{
+  "images": [
+    {
+      "n": 1,
+      "seen": "A tilted ringed galaxy or planet against a black starry background, with a glowing core."
+    },
+    {
+      "n": 2,
+      "seen": "A stylized swirling galaxy structure with textured outer rings on a dark background."
+    },
+    {
+      "n": 3,
+      "seen": "A globe of the Earth on the right with a long white wedge-shaped beam extending from the left, ending in a red tip."
+    },
+    {
+      "n": 4,
+      "seen": "Two connected ringed galaxy structures against a black background, with a prominent red sphere inside the left structure."
+    },
+    {
+      "n": 5,
+      "seen": "Several distinct ringed planets and star-like shapes scattered against a black background."
+    },
+    {
+      "n": 6,
+      "seen": "A planet with visible texture and rings on the left, next to a detailed swirling galaxy with a red center on the right."
+    },
+    {
+      "n": 7,
+      "seen": "A grid-like chart with stacked blocks and hatch-patterned tops, featuring red vertical bracket lines."
+    },
+    {
+      "n": 8,
+      "seen": "A close-up of a planetary ring system with a red arrow pointing toward the inner rings."
+    },
+    {
+      "n": 9,
+      "seen": "A central red sphere surrounded by concentric swirling rings and outward radiating lines on a black background."
+    },
+    {
+      "n": 10,
+      "seen": "Abstract flowing white curved lines against a dark background, resembling silky fabric or waves."
+    },
+    {
+      "n": 11,
+      "seen": "Nested square outlines and a grid of four squares drawn in white on a dark background."
+    },
+    {
+      "n": 12,
+      "seen": "A complex spherical structure glowing with red and white energy and jagged patterns."
+    },
+    {
+      "n": 13,
+      "seen": "A dense cluster of spherical nodes with pin-like protrusions and a single red curved filament."
+    },
+    {
+      "n": 14,
+      "seen": "A coiled white line forming a loop with a small black and white ant with a red head inside."
+    },
+    {
+      "n": 15,
+      "seen": "A white ant with a red head standing at the edge of a white platform against a dark background."
+    },
+    {
+      "n": 16,
+      "seen": "A bright starburst with a red and white beam extending upward and trails of light extending diagonally downward."
+    },
+    {
+      "n": 17,
+      "seen": "An abstract curling wave or crest shape surrounded by radiating lines and dots."
+    },
+    {
+      "n": 18,
+      "seen": "A bright burst of light and lines emanating from a central red dot, with beams extending to the right."
+    },
+    {
+      "n": 19,
+      "seen": "A straight white line extending from the lower left to a glowing red and white circular point in the upper right."
+    },
+    {
+      "n": 20,
+      "seen": "A bright starburst on the left shooting a stream of red and white horizontal lines toward the right."
+    },
+    {
+      "n": 21,
+      "seen": "A wall clock with numbers and hands, surrounded by dynamic radial lines suggesting speed or sound."
+    },
+    {
+      "n": 22,
+      "seen": "A black ruler with white markings and numbers, a red dot positioned over the seven, and stars above."
+    },
+    {
+      "n": 23,
+      "seen": "A straight white ruler viewed in perspective against a solid black background."
+    },
+    {
+      "n": 24,
+      "seen": "A long diagonal white line passing through a small red dot on a black background."
+    },
+    {
+      "n": 25,
+      "seen": "A stylized globe showing North and South America, encircled by fine white ring lines."
+    },
+    {
+      "n": 26,
+      "seen": "A symmetrical arrangement of circular patterned graphics connected by lines to a central hub containing a red sphere."
+    },
+    {
+      "n": 27,
+      "seen": "A hand-drawn circular target or scope with crosshairs and a red dot at the exact center."
+    },
+    {
+      "n": 28,
+      "seen": "A cluster of fluffy, detailed clouds floating among small stars against a black sky."
+    },
+    {
+      "n": 29,
+      "seen": "A bright starburst with a red center, emitting long horizontal rays to the left and fine radial lines in all directions."
+    },
+    {
+      "n": 30,
+      "seen": "A bright central starburst with a red dot, accompanied by two swirling nebula-like cloud formations and scattered stars."
+    },
+    {
+      "n": 31,
+      "seen": "A completely black frame with a tiny, faint red dot near the center."
+    },
+    {
+      "n": 32,
+      "seen": "A central red burst surrounded by numerous jagged white lightning-like or electric bolts radiating outward."
+    },
+    {
+      "n": 33,
+      "seen": "A wide white vertical beam extending upward from the bottom, ending at a red crescent shape with radiating spikes."
+    },
+    {
+      "n": 34,
+      "seen": "A diagonally oriented spiral galaxy with a deep red and white core against a black background."
+    },
+    {
+      "n": 35,
+      "seen": "A completely solid black image with no visible objects or details."
+    },
+    {
+      "n": 36,
+      "seen": "A diagonal band of white textured light against a starry sky, with two small red dots nearby."
+    },
+    {
+      "n": 37,
+      "seen": "A dense, rounded cluster of grey and red cloud-like shapes resembling a biological mass or explosion."
+    },
+    {
+      "n": 38,
+      "seen": "An abstract drawing of tree-like branching structures in white with red floral or leaf elements."
+    },
+    {
+      "n": 39,
+      "seen": "A spherical object with internal lined patterns and a tiny red dot on its surface against a black background."
+    }
+  ]
+}

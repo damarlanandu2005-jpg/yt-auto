@@ -1,0 +1,16 @@
+{
+  "images": [
+    {
+      "n": 1,
+      "seen": "This image shows a deep space view with numerous distant galaxies and stars scattered across a dark background."
+    },
+    {
+      "n": 2,
+      "seen": "This image shows a close-up, monochrome view of a rocky, cratered planetary surface, possibly a moon, with uneven lighting and shadows."
+    },
+    {
+      "n": 3,
+      "seen": "This image shows a colorful nebula in outer space, featuring swirling clouds of gas and dust in shades of green, red, and brown."
+    }
+  ]
+}

@@ -1,0 +1,80 @@
+{
+  "images": [
+    {
+      "n": 1,
+      "seen": "A ground-based telescope emits a bright yellow laser beam into the night sky, which features the glowing band of the Milky Way galaxy filled with countless stars."
+    },
+    {
+      "n": 2,
+      "seen": "A deep space field captured by the James Webb Space Telescope, displaying numerous distant galaxies, gravitational lensing arcs, and bright foreground stars with distinct diffraction spikes."
+    },
+    {
+      "n": 3,
+      "seen": "A spiral galaxy viewed from above, showcasing a prominent central bar, glowing core, and winding spiral arms dotted with star clusters against the blackness of space."
+    },
+    {
+      "n": 4,
+      "seen": "An astronomical image titled 'The Coma Cluster of galaxies', showing a dense collection of numerous galaxy shapes against a dark background, with text and a small emblem at the bottom."
+    },
+    {
+      "n": 5,
+      "seen": "A black-and-white portrait of physicist Albert Einstein, looking directly at the camera with characteristic unruly white hair and a thoughtful expression."
+    },
+    {
+      "n": 6,
+      "seen": "A dense globular star cluster densely packed with thousands of glowing stars of various colors, mostly concentrated towards the center."
+    },
+    {
+      "n": 7,
+      "seen": "An image of interacting galaxies known as the Antennae Galaxies, showing two large galaxies colliding with bright pink star-forming regions and long tidal tails of stars and gas."
+    },
+    {
+      "n": 8,
+      "seen": "An amateur telescope rig mounted on a tripod under a starry night sky, with various cables, a red tracking light, and a silhouette of tree branches in the foreground."
+    },
+    {
+      "n": 9,
+      "seen": "The Ring Nebula, a planetary nebula appearing as an oval ring of glowing colorful gas with a hot blue center and a dark void in the middle, set against a black background."
+    },
+    {
+      "n": 10,
+      "seen": "An oval-shaped all-sky map of the cosmic microwave background radiation, displaying temperature fluctuations across the early universe in shades of blue, orange, and tan."
+    },
+    {
+      "n": 11,
+      "seen": "A dimly lit control room or operations center filled with computer monitors displaying various data and graphs, with two people seated at desks working."
+    },
+    {
+      "n": 12,
+      "seen": "A full view of planet Earth from space, showing the continent of Africa, swirling white cloud patterns over the oceans, and the blue atmosphere against a black background."
+    },
+    {
+      "n": 13,
+      "seen": "A composite space image featuring a distorted spiral galaxy shaped somewhat like a question mark, surrounded by numerous green and white foreground and background stars."
+    },
+    {
+      "n": 14,
+      "seen": "A deep field image of space showing a vast collection of distant galaxies of various shapes, sizes, and colors, along with several brighter stars featuring prominent diffraction spikes."
+    },
+    {
+      "n": 15,
+      "seen": "A landscape photograph of a calm body of water at sunset, with a golden sun casting a reflection on the water, silhouetted grass on a beach in the foreground, and a warm orange sky."
+    },
+    {
+      "n": 16,
+      "seen": "A portion of the Carina Nebula known as the 'Mystic Mountain', showing pillars of cosmic dust and gas illuminated by newborn stars, with a black rectangular placeholder area in the bottom left."
+    },
+    {
+      "n": 17,
+      "seen": "A dense star field filled with countless bright blue-white stars scattered uniformly across a dark space background."
+    },
+    {
+      "n": 18,
+      "seen": "A scientific simulation visualization of cosmic filaments and the large-scale structure of the universe, represented as bright branching tendrils of light with a red marker point."
+    },
+    {
+      "n": 19,
+      "seen": "A wide-angle night sky photograph filled with stars, featuring the silhouette of dark tree canopies along the bottom edge."
+    }
+  ]
+}

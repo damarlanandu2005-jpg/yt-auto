@@ -1,0 +1,5 @@
+{
+  "picture": "v034",
+  "text": "universe grew faster",
+  "red_word": "faster"
+}

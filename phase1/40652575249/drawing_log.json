@@ -1,0 +1,184 @@
+{
+ "load_s": 9.9,
+ "torch": "2.14.1+cpu",
+ "diffusers": "0.42.1",
+ "seconds": {
+  "v012": 71.6,
+  "v033": 71.0,
+  "v037": 70.9,
+  "v065": 70.9
+ },
+ "skipped_for_time": [],
+ "total_s": 294.3,
+ "asked": 39,
+ "drawn": 39,
+ "cloud": {
+  "backend": "cloudflare",
+  "seconds": {
+   "v004": 3.0,
+   "v006": 1.8,
+   "v007": 1.5,
+   "v009": 4.8,
+   "v015": 1.7,
+   "v018": 1.8,
+   "v020": 1.9,
+   "v022": 2.4,
+   "v024": 1.4,
+   "v027": 2.0,
+   "v029": 1.9,
+   "v030": 2.9,
+   "v031": 2.0,
+   "v039": 1.9,
+   "v040": 1.6,
+   "v041": 1.7,
+   "v043": 1.5,
+   "v044": 1.8,
+   "v045": 2.2,
+   "v049": 6.9,
+   "v052": 2.7,
+   "v054": 1.9,
+   "v056": 1.4,
+   "v059": 2.0,
+   "v061": 1.9,
+   "v064": 1.6,
+   "v067": 2.0,
+   "v071": 1.7,
+   "v075": 2.1,
+   "v079": 1.7,
+   "v080": 2.0,
+   "v081": 1.9,
+   "v085": 7.7,
+   "v087": 2.1,
+   "v069": 1.8
+  },
+  "errors": [
+   "v012: HTTP 400 b'{\"errors\":[{\"message\":\"AiError: AiError: Input prompt contains NSFW content. (aa709d47-25ba-49b0-9405-4c911c2e90d5)\",\"code\":8007}],\"success\":false,\"result\":{},\"messages\":[]}'",
+   "v033: HTTP 400 b'{\"errors\":[{\"message\":\"AiError: AiError: Input prompt contains NSFW content. (f01c144f-c955-4365-ae5a-b8ec3ce718cb)\",\"code\":8007}],\"success\":false,\"result\":{},\"messages\":[]}'",
+   "v037: HTTP 400 b'{\"errors\":[{\"message\":\"AiError: AiError: Input prompt contains NSFW content. (51ebc245-fa88-4923-b845-4f1af57bbd24)\",\"code\":8007}],\"success\":false,\"result\":{},\"messages\":[]}'",
+   "v065: HTTP 400 b'{\"errors\":[{\"message\":\"AiError: AiError: Input prompt contains NSFW content. (d6d48089-8623-47a6-a914-c1ea02c45dc5)\",\"code\":8007}],\"success\":false,\"result\":{},\"messages\":[]}'"
+  ],
+  "drawn": 35
+ },
+ "drawings_seen": {
+  "v004": "A tilted ringed galaxy or planet against a black starry background, with a glowing core.",
+  "v006": "A stylized swirling galaxy structure with textured outer rings on a dark background.",
+  "v007": "A globe of the Earth on the right with a long white wedge-shaped beam extending from the left, ending in a red tip.",
+  "v009": "Two connected ringed galaxy structures against a black background, with a prominent red sphere inside the left structure.",
+  "v015": "Several distinct ringed planets and star-like shapes scattered against a black background.",
+  "v018": "A planet with visible texture and rings on the left, next to a detailed swirling galaxy with a red center on the right.",
+  "v020": "A grid-like chart with stacked blocks and hatch-patterned tops, featuring red vertical bracket lines.",
+  "v022": "A close-up of a planetary ring system with a red arrow pointing toward the inner rings.",
+  "v024": "A central red sphere surrounded by concentric swirling rings and outward radiating lines on a black background.",
+  "v027": "Abstract flowing white curved lines against a dark background, resembling silky fabric or waves.",
+  "v029": "Nested square outlines and a grid of four squares drawn in white on a dark background.",
+  "v030": "A complex spherical structure glowing with red and white energy and jagged patterns.",
+  "v031": "A dense cluster of spherical nodes with pin-like protrusions and a single red curved filament.",
+  "v039": "A coiled white line forming a loop with a small black and white ant with a red head inside.",
+  "v040": "A white ant with a red head standing at the edge of a white platform against a dark background.",
+  "v041": "A bright starburst with a red and white beam extending upward and trails of light extending diagonally downward.",
+  "v043": "An abstract curling wave or crest shape surrounded by radiating lines and dots.",
+  "v044": "A bright burst of light and lines emanating from a central red dot, with beams extending to the right.",
+  "v045": "A straight white line extending from the lower left to a glowing red and white circular point in the upper right.",
+  "v049": "A bright starburst on the left shooting a stream of red and white horizontal lines toward the right.",
+  "v052": "A wall clock with numbers and hands, surrounded by dynamic radial lines suggesting speed or sound.",
+  "v054": "A black ruler with white markings and numbers, a red dot positioned over the seven, and stars above.",
+  "v056": "A straight white ruler viewed in perspective against a solid black background.",
+  "v059": "A long diagonal white line passing through a small red dot on a black background.",
+  "v061": "A stylized globe showing North and South America, encircled by fine white ring lines.",
+  "v064": "A symmetrical arrangement of circular patterned graphics connected by lines to a central hub containing a red sphere.",
+  "v067": "A hand-drawn circular target or scope with crosshairs and a red dot at the exact center.",
+  "v071": "A cluster of fluffy, detailed clouds floating among small stars against a black sky.",
+  "v075": "A bright starburst with a red center, emitting long horizontal rays to the left and fine radial lines in all directions.",
+  "v079": "A bright central starburst with a red dot, accompanied by two swirling nebula-like cloud formations and scattered stars.",
+  "v080": "A completely black frame with a tiny, faint red dot near the center.",
+  "v081": "A central red burst surrounded by numerous jagged white lightning-like or electric bolts radiating outward.",
+  "v085": "A wide white vertical beam extending upward from the bottom, ending at a red crescent shape with radiating spikes.",
+  "v087": "A diagonally oriented spiral galaxy with a deep red and white core against a black background.",
+  "v069": "A completely solid black image with no visible objects or details.",
+  "v012": "A diagonal band of white textured light against a starry sky, with two small red dots nearby.",
+  "v033": "A dense, rounded cluster of grey and red cloud-like shapes resembling a biological mass or explosion.",
+  "v037": "An abstract drawing of tree-like branching structures in white with red floral or leaf elements.",
+  "v065": "A spherical object with internal lined patterns and a tiny red dot on its surface against a black background."
+ },
+ "drawings_rejected": [
+  {
+   "id": "v027",
+   "title": "a stretchy rubber fabric sheet representing space",
+   "seen": "Abstract flowing white curved lines against a dark background, resembling silky fabric or waves.",
+   "reason": "Only shapes and texture with no recognisable object."
+  },
+  {
+   "id": "v029",
+   "title": "a grid expanding larger and larger in sequential steps",
+   "seen": "Nested square outlines and a grid of four squares drawn in white on a dark background.",
+   "reason": "Abstract geometric shapes without recognizable physical objects."
+  },
+  {
+   "id": "v043",
+   "title": "space expanding behind a moving photon wave",
+   "seen": "An abstract curling wave or crest shape surrounded by radiating lines and dots.",
+   "reason": "Abstract wave shapes without a clear distinct physical object."
+  },
+  {
+   "id": "v045",
+   "title": "growing distance between a photon and a glowing source",
+   "seen": "A straight white line extending from the lower left to a glowing red and white circular point in the upper right.",
+   "reason": "Too abstract, just lines and a point."
+  },
+  {
+   "id": "v059",
+   "title": "a line stretching from Earth to the edge of the universe",
+   "seen": "A long diagonal white line passing through a small red dot on a black background.",
+   "reason": "Only basic lines and a dot, no clear object."
+  },
+  {
+   "id": "v064",
+   "title": "multiple overlapping spheres centered on different galaxies",
+   "seen": "A symmetrical arrangement of circular patterned graphics connected by lines to a central hub containing a red sphere.",
+   "reason": "Looks like a logo or diagram rather than a cosmic scene."
+  },
+  {
+   "id": "v067",
+   "title": "multiplying a spherical radius by two",
+   "seen": "A hand-drawn circular target or scope with crosshairs and a red dot at the exact center.",
+   "reason": "Looks like a logo or target emblem."
+  },
+  {
+   "id": "v080",
+   "title": "an endless expanse of dark space stretching into infinity",
+   "seen": "A completely black frame with a tiny, faint red dot near the center.",
+   "reason": "Only a dot on a black background, lacking recognizable objects."
+  },
+  {
+   "id": "v085",
+   "title": "a light ray failing to bridge an expanding gap to Earth",
+   "seen": "A wide white vertical beam extending upward from the bottom, ending at a red crescent shape with radiating spikes.",
+   "reason": "Abstract shapes and beam, not a clear physical object."
+  },
+  {
+   "id": "v069",
+   "title": "a sandy beach",
+   "seen": "A completely solid black image with no visible objects or details.",
+   "reason": "Completely blank image."
+  },
+  {
+   "id": "v037",
+   "title": "a spring stretching out across space",
+   "seen": "An abstract drawing of tree-like branching structures in white with red floral or leaf elements.",
+   "reason": "Abstract patterns, not fitting the cosmic description."
+  }
+ ],
+ "drawings_used": 28,
+ "steps": 0,
+ "steps_without_picture": [],
+ "cards_to_pictures": [
+  "v010",
+  "v037",
+  "v048",
+  "v057",
+  "v062",
+  "v068",
+  "v078",
+  "v083"
+ ]
+}

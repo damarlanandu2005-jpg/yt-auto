@@ -1,0 +1,15 @@
+{
+  "file": "music.wav",
+  "kind": "music",
+  "source": "wikimedia_commons",
+  "title": "Kevin MacLeod - Calmant",
+  "source_page": "https://commons.wikimedia.org/wiki/File:Kevin_MacLeod_-_Calmant.ogg",
+  "download_url": "https://upload.wikimedia.org/wikipedia/commons/3/3c/Kevin_MacLeod_-_Calmant.ogg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+  "licence": "CC BY 3.0",
+  "licence_url": "https://creativecommons.org/licenses/by/3.0",
+  "author": "Kevin MacLeod",
+  "attribution": "Music: \"Kevin MacLeod - Calmant\" by Kevin MacLeod, CC BY 3.0, via Wikimedia Commons. https://commons.wikimedia.org/wiki/File:Kevin_MacLeod_-_Calmant.ogg",
+  "downloaded": "2026-10-28",
+  "seconds": 204.1,
+  "path": "out/run/music/music.wav"
+}
