@@ -1,0 +1,46 @@
+[model] gemini-3.5-flash-lite
+[system]
+
+
+[user]
+You review a finished explainer video before a human checks it. Judge each item strictly,
+using only what is given. Answer every check.
+
+- hook_question: do the first 30 seconds clearly state the question the video answers?
+- hook_why: do the first 30 seconds also say why the question matters to the viewer?
+- title_promise: does the script actually deliver what the title promises (no promise the video doesn't keep,
+  no claim the video contradicts)?
+- scene_relevance: does each text card below show something the narration at that moment is saying? List any card
+  ids that are generic or unrelated in the reason.
+- sensitive: is there financial, legal or health ADVICE, or an accusation against a real named person or company?
+  ok=true means none.
+- adds_value: does the video explain and connect ideas (examples, comparisons, why), rather than only listing
+  facts in a new order?
+
+TITLE: How Close Can a Supernova Get Before It Destroys Earth?
+QUESTION (from the brief): How close would a dying star need to explode to wipe out Earth's protective atmosphere?
+FIRST 30 SECONDS: Could a dying star explode near our solar system and rip Earth's atmosphere away into space? Do science fiction movies show a fiery blast wave sweeping our planet bare within seconds? Why does this question matter when considering terrestrial life? How essential is our oxygen atmosphere for survival? In reality, a supernova is a powerful explosion marking the death of a star. When a massive star runs out of fuel, its core collapses under immense gravitational force.
+
+SCRIPT:
+## The Hollywood Shockwave Myth
+Could a dying star explode near our solar system and rip Earth's atmosphere away into space? Do science fiction movies show a fiery blast wave sweeping our planet bare within seconds? Why does this question matter when considering terrestrial life? How essential is our oxygen atmosphere for survival? In reality, a supernova is a powerful explosion marking the death of a star. When a massive star runs out of fuel, its core collapses under immense gravitational force. Alternatively, an exploding white dwarf star undergoes runaway nuclear fusion. These stellar detonations expel several solar masses of matter into the surrounding interstellar medium. The ejected material travels outward at speeds reaching several per cent of the speed of light. This creates an expanding shock wave that sweeps up a shell of interstellar gas and dust.
+## The Stellar Safety Line
+Where are the nearest stars that might explode in our stellar neighbourhood? Astronomers define a near-Earth supernova as one occurring within roughly 33 to 978 light-years. Currently, our galaxy holds up to 14 potential near-Earth supernovas inside that broader distance. A few famous stars located within several hundred light-years could explode in just 1,000 years. Although these dying stars will shine brilliantly, they pose little direct threat to our planet. What about the famous red supergiant star Betelgeuse? Scientists estimate that Betelgeuse could require as long as 1.5 million years to explode as a supernova. When it detonates, its particle stream will reach Earth about 100,000 years after the initial light. Looking back in time, other relatively nearby stars have exploded in Earth's past. The Vela supernova exploded about 12,000 years ago roughly 800 light-years away from our Sun. Another explosion called Geminga occurred roughly 300,000 years ago at a distance of 550 light-years. The closest known white dwarf candidate, IK Pegasi, is currently moving away to a safe distance.
+
+TEXT CARDS SHOWN:
+v001: narration: Could a dying star explode near our solar | card: {"type": "title", "title": "How Close Can a Supernova Get", "subtitle": "Before It Destroys Earth?"}
+v003: narration: Do science fiction movies show a fiery blast wave sweeping our planet bare within seconds? | card: {"type": "bullets", "title": "Hollywood Myth", "items": ["Instant destruction", "Fiery blast wave", "Atmosphere stripped"]}
+v004: narration: Why does this question matter when considering terrestrial life? | card: {"type": "title", "title": "Terrestrial Life", "subtitle": ""}
+v005: narration: How essential is our oxygen atmosphere for survival? | card: {"type": "title", "title": "Oxygen", "subtitle": ""}
+v006: narration: In reality, a supernova is a powerful explosion marking the death of a star. | card: {"type": "title", "title": "Supernova", "subtitle": ""}
+v007: narration: When a massive star runs out of fuel, its core collapses under immense gravitational force. | card: {"type": "flow", "title": "Core Collapse", "steps": ["Runs out of fuel", "Gravity takes over", "Core collapses"]}
+v010: narration: of matter into the surrounding interstellar medium. | card: {"type": "stat", "title": "Space Medium", "value": "Gas & dust", "label": "Interstellar medium"}
+v014: narration: Where are the nearest stars that might explode in our stellar neighbourhood? | card: {"type": "title", "title": "The Stellar Safety Line", "subtitle": "Where are the nearest danger zones?"}
+v015: narration: Astronomers define a near-Earth supernova as one | card: {"type": "stat", "title": "Definition", "value": "Near-Earth", "label": "Supernova classification"}
+v020: narration: Although these dying stars will shine brilliantly, they | card: {"type": "stat", "title": "Brightness", "value": "Brilliant", "label": "Maximum luminosity"}
+v022: narration: What about the famous red supergiant star Betelgeuse? | card: {"type": "stat", "title": "Red Supergiant", "value": "Betelgeuse", "label": "Famous candidate"}
+v023: narration: Scientists estimate that Betelgeuse could require as long | card: {"type": "stat", "title": "Estimate", "value": "1.5M yrs", "label": "Time to explode"}
+v024: narration: as 1.5 million years to explode as a supernova. | card: {"type": "stat", "title": "Lifespan", "value": "1.5 million", "label": "Years until supernova"}
+v025: narration: When it detonates, its particle stream will reach | card: {"type": "stat", "title": "Particle Stream", "value": "Outflow", "label": "Detonation debris"}
+v026: narration: Earth about 100,000 years after the initial light. | card: {"type": "stat", "title": "Arrival Delay", "value": "100,000 yrs", "label": "After initial light"}
+v033: narration: is currently moving away to a safe distance. | card: {"type": "stat", "title": "Safe Distance", "value": "Moving away", "label": "Current trajectory"}

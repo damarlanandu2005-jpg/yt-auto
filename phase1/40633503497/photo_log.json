@@ -1,0 +1,159 @@
+{
+ "card_number_fixes": [
+  "v002: numbers ['1'] not in narration; card replaced",
+  "v004: numbers ['100'] not in narration; card replaced",
+  "v005: numbers ['21'] not in narration; card replaced",
+  "v006: numbers ['1'] not in narration; card replaced",
+  "v008: numbers ['1'] not in narration; card replaced",
+  "v013: numbers ['1'] not in narration; card replaced"
+ ],
+ "chart_photos_to_cards": [
+  "v023"
+ ],
+ "photo_slots": 30,
+ "candidates": {
+  "v002": 12,
+  "v003": 12,
+  "v004": 12,
+  "v005": 12,
+  "v006": 12,
+  "v007": 12,
+  "v008": 12,
+  "v009": 12,
+  "v010": 12,
+  "v011": 12,
+  "v012": 12,
+  "v013": 12,
+  "v015": 12,
+  "v016": 12,
+  "v017": 12,
+  "v018": 11,
+  "v019": 12,
+  "v020": 12,
+  "v021": 12,
+  "v022": 11,
+  "v024": 12,
+  "v025": 12,
+  "v026": 12,
+  "v027": 12,
+  "v028": 10,
+  "v029": 12,
+  "v030": 12,
+  "v031": 12,
+  "v032": 8,
+  "v033": 12
+ },
+ "downloaded": 30,
+ "seen": {
+  "v002": "A view of Earth from space, showing the curved horizon and a glowing cloud layer over an ocean.",
+  "v003": "A person wearing a pink long-sleeved shirt and a black cap sitting next to another person with an updo hairstyle and a white blazer, who is speaking into a microphone.",
+  "v004": "Two vibrant purple morning glory flowers blooming amidst green foliage and grass.",
+  "v005": "A solar-powered aircraft flying at an angle against a clear blue sky.",
+  "v006": "A black-and-white image showing a portion of Saturn's glowing rings and the blackness of space.",
+  "v007": "An informational chart titled 'DIFFERENT NEUTRON STAR TYPES' with text descriptions, diagrams, and labels explaining magnetars and pulsars, featuring the NASA logo in the top left corner.",
+  "v008": "An illustration of a cosmic scene featuring a large reddish-brown planet on the left and a spinning star surrounded by a bright accretion disk on the right, set against a starfield with asteroids.",
+  "v009": "The iconic Hubble Space Telescope image of the Pillars of Creation, showing towering columns of interstellar gas and dust bathed in blue light and surrounded by distant stars.",
+  "v010": "An educational diagram titled 'The Interstellar Medium' mapping out the heliosphere, the solar system, and the vast distances extending into interstellar space with text labels and scale bars.",
+  "v011": "An artistic rendering of a bright star with a powerful blue jet of gas shooting out into space, surrounded by a faint red ring and distant galaxies.",
+  "v012": "A colorful space telescope image showing a bright bow shock wave of glowing red gas curved in front of a brilliant blue star, set against a background of green nebula and distant stars.",
+  "v013": "An astrophotography image of the Ring Nebula, displaying a glowing shell of colorful gas with a bright dying star at its center against the blackness of space.",
+  "v015": "Two technicians wearing headsets stand inside an aerospace or laboratory facility, monitoring a computer screen that displays a red data chart and graphical interfaces.",
+  "v016": "A deep-field view of the universe filled with countless tiny, distant galaxies and stars of various shapes and colors scattered across the dark expanse of space.",
+  "v017": "A wide-field infrared view of the Milky Way's center, dominated by a glowing red band of gas, dust clouds, and densely packed star clusters.",
+  "v018": "A detailed photograph of the Pleiades star cluster, showing several bright, luminous blue stars enveloped in delicate, wispy reflection nebulae.",
+  "v019": "A historic refracting telescope mounted inside an observatory dome with a wooden structural roof.",
+  "v020": "A composite space image showing the glowing remnant of Tycho's supernova against a starfield, with a purplish pink square artifact artifacting the lower-left area.",
+  "v021": "The famous 'Blue Marble' photograph of Earth taken from space, showing Africa, the Indian Ocean, and swirling white cloud patterns.",
+  "v022": "An astronomical comparison chart displaying various red supergiant stars sized relative to a scale of 1,000 solar radii, including Betelgeuse, VY Canis Majoris, and WOH G64, with text labels.",
+  "v024": "A close-up view of one of the ornate clock faces of Big Ben in London, featuring Roman numerals, intricate gold detailing, and text in Latin along the bottom border.",
+  "v025": "A cross-section view of a complex metal extrusion profile, showing an elongated hollow cavity and internal channels.",
+  "v026": "A simulated image of a distant galaxy cluster glowing with a yellowish-green center, wispy pink gaseous filaments, and scattered stars.",
+  "v027": "An observatory dome sits atop a rocky volcanic mountain at sunset, overlooking a vast sea of rolling white clouds beneath.",
+  "v028": "A detailed astronomical image of a supernova remnant, displaying an intricate web of glowing pink and orange filaments laced with bright blue stars.",
+  "v029": "A high-resolution image of the Sun captured by a solar observatory, showing its textured, mottled surface, bright solar flares, and prominent sunspots against a black background.",
+  "v030": "A two-panel image showing the Geminga pulsar: the top panel is an X-ray and infrared view of a sweeping arc-shaped nebula, and the bottom panel is an artistic illustration of the pulsar and its magnetic field lines.",
+  "v031": "A close-up panoramic view of a spiral galaxy's bright central bulge and dusty spiral arms peppered with stars.",
+  "v032": "An artist's conception of a young star system featuring a central star, a dusty inner debris disk, and a massive outer ring of icy material in a deep space environment.",
+  "v033": "A large white rocket payload fairing on a transporter is positioned outside on a launch pad next to a red fire truck under a clear blue sky."
+ },
+ "rejected_after_looking": [
+  {
+   "id": "v003",
+   "title": "Hidden Figures Tour Kennedy Space Center Visitor Complex",
+   "seen": "A person wearing a pink long-sleeved shirt and a black cap sitting next to another person with an updo hairstyle and a white blazer, who is speaking into a microphone.",
+   "reason": "Shows people speaking instead of a science fiction movie or a theater screen."
+  },
+  {
+   "id": "v004",
+   "title": "KENNEDY SPACE CENTER, FLA.  - Wildflowers resembling petunias stand out against the deep green of the marsh foliage at KSC, which shares a boundary with the National Merritt Island Wildlife Refuge. Approximately one half of the Refuge's 140,000 acres consists of brackish estuaries and marshes. The remaining lands consist of coastal dunes, scrub oaks, pine forests and flatwoods, and palm and oak hammocks.",
+   "seen": "Two vibrant purple morning glory flowers blooming amidst green foliage and grass.",
+   "reason": "Shows flowers instead of a lush green forest on Earth."
+  },
+  {
+   "id": "v005",
+   "title": "With sensor booms projecting ahead of the wing, the Pathfinder-Plus soars under a blue sky on a turbulence measurement research flight.",
+   "seen": "A solar-powered aircraft flying at an angle against a clear blue sky.",
+   "reason": "Shows an airplane instead of a plain blue sky with white clouds."
+  },
+  {
+   "id": "v006",
+   "title": "Wish Upon a Star",
+   "seen": "A black-and-white image showing a portion of Saturn's glowing rings and the blackness of space.",
+   "reason": "Shows Saturn's rings instead of a distant star."
+  },
+  {
+   "id": "v007",
+   "title": "Different Types of Neutron Stars (Illustration)",
+   "seen": "An informational chart titled 'DIFFERENT NEUTRON STAR TYPES' with text descriptions, diagrams, and labels explaining magnetars and pulsars, featuring the NASA logo in the top left corner.",
+   "reason": "It is an informational chart with heavy text and labels, which does not fit."
+  },
+  {
+   "id": "v010",
+   "title": "Interstellar medium annotated",
+   "seen": "An educational diagram titled 'The Interstellar Medium' mapping out the heliosphere, the solar system, and the vast distances extending into interstellar space with text labels and scale bars.",
+   "reason": "It is a heavy educational diagram with many labels and text, which does not fit."
+  },
+  {
+   "id": "v015",
+   "title": "Astronomers Smile at SOFIA’s Data",
+   "seen": "Two technicians wearing headsets stand inside an aerospace or laboratory facility, monitoring a computer screen that displays a red data chart and graphical interfaces.",
+   "reason": "Shows technicians at a computer instead of an astronomer working with a telescope."
+  },
+  {
+   "id": "v020",
+   "title": "Tycho's Star Shines in Gamma Rays",
+   "seen": "A composite space image showing the glowing remnant of Tycho's supernova against a starfield, with a purplish pink square artifact artifacting the lower-left area.",
+   "reason": "Contains an obvious visual artifact/square anomaly, making it unsuitable."
+  },
+  {
+   "id": "v022",
+   "title": "Stars Larger than Betelgeuse",
+   "seen": "An astronomical comparison chart displaying various red supergiant stars sized relative to a scale of 1,000 solar radii, including Betelgeuse, VY Canis Majoris, and WOH G64, with text labels.",
+   "reason": "It is an astronomical comparison chart with labels and multiple elements, which does not fit."
+  },
+  {
+   "id": "v024",
+   "title": "London Big Ben Inner Clock Face 1070925-PSD",
+   "seen": "A close-up view of one of the ornate clock faces of Big Ben in London, featuring Roman numerals, intricate gold detailing, and text in Latin along the bottom border.",
+   "reason": "Shows a real clock (Big Ben) rather than a conceptual clock ticking."
+  },
+  {
+   "id": "v025",
+   "title": "LEP Particle beam tube",
+   "seen": "A cross-section view of a complex metal extrusion profile, showing an elongated hollow cavity and internal channels.",
+   "reason": "Shows an engineering diagram/metal profile instead of cosmic particles."
+  },
+  {
+   "id": "v026",
+   "title": "Fires of Galactic Youth Artist Animation",
+   "seen": "A simulated image of a distant galaxy cluster glowing with a yellowish-green center, wispy pink gaseous filaments, and scattered stars.",
+   "reason": "Shows a galaxy cluster rather than a sudden flash of light in the night sky."
+  },
+  {
+   "id": "v033",
+   "title": "Pioneer-10 (or F) spacecraft encapsulated and moving to pad at Cape Kennedy for matting with a Atlas-Centaura launch vehicle in preparation for mission to Jupiter (ARC-1972-AC72-2138)",
+   "seen": "A large white rocket payload fairing on a transporter is positioned outside on a launch pad next to a red fire truck under a clear blue sky.",
+   "reason": "Shows a rocket on a launch pad rather than a spacecraft moving away into deep space."
+  }
+ ]
+}

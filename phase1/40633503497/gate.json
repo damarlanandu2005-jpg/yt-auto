@@ -1,0 +1,127 @@
+{
+ "verdict": "FAIL",
+ "checks": [
+  {
+   "check": "audio_silence",
+   "status": "PASS",
+   "detail": "no long silent gaps",
+   "gaps": []
+  },
+  {
+   "check": "audio_loudness",
+   "status": "PASS",
+   "detail": "-16.3 LUFS (target -16 ± 2), true peak -1.5 dBTP",
+   "lufs": -16.3,
+   "true_peak": -1.5
+  },
+  {
+   "check": "video_black",
+   "status": "PASS",
+   "detail": "no black stretches",
+   "blacks": []
+  },
+  {
+   "check": "av_length",
+   "status": "PASS",
+   "detail": "audio 146.5 s, video 146.5 s (differ by 0.0 s)"
+  },
+  {
+   "check": "video_minutes",
+   "status": "FLAG",
+   "detail": "2.4 min (target 5-8)"
+  },
+  {
+   "check": "scenes_complete",
+   "status": "PASS",
+   "detail": "all 2 scenes have visuals"
+  },
+  {
+   "check": "rights",
+   "status": "PASS",
+   "detail": "18 pictures, voice and font all have allowed licences",
+   "problems": []
+  },
+  {
+   "check": "metadata",
+   "status": "PASS",
+   "detail": "title 55 chars, description 1611 chars, sources listed"
+  },
+  {
+   "check": "pronunciation",
+   "status": "FLAG",
+   "detail": "listen for: ['IK'] (add them to pronunciation.json once checked)",
+   "terms": [
+    "IK"
+   ]
+  },
+  {
+   "check": "facts_linked",
+   "status": "PASS",
+   "detail": "every fact sentence has a checked source",
+   "bad": []
+  },
+  {
+   "check": "editorial_brief",
+   "status": "PASS",
+   "detail": "brief complete"
+  },
+  {
+   "check": "originality",
+   "status": "PASS",
+   "detail": "closest past video 2026-10-27-gps-satellite-timestamps: topic 0.14, template 0.00, copy 0.00",
+   "compared": [
+    {
+     "past": "2026-10-27-gps-satellite-timestamps",
+     "topic": 0.135,
+     "template": 0.0,
+     "copy": 0.0
+    }
+   ]
+  },
+  {
+   "check": "plain_cards",
+   "status": "PASS",
+   "detail": "6 of 33 visuals are plain text cards (18%; max 25%)"
+  },
+  {
+   "check": "pictures_checked",
+   "status": "PASS",
+   "detail": "all 17 photos and drawings were looked at; rejected ones are not used"
+  },
+  {
+   "check": "thumbnail",
+   "status": "FAIL",
+   "detail": "no thumbnail yet (the thumbnail step is not built)"
+  },
+  {
+   "check": "hook_question",
+   "status": "PASS",
+   "detail": "The first 30 seconds explicitly ask if a dying star could explode near our solar system and rip Earth's atmosphere away."
+  },
+  {
+   "check": "hook_why",
+   "status": "PASS",
+   "detail": "The first 30 seconds ask why this question matters when considering terrestrial life and how essential our oxygen atmosphere is for survival."
+  },
+  {
+   "check": "title_promise",
+   "status": "PASS",
+   "detail": "The script discusses how close potential supernova stars are and evaluates their threat level to Earth, fulfilling the title's promise."
+  },
+  {
+   "check": "scene_relevance",
+   "status": "PASS",
+   "detail": "All text cards directly match the narration at that moment without generic or unrelated elements."
+  },
+  {
+   "check": "sensitive",
+   "status": "PASS",
+   "detail": "There is no financial, legal, or health advice, nor any accusations against real named persons or companies."
+  },
+  {
+   "check": "adds_value",
+   "status": "PASS",
+   "detail": "The video explains mechanisms like core collapse and runaway nuclear fusion, and contextualizes distances and arrival delays rather than just listing facts."
+  }
+ ]
+}

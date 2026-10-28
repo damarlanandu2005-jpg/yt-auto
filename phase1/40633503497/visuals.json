@@ -1,0 +1,1205 @@
+[
+ {
+  "scene": "s01",
+  "start": 0.0,
+  "text": "Could a dying star explode near our solar",
+  "sentences": [
+   "s01.01"
+  ],
+  "id": "v001",
+  "end": 3.548,
+  "seconds": 3.55,
+  "scene_start": true,
+  "kind": "card",
+  "card": {
+   "type": "title",
+   "title": "How Close Can a Supernova Get",
+   "subtitle": "Before It Destroys Earth?"
+  }
+ },
+ {
+  "scene": "s01",
+  "start": 3.548,
+  "text": "system and rip Earth's atmosphere away into space?",
+  "sentences": [
+   "s01.01"
+  ],
+  "id": "v002",
+  "end": 7.939,
+  "seconds": 4.39,
+  "scene_start": false,
+  "kind": "photo",
+  "photo_subject": "planet Earth viewed from space",
+  "photo_queries": [
+   "planet Earth",
+   "Earth from space"
+  ],
+  "card": {
+   "type": "title",
+   "title": "Earth's Atmosphere",
+   "subtitle": ""
+  },
+  "photo": {
+   "path": "out/run/photos/v002.jpg",
+   "file": "v002.jpg",
+   "kind": "photo",
+   "source": "nasa_image_library",
+   "title": "Earth's thin blue atmosphere traces the planet's horizon above the Pacific Ocean",
+   "source_page": "https://images.nasa.gov/details/iss074e0089803",
+   "download_url": "https://images-assets.nasa.gov/image/iss074e0089803/iss074e0089803~large.jpg",
+   "licence": "Public domain (NASA media, not copyrighted in the US)",
+   "licence_url": "https://www.nasa.gov/nasa-brand-center/images-and-media/",
+   "author": "NASA (JSC)",
+   "attribution": "Earth's thin blue atmosphere traces the planet's horizon above the Pacific Ocean — NASA (JSC), NASA, public domain. https://images.nasa.gov/details/iss074e0089803",
+   "downloaded": "2026-10-28"
+  }
+ },
+ {
+  "scene": "s01",
+  "start": 7.939,
+  "text": "Do science fiction movies show a fiery blast wave sweeping our planet bare within seconds?",
+  "sentences": [
+   "s01.02"
+  ],
+  "id": "v003",
+  "end": 14.854,
+  "seconds": 6.91,
+  "scene_start": false,
+  "kind": "photo",
+  "photo_subject": "a large theater screen showing a movie",
+  "photo_queries": [
+   "movie theater",
+   "cinema screen"
+  ],
+  "card": {
+   "type": "bullets",
+   "title": "Hollywood Myth",
+   "items": [
+    "Instant destruction",
+    "Fiery blast wave",
+    "Atmosphere stripped"
+   ]
+  },
+  "photo_rejected": {
+   "path": "out/run/photos/v003.jpg",
+   "file": "v003.jpg",
+   "kind": "photo",
+   "source": "nasa_image_library",
+   "title": "Hidden Figures Tour Kennedy Space Center Visitor Complex",
+   "source_page": "https://images.nasa.gov/details/KSC-20161212-PH_KLS04_0087",
+   "download_url": "https://images-assets.nasa.gov/image/KSC-20161212-PH_KLS04_0087/KSC-20161212-PH_KLS04_0087~large.jpg",
+   "licence": "Public domain (NASA media, not copyrighted in the US)",
+   "licence_url": "https://www.nasa.gov/nasa-brand-center/images-and-media/",
+   "author": "NASA/Kim Shiflett",
+   "attribution": "Hidden Figures Tour Kennedy Space Center Visitor Complex — NASA/Kim Shiflett, NASA, public domain. https://images.nasa.gov/details/KSC-20161212-PH_KLS04_0087",
+   "downloaded": "2026-10-28"
+  }
+ },
+ {
+  "scene": "s01",
+  "start": 14.854,
+  "text": "Why does this question matter when considering terrestrial life?",
+  "sentences": [
+   "s01.03"
+  ],
+  "id": "v004",
+  "end": 19.508,
+  "seconds": 4.65,
+  "scene_start": false,
+  "kind": "photo",
+  "photo_subject": "a lush green forest on Earth",
+  "photo_queries": [
+   "green forest",
+   "terrestrial life"
+  ],
+  "card": {
+   "type": "title",
+   "title": "Terrestrial Life",
+   "subtitle": ""
+  },
+  "photo_rejected": {
+   "path": "out/run/photos/v004.jpg",
+   "file": "v004.jpg",
+   "kind": "photo",
+   "source": "nasa_image_library",
+   "title": "KENNEDY SPACE CENTER, FLA.  - Wildflowers resembling petunias stand out against the deep green of the marsh foliage at KSC, which shares a boundary with the National Merritt Island Wildlife Refuge. Approximately one half of the Refuge's 140,000 acres consists of brackish estuaries and marshes. The remaining lands consist of coastal dunes, scrub oaks, pine forests and flatwoods, and palm and oak hammocks.",
+   "source_page": "https://images.nasa.gov/details/KSC-03pd2200",
+   "download_url": "https://images-assets.nasa.gov/image/KSC-03pd2200/KSC-03pd2200~large.jpg",
+   "licence": "Public domain (NASA media, not copyrighted in the US)",
+   "licence_url": "https://www.nasa.gov/nasa-brand-center/images-and-media/",
+   "author": "NASA (KSC)",
+   "attribution": "KENNEDY SPACE CENTER, FLA.  - Wildflowers resembling petunias stand out against the deep green of the marsh foliage at KSC, which shares a boundary with the National Merritt Island Wildlife Refuge. Approximately one half of the Refuge's 140,000 acres consists of brackish estuaries and marshes. The remaining lands consist of coastal dunes, scrub oaks, pine forests and flatwoods, and palm and oak hammocks. — NASA (KSC), NASA, public domain. https://images.nasa.gov/details/KSC-03pd2200",
+   "downloaded": "2026-10-28"
+  }
+ },
+ {
+  "scene": "s01",
+  "start": 19.508,
+  "text": "How essential is our oxygen atmosphere for survival?",
+  "sentences": [
+   "s01.04"
+  ],
+  "id": "v005",
+  "end": 23.756,
+  "seconds": 4.25,
+  "scene_start": false,
+  "kind": "photo",
+  "photo_subject": "blue sky and white clouds",
+  "photo_queries": [
+   "blue sky",
+   "oxygen atmosphere"
+  ],
+  "card": {
+   "type": "title",
+   "title": "Oxygen",
+   "subtitle": ""
+  },
+  "photo_rejected": {
+   "path": "out/run/photos/v005.jpg",
+   "file": "v005.jpg",
+   "kind": "photo",
+   "source": "nasa_image_library",
+   "title": "With sensor booms projecting ahead of the wing, the Pathfinder-Plus soars under a blue sky on a turbulence measurement research flight.",
+   "source_page": "https://images.nasa.gov/details/EC05-0186-28",
+   "download_url": "https://images-assets.nasa.gov/image/EC05-0186-28/EC05-0186-28~large.jpg",
+   "licence": "Public domain (NASA media, not copyrighted in the US)",
+   "licence_url": "https://www.nasa.gov/nasa-brand-center/images-and-media/",
+   "author": "NASA/Tom Tschida",
+   "attribution": "With sensor booms projecting ahead of the wing, the Pathfinder-Plus soars under a blue sky on a turbulence measurement research flight. — NASA/Tom Tschida, NASA, public domain. https://images.nasa.gov/details/EC05-0186-28",
+   "downloaded": "2026-10-28"
+  }
+ },
+ {
+  "scene": "s01",
+  "start": 23.756,
+  "text": "In reality, a supernova is a powerful explosion marking the death of a star.",
+  "sentences": [
+   "s01.05"
+  ],
+  "id": "v006",
+  "end": 29.359,
+  "seconds": 5.6,
+  "scene_start": false,
+  "kind": "photo",
+  "photo_subject": "a distant star glowing in space",
+  "photo_queries": [
+   "bright star",
+   "stellar explosion"
+  ],
+  "card": {
+   "type": "title",
+   "title": "Supernova",
+   "subtitle": ""
+  },
+  "photo_rejected": {
+   "path": "out/run/photos/v006.jpg",
+   "file": "v006.jpg",
+   "kind": "photo",
+   "source": "nasa_image_library",
+   "title": "Wish Upon a Star",
+   "source_page": "https://images.nasa.gov/details/PIA18297",
+   "download_url": "https://images-assets.nasa.gov/image/PIA18297/PIA18297~orig.jpg",
+   "licence": "Public domain (NASA media, not copyrighted in the US)",
+   "licence_url": "https://www.nasa.gov/nasa-brand-center/images-and-media/",
+   "author": "NASA/JPL-Caltech/Space Science Institute",
+   "attribution": "Wish Upon a Star — NASA/JPL-Caltech/Space Science Institute, NASA, public domain. https://images.nasa.gov/details/PIA18297",
+   "downloaded": "2026-10-28"
+  }
+ },
+ {
+  "scene": "s01",
+  "start": 29.359,
+  "text": "When a massive star runs out of fuel, its core collapses under immense gravitational force.",
+  "sentences": [
+   "s01.06"
+  ],
+  "id": "v007",
+  "end": 35.618,
+  "seconds": 6.26,
+  "scene_start": false,
+  "kind": "photo",
+  "photo_subject": "a dense stellar core",
+  "photo_queries": [
+   "stellar core",
+   "neutron star"
+  ],
+  "card": {
+   "type": "flow",
+   "title": "Core Collapse",
+   "steps": [
+    "Runs out of fuel",
+    "Gravity takes over",
+    "Core collapses"
+   ]
+  },
+  "photo_rejected": {
+   "path": "out/run/photos/v007.jpg",
+   "file": "v007.jpg",
+   "kind": "photo",
+   "source": "nasa_image_library",
+   "title": "Different Types of Neutron Stars (Illustration)",
+   "source_page": "https://images.nasa.gov/details/PIA23863",
+   "download_url": "https://images-assets.nasa.gov/image/PIA23863/PIA23863~orig.jpg",
+   "licence": "Public domain (NASA media, not copyrighted in the US)",
+   "licence_url": "https://www.nasa.gov/nasa-brand-center/images-and-media/",
+   "author": "NASA/JPL-Caltech",
+   "attribution": "Different Types of Neutron Stars (Illustration) — NASA/JPL-Caltech, NASA, public domain. https://images.nasa.gov/details/PIA23863",
+   "downloaded": "2026-10-28"
+  }
+ },
+ {
+  "scene": "s01",
+  "start": 35.618,
+  "text": "Alternatively, an exploding white dwarf star undergoes runaway nuclear fusion.",
+  "sentences": [
+   "s01.07"
+  ],
+  "id": "v008",
+  "end": 41.397,
+  "seconds": 5.78,
+  "scene_start": false,
+  "kind": "photo",
+  "photo_subject": "a white dwarf star in space",
+  "photo_queries": [
+   "white dwarf",
+   "binary star"
+  ],
+  "card": {
+   "type": "title",
+   "title": "White Dwarf",
+   "subtitle": ""
+  },
+  "photo": {
+   "path": "out/run/photos/v008.jpg",
+   "file": "v008.jpg",
+   "kind": "photo",
+   "source": "nasa_image_library",
+   "title": "Polluted White Dwarf (Artist's Concept)",
+   "source_page": "https://images.nasa.gov/details/PIA22084",
+   "download_url": "https://images-assets.nasa.gov/image/PIA22084/PIA22084~orig.jpg",
+   "licence": "Public domain (NASA media, not copyrighted in the US)",
+   "licence_url": "https://www.nasa.gov/nasa-brand-center/images-and-media/",
+   "author": "NASA/JPL-Caltech",
+   "attribution": "Polluted White Dwarf (Artist's Concept) — NASA/JPL-Caltech, NASA, public domain. https://images.nasa.gov/details/PIA22084",
+   "downloaded": "2026-10-28"
+  }
+ },
+ {
+  "scene": "s01",
+  "start": 41.397,
+  "text": "These stellar detonations expel several solar masses",
+  "sentences": [
+   "s01.08"
+  ],
+  "id": "v009",
+  "end": 44.739999999999995,
+  "seconds": 3.34,
+  "scene_start": false,
+  "kind": "photo",
+  "photo_subject": "stellar gas clouds in space",
+  "photo_queries": [
+   "gas cloud",
+   "nebula"
+  ],
+  "card": {
+   "type": "stat",
+   "title": "Ejected Mass",
+   "value": "Several",
+   "label": "Solar masses expelled"
+  },
+  "photo": {
+   "path": "out/run/photos/v009.jpg",
+   "file": "v009.jpg",
+   "kind": "photo",
+   "source": "wikimedia_commons",
+   "title": "Pillars of creation 2014 HST WFC3-UVIS full-res denoised",
+   "source_page": "https://commons.wikimedia.org/wiki/File:Pillars_of_creation_2014_HST_WFC3-UVIS_full-res_denoised.jpg",
+   "download_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/68/Pillars_of_creation_2014_HST_WFC3-UVIS_full-res_denoised.jpg/1920px-Pillars_of_creation_2014_HST_WFC3-UVIS_full-res_denoised.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "licence": "Public domain",
+   "licence_url": "",
+   "author": "NASA, ESA, and the Hubble Heritage Team (STScI/AURA)",
+   "attribution": "\"Pillars of creation 2014 HST WFC3-UVIS full-res denoised\" by NASA, ESA, and the Hubble Heritage Team (STScI/AURA), Public domain, via Wikimedia Commons. https://commons.wikimedia.org/wiki/File:Pillars_of_creation_2014_HST_WFC3-UVIS_full-res_denoised.jpg",
+   "downloaded": "2026-10-28"
+  }
+ },
+ {
+  "scene": "s01",
+  "start": 44.739999999999995,
+  "text": "of matter into the surrounding interstellar medium.",
+  "sentences": [
+   "s01.08"
+  ],
+  "id": "v010",
+  "end": 48.585,
+  "seconds": 3.85,
+  "scene_start": false,
+  "kind": "photo",
+  "photo_subject": "interstellar gas and dust",
+  "photo_queries": [
+   "interstellar medium",
+   "cosmic dust"
+  ],
+  "card": {
+   "type": "stat",
+   "title": "Space Medium",
+   "value": "Gas & dust",
+   "label": "Interstellar medium"
+  },
+  "photo_rejected": {
+   "path": "out/run/photos/v010.jpg",
+   "file": "v010.jpg",
+   "kind": "photo",
+   "source": "wikimedia_commons",
+   "title": "Interstellar medium annotated",
+   "source_page": "https://commons.wikimedia.org/wiki/File:Interstellar_medium_annotated.jpg",
+   "download_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/1f/Interstellar_medium_annotated.jpg/1920px-Interstellar_medium_annotated.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "licence": "Public domain",
+   "licence_url": "",
+   "author": "Charles Carter/Keck Institute for Space Studies",
+   "attribution": "\"Interstellar medium annotated\" by Charles Carter/Keck Institute for Space Studies, Public domain, via Wikimedia Commons. https://commons.wikimedia.org/wiki/File:Interstellar_medium_annotated.jpg",
+   "downloaded": "2026-10-28"
+  }
+ },
+ {
+  "scene": "s01",
+  "start": 48.585,
+  "text": "The ejected material travels outward at speeds reaching several per cent of the speed of light.",
+  "sentences": [
+   "s01.09"
+  ],
+  "id": "v011",
+  "end": 54.85,
+  "seconds": 6.27,
+  "scene_start": false,
+  "kind": "photo",
+  "photo_subject": "a glowing beam of light",
+  "photo_queries": [
+   "speed of light",
+   "light beam"
+  ],
+  "card": {
+   "type": "stat",
+   "title": "Ejection Speed",
+   "value": "Percent",
+   "label": "Fraction of light speed"
+  },
+  "photo": {
+   "path": "out/run/photos/v011.jpg",
+   "file": "v011.jpg",
+   "kind": "photo",
+   "source": "nasa_image_library",
+   "title": "Cosmic Jets Coming at You Artist Concept",
+   "source_page": "https://images.nasa.gov/details/PIA15414",
+   "download_url": "https://images-assets.nasa.gov/image/PIA15414/PIA15414~large.jpg",
+   "licence": "Public domain (NASA media, not copyrighted in the US)",
+   "licence_url": "https://www.nasa.gov/nasa-brand-center/images-and-media/",
+   "author": "NASA/JPL-Caltech",
+   "attribution": "Cosmic Jets Coming at You Artist Concept — NASA/JPL-Caltech, NASA, public domain. https://images.nasa.gov/details/PIA15414",
+   "downloaded": "2026-10-28"
+  }
+ },
+ {
+  "scene": "s01",
+  "start": 54.85,
+  "text": "This creates an expanding shock wave that sweeps",
+  "sentences": [
+   "s01.10"
+  ],
+  "id": "v012",
+  "end": 58.236000000000004,
+  "seconds": 3.39,
+  "scene_start": false,
+  "kind": "photo",
+  "photo_subject": "a shock wave in space",
+  "photo_queries": [
+   "shock wave",
+   "expanding gas"
+  ],
+  "card": {
+   "type": "flow",
+   "title": "Shock Wave",
+   "steps": [
+    "Explosion occurs",
+    "Material expands",
+    "Shock wave forms"
+   ]
+  },
+  "photo": {
+   "path": "out/run/photos/v012.jpg",
+   "file": "v012.jpg",
+   "kind": "photo",
+   "source": "nasa_image_library",
+   "title": "Speedster Star Shocks the Galaxy",
+   "source_page": "https://images.nasa.gov/details/PIA17843",
+   "download_url": "https://images-assets.nasa.gov/image/PIA17843/PIA17843~orig.jpg",
+   "licence": "Public domain (NASA media, not copyrighted in the US)",
+   "licence_url": "https://www.nasa.gov/nasa-brand-center/images-and-media/",
+   "author": "NASA/JPL-Caltech",
+   "attribution": "Speedster Star Shocks the Galaxy — NASA/JPL-Caltech, NASA, public domain. https://images.nasa.gov/details/PIA17843",
+   "downloaded": "2026-10-28"
+  }
+ },
+ {
+  "scene": "s01",
+  "start": 58.236000000000004,
+  "text": "up a shell of interstellar gas and dust.",
+  "sentences": [
+   "s01.10"
+  ],
+  "id": "v013",
+  "end": 63.083,
+  "seconds": 4.85,
+  "scene_start": false,
+  "kind": "photo",
+  "photo_subject": "a colorful cosmic nebula",
+  "photo_queries": [
+   "nebula shell",
+   "cosmic gas cloud"
+  ],
+  "card": {
+   "type": "title",
+   "title": "Gas Shell",
+   "subtitle": ""
+  },
+  "photo": {
+   "path": "out/run/photos/v013.jpg",
+   "file": "v013.jpg",
+   "kind": "photo",
+   "source": "wikimedia_commons",
+   "title": "Ring nebula",
+   "source_page": "https://commons.wikimedia.org/wiki/File:Ring_nebula.png",
+   "download_url": "https://upload.wikimedia.org/wikipedia/commons/a/a4/Ring_nebula.png?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+   "licence": "CC BY-SA 4.0",
+   "licence_url": "https://creativecommons.org/licenses/by-sa/4.0",
+   "author": "Pablo Carlos Budassi",
+   "attribution": "\"Ring nebula\" by Pablo Carlos Budassi, CC BY-SA 4.0, via Wikimedia Commons. https://commons.wikimedia.org/wiki/File:Ring_nebula.png",
+   "downloaded": "2026-10-28"
+  }
+ },
+ {
+  "scene": "s02",
+  "start": 63.083,
+  "text": "Where are the nearest stars that might explode in our stellar neighbourhood?",
+  "sentences": [
+   "s02.01"
+  ],
+  "id": "v014",
+  "end": 67.562,
+  "seconds": 4.48,
+  "scene_start": true,
+  "kind": "card",
+  "card": {
+   "type": "title",
+   "title": "The Stellar Safety Line",
+   "subtitle": "Where are the nearest danger zones?"
+  }
+ },
+ {
+  "scene": "s02",
+  "start": 67.562,
+  "text": "Astronomers define a near-Earth supernova as one",
+  "sentences": [
+   "s02.02"
+  ],
+  "id": "v015",
+  "end": 71.477,
+  "seconds": 3.92,
+  "scene_start": false,
+  "kind": "photo",
+  "photo_subject": "an astronomer working with a telescope",
+  "photo_queries": [
+   "astronomer",
+   "telescope"
+  ],
+  "card": {
+   "type": "stat",
+   "title": "Definition",
+   "value": "Near-Earth",
+   "label": "Supernova classification"
+  },
+  "photo_rejected": {
+   "path": "out/run/photos/v015.jpg",
+   "file": "v015.jpg",
+   "kind": "photo",
+   "source": "nasa_image_library",
+   "title": "Astronomers Smile at SOFIA’s Data",
+   "source_page": "https://images.nasa.gov/details/ED13-0181-37",
+   "download_url": "https://images-assets.nasa.gov/image/ED13-0181-37/ED13-0181-37~large.jpg",
+   "licence": "Public domain (NASA media, not copyrighted in the US)",
+   "licence_url": "https://www.nasa.gov/nasa-brand-center/images-and-media/",
+   "author": "NASA/Carla Thomas",
+   "attribution": "Astronomers Smile at SOFIA’s Data — NASA/Carla Thomas, NASA, public domain. https://images.nasa.gov/details/ED13-0181-37",
+   "downloaded": "2026-10-28"
+  }
+ },
+ {
+  "scene": "s02",
+  "start": 71.477,
+  "text": "occurring within roughly 33 to 978 light-years.",
+  "sentences": [
+   "s02.02"
+  ],
+  "id": "v016",
+  "end": 75.832,
+  "seconds": 4.35,
+  "scene_start": false,
+  "kind": "photo",
+  "photo_subject": "deep space filled with stars",
+  "photo_queries": [
+   "deep space",
+   "star field"
+  ],
+  "card": {
+   "type": "stat",
+   "title": "Distance Range",
+   "value": "33 - 978 ly",
+   "label": "Light-years away"
+  },
+  "photo": {
+   "path": "out/run/photos/v016.jpg",
+   "file": "v016.jpg",
+   "kind": "photo",
+   "source": "wikimedia_commons",
+   "title": "Hubble ultra deep field",
+   "source_page": "https://commons.wikimedia.org/wiki/File:Hubble_ultra_deep_field.jpg",
+   "download_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/2f/Hubble_ultra_deep_field.jpg/1920px-Hubble_ultra_deep_field.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "licence": "Public domain",
+   "licence_url": "",
+   "author": "NASA and the European Space Agency.",
+   "attribution": "\"Hubble ultra deep field\" by NASA and the European Space Agency., Public domain, via Wikimedia Commons. https://commons.wikimedia.org/wiki/File:Hubble_ultra_deep_field.jpg",
+   "downloaded": "2026-10-28"
+  }
+ },
+ {
+  "scene": "s02",
+  "start": 75.832,
+  "text": "Currently, our galaxy holds up to 14",
+  "sentences": [
+   "s02.03"
+  ],
+  "id": "v017",
+  "end": 79.1045,
+  "seconds": 3.27,
+  "scene_start": false,
+  "kind": "photo",
+  "photo_subject": "the Milky Way galaxy viewed from Earth",
+  "photo_queries": [
+   "Milky Way galaxy",
+   "galaxy core"
+  ],
+  "card": {
+   "type": "stat",
+   "title": "Galaxy Count",
+   "value": "14",
+   "label": "Potential candidates"
+  },
+  "photo": {
+   "path": "out/run/photos/v017.jpg",
+   "file": "v017.jpg",
+   "kind": "photo",
+   "source": "wikimedia_commons",
+   "title": "Milky Way IR Spitzer",
+   "source_page": "https://commons.wikimedia.org/wiki/File:Milky_Way_IR_Spitzer.jpg",
+   "download_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/9e/Milky_Way_IR_Spitzer.jpg/1920px-Milky_Way_IR_Spitzer.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "licence": "Public domain",
+   "licence_url": "",
+   "author": "Credit: NASA/JPL-Caltech/S. Stolovy (Spitzer Science Center/Caltech)",
+   "attribution": "\"Milky Way IR Spitzer\" by Credit: NASA/JPL-Caltech/S. Stolovy (Spitzer Science Center/Caltech), Public domain, via Wikimedia Commons. https://commons.wikimedia.org/wiki/File:Milky_Way_IR_Spitzer.jpg",
+   "downloaded": "2026-10-28"
+  }
+ },
+ {
+  "scene": "s02",
+  "start": 79.1045,
+  "text": "potential near-Earth supernovas inside that broader distance.",
+  "sentences": [
+   "s02.03"
+  ],
+  "id": "v018",
+  "end": 82.827,
+  "seconds": 3.72,
+  "scene_start": false,
+  "kind": "photo",
+  "photo_subject": "a cluster of bright stars",
+  "photo_queries": [
+   "star cluster",
+   "stellar group"
+  ],
+  "card": {
+   "type": "stat",
+   "title": "Broader Distance",
+   "value": "14 stars",
+   "label": "In safety zone"
+  },
+  "photo": {
+   "path": "out/run/photos/v018.jpg",
+   "file": "v018.jpg",
+   "kind": "photo",
+   "source": "wikimedia_commons",
+   "title": "Pleiades large",
+   "source_page": "https://commons.wikimedia.org/wiki/File:Pleiades_large.jpg",
+   "download_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/4e/Pleiades_large.jpg/1920px-Pleiades_large.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "licence": "Public domain",
+   "licence_url": "",
+   "author": "NASA, ESA, AURA/Caltech, Palomar Observatory The science team consists of: D. Soderblom and E. Nelan (STScI), F. Benedict and B. Arthur (U. Texas), and B. Jones (Lick Obs.)",
+   "attribution": "\"Pleiades large\" by NASA, ESA, AURA/Caltech, Palomar Observatory The science team consists of: D. Soderblom and E. Nelan (STScI), F. Benedict and B. Arthur (U. Texas), and B. Jones (Lick Obs.), Public domain, via Wikimedia Commons. https://commons.wikimedia.org/wiki/File:Pleiades_large.jpg",
+   "downloaded": "2026-10-28"
+  }
+ },
+ {
+  "scene": "s02",
+  "start": 82.827,
+  "text": "A few famous stars located within several hundred light-years could explode in just 1,000 years.",
+  "sentences": [
+   "s02.04"
+  ],
+  "id": "v019",
+  "end": 90.205,
+  "seconds": 7.38,
+  "scene_start": false,
+  "kind": "photo",
+  "photo_subject": "ancient astronomical observatory dome",
+  "photo_queries": [
+   "observatory dome",
+   "telescope dome"
+  ],
+  "card": {
+   "type": "stat",
+   "title": "Timeline",
+   "value": "1,000 years",
+   "label": "Estimated timeframe"
+  },
+  "photo": {
+   "path": "out/run/photos/v019.jpg",
+   "file": "v019.jpg",
+   "kind": "photo",
+   "source": "wikimedia_commons",
+   "title": "Grande Lunette Nice",
+   "source_page": "https://commons.wikimedia.org/wiki/File:Grande_Lunette_Nice.jpg",
+   "download_url": "https://upload.wikimedia.org/wikipedia/commons/0/01/Grande_Lunette_Nice.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+   "licence": "CC BY-SA 3.0",
+   "licence_url": "http://creativecommons.org/licenses/by-sa/3.0/",
+   "author": "User Ericd on en.wikipedia",
+   "attribution": "\"Grande Lunette Nice\" by User Ericd on en.wikipedia, CC BY-SA 3.0, via Wikimedia Commons. https://commons.wikimedia.org/wiki/File:Grande_Lunette_Nice.jpg",
+   "downloaded": "2026-10-28"
+  }
+ },
+ {
+  "scene": "s02",
+  "start": 90.205,
+  "text": "Although these dying stars will shine brilliantly, they",
+  "sentences": [
+   "s02.05"
+  ],
+  "id": "v020",
+  "end": 93.87273333333333,
+  "seconds": 3.67,
+  "scene_start": false,
+  "kind": "photo",
+  "photo_subject": "a bright exploding star",
+  "photo_queries": [
+   "bright star",
+   "supernova shine"
+  ],
+  "card": {
+   "type": "stat",
+   "title": "Brightness",
+   "value": "Brilliant",
+   "label": "Maximum luminosity"
+  },
+  "photo_rejected": {
+   "path": "out/run/photos/v020.jpg",
+   "file": "v020.jpg",
+   "kind": "photo",
+   "source": "nasa_image_library",
+   "title": "Tycho's Star Shines in Gamma Rays",
+   "source_page": "https://images.nasa.gov/details/GSFC_20171208_Archive_e001801",
+   "download_url": "https://images-assets.nasa.gov/image/GSFC_20171208_Archive_e001801/GSFC_20171208_Archive_e001801~orig.jpg",
+   "licence": "Public domain (NASA media, not copyrighted in the US)",
+   "licence_url": "https://www.nasa.gov/nasa-brand-center/images-and-media/",
+   "author": "NASA (GSFC)",
+   "attribution": "Tycho's Star Shines in Gamma Rays — NASA (GSFC), NASA, public domain. https://images.nasa.gov/details/GSFC_20171208_Archive_e001801",
+   "downloaded": "2026-10-28"
+  }
+ },
+ {
+  "scene": "s02",
+  "start": 93.87273333333333,
+  "text": "pose little direct threat to our planet.",
+  "sentences": [
+   "s02.05"
+  ],
+  "id": "v021",
+  "end": 97.547,
+  "seconds": 3.67,
+  "scene_start": false,
+  "kind": "photo",
+  "photo_subject": "planet Earth viewed from afar",
+  "photo_queries": [
+   "planet Earth",
+   "blue planet"
+  ],
+  "card": {
+   "type": "stat",
+   "title": "Threat Level",
+   "value": "Low",
+   "label": "Direct threat to Earth"
+  },
+  "photo": {
+   "path": "out/run/photos/v021.jpg",
+   "file": "v021.jpg",
+   "kind": "photo",
+   "source": "wikimedia_commons",
+   "title": "The Earth seen from Apollo 17",
+   "source_page": "https://commons.wikimedia.org/wiki/File:The_Earth_seen_from_Apollo_17.jpg",
+   "download_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/97/The_Earth_seen_from_Apollo_17.jpg/1920px-The_Earth_seen_from_Apollo_17.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "licence": "Public domain",
+   "licence_url": "",
+   "author": "NASA/Apollo 17 crew; taken by either Harrison Schmitt or Ron Evans",
+   "attribution": "\"The Earth seen from Apollo 17\" by NASA/Apollo 17 crew; taken by either Harrison Schmitt or Ron Evans, Public domain, via Wikimedia Commons. https://commons.wikimedia.org/wiki/File:The_Earth_seen_from_Apollo_17.jpg",
+   "downloaded": "2026-10-28"
+  }
+ },
+ {
+  "scene": "s02",
+  "start": 97.547,
+  "text": "What about the famous red supergiant star Betelgeuse?",
+  "sentences": [
+   "s02.06"
+  ],
+  "id": "v022",
+  "end": 101.685,
+  "seconds": 4.14,
+  "scene_start": false,
+  "kind": "photo",
+  "photo_subject": "a giant red star in space",
+  "photo_queries": [
+   "red supergiant",
+   "Betelgeuse star"
+  ],
+  "card": {
+   "type": "stat",
+   "title": "Red Supergiant",
+   "value": "Betelgeuse",
+   "label": "Famous candidate"
+  },
+  "photo_rejected": {
+   "path": "out/run/photos/v022.jpg",
+   "file": "v022.jpg",
+   "kind": "photo",
+   "source": "wikimedia_commons",
+   "title": "Stars Larger than Betelgeuse",
+   "source_page": "https://commons.wikimedia.org/wiki/File:Stars_Larger_than_Betelgeuse.jpg",
+   "download_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/96/Stars_Larger_than_Betelgeuse.jpg/1920px-Stars_Larger_than_Betelgeuse.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "licence": "CC0",
+   "licence_url": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
+   "author": "Atlantlc27Lol",
+   "attribution": "\"Stars Larger than Betelgeuse\" by Atlantlc27Lol, CC0, via Wikimedia Commons. https://commons.wikimedia.org/wiki/File:Stars_Larger_than_Betelgeuse.jpg",
+   "downloaded": "2026-10-28"
+  }
+ },
+ {
+  "scene": "s02",
+  "start": 101.685,
+  "text": "Scientists estimate that Betelgeuse could require as long",
+  "sentences": [
+   "s02.07"
+  ],
+  "id": "v023",
+  "end": 105.19323529411764,
+  "seconds": 3.51,
+  "scene_start": false,
+  "kind": "card",
+  "photo_subject": "a scientific laboratory graph on a computer screen",
+  "photo_queries": [
+   "computer screen",
+   "scientific data"
+  ],
+  "card": {
+   "type": "stat",
+   "title": "Estimate",
+   "value": "1.5M yrs",
+   "label": "Time to explode"
+  }
+ },
+ {
+  "scene": "s02",
+  "start": 105.19323529411764,
+  "text": "as 1.5 million years to explode as a supernova.",
+  "sentences": [
+   "s02.07"
+  ],
+  "id": "v024",
+  "end": 109.619,
+  "seconds": 4.43,
+  "scene_start": false,
+  "kind": "photo",
+  "photo_subject": "a clock ticking in a conceptual setting",
+  "photo_queries": [
+   "clock face",
+   "time passing"
+  ],
+  "card": {
+   "type": "stat",
+   "title": "Lifespan",
+   "value": "1.5 million",
+   "label": "Years until supernova"
+  },
+  "photo_rejected": {
+   "path": "out/run/photos/v024.jpg",
+   "file": "v024.jpg",
+   "kind": "photo",
+   "source": "wikimedia_commons",
+   "title": "London Big Ben Inner Clock Face 1070925-PSD",
+   "source_page": "https://commons.wikimedia.org/wiki/File:London_Big_Ben_Inner_Clock_Face_1070925-PSD.jpg",
+   "download_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/09/London_Big_Ben_Inner_Clock_Face_1070925-PSD.jpg/1920px-London_Big_Ben_Inner_Clock_Face_1070925-PSD.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "licence": "CC BY-SA 4.0",
+   "licence_url": "https://creativecommons.org/licenses/by-sa/4.0",
+   "author": "Ermell",
+   "attribution": "\"London Big Ben Inner Clock Face 1070925-PSD\" by Ermell, CC BY-SA 4.0, via Wikimedia Commons. https://commons.wikimedia.org/wiki/File:London_Big_Ben_Inner_Clock_Face_1070925-PSD.jpg",
+   "downloaded": "2026-10-28"
+  }
+ },
+ {
+  "scene": "s02",
+  "start": 109.619,
+  "text": "When it detonates, its particle stream will reach",
+  "sentences": [
+   "s02.08"
+  ],
+  "id": "v025",
+  "end": 112.95349999999999,
+  "seconds": 3.33,
+  "scene_start": false,
+  "kind": "photo",
+  "photo_subject": "a stream of cosmic particles",
+  "photo_queries": [
+   "particle beam",
+   "cosmic rays"
+  ],
+  "card": {
+   "type": "stat",
+   "title": "Particle Stream",
+   "value": "Outflow",
+   "label": "Detonation debris"
+  },
+  "photo_rejected": {
+   "path": "out/run/photos/v025.jpg",
+   "file": "v025.jpg",
+   "kind": "photo",
+   "source": "wikimedia_commons",
+   "title": "LEP Particle beam tube",
+   "source_page": "https://commons.wikimedia.org/wiki/File:LEP_Particle_beam_tube.JPG",
+   "download_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/1a/LEP_Particle_beam_tube.JPG/1920px-LEP_Particle_beam_tube.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "licence": "CC BY-SA 4.0",
+   "licence_url": "https://creativecommons.org/licenses/by-sa/4.0",
+   "author": "Geni",
+   "attribution": "\"LEP Particle beam tube\" by Geni, CC BY-SA 4.0, via Wikimedia Commons. https://commons.wikimedia.org/wiki/File:LEP_Particle_beam_tube.JPG",
+   "downloaded": "2026-10-28"
+  }
+ },
+ {
+  "scene": "s02",
+  "start": 112.95349999999999,
+  "text": "Earth about 100,000 years after the initial light.",
+  "sentences": [
+   "s02.08"
+  ],
+  "id": "v026",
+  "end": 116.758,
+  "seconds": 3.8,
+  "scene_start": false,
+  "kind": "photo",
+  "photo_subject": "a flash of light in the night sky",
+  "photo_queries": [
+   "flash of light",
+   "starlight"
+  ],
+  "card": {
+   "type": "stat",
+   "title": "Arrival Delay",
+   "value": "100,000 yrs",
+   "label": "After initial light"
+  },
+  "photo_rejected": {
+   "path": "out/run/photos/v026.jpg",
+   "file": "v026.jpg",
+   "kind": "photo",
+   "source": "nasa_image_library",
+   "title": "Fires of Galactic Youth Artist Animation",
+   "source_page": "https://images.nasa.gov/details/PIA07144",
+   "download_url": "https://images-assets.nasa.gov/image/PIA07144/PIA07144~orig.jpg",
+   "licence": "Public domain (NASA media, not copyrighted in the US)",
+   "licence_url": "https://www.nasa.gov/nasa-brand-center/images-and-media/",
+   "author": "NASA/JPL-Caltech",
+   "attribution": "Fires of Galactic Youth Artist Animation — NASA/JPL-Caltech, NASA, public domain. https://images.nasa.gov/details/PIA07144",
+   "downloaded": "2026-10-28"
+  }
+ },
+ {
+  "scene": "s02",
+  "start": 116.758,
+  "text": "Looking back in time, other relatively nearby stars have exploded in Earth's past.",
+  "sentences": [
+   "s02.09"
+  ],
+  "id": "v027",
+  "end": 122.455,
+  "seconds": 5.7,
+  "scene_start": false,
+  "kind": "photo",
+  "photo_subject": "a telescope pointed at the night sky",
+  "photo_queries": [
+   "optical telescope",
+   "stargazing"
+  ],
+  "card": {
+   "type": "stat",
+   "title": "Past Events",
+   "value": "History",
+   "label": "Previous nearby explosions"
+  },
+  "photo": {
+   "path": "out/run/photos/v027.jpg",
+   "file": "v027.jpg",
+   "kind": "photo",
+   "source": "wikimedia_commons",
+   "title": "Not telescope sunset 2001",
+   "source_page": "https://commons.wikimedia.org/wiki/File:Not_telescope_sunset_2001.jpg",
+   "download_url": "https://upload.wikimedia.org/wikipedia/commons/d/d7/Not_telescope_sunset_2001.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+   "licence": "Public domain",
+   "licence_url": "",
+   "author": "Bob Tubbs",
+   "attribution": "\"Not telescope sunset 2001\" by Bob Tubbs, Public domain, via Wikimedia Commons. https://commons.wikimedia.org/wiki/File:Not_telescope_sunset_2001.jpg",
+   "downloaded": "2026-10-28"
+  }
+ },
+ {
+  "scene": "s02",
+  "start": 122.455,
+  "text": "The Vela supernova exploded about 12,000 years ago",
+  "sentences": [
+   "s02.10"
+  ],
+  "id": "v028",
+  "end": 126.04006666666666,
+  "seconds": 3.59,
+  "scene_start": false,
+  "kind": "photo",
+  "photo_subject": "the Vela supernova remnant nebula",
+  "photo_queries": [
+   "Vela supernova",
+   "supernova remnant"
+  ],
+  "card": {
+   "type": "stat",
+   "title": "Vela Explosion",
+   "value": "12,000 yrs",
+   "label": "Years ago"
+  },
+  "photo": {
+   "path": "out/run/photos/v028.jpg",
+   "file": "v028.jpg",
+   "kind": "photo",
+   "source": "wikimedia_commons",
+   "title": "Vela supernova - VST - Eso2214a",
+   "source_page": "https://commons.wikimedia.org/wiki/File:Vela_supernova_-_VST_-_Eso2214a.jpg",
+   "download_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/ec/Vela_supernova_-_VST_-_Eso2214a.jpg/1920px-Vela_supernova_-_VST_-_Eso2214a.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "licence": "CC BY 4.0",
+   "licence_url": "https://creativecommons.org/licenses/by/4.0",
+   "author": "(Credit) ESO/TIMER survey",
+   "attribution": "\"Vela supernova - VST - Eso2214a\" by (Credit) ESO/TIMER survey, CC BY 4.0, via Wikimedia Commons. https://commons.wikimedia.org/wiki/File:Vela_supernova_-_VST_-_Eso2214a.jpg",
+   "downloaded": "2026-10-28"
+  }
+ },
+ {
+  "scene": "s02",
+  "start": 126.04006666666666,
+  "text": "roughly 800 light-years away from our Sun.",
+  "sentences": [
+   "s02.10"
+  ],
+  "id": "v029",
+  "end": 129.654,
+  "seconds": 3.61,
+  "scene_start": false,
+  "kind": "photo",
+  "photo_subject": "our Sun shining in space",
+  "photo_queries": [
+   "the Sun",
+   "solar system star"
+  ],
+  "card": {
+   "type": "stat",
+   "title": "Distance",
+   "value": "800 ly",
+   "label": "From our Sun"
+  },
+  "photo": {
+   "path": "out/run/photos/v029.jpg",
+   "file": "v029.jpg",
+   "kind": "photo",
+   "source": "wikimedia_commons",
+   "title": "The Sun by the Atmospheric Imaging Assembly of NASA's Solar Dynamics Observatory - 20100819",
+   "source_page": "https://commons.wikimedia.org/wiki/File:The_Sun_by_the_Atmospheric_Imaging_Assembly_of_NASA%27s_Solar_Dynamics_Observatory_-_20100819.jpg",
+   "download_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/b4/The_Sun_by_the_Atmospheric_Imaging_Assembly_of_NASA%27s_Solar_Dynamics_Observatory_-_20100819.jpg/1920px-The_Sun_by_the_Atmospheric_Imaging_Assembly_of_NASA%27s_Solar_Dynamics_Observatory_-_20100819.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "licence": "Public domain",
+   "licence_url": "",
+   "author": "NASA/SDO (AIA)",
+   "attribution": "\"The Sun by the Atmospheric Imaging Assembly of NASA's Solar Dynamics Observatory - 20100819\" by NASA/SDO (AIA), Public domain, via Wikimedia Commons. https://commons.wikimedia.org/wiki/File:The_Sun_by_the_Atmospheric_Imaging_Assembly_of_NASA%27s_Solar_Dynamics_Observatory_-_20100819.jpg",
+   "downloaded": "2026-10-28"
+  }
+ },
+ {
+  "scene": "s02",
+  "start": 129.654,
+  "text": "Another explosion called Geminga occurred roughly 300,000 years",
+  "sentences": [
+   "s02.11"
+  ],
+  "id": "v030",
+  "end": 134.10413333333332,
+  "seconds": 4.45,
+  "scene_start": false,
+  "kind": "photo",
+  "photo_subject": "a glowing pulsar in a nebula",
+  "photo_queries": [
+   "Geminga",
+   "pulsar star"
+  ],
+  "card": {
+   "type": "stat",
+   "title": "Geminga Explosion",
+   "value": "300,000 yrs",
+   "label": "Years ago"
+  },
+  "photo": {
+   "path": "out/run/photos/v030.jpg",
+   "file": "v030.jpg",
+   "kind": "photo",
+   "source": "wikimedia_commons",
+   "title": "Geminga by Chandra and Spitzer (cropped)",
+   "source_page": "https://commons.wikimedia.org/wiki/File:Geminga_by_Chandra_and_Spitzer_(cropped).jpg",
+   "download_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/04/Geminga_by_Chandra_and_Spitzer_%28cropped%29.jpg/1920px-Geminga_by_Chandra_and_Spitzer_%28cropped%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "licence": "Public domain",
+   "licence_url": "",
+   "author": "Geminga image: NASA/CXC/PSU/B. Posselt et al; Infrared: NASA/JPL-Caltech; B0355+54: X-ray: NASA/CXC/GWU/N. Klingler et al; Infrared: NASA/JPL-Caltech; Illustrations: Nahks TrEhnl",
+   "attribution": "\"Geminga by Chandra and Spitzer (cropped)\" by Geminga image: NASA/CXC/PSU/B. Posselt et al; Infrared: NASA/JPL-Caltech; B0355+54: X-ray: NASA/CXC/GWU/N. Klingler et al; Infrared: NASA/JPL-Caltech; Illustrations: Nahks TrEhnl, Public domain, via Wikimedia Commons. https://commons.wikimedia.org/wiki/File:Geminga_by_Chandra_and_Spitzer_(cropped).jpg",
+   "downloaded": "2026-10-28"
+  }
+ },
+ {
+  "scene": "s02",
+  "start": 134.10413333333332,
+  "text": "ago at a distance of 550 light-years.",
+  "sentences": [
+   "s02.11"
+  ],
+  "id": "v031",
+  "end": 138.46,
+  "seconds": 4.36,
+  "scene_start": false,
+  "kind": "photo",
+  "photo_subject": "spiral galaxy arms in space",
+  "photo_queries": [
+   "spiral galaxy",
+   "galaxy arms"
+  ],
+  "card": {
+   "type": "stat",
+   "title": "Distance",
+   "value": "550 ly",
+   "label": "From Earth"
+  },
+  "photo": {
+   "path": "out/run/photos/v031.jpg",
+   "file": "v031.jpg",
+   "kind": "photo",
+   "source": "wikimedia_commons",
+   "title": "Andromeda Galaxy M31 - Heic1502a Full resolution",
+   "source_page": "https://commons.wikimedia.org/wiki/File:Andromeda_Galaxy_M31_-_Heic1502a_Full_resolution.jpg",
+   "download_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/b3/Andromeda_Galaxy_M31_-_Heic1502a_Full_resolution.jpg/1920px-Andromeda_Galaxy_M31_-_Heic1502a_Full_resolution.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "licence": "CC BY 4.0",
+   "licence_url": "https://creativecommons.org/licenses/by/4.0",
+   "author": "NASA, ESA, J. Dalcanton, B.F. Williams, and L.C. Johnson (University of Washington), the PHAT team, and R. Gendler",
+   "attribution": "\"Andromeda Galaxy M31 - Heic1502a Full resolution\" by NASA, ESA, J. Dalcanton, B.F. Williams, and L.C. Johnson (University of Washington), the PHAT team, and R. Gendler, CC BY 4.0, via Wikimedia Commons. https://commons.wikimedia.org/wiki/File:Andromeda_Galaxy_M31_-_Heic1502a_Full_resolution.jpg",
+   "downloaded": "2026-10-28"
+  }
+ },
+ {
+  "scene": "s02",
+  "start": 138.46,
+  "text": "The closest known white dwarf candidate, IK Pegasi,",
+  "sentences": [
+   "s02.12"
+  ],
+  "id": "v032",
+  "end": 141.74099999999999,
+  "seconds": 3.28,
+  "scene_start": false,
+  "kind": "photo",
+  "photo_subject": "a binary star system illustration",
+  "photo_queries": [
+   "binary star",
+   "IK Pegasi"
+  ],
+  "card": {
+   "type": "stat",
+   "title": "White Dwarf",
+   "value": "IK Pegasi",
+   "label": "Closest candidate"
+  },
+  "photo": {
+   "path": "out/run/photos/v032.jpg",
+   "file": "v032.jpg",
+   "kind": "photo",
+   "source": "nasa_image_library",
+   "title": "Birth of an Earth-like Planet Artist Xoncept",
+   "source_page": "https://images.nasa.gov/details/PIA09931",
+   "download_url": "https://images-assets.nasa.gov/image/PIA09931/PIA09931~large.jpg",
+   "licence": "Public domain (NASA media, not copyrighted in the US)",
+   "licence_url": "https://www.nasa.gov/nasa-brand-center/images-and-media/",
+   "author": "NASA/JPL-Caltech",
+   "attribution": "Birth of an Earth-like Planet Artist Xoncept — NASA/JPL-Caltech, NASA, public domain. https://images.nasa.gov/details/PIA09931",
+   "downloaded": "2026-10-28"
+  }
+ },
+ {
+  "scene": "s02",
+  "start": 141.74099999999999,
+  "text": "is currently moving away to a safe distance.",
+  "sentences": [
+   "s02.12"
+  ],
+  "id": "v033",
+  "end": 146.457333,
+  "seconds": 4.72,
+  "scene_start": false,
+  "kind": "photo",
+  "photo_subject": "a spacecraft moving away into the distance",
+  "photo_queries": [
+   "spacecraft moving",
+   "deep space probe"
+  ],
+  "card": {
+   "type": "stat",
+   "title": "Safe Distance",
+   "value": "Moving away",
+   "label": "Current trajectory"
+  },
+  "photo_rejected": {
+   "path": "out/run/photos/v033.jpg",
+   "file": "v033.jpg",
+   "kind": "photo",
+   "source": "wikimedia_commons",
+   "title": "Pioneer-10 (or F) spacecraft encapsulated and moving to pad at Cape Kennedy for matting with a Atlas-Centaura launch vehicle in preparation for mission to Jupiter (ARC-1972-AC72-2138)",
+   "source_page": "https://commons.wikimedia.org/wiki/File:Pioneer-10_(or_F)_spacecraft_encapsulated_and_moving_to_pad_at_Cape_Kennedy_for_matting_with_a_Atlas-Centaura_launch_vehicle_in_preparation_for_mission_to_Jupiter_(ARC-1972-AC72-2138).jpg",
+   "download_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/57/Pioneer-10_%28or_F%29_spacecraft_encapsulated_and_moving_to_pad_at_Cape_Kennedy_for_matting_with_a_Atlas-Centaura_launch_vehicle_in_preparation_for_mission_to_Jupiter_%28ARC-1972-AC72-2138%29.jpg/1920px-thumbnail.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "licence": "Public domain",
+   "licence_url": "",
+   "author": "NASA Ames Research Center / KSC",
+   "attribution": "\"Pioneer-10 (or F) spacecraft encapsulated and moving to pad at Cape Kennedy for matting with a Atlas-Centaura launch vehicle in preparation for mission to Jupiter (ARC-1972-AC72-2138)\" by NASA Ames Research Center / KSC, Public domain, via Wikimedia Commons. https://commons.wikimedia.org/wiki/File:Pioneer-10_(or_F)_spacecraft_encapsulated_and_moving_to_pad_at_Cape_Kennedy_for_matting_with_a_Atlas-Centaura_launch_vehicle_in_preparation_for_mission_to_Jupiter_(ARC-1972-AC72-2138).jpg",
+   "downloaded": "2026-10-28"
+  }
+ }
+]

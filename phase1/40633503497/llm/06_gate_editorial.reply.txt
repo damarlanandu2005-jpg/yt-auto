@@ -1,0 +1,34 @@
+{
+  "checks": [
+    {
+      "check": "hook_question",
+      "ok": true,
+      "reason": "The first 30 seconds explicitly ask if a dying star could explode near our solar system and rip Earth's atmosphere away."
+    },
+    {
+      "check": "hook_why",
+      "ok": true,
+      "reason": "The first 30 seconds ask why this question matters when considering terrestrial life and how essential our oxygen atmosphere is for survival."
+    },
+    {
+      "check": "title_promise",
+      "ok": true,
+      "reason": "The script discusses how close potential supernova stars are and evaluates their threat level to Earth, fulfilling the title's promise."
+    },
+    {
+      "check": "scene_relevance",
+      "ok": true,
+      "reason": "All text cards directly match the narration at that moment without generic or unrelated elements."
+    },
+    {
+      "check": "sensitive",
+      "ok": true,
+      "reason": "There is no financial, legal, or health advice, nor any accusations against real named persons or companies."
+    },
+    {
+      "check": "adds_value",
+      "ok": true,
+      "reason": "The video explains mechanisms like core collapse and runaway nuclear fusion, and contextualizes distances and arrival delays rather than just listing facts."
+    }
+  ]
+}

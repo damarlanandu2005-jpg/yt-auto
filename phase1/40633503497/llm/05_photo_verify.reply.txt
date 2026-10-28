@@ -1,0 +1,184 @@
+{
+  "checks": [
+    {
+      "n": 1,
+      "seen": "A view of Earth from space, showing the curved horizon and a glowing cloud layer over an ocean.",
+      "fits": true,
+      "reason": "The image clearly shows planet Earth viewed from space, matching the narration about Earth's atmosphere."
+    },
+    {
+      "n": 2,
+      "seen": "A person wearing a pink long-sleeved shirt and a black cap sitting next to another person with an updo hairstyle and a white blazer, who is speaking into a microphone.",
+      "fits": false,
+      "reason": "Shows people speaking instead of a science fiction movie or a theater screen."
+    },
+    {
+      "n": 3,
+      "seen": "Two vibrant purple morning glory flowers blooming amidst green foliage and grass.",
+      "fits": false,
+      "reason": "Shows flowers instead of a lush green forest on Earth."
+    },
+    {
+      "n": 4,
+      "seen": "A solar-powered aircraft flying at an angle against a clear blue sky.",
+      "fits": false,
+      "reason": "Shows an airplane instead of a plain blue sky with white clouds."
+    },
+    {
+      "n": 5,
+      "seen": "A black-and-white image showing a portion of Saturn's glowing rings and the blackness of space.",
+      "fits": false,
+      "reason": "Shows Saturn's rings instead of a distant star."
+    },
+    {
+      "n": 6,
+      "seen": "An informational chart titled 'DIFFERENT NEUTRON STAR TYPES' with text descriptions, diagrams, and labels explaining magnetars and pulsars, featuring the NASA logo in the top left corner.",
+      "fits": false,
+      "reason": "It is an informational chart with heavy text and labels, which does not fit."
+    },
+    {
+      "n": 7,
+      "seen": "An illustration of a cosmic scene featuring a large reddish-brown planet on the left and a spinning star surrounded by a bright accretion disk on the right, set against a starfield with asteroids.",
+      "fits": true,
+      "reason": "Depicts a white dwarf star system matching the narration."
+    },
+    {
+      "n": 8,
+      "seen": "The iconic Hubble Space Telescope image of the Pillars of Creation, showing towering columns of interstellar gas and dust bathed in blue light and surrounded by distant stars.",
+      "fits": true,
+      "reason": "Clearly shows stellar gas clouds in space as requested."
+    },
+    {
+      "n": 9,
+      "seen": "An educational diagram titled 'The Interstellar Medium' mapping out the heliosphere, the solar system, and the vast distances extending into interstellar space with text labels and scale bars.",
+      "fits": false,
+      "reason": "It is a heavy educational diagram with many labels and text, which does not fit."
+    },
+    {
+      "n": 10,
+      "seen": "An artistic rendering of a bright star with a powerful blue jet of gas shooting out into space, surrounded by a faint red ring and distant galaxies.",
+      "fits": true,
+      "reason": "Shows a glowing beam of light/jet shooting out into space."
+    },
+    {
+      "n": 11,
+      "seen": "A colorful space telescope image showing a bright bow shock wave of glowing red gas curved in front of a brilliant blue star, set against a background of green nebula and distant stars.",
+      "fits": true,
+      "reason": "Clearly shows a shock wave in space matching the narration."
+    },
+    {
+      "n": 12,
+      "seen": "An astrophotography image of the Ring Nebula, displaying a glowing shell of colorful gas with a bright dying star at its center against the blackness of space.",
+      "fits": true,
+      "reason": "Depicts a colorful cosmic nebula as requested."
+    },
+    {
+      "n": 13,
+      "seen": "Two technicians wearing headsets stand inside an aerospace or laboratory facility, monitoring a computer screen that displays a red data chart and graphical interfaces.",
+      "fits": false,
+      "reason": "Shows technicians at a computer instead of an astronomer working with a telescope."
+    },
+    {
+      "n": 14,
+      "seen": "A deep-field view of the universe filled with countless tiny, distant galaxies and stars of various shapes and colors scattered across the dark expanse of space.",
+      "fits": true,
+      "reason": "Shows deep space filled with stars matching the narration."
+    },
+    {
+      "n": 15,
+      "seen": "A wide-field infrared view of the Milky Way's center, dominated by a glowing red band of gas, dust clouds, and densely packed star clusters.",
+      "fits": true,
+      "reason": "Shows the Milky Way galaxy as viewed from Earth/space."
+    },
+    {
+      "n": 16,
+      "seen": "A detailed photograph of the Pleiades star cluster, showing several bright, luminous blue stars enveloped in delicate, wispy reflection nebulae.",
+      "fits": true,
+      "reason": "Clearly depicts a cluster of bright stars."
+    },
+    {
+      "n": 17,
+      "seen": "A historic refracting telescope mounted inside an observatory dome with a wooden structural roof.",
+      "fits": true,
+      "reason": "Shows an ancient astronomical observatory dome."
+    },
+    {
+      "n": 18,
+      "seen": "A composite space image showing the glowing remnant of Tycho's supernova against a starfield, with a purplish pink square artifact artifacting the lower-left area.",
+      "fits": false,
+      "reason": "Contains an obvious visual artifact/square anomaly, making it unsuitable."
+    },
+    {
+      "n": 19,
+      "seen": "The famous 'Blue Marble' photograph of Earth taken from space, showing Africa, the Indian Ocean, and swirling white cloud patterns.",
+      "fits": true,
+      "reason": "Shows planet Earth viewed from afar."
+    },
+    {
+      "n": 20,
+      "seen": "An astronomical comparison chart displaying various red supergiant stars sized relative to a scale of 1,000 solar radii, including Betelgeuse, VY Canis Majoris, and WOH G64, with text labels.",
+      "fits": false,
+      "reason": "It is an astronomical comparison chart with labels and multiple elements, which does not fit."
+    },
+    {
+      "n": 21,
+      "seen": "A close-up view of one of the ornate clock faces of Big Ben in London, featuring Roman numerals, intricate gold detailing, and text in Latin along the bottom border.",
+      "fits": false,
+      "reason": "Shows a real clock (Big Ben) rather than a conceptual clock ticking."
+    },
+    {
+      "n": 22,
+      "seen": "A cross-section view of a complex metal extrusion profile, showing an elongated hollow cavity and internal channels.",
+      "fits": false,
+      "reason": "Shows an engineering diagram/metal profile instead of cosmic particles."
+    },
+    {
+      "n": 23,
+      "seen": "A simulated image of a distant galaxy cluster glowing with a yellowish-green center, wispy pink gaseous filaments, and scattered stars.",
+      "fits": false,
+      "reason": "Shows a galaxy cluster rather than a sudden flash of light in the night sky."
+    },
+    {
+      "n": 24,
+      "seen": "An observatory dome sits atop a rocky volcanic mountain at sunset, overlooking a vast sea of rolling white clouds beneath.",
+      "fits": true,
+      "reason": "Shows a telescope/observatory environment fitting the narration."
+    },
+    {
+      "n": 25,
+      "seen": "A detailed astronomical image of a supernova remnant, displaying an intricate web of glowing pink and orange filaments laced with bright blue stars.",
+      "fits": true,
+      "reason": "Clearly shows the Vela supernova remnant nebula."
+    },
+    {
+      "n": 26,
+      "seen": "A high-resolution image of the Sun captured by a solar observatory, showing its textured, mottled surface, bright solar flares, and prominent sunspots against a black background.",
+      "fits": true,
+      "reason": "Shows our Sun shining in space."
+    },
+    {
+      "n": 27,
+      "seen": "A two-panel image showing the Geminga pulsar: the top panel is an X-ray and infrared view of a sweeping arc-shaped nebula, and the bottom panel is an artistic illustration of the pulsar and its magnetic field lines.",
+      "fits": true,
+      "reason": "Shows a glowing pulsar in a nebula."
+    },
+    {
+      "n": 28,
+      "seen": "A close-up panoramic view of a spiral galaxy's bright central bulge and dusty spiral arms peppered with stars.",
+      "fits": true,
+      "reason": "Clearly depicts spiral galaxy arms in space."
+    },
+    {
+      "n": 29,
+      "seen": "An artist's conception of a young star system featuring a central star, a dusty inner debris disk, and a massive outer ring of icy material in a deep space environment.",
+      "fits": true,
+      "reason": "Shows a stellar/binary system illustration matching the narration."
+    },
+    {
+      "n": 30,
+      "seen": "A large white rocket payload fairing on a transporter is positioned outside on a launch pad next to a red fire truck under a clear blue sky.",
+      "fits": false,
+      "reason": "Shows a rocket on a launch pad rather than a spacecraft moving away into deep space."
+    }
+  ]
+}

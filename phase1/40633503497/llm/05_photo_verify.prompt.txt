@@ -1,0 +1,104 @@
+[model] gemini-3.5-flash-lite
+[system]
+
+
+[user]
+Step 2 of a picture check for a science video. Someone looked at each picture WITHOUT knowing
+what it should show and described it. Decide for each image whether the picture fits.
+A photo fits only if the description shows it clearly depicts what it should show: not mostly text,
+not a test target, not a different planet or object than the narration is about, no watermark, nothing
+misleading. A diagram, infographic or poster with many labels or much text does NOT fit (too small to read
+in a video, and made for another purpose). A chart or graph fits ONLY if its labels show it is about exactly what the narration says (a graph
+of Mars data, or with unexplained labels like 'RHOS', does not fit a sentence about Earth or a star).
+When unsure, answer fits = false (a chart or plain card is shown instead, which is fine).
+Copy the description into "seen".
+Image 1: described as: A view of Earth from space, showing the curved horizon and a glowing cloud layer over an ocean.
+  should show: planet Earth viewed from space
+  narration: system and rip Earth's atmosphere away into space?
+Image 2: described as: A person wearing a pink long-sleeved shirt and a black cap sitting next to another person with an updo hairstyle and a white blazer, who is speaking into a microphone.
+  should show: a large theater screen showing a movie
+  narration: Do science fiction movies show a fiery blast wave sweeping our planet bare within seconds?
+Image 3: described as: Two vibrant purple morning glory flowers blooming amidst green foliage and grass.
+  should show: a lush green forest on Earth
+  narration: Why does this question matter when considering terrestrial life?
+Image 4: described as: A solar-powered aircraft flying at an angle against a clear blue sky.
+  should show: blue sky and white clouds
+  narration: How essential is our oxygen atmosphere for survival?
+Image 5: described as: A black-and-white image showing a portion of Saturn's glowing rings and the blackness of space.
+  should show: a distant star glowing in space
+  narration: In reality, a supernova is a powerful explosion marking the death of a star.
+Image 6: described as: An informational chart titled 'DIFFERENT NEUTRON STAR TYPES' with text descriptions, diagrams, and labels explaining magnetars and pulsars, featuring the NASA logo in the top left corner.
+  should show: a dense stellar core
+  narration: When a massive star runs out of fuel, its core collapses under immense gravitational force.
+Image 7: described as: An illustration of a cosmic scene featuring a large reddish-brown planet on the left and a spinning star surrounded by a bright accretion disk on the right, set against a starfield with asteroids.
+  should show: a white dwarf star in space
+  narration: Alternatively, an exploding white dwarf star undergoes runaway nuclear fusion.
+Image 8: described as: The iconic Hubble Space Telescope image of the Pillars of Creation, showing towering columns of interstellar gas and dust bathed in blue light and surrounded by distant stars.
+  should show: stellar gas clouds in space
+  narration: These stellar detonations expel several solar masses
+Image 9: described as: An educational diagram titled 'The Interstellar Medium' mapping out the heliosphere, the solar system, and the vast distances extending into interstellar space with text labels and scale bars.
+  should show: interstellar gas and dust
+  narration: of matter into the surrounding interstellar medium.
+Image 10: described as: An artistic rendering of a bright star with a powerful blue jet of gas shooting out into space, surrounded by a faint red ring and distant galaxies.
+  should show: a glowing beam of light
+  narration: The ejected material travels outward at speeds reaching several per cent of the speed of light.
+Image 11: described as: A colorful space telescope image showing a bright bow shock wave of glowing red gas curved in front of a brilliant blue star, set against a background of green nebula and distant stars.
+  should show: a shock wave in space
+  narration: This creates an expanding shock wave that sweeps
+Image 12: described as: An astrophotography image of the Ring Nebula, displaying a glowing shell of colorful gas with a bright dying star at its center against the blackness of space.
+  should show: a colorful cosmic nebula
+  narration: up a shell of interstellar gas and dust.
+Image 13: described as: Two technicians wearing headsets stand inside an aerospace or laboratory facility, monitoring a computer screen that displays a red data chart and graphical interfaces.
+  should show: an astronomer working with a telescope
+  narration: Astronomers define a near-Earth supernova as one
+Image 14: described as: A deep-field view of the universe filled with countless tiny, distant galaxies and stars of various shapes and colors scattered across the dark expanse of space.
+  should show: deep space filled with stars
+  narration: occurring within roughly 33 to 978 light-years.
+Image 15: described as: A wide-field infrared view of the Milky Way's center, dominated by a glowing red band of gas, dust clouds, and densely packed star clusters.
+  should show: the Milky Way galaxy viewed from Earth
+  narration: Currently, our galaxy holds up to 14
+Image 16: described as: A detailed photograph of the Pleiades star cluster, showing several bright, luminous blue stars enveloped in delicate, wispy reflection nebulae.
+  should show: a cluster of bright stars
+  narration: potential near-Earth supernovas inside that broader distance.
+Image 17: described as: A historic refracting telescope mounted inside an observatory dome with a wooden structural roof.
+  should show: ancient astronomical observatory dome
+  narration: A few famous stars located within several hundred light-years could explode in just 1,000 years.
+Image 18: described as: A composite space image showing the glowing remnant of Tycho's supernova against a starfield, with a purplish pink square artifact artifacting the lower-left area.
+  should show: a bright exploding star
+  narration: Although these dying stars will shine brilliantly, they
+Image 19: described as: The famous 'Blue Marble' photograph of Earth taken from space, showing Africa, the Indian Ocean, and swirling white cloud patterns.
+  should show: planet Earth viewed from afar
+  narration: pose little direct threat to our planet.
+Image 20: described as: An astronomical comparison chart displaying various red supergiant stars sized relative to a scale of 1,000 solar radii, including Betelgeuse, VY Canis Majoris, and WOH G64, with text labels.
+  should show: a giant red star in space
+  narration: What about the famous red supergiant star Betelgeuse?
+Image 21: described as: A close-up view of one of the ornate clock faces of Big Ben in London, featuring Roman numerals, intricate gold detailing, and text in Latin along the bottom border.
+  should show: a clock ticking in a conceptual setting
+  narration: as 1.5 million years to explode as a supernova.
+Image 22: described as: A cross-section view of a complex metal extrusion profile, showing an elongated hollow cavity and internal channels.
+  should show: a stream of cosmic particles
+  narration: When it detonates, its particle stream will reach
+Image 23: described as: A simulated image of a distant galaxy cluster glowing with a yellowish-green center, wispy pink gaseous filaments, and scattered stars.
+  should show: a flash of light in the night sky
+  narration: Earth about 100,000 years after the initial light.
+Image 24: described as: An observatory dome sits atop a rocky volcanic mountain at sunset, overlooking a vast sea of rolling white clouds beneath.
+  should show: a telescope pointed at the night sky
+  narration: Looking back in time, other relatively nearby stars have exploded in Earth's past.
+Image 25: described as: A detailed astronomical image of a supernova remnant, displaying an intricate web of glowing pink and orange filaments laced with bright blue stars.
+  should show: the Vela supernova remnant nebula
+  narration: The Vela supernova exploded about 12,000 years ago
+Image 26: described as: A high-resolution image of the Sun captured by a solar observatory, showing its textured, mottled surface, bright solar flares, and prominent sunspots against a black background.
+  should show: our Sun shining in space
+  narration: roughly 800 light-years away from our Sun.
+Image 27: described as: A two-panel image showing the Geminga pulsar: the top panel is an X-ray and infrared view of a sweeping arc-shaped nebula, and the bottom panel is an artistic illustration of the pulsar and its magnetic field lines.
+  should show: a glowing pulsar in a nebula
+  narration: Another explosion called Geminga occurred roughly 300,000 years
+Image 28: described as: A close-up panoramic view of a spiral galaxy's bright central bulge and dusty spiral arms peppered with stars.
+  should show: spiral galaxy arms in space
+  narration: ago at a distance of 550 light-years.
+Image 29: described as: An artist's conception of a young star system featuring a central star, a dusty inner debris disk, and a massive outer ring of icy material in a deep space environment.
+  should show: a binary star system illustration
+  narration: The closest known white dwarf candidate, IK Pegasi,
+Image 30: described as: A large white rocket payload fairing on a transporter is positioned outside on a launch pad next to a red fire truck under a clear blue sky.
+  should show: a spacecraft moving away into the distance
+  narration: is currently moving away to a safe distance.
