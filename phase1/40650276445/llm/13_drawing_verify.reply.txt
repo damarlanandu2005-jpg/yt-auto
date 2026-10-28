@@ -1,0 +1,118 @@
+{
+  "checks": [
+    {
+      "n": 1,
+      "seen": "A galaxy with swirling rings and a red center is shown against a dark black background, along with a few scattered stars and a tiny cross shape.",
+      "fits": true,
+      "reason": "The drawing clearly shows a galaxy, which matches the required object for a vast cosmic scale."
+    },
+    {
+      "n": 2,
+      "seen": "An angled galaxy with a red center is shown with small explosions near its edge, and a white cloud formation with falling projectiles appears below it on a black background.",
+      "fits": true,
+      "reason": "Shows a galaxy and a cloud formation that can represent a cosmic dust cloud."
+    },
+    {
+      "n": 3,
+      "seen": "A narrow diagonal beam of light with a small red circle at its upper left end is shown on a black background, with tiny particles scattered within the beam.",
+      "fits": true,
+      "reason": "Shows a beam of light traveling through space."
+    },
+    {
+      "n": 4,
+      "seen": "Two spiral galaxies with bright white cores are visible against a black background, accompanied by a few scattered distant stars.",
+      "fits": true,
+      "reason": "Shows two galaxies, fitting the context of space and light traveling between galaxies."
+    },
+    {
+      "n": 5,
+      "seen": "A red-centered swirling celestial structure with multiple orbital rings is shown floating above a snow-covered mountain peak against a black background.",
+      "fits": false,
+      "reason": "Includes a snow-covered mountain peak which does not belong in deep space or a cosmic void."
+    },
+    {
+      "n": 6,
+      "seen": "A black background shows several glowing circular celestial objects, including one large detailed planetary structure with a red center in the upper right.",
+      "fits": true,
+      "reason": "Shows celestial objects/galaxies."
+    },
+    {
+      "n": 7,
+      "seen": "Two large red-centered planetary structures with intricate ring systems are linked by thin curved pathways against a black background.",
+      "fits": true,
+      "reason": "Shows two galaxies drifting/linked, representing cosmic expansion."
+    },
+    {
+      "n": 8,
+      "seen": "A white architectural grid or building floor plan outline is shown on a black background, with a small section highlighted in red near the center.",
+      "fits": false,
+      "reason": "Looks like an architectural grid or floor plan rather than a cosmic grid."
+    },
+    {
+      "n": 9,
+      "seen": "A galaxy with multiple white rings and a bright center is shown on a black background, accompanied by a red stylized arrow symbol pointing towards it from the upper left.",
+      "fits": false,
+      "reason": "Contains a stylized arrow symbol, which resembles a diagram or logo."
+    },
+    {
+      "n": 10,
+      "seen": "An angled galaxy with a glowing center is shown on a black background, surrounded by radiating white streaks and several small distant stars.",
+      "fits": true,
+      "reason": "Shows a galaxy with surrounding space lines."
+    },
+    {
+      "n": 11,
+      "seen": "A series of nested square frames with striped textures create a tunnel-like optical illusion on a black background, with an L-shaped line drawn in the upper right.",
+      "fits": false,
+      "reason": "Shows abstract optical illusion frames instead of a growing cosmic scale factor."
+    },
+    {
+      "n": 12,
+      "seen": "A broad diagonal band of white light and streaks extends across a completely black background.",
+      "fits": true,
+      "reason": "Clearly shows a light beam."
+    },
+    {
+      "n": 13,
+      "seen": "A collection of various stylized stars and glowing celestial bodies, some with red accents, is scattered across a dark black background.",
+      "fits": true,
+      "reason": "Shows a cluster of stars/galaxies."
+    },
+    {
+      "n": 14,
+      "seen": "A dense cluster of glowing white stars and a single small red dot are visible against a dark black background.",
+      "fits": true,
+      "reason": "Shows a distant star cluster."
+    },
+    {
+      "n": 15,
+      "seen": "Several complex ringed planets, glowing spheres, and curved cosmic structures are floating against a dark black background.",
+      "fits": true,
+      "reason": "Shows interacting/multiple galaxies and cosmic structures."
+    },
+    {
+      "n": 16,
+      "seen": "A close-up black and white line drawing of a refracting telescope mounted on a tripod against a black background.",
+      "fits": true,
+      "reason": "Shows a scientific telescope clearly."
+    },
+    {
+      "n": 17,
+      "seen": "A futuristic command center control room features multiple monitors displaying abstract landscape lines, several office chairs, and control consoles against a black background.",
+      "fits": true,
+      "reason": "Shows an observatory control room."
+    },
+    {
+      "n": 18,
+      "seen": "A dense, asymmetrical cluster of glowing white dots and larger spheres forms a nebula-like structure against a dark black background.",
+      "fits": true,
+      "reason": "Shows a distant galaxy cluster or nebula."
+    },
+    {
+      "n": 19,
+      "seen": "Several abstract white diagonal lines and strokes intersect against a dark gray background.",
+      "fits": false,
+      "reason": "Shows only abstract lines and strokes with no clearly recognisable space fabric or object."
+    }
+  ]
+}

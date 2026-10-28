@@ -1,0 +1,105 @@
+{
+ "load_s": 10.3,
+ "torch": "2.14.1+cpu",
+ "diffusers": "0.42.1",
+ "seconds": {
+  "v027": 78.3
+ },
+ "skipped_for_time": [],
+ "total_s": 88.6,
+ "asked": 19,
+ "drawn": 19,
+ "cloud": {
+  "backend": "cloudflare",
+  "seconds": {
+   "v004": 1.2,
+   "v006": 1.4,
+   "v007": 1.5,
+   "v009": 1.7,
+   "v012": 1.4,
+   "v015": 1.4,
+   "v018": 1.4,
+   "v020": 1.4,
+   "v022": 1.4,
+   "v024": 1.5,
+   "v029": 1.5,
+   "v003": 1.4,
+   "v017": 1.3,
+   "v021": 1.9,
+   "v023": 1.7,
+   "v028": 1.4,
+   "v042": 1.7,
+   "v072": 6.0
+  },
+  "errors": [
+   "v027: HTTP 400 b'{\"errors\":[{\"message\":\"AiError: AiError: Input prompt contains NSFW content. (acf19913-008f-4058-ad6f-f9ab776354dd)\",\"code\":8007}],\"success\":false,\"result\":{},\"messages\":[]}'"
+  ],
+  "drawn": 18
+ },
+ "drawings_seen": {
+  "v004": "A galaxy with swirling rings and a red center is shown against a dark black background, along with a few scattered stars and a tiny cross shape.",
+  "v006": "An angled galaxy with a red center is shown with small explosions near its edge, and a white cloud formation with falling projectiles appears below it on a black background.",
+  "v007": "A narrow diagonal beam of light with a small red circle at its upper left end is shown on a black background, with tiny particles scattered within the beam.",
+  "v009": "Two spiral galaxies with bright white cores are visible against a black background, accompanied by a few scattered distant stars.",
+  "v012": "A red-centered swirling celestial structure with multiple orbital rings is shown floating above a snow-covered mountain peak against a black background.",
+  "v015": "A black background shows several glowing circular celestial objects, including one large detailed planetary structure with a red center in the upper right.",
+  "v018": "Two large red-centered planetary structures with intricate ring systems are linked by thin curved pathways against a black background.",
+  "v020": "A white architectural grid or building floor plan outline is shown on a black background, with a small section highlighted in red near the center.",
+  "v022": "A galaxy with multiple white rings and a bright center is shown on a black background, accompanied by a red stylized arrow symbol pointing towards it from the upper left.",
+  "v024": "An angled galaxy with a glowing center is shown on a black background, surrounded by radiating white streaks and several small distant stars.",
+  "v029": "A series of nested square frames with striped textures create a tunnel-like optical illusion on a black background, with an L-shaped line drawn in the upper right.",
+  "v003": "A broad diagonal band of white light and streaks extends across a completely black background.",
+  "v017": "A collection of various stylized stars and glowing celestial bodies, some with red accents, is scattered across a dark black background.",
+  "v021": "A dense cluster of glowing white stars and a single small red dot are visible against a dark black background.",
+  "v023": "Several complex ringed planets, glowing spheres, and curved cosmic structures are floating against a dark black background.",
+  "v028": "A close-up black and white line drawing of a refracting telescope mounted on a tripod against a black background.",
+  "v042": "A futuristic command center control room features multiple monitors displaying abstract landscape lines, several office chairs, and control consoles against a black background.",
+  "v072": "A dense, asymmetrical cluster of glowing white dots and larger spheres forms a nebula-like structure against a dark black background.",
+  "v027": "Several abstract white diagonal lines and strokes intersect against a dark gray background."
+ },
+ "drawings_rejected": [
+  {
+   "id": "v012",
+   "title": "a dark cosmic void at the edge of the universe",
+   "seen": "A red-centered swirling celestial structure with multiple orbital rings is shown floating above a snow-covered mountain peak against a black background.",
+   "reason": "Includes a snow-covered mountain peak which does not belong in deep space or a cosmic void."
+  },
+  {
+   "id": "v020",
+   "title": "a grid expanding in size over time",
+   "seen": "A white architectural grid or building floor plan outline is shown on a black background, with a small section highlighted in red near the center.",
+   "reason": "Looks like an architectural grid or floor plan rather than a cosmic grid."
+  },
+  {
+   "id": "v022",
+   "title": "a single galaxy with a velocity vector arrow",
+   "seen": "A galaxy with multiple white rings and a bright center is shown on a black background, accompanied by a red stylized arrow symbol pointing towards it from the upper left.",
+   "reason": "Contains a stylized arrow symbol, which resembles a diagram or logo."
+  },
+  {
+   "id": "v029",
+   "title": "a grid expanding larger and larger in sequential steps",
+   "seen": "A series of nested square frames with striped textures create a tunnel-like optical illusion on a black background, with an L-shaped line drawn in the upper right.",
+   "reason": "Shows abstract optical illusion frames instead of a growing cosmic scale factor."
+  },
+  {
+   "id": "v027",
+   "title": "a stretchy rubber fabric sheet representing space",
+   "seen": "Several abstract white diagonal lines and strokes intersect against a dark gray background.",
+   "reason": "Shows only abstract lines and strokes with no clearly recognisable space fabric or object."
+  }
+ ],
+ "drawings_used": 14,
+ "steps": 0,
+ "steps_without_picture": [],
+ "cards_to_pictures": [
+  "v010",
+  "v031",
+  "v037",
+  "v045",
+  "v048",
+  "v057",
+  "v061",
+  "v062"
+ ]
+}

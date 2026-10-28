@@ -1,0 +1,72 @@
+[model] gemini-3.5-flash-lite
+[system]
+
+
+[user]
+Step 2 of a picture check for a science video. Someone looked at each picture WITHOUT knowing
+what it should show and described it. Decide for each image whether the picture fits.
+The pictures are ink drawings made by an AI image model, which often misses. A drawing fits if a
+viewer hearing the narration would recognise its main object(s) (a star, a planet, a blast, molecules, DNA,
+fish...). It does NOT need to show the action or process (collapsing, moving, changing): a still picture of
+the right thing is enough. It does NOT fit if it is only shapes or texture with no recognisable object, shows
+a different thing (a volcano or canyon for the atmosphere, a red diamond for a star), has text or labels, looks
+like a logo/emblem/badge/flag, or has deformed bodies.
+When unsure, answer fits = false (a chart or plain card is shown instead, which is fine).
+Copy the description into "seen".
+Image 1: described as: A galaxy with swirling rings and a red center is shown against a dark black background, along with a few scattered stars and a tiny cross shape.
+  should show: a glowing galaxy far away in deep space
+  narration: vast cosmic scale sounds like an impossible contradiction.
+Image 2: described as: An angled galaxy with a red center is shown with small explosions near its edge, and a white cloud formation with falling projectiles appears below it on a black background.
+  should show: a distant galaxy behind a dark cosmic dust cloud
+  narration: Objects beyond this physical boundary cannot be detected yet because
+Image 3: described as: A narrow diagonal beam of light with a small red circle at its upper left end is shown on a black background, with tiny particles scattered within the beam.
+  should show: a beam of light traveling through space toward Earth
+  narration: their light has not had enough time to reach Earth.
+Image 4: described as: Two spiral galaxies with bright white cores are visible against a black background, accompanied by a few scattered distant stars.
+  should show: a grid of space stretching apart between two galaxies
+  narration: How does space stretch while light is actively traveling across the universe?
+Image 5: described as: A red-centered swirling celestial structure with multiple orbital rings is shown floating above a snow-covered mountain peak against a black background.
+  should show: a dark cosmic void at the edge of the universe
+  narration: And what mysterious regions lie forever beyond the edge of our current observable cosmos?
+Image 6: described as: A black background shows several glowing circular celestial objects, including one large detailed planetary structure with a red center in the upper right.
+  should show: galaxies flying through an empty dark room
+  narration: In that false mental picture, galaxies are racing through a fixed, static space like cosmic shrapnel.
+Image 7: described as: Two large red-centered planetary structures with intricate ring systems are linked by thin curved pathways against a black background.
+  should show: two galaxies drifting apart as space expands between them
+  narration: Cosmic expansion is not galaxies moving through a pre-existing empty space.
+Image 8: described as: A white architectural grid or building floor plan outline is shown on a black background, with a small section highlighted in red near the center.
+  should show: a grid expanding in size over time
+  narration: increase in distance between cosmic objects over time.
+Image 9: described as: A galaxy with multiple white rings and a bright center is shown on a black background, accompanied by a red stylized arrow symbol pointing towards it from the upper left.
+  should show: a single galaxy with a velocity vector arrow
+  narration: The velocity of a galaxy relative to its local comoving grid is called its peculiar velocity.
+Image 10: described as: An angled galaxy with a glowing center is shown on a black background, surrounded by radiating white streaks and several small distant stars.
+  should show: a galaxy surrounded by expanding space lines
+  narration: So how should we picture the movement of galaxies as the universe expands?
+Image 11: described as: A series of nested square frames with striped textures create a tunnel-like optical illusion on a black background, with an L-shaped line drawn in the upper right.
+  should show: a grid expanding larger and larger in sequential steps
+  narration: The scale factor grows over time, describing how physical distances expand across the universe.
+Image 12: described as: A broad diagonal band of white light and streaks extends across a completely black background.
+  should show: a light beam
+  narration: If light travels at a constant speed, this
+Image 13: described as: A collection of various stylized stars and glowing celestial bodies, some with red accents, is scattered across a dark black background.
+  should show: a cluster of galaxies
+  narration: But this common picture of cosmic expansion is completely wrong.
+Image 14: described as: A dense cluster of glowing white stars and a single small red dot are visible against a dark black background.
+  should show: a distant star cluster
+  narration: Most galaxies are nearly at rest relative to their local comoving spatial coordinates.
+Image 15: described as: Several complex ringed planets, glowing spheres, and curved cosmic structures are floating against a dark black background.
+  should show: interacting galaxies
+  narration: These local peculiar velocities are caused mostly by gravity and are usually quite small.
+Image 16: described as: A close-up black and white line drawing of a refracting telescope mounted on a tripod against a black background.
+  should show: a scientific telescope
+  narration: Mathematically, cosmologists track this growth using a value called the cosmic scale factor.
+Image 17: described as: A futuristic command center control room features multiple monitors displaying abstract landscape lines, several office chairs, and control consoles against a black background.
+  should show: an observatory control room
+  narration: A local comoving observer will always measure the speed of light as the standard constant speed.
+Image 18: described as: A dense, asymmetrical cluster of glowing white dots and larger spheres forms a nebula-like structure against a dark black background.
+  should show: a distant galaxy cluster
+  narration: Every object within this sphere is visible because its light had time to travel to Earth.
+Image 19: described as: Several abstract white diagonal lines and strokes intersect against a dark gray background.
+  should show: a stretchy rubber fabric sheet representing space
+  narration: expanding fabric rather than a rigid stage.

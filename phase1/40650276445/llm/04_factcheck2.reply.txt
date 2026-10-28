@@ -1,0 +1,58 @@
+{
+  "results": [
+    {
+      "id": "s01.03",
+      "verdict": "supported",
+      "problem": "",
+      "fixed_text": ""
+    },
+    {
+      "id": "s01.04",
+      "verdict": "supported",
+      "problem": "",
+      "fixed_text": ""
+    },
+    {
+      "id": "s02.10",
+      "verdict": "supported",
+      "problem": "",
+      "fixed_text": ""
+    },
+    {
+      "id": "s02.11",
+      "verdict": "supported",
+      "problem": "",
+      "fixed_text": ""
+    },
+    {
+      "id": "s04.09",
+      "verdict": "unsupported",
+      "problem": "the cited passages do not state that cosmologists define light-travel distance as the travel time of a photon multiplied by the speed of light",
+      "fixed_text": "The light-travel distance to the observable universe's edge equals the universe's age times the speed of light."
+    },
+    {
+      "id": "s05.02",
+      "verdict": "supported",
+      "problem": "",
+      "fixed_text": ""
+    },
+    {
+      "id": "s05.05",
+      "verdict": "supported",
+      "problem": "",
+      "fixed_text": ""
+    },
+    {
+      "id": "s06.05",
+      "verdict": "supported",
+      "problem": "",
+      "fixed_text": ""
+    },
+    {
+      "id": "s03.06",
+      "verdict": "partly",
+      "problem": "sources conflict on the timeframe of recombination, with one passage giving about 380,000 years after the Big Bang and another giving approximately 379,000 years old",
+      "fixed_text": "Around 379,000 to 380,000 years after the Big Bang, recombination allowed neutral hydrogen atoms to form."
+    }
+  ]
+}

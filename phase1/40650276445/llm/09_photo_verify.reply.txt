@@ -1,0 +1,118 @@
+{
+  "checks": [
+    {
+      "n": 1,
+      "seen": "A person wearing a white lab coat, hair net, and safety goggles closely inspects the inside of a metal vacuum chamber with an open circular door.",
+      "fits": false,
+      "reason": "Narration is about light speed, but image shows a person inspecting a vacuum chamber."
+    },
+    {
+      "n": 2,
+      "seen": "A deep-field space telescope image displaying countless distant galaxies, glowing stars with bright diffraction spikes, and distorted arcs from gravitational lensing against a black background.",
+      "fits": true,
+      "reason": "Shows a deep space galaxy as required by the narration about looking out into space."
+    },
+    {
+      "n": 3,
+      "seen": "A horizontal view of a spiral galaxy seen edge-on, featuring a bright central core, detailed dusty spiral arms, and numerous scattered stars against a black space backdrop.",
+      "fits": true,
+      "reason": "Shows a spiral galaxy matching the narration context."
+    },
+    {
+      "n": 4,
+      "seen": "A telescopic image titled 'The Coma Cluster of galaxies' at the top, showing a dense star field filled with numerous faint galaxies against a dark background, with a small NASA/ESA logo and attribution text at the bottom center.",
+      "fits": false,
+      "reason": "Contains text and a logo (title and attribution)."
+    },
+    {
+      "n": 5,
+      "seen": "A black-and-white portrait of physicist Albert Einstein looking directly at the camera with characteristic unruly white hair and a textured sweater.",
+      "fits": true,
+      "reason": "Shows Albert Einstein, matching the narration about general relativity."
+    },
+    {
+      "n": 6,
+      "seen": "A stylized space scene showing the curved horizon of a glowing blue planet or cloud layer above a dense field of stars and a distant glowing star or spacecraft.",
+      "fits": false,
+      "reason": "Does not clearly depict a distant star cluster as required."
+    },
+    {
+      "n": 7,
+      "seen": "An astronomical image against a star-filled background, featuring a bright spiral galaxy on the upper right, a distorted galaxy on the lower left, and several bright yellow circular markers.",
+      "fits": false,
+      "reason": "Contains unexplained circular markers overlaid on the image."
+    },
+    {
+      "n": 8,
+      "seen": "Two researchers wearing headphones work inside a facility with large machinery, facing a computer monitor that displays a red-toned astronomical image with circular data points.",
+      "fits": false,
+      "reason": "Shows researchers rather than a scientific telescope directly."
+    },
+    {
+      "n": 9,
+      "seen": "A NASA slide titled 'LIBS Plasmas In Different Atmospheres' at the top, comparing two circular test chamber views labeled 'Terrestrial' with a blue plasma spark and 'Mars' with a larger green and blue plasma flash.",
+      "fits": false,
+      "reason": "It is a presentation slide with text and labels."
+    },
+    {
+      "n": 10,
+      "seen": "An oval-shaped, multicolored cosmic microwave background map showing tiny temperature fluctuations across the early universe in shades of blue, green, yellow, and red.",
+      "fits": true,
+      "reason": "Shows the cosmic microwave background map as requested."
+    },
+    {
+      "n": 11,
+      "seen": "A dimly lit control room with multiple computer screens displaying data and two people working at desks with large wooden consoles and keyboards.",
+      "fits": false,
+      "reason": "Narration is about the speed of light, but image shows a control room."
+    },
+    {
+      "n": 12,
+      "seen": "A view of planet Earth from space, showing the swirling white cloud patterns, blue oceans, and parts of Africa and the Middle East against a black background.",
+      "fits": true,
+      "reason": "Shows planet Earth viewed from space, fitting the narration."
+    },
+    {
+      "n": 13,
+      "seen": "A narrow field view of an interacting galaxy pair forming a curved shape resembling a question mark, surrounded by glowing green stars and a dark space background.",
+      "fits": true,
+      "reason": "Shows a pair of distant galaxies as required."
+    },
+    {
+      "n": 14,
+      "seen": "A dense deep-space Hubble Ultra Deep Field image filled with thousands of tiny, multicolored distant galaxies and stars scattered across the black void.",
+      "fits": true,
+      "reason": "Shows a deep field galaxy survey matching the narration."
+    },
+    {
+      "n": 15,
+      "seen": "An aerial shot of a sandy beach closely packed with rows of white hooded beach chairs facing outward, with a few people walking among them.",
+      "fits": true,
+      "reason": "Shows a sandy beach, directly illustrating the narration about beach sand grains."
+    },
+    {
+      "n": 16,
+      "seen": "A colorful astronomical nebula photograph showing glowing clouds of gas and dust in shades of red, green, and orange, illuminated by embedded bright young stars.",
+      "fits": true,
+      "reason": "Shows a star nursery nebula matching the narration about ordinary matter."
+    },
+    {
+      "n": 17,
+      "seen": "A dense star cluster image showing countless bright turquoise-blue stars glittering against a black background.",
+      "fits": false,
+      "reason": "Should show a distant galaxy cluster, but this is a star cluster."
+    },
+    {
+      "n": 18,
+      "seen": "A computer simulation of cosmic web filaments showing branching white threads of galaxy clusters against a dark space background, with a small red dot highlighting a specific location.",
+      "fits": true,
+      "reason": "Shows a local galaxy supercluster simulation fitting the narration."
+    },
+    {
+      "n": 19,
+      "seen": "A wide-angle nighttime panoramic view of numerous large radio telescope dishes silhouetted against a starry night sky with the glowing Milky Way and a bright moon.",
+      "fits": true,
+      "reason": "Shows the starry night sky as required by the narration."
+    }
+  ]
+}

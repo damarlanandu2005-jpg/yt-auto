@@ -1,0 +1,1 @@
+{"sentences":[{"id":"s03.06","text":"Around 380,000 years following the Big Bang, recombination allowed neutral hydrogen atoms to form."}]}

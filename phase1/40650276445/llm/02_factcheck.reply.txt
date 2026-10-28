@@ -1,0 +1,454 @@
+{
+  "results": [
+    {
+      "id": "s01.01",
+      "verdict": "supported",
+      "problem": "",
+      "fixed_text": ""
+    },
+    {
+      "id": "s01.02",
+      "verdict": "supported",
+      "problem": "",
+      "fixed_text": ""
+    },
+    {
+      "id": "s01.03",
+      "verdict": "unsupported",
+      "problem": "Framing sentence states a checkable claim instead of being a pure question or transition.",
+      "fixed_text": "So why does this cosmic puzzle matter so much when we look out into space?"
+    },
+    {
+      "id": "s01.04",
+      "verdict": "partly",
+      "problem": "Objects beyond the boundary emit light rather than being dark, and light from additional regions may reach Earth in the future.",
+      "fixed_text": "Objects beyond this physical boundary cannot be detected yet because their light has not had enough time to reach Earth."
+    },
+    {
+      "id": "s01.05",
+      "verdict": "supported",
+      "problem": "",
+      "fixed_text": ""
+    },
+    {
+      "id": "s01.06",
+      "verdict": "supported",
+      "problem": "",
+      "fixed_text": ""
+    },
+    {
+      "id": "s01.07",
+      "verdict": "supported",
+      "problem": "",
+      "fixed_text": ""
+    },
+    {
+      "id": "s01.08",
+      "verdict": "supported",
+      "problem": "",
+      "fixed_text": ""
+    },
+    {
+      "id": "s01.09",
+      "verdict": "supported",
+      "problem": "",
+      "fixed_text": ""
+    },
+    {
+      "id": "s02.01",
+      "verdict": "supported",
+      "problem": "",
+      "fixed_text": ""
+    },
+    {
+      "id": "s02.02",
+      "verdict": "supported",
+      "problem": "",
+      "fixed_text": ""
+    },
+    {
+      "id": "s02.03",
+      "verdict": "supported",
+      "problem": "",
+      "fixed_text": ""
+    },
+    {
+      "id": "s02.04",
+      "verdict": "supported",
+      "problem": "",
+      "fixed_text": ""
+    },
+    {
+      "id": "s02.05",
+      "verdict": "supported",
+      "problem": "",
+      "fixed_text": ""
+    },
+    {
+      "id": "s02.06",
+      "verdict": "supported",
+      "problem": "",
+      "fixed_text": ""
+    },
+    {
+      "id": "s02.07",
+      "verdict": "supported",
+      "problem": "",
+      "fixed_text": ""
+    },
+    {
+      "id": "s02.08",
+      "verdict": "supported",
+      "problem": "",
+      "fixed_text": ""
+    },
+    {
+      "id": "s02.09",
+      "verdict": "supported",
+      "problem": "",
+      "fixed_text": ""
+    },
+    {
+      "id": "s02.10",
+      "verdict": "unsupported",
+      "problem": "Framing sentence states a factual assertion instead of being a pure question or transition.",
+      "fixed_text": "So how should we picture the movement of galaxies as the universe expands?"
+    },
+    {
+      "id": "s02.11",
+      "verdict": "unsupported",
+      "problem": "Passage A2.40 states that describing cosmic expansion as space itself stretching is an erroneous argument.",
+      "fixed_text": "Cosmic expansion is uniform across the observable universe, meaning the distance between any two galaxies increases over time by the same factor."
+    },
+    {
+      "id": "s02.12",
+      "verdict": "supported",
+      "problem": "",
+      "fixed_text": ""
+    },
+    {
+      "id": "s03.01",
+      "verdict": "supported",
+      "problem": "",
+      "fixed_text": ""
+    },
+    {
+      "id": "s03.02",
+      "verdict": "supported",
+      "problem": "",
+      "fixed_text": ""
+    },
+    {
+      "id": "s03.03",
+      "verdict": "supported",
+      "problem": "",
+      "fixed_text": ""
+    },
+    {
+      "id": "s03.04",
+      "verdict": "supported",
+      "problem": "",
+      "fixed_text": ""
+    },
+    {
+      "id": "s03.05",
+      "verdict": "supported",
+      "problem": "",
+      "fixed_text": ""
+    },
+    {
+      "id": "s03.06",
+      "verdict": "supported",
+      "problem": "",
+      "fixed_text": ""
+    },
+    {
+      "id": "s03.07",
+      "verdict": "supported",
+      "problem": "",
+      "fixed_text": ""
+    },
+    {
+      "id": "s03.08",
+      "verdict": "supported",
+      "problem": "",
+      "fixed_text": ""
+    },
+    {
+      "id": "s03.09",
+      "verdict": "supported",
+      "problem": "",
+      "fixed_text": ""
+    },
+    {
+      "id": "s03.10",
+      "verdict": "supported",
+      "problem": "",
+      "fixed_text": ""
+    },
+    {
+      "id": "s03.11",
+      "verdict": "supported",
+      "problem": "",
+      "fixed_text": ""
+    },
+    {
+      "id": "s04.01",
+      "verdict": "supported",
+      "problem": "",
+      "fixed_text": ""
+    },
+    {
+      "id": "s04.02",
+      "verdict": "supported",
+      "problem": "",
+      "fixed_text": ""
+    },
+    {
+      "id": "s04.03",
+      "verdict": "supported",
+      "problem": "",
+      "fixed_text": ""
+    },
+    {
+      "id": "s04.04",
+      "verdict": "supported",
+      "problem": "",
+      "fixed_text": ""
+    },
+    {
+      "id": "s04.05",
+      "verdict": "supported",
+      "problem": "",
+      "fixed_text": ""
+    },
+    {
+      "id": "s04.06",
+      "verdict": "supported",
+      "problem": "",
+      "fixed_text": ""
+    },
+    {
+      "id": "s04.07",
+      "verdict": "supported",
+      "problem": "",
+      "fixed_text": ""
+    },
+    {
+      "id": "s04.08",
+      "verdict": "supported",
+      "problem": "",
+      "fixed_text": ""
+    },
+    {
+      "id": "s04.09",
+      "verdict": "partly",
+      "problem": "Light-travel distance is the travel time multiplied by the speed of light, not the travel time itself.",
+      "fixed_text": "Cosmologists define light-travel distance as the travel time of a photon multiplied by the speed of light."
+    },
+    {
+      "id": "s04.10",
+      "verdict": "supported",
+      "problem": "",
+      "fixed_text": ""
+    },
+    {
+      "id": "s04.11",
+      "verdict": "supported",
+      "problem": "",
+      "fixed_text": ""
+    },
+    {
+      "id": "s05.01",
+      "verdict": "supported",
+      "problem": "",
+      "fixed_text": ""
+    },
+    {
+      "id": "s05.02",
+      "verdict": "partly",
+      "problem": "The matter that emitted the cosmic microwave background is calculated to be about 45.7 billion light-years (or about 46 billion light-years) away, whereas 46.5 billion light-years is the radius of the observable universe.",
+      "fixed_text": "Today, that matter is calculated to be about 46 billion light-years away from Earth."
+    },
+    {
+      "id": "s05.03",
+      "verdict": "supported",
+      "problem": "",
+      "fixed_text": ""
+    },
+    {
+      "id": "s05.04",
+      "verdict": "supported",
+      "problem": "",
+      "fixed_text": ""
+    },
+    {
+      "id": "s05.05",
+      "verdict": "partly",
+      "problem": "The passages state the light-travel distance is 13.8 billion light-years, not an exact value.",
+      "fixed_text": "That calculation yields a light-travel distance of about 13.8 billion light-years."
+    },
+    {
+      "id": "s05.06",
+      "verdict": "supported",
+      "problem": "",
+      "fixed_text": ""
+    },
+    {
+      "id": "s05.07",
+      "verdict": "supported",
+      "problem": "",
+      "fixed_text": ""
+    },
+    {
+      "id": "s05.08",
+      "verdict": "supported",
+      "problem": "",
+      "fixed_text": ""
+    },
+    {
+      "id": "s05.09",
+      "verdict": "supported",
+      "problem": "",
+      "fixed_text": ""
+    },
+    {
+      "id": "s05.10",
+      "verdict": "supported",
+      "problem": "",
+      "fixed_text": ""
+    },
+    {
+      "id": "s05.11",
+      "verdict": "supported",
+      "problem": "",
+      "fixed_text": ""
+    },
+    {
+      "id": "s06.01",
+      "verdict": "supported",
+      "problem": "",
+      "fixed_text": ""
+    },
+    {
+      "id": "s06.02",
+      "verdict": "supported",
+      "problem": "",
+      "fixed_text": ""
+    },
+    {
+      "id": "s06.03",
+      "verdict": "supported",
+      "problem": "",
+      "fixed_text": ""
+    },
+    {
+      "id": "s06.04",
+      "verdict": "supported",
+      "problem": "",
+      "fixed_text": ""
+    },
+    {
+      "id": "s06.05",
+      "verdict": "partly",
+      "problem": "Passage A1.16 specifies \"as many as\" an estimated 2 trillion galaxies and notes other estimates are in the hundreds of billions.",
+      "fixed_text": "This enormous region of space contains as many as an estimated 2 trillion galaxies."
+    },
+    {
+      "id": "s06.06",
+      "verdict": "supported",
+      "problem": "",
+      "fixed_text": ""
+    },
+    {
+      "id": "s06.07",
+      "verdict": "supported",
+      "problem": "",
+      "fixed_text": ""
+    },
+    {
+      "id": "s06.08",
+      "verdict": "supported",
+      "problem": "",
+      "fixed_text": ""
+    },
+    {
+      "id": "s06.09",
+      "verdict": "supported",
+      "problem": "",
+      "fixed_text": ""
+    },
+    {
+      "id": "s06.10",
+      "verdict": "supported",
+      "problem": "",
+      "fixed_text": ""
+    },
+    {
+      "id": "s07.01",
+      "verdict": "supported",
+      "problem": "",
+      "fixed_text": ""
+    },
+    {
+      "id": "s07.02",
+      "verdict": "supported",
+      "problem": "",
+      "fixed_text": ""
+    },
+    {
+      "id": "s07.03",
+      "verdict": "supported",
+      "problem": "",
+      "fixed_text": ""
+    },
+    {
+      "id": "s07.04",
+      "verdict": "supported",
+      "problem": "",
+      "fixed_text": ""
+    },
+    {
+      "id": "s07.05",
+      "verdict": "supported",
+      "problem": "",
+      "fixed_text": ""
+    },
+    {
+      "id": "s07.06",
+      "verdict": "supported",
+      "problem": "",
+      "fixed_text": ""
+    },
+    {
+      "id": "s07.07",
+      "verdict": "supported",
+      "problem": "",
+      "fixed_text": ""
+    },
+    {
+      "id": "s07.08",
+      "verdict": "supported",
+      "problem": "",
+      "fixed_text": ""
+    },
+    {
+      "id": "s07.09",
+      "verdict": "supported",
+      "problem": "",
+      "fixed_text": ""
+    },
+    {
+      "id": "s07.10",
+      "verdict": "supported",
+      "problem": "",
+      "fixed_text": ""
+    },
+    {
+      "id": "s07.11",
+      "verdict": "supported",
+      "problem": "",
+      "fixed_text": ""
+    }
+  ]
+}

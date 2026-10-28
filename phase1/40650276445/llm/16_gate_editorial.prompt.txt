@@ -1,0 +1,94 @@
+[model] gemini-3.5-flash-lite
+[system]
+
+
+[user]
+You review a finished explainer video before a human checks it. Judge each item strictly,
+using only what is given. Answer every check.
+
+- hook_question: do the first 30 seconds clearly state the question the video answers?
+- hook_why: do the first 30 seconds also say why the question matters to the viewer?
+- title_promise: does the script actually deliver what the title promises (no promise the video doesn't keep,
+  no claim the video contradicts)?
+- scene_relevance: does each text card below show something the narration at that moment is saying? List any card
+  ids that are generic or unrelated in the reason.
+- sensitive: is there financial, legal or health ADVICE, or an accusation against a real named person or company?
+  ok=true means none.
+- adds_value: does the video explain and connect ideas (examples, comparisons, why), rather than only listing
+  facts in a new order?
+
+TITLE: Why Is the Observable Universe 93 Billion Light-Years Wide?
+QUESTION (from the brief): How can the observable universe be 93 billion light-years wide if it is only 13.8 billion years old?
+FIRST 30 SECONDS: How can the observable universe be 93 billion light-years across if it is only 13.8 billion years old? If light travels at a constant speed, this vast cosmic scale sounds like an impossible contradiction. So why does this cosmic puzzle matter so much when we look out into space? Objects beyond this physical boundary cannot be detected yet because their light has not had enough time to reach Earth.
+
+SCRIPT:
+## The Paradox of Time and Distance in the Universe
+How can the observable universe be 93 billion light-years across if it is only 13.8 billion years old? If light travels at a constant speed, this vast cosmic scale sounds like an impossible contradiction. So why does this cosmic puzzle matter so much when we look out into space? Objects beyond this physical boundary cannot be detected yet because their light has not had enough time to reach Earth. In this video, we will answer three fundamental questions about our cosmic horizon in plain words. How does space stretch while light is actively traveling across the universe? How does a travel time of 13.8 billion years convert into a physical radius of 46.5 billion light-years? And what mysterious regions lie forever beyond the edge of our current observable cosmos? To solve this mystery, we must reframe how we imagine cosmic space and time.
+## The False Picture of Galaxies Flying Through Empty Space
+Many people visualize the universe as a huge empty room where galaxies rocket through a dark void. In that false mental picture, galaxies are racing through a fixed, static space like cosmic shrapnel. If that picture were correct, nothing could ever appear farther away than 13.8 billion light-years. But this common picture of cosmic expansion is completely wrong. Cosmic expansion is not galaxies moving through a pre-existing empty space. Instead, general relativity describes expansion as an intrinsic increase in distance between cosmic objects over time. Most galaxies are nearly at rest relative to their local comoving spatial coordinates. The velocity of a galaxy relative to its local comoving grid is called its peculiar velocity. These local peculiar velocities are caused mostly by gravity and are usually quite small. So how should we picture the movement of galaxies as the universe expands? Understanding this key distinction changes everything about how we calculate cosmic distances.
+## Space as an Expanding Fabric Rather Than a Static Box
+To understand cosmic distances, imagine space as an expanding fabric rather than a rigid stage. Mathematically, cosmologists track this growth using a value called the cosmic scale factor. The scale factor grows over time, describing how physical distances expand across the universe. In the early history of the universe, the scale factor was extremely small. That means all matter in the young cosmos was squeezed much closer together. Before recombination, the universe was filled with an opaque white-hot fog of plasma. Once neutral atoms formed, ancient photons became free to travel freely through transparent space. These released photons created the cosmic microwave background radiation that fills space today. When this ancient light was first emitted, its source was only 42 million light-years from Earth. Over 13.8 billion years, continuous expansion stretched that distance dramatically.
+## Light Traveling Through Expanding Space
+How does a light wave move through space that expands while the light is moving? Imagine an ant crawling along a stretching rubber band toward your hand. The ant crawls forward at a steady pace relative to the rubber directly under its feet. Similarly, a photon always travels through space locally at the exact speed of light. A local comoving observer will always measure the speed of light as the standard constant speed. But while the photon travels forward, the space behind it continues to expand over time. At the same time, the space ahead of the photon stretches as well. Because space stretches everywhere, the distance between the photon and its source grows continuously. Photons from the cosmic microwave background spent 13.8 billion years traveling across space to reach Earth. But during those 13.8 billion years, expansion pushed the matter that emitted those photons much farther away.
+## How 13.8 Billion Light-Years Turns Into a 46.5 Billion Light-Year Radius
+So, how far away is that emitting matter located at the present cosmological time? To understand this, we must distinguish between light-travel distance and proper distance. Light-travel distance is simply the age of the universe multiplied by the speed of light. That calculation yields a light-travel distance of about 13.8 billion light-years. Proper distance represents the actual physical distance between two objects at a single moment in time. You can imagine proper distance as the value measured by rulers if expansion suddenly froze. Comoving distance factors out expansion and equals proper distance at the present age of the universe. From Earth, the comoving distance to the edge of our observable sphere is about 46.5 billion light-years. This radial distance marks our particle horizon, which limits what signals can reach us. Thus, our observable universe is a sphere with a radius of 46.5 billion light-years.
+## Measuring the 93 Billion Light-Year Horizon
+Because Earth receives light from all directions, our observable horizon forms a massive sphere. Every point in the universe has its own distinct observable sphere centered on its location. To find the diameter of Earth's observable sphere, we double the 46.5 billion light-year radius. Doubling that radius yields a full cosmic diameter of 93 billion light-years across. That total count means there are more stars in our view than beach sand grains on Earth. This ordinary matter includes stars, planets, interstellar gas, and intergalactic gas, but excludes dark matter. Every object within this sphere is visible because its light had time to travel to Earth.
+## What Lies Beyond Our Cosmic Horizon
+So, how can the observable universe be 93 billion light-years wide after only 13.8 billion years? Space itself stretched continuously while light made its long journey across the expanding universe. That cosmic expansion turned 13.8 billion years of light travel into a 46.5 billion light-year physical radius. Doubling that radius gives the full observable diameter of 93 billion light-years today. Objects located beyond our particle horizon have emitted light that has not yet reached Earth. The unobservable portion of the entire universe may be far larger, or even infinite in size. Furthermore, dark energy is currently driving an accelerated expansion of space. Because expansion accelerates, astronomers calculate a future visibility limit at 62 billion light-years comoving distance. Light emitted today by objects farther than 16 billion light-years will never reach us in the infinite future. Distant galaxies outside our local supercluster will eventually appear to freeze, turn redder, and fade away. Take a moment to think about how much of our universe will remain forever beyond your reach.
+
+TEXT CARDS SHOWN:
+v001: narration: How can the observable universe be 93 billion light-years | card: {"type": "title", "title": "Why Is the Observable Universe 93 Billion Light-Years Wide?", "subtitle": "The Paradox of Time and Distance in the Universe"}
+v002: narration: across if it is only 13.8 billion years old? | card: {"type": "title", "title": "Cosmic Age", "subtitle": ""}
+v008: narration: In this video, we will answer three fundamental questions about our cosmic horizon in plain words. | card: {"type": "bullets", "title": "Three Questions", "items": ["How space stretches", "Time to radius conversion", "Regions beyond the edge"]}
+v011: narration: convert into a physical radius of 46.5 billion light-years? | card: {"type": "title", "title": "Physical Radius", "subtitle": ""}
+v012: narration: And what mysterious regions lie forever beyond the edge of our current observable cosmos? | card: {"type": "title", "title": "Beyond the Edge"}
+v014: narration: Many people visualize the universe as a huge empty room where galaxies rocket through a dark void. | card: {"type": "title", "title": "The False Picture of Galaxies Flying Through Empty Space"}
+v016: narration: If that picture were correct, nothing could ever appear farther away than 13.8 billion light-years. | card: {"type": "title", "title": "Maximum Distance Limit", "subtitle": ""}
+v020: narration: increase in distance between cosmic objects over time. | card: {"type": "title", "title": "Increase in Distance"}
+v022: narration: The velocity of a galaxy relative to its local comoving grid is called its peculiar velocity. | card: {"type": "title", "title": "Peculiar Velocity"}
+v025: narration: Understanding this key distinction changes everything about how we calculate cosmic distances. | card: {"type": "flow", "title": "Cosmic Distances", "steps": ["Identify coordinates", "Measure expansion", "Calculate true distance"]}
+v026: narration: To understand cosmic distances, imagine space as an | card: {"type": "title", "title": "Space as an Expanding Fabric Rather Than a Static Box"}
+v027: narration: expanding fabric rather than a rigid stage. | card: {"type": "title", "title": "Expanding Fabric"}
+v029: narration: The scale factor grows over time, describing how physical distances expand across the universe. | card: {"type": "title", "title": "Growth Over Time"}
+v030: narration: In the early history of the universe, the scale factor was extremely small. | card: {"type": "title", "title": "Early Universe"}
+v033: narration: Once neutral atoms formed, ancient photons became free to travel freely through transparent space. | card: {"type": "title", "title": "Neutral Atoms Form"}
+v035: narration: When this ancient light was first emitted, its source was only 42 million light-years from Earth. | card: {"type": "title", "title": "Initial Source Distance", "subtitle": ""}
+v036: narration: Over 13.8 billion years, continuous | card: {"type": "title", "title": "Timespan", "subtitle": ""}
+v038: narration: How does a light wave move through space that expands while the light is moving? | card: {"type": "title", "title": "Light Traveling Through Expanding Space"}
+v039: narration: Imagine an ant crawling along a stretching rubber band toward your hand. | card: {"type": "title", "title": "Ant on a Rubber Band"}
+v040: narration: The ant crawls forward at a steady pace relative to the rubber directly under its feet. | card: {"type": "title", "title": "Steady Crawl Pace"}
+v041: narration: Similarly, a photon always travels through space locally at the exact speed of light. | card: {"type": "title", "title": "Local Speed of Light"}
+v043: narration: But while the photon travels forward, the space behind it continues to expand over time. | card: {"type": "title", "title": "Space Expanding Behind"}
+v044: narration: At the same time, the space ahead of the photon stretches as well. | card: {"type": "title", "title": "Space Stretching Ahead"}
+v046: narration: Photons from the cosmic microwave background spent 13.8 | card: {"type": "title", "title": "Photon Travel Time", "subtitle": ""}
+v049: narration: the matter that emitted those photons much farther away. | card: {"type": "title", "title": "Emitting Matter Pushed Away"}
+v050: narration: So, how far away is that emitting matter located at the present cosmological time? | card: {"type": "title", "title": "How 13.8 Billion Light-Years Turns Into a 46.5 Billion Light-Year Radius"}
+v051: narration: To understand this, we must distinguish between light-travel distance and proper distance. | card: {"type": "compare", "title": "Distance Types", "left_title": "Light-Travel", "left_points": ["Based on travel time"], "right_title": "Proper Distance", "right_p
+v052: narration: Light-travel distance is simply the age of the universe multiplied by the speed of light. | card: {"type": "title", "title": "Light-Travel Distance Formula"}
+v053: narration: That calculation yields a light-travel distance of about 13.8 billion light-years. | card: {"type": "title", "title": "Light-Travel Distance", "subtitle": ""}
+v054: narration: Proper distance represents the actual physical distance between | card: {"type": "title", "title": "Proper Distance Definition"}
+v056: narration: You can imagine proper distance as the value measured by rulers if expansion suddenly froze. | card: {"type": "title", "title": "Frozen Expansion Rulers"}
+v059: narration: From Earth, the comoving distance to the edge | card: {"type": "title", "title": "Comoving Distance from Earth"}
+v060: narration: of our observable sphere is about 46.5 billion light-years. | card: {"type": "title", "title": "Observable Sphere Radius", "subtitle": ""}
+v063: narration: Because Earth receives light from all directions, our observable horizon forms a massive sphere. | card: {"type": "title", "title": "Measuring the 93 Billion Light-Year Horizon"}
+v064: narration: Every point in the universe has its own distinct observable sphere centered on its location. | card: {"type": "title", "title": "Every Point Has a Sphere"}
+v065: narration: To find the diameter of Earth's observable sphere, | card: {"type": "title", "title": "Earth Observable Sphere"}
+v066: narration: we double the 46.5 billion light-year radius. | card: {"type": "title", "title": "Sphere Radius", "subtitle": ""}
+v067: narration: Doubling that radius yields a full | card: {"type": "title", "title": "Doubling the Radius"}
+v068: narration: cosmic diameter of 93 billion light-years across. | card: {"type": "title", "title": "Cosmic Diameter", "subtitle": ""}
+v071: narration: and intergalactic gas, but excludes dark matter. | card: {"type": "title", "title": "Interstellar Gas"}
+v073: narration: So, how can the observable universe be 93 | card: {"type": "title", "title": "What Lies Beyond Our Cosmic Horizon"}
+v074: narration: billion light-years wide after only 13.8 billion years? | card: {"type": "title", "title": "Universe Width", "subtitle": ""}
+v075: narration: Space itself stretched continuously while light made its long journey across the expanding universe. | card: {"type": "title", "title": "Continuous Space Stretching"}
+v076: narration: That cosmic expansion turned 13.8 billion years of | card: {"type": "title", "title": "Light Travel Time", "subtitle": ""}
+v077: narration: light travel into a 46.5 billion light-year physical radius. | card: {"type": "title", "title": "Physical Radius", "subtitle": ""}
+v078: narration: Doubling that radius gives the full observable diameter of 93 billion light-years today. | card: {"type": "title", "title": "Observable Diameter", "subtitle": ""}
+v079: narration: Objects located beyond our particle horizon have emitted light that has not yet reached Earth. | card: {"type": "title", "title": "Unreached Light"}
+v080: narration: The unobservable portion of the entire universe may be far larger, or even infinite in size. | card: {"type": "title", "title": "Unobservable Universe"}
+v081: narration: Furthermore, dark energy is currently driving an accelerated expansion of space. | card: {"type": "title", "title": "Accelerated Expansion"}
+v082: narration: Because expansion accelerates, astronomers calculate a future visibility | card: {"type": "title", "title": "Future Visibility Limit", "subtitle": ""}
+v083: narration: limit at 62 billion light-years comoving distance. | card: {"type": "title", "title": "Comoving Distance Limit", "subtitle": ""}
+v084: narration: Light emitted today by objects farther than 16 billion | card: {"type": "title", "title": "Distance Threshold", "subtitle": ""}
+v085: narration: light-years will never reach us in the infinite future. | card: {"type": "title", "title": "Never Reaching Us"}
+v087: narration: appear to freeze, turn redder, and fade away. | card: {"type": "title", "title": "Fading Galaxies"}

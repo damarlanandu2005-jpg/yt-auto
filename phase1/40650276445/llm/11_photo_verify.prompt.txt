@@ -1,0 +1,38 @@
+[model] gemini-3.5-flash-lite
+[system]
+
+
+[user]
+Step 2 of a picture check for a science video. Someone looked at each picture WITHOUT knowing
+what it should show and described it. Decide for each image whether the picture fits.
+A photo fits only if the description shows it clearly depicts what it should show: not mostly text,
+not a test target, not a different planet or object than the narration is about, no watermark, nothing
+misleading. A diagram, infographic or poster with many labels or much text does NOT fit (too small to read
+in a video, and made for another purpose). A chart or graph fits ONLY if its labels show it is about exactly what the narration says (a graph
+of Mars data, or with unexplained labels like 'RHOS', does not fit a sentence about Earth or a star).
+When unsure, answer fits = false (a chart or plain card is shown instead, which is fine).
+Copy the description into "seen".
+Image 1: described as: A high-angle shot of a solar-powered model aircraft suspended against a blue backdrop, featuring gold-foil wings and a blue structural tail.
+  should show: a light beam
+  narration: If light travels at a constant speed, this
+Image 2: described as: A dark astronomical field of view displaying numerous scattered stars and several distinct elongated spiral and elliptical galaxies.
+  should show: a cluster of galaxies
+  narration: But this common picture of cosmic expansion is completely wrong.
+Image 3: described as: A dense starfield and nebula clouds showing deep blue and green colors with several prominent brighter stars scattered across.
+  should show: a distant star cluster
+  narration: Most galaxies are nearly at rest relative to their local comoving spatial coordinates.
+Image 4: described as: A deep-space telescope image showcasing a central irregular galaxy with vibrant blue and pink glowing regions against a background of countless stars.
+  should show: interacting galaxies
+  narration: These local peculiar velocities are caused mostly by gravity and are usually quite small.
+Image 5: described as: An illustration of a rocky, glowing red exoplanet with volcanic surface patterns, alongside a smaller distant red planet in deep space.
+  should show: a scientific telescope
+  narration: Mathematically, cosmologists track this growth using a value called the cosmic scale factor.
+Image 6: described as: A vibrant astrophotography image of the Ring Nebula, displaying concentric rings of glowing orange, yellow, green, and blue gas.
+  should show: a glowing plasma cloud
+  narration: Before recombination, the universe was filled with an opaque white-hot fog of plasma.
+Image 7: described as: A group portrait of numerous space program personnel posing in a control room, with world map screens and NASA mission patches displayed in the background.
+  should show: an observatory control room
+  narration: A local comoving observer will always measure the speed of light as the standard constant speed.
+Image 8: described as: A colorful deep-field image filled with a multitude of multicolored stars, red galaxies, and bright blue stellar points.
+  should show: a distant galaxy cluster
+  narration: Every object within this sphere is visible because its light had time to travel to Earth.

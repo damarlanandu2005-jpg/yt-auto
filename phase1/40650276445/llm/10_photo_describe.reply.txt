@@ -1,0 +1,36 @@
+{
+  "images": [
+    {
+      "n": 1,
+      "seen": "A high-angle shot of a solar-powered model aircraft suspended against a blue backdrop, featuring gold-foil wings and a blue structural tail."
+    },
+    {
+      "n": 2,
+      "seen": "A dark astronomical field of view displaying numerous scattered stars and several distinct elongated spiral and elliptical galaxies."
+    },
+    {
+      "n": 3,
+      "seen": "A dense starfield and nebula clouds showing deep blue and green colors with several prominent brighter stars scattered across."
+    },
+    {
+      "n": 4,
+      "seen": "A deep-space telescope image showcasing a central irregular galaxy with vibrant blue and pink glowing regions against a background of countless stars."
+    },
+    {
+      "n": 5,
+      "seen": "An illustration of a rocky, glowing red exoplanet with volcanic surface patterns, alongside a smaller distant red planet in deep space."
+    },
+    {
+      "n": 6,
+      "seen": "A vibrant astrophotography image of the Ring Nebula, displaying concentric rings of glowing orange, yellow, green, and blue gas."
+    },
+    {
+      "n": 7,
+      "seen": "A group portrait of numerous space program personnel posing in a control room, with world map screens and NASA mission patches displayed in the background."
+    },
+    {
+      "n": 8,
+      "seen": "A colorful deep-field image filled with a multitude of multicolored stars, red galaxies, and bright blue stellar points."
+    }
+  ]
+}

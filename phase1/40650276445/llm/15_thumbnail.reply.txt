@@ -1,0 +1,5 @@
+{
+  "picture": "v058",
+  "text": "bigger than expected",
+  "red_word": "bigger"
+}

@@ -1,0 +1,80 @@
+{
+  "picks": [
+    {
+      "id": "v003",
+      "choice": "nasa:5"
+    },
+    {
+      "id": "v005",
+      "choice": "nasa:5"
+    },
+    {
+      "id": "v013",
+      "choice": "wiki:3"
+    },
+    {
+      "id": "v017",
+      "choice": "nasa:10"
+    },
+    {
+      "id": "v019",
+      "choice": "wiki:4"
+    },
+    {
+      "id": "v021",
+      "choice": "nasa:6"
+    },
+    {
+      "id": "v023",
+      "choice": "nasa:0"
+    },
+    {
+      "id": "v028",
+      "choice": "nasa:0"
+    },
+    {
+      "id": "v032",
+      "choice": "nasa:5"
+    },
+    {
+      "id": "v034",
+      "choice": "wiki:0"
+    },
+    {
+      "id": "v042",
+      "choice": "wiki:6"
+    },
+    {
+      "id": "v047",
+      "choice": "wiki:11"
+    },
+    {
+      "id": "v055",
+      "choice": "nasa:0"
+    },
+    {
+      "id": "v058",
+      "choice": "wiki:6"
+    },
+    {
+      "id": "v069",
+      "choice": "wiki:6"
+    },
+    {
+      "id": "v070",
+      "choice": "nasa:0"
+    },
+    {
+      "id": "v072",
+      "choice": "nasa:0"
+    },
+    {
+      "id": "v086",
+      "choice": "wiki:2"
+    },
+    {
+      "id": "v088",
+      "choice": "wiki:4"
+    }
+  ]
+}

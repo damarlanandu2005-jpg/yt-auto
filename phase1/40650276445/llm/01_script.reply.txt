@@ -1,0 +1,415 @@
+{
+  "title": "Why Is the Observable Universe 93 Billion Light-Years Wide?",
+  "scenes": [
+    {
+      "heading": "The Paradox of Time and Distance in the Universe",
+      "sentences": [
+        {
+          "text": "How can the observable universe be 93 billion light-years across if it is only 13.8 billion years old?",
+          "kind": "fact",
+          "sources": ["A1.12", "A1.15", "A2.14"]
+        },
+        {
+          "text": "If light travels at a constant speed, this vast cosmic scale sounds like an impossible contradiction.",
+          "kind": "framing",
+          "sources": []
+        },
+        {
+          "text": "This puzzle matters to you because it defines the absolute limit of everything humanity can ever see in space.",
+          "kind": "framing",
+          "sources": []
+        },
+        {
+          "text": "Anything beyond this physical boundary remains completely dark and inaccessible to our most powerful telescopes.",
+          "kind": "fact",
+          "sources": ["A1.2", "A1.5"]
+        },
+        {
+          "text": "In this video, we will answer three fundamental questions about our cosmic horizon in plain words.",
+          "kind": "framing",
+          "sources": []
+        },
+        {
+          "text": "How does space stretch while light is actively traveling across the universe?",
+          "kind": "framing",
+          "sources": []
+        },
+        {
+          "text": "How does a travel time of 13.8 billion years convert into a physical radius of 46.5 billion light-years?",
+          "kind": "fact",
+          "sources": ["A1.1", "A1.15"]
+        },
+        {
+          "text": "And what mysterious regions lie forever beyond the edge of our current observable cosmos?",
+          "kind": "framing",
+          "sources": []
+        },
+        {
+          "text": "To solve this mystery, we must reframe how we imagine cosmic space and time.",
+          "kind": "framing",
+          "sources": []
+        }
+      ]
+    },
+    {
+      "heading": "The False Picture of Galaxies Flying Through Empty Space",
+      "sentences": [
+        {
+          "text": "Many people visualize the universe as a huge empty room where galaxies rocket through a dark void.",
+          "kind": "framing",
+          "sources": []
+        },
+        {
+          "text": "In that false mental picture, galaxies are racing through a fixed, static space like cosmic shrapnel.",
+          "kind": "framing",
+          "sources": []
+        },
+        {
+          "text": "If that picture were correct, nothing could ever appear farther away than 13.8 billion light-years.",
+          "kind": "framing",
+          "sources": []
+        },
+        {
+          "text": "But this common picture of cosmic expansion is completely wrong.",
+          "kind": "fact",
+          "sources": ["A2.1", "A2.40"]
+        },
+        {
+          "text": "Cosmic expansion is not galaxies moving through a pre-existing empty space.",
+          "kind": "fact",
+          "sources": ["A2.1", "A2.40"]
+        },
+        {
+          "text": "Instead, general relativity describes expansion as an intrinsic increase in distance between cosmic objects over time.",
+          "kind": "fact",
+          "sources": ["A2.1", "A2.3"]
+        },
+        {
+          "text": "Most galaxies are nearly at rest relative to their local comoving spatial coordinates.",
+          "kind": "fact",
+          "sources": ["A4.3", "A4.4"]
+        },
+        {
+          "text": "The velocity of a galaxy relative to its local comoving grid is called its peculiar velocity.",
+          "kind": "fact",
+          "sources": ["A2.24", "A4.3"]
+        },
+        {
+          "text": "These local peculiar velocities are caused mostly by gravity and are usually quite small.",
+          "kind": "fact",
+          "sources": ["A4.4"]
+        },
+        {
+          "text": "Therefore, galaxies are not speeding through a giant static box at impossible speeds.",
+          "kind": "framing",
+          "sources": []
+        },
+        {
+          "text": "The spatial fabric between those galaxies is stretching uniformly across the entire cosmos.",
+          "kind": "fact",
+          "sources": ["A2.10", "A2.40"]
+        },
+        {
+          "text": "Understanding this key distinction changes everything about how we calculate cosmic distances.",
+          "kind": "framing",
+          "sources": []
+        }
+      ]
+    },
+    {
+      "heading": "Space as an Expanding Fabric Rather Than a Static Box",
+      "sentences": [
+        {
+          "text": "To understand cosmic distances, imagine space as an expanding fabric rather than a rigid stage.",
+          "kind": "framing",
+          "sources": []
+        },
+        {
+          "text": "Mathematically, cosmologists track this growth using a value called the cosmic scale factor.",
+          "kind": "fact",
+          "sources": ["A2.13", "A4.9"]
+        },
+        {
+          "text": "The scale factor grows over time, describing how physical distances expand across the universe.",
+          "kind": "fact",
+          "sources": ["A2.14", "A4.9"]
+        },
+        {
+          "text": "In the early history of the universe, the scale factor was extremely small.",
+          "kind": "fact",
+          "sources": ["A2.14"]
+        },
+        {
+          "text": "That means all matter in the young cosmos was squeezed much closer together.",
+          "kind": "fact",
+          "sources": ["A3.33"]
+        },
+        {
+          "text": "About 380,000 years after the Big Bang, neutral hydrogen atoms formed during recombination.",
+          "kind": "fact",
+          "sources": ["A1.13", "A3.2", "A3.33"]
+        },
+        {
+          "text": "Before recombination, the universe was filled with an opaque white-hot fog of plasma.",
+          "kind": "fact",
+          "sources": ["A3.2", "A3.33"]
+        },
+        {
+          "text": "Once neutral atoms formed, ancient photons became free to travel freely through transparent space.",
+          "kind": "fact",
+          "sources": ["A3.2", "A3.33"]
+        },
+        {
+          "text": "These released photons created the cosmic microwave background radiation that fills space today.",
+          "kind": "fact",
+          "sources": ["A3.1", "A3.2", "A3.33"]
+        },
+        {
+          "text": "When this ancient light was first emitted, its source was only 42 million light-years from Earth.",
+          "kind": "fact",
+          "sources": ["A1.14"]
+        },
+        {
+          "text": "Over 13.8 billion years, continuous expansion stretched that distance dramatically.",
+          "kind": "fact",
+          "sources": ["A1.13", "A1.14", "A2.14"]
+        }
+      ]
+    },
+    {
+      "heading": "Light Traveling Through Expanding Space",
+      "sentences": [
+        {
+          "text": "How does a light wave move through space that expands while the light is moving?",
+          "kind": "framing",
+          "sources": []
+        },
+        {
+          "text": "Imagine an ant crawling along a stretching rubber band toward your hand.",
+          "kind": "framing",
+          "sources": []
+        },
+        {
+          "text": "The ant crawls forward at a steady pace relative to the rubber directly under its feet.",
+          "kind": "framing",
+          "sources": []
+        },
+        {
+          "text": "Similarly, a photon always travels through space locally at the exact speed of light.",
+          "kind": "fact",
+          "sources": ["A4.3", "A4.16", "A4.27"]
+        },
+        {
+          "text": "A local comoving observer will always measure the speed of light as the standard constant speed.",
+          "kind": "fact",
+          "sources": ["A4.16"]
+        },
+        {
+          "text": "But while the photon travels forward, the space behind it continues to expand over time.",
+          "kind": "fact",
+          "sources": ["A1.15", "A4.1"]
+        },
+        {
+          "text": "At the same time, the space ahead of the photon stretches as well.",
+          "kind": "fact",
+          "sources": ["A1.15", "A4.1"]
+        },
+        {
+          "text": "Because space stretches everywhere, the distance between the photon and its source grows continuously.",
+          "kind": "fact",
+          "sources": ["A1.13", "A1.15", "A4.1"]
+        },
+        {
+          "text": "Cosmologists call the actual travel time of the photon its light-travel distance.",
+          "kind": "fact",
+          "sources": ["A1.15", "A1.25"]
+        },
+        {
+          "text": "Photons from the cosmic microwave background spent 13.8 billion years traveling across space to reach Earth.",
+          "kind": "fact",
+          "sources": ["A1.13", "A1.15"]
+        },
+        {
+          "text": "But during those 13.8 billion years, expansion pushed the matter that emitted those photons much farther away.",
+          "kind": "fact",
+          "sources": ["A1.13", "A1.15", "A4.1"]
+        }
+      ]
+    },
+    {
+      "heading": "How 13.8 Billion Light-Years Turns Into a 46.5 Billion Light-Year Radius",
+      "sentences": [
+        {
+          "text": "So, how far away is that emitting matter located at the present cosmological time?",
+          "kind": "framing",
+          "sources": []
+        },
+        {
+          "text": "Today, that matter is calculated to be 46.5 billion light-years away from Earth.",
+          "kind": "fact",
+          "sources": ["A1.1", "A1.3", "A1.13"]
+        },
+        {
+          "text": "To understand this, we must distinguish between light-travel distance and proper distance.",
+          "kind": "fact",
+          "sources": ["A1.25", "A4.1"]
+        },
+        {
+          "text": "Light-travel distance is simply the age of the universe multiplied by the speed of light.",
+          "kind": "fact",
+          "sources": ["A1.15"]
+        },
+        {
+          "text": "That calculation yields a light-travel distance of exactly 13.8 billion light-years.",
+          "kind": "fact",
+          "sources": ["A1.15"]
+        },
+        {
+          "text": "Proper distance represents the actual physical distance between two objects at a single moment in time.",
+          "kind": "fact",
+          "sources": ["A4.1", "A4.10", "A4.11"]
+        },
+        {
+          "text": "You can imagine proper distance as the value measured by rulers if expansion suddenly froze.",
+          "kind": "fact",
+          "sources": ["A4.11", "A4.21"]
+        },
+        {
+          "text": "Comoving distance factors out expansion and equals proper distance at the present age of the universe.",
+          "kind": "fact",
+          "sources": ["A4.1", "A4.20"]
+        },
+        {
+          "text": "From Earth, the comoving distance to the edge of our observable sphere is about 46.5 billion light-years.",
+          "kind": "fact",
+          "sources": ["A1.1", "A1.3", "A1.12"]
+        },
+        {
+          "text": "This radial distance marks our particle horizon, which limits what signals can reach us.",
+          "kind": "fact",
+          "sources": ["A1.2", "A2.20"]
+        },
+        {
+          "text": "Thus, our observable universe is a sphere with a radius of 46.5 billion light-years.",
+          "kind": "fact",
+          "sources": ["A1.1", "A1.12"]
+        }
+      ]
+    },
+    {
+      "heading": "Measuring the 93 Billion Light-Year Horizon",
+      "sentences": [
+        {
+          "text": "Because Earth receives light from all directions, our observable horizon forms a massive sphere.",
+          "kind": "fact",
+          "sources": ["A1.1", "A1.12"]
+        },
+        {
+          "text": "Every point in the universe has its own distinct observable sphere centered on its location.",
+          "kind": "fact",
+          "sources": ["A1.2"]
+        },
+        {
+          "text": "To find the diameter of Earth's observable sphere, we double the 46.5 billion light-year radius.",
+          "kind": "fact",
+          "sources": ["A1.1", "A1.12"]
+        },
+        {
+          "text": "Doubling that radius yields a full cosmic diameter of 93 billion light-years across.",
+          "kind": "fact",
+          "sources": ["A1.12"]
+        },
+        {
+          "text": "This enormous region of space contains an estimated 2 trillion galaxies.",
+          "kind": "fact",
+          "sources": ["A1.16"]
+        },
+        {
+          "text": "Within those galaxies, there are as many as 10 to the 24th power stars.",
+          "kind": "fact",
+          "sources": ["A1.16"]
+        },
+        {
+          "text": "That total count means there are more stars in our view than beach sand grains on Earth.",
+          "kind": "fact",
+          "sources": ["A1.16"]
+        },
+        {
+          "text": "Cosmologists estimate the total mass of ordinary matter in this volume at 10 to the 53rd power kilograms.",
+          "kind": "fact",
+          "sources": ["A1.3", "A1.18"]
+        },
+        {
+          "text": "This ordinary matter includes stars, planets, interstellar gas, and intergalactic gas, but excludes dark matter.",
+          "kind": "fact",
+          "sources": ["A1.18"]
+        },
+        {
+          "text": "Every object within this sphere is visible because its light had time to travel to Earth.",
+          "kind": "fact",
+          "sources": ["A1.1", "A1.2", "A1.5"]
+        }
+      ]
+    },
+    {
+      "heading": "What Lies Beyond Our Cosmic Horizon",
+      "sentences": [
+        {
+          "text": "So, how can the observable universe be 93 billion light-years wide after only 13.8 billion years?",
+          "kind": "framing",
+          "sources": []
+        },
+        {
+          "text": "Space itself stretched continuously while light made its long journey across the expanding universe.",
+          "kind": "fact",
+          "sources": ["A1.13", "A1.15"]
+        },
+        {
+          "text": "That cosmic expansion turned 13.8 billion years of light travel into a 46.5 billion light-year physical radius.",
+          "kind": "fact",
+          "sources": ["A1.1", "A1.15"]
+        },
+        {
+          "text": "Doubling that radius gives the full observable diameter of 93 billion light-years today.",
+          "kind": "fact",
+          "sources": ["A1.1", "A1.12"]
+        },
+        {
+          "text": "Objects located beyond our particle horizon have emitted light that has not yet reached Earth.",
+          "kind": "fact",
+          "sources": ["A1.2", "A1.5"]
+        },
+        {
+          "text": "The unobservable portion of the entire universe may be far larger, or even infinite in size.",
+          "kind": "fact",
+          "sources": ["A1.5", "A1.11"]
+        },
+        {
+          "text": "Furthermore, dark energy is currently driving an accelerated expansion of space.",
+          "kind": "fact",
+          "sources": ["A1.5", "A2.3", "A2.12"]
+        },
+        {
+          "text": "Because expansion accelerates, astronomers calculate a future visibility limit at 62 billion light-years comoving distance.",
+          "kind": "fact",
+          "sources": ["A1.4", "A1.6", "A1.9"]
+        },
+        {
+          "text": "Light emitted today by objects farther than 16 billion light-years will never reach us in the infinite future.",
+          "kind": "fact",
+          "sources": ["A1.8", "A1.9"]
+        },
+        {
+          "text": "Distant galaxies outside our local supercluster will eventually appear to freeze, turn redder, and fade away.",
+          "kind": "fact",
+          "sources": ["A1.4", "A1.7"]
+        },
+        {
+          "text": "Take a moment to think about how much of our universe will remain forever beyond your reach.",
+          "kind": "framing",
+          "sources": []
+        }
+      ]
+    }
+  ]
+}

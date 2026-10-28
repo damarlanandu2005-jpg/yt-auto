@@ -1,0 +1,129 @@
+[model] gemini-3.5-flash-lite
+[system]
+
+
+[user]
+Video: Why Is the Observable Universe 93 Billion Light-Years Wide?
+Plan one visual for each slot of narration below. The viewer sees it while hearing that text.
+Rules:
+- Real photos first: use kind=photo for at least 65 per cent of slots, whenever a real photo could show the
+  thing being talked about (objects, places, spacecraft, machines, nature, historical photos).
+  Ask for SIMPLE subjects an archive surely has ("a handheld GPS receiver", "a rocket launch", "an atomic
+  clock"), never a detailed scene ("a hiker with a GPS in remote mountains with no signal"). Never ask for a
+  photo of a chart, graph, diagram or data: archive charts are about other things; use a card instead. A photo of the
+  object being discussed is better than a text card.
+- Use kind=drawing (at most 12 in the whole video) for an idea no real photo can show: an invisible
+  process, a view nobody photographed, a comparison of two things (e.g. "a radio wave travelling from a satellite
+  down to a phone", "two clocks side by side, one in orbit and one on the ground"). drawing_subject: one simple
+  scene of CONCRETE objects a viewer recognises at once ("a huge exploding star beside a small blue planet",
+  "a DNA double helix with a broken rung"), never a process word ("composition changing", "errors"). No people, faces or hands, no logos, emblems or flags, no text, no numbers, no maps.
+- Step by step (owner's rule): when the narration explains ONE object or scene in parts over several slots, use
+  kind=step for the next 1 or 2 slots: they show the SAME picture as the slot before, moved closer to the part
+  being explained (focus: center, left, right, top or bottom). Wide view first, then closer, then detail.
+  Use steps for about 10 to 20 per cent of slots; never more than 2 steps in a row; a step needs a photo or
+  drawing right before it.
+- Use kind=card when a number, comparison, process or list is the point, or at scene starts (title card).
+- The first slot is a title card with the video title.
+- Every number on a card MUST appear in that slot's text or earlier in the same scene. Never invent data.
+- Vary: never the same card type twice in a row; never more than 2 cards in a row.
+- Text cards are the last choice: at most one bullets card per scene, and a bare title card only at scene starts.
+  Prefer stat, bars, timeline, flow or compare when a card is needed.
+- For kind=photo and kind=drawing still give a fallback card (used if no good picture is made).
+Card types (all text short; big and readable on a phone):
+- title: title (+ subtitle). Use for scene openings.
+- stat: value (a number with unit, e.g. "20,200 km") + label (+ note).
+- bullets: title + 2-4 items (each under 6 words).
+- flow: title + 2-5 steps (cause -> effect, process).
+- bars: title + labels + values (+ unit). Compare 2-6 quantities.
+- timeline: title + 2-5 events {when, label}.
+- compare: title + left_title/left_points vs right_title/right_points.
+
+SLOTS:
+v001 [5.0s] (scene: The Paradox of Time and Distance in the Universe, SCENE START) How can the observable universe be 93 billion light-years
+v002 [5.8s] (scene: The Paradox of Time and Distance in the Universe) across if it is only 13.8 billion years old?
+v003 [3.3s] (scene: The Paradox of Time and Distance in the Universe) If light travels at a constant speed, this
+v004 [3.8s] (scene: The Paradox of Time and Distance in the Universe) vast cosmic scale sounds like an impossible contradiction.
+v005 [5.0s] (scene: The Paradox of Time and Distance in the Universe) So why does this cosmic puzzle matter so much when we look out into space?
+v006 [3.7s] (scene: The Paradox of Time and Distance in the Universe) Objects beyond this physical boundary cannot be detected yet because
+v007 [4.2s] (scene: The Paradox of Time and Distance in the Universe) their light has not had enough time to reach Earth.
+v008 [6.9s] (scene: The Paradox of Time and Distance in the Universe) In this video, we will answer three fundamental questions about our cosmic horizon in plain words.
+v009 [5.1s] (scene: The Paradox of Time and Distance in the Universe) How does space stretch while light is actively traveling across the universe?
+v010 [4.4s] (scene: The Paradox of Time and Distance in the Universe) How does a travel time of 13.8 billion years
+v011 [5.2s] (scene: The Paradox of Time and Distance in the Universe) convert into a physical radius of 46.5 billion light-years?
+v012 [6.4s] (scene: The Paradox of Time and Distance in the Universe) And what mysterious regions lie forever beyond the edge of our current observable cosmos?
+v013 [6.4s] (scene: The Paradox of Time and Distance in the Universe) To solve this mystery, we must reframe how we imagine cosmic space and time.
+v014 [6.9s] (scene: The False Picture of Galaxies Flying Through Empty Space, SCENE START) Many people visualize the universe as a huge empty room where galaxies rocket through a dark void.
+v015 [6.9s] (scene: The False Picture of Galaxies Flying Through Empty Space) In that false mental picture, galaxies are racing through a fixed, static space like cosmic shrapnel.
+v016 [7.3s] (scene: The False Picture of Galaxies Flying Through Empty Space) If that picture were correct, nothing could ever appear farther away than 13.8 billion light-years.
+v017 [5.4s] (scene: The False Picture of Galaxies Flying Through Empty Space) But this common picture of cosmic expansion is completely wrong.
+v018 [5.6s] (scene: The False Picture of Galaxies Flying Through Empty Space) Cosmic expansion is not galaxies moving through a pre-existing empty space.
+v019 [4.2s] (scene: The False Picture of Galaxies Flying Through Empty Space) Instead, general relativity describes expansion as an intrinsic
+v020 [4.7s] (scene: The False Picture of Galaxies Flying Through Empty Space) increase in distance between cosmic objects over time.
+v021 [6.0s] (scene: The False Picture of Galaxies Flying Through Empty Space) Most galaxies are nearly at rest relative to their local comoving spatial coordinates.
+v022 [6.6s] (scene: The False Picture of Galaxies Flying Through Empty Space) The velocity of a galaxy relative to its local comoving grid is called its peculiar velocity.
+v023 [6.2s] (scene: The False Picture of Galaxies Flying Through Empty Space) These local peculiar velocities are caused mostly by gravity and are usually quite small.
+v024 [5.0s] (scene: The False Picture of Galaxies Flying Through Empty Space) So how should we picture the movement of galaxies as the universe expands?
+v025 [7.3s] (scene: The False Picture of Galaxies Flying Through Empty Space) Understanding this key distinction changes everything about how we calculate cosmic distances.
+v026 [3.7s] (scene: Space as an Expanding Fabric Rather Than a Static Box, SCENE START) To understand cosmic distances, imagine space as an
+v027 [3.7s] (scene: Space as an Expanding Fabric Rather Than a Static Box) expanding fabric rather than a rigid stage.
+v028 [6.1s] (scene: Space as an Expanding Fabric Rather Than a Static Box) Mathematically, cosmologists track this growth using a value called the cosmic scale factor.
+v029 [6.8s] (scene: Space as an Expanding Fabric Rather Than a Static Box) The scale factor grows over time, describing how physical distances expand across the universe.
+v030 [5.0s] (scene: Space as an Expanding Fabric Rather Than a Static Box) In the early history of the universe, the scale factor was extremely small.
+v031 [4.8s] (scene: Space as an Expanding Fabric Rather Than a Static Box) That means all matter in the young cosmos was squeezed much closer together.
+v032 [5.9s] (scene: Space as an Expanding Fabric Rather Than a Static Box) Before recombination, the universe was filled with an opaque white-hot fog of plasma.
+v033 [6.9s] (scene: Space as an Expanding Fabric Rather Than a Static Box) Once neutral atoms formed, ancient photons became free to travel freely through transparent space.
+v034 [7.0s] (scene: Space as an Expanding Fabric Rather Than a Static Box) These released photons created the cosmic microwave background radiation that fills space today.
+v035 [6.3s] (scene: Space as an Expanding Fabric Rather Than a Static Box) When this ancient light was first emitted, its source was only 42 million light-years from Earth.
+v036 [3.7s] (scene: Space as an Expanding Fabric Rather Than a Static Box) Over 13.8 billion years, continuous
+v037 [5.1s] (scene: Space as an Expanding Fabric Rather Than a Static Box) expansion stretched that distance dramatically.
+v038 [5.4s] (scene: Light Traveling Through Expanding Space, SCENE START) How does a light wave move through space that expands while the light is moving?
+v039 [4.7s] (scene: Light Traveling Through Expanding Space) Imagine an ant crawling along a stretching rubber band toward your hand.
+v040 [5.5s] (scene: Light Traveling Through Expanding Space) The ant crawls forward at a steady pace relative to the rubber directly under its feet.
+v041 [5.8s] (scene: Light Traveling Through Expanding Space) Similarly, a photon always travels through space locally at the exact speed of light.
+v042 [6.2s] (scene: Light Traveling Through Expanding Space) A local comoving observer will always measure the speed of light as the standard constant speed.
+v043 [5.7s] (scene: Light Traveling Through Expanding Space) But while the photon travels forward, the space behind it continues to expand over time.
+v044 [4.3s] (scene: Light Traveling Through Expanding Space) At the same time, the space ahead of the photon stretches as well.
+v045 [6.4s] (scene: Light Traveling Through Expanding Space) Because space stretches everywhere, the distance between the photon and its source grows continuously.
+v046 [4.0s] (scene: Light Traveling Through Expanding Space) Photons from the cosmic microwave background spent 13.8
+v047 [4.4s] (scene: Light Traveling Through Expanding Space) billion years traveling across space to reach Earth.
+v048 [3.4s] (scene: Light Traveling Through Expanding Space) But during those 13.8 billion years, expansion pushed
+v049 [5.3s] (scene: Light Traveling Through Expanding Space) the matter that emitted those photons much farther away.
+v050 [6.3s] (scene: How 13.8 Billion Light-Years Turns Into a 46.5 Billion Light-Year Radius, SCENE START) So, how far away is that emitting matter located at the present cosmological time?
+v051 [5.8s] (scene: How 13.8 Billion Light-Years Turns Into a 46.5 Billion Light-Year Radius) To understand this, we must distinguish between light-travel distance and proper distance.
+v052 [6.1s] (scene: How 13.8 Billion Light-Years Turns Into a 46.5 Billion Light-Year Radius) Light-travel distance is simply the age of the universe multiplied by the speed of light.
+v053 [6.3s] (scene: How 13.8 Billion Light-Years Turns Into a 46.5 Billion Light-Year Radius) That calculation yields a light-travel distance of about 13.8 billion light-years.
+v054 [3.5s] (scene: How 13.8 Billion Light-Years Turns Into a 46.5 Billion Light-Year Radius) Proper distance represents the actual physical distance between
+v055 [4.0s] (scene: How 13.8 Billion Light-Years Turns Into a 46.5 Billion Light-Year Radius) two objects at a single moment in time.
+v056 [6.5s] (scene: How 13.8 Billion Light-Years Turns Into a 46.5 Billion Light-Year Radius) You can imagine proper distance as the value measured by rulers if expansion suddenly froze.
+v057 [3.4s] (scene: How 13.8 Billion Light-Years Turns Into a 46.5 Billion Light-Year Radius) Comoving distance factors out expansion and equals proper
+v058 [3.9s] (scene: How 13.8 Billion Light-Years Turns Into a 46.5 Billion Light-Year Radius) distance at the present age of the universe.
+v059 [4.3s] (scene: How 13.8 Billion Light-Years Turns Into a 46.5 Billion Light-Year Radius) From Earth, the comoving distance to the edge
+v060 [5.3s] (scene: How 13.8 Billion Light-Years Turns Into a 46.5 Billion Light-Year Radius) of our observable sphere is about 46.5 billion light-years.
+v061 [6.1s] (scene: How 13.8 Billion Light-Years Turns Into a 46.5 Billion Light-Year Radius) This radial distance marks our particle horizon, which limits what signals can reach us.
+v062 [7.8s] (scene: How 13.8 Billion Light-Years Turns Into a 46.5 Billion Light-Year Radius) Thus, our observable universe is a sphere with a radius of 46.5 billion light-years.
+v063 [6.4s] (scene: Measuring the 93 Billion Light-Year Horizon, SCENE START) Because Earth receives light from all directions, our observable horizon forms a massive sphere.
+v064 [6.5s] (scene: Measuring the 93 Billion Light-Year Horizon) Every point in the universe has its own distinct observable sphere centered on its location.
+v065 [3.8s] (scene: Measuring the 93 Billion Light-Year Horizon) To find the diameter of Earth's observable sphere,
+v066 [4.3s] (scene: Measuring the 93 Billion Light-Year Horizon) we double the 46.5 billion light-year radius.
+v067 [3.5s] (scene: Measuring the 93 Billion Light-Year Horizon) Doubling that radius yields a full
+v068 [4.6s] (scene: Measuring the 93 Billion Light-Year Horizon) cosmic diameter of 93 billion light-years across.
+v069 [5.7s] (scene: Measuring the 93 Billion Light-Year Horizon) That total count means there are more stars in our view than beach sand grains on Earth.
+v070 [4.1s] (scene: Measuring the 93 Billion Light-Year Horizon) This ordinary matter includes stars, planets, interstellar gas,
+v071 [4.1s] (scene: Measuring the 93 Billion Light-Year Horizon) and intergalactic gas, but excludes dark matter.
+v072 [6.7s] (scene: Measuring the 93 Billion Light-Year Horizon) Every object within this sphere is visible because its light had time to travel to Earth.
+v073 [4.8s] (scene: What Lies Beyond Our Cosmic Horizon, SCENE START) So, how can the observable universe be 93
+v074 [5.7s] (scene: What Lies Beyond Our Cosmic Horizon) billion light-years wide after only 13.8 billion years?
+v075 [6.6s] (scene: What Lies Beyond Our Cosmic Horizon) Space itself stretched continuously while light made its long journey across the expanding universe.
+v076 [4.4s] (scene: What Lies Beyond Our Cosmic Horizon) That cosmic expansion turned 13.8 billion years of
+v077 [5.4s] (scene: What Lies Beyond Our Cosmic Horizon) light travel into a 46.5 billion light-year physical radius.
+v078 [6.8s] (scene: What Lies Beyond Our Cosmic Horizon) Doubling that radius gives the full observable diameter of 93 billion light-years today.
+v079 [6.4s] (scene: What Lies Beyond Our Cosmic Horizon) Objects located beyond our particle horizon have emitted light that has not yet reached Earth.
+v080 [6.9s] (scene: What Lies Beyond Our Cosmic Horizon) The unobservable portion of the entire universe may be far larger, or even infinite in size.
+v081 [5.4s] (scene: What Lies Beyond Our Cosmic Horizon) Furthermore, dark energy is currently driving an accelerated expansion of space.
+v082 [4.5s] (scene: What Lies Beyond Our Cosmic Horizon) Because expansion accelerates, astronomers calculate a future visibility
+v083 [4.9s] (scene: What Lies Beyond Our Cosmic Horizon) limit at 62 billion light-years comoving distance.
+v084 [4.5s] (scene: What Lies Beyond Our Cosmic Horizon) Light emitted today by objects farther than 16 billion
+v085 [5.0s] (scene: What Lies Beyond Our Cosmic Horizon) light-years will never reach us in the infinite future.
+v086 [3.5s] (scene: What Lies Beyond Our Cosmic Horizon) Distant galaxies outside our local supercluster will eventually
+v087 [4.0s] (scene: What Lies Beyond Our Cosmic Horizon) appear to freeze, turn redder, and fade away.
+v088 [7.8s] (scene: What Lies Beyond Our Cosmic Horizon) Take a moment to think about how much of our universe will remain forever beyond your reach.

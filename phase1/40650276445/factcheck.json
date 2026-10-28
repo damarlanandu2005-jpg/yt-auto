@@ -1,0 +1,93 @@
+{
+ "checked": 75,
+ "supported_first_pass": 64,
+ "fixed": [
+  {
+   "id": "s01.03",
+   "old": "This puzzle matters to you because it defines the absolute limit of everything humanity can ever see in space.",
+   "new": "So why does this cosmic puzzle matter so much when we look out into space?",
+   "problem": "Framing sentence states a checkable claim instead of being a pure question or transition."
+  },
+  {
+   "id": "s01.04",
+   "old": "Anything beyond this physical boundary remains completely dark and inaccessible to our most powerful telescopes.",
+   "new": "Objects beyond this physical boundary cannot be detected yet because their light has not had enough time to reach Earth.",
+   "problem": "Objects beyond the boundary emit light rather than being dark, and light from additional regions may reach Earth in the future."
+  },
+  {
+   "id": "s02.10",
+   "old": "Therefore, galaxies are not speeding through a giant static box at impossible speeds.",
+   "new": "So how should we picture the movement of galaxies as the universe expands?",
+   "problem": "Framing sentence states a factual assertion instead of being a pure question or transition."
+  },
+  {
+   "id": "s05.05",
+   "old": "That calculation yields a light-travel distance of exactly 13.8 billion light-years.",
+   "new": "That calculation yields a light-travel distance of about 13.8 billion light-years.",
+   "problem": "The passages state the light-travel distance is 13.8 billion light-years, not an exact value."
+  }
+ ],
+ "dropped": [
+  {
+   "id": "s02.11",
+   "text": "The spatial fabric between those galaxies is stretching uniformly across the entire cosmos.",
+   "problem": "Passage A2.40 states that describing cosmic expansion as space itself stretching is an erroneous argument."
+  },
+  {
+   "id": "s04.09",
+   "text": "Cosmologists call the actual travel time of the photon its light-travel distance.",
+   "problem": "Light-travel distance is the travel time multiplied by the speed of light, not the travel time itself."
+  },
+  {
+   "id": "s05.02",
+   "text": "Today, that matter is calculated to be 46.5 billion light-years away from Earth.",
+   "problem": "The matter that emitted the cosmic microwave background is calculated to be about 45.7 billion light-years (or about 46 billion light-years) away, whereas 46.5 billion light-years is the radius of the observable universe."
+  },
+  {
+   "id": "s06.05",
+   "text": "This enormous region of space contains an estimated 2 trillion galaxies.",
+   "problem": "Passage A1.16 specifies \"as many as\" an estimated 2 trillion galaxies and notes other estimates are in the hundreds of billions."
+  },
+  {
+   "id": "s06.06",
+   "text": "Within those galaxies, there are as many as 10 to the 24th power stars.",
+   "problem": "number 10 is not in the cited sources; number 24 is not in the cited sources"
+  },
+  {
+   "id": "s06.08",
+   "text": "Cosmologists estimate the total mass of ordinary matter in this volume at 10 to the 53rd power kilograms.",
+   "problem": "number 10 is not in the cited sources; number 53 is not in the cited sources"
+  },
+  {
+   "id": "s03.06",
+   "text": "About 380,000 years after the Big Bang, neutral hydrogen atoms formed during recombination.",
+   "problem": "reworded: too close to source wording"
+  }
+ ],
+ "bad_ids": [],
+ "copied": [
+  {
+   "id": "s03.06",
+   "phrases": [
+    "about 380 000 years after the big bang"
+   ]
+  }
+ ],
+ "guard": [
+  {
+   "id": "s06.06",
+   "problems": [
+    "number 10 is not in the cited sources",
+    "number 24 is not in the cited sources"
+   ]
+  },
+  {
+   "id": "s06.08",
+   "problems": [
+    "number 10 is not in the cited sources",
+    "number 53 is not in the cited sources"
+   ]
+  }
+ ],
+ "words_after": 995
+}

@@ -1,0 +1,34 @@
+{
+  "checks": [
+    {
+      "check": "hook_question",
+      "ok": true,
+      "reason": "The first 30 seconds explicitly state the core question of how the observable universe can be 93 billion light-years across despite being only 13.8 billion years old."
+    },
+    {
+      "check": "hook_why",
+      "ok": true,
+      "reason": "The first 30 seconds address why it matters by framing it as a seemingly impossible contradiction involving light travel time and undetected distant objects."
+    },
+    {
+      "check": "title_promise",
+      "ok": true,
+      "reason": "The script directly answers the title's promise by explaining the mechanics of cosmic expansion, light-travel distance, and proper distance."
+    },
+    {
+      "check": "scene_relevance",
+      "ok": true,
+      "reason": "Every text card accurately reflects the narration occurring at that moment without generic or unrelated insertions."
+    },
+    {
+      "check": "sensitive",
+      "ok": true,
+      "reason": "The content is purely educational about astrophysics and cosmology with no financial, legal, or health advice, nor any personal or corporate accusations."
+    },
+    {
+      "check": "adds_value",
+      "ok": true,
+      "reason": "The video successfully explains and connects abstract concepts like the scale factor, proper versus light-travel distance, and the rubber-band analogy rather than merely listing facts."
+    }
+  ]
+}

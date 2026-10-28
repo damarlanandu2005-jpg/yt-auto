@@ -1,0 +1,72 @@
+{
+  "keys": [
+    {
+      "id": "s01.01",
+      "phrase": "93 billion light-years"
+    },
+    {
+      "id": "s01.04",
+      "phrase": "Earth"
+    },
+    {
+      "id": "s01.07",
+      "phrase": "46.5 billion light-years"
+    },
+    {
+      "id": "s02.05",
+      "phrase": "empty space"
+    },
+    {
+      "id": "s02.06",
+      "phrase": "general relativity"
+    },
+    {
+      "id": "s02.08",
+      "phrase": "peculiar velocity"
+    },
+    {
+      "id": "s03.02",
+      "phrase": "cosmic scale factor"
+    },
+    {
+      "id": "s03.07",
+      "phrase": "plasma"
+    },
+    {
+      "id": "s03.09",
+      "phrase": "cosmic microwave background"
+    },
+    {
+      "id": "s04.04",
+      "phrase": "speed of light"
+    },
+    {
+      "id": "s04.10",
+      "phrase": "13.8 billion years"
+    },
+    {
+      "id": "s05.03",
+      "phrase": "proper distance"
+    },
+    {
+      "id": "s05.06",
+      "phrase": "proper distance"
+    },
+    {
+      "id": "s05.10",
+      "phrase": "particle horizon"
+    },
+    {
+      "id": "s06.04",
+      "phrase": "93 billion light-years"
+    },
+    {
+      "id": "s07.03",
+      "phrase": "46.5 billion light-year"
+    },
+    {
+      "id": "s07.07",
+      "phrase": "dark energy"
+    }
+  ]
+}

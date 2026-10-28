@@ -1,0 +1,57 @@
+[model] gemini-3.5-flash
+[system]
+
+
+[user]
+You are a strict fact-checker. For each sentence below, decide using ONLY its cited passages
+(not your own knowledge):
+- supported: every detail (numbers, names, dates, causes, comparisons) is stated in or directly follows from them.
+- partly: the main point is backed but some detail is not, or it overstates / oversimplifies into something false.
+- unsupported: the cited passages do not back it, or there are none.
+- Conflict: if the cited passages DISAGREE with each other about any number, date or name the sentence
+  states, the sentence is at most "partly" even if it matches one of them; say "sources conflict". Its
+  fixed_text must not pick a side: state only what all passages agree on, or give both values.
+For partly/unsupported, give fixed_text: a corrected sentence in the same plain spoken style that the cited
+passages fully support (keep digits and full unit words; no copying 8+ words). Leave fixed_text empty if impossible.
+A FRAMING SENTENCE has no passages: it is "supported" only if it makes no checkable claim at all (a question,
+transition or invitation). If it states any fact, mark it "unsupported" and give fixed_text: the same idea as a
+pure question or transition with no claim (e.g. "So what would a nearby supernova do to us?").
+
+[s01.03] FRAMING SENTENCE: So why does this cosmic puzzle matter so much when we look out into space?
+
+[s01.04] SENTENCE: Objects beyond this physical boundary cannot be detected yet because their light has not had enough time to reach Earth.
+CITED PASSAGES:
+A1.2: The word observable in this sense does not refer to the capability of modern technology to detect light or other information from an object, or whether there is anything to be detected. It refers to the physical limit created by the speed of light itself. No signal can travel faster than light and the universe has only existed for about 14 billion years. Objects which emit light but which exist too far away for that light to have reached Earth are beyond the particle horizon, outside the observable universe. Every location in the universe has its own observable universe, which may or may not overlap with the one centered on Earth.
+A1.5: The universe's size is unknown, and it may be infinite in extent. Some parts of the universe are too far away for the light emitted since the Big Bang to have had enough time to reach Earth or space-based instruments, and therefore lie outside the observable universe. In the future, light from distant galaxies will have had more time to travel, so one might expect that additional regions will become observable. Regions distant from observers (such as us) are expanding away faster than the speed of light, at rates estimated by Hubble's law. The expansion rate appears to be accelerating, which dark energy was proposed to explain.
+
+[s02.10] FRAMING SENTENCE: So how should we picture the movement of galaxies as the universe expands?
+
+[s02.11] SENTENCE: Cosmic expansion is uniform across the observable universe, meaning the distance between any two galaxies increases over time by the same factor.
+CITED PASSAGES:
+A2.10: Distant galaxies in all directions are observed to move away from Earth and their velocity is proportional to their distance from Earth. This observation, known as Hubble's law, combined with the observation that the universe at the largest scales is homogeneous (the same everywhere) and isotropic (the same in all directions), means that the universe is expanding uniformly at the present time. This means the distance between any two galaxies increases over time by the same factor. Uniform expansion is equivalent to the observed linear relationship between the recession velocities
+A2.40: It is often erroneously argued that cosmic expansion must be interpreted as the expansion of space itself, such that galaxies are stationary as the space between them stretches. This description suggests the existence of a preferred rest frame, in violation of the principle of relativity. On the contrary, the expansion of the universe is naturally interpreted as galaxies moving apart.
+
+[s04.09] SENTENCE: Cosmologists define light-travel distance as the travel time of a photon multiplied by the speed of light.
+CITED PASSAGES:
+A1.15: The light-travel distance to the edge of the observable universe is the age of the universe times the speed of light, 13.8 billion light years. This is the distance that a photon emitted shortly after the Big Bang, such as one from the cosmic microwave background, has traveled to reach observers on Earth. Because spacetime is curved, corresponding to the expansion of space, this distance does not correspond to the true distance at any moment in time.
+A1.25: This would be the "light travel distance" (see Distance measures (cosmology)) rather than the "proper distance" used in both Hubble's law and in defining the size of the observable universe. Cosmologist Ned Wright argues against using this measure. The proper distance for a redshift of 8.2 would be about 9.2 Gpc, or about 30 billion light-years.
+
+[s05.02] SENTENCE: Today, that matter is calculated to be about 46 billion light-years away from Earth.
+CITED PASSAGES:
+A1.1: The observable universe is a spherical region of the universe consisting of all matter that can be observed from Earth; the electromagnetic radiation from these astronomical objects has had time to reach the Solar System and Earth since the beginning of the cosmological expansion. The radius of this region is about 14.26 gigaparsecs (46.5 billion light-years or 4.40×1026 m).
+A1.3: According to calculations, the current comoving distance to particles from which the cosmic microwave background radiation (CMBR) was emitted, which represents the radius of the visible universe, is about 14.0 billion parsecs (about 45.7 billion light-years). The comoving distance to the edge of the observable universe is about 14.3 billion parsecs (about 46.6 billion light-years), about 2% larger. The radius of the observable universe is therefore estimated to be about 46.5 billion light-years. Using the critical density and the diameter of the observable universe, the total mass of ordinary matter in the universe can be calculated to be about 1.5×1053 kg. In November 2018, astronomers reported that extragalactic background light (EBL) amounted to 4×1084 photons.
+A1.13: These are distances now (in cosmological time), not distances at the time the light was emitted. For example, the cosmic microwave background radiation that we see right now was emitted at the time of photon decoupling, estimated to have occurred about 380,000 years after the Big Bang, which occurred around 13.8 billion years ago. This radiation was emitted by matter that has, in the intervening time, mostly condensed into galaxies, and those galaxies are now calculated to be about 46 billion light-years from Earth. To estimate the distance to that matter at the time the light was emitted, we may first note that according to the Friedmann–Lemaître–Robertson–Walker metric, which is used to model the expanding universe, if we receive light with a redshift of z, then the scale factor at the time the light was originally emitted is given by
+
+[s05.05] SENTENCE: That calculation yields a light-travel distance of about 13.8 billion light-years.
+CITED PASSAGES:
+A1.15: The light-travel distance to the edge of the observable universe is the age of the universe times the speed of light, 13.8 billion light years. This is the distance that a photon emitted shortly after the Big Bang, such as one from the cosmic microwave background, has traveled to reach observers on Earth. Because spacetime is curved, corresponding to the expansion of space, this distance does not correspond to the true distance at any moment in time.
+
+[s06.05] SENTENCE: This enormous region of space contains as many as an estimated 2 trillion galaxies.
+CITED PASSAGES:
+A1.16: The observable universe contains as many as an estimated 2 trillion galaxies and, overall, as many as an estimated 1024 stars – more stars (and, potentially, Earth-like planets) than all the grains of beach sand on planet Earth. Other estimates are in the hundreds of billions rather than trillions. If the model of cosmic inflation is correct and the universe expanded by >60 e-folds, then the universe could contain over 10100 stars.
+
+[s03.06] SENTENCE: Around 380,000 years following the Big Bang, recombination allowed neutral hydrogen atoms to form.
+CITED PASSAGES:
+A1.13: These are distances now (in cosmological time), not distances at the time the light was emitted. For example, the cosmic microwave background radiation that we see right now was emitted at the time of photon decoupling, estimated to have occurred about 380,000 years after the Big Bang, which occurred around 13.8 billion years ago. This radiation was emitted by matter that has, in the intervening time, mostly condensed into galaxies, and those galaxies are now calculated to be about 46 billion light-years from Earth. To estimate the distance to that matter at the time the light was emitted, we may first note that according to the Friedmann–Lemaître–Robertson–Walker metric, which is used to model the expanding universe, if we receive light with a redshift of z, then the scale factor at the time the light was originally emitted is given by
+A3.2: The CMB is the key experimental evidence of the Big Bang theory for the origin of the universe. In the Big Bang cosmological models, during the earliest periods, the universe was filled with an opaque fog of dense, hot plasma of sub-atomic particles. As the universe expanded, this plasma cooled to the point where protons and electrons combined to form neutral atoms of mostly hydrogen. Unlike the plasma, these atoms could not scatter thermal radiation by Thomson scattering, and so the universe became transparent. Known as the recombination epoch, this decoupling event released photons to travel freely through space. However, the photons have grown less energetic due to the cosmological redshift associated with the expansion of the universe. The surface of last scattering refers to a shell at the right distance in space so photons are now received that were originally emitted at the time of decoupling.
+A3.33: Long before the formation of stars and planets, the early universe was more compact, much hotter and, starting 10−6 seconds after the Big Bang, filled with a uniform glow from its white-hot fog of interacting plasma of photons, electrons, and baryons. As the universe expanded, adiabatic cooling caused the energy density of the plasma to decrease until it became favorable for electrons to combine with protons, forming hydrogen atoms. This recombination event happened when the temperature was around 3000 K or when the universe was approximately 379,000 years old. As photons did not interact with these electrically neutral atoms, the former began to travel freely through space, resulting in the decoupling of matter and radiation. The decoupled radiation would become the CMB.

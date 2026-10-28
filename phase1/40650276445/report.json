@@ -1,0 +1,549 @@
+{
+  "total_seconds": 1012.47,
+  "stages_seconds": {
+    "script": 208.71,
+    "narration": 182.97,
+    "visual_plan": 13.93,
+    "photos": 98.39,
+    "drawings": 131.49,
+    "keyframes": 25.21,
+    "segments": 138.71,
+    "subtitles": 35.07,
+    "assemble": 138.62,
+    "preview": 6.88,
+    "thumbnail": 2.15,
+    "gate": 23.84
+  },
+  "peak_memory_mb": {
+    "python": 1080.4,
+    "largest_child": 8468.5
+  },
+  "machine": {
+    "arch": "x86_64",
+    "cpus": 4,
+    "python": "3.13.16",
+    "runner": "GitHub Actions 1000000285",
+    "cpu_model": "AMD EPYC 9V74 80-Core Processor",
+    "ffmpeg": "ffmpeg version n8.1.3-24-g92611900bb-20261026 Copyright (c) 2000-2026 the FFmpeg developers"
+  },
+  "delivery": {
+    "slow": 5,
+    "reveal": 3
+  },
+  "voice": "kokoro",
+  "subtitle_cues": 126,
+  "whisper_words": 1029,
+  "keywords_on_screen": 7,
+  "sound": {
+    "music": true,
+    "cuts": 87,
+    "voice_rms": 0.0832,
+    "music_search": {
+      "candidates": 120,
+      "allowed": 91,
+      "calm": 8
+    }
+  },
+  "music": {
+    "title": "Kevin MacLeod - Calmant",
+    "author": "Kevin MacLeod",
+    "licence": "CC BY 3.0",
+    "source_page": "https://commons.wikimedia.org/wiki/File:Kevin_MacLeod_-_Calmant.ogg"
+  },
+  "topic": "Why is the observable universe 93 billion light-years across if it is only 13.8 billion years old?",
+  "title": "Why Is the Observable Universe 93 Billion Light-Years Wide?",
+  "words": 995,
+  "video_seconds": 468.9,
+  "visuals": 88,
+  "photos": 17,
+  "drawings": 17,
+  "cards": 54,
+  "drawing_log": {
+    "load_s": 10.3,
+    "torch": "2.14.1+cpu",
+    "diffusers": "0.42.1",
+    "skipped_for_time": [],
+    "total_s": 88.6,
+    "asked": 19,
+    "drawn": 19,
+    "cloud": {
+      "backend": "cloudflare",
+      "seconds": {
+        "v004": 1.2,
+        "v006": 1.4,
+        "v007": 1.5,
+        "v009": 1.7,
+        "v012": 1.4,
+        "v015": 1.4,
+        "v018": 1.4,
+        "v020": 1.4,
+        "v022": 1.4,
+        "v024": 1.5,
+        "v029": 1.5,
+        "v003": 1.4,
+        "v017": 1.3,
+        "v021": 1.9,
+        "v023": 1.7,
+        "v028": 1.4,
+        "v042": 1.7,
+        "v072": 6.0
+      },
+      "errors": [
+        "v027: HTTP 400 b'{\"errors\":[{\"message\":\"AiError: AiError: Input prompt contains NSFW content. (acf19913-008f-4058-ad6f-f9ab776354dd)\",\"code\":8007}],\"success\":false,\"result\":{},\"messages\":[]}'"
+      ],
+      "drawn": 18
+    },
+    "drawings_rejected": [
+      {
+        "id": "v012",
+        "title": "a dark cosmic void at the edge of the universe",
+        "seen": "A red-centered swirling celestial structure with multiple orbital rings is shown floating above a snow-covered mountain peak against a black background.",
+        "reason": "Includes a snow-covered mountain peak which does not belong in deep space or a cosmic void."
+      },
+      {
+        "id": "v020",
+        "title": "a grid expanding in size over time",
+        "seen": "A white architectural grid or building floor plan outline is shown on a black background, with a small section highlighted in red near the center.",
+        "reason": "Looks like an architectural grid or floor plan rather than a cosmic grid."
+      },
+      {
+        "id": "v022",
+        "title": "a single galaxy with a velocity vector arrow",
+        "seen": "A galaxy with multiple white rings and a bright center is shown on a black background, accompanied by a red stylized arrow symbol pointing towards it from the upper left.",
+        "reason": "Contains a stylized arrow symbol, which resembles a diagram or logo."
+      },
+      {
+        "id": "v029",
+        "title": "a grid expanding larger and larger in sequential steps",
+        "seen": "A series of nested square frames with striped textures create a tunnel-like optical illusion on a black background, with an L-shaped line drawn in the upper right.",
+        "reason": "Shows abstract optical illusion frames instead of a growing cosmic scale factor."
+      },
+      {
+        "id": "v027",
+        "title": "a stretchy rubber fabric sheet representing space",
+        "seen": "Several abstract white diagonal lines and strokes intersect against a dark gray background.",
+        "reason": "Shows only abstract lines and strokes with no clearly recognisable space fabric or object."
+      }
+    ],
+    "drawings_used": 14,
+    "steps": 0,
+    "steps_without_picture": [],
+    "cards_to_pictures": [
+      "v010",
+      "v031",
+      "v037",
+      "v045",
+      "v048",
+      "v057",
+      "v061",
+      "v062"
+    ]
+  },
+  "seconds_per_visual": 5.33,
+  "photo_log": {
+    "card_number_fixes": [],
+    "photo_slots": 19,
+    "downloaded": 19,
+    "seen": {
+      "v003": "A person wearing a white lab coat, hair net, and safety goggles closely inspects the inside of a metal vacuum chamber with an open circular door.",
+      "v005": "A deep-field space telescope image displaying countless distant galaxies, glowing stars with bright diffraction spikes, and distorted arcs from gravitational lensing against a black background.",
+      "v013": "A horizontal view of a spiral galaxy seen edge-on, featuring a bright central core, detailed dusty spiral arms, and numerous scattered stars against a black space backdrop.",
+      "v017": "A telescopic image titled 'The Coma Cluster of galaxies' at the top, showing a dense star field filled with numerous faint galaxies against a dark background, with a small NASA/ESA logo and attribution text at the bottom center.",
+      "v019": "A black-and-white portrait of physicist Albert Einstein looking directly at the camera with characteristic unruly white hair and a textured sweater.",
+      "v021": "A stylized space scene showing the curved horizon of a glowing blue planet or cloud layer above a dense field of stars and a distant glowing star or spacecraft.",
+      "v023": "An astronomical image against a star-filled background, featuring a bright spiral galaxy on the upper right, a distorted galaxy on the lower left, and several bright yellow circular markers.",
+      "v028": "Two researchers wearing headphones work inside a facility with large machinery, facing a computer monitor that displays a red-toned astronomical image with circular data points.",
+      "v032": "A NASA slide titled 'LIBS Plasmas In Different Atmospheres' at the top, comparing two circular test chamber views labeled 'Terrestrial' with a blue plasma spark and 'Mars' with a larger green and blue plasma flash.",
+      "v034": "An oval-shaped, multicolored cosmic microwave background map showing tiny temperature fluctuations across the early universe in shades of blue, green, yellow, and red.",
+      "v042": "A dimly lit control room with multiple computer screens displaying data and two people working at desks with large wooden consoles and keyboards.",
+      "v047": "A view of planet Earth from space, showing the swirling white cloud patterns, blue oceans, and parts of Africa and the Middle East against a black background.",
+      "v055": "A narrow field view of an interacting galaxy pair forming a curved shape resembling a question mark, surrounded by glowing green stars and a dark space background.",
+      "v058": "A dense deep-space Hubble Ultra Deep Field image filled with thousands of tiny, multicolored distant galaxies and stars scattered across the black void.",
+      "v069": "An aerial shot of a sandy beach closely packed with rows of white hooded beach chairs facing outward, with a few people walking among them.",
+      "v070": "A colorful astronomical nebula photograph showing glowing clouds of gas and dust in shades of red, green, and orange, illuminated by embedded bright young stars.",
+      "v072": "A dense star cluster image showing countless bright turquoise-blue stars glittering against a black background.",
+      "v086": "A computer simulation of cosmic web filaments showing branching white threads of galaxy clusters against a dark space background, with a small red dot highlighting a specific location.",
+      "v088": "A wide-angle nighttime panoramic view of numerous large radio telescope dishes silhouetted against a starry night sky with the glowing Milky Way and a bright moon."
+    },
+    "rejected_after_looking": [
+      {
+        "id": "v003",
+        "title": "Viewing Spark Generated by ChemCam Laser for Mars Rover",
+        "seen": "A person wearing a white lab coat, hair net, and safety goggles closely inspects the inside of a metal vacuum chamber with an open circular door.",
+        "reason": "Narration is about light speed, but image shows a person inspecting a vacuum chamber."
+      },
+      {
+        "id": "v017",
+        "title": "Coma cluster of galaxies",
+        "seen": "A telescopic image titled 'The Coma Cluster of galaxies' at the top, showing a dense star field filled with numerous faint galaxies against a dark background, with a small NASA/ESA logo and attribution text at the bottom center.",
+        "reason": "Contains text and a logo (title and attribution)."
+      },
+      {
+        "id": "v021",
+        "title": "Ancient Planet in a Globular Cluster Core",
+        "seen": "A stylized space scene showing the curved horizon of a glowing blue planet or cloud layer above a dense field of stars and a distant glowing star or spacecraft.",
+        "reason": "Does not clearly depict a distant star cluster as required."
+      },
+      {
+        "id": "v023",
+        "title": "Interacting Group of Galaxies Known as Stephan Quintet",
+        "seen": "An astronomical image against a star-filled background, featuring a bright spiral galaxy on the upper right, a distorted galaxy on the lower left, and several bright yellow circular markers.",
+        "reason": "Contains unexplained circular markers overlaid on the image."
+      },
+      {
+        "id": "v028",
+        "title": "Astronomers Smile at SOFIA\u2019s Data",
+        "seen": "Two researchers wearing headphones work inside a facility with large machinery, facing a computer monitor that displays a red-toned astronomical image with circular data points.",
+        "reason": "Shows researchers rather than a scientific telescope directly."
+      },
+      {
+        "id": "v032",
+        "title": "Laser Plasmas on Earth and Mars",
+        "seen": "A NASA slide titled 'LIBS Plasmas In Different Atmospheres' at the top, comparing two circular test chamber views labeled 'Terrestrial' with a blue plasma spark and 'Mars' with a larger green and blue plasma flash.",
+        "reason": "It is a presentation slide with text and labels."
+      },
+      {
+        "id": "v042",
+        "title": "Nicholas U Mayall 4-meter Telescope control room (noirlab-4metercontrolroom)",
+        "seen": "A dimly lit control room with multiple computer screens displaying data and two people working at desks with large wooden consoles and keyboards.",
+        "reason": "Narration is about the speed of light, but image shows a control room."
+      },
+      {
+        "id": "v072",
+        "title": "Pandora Cluster Seen by Spitzer",
+        "seen": "A dense star cluster image showing countless bright turquoise-blue stars glittering against a black background.",
+        "reason": "Should show a distant galaxy cluster, but this is a star cluster."
+      }
+    ],
+    "second_try": {
+      "tried": 8,
+      "kept": 1,
+      "seen": {
+        "v003": "A high-angle shot of a solar-powered model aircraft suspended against a blue backdrop, featuring gold-foil wings and a blue structural tail.",
+        "v017": "A dark astronomical field of view displaying numerous scattered stars and several distinct elongated spiral and elliptical galaxies.",
+        "v021": "A dense starfield and nebula clouds showing deep blue and green colors with several prominent brighter stars scattered across.",
+        "v023": "A deep-space telescope image showcasing a central irregular galaxy with vibrant blue and pink glowing regions against a background of countless stars.",
+        "v028": "An illustration of a rocky, glowing red exoplanet with volcanic surface patterns, alongside a smaller distant red planet in deep space.",
+        "v032": "A vibrant astrophotography image of the Ring Nebula, displaying concentric rings of glowing orange, yellow, green, and blue gas.",
+        "v042": "A group portrait of numerous space program personnel posing in a control room, with world map screens and NASA mission patches displayed in the background.",
+        "v072": "A colorful deep-field image filled with a multitude of multicolored stars, red galaxies, and bright blue stellar points."
+      },
+      "rejected": [
+        {
+          "id": "v003",
+          "title": "With a laser beam centered on its panel of photovoltaic cells, a model plane makes the first flight of an aircraft powered by a laser beam inside a building at NASA Marshall.",
+          "seen": "A high-angle shot of a solar-powered model aircraft suspended against a blue backdrop, featuring gold-foil wings and a blue structural tail.",
+          "reason": "The image shows a model aircraft, but the narration mentions light traveling at a constant speed."
+        },
+        {
+          "id": "v017",
+          "title": "Virgo Galaxy Cluster",
+          "seen": "A dark astronomical field of view displaying numerous scattered stars and several distinct elongated spiral and elliptical galaxies.",
+          "reason": "The image shows stars and galaxies, whereas the narration discusses the picture of cosmic expansion being wrong."
+        },
+        {
+          "id": "v021",
+          "title": "Star Cluster Overshadowed by Infrared Objects",
+          "seen": "A dense starfield and nebula clouds showing deep blue and green colors with several prominent brighter stars scattered across.",
+          "reason": "The image shows a starfield and nebula, but the narration is about local comoving spatial coordinates."
+        },
+        {
+          "id": "v023",
+          "title": "A Flood of Gas",
+          "seen": "A deep-space telescope image showcasing a central irregular galaxy with vibrant blue and pink glowing regions against a background of countless stars.",
+          "reason": "The image shows a single irregular galaxy, while the expected topic was interacting galaxies."
+        },
+        {
+          "id": "v028",
+          "title": "Exoplanet is Extremely Hot and Incredibly Close Artist Concept",
+          "seen": "An illustration of a rocky, glowing red exoplanet with volcanic surface patterns, alongside a smaller distant red planet in deep space.",
+          "reason": "The image illustrates a red exoplanet, while it should show a scientific telescope."
+        },
+        {
+          "id": "v042",
+          "title": "STS-125 Flight Control Team in BFCR - HST Orbit & Planning Teams",
+          "seen": "A group portrait of numerous space program personnel posing in a control room, with world map screens and NASA mission patches displayed in the background.",
+          "reason": "The image shows space personnel, while it should show an observatory control room."
+        },
+        {
+          "id": "v072",
+          "title": "Ancient Galaxy Cluster Still Producing Stars",
+          "seen": "A colorful deep-field image filled with a multitude of multicolored stars, red galaxies, and bright blue stellar points.",
+          "reason": "The image shows a deep-field view, but it does not specifically depict a distant galaxy cluster as required by the context."
+        }
+      ],
+      "error": null
+    }
+  },
+  "music_record": {
+    "file": "music.wav",
+    "kind": "music",
+    "source": "wikimedia_commons",
+    "title": "Kevin MacLeod - Calmant",
+    "source_page": "https://commons.wikimedia.org/wiki/File:Kevin_MacLeod_-_Calmant.ogg",
+    "download_url": "https://upload.wikimedia.org/wikipedia/commons/3/3c/Kevin_MacLeod_-_Calmant.ogg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+    "licence": "CC BY 3.0",
+    "licence_url": "https://creativecommons.org/licenses/by/3.0",
+    "author": "Kevin MacLeod",
+    "attribution": "Music: \"Kevin MacLeod - Calmant\" by Kevin MacLeod, CC BY 3.0, via Wikimedia Commons. https://commons.wikimedia.org/wiki/File:Kevin_MacLeod_-_Calmant.ogg",
+    "downloaded": "2026-10-28",
+    "seconds": 204.1,
+    "path": "out/run/music/music.wav"
+  },
+  "thumbnail": {
+    "picture": "v058",
+    "text": "bigger than expected",
+    "red_word": "bigger",
+    "seen": "A dense deep-space Hubble Ultra Deep Field image filled with thousands of tiny, multicolored distant galaxies and stars scattered across the black void.",
+    "picture_source": "https://commons.wikimedia.org/wiki/File:Hubble_ultra_deep_field.jpg"
+  },
+  "gate": {
+    "verdict": "FAIL",
+    "not_pass": {
+      "plain_cards": "FAIL",
+      "thumbnail": "FLAG"
+    }
+  },
+  "llm_calls": [
+    {
+      "name": "script",
+      "model": "gemini-3.8-flash",
+      "prompt_chars": 80562,
+      "images": 0,
+      "status": 503,
+      "attempt": 1,
+      "error": "{\n  \"error\": {\n    \"code\": 503,\n    \"message\": \"This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.\",\n    \"status\": \"UNAVAILABLE\"\n  }\n}\n"
+    },
+    {
+      "name": "script",
+      "model": "gemini-3.6-flash",
+      "prompt_chars": 80562,
+      "images": 0,
+      "status": 200,
+      "seconds": 80.7,
+      "attempts": 1,
+      "finish": "STOP",
+      "in_tokens": 17323,
+      "out_tokens": 4278,
+      "thought_tokens": 14723
+    },
+    {
+      "name": "factcheck",
+      "model": "gemini-3.6-flash",
+      "prompt_chars": 74626,
+      "images": 0,
+      "status": 200,
+      "seconds": 63.0,
+      "attempts": 1,
+      "finish": "STOP",
+      "in_tokens": 16693,
+      "out_tokens": 3529,
+      "thought_tokens": 11466
+    },
+    {
+      "name": "reword",
+      "model": "gemini-3.6-flash",
+      "prompt_chars": 1646,
+      "images": 0,
+      "status": 503,
+      "attempt": 1,
+      "error": "{\n  \"error\": {\n    \"code\": 503,\n    \"message\": \"This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.\",\n    \"status\": \"UNAVAILABLE\"\n  }\n}\n"
+    },
+    {
+      "name": "reword",
+      "model": "gemini-3.5-flash",
+      "prompt_chars": 1646,
+      "images": 0,
+      "status": 200,
+      "seconds": 6.2,
+      "attempts": 1,
+      "finish": "STOP",
+      "in_tokens": 408,
+      "out_tokens": 38,
+      "thought_tokens": 861
+    },
+    {
+      "name": "factcheck2",
+      "model": "gemini-3.5-flash",
+      "prompt_chars": 11028,
+      "images": 0,
+      "status": 200,
+      "seconds": 47.7,
+      "attempts": 1,
+      "finish": "STOP",
+      "in_tokens": 2451,
+      "out_tokens": 517,
+      "thought_tokens": 8732
+    },
+    {
+      "name": "delivery",
+      "model": "gemma-4-31b-it",
+      "prompt_chars": 7392,
+      "images": 0,
+      "status": 500,
+      "attempt": 1,
+      "error": "{\n  \"error\": {\n    \"code\": 500,\n    \"message\": \"Internal error encountered.\",\n    \"status\": \"INTERNAL\"\n  }\n}\n"
+    },
+    {
+      "name": "delivery",
+      "model": "gemini-3.5-flash-lite",
+      "prompt_chars": 7392,
+      "images": 0,
+      "status": 200,
+      "seconds": 1.1,
+      "attempts": 1,
+      "finish": "STOP",
+      "in_tokens": 1893,
+      "out_tokens": 228,
+      "thought_tokens": null
+    },
+    {
+      "name": "visual_plan",
+      "model": "gemini-3.5-flash-lite",
+      "prompt_chars": 15658,
+      "images": 0,
+      "status": 200,
+      "seconds": 13.9,
+      "attempts": 1,
+      "finish": "STOP",
+      "in_tokens": 4246,
+      "out_tokens": 6622,
+      "thought_tokens": null
+    },
+    {
+      "name": "photo_pick",
+      "model": "gemini-3.5-flash-lite",
+      "prompt_chars": 45153,
+      "images": 0,
+      "status": 200,
+      "seconds": 1.8,
+      "attempts": 1,
+      "finish": "STOP",
+      "in_tokens": 11776,
+      "out_tokens": 527,
+      "thought_tokens": null
+    },
+    {
+      "name": "photo_describe",
+      "model": "gemini-3.5-flash-lite",
+      "prompt_chars": 321,
+      "images": 19,
+      "status": 200,
+      "seconds": 7.6,
+      "attempts": 1,
+      "finish": "STOP",
+      "in_tokens": 20724,
+      "out_tokens": 984,
+      "thought_tokens": null
+    },
+    {
+      "name": "photo_verify",
+      "model": "gemini-3.5-flash-lite",
+      "prompt_chars": 6873,
+      "images": 0,
+      "status": 200,
+      "seconds": 3.3,
+      "attempts": 1,
+      "finish": "STOP",
+      "in_tokens": 1458,
+      "out_tokens": 1450,
+      "thought_tokens": null
+    },
+    {
+      "name": "photo_describe",
+      "model": "gemini-3.5-flash-lite",
+      "prompt_chars": 320,
+      "images": 8,
+      "status": 200,
+      "seconds": 5.0,
+      "attempts": 1,
+      "finish": "STOP",
+      "in_tokens": 8798,
+      "out_tokens": 368,
+      "thought_tokens": null
+    },
+    {
+      "name": "photo_verify",
+      "model": "gemini-3.5-flash-lite",
+      "prompt_chars": 3188,
+      "images": 0,
+      "status": 200,
+      "seconds": 1.9,
+      "attempts": 1,
+      "finish": "STOP",
+      "in_tokens": 679,
+      "out_tokens": 623,
+      "thought_tokens": null
+    },
+    {
+      "name": "drawing_describe",
+      "model": "gemini-3.5-flash-lite",
+      "prompt_chars": 321,
+      "images": 19,
+      "status": 200,
+      "seconds": 5.6,
+      "attempts": 1,
+      "finish": "STOP",
+      "in_tokens": 21069,
+      "out_tokens": 874,
+      "thought_tokens": null
+    },
+    {
+      "name": "drawing_verify",
+      "model": "gemini-3.5-flash-lite",
+      "prompt_chars": 6714,
+      "images": 0,
+      "status": 200,
+      "seconds": 3.2,
+      "attempts": 1,
+      "finish": "STOP",
+      "in_tokens": 1416,
+      "out_tokens": 1328,
+      "thought_tokens": null
+    },
+    {
+      "name": "keywords",
+      "model": "gemini-3.5-flash-lite",
+      "prompt_chars": 7284,
+      "images": 0,
+      "status": 200,
+      "seconds": 1.6,
+      "attempts": 1,
+      "finish": "STOP",
+      "in_tokens": 1868,
+      "out_tokens": 516,
+      "thought_tokens": null
+    },
+    {
+      "name": "thumbnail",
+      "model": "gemini-3.5-flash-lite",
+      "prompt_chars": 4674,
+      "images": 0,
+      "status": 200,
+      "seconds": 2.0,
+      "attempts": 1,
+      "finish": "STOP",
+      "in_tokens": 1008,
+      "out_tokens": 34,
+      "thought_tokens": null
+    },
+    {
+      "name": "gate_editorial",
+      "model": "gemini-3.5-flash-lite",
+      "prompt_chars": 17033,
+      "images": 0,
+      "status": 200,
+      "seconds": 1.7,
+      "attempts": 1,
+      "finish": "STOP",
+      "in_tokens": 4018,
+      "out_tokens": 351,
+      "thought_tokens": null
+    }
+  ],
+  "llm_calls_ok_by_model": {
+    "gemini-3.6-flash": 2,
+    "gemini-3.5-flash": 2,
+    "gemini-3.5-flash-lite": 12
+  }
+}

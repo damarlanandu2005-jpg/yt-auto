@@ -1,0 +1,52 @@
+{
+  "checks": [
+    {
+      "n": 1,
+      "seen": "A high-angle shot of a solar-powered model aircraft suspended against a blue backdrop, featuring gold-foil wings and a blue structural tail.",
+      "fits": false,
+      "reason": "The image shows a model aircraft, but the narration mentions light traveling at a constant speed."
+    },
+    {
+      "n": 2,
+      "seen": "A dark astronomical field of view displaying numerous scattered stars and several distinct elongated spiral and elliptical galaxies.",
+      "fits": false,
+      "reason": "The image shows stars and galaxies, whereas the narration discusses the picture of cosmic expansion being wrong."
+    },
+    {
+      "n": 3,
+      "seen": "A dense starfield and nebula clouds showing deep blue and green colors with several prominent brighter stars scattered across.",
+      "fits": false,
+      "reason": "The image shows a starfield and nebula, but the narration is about local comoving spatial coordinates."
+    },
+    {
+      "n": 4,
+      "seen": "A deep-space telescope image showcasing a central irregular galaxy with vibrant blue and pink glowing regions against a background of countless stars.",
+      "fits": false,
+      "reason": "The image shows a single irregular galaxy, while the expected topic was interacting galaxies."
+    },
+    {
+      "n": 5,
+      "seen": "An illustration of a rocky, glowing red exoplanet with volcanic surface patterns, alongside a smaller distant red planet in deep space.",
+      "fits": false,
+      "reason": "The image illustrates a red exoplanet, while it should show a scientific telescope."
+    },
+    {
+      "n": 6,
+      "seen": "A vibrant astrophotography image of the Ring Nebula, displaying concentric rings of glowing orange, yellow, green, and blue gas.",
+      "fits": true,
+      "reason": "The Ring Nebula clearly depicts a glowing plasma cloud, matching the narration about white-hot fog of plasma."
+    },
+    {
+      "n": 7,
+      "seen": "A group portrait of numerous space program personnel posing in a control room, with world map screens and NASA mission patches displayed in the background.",
+      "fits": false,
+      "reason": "The image shows space personnel, while it should show an observatory control room."
+    },
+    {
+      "n": 8,
+      "seen": "A colorful deep-field image filled with a multitude of multicolored stars, red galaxies, and bright blue stellar points.",
+      "fits": false,
+      "reason": "The image shows a deep-field view, but it does not specifically depict a distant galaxy cluster as required by the context."
+    }
+  ]
+}

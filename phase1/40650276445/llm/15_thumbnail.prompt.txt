@@ -1,0 +1,40 @@
+[model] gemini-3.5-flash-lite
+[system]
+
+
+[user]
+Make a YouTube thumbnail for this video.
+Title: Why Is the Observable Universe 93 Billion Light-Years Wide?
+Question it answers: How can the observable universe be 93 billion light-years wide if it is only 13.8 billion years old?
+
+Pick ONE picture (by its id) that will read best at phone size: one clear, dramatic subject that fits the
+title. Then write 2 to 4 big words to put on it: honest (true, kept by the video), not the title repeated,
+no fake urgency, no question marks or punctuation. Pick one of those words to show in red.
+
+PICTURES (what a viewer sees in each):
+v003: A high-angle shot of a solar-powered model aircraft suspended against a blue backdrop, featuring gold-foil wings and a blue structural tail.
+v005: A deep-field space telescope image displaying countless distant galaxies, glowing stars with bright diffraction spikes, and distorted arcs from gravitational lensing against a black background.
+v013: A horizontal view of a spiral galaxy seen edge-on, featuring a bright central core, detailed dusty spiral arms, and numerous scattered stars against a black space backdrop.
+v017: A dark astronomical field of view displaying numerous scattered stars and several distinct elongated spiral and elliptical galaxies.
+v019: A black-and-white portrait of physicist Albert Einstein looking directly at the camera with characteristic unruly white hair and a textured sweater.
+v021: A dense starfield and nebula clouds showing deep blue and green colors with several prominent brighter stars scattered across.
+v023: A deep-space telescope image showcasing a central irregular galaxy with vibrant blue and pink glowing regions against a background of countless stars.
+v028: An illustration of a rocky, glowing red exoplanet with volcanic surface patterns, alongside a smaller distant red planet in deep space.
+v032: A vibrant astrophotography image of the Ring Nebula, displaying concentric rings of glowing orange, yellow, green, and blue gas.
+v034: An oval-shaped, multicolored cosmic microwave background map showing tiny temperature fluctuations across the early universe in shades of blue, green, yellow, and red.
+v042: A group portrait of numerous space program personnel posing in a control room, with world map screens and NASA mission patches displayed in the background.
+v047: A view of planet Earth from space, showing the swirling white cloud patterns, blue oceans, and parts of Africa and the Middle East against a black background.
+v055: A narrow field view of an interacting galaxy pair forming a curved shape resembling a question mark, surrounded by glowing green stars and a dark space background.
+v058: A dense deep-space Hubble Ultra Deep Field image filled with thousands of tiny, multicolored distant galaxies and stars scattered across the black void.
+v069: An aerial shot of a sandy beach closely packed with rows of white hooded beach chairs facing outward, with a few people walking among them.
+v070: A colorful astronomical nebula photograph showing glowing clouds of gas and dust in shades of red, green, and orange, illuminated by embedded bright young stars.
+v072: A colorful deep-field image filled with a multitude of multicolored stars, red galaxies, and bright blue stellar points.
+v086: A computer simulation of cosmic web filaments showing branching white threads of galaxy clusters against a dark space background, with a small red dot highlighting a specific location.
+v088: A wide-angle nighttime panoramic view of numerous large radio telescope dishes silhouetted against a starry night sky with the glowing Milky Way and a bright moon.
+v004: A galaxy with swirling rings and a red center is shown against a dark black background, along with a few scattered stars and a tiny cross shape.
+v006: An angled galaxy with a red center is shown with small explosions near its edge, and a white cloud formation with falling projectiles appears below it on a black background.
+v007: A narrow diagonal beam of light with a small red circle at its upper left end is shown on a black background, with tiny particles scattered within the beam.
+v009: Two spiral galaxies with bright white cores are visible against a black background, accompanied by a few scattered distant stars.
+v015: A black background shows several glowing circular celestial objects, including one large detailed planetary structure with a red center in the upper right.
+v018: Two large red-centered planetary structures with intricate ring systems are linked by thin curved pathways against a black background.
+v024: An angled galaxy with a glowing center is shown on a black background, surrounded by radiating white streaks and several small distant stars.

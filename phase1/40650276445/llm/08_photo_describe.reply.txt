@@ -1,0 +1,80 @@
+{
+  "images": [
+    {
+      "n": 1,
+      "seen": "A person wearing a white lab coat, hair net, and safety goggles closely inspects the inside of a metal vacuum chamber with an open circular door."
+    },
+    {
+      "n": 2,
+      "seen": "A deep-field space telescope image displaying countless distant galaxies, glowing stars with bright diffraction spikes, and distorted arcs from gravitational lensing against a black background."
+    },
+    {
+      "n": 3,
+      "seen": "A horizontal view of a spiral galaxy seen edge-on, featuring a bright central core, detailed dusty spiral arms, and numerous scattered stars against a black space backdrop."
+    },
+    {
+      "n": 4,
+      "seen": "A telescopic image titled 'The Coma Cluster of galaxies' at the top, showing a dense star field filled with numerous faint galaxies against a dark background, with a small NASA/ESA logo and attribution text at the bottom center."
+    },
+    {
+      "n": 5,
+      "seen": "A black-and-white portrait of physicist Albert Einstein looking directly at the camera with characteristic unruly white hair and a textured sweater."
+    },
+    {
+      "n": 6,
+      "seen": "A stylized space scene showing the curved horizon of a glowing blue planet or cloud layer above a dense field of stars and a distant glowing star or spacecraft."
+    },
+    {
+      "n": 7,
+      "seen": "An astronomical image against a star-filled background, featuring a bright spiral galaxy on the upper right, a distorted galaxy on the lower left, and several bright yellow circular markers."
+    },
+    {
+      "n": 8,
+      "seen": "Two researchers wearing headphones work inside a facility with large machinery, facing a computer monitor that displays a red-toned astronomical image with circular data points."
+    },
+    {
+      "n": 9,
+      "seen": "A NASA slide titled 'LIBS Plasmas In Different Atmospheres' at the top, comparing two circular test chamber views labeled 'Terrestrial' with a blue plasma spark and 'Mars' with a larger green and blue plasma flash."
+    },
+    {
+      "n": 10,
+      "seen": "An oval-shaped, multicolored cosmic microwave background map showing tiny temperature fluctuations across the early universe in shades of blue, green, yellow, and red."
+    },
+    {
+      "n": 11,
+      "seen": "A dimly lit control room with multiple computer screens displaying data and two people working at desks with large wooden consoles and keyboards."
+    },
+    {
+      "n": 12,
+      "seen": "A view of planet Earth from space, showing the swirling white cloud patterns, blue oceans, and parts of Africa and the Middle East against a black background."
+    },
+    {
+      "n": 13,
+      "seen": "A narrow field view of an interacting galaxy pair forming a curved shape resembling a question mark, surrounded by glowing green stars and a dark space background."
+    },
+    {
+      "n": 14,
+      "seen": "A dense deep-space Hubble Ultra Deep Field image filled with thousands of tiny, multicolored distant galaxies and stars scattered across the black void."
+    },
+    {
+      "n": 15,
+      "seen": "An aerial shot of a sandy beach closely packed with rows of white hooded beach chairs facing outward, with a few people walking among them."
+    },
+    {
+      "n": 16,
+      "seen": "A colorful astronomical nebula photograph showing glowing clouds of gas and dust in shades of red, green, and orange, illuminated by embedded bright young stars."
+    },
+    {
+      "n": 17,
+      "seen": "A dense star cluster image showing countless bright turquoise-blue stars glittering against a black background."
+    },
+    {
+      "n": 18,
+      "seen": "A computer simulation of cosmic web filaments showing branching white threads of galaxy clusters against a dark space background, with a small red dot highlighting a specific location."
+    },
+    {
+      "n": 19,
+      "seen": "A wide-angle nighttime panoramic view of numerous large radio telescope dishes silhouetted against a starry night sky with the glowing Milky Way and a bright moon."
+    }
+  ]
+}
