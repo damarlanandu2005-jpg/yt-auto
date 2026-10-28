@@ -31,13 +31,13 @@ QUALITY = ["gemini-3.8-flash", "gemini-3.6-flash", "gemini-3.5-flash"]
 # daily limit), then Flash-Lite models, then GitHub Models, then the strong models as a last resort.
 LIGHT = [m for m in os.environ.get(
     "LLM_LIGHT_MODELS",
-    "gemma-4-31b-it,gemini-3.5-flash-lite,gemini-3.1-flash-lite,github:openai/gpt-4.1-mini,"
+    "gemma-4-31b-it,gemini-3.5-flash-lite,gemini-3.1-flash-lite,"
     "gemini-3.6-flash,gemini-3.8-flash").split(",") if m]
 # PICTURES: the photo check (sends images). Not Gemma: it answered HTTP 500 to every request with
 # pictures (6/6, models checks 40557681397 and 40559021860) while text-only JSON worked.
 VISION = [m for m in os.environ.get(
     "LLM_VISION_MODELS",
-    "gemini-3.5-flash-lite,gemini-3.1-flash-lite,github:openai/gpt-4.1-mini,"
+    "gemini-3.5-flash-lite,gemini-3.1-flash-lite,"
     "gemini-3.6-flash,gemini-3.8-flash").split(",") if m]
 FAST = LIGHT                      # older name, kept for callers
 MODELS = QUALITY                  # default when a caller names no list
