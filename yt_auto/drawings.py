@@ -25,20 +25,90 @@ MODEL = {"base": "segmind/Segmind-Vega", "lora": "segmind/Segmind-VegaRT", "step
 STYLE = ("pure black background, detailed ink illustration, white and grey pen linework, one bright red accent, "
          "high contrast, simple clear composition, no text, no letters, no numbers")
 WIDTH, HEIGHT = 1024, 576
-MAX_DRAWINGS = 24  # 12 planned + room for photo slots whose photo failed the check
+# First choice when the owner's Cloudflare secrets are set (added 28 Oct): FLUX.1 [schnell] on Workers AI.
+# Official pricing page (28 Oct): free 10,000 neurons/day (reset 00:00 UTC); FLUX.1 schnell costs 4.8 neurons per
+# 512x512 tile + 9.6 per step, about 58 per 1024x1024 drawing at 4 steps, so ~170 drawings/day stay free. Terms:
+# the customer keeps all rights in inputs and outputs; Cloudflare doesn't train on them. Model licence Apache-2.0.
+CLOUD = {"model": "@cf/black-forest-labs/flux-1-schnell", "name": "FLUX.1 [schnell] (Black Forest Labs) on Cloudflare "
+         "Workers AI", "licence": "Apache-2.0", "page": "https://huggingface.co/black-forest-labs/FLUX.1-schnell",
+         "steps": 4}
+CLOUD_DAILY_MAX = 120  # stay well under the free 10,000 neurons (≈170 drawings) per day  # 12 planned + room for photo slots whose photo failed the check
 BUDGET_S = 32 * 60
 CACHE = Path.home() / "hf-draw"  # own model cache (the whisper cache has its own key in the workflow)
 
 
-def record(path: Path, subject: str) -> dict:
+def record(path: Path, subject: str, cloud: bool = False) -> dict:
     """Licence record, same fields as a photo's. The model's licence (Apache-2.0) puts no limits on what
     it draws; the drawings are non-realistic, so YouTube's AI disclosure is not needed."""
+    name = CLOUD["name"] if cloud else f"{MODEL['base']} + {MODEL['lora']}"
+    short = "FLUX.1 schnell" if cloud else "Segmind-Vega"
     return {"file": path.name, "kind": "drawing", "source": "ai_drawing", "title": subject,
-            "source_page": MODEL["page"], "licence": "AI-generated drawing (no third-party rights)",
-            "model_licence": MODEL["licence"], "licence_url": MODEL["licence_url"],
-            "author": f"AI-generated with {MODEL['base']} + {MODEL['lora']}",
-            "attribution": f"Illustration generated with Segmind-Vega ({MODEL['licence']}): {subject}",
+            "source_page": CLOUD["page"] if cloud else MODEL["page"], "licence": "AI-generated drawing (no third-party rights)",
+            "model_licence": CLOUD["licence"] if cloud else MODEL["licence"], "licence_url": MODEL["licence_url"],
+            "author": f"AI-generated with {name}",
+            "attribution": f"Illustration generated with {short} (Apache-2.0): {subject}",
             "downloaded": dt.date.today().isoformat(), "prompt": f"{subject}, {STYLE}"}
+
+
+def cloud_ready() -> bool:
+    return bool(os.environ.get("CLOUDFLARE_API_TOKEN") and os.environ.get("CLOUDFLARE_ACCOUNT_ID"))
+
+
+def cloud_draw(prompt: str, seed: int, timeout: int = 90) -> bytes:
+    """One FLUX.1 schnell drawing (JPEG bytes, about 1024x1024) from Workers AI's REST API."""
+    import base64
+    import urllib.request
+
+    url = (f"https://api.cloudflare.com/client/v4/accounts/{os.environ['CLOUDFLARE_ACCOUNT_ID']}/ai/run/"
+           f"{CLOUD['model']}")
+    body = json.dumps({"prompt": prompt, "steps": CLOUD["steps"], "seed": seed}).encode()
+    req = urllib.request.Request(url, data=body, headers={"Authorization": f"Bearer {os.environ['CLOUDFLARE_API_TOKEN']}",
+                                                          "Content-Type": "application/json"})
+    with urllib.request.urlopen(req, timeout=timeout) as r:
+        d = json.loads(r.read())
+    if not d.get("success", True) or not (d.get("result") or {}).get("image"):
+        raise RuntimeError(f"Workers AI: {str(d.get('errors') or d)[:300]}")
+    return base64.b64decode(d["result"]["image"])
+
+
+def _to_frame(raw: bytes, out: Path) -> None:
+    """Centre-crop the square drawing to our 16:9 size."""
+    import io
+
+    from PIL import Image
+
+    im = Image.open(io.BytesIO(raw)).convert("RGB")
+    s = max(WIDTH / im.width, HEIGHT / im.height)
+    im = im.resize((round(im.width * s), round(im.height * s)), Image.LANCZOS)
+    x, y = (im.width - WIDTH) // 2, (im.height - HEIGHT) // 2
+    im.crop((x, y, x + WIDTH, y + HEIGHT)).save(out)
+
+
+def make_cloud(jobs: list[dict], out_dir: Path) -> tuple[dict, dict]:
+    """Draw on Workers AI; stop at the first quota/limit error (the rest fall back to the local model)."""
+    import time
+    import urllib.error
+
+    drawn, log = {}, {"backend": "cloudflare", "seconds": {}, "errors": []}
+    for i, job in enumerate(jobs[:CLOUD_DAILY_MAX]):
+        t = time.perf_counter()
+        try:
+            raw = cloud_draw(f"{job['subject']}, {STYLE}", 1000 + i)
+        except urllib.error.HTTPError as e:
+            log["errors"].append(f"{job['id']}: HTTP {e.code} {e.read()[:200]!r}")
+            if e.code in (401, 403, 429):  # no access or the free allocation is used up: stop asking
+                break
+            continue
+        except Exception as e:  # noqa: BLE001
+            log["errors"].append(f"{job['id']}: {e!r}"[:300])
+            continue
+        p = out_dir / f"{job['id']}.png"
+        _to_frame(raw, p)
+        (out_dir / f"{job['id']}.licence.json").write_text(json.dumps(record(p, job["subject"], cloud=True), indent=2))
+        drawn[job["id"]] = str(p)
+        log["seconds"][job["id"]] = round(time.perf_counter() - t, 1)
+    log["drawn"] = len(drawn)
+    return drawn, log
 
 
 def make(jobs: list[dict], out_dir: Path, root: Path, budget_s: int = BUDGET_S) -> dict:
@@ -46,6 +116,21 @@ def make(jobs: list[dict], out_dir: Path, root: Path, budget_s: int = BUDGET_S) 
     out_dir.mkdir(parents=True, exist_ok=True)
     if not jobs:
         return {"drawn": {}, "log": {"asked": 0}}
+    cloud_drawn, cloud_log = {}, None
+    if cloud_ready():
+        cloud_drawn, cloud_log = make_cloud(jobs, out_dir)
+        jobs = [j for j in jobs if j["id"] not in cloud_drawn]
+        if not jobs:
+            return {"drawn": cloud_drawn, "log": {"asked": len(cloud_drawn), "drawn": len(cloud_drawn), "cloud": cloud_log}}
+    try:
+        import importlib.util
+
+        local_ok = importlib.util.find_spec("diffusers") is not None
+    except Exception:  # noqa: BLE001
+        local_ok = False
+    if not local_ok:
+        return {"drawn": cloud_drawn, "log": {"asked": len(jobs) + len(cloud_drawn), "drawn": len(cloud_drawn),
+                                              "cloud": cloud_log, "local": "not installed"}}
     (out_dir / "jobs.json").write_text(json.dumps(jobs, indent=1, ensure_ascii=False))
     env = {**os.environ, "HF_HUB_CACHE": str(CACHE), "HF_HUB_DISABLE_PROGRESS_BARS": "1"}
     try:
@@ -58,8 +143,9 @@ def make(jobs: list[dict], out_dir: Path, root: Path, budget_s: int = BUDGET_S) 
         err = "timed out"
     res = json.loads((out_dir / "result.json").read_text()) if (out_dir / "result.json").exists() else {"drawn": {}}
     drawn = {k: str(out_dir / v) for k, v in res.get("drawn", {}).items() if (out_dir / v).exists()}
-    return {"drawn": drawn, "log": {**{k: v for k, v in res.items() if k != "drawn"}, "asked": len(jobs),
-                                    "drawn": len(drawn), **({"error": err} if err else {})}}
+    return {"drawn": {**cloud_drawn, **drawn},
+            "log": {**{k: v for k, v in res.items() if k != "drawn"}, "asked": len(jobs) + len(cloud_drawn),
+                    "drawn": len(drawn) + len(cloud_drawn), "cloud": cloud_log, **({"error": err} if err else {})}}
 
 
 def _main() -> None:

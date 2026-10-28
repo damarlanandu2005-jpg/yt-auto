@@ -45,6 +45,40 @@ def card(repo: str) -> dict:
             "last_modified": d.get("lastModified")}
 
 
+def cloud_test(a, out: Path) -> None:
+    """Same 10 prompts on FLUX.1 schnell via Cloudflare Workers AI (owner's free account, 28 Oct)."""
+    sys.path.insert(0, str(Path(__file__).resolve().parents[1]))
+    from yt_auto import drawings
+
+    res: dict = {"model": "cloudflare-flux", "config": drawings.CLOUD, "style": STYLE,
+                 "licences": [card("black-forest-labs/FLUX.1-schnell")], "drawings": []}
+    files = []
+    for i, p in enumerate(PROMPTS[: a.n], 1):
+        t = time.perf_counter()
+        try:
+            raw = drawings.cloud_draw(f"{p}, {STYLE}", i)
+        except Exception as e:  # noqa: BLE001
+            err = e.read()[:300].decode(errors="replace") if hasattr(e, "read") else ""
+            res["drawings"].append({"prompt": p, "error": f"{e!r} {err}"[:400]})
+            print(f"d{i:02}: {e!r} {err}", flush=True)
+            continue
+        f = out / f"d{i:02}.jpg"
+        drawings._to_frame(raw, f.with_suffix(".png"))
+        from PIL import Image
+        Image.open(f.with_suffix(".png")).convert("RGB").save(f, quality=90)
+        f.with_suffix(".png").unlink()
+        files.append(f)
+        res["drawings"].append({"file": f.name, "prompt": p, "seconds": round(time.perf_counter() - t, 1)})
+        print(f"{f.name}: {res['drawings'][-1]['seconds']} s", flush=True)
+    (out / "result.json").write_text(json.dumps(res, indent=1))
+    from PIL import Image
+    w, h = 512, 288
+    sheet = Image.new("RGB", (2 * w, max(1, (len(files) + 1) // 2) * h))
+    for i, f in enumerate(files):
+        sheet.paste(Image.open(f).resize((w, h)), ((i % 2) * w, (i // 2) * h))
+    sheet.save(out / "sheet.jpg", quality=85)
+
+
 def peak_mb() -> int:
     return resource.getrusage(resource.RUSAGE_SELF).ru_maxrss // 1024
 
@@ -59,6 +93,8 @@ def main() -> None:
     a = ap.parse_args()
     out = Path(a.out)
     out.mkdir(parents=True, exist_ok=True)
+    if a.model == "cloudflare-flux":
+        return cloud_test(a, out)
     cfg = MODELS[a.model]
     res: dict = {"model": a.model, "config": cfg, "style": STYLE, "size": [a.width, a.height],
                  "cpu": platform.processor() or platform.machine(), "cores": os.cpu_count(),

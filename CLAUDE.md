@@ -90,7 +90,7 @@ yt_auto/research.py    Wikipedia articles -> numbered passages (sources.json, wi
 yt_auto/writer.py      plan -> script (each sentence cites passage ids) -> separate fact-check -> fix or drop
 yt_auto/shots.py       ~4.5 s visual slots, visual plan, photo pick + vision check, card-number guard; kind=step slots zoom closer (1.4x, 1.8x) into the previous picture (step-by-step pictures, owner 28 Oct)
 yt_auto/photos.py      NASA + Commons search, licence filter, licence JSON per file
-yt_auto/drawings.py    AI ink drawings (Segmind-Vega + VegaRT, Apache-2.0) on the runner CPU, own process, max 24 (12 planned) / 32 min;
+yt_auto/drawings.py    AI ink drawings: FLUX.1 schnell on Cloudflare Workers AI first (owner secrets CLOUDFLARE_API_TOKEN/ACCOUNT_ID, free 10k neurons/day ≈ 170 drawings, cap 120/run), else Segmind-Vega + VegaRT (Apache-2.0) on the runner CPU, own process, max 24 (12 planned) / 32 min;
                        for ideas no photo shows, then photo slots with no photo; shots.add_drawings looks at each (VISION) and drops bad ones
 yt_auto/music.py       background music from Wikimedia Commons (CC BY/BY-SA/CC0/PD only; owner OK with CC BY + credit, 28 Oct), calm moods, licence record + description credit
 yt_auto/sound.py       final mix: narration + music (-21 dB under speech, -14 dB in pauses) + own-made click/whoosh at picture/scene changes; narration.wav stays clean for subtitles
