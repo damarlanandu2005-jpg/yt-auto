@@ -290,6 +290,7 @@ Answer choice = the candidate number as text, or "".
         second: dict = {}
         _verify(again, second)
         log["second_try"] = {"tried": len(again), "kept": sum(1 for v in again if v.get("photo")),
+                             "seen": second.get("seen", {}),
                              "rejected": second.get("rejected_after_looking", []), "error": second.get("verify_error")}
         if second.get("verify_error"):  # not looked at: don't use them
             for v in again:
@@ -337,6 +338,42 @@ def apply_steps(visuals: list[dict], log: dict) -> None:
             orphan.append(v["id"])
     log["steps"] = made
     log["steps_without_picture"] = orphan
+
+
+def _card_number(v: dict) -> str | None:
+    c = v.get("card") or {}
+    if c.get("type") == "stat":
+        m = re.search(r"\d[\d,.]*", str(c.get("value", "")))
+        return m.group(0).replace(",", "") if m else None
+    return None
+
+
+def limit_cards(visuals: list[dict], log: dict) -> None:
+    """Code rules (step 2 test run 40637860035 had 4 number cards in a row and '1.5 million years' twice):
+    never more than 2 cards in a row, and no number card repeating a number already shown in its scene.
+    An extra card becomes a closer look at the last picture of its scene (or stays a card if there is none)."""
+    fixed, run, seen = [], 0, {}
+    for i, v in enumerate(visuals):
+        if v.get("photo"):
+            run = 0
+            continue
+        run += 1
+        num = _card_number(v)
+        repeat = num is not None and num in seen.get(v["scene"], set())
+        if num is not None:
+            seen.setdefault(v["scene"], set()).add(num)
+        if run <= 2 and not repeat:
+            continue
+        last = next((u for u in reversed(visuals[:i]) if u.get("photo") and u["scene"] == v["scene"]), None)
+        if last is None:
+            continue
+        v["photo"] = dict(last["photo"])
+        v["zoom"] = STEP_ZOOM[1] if last.get("zoom", 1.0) < STEP_ZOOM[1] else STEP_ZOOM[0]
+        v["focus"] = {"center": "left", "left": "right", "right": "top"}.get(last.get("focus") or "center", "center")
+        v["kind"], v["step_of"] = "step", last.get("step_of", last["id"])
+        fixed.append(v["id"])
+        run = 0
+    log["cards_to_pictures"] = fixed
 
 
 def drawing_jobs(visuals: list[dict], max_n: int) -> list[dict]:

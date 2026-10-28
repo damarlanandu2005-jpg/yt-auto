@@ -325,8 +325,16 @@ def picture_checks(pkg: Path, visuals: list[dict]) -> list[dict]:
                      "; ".join(errors) + " (pictures used without the AI look check)" if errors
                      else f"all {used} photos and drawings were looked at; rejected ones are not used"))
     thumb = pkg / "thumbnail.jpg"
-    out.append(check("thumbnail", PASS if thumb.exists() else FAIL,
-                     "thumbnail.jpg made" if thumb.exists() else "no thumbnail yet (the thumbnail step is not built)"))
+    if not thumb.exists():
+        out.append(check("thumbnail", FAIL, "no thumbnail.jpg"))
+    else:  # R2: the thumbnail's words must be about what the video really says
+        info = json.loads((pkg / "thumbnail.json").read_text()) if (pkg / "thumbnail.json").exists() else {}
+        script_text = json.dumps(json.loads((pkg / "script.json").read_text(encoding="utf-8")), ensure_ascii=False).lower()
+        words = [w for w in re.findall(r"[a-z0-9]+", info.get("text", "").lower()) if len(w) > 3]
+        missing = [w for w in words if w not in script_text]
+        out.append(check("thumbnail", FLAG if missing else PASS,
+                         f"words {missing} of '{info.get('text')}' are not in the script: check they are honest" if missing
+                         else f"'{info.get('text', '')}' on picture {info.get('picture', '?')}"))
     return out
 
 

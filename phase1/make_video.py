@@ -27,7 +27,7 @@ import matplotlib
 ROOT = Path(__file__).resolve().parents[1]
 sys.path.insert(0, str(ROOT))
 
-from yt_auto import align, drawings, gate, keywords, llm, music, owner_voice, sound, package, render, research, shots, writer  # noqa: E402
+from yt_auto import align, drawings, gate, keywords, llm, music, owner_voice, sound, thumbnail, package, render, research, shots, writer  # noqa: E402
 from yt_auto.bench import Bench  # noqa: E402
 from yt_auto.tts import Narrator  # noqa: E402
 from yt_auto.visuals import render_keyframe  # noqa: E402
@@ -212,6 +212,7 @@ def run(args, out: Path, bench: Bench) -> None:
                   f"used after looking {drawing_log.get('drawings_used', 0)}"
                   f"{'; ' + drawing_log['error'] if drawing_log.get('error') else ''}", flush=True)
             shots.apply_steps(visuals, drawing_log)  # step-by-step closer views of the picture before
+            shots.limit_cards(visuals, drawing_log)  # at most 2 cards in a row, no repeated number
             (out / "visuals.json").write_text(json.dumps(visuals, indent=1, ensure_ascii=False), encoding="utf-8")
             (out / "drawing_log.json").write_text(json.dumps(drawing_log, indent=1, ensure_ascii=False))
 
@@ -323,6 +324,15 @@ def run(args, out: Path, bench: Bench) -> None:
     bench.info["music_record"] = track
     package.write(out, script, the_plan, sources, visuals, scenes, report, bench.info)
     package.contact_sheet([Path(v["frame"]) for v in visuals], out / "contact_sheet.jpg")
+    with bench.stage("thumbnail"):  # rule R1: a video needs a thumbnail; built from checked pictures only
+        seen = {**photo_log.get("seen", {}), **drawing_log.get("drawings_seen", {})}
+        for k, v in ((photo_log.get("second_try") or {}).get("seen") or {}).items():
+            seen[k] = v
+        try:
+            bench.info["thumbnail"] = thumbnail.make(out, script["title"], the_plan["question"], visuals, seen)
+        except Exception as e:  # noqa: BLE001 — the gate will FAIL the video without one
+            bench.info["thumbnail"] = {"error": repr(e)[:300]}
+        print(f"[thumbnail] {bench.info['thumbnail']}", flush=True)
 
     # 14. Quality gate (Phase 3): technical + editorial checks; results lead the review sheet
     with bench.stage("gate"):

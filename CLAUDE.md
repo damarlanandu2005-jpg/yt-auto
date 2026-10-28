@@ -95,6 +95,7 @@ yt_auto/drawings.py    AI ink drawings (Segmind-Vega + VegaRT, Apache-2.0) on th
 yt_auto/music.py       background music from Wikimedia Commons (CC BY/BY-SA/CC0/PD only; owner OK with CC BY + credit, 28 Oct), calm moods, licence record + description credit
 yt_auto/sound.py       final mix: narration + music (-21 dB under speech, -14 dB in pauses) + own-made click/whoosh at picture/scene changes; narration.wav stays clean for subtitles
 yt_auto/keywords.py    on-screen key words: 1 light request picks the key phrase of ~half the sentences; whisper word times place it; libass burns it over photos/drawings (numbers in red)
+yt_auto/thumbnail.py   thumbnail.jpg (R1): 1 light request picks the best checked picture (from the blind check descriptions) + 2-4 honest words; dark left side, one word red; gate FLAGs words not in the script (R2)
 yt_auto/align.py       subtitles from our own text: exact sentence times + whisper word times
 yt_auto/package.py     description.txt, licences.json, review.md, contact sheet
 phase1/make_video.py   topic -> package (stages cached in --out, so a rerun resumes)

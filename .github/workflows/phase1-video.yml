@@ -158,7 +158,7 @@ jobs:
           if [ "$verdict" = "FAIL" ]; then label="DRAFT - do not upload"; else label="Ready for your review"; fi
           gh release create "video-${{ github.run_id }}" --prerelease --title "$label: $title" \
             --notes "$label. Quality gate: $verdict (see the top of review.md, run ${{ github.run_id }}). Upload only after every check passes and you have watched it." \
-            out/run/video.mp4 out/run/subtitles.srt out/run/description.txt out/run/credits.txt out/run/review.md
+            out/run/video.mp4 out/run/thumbnail.jpg out/run/subtitles.srt out/run/description.txt out/run/credits.txt out/run/review.md
 
       - name: Upload video package
         if: success()
@@ -167,6 +167,7 @@ jobs:
           name: phase1-package
           path: |
             out/run/video.mp4
+            out/run/thumbnail.jpg
             out/run/subtitles.srt
             out/run/description.txt
             out/run/review.md
@@ -191,7 +192,7 @@ jobs:
           dest="results/phase1/${{ github.run_id }}"
           mkdir -p "$dest"
           cd out/run
-          cp build.log report.json review.md description.txt licences.json facts.csv credits.txt gate.json recording_script.md voice_match.json drawing_log.json delivery.json keywords.json keywords.ass plan.json sources.json \
+          cp build.log report.json review.md description.txt licences.json facts.csv credits.txt gate.json recording_script.md voice_match.json drawing_log.json delivery.json keywords.json keywords.ass thumbnail.jpg thumbnail.json plan.json sources.json \
              script_draft.json script.json factcheck.json timing.json visual_plan.json visuals.json photo_log.json \
              subtitles.srt contact_sheet.jpg preview_480p.mp4 diagnostics.json "../../$dest/" 2>/dev/null || true
           cp -r llm "../../$dest/" 2>/dev/null || true
