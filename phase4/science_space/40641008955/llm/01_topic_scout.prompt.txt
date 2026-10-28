@@ -1,0 +1,105 @@
+[model] gemini-3.8-flash
+[system]
+
+
+[user]
+Niche: Science and space. Rules: education only: no financial, legal or health advice; no accusations against named companies or people; a worldwide English audience; explain, don't report breaking news.
+Below are measured demand signals: videos beating their channel's normal views, trending videos, and news.
+Propose 25 different evergreen explainer video questions for this niche that real viewers are showing interest in.
+- Each idea must cite the ids of the signals that show demand for it (at least one). Do not copy a video title;
+  find the underlying question people want answered, and give an original angle.
+- Explainers, not news reports: a news item can inspire a question that stays interesting for years.
+- What wins (our research of 680 hit videos, 28 Oct): ONE concrete, famous subject people already know of,
+  with a twist, a conflict or a surprising answer ("Why TON 618 is the scariest black hole", "We got T. rex
+  wrong", "Why did humans start wearing clothes?"). Avoid vague or abstract questions ("why is the universe
+  organised into webs") and "what if" ideas with nothing real to show: prefer subjects with real NASA photos
+  and footage (missions, telescopes, planets, famous objects).
+- Stay inside the niche. No advice, no accusations, no topics about one living person.
+- Do NOT repeat these past videos:
+- How GPS Finds Your Location Using Satellite Timestamps
+- For each, name 1-3 English Wikipedia articles (exact titles) that would hold the facts.
+
+SIGNALS:
+S1 [outlier_video] How Huge Is the Universe? (The Answer Breaks Physics) (753.8x its channel's normal)
+S2 [outlier_video] The Darkest Truth About Cryosleep Nobody Tells You (105.7x its channel's normal)
+S3 [outlier_video] Artemis II Explained | 2026 Mission to the Moon (64.6x its channel's normal)
+S4 [outlier_video] The Truth About Dying in Space Nobody Tells You (52.5x its channel's normal)
+S5 [outlier_video] Every Crazy Temperature in the Universe (43.5x its channel's normal)
+S6 [outlier_video] The new telescope 100x better than Hubble | Nancy Grace Roman Explained (36.0x its channel's normal)
+S7 [outlier_video] Every Crazy Level of Gravity in the Universe (26.2x its channel's normal)
+S8 [outlier_video] How Big Is the Solar System, Really? (19.4x its channel's normal)
+S9 [outlier_video] What Was There Before the Big Bang? (18.3x its channel's normal)
+S10 [outlier_video] Every Black Hole That Shouldn’t Exist Explained in 14 Minutes (13.4x its channel's normal)
+S11 [outlier_video] The Coolest Physics Nobel Prize in History (Literally) (11.9x its channel's normal)
+S12 [outlier_video] After 127 Years in Space, Something Was Wrong FULL EPISODE | Science Fiction Documentary (11.4x its channel's normal)
+S13 [outlier_video] Skydiving on Every Planet in the Solar System (11.2x its channel's normal)
+S14 [outlier_video] Every NASA Rocket Engine Explained (10.9x its channel's normal)
+S15 [outlier_video] The Double-Slit Experiment: 225 Years, and Nobody Can Explain It (9.8x its channel's normal)
+S16 [outlier_video] What Is Outside the Universe? Every Possible Answer Explained in 13 Minutes (9.1x its channel's normal)
+S17 [outlier_video] What Artemis III will do (8.6x its channel's normal)
+S18 [outlier_video] If Different Types of Black Holes Were Close to Earth (Simulation) (8.2x its channel's normal)
+S19 [outlier_video] Where Did Earth’s Gold ACTUALLY Come From?. Can Science Finally Make Artificial Gold? (7.9x its channel's normal)
+S20 [outlier_video] Feynman Said Light Takes Every Path. Physicists Just Checked (7.8x its channel's normal)
+S21 [outlier_video] THE SEARCH FOR LIFE IN OUR SOLAR SYSTEM | SLEEPDAIRY (6.4x its channel's normal)
+S22 [outlier_video] Saturn's Rings Are Disappearing Faster Than We Thought (5.9x its channel's normal)
+S23 [outlier_video] Every Lost World In Our Solar System Explained In 14 Minutes (5.7x its channel's normal)
+S24 [outlier_video] What Black Holes Look Like At Different Distances (Simulation) (5.6x its channel's normal)
+S25 [outlier_video] Sagittarius A* Stopped Eating (And No One Knows Why) (5.5x its channel's normal)
+S26 [outlier_video] One House for the Whole World :  Would It Work? (5.2x its channel's normal)
+S27 [outlier_video] The Distance Between Galaxies Is More Terrifying Than You Think (5.2x its channel's normal)
+S28 [outlier_video] You Existed Before You Were Born (It’s Not What You Think) | Feynman Explains (3.9x its channel's normal)
+S29 [outlier_video] China’s $200 Billion Plan to Build a City on the Moon | The Space Race Has Begun (3.6x its channel's normal)
+S30 [outlier_video] Every Sunset in the Solar System (3.6x its channel's normal)
+S31 [outlier_video] Proxima Centauri b: Humanity's First Colony FULL EPISODE | Science Fiction Documentary (3.6x its channel's normal)
+S32 [outlier_video] How Big Is Our Galaxy? | The True Size of the Milky Way (3.2x its channel's normal)
+S33 [outlier_video] The Scariest Theories That Turned Out to Be True (3.1x its channel's normal)
+S34 [outlier_video] What Would You ACTUALLY See at the Speed of Light? (3.0x its channel's normal)
+S35 [outlier_video] 100 Space Objects Explained in 1 Hour (MARATHON) (2.9x its channel's normal)
+S36 [outlier_video] Every Planet That Shouldn't Exist (2.9x its channel's normal)
+S37 [outlier_video] Every Object in the Solar System Explained (2.9x its channel's normal)
+S38 [outlier_video] Humanity Finally Meets an Alien Probe | Science Fiction Documentary (2.6x its channel's normal)
+S39 [outlier_video] NASA's Plan To Build a Moon Base Explained (My Best Video) (2.6x its channel's normal)
+S40 [outlier_video] Space Objects Through a Telescope | Expectation VS Reality (Simulation) (2.5x its channel's normal)
+S41 [trending_video] Samsung Galaxy S27 Ultra Cobalt Violet📱🔥#noads #tiktok #usa Part 20
+S42 [trending_video] Turning a Samsung Phone Into a Mini PC?! 🤯 Samsung DeX Hack! #Samsung #Tech #DIY
+S43 [trending_video] ఈ ఆఫర్ పోతే అనొద్దు 🥳😍🔥
+S44 [news] NASA Invites Media to Crew Completion of Yearlong Mars Simulation
+S45 [news] NASA’s Neo Surveyor Sunshade
+S46 [news] How a Johnson Mentor Shapes the Next Generation of NASA Talent
+S47 [news] NASA’s Perseverance Views Dust at Neretva Vallis
+S48 [news] NASA’s Perseverance Offers Clues to Protect Crews From Mars Dust
+S49 [news] James Webb discovers a scorching lava planet with a “giant sunscreen”
+S50 [news] Smithsonian scientists just recreated the first 2 billion years of the Universe
+S51 [news] A 2,700-year-old solar eclipse just revealed something surprising about Earth
+S52 [news] Three giant black holes discovered in a galaxy from the dawn of time
+S53 [news] Astronomers may have discovered the first moon beyond our Solar System
+S54 [news] NASA’s asteroid Bennu samples reveal a 4.5-billion-year-old secret
+S55 [news] Astronomers uncover a mysterious magnetic web above the Sun
+S56 [news] Nearly 3,000 exploding stars challenge our understanding of the Universe
+S57 [news] NASA’s Curiosity rover reveals a spectacular new view of Mars with a mystery on the horizon
+S58 [news] A train was delayed by a solar storm. But something didn't add up.
+S59 [news] Astronauts’ hearts just passed a surprising test for Mars
+S60 [news] NASA’s Perseverance Mars rover just shattered the all-time off-world driving record
+S61 [news] Astronomers uncover new secrets of the Universe’s first five minutes
+S62 [news] NASA solves a strange mystery hidden inside asteroid Bennu’s boulders
+S63 [news] NASA reveals 16 stunning galaxies hiding cosmic chaos
+S64 [news] Astronomers discover a ghostly green star unlike any known before
+S65 [news] NASA’s SpaceX launch lights up the sky with a giant glowing jellyfish
+S66 [news] NASA’s Roman Space Telescope exceeds expectations by nearly 30%
+S67 [news] SpaceX just delivered some very strange cargo to the International Space Station
+S68 [news] NASA’s Webb reveals the wild weather of a mysterious world 20 light-years away
+S69 [news] James Webb reveals a strange bulge in an alien planet's atmosphere
+S70 [news] Astronomers discover a strange universal rule behind black hole eruptions
+S71 [news] James Webb reveals a massive cosmic structure that challenges our understanding of the Universe
+S72 [news] Scientists may have finally solved the mystery of the Moon’s two faces
+S73 [news] A planet 320 light-years away confirms what scientists long suspected
+S74 [news] Europe's new Sentinel-3C satellite just sent back spectacular images of Earth
+S75 [news] NASA astronauts splash down after 100 million miles in space
+S76 [news] NASA spots a giant patch of Moon-like rock on Earth
+S77 [news] NASA is searching for hidden caves to build its first Moon base
+S78 [news] MIT astronomers catch a star in a feast that could last billions of years
+S79 [news] NASA’s Webb finds signs of Mars-sized worlds smashing together
+S80 [news] Hubble Space Telescope may have found a planet born after its star died
+S81 [news] Einstein Probe reveals a hidden phase of neutron star collisions
+S82 [news] Earth’s center is moving, and NASA just measured it
+S83 [news] This mysterious hole on the Moon may open into a giant cave

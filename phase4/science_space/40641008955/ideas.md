@@ -1,0 +1,22 @@
+# Topic ideas: Science and space
+
+Made 2026-10-28. Signals: {'outlier_video': 40, 'trending_video': 3, 'news': 40}. Ideas proposed 25, chosen 10, dropped 0.
+
+Score (v2, 28 Oct) = 0.30 demand (measured) + 0.20 hook + 0.20 visuals (measured: NASA photos/videos) + 0.10 fit + 0.10 originality + 0.10 evergreen (each 1-5).
+
+| # | Question | Score | Demand | Hook | NASA photos/videos | Evidence |
+| --- | --- | --- | --- | --- | --- | --- |
+| 1 | Why is the observable universe 93 billion light-years across if it is only 13.8 billion years old? | 3.8 | 3 | 4 | 763 | Wikipedia 'Observable universe' 33,583 views/30 days (trend 1.01x); outlier video: How Huge Is the Universe? (The Answer Breaks Physics) (753.8x); outlier video: How Big Is the Solar System, Really? (19.4x) |
+| 2 | Why does the human heart change its shape in zero gravity? | 3.75 | 2.5 | 4 | 572 | Wikipedia 'Effect of spaceflight on the human body' 5,685 views/30 days (trend 1.62x); outlier video: The Truth About Dying in Space Nobody Tells You (52.5x); news: Astronauts’ hearts just passed a surprising test for Mars |
+| 3 | Why are Saturn’s rings actively disappearing? | 3.6 | 2 | 4 | 814 | Wikipedia 'Rings of Saturn' 18,231 views/30 days (trend 1.02x); outlier video: Saturn's Rings Are Disappearing Faster Than We Thought (5.9x) |
+| 4 | What would happen if you dropped an explorer probe into Jupiter’s clouds? | 3.5 | 2 | 4 | 810 | Wikipedia 'Supercritical fluid' 8,210 views/30 days (trend 0.95x); outlier video: Every Crazy Level of Gravity in the Universe (26.2x); outlier video: Skydiving on Every Planet in the Solar System (11.2x) |
+| 5 | Why is NASA building a space telescope with Hubble’s resolution but 100 times its field of view? | 3.3 | 3 | 2 | 433 | Wikipedia 'Hubble Space Telescope' 38,382 views/30 days (trend 0.74x); outlier video: The new telescope 100x better than Hubble | Nancy Grace Roma (36.0x); news: NASA’s Roman Space Telescope exceeds expectations by nearly  |
+| 6 | What creates the giant glowing jellyfish shapes after rocket launches? | 3.15 | 2.5 | 4 | 1 | Wikipedia 'Twilight phenomenon' 7,101 views/30 days (trend 4.49x); outlier video: Every NASA Rocket Engine Explained (10.9x); news: NASA’s SpaceX launch lights up the sky with a giant glowing  |
+| 7 | Could future astronauts safely live inside underground caves on the Moon? | 3.0 | 3 | 3 | 3 | Wikipedia 'Artemis program' 30,523 views/30 days (trend 1.01x); outlier video: Artemis II Explained | 2026 Mission to the Moon (64.6x); outlier video: What Artemis III will do (8.6x) |
+| 8 | Why is the supermassive black hole at the center of our galaxy so quiet? | 3.0 | 3 | 3 | 0 | Wikipedia 'Sagittarius A*' 46,747 views/30 days (trend 0.95x); outlier video: Every Black Hole That Shouldn’t Exist Explained in 14 Minute (13.4x); outlier video: What Black Holes Look Like At Different Distances (Simulatio (5.6x) |
+| 9 | Why might Proxima Centauri b be completely uninhabitable despite sitting in the habitable zone? | 3.0 | 3 | 3 | 1 | Wikipedia 'Proxima Centauri' 45,363 views/30 days (trend 1.01x); outlier video: THE SEARCH FOR LIFE IN OUR SOLAR SYSTEM | SLEEPDAIRY (6.4x); outlier video: Proxima Centauri b: Humanity's First Colony FULL EPISODE | S (3.6x) |
+| 10 | How is the Boomerang Nebula colder than the heat left over from the Big Bang? | 3.0 | 2 | 4 | 2 | Wikipedia 'Cosmic microwave background' 22,273 views/30 days (trend 0.91x); outlier video: Every Crazy Temperature in the Universe (43.5x); outlier video: The Coolest Physics Nobel Prize in History (Literally) (11.9x) |
+
+## Dropped
+
+- none

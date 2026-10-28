@@ -1,0 +1,28 @@
+[
+ {
+  "name": "topic_scout",
+  "model": "gemini-3.8-flash",
+  "prompt_chars": 9064,
+  "images": 0,
+  "status": 200,
+  "seconds": 170.7,
+  "attempts": 1,
+  "finish": "STOP",
+  "in_tokens": 2578,
+  "out_tokens": 2140,
+  "thought_tokens": 4500
+ },
+ {
+  "name": "topic_scorer",
+  "model": "gemma-4-31b-it",
+  "prompt_chars": 9059,
+  "images": 0,
+  "status": 200,
+  "seconds": 110.9,
+  "attempts": 1,
+  "finish": "STOP",
+  "in_tokens": 2136,
+  "out_tokens": 1426,
+  "thought_tokens": 1704
+ }
+]
