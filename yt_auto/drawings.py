@@ -32,9 +32,11 @@ WIDTH, HEIGHT = 1024, 576
 CLOUD = {"model": "@cf/black-forest-labs/flux-1-schnell", "name": "FLUX.1 [schnell] (Black Forest Labs) on Cloudflare "
          "Workers AI", "licence": "Apache-2.0", "page": "https://huggingface.co/black-forest-labs/FLUX.1-schnell",
          "steps": 4}
-CLOUD_DAILY_MAX = 120  # stay well under the free 10,000 neurons (≈170 drawings) per day
+# Measured 28 Oct: the free 10,000 neurons ran out after about 125 drawings (≈80 each, not the 58 estimated from
+# the price list), so keep one run at 70 and spend test runs carefully.
+CLOUD_DAILY_MAX = 70
 MAX_DRAWINGS = 24  # 12 planned + room for photo slots whose photo failed the check (local model: ~80 s each)
-CLOUD_MAX_DRAWINGS, CLOUD_PLANNED_MAX = 60, 40  # Workers AI: seconds each, ~170 free a day (2 videos fit)
+CLOUD_MAX_DRAWINGS, CLOUD_PLANNED_MAX = 50, 34  # Workers AI: seconds each, ~120 free a day (about 2 videos)
 BUDGET_S = 32 * 60
 CACHE = Path.home() / "hf-draw"  # own model cache (the whisper cache has its own key in the workflow)
 

@@ -194,6 +194,7 @@ def run(args, out: Path, bench: Bench) -> None:
         visuals = cached(plan_file, lambda: shots.plan_visuals(script["title"], the_slots, headings,
                                                                max_drawings=min(drawings.CLOUD_PLANNED_MAX if drawings.cloud_ready() else 12,
                                                                      args.max_drawings)))
+        bench.info["video_slots_added"] = shots.ensure_video_share(visuals)  # a reused plan gets it too
     with bench.stage("photos"):
         if (out / "visuals.json").exists():
             visuals = json.loads((out / "visuals.json").read_text(encoding="utf-8"))

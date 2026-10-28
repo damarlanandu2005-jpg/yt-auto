@@ -163,7 +163,25 @@ SLOTS:
     for s in the_slots:
         v = by_id.get(s["id"]) or {"kind": "card", "card": {"type": "title", "title": headings[s["scene"]]}}
         out.append({**s, **v, "id": s["id"]})
+    ensure_video_share(out)
     return out
+
+
+VIDEO_SHARE = 0.2
+
+
+def ensure_video_share(visuals: list[dict]) -> int:
+    """The plan asked for 1 video slot of 95 though told 20-30 % (run 40670200956). Turn evenly spread photo
+    slots into video slots until about 20 % are video. Video slots still get photo candidates as a fallback."""
+    need = round(VIDEO_SHARE * len(visuals)) - sum(1 for v in visuals if v["kind"] == "video")
+    photos_ = [v for v in visuals if v["kind"] == "photo" and v.get("photo_queries")]
+    if need <= 0 or not photos_:
+        return 0
+    step = max(1, len(photos_) // need)
+    turned = photos_[::step][:need]
+    for v in turned:
+        v["kind"] = "video"
+    return len(turned)
 
 
 _WORDS = {w: str(i) for i, w in enumerate(
