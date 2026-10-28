@@ -299,6 +299,37 @@ def load_library(library_dir: Path | None, exclude_title: str = "") -> list[tupl
     return out
 
 
+# ---------- R1 upload rules (owner approved 28 Oct): pictures checked, few plain cards, thumbnail ----------
+
+PLAIN_CARDS = ("title", "bullets")  # text only; stat/bars/timeline/flow/compare show data and are fine
+PLAIN_MAX = 0.25
+
+
+def picture_checks(pkg: Path, visuals: list[dict]) -> list[dict]:
+    out = []
+    plain = [v["id"] for v in visuals if not v.get("photo") and (v.get("card") or {}).get("type", "title") in PLAIN_CARDS]
+    share = len(plain) / max(len(visuals), 1)
+    out.append(check("plain_cards", FAIL if share > PLAIN_MAX else PASS,
+                     f"{len(plain)} of {len(visuals)} visuals are plain text cards ({share:.0%}; max {PLAIN_MAX:.0%})"
+                     + (f": {', '.join(plain[:12])}" if share > PLAIN_MAX else "")))
+    errors = []
+    for name in ("photo_log.json", "drawing_log.json"):
+        f = pkg / name
+        if f.exists():
+            log = json.loads(f.read_text())
+            for k in ("verify_error", "drawings_verify_error"):
+                if log.get(k):
+                    errors.append(f"{name}: {log[k][:120]}")
+    used = sum(1 for v in visuals if v.get("photo"))
+    out.append(check("pictures_checked", FAIL if errors else PASS,
+                     "; ".join(errors) + " (pictures used without the AI look check)" if errors
+                     else f"all {used} photos and drawings were looked at; rejected ones are not used"))
+    thumb = pkg / "thumbnail.jpg"
+    out.append(check("thumbnail", PASS if thumb.exists() else FAIL,
+                     "thumbnail.jpg made" if thumb.exists() else "no thumbnail yet (the thumbnail step is not built)"))
+    return out
+
+
 # ---------- editorial judgement (one AI request) ----------
 
 AI_SCHEMA = {"type": "object", "properties": {"checks": {"type": "array", "items": {
@@ -384,6 +415,8 @@ def run(pkg: Path, library_dir: Path | None = None, use_ai: bool = True, media: 
     results += fact_checks(script)
     results += brief_checks(plan)
     results += originality_checks(script, load_library(library_dir, exclude_title=title))
+    if media:
+        results += picture_checks(pkg, visuals)
     if use_ai and (pkg / "timing.json").exists():
         timing = json.loads((pkg / "timing.json").read_text(encoding="utf-8"))
         results += ai_checks(title, plan, script, timing, visuals)

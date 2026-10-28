@@ -24,6 +24,10 @@ Full plan: "YouTube Automation Blueprint" doc — https://claude.ai/artifact/XN7
 - AI disclosure box in YouTube is needed only for realistic AI depictions of real people/places/events. AI script, TTS narration, charts and non-realistic illustrations do not need it.
 - Never commit secrets. Keys live in GitHub repo secrets only. `GEMINI_API_KEY` is saved as a repo secret (confirmed 26-27 Oct 2026). **Use only `GEMINI_API_KEY`** (owner, 27 Oct). On 27 Oct the owner replaced it with a key from another project after the old project hit its daily limit; Claude explained the terms risk twice, the owner confirmed free tier and decided to go ahead. From then on: this one key only, no further switching to reset limits. Don't ask about other keys; never use extra keys or projects to get more free quota (Google APIs Terms: "will not attempt to circumvent" limits).
 - Never pass `toJSON(secrets)` in a workflow: GitHub held those runs as 'action required'.
+- **Upload rules (owner approved 28 Oct 2026):**
+  - **R1** A video is "ready for review" only if every automatic check passes. Checks: every line sourced (facts_linked), quality gate has no FAIL, every photo/drawing was looked at by the AI and rejected ones are not used (pictures_checked), plain text cards (title/bullets) ≤ 25 % (plain_cards), a thumbnail exists and matches (thumbnail), the title promise is kept (title_promise). Otherwise the GitHub release is titled "DRAFT - do not upload". Then the owner watches it and ticks the checklist.
+  - **R2** Honest emotion: the hook must be true and answered in the video; no fake urgency ("scientists are terrified") unless a source says it; thumbnail text matches the content.
+  - **R3** Quality over volume: at most 1 video a day, each with its own question and structure. Never mass-upload (counter-example studied 28 Oct: @Jack-j4p8p, 174 AI space videos in 8 months, 6 subscribers, 2,276 total views).
 
 ## Verified facts (checked against official pages, 26 Oct 2026)
 

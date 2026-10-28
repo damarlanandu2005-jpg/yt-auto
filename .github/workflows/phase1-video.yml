@@ -154,8 +154,10 @@ jobs:
         run: |
           title=$(python -c "import json;print(json.load(open('out/run/report.json')).get('title','video')[:80])")
           verdict=$(python -c "import json;print(json.load(open('out/run/report.json')).get('gate',{}).get('verdict','?'))")
-          gh release create "video-${{ github.run_id }}" --prerelease --title "$title" \
-            --notes "Quality gate: $verdict. Review review.md (run ${{ github.run_id }}) before uploading to YouTube." \
+          # Rule R1 (owner, 28 Oct): only a video that passes every automatic check is ready for review.
+          if [ "$verdict" = "FAIL" ]; then label="DRAFT - do not upload"; else label="Ready for your review"; fi
+          gh release create "video-${{ github.run_id }}" --prerelease --title "$label: $title" \
+            --notes "$label. Quality gate: $verdict (see the top of review.md, run ${{ github.run_id }}). Upload only after every check passes and you have watched it." \
             out/run/video.mp4 out/run/subtitles.srt out/run/description.txt out/run/credits.txt out/run/review.md
 
       - name: Upload video package

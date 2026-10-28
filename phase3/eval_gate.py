@@ -176,12 +176,20 @@ def main() -> None:
     # (case, expected FAIL checks, how to build, run options). expected [] = control: no FAIL allowed.
     cases = []
 
-    def media_case(name, expect, video_key):
+    def media_case(name, expect, video_key, thumbnail=True, few_plain=True):
         pkg = base_pkg(out / "cases" / name)
         shutil.copy(media[video_key], pkg / "video.mp4")
         (pkg / "frames").mkdir()
-        for v in json.loads((pkg / "visuals.json").read_text()):
+        vis = json.loads((pkg / "visuals.json").read_text())
+        for v in vis:
             (pkg / "frames" / f"{v['id']}.png").write_bytes(b"")
+        if few_plain:  # R1 (28 Oct): the GPS fixture has too many plain title cards; others test other faults
+            for v in vis:
+                if not v.get("photo") and (v.get("card") or {}).get("type", "title") in gate.PLAIN_CARDS:
+                    v["card"] = {"type": "stat", "title": "x", "value": "1", "label": "x"}
+            (pkg / "visuals.json").write_text(json.dumps(vis, indent=1, ensure_ascii=False))
+        if thumbnail:
+            (pkg / "thumbnail.jpg").write_bytes(b"")
         cases.append((name, expect, pkg, {"library_dir": lib_other, "media": True, "use_ai": False}))
 
     # blueprint faults
@@ -204,6 +212,8 @@ def main() -> None:
     media_case("black_frames", ["video_black"], "black_frames")
     media_case("length_mismatch", ["av_length"], "length_mismatch")
     media_case("too_quiet", ["audio_loudness"], "too_quiet")
+    media_case("too_many_plain_cards", ["plain_cards"], "clean", few_plain=False)  # R1: real GPS visuals
+    media_case("no_thumbnail", ["thumbnail"], "clean", thumbnail=False)
     for name, expect, fname, fn in [
         ("nc_licence", ["rights"], "licences.json", make_nc),
         ("title_too_long", ["metadata"], "script.json", lambda s: {**s, "title": "How GPS Works " * 10}),
