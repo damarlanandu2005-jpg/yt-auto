@@ -54,14 +54,15 @@ def cloud_ready() -> bool:
     return bool(os.environ.get("CLOUDFLARE_API_TOKEN") and os.environ.get("CLOUDFLARE_ACCOUNT_ID"))
 
 
-def cloud_draw(prompt: str, seed: int, timeout: int = 90) -> bytes:
+def cloud_draw(prompt: str, seed: int = 0, timeout: int = 90) -> bytes:
     """One FLUX.1 schnell drawing (JPEG bytes, about 1024x1024) from Workers AI's REST API."""
     import base64
     import urllib.request
 
     url = (f"https://api.cloudflare.com/client/v4/accounts/{os.environ['CLOUDFLARE_ACCOUNT_ID']}/ai/run/"
            f"{CLOUD['model']}")
-    body = json.dumps({"prompt": prompt, "steps": CLOUD["steps"], "seed": seed}).encode()
+    # Only prompt and steps are accepted ('seed' -> 400 "unevaluated properties", drawing test 40644346087)
+    body = json.dumps({"prompt": prompt, "steps": CLOUD["steps"]}).encode()
     req = urllib.request.Request(url, data=body, headers={"Authorization": f"Bearer {os.environ['CLOUDFLARE_API_TOKEN']}",
                                                           "Content-Type": "application/json"})
     with urllib.request.urlopen(req, timeout=timeout) as r:
