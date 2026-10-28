@@ -76,7 +76,7 @@ Owner feedback on the first Phase 1 video (27 Oct): quite good; full-length vide
 ## Code layout
 
 ```
-yt_auto/tts.py         Kokoro via kokoro-onnx (CPU). Speed 0.9, 0.4 s sentence pause, 1.0 s scene pause
+yt_auto/tts.py         Kokoro via kokoro-onnx (CPU). Speed 0.9, 0.4 s sentence pause, 1.0 s scene pause; delivery: slow lines x0.88, reveal = 0.9 s silence before, 0.8 s after questions (writer.mark_delivery, 1 light request)
 yt_auto/visuals.py     matplotlib keyframes: title, stat, bullets, flow, bars, line, circles
 yt_auto/render.py      FFmpeg: per-keyframe segment (zoompan + fades), concat, mux (loudnorm -16 LUFS), preview
 yt_auto/subtitles.py   faster-whisper base.en int8; run as its own process: python -m yt_auto.subtitles in.wav out.srt
@@ -92,6 +92,8 @@ yt_auto/shots.py       ~4.5 s visual slots, visual plan, photo pick + vision che
 yt_auto/photos.py      NASA + Commons search, licence filter, licence JSON per file
 yt_auto/drawings.py    AI ink drawings (Segmind-Vega + VegaRT, Apache-2.0) on the runner CPU, own process, max 24 (12 planned) / 32 min;
                        for ideas no photo shows, then photo slots with no photo; shots.add_drawings looks at each (VISION) and drops bad ones
+yt_auto/music.py       background music from Wikimedia Commons (CC BY/BY-SA/CC0/PD only; owner OK with CC BY + credit, 28 Oct), calm moods, licence record + description credit
+yt_auto/sound.py       final mix: narration + music (-21 dB under speech, -14 dB in pauses) + own-made click/whoosh at picture/scene changes; narration.wav stays clean for subtitles
 yt_auto/align.py       subtitles from our own text: exact sentence times + whisper word times
 yt_auto/package.py     description.txt, licences.json, review.md, contact sheet
 phase1/make_video.py   topic -> package (stages cached in --out, so a rerun resumes)

@@ -9,6 +9,11 @@ import soundfile as sf
 
 SENTENCE_PAUSE_S = 0.4   # pause between sentences
 SCENE_PAUSE_S = 1.0      # pause between scenes
+# Delivery (owner's watch notes, 28 Oct: hits slow down on key words and use silence for tension).
+# Kokoro has no emotion control, so tone = speed + pauses.
+SLOW = 0.88              # speed factor for key lines
+REVEAL_PAUSE_S = 0.9     # silence before a reveal (the answer, the twist)
+QUESTION_PAUSE_S = 0.8   # silence after a question, to let it land
 
 
 def split_sentences(text: str) -> list[str]:
@@ -36,15 +41,23 @@ class Narrator:
         We make the audio one sentence at a time, so these times are exact: this is
         what lines up subtitles and visuals with our own script text.
         """
-        sentences = split_sentences(text) if isinstance(text, str) else text
+        items = split_sentences(text) if isinstance(text, str) else text
         chunks, spans, pos = [], [], 0
-        for sentence in sentences:
-            samples, sr = self.kokoro.create(sentence, voice=self.voice, speed=self.speed, lang="en-us")
+        for item in items:  # a sentence, or (sentence, delivery): "normal", "slow" or "reveal"
+            sentence, delivery = item if isinstance(item, tuple) else (item, "normal")
+            sr = self.sample_rate
+            if delivery == "reveal" and chunks:
+                before = np.zeros(int(sr * (REVEAL_PAUSE_S - SENTENCE_PAUSE_S)), dtype=np.float32)
+                chunks.append(before)
+                pos += len(before)
+            speed = self.speed * (SLOW if delivery in ("slow", "reveal") else 1.0)
+            samples, sr = self.kokoro.create(sentence, voice=self.voice, speed=speed, lang="en-us")
             self.sample_rate = sr
             samples = samples.astype(np.float32)
             a, b = _speech_bounds(samples, sr)
             spans.append(((pos + a) / sr, (pos + b) / sr))
-            pause = np.zeros(int(sr * SENTENCE_PAUSE_S), dtype=np.float32)
+            gap = QUESTION_PAUSE_S if sentence.rstrip().endswith("?") else SENTENCE_PAUSE_S
+            pause = np.zeros(int(sr * gap), dtype=np.float32)
             chunks += [samples, pause]
             pos += len(samples) + len(pause)
         chunks.append(np.zeros(int(self.sample_rate * tail_pause), dtype=np.float32))

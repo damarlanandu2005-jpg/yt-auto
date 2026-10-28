@@ -191,10 +191,11 @@ jobs:
           dest="results/phase1/${{ github.run_id }}"
           mkdir -p "$dest"
           cd out/run
-          cp build.log report.json review.md description.txt licences.json facts.csv credits.txt gate.json recording_script.md voice_match.json drawing_log.json plan.json sources.json \
+          cp build.log report.json review.md description.txt licences.json facts.csv credits.txt gate.json recording_script.md voice_match.json drawing_log.json delivery.json plan.json sources.json \
              script_draft.json script.json factcheck.json timing.json visual_plan.json visuals.json photo_log.json \
              subtitles.srt contact_sheet.jpg preview_480p.mp4 diagnostics.json "../../$dest/" 2>/dev/null || true
           cp -r llm "../../$dest/" 2>/dev/null || true
+          cp music/music.licence.json "../../$dest/" 2>/dev/null || true
           mkdir -p "../../$dest/drawings" && cp drawings/result.json drawings/drawings.log drawings/jobs.json "../../$dest/drawings/" 2>/dev/null || true
           mkdir -p "../../$dest/ffmpeg_logs"
           # FFmpeg logs: the join/mux/preview steps, plus any segment log that mentions an error

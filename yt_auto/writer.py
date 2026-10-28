@@ -123,8 +123,11 @@ Outline: {json.dumps(the_plan['outline'])}
 
 Write the full narration: {words[0]} to {words[1]} words in total, in 5 to 8 scenes that follow the outline.
 - Scene 1 opens with a hook in the first 2 sentences that sets up the question, and within the first 30 seconds
-  says why it matters to the viewer (the quality gate checks both). The last scene answers it clearly
+  says why it matters to the viewer (the quality gate checks both). Then 1 or 2 framing sentences give a short
+  roadmap: the 2 or 3 questions this video will answer, in plain words. The last scene answers it clearly
   and recaps in one or two sentences.
+- Build tension honestly: set up a puzzle before its answer, and give the answer its own short sentence.
+- Explain step by step: one small idea per sentence, from the big picture down to the detail.
 - Split the narration into single sentences. Mark each as "fact" (with the passage ids that support EVERY detail
   in it) or "framing" (no checkable content at all). When in doubt, it is a fact and needs sources.
 - Prefer concrete numbers, comparisons and everyday examples that are in the sources.
@@ -267,6 +270,41 @@ that matches the copied phrases. Names (like "United States Space Force") may st
 """ + "\n".join(lines)
     res = llm(prompt, system=RULES, schema=REWORD_SCHEMA, name="reword", temperature=0.6, models=QUALITY)
     return {x["id"]: x["text"] for x in res["sentences"]}
+
+
+DELIVERY_SCHEMA = {"type": "object", "properties": {"marks": {"type": "array", "items": {"type": "object", "properties": {
+    "id": {"type": "string"}, "delivery": {"type": "string", "enum": ["slow", "reveal"]}},
+    "required": ["id", "delivery"]}}}, "required": ["marks"]}
+
+
+def mark_delivery(script: dict) -> dict[str, str]:
+    """Which sentences to say slower, and which are reveals (silence before, slower). One light request.
+
+    Owner's watch notes (28 Oct): hit videos slow down on key or emotional words and use silence before a
+    reveal. Kokoro has no emotion control, so this is done with speed and pauses (yt_auto/tts.py)."""
+    from .llm import LIGHT, LLMError
+
+    lines = "\n".join(f"{s['id']}: {s['text']}" for sc in script["scenes"] for s in sc["sentences"])
+    n = sum(len(sc["sentences"]) for sc in script["scenes"])
+    prompt = f"""This is the narration of an explainer video, one sentence per line. Mark how a good narrator
+would deliver the important lines; leave every other line out (it stays normal).
+- "reveal": the line that gives a surprising answer, a twist or the payoff of a question set up earlier. It gets a
+  short silence before it. At most {max(2, n // 18)} in the whole video.
+- "slow": a key line the viewer must not miss, or an emotional moment (danger, wonder, scale). At most {max(4, n // 8)}.
+Never mark a plain explaining sentence.
+
+{lines}"""
+    try:
+        res = llm(prompt, schema=DELIVERY_SCHEMA, name="delivery", temperature=0.2, models=LIGHT)
+    except LLMError as e:
+        return {"_error": str(e)[:300]}
+    ids = {s["id"] for sc in script["scenes"] for s in sc["sentences"]}
+    marks = {m["id"]: m["delivery"] for m in res["marks"] if m["id"] in ids}
+    reveals = [k for k, v in marks.items() if v == "reveal"][max(2, n // 18):]
+    slows = [k for k, v in marks.items() if v == "slow"][max(4, n // 8):]
+    for k in reveals + slows:  # keep within the limits even if the model marks more
+        marks.pop(k)
+    return marks
 
 
 def word_count(script: dict) -> int:

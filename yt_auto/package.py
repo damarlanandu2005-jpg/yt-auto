@@ -121,7 +121,11 @@ def write(out: Path, script: dict, the_plan: dict, sources: dict, visuals: list[
     rights_gate(photos)
     # Licences: every asset in the video.
     owner = run_info.get("voice") == "owner"
-    records = [OWNER_VOICE_RECORD if owner else VOICE_RECORD, FONT_RECORD] + \
+    from .sound import SFX_RECORD
+
+    track = run_info.get("music_record")
+    records = [OWNER_VOICE_RECORD if owner else VOICE_RECORD, FONT_RECORD, SFX_RECORD] + \
+        ([{k: v for k, v in track.items() if k != "path"}] if track else []) + \
         [{k: p[k] for k in p if k != "path"} for p in photos]
     (out / "licences.json").write_text(json.dumps(records, indent=2, ensure_ascii=False), encoding="utf-8")
 
@@ -142,7 +146,11 @@ def write(out: Path, script: dict, the_plan: dict, sources: dict, visuals: list[
               + "Script researched and written with AI help, fact-checked against the sources above and reviewed "
               "by a human before upload."]
     credits = credit_lines(photos)
-    (out / "credits.txt").write_text("Image credits:\n" + "\n".join(credits["full"]) + "\n", encoding="utf-8")
+    (out / "credits.txt").write_text("Image credits:\n" + "\n".join(credits["full"]) + "\n" +
+                                     (f"\n{track['attribution']}\n" if track else ""), encoding="utf-8")
+    music_line = [f"Music: \"{track['title']}\" by {track['author']}, {track['licence']} "
+                  f"{track.get('licence_url', '')}, {track['source_page']}"] if track else []
+    footer = music_line + footer
     body = lines + ["", "Image credits:"] + credits["short"] + footer
     if len("\n".join(body)) > DESC_LIMIT:  # YouTube allows 5,000 characters; the GPS video had 9,850
         body = lines + ["", "Image credits: NASA (public domain), Wikimedia Commons contributors and AI-generated drawings. "

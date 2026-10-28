@@ -4,7 +4,8 @@ Stages (each saves its result in --out; re-running with the same --out skips fin
 stages, so a failed run does not spend free API quota twice):
   plan -> sources (Wikipedia) -> script -> fact-check -> narration (Kokoro)
   -> visual plan -> photos (NASA + Commons) -> drawings (free open model, CPU) -> keyframes -> segments (Ken Burns)
-  -> video -> subtitles (our text, forced alignment) -> preview -> package
+  -> video (narration + quiet music + transition sounds) -> subtitles (our text, forced alignment)
+  -> preview -> package
 
 Usage:
     python phase1/make_video.py --topic "How does GPS know where you are?" --out out/gps
@@ -23,7 +24,7 @@ from pathlib import Path
 ROOT = Path(__file__).resolve().parents[1]
 sys.path.insert(0, str(ROOT))
 
-from yt_auto import align, drawings, gate, llm, owner_voice, package, render, research, shots, writer  # noqa: E402
+from yt_auto import align, drawings, gate, llm, music, owner_voice, sound, package, render, research, shots, writer  # noqa: E402
 from yt_auto.bench import Bench  # noqa: E402
 from yt_auto.tts import Narrator  # noqa: E402
 from yt_auto.visuals import render_keyframe  # noqa: E402
@@ -80,6 +81,7 @@ def main() -> None:
     ap.add_argument("--owner-audio", default="", help="folder with the owner's recordings (Phase 5 own-voice videos)")
     ap.add_argument("--max-drawings", type=int, default=drawings.MAX_DRAWINGS,
                     help="AI drawings per video (about 80 s each on the runner); 0 = photos and cards only")
+    ap.add_argument("--no-music", action="store_true", help="narration only (no background music)")
     ap.add_argument("--stop-after-script", action="store_true",
                     help="stop after the fact-checked script and recording script (owner records next)")
     args = ap.parse_args()
@@ -128,6 +130,12 @@ def run(args, out: Path, bench: Bench) -> None:
         if args.scenes:
             script["scenes"] = script["scenes"][: args.scenes]
         owner_voice.recording_script(script, out / "recording_script.md")
+        if not args.owner_audio:  # Kokoro: which lines to say slower / reveal after a pause (one light request)
+            delivery = cached(out / "delivery.json", lambda: writer.mark_delivery(script))
+            for sc in script["scenes"]:
+                for s in sc["sentences"]:
+                    s["delivery"] = delivery.get(s["id"], "normal")
+            bench.info["delivery"] = {k: sum(1 for v in delivery.values() if v == k) for k in ("slow", "reveal")}
     if args.stop_after_script:
         bench.info.update({"stopped_after": "script", "title": script["title"], "words": writer.word_count(script)})
         print(f"[script] stopped after the script: recording_script.md is ready", flush=True)
@@ -147,7 +155,8 @@ def run(args, out: Path, bench: Bench) -> None:
             sentences, scenes, wavs, offset = [], [], [], 0.0
             for sc in script["scenes"]:
                 wav = out / "audio" / f"{sc['id']}.wav"
-                dur, spans = narrator.speak_timed([s["text"] for s in sc["sentences"]], wav)
+                dur, spans = narrator.speak_timed([(s["text"], s.get("delivery", "normal")) for s in sc["sentences"]],
+                                                  wav)
                 scenes.append({"id": sc["id"], "heading": sc["heading"], "start": offset, "end": offset + dur})
                 for s, (a, b) in zip(sc["sentences"], spans):
                     sentences.append({"id": s["id"], "scene": sc["id"], "text": s["text"],
@@ -222,10 +231,28 @@ def run(args, out: Path, bench: Bench) -> None:
                                 fade_in=v["scene_start"], fade_out=last or visuals[i + 1]["scene_start"])
             segments.append(seg)
 
-    # 10. Join and add narration
+    # 10. Join; sound = narration + quiet music + soft transition sounds (owner's watch notes, 28 Oct)
     with bench.stage("assemble"):
         render.concat_video(segments, out / "video_noaudio.mp4")
-        render.mux(out / "video_noaudio.mp4", out / "narration.wav", out / "video.mp4")
+        music_log: dict = {}
+        track = None
+        if not args.no_music:
+            if (out / "music" / "music.licence.json").exists():
+                track = json.loads((out / "music" / "music.licence.json").read_text())
+            else:
+                track = music.find(out / "music", script["title"], music_log)
+        cuts = [(v["start"], "whoosh" if v["scene_start"] else "click") for v in visuals[1:]]
+        try:
+            bench.info["sound"] = {**sound.mix(out / "narration.wav", Path(track["path"]) if track else None, cuts,
+                                               out / "mix.wav"), "music_search": music_log}
+            audio = out / "mix.wav"
+        except Exception as e:  # noqa: BLE001 — the narration alone is still a valid video
+            print(f"[sound] mix failed ({e!r}); narration only", flush=True)
+            bench.info["sound"] = {"error": repr(e)[:300], "music_search": music_log}
+            audio, track = out / "narration.wav", None
+        bench.info["music"] = {k: track[k] for k in ("title", "author", "licence", "source_page")} if track else None
+        print(f"[sound] music: {bench.info['music'] or 'none'}; {len(cuts)} transition sounds", flush=True)
+        render.mux(out / "video_noaudio.mp4", audio, out / "video.mp4")
 
     # 11. Subtitles from our own text (whisper only gives word timing, in its own process)
     with bench.stage("subtitles"):
@@ -256,6 +283,7 @@ def run(args, out: Path, bench: Bench) -> None:
         "seconds_per_visual": round(total / max(len(visuals), 1), 2),
         "photo_log": {k: v for k, v in photo_log.items() if k != "candidates"},
     })
+    bench.info["music_record"] = track
     package.write(out, script, the_plan, sources, visuals, scenes, report, bench.info)
     package.contact_sheet([Path(v["frame"]) for v in visuals], out / "contact_sheet.jpg")
 
