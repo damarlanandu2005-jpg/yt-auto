@@ -1,0 +1,54 @@
+name: Research - what makes videos win
+
+# Hits vs normal videos of young channels in 9 niches (rules: research/RULES.md).
+# About 2,500 YouTube units and 25 Flash-Lite requests. Results: bench-results/research/winners/<run_id>/.
+on:
+  workflow_dispatch:
+    inputs:
+      no_ai:
+        description: "Code-only features (no Gemini requests)"
+        type: boolean
+        default: false
+
+permissions:
+  contents: write
+
+jobs:
+  research:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 45
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.13"
+      - name: Install Pillow
+        timeout-minutes: 3
+        run: pip install Pillow
+      - name: Research
+        timeout-minutes: 35
+        env:
+          YOUTUBE_API_KEY: ${{ secrets.YOUTUBE_API_KEY }}
+          GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
+          NO_AI: ${{ inputs.no_ai }}
+        run: |
+          set -o pipefail
+          mkdir -p out/r
+          extra=(); [ "$NO_AI" = "true" ] && extra+=(--no-ai)
+          python research/winners.py out/r "${extra[@]}" 2>&1 | tee out/r/build.log
+      - name: Save to bench-results
+        if: always()
+        timeout-minutes: 3
+        run: |
+          set -e
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git fetch --depth 1 origin bench-results
+          git worktree add results FETCH_HEAD
+          git -C results checkout -B bench-results
+          dest="results/research/winners/${{ github.run_id }}"
+          mkdir -p "$dest"
+          cd out/r && cp build.log report.md watch_list.md data.json labelled.json llm_calls.json hits_sheet.jpg normal_sheet.jpg "../../$dest/" 2>/dev/null || true
+          cp -r llm "../../$dest/" 2>/dev/null || true
+          cd ../../results && git add -A && git commit -m "Research winners ${{ github.run_id }}"
+          for i in 1 2 3 4 5; do git push origin bench-results && break; git pull --rebase origin bench-results; sleep 5; done

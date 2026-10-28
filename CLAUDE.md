@@ -114,6 +114,7 @@ voice/                 owner's recordings, one folder per video (see voice/READM
 pilot/pilot.json       Phase 5 tracker; pilot/summary.py → pilot/report.md
 study/study_video.py   learn from another video (facts, captions, frames, shot changes); .github/workflows/study-video.yml manual, results bench-results/study/<id>/<run_id>/ (video not kept)
 phase5/drawing_test.py free open image model on the runner CPU: licence, seconds per drawing, memory, sample sheet; .github/workflows/drawing-test.yml manual, results bench-results/phase5/drawing-test/<run_id>/
+research/winners.py    what makes videos win: hits vs normal videos of young channels, 9 niches (rules research/RULES.md, frozen first); .github/workflows/research-winners.yml manual, results bench-results/research/winners/<run_id>/ (report.md, watch_list.md, sheets)
 phase1/check_apis.py   pre-flight: key present, which models answer, NASA/Commons up, saves official pages
 .github/workflows/phase1-video.yml   manual only (topic, scenes, resume_from, new_visual_plan, stop_after_script, owner_voice_folder); publishes video-<run_id> pre-release with plain mp4
 .github/workflows/phase1-check.yml   manual; also runs when the check changes on a phase-1 branch
