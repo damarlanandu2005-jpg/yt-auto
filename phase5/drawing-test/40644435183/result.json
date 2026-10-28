@@ -1,0 +1,75 @@
+{
+ "model": "cloudflare-flux",
+ "config": {
+  "model": "@cf/black-forest-labs/flux-1-schnell",
+  "name": "FLUX.1 [schnell] (Black Forest Labs) on Cloudflare Workers AI",
+  "licence": "Apache-2.0",
+  "page": "https://huggingface.co/black-forest-labs/FLUX.1-schnell",
+  "steps": 4
+ },
+ "style": "detailed ink illustration, white and grey pen linework on a pure black background, one bright red accent, high contrast, clean composition, no text, no letters",
+ "licences": [
+  {
+   "repo": "black-forest-labs/FLUX.1-schnell",
+   "license": "apache-2.0",
+   "gated": "auto",
+   "tags": [
+    "license:apache-2.0"
+   ],
+   "sha": "741f7c3ce8b383c54771c7003378a50191e9efe9",
+   "last_modified": "2024-08-16T14:37:56.000Z"
+  }
+ ],
+ "drawings": [
+  {
+   "file": "d01.jpg",
+   "prompt": "satellites orbiting planet Earth, thin signal lines reaching down to a phone on the ground",
+   "seconds": 1.5
+  },
+  {
+   "file": "d02.jpg",
+   "prompt": "a hand holding a smartphone showing a map with a location pin",
+   "seconds": 1.9
+  },
+  {
+   "file": "d03.jpg",
+   "prompt": "cutaway of a navigation satellite with a glowing atomic clock inside",
+   "seconds": 17.3
+  },
+  {
+   "file": "d04.jpg",
+   "prompt": "three overlapping circles on a map meeting at one point, a location pin where they cross",
+   "seconds": 14.0
+  },
+  {
+   "file": "d05.jpg",
+   "prompt": "a radio wave travelling from a satellite in space down to a city, speed lines",
+   "seconds": 2.3
+  },
+  {
+   "file": "d06.jpg",
+   "prompt": "a sailing ship on the ocean at night, a satellite high above it",
+   "seconds": 13.0
+  },
+  {
+   "file": "d07.jpg",
+   "prompt": "two clocks side by side, one in orbit and one on the ground, showing slightly different times",
+   "seconds": 10.3
+  },
+  {
+   "file": "d08.jpg",
+   "prompt": "a ground control station with large dish antennas pointing at the sky",
+   "seconds": 1.6
+  },
+  {
+   "file": "d09.jpg",
+   "prompt": "a car dashboard with a navigation screen on a winding mountain road",
+   "seconds": 1.9
+  },
+  {
+   "file": "d10.jpg",
+   "prompt": "a ring of many satellites around planet Earth, seen from far away",
+   "seconds": 1.7
+  }
+ ]
+}
