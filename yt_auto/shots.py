@@ -268,6 +268,32 @@ Answer choice = the candidate number as text, or "".
             chosen.append(v)
     log["downloaded"] = len(chosen)
     _verify(chosen, log)
+    # Second try: the next candidate for each rejected slot, looked at the same way (test run 40636347540:
+    # 9 of 16 first picks were rejected and became cards).
+    tried = {v["id"]: {c["id"] for c in cands[v["id"]] if c.get("title") == v["photo_rejected"].get("title")}
+             for v in chosen if v.get("photo_rejected")}
+    again = []
+    for v in [v for v in chosen if v.get("photo_rejected")]:
+        for c in cands[v["id"]]:
+            if c["id"] in used or c["id"] in tried[v["id"]]:
+                continue
+            try:
+                path = photos.download(c, photo_dir, v["id"] + "b")
+            except Exception:  # noqa: BLE001
+                continue
+            if path:
+                used.add(c["id"])
+                v["photo"] = {"path": str(path), **json.loads(path.with_suffix(".licence.json").read_text())}
+                again.append(v)
+                break
+    if again:
+        second: dict = {}
+        _verify(again, second)
+        log["second_try"] = {"tried": len(again), "kept": sum(1 for v in again if v.get("photo")),
+                             "rejected": second.get("rejected_after_looking", []), "error": second.get("verify_error")}
+        if second.get("verify_error"):  # not looked at: don't use them
+            for v in again:
+                v.pop("photo", None)
 
 
 def _thumb(path: str, size: int = 384) -> bytes:

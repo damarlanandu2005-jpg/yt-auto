@@ -16,6 +16,7 @@ from __future__ import annotations
 import argparse
 import faulthandler
 import json
+import re
 import subprocess
 import sys
 from collections import Counter
@@ -49,7 +50,9 @@ def card_spec(card: dict, fallback_title: str) -> dict:
     t = card.get("type")
     ok = {
         "title": bool(card.get("title")),
-        "stat": bool(card.get("value")) and bool(card.get("label")),
+        # a real number, not "1", "several" or "per cent" (test run 40636347540 showed "1 red supergiant")
+        "stat": bool(card.get("label")) and bool(re.search(r"\d", str(card.get("value", ""))))
+        and str(card.get("value", "")).strip() not in ("0", "1"),
         "bullets": bool(card.get("items")),
         "flow": len(card.get("steps") or []) >= 2,
         "bars": len(card.get("labels") or []) >= 2 and len(card.get("labels") or []) == len(card.get("values") or []),
@@ -222,11 +225,14 @@ def run(args, out: Path, bench: Bench) -> None:
                         "zoom": v.get("zoom", 1.0), "focus": v.get("focus")}
             else:
                 spec = card_spec(v.get("card") or {}, headings[v["scene"]])
+                v["card"] = spec  # what is really shown (an incomplete card became a title card): the gate counts it
             try:
                 render_keyframe(spec, path)
             except Exception as e:  # noqa: BLE001 — one bad card must not stop the video
                 print(f"[keyframes] {v['id']} {spec.get('type')} failed ({e!r}); using a title card", flush=True)
                 render_keyframe({"type": "title", "title": headings[v["scene"]]}, path)
+
+        (out / "visuals.json").write_text(json.dumps(visuals, indent=1, ensure_ascii=False), encoding="utf-8")
 
     # 9. Segments: timed from the exact slot boundaries; fades only at scene changes
     with bench.stage("segments"):

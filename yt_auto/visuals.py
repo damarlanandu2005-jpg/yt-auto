@@ -234,8 +234,11 @@ def render_photo(spec, path):
     W, H = int(W_IN * DPI), int(H_IN * DPI)
     im = Image.open(spec["path"]).convert("RGB")
     zoom = float(spec.get("zoom") or 1.0)
-    if zoom > 1.0:  # step-by-step: a closer look at one part of the same picture
-        cw, ch = im.width / zoom, im.height / zoom
+    if zoom > 1.0:  # step-by-step: a closer look at one part of the same picture, filling the frame
+        # (test run 40636347540: cropping with the photo's own shape kept the blurred side bars, so the
+        # 'closer' view looked the same)
+        base_w = min(im.width, im.height * W / H)
+        cw, ch = base_w / zoom, base_w / zoom * H / W
         fx, fy = {"left": (0.3, 0.5), "right": (0.7, 0.5), "top": (0.5, 0.3), "bottom": (0.5, 0.7)}.get(
             spec.get("focus") or "center", (0.5, 0.5))
         x0 = min(max(fx * im.width - cw / 2, 0), im.width - cw)
