@@ -30,8 +30,11 @@ from .photos import UA
 WIKI_PV = "https://wikimedia.org/api/rest_v1/metrics/pageviews/per-article/en.wikipedia/all-access/user"
 YT = "https://youtube.googleapis.com/youtube/v3"
 
-# Fixed before the first run: weights of the final score (each part is 1-5)
-WEIGHTS = {"demand": 0.35, "fit": 0.20, "visuals": 0.20, "originality": 0.15, "evergreen": 0.10}
+# Weights of the final score (each part is 1-5). v1 (27 Oct): demand 0.35, fit 0.20, visuals 0.20 (AI guess),
+# originality 0.15, evergreen 0.10. v2 (28 Oct, fixed before its first run, after the 'what makes videos win'
+# research): hits are one concrete famous subject with a twist or conflict, so 'hook' is scored; visuals are
+# MEASURED (real NASA photos/videos of the main subject), since the two v1 pilot topics had little to show.
+WEIGHTS = {"demand": 0.30, "hook": 0.20, "visuals": 0.20, "fit": 0.10, "originality": 0.10, "evergreen": 0.10}
 REPEAT_TOPIC_SIM = 0.45      # idea vs past video question/title, content-word cosine
 REPEAT_IDEA_SIM = 0.60       # idea vs a higher-ranked idea in the same batch
 
@@ -170,6 +173,11 @@ Propose {n} different evergreen explainer video questions for this niche that re
 - Each idea must cite the ids of the signals that show demand for it (at least one). Do not copy a video title;
   find the underlying question people want answered, and give an original angle.
 - Explainers, not news reports: a news item can inspire a question that stays interesting for years.
+- What wins (our research of 680 hit videos, 28 Oct): ONE concrete, famous subject people already know of,
+  with a twist, a conflict or a surprising answer ("Why TON 618 is the scariest black hole", "We got T. rex
+  wrong", "Why did humans start wearing clothes?"). Avoid vague or abstract questions ("why is the universe
+  organised into webs") and "what if" ideas with nothing real to show: prefer subjects with real NASA photos
+  and footage (missions, telescopes, planets, famous objects).
 - Stay inside the niche. No advice, no accusations, no topics about one living person.
 - Do NOT repeat these past videos:
 {past_txt}
@@ -230,23 +238,45 @@ SCORE_SCHEMA = {"type": "object", "properties": {"scores": {"type": "array", "it
     "type": "object", "properties": {
         "n": {"type": "integer"},
         "fit": {"type": "integer", "description": "1-5: squarely inside the niche"},
-        "visuals": {"type": "integer", "description": "1-5: real public-domain/CC photos (NASA, Wikimedia Commons) "
-                                                      "and simple charts can show it"},
+        "hook": {"type": "integer", "description": "1-5: one concrete subject most people have heard of, with a "
+                                                   "twist, conflict or surprising answer clear in one second "
+                                                   "(5 = 'We got T. rex wrong'; 1 = abstract or vague)"},
         "originality": {"type": "integer", "description": "1-5: a fresh question/angle, not the obvious video"},
         "evergreen": {"type": "integer", "description": "1-5: still interesting in 2 years"},
         "safe": {"type": "boolean", "description": "false if it needs money/health/legal advice or accuses a "
                                                     "real named person or company"},
         "reason": {"type": "string"}},
-    "required": ["n", "fit", "visuals", "originality", "evergreen", "safe", "reason"]}}}, "required": ["scores"]}
+    "required": ["n", "fit", "hook", "originality", "evergreen", "safe", "reason"]}}}, "required": ["scores"]}
 
 
-def score(niche: dict, ideas: list[dict]) -> None:
+NASA_SEARCH = "https://images-api.nasa.gov/search"
+
+
+def visuals_score(idea: dict, log: dict) -> tuple[float, int]:
+    """1-5 from a measured count: NASA Image and Video Library results (images + videos) for the main subject."""
+    import urllib.parse
+
+    subject = (idea["wikipedia_articles"] or [idea["question"]])[0]
+    try:
+        q = urllib.parse.urlencode({"q": subject, "media_type": "image,video", "page_size": 1})
+        hits = int(json.loads(_get(f"{NASA_SEARCH}?{q}"))["collection"]["metadata"]["total_hits"])
+    except Exception as e:  # noqa: BLE001
+        log.setdefault("nasa_errors", []).append(f"{subject}: {e!r}"[:160])
+        return 2.0, -1
+    s = 1.0
+    for floor, val in ((10, 2), (50, 3), (200, 4), (1000, 5)):
+        if hits >= floor:
+            s = val
+    return s, hits
+
+
+def score(niche: dict, ideas: list[dict], log: dict | None = None) -> None:
     from .llm import LIGHT, llm
 
     lines = [f"{i + 1}. {x['question']} — angle: {x['angle']} — sources: {', '.join(x['wikipedia_articles'])}"
              for i, x in enumerate(ideas)]
     prompt = f"""Score each video idea for a {niche['label']} explainer channel (worldwide English audience,
-narration over real photos and simple charts; no AI images; facts only from Wikipedia).
+narration over real photos, simple ink drawings and charts; facts only from Wikipedia).
 Use the rubric in the schema strictly; most ideas should NOT get 5s. Answer for every number.
 
 """ + "\n".join(lines)
@@ -257,8 +287,9 @@ Use the rubric in the schema strictly; most ideas should NOT get 5s. Answer for 
         if not r:
             x["scores"] = None
             continue
-        parts = {k: max(1, min(5, int(r[k]))) for k in ("fit", "visuals", "originality", "evergreen")}
+        parts = {k: max(1, min(5, int(r[k]))) for k in ("fit", "hook", "originality", "evergreen")}
         parts["demand"] = demand_score(x)
+        parts["visuals"], x["nasa_hits"] = visuals_score(x, log if log is not None else {})
         x["scores"] = parts
         x["safe"] = r["safe"]
         x["score_reason"] = r["reason"]
@@ -309,7 +340,7 @@ def run(niche: dict, library_dir: Path, phase0b_dir: Path | None, out: Path, wan
         (dropped if why else kept).append({**x, "dropped": why} if why else x)
 
     if kept:
-        score(niche, kept)
+        score(niche, kept, log)
     ranked = []
     for x in sorted((k for k in kept if k.get("scores")), key=lambda k: -k["score"]):
         if not x["safe"]:
@@ -337,13 +368,16 @@ def markdown(r: dict, niche: dict) -> str:
     md = [f"# Topic ideas: {niche['label']}", "",
           f"Made {r['made'][:10]}. Signals: {r['signals']}. Ideas proposed {r['proposed']}, chosen {len(r['chosen'])}, "
           f"dropped {len(r['dropped'])}.", "",
-          "Score = 0.35 demand (measured) + 0.20 fit + 0.20 visuals + 0.15 originality + 0.10 evergreen (each 1-5).", "",
-          "| # | Question | Score | Demand | Evidence |", "| --- | --- | --- | --- | --- |"]
+          "Score (v2, 28 Oct) = 0.30 demand (measured) + 0.20 hook + 0.20 visuals (measured: NASA photos/videos) "
+          "+ 0.10 fit + 0.10 originality + 0.10 evergreen (each 1-5).", "",
+          "| # | Question | Score | Demand | Hook | NASA photos/videos | Evidence |",
+          "| --- | --- | --- | --- | --- | --- | --- |"]
     for i, x in enumerate(r["chosen"], 1):
         pv = max(x["pageviews"], key=lambda p: p["last_30_days"])
         ev = "; ".join(f"{e['kind'].replace('_', ' ')}: {e['title'][:60]}" + (f" ({e['ratio']}x)" if e.get("ratio") else "")
                        for e in x["evidence"][:2])
-        md.append(f"| {i} | {x['question']} | {x['score']} | {x['scores']['demand']:g} | Wikipedia "
+        md.append(f"| {i} | {x['question']} | {x['score']} | {x['scores']['demand']:g} | {x['scores'].get('hook', '-')} | "
+                  f"{x.get('nasa_hits', '-')} | Wikipedia "
                   f"'{pv['article']}' {pv['last_30_days']:,} views/30 days (trend {pv['trend']}x)"
                   + (f"; {ev}" if ev else "") + " |")
     md += ["", "## Dropped", ""]

@@ -110,7 +110,7 @@ phase3/eval_gate.py    planted-fault test (2 Gemini requests; --no-ai needs none
 .github/workflows/phase3-gate-eval.yml  manual; results in bench-results/phase3/<run_id>/
 phase0b/niche_test.py  niche test: check, select (once), snapshot (weekly), report; settings phase0b/niches.json, rules phase0b/RULES.md
 .github/workflows/phase0b-niche.yml  manual (start/snapshot/report) + Mondays 03:17 UTC (only from main)
-yt_auto/topics.py      Phase 4: signals (0b outliers, YouTube chart cat 28, RSS, Wikipedia views) -> 1 Gemini call ideas -> repeat filter vs library/ -> 1 Gemini call scores -> fixed formula (demand 0.35)
+yt_auto/topics.py      Phase 4: signals (0b outliers, YouTube chart cat 28, RSS, Wikipedia views) -> 1 Gemini call ideas (research rule: one famous subject + twist) -> repeat filter vs library/ -> 1 Gemini call scores -> formula v2 (28 Oct): demand 0.30, hook 0.20, visuals 0.20 MEASURED (NASA photo/video count), fit/originality/evergreen 0.10
 niches/<niche>.json    per-niche settings (blueprint's niche.yaml, JSON to avoid a dependency)
 phase4/find_topics.py  entry; .github/workflows/phase4-topics.yml manual (niche choice)
 yt_auto/owner_voice.py own-voice: recording_script.md; phone files → cleaned (highpass, afftdn, numpy pause shortening: FFmpeg silenceremove misbehaved on 6.1) → whisper word times → sentence times from our text → voice_match.json
