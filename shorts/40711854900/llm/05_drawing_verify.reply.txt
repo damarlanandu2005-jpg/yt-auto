@@ -1,0 +1,16 @@
+{
+  "checks": [
+    {
+      "n": 1,
+      "seen": "A graphic design of a globe representing Earth, set against a black starry background. A thin vertical line extends from the top of the globe, and a few shooting stars are visible.",
+      "fits": false,
+      "reason": "The narration describes a bright beam of light crossing a vast starry void between distant galaxies, whereas the image depicts planet Earth with a vertical line."
+    },
+    {
+      "n": 2,
+      "seen": "An abstract graphic featuring a globe with black landmasses and white oceans, surrounded by a circular halo of stars and complex celestial patterns, with a distinct red circular emblem on the upper right.",
+      "fits": false,
+      "reason": "The narration describes a massive sphere of galaxies expanding outward around a central planet, whereas the image depicts planet Earth with a red circular emblem."
+    }
+  ]
+}

@@ -1,0 +1,14 @@
+{
+ "file": "shot2b.png",
+ "kind": "drawing",
+ "source": "ai_drawing",
+ "title": "planet Earth: a bright beam of light crossing a vast starry void between distant galaxies",
+ "source_page": "https://huggingface.co/black-forest-labs/FLUX.1-schnell",
+ "licence": "AI-generated drawing; model licence Apache-2.0; Cloudflare terms (read 28 Oct 2026): customer keeps rights in inputs and outputs",
+ "model_licence": "Apache-2.0",
+ "licence_url": "https://www.apache.org/licenses/LICENSE-2.0",
+ "author": "AI-generated with FLUX.1 [schnell] (Black Forest Labs) on Cloudflare Workers AI",
+ "attribution": "Illustration generated with FLUX.1 schnell (Apache-2.0): planet Earth: a bright beam of light crossing a vast starry void between distant galaxies",
+ "downloaded": "2026-10-28",
+ "prompt": "planet Earth: a bright beam of light crossing a vast starry void between distant galaxies, pure black background, detailed ink illustration, white and grey pen linework, one bright red accent, high contrast, simple clear composition, no text, no letters, no numbers"
+}

@@ -1,0 +1,160 @@
+{
+ "long_title": "Why the Observable Universe Is 93 Billion Light-Years Wide",
+ "started": "2026-10-28 15:02:45 UTC",
+ "music": {
+  "title": "Kevin MacLeod - Dream Culture",
+  "author": "Kevin MacLeod",
+  "licence": "CC BY 3.0",
+  "source_page": "https://commons.wikimedia.org/wiki/File:Kevin_MacLeod_-_Dream_Culture.ogg"
+ },
+ "shorts": [
+  {
+   "title": "Why is the universe 93 billion light-years wide?",
+   "hook": "How can light travel so far if time began earlier?",
+   "sentences": [
+    "s01.01",
+    "s01.03",
+    "s01.04",
+    "s01.05",
+    "s01.06",
+    "s01.08"
+   ],
+   "subject": "planet Earth",
+   "seconds": 54.8,
+   "drawn": 6,
+   "passed": 4,
+   "rejected": [
+    {
+     "id": "shot2",
+     "title": "planet Earth: a bright beam of light crossing a vast starry void between distant galaxies",
+     "seen": "A black background with a glowing, stylized planet Earth in the center intersected horizontally by a bright red beam of light emitting a lens flare, set against a scattered starfield.",
+     "reason": "Shows a planet Earth which is not part of the requested scene showing a beam of light crossing a void."
+    },
+    {
+     "id": "shot5",
+     "title": "planet Earth: a massive sphere of galaxies expanding outward around a central planet",
+     "seen": "A black background with a detailed, grayscale rendering of planet Earth in the center, surrounded by a dense, sparkling field of white stars and cosmic dust.",
+     "reason": "Shows planet Earth instead of a massive sphere of galaxies."
+    }
+   ],
+   "verify_error": null,
+   "redrawn": 2,
+   "rejected_again": [
+    {
+     "id": "shot2b",
+     "title": "planet Earth: a bright beam of light crossing a vast starry void between distant galaxies",
+     "seen": "A graphic design of a globe representing Earth, set against a black starry background. A thin vertical line extends from the top of the globe, and a few shooting stars are visible.",
+     "reason": "The narration describes a bright beam of light crossing a vast starry void between distant galaxies, whereas the image depicts planet Earth with a vertical line."
+    },
+    {
+     "id": "shot5b",
+     "title": "planet Earth: a massive sphere of galaxies expanding outward around a central planet",
+     "seen": "An abstract graphic featuring a globe with black landmasses and white oceans, surrounded by a circular halo of stars and complex celestial patterns, with a distinct red circular emblem on the upper right.",
+     "reason": "The narration describes a massive sphere of galaxies expanding outward around a central planet, whereas the image depicts planet Earth with a red circular emblem."
+    }
+   ],
+   "stand_ins": 2,
+   "captions": 45,
+   "video": "short1.mp4",
+   "build_s": 208.9
+  }
+ ],
+ "llm_calls": [
+  {
+   "name": "shorts_plan",
+   "model": "gemma-4-31b-it",
+   "prompt_chars": 8373,
+   "images": 0,
+   "status": 500,
+   "attempt": 1,
+   "error": "{\n  \"error\": {\n    \"code\": 500,\n    \"message\": \"Internal error encountered.\",\n    \"status\": \"INTERNAL\"\n  }\n}\n"
+  },
+  {
+   "name": "shorts_plan",
+   "model": "gemini-3.5-flash-lite",
+   "prompt_chars": 8373,
+   "images": 0,
+   "status": 200,
+   "seconds": 23.8,
+   "attempts": 1,
+   "finish": "STOP",
+   "in_tokens": 2155,
+   "out_tokens": 373,
+   "thought_tokens": null
+  },
+  {
+   "name": "drawing_describe",
+   "model": "gemini-3.5-flash-lite",
+   "prompt_chars": 320,
+   "images": 6,
+   "status": 200,
+   "seconds": 27.1,
+   "attempts": 1,
+   "finish": "STOP",
+   "in_tokens": 6640,
+   "out_tokens": 306,
+   "thought_tokens": null
+  },
+  {
+   "name": "drawing_verify",
+   "model": "gemini-3.5-flash-lite",
+   "prompt_chars": 3180,
+   "images": 0,
+   "status": 200,
+   "seconds": 24.1,
+   "attempts": 1,
+   "finish": "STOP",
+   "in_tokens": 661,
+   "out_tokens": 463,
+   "thought_tokens": null
+  },
+  {
+   "name": "drawing_describe",
+   "model": "gemini-3.5-flash-lite",
+   "prompt_chars": 320,
+   "images": 2,
+   "status": 200,
+   "seconds": 15.4,
+   "attempts": 1,
+   "finish": "STOP",
+   "in_tokens": 2268,
+   "out_tokens": 126,
+   "thought_tokens": null
+  },
+  {
+   "name": "drawing_verify",
+   "model": "gemini-3.5-flash-lite",
+   "prompt_chars": 1703,
+   "images": 0,
+   "status": 200,
+   "seconds": 13.3,
+   "attempts": 1,
+   "finish": "STOP",
+   "in_tokens": 373,
+   "out_tokens": 207,
+   "thought_tokens": null
+  }
+ ],
+ "sfx": {
+  "kind": "sound effects",
+  "name": "transition click and whoosh, generated in code (yt_auto/sound.py)",
+  "source_page": "own work",
+  "licence": "own work (all rights held by the channel owner)",
+  "attribution": "none required"
+ },
+ "music_record": {
+  "file": "music.wav",
+  "kind": "music",
+  "source": "wikimedia_commons",
+  "title": "Kevin MacLeod - Dream Culture",
+  "source_page": "https://commons.wikimedia.org/wiki/File:Kevin_MacLeod_-_Dream_Culture.ogg",
+  "download_url": "https://upload.wikimedia.org/wikipedia/commons/e/e0/Kevin_MacLeod_-_Dream_Culture.ogg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+  "licence": "CC BY 3.0",
+  "licence_url": "https://creativecommons.org/licenses/by/3.0",
+  "author": "Kevin MacLeod",
+  "attribution": "Music: \"Kevin MacLeod - Dream Culture\" by Kevin MacLeod, CC BY 3.0, via Wikimedia Commons. https://commons.wikimedia.org/wiki/File:Kevin_MacLeod_-_Dream_Culture.ogg",
+  "downloaded": "2026-10-28",
+  "seconds": 214.4,
+  "path": "out/shorts/music/music.wav"
+ }
+}

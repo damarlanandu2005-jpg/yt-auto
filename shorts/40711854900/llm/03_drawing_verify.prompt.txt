@@ -1,0 +1,33 @@
+[model] gemini-3.5-flash-lite
+[system]
+
+
+[user]
+Step 2 of a picture check for a science video. Someone looked at each picture WITHOUT knowing
+what it should show and described it. Decide for each image whether the picture fits.
+The pictures are ink drawings made by an AI image model, which often misses. A drawing fits if a
+viewer hearing the narration would recognise its main object(s) (a star, a planet, a blast, molecules, DNA,
+fish...). It does NOT need to show the action or process (collapsing, moving, changing): a still picture of
+the right thing is enough. It does NOT fit if it is only shapes or texture with no recognisable object, shows
+a different thing (a volcano or canyon for the atmosphere, a red diamond for a star), has text or labels, looks
+like a logo/emblem/badge/flag, or has deformed bodies.
+When unsure, answer fits = false (a chart or plain card is shown instead, which is fine).
+Copy the description into "seen".
+Image 1: described as: A black background featuring a stylized planet Earth in the center surrounded by numerous scattered white swirl and spiral shapes, and a small red dot near the bottom.
+  should show: planet Earth: planet Earth small in the centre, surrounded by many tiny spiral galaxies in deep space
+  narration: planet Earth small in the centre, surrounded by many tiny spiral galaxies in deep space
+Image 2: described as: A black background with a glowing, stylized planet Earth in the center intersected horizontally by a bright red beam of light emitting a lens flare, set against a scattered starfield.
+  should show: planet Earth: a bright beam of light crossing a vast starry void between distant galaxies
+  narration: a bright beam of light crossing a vast starry void between distant galaxies
+Image 3: described as: A black background showing a small, colorful depiction of planet Earth centered inside a large white circular ring composed of fine, fragmented dashes.
+  should show: planet Earth: a glowing circular cosmic horizon line drawn around a small blue planet
+  narration: a glowing circular cosmic horizon line drawn around a small blue planet
+Image 4: described as: A black background displaying a white outline of the Earth's continents centered inside a spherical grid chart with latitude and longitude lines.
+  should show: planet Earth: a geometric sphere centered on planet Earth with a measured radius marked out
+  narration: a geometric sphere centered on planet Earth with a measured radius marked out
+Image 5: described as: A black background with a detailed, grayscale rendering of planet Earth in the center, surrounded by a dense, sparkling field of white stars and cosmic dust.
+  should show: planet Earth: a massive sphere of galaxies expanding outward around a central planet
+  narration: a massive sphere of galaxies expanding outward around a central planet
+Image 6: described as: A black background featuring a grayscale globe of the Earth surrounded by an intricate, concentric circular grid and radar-like coordinate system with thin white lines.
+  should show: planet Earth: planet Earth centered inside a large complex grid showing cosmic distances
+  narration: planet Earth centered inside a large complex grid showing cosmic distances

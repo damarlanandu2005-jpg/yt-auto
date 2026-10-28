@@ -1,0 +1,21 @@
+[model] gemini-3.5-flash-lite
+[system]
+
+
+[user]
+Step 2 of a picture check for a science video. Someone looked at each picture WITHOUT knowing
+what it should show and described it. Decide for each image whether the picture fits.
+The pictures are ink drawings made by an AI image model, which often misses. A drawing fits if a
+viewer hearing the narration would recognise its main object(s) (a star, a planet, a blast, molecules, DNA,
+fish...). It does NOT need to show the action or process (collapsing, moving, changing): a still picture of
+the right thing is enough. It does NOT fit if it is only shapes or texture with no recognisable object, shows
+a different thing (a volcano or canyon for the atmosphere, a red diamond for a star), has text or labels, looks
+like a logo/emblem/badge/flag, or has deformed bodies.
+When unsure, answer fits = false (a chart or plain card is shown instead, which is fine).
+Copy the description into "seen".
+Image 1: described as: A graphic design of a globe representing Earth, set against a black starry background. A thin vertical line extends from the top of the globe, and a few shooting stars are visible.
+  should show: planet Earth: a bright beam of light crossing a vast starry void between distant galaxies
+  narration: a bright beam of light crossing a vast starry void between distant galaxies
+Image 2: described as: An abstract graphic featuring a globe with black landmasses and white oceans, surrounded by a circular halo of stars and complex celestial patterns, with a distinct red circular emblem on the upper right.
+  should show: planet Earth: a massive sphere of galaxies expanding outward around a central planet
+  narration: a massive sphere of galaxies expanding outward around a central planet

@@ -1,0 +1,41 @@
+[
+ {
+  "title": "Why is the universe 93 billion light-years wide?",
+  "hook": "How can light travel so far if time began earlier?",
+  "sentences": [
+   "s01.01",
+   "s01.03",
+   "s01.04",
+   "s01.05",
+   "s01.06",
+   "s01.08"
+  ],
+  "subject": "planet Earth",
+  "shots": [
+   {
+    "sentence": "s01.01",
+    "view": "planet Earth small in the centre, surrounded by many tiny spiral galaxies in deep space"
+   },
+   {
+    "sentence": "s01.03",
+    "view": "a bright beam of light crossing a vast starry void between distant galaxies"
+   },
+   {
+    "sentence": "s01.04",
+    "view": "a glowing circular cosmic horizon line drawn around a small blue planet"
+   },
+   {
+    "sentence": "s01.05",
+    "view": "a geometric sphere centered on planet Earth with a measured radius marked out"
+   },
+   {
+    "sentence": "s01.06",
+    "view": "a massive sphere of galaxies expanding outward around a central planet"
+   },
+   {
+    "sentence": "s01.08",
+    "view": "planet Earth centered inside a large complex grid showing cosmic distances"
+   }
+  ]
+ }
+]

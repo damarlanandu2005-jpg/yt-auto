@@ -1,0 +1,28 @@
+{
+  "images": [
+    {
+      "n": 1,
+      "seen": "A black background featuring a stylized planet Earth in the center surrounded by numerous scattered white swirl and spiral shapes, and a small red dot near the bottom."
+    },
+    {
+      "n": 2,
+      "seen": "A black background with a glowing, stylized planet Earth in the center intersected horizontally by a bright red beam of light emitting a lens flare, set against a scattered starfield."
+    },
+    {
+      "n": 3,
+      "seen": "A black background showing a small, colorful depiction of planet Earth centered inside a large white circular ring composed of fine, fragmented dashes."
+    },
+    {
+      "n": 4,
+      "seen": "A black background displaying a white outline of the Earth's continents centered inside a spherical grid chart with latitude and longitude lines."
+    },
+    {
+      "n": 5,
+      "seen": "A black background with a detailed, grayscale rendering of planet Earth in the center, surrounded by a dense, sparkling field of white stars and cosmic dust."
+    },
+    {
+      "n": 6,
+      "seen": "A black background featuring a grayscale globe of the Earth surrounded by an intricate, concentric circular grid and radar-like coordinate system with thin white lines."
+    }
+  ]
+}

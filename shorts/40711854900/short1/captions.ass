@@ -1,0 +1,57 @@
+[Script Info]
+ScriptType: v4.00+
+PlayResX: 1080
+PlayResY: 1920
+WrapStyle: 0
+
+[V4+ Styles]
+Format: Name, Fontname, Fontsize, PrimaryColour, SecondaryColour, OutlineColour, BackColour, Bold, Italic, Underline, StrikeOut, ScaleX, ScaleY, Spacing, Angle, BorderStyle, Outline, Shadow, Alignment, MarginL, MarginR, MarginV, Encoding
+Style: Cap,DejaVu Sans,96,&H00FFFFFF,&H00FFFFFF,&H00000000,&H96000000,1,0,0,0,100,100,1,0,1,7,3,2,70,70,520,1
+
+[Events]
+Format: Layer, Start, End, Style, Name, MarginL, MarginR, MarginV, Effect, Text
+Dialogue: 0,0:00:00.00,0:00:00.66,Cap,,0,0,0,,{\fad(60,60)\fscx90\fscy90\t(0,90,\fscx100\fscy100)}HOW CAN LIGHT
+Dialogue: 0,0:00:00.66,0:00:01.90,Cap,,0,0,0,,{\fad(60,60)\fscx90\fscy90\t(0,90,\fscx100\fscy100)}TRAVEL SO FAR
+Dialogue: 0,0:00:01.90,0:00:02.82,Cap,,0,0,0,,{\fad(60,60)\fscx90\fscy90\t(0,90,\fscx100\fscy100)}IF TIME BEGAN
+Dialogue: 0,0:00:02.82,0:00:04.53,Cap,,0,0,0,,{\fad(60,60)\fscx90\fscy90\t(0,90,\fscx100\fscy100)}EARLIER?
+Dialogue: 0,0:00:04.53,0:00:05.42,Cap,,0,0,0,,{\fad(60,60)\fscx90\fscy90\t(0,90,\fscx100\fscy100)}IMAGINE YOU STAND
+Dialogue: 0,0:00:05.42,0:00:06.68,Cap,,0,0,0,,{\fad(60,60)\fscx90\fscy90\t(0,90,\fscx100\fscy100)}OUTDOORS AT NIGHT
+Dialogue: 0,0:00:06.68,0:00:07.42,Cap,,0,0,0,,{\fad(60,60)\fscx90\fscy90\t(0,90,\fscx100\fscy100)}AND LOOK INTO
+Dialogue: 0,0:00:07.42,0:00:08.22,Cap,,0,0,0,,{\fad(60,60)\fscx90\fscy90\t(0,90,\fscx100\fscy100)}THE DEEPEST REACHES
+Dialogue: 0,0:00:08.22,0:00:09.54,Cap,,0,0,0,,{\fad(60,60)\fscx90\fscy90\t(0,90,\fscx100\fscy100)}OF SPACE.
+Dialogue: 0,0:00:09.54,0:00:10.24,Cap,,0,0,0,,{\fad(60,60)\fscx90\fscy90\t(0,90,\fscx100\fscy100)}HOW CAN LIGHT
+Dialogue: 0,0:00:10.24,0:00:11.94,Cap,,0,0,0,,{\fad(60,60)\fscx90\fscy90\t(0,90,\fscx100\fscy100)}TRAVEL ACROSS {\c&H3C3CE8&}93{\c&HFFFFFF&}
+Dialogue: 0,0:00:11.94,0:00:14.34,Cap,,0,0,0,,{\fad(60,60)\fscx90\fscy90\t(0,90,\fscx100\fscy100)}{\c&H3C3CE8&}BILLION{\c&HFFFFFF&} {\c&H3C3CE8&}LIGHT-YEARS{\c&HFFFFFF&} IF
+Dialogue: 0,0:00:14.34,0:00:15.86,Cap,,0,0,0,,{\fad(60,60)\fscx90\fscy90\t(0,90,\fscx100\fscy100)}TIME ITSELF BEGAN
+Dialogue: 0,0:00:15.86,0:00:18.42,Cap,,0,0,0,,{\fad(60,60)\fscx90\fscy90\t(0,90,\fscx100\fscy100)}ONLY {\c&H3C3CE8&}13.8{\c&HFFFFFF&} {\c&H3C3CE8&}BILLION{\c&HFFFFFF&}
+Dialogue: 0,0:00:18.42,0:00:20.38,Cap,,0,0,0,,{\fad(60,60)\fscx90\fscy90\t(0,90,\fscx100\fscy100)}YEARS AGO?
+Dialogue: 0,0:00:20.38,0:00:21.66,Cap,,0,0,0,,{\fad(60,60)\fscx90\fscy90\t(0,90,\fscx100\fscy100)}UNDERSTANDING THIS GIANT
+Dialogue: 0,0:00:21.66,0:00:23.10,Cap,,0,0,0,,{\fad(60,60)\fscx90\fscy90\t(0,90,\fscx100\fscy100)}PUZZLE REVEALS YOUR
+Dialogue: 0,0:00:23.10,0:00:24.18,Cap,,0,0,0,,{\fad(60,60)\fscx90\fscy90\t(0,90,\fscx100\fscy100)}TRUE PLACE IN
+Dialogue: 0,0:00:24.18,0:00:25.08,Cap,,0,0,0,,{\fad(60,60)\fscx90\fscy90\t(0,90,\fscx100\fscy100)}A SHIFTING COSMIC
+Dialogue: 0,0:00:25.08,0:00:26.54,Cap,,0,0,0,,{\fad(60,60)\fscx90\fscy90\t(0,90,\fscx100\fscy100)}LANDSCAPE.
+Dialogue: 0,0:00:26.54,0:00:27.14,Cap,,0,0,0,,{\fad(60,60)\fscx90\fscy90\t(0,90,\fscx100\fscy100)}IN THIS VIDEO,
+Dialogue: 0,0:00:27.14,0:00:28.06,Cap,,0,0,0,,{\fad(60,60)\fscx90\fscy90\t(0,90,\fscx100\fscy100)}YOU WILL DISCOVER
+Dialogue: 0,0:00:28.06,0:00:29.50,Cap,,0,0,0,,{\fad(60,60)\fscx90\fscy90\t(0,90,\fscx100\fscy100)}HOW {\c&H3C3CE8&}COSMIC{\c&HFFFFFF&} {\c&H3C3CE8&}EXPANSION{\c&HFFFFFF&}
+Dialogue: 0,0:00:29.50,0:00:30.56,Cap,,0,0,0,,{\fad(60,60)\fscx90\fscy90\t(0,90,\fscx100\fscy100)}TURNS A JOURNEY
+Dialogue: 0,0:00:30.56,0:00:32.46,Cap,,0,0,0,,{\fad(60,60)\fscx90\fscy90\t(0,90,\fscx100\fscy100)}OF {\c&H3C3CE8&}13.8{\c&HFFFFFF&} BILLION
+Dialogue: 0,0:00:32.46,0:00:33.76,Cap,,0,0,0,,{\fad(60,60)\fscx90\fscy90\t(0,90,\fscx100\fscy100)}YEARS INTO A
+Dialogue: 0,0:00:33.76,0:00:34.64,Cap,,0,0,0,,{\fad(60,60)\fscx90\fscy90\t(0,90,\fscx100\fscy100)}VAST WIDTH OF
+Dialogue: 0,0:00:34.64,0:00:37.12,Cap,,0,0,0,,{\fad(60,60)\fscx90\fscy90\t(0,90,\fscx100\fscy100)}{\c&H3C3CE8&}93{\c&HFFFFFF&} BILLION LIGHT-YEARS.
+Dialogue: 0,0:00:37.12,0:00:37.92,Cap,,0,0,0,,{\fad(60,60)\fscx90\fscy90\t(0,90,\fscx100\fscy100)}NOTHING IN PHYSICS
+Dialogue: 0,0:00:37.92,0:00:38.96,Cap,,0,0,0,,{\fad(60,60)\fscx90\fscy90\t(0,90,\fscx100\fscy100)}CAN TRAVEL FASTER
+Dialogue: 0,0:00:38.96,0:00:39.60,Cap,,0,0,0,,{\fad(60,60)\fscx90\fscy90\t(0,90,\fscx100\fscy100)}THAN THE {\c&H3C3CE8&}SPEED{\c&HFFFFFF&}
+Dialogue: 0,0:00:39.60,0:00:40.54,Cap,,0,0,0,,{\fad(60,60)\fscx90\fscy90\t(0,90,\fscx100\fscy100)}{\c&H3C3CE8&}OF{\c&HFFFFFF&} {\c&H3C3CE8&}LIGHT{\c&HFFFFFF&} THROUGH
+Dialogue: 0,0:00:40.54,0:00:42.00,Cap,,0,0,0,,{\fad(60,60)\fscx90\fscy90\t(0,90,\fscx100\fscy100)}LOCAL SPACE.
+Dialogue: 0,0:00:42.00,0:00:42.64,Cap,,0,0,0,,{\fad(60,60)\fscx90\fscy90\t(0,90,\fscx100\fscy100)}IF LIGHT HAS
+Dialogue: 0,0:00:42.64,0:00:43.44,Cap,,0,0,0,,{\fad(60,60)\fscx90\fscy90\t(0,90,\fscx100\fscy100)}ONLY BEEN TRAVELING
+Dialogue: 0,0:00:43.44,0:00:45.24,Cap,,0,0,0,,{\fad(60,60)\fscx90\fscy90\t(0,90,\fscx100\fscy100)}FOR {\c&H3C3CE8&}13.8{\c&HFFFFFF&} BILLION
+Dialogue: 0,0:00:45.24,0:00:46.38,Cap,,0,0,0,,{\fad(60,60)\fscx90\fscy90\t(0,90,\fscx100\fscy100)}YEARS,
+Dialogue: 0,0:00:46.38,0:00:47.24,Cap,,0,0,0,,{\fad(60,60)\fscx90\fscy90\t(0,90,\fscx100\fscy100)}A SIMPLE SUM
+Dialogue: 0,0:00:47.24,0:00:48.84,Cap,,0,0,0,,{\fad(60,60)\fscx90\fscy90\t(0,90,\fscx100\fscy100)}SUGGESTS OUR COSMIC
+Dialogue: 0,0:00:48.84,0:00:49.82,Cap,,0,0,0,,{\fad(60,60)\fscx90\fscy90\t(0,90,\fscx100\fscy100)}HORIZON SHOULD BE
+Dialogue: 0,0:00:49.82,0:00:51.15,Cap,,0,0,0,,{\fad(60,60)\fscx90\fscy90\t(0,90,\fscx100\fscy100)}MUCH SMALLER.
+Dialogue: 0,0:00:51.15,0:00:51.74,Cap,,0,0,0,,{\fad(60,60)\fscx90\fscy90\t(0,90,\fscx100\fscy100)}THE FULL STORY
+Dialogue: 0,0:00:51.74,0:00:52.38,Cap,,0,0,0,,{\fad(60,60)\fscx90\fscy90\t(0,90,\fscx100\fscy100)}IS IN OUR
+Dialogue: 0,0:00:52.38,0:00:53.20,Cap,,0,0,0,,{\fad(60,60)\fscx90\fscy90\t(0,90,\fscx100\fscy100)}LONG VIDEO ON
+Dialogue: 0,0:00:53.20,0:00:53.94,Cap,,0,0,0,,{\fad(60,60)\fscx90\fscy90\t(0,90,\fscx100\fscy100)}THIS CHANNEL.

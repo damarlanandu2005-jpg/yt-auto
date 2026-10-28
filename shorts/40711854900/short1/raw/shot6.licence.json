@@ -1,0 +1,14 @@
+{
+ "file": "shot6.png",
+ "kind": "drawing",
+ "source": "ai_drawing",
+ "title": "planet Earth: planet Earth centered inside a large complex grid showing cosmic distances",
+ "source_page": "https://huggingface.co/black-forest-labs/FLUX.1-schnell",
+ "licence": "AI-generated drawing; model licence Apache-2.0; Cloudflare terms (read 28 Oct 2026): customer keeps rights in inputs and outputs",
+ "model_licence": "Apache-2.0",
+ "licence_url": "https://www.apache.org/licenses/LICENSE-2.0",
+ "author": "AI-generated with FLUX.1 [schnell] (Black Forest Labs) on Cloudflare Workers AI",
+ "attribution": "Illustration generated with FLUX.1 schnell (Apache-2.0): planet Earth: planet Earth centered inside a large complex grid showing cosmic distances",
+ "downloaded": "2026-10-28",
+ "prompt": "planet Earth: planet Earth centered inside a large complex grid showing cosmic distances, pure black background, detailed ink illustration, white and grey pen linework, one bright red accent, high contrast, simple clear composition, no text, no letters, no numbers, tall vertical composition with the subject in the centre"
+}

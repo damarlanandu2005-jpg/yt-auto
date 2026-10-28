@@ -1,0 +1,12 @@
+{
+  "images": [
+    {
+      "n": 1,
+      "seen": "A graphic design of a globe representing Earth, set against a black starry background. A thin vertical line extends from the top of the globe, and a few shooting stars are visible."
+    },
+    {
+      "n": 2,
+      "seen": "An abstract graphic featuring a globe with black landmasses and white oceans, surrounded by a circular halo of stars and complex celestial patterns, with a distinct red circular emblem on the upper right."
+    }
+  ]
+}
