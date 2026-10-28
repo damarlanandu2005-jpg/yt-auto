@@ -67,12 +67,17 @@ def search_many(queries: list[str], limit: int = 8) -> list[dict]:
     return out[:limit]
 
 
+def _safe(url: str) -> str:
+    """NASA paths can hold spaces ('/video/What is a Black Hole/'): urllib refuses those (check 40669936041)."""
+    return urllib.parse.quote(url.replace("http://", "https://"), safe=":/~%?=&")
+
+
 def _mp4_url(manifest_url: str) -> str | None:
-    files = _get(manifest_url)
+    files = _get(_safe(manifest_url))
     for suffix in PREFER:
         for f in files:
             if f.endswith(suffix):
-                return urllib.parse.quote(f.replace("http://", "https://"), safe=":/~%")
+                return _safe(f)
     return None
 
 
