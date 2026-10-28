@@ -83,6 +83,10 @@ jobs:
           path: ~/.cache/huggingface
           key: faster-whisper-base-en
 
+      - name: Start-up check (stops a broken script before the long steps)
+        timeout-minutes: 3
+        run: pip install -q -r requirements.txt && python phase1/make_video.py --help > /dev/null
+
       - name: Cache drawing model
         if: inputs.max_drawings != '0'
         uses: actions/cache@v4
