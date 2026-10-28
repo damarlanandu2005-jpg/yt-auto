@@ -378,13 +378,16 @@ def limit_cards(visuals: list[dict], log: dict) -> None:
 
 def drawing_jobs(visuals: list[dict], max_n: int) -> list[dict]:
     """Planned drawings first, then photo slots that ended without a photo (up to max_n in all)."""
+    from .drawings import CLOUD_PLANNED_MAX, cloud_ready
+
+    planned_max = CLOUD_PLANNED_MAX if cloud_ready() else PLANNED_MAX
     planned = [v for v in visuals if v["kind"] == "drawing" and v.get("drawing_subject")
                and not NO_DRAW.search(v["drawing_subject"])]
     no_photo = [v for v in visuals if v["kind"] == "photo" and not v.get("photo") and v.get("photo_subject")
                 and not NO_DRAW.search(v["photo_subject"])]
     # Keep room for photo slots whose photo failed the check: pilot video 1 remake (run 40593105860) planned
     # 18 drawings (asked for at most 12), so the 12 rejected photos all became bare title cards.
-    jobs = [{"id": v["id"], "subject": v["drawing_subject"]} for v in planned[:PLANNED_MAX]]
+    jobs = [{"id": v["id"], "subject": v["drawing_subject"]} for v in planned[:planned_max]]
     jobs += [{"id": v["id"], "subject": v["photo_subject"]} for v in no_photo]
     return jobs[:max_n]
 

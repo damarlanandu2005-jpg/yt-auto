@@ -51,8 +51,10 @@ def card_spec(card: dict, fallback_title: str) -> dict:
     ok = {
         "title": bool(card.get("title")),
         # a real number, not "1", "several" or "per cent" (test run 40636347540 showed "1 red supergiant")
-        "stat": bool(card.get("label")) and bool(re.search(r"\d", str(card.get("value", ""))))
-        and str(card.get("value", "")).strip() not in ("0", "1"),
+        # the label may come as "unit" or only a title (pilot video 2, run 40650276445: 21 stat cards had
+        # value + unit, no label, and all became plain title cards)
+        "stat": bool(card.get("label") or card.get("unit") or card.get("title"))
+        and bool(re.search(r"\d", str(card.get("value", "")))) and str(card.get("value", "")).strip() not in ("0", "1"),
         "bullets": bool(card.get("items")),
         "flow": len(card.get("steps") or []) >= 2,
         "bars": len(card.get("labels") or []) >= 2 and len(card.get("labels") or []) == len(card.get("values") or []),
@@ -62,6 +64,8 @@ def card_spec(card: dict, fallback_title: str) -> dict:
     if not ok:
         return {"type": "title", "title": card.get("title") or fallback_title, "subtitle": card.get("subtitle", "")}
     spec = {k: v for k, v in card.items() if v not in (None, "", [])}
+    if t == "stat" and not spec.get("label"):
+        spec["label"] = spec.get("unit") or spec.get("title", "")
     spec.setdefault("title", fallback_title)
     return spec
 
@@ -188,7 +192,8 @@ def run(args, out: Path, bench: Bench) -> None:
                       f"(or different times): making a new plan", flush=True)
                 plan_file.unlink()
         visuals = cached(plan_file, lambda: shots.plan_visuals(script["title"], the_slots, headings,
-                                                               max_drawings=min(12, args.max_drawings)))
+                                                               max_drawings=min(drawings.CLOUD_PLANNED_MAX if drawings.cloud_ready() else 12,
+                                                                     args.max_drawings)))
     with bench.stage("photos"):
         if (out / "visuals.json").exists():
             visuals = json.loads((out / "visuals.json").read_text(encoding="utf-8"))
@@ -204,7 +209,9 @@ def run(args, out: Path, bench: Bench) -> None:
         if (out / "drawing_log.json").exists():
             drawing_log = json.loads((out / "drawing_log.json").read_text())
         else:
-            jobs = shots.drawing_jobs(visuals, args.max_drawings)
+            limit = max(args.max_drawings, drawings.CLOUD_MAX_DRAWINGS) if args.max_drawings and drawings.cloud_ready() \
+                else args.max_drawings
+            jobs = shots.drawing_jobs(visuals, limit)
             made = drawings.make(jobs, out / "drawings", ROOT)
             drawing_log = made["log"]
             shots.add_drawings(visuals, made["drawn"], drawing_log)

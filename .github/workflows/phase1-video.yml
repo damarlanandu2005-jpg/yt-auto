@@ -120,7 +120,7 @@ jobs:
           mkdir -p out/run
           git fetch --depth 1 origin bench-results
           # Only stages that don't depend on files left on the old runner (photos are searched again).
-          for f in plan.json sources.json script_draft.json script.json factcheck.json visual_plan.json; do
+          for f in plan.json sources.json script_draft.json script.json factcheck.json delivery.json keywords.json visual_plan.json; do
             git show "FETCH_HEAD:phase1/$RESUME/$f" > "out/run/$f" 2>/dev/null && echo "reused $f" || rm -f "out/run/$f"
           done
           if [ "$NEW_PLAN" = "true" ]; then rm -f out/run/visual_plan.json && echo "visual plan will be made again"; fi
