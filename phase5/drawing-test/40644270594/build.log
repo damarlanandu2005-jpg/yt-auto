@@ -1,0 +1,10 @@
+Traceback (most recent call last):
+  File "/home/runner/work/yt-auto/yt-auto/phase5/drawing_test.py", line 145, in <module>
+    main()
+    ~~~~^^
+  File "/home/runner/work/yt-auto/yt-auto/phase5/drawing_test.py", line 97, in main
+    return cloud_test(a, out)
+  File "/home/runner/work/yt-auto/yt-auto/phase5/drawing_test.py", line 50, in cloud_test
+    sys.path.insert(0, str(Path(__file__).resolve().parents[1]))
+    ^^^
+NameError: name 'sys' is not defined. Did you forget to import 'sys'?
