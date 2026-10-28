@@ -1,0 +1,831 @@
+{
+ "summary": {
+  "guard_only": {
+   "caught": 8,
+   "errors": 30,
+   "rate": 0.267,
+   "per_category": {
+    "conflict": "0/6",
+    "misquote": "0/6",
+    "outdated": "0/6",
+    "units": "6/6",
+    "unsupported": "2/6"
+   },
+   "false_alarms": [],
+   "controls": 16
+  },
+  "combined": {
+   "caught": 30,
+   "errors": 30,
+   "rate": 1.0,
+   "per_category": {
+    "conflict": "6/6",
+    "misquote": "6/6",
+    "outdated": "6/6",
+    "units": "6/6",
+    "unsupported": "6/6"
+   },
+   "false_alarms": [],
+   "controls": 16
+  },
+  "ai_only": {
+   "caught": 30,
+   "errors": 30,
+   "rate": 1.0,
+   "per_category": {
+    "conflict": "6/6",
+    "misquote": "6/6",
+    "outdated": "6/6",
+    "units": "6/6",
+    "unsupported": "6/6"
+   },
+   "false_alarms": [],
+   "controls": 16
+  },
+  "pass": true,
+  "rule": {
+   "min_caught_overall": 0.8,
+   "min_caught_per_category": 0.6,
+   "max_false_alarms": 1
+  },
+  "llm_calls": [
+   {
+    "name": "eval_factcheck",
+    "model": "gemini-3.8-flash",
+    "prompt_chars": 18214,
+    "images": 0,
+    "status": 200,
+    "seconds": 189.4,
+    "attempts": 1,
+    "finish": "STOP",
+    "in_tokens": 4951,
+    "out_tokens": 3238,
+    "thought_tokens": null
+   }
+  ]
+ },
+ "cases": [
+  {
+   "id": "u1",
+   "category": "unsupported",
+   "expect": "error",
+   "kind": "fact",
+   "text": "TRANSIT, first tested in 1960, was designed and built by NASA.",
+   "sources": [
+    "A1.10"
+   ],
+   "ai_verdict": "unsupported",
+   "ai_problem": "The passages say TRANSIT was first tested in 1960, but make no mention of NASA designing or building it.",
+   "guard": [],
+   "ai_flag": true,
+   "guard_flag": false,
+   "flagged": true
+  },
+  {
+   "id": "u2",
+   "category": "unsupported",
+   "expect": "error",
+   "kind": "fact",
+   "text": "In 1991, DARPA's small handheld GPS receiver was finished, and it cost less than 1,000 dollars.",
+   "sources": [
+    "A1.30"
+   ],
+   "ai_verdict": "partly",
+   "ai_problem": "The passage confirms the project finished in 1991, but says nothing about the receiver costing less than 1,000 dollars.",
+   "guard": [
+    "number 1,000 is not in the cited sources"
+   ],
+   "ai_flag": true,
+   "guard_flag": true,
+   "flagged": true
+  },
+  {
+   "id": "u3",
+   "category": "unsupported",
+   "expect": "error",
+   "kind": "fact",
+   "text": "Bill Clinton made GPS a dual-use system in 1996 because airlines pushed for it.",
+   "sources": [
+    "A1.34"
+   ],
+   "ai_verdict": "partly",
+   "ai_problem": "The passage states Clinton declared GPS a dual-use system in 1996 recognizing its civilian and military importance, not because airlines pushed for it.",
+   "guard": [],
+   "ai_flag": true,
+   "guard_flag": false,
+   "flagged": true
+  },
+  {
+   "id": "u4",
+   "category": "unsupported",
+   "expect": "error",
+   "kind": "fact",
+   "text": "Qualcomm tested assisted GPS for phones in 2004, and by 2008 it was in every smartphone.",
+   "sources": [
+    "A1.39"
+   ],
+   "ai_verdict": "partly",
+   "ai_problem": "Qualcomm announced tests in November 2004, but the passage does not say it was in every smartphone by 2008.",
+   "guard": [
+    "number 2008 is not in the cited sources"
+   ],
+   "ai_flag": true,
+   "guard_flag": true,
+   "flagged": true
+  },
+  {
+   "id": "u5",
+   "category": "unsupported",
+   "expect": "error",
+   "kind": "fact",
+   "text": "Hydrogen masers are the clocks that keep time inside GPS satellites.",
+   "sources": [
+    "A3.67"
+   ],
+   "ai_verdict": "unsupported",
+   "ai_problem": "The passage discusses hydrogen masers and radio astronomy, but never mentions GPS satellites.",
+   "guard": [],
+   "ai_flag": true,
+   "guard_flag": false,
+   "flagged": true
+  },
+  {
+   "id": "u6",
+   "category": "unsupported",
+   "expect": "error",
+   "kind": "framing",
+   "text": "Did you know that more than 6 billion people use GPS every day?",
+   "sources": [],
+   "ai_verdict": "unsupported",
+   "ai_problem": "This framing sentence makes a checkable factual claim that more than 6 billion people use GPS daily.",
+   "guard": [],
+   "ai_flag": true,
+   "guard_flag": false,
+   "flagged": true
+  },
+  {
+   "id": "o1",
+   "category": "outdated",
+   "expect": "error",
+   "kind": "fact",
+   "text": "Today, GPS runs on a constellation of 24 satellites.",
+   "sources": [
+    "A1.32",
+    "X1"
+   ],
+   "ai_verdict": "unsupported",
+   "ai_problem": "In 1993 it had 24 satellites, but as of 2026 the constellation has 31 operational satellites.",
+   "guard": [],
+   "ai_flag": true,
+   "guard_flag": false,
+   "flagged": true
+  },
+  {
+   "id": "o2",
+   "category": "outdated",
+   "expect": "error",
+   "kind": "fact",
+   "text": "Today, GPS is managed by the 50th Space Wing.",
+   "sources": [
+    "A1.31",
+    "A1.46"
+   ],
+   "ai_verdict": "unsupported",
+   "ai_problem": "Operation of the GPS constellation was transferred to the U.S. Space Force in July 2020.",
+   "guard": [],
+   "ai_flag": true,
+   "guard_flag": false,
+   "flagged": true
+  },
+  {
+   "id": "o3",
+   "category": "outdated",
+   "expect": "error",
+   "kind": "fact",
+   "text": "The NIST-F2 caesium clock is the most accurate atomic clock ever built.",
+   "sources": [
+    "A3.6",
+    "A3.7"
+   ],
+   "ai_verdict": "unsupported",
+   "ai_problem": "The optical clock based on a trapped aluminium ion reported in 2025 broke previous records, surpassing caesium standards like NIST-F2.",
+   "guard": [],
+   "ai_flag": true,
+   "guard_flag": false,
+   "flagged": true
+  },
+  {
+   "id": "o4",
+   "category": "outdated",
+   "expect": "error",
+   "kind": "fact",
+   "text": "Selective Availability still adds errors of up to 100 metres to civilian GPS signals.",
+   "sources": [
+    "A4.33",
+    "A1.36"
+   ],
+   "ai_verdict": "unsupported",
+   "ai_problem": "Selective Availability was discontinued on May 2, 2000, so it no longer adds errors.",
+   "guard": [],
+   "ai_flag": true,
+   "guard_flag": false,
+   "flagged": true
+  },
+  {
+   "id": "o5",
+   "category": "outdated",
+   "expect": "error",
+   "kind": "fact",
+   "text": "So far, only 12 GPS satellites broadcast the new L5 signal.",
+   "sources": [
+    "X2",
+    "A1.5"
+   ],
+   "ai_verdict": "unsupported",
+   "ai_problem": "12 satellites broadcast L5 in 2019, but by March 2026 there are 21 broadcasting it.",
+   "guard": [],
+   "ai_flag": true,
+   "guard_flag": false,
+   "flagged": true
+  },
+  {
+   "id": "o6",
+   "category": "outdated",
+   "expect": "error",
+   "kind": "fact",
+   "text": "The United States' primary time standard is the NIST-F1 caesium clock.",
+   "sources": [
+    "A3.60",
+    "A3.6"
+   ],
+   "ai_verdict": "unsupported",
+   "ai_problem": "The passage identifies the NIST-F2 caesium fountain clock, not NIST-F1, as the United States' primary standard.",
+   "guard": [],
+   "ai_flag": true,
+   "guard_flag": false,
+   "flagged": true
+  },
+  {
+   "id": "q1",
+   "category": "misquote",
+   "expect": "error",
+   "kind": "fact",
+   "text": "In 2009, Air Force Space Command said: \"There is no risk at all that GPS will fail.\"",
+   "sources": [
+    "A1.43"
+   ],
+   "ai_verdict": "unsupported",
+   "ai_problem": "The Air Force Space Command said there was 'only a small risk we will not continue to exceed our performance standard', not that there was no risk at all.",
+   "guard": [],
+   "ai_flag": true,
+   "guard_flag": false,
+   "flagged": true
+  },
+  {
+   "id": "q2",
+   "category": "misquote",
+   "expect": "error",
+   "kind": "fact",
+   "text": "In 2009, the Government Accountability Office said there was \"only a small risk\" of GPS falling below its standard.",
+   "sources": [
+    "A1.42",
+    "A1.43"
+   ],
+   "ai_verdict": "unsupported",
+   "ai_problem": "The quote 'only a small risk' came from the Air Force Space Command, while the GAO warned that satellites could fail as soon as 2010.",
+   "guard": [],
+   "ai_flag": true,
+   "guard_flag": false,
+   "flagged": true
+  },
+  {
+   "id": "q3",
+   "category": "misquote",
+   "expect": "error",
+   "kind": "fact",
+   "text": "A 2015 review praised \"the beneficial influence of the Dick effect\" on optical clocks.",
+   "sources": [
+    "A3.33"
+   ],
+   "ai_verdict": "unsupported",
+   "ai_problem": "The 2015 review lamented on 'the pernicious influence of the Dick effect', rather than praising a beneficial influence.",
+   "guard": [],
+   "ai_flag": true,
+   "guard_flag": false,
+   "flagged": true
+  },
+  {
+   "id": "q4",
+   "category": "misquote",
+   "expect": "error",
+   "kind": "fact",
+   "text": "In 1996, Bill Clinton called GPS \"a gift to the whole world\".",
+   "sources": [
+    "A1.34"
+   ],
+   "ai_verdict": "unsupported",
+   "ai_problem": "Clinton declared GPS a dual-use system and established an executive board, but the passage never quotes him calling it 'a gift to the whole world'.",
+   "guard": [],
+   "ai_flag": true,
+   "guard_flag": false,
+   "flagged": true
+  },
+  {
+   "id": "q5",
+   "category": "misquote",
+   "expect": "error",
+   "kind": "fact",
+   "text": "In 1998, President Al Gore announced two new civilian GPS signals.",
+   "sources": [
+    "A1.35"
+   ],
+   "ai_verdict": "partly",
+   "ai_problem": "Al Gore was vice president in 1998, not president.",
+   "guard": [],
+   "ai_flag": true,
+   "guard_flag": false,
+   "flagged": true
+  },
+  {
+   "id": "q6",
+   "category": "misquote",
+   "expect": "error",
+   "kind": "fact",
+   "text": "NIST researchers called their record-breaking clock the \"quantum leap\" clock.",
+   "sources": [
+    "A3.7"
+   ],
+   "ai_verdict": "unsupported",
+   "ai_problem": "The clock was referred to as a 'quantum logic' clock, not a 'quantum leap' clock.",
+   "guard": [],
+   "ai_flag": true,
+   "guard_flag": false,
+   "flagged": true
+  },
+  {
+   "id": "c1",
+   "category": "conflict",
+   "expect": "error",
+   "kind": "fact",
+   "text": "GPS reached initial operational capability in 1995.",
+   "sources": [
+    "A1.32",
+    "X3"
+   ],
+   "ai_verdict": "partly",
+   "ai_problem": "sources conflict: passage A1.32 states IOC was reached by December 1993, whereas passage X3 states 1995.",
+   "guard": [],
+   "ai_flag": true,
+   "guard_flag": false,
+   "flagged": true
+  },
+  {
+   "id": "c2",
+   "category": "conflict",
+   "expect": "error",
+   "kind": "fact",
+   "text": "Only about 20 Atomichron clocks were ever sold.",
+   "sources": [
+    "A3.16",
+    "X4"
+   ],
+   "ai_verdict": "partly",
+   "ai_problem": "sources conflict: passage A3.16 states more than 50 units were sold, while passage X4 states only about 20 were ever sold.",
+   "guard": [],
+   "ai_flag": true,
+   "guard_flag": false,
+   "flagged": true
+  },
+  {
+   "id": "c3",
+   "category": "conflict",
+   "expect": "error",
+   "kind": "fact",
+   "text": "In total, GPS satellite clocks run fast by about 45 microseconds a day.",
+   "sources": [
+    "A4.64",
+    "X5"
+   ],
+   "ai_verdict": "partly",
+   "ai_problem": "sources conflict: passage A4.64 reports a gain of approximately 38.6 microseconds per day, whereas passage X5 gives about 45 microseconds.",
+   "guard": [],
+   "ai_flag": true,
+   "guard_flag": false,
+   "flagged": true
+  },
+  {
+   "id": "c4",
+   "category": "conflict",
+   "expect": "error",
+   "kind": "fact",
+   "text": "TRANSIT was first successfully tested in 1964.",
+   "sources": [
+    "A1.10",
+    "X6"
+   ],
+   "ai_verdict": "partly",
+   "ai_problem": "sources conflict: passage A1.10 states TRANSIT was first successfully tested in 1960, while passage X6 states 1964.",
+   "guard": [],
+   "ai_flag": true,
+   "guard_flag": false,
+   "flagged": true
+  },
+  {
+   "id": "c5",
+   "category": "conflict",
+   "expect": "error",
+   "kind": "fact",
+   "text": "International Atomic Time is a weighted average of about 450 clocks.",
+   "sources": [
+    "A3.52",
+    "X7"
+   ],
+   "ai_verdict": "partly",
+   "ai_problem": "sources conflict: passage A3.52 says TAI averages around 450 clocks, while passage X7 says about 300 clocks.",
+   "guard": [],
+   "ai_flag": true,
+   "guard_flag": false,
+   "flagged": true
+  },
+  {
+   "id": "c6",
+   "category": "conflict",
+   "expect": "error",
+   "kind": "fact",
+   "text": "Bradford Parkinson retired from the Air Force in 1978.",
+   "sources": [
+    "A1.51",
+    "X8"
+   ],
+   "ai_verdict": "partly",
+   "ai_problem": "sources conflict: passage A1.51 states Parkinson retired from the Air Force in 1978, while passage X8 states 1980.",
+   "guard": [],
+   "ai_flag": true,
+   "guard_flag": false,
+   "flagged": true
+  },
+  {
+   "id": "w1",
+   "category": "units",
+   "expect": "error",
+   "kind": "fact",
+   "text": "A timing error of just 1 microsecond puts your position out by about 30 centimetres.",
+   "sources": [
+    "A3.5"
+   ],
+   "ai_verdict": "partly",
+   "ai_problem": "The passage specifies a timing error of 1 nanosecond (not 1 microsecond) corresponds to roughly 30 cm.",
+   "guard": [
+    "1 has a different unit in the sources"
+   ],
+   "ai_flag": true,
+   "guard_flag": true,
+   "flagged": true
+  },
+  {
+   "id": "w2",
+   "category": "units",
+   "expect": "error",
+   "kind": "fact",
+   "text": "An error of about 10 nanoseconds in the code means a position error of about 3 kilometres.",
+   "sources": [
+    "A4.13"
+   ],
+   "ai_verdict": "partly",
+   "ai_problem": "The error corresponds to about 3 meters, not 3 kilometres.",
+   "guard": [
+    "3 has a different unit in the sources"
+   ],
+   "ai_flag": true,
+   "guard_flag": true,
+   "flagged": true
+  },
+  {
+   "id": "w3",
+   "category": "units",
+   "expect": "error",
+   "kind": "fact",
+   "text": "Because of their speed, the satellites' clocks fall behind by 7,214 microseconds a day.",
+   "sources": [
+    "A4.55"
+   ],
+   "ai_verdict": "partly",
+   "ai_problem": "The clocks are slower by 7,214 nanoseconds a day, not microseconds.",
+   "guard": [
+    "7,214 has a different unit in the sources"
+   ],
+   "ai_flag": true,
+   "guard_flag": true,
+   "flagged": true
+  },
+  {
+   "id": "w4",
+   "category": "units",
+   "expect": "error",
+   "kind": "fact",
+   "text": "In 1991, 16-pound military receivers were replaced by a handheld unit of 1.25 kilograms.",
+   "sources": [
+    "A1.30"
+   ],
+   "ai_verdict": "partly",
+   "ai_problem": "The original units were 16 kilograms (35 pounds), not 16 pounds.",
+   "guard": [
+    "16 has a different unit in the sources"
+   ],
+   "ai_flag": true,
+   "guard_flag": true,
+   "flagged": true
+  },
+  {
+   "id": "w5",
+   "category": "units",
+   "expect": "error",
+   "kind": "fact",
+   "text": "GPS satellites move at 3,874 kilometres per second relative to the centre of the Earth.",
+   "sources": [
+    "A4.51"
+   ],
+   "ai_verdict": "partly",
+   "ai_problem": "The speed is 3,874 metres per second, not kilometres per second.",
+   "guard": [
+    "3,874 has a different unit in the sources"
+   ],
+   "ai_flag": true,
+   "guard_flag": true,
+   "flagged": true
+  },
+  {
+   "id": "w6",
+   "category": "units",
+   "expect": "error",
+   "kind": "fact",
+   "text": "Strontium optical clocks work at 429 gigahertz.",
+   "sources": [
+    "A3.30"
+   ],
+   "ai_verdict": "partly",
+   "ai_problem": "Strontium clocks operate at 429 terahertz, not gigahertz.",
+   "guard": [
+    "429 has a different unit in the sources"
+   ],
+   "ai_flag": true,
+   "guard_flag": true,
+   "flagged": true
+  },
+  {
+   "id": "k1",
+   "category": "control",
+   "expect": "ok",
+   "kind": "fact",
+   "text": "TRANSIT, first tested successfully in 1960, used five satellites and gave a position fix about once an hour.",
+   "sources": [
+    "A1.10"
+   ],
+   "ai_verdict": "supported",
+   "ai_problem": "",
+   "guard": [],
+   "ai_flag": false,
+   "guard_flag": false,
+   "flagged": false
+  },
+  {
+   "id": "k2",
+   "category": "control",
+   "expect": "ok",
+   "kind": "fact",
+   "text": "The Gulf War of 1990 to 1991 was the first conflict where the military used GPS widely.",
+   "sources": [
+    "A1.29"
+   ],
+   "ai_verdict": "supported",
+   "ai_problem": "",
+   "guard": [],
+   "ai_flag": false,
+   "guard_flag": false,
+   "flagged": false
+  },
+  {
+   "id": "k3",
+   "category": "control",
+   "expect": "ok",
+   "kind": "fact",
+   "text": "Selective Availability was switched off on 2 May 2000, so civilians everywhere got a clean signal.",
+   "sources": [
+    "A1.36"
+   ],
+   "ai_verdict": "supported",
+   "ai_problem": "",
+   "guard": [],
+   "ai_flag": false,
+   "guard_flag": false,
+   "flagged": false
+  },
+  {
+   "id": "k4",
+   "category": "control",
+   "expect": "ok",
+   "kind": "fact",
+   "text": "In July 2020, the newly created U.S. Space Force took over running the GPS satellites.",
+   "sources": [
+    "A1.46"
+   ],
+   "ai_verdict": "supported",
+   "ai_problem": "",
+   "guard": [],
+   "ai_flag": false,
+   "guard_flag": false,
+   "flagged": false
+  },
+  {
+   "id": "k5",
+   "category": "control",
+   "expect": "ok",
+   "kind": "fact",
+   "text": "A clock that is wrong by just 1 nanosecond puts your position out by roughly 30 centimetres.",
+   "sources": [
+    "A3.5"
+   ],
+   "ai_verdict": "supported",
+   "ai_problem": "",
+   "guard": [],
+   "ai_flag": false,
+   "guard_flag": false,
+   "flagged": false
+  },
+  {
+   "id": "k6",
+   "category": "control",
+   "expect": "ok",
+   "kind": "fact",
+   "text": "Because they move so fast, the satellites' clocks fall behind clocks on Earth by 7,214 nanoseconds every day.",
+   "sources": [
+    "A4.55"
+   ],
+   "ai_verdict": "supported",
+   "ai_problem": "",
+   "guard": [],
+   "ai_flag": false,
+   "guard_flag": false,
+   "flagged": false
+  },
+  {
+   "id": "k7",
+   "category": "control",
+   "expect": "ok",
+   "kind": "fact",
+   "text": "Weaker gravity makes them gain 45,850 nanoseconds a day, so overall they run fast by about 38.6 microseconds daily.",
+   "sources": [
+    "A4.63",
+    "A4.64"
+   ],
+   "ai_verdict": "supported",
+   "ai_problem": "",
+   "guard": [],
+   "ai_flag": false,
+   "guard_flag": false,
+   "flagged": false
+  },
+  {
+   "id": "k8",
+   "category": "control",
+   "expect": "ok",
+   "kind": "fact",
+   "text": "In 1991, a DARPA project shrank military GPS receivers from 16 kilograms to a handheld unit of 1.25 kilograms.",
+   "sources": [
+    "A1.30"
+   ],
+   "ai_verdict": "supported",
+   "ai_problem": "",
+   "guard": [],
+   "ai_flag": false,
+   "guard_flag": false,
+   "flagged": false
+  },
+  {
+   "id": "k9",
+   "category": "control",
+   "expect": "ok",
+   "kind": "fact",
+   "text": "By December 1993, a full set of 24 satellites was in place and GPS reached initial operational capability.",
+   "sources": [
+    "A1.32"
+   ],
+   "ai_verdict": "supported",
+   "ai_problem": "",
+   "guard": [],
+   "ai_flag": false,
+   "guard_flag": false,
+   "flagged": false
+  },
+  {
+   "id": "k10",
+   "category": "control",
+   "expect": "ok",
+   "kind": "fact",
+   "text": "International Atomic Time is a weighted average of around 450 clocks in some 80 institutions.",
+   "sources": [
+    "A3.52"
+   ],
+   "ai_verdict": "supported",
+   "ai_problem": "",
+   "guard": [],
+   "ai_flag": false,
+   "guard_flag": false,
+   "flagged": false
+  },
+  {
+   "id": "k11",
+   "category": "control",
+   "expect": "ok",
+   "kind": "fact",
+   "text": "In 2009, Air Force Space Command said there was \"only a small risk\" that GPS would stop exceeding its performance standard.",
+   "sources": [
+    "A1.43"
+   ],
+   "ai_verdict": "supported",
+   "ai_problem": "",
+   "guard": [],
+   "ai_flag": false,
+   "guard_flag": false,
+   "flagged": false
+  },
+  {
+   "id": "k12",
+   "category": "control",
+   "expect": "ok",
+   "kind": "fact",
+   "text": "The NIST-F2 caesium clock was developed in 2013, fourteen years after NIST-F1.",
+   "sources": [
+    "A3.60"
+   ],
+   "ai_verdict": "supported",
+   "ai_problem": "",
+   "guard": [],
+   "ai_flag": false,
+   "guard_flag": false,
+   "flagged": false
+  },
+  {
+   "id": "k13",
+   "category": "control",
+   "expect": "ok",
+   "kind": "fact",
+   "text": "Selective Availability once added deliberate errors of up to 100 metres to civilian signals.",
+   "sources": [
+    "A4.33"
+   ],
+   "ai_verdict": "supported",
+   "ai_problem": "",
+   "guard": [],
+   "ai_flag": false,
+   "guard_flag": false,
+   "flagged": false
+  },
+  {
+   "id": "k14",
+   "category": "control",
+   "expect": "ok",
+   "kind": "fact",
+   "text": "Bradford Parkinson spent twenty-one years in the Air Force and retired as a colonel.",
+   "sources": [
+    "A1.51"
+   ],
+   "ai_verdict": "supported",
+   "ai_problem": "",
+   "guard": [],
+   "ai_flag": false,
+   "guard_flag": false,
+   "flagged": false
+  },
+  {
+   "id": "k15",
+   "category": "control",
+   "expect": "ok",
+   "kind": "fact",
+   "text": "Strontium optical clocks work at 429 terahertz, far above the 9.19 gigahertz of caesium clocks.",
+   "sources": [
+    "A3.30"
+   ],
+   "ai_verdict": "supported",
+   "ai_problem": "",
+   "guard": [],
+   "ai_flag": false,
+   "guard_flag": false,
+   "flagged": false
+  },
+  {
+   "id": "k16",
+   "category": "control",
+   "expect": "ok",
+   "kind": "framing",
+   "text": "So how can a clock in space tell you where you are standing?",
+   "sources": [],
+   "ai_verdict": "supported",
+   "ai_problem": "",
+   "guard": [],
+   "ai_flag": false,
+   "guard_flag": false,
+   "flagged": false
+  }
+ ]
+}
