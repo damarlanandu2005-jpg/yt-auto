@@ -438,7 +438,7 @@ def run(pkg: Path, library_dir: Path | None = None, use_ai: bool = True, media: 
 def markdown(result: dict) -> str:
     icon = {PASS: "✅", FAIL: "❌", FLAG: "⚠️"}
     head = {PASS: "READY for your review", FAIL: "NOT READY: fix the ❌ items first",
-            FLAG: "READY, but decide on the ⚠️ items"}[result["verdict"]]
+            FLAG: "CHECK FIRST: decide on every ⚠️ item before uploading"}[result["verdict"]]
     lines = [f"## Quality gate: {head}", "", "| | Check | Result |", "| --- | --- | --- |"]
     order = {FAIL: 0, FLAG: 1, PASS: 2}
     for r in sorted(result["checks"], key=lambda r: order[r["status"]]):

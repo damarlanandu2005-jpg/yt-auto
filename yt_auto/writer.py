@@ -34,6 +34,10 @@ Hard rules:
 - Do not write "according to NASA" or attribute statements to NASA or any organisation unless the passage
   quotes them directly.
 - No clickbait, no false suspense, no "smash that like button". One short honest call to think at the end is fine.
+- Estimates that depend on a model (future horizons, ages, sizes, predictions) must say so in plain words
+  ("in today's standard model", "scientists estimate"). Never widen a fact into "every", "all", "always" or
+  "never" unless the passage says exactly that (outside review, 28 Oct: "every object within this sphere is
+  visible" overstated the source).
 """
 
 PLAN_SCHEMA = {
@@ -123,8 +127,9 @@ Outline: {json.dumps(the_plan['outline'])}
 
 Write the full narration: {words[0]} to {words[1]} words in total, in 5 to 8 scenes that follow the outline.
 - Scene 1 opens with a hook in the first 2 sentences that sets up the question, and within the first 30 seconds
-  says why it matters to the viewer (the quality gate checks both). Then 1 or 2 framing sentences give a short
-  roadmap: the 2 or 3 questions this video will answer, in plain words. The last scene answers it clearly
+  says why it matters to the viewer (the quality gate checks both). Reach the contradiction or surprise in the
+  first 2 sentences, then ONE short roadmap sentence naming what the video will answer (not a list of separate
+  questions: pilot video 2 spent 9 sentences before explaining anything). The last scene answers it clearly
   and recaps in one or two sentences.
 - Build tension honestly: set up a puzzle before its answer, and give the answer its own short sentence.
 - Explain step by step: one small idea per sentence, from the big picture down to the detail.
@@ -169,6 +174,8 @@ def check(sentences: list[dict], idx: dict, name: str) -> dict[str, dict]:
 (not your own knowledge):
 - supported: every detail (numbers, names, dates, causes, comparisons) is stated in or directly follows from them.
 - partly: the main point is backed but some detail is not, or it overstates / oversimplifies into something false.
+  Also partly: "every/all/always/never" the passages don't say, or a model-based estimate stated as a plain
+  certain fact (fixed_text adds "scientists estimate" or "in today's standard model").
 - unsupported: the cited passages do not back it, or there are none.
 - Conflict: if the cited passages DISAGREE with each other about any number, date or name the sentence
   states, the sentence is at most "partly" even if it matches one of them; say "sources conflict". Its

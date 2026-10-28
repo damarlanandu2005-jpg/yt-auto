@@ -45,7 +45,10 @@ def record(path: Path, subject: str, cloud: bool = False) -> dict:
     name = CLOUD["name"] if cloud else f"{MODEL['base']} + {MODEL['lora']}"
     short = "FLUX.1 schnell" if cloud else "Segmind-Vega"
     return {"file": path.name, "kind": "drawing", "source": "ai_drawing", "title": subject,
-            "source_page": CLOUD["page"] if cloud else MODEL["page"], "licence": "AI-generated drawing (no third-party rights)",
+            "source_page": CLOUD["page"] if cloud else MODEL["page"],
+            # not "no third-party rights": a model licence doesn't settle every output question (review, 28 Oct)
+            "licence": "AI-generated drawing; model licence Apache-2.0"
+                       + ("; Cloudflare terms (read 28 Oct 2026): customer keeps rights in inputs and outputs" if cloud else ""),
             "model_licence": CLOUD["licence"] if cloud else MODEL["licence"], "licence_url": MODEL["licence_url"],
             "author": f"AI-generated with {name}",
             "attribution": f"Illustration generated with {short} (Apache-2.0): {subject}",

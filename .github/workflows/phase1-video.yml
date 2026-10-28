@@ -160,7 +160,8 @@ jobs:
           title=$(python -c "import json;print(json.load(open('out/run/report.json')).get('title','video')[:80])")
           verdict=$(python -c "import json;print(json.load(open('out/run/report.json')).get('gate',{}).get('verdict','?'))")
           # Rule R1 (owner, 28 Oct): only a video that passes every automatic check is ready for review.
-          if [ "$verdict" = "FAIL" ]; then label="DRAFT - do not upload"; else label="Ready for your review"; fi
+          # FLAG = passes the rules but has items only the owner can decide (outside review, 28 Oct)
+          case "$verdict" in FAIL) label="DRAFT - do not upload";; FLAG) label="Check the flags first";; *) label="Ready for your review";; esac
           gh release create "video-${{ github.run_id }}" --prerelease --title "$label: $title" \
             --notes "$label. Quality gate: $verdict (see the top of review.md, run ${{ github.run_id }}). Upload only after every check passes and you have watched it." \
             out/run/video.mp4 out/run/thumbnail.jpg out/run/subtitles.srt out/run/description.txt out/run/credits.txt out/run/review.md
