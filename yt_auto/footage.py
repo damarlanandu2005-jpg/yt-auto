@@ -13,7 +13,13 @@ import subprocess
 import urllib.parse
 from pathlib import Path
 
+import re
+
 from .photos import NASA_API, _NASA_THIRD_PARTY, _clean_html, _get
+
+# Talks and broadcasts show people, not the subject (footage test run 40664595621 picked "NASA Science Live").
+TALK = re.compile(r"\b(live|briefing|interview|conference|panel|webinar|podcast|talk|lecture|q ?& ?a|news|"
+                  r"town hall|speaker|presents|ceremony|hangout|chat|reporter|media day)\b", re.I)
 
 OUT_W, OUT_H, FPS = 1920, 1080, 30
 PREFER = ("~medium.mp4", "~large.mp4", "~orig.mp4", "~small.mp4")
@@ -26,7 +32,7 @@ def search(query: str, limit: int = 6) -> list[dict]:
     for it in (data.get("collection") or {}).get("items") or []:
         d = it["data"][0]
         text = " ".join(str(d.get(k, "")) for k in ("description", "photographer", "secondary_creator", "title"))
-        if _NASA_THIRD_PARTY.search(text):
+        if _NASA_THIRD_PARTY.search(text) or TALK.search(d.get("title", "")):
             continue
         nid = d["nasa_id"]
         out.append({
@@ -40,6 +46,25 @@ def search(query: str, limit: int = 6) -> list[dict]:
             "credit": "NASA", "date_created": d.get("date_created"),
         })
     return out
+
+
+def search_many(queries: list[str], limit: int = 8) -> list[dict]:
+    """The queries as given, then with 'animation' and 'visualization' (NASA's own renders of space subjects)."""
+    tries = []
+    for q in queries[:2]:
+        tries += [q] + [f"{q} {w}" for w in ("animation", "visualization") if w not in q.lower()]
+    out, seen = [], set()
+    for q in tries:
+        try:
+            for c in search(q):
+                if c["id"] not in seen:
+                    seen.add(c["id"])
+                    out.append(c)
+        except Exception as e:  # noqa: BLE001
+            print(f"[footage] search {q!r} failed: {e!r}", flush=True)
+        if len(out) >= limit:
+            break
+    return out[:limit]
 
 
 def _mp4_url(manifest_url: str) -> str | None:

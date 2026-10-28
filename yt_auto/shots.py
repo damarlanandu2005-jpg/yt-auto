@@ -226,15 +226,11 @@ def find_photos(visuals: list[dict], photo_dir: Path, log: dict) -> None:
     cands: dict[str, list[dict]] = {}
     for v in want:
         if v["kind"] == "video":  # NASA footage first, photos as the fallback candidates
-            vids = []
-            for q in v["photo_queries"][:2]:
-                try:
-                    vids += [c for c in footage.search(q) if c["id"] not in {x["id"] for x in vids}]
-                except Exception as e:  # noqa: BLE001
-                    print(f"[footage] search {q!r} failed: {e!r}", flush=True)
-            cands[v["id"]] = (vids[:8] + photos.search(v["photo_queries"][:2], per_source=4))[:12]
-        else:
-            cands[v["id"]] = photos.search(v["photo_queries"][:2], per_source=6)[:12]
+            cands[v["id"]] = (footage.search_many(v["photo_queries"], 8) + photos.search(v["photo_queries"][:2],
+                                                                                         per_source=4))[:12]
+        else:  # photo slots get a few footage candidates too (the plan asked for only 2 videos in run 40664595621)
+            cands[v["id"]] = (photos.search(v["photo_queries"][:2], per_source=6)[:9] +
+                              footage.search_many(v["photo_queries"][:1], 3))[:12]
     log["photo_slots"] = len(want)
     log["candidates"] = {k: len(c) for k, c in cands.items()}
     asks = [v for v in want if cands[v["id"]]]
@@ -398,6 +394,15 @@ def limit_cards(visuals: list[dict], log: dict) -> None:
     log["cards_to_pictures"] = fixed
 
 
+_VIDEO_WORDS = re.compile(r"\b(animation|animated|flythrough|fly-through|simulation|visuali[sz]ation|footage|"
+                          r"time-?lapse|video|clip|render(ing)?)\b", re.I)
+
+
+def _drawable(subject: str) -> str:
+    """'galaxy flythrough animation' can't be drawn (run 40664595621); 'galaxy' can."""
+    return re.sub(r"\s+", " ", _VIDEO_WORDS.sub("", subject)).strip(" ,") or subject
+
+
 def drawing_jobs(visuals: list[dict], max_n: int) -> list[dict]:
     """Planned drawings first, then photo slots that ended without a photo (up to max_n in all)."""
     from .drawings import CLOUD_PLANNED_MAX, cloud_ready
@@ -410,7 +415,7 @@ def drawing_jobs(visuals: list[dict], max_n: int) -> list[dict]:
     # Keep room for photo slots whose photo failed the check: pilot video 1 remake (run 40593105860) planned
     # 18 drawings (asked for at most 12), so the 12 rejected photos all became bare title cards.
     jobs = [{"id": v["id"], "subject": v["drawing_subject"]} for v in planned[:planned_max]]
-    jobs += [{"id": v["id"], "subject": v["photo_subject"]} for v in no_photo]
+    jobs += [{"id": v["id"], "subject": _drawable(v["photo_subject"])} for v in no_photo]
     return jobs[:max_n]
 
 
