@@ -88,12 +88,13 @@ phase5/check_models.py live check of the LIGHT/VISION models (JSON, pictures in 
                        .github/workflows/ai-models-check.yml manual, results bench-results/phase5/models-check/<run_id>/
 yt_auto/research.py    Wikipedia articles -> numbered passages (sources.json, with revision ids)
 yt_auto/writer.py      plan -> script (each sentence cites passage ids) -> separate fact-check -> fix or drop
-yt_auto/shots.py       ~4.5 s visual slots, visual plan, photo pick + vision check, card-number guard
+yt_auto/shots.py       ~4.5 s visual slots, visual plan, photo pick + vision check, card-number guard; kind=step slots zoom closer (1.4x, 1.8x) into the previous picture (step-by-step pictures, owner 28 Oct)
 yt_auto/photos.py      NASA + Commons search, licence filter, licence JSON per file
 yt_auto/drawings.py    AI ink drawings (Segmind-Vega + VegaRT, Apache-2.0) on the runner CPU, own process, max 24 (12 planned) / 32 min;
                        for ideas no photo shows, then photo slots with no photo; shots.add_drawings looks at each (VISION) and drops bad ones
 yt_auto/music.py       background music from Wikimedia Commons (CC BY/BY-SA/CC0/PD only; owner OK with CC BY + credit, 28 Oct), calm moods, licence record + description credit
 yt_auto/sound.py       final mix: narration + music (-21 dB under speech, -14 dB in pauses) + own-made click/whoosh at picture/scene changes; narration.wav stays clean for subtitles
+yt_auto/keywords.py    on-screen key words: 1 light request picks the key phrase of ~half the sentences; whisper word times place it; libass burns it over photos/drawings (numbers in red)
 yt_auto/align.py       subtitles from our own text: exact sentence times + whisper word times
 yt_auto/package.py     description.txt, licences.json, review.md, contact sheet
 phase1/make_video.py   topic -> package (stages cached in --out, so a rerun resumes)

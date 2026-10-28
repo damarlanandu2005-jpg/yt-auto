@@ -124,6 +124,14 @@ def concat_video(segments: list[Path], out: Path) -> None:
           "-c", "copy", str(out)], name="concat_video")
 
 
+def burn_ass(video: Path, ass: Path, fonts_dir: Path, out: Path) -> float:
+    """Burn the on-screen key words (ASS file) into the joined video. One full re-encode."""
+    return _run(["ffmpeg", "-y", "-loglevel", "error", "-i", str(video),
+                 "-vf", f"ass=filename={ass.resolve()}:fontsdir={fonts_dir.resolve()},format=yuv420p",
+                 "-c:v", "libx264", "-preset", "veryfast", "-crf", "20", "-threads", threads(), str(out)],
+                timeout=1800, name="keywords_burn")
+
+
 def mux(video: Path, audio: Path, out: Path) -> None:
     """Add narration, normalised to about -16 LUFS (typical for online video)."""
     _run(["ffmpeg", "-y", "-loglevel", "error", "-i", str(video), "-i", str(audio),

@@ -94,7 +94,9 @@ PLAN_SCHEMA = {"type": "object", "properties": {"visuals": {"type": "array", "it
     "type": "object",
     "properties": {
         "id": {"type": "string"},
-        "kind": {"type": "string", "enum": ["photo", "drawing", "card"]},
+        "kind": {"type": "string", "enum": ["photo", "drawing", "step", "card"]},
+        "focus": {"type": "string", "enum": ["center", "left", "right", "top", "bottom"],
+                  "description": "kind=step: which part of the previous picture to move closer to"},
         "photo_subject": {"type": "string", "description": "the ONE thing the photo shows, in a few plain words "
                                                             "(e.g. 'a GPS satellite', 'an atomic clock')"},
         "photo_queries": {"type": "array", "items": {"type": "string"}, "maxItems": 2,
@@ -135,6 +137,11 @@ Rules:
   down to a phone", "two clocks side by side, one in orbit and one on the ground"). drawing_subject: one simple
   scene of CONCRETE objects a viewer recognises at once ("a huge exploding star beside a small blue planet",
   "a DNA double helix with a broken rung"), never a process word ("composition changing", "errors"). No people, faces or hands, no logos, emblems or flags, no text, no numbers, no maps.
+- Step by step (owner's rule): when the narration explains ONE object or scene in parts over several slots, use
+  kind=step for the next 1 or 2 slots: they show the SAME picture as the slot before, moved closer to the part
+  being explained (focus: center, left, right, top or bottom). Wide view first, then closer, then detail.
+  Use steps for about 10 to 20 per cent of slots; never more than 2 steps in a row; a step needs a photo or
+  drawing right before it.
 - Use kind=card when a number, comparison, process or list is the point, or at scene starts (title card).
 - The first slot is a title card with the video title.
 - Every number on a card MUST appear in that slot's text or earlier in the same scene. Never invent data.
@@ -280,6 +287,30 @@ NO_DRAW = re.compile(r"\b(logo|emblem|insignia|seal|badge|flag|crest|coat of arm
 
 
 PLANNED_MAX = 12
+
+
+STEP_ZOOM = (1.0, 1.4, 1.8)  # wide, closer, detail (more would blur 1,000-pixel photos)
+
+
+def apply_steps(visuals: list[dict], log: dict) -> None:
+    """kind=step slots reuse the previous slot's picture, zoomed closer at its focus (after photos and drawings
+    are final, so a rejected picture is never reused). A step with no picture before it keeps its card."""
+    made, orphan = 0, []
+    for i, v in enumerate(visuals):
+        if v["kind"] != "step":
+            continue
+        prev = visuals[i - 1] if i else None
+        if prev and prev.get("photo") and prev["scene"] == v["scene"] and prev.get("zoom", 1.0) < STEP_ZOOM[-1]:
+            level = STEP_ZOOM.index(prev.get("zoom", 1.0)) + 1 if prev.get("zoom", 1.0) in STEP_ZOOM else 1
+            v["photo"] = dict(prev["photo"])
+            v["zoom"] = STEP_ZOOM[min(level, len(STEP_ZOOM) - 1)]
+            v["focus"] = v.get("focus") or prev.get("focus") or "center"
+            v["step_of"] = prev.get("step_of", prev["id"])
+            made += 1
+        else:
+            orphan.append(v["id"])
+    log["steps"] = made
+    log["steps_without_picture"] = orphan
 
 
 def drawing_jobs(visuals: list[dict], max_n: int) -> list[dict]:

@@ -21,10 +21,12 @@ import sys
 from collections import Counter
 from pathlib import Path
 
+import matplotlib
+
 ROOT = Path(__file__).resolve().parents[1]
 sys.path.insert(0, str(ROOT))
 
-from yt_auto import align, drawings, gate, llm, music, owner_voice, sound, package, render, research, shots, writer  # noqa: E402
+from yt_auto import align, drawings, gate, keywords, llm, music, owner_voice, sound, package, render, research, shots, writer  # noqa: E402
 from yt_auto.bench import Bench  # noqa: E402
 from yt_auto.tts import Narrator  # noqa: E402
 from yt_auto.visuals import render_keyframe  # noqa: E402
@@ -81,6 +83,7 @@ def main() -> None:
     ap.add_argument("--owner-audio", default="", help="folder with the owner's recordings (Phase 5 own-voice videos)")
     ap.add_argument("--max-drawings", type=int, default=drawings.MAX_DRAWINGS,
                     help="AI drawings per video (about 80 s each on the runner); 0 = photos and cards only")
+    ap.add_argument("--no-keywords", action="store_true", help="no on-screen key words")
     ap.add_argument("--no-music", action="store_true", help="narration only (no background music)")
     ap.add_argument("--stop-after-script", action="store_true",
                     help="stop after the fact-checked script and recording script (owner records next)")
@@ -205,6 +208,7 @@ def run(args, out: Path, bench: Bench) -> None:
             print(f"[drawings] asked {len(jobs)}, drawn {drawing_log.get('drawn', 0)}, "
                   f"used after looking {drawing_log.get('drawings_used', 0)}"
                   f"{'; ' + drawing_log['error'] if drawing_log.get('error') else ''}", flush=True)
+            shots.apply_steps(visuals, drawing_log)  # step-by-step closer views of the picture before
             (out / "visuals.json").write_text(json.dumps(visuals, indent=1, ensure_ascii=False), encoding="utf-8")
             (out / "drawing_log.json").write_text(json.dumps(drawing_log, indent=1, ensure_ascii=False))
 
@@ -214,7 +218,8 @@ def run(args, out: Path, bench: Bench) -> None:
             path = out / "frames" / f"{v['id']}.png"
             v["frame"] = str(path)
             if v.get("photo"):
-                spec = {"type": "photo", "path": v["photo"]["path"], "credit": short_credit(v["photo"])}
+                spec = {"type": "photo", "path": v["photo"]["path"], "credit": short_credit(v["photo"]),
+                        "zoom": v.get("zoom", 1.0), "focus": v.get("focus")}
             else:
                 spec = card_spec(v.get("card") or {}, headings[v["scene"]])
             try:
@@ -239,9 +244,40 @@ def run(args, out: Path, bench: Bench) -> None:
                                 fade_in=v["scene_start"], fade_out=last or visuals[i + 1]["scene_start"])
             segments.append(seg)
 
-    # 10. Join; sound = narration + quiet music + soft transition sounds (owner's watch notes, 28 Oct)
+    # 10. Subtitles from our own text (whisper only gives word timing, in its own process). Before the join:
+    # the on-screen key words use the word times.
+    with bench.stage("subtitles"):
+        if heard is None:  # Kokoro videos: whisper word times now (own-voice videos already have them)
+            r = subprocess.run([sys.executable, "-m", "yt_auto.subtitles", "--words", str(out / "narration.wav"),
+                                str(out / "heard_words.json")], cwd=ROOT, capture_output=True, text=True,
+                               stdin=subprocess.DEVNULL, timeout=900)
+            heard = json.loads((out / "heard_words.json").read_text()) if r.returncode == 0 else []
+            if r.returncode:
+                print(f"[subtitles] whisper word timing failed, using sentence timing only:\n{r.stderr[-1500:]}",
+                      flush=True)
+        bench.info["subtitle_cues"] = align.write_srt(sentences, heard, out / "subtitles.srt")
+        bench.info["whisper_words"] = len(heard)
+
+    # 11. Join; on-screen key words; sound = narration + quiet music + soft transition sounds (owner's watch notes, 28 Oct)
     with bench.stage("assemble"):
         render.concat_video(segments, out / "video_noaudio.mp4")
+        silent = out / "video_noaudio.mp4"
+        if not args.no_keywords:  # key words over photos and drawings only (cards already show text)
+            keys = cached(out / "keywords.json", lambda: keywords.choose(script))
+            pictured = [(v["start"], v["end"]) for v in visuals if v.get("photo")]
+            evs = [e for e in keywords.events(sentences, heard, keys)
+                   if any(a0 <= e[0] < b0 for a0, b0 in pictured)]
+            n_keys = keywords.write_ass(evs, out / "keywords.ass")
+            if n_keys:
+                fonts = Path(matplotlib.get_data_path()) / "fonts" / "ttf"
+                try:
+                    render.burn_ass(silent, out / "keywords.ass", fonts, out / "video_keywords.mp4")
+                    silent = out / "video_keywords.mp4"
+                except Exception as e:  # noqa: BLE001 — the video is still fine without them
+                    print(f"[keywords] burn failed ({e!r}); video without key words", flush=True)
+                    n_keys = 0
+            bench.info["keywords_on_screen"] = n_keys
+            print(f"[keywords] {n_keys} key words on screen", flush=True)
         music_log: dict = {}
         track = None
         if not args.no_music:
@@ -260,20 +296,7 @@ def run(args, out: Path, bench: Bench) -> None:
             audio, track = out / "narration.wav", None
         bench.info["music"] = {k: track[k] for k in ("title", "author", "licence", "source_page")} if track else None
         print(f"[sound] music: {bench.info['music'] or 'none'}; {len(cuts)} transition sounds", flush=True)
-        render.mux(out / "video_noaudio.mp4", audio, out / "video.mp4")
-
-    # 11. Subtitles from our own text (whisper only gives word timing, in its own process)
-    with bench.stage("subtitles"):
-        if heard is None:  # Kokoro videos: whisper word times now (own-voice videos already have them)
-            r = subprocess.run([sys.executable, "-m", "yt_auto.subtitles", "--words", str(out / "narration.wav"),
-                                str(out / "heard_words.json")], cwd=ROOT, capture_output=True, text=True,
-                               stdin=subprocess.DEVNULL, timeout=900)
-            heard = json.loads((out / "heard_words.json").read_text()) if r.returncode == 0 else []
-            if r.returncode:
-                print(f"[subtitles] whisper word timing failed, using sentence timing only:\n{r.stderr[-1500:]}",
-                      flush=True)
-        bench.info["subtitle_cues"] = align.write_srt(sentences, heard, out / "subtitles.srt")
-        bench.info["whisper_words"] = len(heard)
+        render.mux(silent, audio, out / "video.mp4")
 
     # 12. Preview
     with bench.stage("preview"):
