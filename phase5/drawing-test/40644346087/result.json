@@ -1,0 +1,65 @@
+{
+ "model": "cloudflare-flux",
+ "config": {
+  "model": "@cf/black-forest-labs/flux-1-schnell",
+  "name": "FLUX.1 [schnell] (Black Forest Labs) on Cloudflare Workers AI",
+  "licence": "Apache-2.0",
+  "page": "https://huggingface.co/black-forest-labs/FLUX.1-schnell",
+  "steps": 4
+ },
+ "style": "detailed ink illustration, white and grey pen linework on a pure black background, one bright red accent, high contrast, clean composition, no text, no letters",
+ "licences": [
+  {
+   "repo": "black-forest-labs/FLUX.1-schnell",
+   "license": "apache-2.0",
+   "gated": "auto",
+   "tags": [
+    "license:apache-2.0"
+   ],
+   "sha": "741f7c3ce8b383c54771c7003378a50191e9efe9",
+   "last_modified": "2024-08-16T14:37:56.000Z"
+  }
+ ],
+ "drawings": [
+  {
+   "prompt": "satellites orbiting planet Earth, thin signal lines reaching down to a phone on the ground",
+   "error": "<HTTPError 400: 'Bad Request'> {\"errors\":[{\"message\":\"AiError: Bad input: Error: Additional or unevaluated properties '/seed' at '/' not allowed (442c8d59-49a6-4e58-9d2c-0e2cd6f71e9e)\",\"code\":5006}],\"success\":false,\"result\":{},\"messages\":[]}"
+  },
+  {
+   "prompt": "a hand holding a smartphone showing a map with a location pin",
+   "error": "<HTTPError 400: 'Bad Request'> {\"errors\":[{\"message\":\"AiError: Bad input: Error: Additional or unevaluated properties '/seed' at '/' not allowed (be1e4be7-941e-423e-b218-da1bd43befec)\",\"code\":5006}],\"success\":false,\"result\":{},\"messages\":[]}"
+  },
+  {
+   "prompt": "cutaway of a navigation satellite with a glowing atomic clock inside",
+   "error": "<HTTPError 400: 'Bad Request'> {\"errors\":[{\"message\":\"AiError: Bad input: Error: Additional or unevaluated properties '/seed' at '/' not allowed (ff07cdd0-30dc-4a1b-b397-d1a7a8beab3d)\",\"code\":5006}],\"success\":false,\"result\":{},\"messages\":[]}"
+  },
+  {
+   "prompt": "three overlapping circles on a map meeting at one point, a location pin where they cross",
+   "error": "<HTTPError 400: 'Bad Request'> {\"errors\":[{\"message\":\"AiError: Bad input: Error: Additional or unevaluated properties '/seed' at '/' not allowed (72d38470-5368-44b3-8497-e679b0ac8463)\",\"code\":5006}],\"success\":false,\"result\":{},\"messages\":[]}"
+  },
+  {
+   "prompt": "a radio wave travelling from a satellite in space down to a city, speed lines",
+   "error": "<HTTPError 400: 'Bad Request'> {\"errors\":[{\"message\":\"AiError: Bad input: Error: Additional or unevaluated properties '/seed' at '/' not allowed (0d88aa20-5076-40a3-93fc-1f170f521fb6)\",\"code\":5006}],\"success\":false,\"result\":{},\"messages\":[]}"
+  },
+  {
+   "prompt": "a sailing ship on the ocean at night, a satellite high above it",
+   "error": "<HTTPError 400: 'Bad Request'> {\"errors\":[{\"message\":\"AiError: Bad input: Error: Additional or unevaluated properties '/seed' at '/' not allowed (5e60ea06-38b2-42ff-9365-53247f1bfcfe)\",\"code\":5006}],\"success\":false,\"result\":{},\"messages\":[]}"
+  },
+  {
+   "prompt": "two clocks side by side, one in orbit and one on the ground, showing slightly different times",
+   "error": "<HTTPError 400: 'Bad Request'> {\"errors\":[{\"message\":\"AiError: Bad input: Error: Additional or unevaluated properties '/seed' at '/' not allowed (4a391b04-079b-4f30-ad5a-8c9476f1210d)\",\"code\":5006}],\"success\":false,\"result\":{},\"messages\":[]}"
+  },
+  {
+   "prompt": "a ground control station with large dish antennas pointing at the sky",
+   "error": "<HTTPError 400: 'Bad Request'> {\"errors\":[{\"message\":\"AiError: Bad input: Error: Additional or unevaluated properties '/seed' at '/' not allowed (c2b1a05b-3b3d-4104-a952-cc083bbe2165)\",\"code\":5006}],\"success\":false,\"result\":{},\"messages\":[]}"
+  },
+  {
+   "prompt": "a car dashboard with a navigation screen on a winding mountain road",
+   "error": "<HTTPError 400: 'Bad Request'> {\"errors\":[{\"message\":\"AiError: Bad input: Error: Additional or unevaluated properties '/seed' at '/' not allowed (a50e9491-b2b2-402f-bfcb-cfca6cea514d)\",\"code\":5006}],\"success\":false,\"result\":{},\"messages\":[]}"
+  },
+  {
+   "prompt": "a ring of many satellites around planet Earth, seen from far away",
+   "error": "<HTTPError 400: 'Bad Request'> {\"errors\":[{\"message\":\"AiError: Bad input: Error: Additional or unevaluated properties '/seed' at '/' not allowed (02fb2c64-8371-46d6-90f1-b61c32b95d4f)\",\"code\":5006}],\"success\":false,\"result\":{},\"messages\":[]}"
+  }
+ ]
+}
