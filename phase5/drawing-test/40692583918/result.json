@@ -1,0 +1,30 @@
+{
+ "model": "cloudflare-flux",
+ "config": {
+  "model": "@cf/black-forest-labs/flux-1-schnell",
+  "name": "FLUX.1 [schnell] (Black Forest Labs) on Cloudflare Workers AI",
+  "licence": "Apache-2.0",
+  "page": "https://huggingface.co/black-forest-labs/FLUX.1-schnell",
+  "steps": 4
+ },
+ "style": "detailed ink illustration, white and grey pen linework on a pure black background, one bright red accent, high contrast, clean composition, no text, no letters",
+ "licences": [
+  {
+   "repo": "black-forest-labs/FLUX.1-schnell",
+   "license": "apache-2.0",
+   "gated": "auto",
+   "tags": [
+    "license:apache-2.0"
+   ],
+   "sha": "741f7c3ce8b383c54771c7003378a50191e9efe9",
+   "last_modified": "2024-08-16T14:37:56.000Z"
+  }
+ ],
+ "drawings": [
+  {
+   "file": "d01.jpg",
+   "prompt": "satellites orbiting planet Earth, thin signal lines reaching down to a phone on the ground",
+   "seconds": 1.9
+  }
+ ]
+}
