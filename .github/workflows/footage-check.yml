@@ -1,0 +1,60 @@
+name: Footage check
+
+# Live check of NASA footage search + cutting (no AI requests). Results: bench-results/phase5/footage-check/<run_id>/.
+on:
+  workflow_dispatch:
+    inputs:
+      queries:
+        description: "Comma-separated search words"
+        default: "black hole,galaxy,rocket launch"
+
+permissions:
+  contents: write
+
+jobs:
+  check:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.13"
+      - name: Cache FFmpeg
+        uses: actions/cache@v4
+        with:
+          path: ~/ffmpeg
+          key: ffmpeg-n8.1-linux64-gpl-v1
+      - name: Install FFmpeg 8.1 (stable) and Pillow
+        timeout-minutes: 5
+        run: |
+          if [ ! -x "$HOME/ffmpeg/bin/ffmpeg" ]; then
+            mkdir -p "$HOME/ffmpeg"
+            curl -fsSL --retry 3 https://github.com/BtbN/FFmpeg-Builds/releases/download/latest/ffmpeg-n8.1-latest-linux64-gpl-8.1.tar.xz \
+              | tar -xJ -C "$HOME/ffmpeg" --strip-components=1
+          fi
+          echo "$HOME/ffmpeg/bin" >> "$GITHUB_PATH"
+          pip install Pillow
+      - name: Check
+        timeout-minutes: 8
+        env:
+          Q: ${{ inputs.queries }}
+        run: |
+          set -o pipefail
+          mkdir -p out/f
+          IFS=',' read -ra qs <<< "$Q"
+          python phase5/check_footage.py out/f "${qs[@]}" 2>&1 | tee out/f/build.log
+      - name: Save to bench-results
+        if: always()
+        timeout-minutes: 3
+        run: |
+          set -e
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git fetch --depth 1 origin bench-results
+          git worktree add results FETCH_HEAD
+          git -C results checkout -B bench-results
+          dest="results/phase5/footage-check/${{ github.run_id }}"
+          mkdir -p "$dest" && cp out/f/*.jpg out/f/*.json out/f/build.log "$dest/" 2>/dev/null || true
+          cd results && git add -A && git commit -m "Footage check ${{ github.run_id }}"
+          for i in 1 2 3 4 5; do git push origin bench-results && break; git pull --rebase origin bench-results; sleep 5; done

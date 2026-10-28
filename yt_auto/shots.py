@@ -309,10 +309,25 @@ Answer choice = the candidate number as text, or "".
                 v.pop("photo", None)
 
 
+def too_dark(path: Path) -> bool:
+    """Almost all black (a sparse star field): the gate saw 7 s of 'black video' (run 40666921097)."""
+    from PIL import Image
+
+    im = Image.open(path).convert("L")
+    im.thumbnail((320, 320))
+    px = list(im.getdata())
+    return sum(1 for p in px if p > 40) / max(len(px), 1) < 0.03
+
+
 def _fetch(c: dict, photo_dir: Path, stem: str, v: dict) -> Path | None:
     if c.get("kind") == "video":
-        return footage.fetch(c, photo_dir, stem, float(v.get("seconds") or 5))
-    return photos.download(c, photo_dir, stem)
+        path = footage.fetch(c, photo_dir, stem, float(v.get("seconds") or 5))
+    else:
+        path = photos.download(c, photo_dir, stem)
+    if path and too_dark(path):
+        print(f"[photos] {v['id']}: '{c['title'][:60]}' is almost black; skipped", flush=True)
+        return None
+    return path
 
 
 def _thumb(path: str, size: int = 384) -> bytes:

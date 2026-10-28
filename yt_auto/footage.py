@@ -79,7 +79,11 @@ def _mp4_url(manifest_url: str) -> str | None:
 def _duration(url: str) -> float:
     r = subprocess.run(["ffprobe", "-v", "error", "-show_entries", "format=duration", "-of", "csv=p=0", url],
                        stdin=subprocess.DEVNULL, capture_output=True, text=True, timeout=90)
-    return float(r.stdout.strip() or 0)
+    try:
+        return float(r.stdout.strip().split("\n")[0] or 0)
+    except ValueError:
+        print(f"[footage] ffprobe: {r.stdout[:120]!r} {r.stderr[-300:]!r}", flush=True)
+        return 0.0
 
 
 def fetch(cand: dict, dest_dir: Path, stem: str, seconds: float) -> Path | None:
@@ -88,9 +92,11 @@ def fetch(cand: dict, dest_dir: Path, stem: str, seconds: float) -> Path | None:
     dest_dir.mkdir(parents=True, exist_ok=True)
     url = _mp4_url(cand["manifest_url"])
     if not url:
+        print(f"[footage] no mp4 in {cand['manifest_url']}", flush=True)
         return None
     total = _duration(url)
-    if total < 3:
+    if total < 3:  # footage test run 40666921097: two picked clips failed here without a word
+        print(f"[footage] can't read the length of {url} ({total} s)", flush=True)
         return None
     want = min(seconds + 0.5, max(total - 1, 1))
     start = max(min(total * 0.5 - want / 2, total - want - 0.5), min(3.0, total * 0.2))
