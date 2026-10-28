@@ -35,10 +35,13 @@ def credit_lines(photos: list[dict]) -> dict:
     each licence's own link once at the end (CC BY / BY-SA ask for a link to the licence)."""
     from urllib.parse import unquote
 
-    seen, nasa, pd, drawn, commons, licences, full = set(), 0, 0, 0, [], {}, []
+    import html
+
+    seen, nasa, pd, drawn, commons, licences, full = set(), 0, 0, {}, [], {}, []
     for p in photos:
         if p["source"] == "ai_drawing":  # all share the model's page, so count them before de-duplicating
-            drawn += 1
+            model = "FLUX.1 schnell" if "FLUX" in p.get("author", "") else "Segmind-Vega"  # was always "Segmind-Vega"
+            drawn[model] = drawn.get(model, 0) + 1
             full.append(f"- {p['attribution']}")
             continue
         if p["source_page"] in seen:
@@ -50,13 +53,16 @@ def credit_lines(photos: list[dict]) -> dict:
         elif not p["licence"].upper().startswith("CC BY"):  # public domain / CC0: no attribution required
             pd += 1
         else:
-            author = p["author"] if len(p["author"]) <= 40 else p["author"][:38] + "…"
+            name = html.unescape(p["author"])  # Commons gave "ESA/Hubble &amp; NASA"
+            author = name if len(name) <= 40 else name[:38] + "…"
             commons.append(f"- {author}, {p['licence']}: {unquote(p['source_page'])}")
             if p.get("licence_url"):
                 licences[p["licence"]] = p["licence_url"]
     short = ([f"- {nasa} images: NASA (public domain)"] if nasa else []) + \
         ([f"- {pd} images: public domain / CC0, via Wikimedia Commons"] if pd else []) + \
-        ([f"- {drawn} illustrations: AI-generated drawings (Segmind-Vega, Apache-2.0)"] if drawn else []) + commons
+        ([f"- {sum(drawn.values())} illustrations: AI-generated drawings ("
+          + ", ".join(f"{n} {m}" if len(drawn) > 1 else m for m, n in drawn.items()) + "; Apache-2.0 models)"]
+         if drawn else []) + commons
     if licences:
         short += ["Licences: " + "; ".join(f"{k} {v}" for k, v in sorted(licences.items()))]
     return {"short": short, "full": full}
