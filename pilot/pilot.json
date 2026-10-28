@@ -21,6 +21,99 @@
   },
   {
    "n": 2,
+   "topic": "Why is the observable universe 93 billion light-years across if it is only 13.8 billion years old?",
+   "phase4_score": 3.8,
+   "phase4_run": 40641008955,
+   "voice": "kokoro",
+   "status": "planned",
+   "runs": [],
+   "owner_minutes": null,
+   "uploaded": null,
+   "youtube_id": null,
+   "notes": ""
+  },
+  {
+   "n": 3,
+   "topic": "Why does the human heart change its shape in zero gravity?",
+   "phase4_score": 3.75,
+   "phase4_run": 40641008955,
+   "voice": "kokoro",
+   "status": "planned",
+   "runs": [],
+   "owner_minutes": null,
+   "uploaded": null,
+   "youtube_id": null,
+   "notes": ""
+  },
+  {
+   "n": 4,
+   "topic": "Why are Saturn’s rings actively disappearing?",
+   "phase4_score": 3.6,
+   "phase4_run": 40641008955,
+   "voice": "kokoro",
+   "status": "planned",
+   "runs": [],
+   "owner_minutes": null,
+   "uploaded": null,
+   "youtube_id": null,
+   "notes": ""
+  },
+  {
+   "n": 5,
+   "topic": "What would happen if you dropped an explorer probe into Jupiter’s clouds?",
+   "phase4_score": 3.5,
+   "phase4_run": 40641008955,
+   "voice": "kokoro",
+   "status": "planned",
+   "runs": [],
+   "owner_minutes": null,
+   "uploaded": null,
+   "youtube_id": null,
+   "notes": ""
+  },
+  {
+   "n": 6,
+   "topic": "Why is NASA building a space telescope with Hubble’s resolution but 100 times its field of view?",
+   "phase4_score": 3.3,
+   "phase4_run": 40641008955,
+   "voice": "kokoro",
+   "status": "planned",
+   "runs": [],
+   "owner_minutes": null,
+   "uploaded": null,
+   "youtube_id": null,
+   "notes": ""
+  },
+  {
+   "n": 7,
+   "topic": "What creates the giant glowing jellyfish shapes after rocket launches?",
+   "phase4_score": 3.15,
+   "phase4_run": 40641008955,
+   "voice": "kokoro",
+   "status": "planned",
+   "runs": [],
+   "owner_minutes": null,
+   "uploaded": null,
+   "youtube_id": null,
+   "notes": ""
+  },
+  {
+   "n": 8,
+   "topic": "Could future astronauts safely live inside underground caves on the Moon?",
+   "phase4_score": 3.0,
+   "phase4_run": 40641008955,
+   "voice": "kokoro",
+   "status": "planned",
+   "runs": [],
+   "owner_minutes": null,
+   "uploaded": null,
+   "youtube_id": null,
+   "notes": ""
+  }
+ ],
+ "replaced": [
+  {
+   "n": 2,
    "topic": "Why does the universe organize into vast cosmic webs instead of spreading out uniformly?",
    "phase4_score": 3.8,
    "voice": "kokoro",
@@ -31,7 +124,8 @@
    "owner_minutes": null,
    "uploaded": null,
    "youtube_id": null,
-   "notes": "Run 40593144725 (27 Oct ~22:00 UTC): stopped at the plan step, all strong models' daily quota used up; nothing saved. Redo after the reset."
+   "notes": "Run 40593144725 (27 Oct ~22:00 UTC): stopped at the plan step, all strong models' daily quota used up; nothing saved. Redo after the reset.",
+   "replaced_by": "topic finder v2 run 40641008955 (28 Oct)"
   },
   {
    "n": 3,
@@ -43,7 +137,8 @@
    "owner_minutes": null,
    "uploaded": null,
    "youtube_id": null,
-   "notes": ""
+   "notes": "",
+   "replaced_by": "topic finder v2 run 40641008955 (28 Oct)"
   },
   {
    "n": 4,
@@ -55,7 +150,8 @@
    "owner_minutes": null,
    "uploaded": null,
    "youtube_id": null,
-   "notes": ""
+   "notes": "",
+   "replaced_by": "topic finder v2 run 40641008955 (28 Oct)"
   },
   {
    "n": 5,
@@ -67,7 +163,8 @@
    "owner_minutes": null,
    "uploaded": null,
    "youtube_id": null,
-   "notes": ""
+   "notes": "",
+   "replaced_by": "topic finder v2 run 40641008955 (28 Oct)"
   },
   {
    "n": 6,
@@ -79,7 +176,8 @@
    "owner_minutes": null,
    "uploaded": null,
    "youtube_id": null,
-   "notes": ""
+   "notes": "",
+   "replaced_by": "topic finder v2 run 40641008955 (28 Oct)"
   },
   {
    "n": 7,
@@ -91,7 +189,8 @@
    "owner_minutes": null,
    "uploaded": null,
    "youtube_id": null,
-   "notes": ""
+   "notes": "",
+   "replaced_by": "topic finder v2 run 40641008955 (28 Oct)"
   },
   {
    "n": 8,
@@ -103,7 +202,9 @@
    "owner_minutes": null,
    "uploaded": null,
    "youtube_id": null,
-   "notes": ""
+   "notes": "",
+   "replaced_by": "topic finder v2 run 40641008955 (28 Oct)"
   }
- ]
+ ],
+ "note_28oct": "Videos 2-8 re-picked from topic finder v2 (run 40641008955: hook score + measured NASA visuals) after the 'what makes videos win' research; old picks kept under 'replaced'. Video 1 (supernova) stays as the before/after comparison."
 }
