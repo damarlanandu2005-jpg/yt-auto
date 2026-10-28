@@ -30,9 +30,9 @@ STYLE = drawings.STYLE + ", tall vertical composition with the subject in the ce
 
 PLAN_SCHEMA = {"type": "object", "properties": {"shorts": {"type": "array", "items": {"type": "object", "properties": {
     "title": {"type": "string", "description": "Short title, at most 60 characters, honest"},
-    "hook": {"type": "string", "description": "ONE short question (max 14 words) with no factual claim"},
+    "hook": {"type": "string", "description": "ONE short question (max 14 words), no numbers, no claim"},
     "sentences": {"type": "array", "items": {"type": "string"}, "description": "ids of consecutive script sentences"},
-    "subject": {"type": "string", "description": "the ONE concrete thing every drawing shows"},
+    "subject": {"type": "string", "description": "ONE physical, drawable object"},
     "shots": {"type": "array", "minItems": 6, "maxItems": 8, "items": {"type": "object", "properties": {
         "sentence": {"type": "string"}, "view": {"type": "string"}}, "required": ["sentence", "view"]}}},
     "required": ["title", "hook", "sentences", "subject", "shots"]}}}, "required": ["shorts"]}
@@ -46,12 +46,18 @@ Plan {n} YouTube Short(s), each a "zoom journey" like the best science Shorts: o
 For each Short:
 - sentences: 4 to 9 CONSECUTIVE sentence ids that together tell a complete mini story and make sense alone,
   {MIN_WORDS}-{MAX_WORDS} words in total. Use the sentences exactly as they are; do not invent new facts.
-- hook: one short question that opens the Short and makes people stay (no claim, no number, no fake urgency).
+- hook: one short question that opens the Short and makes people stay. Plain words only: NO numbers,
+  no claim, no fake urgency (the numbers come in the checked sentences).
 - title: honest, at most 60 characters.
-- subject: the one concrete thing all drawings show (e.g. "a beam of light crossing stretching space").
-- shots: 6 to 8 views of that subject in order: start wide, move closer step by step, go "inside" the idea,
-  then pull back out to a wide view at the end. Each shot names the sentence id it plays under. Views are
-  simple concrete scenes: no people's faces, no text, no logos.
+- subject: ONE physical object a child could draw and anyone would recognise, which the sentences are about
+  or which the script itself uses as a comparison (e.g. "planet Earth", "a spiral galaxy", "a rubber band
+  with dots on it", "a telescope"). NOT an idea, beam, field, fabric, energy or "space itself": those come
+  out as abstract light bursts that viewers cannot read.
+- shots: 6 to 8 pictures of that subject in order: start wide, move closer step by step, go inside or
+  close up, then pull back out to a wide view at the end. Each view is one plain sentence naming the
+  concrete objects in the picture and where they are, e.g. "planet Earth small in the centre, surrounded
+  by many tiny spiral galaxies". No people's faces, no text, no logos, no abstract light rays.
+  Each shot names the sentence id it plays under; spread the shots over all the sentences.
 {"Different Shorts must use different sentences." if n > 1 else ""}
 
 {lines}"""
@@ -77,9 +83,9 @@ def _clean_plans(plans: list[dict], script: dict) -> list[dict]:
         if not hook.endswith("?") or len(hook.split()) > 14 or re.search(r"\d", hook):
             hook = ""  # a hook may only be a plain question: it is not fact-checked
         shots_ = [s for s in p["shots"] if s.get("view")][:8]
-        for s in shots_:
-            if s.get("sentence") not in ids:
-                s["sentence"] = ids[0]
+        if any(s.get("sentence") not in ids for s in shots_):  # spread them evenly over the sentences instead
+            for k, s in enumerate(shots_):
+                s["sentence"] = ids[min(len(ids) - 1, k * len(ids) // len(shots_))]
         shots_.sort(key=lambda s: ids.index(s["sentence"]))  # keep the story order
         out.append({**p, "sentences": ids, "hook": hook, "shots": shots_})
         used.update(ids)
@@ -146,11 +152,32 @@ def _draw(p: dict, out: Path, log: dict) -> list[Path]:
                     "photo_subject": f"{p['subject']}: {s['view']}", "text": s["view"]})
     check: dict = {}
     shots._verify(vis, check, drawings=True)
-    ok = {v["k"] for v in vis if v.get("photo")}
+    ok = {v["k"] for v in vis if v.get("photo")} if not check.get("verify_error") else set()  # fail closed
     log.update(drawn=len(made), passed=len(ok), rejected=check.get("rejected_after_looking", []),
                verify_error=check.get("verify_error"))
-    if check.get("verify_error"):
-        ok = set()  # not looked at: don't use (fail closed)
+    redo = [v for v in vis if v["k"] not in ok]
+    if redo and not check.get("verify_error"):  # one more try, plainer prompt, for the rejected ones
+        again = []
+        for v in redo:
+            k = v["k"]
+            f = raw / f"shot{k + 1}b.png"
+            try:
+                f.write_bytes(drawings.cloud_draw(f"simple clear drawing of {p['subject']}: {p['shots'][k]['view']}, "
+                                                  f"{STYLE}"))
+            except Exception as e:  # noqa: BLE001
+                log.setdefault("draw_errors", []).append(f"shot{k + 1}b: {e!r}"[:200])
+                continue
+            rec = drawings.record(f, v["photo_subject"], cloud=True)
+            f.with_suffix(".licence.json").write_text(json.dumps(rec, indent=1, ensure_ascii=False))
+            again.append({**v, "id": f"shot{k + 1}b", "photo": {"path": str(f), **rec}})
+        check2: dict = {}
+        shots._verify(again, check2, drawings=True)
+        if not check2.get("verify_error"):
+            for v in again:
+                if v.get("photo"):
+                    made[v["k"]] = Path(v["photo"]["path"])
+                    ok.add(v["k"])
+        log.update(redrawn=len(again), passed=len(ok), rejected_again=check2.get("rejected_after_looking", []))
     frames, last, zoom = [], None, 1.0
     for k in range(len(p["shots"])):
         f = out / f"frame{k + 1}.png"
