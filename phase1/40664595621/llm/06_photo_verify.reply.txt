@@ -1,0 +1,28 @@
+{
+  "checks": [
+    {
+      "n": 1,
+      "seen": "This image shows a dense starfield or deep space view filled with numerous colorful stars and distant galaxies scattered across a black background.",
+      "fits": false,
+      "reason": "The description shows a general starfield/galaxies, not specifically a massive galaxy cluster as required."
+    },
+    {
+      "n": 2,
+      "seen": "This image shows a pie chart illustrating universe composition with text labels and percentages: 75 percent dark energy, 21 percent dark matter, and 4 percent normal matter.",
+      "fits": false,
+      "reason": "It shows a pie chart with extensive text, which does not fit an expanding universe animation."
+    },
+    {
+      "n": 3,
+      "seen": "This image shows a central celestial object with glowing pink and blue regions, surrounded by a sparse field of stars against a black background.",
+      "fits": false,
+      "reason": "The description does not clearly depict interacting galaxies as required by the narration context."
+    },
+    {
+      "n": 4,
+      "seen": "This image shows a dark space field with a sparse scattering of distant galaxies and stars, featuring a spiral galaxy visible on the right side.",
+      "fits": false,
+      "reason": "It shows a generic space field with a spiral galaxy rather than a specific cosmic web simulation."
+    }
+  ]
+}

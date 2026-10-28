@@ -1,0 +1,26 @@
+[model] gemini-3.5-flash-lite
+[system]
+
+
+[user]
+Step 2 of a picture check for a science video. Someone looked at each picture WITHOUT knowing
+what it should show and described it. Decide for each image whether the picture fits.
+A photo fits only if the description shows it clearly depicts what it should show: not mostly text,
+not a test target, not a different planet or object than the narration is about, no watermark, nothing
+misleading. A diagram, infographic or poster with many labels or much text does NOT fit (too small to read
+in a video, and made for another purpose). A chart or graph fits ONLY if its labels show it is about exactly what the narration says (a graph
+of Mars data, or with unexplained labels like 'RHOS', does not fit a sentence about Earth or a star).
+When unsure, answer fits = false (a chart or plain card is shown instead, which is fine).
+Copy the description into "seen".
+Image 1: described as: This image shows a dense starfield or deep space view filled with numerous colorful stars and distant galaxies scattered across a black background.
+  should show: a massive galaxy cluster
+  narration: vast cosmic scale sounds like an impossible contradiction.
+Image 2: described as: This image shows a pie chart illustrating universe composition with text labels and percentages: 75 percent dark energy, 21 percent dark matter, and 4 percent normal matter.
+  should show: expanding universe animation
+  narration: How does space stretch while light is actively traveling across the universe?
+Image 3: described as: This image shows a central celestial object with glowing pink and blue regions, surrounded by a sparse field of stars against a black background.
+  should show: interacting galaxies
+  narration: These local peculiar velocities are caused mostly by gravity and are usually quite small.
+Image 4: described as: This image shows a dark space field with a sparse scattering of distant galaxies and stars, featuring a spiral galaxy visible on the right side.
+  should show: cosmic web simulation
+  narration: Understanding this key distinction changes everything about how we calculate cosmic distances.

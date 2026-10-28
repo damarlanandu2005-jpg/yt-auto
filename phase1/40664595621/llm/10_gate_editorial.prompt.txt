@@ -1,0 +1,43 @@
+[model] gemini-3.5-flash-lite
+[system]
+
+
+[user]
+You review a finished explainer video before a human checks it. Judge each item strictly,
+using only what is given. Answer every check.
+
+- hook_question: do the first 30 seconds clearly state the question the video answers?
+- hook_why: do the first 30 seconds also say why the question matters to the viewer?
+- title_promise: does the script actually deliver what the title promises (no promise the video doesn't keep,
+  no claim the video contradicts)?
+- scene_relevance: does each text card below show something the narration at that moment is saying? List any card
+  ids that are generic or unrelated in the reason.
+- sensitive: is there financial, legal or health ADVICE, or an accusation against a real named person or company?
+  ok=true means none.
+- adds_value: does the video explain and connect ideas (examples, comparisons, why), rather than only listing
+  facts in a new order?
+
+TITLE: Why Is the Observable Universe 93 Billion Light-Years Wide?
+QUESTION (from the brief): How can the observable universe be 93 billion light-years wide if it is only 13.8 billion years old?
+FIRST 30 SECONDS: How can the observable universe be 93 billion light-years across if it is only 13.8 billion years old? If light travels at a constant speed, this vast cosmic scale sounds like an impossible contradiction. So why does this cosmic puzzle matter so much when we look out into space? Objects beyond this physical boundary cannot be detected yet because their light has not had enough time to reach Earth.
+
+SCRIPT:
+## The Paradox of Time and Distance in the Universe
+How can the observable universe be 93 billion light-years across if it is only 13.8 billion years old? If light travels at a constant speed, this vast cosmic scale sounds like an impossible contradiction. So why does this cosmic puzzle matter so much when we look out into space? Objects beyond this physical boundary cannot be detected yet because their light has not had enough time to reach Earth. In this video, we will answer three fundamental questions about our cosmic horizon in plain words. How does space stretch while light is actively traveling across the universe? How does a travel time of 13.8 billion years convert into a physical radius of 46.5 billion light-years? And what mysterious regions lie forever beyond the edge of our current observable cosmos? To solve this mystery, we must reframe how we imagine cosmic space and time.
+## The False Picture of Galaxies Flying Through Empty Space
+Many people visualize the universe as a huge empty room where galaxies rocket through a dark void. In that false mental picture, galaxies are racing through a fixed, static space like cosmic shrapnel. If that picture were correct, nothing could ever appear farther away than 13.8 billion light-years. But this common picture of cosmic expansion is completely wrong. Cosmic expansion is not galaxies moving through a pre-existing empty space. Instead, general relativity describes expansion as an intrinsic increase in distance between cosmic objects over time. Most galaxies are nearly at rest relative to their local comoving spatial coordinates. The velocity of a galaxy relative to its local comoving grid is called its peculiar velocity. These local peculiar velocities are caused mostly by gravity and are usually quite small. So how should we picture the movement of galaxies as the universe expands? Understanding this key distinction changes everything about how we calculate cosmic distances.
+
+TEXT CARDS SHOWN:
+v001: narration: How can the observable universe be 93 billion light-years | card: {"type": "title", "title": "Why Is the Observable Universe 93 Billion Light-Years Wide?", "subtitle": "The Paradox of Time and Distance in the Universe"}
+v004: narration: vast cosmic scale sounds like an impossible contradiction. | card: {"type": "bullets", "title": "Cosmic Scale", "items": ["Vast distances", "Constant light speed", "Apparent contradiction"]}
+v005: narration: So why does this cosmic puzzle matter so much when we look out into space? | card: {"type": "bullets", "title": "Looking Out", "items": ["Distant starlight", "Cosmic horizons", "Expanding space"]}
+v007: narration: their light has not had enough time to reach Earth. | card: {"type": "stat", "title": "Travel Time", "value": "13.8 billion", "label": "years", "note": "Time for light to travel"}
+v008: narration: In this video, we will answer three fundamental questions about our cosmic horizon in plain words. | card: {"type": "bullets", "title": "Three Questions", "items": ["How space stretches", "Radius conversion", "Hidden regions"]}
+v012: narration: And what mysterious regions lie forever beyond the edge of our current observable cosmos? | card: {"type": "bullets", "title": "Cosmic Horizon", "items": ["Beyond our edge", "Forever hidden", "Observable cosmos"]}
+v013: narration: To solve this mystery, we must reframe how we imagine cosmic space and time. | card: {"type": "title", "title": "Reframing Space and Time", "subtitle": "Solving the cosmic mystery"}
+v014: narration: Many people visualize the universe as a huge empty room where galaxies rocket through a dark void. | card: {"type": "title", "title": "The False Picture", "subtitle": "Galaxies Flying Through Empty Space"}
+v015: narration: In that false mental picture, galaxies are racing through a fixed, static space like cosmic shrapnel. | card: {"type": "bullets", "title": "False Mental Picture", "items": ["Empty room concept", "Galaxies as shrapnel", "Fixed static space"]}
+v017: narration: But this common picture of cosmic expansion is completely wrong. | card: {"type": "compare", "title": "Expansion Models", "left_title": "Wrong Model", "left_points": ["Galaxies moving", "Empty space", "Static void"], "right_title": "
+v018: narration: Cosmic expansion is not galaxies moving through a pre-existing empty space. | card: {"type": "flow", "title": "Cosmic Expansion", "steps": ["Not motion through space", "Space itself grows", "Distances increase"]}
+v023: narration: These local peculiar velocities are caused mostly by gravity and are usually quite small. | card: {"type": "bullets", "title": "Peculiar Velocities", "items": ["Caused by gravity", "Usually quite small", "Local attraction"]}
+v024: narration: So how should we picture the movement of galaxies as the universe expands? | card: {"type": "title", "title": "Galaxy Movement", "subtitle": "How galaxies move as the universe expands"}

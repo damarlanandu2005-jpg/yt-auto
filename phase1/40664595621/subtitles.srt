@@ -1,0 +1,155 @@
+1
+00:00:00,012 --> 00:00:05,480
+How can the observable universe
+be 93 billion light-years across
+
+2
+00:00:05,480 --> 00:00:09,720
+if it is only 13.8 billion years old?
+
+3
+00:00:10,836 --> 00:00:12,640
+If light travels at a constant speed,
+
+4
+00:00:13,140 --> 00:00:17,120
+this vast cosmic scale sounds
+like an impossible contradiction.
+
+5
+00:00:18,068 --> 00:00:21,940
+So why does this cosmic puzzle matter
+so much when we look out into space?
+
+6
+00:00:23,078 --> 00:00:28,420
+Objects beyond this physical boundary cannot
+be detected yet because their light has
+
+7
+00:00:28,420 --> 00:00:30,240
+not had enough time to reach Earth.
+
+8
+00:00:30,938 --> 00:00:35,940
+In this video, we will answer three
+fundamental questions about our cosmic horizon
+
+9
+00:00:35,940 --> 00:00:37,080
+in plain words.
+
+10
+00:00:37,886 --> 00:00:41,740
+How does space stretch while light is
+actively traveling across the universe?
+
+11
+00:00:42,936 --> 00:00:48,180
+How does a travel time of 13.8 billion
+years convert into a physical radius
+
+12
+00:00:48,180 --> 00:00:51,644
+of 46.5 billion light-years?
+
+13
+00:00:52,497 --> 00:00:57,080
+And what mysterious regions lie forever
+beyond the edge of our current observable
+
+14
+00:00:57,080 --> 00:00:57,880
+cosmos?
+
+15
+00:00:58,939 --> 00:01:03,620
+To solve this mystery, we must reframe
+how we imagine cosmic space and time.
+
+16
+00:01:05,293 --> 00:01:10,340
+Many people visualize the universe as
+a huge empty room where galaxies rocket
+
+17
+00:01:10,340 --> 00:01:11,360
+through a dark void.
+
+18
+00:01:12,170 --> 00:01:15,840
+In that false mental picture,
+galaxies are racing through a fixed,
+
+19
+00:01:16,160 --> 00:01:18,260
+static space like cosmic shrapnel.
+
+20
+00:01:19,040 --> 00:01:24,040
+If that picture were correct, nothing
+could ever appear farther away than 13.8
+
+21
+00:01:24,040 --> 00:01:25,388
+billion light-years.
+
+22
+00:01:26,367 --> 00:01:31,000
+But this common picture of cosmic
+expansion is completely wrong.
+
+23
+00:01:31,777 --> 00:01:36,660
+Cosmic expansion is not galaxies moving
+through a pre-existing empty space.
+
+24
+00:01:37,415 --> 00:01:42,640
+Instead, general relativity describes
+expansion as an intrinsic increase in
+
+25
+00:01:42,640 --> 00:01:45,620
+distance between cosmic objects over time.
+
+26
+00:01:46,300 --> 00:01:50,720
+Most galaxies are nearly at rest
+relative to their local comoving spatial
+
+27
+00:01:50,720 --> 00:01:51,520
+coordinates.
+
+28
+00:01:52,235 --> 00:01:57,420
+The velocity of a galaxy relative to its
+local comoving grid is called its peculiar
+
+29
+00:01:57,420 --> 00:01:58,220
+velocity.
+
+30
+00:01:58,921 --> 00:02:04,020
+These local peculiar velocities are caused
+mostly by gravity and are usually quite
+
+31
+00:02:04,020 --> 00:02:04,820
+small.
+
+32
+00:02:05,171 --> 00:02:09,000
+So how should we picture the movement
+of galaxies as the universe expands?
+
+33
+00:02:10,233 --> 00:02:15,040
+Understanding this key distinction changes
+everything about how we calculate cosmic
+
+34
+00:02:15,040 --> 00:02:15,840
+distances.

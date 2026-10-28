@@ -1,0 +1,9 @@
+[model] gemini-3.5-flash-lite
+[system]
+
+
+[user]
+Above are 4 images, each right after its label "Image n:". For EVERY image, say in
+one or two plain sentences what it literally shows, as if to someone who cannot see it. Be honest: if it is
+abstract, unclear or just shapes, say so. Mention any text, labels, logo, emblem, chart axes, or deformed
+hands, faces or bodies.

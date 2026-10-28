@@ -1,0 +1,48 @@
+[model] gemini-3.5-flash-lite
+[system]
+
+
+[user]
+Step 2 of a picture check for a science video. Someone looked at each picture WITHOUT knowing
+what it should show and described it. Decide for each image whether the picture fits.
+The pictures are ink drawings made by an AI image model, which often misses. A drawing fits if a
+viewer hearing the narration would recognise its main object(s) (a star, a planet, a blast, molecules, DNA,
+fish...). It does NOT need to show the action or process (collapsing, moving, changing): a still picture of
+the right thing is enough. It does NOT fit if it is only shapes or texture with no recognisable object, shows
+a different thing (a volcano or canyon for the atmosphere, a red diamond for a star), has text or labels, looks
+like a logo/emblem/badge/flag, or has deformed bodies.
+When unsure, answer fits = false (a chart or plain card is shown instead, which is fine).
+Copy the description into "seen".
+Image 1: described as: A dark space-themed image showing a bright white stripe stretching across a star-filled background.
+  should show: a beam of light travelling across starry space
+  narration: If light travels at a constant speed, this
+Image 2: described as: A reddish celestial body or planet is seen against a black background filled with scattered white stars.
+  should show: a distant galaxy emitting light towards a small blue planet
+  narration: Objects beyond this physical boundary cannot be detected yet because
+Image 3: described as: An abstract dark field densely speckled with small white dots resembling stars.
+  should show: a fading gradient at the edge of starry space
+  narration: And what mysterious regions lie forever beyond the edge of our current observable cosmos?
+Image 4: described as: A space scene with a curved white streak extending across the frame, accompanied by small planets and stars.
+  should show: glowing galaxies moving across a dark void
+  narration: In that false mental picture, galaxies are racing through a fixed, static space like cosmic shrapnel.
+Image 5: described as: An abstract grey grid pattern containing several solid red shapes resembling circles and semicircles.
+  should show: a grid of space expanding outward in all directions
+  narration: Cosmic expansion is not galaxies moving through a pre-existing empty space.
+Image 6: described as: A black background featuring a white grid crossed diagonally by white and red lines.
+  should show: a galaxy with a small motion vector arrow on a coordinate grid
+  narration: The velocity of a galaxy relative to its local comoving grid is called its peculiar velocity.
+Image 7: described as: A circular swirling galaxy with a bright center, surrounded by a field of small white stars and a few reddish dots.
+  should show: a massive galaxy cluster
+  narration: vast cosmic scale sounds like an impossible contradiction.
+Image 8: described as: An abstract composition of sweeping white and red brushstrokes across a black, star-speckled background.
+  should show: galaxy flythrough animation
+  narration: So why does this cosmic puzzle matter so much when we look out into space?
+Image 9: described as: A swirling galaxy center surrounded by concentric rings, small spheres, and scattered stars in a dark sky.
+  should show: expanding universe animation
+  narration: How does space stretch while light is actively traveling across the universe?
+Image 10: described as: An abstract black space scene with concentric circular white brushstrokes and distant white stars.
+  should show: interacting galaxies
+  narration: These local peculiar velocities are caused mostly by gravity and are usually quite small.
+Image 11: described as: A detailed white spider web radiating outward against a black background, with a bright center.
+  should show: cosmic web simulation
+  narration: Understanding this key distinction changes everything about how we calculate cosmic distances.

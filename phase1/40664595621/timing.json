@@ -1,0 +1,159 @@
+{
+ "sentences": [
+  {
+   "id": "s01.01",
+   "scene": "s01",
+   "text": "How can the observable universe be 93 billion light-years across if it is only 13.8 billion years old?",
+   "start": 0.012,
+   "end": 9.965
+  },
+  {
+   "id": "s01.02",
+   "scene": "s01",
+   "text": "If light travels at a constant speed, this vast cosmic scale sounds like an impossible contradiction.",
+   "start": 10.836,
+   "end": 17.587
+  },
+  {
+   "id": "s01.03",
+   "scene": "s01",
+   "text": "So why does this cosmic puzzle matter so much when we look out into space?",
+   "start": 18.068,
+   "end": 22.234
+  },
+  {
+   "id": "s01.04",
+   "scene": "s01",
+   "text": "Objects beyond this physical boundary cannot be detected yet because their light has not had enough time to reach Earth.",
+   "start": 23.078,
+   "end": 30.465
+  },
+  {
+   "id": "s01.05",
+   "scene": "s01",
+   "text": "In this video, we will answer three fundamental questions about our cosmic horizon in plain words.",
+   "start": 30.938,
+   "end": 37.412
+  },
+  {
+   "id": "s01.06",
+   "scene": "s01",
+   "text": "How does space stretch while light is actively traveling across the universe?",
+   "start": 37.886,
+   "end": 42.06
+  },
+  {
+   "id": "s01.07",
+   "scene": "s01",
+   "text": "How does a travel time of 13.8 billion years convert into a physical radius of 46.5 billion light-years?",
+   "start": 42.936,
+   "end": 51.644
+  },
+  {
+   "id": "s01.08",
+   "scene": "s01",
+   "text": "And what mysterious regions lie forever beyond the edge of our current observable cosmos?",
+   "start": 52.497,
+   "end": 58.102
+  },
+  {
+   "id": "s01.09",
+   "scene": "s01",
+   "text": "To solve this mystery, we must reframe how we imagine cosmic space and time.",
+   "start": 58.939,
+   "end": 63.83
+  },
+  {
+   "id": "s02.01",
+   "scene": "s02",
+   "text": "Many people visualize the universe as a huge empty room where galaxies rocket through a dark void.",
+   "start": 65.293,
+   "end": 71.702
+  },
+  {
+   "id": "s02.02",
+   "scene": "s02",
+   "text": "In that false mental picture, galaxies are racing through a fixed, static space like cosmic shrapnel.",
+   "start": 72.17,
+   "end": 78.551
+  },
+  {
+   "id": "s02.03",
+   "scene": "s02",
+   "text": "If that picture were correct, nothing could ever appear farther away than 13.8 billion light-years.",
+   "start": 79.033,
+   "end": 85.388
+  },
+  {
+   "id": "s02.04",
+   "scene": "s02",
+   "text": "But this common picture of cosmic expansion is completely wrong.",
+   "start": 86.367,
+   "end": 91.303
+  },
+  {
+   "id": "s02.05",
+   "scene": "s02",
+   "text": "Cosmic expansion is not galaxies moving through a pre-existing empty space.",
+   "start": 91.777,
+   "end": 96.957
+  },
+  {
+   "id": "s02.06",
+   "scene": "s02",
+   "text": "Instead, general relativity describes expansion as an intrinsic increase in distance between cosmic objects over time.",
+   "start": 97.415,
+   "end": 105.817
+  },
+  {
+   "id": "s02.07",
+   "scene": "s02",
+   "text": "Most galaxies are nearly at rest relative to their local comoving spatial coordinates.",
+   "start": 106.298,
+   "end": 111.781
+  },
+  {
+   "id": "s02.08",
+   "scene": "s02",
+   "text": "The velocity of a galaxy relative to its local comoving grid is called its peculiar velocity.",
+   "start": 112.235,
+   "end": 118.44
+  },
+  {
+   "id": "s02.09",
+   "scene": "s02",
+   "text": "These local peculiar velocities are caused mostly by gravity and are usually quite small.",
+   "start": 118.921,
+   "end": 124.679
+  },
+  {
+   "id": "s02.10",
+   "scene": "s02",
+   "text": "So how should we picture the movement of galaxies as the universe expands?",
+   "start": 125.171,
+   "end": 129.379
+  },
+  {
+   "id": "s02.12",
+   "scene": "s02",
+   "text": "Understanding this key distinction changes everything about how we calculate cosmic distances.",
+   "start": 130.233,
+   "end": 136.111
+  }
+ ],
+ "scenes": [
+  {
+   "id": "s01",
+   "heading": "The Paradox of Time and Distance in the Universe",
+   "start": 0.0,
+   "end": 65.288
+  },
+  {
+   "id": "s02",
+   "heading": "The False Picture of Galaxies Flying Through Empty Space",
+   "start": 65.288,
+   "end": 137.55066666666664
+  }
+ ],
+ "total": 137.550667
+}

@@ -1,0 +1,34 @@
+{
+  "checks": [
+    {
+      "check": "hook_question",
+      "ok": true,
+      "reason": "The first 30 seconds explicitly state how the observable universe can be 93 billion light-years across if it is only 13.8 billion years old."
+    },
+    {
+      "check": "hook_why",
+      "ok": true,
+      "reason": "The first 30 seconds explain why it matters by stating that objects beyond the physical boundary cannot be detected yet because their light has not reached Earth."
+    },
+    {
+      "check": "title_promise",
+      "ok": true,
+      "reason": "The script directly addresses the paradox in the title regarding the size and age of the observable universe."
+    },
+    {
+      "check": "scene_relevance",
+      "ok": true,
+      "reason": "All text cards accurately reflect the narration at the moment they are shown."
+    },
+    {
+      "check": "sensitive",
+      "ok": true,
+      "reason": "There is no financial, legal, or health advice, nor any accusations against named persons or companies."
+    },
+    {
+      "check": "adds_value",
+      "ok": true,
+      "reason": "The video explains the underlying concept of expanding space and addresses false mental pictures instead of just listing facts."
+    }
+  ]
+}

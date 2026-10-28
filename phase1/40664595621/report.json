@@ -1,0 +1,391 @@
+{
+  "total_seconds": 835.77,
+  "stages_seconds": {
+    "script": 0.0,
+    "narration": 53.61,
+    "visual_plan": 58.87,
+    "photos": 74.04,
+    "drawings": 518.82,
+    "keyframes": 10.31,
+    "segments": 42.58,
+    "subtitles": 12.18,
+    "assemble": 46.07,
+    "preview": 7.44,
+    "thumbnail": 0.98,
+    "gate": 9.04
+  },
+  "peak_memory_mb": {
+    "python": 729.9,
+    "largest_child": 8876.3
+  },
+  "machine": {
+    "arch": "x86_64",
+    "cpus": 4,
+    "python": "3.13.16",
+    "runner": "GitHub Actions 1000000288",
+    "cpu_model": "Intel(R) Xeon(R) Platinum 8370C CPU @ 2.80GHz",
+    "ffmpeg": "ffmpeg version n8.1.3-24-g92611900bb-20261026 Copyright (c) 2000-2026 the FFmpeg developers"
+  },
+  "delivery": {
+    "slow": 5,
+    "reveal": 3
+  },
+  "voice": "kokoro",
+  "subtitle_cues": 34,
+  "whisper_words": 304,
+  "keywords_on_screen": 3,
+  "sound": {
+    "music": true,
+    "cuts": 24,
+    "voice_rms": 0.083,
+    "music_search": {
+      "candidates": 120,
+      "allowed": 91,
+      "calm": 8
+    }
+  },
+  "music": {
+    "title": "Kevin MacLeod - Calmant",
+    "author": "Kevin MacLeod",
+    "licence": "CC BY 3.0",
+    "source_page": "https://commons.wikimedia.org/wiki/File:Kevin_MacLeod_-_Calmant.ogg"
+  },
+  "topic": "Why is the observable universe 93 billion light-years across if it is only 13.8 billion years old?",
+  "title": "Why Is the Observable Universe 93 Billion Light-Years Wide?",
+  "words": 296,
+  "video_seconds": 137.6,
+  "visuals": 25,
+  "photos": 7,
+  "drawings": 5,
+  "cards": 13,
+  "drawing_log": {
+    "load_s": 9.0,
+    "torch": "2.14.1+cpu",
+    "diffusers": "0.42.1",
+    "skipped_for_time": [],
+    "total_s": 489.5,
+    "asked": 11,
+    "drawn": 11,
+    "cloud": {
+      "backend": "cloudflare",
+      "seconds": {},
+      "errors": [
+        "v003: HTTP 429 b'{\"errors\":[{\"message\":\"AiError: AiError: you have used up your daily free allocation of 10,000 neurons, please upgrade to Cloudflare\\'s Workers Paid plan if you would like to continue usage. (b226a21c-'"
+      ],
+      "drawn": 0
+    },
+    "drawings_rejected": [
+      {
+        "id": "v006",
+        "title": "a distant galaxy emitting light towards a small blue planet",
+        "seen": "A reddish celestial body or planet is seen against a black background filled with scattered white stars.",
+        "reason": "Should show a distant galaxy emitting light towards a small blue planet, but shows a single red celestial body instead."
+      },
+      {
+        "id": "v012",
+        "title": "a fading gradient at the edge of starry space",
+        "seen": "An abstract dark field densely speckled with small white dots resembling stars.",
+        "reason": "Shows only stars with no fading gradient or distinct edge representing the boundary of starry space."
+      },
+      {
+        "id": "v015",
+        "title": "glowing galaxies moving across a dark void",
+        "seen": "A space scene with a curved white streak extending across the frame, accompanied by small planets and stars.",
+        "reason": "Does not clearly show glowing galaxies moving across a dark void, just a streak and planets."
+      },
+      {
+        "id": "v018",
+        "title": "a grid of space expanding outward in all directions",
+        "seen": "An abstract grey grid pattern containing several solid red shapes resembling circles and semicircles.",
+        "reason": "Fails to show an expanding grid of space; it resembles abstract shapes on a grey grid."
+      },
+      {
+        "id": "v004",
+        "title": "a massive galaxy cluster",
+        "seen": "A circular swirling galaxy with a bright center, surrounded by a field of small white stars and a few reddish dots.",
+        "reason": "Shows a single galaxy rather than a massive galaxy cluster."
+      },
+      {
+        "id": "v005",
+        "title": "galaxy flythrough animation",
+        "seen": "An abstract composition of sweeping white and red brushstrokes across a black, star-speckled background.",
+        "reason": "Too abstract, showing brushstrokes instead of a recognizable galaxy flythrough scene."
+      },
+      {
+        "id": "v009",
+        "title": "expanding universe animation",
+        "seen": "A swirling galaxy center surrounded by concentric rings, small spheres, and scattered stars in a dark sky.",
+        "reason": "Does not clearly convey the concept of an expanding universe animation."
+      },
+      {
+        "id": "v023",
+        "title": "interacting galaxies",
+        "seen": "An abstract black space scene with concentric circular white brushstrokes and distant white stars.",
+        "reason": "Shows concentric brushstrokes rather than interacting galaxies."
+      }
+    ],
+    "drawings_used": 3,
+    "steps": 1,
+    "steps_without_picture": [
+      "v007"
+    ],
+    "cards_to_pictures": [
+      "v006",
+      "v009"
+    ]
+  },
+  "seconds_per_visual": 5.5,
+  "photo_log": {
+    "card_number_fixes": [],
+    "photo_slots": 11,
+    "downloaded": 10,
+    "seen": {
+      "v002": "A deep-field view of space taken by the James Webb Space Telescope, filled with numerous glowing stars with distinct diffraction spikes and a wide variety of distant galaxies of different shapes and colors, including warped gravitational arcs.",
+      "v004": "An abstract, circular pattern of swirling orange and red filaments resembling cosmic dust, gas clouds, or a fiery tunnel with a bright, chaotic center against a black background.",
+      "v009": "A person with short brown hair and glasses, wearing a dark reddish-brown textured sweater, looking slightly downward with a neutral expression. In the upper left background, part of a framed abstract colorful artwork is visible against a plain white wall.",
+      "v010": "A wide-angle horizontal shot of a spiral galaxy edge-on, showing a bright yellowish core on the left side, dark dust lanes running across the length, and a field of stars scattered against a dark galactic disk.",
+      "v011": "A side-by-side comparison of deep space images featuring a central bright galaxy cluster surrounded by numerous smaller red and blue galaxies scattered across a black background.",
+      "v016": "A deep space Hubble Space Telescope image showing a dense field of thousands of galaxies of various sizes, shapes, and brightness levels scattered randomly across the black expanse of the cosmos.",
+      "v019": "A detailed view of a magnificent barred spiral galaxy seen face-on, featuring a glowing central bar, tightly wound spiral arms speckled with bright blue star-forming regions, and dark dust lanes.",
+      "v021": "A circular field of deep space against a black background, showing several distinct elongated spiral and elliptical galaxies along with numerous faint stars and distant points of light.",
+      "v023": "A starfield against a black background with several prominent bright yellow-orange stars, a spiral galaxy visible in the upper right, and an irregular, wispy galaxy structure in the lower left.",
+      "v025": "A view from space showing two astronauts in white spacesuits performing maintenance on a large, cylindrical satellite payload inside the open cargo bay of a space shuttle, with the curvature of the Earth and a blue atmosphere visible in the background."
+    },
+    "rejected_after_looking": [
+      {
+        "id": "v004",
+        "title": "Gigantic Wave Discovered in Perseus Galaxy Cluster",
+        "seen": "An abstract, circular pattern of swirling orange and red filaments resembling cosmic dust, gas clouds, or a fiery tunnel with a bright, chaotic center against a black background.",
+        "reason": "The image description is an abstract pattern rather than a massive galaxy cluster."
+      },
+      {
+        "id": "v009",
+        "title": "NASA Science Live: Expanding Our View of the Universe [Episode 17]",
+        "seen": "A person with short brown hair and glasses, wearing a dark reddish-brown textured sweater, looking slightly downward with a neutral expression. In the upper left background, part of a framed abstract colorful artwork is visible against a plain white wall.",
+        "reason": "The image shows a person talking instead of an expanding universe animation."
+      },
+      {
+        "id": "v023",
+        "title": "Interacting Group of Galaxies Known as Stephan Quintet",
+        "seen": "A starfield against a black background with several prominent bright yellow-orange stars, a spiral galaxy visible in the upper right, and an irregular, wispy galaxy structure in the lower left.",
+        "reason": "The image shows a standard starfield with galaxies rather than clearly interacting galaxies as required."
+      },
+      {
+        "id": "v025",
+        "title": "HST SM4 COS Installation EVA",
+        "seen": "A view from space showing two astronauts in white spacesuits performing maintenance on a large, cylindrical satellite payload inside the open cargo bay of a space shuttle, with the curvature of the Earth and a blue atmosphere visible in the background.",
+        "reason": "The image shows astronauts and a space shuttle instead of a cosmic web simulation."
+      }
+    ],
+    "second_try": {
+      "tried": 4,
+      "kept": 0,
+      "seen": {
+        "v004": "This image shows a dense starfield or deep space view filled with numerous colorful stars and distant galaxies scattered across a black background.",
+        "v009": "This image shows a pie chart illustrating universe composition with text labels and percentages: 75 percent dark energy, 21 percent dark matter, and 4 percent normal matter.",
+        "v023": "This image shows a central celestial object with glowing pink and blue regions, surrounded by a sparse field of stars against a black background.",
+        "v025": "This image shows a dark space field with a sparse scattering of distant galaxies and stars, featuring a spiral galaxy visible on the right side."
+      },
+      "rejected": [
+        {
+          "id": "v004",
+          "title": "Ancient Galaxy Cluster Still Producing Stars",
+          "seen": "This image shows a dense starfield or deep space view filled with numerous colorful stars and distant galaxies scattered across a black background.",
+          "reason": "The description shows a general starfield/galaxies, not specifically a massive galaxy cluster as required."
+        },
+        {
+          "id": "v009",
+          "title": "KSC-04-S-00174",
+          "seen": "This image shows a pie chart illustrating universe composition with text labels and percentages: 75 percent dark energy, 21 percent dark matter, and 4 percent normal matter.",
+          "reason": "It shows a pie chart with extensive text, which does not fit an expanding universe animation."
+        },
+        {
+          "id": "v023",
+          "title": "A Flood of Gas",
+          "seen": "This image shows a central celestial object with glowing pink and blue regions, surrounded by a sparse field of stars against a black background.",
+          "reason": "The description does not clearly depict interacting galaxies as required by the narration context."
+        },
+        {
+          "id": "v025",
+          "title": "Cosmic Origins Spectrograph: Large Scale Structure of the Universe",
+          "seen": "This image shows a dark space field with a sparse scattering of distant galaxies and stars, featuring a spiral galaxy visible on the right side.",
+          "reason": "It shows a generic space field with a spiral galaxy rather than a specific cosmic web simulation."
+        }
+      ],
+      "error": null
+    }
+  },
+  "music_record": {
+    "file": "music.wav",
+    "kind": "music",
+    "source": "wikimedia_commons",
+    "title": "Kevin MacLeod - Calmant",
+    "source_page": "https://commons.wikimedia.org/wiki/File:Kevin_MacLeod_-_Calmant.ogg",
+    "download_url": "https://upload.wikimedia.org/wikipedia/commons/3/3c/Kevin_MacLeod_-_Calmant.ogg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+    "licence": "CC BY 3.0",
+    "licence_url": "https://creativecommons.org/licenses/by/3.0",
+    "author": "Kevin MacLeod",
+    "attribution": "Music: \"Kevin MacLeod - Calmant\" by Kevin MacLeod, CC BY 3.0, via Wikimedia Commons. https://commons.wikimedia.org/wiki/File:Kevin_MacLeod_-_Calmant.ogg",
+    "downloaded": "2026-10-28",
+    "seconds": 204.1,
+    "path": "out/run/music/music.wav"
+  },
+  "thumbnail": {
+    "picture": "v002",
+    "text": "space stretches over time",
+    "red_word": "stretches",
+    "seen": "A deep-field view of space taken by the James Webb Space Telescope, filled with numerous glowing stars with distinct diffraction spikes and a wide variety of distant galaxies of different shapes and colors, including warped gravitational arcs.",
+    "picture_source": "https://commons.wikimedia.org/wiki/File:Webb%27s_First_Deep_Field.jpg"
+  },
+  "gate": {
+    "verdict": "FAIL",
+    "not_pass": {
+      "video_minutes": "FLAG",
+      "plain_cards": "FAIL"
+    }
+  },
+  "llm_calls": [
+    {
+      "name": "visual_plan",
+      "model": "gemma-4-31b-it",
+      "prompt_chars": 7097,
+      "images": 0,
+      "status": 500,
+      "attempt": 1,
+      "error": "{\n  \"error\": {\n    \"code\": 500,\n    \"message\": \"Internal error encountered.\",\n    \"status\": \"INTERNAL\"\n  }\n}\n"
+    },
+    {
+      "name": "visual_plan",
+      "model": "gemini-3.5-flash-lite",
+      "prompt_chars": 7097,
+      "images": 0,
+      "status": 200,
+      "seconds": 5.6,
+      "attempts": 1,
+      "finish": "STOP",
+      "in_tokens": 1834,
+      "out_tokens": 2591,
+      "thought_tokens": null
+    },
+    {
+      "name": "photo_pick",
+      "model": "gemini-3.5-flash-lite",
+      "prompt_chars": 29066,
+      "images": 0,
+      "status": 200,
+      "seconds": 2.0,
+      "attempts": 1,
+      "finish": "STOP",
+      "in_tokens": 7039,
+      "out_tokens": 307,
+      "thought_tokens": null
+    },
+    {
+      "name": "photo_describe",
+      "model": "gemini-3.5-flash-lite",
+      "prompt_chars": 321,
+      "images": 10,
+      "status": 200,
+      "seconds": 3.6,
+      "attempts": 1,
+      "finish": "STOP",
+      "in_tokens": 10997,
+      "out_tokens": 595,
+      "thought_tokens": null
+    },
+    {
+      "name": "photo_verify",
+      "model": "gemini-3.5-flash-lite",
+      "prompt_chars": 4432,
+      "images": 0,
+      "status": 200,
+      "seconds": 2.4,
+      "attempts": 1,
+      "finish": "STOP",
+      "in_tokens": 932,
+      "out_tokens": 849,
+      "thought_tokens": null
+    },
+    {
+      "name": "photo_describe",
+      "model": "gemini-3.5-flash-lite",
+      "prompt_chars": 320,
+      "images": 4,
+      "status": 200,
+      "seconds": 2.8,
+      "attempts": 1,
+      "finish": "STOP",
+      "in_tokens": 4475,
+      "out_tokens": 206,
+      "thought_tokens": null
+    },
+    {
+      "name": "photo_verify",
+      "model": "gemini-3.5-flash-lite",
+      "prompt_chars": 2093,
+      "images": 0,
+      "status": 200,
+      "seconds": 1.3,
+      "attempts": 1,
+      "finish": "STOP",
+      "in_tokens": 440,
+      "out_tokens": 329,
+      "thought_tokens": null
+    },
+    {
+      "name": "drawing_describe",
+      "model": "gemini-3.5-flash-lite",
+      "prompt_chars": 321,
+      "images": 11,
+      "status": 200,
+      "seconds": 25.8,
+      "attempts": 1,
+      "finish": "STOP",
+      "in_tokens": 12229,
+      "out_tokens": 433,
+      "thought_tokens": null
+    },
+    {
+      "name": "drawing_verify",
+      "model": "gemini-3.5-flash-lite",
+      "prompt_chars": 3867,
+      "images": 0,
+      "status": 200,
+      "seconds": 2.3,
+      "attempts": 1,
+      "finish": "STOP",
+      "in_tokens": 832,
+      "out_tokens": 743,
+      "thought_tokens": null
+    },
+    {
+      "name": "thumbnail",
+      "model": "gemini-3.5-flash-lite",
+      "prompt_chars": 4339,
+      "images": 0,
+      "status": 200,
+      "seconds": 0.9,
+      "attempts": 1,
+      "finish": "STOP",
+      "in_tokens": 931,
+      "out_tokens": 37,
+      "thought_tokens": null
+    },
+    {
+      "name": "gate_editorial",
+      "model": "gemini-3.5-flash-lite",
+      "prompt_chars": 6434,
+      "images": 0,
+      "status": 200,
+      "seconds": 1.4,
+      "attempts": 1,
+      "finish": "STOP",
+      "in_tokens": 1497,
+      "out_tokens": 323,
+      "thought_tokens": null
+    }
+  ],
+  "llm_calls_ok_by_model": {
+    "gemini-3.5-flash-lite": 10
+  }
+}

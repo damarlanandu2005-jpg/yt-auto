@@ -1,0 +1,20 @@
+{
+  "images": [
+    {
+      "n": 1,
+      "seen": "This image shows a dense starfield or deep space view filled with numerous colorful stars and distant galaxies scattered across a black background."
+    },
+    {
+      "n": 2,
+      "seen": "This image shows a pie chart illustrating universe composition with text labels and percentages: 75 percent dark energy, 21 percent dark matter, and 4 percent normal matter."
+    },
+    {
+      "n": 3,
+      "seen": "This image shows a central celestial object with glowing pink and blue regions, surrounded by a sparse field of stars against a black background."
+    },
+    {
+      "n": 4,
+      "seen": "This image shows a dark space field with a sparse scattering of distant galaxies and stars, featuring a spiral galaxy visible on the right side."
+    }
+  ]
+}

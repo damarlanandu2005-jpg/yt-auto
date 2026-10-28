@@ -1,0 +1,5 @@
+{
+  "picture": "v002",
+  "text": "space stretches over time",
+  "red_word": "stretches"
+}

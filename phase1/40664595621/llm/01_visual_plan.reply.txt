@@ -1,0 +1,365 @@
+{
+  "visuals": [
+    {
+      "id": "v001",
+      "kind": "card",
+      "card": {
+        "type": "title",
+        "title": "Why Is the Observable Universe 93 Billion Light-Years Wide?",
+        "subtitle": "The Paradox of Time and Distance in the Universe"
+      }
+    },
+    {
+      "id": "v002",
+      "kind": "photo",
+      "photo_subject": "a deep field view of distant galaxies",
+      "photo_queries": [
+        "deep field galaxies",
+        "observable universe"
+      ],
+      "card": {
+        "type": "stat",
+        "title": "Cosmic Age",
+        "value": "13.8 billion",
+        "label": "years old",
+        "note": "Age of the universe"
+      }
+    },
+    {
+      "id": "v003",
+      "kind": "drawing",
+      "drawing_subject": "a beam of light travelling across starry space",
+      "card": {
+        "type": "stat",
+        "title": "Speed of Light",
+        "value": "Constant",
+        "label": "speed limit",
+        "note": "Light travels at a fixed speed"
+      }
+    },
+    {
+      "id": "v004",
+      "kind": "photo",
+      "photo_subject": "a massive galaxy cluster",
+      "photo_queries": [
+        "galaxy cluster",
+        "cosmic scale"
+      ],
+      "card": {
+        "type": "bullets",
+        "title": "Cosmic Scale",
+        "items": [
+          "Vast distances",
+          "Constant light speed",
+          "Apparent contradiction"
+        ]
+      }
+    },
+    {
+      "id": "v005",
+      "kind": "video",
+      "photo_subject": "galaxy flythrough animation",
+      "photo_queries": [
+        "galaxy flythrough",
+        "space exploration"
+      ],
+      "card": {
+        "type": "bullets",
+        "title": "Looking Out",
+        "items": [
+          "Distant starlight",
+          "Cosmic horizons",
+          "Expanding space"
+        ]
+      }
+    },
+    {
+      "id": "v006",
+      "kind": "drawing",
+      "drawing_subject": "a distant galaxy emitting light towards a small blue planet",
+      "card": {
+        "type": "stat",
+        "title": "Physical Boundary",
+        "value": "Observable limit",
+        "label": "beyond reach",
+        "note": "Light has not reached Earth yet"
+      }
+    },
+    {
+      "id": "v007",
+      "kind": "step",
+      "focus": "center",
+      "card": {
+        "type": "stat",
+        "title": "Travel Time",
+        "value": "13.8 billion",
+        "label": "years",
+        "note": "Time for light to travel"
+      }
+    },
+    {
+      "id": "v008",
+      "kind": "card",
+      "card": {
+        "type": "bullets",
+        "title": "Three Questions",
+        "items": [
+          "How space stretches",
+          "Radius conversion",
+          "Hidden regions"
+        ]
+      }
+    },
+    {
+      "id": "v009",
+      "kind": "video",
+      "photo_subject": "expanding universe animation",
+      "photo_queries": [
+        "expanding universe",
+        "cosmic expansion"
+      ],
+      "card": {
+        "type": "flow",
+        "title": "Stretching Space",
+        "steps": [
+          "Light travels",
+          "Space stretches",
+          "Distance grows"
+        ]
+      }
+    },
+    {
+      "id": "v010",
+      "kind": "photo",
+      "photo_subject": "spiral galaxy",
+      "photo_queries": [
+        "spiral galaxy",
+        "cosmos"
+      ],
+      "card": {
+        "type": "stat",
+        "title": "Travel Time",
+        "value": "13.8 billion",
+        "label": "years",
+        "note": "Light travel duration"
+      }
+    },
+    {
+      "id": "v011",
+      "kind": "photo",
+      "photo_subject": "galaxy cluster deep space",
+      "photo_queries": [
+        "galaxy cluster",
+        "space view"
+      ],
+      "card": {
+        "type": "stat",
+        "title": "Physical Radius",
+        "value": "46.5 billion",
+        "label": "light-years",
+        "note": "Current radius of the observable universe"
+      }
+    },
+    {
+      "id": "v012",
+      "kind": "drawing",
+      "drawing_subject": "a fading gradient at the edge of starry space",
+      "card": {
+        "type": "bullets",
+        "title": "Cosmic Horizon",
+        "items": [
+          "Beyond our edge",
+          "Forever hidden",
+          "Observable cosmos"
+        ]
+      }
+    },
+    {
+      "id": "v013",
+      "kind": "card",
+      "card": {
+        "type": "title",
+        "title": "Reframing Space and Time",
+        "subtitle": "Solving the cosmic mystery"
+      }
+    },
+    {
+      "id": "v014",
+      "kind": "card",
+      "card": {
+        "type": "title",
+        "title": "The False Picture",
+        "subtitle": "Galaxies Flying Through Empty Space"
+      }
+    },
+    {
+      "id": "v015",
+      "kind": "drawing",
+      "drawing_subject": "glowing galaxies moving across a dark void",
+      "card": {
+        "type": "bullets",
+        "title": "False Mental Picture",
+        "items": [
+          "Empty room concept",
+          "Galaxies as shrapnel",
+          "Fixed static space"
+        ]
+      }
+    },
+    {
+      "id": "v016",
+      "kind": "photo",
+      "photo_subject": "Hubble ultra deep field",
+      "photo_queries": [
+        "ultra deep field",
+        "distant galaxies"
+      ],
+      "card": {
+        "type": "stat",
+        "title": "Distance Limit",
+        "value": "13.8 billion",
+        "label": "light-years",
+        "note": "Perceived maximum distance in the static model"
+      }
+    },
+    {
+      "id": "v017",
+      "kind": "card",
+      "card": {
+        "type": "compare",
+        "title": "Expansion Models",
+        "left_title": "Wrong Model",
+        "left_points": [
+          "Galaxies moving",
+          "Empty space",
+          "Static void"
+        ],
+        "right_title": "Correct Model",
+        "right_points": [
+          "Space stretching",
+          "Intrinsic growth",
+          "Metric expansion"
+        ]
+      }
+    },
+    {
+      "id": "v018",
+      "kind": "drawing",
+      "drawing_subject": "a grid of space expanding outward in all directions",
+      "card": {
+        "type": "flow",
+        "title": "Cosmic Expansion",
+        "steps": [
+          "Not motion through space",
+          "Space itself grows",
+          "Distances increase"
+        ]
+      }
+    },
+    {
+      "id": "v019",
+      "kind": "photo",
+      "photo_subject": "spiral galaxy arms",
+      "photo_queries": [
+        "spiral galaxy",
+        "general relativity"
+      ],
+      "card": {
+        "type": "bullets",
+        "title": "General Relativity",
+        "items": [
+          "Curved spacetime",
+          "Dynamic geometry",
+          "Intrinsic expansion"
+        ]
+      }
+    },
+    {
+      "id": "v020",
+      "kind": "step",
+      "focus": "center",
+      "card": {
+        "type": "stat",
+        "title": "Metric Expansion",
+        "value": "Increasing",
+        "label": "distance",
+        "note": "Growth between cosmic objects over time"
+      }
+    },
+    {
+      "id": "v021",
+      "kind": "photo",
+      "photo_subject": "cluster of galaxies in space",
+      "photo_queries": [
+        "galaxy cluster",
+        "comoving coordinates"
+      ],
+      "card": {
+        "type": "bullets",
+        "title": "Comoving Coordinates",
+        "items": [
+          "Nearly at rest",
+          "Local spatial grid",
+          "Expansion carries them"
+        ]
+      }
+    },
+    {
+      "id": "v022",
+      "kind": "drawing",
+      "drawing_subject": "a galaxy with a small motion vector arrow on a coordinate grid",
+      "card": {
+        "type": "stat",
+        "title": "Peculiar Velocity",
+        "value": "Local motion",
+        "label": "velocity",
+        "note": "Velocity relative to comoving grid"
+      }
+    },
+    {
+      "id": "v023",
+      "kind": "photo",
+      "photo_subject": "interacting galaxies",
+      "photo_queries": [
+        "interacting galaxies",
+        "gravity in space"
+      ],
+      "card": {
+        "type": "bullets",
+        "title": "Peculiar Velocities",
+        "items": [
+          "Caused by gravity",
+          "Usually quite small",
+          "Local attraction"
+        ]
+      }
+    },
+    {
+      "id": "v024",
+      "kind": "card",
+      "card": {
+        "type": "title",
+        "title": "Galaxy Movement",
+        "subtitle": "How galaxies move as the universe expands"
+      }
+    },
+    {
+      "id": "v025",
+      "kind": "video",
+      "photo_subject": "cosmic web simulation",
+      "photo_queries": [
+        "cosmic web",
+        "universe simulation"
+      ],
+      "card": {
+        "type": "flow",
+        "title": "Cosmic Distances",
+        "steps": [
+          "Understand expansion",
+          "Calculate distances",
+          "Reveal true scale"
+        ]
+      }
+    }
+  ]
+}

@@ -1,0 +1,102 @@
+{
+ "load_s": 9.0,
+ "torch": "2.14.1+cpu",
+ "diffusers": "0.42.1",
+ "seconds": {
+  "v003": 44.8,
+  "v006": 44.0,
+  "v012": 43.5,
+  "v015": 42.8,
+  "v018": 43.4,
+  "v022": 44.0,
+  "v004": 44.1,
+  "v005": 44.1,
+  "v009": 43.7,
+  "v023": 43.3,
+  "v025": 42.9
+ },
+ "skipped_for_time": [],
+ "total_s": 489.5,
+ "asked": 11,
+ "drawn": 11,
+ "cloud": {
+  "backend": "cloudflare",
+  "seconds": {},
+  "errors": [
+   "v003: HTTP 429 b'{\"errors\":[{\"message\":\"AiError: AiError: you have used up your daily free allocation of 10,000 neurons, please upgrade to Cloudflare\\'s Workers Paid plan if you would like to continue usage. (b226a21c-'"
+  ],
+  "drawn": 0
+ },
+ "drawings_seen": {
+  "v003": "A dark space-themed image showing a bright white stripe stretching across a star-filled background.",
+  "v006": "A reddish celestial body or planet is seen against a black background filled with scattered white stars.",
+  "v012": "An abstract dark field densely speckled with small white dots resembling stars.",
+  "v015": "A space scene with a curved white streak extending across the frame, accompanied by small planets and stars.",
+  "v018": "An abstract grey grid pattern containing several solid red shapes resembling circles and semicircles.",
+  "v022": "A black background featuring a white grid crossed diagonally by white and red lines.",
+  "v004": "A circular swirling galaxy with a bright center, surrounded by a field of small white stars and a few reddish dots.",
+  "v005": "An abstract composition of sweeping white and red brushstrokes across a black, star-speckled background.",
+  "v009": "A swirling galaxy center surrounded by concentric rings, small spheres, and scattered stars in a dark sky.",
+  "v023": "An abstract black space scene with concentric circular white brushstrokes and distant white stars.",
+  "v025": "A detailed white spider web radiating outward against a black background, with a bright center."
+ },
+ "drawings_rejected": [
+  {
+   "id": "v006",
+   "title": "a distant galaxy emitting light towards a small blue planet",
+   "seen": "A reddish celestial body or planet is seen against a black background filled with scattered white stars.",
+   "reason": "Should show a distant galaxy emitting light towards a small blue planet, but shows a single red celestial body instead."
+  },
+  {
+   "id": "v012",
+   "title": "a fading gradient at the edge of starry space",
+   "seen": "An abstract dark field densely speckled with small white dots resembling stars.",
+   "reason": "Shows only stars with no fading gradient or distinct edge representing the boundary of starry space."
+  },
+  {
+   "id": "v015",
+   "title": "glowing galaxies moving across a dark void",
+   "seen": "A space scene with a curved white streak extending across the frame, accompanied by small planets and stars.",
+   "reason": "Does not clearly show glowing galaxies moving across a dark void, just a streak and planets."
+  },
+  {
+   "id": "v018",
+   "title": "a grid of space expanding outward in all directions",
+   "seen": "An abstract grey grid pattern containing several solid red shapes resembling circles and semicircles.",
+   "reason": "Fails to show an expanding grid of space; it resembles abstract shapes on a grey grid."
+  },
+  {
+   "id": "v004",
+   "title": "a massive galaxy cluster",
+   "seen": "A circular swirling galaxy with a bright center, surrounded by a field of small white stars and a few reddish dots.",
+   "reason": "Shows a single galaxy rather than a massive galaxy cluster."
+  },
+  {
+   "id": "v005",
+   "title": "galaxy flythrough animation",
+   "seen": "An abstract composition of sweeping white and red brushstrokes across a black, star-speckled background.",
+   "reason": "Too abstract, showing brushstrokes instead of a recognizable galaxy flythrough scene."
+  },
+  {
+   "id": "v009",
+   "title": "expanding universe animation",
+   "seen": "A swirling galaxy center surrounded by concentric rings, small spheres, and scattered stars in a dark sky.",
+   "reason": "Does not clearly convey the concept of an expanding universe animation."
+  },
+  {
+   "id": "v023",
+   "title": "interacting galaxies",
+   "seen": "An abstract black space scene with concentric circular white brushstrokes and distant white stars.",
+   "reason": "Shows concentric brushstrokes rather than interacting galaxies."
+  }
+ ],
+ "drawings_used": 3,
+ "steps": 1,
+ "steps_without_picture": [
+  "v007"
+ ],
+ "cards_to_pictures": [
+  "v006",
+  "v009"
+ ]
+}

@@ -1,0 +1,44 @@
+[model] gemini-3.5-flash-lite
+[system]
+
+
+[user]
+Step 2 of a picture check for a science video. Someone looked at each picture WITHOUT knowing
+what it should show and described it. Decide for each image whether the picture fits.
+A photo fits only if the description shows it clearly depicts what it should show: not mostly text,
+not a test target, not a different planet or object than the narration is about, no watermark, nothing
+misleading. A diagram, infographic or poster with many labels or much text does NOT fit (too small to read
+in a video, and made for another purpose). A chart or graph fits ONLY if its labels show it is about exactly what the narration says (a graph
+of Mars data, or with unexplained labels like 'RHOS', does not fit a sentence about Earth or a star).
+When unsure, answer fits = false (a chart or plain card is shown instead, which is fine).
+Copy the description into "seen".
+Image 1: described as: A deep-field view of space taken by the James Webb Space Telescope, filled with numerous glowing stars with distinct diffraction spikes and a wide variety of distant galaxies of different shapes and colors, including warped gravitational arcs.
+  should show: a deep field view of distant galaxies
+  narration: across if it is only 13.8 billion years old?
+Image 2: described as: An abstract, circular pattern of swirling orange and red filaments resembling cosmic dust, gas clouds, or a fiery tunnel with a bright, chaotic center against a black background.
+  should show: a massive galaxy cluster
+  narration: vast cosmic scale sounds like an impossible contradiction.
+Image 3: described as: A person with short brown hair and glasses, wearing a dark reddish-brown textured sweater, looking slightly downward with a neutral expression. In the upper left background, part of a framed abstract colorful artwork is visible against a plain white wall.
+  should show: expanding universe animation
+  narration: How does space stretch while light is actively traveling across the universe?
+Image 4: described as: A wide-angle horizontal shot of a spiral galaxy edge-on, showing a bright yellowish core on the left side, dark dust lanes running across the length, and a field of stars scattered against a dark galactic disk.
+  should show: spiral galaxy
+  narration: How does a travel time of 13.8 billion years
+Image 5: described as: A side-by-side comparison of deep space images featuring a central bright galaxy cluster surrounded by numerous smaller red and blue galaxies scattered across a black background.
+  should show: galaxy cluster deep space
+  narration: convert into a physical radius of 46.5 billion light-years?
+Image 6: described as: A deep space Hubble Space Telescope image showing a dense field of thousands of galaxies of various sizes, shapes, and brightness levels scattered randomly across the black expanse of the cosmos.
+  should show: Hubble ultra deep field
+  narration: If that picture were correct, nothing could ever appear farther away than 13.8 billion light-years.
+Image 7: described as: A detailed view of a magnificent barred spiral galaxy seen face-on, featuring a glowing central bar, tightly wound spiral arms speckled with bright blue star-forming regions, and dark dust lanes.
+  should show: spiral galaxy arms
+  narration: Instead, general relativity describes expansion as an intrinsic
+Image 8: described as: A circular field of deep space against a black background, showing several distinct elongated spiral and elliptical galaxies along with numerous faint stars and distant points of light.
+  should show: cluster of galaxies in space
+  narration: Most galaxies are nearly at rest relative to their local comoving spatial coordinates.
+Image 9: described as: A starfield against a black background with several prominent bright yellow-orange stars, a spiral galaxy visible in the upper right, and an irregular, wispy galaxy structure in the lower left.
+  should show: interacting galaxies
+  narration: These local peculiar velocities are caused mostly by gravity and are usually quite small.
+Image 10: described as: A view from space showing two astronauts in white spacesuits performing maintenance on a large, cylindrical satellite payload inside the open cargo bay of a space shuttle, with the curvature of the Earth and a blue atmosphere visible in the background.
+  should show: cosmic web simulation
+  narration: Understanding this key distinction changes everything about how we calculate cosmic distances.
