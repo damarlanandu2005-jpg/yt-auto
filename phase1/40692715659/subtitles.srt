@@ -1,0 +1,530 @@
+1
+00:00:00,000 --> 00:00:04,220
+Imagine you stand outdoors at night and
+look into the deepest reaches of space.
+
+2
+00:00:05,040 --> 00:00:10,080
+How can light travel across 93
+billion light-years if time
+
+3
+00:00:10,080 --> 00:00:14,780
+itself began only 13.8 billion years ago?
+
+4
+00:00:15,847 --> 00:00:20,500
+Understanding this giant puzzle reveals
+your true place in a shifting cosmic
+
+5
+00:00:20,500 --> 00:00:21,300
+landscape.
+
+6
+00:00:22,020 --> 00:00:26,240
+In this video, you will discover how
+cosmic expansion turns a journey of
+
+7
+00:00:26,240 --> 00:00:31,260
+13.8 billion years into a
+vast width of 93 billion
+
+8
+00:00:31,260 --> 00:00:32,133
+light-years.
+
+9
+00:00:32,589 --> 00:00:36,700
+Nothing in physics can travel faster than
+the speed of light through local space.
+
+10
+00:00:37,464 --> 00:00:41,180
+If light has only been traveling
+for 13.8 billion years,
+
+11
+00:00:41,780 --> 00:00:45,800
+a simple sum suggests our cosmic
+horizon should be much smaller.
+
+12
+00:00:46,600 --> 00:00:51,960
+You might expect a sphere with a radius
+of 13.8 billion light-years and a
+
+13
+00:00:51,960 --> 00:00:54,959
+width of 27.6 billion light-years.
+
+14
+00:00:55,910 --> 00:01:01,400
+Instead, astronomical observations
+reveal a diameter of 93
+
+15
+00:01:01,400 --> 00:01:03,340
+billion light-years.
+
+16
+00:01:03,778 --> 00:01:07,680
+This contradiction seems to break
+the most fundamental rules of motion.
+
+17
+00:01:09,585 --> 00:01:13,580
+To solve this mystery, you must first
+unlearn a common mental picture.
+
+18
+00:01:14,231 --> 00:01:19,300
+Imagine an empty room where distant
+objects race through motionless air like
+
+19
+00:01:19,300 --> 00:01:20,340
+speedboats on a lake.
+
+20
+00:01:21,045 --> 00:01:26,320
+In this false picture, galaxies fly apart
+through fixed and static space after a
+
+21
+00:01:26,320 --> 00:01:27,240
+central explosion.
+
+22
+00:01:27,980 --> 00:01:30,620
+If galaxies were simply
+speeding through static space,
+
+23
+00:01:31,080 --> 00:01:33,320
+no galaxy could exceed the speed of light.
+
+24
+00:01:34,071 --> 00:01:39,400
+Under that simple picture, light
+leaving a galaxy 13.8 billion years ago
+
+25
+00:01:39,400 --> 00:01:44,000
+could only show us objects 13.8
+billion light-years away today.
+
+26
+00:01:44,841 --> 00:01:50,220
+However, astronomical measurements show
+distant galaxies moving away from us at
+
+27
+00:01:50,220 --> 00:01:52,760
+recessional speeds proportional
+to their distance.
+
+28
+00:01:53,580 --> 00:01:58,980
+In fact, very distant regions of
+space expand away from us faster
+
+29
+00:01:58,980 --> 00:02:00,220
+than the speed of light.
+
+30
+00:02:00,980 --> 00:02:06,100
+How can distant galaxies recede faster than
+light without violating physical laws?
+
+31
+00:02:07,348 --> 00:02:08,340
+The answer is simple.
+
+32
+00:02:10,040 --> 00:02:15,480
+Speed limits in special relativity
+apply only to objects moving through
+
+33
+00:02:15,480 --> 00:02:18,820
+local space, not to
+the space between them.
+
+34
+00:02:20,479 --> 00:02:24,040
+Imagine replacing the idea of
+a fixed box with a flexible,
+
+35
+00:02:24,340 --> 00:02:25,340
+stretching fabric.
+
+36
+00:02:26,140 --> 00:02:31,240
+The expansion of the universe is an
+intrinsic increase in distance between cosmic
+
+37
+00:02:31,240 --> 00:02:32,520
+objects over time.
+
+38
+00:02:33,220 --> 00:02:38,180
+This cosmic expansion does not mean the
+universe is expanding into any surrounding
+
+39
+00:02:38,180 --> 00:02:39,000
+empty room.
+
+40
+00:02:39,640 --> 00:02:44,780
+Cosmologists describe physical distances
+using a scale factor that grows
+
+41
+00:02:44,780 --> 00:02:46,020
+over cosmic time.
+
+42
+00:02:46,744 --> 00:02:48,600
+As the cosmic scale factor grows,
+
+43
+00:02:49,320 --> 00:02:53,300
+the physical separation between distant
+galaxies increases automatically.
+
+44
+00:02:54,381 --> 00:02:58,580
+Galaxies themselves remain nearly at rest
+relative to their local surroundings,
+
+45
+00:02:59,260 --> 00:03:00,320
+called comoving coordinates.
+
+46
+00:03:01,340 --> 00:03:06,200
+Yet the space between separated galaxies
+grows continuously as time passes.
+
+47
+00:03:07,021 --> 00:03:11,540
+Imagine drawing two marks on a flexible
+sheet that is constantly pulled in every
+
+48
+00:03:11,540 --> 00:03:12,340
+direction.
+
+49
+00:03:12,790 --> 00:03:15,760
+The coordinate distance between
+the two marks stays constant,
+
+50
+00:03:16,600 --> 00:03:18,860
+but the actual physical
+ruler distance grows.
+
+51
+00:03:19,753 --> 00:03:24,300
+Because space stretches, physical distances
+today are much larger than physical
+
+52
+00:03:24,300 --> 00:03:26,240
+distances in the distant past.
+
+53
+00:03:28,016 --> 00:03:33,120
+Imagine an ant crawling across a giant rubber
+band while someone stretches that band
+
+54
+00:03:33,120 --> 00:03:34,100
+at the same time.
+
+55
+00:03:34,753 --> 00:03:36,800
+The ant crawls forward at a steady speed,
+
+56
+00:03:37,360 --> 00:03:39,960
+but the path ahead and
+behind keeps expanding.
+
+57
+00:03:40,793 --> 00:03:44,100
+A light beam traveling through
+space behaves just like that ant.
+
+58
+00:03:44,792 --> 00:03:48,940
+Locally, light always travels through
+space at its standard constant speed.
+
+59
+00:03:49,746 --> 00:03:53,500
+But as light travels toward
+us across billions of years,
+
+60
+00:03:54,220 --> 00:03:57,640
+the space it has already
+crossed continues to stretch.
+
+61
+00:03:58,432 --> 00:04:01,160
+When the ancient light from the
+early universe was first emitted,
+
+62
+00:04:01,620 --> 00:04:04,140
+the source was actually very close to us.
+
+63
+00:04:04,768 --> 00:04:10,180
+Scientists estimate that matter emitting
+the cosmic microwave background was only 42
+
+64
+00:04:10,180 --> 00:04:13,240
+million light-years away
+when it emitted that light.
+
+65
+00:04:13,989 --> 00:04:18,580
+The light spent 13.8 billion years
+traveling across space to reach Earth.
+
+66
+00:04:19,265 --> 00:04:22,380
+During that long journey
+of 13.8 billion years,
+
+67
+00:04:22,960 --> 00:04:25,680
+the space behind the light
+expanded dramatically.
+
+68
+00:04:26,379 --> 00:04:31,740
+Consequently, the matter that emitted those
+photons is now located much farther away
+
+69
+00:04:31,740 --> 00:04:32,540
+from Earth today.
+
+70
+00:04:34,254 --> 00:04:39,040
+Now the mathematical puzzle of cosmic
+distances starts to make complete sense.
+
+71
+00:04:39,880 --> 00:04:44,420
+The light-travel distance equals the age
+of the universe multiplied by the speed of
+
+72
+00:04:44,420 --> 00:04:48,292
+light, which is 13.8 billion light-years.
+
+73
+00:04:48,781 --> 00:04:53,960
+That value of 13.8 billion light-years
+represents the journey time of light
+
+74
+00:04:53,960 --> 00:04:56,528
+moving through an expanding spacetime.
+
+75
+00:04:57,005 --> 00:05:02,220
+However, cosmologists define proper
+distance as the physical distance measured
+
+76
+00:05:02,220 --> 00:05:05,020
+at one frozen moment of cosmic time.
+
+77
+00:05:05,700 --> 00:05:09,860
+In today's standard model, the current proper
+distance to the edge of our observable
+
+78
+00:05:09,860 --> 00:05:14,416
+universe is about 46.5
+billion light-years.
+
+79
+00:05:14,865 --> 00:05:19,760
+This distance is also known as the
+comoving radius of the observable region.
+
+80
+00:05:20,523 --> 00:05:23,660
+The photon traveled
+for 13.8 billion years,
+
+81
+00:05:24,220 --> 00:05:28,580
+but cosmic expansion stretched the
+physical space behind it along the way.
+
+82
+00:05:29,699 --> 00:05:34,960
+This means that 13.8 billion
+years of light travel time
+
+83
+00:05:34,960 --> 00:05:38,720
+converts into a current physical radius of
+
+84
+00:05:38,720 --> 00:05:42,099
+46.5 billion light-years.
+
+85
+00:05:43,583 --> 00:05:46,060
+To find the full size of
+our observable cosmos,
+
+86
+00:05:46,720 --> 00:05:48,500
+you simply look in every direction.
+
+87
+00:05:49,179 --> 00:05:54,220
+Light has had equal time to travel toward
+Earth from all directions across the sky.
+
+88
+00:05:54,951 --> 00:05:59,640
+Because of this symmetry, the observable
+universe forms a vast sphere centered on
+
+89
+00:05:59,640 --> 00:06:00,440
+Earth.
+
+90
+00:06:00,620 --> 00:06:06,000
+The radius of this cosmic sphere is 46.5
+billion light-years in any direction.
+
+91
+00:06:06,793 --> 00:06:09,680
+To calculate the total diameter
+of this spherical region,
+
+92
+00:06:10,140 --> 00:06:11,060
+you double the radius.
+
+93
+00:06:12,044 --> 00:06:17,180
+Doubling 46.5 billion light-years
+yields a current diameter of 93
+
+94
+00:06:17,180 --> 00:06:18,738
+billion light-years.
+
+95
+00:06:19,190 --> 00:06:24,240
+That is why the observable universe is
+93 billion light-years across today.
+
+96
+00:06:24,912 --> 00:06:29,700
+In today's standard model, that means
+there are more stars in our observable
+
+97
+00:06:29,700 --> 00:06:33,820
+sphere than grains of sand
+on all Earth beaches.
+
+98
+00:06:35,859 --> 00:06:39,500
+What lies beyond the edge of this
+93 billion light-year boundary?
+
+99
+00:06:40,618 --> 00:06:43,120
+Objects outside our
+observable sphere exist,
+
+100
+00:06:43,900 --> 00:06:47,620
+but their light has not had enough time
+to reach Earth since the Big Bang.
+
+101
+00:06:48,359 --> 00:06:51,500
+The limit of what we can see is
+called the particle horizon.
+
+102
+00:06:52,398 --> 00:06:55,120
+The total size of the
+entire universe is unknown,
+
+103
+00:06:55,900 --> 00:06:57,720
+and it may even be infinite in extent.
+
+104
+00:06:58,546 --> 00:07:03,920
+Every location in space has its own unique
+observable universe sphere centered on
+
+105
+00:07:03,920 --> 00:07:04,720
+itself.
+
+106
+00:07:05,080 --> 00:07:08,820
+In today's standard model, dark
+energy accelerates expansion,
+
+107
+00:07:09,560 --> 00:07:13,944
+creating a future visibility
+limit at 62 billion light-years.
+
+108
+00:07:14,396 --> 00:07:19,480
+This means the number of galaxies we can
+ever observe in the infinite future is only
+
+109
+00:07:19,480 --> 00:07:22,500
+2.36 times larger than today.
+
+110
+00:07:23,300 --> 00:07:28,500
+In summary, our observable universe is 93
+billion light-years wide because space
+
+111
+00:07:28,500 --> 00:07:32,860
+expanded while light traveled
+for 13.8 billion years.
+
+112
+00:07:33,700 --> 00:07:36,240
+As you ponder this
+expanding cosmic fabric,
+
+113
+00:07:36,820 --> 00:07:40,821
+consider how much of the cosmos will
+forever remain beyond our sight.

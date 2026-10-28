@@ -1,0 +1,513 @@
+{
+  "total_seconds": 1055.33,
+  "stages_seconds": {
+    "script": 0.0,
+    "narration": 174.63,
+    "visual_plan": 0.0,
+    "photos": 219.95,
+    "drawings": 270.84,
+    "keyframes": 32.29,
+    "segments": 137.54,
+    "subtitles": 34.93,
+    "assemble": 134.84,
+    "preview": 6.83,
+    "thumbnail": 6.86,
+    "gate": 29.68
+  },
+  "peak_memory_mb": {
+    "python": 1163.1,
+    "largest_child": 8954.5
+  },
+  "machine": {
+    "arch": "x86_64",
+    "cpus": 4,
+    "python": "3.13.17",
+    "runner": "GitHub Actions 1000000301",
+    "cpu_model": "AMD EPYC 7763 64-Core Processor",
+    "ffmpeg": "ffmpeg version n8.1.3-24-g92611900bb-20261026 Copyright (c) 2000-2026 the FFmpeg developers"
+  },
+  "delivery": {
+    "slow": 4,
+    "reveal": 3
+  },
+  "voice": "kokoro",
+  "video_slots_added": 18,
+  "subtitle_cues": 113,
+  "whisper_words": 1039,
+  "keywords_on_screen": 8,
+  "sound": {
+    "music": true,
+    "cuts": 94,
+    "voice_rms": 0.0835,
+    "music_search": {
+      "candidates": 120,
+      "allowed": 91,
+      "calm": 8
+    }
+  },
+  "music": {
+    "title": "Kevin MacLeod - Calmant",
+    "author": "Kevin MacLeod",
+    "licence": "CC BY 3.0",
+    "source_page": "https://commons.wikimedia.org/wiki/File:Kevin_MacLeod_-_Calmant.ogg"
+  },
+  "topic": "Why is the observable universe 93 billion light-years across if it is only 13.8 billion years old?",
+  "title": "Why the Observable Universe Is 93 Billion Light-Years Wide",
+  "words": 1000,
+  "video_seconds": 462.3,
+  "visuals": 95,
+  "photos": 22,
+  "drawings": 40,
+  "cards": 33,
+  "drawing_log": {
+    "load_s": 10.1,
+    "torch": "2.15.0+cpu",
+    "diffusers": "0.42.1",
+    "skipped_for_time": [],
+    "total_s": 163.4,
+    "asked": 38,
+    "drawn": 38,
+    "cloud": {
+      "backend": "cloudflare",
+      "seconds": {
+        "v007": 1.9,
+        "v009": 1.5,
+        "v010": 1.7,
+        "v016": 1.4,
+        "v017": 1.8,
+        "v028": 1.8,
+        "v030": 2.4,
+        "v034": 1.7,
+        "v035": 2.0,
+        "v040": 1.7,
+        "v042": 1.3,
+        "v046": 1.8,
+        "v047": 1.6,
+        "v050": 2.0,
+        "v056": 1.8,
+        "v062": 5.3,
+        "v064": 2.0,
+        "v069": 1.6,
+        "v074": 4.7,
+        "v076": 2.1,
+        "v087": 1.8,
+        "v003": 1.9,
+        "v005": 7.7,
+        "v008": 1.5,
+        "v012": 1.9,
+        "v014": 1.8,
+        "v021": 1.7,
+        "v033": 1.6,
+        "v039": 1.7,
+        "v043": 1.8,
+        "v049": 1.5,
+        "v051": 2.5,
+        "v063": 1.7,
+        "v079": 1.4,
+        "v080": 1.9,
+        "v083": 1.8
+      },
+      "errors": [
+        "v041: HTTP 400 b'{\"errors\":[{\"message\":\"AiError: AiError: Input prompt contains NSFW content. (05822ed9-77c3-4037-818e-8a9fe67107fc)\",\"code\":8007}],\"success\":false,\"result\":{},\"messages\":[]}'",
+        "v088: HTTP 400 b'{\"errors\":[{\"message\":\"AiError: AiError: Input prompt contains NSFW content. (4b1f8997-4b53-4deb-92e4-1a0b6313684c)\",\"code\":8007}],\"success\":false,\"result\":{},\"messages\":[]}'"
+      ],
+      "drawn": 36
+    },
+    "drawings_rejected": [
+      {
+        "id": "v083",
+        "title": "dark empty space void",
+        "seen": "A solid black screen with no visible shapes or objects.",
+        "reason": "Shows only a blank screen, missing the required content."
+      },
+      {
+        "id": "v041",
+        "title": "two dots on a stretched sheet",
+        "seen": "A minimalist black and white abstract sketch showing a few vertical parallel lines intersected by a single horizontal line against a light gray background.",
+        "reason": "Too abstract, lacks recognisable objects representing the narration."
+      }
+    ],
+    "drawings_used": 36,
+    "steps": 0,
+    "steps_without_picture": [],
+    "cards_to_pictures": [
+      "v013",
+      "v020",
+      "v055",
+      "v067",
+      "v068",
+      "v070",
+      "v071",
+      "v077",
+      "v093"
+    ]
+  },
+  "seconds_per_visual": 4.87,
+  "photo_log": {
+    "card_number_fixes": [],
+    "photo_slots": 33,
+    "downloaded": 29,
+    "seen": {
+      "v002": "A deep space image from the James Webb Space Telescope showing numerous distant galaxies and gravitational lensing arcs against a dark background.",
+      "v003": "An artist illustration of a blazing red dwarf star with intense solar flares erupting into space. Text at the top reads: 'Hubble also found that young red dwarf stars have more intense flares than older red dwarfs.'",
+      "v004": "A detailed Hubble Space Telescope image of a magnificent barred spiral galaxy showing a bright central core and swirling dust lanes.",
+      "v012": "An abstract geometric pattern resembling an internal structural or reflective metallic arrangement with dark and luminous sections.",
+      "v014": "A swirling, circular cosmic cloud of orange and red gas and dust surrounding a very bright, chaotic central core.",
+      "v018": "A spiral galaxy viewed from above, displaying luminous pink star-forming regions along its winding arms and a bright central nucleus.",
+      "v021": "An infrared spectrum graph with wavelength in microns on the horizontal axis and relative brightness on the vertical axis, featuring scattered yellow data points with error bars and a solid white model line. Text at the bottom indicates it is the Infrared Spectrum of HD 189733b by the Spitzer Space Telescope.",
+      "v023": "A deep field image of the universe filled with countless faint galaxies and prominent gravitational lensing arcs curving around massive galaxy clusters.",
+      "v025": "Two interacting galaxies, known as the Antennae Galaxies, merging with sweeping tidal tails and bright pink clusters of newborn stars.",
+      "v032": "A night landscape showing tall silhouettes of grass and vegetation in the foreground beneath a starry night sky with a few faint light streaks.",
+      "v033": "A wide-angle control room illuminated by red and green lighting, with two people seated at desks in front of multiple computer monitors displaying data.",
+      "v037": "A nearly edge-on spiral galaxy glowing with densely packed stars against a stark black cosmic backdrop dotted with distant background galaxies.",
+      "v048": "A close-up view of optical laboratory equipment on an optical bench, including lenses, mounts, and a red laser alignment system.",
+      "v049": "Three circular rings of data in orange and red color gradients, each showing speckled surface patterns against a black background.",
+      "v051": "An artistic painting titled 'Artist's View of Star Formation in the Early Universe' by Adolf Schaller, depicting wispy pink nebula clouds and young galactic structures.",
+      "v052": "An oval-shaped all-sky map of the cosmic microwave background showing tiny temperature fluctuations as orange, yellow, and blue patches.",
+      "v057": "A deep space Hubble image packed with diverse galaxies of varying shapes, sizes, and colors scattered across the black void of space.",
+      "v063": "A complex multi-panel scientific chart displaying cosmic distance measurements using geometry, Cepheid variable stars, and Type Ia supernovae, with labeled axes and residual plots.",
+      "v065": "A circular logarithmic map of the observable universe centered on Earth and expanding outward to the cosmic microwave background and big bang at the outer edge.",
+      "v073": "A panoramic night photograph of astronomical observatories under a dark sky crossed by a glowing arch of the Milky Way galaxy and zodiacal light.",
+      "v079": "A horizontal timeline graphic of the universe, starting with Earth on the far left and progressing through the solar system, Milky Way, distant galaxies, and the cosmic microwave background on the far right.",
+      "v080": "An artist's conception of a planetary system with a large brown planet in the foreground and a distant star surrounded by a protoplanetary disk and orbiting debris.",
+      "v081": "An overhead satellite photograph of a coastal landscape showing a sharp headland, sandy beaches, and deep blue ocean water.",
+      "v083": "An abstract, wispy cosmic loop formation of glowing gas and light dots against a solid black background.",
+      "v086": "A dense cluster of yellowish and white galaxies photographed by the James Webb Space Telescope, displaying numerous elliptical and spiral structures.",
+      "v088": "An educational 3D digital illustration demonstrating spacetime curvature, with several spiral galaxies resting on a green warped grid beneath a purple grid ceiling.",
+      "v090": "A side-by-side comparison of two galaxy cluster fields, showing numerous red and yellow galaxies under different filter enhancements.",
+      "v094": "A spiral galaxy with a glowing central nucleus and prominent pinkish-red star-forming arms, set against a rich field of background stars.",
+      "v095": "The Hubble Ultra Deep Field showing a vast array of faint, distant galaxies scattered across the dark expanse of space."
+    },
+    "rejected_after_looking": [
+      {
+        "id": "v003",
+        "title": "Hubble's 29th Anniversary",
+        "seen": "An artist illustration of a blazing red dwarf star with intense solar flares erupting into space. Text at the top reads: 'Hubble also found that young red dwarf stars have more intense flares than older red dwarfs.'",
+        "reason": "Contains text and depicts a star rather than the required nebula."
+      },
+      {
+        "id": "v012",
+        "title": "James Webb Space Telescope: An Overview",
+        "seen": "An abstract geometric pattern resembling an internal structural or reflective metallic arrangement with dark and luminous sections.",
+        "reason": "Does not show an astronomical telescope observatory."
+      },
+      {
+        "id": "v014",
+        "title": "Gigantic Wave Discovered in Perseus Galaxy Cluster",
+        "seen": "A swirling, circular cosmic cloud of orange and red gas and dust surrounding a very bright, chaotic central core.",
+        "reason": "Does not show a complex galaxy cluster."
+      },
+      {
+        "id": "v021",
+        "title": "Cracking the Code of Faraway Worlds",
+        "seen": "An infrared spectrum graph with wavelength in microns on the horizontal axis and relative brightness on the vertical axis, featuring scattered yellow data points with error bars and a solid white model line. Text at the bottom indicates it is the Infrared Spectrum of HD 189733b by the Spitzer Space Telescope.",
+        "reason": "It is a graph with text, which does not fit."
+      },
+      {
+        "id": "v033",
+        "title": "Astronomers working at La Silla (ann12046a)",
+        "seen": "A wide-angle control room illuminated by red and green lighting, with two people seated at desks in front of multiple computer monitors displaying data.",
+        "reason": "Does not clearly show an astronomer at a desk focusing on the subject."
+      },
+      {
+        "id": "v049",
+        "title": "Roman Coronagraph Digging the Dark Hole",
+        "seen": "Three circular rings of data in orange and red color gradients, each showing speckled surface patterns against a black background.",
+        "reason": "Does not clearly depict starlight from a distant galaxy."
+      },
+      {
+        "id": "v051",
+        "title": "Space Science",
+        "seen": "An artistic painting titled 'Artist's View of Star Formation in the Early Universe' by Adolf Schaller, depicting wispy pink nebula clouds and young galactic structures.",
+        "reason": "It is an artwork with a title and text."
+      },
+      {
+        "id": "v063",
+        "title": "The cosmic distance ladder used by the Supernovae and H0 for the Equation of State (SH0ES) Collaboration to infer the Hubble constant H0",
+        "seen": "A complex multi-panel scientific chart displaying cosmic distance measurements using geometry, Cepheid variable stars, and Type Ia supernovae, with labeled axes and residual plots.",
+        "reason": "It is a complex scientific chart with too much text and labels."
+      },
+      {
+        "id": "v065",
+        "title": "Observable Universe logarithmic illustration (circular layout english annotations)",
+        "seen": "A circular logarithmic map of the observable universe centered on Earth and expanding outward to the cosmic microwave background and big bang at the outer edge.",
+        "reason": "It is a complex diagram with labels, which does not fit."
+      },
+      {
+        "id": "v079",
+        "title": "Observable Universe Logarithmic Map (horizontal layout english annotations)",
+        "seen": "A horizontal timeline graphic of the universe, starting with Earth on the far left and progressing through the solar system, Milky Way, distant galaxies, and the cosmic microwave background on the far right.",
+        "reason": "It is an infographic/timeline with labels."
+      },
+      {
+        "id": "v080",
+        "title": "Polluted White Dwarf (Artist's Concept)",
+        "seen": "An artist's conception of a planetary system with a large brown planet in the foreground and a distant star surrounded by a protoplanetary disk and orbiting debris.",
+        "reason": "Does not match a dense star field in a galaxy."
+      },
+      {
+        "id": "v083",
+        "title": "Kbc void",
+        "seen": "An abstract, wispy cosmic loop formation of glowing gas and light dots against a solid black background.",
+        "reason": "Does not fit a dark empty space void."
+      },
+      {
+        "id": "v088",
+        "title": "Dark Energy and Gravity: Yin and Yang of the Universe Artist Concept",
+        "seen": "An educational 3D digital illustration demonstrating spacetime curvature, with several spiral galaxies resting on a green warped grid beneath a purple grid ceiling.",
+        "reason": "It is a 3D digital illustration with a grid."
+      }
+    ],
+    "second_try": {
+      "tried": 13,
+      "kept": 1,
+      "seen": {
+        "v003": "This image shows a starry space nebula featuring shades of green, brown, and red. In the bottom left corner, there is a black rectangular box with the cyan text \"RUNAWA\".",
+        "v012": "This image shows a complex mechanical structure, possibly a spacecraft or laboratory equipment, viewed from underneath inside an enclosed facility with metal scaffolding and ladders.",
+        "v014": "This image shows a pie chart depicting the composition of the universe, with 75% dark energy in green, 21% dark matter in blue, and 4% normal matter in red.",
+        "v021": "This image shows the Pillars of Creation nebula in space, displaying tall, dark dusty columns surrounded by glowing greenish-blue gas and overlaid with several pink square markers.",
+        "v033": "This image shows two people walking outdoors on a sidewalk next to a large building with glass windows and a glass-covered walkway structure overhead.",
+        "v049": "This image shows an exoplanet with banded purple and pink atmospheric clouds next to a bright star in space. In the center, there is the white text \"PHOTOCHEMISTRY\".",
+        "v051": "This image shows several people working at computers in an office control room, wearing face masks and headsets. In the upper left corner, there is a blue banner that reads \"INGENUITY MARS HELICOPTER PHONES HOME\".",
+        "v063": "This image shows an infographic timeline explaining the formation of galaxies over billions of years, titled \"Hubble spectroscopically confirms farthest galaxy to date\", featuring axes, labels, and various galaxy illustrations.",
+        "v065": "This image shows a spiral galaxy against a black background of space, with a bright pinkish-red star-forming region on one side and a glowing blue-white core stretching outward.",
+        "v079": "This image shows a horizontal banner split into two sections: the top section is a dark blue field filled with tiny blue stars, and the bottom section displays a mottled pattern of red, yellow, and dark spots.",
+        "v080": "This image shows a deep red starry field in space with numerous faint stars and a white arrow pointing toward a slightly brighter object near the center.",
+        "v083": "This image shows a grayscale, abstract, bumpy spherical shape floating against a solid black background, resembling a viral capsid or a faceted celestial body.",
+        "v088": "This image shows a rocket lifting off from a launchpad at sunset, surrounded by a large cloud of bright orange and white smoke against a pale evening sky."
+      },
+      "rejected": [
+        {
+          "id": "v003",
+          "title": "Stars of Cepheus as Seen by NASA's Spitzer Space Telescope",
+          "seen": "This image shows a starry space nebula featuring shades of green, brown, and red. In the bottom left corner, there is a black rectangular box with the cyan text \"RUNAWA\".",
+          "reason": "The image has a watermark and text in the corner."
+        },
+        {
+          "id": "v012",
+          "title": "Vibration Testing of NASA's James Webb Space Telescope",
+          "seen": "This image shows a complex mechanical structure, possibly a spacecraft or laboratory equipment, viewed from underneath inside an enclosed facility with metal scaffolding and ladders.",
+          "reason": "It shows mechanical facility equipment instead of an astronomical telescope observatory."
+        },
+        {
+          "id": "v014",
+          "title": "KSC-04-S-00174",
+          "seen": "This image shows a pie chart depicting the composition of the universe, with 75% dark energy in green, 21% dark matter in blue, and 4% normal matter in red.",
+          "reason": "The chart does not match the required complex galaxy cluster topic."
+        },
+        {
+          "id": "v021",
+          "title": "James Webb Space Telescope\u2019s Multifaceted MIRI",
+          "seen": "This image shows the Pillars of Creation nebula in space, displaying tall, dark dusty columns surrounded by glowing greenish-blue gas and overlaid with several pink square markers.",
+          "reason": "The image is overlaid with square markers and does not match the redshift galaxy spectrum."
+        },
+        {
+          "id": "v033",
+          "title": "Planetary Defenders (Official NASA Trailer)",
+          "seen": "This image shows two people walking outdoors on a sidewalk next to a large building with glass windows and a glass-covered walkway structure overhead.",
+          "reason": "It shows people walking outside, not an astronomer at a desk."
+        },
+        {
+          "id": "v049",
+          "title": "How Do Stars Influence the Search for Life? We Asked a NASA Expert",
+          "seen": "This image shows an exoplanet with banded purple and pink atmospheric clouds next to a bright star in space. In the center, there is the white text \"PHOTOCHEMISTRY\".",
+          "reason": "The image contains prominent text in the center."
+        },
+        {
+          "id": "v051",
+          "title": "What the Webb Telescope Found Way Back in the Early Universe on This Week @NASA \u2013 July 7, 2023",
+          "seen": "This image shows several people working at computers in an office control room, wearing face masks and headsets. In the upper left corner, there is a blue banner that reads \"INGENUITY MARS HELICOPTER PHONES HOME\".",
+          "reason": "It shows a control room with a watermark banner, not early universe glowing plasma."
+        },
+        {
+          "id": "v063",
+          "title": "http://www.nasa.gov/feature/goddard/2016/hubble-team-breaks-cosmic-distance-record",
+          "seen": "This image shows an infographic timeline explaining the formation of galaxies over billions of years, titled \"Hubble spectroscopically confirms farthest galaxy to date\", featuring axes, labels, and various galaxy illustrations.",
+          "reason": "It is an infographic with extensive text and labels."
+        },
+        {
+          "id": "v079",
+          "title": "Hidden Patterns of Light Revealed by Spitzer",
+          "seen": "This image shows a horizontal banner split into two sections: the top section is a dark blue field filled with tiny blue stars, and the bottom section displays a mottled pattern of red, yellow, and dark spots.",
+          "reason": "It is a graphic representation with split sections rather than a proper depiction."
+        },
+        {
+          "id": "v080",
+          "title": "New Horizons Sees Pluto Sept. 21",
+          "seen": "This image shows a deep red starry field in space with numerous faint stars and a white arrow pointing toward a slightly brighter object near the center.",
+          "reason": "It includes an artificial white arrow pointing at an object."
+        },
+        {
+          "id": "v083",
+          "title": "Microgravity",
+          "seen": "This image shows a grayscale, abstract, bumpy spherical shape floating against a solid black background, resembling a viral capsid or a faceted celestial body.",
+          "reason": "It shows an abstract shape rather than dark empty space."
+        },
+        {
+          "id": "v088",
+          "title": "Nancy Grace Roman Space Telescope Launch",
+          "seen": "This image shows a rocket lifting off from a launchpad at sunset, surrounded by a large cloud of bright orange and white smoke against a pale evening sky.",
+          "reason": "It shows a rocket launch instead of dark energy cosmic expansion."
+        }
+      ],
+      "error": null
+    }
+  },
+  "music_record": {
+    "file": "music.wav",
+    "kind": "music",
+    "source": "wikimedia_commons",
+    "title": "Kevin MacLeod - Calmant",
+    "source_page": "https://commons.wikimedia.org/wiki/File:Kevin_MacLeod_-_Calmant.ogg",
+    "download_url": "https://upload.wikimedia.org/wikipedia/commons/3/3c/Kevin_MacLeod_-_Calmant.ogg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+    "licence": "CC BY 3.0",
+    "licence_url": "https://creativecommons.org/licenses/by/3.0",
+    "author": "Kevin MacLeod",
+    "attribution": "Music: \"Kevin MacLeod - Calmant\" by Kevin MacLeod, CC BY 3.0, via Wikimedia Commons. https://commons.wikimedia.org/wiki/File:Kevin_MacLeod_-_Calmant.ogg",
+    "downloaded": "2026-10-28",
+    "seconds": 204.1,
+    "path": "out/run/music/music.wav"
+  },
+  "thumbnail": {
+    "picture": "v002",
+    "text": "universe expanded while traveling",
+    "red_word": "expanded",
+    "seen": "A deep space image from the James Webb Space Telescope showing numerous distant galaxies and gravitational lensing arcs against a dark background.",
+    "picture_source": "https://commons.wikimedia.org/wiki/File:Webb%27s_First_Deep_Field.jpg"
+  },
+  "gate": {
+    "verdict": "PASS",
+    "not_pass": {}
+  },
+  "llm_calls": [
+    {
+      "name": "photo_pick",
+      "model": "gemma-4-31b-it",
+      "prompt_chars": 81230,
+      "images": 0,
+      "status": 429,
+      "attempt": 1,
+      "error": "{\n  \"error\": {\n    \"code\": 429,\n    \"message\": \"You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \\n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_input_token_count, limit: 16000, model: gemma-4-31b, description: Generate content input tokens per minute limit exceeded on Free Tier. See https://ai.google.dev/gemini-api/docs/rate-limits.\\nPlease retry in 52.915362048s.\",\n    \"status\": \"RESOURCE_EXHAUSTED\",\n    \"details\": [\n      {\n        \"@type\": \"type.googleapis.com/google.rpc.Help\",\n        \"links\": [\n          {\n            \"description\": \"Learn more about Gemini API quotas\",\n            \"url\": \"https://ai.google.dev/gemini-api/docs/rate-limits\"\n          }\n        ]\n      },\n      {\n        \"@type\": \"type.googleapis.com/google.rpc.QuotaFailure\",\n        \"violations\": [\n          {\n            \"description\": \"Generate content input tokens per minute limit exceeded on Free Tier. See https://ai.google.dev/gemini-api/docs/rate-limits.\",\n            \"quotaMetric\": \"generativelanguage.googleapis.com/generate_content_free_tier_input_token_count\",\n            \"quotaId\": \"GenerateContentInputTokensPerModelPerMinute-FreeTier\",\n            \"quotaDimensions\": {\n              \"model\": \"gemma-4-31b\",\n              \"location\": \"global\"\n            },\n        "
+    },
+    {
+      "name": "photo_pick",
+      "model": "gemini-3.5-flash-lite",
+      "prompt_chars": 81230,
+      "images": 0,
+      "status": 200,
+      "seconds": 3.2,
+      "attempts": 1,
+      "finish": "STOP",
+      "in_tokens": 20067,
+      "out_tokens": 841,
+      "thought_tokens": null
+    },
+    {
+      "name": "photo_describe",
+      "model": "gemini-3.5-flash-lite",
+      "prompt_chars": 321,
+      "images": 29,
+      "status": 200,
+      "seconds": 11.7,
+      "attempts": 1,
+      "finish": "STOP",
+      "in_tokens": 31766,
+      "out_tokens": 1403,
+      "thought_tokens": null
+    },
+    {
+      "name": "photo_verify",
+      "model": "gemini-3.5-flash-lite",
+      "prompt_chars": 9487,
+      "images": 0,
+      "status": 200,
+      "seconds": 11.8,
+      "attempts": 1,
+      "finish": "STOP",
+      "in_tokens": 1997,
+      "out_tokens": 2041,
+      "thought_tokens": null
+    },
+    {
+      "name": "photo_describe",
+      "model": "gemini-3.5-flash-lite",
+      "prompt_chars": 321,
+      "images": 13,
+      "status": 200,
+      "seconds": 8.1,
+      "attempts": 1,
+      "finish": "STOP",
+      "in_tokens": 14388,
+      "out_tokens": 732,
+      "thought_tokens": null
+    },
+    {
+      "name": "photo_verify",
+      "model": "gemini-3.5-flash-lite",
+      "prompt_chars": 5010,
+      "images": 0,
+      "status": 200,
+      "seconds": 4.9,
+      "attempts": 1,
+      "finish": "STOP",
+      "in_tokens": 1089,
+      "out_tokens": 1057,
+      "thought_tokens": null
+    },
+    {
+      "name": "drawing_describe",
+      "model": "gemini-3.5-flash-lite",
+      "prompt_chars": 321,
+      "images": 38,
+      "status": 200,
+      "seconds": 15.6,
+      "attempts": 1,
+      "finish": "STOP",
+      "in_tokens": 42064,
+      "out_tokens": 1768,
+      "thought_tokens": null
+    },
+    {
+      "name": "drawing_verify",
+      "model": "gemini-3.5-flash-lite",
+      "prompt_chars": 11903,
+      "images": 0,
+      "status": 200,
+      "seconds": 10.8,
+      "attempts": 1,
+      "finish": "STOP",
+      "in_tokens": 2544,
+      "out_tokens": 2520,
+      "thought_tokens": null
+    },
+    {
+      "name": "thumbnail",
+      "model": "gemini-3.5-flash-lite",
+      "prompt_chars": 10643,
+      "images": 0,
+      "status": 200,
+      "seconds": 6.8,
+      "attempts": 1,
+      "finish": "STOP",
+      "in_tokens": 2344,
+      "out_tokens": 35,
+      "thought_tokens": null
+    },
+    {
+      "name": "gate_editorial",
+      "model": "gemini-3.5-flash-lite",
+      "prompt_chars": 14334,
+      "images": 0,
+      "status": 200,
+      "seconds": 6.5,
+      "attempts": 1,
+      "finish": "STOP",
+      "in_tokens": 3452,
+      "out_tokens": 335,
+      "thought_tokens": null
+    }
+  ],
+  "llm_calls_ok_by_model": {
+    "gemini-3.5-flash-lite": 9
+  }
+}

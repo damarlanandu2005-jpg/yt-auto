@@ -1,0 +1,120 @@
+{
+  "images": [
+    {
+      "n": 1,
+      "seen": "A deep space image from the James Webb Space Telescope showing numerous distant galaxies and gravitational lensing arcs against a dark background."
+    },
+    {
+      "n": 2,
+      "seen": "An artist illustration of a blazing red dwarf star with intense solar flares erupting into space. Text at the top reads: 'Hubble also found that young red dwarf stars have more intense flares than older red dwarfs.'"
+    },
+    {
+      "n": 3,
+      "seen": "A detailed Hubble Space Telescope image of a magnificent barred spiral galaxy showing a bright central core and swirling dust lanes."
+    },
+    {
+      "n": 4,
+      "seen": "An abstract geometric pattern resembling an internal structural or reflective metallic arrangement with dark and luminous sections."
+    },
+    {
+      "n": 5,
+      "seen": "A swirling, circular cosmic cloud of orange and red gas and dust surrounding a very bright, chaotic central core."
+    },
+    {
+      "n": 6,
+      "seen": "A spiral galaxy viewed from above, displaying luminous pink star-forming regions along its winding arms and a bright central nucleus."
+    },
+    {
+      "n": 7,
+      "seen": "An infrared spectrum graph with wavelength in microns on the horizontal axis and relative brightness on the vertical axis, featuring scattered yellow data points with error bars and a solid white model line. Text at the bottom indicates it is the Infrared Spectrum of HD 189733b by the Spitzer Space Telescope."
+    },
+    {
+      "n": 8,
+      "seen": "A deep field image of the universe filled with countless faint galaxies and prominent gravitational lensing arcs curving around massive galaxy clusters."
+    },
+    {
+      "n": 9,
+      "seen": "Two interacting galaxies, known as the Antennae Galaxies, merging with sweeping tidal tails and bright pink clusters of newborn stars."
+    },
+    {
+      "n": 10,
+      "seen": "A night landscape showing tall silhouettes of grass and vegetation in the foreground beneath a starry night sky with a few faint light streaks."
+    },
+    {
+      "n": 11,
+      "seen": "A wide-angle control room illuminated by red and green lighting, with two people seated at desks in front of multiple computer monitors displaying data."
+    },
+    {
+      "n": 12,
+      "seen": "A nearly edge-on spiral galaxy glowing with densely packed stars against a stark black cosmic backdrop dotted with distant background galaxies."
+    },
+    {
+      "n": 13,
+      "seen": "A close-up view of optical laboratory equipment on an optical bench, including lenses, mounts, and a red laser alignment system."
+    },
+    {
+      "n": 14,
+      "seen": "Three circular rings of data in orange and red color gradients, each showing speckled surface patterns against a black background."
+    },
+    {
+      "n": 15,
+      "seen": "An artistic painting titled 'Artist's View of Star Formation in the Early Universe' by Adolf Schaller, depicting wispy pink nebula clouds and young galactic structures."
+    },
+    {
+      "n": 16,
+      "seen": "An oval-shaped all-sky map of the cosmic microwave background showing tiny temperature fluctuations as orange, yellow, and blue patches."
+    },
+    {
+      "n": 17,
+      "seen": "A deep space Hubble image packed with diverse galaxies of varying shapes, sizes, and colors scattered across the black void of space."
+    },
+    {
+      "n": 18,
+      "seen": "A complex multi-panel scientific chart displaying cosmic distance measurements using geometry, Cepheid variable stars, and Type Ia supernovae, with labeled axes and residual plots."
+    },
+    {
+      "n": 19,
+      "seen": "A circular logarithmic map of the observable universe centered on Earth and expanding outward to the cosmic microwave background and big bang at the outer edge."
+    },
+    {
+      "n": 20,
+      "seen": "A panoramic night photograph of astronomical observatories under a dark sky crossed by a glowing arch of the Milky Way galaxy and zodiacal light."
+    },
+    {
+      "n": 21,
+      "seen": "A horizontal timeline graphic of the universe, starting with Earth on the far left and progressing through the solar system, Milky Way, distant galaxies, and the cosmic microwave background on the far right."
+    },
+    {
+      "n": 22,
+      "seen": "An artist's conception of a planetary system with a large brown planet in the foreground and a distant star surrounded by a protoplanetary disk and orbiting debris."
+    },
+    {
+      "n": 23,
+      "seen": "An overhead satellite photograph of a coastal landscape showing a sharp headland, sandy beaches, and deep blue ocean water."
+    },
+    {
+      "n": 24,
+      "seen": "An abstract, wispy cosmic loop formation of glowing gas and light dots against a solid black background."
+    },
+    {
+      "n": 25,
+      "seen": "A dense cluster of yellowish and white galaxies photographed by the James Webb Space Telescope, displaying numerous elliptical and spiral structures."
+    },
+    {
+      "n": 26,
+      "seen": "An educational 3D digital illustration demonstrating spacetime curvature, with several spiral galaxies resting on a green warped grid beneath a purple grid ceiling."
+    },
+    {
+      "n": 27,
+      "seen": "A side-by-side comparison of two galaxy cluster fields, showing numerous red and yellow galaxies under different filter enhancements."
+    },
+    {
+      "n": 28,
+      "seen": "A spiral galaxy with a glowing central nucleus and prominent pinkish-red star-forming arms, set against a rich field of background stars."
+    },
+    {
+      "n": 29,
+      "seen": "The Hubble Ultra Deep Field showing a vast array of faint, distant galaxies scattered across the dark expanse of space."
+    }
+  ]
+}

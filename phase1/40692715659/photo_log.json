@@ -1,0 +1,245 @@
+{
+ "card_number_fixes": [],
+ "photo_slots": 33,
+ "candidates": {
+  "v002": 11,
+  "v003": 12,
+  "v004": 12,
+  "v005": 12,
+  "v008": 12,
+  "v012": 12,
+  "v014": 12,
+  "v018": 12,
+  "v021": 11,
+  "v023": 12,
+  "v025": 12,
+  "v032": 12,
+  "v033": 12,
+  "v037": 12,
+  "v039": 12,
+  "v043": 12,
+  "v048": 12,
+  "v049": 12,
+  "v051": 12,
+  "v052": 10,
+  "v057": 10,
+  "v063": 12,
+  "v065": 9,
+  "v073": 4,
+  "v079": 12,
+  "v080": 9,
+  "v081": 12,
+  "v083": 9,
+  "v086": 8,
+  "v088": 12,
+  "v090": 12,
+  "v094": 9,
+  "v095": 12
+ },
+ "downloaded": 29,
+ "seen": {
+  "v002": "A deep space image from the James Webb Space Telescope showing numerous distant galaxies and gravitational lensing arcs against a dark background.",
+  "v003": "An artist illustration of a blazing red dwarf star with intense solar flares erupting into space. Text at the top reads: 'Hubble also found that young red dwarf stars have more intense flares than older red dwarfs.'",
+  "v004": "A detailed Hubble Space Telescope image of a magnificent barred spiral galaxy showing a bright central core and swirling dust lanes.",
+  "v012": "An abstract geometric pattern resembling an internal structural or reflective metallic arrangement with dark and luminous sections.",
+  "v014": "A swirling, circular cosmic cloud of orange and red gas and dust surrounding a very bright, chaotic central core.",
+  "v018": "A spiral galaxy viewed from above, displaying luminous pink star-forming regions along its winding arms and a bright central nucleus.",
+  "v021": "An infrared spectrum graph with wavelength in microns on the horizontal axis and relative brightness on the vertical axis, featuring scattered yellow data points with error bars and a solid white model line. Text at the bottom indicates it is the Infrared Spectrum of HD 189733b by the Spitzer Space Telescope.",
+  "v023": "A deep field image of the universe filled with countless faint galaxies and prominent gravitational lensing arcs curving around massive galaxy clusters.",
+  "v025": "Two interacting galaxies, known as the Antennae Galaxies, merging with sweeping tidal tails and bright pink clusters of newborn stars.",
+  "v032": "A night landscape showing tall silhouettes of grass and vegetation in the foreground beneath a starry night sky with a few faint light streaks.",
+  "v033": "A wide-angle control room illuminated by red and green lighting, with two people seated at desks in front of multiple computer monitors displaying data.",
+  "v037": "A nearly edge-on spiral galaxy glowing with densely packed stars against a stark black cosmic backdrop dotted with distant background galaxies.",
+  "v048": "A close-up view of optical laboratory equipment on an optical bench, including lenses, mounts, and a red laser alignment system.",
+  "v049": "Three circular rings of data in orange and red color gradients, each showing speckled surface patterns against a black background.",
+  "v051": "An artistic painting titled 'Artist's View of Star Formation in the Early Universe' by Adolf Schaller, depicting wispy pink nebula clouds and young galactic structures.",
+  "v052": "An oval-shaped all-sky map of the cosmic microwave background showing tiny temperature fluctuations as orange, yellow, and blue patches.",
+  "v057": "A deep space Hubble image packed with diverse galaxies of varying shapes, sizes, and colors scattered across the black void of space.",
+  "v063": "A complex multi-panel scientific chart displaying cosmic distance measurements using geometry, Cepheid variable stars, and Type Ia supernovae, with labeled axes and residual plots.",
+  "v065": "A circular logarithmic map of the observable universe centered on Earth and expanding outward to the cosmic microwave background and big bang at the outer edge.",
+  "v073": "A panoramic night photograph of astronomical observatories under a dark sky crossed by a glowing arch of the Milky Way galaxy and zodiacal light.",
+  "v079": "A horizontal timeline graphic of the universe, starting with Earth on the far left and progressing through the solar system, Milky Way, distant galaxies, and the cosmic microwave background on the far right.",
+  "v080": "An artist's conception of a planetary system with a large brown planet in the foreground and a distant star surrounded by a protoplanetary disk and orbiting debris.",
+  "v081": "An overhead satellite photograph of a coastal landscape showing a sharp headland, sandy beaches, and deep blue ocean water.",
+  "v083": "An abstract, wispy cosmic loop formation of glowing gas and light dots against a solid black background.",
+  "v086": "A dense cluster of yellowish and white galaxies photographed by the James Webb Space Telescope, displaying numerous elliptical and spiral structures.",
+  "v088": "An educational 3D digital illustration demonstrating spacetime curvature, with several spiral galaxies resting on a green warped grid beneath a purple grid ceiling.",
+  "v090": "A side-by-side comparison of two galaxy cluster fields, showing numerous red and yellow galaxies under different filter enhancements.",
+  "v094": "A spiral galaxy with a glowing central nucleus and prominent pinkish-red star-forming arms, set against a rich field of background stars.",
+  "v095": "The Hubble Ultra Deep Field showing a vast array of faint, distant galaxies scattered across the dark expanse of space."
+ },
+ "rejected_after_looking": [
+  {
+   "id": "v003",
+   "title": "Hubble's 29th Anniversary",
+   "seen": "An artist illustration of a blazing red dwarf star with intense solar flares erupting into space. Text at the top reads: 'Hubble also found that young red dwarf stars have more intense flares than older red dwarfs.'",
+   "reason": "Contains text and depicts a star rather than the required nebula."
+  },
+  {
+   "id": "v012",
+   "title": "James Webb Space Telescope: An Overview",
+   "seen": "An abstract geometric pattern resembling an internal structural or reflective metallic arrangement with dark and luminous sections.",
+   "reason": "Does not show an astronomical telescope observatory."
+  },
+  {
+   "id": "v014",
+   "title": "Gigantic Wave Discovered in Perseus Galaxy Cluster",
+   "seen": "A swirling, circular cosmic cloud of orange and red gas and dust surrounding a very bright, chaotic central core.",
+   "reason": "Does not show a complex galaxy cluster."
+  },
+  {
+   "id": "v021",
+   "title": "Cracking the Code of Faraway Worlds",
+   "seen": "An infrared spectrum graph with wavelength in microns on the horizontal axis and relative brightness on the vertical axis, featuring scattered yellow data points with error bars and a solid white model line. Text at the bottom indicates it is the Infrared Spectrum of HD 189733b by the Spitzer Space Telescope.",
+   "reason": "It is a graph with text, which does not fit."
+  },
+  {
+   "id": "v033",
+   "title": "Astronomers working at La Silla (ann12046a)",
+   "seen": "A wide-angle control room illuminated by red and green lighting, with two people seated at desks in front of multiple computer monitors displaying data.",
+   "reason": "Does not clearly show an astronomer at a desk focusing on the subject."
+  },
+  {
+   "id": "v049",
+   "title": "Roman Coronagraph Digging the Dark Hole",
+   "seen": "Three circular rings of data in orange and red color gradients, each showing speckled surface patterns against a black background.",
+   "reason": "Does not clearly depict starlight from a distant galaxy."
+  },
+  {
+   "id": "v051",
+   "title": "Space Science",
+   "seen": "An artistic painting titled 'Artist's View of Star Formation in the Early Universe' by Adolf Schaller, depicting wispy pink nebula clouds and young galactic structures.",
+   "reason": "It is an artwork with a title and text."
+  },
+  {
+   "id": "v063",
+   "title": "The cosmic distance ladder used by the Supernovae and H0 for the Equation of State (SH0ES) Collaboration to infer the Hubble constant H0",
+   "seen": "A complex multi-panel scientific chart displaying cosmic distance measurements using geometry, Cepheid variable stars, and Type Ia supernovae, with labeled axes and residual plots.",
+   "reason": "It is a complex scientific chart with too much text and labels."
+  },
+  {
+   "id": "v065",
+   "title": "Observable Universe logarithmic illustration (circular layout english annotations)",
+   "seen": "A circular logarithmic map of the observable universe centered on Earth and expanding outward to the cosmic microwave background and big bang at the outer edge.",
+   "reason": "It is a complex diagram with labels, which does not fit."
+  },
+  {
+   "id": "v079",
+   "title": "Observable Universe Logarithmic Map (horizontal layout english annotations)",
+   "seen": "A horizontal timeline graphic of the universe, starting with Earth on the far left and progressing through the solar system, Milky Way, distant galaxies, and the cosmic microwave background on the far right.",
+   "reason": "It is an infographic/timeline with labels."
+  },
+  {
+   "id": "v080",
+   "title": "Polluted White Dwarf (Artist's Concept)",
+   "seen": "An artist's conception of a planetary system with a large brown planet in the foreground and a distant star surrounded by a protoplanetary disk and orbiting debris.",
+   "reason": "Does not match a dense star field in a galaxy."
+  },
+  {
+   "id": "v083",
+   "title": "Kbc void",
+   "seen": "An abstract, wispy cosmic loop formation of glowing gas and light dots against a solid black background.",
+   "reason": "Does not fit a dark empty space void."
+  },
+  {
+   "id": "v088",
+   "title": "Dark Energy and Gravity: Yin and Yang of the Universe Artist Concept",
+   "seen": "An educational 3D digital illustration demonstrating spacetime curvature, with several spiral galaxies resting on a green warped grid beneath a purple grid ceiling.",
+   "reason": "It is a 3D digital illustration with a grid."
+  }
+ ],
+ "second_try": {
+  "tried": 13,
+  "kept": 1,
+  "seen": {
+   "v003": "This image shows a starry space nebula featuring shades of green, brown, and red. In the bottom left corner, there is a black rectangular box with the cyan text \"RUNAWA\".",
+   "v012": "This image shows a complex mechanical structure, possibly a spacecraft or laboratory equipment, viewed from underneath inside an enclosed facility with metal scaffolding and ladders.",
+   "v014": "This image shows a pie chart depicting the composition of the universe, with 75% dark energy in green, 21% dark matter in blue, and 4% normal matter in red.",
+   "v021": "This image shows the Pillars of Creation nebula in space, displaying tall, dark dusty columns surrounded by glowing greenish-blue gas and overlaid with several pink square markers.",
+   "v033": "This image shows two people walking outdoors on a sidewalk next to a large building with glass windows and a glass-covered walkway structure overhead.",
+   "v049": "This image shows an exoplanet with banded purple and pink atmospheric clouds next to a bright star in space. In the center, there is the white text \"PHOTOCHEMISTRY\".",
+   "v051": "This image shows several people working at computers in an office control room, wearing face masks and headsets. In the upper left corner, there is a blue banner that reads \"INGENUITY MARS HELICOPTER PHONES HOME\".",
+   "v063": "This image shows an infographic timeline explaining the formation of galaxies over billions of years, titled \"Hubble spectroscopically confirms farthest galaxy to date\", featuring axes, labels, and various galaxy illustrations.",
+   "v065": "This image shows a spiral galaxy against a black background of space, with a bright pinkish-red star-forming region on one side and a glowing blue-white core stretching outward.",
+   "v079": "This image shows a horizontal banner split into two sections: the top section is a dark blue field filled with tiny blue stars, and the bottom section displays a mottled pattern of red, yellow, and dark spots.",
+   "v080": "This image shows a deep red starry field in space with numerous faint stars and a white arrow pointing toward a slightly brighter object near the center.",
+   "v083": "This image shows a grayscale, abstract, bumpy spherical shape floating against a solid black background, resembling a viral capsid or a faceted celestial body.",
+   "v088": "This image shows a rocket lifting off from a launchpad at sunset, surrounded by a large cloud of bright orange and white smoke against a pale evening sky."
+  },
+  "rejected": [
+   {
+    "id": "v003",
+    "title": "Stars of Cepheus as Seen by NASA's Spitzer Space Telescope",
+    "seen": "This image shows a starry space nebula featuring shades of green, brown, and red. In the bottom left corner, there is a black rectangular box with the cyan text \"RUNAWA\".",
+    "reason": "The image has a watermark and text in the corner."
+   },
+   {
+    "id": "v012",
+    "title": "Vibration Testing of NASA's James Webb Space Telescope",
+    "seen": "This image shows a complex mechanical structure, possibly a spacecraft or laboratory equipment, viewed from underneath inside an enclosed facility with metal scaffolding and ladders.",
+    "reason": "It shows mechanical facility equipment instead of an astronomical telescope observatory."
+   },
+   {
+    "id": "v014",
+    "title": "KSC-04-S-00174",
+    "seen": "This image shows a pie chart depicting the composition of the universe, with 75% dark energy in green, 21% dark matter in blue, and 4% normal matter in red.",
+    "reason": "The chart does not match the required complex galaxy cluster topic."
+   },
+   {
+    "id": "v021",
+    "title": "James Webb Space Telescope’s Multifaceted MIRI",
+    "seen": "This image shows the Pillars of Creation nebula in space, displaying tall, dark dusty columns surrounded by glowing greenish-blue gas and overlaid with several pink square markers.",
+    "reason": "The image is overlaid with square markers and does not match the redshift galaxy spectrum."
+   },
+   {
+    "id": "v033",
+    "title": "Planetary Defenders (Official NASA Trailer)",
+    "seen": "This image shows two people walking outdoors on a sidewalk next to a large building with glass windows and a glass-covered walkway structure overhead.",
+    "reason": "It shows people walking outside, not an astronomer at a desk."
+   },
+   {
+    "id": "v049",
+    "title": "How Do Stars Influence the Search for Life? We Asked a NASA Expert",
+    "seen": "This image shows an exoplanet with banded purple and pink atmospheric clouds next to a bright star in space. In the center, there is the white text \"PHOTOCHEMISTRY\".",
+    "reason": "The image contains prominent text in the center."
+   },
+   {
+    "id": "v051",
+    "title": "What the Webb Telescope Found Way Back in the Early Universe on This Week @NASA – July 7, 2023",
+    "seen": "This image shows several people working at computers in an office control room, wearing face masks and headsets. In the upper left corner, there is a blue banner that reads \"INGENUITY MARS HELICOPTER PHONES HOME\".",
+    "reason": "It shows a control room with a watermark banner, not early universe glowing plasma."
+   },
+   {
+    "id": "v063",
+    "title": "http://www.nasa.gov/feature/goddard/2016/hubble-team-breaks-cosmic-distance-record",
+    "seen": "This image shows an infographic timeline explaining the formation of galaxies over billions of years, titled \"Hubble spectroscopically confirms farthest galaxy to date\", featuring axes, labels, and various galaxy illustrations.",
+    "reason": "It is an infographic with extensive text and labels."
+   },
+   {
+    "id": "v079",
+    "title": "Hidden Patterns of Light Revealed by Spitzer",
+    "seen": "This image shows a horizontal banner split into two sections: the top section is a dark blue field filled with tiny blue stars, and the bottom section displays a mottled pattern of red, yellow, and dark spots.",
+    "reason": "It is a graphic representation with split sections rather than a proper depiction."
+   },
+   {
+    "id": "v080",
+    "title": "New Horizons Sees Pluto Sept. 21",
+    "seen": "This image shows a deep red starry field in space with numerous faint stars and a white arrow pointing toward a slightly brighter object near the center.",
+    "reason": "It includes an artificial white arrow pointing at an object."
+   },
+   {
+    "id": "v083",
+    "title": "Microgravity",
+    "seen": "This image shows a grayscale, abstract, bumpy spherical shape floating against a solid black background, resembling a viral capsid or a faceted celestial body.",
+    "reason": "It shows an abstract shape rather than dark empty space."
+   },
+   {
+    "id": "v088",
+    "title": "Nancy Grace Roman Space Telescope Launch",
+    "seen": "This image shows a rocket lifting off from a launchpad at sunset, surrounded by a large cloud of bright orange and white smoke against a pale evening sky.",
+    "reason": "It shows a rocket launch instead of dark energy cosmic expansion."
+   }
+  ],
+  "error": null
+ }
+}

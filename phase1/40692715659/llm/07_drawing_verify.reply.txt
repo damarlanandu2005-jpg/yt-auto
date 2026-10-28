@@ -1,0 +1,232 @@
+{
+  "checks": [
+    {
+      "n": 1,
+      "seen": "A bright red circular dot with radiating white light streaks extending upwards and to the right against a solid black background.",
+      "fits": true,
+      "reason": "Shows a light beam or photon in space."
+    },
+    {
+      "n": 2,
+      "seen": "A glowing red circular center surrounded by a bright white ring and curved white orbital lines against a black background.",
+      "fits": true,
+      "reason": "Shows a glowing sphere representing the horizon."
+    },
+    {
+      "n": 3,
+      "seen": "A hand-drawn white wireframe sphere with a shaded upper white patch and a horizontal measurement axis across the middle, set against a black background.",
+      "fits": true,
+      "reason": "Shows a sphere with a measurement axis."
+    },
+    {
+      "n": 4,
+      "seen": "Two stylized white and red powerboats moving across a black background, leaving white frothy wakes behind them.",
+      "fits": true,
+      "reason": "Shows speedboats as requested by narration."
+    },
+    {
+      "n": 5,
+      "seen": "An abstract, chaotic cosmic explosion with red and white radiating lines, scattered white dots, and irregular white nebular shapes against a black background.",
+      "fits": true,
+      "reason": "Shows galaxies flying apart from an explosion."
+    },
+    {
+      "n": 6,
+      "seen": "Two sketched gray and white celestial bodies with craters, floating on the left and right sides of a vast black background.",
+      "fits": true,
+      "reason": "Shows two celestial bodies in space."
+    },
+    {
+      "n": 7,
+      "seen": "A hand-drawn white rectangular grid over a black background with several faint red vertical markings scattered across it.",
+      "fits": true,
+      "reason": "Shows a flexible grid."
+    },
+    {
+      "n": 8,
+      "seen": "A hand-drawn white wireframe perspective view of an enclosed space with a grid floor and two towering grid structures on the left and right.",
+      "fits": true,
+      "reason": "Shows a grid structure."
+    },
+    {
+      "n": 9,
+      "seen": "Two planetary objects with white rings floating in space above a hand-drawn white grid floor against a black background.",
+      "fits": true,
+      "reason": "Shows galaxies or planets on a grid."
+    },
+    {
+      "n": 10,
+      "seen": "A small white sphere and a larger red sphere positioned above a long, thin, stylized white horizontal object with textured ends, against a black background.",
+      "fits": true,
+      "reason": "Shows dots on a line representing a sheet."
+    },
+    {
+      "n": 11,
+      "seen": "A long white hand-drawn measuring tape floating horizontally across a black background, with numbers and markings and a single red highlighted section near the center.",
+      "fits": true,
+      "reason": "Shows a measuring tape/ruler."
+    },
+    {
+      "n": 12,
+      "seen": "A detailed, hand-drawn ant crawling along a curved white line against a solid black background.",
+      "fits": true,
+      "reason": "Shows an ant on a line."
+    },
+    {
+      "n": 13,
+      "seen": "A central red dot with a dense burst of white radiating lines and star-like particles against a solid black background.",
+      "fits": true,
+      "reason": "Shows a light beam representation."
+    },
+    {
+      "n": 14,
+      "seen": "A hand-drawn white line structure resembling a fence at the bottom, beneath a bright white and red energy burst with radiating lines against a black background.",
+      "fits": true,
+      "reason": "Shows a light ray with structure."
+    },
+    {
+      "n": 15,
+      "seen": "A massive, explosive burst of countless white radiating streaks surrounding a central red dot against a black background.",
+      "fits": true,
+      "reason": "Shows an energetic burst in space."
+    },
+    {
+      "n": 16,
+      "seen": "A tiny red dot at the center of a stylized white four-pointed star shape, with two large white curved orbital arcs sweeping across the right side on a black background.",
+      "fits": true,
+      "reason": "Shows light moving through curved space."
+    },
+    {
+      "n": 17,
+      "seen": "A hand-drawn white grid pattern over a black background filled with scattered white stars and a single red circular dot in the upper portion.",
+      "fits": true,
+      "reason": "Shows a cosmic grid with stars."
+    },
+    {
+      "n": 18,
+      "seen": "A hand-drawn planet with white continents and a black ocean, encircled by white rings and a mechanical-looking white device attached to its side.",
+      "fits": true,
+      "reason": "Shows a planet with rings."
+    },
+    {
+      "n": 19,
+      "seen": "A stylized blue and white globe of Earth against a black background, with a small red pin marking a location on the upper right edge.",
+      "fits": true,
+      "reason": "Shows a blue planet (Earth)."
+    },
+    {
+      "n": 20,
+      "seen": "A hand-drawn white circular outline sketch centered against a solid black background.",
+      "fits": true,
+      "reason": "Shows a circle."
+    },
+    {
+      "n": 21,
+      "seen": "Four stylized, sketched spherical objects of different sizes clustered together, with one large sphere featuring a textured red area against a black background.",
+      "fits": true,
+      "reason": "Shows overlapping spheres."
+    },
+    {
+      "n": 22,
+      "seen": "An abstract, irregular nebular cloud with wavy white tendrils and a central red and white swirling vortex against a black background filled with tiny stars.",
+      "fits": true,
+      "reason": "Shows a nebula in space."
+    },
+    {
+      "n": 23,
+      "seen": "A bright central red and white circular core with white connecting tendrils extending outward to various smaller white spheres, surrounded by tiny stars on a black background.",
+      "fits": true,
+      "reason": "Shows a galaxy cluster network."
+    },
+    {
+      "n": 24,
+      "seen": "A vast field of countless tiny white stars and specks, with a thin white curved line resembling a horizon running across the bottom and two tiny red dots near the top center.",
+      "fits": true,
+      "reason": "Shows a star field."
+    },
+    {
+      "n": 25,
+      "seen": "A classic white refracting telescope mounted on a tripod against a solid black background, shown in a clean line-art style.",
+      "fits": true,
+      "reason": "Shows an astronomical telescope."
+    },
+    {
+      "n": 26,
+      "seen": "A complex, circular celestial map or atomic model featuring a central red dot, multiple concentric white orbital rings, and scattered star-like particles on a black background.",
+      "fits": true,
+      "reason": "Shows a celestial model."
+    },
+    {
+      "n": 27,
+      "seen": "A circular telescope view showing a long, wavy, glowing white cosmic jet or filament extending diagonally across a starry black background from a central red dot.",
+      "fits": true,
+      "reason": "Shows a telescope view with a cosmic jet."
+    },
+    {
+      "n": 28,
+      "seen": "A person sitting at a desk indoors, looking through a large refracting telescope directed upward against a black background.",
+      "fits": true,
+      "reason": "Shows an astronomer at a telescope."
+    },
+    {
+      "n": 29,
+      "seen": "A diagonal cosmic stream of wavy white lines and particles converging on a central red glowing core against a black background.",
+      "fits": true,
+      "reason": "Shows galaxy filaments."
+    },
+    {
+      "n": 30,
+      "seen": "A tilted spiral galaxy with a bright white core, surrounded by numerous surrounding white stars and smaller celestial objects against a black background.",
+      "fits": true,
+      "reason": "Shows a spiral galaxy."
+    },
+    {
+      "n": 31,
+      "seen": "A horizontal cluster of white stars and glowing specks with a central red burst of light radiating sharp lines against a black background.",
+      "fits": true,
+      "reason": "Shows starlight from a galaxy."
+    },
+    {
+      "n": 32,
+      "seen": "A bright white starburst or splatter pattern with radiating jagged lines positioned on the lower right against a black background with a few scattered white dots.",
+      "fits": true,
+      "reason": "Shows glowing plasma or starburst."
+    },
+    {
+      "n": 33,
+      "seen": "A detailed, intricate circular technical dial or radar-like interface with concentric white measurement rings, grid lines, numbers, and a red center.",
+      "fits": true,
+      "reason": "Shows a circular cosmic grid/dial."
+    },
+    {
+      "n": 34,
+      "seen": "A complex concentric array of white orbital rings, curves, and scattered white dots swirling around a central red dot against a black background.",
+      "fits": true,
+      "reason": "Shows a universe graphic representation."
+    },
+    {
+      "n": 35,
+      "seen": "A dense starfield in deep space featuring a central red dot with fine white radiating lines extending outward like a cosmic burst.",
+      "fits": true,
+      "reason": "Shows a dense star field."
+    },
+    {
+      "n": 36,
+      "seen": "A solid black screen with no visible shapes or objects.",
+      "fits": false,
+      "reason": "Shows only a blank screen, missing the required content."
+    },
+    {
+      "n": 37,
+      "seen": "A minimalist black and white abstract sketch showing a few vertical parallel lines intersected by a single horizontal line against a light gray background.",
+      "fits": false,
+      "reason": "Too abstract, lacks recognisable objects representing the narration."
+    },
+    {
+      "n": 38,
+      "seen": "A swirling abstract vortex pattern composed of gray and white concentric rings with vibrant red accents, surrounded by scattered white and red dots against a black background.",
+      "fits": true,
+      "reason": "Shows a vortex representing cosmic expansion."
+    }
+  ]
+}

@@ -1,0 +1,178 @@
+{
+  "checks": [
+    {
+      "n": 1,
+      "seen": "A deep space image from the James Webb Space Telescope showing numerous distant galaxies and gravitational lensing arcs against a dark background.",
+      "fits": true,
+      "reason": "The image clearly shows a deep field galaxy cluster fitting the narration."
+    },
+    {
+      "n": 2,
+      "seen": "An artist illustration of a blazing red dwarf star with intense solar flares erupting into space. Text at the top reads: 'Hubble also found that young red dwarf stars have more intense flares than older red dwarfs.'",
+      "fits": false,
+      "reason": "Contains text and depicts a star rather than the required nebula."
+    },
+    {
+      "n": 3,
+      "seen": "A detailed Hubble Space Telescope image of a magnificent barred spiral galaxy showing a bright central core and swirling dust lanes.",
+      "fits": true,
+      "reason": "Fits the required spiral galaxy."
+    },
+    {
+      "n": 4,
+      "seen": "An abstract geometric pattern resembling an internal structural or reflective metallic arrangement with dark and luminous sections.",
+      "fits": false,
+      "reason": "Does not show an astronomical telescope observatory."
+    },
+    {
+      "n": 5,
+      "seen": "A swirling, circular cosmic cloud of orange and red gas and dust surrounding a very bright, chaotic central core.",
+      "fits": false,
+      "reason": "Does not show a complex galaxy cluster."
+    },
+    {
+      "n": 6,
+      "seen": "A spiral galaxy viewed from above, displaying luminous pink star-forming regions along its winding arms and a bright central nucleus.",
+      "fits": true,
+      "reason": "Clearly shows spiral galaxy arms."
+    },
+    {
+      "n": 7,
+      "seen": "An infrared spectrum graph with wavelength in microns on the horizontal axis and relative brightness on the vertical axis, featuring scattered yellow data points with error bars and a solid white model line. Text at the bottom indicates it is the Infrared Spectrum of HD 189733b by the Spitzer Space Telescope.",
+      "fits": false,
+      "reason": "It is a graph with text, which does not fit."
+    },
+    {
+      "n": 8,
+      "seen": "A deep field image of the universe filled with countless faint galaxies and prominent gravitational lensing arcs curving around massive galaxy clusters.",
+      "fits": true,
+      "reason": "Fits the deep space galaxies requirement."
+    },
+    {
+      "n": 9,
+      "seen": "Two interacting galaxies, known as the Antennae Galaxies, merging with sweeping tidal tails and bright pink clusters of newborn stars.",
+      "fits": true,
+      "reason": "Clearly depicts colliding galaxies."
+    },
+    {
+      "n": 10,
+      "seen": "A night landscape showing tall silhouettes of grass and vegetation in the foreground beneath a starry night sky with a few faint light streaks.",
+      "fits": true,
+      "reason": "Fits the starry night sky requirement."
+    },
+    {
+      "n": 11,
+      "seen": "A wide-angle control room illuminated by red and green lighting, with two people seated at desks in front of multiple computer monitors displaying data.",
+      "fits": false,
+      "reason": "Does not clearly show an astronomer at a desk focusing on the subject."
+    },
+    {
+      "n": 12,
+      "seen": "A nearly edge-on spiral galaxy glowing with densely packed stars against a stark black cosmic backdrop dotted with distant background galaxies.",
+      "fits": true,
+      "reason": "Fits the isolated spiral galaxy."
+    },
+    {
+      "n": 13,
+      "seen": "A close-up view of optical laboratory equipment on an optical bench, including lenses, mounts, and a red laser alignment system.",
+      "fits": true,
+      "reason": "Clearly shows a laser beam in a laboratory."
+    },
+    {
+      "n": 14,
+      "seen": "Three circular rings of data in orange and red color gradients, each showing speckled surface patterns against a black background.",
+      "fits": false,
+      "reason": "Does not clearly depict starlight from a distant galaxy."
+    },
+    {
+      "n": 15,
+      "seen": "An artistic painting titled 'Artist's View of Star Formation in the Early Universe' by Adolf Schaller, depicting wispy pink nebula clouds and young galactic structures.",
+      "fits": false,
+      "reason": "It is an artwork with a title and text."
+    },
+    {
+      "n": 16,
+      "seen": "An oval-shaped all-sky map of the cosmic microwave background showing tiny temperature fluctuations as orange, yellow, and blue patches.",
+      "fits": true,
+      "reason": "Fits the cosmic microwave background map."
+    },
+    {
+      "n": 17,
+      "seen": "A deep space Hubble image packed with diverse galaxies of varying shapes, sizes, and colors scattered across the black void of space.",
+      "fits": true,
+      "reason": "Fits the deep field galaxy view."
+    },
+    {
+      "n": 18,
+      "seen": "A complex multi-panel scientific chart displaying cosmic distance measurements using geometry, Cepheid variable stars, and Type Ia supernovae, with labeled axes and residual plots.",
+      "fits": false,
+      "reason": "It is a complex scientific chart with too much text and labels."
+    },
+    {
+      "n": 19,
+      "seen": "A circular logarithmic map of the observable universe centered on Earth and expanding outward to the cosmic microwave background and big bang at the outer edge.",
+      "fits": false,
+      "reason": "It is a complex diagram with labels, which does not fit."
+    },
+    {
+      "n": 20,
+      "seen": "A panoramic night photograph of astronomical observatories under a dark sky crossed by a glowing arch of the Milky Way galaxy and zodiacal light.",
+      "fits": true,
+      "reason": "Fits the full starry night sky dome."
+    },
+    {
+      "n": 21,
+      "seen": "A horizontal timeline graphic of the universe, starting with Earth on the far left and progressing through the solar system, Milky Way, distant galaxies, and the cosmic microwave background on the far right.",
+      "fits": false,
+      "reason": "It is an infographic/timeline with labels."
+    },
+    {
+      "n": 22,
+      "seen": "An artist's conception of a planetary system with a large brown planet in the foreground and a distant star surrounded by a protoplanetary disk and orbiting debris.",
+      "fits": false,
+      "reason": "Does not match a dense star field in a galaxy."
+    },
+    {
+      "n": 23,
+      "seen": "An overhead satellite photograph of a coastal landscape showing a sharp headland, sandy beaches, and deep blue ocean water.",
+      "fits": true,
+      "reason": "Fits the sandy beach on Earth description."
+    },
+    {
+      "n": 24,
+      "seen": "An abstract, wispy cosmic loop formation of glowing gas and light dots against a solid black background.",
+      "fits": false,
+      "reason": "Does not fit a dark empty space void."
+    },
+    {
+      "n": 25,
+      "seen": "A dense cluster of yellowish and white galaxies photographed by the James Webb Space Telescope, displaying numerous elliptical and spiral structures.",
+      "fits": true,
+      "reason": "Fits the endless galaxy expanse requirement."
+    },
+    {
+      "n": 26,
+      "seen": "An educational 3D digital illustration demonstrating spacetime curvature, with several spiral galaxies resting on a green warped grid beneath a purple grid ceiling.",
+      "fits": false,
+      "reason": "It is a 3D digital illustration with a grid."
+    },
+    {
+      "n": 27,
+      "seen": "A side-by-side comparison of two galaxy cluster fields, showing numerous red and yellow galaxies under different filter enhancements.",
+      "fits": true,
+      "reason": "Fits the galaxy cluster in deep space."
+    },
+    {
+      "n": 28,
+      "seen": "A spiral galaxy with a glowing central nucleus and prominent pinkish-red star-forming arms, set against a rich field of background stars.",
+      "fits": true,
+      "reason": "Fits spiral galaxy arms glowing."
+    },
+    {
+      "n": 29,
+      "seen": "The Hubble Ultra Deep Field showing a vast array of faint, distant galaxies scattered across the dark expanse of space.",
+      "fits": true,
+      "reason": "Fits the deep space star field requirement."
+    }
+  ]
+}

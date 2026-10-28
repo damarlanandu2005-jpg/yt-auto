@@ -1,0 +1,2022 @@
+[
+ {
+  "scene": "s01",
+  "start": 0.0,
+  "text": "Imagine you stand outdoors at night and look into the deepest reaches of space.",
+  "sentences": [
+   "s01.01"
+  ],
+  "id": "v001",
+  "end": 5.009,
+  "seconds": 5.01,
+  "scene_start": true,
+  "kind": "card",
+  "card": {
+   "type": "title",
+   "title": "Why the Observable Universe Is 93 Billion Light-Years Wide",
+   "subtitle": "The paradox of time and distance in the universe"
+  }
+ },
+ {
+  "scene": "s01",
+  "start": 5.009,
+  "text": "How can light travel across 93 billion light-years",
+  "sentences": [
+   "s01.03"
+  ],
+  "id": "v002",
+  "end": 9.704058823529412,
+  "seconds": 4.7,
+  "scene_start": false,
+  "kind": "video",
+  "photo_subject": "deep field galaxy cluster",
+  "photo_queries": [
+   "deep field galaxies",
+   "hubble deep field"
+  ],
+  "card": {
+   "type": "stat",
+   "title": "Light Travel",
+   "value": "93B",
+   "label": "Light-years wide"
+  }
+ },
+ {
+  "scene": "s01",
+  "start": 9.704058823529412,
+  "text": "if time itself began only 13.8 billion years ago?",
+  "sentences": [
+   "s01.03"
+  ],
+  "id": "v003",
+  "end": 15.847,
+  "seconds": 6.14,
+  "scene_start": false,
+  "kind": "photo",
+  "photo_subject": "nebula in space",
+  "photo_queries": [
+   "space nebula",
+   "distant nebula"
+  ],
+  "card": {
+   "type": "stat",
+   "title": "Age of Universe",
+   "value": "13.8B",
+   "label": "Years since Big Bang"
+  }
+ },
+ {
+  "scene": "s01",
+  "start": 15.847,
+  "text": "Understanding this giant puzzle reveals your true place in a shifting cosmic landscape.",
+  "sentences": [
+   "s01.04"
+  ],
+  "id": "v004",
+  "end": 22.006,
+  "seconds": 6.16,
+  "scene_start": false,
+  "kind": "photo",
+  "photo_subject": "spiral galaxy",
+  "photo_queries": [
+   "spiral galaxy",
+   "milky way view"
+  ],
+  "card": {
+   "type": "bullets",
+   "title": "Cosmic Puzzle",
+   "items": [
+    "Light travelled 13.8B years",
+    "Universe width is 93B light-years",
+    "Space itself is expanding"
+   ]
+  }
+ },
+ {
+  "scene": "s01",
+  "start": 22.006,
+  "text": "In this video, you will discover how cosmic expansion turns a journey",
+  "sentences": [
+   "s01.05"
+  ],
+  "id": "v005",
+  "end": 27.0695,
+  "seconds": 5.06,
+  "scene_start": false,
+  "kind": "photo",
+  "photo_subject": "galaxy cluster",
+  "photo_queries": [
+   "galaxy cluster",
+   "cosmic web"
+  ],
+  "card": {
+   "type": "bullets",
+   "title": "In This Video",
+   "items": [
+    "Cosmic expansion",
+    "Light travel time",
+    "Observable horizon"
+   ]
+  }
+ },
+ {
+  "scene": "s01",
+  "start": 27.0695,
+  "text": "of 13.8 billion years into a vast width of 93 billion light-years.",
+  "sentences": [
+   "s01.05"
+  ],
+  "id": "v006",
+  "end": 32.589,
+  "seconds": 5.52,
+  "scene_start": false,
+  "kind": "card",
+  "card": {
+   "type": "stat",
+   "title": "Scale Comparison",
+   "value": "93B",
+   "label": "Light-years diameter"
+  }
+ },
+ {
+  "scene": "s01",
+  "start": 32.589,
+  "text": "Nothing in physics can travel faster than the speed of light through local space.",
+  "sentences": [
+   "s01.06"
+  ],
+  "id": "v007",
+  "end": 37.464,
+  "seconds": 4.88,
+  "scene_start": false,
+  "kind": "drawing",
+  "drawing_subject": "a light beam travelling through space",
+  "card": {
+   "type": "stat",
+   "title": "Speed of Light",
+   "value": "Max",
+   "label": "Speed limit in local space"
+  }
+ },
+ {
+  "scene": "s01",
+  "start": 37.464,
+  "text": "If light has only been traveling for 13.8 billion years,",
+  "sentences": [
+   "s01.08"
+  ],
+  "id": "v008",
+  "end": 41.564,
+  "seconds": 4.1,
+  "scene_start": false,
+  "kind": "photo",
+  "photo_subject": "distant star field",
+  "photo_queries": [
+   "star field",
+   "night sky stars"
+  ],
+  "card": {
+   "type": "stat",
+   "title": "Travel Time",
+   "value": "13.8B",
+   "label": "Years light has travelled"
+  }
+ },
+ {
+  "scene": "s01",
+  "start": 41.564,
+  "text": "a simple sum suggests our cosmic horizon should be much smaller.",
+  "sentences": [
+   "s01.08"
+  ],
+  "id": "v009",
+  "end": 46.576,
+  "seconds": 5.01,
+  "scene_start": false,
+  "kind": "drawing",
+  "drawing_subject": "a glowing sphere representing the cosmic horizon",
+  "card": {
+   "type": "stat",
+   "title": "Expected Horizon",
+   "value": "Smaller",
+   "label": "Based on simple sum"
+  }
+ },
+ {
+  "scene": "s01",
+  "start": 46.576,
+  "text": "You might expect a sphere with a radius of 13.8",
+  "sentences": [
+   "s01.09"
+  ],
+  "id": "v010",
+  "end": 50.9881052631579,
+  "seconds": 4.41,
+  "scene_start": false,
+  "kind": "drawing",
+  "drawing_subject": "a sphere with radius label",
+  "card": {
+   "type": "stat",
+   "title": "Radius",
+   "value": "13.8",
+   "label": "Billion light-years radius"
+  }
+ },
+ {
+  "scene": "s01",
+  "start": 50.9881052631579,
+  "text": "billion light-years and a width of 27.6 billion light-years.",
+  "sentences": [
+   "s01.09"
+  ],
+  "id": "v011",
+  "end": 55.91,
+  "seconds": 4.92,
+  "scene_start": false,
+  "kind": "card",
+  "card": {
+   "type": "stat",
+   "title": "Width",
+   "value": "27.6",
+   "label": "Billion light-years width"
+  }
+ },
+ {
+  "scene": "s01",
+  "start": 55.91,
+  "text": "Instead, astronomical observations reveal a",
+  "sentences": [
+   "s01.10"
+  ],
+  "id": "v012",
+  "end": 59.625,
+  "seconds": 3.72,
+  "scene_start": false,
+  "kind": "photo",
+  "photo_subject": "astronomical telescope observatory",
+  "photo_queries": [
+   "space telescope",
+   "observatory dome"
+  ],
+  "card": {
+   "type": "bullets",
+   "title": "Observations",
+   "items": [
+    "Telescope data",
+    "Cosmic measurements"
+   ]
+  }
+ },
+ {
+  "scene": "s01",
+  "start": 59.625,
+  "text": "diameter of 93 billion light-years.",
+  "sentences": [
+   "s01.10"
+  ],
+  "id": "v013",
+  "end": 63.778,
+  "seconds": 4.15,
+  "scene_start": false,
+  "kind": "card",
+  "card": {
+   "type": "stat",
+   "title": "Actual Diameter",
+   "value": "93",
+   "label": "Billion light-years"
+  }
+ },
+ {
+  "scene": "s01",
+  "start": 63.778,
+  "text": "This contradiction seems to break the most fundamental rules of motion.",
+  "sentences": [
+   "s01.11"
+  ],
+  "id": "v014",
+  "end": 69.585,
+  "seconds": 5.81,
+  "scene_start": false,
+  "kind": "photo",
+  "photo_subject": "complex galaxy cluster",
+  "photo_queries": [
+   "galaxy cluster",
+   "deep space cluster"
+  ],
+  "card": {
+   "type": "bullets",
+   "title": "Contradiction",
+   "items": [
+    "Breaks simple rules",
+    "Requires expansion"
+   ]
+  }
+ },
+ {
+  "scene": "s02",
+  "start": 69.585,
+  "text": "To solve this mystery, you must first unlearn a common mental picture.",
+  "sentences": [
+   "s02.01"
+  ],
+  "id": "v015",
+  "end": 74.231,
+  "seconds": 4.65,
+  "scene_start": true,
+  "kind": "card",
+  "card": {
+   "type": "title",
+   "title": "Unlearning Misconceptions",
+   "subtitle": "The false picture of galaxies flying through empty space"
+  }
+ },
+ {
+  "scene": "s02",
+  "start": 74.231,
+  "text": "Imagine an empty room where distant objects race through motionless air like speedboats on a lake.",
+  "sentences": [
+   "s02.02"
+  ],
+  "id": "v016",
+  "end": 81.045,
+  "seconds": 6.81,
+  "scene_start": false,
+  "kind": "drawing",
+  "drawing_subject": "speedboats racing on a lake",
+  "card": {
+   "type": "stat",
+   "title": "False Model",
+   "value": "Speedboats",
+   "label": "Moving through static air"
+  }
+ },
+ {
+  "scene": "s02",
+  "start": 81.045,
+  "text": "In this false picture, galaxies fly apart through fixed and static space after a central explosion.",
+  "sentences": [
+   "s02.03"
+  ],
+  "id": "v017",
+  "end": 87.971,
+  "seconds": 6.93,
+  "scene_start": false,
+  "kind": "drawing",
+  "drawing_subject": "galaxies flying apart from an explosion",
+  "card": {
+   "type": "bullets",
+   "title": "Static Space Model",
+   "items": [
+    "Galaxies fly apart",
+    "Fixed static space",
+    "Central explosion"
+   ]
+  }
+ },
+ {
+  "scene": "s02",
+  "start": 87.971,
+  "text": "If galaxies were simply speeding through static space, no galaxy could exceed the speed of light.",
+  "sentences": [
+   "s02.04"
+  ],
+  "id": "v018",
+  "end": 94.071,
+  "seconds": 6.1,
+  "scene_start": false,
+  "kind": "photo",
+  "photo_subject": "spiral galaxy arms",
+  "photo_queries": [
+   "spiral galaxy",
+   "galaxy rotation"
+  ],
+  "card": {
+   "type": "stat",
+   "title": "Speed Limit",
+   "value": "C",
+   "label": "Speed of light limit in static space"
+  }
+ },
+ {
+  "scene": "s02",
+  "start": 94.071,
+  "text": "Under that simple picture, light leaving a galaxy 13.8 billion years",
+  "sentences": [
+   "s02.05"
+  ],
+  "id": "v019",
+  "end": 99.18549999999999,
+  "seconds": 5.11,
+  "scene_start": false,
+  "kind": "card",
+  "card": {
+   "type": "stat",
+   "title": "Lookback Time",
+   "value": "13.8B",
+   "label": "Years ago"
+  }
+ },
+ {
+  "scene": "s02",
+  "start": 99.18549999999999,
+  "text": "ago could only show us objects 13.8 billion light-years away today.",
+  "sentences": [
+   "s02.05"
+  ],
+  "id": "v020",
+  "end": 104.841,
+  "seconds": 5.66,
+  "scene_start": false,
+  "kind": "card",
+  "card": {
+   "type": "stat",
+   "title": "Distance",
+   "value": "13.8B",
+   "label": "Light-years away today"
+  }
+ },
+ {
+  "scene": "s02",
+  "start": 104.841,
+  "text": "However, astronomical measurements show distant galaxies moving away",
+  "sentences": [
+   "s02.06"
+  ],
+  "id": "v021",
+  "end": 108.73088235294118,
+  "seconds": 3.89,
+  "scene_start": false,
+  "kind": "photo",
+  "photo_subject": "redshift galaxy spectrum",
+  "photo_queries": [
+   "galaxy redshift",
+   "astronomical spectrum"
+  ],
+  "card": {
+   "type": "bullets",
+   "title": "Measurements",
+   "items": [
+    "Distant galaxies moving away",
+    "Recessional speeds"
+   ]
+  }
+ },
+ {
+  "scene": "s02",
+  "start": 108.73088235294118,
+  "text": "from us at recessional speeds proportional to their distance.",
+  "sentences": [
+   "s02.06"
+  ],
+  "id": "v022",
+  "end": 113.555,
+  "seconds": 4.82,
+  "scene_start": false,
+  "kind": "card",
+  "card": {
+   "type": "bullets",
+   "title": "Recession",
+   "items": [
+    "Speed proportional to distance",
+    "Distant objects move faster"
+   ]
+  }
+ },
+ {
+  "scene": "s02",
+  "start": 113.555,
+  "text": "In fact, very distant regions of space expand",
+  "sentences": [
+   "s02.07"
+  ],
+  "id": "v023",
+  "end": 116.827,
+  "seconds": 3.27,
+  "scene_start": false,
+  "kind": "photo",
+  "photo_subject": "deep space galaxies",
+  "photo_queries": [
+   "deep space galaxies",
+   "distant cosmos"
+  ],
+  "card": {
+   "type": "stat",
+   "title": "Distant Regions",
+   "value": "Expanding",
+   "label": "Moving away from us"
+  }
+ },
+ {
+  "scene": "s02",
+  "start": 116.827,
+  "text": "away from us faster than the speed of light.",
+  "sentences": [
+   "s02.07"
+  ],
+  "id": "v024",
+  "end": 120.961,
+  "seconds": 4.13,
+  "scene_start": false,
+  "kind": "card",
+  "card": {
+   "type": "stat",
+   "title": "Expansion Speed",
+   "value": "> C",
+   "label": "Faster than light"
+  }
+ },
+ {
+  "scene": "s02",
+  "start": 120.961,
+  "text": "How can distant galaxies recede faster than light without violating physical laws?",
+  "sentences": [
+   "s02.08"
+  ],
+  "id": "v025",
+  "end": 127.348,
+  "seconds": 6.39,
+  "scene_start": false,
+  "kind": "photo",
+  "photo_subject": "colliding galaxies",
+  "photo_queries": [
+   "colliding galaxies",
+   "galaxy interaction"
+  ],
+  "card": {
+   "type": "bullets",
+   "title": "The Big Question",
+   "items": [
+    "Recede faster than light",
+    "Without violating physics"
+   ]
+  }
+ },
+ {
+  "scene": "s02",
+  "start": 127.348,
+  "text": "The answer is simple.",
+  "sentences": [
+   "s02.09"
+  ],
+  "id": "v026",
+  "end": 129.633,
+  "seconds": 2.29,
+  "scene_start": false,
+  "kind": "card",
+  "card": {
+   "type": "stat",
+   "title": "The Answer",
+   "value": "Space",
+   "label": "Space itself expands"
+  }
+ },
+ {
+  "scene": "s02",
+  "start": 129.633,
+  "text": "Speed limits in special relativity apply only to objects moving",
+  "sentences": [
+   "s02.10"
+  ],
+  "id": "v027",
+  "end": 134.5635263157895,
+  "seconds": 4.93,
+  "scene_start": false,
+  "kind": "card",
+  "card": {
+   "type": "bullets",
+   "title": "Relativity Rules",
+   "items": [
+    "Special relativity limits",
+    "Objects moving through space"
+   ]
+  }
+ },
+ {
+  "scene": "s02",
+  "start": 134.5635263157895,
+  "text": "through local space, not to the space between them.",
+  "sentences": [
+   "s02.10"
+  ],
+  "id": "v028",
+  "end": 140.479,
+  "seconds": 5.92,
+  "scene_start": false,
+  "kind": "drawing",
+  "drawing_subject": "space stretching between two distant points",
+  "card": {
+   "type": "stat",
+   "title": "The Medium",
+   "value": "Between",
+   "label": "Not objects through space"
+  }
+ },
+ {
+  "scene": "s03",
+  "start": 140.479,
+  "text": "Imagine replacing the idea of a fixed box with a flexible, stretching fabric.",
+  "sentences": [
+   "s03.01"
+  ],
+  "id": "v029",
+  "end": 146.124,
+  "seconds": 5.64,
+  "scene_start": true,
+  "kind": "card",
+  "card": {
+   "type": "title",
+   "title": "Stretching Fabric",
+   "subtitle": "Space as a stretching fabric rather than a static box"
+  }
+ },
+ {
+  "scene": "s03",
+  "start": 146.124,
+  "text": "The expansion of the universe is an intrinsic",
+  "sentences": [
+   "s03.02"
+  ],
+  "id": "v030",
+  "end": 149.43,
+  "seconds": 3.31,
+  "scene_start": false,
+  "kind": "drawing",
+  "drawing_subject": "a flexible grid stretching out",
+  "card": {
+   "type": "stat",
+   "title": "Expansion",
+   "value": "Intrinsic",
+   "label": "Increase in distance"
+  }
+ },
+ {
+  "scene": "s03",
+  "start": 149.43,
+  "text": "increase in distance between cosmic objects over time.",
+  "sentences": [
+   "s03.02"
+  ],
+  "id": "v031",
+  "end": 153.198,
+  "seconds": 3.77,
+  "scene_start": false,
+  "kind": "card",
+  "card": {
+   "type": "bullets",
+   "title": "Cosmic Objects",
+   "items": [
+    "Distance increases over time",
+    "Intrinsic expansion"
+   ]
+  }
+ },
+ {
+  "scene": "s03",
+  "start": 153.198,
+  "text": "This cosmic expansion does not mean the universe is expanding into any surrounding empty room.",
+  "sentences": [
+   "s03.03"
+  ],
+  "id": "v032",
+  "end": 159.629,
+  "seconds": 6.43,
+  "scene_start": false,
+  "kind": "photo",
+  "photo_subject": "starry night sky",
+  "photo_queries": [
+   "night sky",
+   "stars background"
+  ],
+  "card": {
+   "type": "bullets",
+   "title": "No Edge Room",
+   "items": [
+    "Not expanding into empty room",
+    "All space is expanding"
+   ]
+  }
+ },
+ {
+  "scene": "s03",
+  "start": 159.629,
+  "text": "Cosmologists describe physical distances using a",
+  "sentences": [
+   "s03.04"
+  ],
+  "id": "v033",
+  "end": 162.69546153846153,
+  "seconds": 3.07,
+  "scene_start": false,
+  "kind": "photo",
+  "photo_subject": "astronomer at desk",
+  "photo_queries": [
+   "astronomer working",
+   "scientist equations"
+  ],
+  "card": {
+   "type": "stat",
+   "title": "Description",
+   "value": "Scale",
+   "label": "Cosmological scale factor"
+  }
+ },
+ {
+  "scene": "s03",
+  "start": 162.69546153846153,
+  "text": "scale factor that grows over cosmic time.",
+  "sentences": [
+   "s03.04"
+  ],
+  "id": "v034",
+  "end": 166.744,
+  "seconds": 4.05,
+  "scene_start": false,
+  "kind": "drawing",
+  "drawing_subject": "a grid expanding over time",
+  "card": {
+   "type": "stat",
+   "title": "Scale Factor",
+   "value": "Grows",
+   "label": "Over cosmic time"
+  }
+ },
+ {
+  "scene": "s03",
+  "start": 166.744,
+  "text": "As the cosmic scale factor grows, the",
+  "sentences": [
+   "s03.05"
+  ],
+  "id": "v035",
+  "end": 170.31099999999998,
+  "seconds": 3.57,
+  "scene_start": false,
+  "kind": "drawing",
+  "drawing_subject": "two galaxies on a stretching grid",
+  "card": {
+   "type": "stat",
+   "title": "Growth",
+   "value": "Automatic",
+   "label": "Separation increases"
+  }
+ },
+ {
+  "scene": "s03",
+  "start": 170.31099999999998,
+  "text": "physical separation between distant galaxies increases automatically.",
+  "sentences": [
+   "s03.05"
+  ],
+  "id": "v036",
+  "end": 174.381,
+  "seconds": 4.07,
+  "scene_start": false,
+  "kind": "card",
+  "card": {
+   "type": "stat",
+   "title": "Galaxies",
+   "value": "Separated",
+   "label": "Physical distance increases"
+  }
+ },
+ {
+  "scene": "s03",
+  "start": 174.381,
+  "text": "Galaxies themselves remain nearly at rest relative",
+  "sentences": [
+   "s03.06"
+  ],
+  "id": "v037",
+  "end": 177.64249999999998,
+  "seconds": 3.26,
+  "scene_start": false,
+  "kind": "photo",
+  "photo_subject": "isolated spiral galaxy",
+  "photo_queries": [
+   "spiral galaxy",
+   "isolated galaxy"
+  ],
+  "card": {
+   "type": "stat",
+   "title": "Local Rest",
+   "value": "At Rest",
+   "label": "Relative to local surroundings"
+  }
+ },
+ {
+  "scene": "s03",
+  "start": 177.64249999999998,
+  "text": "to their local surroundings, called comoving coordinates.",
+  "sentences": [
+   "s03.06"
+  ],
+  "id": "v038",
+  "end": 181.34,
+  "seconds": 3.7,
+  "scene_start": false,
+  "kind": "card",
+  "card": {
+   "type": "stat",
+   "title": "Coordinates",
+   "value": "Comoving",
+   "label": "Local surroundings coordinate system"
+  }
+ },
+ {
+  "scene": "s03",
+  "start": 181.34,
+  "text": "Yet the space between separated galaxies grows continuously as time passes.",
+  "sentences": [
+   "s03.07"
+  ],
+  "id": "v039",
+  "end": 187.021,
+  "seconds": 5.68,
+  "scene_start": false,
+  "kind": "photo",
+  "photo_subject": "galaxy filaments in space",
+  "photo_queries": [
+   "galaxy filaments",
+   "universe web"
+  ],
+  "card": {
+   "type": "stat",
+   "title": "Space Growth",
+   "value": "Continuous",
+   "label": "Between galaxies as time passes"
+  }
+ },
+ {
+  "scene": "s03",
+  "start": 187.021,
+  "text": "Imagine drawing two marks on a flexible sheet that is constantly pulled in every direction.",
+  "sentences": [
+   "s03.08"
+  ],
+  "id": "v040",
+  "end": 192.79,
+  "seconds": 5.77,
+  "scene_start": false,
+  "kind": "drawing",
+  "drawing_subject": "two dots on a stretching rubber sheet",
+  "card": {
+   "type": "bullets",
+   "title": "Flexible Sheet",
+   "items": [
+    "Two marks on flexible sheet",
+    "Pulled in every direction"
+   ]
+  }
+ },
+ {
+  "scene": "s03",
+  "start": 192.79,
+  "text": "The coordinate distance between the two marks stays",
+  "sentences": [
+   "s03.09"
+  ],
+  "id": "v041",
+  "end": 196.047,
+  "seconds": 3.26,
+  "scene_start": false,
+  "kind": "drawing",
+  "drawing_subject": "two dots on a stretched sheet",
+  "card": {
+   "type": "stat",
+   "title": "Coordinate Distance",
+   "value": "Constant",
+   "label": "Marks stay in place on sheet"
+  }
+ },
+ {
+  "scene": "s03",
+  "start": 196.047,
+  "text": "constant, but the actual physical ruler distance grows.",
+  "sentences": [
+   "s03.09"
+  ],
+  "id": "v042",
+  "end": 199.753,
+  "seconds": 3.71,
+  "scene_start": false,
+  "kind": "drawing",
+  "drawing_subject": "a ruler measuring between two points",
+  "card": {
+   "type": "stat",
+   "title": "Ruler Distance",
+   "value": "Grows",
+   "label": "Actual physical distance"
+  }
+ },
+ {
+  "scene": "s03",
+  "start": 199.753,
+  "text": "Because space stretches, physical distances today are much",
+  "sentences": [
+   "s03.10"
+  ],
+  "id": "v043",
+  "end": 203.1575,
+  "seconds": 3.4,
+  "scene_start": false,
+  "kind": "photo",
+  "photo_subject": "distant galaxy cluster",
+  "photo_queries": [
+   "galaxy cluster",
+   "deep space universe"
+  ],
+  "card": {
+   "type": "stat",
+   "title": "Today vs Past",
+   "value": "Larger",
+   "label": "Physical distances today"
+  }
+ },
+ {
+  "scene": "s03",
+  "start": 203.1575,
+  "text": "larger than physical distances in the distant past.",
+  "sentences": [
+   "s03.10"
+  ],
+  "id": "v044",
+  "end": 208.016,
+  "seconds": 4.86,
+  "scene_start": false,
+  "kind": "card",
+  "card": {
+   "type": "stat",
+   "title": "Past vs Present",
+   "value": "Distant Past",
+   "label": "Smaller than today"
+  }
+ },
+ {
+  "scene": "s04",
+  "start": 208.016,
+  "text": "Imagine an ant crawling across a giant rubber band while someone stretches that band at the same time.",
+  "sentences": [
+   "s04.01"
+  ],
+  "id": "v045",
+  "end": 214.753,
+  "seconds": 6.74,
+  "scene_start": true,
+  "kind": "card",
+  "card": {
+   "type": "title",
+   "title": "The Rubber Band Dynamic",
+   "subtitle": "Light traveling through expanding space"
+  }
+ },
+ {
+  "scene": "s04",
+  "start": 214.753,
+  "text": "The ant crawls forward at a steady speed, but the path ahead and behind keeps expanding.",
+  "sentences": [
+   "s04.02"
+  ],
+  "id": "v046",
+  "end": 220.793,
+  "seconds": 6.04,
+  "scene_start": false,
+  "kind": "drawing",
+  "drawing_subject": "an ant crawling on a stretching rubber band",
+  "card": {
+   "type": "bullets",
+   "title": "Rubber Band Analogy",
+   "items": [
+    "Ant crawls forward",
+    "Path ahead expands"
+   ]
+  }
+ },
+ {
+  "scene": "s04",
+  "start": 220.793,
+  "text": "A light beam traveling through space behaves just like that ant.",
+  "sentences": [
+   "s04.03"
+  ],
+  "id": "v047",
+  "end": 224.792,
+  "seconds": 4.0,
+  "scene_start": false,
+  "kind": "drawing",
+  "drawing_subject": "a light beam on an expanding line",
+  "card": {
+   "type": "stat",
+   "title": "Light Beam",
+   "value": "Like Ant",
+   "label": "Behaves like crawling ant"
+  }
+ },
+ {
+  "scene": "s04",
+  "start": 224.792,
+  "text": "Locally, light always travels through space at its standard constant speed.",
+  "sentences": [
+   "s04.04"
+  ],
+  "id": "v048",
+  "end": 229.746,
+  "seconds": 4.95,
+  "scene_start": false,
+  "kind": "photo",
+  "photo_subject": "laser beam in laboratory",
+  "photo_queries": [
+   "laser beam lab",
+   "speed of light"
+  ],
+  "card": {
+   "type": "stat",
+   "title": "Standard Speed",
+   "value": "Constant",
+   "label": "Locally travels at standard speed"
+  }
+ },
+ {
+  "scene": "s04",
+  "start": 229.746,
+  "text": "But as light travels toward us across billions of years,",
+  "sentences": [
+   "s04.05"
+  ],
+  "id": "v049",
+  "end": 234.0844210526316,
+  "seconds": 4.34,
+  "scene_start": false,
+  "kind": "photo",
+  "photo_subject": "starlight from distant galaxy",
+  "photo_queries": [
+   "starlight",
+   "galaxy light"
+  ],
+  "card": {
+   "type": "stat",
+   "title": "Journey",
+   "value": "Billions",
+   "label": "Years traveling toward us"
+  }
+ },
+ {
+  "scene": "s04",
+  "start": 234.0844210526316,
+  "text": "the space it has already crossed continues to stretch.",
+  "sentences": [
+   "s04.05"
+  ],
+  "id": "v050",
+  "end": 238.432,
+  "seconds": 4.35,
+  "scene_start": false,
+  "kind": "drawing",
+  "drawing_subject": "a light ray crossing a stretching grid",
+  "card": {
+   "type": "stat",
+   "title": "Crossed Space",
+   "value": "Stretches",
+   "label": "Space behind light continues to grow"
+  }
+ },
+ {
+  "scene": "s04",
+  "start": 238.432,
+  "text": "When the ancient light from the early universe was first emitted, the source was actually very close to us.",
+  "sentences": [
+   "s04.06"
+  ],
+  "id": "v051",
+  "end": 244.768,
+  "seconds": 6.34,
+  "scene_start": false,
+  "kind": "photo",
+  "photo_subject": "early universe glowing plasma",
+  "photo_queries": [
+   "early universe",
+   "cosmic microwave background"
+  ],
+  "card": {
+   "type": "stat",
+   "title": "Early Light",
+   "value": "Close",
+   "label": "Source was very close to us"
+  }
+ },
+ {
+  "scene": "s04",
+  "start": 244.768,
+  "text": "Scientists estimate that matter emitting the cosmic microwave background was",
+  "sentences": [
+   "s04.07"
+  ],
+  "id": "v052",
+  "end": 249.1335,
+  "seconds": 4.37,
+  "scene_start": false,
+  "kind": "photo",
+  "photo_subject": "cosmic microwave background map",
+  "photo_queries": [
+   "cosmic microwave background",
+   "planck CMB map"
+  ],
+  "card": {
+   "type": "bullets",
+   "title": "CMB Emission",
+   "items": [
+    "Emitting matter source",
+    "Scientists estimate distance"
+   ]
+  }
+ },
+ {
+  "scene": "s04",
+  "start": 249.1335,
+  "text": "only 42 million light-years away when it emitted that light.",
+  "sentences": [
+   "s04.07"
+  ],
+  "id": "v053",
+  "end": 253.989,
+  "seconds": 4.86,
+  "scene_start": false,
+  "kind": "card",
+  "card": {
+   "type": "stat",
+   "title": "Initial Distance",
+   "value": "42M",
+   "label": "Light-years away when emitted"
+  }
+ },
+ {
+  "scene": "s04",
+  "start": 253.989,
+  "text": "The light spent 13.8 billion years traveling across space to reach Earth.",
+  "sentences": [
+   "s04.08"
+  ],
+  "id": "v054",
+  "end": 259.265,
+  "seconds": 5.28,
+  "scene_start": false,
+  "kind": "card",
+  "card": {
+   "type": "stat",
+   "title": "Travel Time",
+   "value": "13.8B",
+   "label": "Years to reach Earth"
+  }
+ },
+ {
+  "scene": "s04",
+  "start": 259.265,
+  "text": "During that long journey of 13.8 billion years,",
+  "sentences": [
+   "s04.09"
+  ],
+  "id": "v055",
+  "end": 262.8063333333333,
+  "seconds": 3.54,
+  "scene_start": false,
+  "kind": "card",
+  "card": {
+   "type": "stat",
+   "title": "Journey Duration",
+   "value": "13.8B",
+   "label": "Years of travel"
+  }
+ },
+ {
+  "scene": "s04",
+  "start": 262.8063333333333,
+  "text": "the space behind the light expanded dramatically.",
+  "sentences": [
+   "s04.09"
+  ],
+  "id": "v056",
+  "end": 266.379,
+  "seconds": 3.57,
+  "scene_start": false,
+  "kind": "drawing",
+  "drawing_subject": "space expanding behind a moving light particle",
+  "card": {
+   "type": "stat",
+   "title": "Space Behind",
+   "value": "Expanded",
+   "label": "Dramatic expansion during journey"
+  }
+ },
+ {
+  "scene": "s04",
+  "start": 266.379,
+  "text": "Consequently, the matter that emitted those photons is now located much farther away from Earth today.",
+  "sentences": [
+   "s04.10"
+  ],
+  "id": "v057",
+  "end": 274.254,
+  "seconds": 7.88,
+  "scene_start": false,
+  "kind": "photo",
+  "photo_subject": "deep field galaxy view",
+  "photo_queries": [
+   "deep field galaxies",
+   "distant cosmos"
+  ],
+  "card": {
+   "type": "stat",
+   "title": "Current Location",
+   "value": "Farther",
+   "label": "Much farther away from Earth today"
+  }
+ },
+ {
+  "scene": "s05",
+  "start": 274.254,
+  "text": "Now the mathematical puzzle of cosmic distances starts to make complete sense.",
+  "sentences": [
+   "s05.01"
+  ],
+  "id": "v058",
+  "end": 279.821,
+  "seconds": 5.57,
+  "scene_start": true,
+  "kind": "card",
+  "card": {
+   "type": "title",
+   "title": "Mathematical Puzzle Solved",
+   "subtitle": "How 13.8 billion light-years of time turns into a 46.5 billion light-year radius"
+  }
+ },
+ {
+  "scene": "s05",
+  "start": 279.821,
+  "text": "The light-travel distance equals the age of the universe multiplied",
+  "sentences": [
+   "s05.02"
+  ],
+  "id": "v059",
+  "end": 284.0565,
+  "seconds": 4.24,
+  "scene_start": false,
+  "kind": "card",
+  "card": {
+   "type": "stat",
+   "title": "Light-Travel Distance",
+   "value": "13.8B",
+   "label": "Age times speed of light"
+  }
+ },
+ {
+  "scene": "s05",
+  "start": 284.0565,
+  "text": "by the speed of light, which is 13.8 billion light-years.",
+  "sentences": [
+   "s05.02"
+  ],
+  "id": "v060",
+  "end": 288.781,
+  "seconds": 4.72,
+  "scene_start": false,
+  "kind": "card",
+  "card": {
+   "type": "stat",
+   "title": "Travel Distance",
+   "value": "13.8B",
+   "label": "Light-years total"
+  }
+ },
+ {
+  "scene": "s05",
+  "start": 288.781,
+  "text": "That value of 13.8 billion light-years represents the",
+  "sentences": [
+   "s05.03"
+  ],
+  "id": "v061",
+  "end": 292.42664705882356,
+  "seconds": 3.65,
+  "scene_start": false,
+  "kind": "card",
+  "card": {
+   "type": "stat",
+   "title": "Journey Time",
+   "value": "13.8B",
+   "label": "Years in expanding spacetime"
+  }
+ },
+ {
+  "scene": "s05",
+  "start": 292.42664705882356,
+  "text": "journey time of light moving through an expanding spacetime.",
+  "sentences": [
+   "s05.03"
+  ],
+  "id": "v062",
+  "end": 297.005,
+  "seconds": 4.58,
+  "scene_start": false,
+  "kind": "drawing",
+  "drawing_subject": "light moving through a curved spacetime grid",
+  "card": {
+   "type": "bullets",
+   "title": "Spacetime Journey",
+   "items": [
+    "Expanding spacetime",
+    "Journey time of light"
+   ]
+  }
+ },
+ {
+  "scene": "s05",
+  "start": 297.005,
+  "text": "However, cosmologists define proper distance as the physical",
+  "sentences": [
+   "s05.04"
+  ],
+  "id": "v063",
+  "end": 300.877,
+  "seconds": 3.87,
+  "scene_start": false,
+  "kind": "photo",
+  "photo_subject": "cosmic ruler grid",
+  "photo_queries": [
+   "cosmic distance",
+   "astronomical ruler"
+  ],
+  "card": {
+   "type": "stat",
+   "title": "Proper Distance",
+   "value": "Physical",
+   "label": "Defined by cosmologists"
+  }
+ },
+ {
+  "scene": "s05",
+  "start": 300.877,
+  "text": "distance measured at one frozen moment of cosmic time.",
+  "sentences": [
+   "s05.04"
+  ],
+  "id": "v064",
+  "end": 305.7,
+  "seconds": 4.82,
+  "scene_start": false,
+  "kind": "drawing",
+  "drawing_subject": "a frozen snapshot of a cosmic grid",
+  "card": {
+   "type": "stat",
+   "title": "Frozen Moment",
+   "value": "Snapshot",
+   "label": "Measured at one time"
+  }
+ },
+ {
+  "scene": "s05",
+  "start": 305.7,
+  "text": "In today's standard model, the current proper distance to the",
+  "sentences": [
+   "s05.05"
+  ],
+  "id": "v065",
+  "end": 310.058,
+  "seconds": 4.36,
+  "scene_start": false,
+  "kind": "photo",
+  "photo_subject": "hubble ultra deep field",
+  "photo_queries": [
+   "ultra deep field",
+   "observable universe edge"
+  ],
+  "card": {
+   "type": "bullets",
+   "title": "Standard Model",
+   "items": [
+    "Current proper distance",
+    "Edge of observable universe"
+   ]
+  }
+ },
+ {
+  "scene": "s05",
+  "start": 310.058,
+  "text": "edge of our observable universe is about 46.5 billion light-years.",
+  "sentences": [
+   "s05.05"
+  ],
+  "id": "v066",
+  "end": 314.865,
+  "seconds": 4.81,
+  "scene_start": false,
+  "kind": "card",
+  "card": {
+   "type": "stat",
+   "title": "Proper Distance",
+   "value": "46.5B",
+   "label": "Light-years to edge"
+  }
+ },
+ {
+  "scene": "s05",
+  "start": 314.865,
+  "text": "This distance is also known as the comoving radius of the observable region.",
+  "sentences": [
+   "s05.06"
+  ],
+  "id": "v067",
+  "end": 320.523,
+  "seconds": 5.66,
+  "scene_start": false,
+  "kind": "card",
+  "card": {
+   "type": "stat",
+   "title": "Comoving Radius",
+   "value": "46.5B",
+   "label": "Light-years radius"
+  }
+ },
+ {
+  "scene": "s05",
+  "start": 320.523,
+  "text": "The photon traveled for 13.8 billion years, but cosmic expansion",
+  "sentences": [
+   "s05.07"
+  ],
+  "id": "v068",
+  "end": 324.8366842105263,
+  "seconds": 4.31,
+  "scene_start": false,
+  "kind": "card",
+  "card": {
+   "type": "stat",
+   "title": "Photon Journey",
+   "value": "13.8B",
+   "label": "Years traveled"
+  }
+ },
+ {
+  "scene": "s05",
+  "start": 324.8366842105263,
+  "text": "stretched the physical space behind it along the way.",
+  "sentences": [
+   "s05.07"
+  ],
+  "id": "v069",
+  "end": 329.699,
+  "seconds": 4.86,
+  "scene_start": false,
+  "kind": "drawing",
+  "drawing_subject": "space stretching behind a photon track",
+  "card": {
+   "type": "stat",
+   "title": "Space Stretch",
+   "value": "Stretched",
+   "label": "Physical space behind photon"
+  }
+ },
+ {
+  "scene": "s05",
+  "start": 329.699,
+  "text": "This means that 13.8 billion years of light travel time",
+  "sentences": [
+   "s05.09"
+  ],
+  "id": "v070",
+  "end": 335.899,
+  "seconds": 6.2,
+  "scene_start": false,
+  "kind": "card",
+  "card": {
+   "type": "stat",
+   "title": "Conversion",
+   "value": "13.8B",
+   "label": "Years travel time"
+  }
+ },
+ {
+  "scene": "s05",
+  "start": 335.899,
+  "text": "converts into a current physical radius of 46.5 billion light-years.",
+  "sentences": [
+   "s05.09"
+  ],
+  "id": "v071",
+  "end": 343.583,
+  "seconds": 7.68,
+  "scene_start": false,
+  "kind": "card",
+  "card": {
+   "type": "stat",
+   "title": "Current Radius",
+   "value": "46.5B",
+   "label": "Light-years physical radius"
+  }
+ },
+ {
+  "scene": "s06",
+  "start": 343.583,
+  "text": "To find the full size of our observable cosmos, you simply look in every direction.",
+  "sentences": [
+   "s06.01"
+  ],
+  "id": "v072",
+  "end": 349.179,
+  "seconds": 5.6,
+  "scene_start": true,
+  "kind": "card",
+  "card": {
+   "type": "title",
+   "title": "The Observable Horizon",
+   "subtitle": "Doubling the radius to measure the 93 billion light-year observable horizon"
+  }
+ },
+ {
+  "scene": "s06",
+  "start": 349.179,
+  "text": "Light has had equal time to travel toward Earth from all directions across the sky.",
+  "sentences": [
+   "s06.02"
+  ],
+  "id": "v073",
+  "end": 354.951,
+  "seconds": 5.77,
+  "scene_start": false,
+  "kind": "photo",
+  "photo_subject": "full starry night sky dome",
+  "photo_queries": [
+   "night sky dome",
+   "starry sky panorama"
+  ],
+  "card": {
+   "type": "stat",
+   "title": "All Directions",
+   "value": "Equal Time",
+   "label": "Light traveling toward Earth"
+  }
+ },
+ {
+  "scene": "s06",
+  "start": 354.951,
+  "text": "Because of this symmetry, the observable universe forms a vast sphere centered on Earth.",
+  "sentences": [
+   "s06.03"
+  ],
+  "id": "v074",
+  "end": 360.609,
+  "seconds": 5.66,
+  "scene_start": false,
+  "kind": "drawing",
+  "drawing_subject": "a sphere centered on a blue planet",
+  "card": {
+   "type": "stat",
+   "title": "Sphere Shape",
+   "value": "Centered on Earth",
+   "label": "Due to cosmic symmetry"
+  }
+ },
+ {
+  "scene": "s06",
+  "start": 360.609,
+  "text": "The radius of this cosmic sphere is 46.5 billion light-years in any direction.",
+  "sentences": [
+   "s06.04"
+  ],
+  "id": "v075",
+  "end": 366.793,
+  "seconds": 6.18,
+  "scene_start": false,
+  "kind": "card",
+  "card": {
+   "type": "stat",
+   "title": "Sphere Radius",
+   "value": "46.5B",
+   "label": "Light-years in any direction"
+  }
+ },
+ {
+  "scene": "s06",
+  "start": 366.793,
+  "text": "To calculate the total diameter of this spherical region, you double the radius.",
+  "sentences": [
+   "s06.05"
+  ],
+  "id": "v076",
+  "end": 372.044,
+  "seconds": 5.25,
+  "scene_start": false,
+  "kind": "drawing",
+  "drawing_subject": "a circle being doubled in width",
+  "card": {
+   "type": "stat",
+   "title": "Total Diameter",
+   "value": "Double",
+   "label": "Double the radius"
+  }
+ },
+ {
+  "scene": "s06",
+  "start": 372.044,
+  "text": "Doubling 46.5 billion light-years yields a",
+  "sentences": [
+   "s06.06"
+  ],
+  "id": "v077",
+  "end": 375.39099999999996,
+  "seconds": 3.35,
+  "scene_start": false,
+  "kind": "card",
+  "card": {
+   "type": "stat",
+   "title": "Calculation",
+   "value": "46.5B",
+   "label": "Light-years base radius"
+  }
+ },
+ {
+  "scene": "s06",
+  "start": 375.39099999999996,
+  "text": "current diameter of 93 billion light-years.",
+  "sentences": [
+   "s06.06"
+  ],
+  "id": "v078",
+  "end": 379.19,
+  "seconds": 3.8,
+  "scene_start": false,
+  "kind": "card",
+  "card": {
+   "type": "stat",
+   "title": "Current Diameter",
+   "value": "93B",
+   "label": "Light-years total diameter"
+  }
+ },
+ {
+  "scene": "s06",
+  "start": 379.19,
+  "text": "That is why the observable universe is 93 billion light-years across today.",
+  "sentences": [
+   "s06.07"
+  ],
+  "id": "v079",
+  "end": 384.912,
+  "seconds": 5.72,
+  "scene_start": false,
+  "kind": "photo",
+  "photo_subject": "observable universe graphic representation",
+  "photo_queries": [
+   "observable universe",
+   "cosmic web sphere"
+  ],
+  "card": {
+   "type": "stat",
+   "title": "Universe Width",
+   "value": "93B",
+   "label": "Light-years across today"
+  }
+ },
+ {
+  "scene": "s06",
+  "start": 384.912,
+  "text": "In today's standard model, that means there are more stars in",
+  "sentences": [
+   "s06.09"
+  ],
+  "id": "v080",
+  "end": 389.657,
+  "seconds": 4.75,
+  "scene_start": false,
+  "kind": "photo",
+  "photo_subject": "dense star field in galaxy",
+  "photo_queries": [
+   "dense star field",
+   "milky way stars"
+  ],
+  "card": {
+   "type": "stat",
+   "title": "Standard Model",
+   "value": "Stars",
+   "label": "More stars than sand grains"
+  }
+ },
+ {
+  "scene": "s06",
+  "start": 389.657,
+  "text": "our observable sphere than grains of sand on all Earth beaches.",
+  "sentences": [
+   "s06.09"
+  ],
+  "id": "v081",
+  "end": 395.859,
+  "seconds": 6.2,
+  "scene_start": false,
+  "kind": "photo",
+  "photo_subject": "sandy beach on Earth",
+  "photo_queries": [
+   "sandy beach",
+   "sand grains"
+  ],
+  "card": {
+   "type": "stat",
+   "title": "Star Count",
+   "value": "All Beaches",
+   "label": "More stars than Earth sand grains"
+  }
+ },
+ {
+  "scene": "s07",
+  "start": 395.859,
+  "text": "What lies beyond the edge of this 93 billion light-year boundary?",
+  "sentences": [
+   "s07.01"
+  ],
+  "id": "v082",
+  "end": 400.618,
+  "seconds": 4.76,
+  "scene_start": true,
+  "kind": "card",
+  "card": {
+   "type": "title",
+   "title": "Beyond the Horizon",
+   "subtitle": "What lies beyond our current cosmic horizon"
+  }
+ },
+ {
+  "scene": "s07",
+  "start": 400.618,
+  "text": "Objects outside our observable sphere exist, but their light has",
+  "sentences": [
+   "s07.02"
+  ],
+  "id": "v083",
+  "end": 404.0737142857143,
+  "seconds": 3.46,
+  "scene_start": false,
+  "kind": "photo",
+  "photo_subject": "dark empty space void",
+  "photo_queries": [
+   "space void",
+   "dark cosmos"
+  ],
+  "card": {
+   "type": "stat",
+   "title": "Beyond Sphere",
+   "value": "Exists",
+   "label": "Objects outside observable sphere"
+  }
+ },
+ {
+  "scene": "s07",
+  "start": 404.0737142857143,
+  "text": "not had enough time to reach Earth since the Big Bang.",
+  "sentences": [
+   "s07.02"
+  ],
+  "id": "v084",
+  "end": 408.359,
+  "seconds": 4.29,
+  "scene_start": false,
+  "kind": "card",
+  "card": {
+   "type": "stat",
+   "title": "Light Travel",
+   "value": "Not Enough",
+   "label": "Time since Big Bang"
+  }
+ },
+ {
+  "scene": "s07",
+  "start": 408.359,
+  "text": "The limit of what we can see is called the particle horizon.",
+  "sentences": [
+   "s07.03"
+  ],
+  "id": "v085",
+  "end": 412.398,
+  "seconds": 4.04,
+  "scene_start": false,
+  "kind": "card",
+  "card": {
+   "type": "stat",
+   "title": "Particle Horizon",
+   "value": "Limit",
+   "label": "Limit of what we can see"
+  }
+ },
+ {
+  "scene": "s07",
+  "start": 412.398,
+  "text": "The total size of the entire universe is unknown, and it may even be infinite in extent.",
+  "sentences": [
+   "s07.04"
+  ],
+  "id": "v086",
+  "end": 418.546,
+  "seconds": 6.15,
+  "scene_start": false,
+  "kind": "photo",
+  "photo_subject": "endless galaxy expanse",
+  "photo_queries": [
+   "endless galaxies",
+   "infinite universe"
+  ],
+  "card": {
+   "type": "stat",
+   "title": "Total Size",
+   "value": "Unknown",
+   "label": "May be infinite in extent"
+  }
+ },
+ {
+  "scene": "s07",
+  "start": 418.546,
+  "text": "Every location in space has its own unique observable universe sphere centered on itself.",
+  "sentences": [
+   "s07.05"
+  ],
+  "id": "v087",
+  "end": 425.08,
+  "seconds": 6.53,
+  "scene_start": false,
+  "kind": "drawing",
+  "drawing_subject": "overlapping spheres in space",
+  "card": {
+   "type": "stat",
+   "title": "Every Location",
+   "value": "Unique",
+   "label": "Own observable universe sphere"
+  }
+ },
+ {
+  "scene": "s07",
+  "start": 425.08,
+  "text": "In today's standard model, dark energy accelerates expansion,",
+  "sentences": [
+   "s07.06"
+  ],
+  "id": "v088",
+  "end": 429.25129411764703,
+  "seconds": 4.17,
+  "scene_start": false,
+  "kind": "photo",
+  "photo_subject": "dark energy cosmic expansion",
+  "photo_queries": [
+   "dark energy",
+   "accelerating universe"
+  ],
+  "card": {
+   "type": "stat",
+   "title": "Dark Energy",
+   "value": "Accelerates",
+   "label": "Cosmic expansion"
+  }
+ },
+ {
+  "scene": "s07",
+  "start": 429.25129411764703,
+  "text": "creating a future visibility limit at 62 billion light-years.",
+  "sentences": [
+   "s07.06"
+  ],
+  "id": "v089",
+  "end": 434.396,
+  "seconds": 5.14,
+  "scene_start": false,
+  "kind": "card",
+  "card": {
+   "type": "stat",
+   "title": "Future Limit",
+   "value": "62B",
+   "label": "Light-years visibility limit"
+  }
+ },
+ {
+  "scene": "s07",
+  "start": 434.396,
+  "text": "This means the number of galaxies we can ever observe",
+  "sentences": [
+   "s07.07"
+  ],
+  "id": "v090",
+  "end": 438.3798095238095,
+  "seconds": 3.98,
+  "scene_start": false,
+  "kind": "photo",
+  "photo_subject": "galaxy cluster in deep space",
+  "photo_queries": [
+   "galaxy cluster",
+   "deep space galaxies"
+  ],
+  "card": {
+   "type": "stat",
+   "title": "Observable Galaxies",
+   "value": "Future",
+   "label": "Number of galaxies we can observe"
+  }
+ },
+ {
+  "scene": "s07",
+  "start": 438.3798095238095,
+  "text": "in the infinite future is only 2.36 times larger than today.",
+  "sentences": [
+   "s07.07"
+  ],
+  "id": "v091",
+  "end": 443.258,
+  "seconds": 4.88,
+  "scene_start": false,
+  "kind": "card",
+  "card": {
+   "type": "stat",
+   "title": "Future Growth",
+   "value": "2.36X",
+   "label": "Larger than today"
+  }
+ },
+ {
+  "scene": "s07",
+  "start": 443.258,
+  "text": "In summary, our observable universe is 93 billion light-years wide",
+  "sentences": [
+   "s07.08"
+  ],
+  "id": "v092",
+  "end": 448.2405,
+  "seconds": 4.98,
+  "scene_start": false,
+  "kind": "card",
+  "card": {
+   "type": "stat",
+   "title": "Summary Width",
+   "value": "93B",
+   "label": "Light-years wide"
+  }
+ },
+ {
+  "scene": "s07",
+  "start": 448.2405,
+  "text": "because space expanded while light traveled for 13.8 billion years.",
+  "sentences": [
+   "s07.08"
+  ],
+  "id": "v093",
+  "end": 453.672,
+  "seconds": 5.43,
+  "scene_start": false,
+  "kind": "card",
+  "card": {
+   "type": "stat",
+   "title": "Travel Duration",
+   "value": "13.8B",
+   "label": "Years light traveled"
+  }
+ },
+ {
+  "scene": "s07",
+  "start": 453.672,
+  "text": "As you ponder this expanding cosmic fabric, consider how much",
+  "sentences": [
+   "s07.09"
+  ],
+  "id": "v094",
+  "end": 457.4346315789474,
+  "seconds": 3.76,
+  "scene_start": false,
+  "kind": "photo",
+  "photo_subject": "spiral galaxy arms glowing",
+  "photo_queries": [
+   "spiral galaxy arms",
+   "cosmic fabric"
+  ],
+  "card": {
+   "type": "stat",
+   "title": "Cosmic Fabric",
+   "value": "Expanding",
+   "label": "Pondering the cosmos"
+  }
+ },
+ {
+  "scene": "s07",
+  "start": 457.4346315789474,
+  "text": "of the cosmos will forever remain beyond our sight.",
+  "sentences": [
+   "s07.09"
+  ],
+  "id": "v095",
+  "end": 462.265333,
+  "seconds": 4.83,
+  "scene_start": false,
+  "kind": "photo",
+  "photo_subject": "deep space star field",
+  "photo_queries": [
+   "deep space",
+   "cosmic background"
+  ],
+  "card": {
+   "type": "stat",
+   "title": "Forever Hidden",
+   "value": "Beyond",
+   "label": "Beyond our sight"
+  }
+ }
+]

@@ -1,0 +1,88 @@
+[model] gemini-3.5-flash-lite
+[system]
+
+
+[user]
+Make a YouTube thumbnail for this video.
+Title: Why the Observable Universe Is 93 Billion Light-Years Wide
+Question it answers: How can the observable universe be 93 billion light-years wide if it is only 13.8 billion years old?
+
+Pick ONE picture (by its id) that will read best at phone size: one clear, dramatic subject that fits the
+title. Then write 2 to 4 big words to put on it: honest (true, kept by the video), not the title repeated,
+no fake urgency, no question marks or punctuation. Use words the narration itself uses (pilot video 2 got
+'universe grew faster', which the video never says). Pick one of those words to show in red.
+
+KEY LINES OF THE NARRATION:
+Imagine you stand outdoors at night and look into the deepest reaches of space.
+How can light travel across 93 billion light-years if time itself began only 13.8 billion years ago?
+Understanding this giant puzzle reveals your true place in a shifting cosmic landscape.
+In this video, you will discover how cosmic expansion turns a journey of 13.8 billion years into a vast width of 93 billion light-years.
+Nothing in physics can travel faster than the speed of light through local space.
+If light has only been traveling for 13.8 billion years, a simple sum suggests our cosmic horizon should be much smaller.
+You might expect a sphere with a radius of 13.8 billion light-years and a width of 27.6 billion light-years.
+Instead, astronomical observations reveal a diameter of 93 billion light-years.
+This contradiction seems to break the most fundamental rules of motion.
+What lies beyond the edge of this 93 billion light-year boundary?
+Objects outside our observable sphere exist, but their light has not had enough time to reach Earth since the Big Bang.
+The limit of what we can see is called the particle horizon.
+The total size of the entire universe is unknown, and it may even be infinite in extent.
+Every location in space has its own unique observable universe sphere centered on itself.
+In today's standard model, dark energy accelerates expansion, creating a future visibility limit at 62 billion light-years.
+This means the number of galaxies we can ever observe in the infinite future is only 2.36 times larger than today.
+In summary, our observable universe is 93 billion light-years wide because space expanded while light traveled for 13.8 billion years.
+As you ponder this expanding cosmic fabric, consider how much of the cosmos will forever remain beyond our sight.
+
+PICTURES (what a viewer sees in each):
+v002: A deep space image from the James Webb Space Telescope showing numerous distant galaxies and gravitational lensing arcs against a dark background.
+v003: This image shows a starry space nebula featuring shades of green, brown, and red. In the bottom left corner, there is a black rectangular box with the cyan text "RUNAWA".
+v004: A detailed Hubble Space Telescope image of a magnificent barred spiral galaxy showing a bright central core and swirling dust lanes.
+v012: This image shows a complex mechanical structure, possibly a spacecraft or laboratory equipment, viewed from underneath inside an enclosed facility with metal scaffolding and ladders.
+v014: This image shows a pie chart depicting the composition of the universe, with 75% dark energy in green, 21% dark matter in blue, and 4% normal matter in red.
+v018: A spiral galaxy viewed from above, displaying luminous pink star-forming regions along its winding arms and a bright central nucleus.
+v021: This image shows the Pillars of Creation nebula in space, displaying tall, dark dusty columns surrounded by glowing greenish-blue gas and overlaid with several pink square markers.
+v023: A deep field image of the universe filled with countless faint galaxies and prominent gravitational lensing arcs curving around massive galaxy clusters.
+v025: Two interacting galaxies, known as the Antennae Galaxies, merging with sweeping tidal tails and bright pink clusters of newborn stars.
+v032: A night landscape showing tall silhouettes of grass and vegetation in the foreground beneath a starry night sky with a few faint light streaks.
+v033: This image shows two people walking outdoors on a sidewalk next to a large building with glass windows and a glass-covered walkway structure overhead.
+v037: A nearly edge-on spiral galaxy glowing with densely packed stars against a stark black cosmic backdrop dotted with distant background galaxies.
+v048: A close-up view of optical laboratory equipment on an optical bench, including lenses, mounts, and a red laser alignment system.
+v049: This image shows an exoplanet with banded purple and pink atmospheric clouds next to a bright star in space. In the center, there is the white text "PHOTOCHEMISTRY".
+v051: This image shows several people working at computers in an office control room, wearing face masks and headsets. In the upper left corner, there is a blue banner that reads "INGENUITY MARS HELICOPTER PHONES HOME".
+v052: An oval-shaped all-sky map of the cosmic microwave background showing tiny temperature fluctuations as orange, yellow, and blue patches.
+v057: A deep space Hubble image packed with diverse galaxies of varying shapes, sizes, and colors scattered across the black void of space.
+v063: This image shows an infographic timeline explaining the formation of galaxies over billions of years, titled "Hubble spectroscopically confirms farthest galaxy to date", featuring axes, labels, and various galaxy illustrations.
+v065: This image shows a spiral galaxy against a black background of space, with a bright pinkish-red star-forming region on one side and a glowing blue-white core stretching outward.
+v073: A panoramic night photograph of astronomical observatories under a dark sky crossed by a glowing arch of the Milky Way galaxy and zodiacal light.
+v079: This image shows a horizontal banner split into two sections: the top section is a dark blue field filled with tiny blue stars, and the bottom section displays a mottled pattern of red, yellow, and dark spots.
+v080: This image shows a deep red starry field in space with numerous faint stars and a white arrow pointing toward a slightly brighter object near the center.
+v081: An overhead satellite photograph of a coastal landscape showing a sharp headland, sandy beaches, and deep blue ocean water.
+v086: A dense cluster of yellowish and white galaxies photographed by the James Webb Space Telescope, displaying numerous elliptical and spiral structures.
+v088: This image shows a rocket lifting off from a launchpad at sunset, surrounded by a large cloud of bright orange and white smoke against a pale evening sky.
+v090: A side-by-side comparison of two galaxy cluster fields, showing numerous red and yellow galaxies under different filter enhancements.
+v094: A spiral galaxy with a glowing central nucleus and prominent pinkish-red star-forming arms, set against a rich field of background stars.
+v095: The Hubble Ultra Deep Field showing a vast array of faint, distant galaxies scattered across the dark expanse of space.
+v007: A bright red circular dot with radiating white light streaks extending upwards and to the right against a solid black background.
+v009: A glowing red circular center surrounded by a bright white ring and curved white orbital lines against a black background.
+v010: A hand-drawn white wireframe sphere with a shaded upper white patch and a horizontal measurement axis across the middle, set against a black background.
+v016: Two stylized white and red powerboats moving across a black background, leaving white frothy wakes behind them.
+v017: An abstract, chaotic cosmic explosion with red and white radiating lines, scattered white dots, and irregular white nebular shapes against a black background.
+v028: Two sketched gray and white celestial bodies with craters, floating on the left and right sides of a vast black background.
+v030: A hand-drawn white rectangular grid over a black background with several faint red vertical markings scattered across it.
+v034: A hand-drawn white wireframe perspective view of an enclosed space with a grid floor and two towering grid structures on the left and right.
+v035: Two planetary objects with white rings floating in space above a hand-drawn white grid floor against a black background.
+v040: A small white sphere and a larger red sphere positioned above a long, thin, stylized white horizontal object with textured ends, against a black background.
+v042: A long white hand-drawn measuring tape floating horizontally across a black background, with numbers and markings and a single red highlighted section near the center.
+v046: A detailed, hand-drawn ant crawling along a curved white line against a solid black background.
+v047: A central red dot with a dense burst of white radiating lines and star-like particles against a solid black background.
+v050: A hand-drawn white line structure resembling a fence at the bottom, beneath a bright white and red energy burst with radiating lines against a black background.
+v056: A massive, explosive burst of countless white radiating streaks surrounding a central red dot against a black background.
+v062: A tiny red dot at the center of a stylized white four-pointed star shape, with two large white curved orbital arcs sweeping across the right side on a black background.
+v064: A hand-drawn white grid pattern over a black background filled with scattered white stars and a single red circular dot in the upper portion.
+v069: A hand-drawn planet with white continents and a black ocean, encircled by white rings and a mechanical-looking white device attached to its side.
+v074: A stylized blue and white globe of Earth against a black background, with a small red pin marking a location on the upper right edge.
+v076: A hand-drawn white circular outline sketch centered against a solid black background.
+v087: Four stylized, sketched spherical objects of different sizes clustered together, with one large sphere featuring a textured red area against a black background.
+v005: A bright central red and white circular core with white connecting tendrils extending outward to various smaller white spheres, surrounded by tiny stars on a black background.
+v008: A vast field of countless tiny white stars and specks, with a thin white curved line resembling a horizon running across the bottom and two tiny red dots near the top center.
+v039: A diagonal cosmic stream of wavy white lines and particles converging on a central red glowing core against a black background.
+v043: A tilted spiral galaxy with a bright white core, surrounded by numerous surrounding white stars and smaller celestial objects against a black background.

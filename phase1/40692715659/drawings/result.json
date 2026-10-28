@@ -1,0 +1,15 @@
+{
+ "load_s": 10.1,
+ "torch": "2.15.0+cpu",
+ "diffusers": "0.42.1",
+ "drawn": {
+  "v041": "v041.png",
+  "v088": "v088.png"
+ },
+ "seconds": {
+  "v041": 76.9,
+  "v088": 76.4
+ },
+ "skipped_for_time": [],
+ "total_s": 163.4
+}

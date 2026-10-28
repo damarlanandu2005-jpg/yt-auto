@@ -1,0 +1,53 @@
+[model] gemini-3.5-flash-lite
+[system]
+
+
+[user]
+Step 2 of a picture check for a science video. Someone looked at each picture WITHOUT knowing
+what it should show and described it. Decide for each image whether the picture fits.
+A photo fits only if the description shows it clearly depicts what it should show: not mostly text,
+not a test target, not a different planet or object than the narration is about, no watermark, nothing
+misleading. A diagram, infographic or poster with many labels or much text does NOT fit (too small to read
+in a video, and made for another purpose). A chart or graph fits ONLY if its labels show it is about exactly what the narration says (a graph
+of Mars data, or with unexplained labels like 'RHOS', does not fit a sentence about Earth or a star).
+When unsure, answer fits = false (a chart or plain card is shown instead, which is fine).
+Copy the description into "seen".
+Image 1: described as: This image shows a starry space nebula featuring shades of green, brown, and red. In the bottom left corner, there is a black rectangular box with the cyan text "RUNAWA".
+  should show: nebula in space
+  narration: if time itself began only 13.8 billion years ago?
+Image 2: described as: This image shows a complex mechanical structure, possibly a spacecraft or laboratory equipment, viewed from underneath inside an enclosed facility with metal scaffolding and ladders.
+  should show: astronomical telescope observatory
+  narration: Instead, astronomical observations reveal a
+Image 3: described as: This image shows a pie chart depicting the composition of the universe, with 75% dark energy in green, 21% dark matter in blue, and 4% normal matter in red.
+  should show: complex galaxy cluster
+  narration: This contradiction seems to break the most fundamental rules of motion.
+Image 4: described as: This image shows the Pillars of Creation nebula in space, displaying tall, dark dusty columns surrounded by glowing greenish-blue gas and overlaid with several pink square markers.
+  should show: redshift galaxy spectrum
+  narration: However, astronomical measurements show distant galaxies moving away
+Image 5: described as: This image shows two people walking outdoors on a sidewalk next to a large building with glass windows and a glass-covered walkway structure overhead.
+  should show: astronomer at desk
+  narration: Cosmologists describe physical distances using a
+Image 6: described as: This image shows an exoplanet with banded purple and pink atmospheric clouds next to a bright star in space. In the center, there is the white text "PHOTOCHEMISTRY".
+  should show: starlight from distant galaxy
+  narration: But as light travels toward us across billions of years,
+Image 7: described as: This image shows several people working at computers in an office control room, wearing face masks and headsets. In the upper left corner, there is a blue banner that reads "INGENUITY MARS HELICOPTER PHONES HOME".
+  should show: early universe glowing plasma
+  narration: When the ancient light from the early universe was first emitted, the source was actually very close to us.
+Image 8: described as: This image shows an infographic timeline explaining the formation of galaxies over billions of years, titled "Hubble spectroscopically confirms farthest galaxy to date", featuring axes, labels, and various galaxy illustrations.
+  should show: cosmic ruler grid
+  narration: However, cosmologists define proper distance as the physical
+Image 9: described as: This image shows a spiral galaxy against a black background of space, with a bright pinkish-red star-forming region on one side and a glowing blue-white core stretching outward.
+  should show: hubble ultra deep field
+  narration: In today's standard model, the current proper distance to the
+Image 10: described as: This image shows a horizontal banner split into two sections: the top section is a dark blue field filled with tiny blue stars, and the bottom section displays a mottled pattern of red, yellow, and dark spots.
+  should show: observable universe graphic representation
+  narration: That is why the observable universe is 93 billion light-years across today.
+Image 11: described as: This image shows a deep red starry field in space with numerous faint stars and a white arrow pointing toward a slightly brighter object near the center.
+  should show: dense star field in galaxy
+  narration: In today's standard model, that means there are more stars in
+Image 12: described as: This image shows a grayscale, abstract, bumpy spherical shape floating against a solid black background, resembling a viral capsid or a faceted celestial body.
+  should show: dark empty space void
+  narration: Objects outside our observable sphere exist, but their light has
+Image 13: described as: This image shows a rocket lifting off from a launchpad at sunset, surrounded by a large cloud of bright orange and white smoke against a pale evening sky.
+  should show: dark energy cosmic expansion
+  narration: In today's standard model, dark energy accelerates expansion,
