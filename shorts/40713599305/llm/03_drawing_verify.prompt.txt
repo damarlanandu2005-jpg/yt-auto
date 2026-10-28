@@ -1,0 +1,33 @@
+[model] gemma-4-31b-it
+[system]
+
+
+[user]
+Step 2 of a picture check for a science video. Someone looked at each picture WITHOUT knowing
+what it should show and described it. Decide for each image whether the picture fits.
+The pictures are ink drawings made by an AI image model, which often misses. A drawing fits if a
+viewer hearing the narration would recognise its main object(s) (a star, a planet, a blast, molecules, DNA,
+fish...). It does NOT need to show the action or process (collapsing, moving, changing): a still picture of
+the right thing is enough. It does NOT fit if it is only shapes or texture with no recognisable object, shows
+a different thing (a volcano or canyon for the atmosphere, a red diamond for a star), has text or labels, looks
+like a logo/emblem/badge/flag, or has deformed bodies.
+When unsure, answer fits = false (a chart or plain card is shown instead, which is fine).
+Copy the description into "seen".
+Image 1: described as: A simple black background with a white, curved strip of material that has two small circular dots on its surface.
+  should show: a rubber band with dots on it: a rubber band with two small dots on it, seen from a distance
+  narration: a rubber band with two small dots on it, seen from a distance
+Image 2: described as: A vertical white ring or loop is depicted against a black background, featuring several small circular buttons or dots aligned along its right side.
+  should show: a rubber band with dots on it: a closer view of the rubber band and the two dots
+  narration: a closer view of the rubber band and the two dots
+Image 3: described as: An ant is shown crawling across a twisted white ribbon or band against a black background, with the ribbon decorated with multiple circular raised buttons or dots.
+  should show: a rubber band with dots on it: an extreme close-up of one dot with a tiny ant standing on it
+  narration: an extreme close-up of one dot with a tiny ant standing on it
+Image 4: described as: An ant with a red-marked abdomen stands on a dark surface illuminated by multiple scattered white circular spots resembling lights or reflections.
+  should show: a rubber band with dots on it: a close-up of the ant walking forward on the rubber surface
+  narration: a close-up of the ant walking forward on the rubber surface
+Image 5: described as: A white ant is walking along a thin horizontal string being pulled between a hand on the left and a white shape on the right, with a single red bead placed on the string.
+  should show: a rubber band with dots on it: the rubber band being pulled from both ends, stretching the distance between the ant and the other dot
+  narration: the rubber band being pulled from both ends, stretching the distance between the ant and the other dot
+Image 6: described as: An ant with a red-tipped body walks along a wavy white strip against a black background, where the strip is decorated with a series of small circular buttons.
+  should show: a rubber band with dots on it: a wide view of the fully stretched rubber band with the ant and the dots
+  narration: a wide view of the fully stretched rubber band with the ant and the dots

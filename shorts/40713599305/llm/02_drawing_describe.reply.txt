@@ -1,0 +1,28 @@
+{
+  "images": [
+    {
+      "n": 1,
+      "seen": "A simple black background with a white, curved strip of material that has two small circular dots on its surface."
+    },
+    {
+      "n": 2,
+      "seen": "A vertical white ring or loop is depicted against a black background, featuring several small circular buttons or dots aligned along its right side."
+    },
+    {
+      "n": 3,
+      "seen": "An ant is shown crawling across a twisted white ribbon or band against a black background, with the ribbon decorated with multiple circular raised buttons or dots."
+    },
+    {
+      "n": 4,
+      "seen": "An ant with a red-marked abdomen stands on a dark surface illuminated by multiple scattered white circular spots resembling lights or reflections."
+    },
+    {
+      "n": 5,
+      "seen": "A white ant is walking along a thin horizontal string being pulled between a hand on the left and a white shape on the right, with a single red bead placed on the string."
+    },
+    {
+      "n": 6,
+      "seen": "An ant with a red-tipped body walks along a wavy white strip against a black background, where the strip is decorated with a series of small circular buttons."
+    }
+  ]
+}

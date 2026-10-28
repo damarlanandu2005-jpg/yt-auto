@@ -1,0 +1,134 @@
+{
+ "long_title": "Why the Observable Universe Is 93 Billion Light-Years Wide",
+ "started": "2026-10-28 15:13:15 UTC",
+ "music": {
+  "title": "Kevin MacLeod - Dream Culture",
+  "author": "Kevin MacLeod",
+  "licence": "CC BY 3.0",
+  "source_page": "https://commons.wikimedia.org/wiki/File:Kevin_MacLeod_-_Dream_Culture.ogg"
+ },
+ "shorts": [
+  {
+   "title": "The Size of the Observable Universe",
+   "hook": "How can the universe be wider than its age?",
+   "sentences": [
+    "s01.03",
+    "s01.10",
+    "s04.01",
+    "s04.05",
+    "s07.08"
+   ],
+   "subject": "a rubber band with dots on it",
+   "dropped_for_length": [
+    "s04.02"
+   ],
+   "seconds": 52.5,
+   "drawn": 6,
+   "passed": 6,
+   "rejected": [
+    {
+     "id": "shot4",
+     "title": "a rubber band with dots on it: a close-up of the ant walking forward on the rubber surface",
+     "seen": "An ant with a red-marked abdomen stands on a dark surface illuminated by multiple scattered white circular spots resembling lights or reflections.",
+     "reason": "The surface is described as a dark surface with reflections rather than a rubber band."
+    }
+   ],
+   "verify_error": null,
+   "redrawn": 1,
+   "rejected_again": [],
+   "stand_ins": 0,
+   "captions": 37,
+   "video": "short1.mp4",
+   "build_s": 293.1
+  }
+ ],
+ "llm_calls": [
+  {
+   "name": "shorts_plan",
+   "model": "gemma-4-31b-it",
+   "prompt_chars": 8757,
+   "images": 0,
+   "status": 200,
+   "seconds": 169.8,
+   "attempts": 1,
+   "finish": "STOP",
+   "in_tokens": 2515,
+   "out_tokens": 400,
+   "thought_tokens": 2563
+  },
+  {
+   "name": "drawing_describe",
+   "model": "gemini-3.5-flash-lite",
+   "prompt_chars": 320,
+   "images": 6,
+   "status": 200,
+   "seconds": 17.7,
+   "attempts": 1,
+   "finish": "STOP",
+   "in_tokens": 6640,
+   "out_tokens": 302,
+   "thought_tokens": null
+  },
+  {
+   "name": "drawing_verify",
+   "model": "gemma-4-31b-it",
+   "prompt_chars": 3109,
+   "images": 0,
+   "status": 200,
+   "seconds": 88.8,
+   "attempts": 1,
+   "finish": "STOP",
+   "in_tokens": 820,
+   "out_tokens": 391,
+   "thought_tokens": 1065
+  },
+  {
+   "name": "drawing_describe",
+   "model": "gemini-3.5-flash-lite",
+   "prompt_chars": 320,
+   "images": 1,
+   "status": 200,
+   "seconds": 12.2,
+   "attempts": 1,
+   "finish": "STOP",
+   "in_tokens": 1175,
+   "out_tokens": 56,
+   "thought_tokens": null
+  },
+  {
+   "name": "drawing_verify",
+   "model": "gemma-4-31b-it",
+   "prompt_chars": 1218,
+   "images": 0,
+   "status": 200,
+   "seconds": 57.0,
+   "attempts": 1,
+   "finish": "STOP",
+   "in_tokens": 396,
+   "out_tokens": 69,
+   "thought_tokens": 341
+  }
+ ],
+ "sfx": {
+  "kind": "sound effects",
+  "name": "transition click and whoosh, generated in code (yt_auto/sound.py)",
+  "source_page": "own work",
+  "licence": "own work (all rights held by the channel owner)",
+  "attribution": "none required"
+ },
+ "music_record": {
+  "file": "music.wav",
+  "kind": "music",
+  "source": "wikimedia_commons",
+  "title": "Kevin MacLeod - Dream Culture",
+  "source_page": "https://commons.wikimedia.org/wiki/File:Kevin_MacLeod_-_Dream_Culture.ogg",
+  "download_url": "https://upload.wikimedia.org/wikipedia/commons/e/e0/Kevin_MacLeod_-_Dream_Culture.ogg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+  "licence": "CC BY 3.0",
+  "licence_url": "https://creativecommons.org/licenses/by/3.0",
+  "author": "Kevin MacLeod",
+  "attribution": "Music: \"Kevin MacLeod - Dream Culture\" by Kevin MacLeod, CC BY 3.0, via Wikimedia Commons. https://commons.wikimedia.org/wiki/File:Kevin_MacLeod_-_Dream_Culture.ogg",
+  "downloaded": "2026-10-28",
+  "seconds": 214.4,
+  "path": "out/shorts/music/music.wav"
+ }
+}

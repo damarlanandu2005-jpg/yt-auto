@@ -1,0 +1,49 @@
+[Script Info]
+ScriptType: v4.00+
+PlayResX: 1080
+PlayResY: 1920
+WrapStyle: 0
+
+[V4+ Styles]
+Format: Name, Fontname, Fontsize, PrimaryColour, SecondaryColour, OutlineColour, BackColour, Bold, Italic, Underline, StrikeOut, ScaleX, ScaleY, Spacing, Angle, BorderStyle, Outline, Shadow, Alignment, MarginL, MarginR, MarginV, Encoding
+Style: Cap,DejaVu Sans,96,&H00FFFFFF,&H00FFFFFF,&H00000000,&H96000000,1,0,0,0,100,100,1,0,1,7,3,2,70,70,520,1
+
+[Events]
+Format: Layer, Start, End, Style, Name, MarginL, MarginR, MarginV, Effect, Text
+Dialogue: 0,0:00:00.01,0:00:00.62,Cap,,0,0,0,,{\fad(60,60)\fscx90\fscy90\t(0,90,\fscx100\fscy100)}HOW CAN THE
+Dialogue: 0,0:00:00.62,0:00:01.80,Cap,,0,0,0,,{\fad(60,60)\fscx90\fscy90\t(0,90,\fscx100\fscy100)}UNIVERSE BE WIDER
+Dialogue: 0,0:00:01.80,0:00:03.77,Cap,,0,0,0,,{\fad(60,60)\fscx90\fscy90\t(0,90,\fscx100\fscy100)}THAN ITS AGE?
+Dialogue: 0,0:00:03.77,0:00:04.46,Cap,,0,0,0,,{\fad(60,60)\fscx90\fscy90\t(0,90,\fscx100\fscy100)}HOW CAN LIGHT
+Dialogue: 0,0:00:04.46,0:00:06.10,Cap,,0,0,0,,{\fad(60,60)\fscx90\fscy90\t(0,90,\fscx100\fscy100)}TRAVEL ACROSS {\c&H3C3CE8&}93{\c&HFFFFFF&}
+Dialogue: 0,0:00:06.10,0:00:08.58,Cap,,0,0,0,,{\fad(60,60)\fscx90\fscy90\t(0,90,\fscx100\fscy100)}{\c&H3C3CE8&}BILLION{\c&HFFFFFF&} {\c&H3C3CE8&}LIGHT-YEARS{\c&HFFFFFF&} IF
+Dialogue: 0,0:00:08.58,0:00:10.06,Cap,,0,0,0,,{\fad(60,60)\fscx90\fscy90\t(0,90,\fscx100\fscy100)}TIME ITSELF BEGAN
+Dialogue: 0,0:00:10.06,0:00:12.72,Cap,,0,0,0,,{\fad(60,60)\fscx90\fscy90\t(0,90,\fscx100\fscy100)}ONLY {\c&H3C3CE8&}13.8{\c&HFFFFFF&} {\c&H3C3CE8&}BILLION{\c&HFFFFFF&}
+Dialogue: 0,0:00:12.72,0:00:15.10,Cap,,0,0,0,,{\fad(60,60)\fscx90\fscy90\t(0,90,\fscx100\fscy100)}YEARS AGO?
+Dialogue: 0,0:00:15.10,0:00:16.02,Cap,,0,0,0,,{\fad(60,60)\fscx90\fscy90\t(0,90,\fscx100\fscy100)}INSTEAD,
+Dialogue: 0,0:00:16.02,0:00:18.82,Cap,,0,0,0,,{\fad(60,60)\fscx90\fscy90\t(0,90,\fscx100\fscy100)}ASTRONOMICAL OBSERVATIONS REVEAL
+Dialogue: 0,0:00:18.82,0:00:20.20,Cap,,0,0,0,,{\fad(60,60)\fscx90\fscy90\t(0,90,\fscx100\fscy100)}A DIAMETER OF
+Dialogue: 0,0:00:20.20,0:00:22.96,Cap,,0,0,0,,{\fad(60,60)\fscx90\fscy90\t(0,90,\fscx100\fscy100)}{\c&H3C3CE8&}93{\c&HFFFFFF&} {\c&H3C3CE8&}BILLION{\c&HFFFFFF&} {\c&H3C3CE8&}LIGHT-YEARS.{\c&HFFFFFF&}
+Dialogue: 0,0:00:22.96,0:00:23.88,Cap,,0,0,0,,{\fad(60,60)\fscx90\fscy90\t(0,90,\fscx100\fscy100)}IMAGINE AN ANT
+Dialogue: 0,0:00:23.88,0:00:25.02,Cap,,0,0,0,,{\fad(60,60)\fscx90\fscy90\t(0,90,\fscx100\fscy100)}CRAWLING ACROSS A
+Dialogue: 0,0:00:25.02,0:00:26.30,Cap,,0,0,0,,{\fad(60,60)\fscx90\fscy90\t(0,90,\fscx100\fscy100)}GIANT {\c&H3C3CE8&}RUBBER{\c&HFFFFFF&} {\c&H3C3CE8&}BAND{\c&HFFFFFF&}
+Dialogue: 0,0:00:26.30,0:00:27.42,Cap,,0,0,0,,{\fad(60,60)\fscx90\fscy90\t(0,90,\fscx100\fscy100)}WHILE SOMEONE STRETCHES
+Dialogue: 0,0:00:27.42,0:00:28.34,Cap,,0,0,0,,{\fad(60,60)\fscx90\fscy90\t(0,90,\fscx100\fscy100)}THAT {\c&H3C3CE8&}BAND{\c&HFFFFFF&} AT
+Dialogue: 0,0:00:28.34,0:00:29.73,Cap,,0,0,0,,{\fad(60,60)\fscx90\fscy90\t(0,90,\fscx100\fscy100)}THE SAME TIME.
+Dialogue: 0,0:00:29.73,0:00:30.36,Cap,,0,0,0,,{\fad(60,60)\fscx90\fscy90\t(0,90,\fscx100\fscy100)}BUT AS LIGHT
+Dialogue: 0,0:00:30.36,0:00:31.86,Cap,,0,0,0,,{\fad(60,60)\fscx90\fscy90\t(0,90,\fscx100\fscy100)}TRAVELS TOWARD US
+Dialogue: 0,0:00:31.86,0:00:33.20,Cap,,0,0,0,,{\fad(60,60)\fscx90\fscy90\t(0,90,\fscx100\fscy100)}ACROSS BILLIONS OF
+Dialogue: 0,0:00:33.20,0:00:34.24,Cap,,0,0,0,,{\fad(60,60)\fscx90\fscy90\t(0,90,\fscx100\fscy100)}YEARS,
+Dialogue: 0,0:00:34.24,0:00:35.02,Cap,,0,0,0,,{\fad(60,60)\fscx90\fscy90\t(0,90,\fscx100\fscy100)}THE SPACE IT
+Dialogue: 0,0:00:35.02,0:00:35.98,Cap,,0,0,0,,{\fad(60,60)\fscx90\fscy90\t(0,90,\fscx100\fscy100)}HAS ALREADY CROSSED
+Dialogue: 0,0:00:35.98,0:00:38.45,Cap,,0,0,0,,{\fad(60,60)\fscx90\fscy90\t(0,90,\fscx100\fscy100)}CONTINUES TO STRETCH.
+Dialogue: 0,0:00:38.45,0:00:39.26,Cap,,0,0,0,,{\fad(60,60)\fscx90\fscy90\t(0,90,\fscx100\fscy100)}IN SUMMARY,
+Dialogue: 0,0:00:39.26,0:00:40.46,Cap,,0,0,0,,{\fad(60,60)\fscx90\fscy90\t(0,90,\fscx100\fscy100)}OUR OBSERVABLE UNIVERSE
+Dialogue: 0,0:00:40.46,0:00:41.80,Cap,,0,0,0,,{\fad(60,60)\fscx90\fscy90\t(0,90,\fscx100\fscy100)}IS {\c&H3C3CE8&}93{\c&HFFFFFF&} BILLION
+Dialogue: 0,0:00:41.80,0:00:43.42,Cap,,0,0,0,,{\fad(60,60)\fscx90\fscy90\t(0,90,\fscx100\fscy100)}LIGHT-YEARS WIDE BECAUSE
+Dialogue: 0,0:00:43.42,0:00:44.92,Cap,,0,0,0,,{\fad(60,60)\fscx90\fscy90\t(0,90,\fscx100\fscy100)}SPACE EXPANDED WHILE
+Dialogue: 0,0:00:44.92,0:00:45.90,Cap,,0,0,0,,{\fad(60,60)\fscx90\fscy90\t(0,90,\fscx100\fscy100)}LIGHT TRAVELED FOR
+Dialogue: 0,0:00:45.90,0:00:48.90,Cap,,0,0,0,,{\fad(60,60)\fscx90\fscy90\t(0,90,\fscx100\fscy100)}{\c&H3C3CE8&}13.8{\c&HFFFFFF&} BILLION YEARS.
+Dialogue: 0,0:00:48.90,0:00:49.60,Cap,,0,0,0,,{\fad(60,60)\fscx90\fscy90\t(0,90,\fscx100\fscy100)}THE FULL STORY
+Dialogue: 0,0:00:49.60,0:00:50.12,Cap,,0,0,0,,{\fad(60,60)\fscx90\fscy90\t(0,90,\fscx100\fscy100)}IS IN OUR
+Dialogue: 0,0:00:50.12,0:00:50.96,Cap,,0,0,0,,{\fad(60,60)\fscx90\fscy90\t(0,90,\fscx100\fscy100)}LONG VIDEO ON
+Dialogue: 0,0:00:50.96,0:00:51.70,Cap,,0,0,0,,{\fad(60,60)\fscx90\fscy90\t(0,90,\fscx100\fscy100)}THIS CHANNEL.

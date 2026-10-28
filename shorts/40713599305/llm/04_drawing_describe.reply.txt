@@ -1,0 +1,8 @@
+{
+  "images": [
+    {
+      "n": 1,
+      "seen": "A white ant is walking on a curved white line against a black background, with several white dots arranged along the line."
+    }
+  ]
+}

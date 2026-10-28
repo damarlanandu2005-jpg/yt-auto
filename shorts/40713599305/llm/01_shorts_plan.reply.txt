@@ -1,0 +1,46 @@
+```json
+{
+  "shorts": [
+    {
+      "title": "The Size of the Observable Universe",
+      "hook": "How can the universe be wider than its age?",
+      "sentences": [
+        "s01.03",
+        "s01.10",
+        "s04.01",
+        "s04.02",
+        "s04.05",
+        "s07.08"
+      ],
+      "answer": "s07.08",
+      "subject": "a rubber band with dots on it",
+      "shots": [
+        {
+          "sentence": "s01.03",
+          "view": "a rubber band with two small dots on it, seen from a distance"
+        },
+        {
+          "sentence": "s01.10",
+          "view": "a closer view of the rubber band and the two dots"
+        },
+        {
+          "sentence": "s04.01",
+          "view": "an extreme close-up of one dot with a tiny ant standing on it"
+        },
+        {
+          "sentence": "s04.02",
+          "view": "a close-up of the ant walking forward on the rubber surface"
+        },
+        {
+          "sentence": "s04.05",
+          "view": "the rubber band being pulled from both ends, stretching the distance between the ant and the other dot"
+        },
+        {
+          "sentence": "s07.08",
+          "view": "a wide view of the fully stretched rubber band with the ant and the dots"
+        }
+      ]
+    }
+  ]
+}
+```
