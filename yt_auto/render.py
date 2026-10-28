@@ -110,6 +110,18 @@ def make_segment(image: Path, duration: float, out: Path, zoom_in: bool = True, 
     ], name=f"segment_{out.stem}")
 
 
+def make_clip_segment(clip: Path, duration: float, out: Path, fade_in: bool = True, fade_out: bool = True) -> None:
+    """A slot filled with real footage: the cut clip, frozen on its last frame if it is a little short."""
+    frames = max(1, round(duration * FPS))
+    fade = min(0.3, duration / 4)
+    fades = (f",fade=t=in:st=0:d={fade:.2f}" if fade_in else "") + \
+            (f",fade=t=out:st={max(0, duration - fade):.2f}:d={fade:.2f}" if fade_out else "")
+    vf = f"scale={OUT_W}:{OUT_H},fps={FPS},tpad=stop_mode=clone:stop_duration={duration:.2f}{fades},format=yuv420p"
+    _run(["ffmpeg", "-y", "-loglevel", "error", "-i", str(clip), "-an", "-vf", vf, "-frames:v", str(frames),
+          "-c:v", "libx264", "-preset", "veryfast", "-crf", "20", "-threads", threads(), str(out)],
+         name=f"segment_{out.stem}")
+
+
 def concat_audio(wavs: list[Path], out: Path) -> None:
     listfile = out.with_suffix(".txt")
     listfile.write_text("".join(f"file '{w.resolve()}'\n" for w in wavs))

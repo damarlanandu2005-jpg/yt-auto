@@ -16,7 +16,7 @@ import math
 import re
 from pathlib import Path
 
-from . import photos
+from . import footage, photos
 from .llm import LIGHT, VISION, LLMError, llm
 
 TARGET_S, MIN_S, MAX_S = 4.5, 3.0, 6.5
@@ -94,7 +94,7 @@ PLAN_SCHEMA = {"type": "object", "properties": {"visuals": {"type": "array", "it
     "type": "object",
     "properties": {
         "id": {"type": "string"},
-        "kind": {"type": "string", "enum": ["photo", "drawing", "step", "card"]},
+        "kind": {"type": "string", "enum": ["video", "photo", "drawing", "step", "card"]},
         "focus": {"type": "string", "enum": ["center", "left", "right", "top", "bottom"],
                   "description": "kind=step: which part of the previous picture to move closer to"},
         "photo_subject": {"type": "string", "description": "the ONE thing the photo shows, in a few plain words "
@@ -132,6 +132,10 @@ Rules:
   clock"), never a detailed scene ("a hiker with a GPS in remote mountains with no signal"). Never ask for a
   photo of a chart, graph, diagram or data: archive charts are about other things; use a card instead. A photo of the
   object being discussed is better than a text card.
+- Moving footage first for the big moments: kind=video = real NASA footage or NASA animation (rocket launches,
+  spacecraft, astronauts, Earth from orbit, the Sun, planets, galaxies, black hole or star animations). Use it
+  for about 20 to 30 per cent of slots, like a documentary. Give photo_subject and photo_queries (simple words a
+  NASA video archive has: "black hole animation", "galaxy flythrough", "rocket launch").
 - Use kind=drawing (at most {max_drawings} in the whole video) for an idea no real photo can show: an invisible
   process, a view nobody photographed, a comparison of two things (e.g. "a radio wave travelling from a satellite
   down to a phone", "two clocks side by side, one in orbit and one on the ground"). drawing_subject: one simple
@@ -218,10 +222,19 @@ def find_photos(visuals: list[dict], photo_dir: Path, log: dict) -> None:
                                                          " ".join(v.get("photo_queries") or [])):
             v["kind"] = "card"
             log.setdefault("chart_photos_to_cards", []).append(v["id"])
-    want = [v for v in visuals if v["kind"] == "photo" and v.get("photo_queries")]
+    want = [v for v in visuals if v["kind"] in ("photo", "video") and v.get("photo_queries")]
     cands: dict[str, list[dict]] = {}
     for v in want:
-        cands[v["id"]] = photos.search(v["photo_queries"][:2], per_source=6)[:12]
+        if v["kind"] == "video":  # NASA footage first, photos as the fallback candidates
+            vids = []
+            for q in v["photo_queries"][:2]:
+                try:
+                    vids += [c for c in footage.search(q) if c["id"] not in {x["id"] for x in vids}]
+                except Exception as e:  # noqa: BLE001
+                    print(f"[footage] search {q!r} failed: {e!r}", flush=True)
+            cands[v["id"]] = (vids[:8] + photos.search(v["photo_queries"][:2], per_source=4))[:12]
+        else:
+            cands[v["id"]] = photos.search(v["photo_queries"][:2], per_source=6)[:12]
     log["photo_slots"] = len(want)
     log["candidates"] = {k: len(c) for k, c in cands.items()}
     asks = [v for v in want if cands[v["id"]]]
@@ -229,14 +242,17 @@ def find_photos(visuals: list[dict], photo_dir: Path, log: dict) -> None:
         return
     blocks = []
     for v in asks:
-        opts = "\n".join(f"  {c['source'][:4]}:{i}: {c['title'][:90]} | {c['description'][:160]}"
+        opts = "\n".join(f"  {c['source'][:4]}{' VIDEO' if c.get('kind') == 'video' else ''}:{i}: {c['title'][:90]} | "
+                         f"{c['description'][:160]}"
                          for i, c in enumerate(cands[v["id"]]))
         blocks.append(f"[{v['id']}] needs: {v.get('photo_subject', '')} | narration: {v['text']}\n{opts}")
     prompt = """Pick the best photo for each slot from its numbered candidates (title | description).
 Choose a candidate if it shows the slot's subject or something closely related that fits the narration
 (it does not need to match every detail: a photo of a real handheld GPS receiver fits "a hiker's GPS").
 Answer "" only when no candidate is related, or the only related ones would mislead the viewer.
-Prefer real photographs over diagrams with small text, logos, or maps with dense labels. Avoid close-up
+Prefer real photographs over diagrams with small text, logos, or maps with dense labels. Where the slot
+needs video, prefer a VIDEO candidate that shows the subject (footage or animation, not a talking person or a
+press conference). Avoid close-up
 faces of private people. Do not use the same photo twice.
 Answer choice = the candidate number as text, or "".
 
@@ -258,7 +274,7 @@ Answer choice = the candidate number as text, or "".
         if c["id"] in used:
             continue
         try:
-            path = photos.download(c, photo_dir, v["id"])
+            path = _fetch(c, photo_dir, v["id"], v)
         except Exception as e:  # noqa: BLE001
             print(f"[photos] download failed for {v['id']}: {e!r}", flush=True)
             continue
@@ -278,7 +294,7 @@ Answer choice = the candidate number as text, or "".
             if c["id"] in used or c["id"] in tried[v["id"]]:
                 continue
             try:
-                path = photos.download(c, photo_dir, v["id"] + "b")
+                path = _fetch(c, photo_dir, v["id"] + "b", v)
             except Exception:  # noqa: BLE001
                 continue
             if path:
@@ -295,6 +311,12 @@ Answer choice = the candidate number as text, or "".
         if second.get("verify_error"):  # not looked at: don't use them
             for v in again:
                 v.pop("photo", None)
+
+
+def _fetch(c: dict, photo_dir: Path, stem: str, v: dict) -> Path | None:
+    if c.get("kind") == "video":
+        return footage.fetch(c, photo_dir, stem, float(v.get("seconds") or 5))
+    return photos.download(c, photo_dir, stem)
 
 
 def _thumb(path: str, size: int = 384) -> bytes:
@@ -329,7 +351,7 @@ def apply_steps(visuals: list[dict], log: dict) -> None:
         prev = visuals[i - 1] if i else None
         if prev and prev.get("photo") and prev["scene"] == v["scene"] and prev.get("zoom", 1.0) < STEP_ZOOM[-1]:
             level = STEP_ZOOM.index(prev.get("zoom", 1.0)) + 1 if prev.get("zoom", 1.0) in STEP_ZOOM else 1
-            v["photo"] = dict(prev["photo"])
+            v["photo"] = {k: x for k, x in prev["photo"].items() if k != "video_clip"}  # a still close-up
             v["zoom"] = STEP_ZOOM[min(level, len(STEP_ZOOM) - 1)]
             v["focus"] = v.get("focus") or prev.get("focus") or "center"
             v["step_of"] = prev.get("step_of", prev["id"])
@@ -367,7 +389,7 @@ def limit_cards(visuals: list[dict], log: dict) -> None:
         last = next((u for u in reversed(visuals[:i]) if u.get("photo") and u["scene"] == v["scene"]), None)
         if last is None:
             continue
-        v["photo"] = dict(last["photo"])
+        v["photo"] = {k: x for k, x in last["photo"].items() if k != "video_clip"}
         v["zoom"] = STEP_ZOOM[1] if last.get("zoom", 1.0) < STEP_ZOOM[1] else STEP_ZOOM[0]
         v["focus"] = {"center": "left", "left": "right", "right": "top"}.get(last.get("focus") or "center", "center")
         v["kind"], v["step_of"] = "step", last.get("step_of", last["id"])
@@ -383,7 +405,7 @@ def drawing_jobs(visuals: list[dict], max_n: int) -> list[dict]:
     planned_max = CLOUD_PLANNED_MAX if cloud_ready() else PLANNED_MAX
     planned = [v for v in visuals if v["kind"] == "drawing" and v.get("drawing_subject")
                and not NO_DRAW.search(v["drawing_subject"])]
-    no_photo = [v for v in visuals if v["kind"] == "photo" and not v.get("photo") and v.get("photo_subject")
+    no_photo = [v for v in visuals if v["kind"] in ("photo", "video") and not v.get("photo") and v.get("photo_subject")
                 and not NO_DRAW.search(v["photo_subject"])]
     # Keep room for photo slots whose photo failed the check: pilot video 1 remake (run 40593105860) planned
     # 18 drawings (asked for at most 12), so the 12 rejected photos all became bare title cards.

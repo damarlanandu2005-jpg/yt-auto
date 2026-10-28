@@ -74,7 +74,7 @@ def short_credit(p: dict) -> str:
     if p["source"] == "ai_drawing":
         return ""  # our own drawing: listed in the description, no credit line on screen
     if p["source"] == "nasa_image_library":
-        return "Image: NASA"
+        return "Video: NASA" if p.get("video_clip") else "Image: NASA"
     author = p["author"] if len(p["author"]) <= 40 else p["author"][:38] + "…"
     return f"Image: {author} / {p['licence']} / Wikimedia Commons"
 
@@ -254,8 +254,13 @@ def run(args, out: Path, bench: Bench) -> None:
                 motion = "zoom_in" if i % 2 == 0 else "zoom_out"
             last = i + 1 == len(visuals)
             seg = out / "segments" / f"{v['id']}.mp4"
-            render.make_segment(Path(v["frame"]), frames / render.FPS, seg, motion=motion,
-                                fade_in=v["scene_start"], fade_out=last or visuals[i + 1]["scene_start"])
+            clip = (v.get("photo") or {}).get("video_clip")
+            if clip and Path(clip).exists():  # real NASA footage plays as it is
+                render.make_clip_segment(Path(clip), frames / render.FPS, seg, fade_in=v["scene_start"],
+                                         fade_out=last or visuals[i + 1]["scene_start"])
+            else:
+                render.make_segment(Path(v["frame"]), frames / render.FPS, seg, motion=motion,
+                                    fade_in=v["scene_start"], fade_out=last or visuals[i + 1]["scene_start"])
             segments.append(seg)
 
     # 10. Subtitles from our own text (whisper only gives word timing, in its own process). Before the join:

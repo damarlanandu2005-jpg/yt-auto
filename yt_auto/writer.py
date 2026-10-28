@@ -132,6 +132,10 @@ Write the full narration: {words[0]} to {words[1]} words in total, in 5 to 8 sce
   questions: pilot video 2 spent 9 sentences before explaining anything). The last scene answers it clearly
   and recaps in one or two sentences.
 - Build tension honestly: set up a puzzle before its answer, and give the answer its own short sentence.
+- Tell it like a documentary, not a list (owner's comparison with a top video, 28 Oct): put the viewer in the
+  scene ("Imagine you are...") as framing, move from wonder to tension to the reveal, and make huge numbers
+  feel real with comparisons. A comparison may only use numbers that are in the passages (a clearly marked
+  analogy like a stretching rubber band is fine as framing).
 - Explain step by step: one small idea per sentence, from the big picture down to the detail.
 - Split the narration into single sentences. Mark each as "fact" (with the passage ids that support EVERY detail
   in it) or "framing" (no checkable content at all). When in doubt, it is a fact and needs sources.
