@@ -1,0 +1,19 @@
+<!doctype html><meta charset="utf-8"><body style="margin:0;background:#f4efe4">
+<canvas id="c" width="1920" height="1500"></canvas>
+<script type="module">
+// Test sheet: every pose (top two rows) and every face (bottom row), drawn with a tiny stand-in for explainroo's `s`.
+import { hero, POSES, FACES } from '../character.js';
+const ctx = document.getElementById('c').getContext('2d');
+const t = Number(new URLSearchParams(location.search).get('t') || 0.5);
+const s = { t, cx: 960, cy: 540, time: (v) => v,
+  draw(o, fn) { ctx.save(); ctx.translate(o.x, o.y); fn(ctx, { p: 1, local: t }); ctx.restore(); } };
+ctx.font = '22px sans-serif'; ctx.textAlign = 'center'; ctx.fillStyle = '#555';
+const poses = Object.keys(POSES), faces = Object.keys(FACES);
+poses.forEach((p, i) => { const x = 110 + (i % 6) * 300, y = 330 + Math.floor(i / 6) * 360;
+  hero(s, { x, y, scale: 0.75, moves: [{ at: 0, pose: p, face: 'neutral' }], helmet: p === 'float' });
+  ctx.fillStyle = '#555'; ctx.fillText(p, x, y + 30); });
+faces.forEach((f, i) => { const x = 110 + i * 210, y = 1320;
+  ctx.save(); ctx.translate(0, 0);
+  hero(s, { x, y: y + 120, scale: 0.75, moves: [{ at: 0, pose: 'stand', face: f }] }); ctx.restore(); });
+document.title = 'done';
+</script>

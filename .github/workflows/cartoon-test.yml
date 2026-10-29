@@ -1,0 +1,157 @@
+name: Cartoon video (explainroo + our character)
+
+# Manual only. Renders one project from cartoon/videos/<name>/ (script.md, scenes.js, video.json) with
+# explainroo (MIT, github.com/vincentsch/explainroo, pinned below) and our own code-drawn character
+# (cartoon/character.js). Style test asked by the owner on 29 Oct: one recurring character who shows the
+# feeling, one idea per picture, like Flippo Explains.
+#
+# Two jobs on purpose: the render job runs outside code (explainroo and its npm packages), so it gets
+# read-only permissions, no secrets and no saved git credentials. Only the second job, which runs no
+# outside code, can write the release and the bench-results branch.
+on:
+  workflow_dispatch:
+    inputs:
+      project:
+        description: "Folder under cartoon/videos/"
+        required: true
+        default: "black-hole-fall"
+
+permissions:
+  contents: read
+
+env:
+  EXPLAINROO_COMMIT: e95232c   # v0.4.1, 20 Oct 2026, read before use
+
+jobs:
+  render:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 45
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          persist-credentials: false
+
+      - name: Check the project name
+        env:
+          P: ${{ inputs.project }}
+        run: |
+          [[ "$P" =~ ^[a-z0-9-]+$ ]] && [ -f "cartoon/videos/$P/script.md" ] || { echo "no project cartoon/videos/$P"; exit 1; }
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: "22"
+
+      # FFmpeg 8.1 stable static build, cached (CLAUDE.md lesson 1)
+      - name: Cache FFmpeg
+        uses: actions/cache@v4
+        with:
+          path: ~/ffmpeg
+          key: ffmpeg-n8.1-linux64-gpl-v1
+
+      - name: Install FFmpeg 8.1 (stable)
+        timeout-minutes: 5
+        run: |
+          if [ ! -x "$HOME/ffmpeg/bin/ffmpeg" ]; then
+            mkdir -p "$HOME/ffmpeg"
+            curl -fsSL --retry 3 https://github.com/BtbN/FFmpeg-Builds/releases/download/latest/ffmpeg-n8.1-latest-linux64-gpl-8.1.tar.xz \
+              | tar -xJ -C "$HOME/ffmpeg" --strip-components=1
+          fi
+          echo "$HOME/ffmpeg/bin" >> "$GITHUB_PATH"
+
+      - name: Get explainroo (pinned)
+        timeout-minutes: 5
+        run: |
+          git clone -q https://github.com/vincentsch/explainroo "$HOME/explainroo"
+          git -C "$HOME/explainroo" checkout -q "$EXPLAINROO_COMMIT"
+          git -C "$HOME/explainroo" log -1 --format='explainroo %h %cd'
+
+      - name: Cache explainroo models (voice + word timing)
+        uses: actions/cache@v4
+        with:
+          path: ~/.cache/explainroo
+          key: explainroo-models-${{ env.EXPLAINROO_COMMIT }}
+
+      - name: Install explainroo packages
+        timeout-minutes: 10
+        working-directory: /home/runner/explainroo
+        run: npm ci --no-audit --no-fund
+
+      - name: Make the video
+        timeout-minutes: 30
+        working-directory: /home/runner/explainroo
+        env:
+          P: ${{ inputs.project }}
+          EXPLAINROO_CHROME: /usr/bin/google-chrome
+        run: |
+          set -o pipefail
+          mkdir -p videos out
+          cp -r "$GITHUB_WORKSPACE/cartoon/videos/$P" "videos/$P"
+          cp "$GITHUB_WORKSPACE"/cartoon/*.js "videos/$P/"   # character + props, served with the project
+          x() { echo "::group::$*"; node bin/explainroo.js "$@" 2>&1 | tee -a out/log.txt; echo "::endgroup::"; }
+          x doctor || true
+          x voice "videos/$P"
+          x check "videos/$P" || true
+          x still "videos/$P"
+          x sheet "videos/$P"
+          x render "videos/$P"
+          x verify "videos/$P" || true
+          find "videos/$P" -maxdepth 3 -type f \( -name '*.mp4' -o -name '*.srt' -o -name '*.jpg' -o -name '*.png' -o -name '*.json' -o -name '*.txt' \) \
+            -not -path '*/build/clips/*' -not -path '*/build/math/*' | tee out/files.txt
+          mkdir -p out/project && cp -r "videos/$P"/. out/project/ && rm -rf out/project/build/clips out/project/build/math
+
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: cartoon
+          path: /home/runner/explainroo/out
+          retention-days: 7
+
+  publish:
+    needs: render
+    if: always()
+    runs-on: ubuntu-24.04
+    timeout-minutes: 10
+    permissions:
+      contents: write
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/download-artifact@v4
+        with:
+          name: cartoon
+          path: out
+
+      - name: Publish the video as a pre-release
+        if: needs.render.result == 'success'
+        env:
+          GH_TOKEN: ${{ github.token }}
+          P: ${{ inputs.project }}
+        run: |
+          mp4=$(find out/project -maxdepth 2 -name '*.mp4' -not -name 'draft*' | head -1)
+          [ -n "$mp4" ] || { echo "no mp4"; exit 1; }
+          gh release create "cartoon-${{ github.run_id }}" --prerelease --title "Style test for review: $P" \
+            --notes "Look test (owner, 29 Oct): stickman style with explainroo. Watch before anything else." "$mp4"
+
+      - name: Save results to the bench-results branch
+        timeout-minutes: 3
+        run: |
+          set -e
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git fetch --depth 1 origin bench-results
+          git worktree add results FETCH_HEAD
+          git -C results checkout -B bench-results
+          dest="results/cartoon/${{ github.run_id }}"
+          mkdir -p "$dest"
+          cp out/log.txt out/files.txt "$dest/" 2>/dev/null || true
+          # stills, sheets and the small files; the full video is in the release
+          (cd out/project && find . -type f \( -name '*.png' -o -name '*.jpg' -o -name '*.json' -o -name '*.txt' -o -name '*.srt' -o -name '*.md' -o -name '*.js' \) -size -3M \
+            -exec cp --parents {} "../../$dest/" \;) || true
+          cd results
+          git add -A
+          git commit -m "Cartoon test ${{ github.run_id }}"
+          for i in 1 2 3 4 5; do
+            git push origin bench-results && break
+            git pull --rebase origin bench-results
+            sleep 5
+          done

@@ -1,0 +1,18 @@
+<!doctype html><meta charset="utf-8"><body style="margin:0;background:#f4efe4">
+<canvas id="c" width="1620" height="960"></canvas>
+<script type="module">
+// Test page: black hole + stretched, red and white character, drawn with a tiny stand-in for explainroo's `s`.
+import { hero } from '../character.js';
+import { blackHole, stars } from '../props.js';
+const ctx = document.getElementById('c').getContext('2d');
+const s = { t: 1.0, cx: 810, cy: 480, W: 1620, H: 960, time: (v) => v, rand: (i) => (Math.sin(i * 99.1) * 43758.5) % 1 < 0 ? -((Math.sin(i * 99.1) * 43758.5) % 1) : (Math.sin(i * 99.1) * 43758.5) % 1,
+  draw(o, fn) { ctx.save(); ctx.translate(o.x ?? 0, o.y ?? 0); fn(ctx, { p: 1, local: 1 }); ctx.restore(); } };
+stars(s);
+blackHole(s, { x: 270, y: 760, r: 110 });
+hero(s, { x: 270, y: 600, scale: 0.72, helmet: true, stretch: 2.3, moves: [{ at: 0, pose: 'fall', face: 'scared' }] });
+blackHole(s, { x: 810, y: 740, r: 120 });
+hero(s, { x: 810, y: 640, scale: 0.6, helmet: true, color: 'rgb(208,52,44)', alpha: 0.5, moves: [{ at: 0, pose: 'fall', face: 'scared' }] });
+blackHole(s, { x: 1350, y: 520, r: 250 });
+hero(s, { x: 1350, y: 600, scale: 0.42, helmet: true, color: '#ffffff', moves: [{ at: 0, pose: 'sad', face: 'sad' }] });
+document.title = 'done';
+</script>
