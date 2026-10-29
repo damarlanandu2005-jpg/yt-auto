@@ -6,7 +6,7 @@ Never keep state, never use timers, never use `Math.random()` (use `s.rand(i)`),
 `./character.js` and `./props.js`, never use `fetch`, `eval`, `document`, `window` or `ctx.filter`.
 
 ```js
-import { hero } from './character.js';
+import { hero, crowd } from './character.js';
 import { place, floorY, art, background, thing, emoji, label, words, blackHole } from './props.js';
 export default {
   sceneId(s) { background(s, 'ocean'); /* ...pictures... */ words(s); },  // one function per "## sceneId"
@@ -31,19 +31,32 @@ LAST `words(s)` (the one-word captions). Never call `s.camera` or `s.focus` your
 `s.p(at, dur)` gives 0..1 progress for your own motion; `s.t` = seconds since the scene started.
 Something new should appear every 2-4 seconds, on the word it belongs to.
 
-## The character (one stickman, the same in every video)
+## The characters (the stickman, the same in every video, plus other people)
 
 ```js
 hero(s, { x: 540, y: 1300, scale: 1.4, outline: '#ffffff', at: 0,
-  moves: [{ at: 0, pose: 'stand', face: 'happy' }, { at: 'deep', pose: 'scared', face: 'scared' }] });
+  look: { outfit: 'passenger_1912', hat: 'bowler', hair: 'short' },
+  moves: [{ at: 0, pose: 'walk', face: 'happy' }, { at: 'iceberg', pose: 'point', face: 'shocked' }] });
+crowd(s, { n: 6, x0: 120, x1: 960, y: 1500, scale: 0.8, depth: 40, seed: 4, outfits: ['passenger_1912', 'dress'],
+  faces: ['scared', 'shocked'], poses: ['panic', 'scared'], outline: '#ffffff', at: 'panic' });
 ```
 
-- poses: stand, wave, point, shrug, scared, think, cheer, fall, float, run, sit, sad
-- faces: neutral, happy, wow, scared, shocked, confused, thinking, sad, angry
-- options: x, y (feet), scale (0.4 small ... 1.9 big; his height is about 340 x scale px), flip (face left),
-  helmet (space suit), float (gentle drift), outline (ALWAYS '#ffffff'), at, out,
+- poses: stand, wave, point, shrug, scared, think, cheer, fall, float, run, sit, sad,
+  moving: walk, sprint, swim, climb, jump, panic, shiver, tumble; still: kneel, crouch, lie, hold, carry, push,
+  pull, look_up, look_down, cover_ears
+- faces: neutral, happy, wow, scared, shocked, confused, thinking, sad, angry, worried, crying, sweating, sleepy,
+  smug, determined, disgusted, laughing, pain, dizzy, cold, relieved
+- look (all optional; WITHOUT look he is the plain logo stickman, which is right for space/abstract stories):
+  - body: normal, thin, round, muscle, short, child, old (never make fun of a body type)
+  - outfit: shirt, tshirt, suit, passenger_1912, dress, doctor, scientist, police, firefighter, astronaut, diver,
+    sailor, soldier_free, farmer, cowboy, chef, worker, student, explorer, hospital_gown
+  - hat: cap, police_cap, cowboy, top_hat, hard_hat, straw, chef, beanie, fire_helmet, sailor_cap, bowler, explorer
+  - hair: short, long, curly, bun, spiky, bald; hairColor; glasses, moustache, beard: true
+- options: x, y (feet; on a place use floorY), scale (0.4 small ... 1.9 big; his height is about 340 x scale px),
+  flip (face left), helmet (space suit), float (gentle drift), outline (ALWAYS '#ffffff'), at, out,
   stretch (1 normal ... 2.2; number or `() => ...`), alpha (0..1), color (line colour).
-- He shows the FEELING of each step. Usually one stickman; a second one (a friend) only when the story needs it.
+- The main stickman shows the FEELING of each step and keeps the SAME look all video. Dress him for the story
+  (a 1912 passenger on the Titanic, a diver underwater). Other people: a second hero, or crowd() for groups.
 
 ## Props, labels, captions (from props.js)
 

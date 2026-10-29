@@ -1,0 +1,24 @@
+<!doctype html><meta charset="utf-8"><body style="margin:0;background:#f3efe6">
+<canvas id="c" width="2400" height="2600"></canvas>
+<script type="module">
+// Test sheet (29 Oct): body types, outfits, hats/hair, new faces, new poses, and a crowd.
+import { hero, crowd, BODIES, OUTFITS, HATS, HAIRS, FACES, POSES } from '../character.js';
+const cv = document.getElementById('c'), ctx = cv.getContext('2d');
+ctx.fillStyle = '#f3efe6'; ctx.fillRect(0, 0, cv.width, cv.height);
+const s = { t: 1.37, W: 2400, H: 2600, cx: 1200, cy: 1300, time: (v) => (typeof v === 'number' ? v : 0),
+  draw(o, fn) { ctx.save(); ctx.translate(o.x ?? 0, o.y ?? 0); fn(ctx, { p: 1, local: 1 }); ctx.restore(); } };
+const caption = (txt, x, y) => { ctx.font = '22px sans-serif'; ctx.fillStyle = '#333'; ctx.textAlign = 'center'; ctx.fillText(txt, x, y); };
+const row = (y, items, draw) => items.forEach((it, i) => { const x = 90 + i * 150; draw(it, x, y); caption(it, x, y + 34); });
+row(330, Object.keys(BODIES), (b, x, y) => hero(s, { x, y, scale: 0.75, look: { body: b, outfit: 'shirt', hair: 'short' } }));
+row(700, Object.keys(OUTFITS).slice(0, 15), (o, x, y) => hero(s, { x, y, scale: 0.75, look: { outfit: o, hair: 'short' } }));
+row(1070, [...Object.keys(OUTFITS).slice(15), ...HATS.slice(0, 10)], (h, x, y) => HATS.includes(h)
+  ? hero(s, { x, y, scale: 0.75, look: { outfit: 'shirt', hat: h } }) : hero(s, { x, y, scale: 0.75, look: { outfit: h, hair: 'long' } }));
+row(1440, [...HATS.slice(10), ...HAIRS, 'glasses', 'moustache', 'beard'], (h, x, y) => hero(s, { x, y, scale: 0.75,
+  look: HATS.includes(h) ? { outfit: 'suit', hat: h } : HAIRS.includes(h) ? { outfit: 'tshirt', hair: h, hairColor: '#7a4b2a' } : { outfit: 'suit', hair: 'short', [h]: true } }));
+const newFaces = ['worried', 'crying', 'sweating', 'sleepy', 'smug', 'determined', 'disgusted', 'laughing', 'pain', 'dizzy', 'cold', 'relieved'];
+row(1810, newFaces, (f, x, y) => hero(s, { x, y, scale: 0.75, look: { outfit: 'shirt', hair: 'short' }, moves: [{ at: 0, pose: 'stand', face: f }] }));
+const newPoses = ['walk', 'sprint', 'swim', 'climb', 'jump', 'kneel', 'crouch', 'lie', 'hold', 'carry', 'push', 'pull', 'look_up', 'look_down', 'cover_ears'];
+row(2180, newPoses, (p, x, y) => hero(s, { x, y, scale: 0.6, look: { outfit: 'police', hat: 'police_cap' }, moves: [{ at: 0, pose: p, face: 'neutral' }] }));
+crowd(s, { n: 12, x0: 120, x1: 2280, y: 2560, scale: 0.55, depth: 40, seed: 3, faces: ['happy', 'shocked', 'neutral', 'laughing'] });
+document.title = 'done';
+</script>

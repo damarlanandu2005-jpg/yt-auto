@@ -242,6 +242,13 @@ def _js_keys(name: str) -> set[str]:
     return set(re.findall(r"^  (\w+)\s*:", body[:body.index("\n};")], re.M))
 
 
+def _js_list(name: str) -> set[str]:
+    """Items of `export const NAME = ['a', 'b']` in character.js (hats, hair styles)."""
+    js = (CARTOON / "character.js").read_text()
+    m = re.search(rf"export const {name} = \[([^\]]*)\]", js)
+    return set(re.findall(r"'(\w+)'", m.group(1))) if m else set()
+
+
 def icon_names() -> set[str]:
     text = (CARTOON / "lucide_names.txt").read_text()
     return set(" ".join(l for l in text.splitlines() if not l.startswith("#")).split())
@@ -340,7 +347,7 @@ def validate_scenes(js: str, script: dict) -> list[str]:
         for call in ("s.text(", "s.note(", "s.title(", "s.subtitle(", "s.list("):
             if call in body:
                 problems.append(f"{sid}: {call} is not allowed (text on screen = one label() at most)")
-        if "hero(" not in body:
+        if "hero(" not in body and "crowd(" not in body:
             problems.append(f"{sid}: no stickman: every scene shows hero(...)")
         # own helper functions defined in the file (e.g. bubbles(s, ...)) that draw count too
         helpers = [h for h in re.findall(r"^function\s+(\w+)\s*\(s\b", js, re.M)]
@@ -353,7 +360,11 @@ def validate_scenes(js: str, script: dict) -> list[str]:
         # names that only fail at render time (Titanic run 40877631750: face 'worried', icon 'question')
         for kind, found, known in (("pose", re.findall(r"\bpose\s*:\s*'(\w+)'", body), _js_keys("POSES")),
                                    ("face", re.findall(r"\bface\s*:\s*'(\w+)'", body), _js_keys("FACES")),
-                                   ("icon", re.findall(r"s\.icon\(\s*['\"]([\w-]+)['\"]", body), icon_names())):
+                                   ("icon", re.findall(r"s\.icon\(\s*['\"]([\w-]+)['\"]", body), icon_names()),
+                                   ("body type", re.findall(r"\bbody\s*:\s*'(\w+)'", body), _js_keys("BODIES")),
+                                   ("outfit", re.findall(r"\boutfit\s*:\s*'(\w+)'", body), _js_keys("OUTFITS")),
+                                   ("hat", re.findall(r"\bhat\s*:\s*'(\w+)'", body), _js_list("HATS")),
+                                   ("hair", re.findall(r"\bhair\s*:\s*'(\w+)'", body), _js_list("HAIRS"))):
             for n in sorted(set(found) - known):
                 problems.append(f"{sid}: {kind} '{n}' does not exist (use one from the list in the rules)")
         lib = art_library()
