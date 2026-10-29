@@ -42,7 +42,7 @@ def main() -> None:
     JOB["models"] = {m: ol.ensure(m, LOGS / "models.log") for m in dict.fromkeys(WRITE_MODELS + CHECK_MODELS)}  # noqa: F821
     JOB["setup_s"] = round(time.time() - t0)
     local = lambda ms: ",".join(f"local:{m}" for m in ms)  # noqa: E731
-    env = {**os.environ, "PYTHONUNBUFFERED": "1", "MAKE_SHORT_TIMEOUT_MIN": "150",
+    env = {**os.environ, "PYTHONUNBUFFERED": "1", "MAKE_SHORT_TIMEOUT_MIN": "150", "SCRIPT_REWRITES": "3",
            "LLM_QUALITY_MODELS": local(WRITE_MODELS), "LLM_CHECK_MODELS": local(CHECK_MODELS),  # noqa: F821
            "LLM_LIGHT_MODELS": local(CHECK_MODELS + WRITE_MODELS)}  # noqa: F821
     t = time.time()

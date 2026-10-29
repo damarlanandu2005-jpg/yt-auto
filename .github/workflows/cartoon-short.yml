@@ -148,7 +148,7 @@ jobs:
           r = json.loads(rep.read_text()) if rep.exists() else {}
           if r.get("story_problems"):
               keep = pathlib.Path("out/short/kaggle/first_try"); keep.mkdir(parents=True, exist_ok=True)
-              for n in ("script.json", "script_draft.json", "script_retry.json", "factcheck.json", "scenes.js", "report.json"):
+              for n in ("script.json", "script_draft.json", "script_retry.json", "script_retry2.json", "script_retry3.json", "factcheck.json", "scenes.js", "report.json"):
                   if (meta / n).exists(): shutil.move(str(meta / n), str(keep / n))
               print("Kaggle script had story problems, Gemini writes it again:", r["story_problems"])
           EOF

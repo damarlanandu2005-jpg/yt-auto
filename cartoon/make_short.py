@@ -71,12 +71,17 @@ def write(args) -> None:
 
     script = cached(meta / "script.json", make_script)
     fc = json.loads((meta / "factcheck.json").read_text()) if (meta / "factcheck.json").exists() else {}
-    problems0 = cartoon.check_story(script)
-    if problems0 and not (meta / "script_retry.json").exists():  # one rewrite from what the passages really say
-        print(f"[script] {problems0}: one rewrite", flush=True)
+    # Rewrites from what the passages really say: 1 on GitHub (Gemini quota), more on Kaggle where they are free
+    # (SCRIPT_REWRITES; Titanic run 40877631750 lost its answer after Kaggle's single rewrite).
+    for i in range(int(os.environ.get("SCRIPT_REWRITES", "1"))):
+        problems0 = cartoon.check_story(script)
+        name = "script_retry.json" if i == 0 else f"script_retry{i + 1}.json"
+        if not problems0 or (meta / name).exists():
+            continue
+        print(f"[script] {problems0}: rewrite {i + 1}", flush=True)
         s2 = cartoon.write_short(args.topic, plan, sources, cartoon.rewrite_feedback(fc, problems0))
         rep2 = writer.fact_check(s2, sources)
-        (meta / "script_retry.json").write_text(json.dumps(s2, indent=1, ensure_ascii=False), encoding="utf-8")
+        (meta / name).write_text(json.dumps(s2, indent=1, ensure_ascii=False), encoding="utf-8")
         if len(cartoon.check_story(s2)) < len(problems0) or (not cartoon.check_story(s2)):
             script, fc = s2, rep2
             (meta / "script.json").write_text(json.dumps(s2, indent=1, ensure_ascii=False), encoding="utf-8")
