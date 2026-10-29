@@ -1,0 +1,147 @@
+{
+ "facts": [
+  {
+   "id": "A1.1",
+   "fact": "The Mariana Trench is located in the western Pacific Ocean and reaches a maximum depth of 10,935 metres."
+  },
+  {
+   "id": "A4.42",
+   "fact": "Entering cold water triggers cold shock within 2 minutes, causing uncontrolled gasping."
+  },
+  {
+   "id": "A4.3",
+   "fact": "Drowning occurs when the nose and mouth are submerged, preventing breathing."
+  },
+  {
+   "id": "A3.8",
+   "fact": "Hydrostatic pressure increases during descent, shrinking flexible gas-filled spaces."
+  },
+  {
+   "id": "A3.11",
+   "fact": "Increasing pressure deforms tissues and squeezes internal gas-filled organs like lungs and sinuses."
+  },
+  {
+   "id": "A1.2",
+   "fact": "At the bottom of the trench, water pressure is over 1,000 times the standard sea level pressure."
+  }
+ ],
+ "scenes": [
+  {
+   "role": "hook",
+   "sentences": [
+    {
+     "text": "What would happen to your body if you fell into the Mariana Trench?",
+     "kind": "framing",
+     "sources": [],
+     "id": "s01.01",
+     "check": "supported"
+    }
+   ],
+   "id": "s01"
+  },
+  {
+   "role": "step",
+   "sentences": [
+    {
+     "text": "You drop into the western Pacific Ocean, directly above a depth of 10,935 metres.",
+     "kind": "fact",
+     "sources": [
+      "A1.1"
+     ],
+     "id": "s02.01",
+     "check": "supported"
+    },
+    {
+     "text": "Cold water triggers cold shock and uncontrolled gasping, which can kill within 2 minutes.",
+     "kind": "fact",
+     "sources": [
+      "A4.42"
+     ],
+     "id": "s02.02",
+     "check": "supported (after fix)"
+    }
+   ],
+   "id": "s02"
+  },
+  {
+   "role": "step",
+   "sentences": [
+    {
+     "text": "With your mouth submerged, gasping forces water in and causes drowning.",
+     "kind": "fact",
+     "sources": [
+      "A4.3",
+      "A4.42"
+     ],
+     "id": "s03.01",
+     "check": "supported"
+    },
+    {
+     "text": "As your body sinks deeper, rising hydrostatic pressure shrinks flexible gas-filled spaces.",
+     "kind": "fact",
+     "sources": [
+      "A3.8"
+     ],
+     "id": "s03.02",
+     "check": "supported (after fix)"
+    }
+   ],
+   "id": "s03"
+  },
+  {
+   "role": "step",
+   "sentences": [
+    {
+     "text": "This difference in pressure causes injuries to gas-containing internal organs like your lungs and ears.",
+     "kind": "fact",
+     "sources": [
+      "A3.11"
+     ],
+     "id": "s04.01",
+     "check": "supported (after fix)"
+    }
+   ],
+   "id": "s04"
+  },
+  {
+   "role": "answer",
+   "sentences": [
+    {
+     "text": "In short, cold shock and drowning can kill you in minutes.",
+     "kind": "fact",
+     "sources": [
+      "A4.3",
+      "A4.42"
+     ],
+     "id": "s05.01",
+     "check": "supported (after fix)"
+    },
+    {
+     "text": "As you descend, rising water pressure can injure your gas-containing internal organs.",
+     "kind": "fact",
+     "sources": [
+      "A3.8",
+      "A3.11"
+     ],
+     "id": "s05.02",
+     "check": "supported (after fix)"
+    }
+   ],
+   "id": "s05"
+  },
+  {
+   "role": "end",
+   "sentences": [
+    {
+     "text": "Would you ever dare to explore the ocean deeps?",
+     "kind": "framing",
+     "sources": [],
+     "id": "s06.01",
+     "check": "supported"
+    }
+   ],
+   "id": "s06"
+  }
+ ],
+ "title": "What Happens If You Fall Into the Mariana Trench?"
+}

@@ -1,0 +1,28 @@
+{
+  "images": [
+    {
+      "n": 1,
+      "seen": "Against a vertical light blue background with small floating bubbles, a shocked stick figure with wide white eyes, a wavy line mouth, and a small sweat drop near its right eye floats in the center. Its arms are raised and bent slightly outwards. Above the stick figure is a red question mark outlined in black, and at the very top is the text 'MARIANA TRENCH' in bold yellow capital letters. No text or object covers the stick figure's head or body, and nothing is cut off at the edges."
+    },
+    {
+      "n": 2,
+      "seen": "Against a vertical light blue background with scattered bubbles, a terrified stick figure with wide white eyes, a wavy mouth, and a sweat drop near its right eye floats in the center, holding its hands up near its cheeks. Near the top, the text '10,935 METRES DEEP' appears in light blue capital letters. Below it, on the left is a blue snowflake icon, in the middle is the text 'COLD SHOCK' in bold black letters with blue outline, and on the right is a red skull icon outlined in black. No text or object covers the stick figure's head or body, and nothing is cut off."
+    },
+    {
+      "n": 3,
+      "seen": "Against a vertical dark blue background with sparse bubbles, a shocked stick figure with wide eyes, an open round mouth, and a red exclamation mark near its head floats in the center. Two horizontal blue arrows point inwards towards the stick figure's sides. At the top, the text 'HYDROSTATIC PRESSURE' is written in bold yellow letters with a small light blue water drop icon below it. No text or object covers the stick figure's head or body, and nothing is cut off."
+    },
+    {
+      "n": 4,
+      "seen": "Against a vertical dark blue background with scattered bubbles, a distressed stick figure with a sad frown, closed eyes, and a single blue tear running down its right cheek floats in the center with its hands raised near the sides of its head. Four pink arrows point inwards towards the sides of its head. At the top, the text 'PRESSURE SQUEEZE' is written in bold red and pink letters, and right below it is the text 'LUNGS & EARS CRUSHED' in bold yellow letters. No text or object covers the stick figure's head or body, and nothing is cut off."
+    },
+    {
+      "n": 5,
+      "seen": "Against a vertical dark blue background with many tiny bubbles, a panicking stick figure with wide white eyes, a wavy mouth, and sweat drops near its head floats in the center with both arms raised outwards. Near the top, a red skull icon outlined in black is positioned to the left of the text 'MINUTES TO LIVE' in bold red and pink letters, and below that is the text 'MASSIVE PRESSURE' in bold yellow letters. No text or object covers the stick figure's head or body, and nothing is cut off."
+    },
+    {
+      "n": 6,
+      "seen": "Against a vertical light blue background with small bubbles, a smiling stick figure with curved closed eyes, a wide happy mouth, and its right arm extended sideways floats in the center. Above the stick figure is a red question mark outlined in black, and at the top is the text 'WOULD YOU DARE?' in bold yellow capital letters. No text or object covers the stick figure's head or body, and nothing is cut off."
+    }
+  ]
+}

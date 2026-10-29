@@ -1,0 +1,23 @@
+[model] gemini-3.5-flash-lite
+[system]
+
+
+[user]
+Someone described the last frame of each scene of a cartoon Short WITHOUT knowing the story. Judge each
+scene. A scene has a problem when: text covers the stick figure's head or body; something is cut off at the
+edge; the picture does not show what the narration says (or shows something it doesn't say); an abbreviation
+like "ATM", "km", "x10" is on screen; a number on screen is not in the narration; the picture looks the same as
+the scene before. Be concrete: say what to change. If a scene is fine, ok = true and no problems.
+
+Scene hook (Image 1): narration: "What would happen to your body if you fell into the Mariana Trench?"
+  described as: Against a vertical light blue background with small floating bubbles, a shocked stick figure with wide white eyes, a wavy line mouth, and a small sweat drop near its right eye floats in the center. Its arms are raised and bent slightly outwards. Above the stick figure is a red question mark outlined in black, and at the very top is the text 'MARIANA TRENCH' in bold yellow capital letters. No text or object covers the stick figure's head or body, and nothing is cut off at the edges.
+Scene step1 (Image 2): narration: "You drop into the western Pacific Ocean, directly above a depth of 10,935 metres. Cold water triggers cold shock and uncontrolled gasping, which can kill within 2 minutes."
+  described as: Against a vertical light blue background with scattered bubbles, a terrified stick figure with wide white eyes, a wavy mouth, and a sweat drop near its right eye floats in the center, holding its hands up near its cheeks. Near the top, the text '10,935 METRES DEEP' appears in light blue capital letters. Below it, on the left is a blue snowflake icon, in the middle is the text 'COLD SHOCK' in bold black letters with blue outline, and on the right is a red skull icon outlined in black. No text or object covers the stick figure's head or body, and nothing is cut off.
+Scene step2 (Image 3): narration: "With your mouth submerged, gasping forces water in and causes drowning. As your body sinks deeper, rising hydrostatic pressure shrinks flexible gas-filled spaces."
+  described as: Against a vertical dark blue background with sparse bubbles, a shocked stick figure with wide eyes, an open round mouth, and a red exclamation mark near its head floats in the center. Two horizontal blue arrows point inwards towards the stick figure's sides. At the top, the text 'HYDROSTATIC PRESSURE' is written in bold yellow letters with a small light blue water drop icon below it. No text or object covers the stick figure's head or body, and nothing is cut off.
+Scene step3 (Image 4): narration: "This difference in pressure causes injuries to gas-containing internal organs like your lungs and ears."
+  described as: Against a vertical dark blue background with scattered bubbles, a distressed stick figure with a sad frown, closed eyes, and a single blue tear running down its right cheek floats in the center with its hands raised near the sides of its head. Four pink arrows point inwards towards the sides of its head. At the top, the text 'PRESSURE SQUEEZE' is written in bold red and pink letters, and right below it is the text 'LUNGS & EARS CRUSHED' in bold yellow letters. No text or object covers the stick figure's head or body, and nothing is cut off.
+Scene answer (Image 5): narration: "In short, cold shock and drowning can kill you in minutes. As you descend, rising water pressure can injure your gas-containing internal organs."
+  described as: Against a vertical dark blue background with many tiny bubbles, a panicking stick figure with wide white eyes, a wavy mouth, and sweat drops near its head floats in the center with both arms raised outwards. Near the top, a red skull icon outlined in black is positioned to the left of the text 'MINUTES TO LIVE' in bold red and pink letters, and below that is the text 'MASSIVE PRESSURE' in bold yellow letters. No text or object covers the stick figure's head or body, and nothing is cut off.
+Scene end (Image 6): narration: "Would you ever dare to explore the ocean deeps?"
+  described as: Against a vertical light blue background with small bubbles, a smiling stick figure with curved closed eyes, a wide happy mouth, and its right arm extended sideways floats in the center. Above the stick figure is a red question mark outlined in black, and at the top is the text 'WOULD YOU DARE?' in bold yellow capital letters. No text or object covers the stick figure's head or body, and nothing is cut off.

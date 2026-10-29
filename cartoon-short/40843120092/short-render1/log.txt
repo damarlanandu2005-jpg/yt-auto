@@ -1,0 +1,59 @@
+voice hook: 3.5s in 4.6s
+voice step1: 12.8s in 8.7s
+voice step2: 10.7s in 7.4s
+voice step3: 6.7s in 4.4s
+voice answer: 9.1s in 6.8s
+voice end: 2.5s in 2.4s
+hook                 3.5s  100% confirmed
+step1               12.8s  100% confirmed
+step2               10.7s  100% confirmed
+step3                6.7s  100% confirmed
+answer               9.1s  100% confirmed
+end                  2.5s  100% confirmed
+total 53.8s
+HINT  step1: cue "Cold" means the first of the 2 times it is spoken in this scene; if you meant a later one, use s.cue("Cold", 2) or a [#marker]
+0 error(s), 1 other finding(s) in 6 scenes (53.8s)
+hook@end                 /home/runner/explainroo/videos/short/out/stills/hook@end.png
+step1@end                /home/runner/explainroo/videos/short/out/stills/step1@end.png
+step2@end                /home/runner/explainroo/videos/short/out/stills/step2@end.png
+step3@end                /home/runner/explainroo/videos/short/out/stills/step3@end.png
+answer@end               /home/runner/explainroo/videos/short/out/stills/answer@end.png
+end@end                  /home/runner/explainroo/videos/short/out/stills/end@end.png
+/home/runner/explainroo/videos/short/out/sheet.jpg (30 frames)
+rendering 53.8s (1614 frames at 30 fps, 1080x1920) with 2 workers
+soundtrack: 22 sound cues, mixed in 2.7s
+frames 84/1614 (25.8 fps, about 60s left)
+frames 168/1614 (25.5 fps, about 57s left)
+frames 198/1614 (19.7 fps, about 72s left)
+frames 234/1614 (17.7 fps, about 79s left)
+frames 312/1614 (18.9 fps, about 69s left)
+frames 378/1614 (19.2 fps, about 65s left)
+frames 432/1614 (18.6 fps, about 64s left)
+frames 486/1614 (18.5 fps, about 61s left)
+frames 564/1614 (19.1 fps, about 56s left)
+frames 606/1614 (18.2 fps, about 56s left)
+frames 630/1614 (17.2 fps, about 58s left)
+frames 696/1614 (17.5 fps, about 53s left)
+frames 774/1614 (17.9 fps, about 47s left)
+frames 822/1614 (17.6 fps, about 46s left)
+frames 912/1614 (18.3 fps, about 39s left)
+frames 1002/1614 (18.9 fps, about 33s left)
+frames 1068/1614 (19.0 fps, about 29s left)
+frames 1158/1614 (19.6 fps, about 24s left)
+frames 1200/1614 (19.3 fps, about 22s left)
+frames 1236/1614 (18.9 fps, about 21s left)
+frames 1296/1614 (18.9 fps, about 17s left)
+frames 1350/1614 (18.8 fps, about 15s left)
+frames 1428/1614 (19.1 fps, about 10s left)
+frames 1518/1614 (19.5 fps, about 5s left)
+frames 1575/1614 (19.5 fps, about 3s left)
+frames 1605/1614 (19.0 fps, about 1s left)
+frames done in 86.3s
+wrote videos/short/out/video.mp4 in 93.3s
+videos/short/out/video.mp4
+videos/short/out/video.srt
+videos/short/out/video.vtt
+videos/short/out/video.cover.jpg
+checking that the narration is understandable in the final mix
+/home/runner/explainroo/videos/short/out/video.mp4: 53.8s, 1080x1920, loudness -14 LUFS, true peak -1.4 dBFS
+narration understood: 100%

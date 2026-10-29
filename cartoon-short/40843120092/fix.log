@@ -1,0 +1,9 @@
+[llm] short_pictures_judge: gemma-4-31b-it unavailable (HTTP 500 (busy)); trying next model
+[review] 2 scene(s) with picture problems
+  step1: ["A number on screen is not in the narration: '10,935' is in the narration, but the screen says '10,935 METRES DEEP' instead of matching the exact narration or avoiding the specific number discrepancy if not fully aligned."]
+  answer: ['The picture looks the same as the scene before (similar dark blue background and stick figure layout).']
+[llm] short_scenes_fix: gemini-3.8-flash unavailable (ConnectionResetError(104, 'Connection reset by peer')); trying next model
+[llm] short_scenes_fix: gemini-3.6-flash unavailable (HTTP 503 (busy)); trying next model
+[llm] short_scenes_fix: gemini-3.5-flash unavailable (HTTP 503 (busy)); trying next model
+[llm] short_scenes_fix: every model busy; waiting 120s (round 1)
+[fix] 0 layout error(s), 2 picture problem(s) sent back to the scene writer

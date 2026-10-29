@@ -1,0 +1,23 @@
+{
+ "topic": "What happens if you fall into the Mariana Trench?",
+ "fact_check": {
+  "checked": 10,
+  "supported_first_pass": 4,
+  "fixed": 5,
+  "dropped": 1,
+  "bad_ids": 0,
+  "copied": 0,
+  "guard": 1,
+  "words_after": 111
+ },
+ "story_problems": [],
+ "words": 111,
+ "scene_problems": [],
+ "llm_calls": 12,
+ "render_errors_first": [],
+ "picture_problems_first": [
+  "step1: A number on screen is not in the narration: '10,935' is in the narration, but the screen says '10,935 METRES DEEP' instead of matching the exact narration or avoiding the specific number discrepancy if not fully aligned.",
+  "answer: The picture looks the same as the scene before (similar dark blue background and stick figure layout)."
+ ],
+ "fix_problems": []
+}

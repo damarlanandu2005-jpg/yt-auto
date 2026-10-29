@@ -1,0 +1,19 @@
+{
+  "question": "What happens if you fall into the Mariana Trench?",
+  "title": "What Happens If You Fall Into the Mariana Trench?",
+  "emotion": "shock",
+  "answer": "Without a protective submarine, cold shock and drowning happen within minutes near the surface. As you sink, the ocean water pressure crushes all air-filled spaces in your body long before you reach the bottom.",
+  "steps": [
+    "Stickman steps off a boat into the Pacific Ocean right above the Mariana Trench.",
+    "Within moments, the cold water triggers shock and leads to drowning without breathing equipment.",
+    "As stickman sinks deeper, the weight of the surrounding water creates rapidly rising pressure.",
+    "The growing pressure collapses all air-filled spaces inside the body, including the lungs and sinuses.",
+    "At the bottom nearly 11,000 metres deep, water pressure reaches over 1,000 times the pressure at sea level."
+  ],
+  "wikipedia_titles": [
+    "Mariana Trench",
+    "Challenger Deep",
+    "Barotrauma",
+    "Drowning"
+  ]
+}

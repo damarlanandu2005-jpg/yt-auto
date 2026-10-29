@@ -1,0 +1,54 @@
+{
+ "checked": 10,
+ "supported_first_pass": 4,
+ "fixed": [
+  {
+   "id": "s02.02",
+   "old": "Cold water triggers cold shock in under 2 minutes, causing uncontrolled gasping.",
+   "new": "Cold water triggers cold shock and uncontrolled gasping, which can kill within 2 minutes.",
+   "problem": "The passage states that cold shock causes uncontrolled gasping and can kill within 2 minutes, not that it is triggered in under 2 minutes."
+  },
+  {
+   "id": "s03.02",
+   "old": "As your body sinks deeper, rising hydrostatic pressure shrinks all gas-filled spaces.",
+   "new": "As your body sinks deeper, rising hydrostatic pressure shrinks flexible gas-filled spaces.",
+   "problem": "The passage specifies that rising pressure reduces the volume of flexible gas-filled spaces, not all gas-filled spaces."
+  },
+  {
+   "id": "s04.01",
+   "old": "This crushing pressure deforms and squeezes internal organs like your lungs and sinuses.",
+   "new": "This difference in pressure causes injuries to gas-containing internal organs like your lungs and ears.",
+   "problem": "The passage mentions gas-containing organs such as the lungs, gastrointestinal tract, and ears, but does not mention sinuses."
+  },
+  {
+   "id": "s05.01",
+   "old": "In short, cold shock and drowning stop you near the surface in minutes.",
+   "new": "In short, cold shock and drowning can kill you in minutes.",
+   "problem": "The cited passages state that cold shock and drowning can kill within minutes, but they do not mention being near the surface."
+  },
+  {
+   "id": "s05.02",
+   "old": "As you sink, ocean pressure crushes your air-filled organs long before you hit bottom.",
+   "new": "As you descend, rising water pressure can injure your gas-containing internal organs.",
+   "problem": "The cited passages explain that descending increases pressure and injures gas-containing organs, but they do not mention hitting bottom."
+  }
+ ],
+ "dropped": [
+  {
+   "id": "s04.02",
+   "text": "Near the bottom, water pressure is over 1,000 times the pressure at sea level.",
+   "problem": "number 1,000 is not in the cited sources"
+  }
+ ],
+ "bad_ids": [],
+ "copied": [],
+ "guard": [
+  {
+   "id": "s04.02",
+   "problems": [
+    "number 1,000 is not in the cited sources"
+   ]
+  }
+ ],
+ "words_after": 111
+}

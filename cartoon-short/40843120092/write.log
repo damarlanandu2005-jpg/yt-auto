@@ -1,0 +1,15 @@
+[llm] short_plan: gemini-3.8-flash unavailable (HTTP 503 (busy)); trying next model
+[llm] short_plan: gemini-3.6-flash unavailable (HTTP 503 (busy)); trying next model
+[llm] short_plan: gemini-3.5-flash unavailable (HTTP 503 (busy)); trying next model
+[llm] short_plan: every model busy; waiting 120s (round 1)
+[llm] short_plan: gemini-3.8-flash unavailable (HTTP 503 (busy)); trying next model
+[llm] short_plan: gemini-3.6-flash unavailable (HTTP 503 (busy)); trying next model
+[plan] What happens if you fall into the Mariana Trench? | feeling: shock
+[research] A1 Mariana Trench: 30 passages
+[research] A2 Challenger Deep: 37 passages
+[research] A3 Barotrauma: 60 passages
+[research] A4 Drowning: 68 passages
+[llm] short_script: gemini-3.8-flash unavailable (HTTP 503 (busy)); trying next model
+[llm] factcheck2: gemini-3.8-flash unavailable (HTTP 503 (busy)); trying next model
+[script] 111 words; fact-check {'checked': 10, 'supported_first_pass': 4, 'fixed': 5, 'dropped': 1, 'bad_ids': 0, 'copied': 0, 'guard': 1, 'words_after': 111}; story ok
+[scenes] ok

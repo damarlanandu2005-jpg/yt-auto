@@ -1,0 +1,6 @@
+hook: stickman falls into the Mariana Trench ocean waters with a question mark.
+step1: counter counts up to 10,935 metres with cold shock and skull hazard icons.
+step2: stickman slowly sinks into the water as pressure begins compressing air spaces.
+step3: centered stickman is squeezed by red inward pressure arrows targeting his ears and lungs.
+answer: side-by-side summary layout with stickman drifting on the left while cards break down drowning and organ damage on the right.
+end: stickman ponders and points with a question mark asking if you would dare to explore.

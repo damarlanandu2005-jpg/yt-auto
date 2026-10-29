@@ -1,0 +1,38 @@
+{
+  "scenes": [
+    {
+      "scene": "hook",
+      "ok": true,
+      "problems": []
+    },
+    {
+      "scene": "step1",
+      "ok": false,
+      "problems": [
+        "A number on screen is not in the narration: '10,935' is in the narration, but the screen says '10,935 METRES DEEP' instead of matching the exact narration or avoiding the specific number discrepancy if not fully aligned."
+      ]
+    },
+    {
+      "scene": "step2",
+      "ok": true,
+      "problems": []
+    },
+    {
+      "scene": "step3",
+      "ok": true,
+      "problems": []
+    },
+    {
+      "scene": "answer",
+      "ok": false,
+      "problems": [
+        "The picture looks the same as the scene before (similar dark blue background and stick figure layout)."
+      ]
+    },
+    {
+      "scene": "end",
+      "ok": true,
+      "problems": []
+    }
+  ]
+}
