@@ -66,23 +66,70 @@ function outlined(text, x, y, size, color = WHITE, align = 'center', maxW = W * 
   ctx.restore();
 }
 
+const PAPER = '#fbf8f1', INKC = '#1d1d1f', RED2 = '#e5484d', BLUE = '#3b82f6', ORANGE = '#f59e0b', GREEN = '#22a06b';
+
+function paper() {
+  ctx.fillStyle = PAPER;
+  ctx.fillRect(0, 0, W, H);
+}
+
+// Small hand-drawn doodles for "every kind of topic" (own drawings): ship, planet, lightning, heart, bulb, hourglass.
+function doodle(name, x, y, r) {
+  ctx.save();
+  ctx.translate(x, y);
+  ctx.lineWidth = Math.max(3, r * 0.12);
+  ctx.lineCap = 'round'; ctx.lineJoin = 'round';
+  ctx.strokeStyle = INKC;
+  const fill = (c) => { ctx.fillStyle = c; ctx.fill(); ctx.stroke(); };
+  ctx.beginPath();
+  if (name === 'ship') { // history: a ship on waves
+    ctx.moveTo(-r, -0.1 * r); ctx.lineTo(r, -0.1 * r); ctx.lineTo(0.7 * r, 0.45 * r); ctx.lineTo(-0.7 * r, 0.45 * r); ctx.closePath(); fill('#ffffff');
+    ctx.beginPath(); ctx.rect(-0.35 * r, -0.55 * r, 0.22 * r, 0.45 * r); ctx.rect(0.1 * r, -0.55 * r, 0.22 * r, 0.45 * r); fill(RED2);
+    ctx.beginPath(); ctx.moveTo(-1.1 * r, 0.7 * r); for (let i = 0; i < 4; i++) ctx.quadraticCurveTo(-0.85 * r + i * 0.55 * r, 0.5 * r, -0.55 * r + i * 0.55 * r, 0.7 * r); ctx.strokeStyle = BLUE; ctx.stroke();
+  } else if (name === 'planet') { // space
+    ctx.arc(0, 0, 0.6 * r, 0, Math.PI * 2); fill(ORANGE);
+    ctx.beginPath(); ctx.ellipse(0, 0, 1.05 * r, 0.3 * r, -0.35, 0.15 * Math.PI, 0.85 * Math.PI, true); ctx.stroke();
+  } else if (name === 'bolt') { // nature, disasters
+    ctx.moveTo(0.2 * r, -r); ctx.lineTo(-0.45 * r, 0.1 * r); ctx.lineTo(0, 0.1 * r); ctx.lineTo(-0.25 * r, r); ctx.lineTo(0.5 * r, -0.2 * r); ctx.lineTo(0.05 * r, -0.2 * r); ctx.closePath(); fill('#fcd34d');
+  } else if (name === 'heart') { // the human body, feelings
+    ctx.moveTo(0, 0.8 * r); ctx.bezierCurveTo(-1.2 * r, -0.1 * r, -0.6 * r, -0.95 * r, 0, -0.35 * r); ctx.bezierCurveTo(0.6 * r, -0.95 * r, 1.2 * r, -0.1 * r, 0, 0.8 * r); fill(RED2);
+  } else if (name === 'bulb') { // inventions, ideas
+    ctx.arc(0, -0.2 * r, 0.55 * r, Math.PI * 0.8, Math.PI * 2.2); ctx.lineTo(0.25 * r, 0.55 * r); ctx.lineTo(-0.25 * r, 0.55 * r); ctx.closePath(); fill('#fff3b0');
+    ctx.beginPath(); ctx.moveTo(-0.25 * r, 0.75 * r); ctx.lineTo(0.25 * r, 0.75 * r); ctx.stroke();
+  } else if (name === 'hourglass') { // time, "what if"
+    ctx.moveTo(-0.5 * r, -0.8 * r); ctx.lineTo(0.5 * r, -0.8 * r); ctx.lineTo(-0.5 * r, 0.8 * r); ctx.lineTo(0.5 * r, 0.8 * r); ctx.closePath(); fill('#e0f2fe');
+    ctx.beginPath(); ctx.moveTo(-0.25 * r, 0.6 * r); ctx.lineTo(0.25 * r, 0.6 * r); ctx.lineTo(0, 0.15 * r); ctx.closePath(); ctx.fillStyle = ORANGE; ctx.fill();
+  } else if (name === 'q') {
+    ctx.font = `900 ${r * 1.8}px Inter`; ctx.textAlign = 'center'; ctx.textBaseline = 'middle'; ctx.fillStyle = RED2; ctx.fillText('?', 0, 0);
+  }
+  ctx.restore();
+}
+
+function inkText(text, x, y, size, color = INKC, align = 'center', maxW = W * 0.9, weight = 900) {
+  ctx.save();
+  ctx.font = `${weight} ${size}px Inter`;
+  while (ctx.measureText(text).width > maxW && size > 20) { size -= 4; ctx.font = `${weight} ${size}px Inter`; }
+  ctx.textAlign = align; ctx.textBaseline = 'middle'; ctx.fillStyle = color;
+  ctx.fillText(text, x, y);
+  ctx.restore();
+}
+
 if (kind === 'logo' || kind === 'watermark') {
   // YouTube shows the profile picture as a circle: keep everything inside the middle 80 %.
   const k = W / 800;
-  sky();
-  s.W = W; s.H = H;
-  stars(s, { light: true, count: kind === 'logo' ? 40 : 0 });
-  hero(s, { x: 330 * k, y: 1010 * k, scale: 2.4 * k, outline: WHITE, moves: [{ at: 0, pose: 'think', face: 'thinking' }] });
-  bubble(560 * k, 250 * k, 120 * k, [430 * k, 400 * k], '?', 150 * k);
+  paper();
+  hero(s, { x: 320 * k, y: 1040 * k, scale: 2.5 * k, moves: [{ at: 0, pose: 'think', face: 'thinking' }] });
+  bubble(560 * k, 240 * k, 125 * k, [420 * k, 400 * k], '?', 150 * k);
 } else if (kind === 'banner') {
-  sky();
-  stars(s, { light: true, count: 260 });
-  blackHole(s, { x: 2280, y: 330, r: 120 });          // outside the safe area: only on TV / wide screens
-  // safe area: x 507-2053, y 508-931
-  hero(s, { x: 620, y: 1060, scale: 1.5, outline: WHITE, moves: [{ at: 0, pose: 'think', face: 'thinking' }] });
-  bubble(800, 470, 62, [700, 560], '?', 80);
-  outlined('STICKMAN THOUGHTS', 1400, 660, 118, WHITE, 'center', 1250);
-  outlined('Big questions. True stories. Simple drawings.', 1400, 800, 52, YELLOW, 'center', 1250);
+  paper();
+  // safe area: x 507-2053, y 508-931. Stickman on the left, his thought bubble full of every kind of topic.
+  hero(s, { x: 640, y: 1070, scale: 1.55, moves: [{ at: 0, pose: 'think', face: 'thinking' }] });
+  bubble(860, 585, 72, [745, 660], '', 0);
+  doodle('q', 860, 585, 44);
+  inkText('STICKMAN THOUGHTS', 1530, 650, 120, INKC, 'center', 1040);
+  inkText('Big questions. True stories. Simple drawings.', 1530, 770, 50, RED2, 'center', 1040, 700);
+  const items = ['ship', 'planet', 'heart', 'bolt', 'bulb', 'hourglass'];
+  items.forEach((d, i) => doodle(d, 1130 + i * 160, 875, 42));
 } else if (kind === 'short') {
   // Shorts cover (pick it in the YouTube app): same scene language as the video, words in the top half
   sky();
