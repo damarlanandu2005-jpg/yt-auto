@@ -7,7 +7,8 @@ Never keep state, never use timers, never use `Math.random()` (use `s.rand(i)`),
 
 ```js
 import { hero, crowd } from './character.js';
-import { place, stand, art, background, thing, emoji, label, words, blackHole } from './props.js';
+import { place, stand, art, fire, smoke, lava, bubbles, waterRise, weather, explosion, pieces, glow, speedLines,
+  background, thing, emoji, label, words, blackHole } from './props.js';
 export default {
   sceneId(s) { background(s, 'ocean'); /* ...pictures... */ words(s); },  // one function per "## sceneId"
 };
@@ -86,6 +87,21 @@ crowd(s, { n: 6, x0: 120, x1: 960, y: 1500, scale: 0.8, depth: 40, seed: 4, outf
 - `label(s, 'SHORT TEXT', { x, y, size, color, at, out })`: bold text with a black edge, readable on any
   background. color: yellow, red, green, blue or white. Max 3-4 words. Never repeat the narration sentence.
 - `words(s)`: the captions. Call it last in EVERY scene.
+
+## Effects (moving, from props.js): use them to make the story happen, not just to decorate
+
+- `fire(s, { x, y, size, at, out })` flames standing on (x, y); `smoke(s, { x, y, size, dark, at })` rising puffs
+- `lava(s, { y, at })` a glowing lava pool from y down; `bubbles(s, { x, y, width, n, at })` rising bubbles
+- `waterRise(s, { from, to, at, until })` water filling up the screen (flooding, sinking); y values on screen
+- `weather(s, { kind: 'rain' | 'snow', heavy, at })`; `place(..., { flash: ['boom'] })` lightning / blast flash
+- `explosion(s, { x, y, size, at })` a cartoon blast (no gore); `pieces(s, { x, y, at, kind: 'ice' | 'rock' |
+  'spark' | 'glass' })` bits flying out and falling
+- `glow(s, { x, y, r, color: '255,220,140', cone, pulse, at })` a soft light, or a lamp cone pointing down
+- `speedLines(s, { dir: 'down' | 'up' | 'side', at })` action lines (falling, rushing)
+- `place(..., { quake: { at: 'shakes', until: 'stops' } })` the whole place shakes (earthquake, crash)
+- motion on art: `art(s, 'ship_front_half', { ..., water: 1180, sink: { by: 300, tilt: -20, at: 'sinks',
+  until: 'gone' }, move: { to: [x, y], at, until }, shake: { at, until } })`: `water` hides everything below
+  that screen line, so a ship can go under; on people: `hero(s, { ..., move: { to: [x, y], at, until, scale } })`
 
 ## explainroo shapes you may also use
 

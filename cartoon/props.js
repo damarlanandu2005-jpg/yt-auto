@@ -313,7 +313,7 @@ const PX_PER_M = 165;  // the stickman at scale 1 is about 1.7 m tall on screen
 
 // Moods drawn over a place: the same picture by day, at night, lit by fire, in the dark...
 const MOODS = {
-  night: ['rgba(30,45,110,0.55)', 'multiply'], dark: ['rgba(0,0,0,0.55)', 'multiply'],
+  night: ['rgba(25,35,95,0.72)', 'multiply'], dark: ['rgba(0,0,0,0.55)', 'multiply'],
   fire: ['rgba(255,110,20,0.28)', 'overlay'], cold: ['rgba(120,170,255,0.25)', 'overlay'],
   storm: ['rgba(30,40,60,0.45)', 'multiply'], dusk: ['rgba(255,120,60,0.22)', 'overlay'],
   underwater: ['rgba(0,90,160,0.3)', 'multiply'],
@@ -351,7 +351,11 @@ export function place(s, name, o = {}) {
   const ox = (s.W - s.W * z) * fx;
   s._shot = { name, z, ox, oy, top, bottom, mood: o.mood };
   s.draw({ x: 0, y: 0, at: 0, enter: 'none', sfx: false }, (ctx) => {
-    ctx.drawImage(z > 1.2 ? softened(img, z >= 1.8 ? 2.2 : 1.4) : img, ox, oy, s.W * z, s.H * z);
+    if (o.quake) { // earthquake / crash: the whole place shakes between two words
+      const a = s.time(o.quake.at ?? 0), b = o.quake.until !== undefined ? s.time(o.quake.until) : a + 1.2;
+      if (s.t >= a && s.t <= b) ctx.translate(Math.sin(s.t * 70) * 14, Math.cos(s.t * 53) * 9);
+    }
+    ctx.drawImage(z > 1.2 ? softened(img, z >= 1.8 ? 2.2 : 1.4) : img, ox - (o.quake ? 20 : 0), oy - (o.quake ? 20 : 0), s.W * z + (o.quake ? 40 : 0), s.H * z + (o.quake ? 40 : 0));
     if (o.flash) {  // lightning or an explosion: a short white flash at these times (seconds in the scene)
       const k = Math.max(0, ...[].concat(o.flash).map((t) => 1 - Math.abs(s.t - s.time(t)) / 0.15));
       if (k > 0) { ctx.fillStyle = `rgba(255,255,255,${0.8 * k})`; ctx.fillRect(0, 0, s.W, s.H); }
@@ -405,10 +409,198 @@ export function art(s, name, o = {}) {
   const w = (h * card.w) / card.h;
   s.draw({ x: o.x ?? s.W / 2, y: o.y ?? s.H * 0.8, at: o.at ?? 0, out: o.out, enter: o.enter ?? 'pop', id: o.id }, (ctx) => {
     ctx.save();
-    if (o.rotate) ctx.rotate((o.rotate * Math.PI) / 180);
+    const m = motion(s, o);
+    if (o.water !== undefined) {  // a water line (screen y): the part below it is hidden, so it can sink
+      ctx.beginPath(); ctx.rect(-s.W * 2, -s.H * 2, s.W * 4, o.water - (o.y ?? s.H * 0.8) + s.H * 2); ctx.clip();
+    }
+    ctx.translate(m.dx, m.dy);
+    if (o.rotate || m.rot) ctx.rotate((((o.rotate || 0) + m.rot) * Math.PI) / 180);
     if (o.flip) ctx.scale(-1, 1);
     ctx.drawImage(img, -w / 2, -h, w, h);  // anchored at its bottom centre, like the stickman's feet
     ctx.restore();
   });
   return { x: o.x, y: o.y, w, h };
+}
+
+
+// ---------- effects (29 Oct): moving things that make a story feel real; built once, used by every Short ----------
+const easeIO = (p) => (p < 0.5 ? 2 * p * p : 1 - Math.pow(-2 * p + 2, 2) / 2);
+const span = (s, a, b, dflt = 1.5) => { const t0 = s.time(a ?? 0); const t1 = b !== undefined ? s.time(b) : t0 + dflt; return [t0, Math.max(t0 + 0.01, t1)]; };
+const prog = (s, a, b, dflt) => { const [t0, t1] = span(s, a, b, dflt); return Math.min(1, Math.max(0, (s.t - t0) / (t1 - t0))); };
+
+// art() motion: move: { to: [x, y], at, until }, sink: { by, at, until, tilt } (goes down + tilts), shake: { at, until }
+function motion(s, o) {
+  let dx = 0, dy = 0, rot = 0;
+  if (o.move) { const p = easeIO(prog(s, o.move.at, o.move.until)); dx += ((o.move.to[0] ?? o.x) - o.x) * p; dy += ((o.move.to[1] ?? o.y) - o.y) * p; }
+  if (o.sink) { const p = easeIO(prog(s, o.sink.at, o.sink.until, 3)); dy += (o.sink.by ?? 500) * p; rot += (o.sink.tilt ?? 0) * p; }
+  if (o.shake) { const [a, b] = span(s, o.shake.at, o.shake.until, 0.8); if (s.t >= a && s.t <= b) { dx += Math.sin(s.t * 70) * 10; dy += Math.cos(s.t * 55) * 6; } }
+  return { dx, dy, rot };
+}
+
+// a seeded number 0..1 (same every frame)
+const R = (i, k = 1) => Math.abs(Math.sin(i * 12.9898 * k + 78.233) * 43758.5453) % 1;
+
+// fire(s, { x, y, size, at, out }): flickering flames standing on (x, y)
+export function fire(s, o = {}) {
+  const size = o.size ?? 200;
+  s.draw({ x: o.x ?? s.W / 2, y: o.y ?? s.H * 0.8, at: o.at ?? 0, out: o.out, enter: o.enter ?? 'fade', sfx: false }, (ctx) => {
+    const t = s.t;
+    const glow = ctx.createRadialGradient(0, -size * 0.4, 0, 0, -size * 0.4, size * 1.4);
+    glow.addColorStop(0, 'rgba(255,170,60,0.45)'); glow.addColorStop(1, 'rgba(255,120,30,0)');
+    ctx.fillStyle = glow; ctx.fillRect(-size * 1.5, -size * 1.9, size * 3, size * 2.2);
+    // three layers of tongue-shaped flames (red, orange, yellow), each tongue flickering on its own
+    for (const [k, col] of [[1, '#ff5a1a'], [0.72, '#ffa41c'], [0.42, '#fff1a0']]) {
+      for (let i = -2; i <= 2; i++) {
+        const h = size * k * (0.75 + 0.25 * Math.sin(t * (8 + i) + i * 2)) * (1 - Math.abs(i) * 0.18);
+        const x = i * size * 0.17 * k, w = size * 0.2 * k, sway = Math.sin(t * 5 + i) * size * 0.06;
+        ctx.beginPath(); ctx.moveTo(x - w, 0);
+        ctx.bezierCurveTo(x - w, -h * 0.45, x + sway - w * 0.3, -h * 0.7, x + sway, -h);
+        ctx.bezierCurveTo(x + sway + w * 0.3, -h * 0.7, x + w, -h * 0.45, x + w, 0);
+        ctx.closePath(); ctx.fillStyle = col; ctx.fill();
+      }
+    }
+  });
+}
+
+// smoke(s, { x, y, size, at, out, dark }): puffs rising and spreading
+export function smoke(s, o = {}) {
+  const size = o.size ?? 160, n = o.n ?? 9;
+  s.draw({ x: o.x ?? s.W / 2, y: o.y ?? s.H * 0.6, at: o.at ?? 0, out: o.out, enter: o.enter ?? 'fade', sfx: false }, (ctx) => {
+    for (let i = 0; i < n; i++) {
+      const life = (s.t * 0.35 + i / n) % 1;
+      const r = size * (0.35 + life * 0.9);
+      const x = Math.sin(i * 2.3 + s.t) * size * 0.4 * life + (R(i) - 0.5) * size * 0.3, y = -life * size * 3.2;
+      const a = 0.6 * (1 - life) * Math.min(1, life * 6);
+      const g = ctx.createRadialGradient(x, y, 0, x, y, r);  // soft puffs, no hard circle edge
+      const c = o.dark ? '45,45,50' : '170,170,175';
+      g.addColorStop(0, `rgba(${c},${a})`); g.addColorStop(0.6, `rgba(${c},${a * 0.6})`); g.addColorStop(1, `rgba(${c},0)`);
+      ctx.fillStyle = g; ctx.fillRect(x - r, y - r, r * 2, r * 2);
+    }
+  });
+}
+
+// bubbles(s, { x, y, width, at, out, n }): rising bubbles (drowning, sinking, boiling)
+export function bubbles(s, o = {}) {
+  const n = o.n ?? 12, w = o.width ?? 160, rise = o.rise ?? 600;
+  s.draw({ x: o.x ?? s.W / 2, y: o.y ?? s.H * 0.7, at: o.at ?? 0, out: o.out, enter: 'none', sfx: false }, (ctx) => {
+    ctx.strokeStyle = 'rgba(255,255,255,0.85)'; ctx.lineWidth = 4;
+    for (let i = 0; i < n; i++) {
+      const life = (s.t * (0.5 + R(i) * 0.6) + R(i, 3)) % 1;
+      ctx.beginPath();
+      ctx.arc((R(i, 7) - 0.5) * w + Math.sin(s.t * 3 + i) * 12, -life * rise, 7 + R(i, 5) * 16, 0, Math.PI * 2);
+      ctx.stroke();
+    }
+  });
+}
+
+// lava(s, { y, at, out }): a glowing lava pool across the bottom from y down, bubbling
+export function lava(s, o = {}) {
+  const y = o.y ?? s.H * 0.82;
+  s.draw({ x: 0, y: 0, at: o.at ?? 0, out: o.out, enter: o.enter ?? 'fade', sfx: false }, (ctx) => {
+    const g = ctx.createLinearGradient(0, y, 0, s.H); g.addColorStop(0, '#ffb020'); g.addColorStop(0.35, '#ff5a10'); g.addColorStop(1, '#8a1a05');
+    ctx.beginPath(); ctx.moveTo(0, y);
+    for (let x = 0; x <= s.W; x += 40) ctx.lineTo(x, y + Math.sin(x * 0.02 + s.t * 2) * 10);
+    ctx.lineTo(s.W, s.H); ctx.lineTo(0, s.H); ctx.closePath(); ctx.fillStyle = g; ctx.fill();
+    for (let i = 0; i < 8; i++) { // bursting bubbles
+      const life = (s.t * 0.7 + R(i)) % 1;
+      ctx.beginPath(); ctx.fillStyle = `rgba(255,230,120,${1 - life})`;
+      ctx.arc(R(i, 3) * s.W, y + 30 + R(i, 9) * (s.H - y - 60), 10 + life * 28, 0, Math.PI * 2); ctx.fill();
+    }
+    const glow = ctx.createLinearGradient(0, y - 400, 0, y); glow.addColorStop(0, 'rgba(255,120,30,0)'); glow.addColorStop(1, 'rgba(255,120,30,0.35)');
+    ctx.fillStyle = glow; ctx.fillRect(0, y - 400, s.W, 400);
+  });
+}
+
+// waterRise(s, { from, to, at, until, color }): water filling the screen from y `from` up to y `to` (flooding)
+export function waterRise(s, o = {}) {
+  s.draw({ x: 0, y: 0, at: o.at ?? 0, out: o.out, enter: 'none', sfx: false }, (ctx) => {
+    const p = easeIO(prog(s, o.at, o.until, 4));
+    const y = (o.from ?? s.H) + ((o.to ?? s.H * 0.5) - (o.from ?? s.H)) * p;
+    ctx.beginPath(); ctx.moveTo(0, y);
+    for (let x = 0; x <= s.W; x += 30) ctx.lineTo(x, y + Math.sin(x * 0.03 + s.t * 3) * 9);
+    ctx.lineTo(s.W, s.H); ctx.lineTo(0, s.H); ctx.closePath();
+    ctx.fillStyle = o.color ?? 'rgba(40,110,170,0.72)'; ctx.fill();
+    ctx.strokeStyle = 'rgba(255,255,255,0.6)'; ctx.lineWidth = 5; ctx.stroke();
+  });
+}
+
+// rain / snow over the whole screen: weather(s, { kind: 'rain' | 'snow', at, out, heavy })
+export function weather(s, o = {}) {
+  const n = o.heavy ? 160 : 80;
+  s.draw({ x: 0, y: 0, at: o.at ?? 0, out: o.out, enter: 'fade', sfx: false }, (ctx) => {
+    for (let i = 0; i < n; i++) {
+      const sp = o.kind === 'snow' ? 0.12 : 1.4;
+      const y = ((R(i) + s.t * sp * (0.8 + R(i, 2) * 0.4)) % 1) * (s.H + 100) - 50;
+      const x = (R(i, 5) * s.W + (o.kind === 'snow' ? Math.sin(s.t + i) * 30 : -y * 0.15)) % s.W;
+      if (o.kind === 'snow') { ctx.beginPath(); ctx.fillStyle = 'rgba(255,255,255,0.9)'; ctx.arc(x, y, 4 + R(i, 7) * 6, 0, Math.PI * 2); ctx.fill(); }
+      else { ctx.strokeStyle = 'rgba(200,220,255,0.6)'; ctx.lineWidth = 3; ctx.beginPath(); ctx.moveTo(x, y); ctx.lineTo(x - 10, y + 40); ctx.stroke(); }
+    }
+  });
+}
+
+// explosion(s, { x, y, size, at }): a burst of fire and pieces (cartoon, no gore), with a flash
+export function explosion(s, o = {}) {
+  const size = o.size ?? 300;
+  s.draw({ x: o.x ?? s.W / 2, y: o.y ?? s.H / 2, at: o.at ?? 0, out: o.out, enter: 'none', sfx: false }, (ctx) => {
+    const t = s.t - s.time(o.at ?? 0);
+    if (t < 0 || t > 1.6) return;
+    const p = Math.min(1, t / 0.5);
+    ctx.globalAlpha *= 1 - Math.max(0, (t - 0.8) / 0.8);
+    for (const [k, col] of [[1, '#ff6a1a'], [0.7, '#ffb020'], [0.4, '#fff3a0']]) {
+      ctx.beginPath();
+      for (let i = 0; i <= 14; i++) { const a = (i / 14) * Math.PI * 2, rr = size * k * p * (i % 2 ? 0.75 : 1); ctx.lineTo(Math.cos(a) * rr, Math.sin(a) * rr); }
+      ctx.closePath(); ctx.fillStyle = col; ctx.fill();
+    }
+    ctx.fillStyle = '#4a4a4a';
+    for (let i = 0; i < 12; i++) { const a = R(i) * Math.PI * 2, d = size * 1.6 * Math.min(1, t / 1.2); ctx.fillRect(Math.cos(a) * d, Math.sin(a) * d + t * t * 200, 14, 14); }
+  });
+}
+
+// pieces(s, { x, y, at, kind: 'ice' | 'rock' | 'spark' | 'glass', n, spread }): bits flying out and falling
+export function pieces(s, o = {}) {
+  const n = o.n ?? 14, spread = o.spread ?? 260;
+  const col = { ice: '#d8f1ff', rock: '#7d7f88', spark: '#ffd34d', glass: 'rgba(200,235,255,0.85)' }[o.kind || 'rock'];
+  s.draw({ x: o.x ?? s.W / 2, y: o.y ?? s.H / 2, at: o.at ?? 0, out: o.out, enter: 'none', sfx: false }, (ctx) => {
+    const t = s.t - s.time(o.at ?? 0);
+    if (t < 0 || t > 2.5) return;
+    ctx.fillStyle = col; ctx.strokeStyle = '#1d1d1f'; ctx.lineWidth = 3;
+    for (let i = 0; i < n; i++) {
+      const a = -Math.PI * (0.1 + 0.8 * R(i)), v = spread * (0.6 + R(i, 3));
+      const x = Math.cos(a) * v * t, y = Math.sin(a) * v * t + 420 * t * t, sz = 10 + R(i, 5) * 18;
+      ctx.save(); ctx.translate(x, y); ctx.rotate(t * 6 * (R(i, 9) - 0.5));
+      ctx.beginPath(); ctx.moveTo(-sz, 0); ctx.lineTo(0, -sz * 0.8); ctx.lineTo(sz, sz * 0.3); ctx.lineTo(-sz * 0.2, sz); ctx.closePath();
+      ctx.fill(); if (o.kind !== 'spark') ctx.stroke(); ctx.restore();
+    }
+  });
+}
+
+// glow(s, { x, y, r, color, at, out, pulse }): a soft light (lamp, fire, screen); lamp cone with cone: true
+export function glow(s, o = {}) {
+  const r = o.r ?? 300, col = o.color ?? '255,220,140';
+  s.draw({ x: o.x ?? s.W / 2, y: o.y ?? s.H / 2, at: o.at ?? 0, out: o.out, enter: 'fade', sfx: false }, (ctx) => {
+    const k = o.pulse ? 0.85 + 0.15 * Math.sin(s.t * 6) : 1;
+    ctx.save(); ctx.globalCompositeOperation = 'lighter';
+    if (o.cone) {  // a light cone pointing down from (x, y)
+      const g = ctx.createLinearGradient(0, 0, 0, r * 2.2); g.addColorStop(0, `rgba(${col},${0.45 * k})`); g.addColorStop(1, `rgba(${col},0)`);
+      ctx.beginPath(); ctx.moveTo(-r * 0.12, 0); ctx.lineTo(r * 0.12, 0); ctx.lineTo(r * 0.9, r * 2.2); ctx.lineTo(-r * 0.9, r * 2.2); ctx.closePath(); ctx.fillStyle = g; ctx.fill();
+    } else {
+      const g = ctx.createRadialGradient(0, 0, 0, 0, 0, r * k); g.addColorStop(0, `rgba(${col},0.55)`); g.addColorStop(1, `rgba(${col},0)`);
+      ctx.fillStyle = g; ctx.fillRect(-r, -r, r * 2, r * 2);
+    }
+    ctx.restore();
+  });
+}
+
+// speedLines(s, { at, out, dir: 'down' | 'up' | 'side' }): action lines over the screen (falling, rushing)
+export function speedLines(s, o = {}) {
+  s.draw({ x: 0, y: 0, at: o.at ?? 0, out: o.out, enter: 'fade', sfx: false }, (ctx) => {
+    ctx.strokeStyle = 'rgba(255,255,255,0.55)'; ctx.lineWidth = 6; ctx.lineCap = 'round';
+    for (let i = 0; i < 26; i++) {
+      const ph = (s.t * 2.5 + R(i)) % 1, x = R(i, 3) * s.W, len = 120 + R(i, 7) * 200;
+      ctx.beginPath();
+      if (o.dir === 'side') { const y = R(i, 3) * s.H, xx = (1 - ph) * (s.W + len) - len; ctx.moveTo(xx, y); ctx.lineTo(xx + len, y); }
+      else { const y = (o.dir === 'up' ? 1 - ph : ph) * (s.H + len) - len; ctx.moveTo(x, y); ctx.lineTo(x, y + len); }
+      ctx.stroke();
+    }
+  });
 }

@@ -1,0 +1,35 @@
+<!doctype html><meta charset="utf-8"><body style="margin:0">
+<canvas id="c" width="2700" height="1920"></canvas>
+<script type="module">
+// Test sheet for the effects (29 Oct): fire, smoke, lava, bubbles, water rising, rain, snow, explosion, pieces,
+// glow / lamp cone, speed lines, sinking art below a water line. Five 9:16 frames at half size.
+import { hero } from '../character.js';
+import { place, stand, art, words, fire, smoke, lava, bubbles, waterRise, weather, explosion, pieces, glow, speedLines } from '../props.js';
+import { PLACES, ART } from '../art_cards.js';
+const cv = document.getElementById('c'), ctx = cv.getContext('2d');
+const images = new Map();
+const load = (k, src) => new Promise((ok) => { const im = new Image(); im.onload = () => { images.set(k, im); ok(); }; im.onerror = ok; im.src = src; });
+await Promise.all([...Object.values(PLACES), ...Object.values(ART)].map((c) => load(`assets/art/${c.file}`, `../art/${c.file}`)));
+const frames = [
+  (s) => { place(s, 'volcano_crater', { shot: 'medium', mood: 'fire' }); lava(s, { y: 1500 }); smoke(s, { x: 760, y: 900, size: 160, dark: true });
+           hero(s, { x: 420, ...stand(s, 0.6), look: { outfit: 'explorer', hat: 'explorer' }, moves: [{ at: 0, pose: 'scared', face: 'sweating' }] }); words(s); },
+  (s) => { place(s, 'burning_building', { shot: 'medium', mood: 'fire' }); fire(s, { x: 300, y: 1400, size: 260 }); fire(s, { x: 820, y: 1300, size: 180 });
+           smoke(s, { x: 560, y: 700, size: 200, dark: true }); hero(s, { x: 560, ...stand(s, 0.85), look: { outfit: 'firefighter', hat: 'fire_helmet' }, moves: [{ at: 0, pose: 'push', face: 'determined' }] }); words(s); },
+  (s) => { place(s, 'ship_corridor', { shot: 'medium' }); hero(s, { x: 540, ...stand(s, 0.7), look: { outfit: 'passenger_1912', hair: 'short' }, moves: [{ at: 0, pose: 'panic', face: 'scared' }] });
+           waterRise(s, { from: 1920, to: 1350, at: 0, until: 1 }); bubbles(s, { x: 540, y: 1700, width: 500 }); words(s); },
+  (s) => { place(s, 'ocean_surface', { shot: 'wide', mood: 'night' }); weather(s, { kind: 'rain', heavy: true });
+           art(s, 'ship_front_half', { x: 380, y: 1250, size: 460, water: 1180, sink: { by: 250, at: 0, until: 2, tilt: -20 } });
+           art(s, 'ship_back_half', { x: 760, y: 1250, size: 460, water: 1180, sink: { by: 120, at: 0, until: 2, tilt: 25 } });
+           pieces(s, { x: 570, y: 1050, at: 1.0, kind: 'spark' }); words(s); },
+  (s) => { place(s, 'garage', { shot: 'wide', mood: 'dark' }); glow(s, { x: 540, y: 160, r: 420, cone: true }); explosion(s, { x: 760, y: 1100, size: 240, at: 1.0 });
+           pieces(s, { x: 760, y: 1100, at: 1.0, kind: 'rock' }); hero(s, { x: 330, ...stand(s, 0.8), look: { outfit: 'police', hat: 'police_cap' }, moves: [{ at: 0, pose: 'cover_ears', face: 'shocked' }] });
+           speedLines(s, { dir: 'side' }); words(s); },
+];
+frames.forEach((fn, i) => {
+  ctx.save(); ctx.translate(i * 540, 0); ctx.scale(0.5, 0.5); ctx.beginPath(); ctx.rect(0, 0, 1080, 1920); ctx.clip();
+  const s = { t: 1.3, W: 1080, H: 1920, cx: 540, cy: 960, words: [], time: (v) => (typeof v === 'number' ? v : 0), engine: { image: (k) => images.get(k) },
+    draw(o, f) { ctx.save(); ctx.translate(o.x ?? 0, o.y ?? 0); f(ctx, { p: 1, local: 1 }); ctx.restore(); } };
+  fn(s); ctx.restore();
+});
+document.title = 'done';
+</script>

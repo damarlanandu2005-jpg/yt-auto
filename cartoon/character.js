@@ -513,6 +513,14 @@ export function hero(s, o = {}) {
   s.draw({ x: o.x ?? s.cx, y: o.y ?? s.cy + 250, at: o.at ?? 0, out: o.out, enter: o.enter ?? 'fade', id: o.id }, (ctx) => {
     const t = s.t;
     const c = current(s, moves, t);
+    // move: { to: [x, y], at, until, scale }: slide from (x, y) to `to` between two words or times (walk in,
+    // fall down a hole, sink); with `scale` the size changes on the way (walking away = smaller)
+    if (o.move) {
+      const a = s.time(o.move.at ?? 0), b = s.time(o.move.until ?? (o.move.at ?? 0)) + (o.move.until ? 0 : 1.5);
+      const p = ease(Math.min(1, Math.max(0, (t - a) / Math.max(0.01, b - a))));
+      ctx.translate(((o.move.to[0] ?? o.x) - (o.x ?? 0)) * p, ((o.move.to[1] ?? o.y) - (o.y ?? 0)) * p);
+      if (o.move.scale) { const k = lerp(1, o.move.scale / sc, p); ctx.scale(k, k); }
+    }
     const val = (v, d) => (typeof v === 'function' ? v(s) : v ?? d);
     const k = Math.max(0.2, val(o.stretch, 1));
     ctx.globalAlpha *= Math.max(0, Math.min(1, val(o.alpha, 1)));

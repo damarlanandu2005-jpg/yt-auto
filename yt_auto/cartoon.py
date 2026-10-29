@@ -351,7 +351,7 @@ def validate_scenes(js: str, script: dict) -> list[str]:
             problems.append(f"{sid}: no stickman: every scene shows hero(...)")
         # own helper functions defined in the file (e.g. bubbles(s, ...)) that draw count too
         helpers = [h for h in re.findall(r"^function\s+(\w+)\s*\(s\b", js, re.M)]
-        drawn = r"\b(thing|emoji|art|blackHole" + "".join(f"|{h}" for h in helpers) + r")\(|s\.(draw|icon|circle|path|line|arrow|number)\("
+        drawn = r"\b(thing|emoji|art|fire|smoke|lava|bubbles|waterRise|explosion|pieces|glow|blackHole" + "".join(f"|{h}" for h in helpers) + r")\(|s\.(draw|icon|circle|path|line|arrow|number)\("
         if not re.search(drawn, body):
             problems.append(f"{sid}: nothing is drawn besides the stickman: draw what the narration talks about")
         sc = re.search(r"hero\(s,\s*\{[^}]*?scale:\s*([\d.]+)", body)
