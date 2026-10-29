@@ -4,19 +4,22 @@ name: Kaggle AI test (our own model on a free GPU)
 # Gemini's free 20 requests a day. kaggle/run_test.py runs the SAME tests Gemini passed.
 #   action = start   : packs our code + test inputs into one private Kaggle script, starts it on GPU T4 x2
 #   action = collect : (run 2-3 hours later) downloads the results to bench-results/kaggle-test/<kernel version>/
+#   action = save-models : downloads the models from Ollama's registry (plain HTTP, kaggle/save_models.py) and
+#                          keeps them as the private dataset <user>/ollama-models, so Kaggle runs need no download
+#                          (owner, 29 Oct). Uses the runner's big /mnt disk.
 # Needs repo secrets KAGGLE_USERNAME and KAGGLE_API_TOKEN (Kaggle -> Settings -> API -> Generate New Token).
 # No other secret goes to Kaggle: the kernel holds no keys.
 on:
   workflow_dispatch:
     inputs:
       action:
-        description: "start or collect"
+        description: "start, collect, or save-models (one-time: keep the models as a private Kaggle dataset)"
         type: choice
-        options: [start, collect]
+        options: [start, collect, save-models]
         default: start
       models:
         description: "Ollama models to test (Apache-2.0), space-separated"
-        default: "qwen3:14b qwen3:32b gpt-oss:20b"
+        default: "qwen3:32b gpt-oss:20b"
 
 permissions:
   contents: write
@@ -24,7 +27,7 @@ permissions:
 jobs:
   kaggle:
     runs-on: ubuntu-24.04
-    timeout-minutes: 20
+    timeout-minutes: ${{ inputs.action == 'save-models' && 150 || 20 }}
     env:
       KAGGLE_USERNAME: ${{ secrets.KAGGLE_USERNAME }}
       KAGGLE_API_TOKEN: ${{ secrets.KAGGLE_API_TOKEN }}
@@ -33,26 +36,9 @@ jobs:
       - uses: actions/setup-python@v5
         with:
           python-version: "3.13"
-      - name: Install the Kaggle CLI
+      - name: Kaggle login
         timeout-minutes: 5
-        run: |
-          [ -n "$KAGGLE_USERNAME" ] && [ -n "$KAGGLE_API_TOKEN" ] || { echo "Add repo secrets KAGGLE_USERNAME and KAGGLE_API_TOKEN first"; exit 1; }
-          pip install -q kaggle && kaggle --version
-          # Two kinds of Kaggle keys (run 40854367716 was refused): the new API token, or the legacy key from
-          # kaggle.json (32 hex characters, used together with the username). Only the kind and length are printed.
-          tok=$(printf '%s' "$KAGGLE_API_TOKEN" | tr -d '[:space:]"')
-          if [[ "$tok" =~ ^[0-9a-f]{32}$ ]]; then
-            echo "key kind: legacy kaggle.json key (length ${#tok})"
-            echo "KAGGLE_KEY=$tok" >> "$GITHUB_ENV"; echo "KAGGLE_API_TOKEN=" >> "$GITHUB_ENV"
-          else
-            echo "key kind: new API token (length ${#tok}, starts with a letter: $([[ "$tok" =~ ^[A-Za-z] ]] && echo yes || echo no))"
-            mkdir -p ~/.kaggle && printf '%s' "$tok" > ~/.kaggle/access_token && chmod 600 ~/.kaggle/access_token
-            echo "KAGGLE_API_TOKEN=$tok" >> "$GITHUB_ENV"
-          fi
-          echo "username length ${#KAGGLE_USERNAME}"
-      - name: Check the Kaggle login
-        timeout-minutes: 3
-        run: kaggle kernels list --mine --page-size 1 && echo "login ok"
+        run: bash kaggle/login.sh
 
       - name: Pack and start the test on Kaggle
         if: inputs.action == 'start'
@@ -106,3 +92,35 @@ jobs:
           (cd out && find . -type f -size -5M -exec cp --parents {} "../$dest/" \;)
           cd results && git add -A && git commit -m "Kaggle AI test results ${{ github.run_id }}" || exit 0
           for i in 1 2 3 4 5; do git push origin bench-results && break; git pull --rebase origin bench-results; sleep 5; done
+
+      - name: Save the models as a private Kaggle dataset
+        if: inputs.action == 'save-models'
+        timeout-minutes: 140
+        env:
+          MODELS: ${{ inputs.models }}
+        run: |
+          set -e
+          [[ "$MODELS" =~ ^[a-z0-9.:\ /_-]+$ ]] || { echo "bad model list"; exit 1; }
+          # about 34 GB for qwen3:32b + gpt-oss:20b: use /mnt if it is big enough, else free the main disk
+          D=/mnt/models
+          if [ "$(df --output=avail -BG /mnt | tail -1 | tr -dc 0-9)" -lt 45 ]; then
+            sudo rm -rf /usr/share/dotnet /usr/local/lib/android /opt/ghc /opt/hostedtoolcache/CodeQL /usr/local/share/boost
+            D="$HOME/models"
+          fi
+          sudo mkdir -p "$D" && sudo chown "$USER" "$D"
+          df -h /mnt "$HOME" | tail -2
+          python3 kaggle/save_models.py --out "$D" $MODELS
+          D="$D" python3 - <<'EOF'
+          import json, os
+          json.dump({"title": "ollama-models", "id": f"{os.environ['KAGGLE_USERNAME']}/ollama-models",
+                     "licenses": [{"name": "other"}],
+                     "description": "Ollama model files (Apache-2.0 open models) saved by yt-auto, private."},
+                    open(os.environ["D"] + "/dataset-metadata.json", "w"), indent=1)
+          EOF
+          ls -la "$D"; du -sh "$D"
+          if kaggle datasets status "$KAGGLE_USERNAME/ollama-models" > /dev/null 2>&1; then
+            kaggle datasets version -p "$D" -m "models: $MODELS" --dir-mode skip
+          else
+            kaggle datasets create -p "$D" --dir-mode skip
+          fi
+          kaggle datasets status "$KAGGLE_USERNAME/ollama-models" || true
