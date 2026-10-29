@@ -1,0 +1,109 @@
+{
+  "hash": "7ab80437f2183bb3",
+  "id": "hook",
+  "duration": 3.495,
+  "words": [
+    {
+      "text": "What",
+      "spoken": "What",
+      "start": 0,
+      "end": 0.16,
+      "matched": true
+    },
+    {
+      "text": "would",
+      "spoken": "would",
+      "start": 0.16,
+      "end": 0.24,
+      "matched": true
+    },
+    {
+      "text": "happen",
+      "spoken": "happen",
+      "start": 0.24,
+      "end": 0.56,
+      "matched": true
+    },
+    {
+      "text": "to",
+      "spoken": "to",
+      "start": 0.56,
+      "end": 0.76,
+      "matched": true
+    },
+    {
+      "text": "your",
+      "spoken": "your",
+      "start": 0.76,
+      "end": 0.84,
+      "matched": true
+    },
+    {
+      "text": "body",
+      "spoken": "body",
+      "start": 0.84,
+      "end": 1.16,
+      "matched": true
+    },
+    {
+      "text": "if",
+      "spoken": "if",
+      "start": 1.16,
+      "end": 1.74,
+      "matched": true
+    },
+    {
+      "text": "you",
+      "spoken": "you",
+      "start": 1.74,
+      "end": 1.86,
+      "matched": true
+    },
+    {
+      "text": "fell",
+      "spoken": "fell",
+      "start": 1.86,
+      "end": 2.06,
+      "matched": true
+    },
+    {
+      "text": "into",
+      "spoken": "into",
+      "start": 2.06,
+      "end": 2.3,
+      "matched": true
+    },
+    {
+      "text": "the",
+      "spoken": "the",
+      "start": 2.3,
+      "end": 2.4,
+      "matched": true
+    },
+    {
+      "text": "Mariana",
+      "spoken": "Mariana",
+      "start": 2.4,
+      "end": 2.76,
+      "matched": true
+    },
+    {
+      "text": "Trench?",
+      "spoken": "Trench?",
+      "start": 2.76,
+      "end": 3.18,
+      "matched": true
+    }
+  ],
+  "marks": {},
+  "chunks": [
+    {
+      "start": 0,
+      "end": 3.495,
+      "text": "What would happen to your body if you fell into the Mariana Trench?"
+    }
+  ],
+  "transcript": "What would happen to your body if you fell into the Mariana Trench?",
+  "matchRate": 1,
+  "unmatched": []
+}

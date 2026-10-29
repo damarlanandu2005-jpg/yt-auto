@@ -1,0 +1,123 @@
+{
+  "hash": "cbf05999a34f37b8",
+  "id": "step3",
+  "duration": 6.695,
+  "words": [
+    {
+      "text": "This",
+      "spoken": "This",
+      "start": 0,
+      "end": 0.14,
+      "matched": true
+    },
+    {
+      "text": "difference",
+      "spoken": "difference",
+      "start": 0.14,
+      "end": 0.46,
+      "matched": true
+    },
+    {
+      "text": "in",
+      "spoken": "in",
+      "start": 0.46,
+      "end": 0.7,
+      "matched": true
+    },
+    {
+      "text": "pressure",
+      "spoken": "pressure",
+      "start": 0.7,
+      "end": 1,
+      "matched": true
+    },
+    {
+      "text": "causes",
+      "spoken": "causes",
+      "start": 1,
+      "end": 1.92,
+      "matched": true
+    },
+    {
+      "text": "injuries",
+      "spoken": "injuries",
+      "start": 1.92,
+      "end": 2.4,
+      "matched": true
+    },
+    {
+      "text": "to",
+      "spoken": "to",
+      "start": 2.4,
+      "end": 2.8,
+      "matched": true
+    },
+    {
+      "text": "gas-containing",
+      "spoken": "gas-containing",
+      "start": 2.8,
+      "end": 3.54,
+      "matched": true
+    },
+    {
+      "text": "internal",
+      "spoken": "internal",
+      "start": 3.54,
+      "end": 4.02,
+      "matched": true
+    },
+    {
+      "text": "organs",
+      "spoken": "organs",
+      "start": 4.02,
+      "end": 4.52,
+      "matched": true
+    },
+    {
+      "text": "like",
+      "spoken": "like",
+      "start": 4.52,
+      "end": 5.22,
+      "matched": true
+    },
+    {
+      "text": "your",
+      "spoken": "your",
+      "start": 5.22,
+      "end": 5.4,
+      "matched": true
+    },
+    {
+      "text": "lungs",
+      "spoken": "lungs",
+      "start": 5.4,
+      "end": 5.68,
+      "matched": true
+    },
+    {
+      "text": "and",
+      "spoken": "and",
+      "start": 5.68,
+      "end": 6.06,
+      "matched": true
+    },
+    {
+      "text": "ears.",
+      "spoken": "ears.",
+      "start": 6.06,
+      "end": 6.32,
+      "matched": true
+    }
+  ],
+  "marks": {},
+  "chunks": [
+    {
+      "start": 0,
+      "end": 6.695,
+      "text": "This difference in pressure causes injuries to gas-containing internal organs like your lungs and ears."
+    }
+  ],
+  "transcript": "This difference in pressure causes injuries to gas-containing internal organs like your lungs and ears.",
+  "matchRate": 1,
+  "unmatched": []
+}

@@ -1,0 +1,184 @@
+{
+  "hash": "6a0b85d9a21c4e18",
+  "id": "step2",
+  "duration": 10.685,
+  "words": [
+    {
+      "text": "With",
+      "spoken": "With",
+      "start": 0,
+      "end": 0.12,
+      "matched": true
+    },
+    {
+      "text": "your",
+      "spoken": "your",
+      "start": 0.12,
+      "end": 0.24,
+      "matched": true
+    },
+    {
+      "text": "mouth",
+      "spoken": "mouth",
+      "start": 0.24,
+      "end": 0.48,
+      "matched": true
+    },
+    {
+      "text": "submerged,",
+      "spoken": "submerged,",
+      "start": 0.48,
+      "end": 0.82,
+      "matched": true
+    },
+    {
+      "text": "gasping",
+      "spoken": "gasping",
+      "start": 1.66,
+      "end": 2.14,
+      "matched": true
+    },
+    {
+      "text": "forces",
+      "spoken": "forces",
+      "start": 2.14,
+      "end": 2.46,
+      "matched": true
+    },
+    {
+      "text": "water",
+      "spoken": "water",
+      "start": 2.46,
+      "end": 2.84,
+      "matched": true
+    },
+    {
+      "text": "in",
+      "spoken": "in",
+      "start": 2.84,
+      "end": 3.14,
+      "matched": true
+    },
+    {
+      "text": "and",
+      "spoken": "and",
+      "start": 3.14,
+      "end": 3.32,
+      "matched": true
+    },
+    {
+      "text": "causes",
+      "spoken": "causes",
+      "start": 3.32,
+      "end": 3.54,
+      "matched": true
+    },
+    {
+      "text": "drowning.",
+      "spoken": "drowning.",
+      "start": 3.54,
+      "end": 3.98,
+      "matched": true
+    },
+    {
+      "text": "As",
+      "spoken": "As",
+      "start": 4.655,
+      "end": 4.795,
+      "matched": true
+    },
+    {
+      "text": "your",
+      "spoken": "your",
+      "start": 4.795,
+      "end": 4.895,
+      "matched": true
+    },
+    {
+      "text": "body",
+      "spoken": "body",
+      "start": 4.895,
+      "end": 5.215,
+      "matched": true
+    },
+    {
+      "text": "sinks",
+      "spoken": "sinks",
+      "start": 5.215,
+      "end": 5.455,
+      "matched": true
+    },
+    {
+      "text": "deeper,",
+      "spoken": "deeper,",
+      "start": 5.455,
+      "end": 5.895,
+      "matched": true
+    },
+    {
+      "text": "rising",
+      "spoken": "rising",
+      "start": 6.315,
+      "end": 6.875,
+      "matched": true
+    },
+    {
+      "text": "hydrostatic",
+      "spoken": "hydrostatic",
+      "start": 6.875,
+      "end": 7.515,
+      "matched": true
+    },
+    {
+      "text": "pressure",
+      "spoken": "pressure",
+      "start": 7.515,
+      "end": 8.115,
+      "matched": true
+    },
+    {
+      "text": "shrinks",
+      "spoken": "shrinks",
+      "start": 8.115,
+      "end": 8.735,
+      "matched": true
+    },
+    {
+      "text": "flexible",
+      "spoken": "flexible",
+      "start": 8.735,
+      "end": 9.215,
+      "matched": true
+    },
+    {
+      "text": "gas-filled",
+      "spoken": "gas-filled",
+      "start": 9.215,
+      "end": 9.815,
+      "matched": true
+    },
+    {
+      "text": "spaces.",
+      "spoken": "spaces.",
+      "start": 9.815,
+      "end": 10.395,
+      "matched": true
+    }
+  ],
+  "marks": {},
+  "chunks": [
+    {
+      "start": 0,
+      "end": 4.355,
+      "text": "With your mouth submerged, gasping forces water in and causes drowning."
+    },
+    {
+      "start": 4.655,
+      "end": 10.685,
+      "text": "As your body sinks deeper, rising hydrostatic pressure shrinks flexible gas-filled spaces."
+    }
+  ],
+  "transcript": "With your mouth submerged, gasping forces water in and causes drowning. As your body sinks deeper, rising hydrostatic pressure shrinks flexible gas-filled spaces.",
+  "matchRate": 1,
+  "unmatched": []
+}

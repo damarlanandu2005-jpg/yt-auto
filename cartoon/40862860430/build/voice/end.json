@@ -1,0 +1,81 @@
+{
+  "hash": "7e110e8229220896",
+  "id": "end",
+  "duration": 2.535,
+  "words": [
+    {
+      "text": "Would",
+      "spoken": "Would",
+      "start": 0,
+      "end": 0.14,
+      "matched": true
+    },
+    {
+      "text": "you",
+      "spoken": "you",
+      "start": 0.14,
+      "end": 0.26,
+      "matched": true
+    },
+    {
+      "text": "ever",
+      "spoken": "ever",
+      "start": 0.26,
+      "end": 0.54,
+      "matched": true
+    },
+    {
+      "text": "dare",
+      "spoken": "dare",
+      "start": 0.54,
+      "end": 0.82,
+      "matched": true
+    },
+    {
+      "text": "to",
+      "spoken": "to",
+      "start": 0.82,
+      "end": 1.1,
+      "matched": true
+    },
+    {
+      "text": "explore",
+      "spoken": "explore",
+      "start": 1.1,
+      "end": 1.44,
+      "matched": true
+    },
+    {
+      "text": "the",
+      "spoken": "the",
+      "start": 1.44,
+      "end": 1.64,
+      "matched": true
+    },
+    {
+      "text": "ocean",
+      "spoken": "ocean",
+      "start": 1.64,
+      "end": 1.96,
+      "matched": true
+    },
+    {
+      "text": "deeps?",
+      "spoken": "deeps?",
+      "start": 1.96,
+      "end": 2.46,
+      "matched": true
+    }
+  ],
+  "marks": {},
+  "chunks": [
+    {
+      "start": 0,
+      "end": 2.535,
+      "text": "Would you ever dare to explore the ocean deeps?"
+    }
+  ],
+  "transcript": "Would you ever dare to explore the ocean deeps?",
+  "matchRate": 1,
+  "unmatched": []
+}

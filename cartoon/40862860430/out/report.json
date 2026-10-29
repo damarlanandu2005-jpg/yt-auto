@@ -1,0 +1,53 @@
+{
+  "file": "/home/runner/explainroo/videos/mariana-trench/out/video.mp4",
+  "duration": 53.8,
+  "video": {
+    "width": 1080,
+    "height": 1920,
+    "fps": "30/1",
+    "codec": "h264"
+  },
+  "audio": {
+    "codec": "aac",
+    "sampleRate": 48000,
+    "channels": 2
+  },
+  "loudness": {
+    "integrated": -14,
+    "range": 2.9,
+    "truePeak": -1.4
+  },
+  "blackSegments": [],
+  "silences": [],
+  "speech": {
+    "matchRate": 1,
+    "transcript": "What would happen to your body if you fell into the Mariana Trench? You drop into the western Pacific Ocean, directly above a depth of 10,935 meters. Cold water triggers cold shock and uncontrolled gasping, which can kill within two minutes. With your mouth submerged, gasping forces water in and causes drowning, as your body sinks deeper. Rising hydrostatic pressure shrinks flexible gas-filled spaces. This difference in pressure causes injuries to gas-containing internal organs like your lungs and ears. In short, cold shock and drowning can kill you in minutes. As you descend, rising water pressure can injure your gas-containing internal organs. Would you ever dare to explore the ocean deeps?",
+    "scenes": [
+      {
+        "id": "hook",
+        "matchRate": 1
+      },
+      {
+        "id": "step1",
+        "matchRate": 1
+      },
+      {
+        "id": "step2",
+        "matchRate": 1
+      },
+      {
+        "id": "step3",
+        "matchRate": 1
+      },
+      {
+        "id": "answer",
+        "matchRate": 1
+      },
+      {
+        "id": "end",
+        "matchRate": 1
+      }
+    ]
+  },
+  "issues": []
+}
