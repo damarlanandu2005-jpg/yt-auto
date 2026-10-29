@@ -33,8 +33,8 @@ export default {
     const k = () => 1 + 1.0 * s.p('#long', 2.2);
     hero(s, { x: 540, y: 1100, scale: 1.3, helmet: true, outline: EDGE, at: -1, stretch: k,
       moves: [{ at: 0, pose: 'fall', face: 'scared' }, { at: '#squeeze', pose: 'fall', face: 'shocked' }] });
-    s.arrow([170, 780], [170, 1100], { color: 'red', width: 16, label: 'strong pull', labelSize: 60, at: 'feet' });
-    s.arrow([170, 250], [170, 340], { color: 'muted', width: 8, label: 'weak pull', labelSize: 52, at: 'head' });
+    s.arrow([340, 780], [340, 1100], { color: 'red', width: 16, label: 'strong pull', labelSize: 60, at: 'feet' });
+    s.arrow([340, 250], [340, 340], { color: 'muted', width: 8, label: 'weak pull', labelSize: 52, at: 'head' });
     s.arrow([900, 640], [680, 640], { color: 'blue', width: 14, at: '#squeeze' });
     s.arrow([180, 640], [400, 640], { color: 'blue', width: 14, at: s.mark('squeeze') + 0.15 });
     words(s);
