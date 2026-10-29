@@ -1,0 +1,19 @@
+[plan] What would it feel like to be on the Titanic as it sank? | feeling: fear
+[script] 110 words; fact-check {'checked': 10, 'supported_first_pass': 9, 'fixed': 0, 'dropped': 1, 'bad_ids': 0, 'copied': 0, 'guard': 0, 'words_after': 110}; story ok
+[llm] short_scenes: gemini-3.8-flash unavailable (daily free quota used up); trying next model
+[llm] short_scenes: gemini-3.6-flash unavailable (daily free quota used up); trying next model
+[llm] short_scenes: gemini-3.5-flash unavailable (daily free quota used up); trying next model
+[scenes] problems, one fix round:
+  imports 'arrow' from ./props.js, which has no such name (has: THING_NAMES, art, background, blackHole, bubbles, cut, emoji, explosion, fire, floorY, glow, label, lava, pieces, place, smoke, speedLines, stand, stars, thing, waterRise, weather, words)
+  hook: pose 'shocked' does not exist (use one from the list in the rules)
+  hook: 'ship_front_half' floats on water but this shot is in 'titanic_deck_night' (no open water): show it in ocean_surface / storm_sea, or use another object
+  step1: no stickman: every scene shows hero(...)
+  step2: 'ship_front_half' floats on water but this shot is in 'titanic_deck_night' (no open water): show it in ocean_surface / storm_sea, or use another object
+  step2: 'lifeboat_crowded' floats on water but this shot is in 'titanic_deck_night' (no open water): show it in ocean_surface / storm_sea, or use another object
+  step3: 3 labels; use at most ONE short label per scene and draw the rest
+  answer: 5 labels; use at most ONE short label per scene and draw the rest
+  answer: label 'GASP' must be at most 4 words, all spoken in this scene (not spoken: gasp)
+  answer: label 'CAN’T SWIM' must be at most 4 words, all spoken in this scene (not spoken: cant, swim)
+  end: label 'GET IN?' must be at most 4 words, all spoken in this scene (not spoken: get)
+  end: face 'hopeful' does not exist (use one from the list in the rules)
+[scenes] ["imports 's' from ./props.js, which has no such name (has: THING_NAMES, art, background, blackHole, bubbles, cut, emoji, explosion, fire, floorY, glow, label, lava, pieces, place, smoke, speedLines, stand, stars, thing, waterRise, weather, words)", "step1: on 'ocean_surface' (open water) people cannot stand: use swim, float, panic or climb (stand() puts them in the water up to the chest), or put them in a boat", "step2: 'ship_front_half' floats on water but this shot is in 'titanic_deck_night' (no open water): show it in ocean_surface / storm_sea, or use another object"]

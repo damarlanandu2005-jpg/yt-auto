@@ -1,0 +1,18 @@
+voice hook: 4.0s in 4.3s
+voice step1: 4.8s in 3.2s
+voice step2: 8.2s in 5.6s
+voice step3: 9.4s in 6.0s
+voice answer: 12.1s in 7.1s
+voice end: 2.8s in 2.3s
+hook                 4.0s  100% confirmed
+step1                4.8s  92% confirmed  unconfirmed: one-tenth
+step2                8.2s  96% confirmed  unconfirmed: one-third
+step3                9.4s  88% confirmed  unconfirmed: sea, water, minus
+answer              12.1s  100% confirmed
+end                  2.8s  100% confirmed
+total 49.7s
+error: engine failed to start: The requested module './props.js' does not provide an export named 's'
+error: engine failed to start: The requested module './props.js' does not provide an export named 's'
+error: engine failed to start: The requested module './props.js' does not provide an export named 's'
+rendering 49.7s (1491 frames at 30 fps, 1080x1920) with 2 workers
+error: engine failed to start: The requested module './props.js' does not provide an export named 's'

@@ -1,0 +1,9 @@
+[review] no stills found
+[llm] short_scenes_fix: gemini-3.8-flash unavailable (HTTP 503 (busy)); trying next model
+[llm] short_scenes_fix: gemini-3.6-flash unavailable (HTTP 503 (busy)); trying next model
+[llm] short_scenes_fix: gemini-3.5-flash unavailable (daily free quota used up); trying next model
+[scenes] problems, one fix round:
+  step1: on 'ocean_surface' (open water) people cannot stand: use swim, float, panic or climb (stand() puts them in the water up to the chest), or put them in a boat
+  step2: 'ship_front_half' floats on water but this shot is in 'titanic_deck_night' (no open water): show it in ocean_surface / storm_sea, or use another object
+[fix] new scenes.js still has plain-code problems, keeping the old one: ["answer: on 'ocean_surface' (open water) people cannot stand: use swim, float, panic or climb (stand() puts them in the water up to the chest), or put them in a boat"]
+[fix] 4 layout error(s), 0 picture problem(s) sent back to the scene writer
