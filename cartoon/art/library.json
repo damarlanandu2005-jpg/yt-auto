@@ -1,0 +1,952 @@
+{
+ "about": "Background and object library (owner's ChatGPT pictures, 29 Oct). places: floor = fraction of the height where open floor starts; things: height_m = real height, stand = where it may be placed.",
+ "licence": {
+  "made_by": "the owner (Nandu) with ChatGPT image generation, 29 Oct 2026",
+  "licence": "owner's own AI output (OpenAI terms: the user owns the output); flat cartoon, not realistic",
+  "prompts": "cartoon/art/PROMPTS.md and cartoon/art/BATCHES.md",
+  "added": "2026-10-29"
+ },
+ "places": {
+  "classroom": {
+   "file": "places/classroom.jpg",
+   "size": [
+    576,
+    1024
+   ],
+   "prompt": "a classroom, green blackboard, teacher's desk, wooden student desks at the sides, a wall clock, windows with daylight",
+   "batch": "batch1_places",
+   "floor": 0.66,
+   "ground": "floor",
+   "light": "day",
+   "tags": [
+    "school",
+    "classroom",
+    "teacher",
+    "student"
+   ]
+  },
+  "deep_sea": {
+   "file": "places/deep_sea.jpg",
+   "size": [
+    576,
+    1024
+   ],
+   "prompt": "the very deep dark ocean, almost black blue, a few glowing dots, rocky sea floor at the bottom",
+   "batch": "batch1_places",
+   "floor": 0.74,
+   "ground": "ground",
+   "light": "dark",
+   "tags": [
+    "deep",
+    "sea",
+    "ocean",
+    "trench",
+    "pressure",
+    "dark",
+    "abyss"
+   ]
+  },
+  "garage": {
+   "file": "places/garage.jpg",
+   "size": [
+    576,
+    1024
+   ],
+   "prompt": "a big garage, a roller shutter door, metal lockers, a workbench with tools at one side, a ceiling strip light",
+   "batch": "batch1_places",
+   "floor": 0.66,
+   "ground": "floor",
+   "light": "strip light",
+   "tags": [
+    "garage",
+    "workshop",
+    "police",
+    "bomb"
+   ]
+  },
+  "hospital_room": {
+   "file": "places/hospital_room.jpg",
+   "size": [
+    576,
+    1024
+   ],
+   "prompt": "a hospital room, a bed with white sheets on one side, a heart monitor, a window with blinds, a wall clock, light green walls",
+   "batch": "batch1_places",
+   "floor": 0.66,
+   "ground": "floor",
+   "light": "day",
+   "tags": [
+    "hospital",
+    "doctor",
+    "patient",
+    "health",
+    "body"
+   ]
+  },
+  "ocean_surface": {
+   "file": "places/ocean_surface.jpg",
+   "size": [
+    576,
+    1024
+   ],
+   "prompt": "the open ocean surface at dusk, gentle waves, a wide sky, nothing on the water",
+   "batch": "batch1_places",
+   "floor": 0.55,
+   "ground": "water",
+   "light": "dusk",
+   "tags": [
+    "ocean",
+    "sea",
+    "surface",
+    "waves",
+    "swim",
+    "drown"
+   ]
+  },
+  "science_lab": {
+   "file": "places/science_lab.jpg",
+   "size": [
+    576,
+    1024
+   ],
+   "prompt": "a science laboratory, long white bench with flasks and a microscope at the sides, shelves with bottles, bright ceiling lights",
+   "batch": "batch1_places",
+   "floor": 0.66,
+   "ground": "floor",
+   "light": "bright",
+   "tags": [
+    "lab",
+    "science",
+    "experiment",
+    "scientist"
+   ]
+  },
+  "ship_corridor": {
+   "file": "places/ship_corridor.jpg",
+   "size": [
+    576,
+    1024
+   ],
+   "prompt": "a narrow corridor inside an old ocean liner, wooden panels, round portholes, brass lamps on the walls, a few cm of water on the floor",
+   "batch": "batch1_places",
+   "floor": 0.66,
+   "ground": "floor",
+   "light": "lamps",
+   "tags": [
+    "ship",
+    "inside",
+    "corridor",
+    "flood",
+    "water",
+    "titanic"
+   ]
+  },
+  "titanic_deck_night": {
+   "file": "places/titanic_deck_night.jpg",
+   "size": [
+    576,
+    1024
+   ],
+   "prompt": "the wooden deck of a large 1912 ocean liner at night, white railings, lifeboats hanging on davits, tall funnels, dark calm sea, stars, a big iceberg far away",
+   "batch": "batch1_places",
+   "floor": 0.62,
+   "ground": "floor",
+   "light": "night",
+   "tags": [
+    "titanic",
+    "ship",
+    "1912",
+    "deck",
+    "iceberg",
+    "ocean",
+    "night"
+   ]
+  },
+  "underwater": {
+   "file": "places/underwater.jpg",
+   "size": [
+    576,
+    1024
+   ],
+   "prompt": "underwater in clear blue sea, sunbeams from above, sandy floor with rocks, seaweed and coral at the sides",
+   "batch": "batch1_places",
+   "floor": 0.66,
+   "ground": "ground",
+   "light": "sunbeams",
+   "tags": [
+    "underwater",
+    "sea",
+    "ocean",
+    "coral",
+    "fish",
+    "dive"
+   ]
+  },
+  "volcano_crater": {
+   "file": "places/volcano_crater.jpg",
+   "size": [
+    941,
+    1672
+   ],
+   "prompt": "the rim of a huge active volcano crater, glowing orange lava lake below, dark rocks, smoke rising, red-orange sky",
+   "batch": "batch1_places",
+   "floor": 0.62,
+   "ground": "ground",
+   "light": "lava glow",
+   "tags": [
+    "volcano",
+    "lava",
+    "eruption",
+    "fire",
+    "heat",
+    "disaster"
+   ]
+  },
+  "bedroom_night": {
+   "file": "places/bedroom_night.jpg",
+   "size": [
+    576,
+    1024
+   ],
+   "prompt": "a bedroom at night, a bed, a desk with a lamp, a window with the moon and stars, a wall clock",
+   "batch": "batch2_places",
+   "floor": 0.66,
+   "ground": "floor",
+   "light": "night lamp",
+   "tags": [
+    "bedroom",
+    "sleep",
+    "night",
+    "home",
+    "dream"
+   ]
+  },
+  "cave": {
+   "file": "places/cave.jpg",
+   "size": [
+    576,
+    1024
+   ],
+   "prompt": "inside a dark rocky cave, stalactites, a small pool of water, a faint light from the cave mouth",
+   "batch": "batch2_places",
+   "floor": 0.66,
+   "ground": "ground",
+   "light": "dark",
+   "tags": [
+    "cave",
+    "underground",
+    "stalactites",
+    "lost"
+   ]
+  },
+  "city_earthquake": {
+   "file": "places/city_earthquake.jpg",
+   "size": [
+    576,
+    1024
+   ],
+   "prompt": "a city street after an earthquake, cracked road, tilted lamp posts, broken windows, dust in the air",
+   "batch": "batch2_places",
+   "floor": 0.66,
+   "ground": "ground",
+   "light": "dusty",
+   "tags": [
+    "earthquake",
+    "city",
+    "disaster",
+    "cracks",
+    "ruins"
+   ]
+  },
+  "city_night": {
+   "file": "places/city_night.jpg",
+   "size": [
+    576,
+    1024
+   ],
+   "prompt": "a city street at night, lit windows, street lamps glowing, dark blue sky with a moon",
+   "batch": "batch2_places",
+   "floor": 0.66,
+   "ground": "ground",
+   "light": "night",
+   "tags": [
+    "city",
+    "street",
+    "night",
+    "lamps"
+   ]
+  },
+  "city_street_day": {
+   "file": "places/city_street_day.jpg",
+   "size": [
+    941,
+    1672
+   ],
+   "prompt": "a city street in daytime, buildings with windows, a pavement, a street lamp, a few trees, blue sky",
+   "batch": "batch2_places",
+   "floor": 0.66,
+   "ground": "ground",
+   "light": "day",
+   "tags": [
+    "city",
+    "street",
+    "town",
+    "road"
+   ]
+  },
+  "desert": {
+   "file": "places/desert.jpg",
+   "size": [
+    576,
+    1024
+   ],
+   "prompt": "a hot sandy desert, dunes, a few cactus plants, a bright hot sun, heat haze",
+   "batch": "batch2_places",
+   "floor": 0.62,
+   "ground": "ground",
+   "light": "hot sun",
+   "tags": [
+    "desert",
+    "sand",
+    "heat",
+    "thirst",
+    "sahara"
+   ]
+  },
+  "forest": {
+   "file": "places/forest.jpg",
+   "size": [
+    576,
+    1024
+   ],
+   "prompt": "a green forest, tall trees on both sides, a dirt path in the middle, sunlight through the leaves",
+   "batch": "batch2_places",
+   "floor": 0.66,
+   "ground": "ground",
+   "light": "day",
+   "tags": [
+    "forest",
+    "trees",
+    "woods",
+    "lost",
+    "nature"
+   ]
+  },
+  "snow_mountain": {
+   "file": "places/snow_mountain.jpg",
+   "size": [
+    576,
+    1024
+   ],
+   "prompt": "a snowy mountain slope, rocks and pine trees, cold blue sky, snow on the ground",
+   "batch": "batch2_places",
+   "floor": 0.66,
+   "ground": "ground",
+   "light": "cold day",
+   "tags": [
+    "snow",
+    "mountain",
+    "cold",
+    "avalanche",
+    "freeze",
+    "everest"
+   ]
+  },
+  "space_station": {
+   "file": "places/space_station.jpg",
+   "size": [
+    576,
+    1024
+   ],
+   "prompt": "inside a space station, white panels, handrails, screens and buttons, a round window showing Earth",
+   "batch": "batch2_places",
+   "floor": 0.7,
+   "ground": "floor",
+   "light": "bright",
+   "tags": [
+    "space",
+    "station",
+    "astronaut",
+    "orbit",
+    "earth"
+   ]
+  },
+  "storm_sea": {
+   "file": "places/storm_sea.jpg",
+   "size": [
+    576,
+    1024
+   ],
+   "prompt": "a stormy sea at night, huge dark waves, heavy rain, lightning in the clouds",
+   "batch": "batch2_places",
+   "floor": 0.55,
+   "ground": "water",
+   "light": "storm",
+   "tags": [
+    "storm",
+    "sea",
+    "waves",
+    "lightning",
+    "rain",
+    "shipwreck"
+   ]
+  },
+  "airplane_cabin": {
+   "file": "places/airplane_cabin.jpg",
+   "size": [
+    576,
+    1024
+   ],
+   "prompt": "inside a passenger airplane cabin, rows of empty seats, small windows, overhead lockers",
+   "batch": "batch7_places",
+   "floor": 0.7,
+   "ground": "floor",
+   "light": "cabin",
+   "tags": [
+    "airplane",
+    "flight",
+    "cabin",
+    "crash",
+    "passenger"
+   ]
+  },
+  "ancient_egypt": {
+   "file": "places/ancient_egypt.jpg",
+   "size": [
+    576,
+    1024
+   ],
+   "prompt": "a desert with the pyramids of Giza and the Sphinx in the distance",
+   "batch": "batch7_places",
+   "floor": 0.66,
+   "ground": "ground",
+   "light": "hot sun",
+   "tags": [
+    "egypt",
+    "pyramids",
+    "sphinx",
+    "pharaoh",
+    "history"
+   ]
+  },
+  "arctic_ice": {
+   "file": "places/arctic_ice.jpg",
+   "size": [
+    576,
+    1024
+   ],
+   "prompt": "a frozen Arctic sea, white ice floes, cracks in the ice, dark cold water, grey sky",
+   "batch": "batch7_places",
+   "floor": 0.62,
+   "ground": "ice",
+   "light": "cold",
+   "tags": [
+    "arctic",
+    "ice",
+    "cold",
+    "polar",
+    "freeze",
+    "north",
+    "pole"
+   ]
+  },
+  "burning_building": {
+   "file": "places/burning_building.jpg",
+   "size": [
+    576,
+    1024
+   ],
+   "prompt": "a city street at night in front of a tall building with flames and smoke coming from the windows",
+   "batch": "batch7_places",
+   "floor": 0.7,
+   "ground": "ground",
+   "light": "fire glow",
+   "tags": [
+    "fire",
+    "building",
+    "firefighter",
+    "smoke",
+    "disaster"
+   ]
+  },
+  "jungle": {
+   "file": "places/jungle.jpg",
+   "size": [
+    576,
+    1024
+   ],
+   "prompt": "a thick tropical jungle, giant leaves, vines, a muddy path, misty light",
+   "batch": "batch7_places",
+   "floor": 0.66,
+   "ground": "ground",
+   "light": "misty",
+   "tags": [
+    "jungle",
+    "rainforest",
+    "amazon",
+    "lost",
+    "animals"
+   ]
+  },
+  "mars_surface": {
+   "file": "places/mars_surface.jpg",
+   "size": [
+    576,
+    1024
+   ],
+   "prompt": "the red dusty surface of Mars, rocks, a butterscotch-orange sky, a small sun",
+   "batch": "batch7_places",
+   "floor": 0.62,
+   "ground": "ground",
+   "light": "dusty",
+   "tags": [
+    "mars",
+    "planet",
+    "space",
+    "red"
+   ]
+  },
+  "mine_tunnel": {
+   "file": "places/mine_tunnel.jpg",
+   "size": [
+    576,
+    1024
+   ],
+   "prompt": "an underground mine tunnel, wooden support beams, rail tracks, hanging lamps",
+   "batch": "batch7_places",
+   "floor": 0.7,
+   "ground": "ground",
+   "light": "lamps",
+   "tags": [
+    "mine",
+    "tunnel",
+    "underground",
+    "miners",
+    "collapse"
+   ]
+  },
+  "moon_surface": {
+   "file": "places/moon_surface.jpg",
+   "size": [
+    576,
+    1024
+   ],
+   "prompt": "the grey surface of the Moon, craters, black sky with stars, the Earth in the sky",
+   "batch": "batch7_places",
+   "floor": 0.62,
+   "ground": "ground",
+   "light": "space",
+   "tags": [
+    "moon",
+    "space",
+    "astronaut",
+    "crater"
+   ]
+  },
+  "prehistoric_land": {
+   "file": "places/prehistoric_land.jpg",
+   "size": [
+    576,
+    1024
+   ],
+   "prompt": "a prehistoric landscape with giant ferns, a smoking volcano far away, a river",
+   "batch": "batch7_places",
+   "floor": 0.7,
+   "ground": "ground",
+   "light": "day",
+   "tags": [
+    "dinosaur",
+    "prehistoric",
+    "ancient",
+    "extinction"
+   ]
+  },
+  "tsunami_beach": {
+   "file": "places/tsunami_beach.jpg",
+   "size": [
+    576,
+    1024
+   ],
+   "prompt": "a tropical beach with palm trees, the sea pulled far back, a giant wave rising on the horizon",
+   "batch": "batch7_places",
+   "floor": 0.74,
+   "ground": "ground",
+   "light": "day",
+   "tags": [
+    "tsunami",
+    "beach",
+    "wave",
+    "disaster",
+    "sea"
+   ]
+  }
+ },
+ "things": {
+  "astronaut_helmet": {
+   "file": "things/astronaut_helmet.png",
+   "size": [
+    578,
+    640
+   ],
+   "prompt": "a white astronaut helmet with a gold visor",
+   "batch": "batch4_objects",
+   "height_m": 0.4,
+   "stand": "hand",
+   "tags": [
+    "space",
+    "helmet"
+   ]
+  },
+  "bed": {
+   "file": "things/bed.png",
+   "size": [
+    640,
+    605
+   ],
+   "prompt": "a single bed with a blanket and pillow",
+   "batch": "batch4_objects",
+   "height_m": 0.9,
+   "stand": "floor",
+   "tags": [
+    "bed"
+   ]
+  },
+  "bomb_timer": {
+   "file": "things/bomb_timer.png",
+   "size": [
+    640,
+    507
+   ],
+   "prompt": "a box with a digital timer and coloured wires (cartoon, harmless looking)",
+   "batch": "batch4_objects",
+   "height_m": 0.3,
+   "stand": "table",
+   "tags": [
+    "bomb",
+    "timer",
+    "device"
+   ]
+  },
+  "flask": {
+   "file": "things/flask.png",
+   "size": [
+    464,
+    640
+   ],
+   "prompt": "a glass lab flask with green liquid",
+   "batch": "batch4_objects",
+   "height_m": 0.25,
+   "stand": "table",
+   "tags": [
+    "flask",
+    "chemical",
+    "bottle"
+   ]
+  },
+  "lockers": {
+   "file": "things/lockers.png",
+   "size": [
+    514,
+    640
+   ],
+   "prompt": "a row of three metal lockers",
+   "batch": "batch4_objects",
+   "height_m": 1.9,
+   "stand": "floor",
+   "tags": [
+    "lockers"
+   ]
+  },
+  "microscope": {
+   "file": "things/microscope.png",
+   "size": [
+    386,
+    640
+   ],
+   "prompt": "a lab microscope",
+   "batch": "batch4_objects",
+   "height_m": 0.4,
+   "stand": "table",
+   "tags": [
+    "microscope"
+   ]
+  },
+  "rocket_launch": {
+   "file": "things/rocket_launch.png",
+   "size": [
+    414,
+    640
+   ],
+   "prompt": "a tall white space rocket standing on a launch pad",
+   "batch": "batch4_objects",
+   "height_m": 60,
+   "stand": "floor",
+   "tags": [
+    "rocket",
+    "launch",
+    "pad"
+   ]
+  },
+  "street_lamp": {
+   "file": "things/street_lamp.png",
+   "size": [
+    139,
+    640
+   ],
+   "prompt": "an old street lamp",
+   "batch": "batch4_objects",
+   "height_m": 4,
+   "stand": "floor",
+   "tags": [
+    "lamp",
+    "post",
+    "street",
+    "light"
+   ]
+  },
+  "telescope": {
+   "file": "things/telescope.png",
+   "size": [
+    532,
+    640
+   ],
+   "prompt": "a big telescope on a stand",
+   "batch": "batch4_objects",
+   "height_m": 1.6,
+   "stand": "floor",
+   "tags": [
+    "telescope"
+   ]
+  },
+  "traffic_light": {
+   "file": "things/traffic_light.png",
+   "size": [
+    128,
+    640
+   ],
+   "prompt": "a traffic light on a pole",
+   "batch": "batch4_objects",
+   "height_m": 4,
+   "stand": "floor",
+   "tags": [
+    "traffic",
+    "light",
+    "signal"
+   ]
+  },
+  "airplane": {
+   "file": "things/airplane.png",
+   "size": [
+    640,
+    232
+   ],
+   "prompt": "a passenger airplane, side view",
+   "batch": "batch5_objects",
+   "height_m": 6,
+   "stand": "sky",
+   "tags": [
+    "plane",
+    "aircraft",
+    "jet"
+   ]
+  },
+  "bus": {
+   "file": "things/bus.png",
+   "size": [
+    640,
+    254
+   ],
+   "prompt": "a yellow school bus, side view",
+   "batch": "batch5_objects",
+   "height_m": 3,
+   "stand": "floor",
+   "tags": [
+    "school",
+    "bus"
+   ]
+  },
+  "cactus": {
+   "file": "things/cactus.png",
+   "size": [
+    531,
+    640
+   ],
+   "prompt": "a green cactus in sand",
+   "batch": "batch5_objects",
+   "height_m": 1.6,
+   "stand": "floor",
+   "tags": [
+    "cactus"
+   ]
+  },
+  "campfire": {
+   "file": "things/campfire.png",
+   "size": [
+    602,
+    640
+   ],
+   "prompt": "a campfire with logs",
+   "batch": "batch5_objects",
+   "height_m": 0.8,
+   "stand": "floor",
+   "tags": [
+    "fire",
+    "camp"
+   ]
+  },
+  "car": {
+   "file": "things/car.png",
+   "size": [
+    640,
+    295
+   ],
+   "prompt": "a small red car, side view",
+   "batch": "batch5_objects",
+   "height_m": 1.5,
+   "stand": "floor",
+   "tags": [
+    "car",
+    "vehicle"
+   ]
+  },
+  "house": {
+   "file": "things/house.png",
+   "size": [
+    640,
+    450
+   ],
+   "prompt": "a small house with a red roof",
+   "batch": "batch5_objects",
+   "height_m": 6,
+   "stand": "floor",
+   "tags": [
+    "house",
+    "home"
+   ]
+  },
+  "rock_pile": {
+   "file": "things/rock_pile.png",
+   "size": [
+    640,
+    374
+   ],
+   "prompt": "a pile of grey rocks",
+   "batch": "batch5_objects",
+   "height_m": 1,
+   "stand": "floor",
+   "tags": [
+    "rocks",
+    "stones",
+    "rubble"
+   ]
+  },
+  "tent": {
+   "file": "things/tent.png",
+   "size": [
+    640,
+    328
+   ],
+   "prompt": "a camping tent",
+   "batch": "batch5_objects",
+   "height_m": 1.4,
+   "stand": "floor",
+   "tags": [
+    "tent",
+    "camping"
+   ]
+  },
+  "train": {
+   "file": "things/train.png",
+   "size": [
+    640,
+    241
+   ],
+   "prompt": "a modern train, side view",
+   "batch": "batch5_objects",
+   "height_m": 4,
+   "stand": "floor",
+   "tags": [
+    "train",
+    "railway"
+   ]
+  },
+  "wooden_crate": {
+   "file": "things/wooden_crate.png",
+   "size": [
+    640,
+    573
+   ],
+   "prompt": "a wooden crate",
+   "batch": "batch5_objects",
+   "height_m": 0.8,
+   "stand": "floor",
+   "tags": [
+    "box",
+    "crate"
+   ]
+  },
+  "lifeboat_crowded": {
+   "file": "things/lifeboat_crowded.png",
+   "size": [
+    640,
+    250
+   ],
+   "prompt": "a wooden lifeboat from 1912 on the water, full of simple round-headed cartoon passenger shapes (no faces)",
+   "batch": "batch6_titanic",
+   "height_m": 1.5,
+   "stand": "water",
+   "tags": [
+    "lifeboat",
+    "survivors"
+   ]
+  },
+  "ship_back_half": {
+   "file": "things/ship_back_half.png",
+   "size": [
+    640,
+    436
+   ],
+   "prompt": "only the BACK half of a 1912 ocean liner, broken jagged edge on the left side where it split",
+   "batch": "batch6_titanic",
+   "height_m": 30,
+   "stand": "water",
+   "tags": [
+    "titanic",
+    "stern",
+    "ship"
+   ]
+  },
+  "ship_front_half": {
+   "file": "things/ship_front_half.png",
+   "size": [
+    640,
+    457
+   ],
+   "prompt": "only the FRONT half of a 1912 ocean liner, broken jagged edge on the right side where it split",
+   "batch": "batch6_titanic",
+   "height_m": 30,
+   "stand": "water",
+   "tags": [
+    "titanic",
+    "bow",
+    "ship"
+   ]
+  },
+  "ship_wreck": {
+   "file": "things/ship_wreck.png",
+   "size": [
+    640,
+    413
+   ],
+   "prompt": "the rusty broken front part of a 1912 ocean liner lying on the sea floor",
+   "batch": "batch6_titanic",
+   "height_m": 20,
+   "stand": "floor",
+   "tags": [
+    "titanic",
+    "wreck",
+    "shipwreck"
+   ]
+  }
+ }
+}

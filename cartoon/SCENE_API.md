@@ -7,13 +7,13 @@ Never keep state, never use timers, never use `Math.random()` (use `s.rand(i)`),
 
 ```js
 import { hero } from './character.js';
-import { background, thing, emoji, label, words, blackHole } from './props.js';
+import { place, floorY, art, background, thing, emoji, label, words, blackHole } from './props.js';
 export default {
   sceneId(s) { background(s, 'ocean'); /* ...pictures... */ words(s); },  // one function per "## sceneId"
 };
 ```
 
-Every scene: FIRST `background(s, kind)` (it also keeps the camera still, so captions are never cut off),
+Every scene: FIRST `place(s, name)` or `background(s, kind)` (it also keeps the camera still, so captions are never cut off),
 LAST `words(s)` (the one-word captions). Never call `s.camera` or `s.focus` yourself.
 
 ## Frame (1080 x 1920, the whole screen is the picture)
@@ -47,7 +47,17 @@ hero(s, { x: 540, y: 1300, scale: 1.4, outline: '#ffffff', at: 0,
 
 ## Props, labels, captions (from props.js)
 
-- `background(s, kind)`: space, night, ocean, deep, sky, land, city, body, desert, snow, fire, room.
+- `place(s, name, { mood, zoom, focus, flash })`: a REAL PLACE from the LIBRARY list below (a detailed picture:
+  Titanic deck, hospital room, volcano crater, city street...). PREFER a place over `background` whenever one fits.
+  `mood`: night, dark, fire, cold, storm, dusk, underwater (the same place in another light). `zoom: 1.6` with
+  `focus: [x, y]` (0..1) = a closer shot of part of the place. `flash: ['boom']` = a white flash on that word.
+- `floorY(s, place, depth)`: the y where feet stand in that place (depth 0 = far back, 1 = front). Put hero and
+  art on the floor with it: `hero(s, { x, y: floorY(s, 'garage', 0.6), ... })`. Further back = smaller scale.
+- `art(s, name, { x, y, scale, size, at, flip, rotate })`: a detailed library object (lifeboat, bed, car, bomb
+  timer...) drawn at its REAL size next to the stickman; `y` = where it stands (its bottom), `scale` = the same
+  as the stickman's scale beside it. `size` (px of height) only for a close-up of the object.
+- `background(s, kind)`: a plain sky only when no place fits: space, night, ocean, deep, sky, land, city, body,
+  desert, snow, fire, room.
 - `thing(s, name, { x, y, size, at, out, rotate })`: sun, earth, moon, ship, wave, mountain, volcano, tree, house,
   fire, drop, heart, brain, clock, rock, fish, rocket, question. `size` = width in px (60-400).
 - `blackHole(s, { x, y, r, at })`.

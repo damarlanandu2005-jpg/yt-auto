@@ -1,5 +1,6 @@
 // Simple props drawn in code, in the same flat cartoon style as the character.
 // Like the character, everything depends only on the time.
+import { PLACES, ART } from './art_cards.js';
 
 // A black hole, simplified from the well-known look (bright disc of gas in front, the far side of the disc
 // bent up over the top by gravity, a thin bright rim around the black centre). Slowly shimmers.
@@ -303,4 +304,65 @@ export function emoji(s, name, o = {}) {
     ctx.restore();
   });
   return { x: o.x, y: o.y, w: size, h: size };
+}
+
+// Library pictures (owner's ChatGPT art, 29 Oct; cards in cartoon/art/library.json, copied into the project's
+// assets/art/ before rendering). place() is the background of a shot; art() is a detailed object.
+const PX_PER_M = 165;  // the stickman at scale 1 is about 1.7 m tall on screen
+
+// Moods drawn over a place: the same picture by day, at night, lit by fire, in the dark...
+const MOODS = {
+  night: ['rgba(10,20,60,0.45)', 'multiply'], dark: ['rgba(0,0,0,0.55)', 'multiply'],
+  fire: ['rgba(255,110,20,0.28)', 'overlay'], cold: ['rgba(120,170,255,0.25)', 'overlay'],
+  storm: ['rgba(30,40,60,0.45)', 'multiply'], dusk: ['rgba(255,120,60,0.22)', 'overlay'],
+  underwater: ['rgba(0,90,160,0.3)', 'multiply'],
+};
+
+export function place(s, name, o = {}) {
+  const card = PLACES[name];
+  if (!card) throw new Error(`unknown place "${name}" (have: ${Object.keys(PLACES).join(', ')})`);
+  if (s.camera) s.camera([]);  // still camera, like background() (captions are never cut off)
+  const img = s.engine.image(`assets/art/${card.file}`);
+  s.draw({ x: 0, y: 0, at: 0, enter: 'none', sfx: false }, (ctx) => {
+    const zoom = o.zoom ?? 1;  // > 1 = closer shot of the same place, centred on o.focus ([x, y] in 0..1)
+    const [fx, fy] = o.focus ?? [0.5, 0.6];
+    const w = s.W * zoom, h = s.H * zoom;
+    ctx.drawImage(img, (s.W - w) * fx, (s.H - h) * fy, w, h);
+    const mood = MOODS[o.mood];
+    if (mood) {
+      ctx.save(); ctx.globalCompositeOperation = mood[1]; ctx.fillStyle = mood[0]; ctx.fillRect(0, 0, s.W, s.H); ctx.restore();
+    }
+    if (o.flash) {  // lightning or an explosion: a short white flash at these times (seconds in the scene)
+      const k = Math.max(0, ...[].concat(o.flash).map((t) => 1 - Math.abs(s.t - s.time(t)) / 0.15));
+      if (k > 0) { ctx.fillStyle = `rgba(255,255,255,${0.8 * k})`; ctx.fillRect(0, 0, s.W, s.H); }
+    }
+  });
+  return { floor: card.floor * s.H };
+}
+
+// Where feet stand in a place: depth 0 = the back of the open floor, 1 = the front of the picture.
+export function floorY(s, name, depth = 0.5) {
+  const card = PLACES[name];
+  if (!card) throw new Error(`unknown place "${name}"`);
+  const top = card.floor * s.H + 40, bottom = s.H * 0.86;
+  return top + (bottom - top) * Math.min(1, Math.max(0, depth));
+}
+
+// A detailed object, drawn at its real size next to the stickman: art(s, 'car', { x, y, scale }) where y is
+// where it stands (its bottom) and scale means the same as hero's scale (a 1.7 m stickman at scale 1).
+// `size` (px of height) overrides the real size, e.g. for a close-up.
+export function art(s, name, o = {}) {
+  const card = ART[name];
+  if (!card) throw new Error(`unknown art "${name}" (have: ${Object.keys(ART).join(', ')})`);
+  const img = s.engine.image(`assets/art/${card.file}`);
+  const h = Math.min(s.H * 1.4, o.size ?? card.height_m * PX_PER_M * (o.scale ?? 1));
+  const w = (h * card.w) / card.h;
+  s.draw({ x: o.x ?? s.W / 2, y: o.y ?? s.H * 0.8, at: o.at ?? 0, out: o.out, enter: o.enter ?? 'pop', id: o.id }, (ctx) => {
+    ctx.save();
+    if (o.rotate) ctx.rotate((o.rotate * Math.PI) / 180);
+    if (o.flip) ctx.scale(-1, 1);
+    ctx.drawImage(img, -w / 2, -h, w, h);  // anchored at its bottom centre, like the stickman's feet
+    ctx.restore();
+  });
+  return { x: o.x, y: o.y, w, h };
 }

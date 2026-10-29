@@ -156,7 +156,8 @@ def fix(args) -> None:
     else:
         Path(out / "fixed").write_text("1")
     (out / "project" / "scenes.js").write_text(js, encoding="utf-8")
-    cartoon.copy_emoji(js, out / "project")  # the fixed scenes may use other emoji
+    cartoon.copy_emoji(js, out / "project")  # the fixed scenes may use other emoji and pictures
+    cartoon.copy_art(js, out / "project")
     (out / "description.txt").write_text(cartoon.description(script, sources, js), encoding="utf-8")
     report["fix_problems"] = problems
     (meta / "report.json").write_text(json.dumps(report, indent=1, ensure_ascii=False), encoding="utf-8")

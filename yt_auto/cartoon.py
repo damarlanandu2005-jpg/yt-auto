@@ -192,7 +192,8 @@ def scene_texts(script: dict) -> dict[str, str]:
 
 def write_scenes(script: dict, md: str, feedback: str = "", previous: str = "") -> dict:
     api = ((CARTOON / "SCENE_API.md").read_text()
-           + "\n\n## EMOJI NAMES (the only names emoji() accepts)\n\n" + (EMOJI_DIR / "NAMES.txt").read_text())
+           + "\n\n## EMOJI NAMES (the only names emoji() accepts)\n\n" + (EMOJI_DIR / "NAMES.txt").read_text()
+           + "\n\n## LIBRARY (the only names place() and art() accept)\n\n" + library_listing())
     example = (CARTOON / "example_scenes.js").read_text()
     ask = f"""Write scenes.js for this Short. Scene ids, in order: {', '.join(scene_ids(script))}.
 
@@ -250,6 +251,37 @@ def used_emoji(js: str) -> list[str]:
     return sorted(set(EMOJI_CALL.findall(js)))
 
 
+ART_DIR = CARTOON / "art"   # owner's ChatGPT places and objects (29 Oct), cards in art/library.json
+PLACE_CALL = re.compile(r"\b(?:place|floorY)\(\s*s\s*,\s*['\"]([\w-]+)['\"]")
+ART_CALL = re.compile(r"\bart\(\s*s\s*,\s*['\"]([\w-]+)['\"]")
+
+
+def art_library() -> dict:
+    return json.loads((ART_DIR / "library.json").read_text())
+
+
+def library_listing() -> str:
+    lib = art_library()
+    places = [f"- {n}: {', '.join(c['tags'])} (ground: {c['ground']}, light: {c['light']}, open floor from y "
+              f"{round(c['floor'] * 1920)})" for n, c in sorted(lib["places"].items())]
+    things = [f"- {n}: {', '.join(c['tags'])} ({c['height_m']} m, stands on: {c['stand']})" for n, c in sorted(lib["things"].items())]
+    return "Places:\n" + "\n".join(places) + "\n\nArt objects:\n" + "\n".join(things) + "\n"
+
+
+def copy_art(js: str, project: Path) -> list[str]:
+    """Copy the library pictures a scenes.js uses into the project's assets/art/ (explainroo loads only assets/)."""
+    lib, used = art_library(), []
+    for kind, names in (("places", PLACE_CALL.findall(js)), ("things", ART_CALL.findall(js))):
+        for n in sorted(set(names)):
+            card = lib[kind].get(n)
+            if card and (ART_DIR / card["file"]).exists():
+                dst = project / "assets" / "art" / card["file"]
+                dst.parent.mkdir(parents=True, exist_ok=True)
+                dst.write_bytes((ART_DIR / card["file"]).read_bytes())
+                used.append(n)
+    return used
+
+
 def copy_emoji(js: str, project: Path) -> list[str]:
     """Copy the emoji a scenes.js uses into the project's assets/emoji/ (explainroo loads only assets/)."""
     names = [n for n in used_emoji(js) if (EMOJI_DIR / f"{n}.svg").exists()]
@@ -288,8 +320,8 @@ def validate_scenes(js: str, script: dict) -> list[str]:
         body = js[a:starts[i + 1][0] if i + 1 < len(starts) else len(js)]
         if "words(s)" not in body:
             problems.append(f"{sid}: words(s) (the captions) is not called")
-        if "background(" not in body:
-            problems.append(f"{sid}: background(s, kind) is not called")
+        if "background(" not in body and "place(" not in body:
+            problems.append(f"{sid}: no place(s, name) or background(s, kind) is called")
         spoken = " ".join(_norm(w) for w in texts[sid].split())
         for cue in re.findall(r"\b(?:at|out)\s*:\s*'([^'#][^']*)'", body):
             words = [_norm(w) for w in cue.split()]
@@ -312,7 +344,7 @@ def validate_scenes(js: str, script: dict) -> list[str]:
             problems.append(f"{sid}: no stickman: every scene shows hero(...)")
         # own helper functions defined in the file (e.g. bubbles(s, ...)) that draw count too
         helpers = [h for h in re.findall(r"^function\s+(\w+)\s*\(s\b", js, re.M)]
-        drawn = r"\b(thing|emoji|blackHole" + "".join(f"|{h}" for h in helpers) + r")\(|s\.(draw|icon|circle|path|line|arrow|number)\("
+        drawn = r"\b(thing|emoji|art|blackHole" + "".join(f"|{h}" for h in helpers) + r")\(|s\.(draw|icon|circle|path|line|arrow|number)\("
         if not re.search(drawn, body):
             problems.append(f"{sid}: nothing is drawn besides the stickman: draw what the narration talks about")
         sc = re.search(r"hero\(s,\s*\{[^}]*?scale:\s*([\d.]+)", body)
@@ -324,6 +356,11 @@ def validate_scenes(js: str, script: dict) -> list[str]:
                                    ("icon", re.findall(r"s\.icon\(\s*['\"]([\w-]+)['\"]", body), icon_names())):
             for n in sorted(set(found) - known):
                 problems.append(f"{sid}: {kind} '{n}' does not exist (use one from the list in the rules)")
+        lib = art_library()
+        for kind, names in (("places", PLACE_CALL.findall(body)), ("things", ART_CALL.findall(body))):
+            for n in sorted(set(names) - set(lib[kind])):
+                problems.append(f"{sid}: {'place' if kind == 'places' else 'art'} '{n}' is not in the library "
+                                f"(have: {', '.join(sorted(lib[kind]))})")
         for n in used_emoji(body):
             if n not in emoji_names():
                 problems.append(f"{sid}: emoji '{n}' does not exist (use a name from the emoji list, or thing()/your own drawing)")
@@ -343,6 +380,7 @@ def write_project(out: Path, script: dict, sources: dict, scenes_js: str) -> Non
     (out / "script.md").write_text(script_md(script, sources), encoding="utf-8")
     (out / "scenes.js").write_text(scenes_js, encoding="utf-8")
     copy_emoji(scenes_js, out)
+    copy_art(scenes_js, out)
     (out / "video.json").write_text(json.dumps({
         "title": script["title"], "theme": "space-look.json", "size": "9:16", "voice": "af_heart",
         "music": True, "captions": False, "watermark": False}, indent=2) + "\n", encoding="utf-8")
