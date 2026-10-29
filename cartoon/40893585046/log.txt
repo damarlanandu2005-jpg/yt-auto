@@ -1,0 +1,39 @@
+ok   node                 v22.23.4
+ok   ffmpeg               ffmpeg version n8.1.3-24-g92611900bb-20261026 Copyright (c) 2000-2026 the FFmpeg developers
+ok   espeak-ng            not found; only needed for Spanish, French, Italian, Portuguese and Hindi
+ok   misaki ja            not found; only needed for Japanese
+ok   misaki zh            not found; only needed for Chinese
+ok   chrome               /usr/bin/google-chrome
+ok   voice model          Kokoro 82M (fp32) in /home/runner/.cache/explainroo/models/onnx-community
+ok   speech check model   Whisper base.en
+FAIL language model       Whisper small for languages other than English; downloaded on first use, not by --fetch
+voice deck: 3.3s in 4.4s
+voice sea: 2.6s in 3.0s
+voice room: 2.2s in 2.5s
+deck                 3.3s  100% confirmed
+sea                  2.6s  100% confirmed
+room                 2.2s  100% confirmed
+total 12.7s
+no problems found in 3 scenes (12.7s)
+deck@end                 /home/runner/explainroo/videos/library-test/out/stills/deck@end.png
+sea@end                  /home/runner/explainroo/videos/library-test/out/stills/sea@end.png
+room@end                 /home/runner/explainroo/videos/library-test/out/stills/room@end.png
+/home/runner/explainroo/videos/library-test/out/sheet.jpg (26 frames)
+rendering 12.7s (381 frames at 30 fps, 1080x1920) with 2 workers
+soundtrack: 2 sound cues, mixed in 0.2s
+frames 78/381 (24.6 fps, about 13s left)
+frames 144/381 (22.4 fps, about 11s left)
+frames 192/381 (20.3 fps, about 10s left)
+frames 228/381 (17.7 fps, about 9s left)
+frames 276/381 (17.1 fps, about 7s left)
+frames 336/381 (17.5 fps, about 3s left)
+frames 376/381 (16.4 fps, about 1s left)
+frames done in 26.0s
+wrote videos/library-test/out/video.mp4 in 29.2s
+videos/library-test/out/video.mp4
+videos/library-test/out/video.srt
+videos/library-test/out/video.vtt
+videos/library-test/out/video.cover.jpg
+checking that the narration is understandable in the final mix
+/home/runner/explainroo/videos/library-test/out/video.mp4: 12.7s, 1080x1920, loudness -14 LUFS, true peak -1.5 dBFS
+narration understood: 100%

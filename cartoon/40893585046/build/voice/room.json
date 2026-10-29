@@ -1,0 +1,74 @@
+{
+  "hash": "b8df4ce338dec257",
+  "id": "room",
+  "duration": 2.195,
+  "words": [
+    {
+      "text": "Later",
+      "spoken": "Later",
+      "start": 0,
+      "end": 0.28,
+      "matched": true
+    },
+    {
+      "text": "he",
+      "spoken": "he",
+      "start": 0.28,
+      "end": 0.44,
+      "matched": true
+    },
+    {
+      "text": "wakes",
+      "spoken": "wakes",
+      "start": 0.44,
+      "end": 0.62,
+      "matched": true
+    },
+    {
+      "text": "up",
+      "spoken": "up",
+      "start": 0.62,
+      "end": 0.88,
+      "matched": true
+    },
+    {
+      "text": "in",
+      "spoken": "in",
+      "start": 0.88,
+      "end": 1.1,
+      "matched": true
+    },
+    {
+      "text": "a",
+      "spoken": "a",
+      "start": 1.1,
+      "end": 1.18,
+      "matched": true
+    },
+    {
+      "text": "hospital",
+      "spoken": "hospital",
+      "start": 1.18,
+      "end": 1.52,
+      "matched": true
+    },
+    {
+      "text": "room.",
+      "spoken": "room.",
+      "start": 1.52,
+      "end": 2.02,
+      "matched": true
+    }
+  ],
+  "marks": {},
+  "chunks": [
+    {
+      "start": 0,
+      "end": 2.195,
+      "text": "Later he wakes up in a hospital room."
+    }
+  ],
+  "transcript": "Later he wakes up in a hospital room.",
+  "matchRate": 1,
+  "unmatched": []
+}

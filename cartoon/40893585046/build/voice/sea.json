@@ -1,0 +1,81 @@
+{
+  "hash": "5793c186d2967863",
+  "id": "sea",
+  "duration": 2.635,
+  "words": [
+    {
+      "text": "Then",
+      "spoken": "Then",
+      "start": 0,
+      "end": 0.16,
+      "matched": true
+    },
+    {
+      "text": "the",
+      "spoken": "the",
+      "start": 0.16,
+      "end": 0.24,
+      "matched": true
+    },
+    {
+      "text": "ship",
+      "spoken": "ship",
+      "start": 0.24,
+      "end": 0.46,
+      "matched": true
+    },
+    {
+      "text": "breaks",
+      "spoken": "breaks",
+      "start": 0.46,
+      "end": 0.7,
+      "matched": true
+    },
+    {
+      "text": "and",
+      "spoken": "and",
+      "start": 0.7,
+      "end": 1.22,
+      "matched": true
+    },
+    {
+      "text": "the",
+      "spoken": "the",
+      "start": 1.22,
+      "end": 1.32,
+      "matched": true
+    },
+    {
+      "text": "lifeboat",
+      "spoken": "lifeboat",
+      "start": 1.32,
+      "end": 1.78,
+      "matched": true
+    },
+    {
+      "text": "drifts",
+      "spoken": "drifts",
+      "start": 1.78,
+      "end": 2.08,
+      "matched": true
+    },
+    {
+      "text": "away.",
+      "spoken": "away.",
+      "start": 2.08,
+      "end": 2.42,
+      "matched": true
+    }
+  ],
+  "marks": {},
+  "chunks": [
+    {
+      "start": 0,
+      "end": 2.635,
+      "text": "Then the ship breaks and the lifeboat drifts away."
+    }
+  ],
+  "transcript": "then the ship breaks and the lifeboat drifts away.",
+  "matchRate": 1,
+  "unmatched": []
+}
