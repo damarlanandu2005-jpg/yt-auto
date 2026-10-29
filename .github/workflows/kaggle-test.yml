@@ -38,6 +38,21 @@ jobs:
         run: |
           [ -n "$KAGGLE_USERNAME" ] && [ -n "$KAGGLE_API_TOKEN" ] || { echo "Add repo secrets KAGGLE_USERNAME and KAGGLE_API_TOKEN first"; exit 1; }
           pip install -q kaggle && kaggle --version
+          # Two kinds of Kaggle keys (run 40854367716 was refused): the new API token, or the legacy key from
+          # kaggle.json (32 hex characters, used together with the username). Only the kind and length are printed.
+          tok=$(printf '%s' "$KAGGLE_API_TOKEN" | tr -d '[:space:]"')
+          if [[ "$tok" =~ ^[0-9a-f]{32}$ ]]; then
+            echo "key kind: legacy kaggle.json key (length ${#tok})"
+            echo "KAGGLE_KEY=$tok" >> "$GITHUB_ENV"; echo "KAGGLE_API_TOKEN=" >> "$GITHUB_ENV"
+          else
+            echo "key kind: new API token (length ${#tok}, starts with a letter: $([[ "$tok" =~ ^[A-Za-z] ]] && echo yes || echo no))"
+            mkdir -p ~/.kaggle && printf '%s' "$tok" > ~/.kaggle/access_token && chmod 600 ~/.kaggle/access_token
+            echo "KAGGLE_API_TOKEN=$tok" >> "$GITHUB_ENV"
+          fi
+          echo "username length ${#KAGGLE_USERNAME}"
+      - name: Check the Kaggle login
+        timeout-minutes: 3
+        run: kaggle kernels list --mine --page-size 1 && echo "login ok"
 
       - name: Pack and start the test on Kaggle
         if: inputs.action == 'start'
