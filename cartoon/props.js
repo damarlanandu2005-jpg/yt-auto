@@ -604,3 +604,14 @@ export function speedLines(s, o = {}) {
     }
   });
 }
+
+// cut(s, ['iceberg', 'panic']): which shot of the scene we are in (0 before the first cue word, 1 after it...).
+// The reference Shorts change the picture every ~2 seconds; a scene branches on it:
+//   const k = cut(s, ['iceberg', 'panic']);
+//   if (k === 0) { place(s, 'titanic_deck_night', { shot: 'wide' }); ... }
+//   else if (k === 1) { place(s, 'titanic_deck_night', { shot: 'close' }); ... } else { ... }
+export function cut(s, cues = []) {
+  let k = 0;
+  for (const c of cues) if (s.t >= s.time(c)) k++;
+  return k;
+}

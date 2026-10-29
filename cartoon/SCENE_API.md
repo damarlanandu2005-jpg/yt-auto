@@ -7,7 +7,7 @@ Never keep state, never use timers, never use `Math.random()` (use `s.rand(i)`),
 
 ```js
 import { hero, crowd } from './character.js';
-import { place, stand, art, fire, smoke, lava, bubbles, waterRise, weather, explosion, pieces, glow, speedLines,
+import { place, stand, cut, art, fire, smoke, lava, bubbles, waterRise, weather, explosion, pieces, glow, speedLines,
   background, thing, emoji, label, words, blackHole } from './props.js';
 export default {
   sceneId(s) { background(s, 'ocean'); /* ...pictures... */ words(s); },  // one function per "## sceneId"
@@ -87,6 +87,29 @@ crowd(s, { n: 6, x0: 120, x1: 960, y: 1500, scale: 0.8, depth: 40, seed: 4, outf
 - `label(s, 'SHORT TEXT', { x, y, size, color, at, out })`: bold text with a black edge, readable on any
   background. color: yellow, red, green, blue or white. Max 3-4 words. Never repeat the narration sentence.
 - `words(s)`: the captions. Call it last in EVERY scene.
+
+## Shots: a new picture every ~2 seconds (the most important rule for the look)
+
+The reference Shorts never hold one picture for a whole scene. Split EVERY scene into 2-4 shots with `cut`:
+```js
+step1(s) {
+  const k = cut(s, ['iceberg', 'water']);            // words spoken in this scene, in order
+  if (k === 0) {                                       // shot 1: wide, where we are
+    place(s, 'titanic_deck_night', { shot: 'wide', mood: 'night' });
+    hero(s, { x: 360, ...stand(s, 0.7), look: ME, moves: [{ at: 0, pose: 'walk', face: 'happy' }] });
+  } else if (k === 1) {                                // shot 2: close, the feeling
+    place(s, 'titanic_deck_night', { shot: 'close', focus: 0.3, mood: 'night' });
+    hero(s, { x: 480, ...stand(s, 0.8), look: ME, moves: [{ at: 0, pose: 'point', face: 'shocked' }] });
+  } else {                                             // shot 3: what happens
+    place(s, 'ship_corridor', { shot: 'medium' });
+    waterRise(s, { from: 1920, to: 1300, at: 'water', until: 'water' });
+  }
+  words(s);
+}
+```
+- Wide → medium → close is the usual order: where we are, who, what he feels. Show objects in close-up too.
+- Keep the main stickman's `look` the SAME in every shot (define `const ME = {...}` once at the top).
+- Only cue words spoken in THIS scene, in the order they are spoken.
 
 ## Effects (moving, from props.js): use them to make the story happen, not just to decorate
 

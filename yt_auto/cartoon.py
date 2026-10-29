@@ -195,13 +195,18 @@ def write_scenes(script: dict, md: str, feedback: str = "", previous: str = "") 
            + "\n\n## EMOJI NAMES (the only names emoji() accepts)\n\n" + (EMOJI_DIR / "NAMES.txt").read_text()
            + "\n\n## LIBRARY (the only names place() and art() accept)\n\n" + library_listing())
     example = (CARTOON / "example_scenes.js").read_text()
+    example2 = (CARTOON / "example_scenes_place.js").read_text()
     ask = f"""Write scenes.js for this Short. Scene ids, in order: {', '.join(scene_ids(script))}.
 
 RULES AND DRAWING FUNCTIONS:
 {api}
 
-STYLE EXAMPLE (another video, its narration is in the comment at the top; do NOT copy its pictures, make
-pictures for THIS story). Times use spoken words of the same scene (at: 'feet', s.cue('stretched')) or seconds:
+STYLE EXAMPLES (other videos, their narration is in the comment at the top; do NOT copy their pictures, make
+pictures for THIS story). Times use spoken words of the same scene (at: 'feet', s.cue('stretched')) or seconds.
+Example 2 (real places, shots every ~2 s) is the style for every story on Earth; example 1 only for space.
+```js
+{example2}
+```
 ```js
 {example}
 ```
@@ -336,7 +341,8 @@ def validate_scenes(js: str, script: dict) -> list[str]:
         if "background(" not in body and "place(" not in body:
             problems.append(f"{sid}: no place(s, name) or background(s, kind) is called")
         spoken = " ".join(_norm(w) for w in texts[sid].split())
-        for cue in re.findall(r"\b(?:at|out)\s*:\s*'([^'#][^']*)'", body):
+        cut_cues = [c for m in re.findall(r"\bcut\(\s*s\s*,\s*\[([^\]]*)\]", body) for c in re.findall(r"'([^']+)'", m)]
+        for cue in re.findall(r"\b(?:at|out|until)\s*:\s*'([^'#][^']*)'", body) + cut_cues:
             words = [_norm(w) for w in cue.split()]
             if " ".join(words) not in spoken:
                 problems.append(f"{sid}: the cue '{cue}' is not spoken in this scene (spoken: \"{texts[sid]}\")")
@@ -357,7 +363,7 @@ def validate_scenes(js: str, script: dict) -> list[str]:
             problems.append(f"{sid}: no stickman: every scene shows hero(...)")
         # own helper functions defined in the file (e.g. bubbles(s, ...)) that draw count too
         helpers = [h for h in re.findall(r"^function\s+(\w+)\s*\(s\b", js, re.M)]
-        drawn = r"\b(thing|emoji|art|fire|smoke|lava|bubbles|waterRise|explosion|pieces|glow|blackHole" + "".join(f"|{h}" for h in helpers) + r")\(|s\.(draw|icon|circle|path|line|arrow|number)\("
+        drawn = r"\b(place|crowd|thing|emoji|art|fire|smoke|lava|bubbles|waterRise|explosion|pieces|glow|blackHole" + "".join(f"|{h}" for h in helpers) + r")\(|s\.(draw|icon|circle|path|line|arrow|number)\("
         if not re.search(drawn, body):
             problems.append(f"{sid}: nothing is drawn besides the stickman: draw what the narration talks about")
         sc = re.search(r"hero\(s,\s*\{[^}]*?scale:\s*([\d.]+)", body)

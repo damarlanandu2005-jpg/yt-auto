@@ -21,6 +21,9 @@ on:
         description: "Topic or question with a strong, true feeling"
         required: true
         default: "What happens if you fall into the Mariana Trench?"
+      resume_from:
+        description: "optional: a finished cartoon-short run id; reuse its plan, sources and checked script (new scenes only)"
+        default: ""
       writer:
         description: "kaggle-start (open models on Kaggle, then run again with kaggle-collect ~40 min later), kaggle-collect, or gemini"
         type: choice
@@ -69,7 +72,7 @@ jobs:
           set -e
           mkdir -p bundle/cartoon bundle/kaggle k
           cp -r yt_auto bundle/ && cp kaggle/ollama_setup.py bundle/kaggle/
-          cp cartoon/make_short.py cartoon/SCENE_API.md cartoon/example_scenes.js cartoon/TEMPLATE.md cartoon/character.js cartoon/lucide_names.txt bundle/cartoon/
+          cp cartoon/make_short.py cartoon/SCENE_API.md cartoon/example_scenes.js cartoon/example_scenes_place.js cartoon/TEMPLATE.md cartoon/character.js cartoon/lucide_names.txt bundle/cartoon/
           mkdir -p bundle/cartoon/emoji bundle/cartoon/art && cp cartoon/emoji/NAMES.txt bundle/cartoon/emoji/   # names only; files are added at render
           cp cartoon/art/library.json bundle/cartoon/art/   # the library's cards (the pictures stay on GitHub)
           find bundle -name __pycache__ -prune -exec rm -rf {} +
@@ -155,6 +158,22 @@ jobs:
           EOF
           echo "state=ok" >> "$GITHUB_OUTPUT"
 
+      - name: Reuse the plan, sources and checked script of an earlier run (scenes are written again)
+        if: inputs.resume_from != '' && env.WRITER == 'gemini'
+        timeout-minutes: 3
+        env:
+          GH_TOKEN: ${{ github.token }}
+          RUN: ${{ inputs.resume_from }}
+        run: |
+          set -e
+          [[ "$RUN" =~ ^[0-9]+$ ]] || { echo "resume_from must be a run id"; exit 1; }
+          mkdir -p out/short/meta
+          for f in plan.json sources.json script.json script_draft.json factcheck.json script_retry.json; do
+            gh api "repos/${{ github.repository }}/contents/cartoon-short/$RUN/meta/$f?ref=bench-results" \
+              -H "Accept: application/vnd.github.raw" > "out/short/meta/$f" 2>/dev/null || rm -f "out/short/meta/$f"
+          done
+          ls -la out/short/meta
+          [ -f out/short/meta/script.json ] || { echo "no script.json in run $RUN"; exit 1; }
       - name: Install Python packages
         if: env.WRITER == 'gemini' || steps.kc.outputs.state == 'ok'
         timeout-minutes: 10
