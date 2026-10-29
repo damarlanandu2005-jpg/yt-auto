@@ -1,0 +1,12 @@
+<!doctype html><meta charset="utf-8"><body style="margin:0;background:#f8c630">
+<canvas id="c" width="1600" height="800"></canvas>
+<script type="module">
+// Test page: our character's faces next to each other on the logo's yellow, to compare with the channel logo.
+import { hero } from '../character.js';
+const ctx = document.getElementById('c').getContext('2d');
+ctx.fillStyle = '#f8c630'; ctx.fillRect(0, 0, 1600, 800);
+const s = { t: 0.5, time: (v) => v, draw(o, fn) { ctx.save(); ctx.translate(o.x, o.y); fn(ctx, { p: 1, local: 1 }); ctx.restore(); } };
+hero(s, { x: 260, y: 900, scale: 2.2, moves: [{ at: 0, pose: 'think', face: 'thinking' }] });
+['happy', 'scared', 'shocked', 'sad', 'wow'].forEach((f, i) => hero(s, { x: 620 + i * 200, y: 760, scale: 0.9, moves: [{ at: 0, pose: 'stand', face: f }] }));
+document.title = 'done';
+</script>

@@ -1,0 +1,108 @@
+{
+ "approved_by_owner": "2026-10-29",
+ "uploaded": "2026-10-29",
+ "youtube": "https://youtube.com/shorts/31791sSe0jg",
+ "channel": "Stickman Thoughts",
+ "format": "short-cartoon",
+ "run_id": 40827775250,
+ "question": "What happens if you fall into a black hole?",
+ "sources": [
+  "https://en.wikipedia.org/w/index.php?title=Spaghettification&oldid=1376271770",
+  "https://en.wikipedia.org/w/index.php?title=Black_hole&oldid=1382111817"
+ ],
+ "script": {
+  "title": "What happens if you fall into a black hole?",
+  "scenes": [
+   {
+    "heading": "hook",
+    "sentences": [
+     {
+      "text": "Imagine you fall into a black hole, feet first.",
+      "id": "hook.01"
+     },
+     {
+      "text": "What would you feel?",
+      "id": "hook.02"
+     }
+    ]
+   },
+   {
+    "heading": "stretch",
+    "sentences": [
+     {
+      "text": "Gravity pulls much harder on your feet than on your head.",
+      "id": "stretch.01"
+     },
+     {
+      "text": "So your body is stretched long and thin.",
+      "id": "stretch.02"
+     },
+     {
+      "text": "At the same time, your sides are squeezed inward.",
+      "id": "stretch.03"
+     }
+    ]
+   },
+   {
+    "heading": "name",
+    "sentences": [
+     {
+      "text": "Scientists call this spaghettification.",
+      "id": "name.01"
+     },
+     {
+      "text": "Stephen Hawking made the word famous.",
+      "id": "name.02"
+     }
+    ]
+   },
+   {
+    "heading": "size",
+    "sentences": [
+     {
+      "text": "The size of the black hole changes everything.",
+      "id": "size.01"
+     },
+     {
+      "text": "A small one stretches you apart before you even reach its edge.",
+      "id": "size.02"
+     },
+     {
+      "text": "A giant one lets you cross the edge without feeling much at all.",
+      "id": "size.03"
+     }
+    ]
+   },
+   {
+    "heading": "outside",
+    "sentences": [
+     {
+      "text": "A friend watching from far away sees something strange.",
+      "id": "outside.01"
+     },
+     {
+      "text": "You seem to slow down near the edge.",
+      "id": "outside.02"
+     },
+     {
+      "text": "You look redder and dimmer, until you fade from view.",
+      "id": "outside.03"
+     }
+    ]
+   },
+   {
+    "heading": "trapped",
+    "sentences": [
+     {
+      "text": "Once you cross the edge, there is no way back.",
+      "id": "trapped.01"
+     },
+     {
+      "text": "Nothing, not even light, can escape from inside.",
+      "id": "trapped.02"
+     }
+    ]
+   }
+  ]
+ }
+}

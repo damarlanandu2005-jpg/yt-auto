@@ -17,7 +17,7 @@ const RED = '#e5484d';
 const GLASS = 'rgba(150, 200, 235, 0.28)';
 
 // Body sizes in design pixels at scale 1 (feet at y = 0, so the character stands on `y`).
-const L = { head: 66, body: 100, upper: 50, fore: 46, thigh: 54, shin: 52, width: 9, hand: 7 };
+const L = { head: 66, body: 100, upper: 50, fore: 46, thigh: 54, shin: 52, width: 11, hand: 11 }; // thick lines, round hands: matches the channel logo (29 Oct)
 
 // Limb angles in degrees: 0 = hanging straight down, 90 = pointing right, -90 = left, 180 = straight up.
 // Each limb is [upper part, lower part]. a = arms (left, right), g = legs. lean tilts the upper body.
@@ -44,8 +44,8 @@ export const FACES = {
   wow: { eyes: 'big', brows: [-6, -6], lift: 10, mouth: 'grin' },
   scared: { eyes: 'big', brows: [-22, -22], lift: 6, mouth: 'wavy', mark: 'sweat', shake: 1.6 },
   shocked: { eyes: 'big', brows: [-10, -10], lift: 14, mouth: 'o', mark: '!' },
-  confused: { eyes: 'dot', brows: [12, -14], lift: 4, mouth: 'squiggle', mark: '?' },
-  thinking: { eyes: 'side', brows: [6, -8], lift: 2, mouth: 'flat' },
+  confused: { eyes: 'dot', brows: [-14, 10], lift: 4, mouth: 'side', mark: '?' },
+  thinking: { eyes: 'side', brows: [-14, 10], lift: 2, mouth: 'side', mark: 'lines' }, // the channel logo's face
   sad: { eyes: 'dot', brows: [-20, -20], lift: 0, mouth: 'frown', mark: 'tear' },
   angry: { eyes: 'dot', brows: [24, 24], lift: -2, mouth: 'frown' },
 };
@@ -123,20 +123,22 @@ function face(ctx, f, R, t, blinkSeed) {
     } else {
       const dx = f.eyes === 'side' ? 5 : 0;
       const dy = f.eyes === 'side' ? -4 : 0;
-      ctx.beginPath();
-      ctx.arc(x + dx, ey + dy, 5.5, 0, Math.PI * 2);
+      ctx.beginPath(); // tall black ovals, as in the channel logo
+      ctx.ellipse(x + dx, ey + dy + 3, 6.5, 10.5, 0, 0, Math.PI * 2);
       ctx.fill();
     }
     // brow: tilt + means the inner end (towards the nose) is lower
     const by = ey - 20 - f.lift;
     const tilt = rad(f.brows[side < 0 ? 0 : 1]);
     const half = 11;
-    ctx.beginPath();
+    ctx.beginPath(); // thick curved brows, as in the logo
     const inner = [x - side * half, by + Math.sin(tilt) * half];
     const outer = [x + side * half, by - Math.sin(tilt) * half];
+    ctx.lineWidth = 5;
     ctx.moveTo(inner[0], inner[1]);
-    ctx.lineTo(outer[0], outer[1]);
+    ctx.quadraticCurveTo(x, by - 5 - Math.abs(Math.sin(tilt)) * 2, outer[0], outer[1]);
     ctx.stroke();
+    ctx.lineWidth = 4;
   }
   const my = r * 0.38;
   ctx.beginPath();
@@ -152,6 +154,7 @@ function face(ctx, f, R, t, blinkSeed) {
       break;
     case 'squiggle': ctx.moveTo(-12, my + 2); ctx.quadraticCurveTo(-4, my - 6, 2, my + 1); ctx.quadraticCurveTo(8, my + 6, 13, my - 3); ctx.stroke(); break;
     case 'flat': ctx.moveTo(-4, my + 2); ctx.lineTo(12, my); ctx.stroke(); break;
+    case 'side': ctx.lineWidth = 4.5; ctx.arc(12, my + 8, 8, rad(215), rad(325)); ctx.stroke(); break; // the logo's small worried mouth
     default: ctx.moveTo(-10, my); ctx.lineTo(10, my); ctx.stroke();
   }
   ctx.restore();
@@ -235,6 +238,16 @@ function mark(ctx, kind, r, t) {
   ctx.fillStyle = kind === 'tear' || kind === 'sweat' ? '#6cb4ee' : RED;
   ctx.strokeStyle = INK;
   ctx.lineWidth = 3;
+  if (kind === 'lines') { // the logo's two little 'thinking' strokes above the head
+    ctx.strokeStyle = INK;
+    ctx.lineWidth = 6;
+    ctx.lineCap = 'round';
+    for (const [x0, y0, x1, y1] of [[-0.62, -1.22, -0.78, -1.5], [-0.3, -1.32, -0.33, -1.62]]) {
+      ctx.beginPath(); ctx.moveTo(x0 * r, y0 * r); ctx.lineTo(x1 * r, y1 * r); ctx.stroke();
+    }
+    ctx.restore();
+    return;
+  }
   if (kind === 'sweat' || kind === 'tear') {
     const x = kind === 'sweat' ? r * 0.95 : r * 0.38;
     const y = kind === 'sweat' ? -r * 0.55 + (t * 30) % 18 : r * 0.05 + (t * 40) % 26;
