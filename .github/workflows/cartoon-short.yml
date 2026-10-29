@@ -3,8 +3,9 @@ name: Stickman Short (topic in, Short out)
 # Manual for now (the daily topic finder comes next). Follows cartoon/TEMPLATE.md:
 #   write   (our code, Gemini key): plan -> Wikipedia -> 110-140 word script -> fact-check -> scenes.js
 #   render  (explainroo, no secrets): voice, layout check, stills, video
-#   fix     (our code, Gemini key): if explainroo's check found errors, one AI repair of scenes.js
-#   render2 (explainroo, no secrets): only after a fix
+#   fix     (our code, Gemini key): an AI looks at the last frame of every scene (blind description + judge);
+#           layout errors and picture problems go back to the scene writer once
+#   render2 (explainroo, no secrets): only after a fix; review2 looks at its pictures again (for the label)
 #   publish (no outside code): release "Ready for your review" only if every check passed, else
 #           "DRAFT - do not upload" (rule R1); results to bench-results/cartoon-short/<run_id>/
 on:
@@ -62,7 +63,7 @@ jobs:
 
   fix:
     needs: render
-    if: needs.render.outputs.errors != '0'
+    if: needs.render.result == 'success'
     runs-on: ubuntu-24.04
     timeout-minutes: 30
     outputs:
@@ -84,13 +85,13 @@ jobs:
         with:
           name: short-render1
           path: out/render1
-      - name: Repair scenes.js from explainroo's errors
+      - name: Review the pictures; repair scenes.js from layout errors and picture problems
         id: fix
         timeout-minutes: 25
         env:
           GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
         run: |
-          python cartoon/make_short.py fix --out out/short --log out/render1/log.txt 2>&1 | tee out/short/fix.log
+          python cartoon/make_short.py fix --out out/short --log out/render1/log.txt --stills out/render1/render/stills 2>&1 | tee out/short/fix.log
           [ -f out/short/fixed ] && echo "fixed=true" >> "$GITHUB_OUTPUT" || echo "fixed=false" >> "$GITHUB_OUTPUT"
       - uses: actions/upload-artifact@v4
         with:
@@ -106,8 +107,41 @@ jobs:
       project_artifact: short-fixed
       out_artifact: short-render2
 
+  review2:
+    needs: [fix, render2]
+    if: needs.render2.result == 'success'
+    runs-on: ubuntu-24.04
+    timeout-minutes: 20
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          persist-credentials: false
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.13"
+          cache: pip
+      - run: pip install -r requirements.txt
+      - uses: actions/download-artifact@v4
+        with:
+          name: short-fixed
+          path: out/short
+      - uses: actions/download-artifact@v4
+        with:
+          name: short-render2
+          path: out/render2
+      - name: Review the pictures of the fixed render
+        timeout-minutes: 15
+        env:
+          GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
+        run: python cartoon/make_short.py review --out out/short --stills out/render2/render/stills --name picture_review2 2>&1 | tee out/short/review2.log
+      - uses: actions/upload-artifact@v4
+        with:
+          name: short-review2
+          path: out/short/meta
+          retention-days: 7
+
   publish:
-    needs: [write, render, fix, render2]
+    needs: [write, render, fix, render2, review2]
     if: always() && needs.write.result == 'success'
     runs-on: ubuntu-24.04
     timeout-minutes: 10
@@ -125,11 +159,13 @@ jobs:
           RENDER2_RESULT: ${{ needs.render2.result }}
           RENDER2_ERRORS: ${{ needs.render2.outputs.errors }}
         run: |
-          meta=art/short-written
-          final=art/short-render1; errors="$RENDER1_ERRORS"
-          if [ "$RENDER2_RESULT" = "success" ] && [ -d art/short-render2 ]; then final=art/short-render2; errors="$RENDER2_ERRORS"; meta=art/short-fixed; fi
+          meta=art/short-written; [ -d art/short-fixed ] && meta=art/short-fixed
+          final=art/short-render1; errors="$RENDER1_ERRORS"; review="$meta/meta/picture_review1.json"
+          if [ "$RENDER2_RESULT" = "success" ] && [ -d art/short-render2 ]; then
+            final=art/short-render2; errors="$RENDER2_ERRORS"; review=art/short-review2/picture_review2.json
+          fi
           echo "final=$final" >> "$GITHUB_OUTPUT"; echo "meta=$meta" >> "$GITHUB_OUTPUT"
-          python3 - "$meta/meta/report.json" "${errors:-1}" "$final" >> "$GITHUB_OUTPUT" <<'EOF'
+          python3 - "$meta/meta/report.json" "${errors:-1}" "$final" "$review" >> "$GITHUB_OUTPUT" <<'EOF'
           import json, os, sys
           r = json.load(open(sys.argv[1]))
           errors = int(sys.argv[2] or 1)
@@ -137,9 +173,16 @@ jobs:
           problems = list(r.get("story_problems", [])) + list(r.get("scene_problems", []))
           if errors: problems.append(f"{errors} layout error(s) in explainroo's check")
           if not has_video: problems.append("no video was rendered")
+          try:
+              rev = json.load(open(sys.argv[4]))
+              bad = [f"{k}: {'; '.join(v)}" for k, v in rev.get("problems", {}).items() if v]
+              if rev.get("error"): problems.append("pictures not reviewed: " + rev["error"][:120])
+              problems += [f"picture {b}"[:200] for b in bad]
+          except OSError:
+              problems.append("pictures not reviewed")
           label = "Ready for your review" if not problems else "DRAFT - do not upload"
           print("label=" + label)
-          print("problems=" + " | ".join(problems)[:900])
+          print("problems=" + " | ".join(problems)[:900].replace("\n", " "))
           EOF
       - name: Publish as a pre-release
         if: hashFiles(format('{0}/render/video.mp4', steps.pick.outputs.final)) != ''
@@ -172,6 +215,7 @@ jobs:
           mkdir -p "$dest"
           cp -r "$META/meta" "$META/project" "$dest/" 2>/dev/null || true
           cp "$META"/*.log "$META/description.txt" "$dest/" 2>/dev/null || true
+          cp art/short-review2/picture_review2.json "$dest/meta/" 2>/dev/null || true
           for r in art/short-render1 art/short-render2; do
             [ -d "$r" ] || continue
             n=$(basename "$r"); mkdir -p "$dest/$n"

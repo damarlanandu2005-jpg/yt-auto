@@ -31,10 +31,15 @@ PLAN_SCHEMA = {"type": "object", "properties": {
     "answer": {"type": "string", "description": "the honest answer in one or two plain sentences"},
     "steps": {"type": "array", "minItems": 4, "maxItems": 5, "items": {"type": "string"},
               "description": "what the stickman lives through, step by step, ending with the answer"},
-    "wikipedia_titles": {"type": "array", "minItems": 2, "maxItems": 5, "items": {"type": "string"}},
+    "wikipedia_titles": {"type": "array", "minItems": 2, "maxItems": 5, "items": {"type": "string"},
+                         "description": "articles that directly state the facts of EVERY step, including the answer"},
 }, "required": ["question", "title", "emotion", "answer", "steps", "wikipedia_titles"]}
 
 SCRIPT_SCHEMA = {"type": "object", "properties": {
+    "facts": {"type": "array", "minItems": 5, "maxItems": 12, "items": {"type": "object", "properties": {
+        "id": {"type": "string", "description": "passage id, e.g. A2.14"},
+        "fact": {"type": "string", "description": "the fact in plain words, exactly as much as the passage says"}},
+        "required": ["id", "fact"]}, "description": "FIRST: the facts the story will use, each from one passage"},
     "scenes": {"type": "array", "minItems": 5, "maxItems": 7, "items": {"type": "object", "properties": {
         "role": {"type": "string", "enum": ["hook", "step", "answer", "end"]},
         "sentences": {"type": "array", "minItems": 1, "maxItems": 3, "items": {"type": "object", "properties": {
@@ -43,7 +48,7 @@ SCRIPT_SCHEMA = {"type": "object", "properties": {
             "sources": {"type": "array", "items": {"type": "string"}}},
             "required": ["text", "kind", "sources"]}}},
         "required": ["role", "sentences"]}}},
-    "required": ["scenes"]}
+    "required": ["facts", "scenes"]}
 
 SCENES_SCHEMA = {"type": "object", "properties": {
     "scenes_js": {"type": "string", "description": "the complete scenes.js file"},
@@ -64,12 +69,16 @@ Plan one YouTube Short (40-60 seconds) for the channel "Stickman Thoughts": a si
 - emotion: the true feeling of the story (no fake urgency).
 - steps: 4 or 5 things the stickman lives through, in order; the last one is the answer.
 - answer: the honest answer. The Short must answer its own question (never "watch part 2").
-- wikipedia_titles: 2 to 5 exact English Wikipedia article titles that hold every fact needed.
+- wikipedia_titles: 2 to 5 exact English Wikipedia article titles that directly state the facts of EVERY
+  step. For "what happens to you / your body" stories, include the article about that effect itself (e.g.
+  "Barotrauma", "Hypothermia", "Spaghettification"), not only the article about the place (first test, 29 Oct:
+  only place articles were chosen, so the facts about what happens to a person were missing).
+- Only plan steps that well-known Wikipedia articles can prove. No made-up timings ("for hours") or sensations.
 {SAFETY}"""
     return llm(prompt, system=writer.RULES, schema=PLAN_SCHEMA, name="short_plan", temperature=0.8, models=QUALITY)
 
 
-def write_short(topic: str, plan: dict, sources: dict) -> dict:
+def write_short(topic: str, plan: dict, sources: dict, feedback: str = "") -> dict:
     prompt = f"""Topic: {topic}
 Question: {plan['question']}
 Feeling: {plan['emotion']}
@@ -77,22 +86,38 @@ Steps: {json.dumps(plan['steps'])}
 Answer: {plan['answer']}
 
 Write the narration of a 40-60 second YouTube Short: {WORDS[0]} to {WORDS[1]} words in total.
+FACTS FIRST: list 5 to 12 facts from the passages below (with their passage ids). Then build the story ONLY from
+those facts. Every detail of a "fact" sentence (numbers, times, causes, what happens to a body) must be in its
+passages. If the passages don't say something, leave it out or ask it as a question. (First test, 29 Oct: 5 of 11
+sentences were dropped by the fact-check for details like "sinking for hours" that no passage said.)
 - Scene 1 (role "hook"): ONE sentence, the question put to the viewer ("Imagine you..." or "What if you..."),
   ending with a question mark. It is framing: no facts.
 - Then 3 or 4 scenes (role "step"), 1 to 3 short sentences each: what the stickman goes through, step by step,
   one idea per scene, each sentence 6 to 16 words.
-- One scene (role "answer") that clearly answers the question.
+- One scene (role "answer") that clearly answers the question, with facts.
 - Last scene (role "end"): ONE plain sentence that sums it up.
-- Speak to the viewer as "you". Short words, no lists, no dashes. Never "in this video".
+- Feelings belong in framing sentences that claim nothing ("Would you even notice?"). Speak to the viewer as
+  "you". Short words, no lists, no dashes, no abbreviations. Never "in this video".
 - Mark every sentence "fact" (with the passage ids backing EVERY detail) or "framing" (no checkable claim).
 {SAFETY}
-
+{feedback}
 SOURCE PASSAGES:
 {as_prompt_text(sources)}"""
-    script = llm(prompt, system=writer.RULES, schema=SCRIPT_SCHEMA, name="short_script", temperature=0.7, models=QUALITY)
+    script = llm(prompt, system=writer.RULES, schema=SCRIPT_SCHEMA, name="short_script_retry" if feedback else "short_script",
+                 temperature=0.6, models=QUALITY)
     script["title"] = plan["title"]
     writer.number_sentences(script)
     return script
+
+
+def rewrite_feedback(report: dict, problems: list[str]) -> str:
+    dropped = "\n".join(f"- \"{d['text']}\": {d['problem']}" for d in report.get("dropped", []))
+    return f"""
+YOUR FIRST VERSION FAILED THESE CHECKS: {'; '.join(problems)}
+The fact-check dropped these sentences (the passages don't say it):
+{dropped or '- (none)'}
+Write a new version that uses only what the passages say, still {WORDS[0]}-{WORDS[1]} words, with a clear answer.
+"""
 
 
 def check_story(script: dict) -> list[str]:
@@ -246,3 +271,52 @@ def write_project(out: Path, script: dict, sources: dict, scenes_js: str) -> Non
     (out / "video.json").write_text(json.dumps({
         "title": script["title"], "theme": "space-look.json", "size": "9:16", "voice": "af_heart",
         "music": True, "captions": False, "watermark": False}, indent=2) + "\n", encoding="utf-8")
+
+
+SEEN = {"type": "object", "properties": {"images": {"type": "array", "items": {"type": "object", "properties": {
+    "n": {"type": "integer"}, "seen": {"type": "string"}}, "required": ["n", "seen"]}}}, "required": ["images"]}
+JUDGE = {"type": "object", "properties": {"scenes": {"type": "array", "items": {"type": "object", "properties": {
+    "scene": {"type": "string"}, "ok": {"type": "boolean"},
+    "problems": {"type": "array", "items": {"type": "string"}}}, "required": ["scene", "ok", "problems"]}}},
+    "required": ["scenes"]}
+
+
+def review_pictures(stills: Path, script: dict) -> dict:
+    """Look at the last frame of every scene: blind description first (VISION), then a text judge (LIGHT)
+    against the narration and the template's picture rules. Returns {scene: [problems]} (empty = fine)."""
+    import io
+
+    from PIL import Image
+
+    from .llm import LIGHT, VISION
+
+    texts = scene_texts(script)
+    shots = [(sid, stills / f"{sid}@end.png") for sid in texts if (stills / f"{sid}@end.png").exists()]
+    if not shots:
+        return {"error": "no stills found"}
+    images = []
+    for i, (_, f) in enumerate(shots, 1):
+        im = Image.open(f).convert("RGB")
+        im.thumbnail((432, 768))
+        buf = io.BytesIO()
+        im.save(buf, "JPEG", quality=80)
+        images.append((f"Image {i}:", buf.getvalue()))
+    seen = llm(f"""Above are {len(shots)} frames of a vertical cartoon video, each after its label "Image n:". For EVERY
+image, describe plainly what is drawn and where: the stick figure (pose, face), objects, every piece of text
+(quote it), and whether any text or object covers the stick figure's head or body or is cut off at an edge.""",
+               images=images, schema=SEEN, name="short_pictures_seen", temperature=0.1, models=VISION, last_resort=True)
+    by_n = {x["n"]: x["seen"] for x in seen["images"]}
+    listing = "\n".join(f"Scene {sid} (Image {i}): narration: \"{texts[sid]}\"\n  described as: {by_n.get(i, '(none)')}"
+                        for i, (sid, _) in enumerate(shots, 1))
+    res = llm(f"""Someone described the last frame of each scene of a cartoon Short WITHOUT knowing the story. Judge each
+scene. A scene has a problem when: text covers the stick figure's head or body; something is cut off at the
+edge; the picture does not show what the narration says (or shows something it doesn't say); an abbreviation
+like "ATM", "km", "x10" is on screen; a number on screen is not in the narration; the picture looks the same as
+the scene before. Be concrete: say what to change. If a scene is fine, ok = true and no problems.
+
+{listing}""", schema=JUDGE, name="short_pictures_judge", temperature=0.1, models=LIGHT, last_resort=True)
+    out = {sid: [] for sid, _ in shots}
+    for r in res["scenes"]:
+        if r["scene"] in out and not r["ok"]:
+            out[r["scene"]] = r["problems"] or ["judged not ok"]
+    return {"seen": {sid: by_n.get(i, "") for i, (sid, _) in enumerate(shots, 1)}, "problems": out}

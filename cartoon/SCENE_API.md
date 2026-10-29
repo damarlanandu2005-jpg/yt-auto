@@ -71,3 +71,16 @@ hero(s, { x: 540, y: 1300, scale: 1.4, outline: '#ffffff', at: 0,
 - Big and simple: the main thing at least 300 px. The stickman at scale 1.0-1.8 most of the time.
 - Every scene looks different from the one before (new background, distance, prop or pose).
 - Honest: never draw something the narration doesn't say. Numbers on screen only if they are in the script.
+
+## Mistakes seen in test videos (do not repeat)
+
+- Text on top of the stickman: a label must never cross his body or head. He fills a box of about
+  (x - 110*scale ... x + 110*scale) by (y - 340*scale ... y). Put labels above that box or beside it.
+- Counting numbers that make no sense ("172x pressure"): use `s.number` only for a plain quantity spoken in the
+  scene (depth, years, degrees), never for "x times" or percentages; write those with `label`.
+- Abbreviations on screen ("ATM/10m", "km"): write words ("1 MORE ATMOSPHERE", "EVERY 10 METRES").
+- The background must follow the story: deeper or darker as the story goes deeper, never jump back.
+- Every scene's main picture must be different from the last: change the background, the distance (scale),
+  the prop or the pose. Do not draw the same stickman in the same spot scene after scene.
+- explainroo arrow labels are light grey text: on light backgrounds (sky, land, desert, snow, room) use
+  `label()` next to the arrow instead of the arrow's own `label`.

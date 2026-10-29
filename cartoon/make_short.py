@@ -1,7 +1,8 @@
 """Make one Stickman Thoughts Short project (cartoon/TEMPLATE.md), ready for explainroo to render.
 
   python cartoon/make_short.py write --topic "What happens if you fall into the Mariana Trench?" --out out/short
-  python cartoon/make_short.py fix --out out/short --log render_log.txt   # after an explainroo check with errors
+  python cartoon/make_short.py fix --out out/short --log render/log.txt --stills render/render/stills
+  python cartoon/make_short.py review --out out/short --stills render2/render/stills
 
 `write`: plan -> Wikipedia sources -> 110-140 word script -> fact-check (the tested long-video checker)
 -> scenes.js by the AI (one automatic fix round for plain-code problems). Stages are cached in --out/meta,
@@ -69,6 +70,16 @@ def write(args) -> None:
 
     script = cached(meta / "script.json", make_script)
     fc = json.loads((meta / "factcheck.json").read_text()) if (meta / "factcheck.json").exists() else {}
+    problems0 = cartoon.check_story(script)
+    if problems0 and not (meta / "script_retry.json").exists():  # one rewrite from what the passages really say
+        print(f"[script] {problems0}: one rewrite", flush=True)
+        s2 = cartoon.write_short(args.topic, plan, sources, cartoon.rewrite_feedback(fc, problems0))
+        rep2 = writer.fact_check(s2, sources)
+        (meta / "script_retry.json").write_text(json.dumps(s2, indent=1, ensure_ascii=False), encoding="utf-8")
+        if len(cartoon.check_story(s2)) < len(problems0) or (not cartoon.check_story(s2)):
+            script, fc = s2, rep2
+            (meta / "script.json").write_text(json.dumps(s2, indent=1, ensure_ascii=False), encoding="utf-8")
+            (meta / "factcheck.json").write_text(json.dumps(rep2, indent=1, ensure_ascii=False), encoding="utf-8")
     report["fact_check"] = {k: (len(v) if isinstance(v, list) else v) for k, v in fc.items()}
     report["story_problems"] = cartoon.check_story(script)
     report["words"] = writer.word_count(script)
@@ -89,32 +100,56 @@ def write(args) -> None:
     (meta / "report.json").write_text(json.dumps(report, indent=1, ensure_ascii=False), encoding="utf-8")
 
 
+def review(args) -> dict:
+    """Picture review of a render (blind description + judge). Saves meta/<name>.json."""
+    out = Path(args.out)
+    meta = out / "meta"
+    llm.LOG_DIR = meta / "llm"
+    script = json.loads((meta / "script.json").read_text())
+    try:
+        rev = cartoon.review_pictures(Path(args.stills), script)
+    except Exception as e:  # noqa: BLE001  no review = not reviewed (the label says DRAFT)
+        rev = {"error": repr(e)[:400]}
+    (meta / f"{args.name}.json").write_text(json.dumps(rev, indent=1, ensure_ascii=False), encoding="utf-8")
+    bad = {k: v for k, v in rev.get("problems", {}).items() if v}
+    print(f"[review] {rev.get('error') or (str(len(bad)) + ' scene(s) with picture problems')}", flush=True)
+    for k, v in bad.items():
+        print(f"  {k}: {v}", flush=True)
+    return rev
+
+
 def fix(args) -> None:
     out = Path(args.out)
     meta = out / "meta"
     llm.LOG_DIR = meta / "llm"
     log = Path(args.log).read_text(errors="replace") if Path(args.log).exists() else ""
     errors = [l.strip() for l in log.splitlines() if re.match(r"\s*(ERROR|error)\b", l)]
+    args.name = "picture_review1"
+    rev = review(args) if args.stills else {}
+    pictures = [f"{k}: {p}" for k, v in rev.get("problems", {}).items() for p in v]
     report = json.loads((meta / "report.json").read_text())
-    if not errors:
-        print("[fix] explainroo found no errors: nothing to fix", flush=True)
-        report["render_errors"] = []
+    report["render_errors_first"] = errors
+    report["picture_problems_first"] = pictures
+    if not errors and not pictures:
+        print("[fix] no layout errors and no picture problems: nothing to fix", flush=True)
         (meta / "report.json").write_text(json.dumps(report, indent=1, ensure_ascii=False), encoding="utf-8")
         return
     script = json.loads((meta / "script.json").read_text())
     sources = json.loads((meta / "sources.json").read_text())
     md = cartoon.script_md(script, sources)
     js_old = (out / "project" / "scenes.js").read_text()
-    js, problems = scenes_with_checks(script, md, meta, "\n".join(f"- explainroo check: {e}" for e in errors[:30]), js_old)
+    feedback = ([f"- explainroo layout check: {e}" for e in errors[:30]]
+                + [f"- picture review (an AI looked at the last frame of each scene): {p}" for p in pictures[:30]])
+    js, problems = scenes_with_checks(script, md, meta, "\n".join(feedback), js_old)
     if problems:
         print(f"[fix] new scenes.js still has plain-code problems, keeping the old one: {problems}", flush=True)
         js = js_old
+    else:
+        Path(out / "fixed").write_text("1")
     (out / "project" / "scenes.js").write_text(js, encoding="utf-8")
-    report["render_errors_before_fix"] = errors
     report["fix_problems"] = problems
     (meta / "report.json").write_text(json.dumps(report, indent=1, ensure_ascii=False), encoding="utf-8")
-    Path(out / "fixed").write_text("1")
-    print(f"[fix] scenes.js rewritten for {len(errors)} explainroo error(s)", flush=True)
+    print(f"[fix] {len(errors)} layout error(s), {len(pictures)} picture problem(s) sent back to the scene writer", flush=True)
 
 
 def main() -> None:
@@ -126,9 +161,14 @@ def main() -> None:
     f = sub.add_parser("fix")
     f.add_argument("--out", required=True)
     f.add_argument("--log", required=True)
+    f.add_argument("--stills", default="", help="explainroo stills folder of the first render (picture review)")
+    r = sub.add_parser("review")
+    r.add_argument("--out", required=True)
+    r.add_argument("--stills", required=True)
+    r.add_argument("--name", default="picture_review2")
     args = ap.parse_args()
     faulthandler.dump_traceback_later(40 * 60, exit=True)
-    {"write": write, "fix": fix}[args.cmd](args)
+    {"write": write, "fix": fix, "review": review}[args.cmd](args)
 
 
 if __name__ == "__main__":
