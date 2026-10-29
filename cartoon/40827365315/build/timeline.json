@@ -1,0 +1,848 @@
+{
+  "fps": 30,
+  "width": 1080,
+  "height": 1920,
+  "duration": 51.333333333333336,
+  "frames": 1540,
+  "transitionSeconds": 0.7,
+  "pace": 1,
+  "scenes": [
+    {
+      "id": "hook",
+      "index": 0,
+      "start": 0,
+      "dur": 5.266666666666667,
+      "lead": 0.35,
+      "text": "Imagine you fall into a black hole, feet first. What would you feel?",
+      "transition": "none",
+      "voice": {
+        "url": "build/voice/hook.wav",
+        "start": 0.35,
+        "dur": 4.225
+      },
+      "words": [
+        {
+          "text": "Imagine",
+          "start": 0.35,
+          "end": 0.81
+        },
+        {
+          "text": "you",
+          "start": 0.81,
+          "end": 0.99
+        },
+        {
+          "text": "fall",
+          "start": 0.99,
+          "end": 1.17
+        },
+        {
+          "text": "into",
+          "start": 1.17,
+          "end": 1.4100000000000001
+        },
+        {
+          "text": "a",
+          "start": 1.4100000000000001,
+          "end": 1.5099999999999998
+        },
+        {
+          "text": "black",
+          "start": 1.5099999999999998,
+          "end": 1.71
+        },
+        {
+          "text": "hole,",
+          "start": 1.71,
+          "end": 2.03
+        },
+        {
+          "text": "feet",
+          "start": 2.33,
+          "end": 2.5700000000000003
+        },
+        {
+          "text": "first.",
+          "start": 2.5700000000000003,
+          "end": 2.91
+        },
+        {
+          "text": "What",
+          "start": 3.545,
+          "end": 3.745
+        },
+        {
+          "text": "would",
+          "start": 3.745,
+          "end": 3.845
+        },
+        {
+          "text": "you",
+          "start": 3.845,
+          "end": 3.985
+        },
+        {
+          "text": "feel?",
+          "start": 3.985,
+          "end": 4.265
+        }
+      ],
+      "marks": {
+        "feet": 2.33,
+        "ask": 3.545
+      },
+      "attrs": {
+        "transition": "fade"
+      }
+    },
+    {
+      "id": "stretch",
+      "index": 1,
+      "start": 5.266666666666667,
+      "dur": 9.633333333333333,
+      "lead": 0.35,
+      "text": "Gravity pulls much harder on your feet than on your head. So your body is stretched long and thin. At the same time, your sides are squeezed inward.",
+      "transition": "auto",
+      "voice": {
+        "url": "build/voice/stretch.wav",
+        "start": 5.616666666666666,
+        "dur": 8.59
+      },
+      "words": [
+        {
+          "text": "Gravity",
+          "start": 0.35,
+          "end": 0.75
+        },
+        {
+          "text": "pulls",
+          "start": 0.75,
+          "end": 1.03
+        },
+        {
+          "text": "much",
+          "start": 1.03,
+          "end": 1.3900000000000001
+        },
+        {
+          "text": "harder",
+          "start": 1.3900000000000001,
+          "end": 1.69
+        },
+        {
+          "text": "on",
+          "start": 1.69,
+          "end": 1.8900000000000001
+        },
+        {
+          "text": "your",
+          "start": 1.8900000000000001,
+          "end": 1.9700000000000002
+        },
+        {
+          "text": "feet",
+          "start": 1.9700000000000002,
+          "end": 2.23
+        },
+        {
+          "text": "than",
+          "start": 2.23,
+          "end": 2.63
+        },
+        {
+          "text": "on",
+          "start": 2.63,
+          "end": 2.75
+        },
+        {
+          "text": "your",
+          "start": 2.75,
+          "end": 2.85
+        },
+        {
+          "text": "head.",
+          "start": 2.85,
+          "end": 3.11
+        },
+        {
+          "text": "So",
+          "start": 3.61,
+          "end": 3.75
+        },
+        {
+          "text": "your",
+          "start": 3.75,
+          "end": 3.85
+        },
+        {
+          "text": "body",
+          "start": 3.85,
+          "end": 4.1499999999999995
+        },
+        {
+          "text": "is",
+          "start": 4.1499999999999995,
+          "end": 4.29
+        },
+        {
+          "text": "stretched",
+          "start": 4.29,
+          "end": 4.489999999999999
+        },
+        {
+          "text": "long",
+          "start": 4.489999999999999,
+          "end": 4.89
+        },
+        {
+          "text": "and",
+          "start": 4.89,
+          "end": 5.109999999999999
+        },
+        {
+          "text": "thin.",
+          "start": 5.109999999999999,
+          "end": 5.35
+        },
+        {
+          "text": "At",
+          "start": 5.909999999999999,
+          "end": 6.029999999999999
+        },
+        {
+          "text": "the",
+          "start": 6.029999999999999,
+          "end": 6.13
+        },
+        {
+          "text": "same",
+          "start": 6.13,
+          "end": 6.35
+        },
+        {
+          "text": "time,",
+          "start": 6.35,
+          "end": 6.7299999999999995
+        },
+        {
+          "text": "your",
+          "start": 7.09,
+          "end": 7.27
+        },
+        {
+          "text": "sides",
+          "start": 7.27,
+          "end": 7.63
+        },
+        {
+          "text": "are",
+          "start": 7.63,
+          "end": 7.83
+        },
+        {
+          "text": "squeezed",
+          "start": 7.83,
+          "end": 8.13
+        },
+        {
+          "text": "inward.",
+          "start": 8.13,
+          "end": 8.57
+        }
+      ],
+      "marks": {
+        "long": 3.61,
+        "squeeze": 5.909999999999999
+      },
+      "attrs": {}
+    },
+    {
+      "id": "name",
+      "index": 2,
+      "start": 14.9,
+      "dur": 5.7,
+      "lead": 0.35,
+      "text": "Scientists call this spaghettification. Stephen Hawking made the word famous.",
+      "transition": "auto",
+      "voice": {
+        "url": "build/voice/name.wav",
+        "start": 15.25,
+        "dur": 4.64
+      },
+      "words": [
+        {
+          "text": "Scientists",
+          "start": 0.35,
+          "end": 0.81
+        },
+        {
+          "text": "call",
+          "start": 0.81,
+          "end": 1.19
+        },
+        {
+          "text": "this",
+          "start": 1.19,
+          "end": 1.4100000000000001
+        },
+        {
+          "text": "spaghettification.",
+          "start": 1.4100000000000001,
+          "end": 2.27
+        },
+        {
+          "text": "Stephen",
+          "start": 2.825,
+          "end": 3.205
+        },
+        {
+          "text": "Hawking",
+          "start": 3.205,
+          "end": 3.485
+        },
+        {
+          "text": "made",
+          "start": 3.485,
+          "end": 3.9450000000000003
+        },
+        {
+          "text": "the",
+          "start": 3.9450000000000003,
+          "end": 4.0649999999999995
+        },
+        {
+          "text": "word",
+          "start": 4.0649999999999995,
+          "end": 4.225
+        },
+        {
+          "text": "famous.",
+          "start": 4.225,
+          "end": 4.705
+        }
+      ],
+      "marks": {
+        "word": 1.4100000000000001,
+        "hawking": 2.825
+      },
+      "attrs": {}
+    },
+    {
+      "id": "size",
+      "index": 3,
+      "start": 20.6,
+      "dur": 11.7,
+      "lead": 0.35,
+      "text": "The size of the black hole changes everything. A small one stretches you apart before you even reach its edge. A giant one lets you cross the edge without feeling much at all.",
+      "transition": "auto",
+      "voice": {
+        "url": "build/voice/size.wav",
+        "start": 20.950000000000003,
+        "dur": 10.655
+      },
+      "words": [
+        {
+          "text": "The",
+          "start": 0.35,
+          "end": 0.44999999999999996
+        },
+        {
+          "text": "size",
+          "start": 0.44999999999999996,
+          "end": 0.6699999999999999
+        },
+        {
+          "text": "of",
+          "start": 0.6699999999999999,
+          "end": 0.95
+        },
+        {
+          "text": "the",
+          "start": 0.95,
+          "end": 1.0499999999999998
+        },
+        {
+          "text": "black",
+          "start": 1.0499999999999998,
+          "end": 1.27
+        },
+        {
+          "text": "hole",
+          "start": 1.27,
+          "end": 1.5499999999999998
+        },
+        {
+          "text": "changes",
+          "start": 1.5499999999999998,
+          "end": 2.07
+        },
+        {
+          "text": "everything.",
+          "start": 2.07,
+          "end": 2.65
+        },
+        {
+          "text": "A",
+          "start": 3.185,
+          "end": 3.285
+        },
+        {
+          "text": "small",
+          "start": 3.285,
+          "end": 3.545
+        },
+        {
+          "text": "one",
+          "start": 3.545,
+          "end": 3.785
+        },
+        {
+          "text": "stretches",
+          "start": 3.785,
+          "end": 4.1049999999999995
+        },
+        {
+          "text": "you",
+          "start": 4.1049999999999995,
+          "end": 4.404999999999999
+        },
+        {
+          "text": "apart",
+          "start": 4.404999999999999,
+          "end": 4.625
+        },
+        {
+          "text": "before",
+          "start": 4.625,
+          "end": 5.244999999999999
+        },
+        {
+          "text": "you",
+          "start": 5.244999999999999,
+          "end": 5.484999999999999
+        },
+        {
+          "text": "even",
+          "start": 5.484999999999999,
+          "end": 5.744999999999999
+        },
+        {
+          "text": "reach",
+          "start": 5.744999999999999,
+          "end": 5.984999999999999
+        },
+        {
+          "text": "its",
+          "start": 5.984999999999999,
+          "end": 6.205
+        },
+        {
+          "text": "edge.",
+          "start": 6.205,
+          "end": 6.5649999999999995
+        },
+        {
+          "text": "A",
+          "start": 7.034999999999999,
+          "end": 7.135
+        },
+        {
+          "text": "giant",
+          "start": 7.135,
+          "end": 7.395
+        },
+        {
+          "text": "one",
+          "start": 7.395,
+          "end": 7.734999999999999
+        },
+        {
+          "text": "lets",
+          "start": 7.734999999999999,
+          "end": 8.215
+        },
+        {
+          "text": "you",
+          "start": 8.215,
+          "end": 8.395
+        },
+        {
+          "text": "cross",
+          "start": 8.395,
+          "end": 8.594999999999999
+        },
+        {
+          "text": "the",
+          "start": 8.594999999999999,
+          "end": 8.815
+        },
+        {
+          "text": "edge",
+          "start": 8.815,
+          "end": 9.115
+        },
+        {
+          "text": "without",
+          "start": 9.115,
+          "end": 9.594999999999999
+        },
+        {
+          "text": "feeling",
+          "start": 9.594999999999999,
+          "end": 10.075
+        },
+        {
+          "text": "much",
+          "start": 10.075,
+          "end": 10.355
+        },
+        {
+          "text": "at",
+          "start": 10.355,
+          "end": 10.594999999999999
+        },
+        {
+          "text": "all.",
+          "start": 10.594999999999999,
+          "end": 10.815
+        }
+      ],
+      "marks": {
+        "small": 3.185,
+        "big": 7.034999999999999
+      },
+      "attrs": {}
+    },
+    {
+      "id": "outside",
+      "index": 4,
+      "start": 32.3,
+      "dur": 9.733333333333333,
+      "lead": 0.35,
+      "text": "A friend watching from far away sees something strange. You seem to slow down near the edge. You look redder and dimmer, until you fade from view.",
+      "transition": "auto",
+      "voice": {
+        "url": "build/voice/outside.wav",
+        "start": 32.65,
+        "dur": 8.69
+      },
+      "words": [
+        {
+          "text": "A",
+          "start": 0.35,
+          "end": 0.44999999999999996
+        },
+        {
+          "text": "friend",
+          "start": 0.44999999999999996,
+          "end": 0.6499999999999999
+        },
+        {
+          "text": "watching",
+          "start": 0.6499999999999999,
+          "end": 1.0499999999999998
+        },
+        {
+          "text": "from",
+          "start": 1.0499999999999998,
+          "end": 1.35
+        },
+        {
+          "text": "far",
+          "start": 1.35,
+          "end": 1.5499999999999998
+        },
+        {
+          "text": "away",
+          "start": 1.5499999999999998,
+          "end": 1.9100000000000001
+        },
+        {
+          "text": "sees",
+          "start": 1.9100000000000001,
+          "end": 2.5100000000000002
+        },
+        {
+          "text": "something",
+          "start": 2.5100000000000002,
+          "end": 2.89
+        },
+        {
+          "text": "strange.",
+          "start": 2.89,
+          "end": 3.47
+        },
+        {
+          "text": "You",
+          "start": 4,
+          "end": 4.12
+        },
+        {
+          "text": "seem",
+          "start": 4.12,
+          "end": 4.3
+        },
+        {
+          "text": "to",
+          "start": 4.3,
+          "end": 4.4399999999999995
+        },
+        {
+          "text": "slow",
+          "start": 4.4399999999999995,
+          "end": 4.68
+        },
+        {
+          "text": "down",
+          "start": 4.68,
+          "end": 5
+        },
+        {
+          "text": "near",
+          "start": 5,
+          "end": 5.18
+        },
+        {
+          "text": "the",
+          "start": 5.18,
+          "end": 5.319999999999999
+        },
+        {
+          "text": "edge.",
+          "start": 5.319999999999999,
+          "end": 5.6
+        },
+        {
+          "text": "You",
+          "start": 6.114999999999999,
+          "end": 6.255
+        },
+        {
+          "text": "look",
+          "start": 6.255,
+          "end": 6.415
+        },
+        {
+          "text": "redder",
+          "start": 6.415,
+          "end": 6.795
+        },
+        {
+          "text": "and",
+          "start": 6.795,
+          "end": 6.955
+        },
+        {
+          "text": "dimmer,",
+          "start": 6.955,
+          "end": 7.2749999999999995
+        },
+        {
+          "text": "until",
+          "start": 7.2749999999999995,
+          "end": 7.755
+        },
+        {
+          "text": "you",
+          "start": 7.755,
+          "end": 8.055
+        },
+        {
+          "text": "fade",
+          "start": 8.055,
+          "end": 8.255
+        },
+        {
+          "text": "from",
+          "start": 8.255,
+          "end": 8.555
+        },
+        {
+          "text": "view.",
+          "start": 8.555,
+          "end": 8.815
+        }
+      ],
+      "marks": {
+        "slow": 4,
+        "red": 6.114999999999999,
+        "gone": 7.2749999999999995
+      },
+      "attrs": {}
+    },
+    {
+      "id": "trapped",
+      "index": 5,
+      "start": 42.03333333333333,
+      "dur": 9.3,
+      "lead": 0.35,
+      "text": "Once you cross the edge, there is no way back. Nothing, not even light, can escape from inside.",
+      "transition": "auto",
+      "voice": {
+        "url": "build/voice/trapped.wav",
+        "start": 42.38333333333333,
+        "dur": 6.065
+      },
+      "words": [
+        {
+          "text": "Once",
+          "start": 0.35,
+          "end": 0.59
+        },
+        {
+          "text": "you",
+          "start": 0.59,
+          "end": 0.71
+        },
+        {
+          "text": "cross",
+          "start": 0.71,
+          "end": 0.87
+        },
+        {
+          "text": "the",
+          "start": 0.87,
+          "end": 1.13
+        },
+        {
+          "text": "edge,",
+          "start": 1.13,
+          "end": 1.4300000000000002
+        },
+        {
+          "text": "there",
+          "start": 1.73,
+          "end": 1.9100000000000001
+        },
+        {
+          "text": "is",
+          "start": 1.9100000000000001,
+          "end": 2.05
+        },
+        {
+          "text": "no",
+          "start": 2.05,
+          "end": 2.23
+        },
+        {
+          "text": "way",
+          "start": 2.23,
+          "end": 2.47
+        },
+        {
+          "text": "back.",
+          "start": 2.47,
+          "end": 2.79
+        },
+        {
+          "text": "Nothing,",
+          "start": 3.33,
+          "end": 3.71
+        },
+        {
+          "text": "not",
+          "start": 3.71,
+          "end": 4.09
+        },
+        {
+          "text": "even",
+          "start": 4.09,
+          "end": 4.25
+        },
+        {
+          "text": "light,",
+          "start": 4.25,
+          "end": 4.489999999999999
+        },
+        {
+          "text": "can",
+          "start": 4.869999999999999,
+          "end": 5.029999999999999
+        },
+        {
+          "text": "escape",
+          "start": 5.029999999999999,
+          "end": 5.33
+        },
+        {
+          "text": "from",
+          "start": 5.33,
+          "end": 5.63
+        },
+        {
+          "text": "inside.",
+          "start": 5.63,
+          "end": 6.069999999999999
+        }
+      ],
+      "marks": {
+        "light": 3.33
+      },
+      "attrs": {
+        "hold": 1.5
+      }
+    }
+  ],
+  "voiceSpans": [
+    {
+      "start": 0.35,
+      "end": 3.245
+    },
+    {
+      "start": 3.545,
+      "end": 4.574999999999999
+    },
+    {
+      "start": 5.616666666666666,
+      "end": 8.576666666666666
+    },
+    {
+      "start": 8.876666666666665,
+      "end": 10.876666666666665
+    },
+    {
+      "start": 11.176666666666666,
+      "end": 14.206666666666667
+    },
+    {
+      "start": 15.25,
+      "end": 17.425
+    },
+    {
+      "start": 17.725,
+      "end": 19.89
+    },
+    {
+      "start": 20.950000000000003,
+      "end": 23.485000000000003
+    },
+    {
+      "start": 23.785000000000004,
+      "end": 27.335
+    },
+    {
+      "start": 27.635,
+      "end": 31.605000000000004
+    },
+    {
+      "start": 32.65,
+      "end": 36
+    },
+    {
+      "start": 36.3,
+      "end": 38.114999999999995
+    },
+    {
+      "start": 38.415,
+      "end": 41.339999999999996
+    },
+    {
+      "start": 42.38333333333333,
+      "end": 45.06333333333333
+    },
+    {
+      "start": 45.36333333333333,
+      "end": 48.44833333333333
+    }
+  ]
+}

@@ -1,0 +1,151 @@
+{
+  "hash": "faca3368ca943b6c",
+  "id": "trapped",
+  "duration": 6.065,
+  "words": [
+    {
+      "text": "Once",
+      "spoken": "Once",
+      "start": 0,
+      "end": 0.24,
+      "matched": true
+    },
+    {
+      "text": "you",
+      "spoken": "you",
+      "start": 0.24,
+      "end": 0.36,
+      "matched": true
+    },
+    {
+      "text": "cross",
+      "spoken": "cross",
+      "start": 0.36,
+      "end": 0.52,
+      "matched": true
+    },
+    {
+      "text": "the",
+      "spoken": "the",
+      "start": 0.52,
+      "end": 0.78,
+      "matched": true
+    },
+    {
+      "text": "edge,",
+      "spoken": "edge,",
+      "start": 0.78,
+      "end": 1.08,
+      "matched": true
+    },
+    {
+      "text": "there",
+      "spoken": "there",
+      "start": 1.38,
+      "end": 1.56,
+      "matched": true
+    },
+    {
+      "text": "is",
+      "spoken": "is",
+      "start": 1.56,
+      "end": 1.7,
+      "matched": true
+    },
+    {
+      "text": "no",
+      "spoken": "no",
+      "start": 1.7,
+      "end": 1.88,
+      "matched": true
+    },
+    {
+      "text": "way",
+      "spoken": "way",
+      "start": 1.88,
+      "end": 2.12,
+      "matched": true
+    },
+    {
+      "text": "back.",
+      "spoken": "back.",
+      "start": 2.12,
+      "end": 2.44,
+      "matched": true
+    },
+    {
+      "text": "Nothing,",
+      "spoken": "Nothing,",
+      "start": 2.98,
+      "end": 3.36,
+      "matched": true
+    },
+    {
+      "text": "not",
+      "spoken": "not",
+      "start": 3.36,
+      "end": 3.74,
+      "matched": true
+    },
+    {
+      "text": "even",
+      "spoken": "even",
+      "start": 3.74,
+      "end": 3.9,
+      "matched": true
+    },
+    {
+      "text": "light,",
+      "spoken": "light,",
+      "start": 3.9,
+      "end": 4.14,
+      "matched": true
+    },
+    {
+      "text": "can",
+      "spoken": "can",
+      "start": 4.52,
+      "end": 4.68,
+      "matched": true
+    },
+    {
+      "text": "escape",
+      "spoken": "escape",
+      "start": 4.68,
+      "end": 4.98,
+      "matched": true
+    },
+    {
+      "text": "from",
+      "spoken": "from",
+      "start": 4.98,
+      "end": 5.28,
+      "matched": true
+    },
+    {
+      "text": "inside.",
+      "spoken": "inside.",
+      "start": 5.28,
+      "end": 5.72,
+      "matched": true
+    }
+  ],
+  "marks": {
+    "light": 2.98
+  },
+  "chunks": [
+    {
+      "start": 0,
+      "end": 2.68,
+      "text": "Once you cross the edge, there is no way back."
+    },
+    {
+      "start": 2.98,
+      "end": 6.065,
+      "text": "Nothing, not even light, can escape from inside."
+    }
+  ],
+  "transcript": "Once you cross the edge, there is no way back. Nothing, not even light, can escape from inside.",
+  "matchRate": 1,
+  "unmatched": []
+}
