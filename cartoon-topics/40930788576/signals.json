@@ -1,0 +1,2529 @@
+{
+ "channels": [
+  {
+   "name": "Zack D. Films",
+   "id": "UCvz84_Q0BbvZThy75mbd-Dg",
+   "found_by": "watch list",
+   "shorts": 88,
+   "median": 10613093,
+   "hits": 4
+  },
+  {
+   "name": "Flippo Explains",
+   "id": "UC8ky9TMY_sn7TDIFLUevUYQ",
+   "found_by": "watch list",
+   "shorts": 0,
+   "median": 0,
+   "hits": 0
+  },
+  {
+   "name": "WorldMesh 3D",
+   "id": "UCOCcHseCrUrbDlCSvvwKA7A",
+   "found_by": "watch list",
+   "shorts": 4,
+   "median": 0,
+   "hits": 0
+  },
+  {
+   "name": "Cosmo Teorías",
+   "id": "UCMcR6N9Q9p0YQ0rpXGcbvlg",
+   "found_by": "searches",
+   "shorts": 91,
+   "median": 894627,
+   "hits": 15
+  },
+  {
+   "name": "BlobbyClips",
+   "id": "UCK2WCrRlxqXXKS710sRZHDQ",
+   "found_by": "searches",
+   "shorts": 96,
+   "median": 11570120,
+   "hits": 5
+  },
+  {
+   "name": "FactoHolic",
+   "id": "UCS4uc8cHDqcwwro8lGChaQQ",
+   "found_by": "searches",
+   "shorts": 97,
+   "median": 29906562,
+   "hits": 7
+  },
+  {
+   "name": "Henreee",
+   "id": "UCIYo_L-ZTXTMYUGe3Id9sGw",
+   "found_by": "searches",
+   "shorts": 78,
+   "median": 765521,
+   "hits": 11
+  },
+  {
+   "name": "SeedThePast",
+   "id": "UCeqyqvILOplrXSu2hfFhxkA",
+   "found_by": "searches",
+   "shorts": 7,
+   "median": 2002714,
+   "hits": 3
+  }
+ ],
+ "signals": [
+  {
+   "kind": "beats_channel",
+   "title": "How Electrical Outlets Work 🤔",
+   "channel": "Zack D. Films",
+   "ratio": 5.9,
+   "views": 62581810,
+   "url": "https://www.youtube.com/shorts/0BZ1C83I2R4",
+   "id": "S1"
+  },
+  {
+   "kind": "beats_channel",
+   "title": "How Cookiecutter Sharks Bite Whales 😨",
+   "channel": "Zack D. Films",
+   "ratio": 5.3,
+   "views": 56556832,
+   "url": "https://www.youtube.com/shorts/CRGWDiIgMZ4",
+   "id": "S2"
+  },
+  {
+   "kind": "beats_channel",
+   "title": "How To Get Water Out Of Your Ear 🤔",
+   "channel": "Zack D. Films",
+   "ratio": 4.2,
+   "views": 45028511,
+   "url": "https://www.youtube.com/shorts/W3NlT3SKkmQ",
+   "id": "S3"
+  },
+  {
+   "kind": "beats_channel",
+   "title": "How They Filmed An Invisible Man In Snow 🤔",
+   "channel": "Zack D. Films",
+   "ratio": 3.0,
+   "views": 31554879,
+   "url": "https://www.youtube.com/shorts/bZoR8A2znpo",
+   "id": "S4"
+  },
+  {
+   "kind": "beats_channel",
+   "title": "¿QUÉ PASARÍA SI BOLIVIA TUVIERA MAR?",
+   "channel": "Cosmo Teorías",
+   "ratio": 11.8,
+   "views": 10512415,
+   "url": "https://www.youtube.com/shorts/knC-ZvDPZCo",
+   "id": "S5"
+  },
+  {
+   "kind": "beats_channel",
+   "title": "QUÉ PASARÍA SI ATRAPARAN AL PAJARITO QUE LE CHISMEA TODO A LAS MADRES...",
+   "channel": "Cosmo Teorías",
+   "ratio": 10.3,
+   "views": 9192929,
+   "url": "https://www.youtube.com/shorts/bxQz8htuLEw",
+   "id": "S6"
+  },
+  {
+   "kind": "beats_channel",
+   "title": "CHOUCHA VS JESUSITO PORTERO",
+   "channel": "Cosmo Teorías",
+   "ratio": 9.0,
+   "views": 8049401,
+   "url": "https://www.youtube.com/shorts/lJBK7UDXSZI",
+   "id": "S7"
+  },
+  {
+   "kind": "beats_channel",
+   "title": "¿QUÉ TAN PODEROSO ES JESUSITO?",
+   "channel": "Cosmo Teorías",
+   "ratio": 8.3,
+   "views": 7400907,
+   "url": "https://www.youtube.com/shorts/qY1ZMqnV6Wg",
+   "id": "S8"
+  },
+  {
+   "kind": "beats_channel",
+   "title": "¿QUÉ PASARÍA SI LA CHANCLA DE LA ABUELA CHOCA CONTRA EL MACHETE DEL ABUELO?",
+   "channel": "Cosmo Teorías",
+   "ratio": 7.6,
+   "views": 6809375,
+   "url": "https://www.youtube.com/shorts/PJwMfb5qPRU",
+   "id": "S9"
+  },
+  {
+   "kind": "beats_channel",
+   "title": "EL MACHETE DEL ABUELO VS LA ESPADA DE TRUNKS",
+   "channel": "Cosmo Teorías",
+   "ratio": 6.3,
+   "views": 5654604,
+   "url": "https://www.youtube.com/shorts/srfyWjL547M",
+   "id": "S10"
+  },
+  {
+   "kind": "beats_channel",
+   "title": "¿Y SI TU AMIGO CONSIGUIERA NOVIA?",
+   "channel": "Cosmo Teorías",
+   "ratio": 5.4,
+   "views": 4866300,
+   "url": "https://www.youtube.com/shorts/pYKHBH5EwzA",
+   "id": "S11"
+  },
+  {
+   "kind": "beats_channel",
+   "title": "¿CUÁNTOS CLAVITOS REALMENTE CLAVÓ PABLITO?",
+   "channel": "Cosmo Teorías",
+   "ratio": 5.3,
+   "views": 4783993,
+   "url": "https://www.youtube.com/shorts/B6_6a8071tY",
+   "id": "S12"
+  },
+  {
+   "kind": "beats_channel",
+   "title": "CALDITO DE LA ABUELA VS SEMILLAS DEL ERMITAÑO",
+   "channel": "Cosmo Teorías",
+   "ratio": 5.0,
+   "views": 4503978,
+   "url": "https://www.youtube.com/shorts/9p_an66tCYU",
+   "id": "S13"
+  },
+  {
+   "kind": "beats_channel",
+   "title": "¿Y SI EL PATITO FEO FUERA GUAPO?",
+   "channel": "Cosmo Teorías",
+   "ratio": 3.9,
+   "views": 3448814,
+   "url": "https://www.youtube.com/shorts/-GhOCOHKFMY",
+   "id": "S14"
+  },
+  {
+   "kind": "beats_channel",
+   "title": "¿QUÉ PASARÍ SI EL MACHETE DEL ABUELO SE ROMPE?",
+   "channel": "Cosmo Teorías",
+   "ratio": 3.8,
+   "views": 3360229,
+   "url": "https://www.youtube.com/shorts/5D_osM6yZ1A",
+   "id": "S15"
+  },
+  {
+   "kind": "beats_channel",
+   "title": "¿Y SI MR BEAST SE QUEDARA SIN DINERO?",
+   "channel": "Cosmo Teorías",
+   "ratio": 3.8,
+   "views": 3386701,
+   "url": "https://www.youtube.com/shorts/0IrmyuCc_fY",
+   "id": "S16"
+  },
+  {
+   "kind": "beats_channel",
+   "title": "Grandpa's Epic Crafting Powers! 🤯🤯",
+   "channel": "BlobbyClips",
+   "ratio": 3.9,
+   "views": 44577614,
+   "url": "https://www.youtube.com/shorts/im1TC_8ktT0",
+   "id": "S17"
+  },
+  {
+   "kind": "beats_channel",
+   "title": "When Mobs Get Smart! 💀💀",
+   "channel": "BlobbyClips",
+   "ratio": 3.8,
+   "views": 44283782,
+   "url": "https://www.youtube.com/shorts/4O-1iZb1Wz4",
+   "id": "S18"
+  },
+  {
+   "kind": "beats_channel",
+   "title": "Java vs Bedrock Madness! 😂😂",
+   "channel": "BlobbyClips",
+   "ratio": 3.2,
+   "views": 37177426,
+   "url": "https://www.youtube.com/shorts/MBq3XJmZdQ0",
+   "id": "S19"
+  },
+  {
+   "kind": "beats_channel",
+   "title": "When You Turn Keep Inventory On... 😂😂",
+   "channel": "BlobbyClips",
+   "ratio": 3.2,
+   "views": 37284914,
+   "url": "https://www.youtube.com/shorts/WymG30d8E7M",
+   "id": "S20"
+  },
+  {
+   "kind": "beats_channel",
+   "title": "Crafting Circles in Minecraft! 😂😂",
+   "channel": "BlobbyClips",
+   "ratio": 3.0,
+   "views": 35147714,
+   "url": "https://www.youtube.com/shorts/TKv74nlJCXs",
+   "id": "S21"
+  },
+  {
+   "kind": "beats_channel",
+   "title": "Longest Summer Vacation 😱",
+   "channel": "FactoHolic",
+   "ratio": 5.6,
+   "views": 166618729,
+   "url": "https://www.youtube.com/shorts/k_XPpYq4Ip8",
+   "id": "S22"
+  },
+  {
+   "kind": "beats_channel",
+   "title": "Saudi Prince Vacation 😱",
+   "channel": "FactoHolic",
+   "ratio": 5.0,
+   "views": 149410042,
+   "url": "https://www.youtube.com/shorts/nmY_PlvpW-s",
+   "id": "S23"
+  },
+  {
+   "kind": "beats_channel",
+   "title": "The Story Of Jeanne Calment 😱",
+   "channel": "FactoHolic",
+   "ratio": 4.9,
+   "views": 146176677,
+   "url": "https://www.youtube.com/shorts/sCQMnLWfusM",
+   "id": "S24"
+  },
+  {
+   "kind": "beats_channel",
+   "title": "A Hole Through The Earth 😱",
+   "channel": "FactoHolic",
+   "ratio": 3.4,
+   "views": 100254884,
+   "url": "https://www.youtube.com/shorts/1CXbPbHvxW0",
+   "id": "S25"
+  },
+  {
+   "kind": "beats_channel",
+   "title": "The Luckiest Unlucky Man 😱",
+   "channel": "FactoHolic",
+   "ratio": 3.3,
+   "views": 97421893,
+   "url": "https://www.youtube.com/shorts/2ovqvvigTds",
+   "id": "S26"
+  },
+  {
+   "kind": "beats_channel",
+   "title": "Pablo Escobar 😱",
+   "channel": "FactoHolic",
+   "ratio": 3.2,
+   "views": 96294043,
+   "url": "https://www.youtube.com/shorts/fBvC-NlUr18",
+   "id": "S27"
+  },
+  {
+   "kind": "beats_channel",
+   "title": "The Ageless People 😱",
+   "channel": "FactoHolic",
+   "ratio": 3.2,
+   "views": 96471426,
+   "url": "https://www.youtube.com/shorts/cNfZNBBbWJI",
+   "id": "S28"
+  },
+  {
+   "kind": "beats_channel",
+   "title": "What Happens If You Leave Sonic Alone? 😳",
+   "channel": "Henreee",
+   "ratio": 10.6,
+   "views": 8123716,
+   "url": "https://www.youtube.com/shorts/TLxh0x6wg2E",
+   "id": "S29"
+  },
+  {
+   "kind": "beats_channel",
+   "title": "What Happens If You Hide From the Ghosts in Pac-Man? 👻",
+   "channel": "Henreee",
+   "ratio": 9.5,
+   "views": 7269859,
+   "url": "https://www.youtube.com/shorts/IWvy1Bz-BeU",
+   "id": "S30"
+  },
+  {
+   "kind": "beats_channel",
+   "title": "What Happens If You Shoot the Duck Hunt Dog? 😳",
+   "channel": "Henreee",
+   "ratio": 5.4,
+   "views": 4130035,
+   "url": "https://www.youtube.com/shorts/mBHkmEOYqIo",
+   "id": "S31"
+  },
+  {
+   "kind": "beats_channel",
+   "title": "What Happens If Tails Gets Every Super Emerald? 😳",
+   "channel": "Henreee",
+   "ratio": 4.4,
+   "views": 3365816,
+   "url": "https://www.youtube.com/shorts/MeMZBHzpe1w",
+   "id": "S32"
+  },
+  {
+   "kind": "beats_channel",
+   "title": "What Happens If You Plug Sonic 1 Into Sonic & Knuckles? 😳",
+   "channel": "Henreee",
+   "ratio": 3.9,
+   "views": 2967183,
+   "url": "https://www.youtube.com/shorts/eBrhwMNQnTg",
+   "id": "S33"
+  },
+  {
+   "kind": "beats_channel",
+   "title": "Do You Know Games 79 - Pacman 256",
+   "channel": "Henreee",
+   "ratio": 3.7,
+   "views": 2833568,
+   "url": "https://www.youtube.com/shorts/xKcss8MfC7o",
+   "id": "S34"
+  },
+  {
+   "kind": "beats_channel",
+   "title": "What Happens If You Steal in Zelda? 😳",
+   "channel": "Henreee",
+   "ratio": 3.6,
+   "views": 2755049,
+   "url": "https://www.youtube.com/shorts/0ugU-oty_OA",
+   "id": "S35"
+  },
+  {
+   "kind": "beats_channel",
+   "title": "What Happens If You Leave the Last Dots in Pac-Man? 😳",
+   "channel": "Henreee",
+   "ratio": 3.4,
+   "views": 2595203,
+   "url": "https://www.youtube.com/shorts/Jh7EF3h3KAU",
+   "id": "S36"
+  },
+  {
+   "kind": "beats_channel",
+   "title": "What Happens If You Leave Mario Alone in Mario 64? 😴",
+   "channel": "Henreee",
+   "ratio": 3.1,
+   "views": 2356153,
+   "url": "https://www.youtube.com/shorts/7_VAOwxcvsM",
+   "id": "S37"
+  },
+  {
+   "kind": "beats_channel",
+   "title": "What Happens If You Cheat in Mario 64? 😳",
+   "channel": "Henreee",
+   "ratio": 3.1,
+   "views": 2336722,
+   "url": "https://www.youtube.com/shorts/BJR3ciJEp6g",
+   "id": "S38"
+  },
+  {
+   "kind": "beats_channel",
+   "title": "Why Sonic Is Blue 🤔",
+   "channel": "Henreee",
+   "ratio": 3.1,
+   "views": 2371848,
+   "url": "https://www.youtube.com/shorts/DgM8kPOPxDA",
+   "id": "S39"
+  },
+  {
+   "kind": "beats_channel",
+   "title": "Can a Hot Pepper Conquer the Dinosaurs? 🌶️🦖",
+   "channel": "SeedThePast",
+   "ratio": 7.6,
+   "views": 15121391,
+   "url": "https://www.youtube.com/shorts/VI2EYTpY7sY",
+   "id": "S40"
+  },
+  {
+   "kind": "beats_channel",
+   "title": "Can a Mango Conquer the Dinosaur Era? 🥭🦕",
+   "channel": "SeedThePast",
+   "ratio": 4.1,
+   "views": 8251626,
+   "url": "https://www.youtube.com/shorts/Vc0zdohFROI",
+   "id": "S41"
+  },
+  {
+   "kind": "beats_channel",
+   "title": "Can Sugarcane Survive the Dinosaur Era? 🎋🦖",
+   "channel": "SeedThePast",
+   "ratio": 3.5,
+   "views": 7088867,
+   "url": "https://www.youtube.com/shorts/BMHwneRMO3I",
+   "id": "S42"
+  },
+  {
+   "kind": "search",
+   "title": "What happens when you don't pay attention #bear #wildanimals #animalencounters #scare #shorts",
+   "channel": "FailArmy",
+   "views": 67404826,
+   "query": "what happens if you",
+   "url": "https://www.youtube.com/shorts/udacwkR6CpU",
+   "id": "S43"
+  },
+  {
+   "kind": "search",
+   "title": "What if Our Sun Disappeared 😱",
+   "channel": "FactoHolic",
+   "views": 48685463,
+   "query": "what happens if you",
+   "url": "https://www.youtube.com/shorts/cheZmAzbJME",
+   "id": "S44"
+  },
+  {
+   "kind": "search",
+   "title": "What if Our Sun Disappeared 😱",
+   "channel": "FactoHolic",
+   "views": 48685463,
+   "query": "what would happen if",
+   "url": "https://www.youtube.com/shorts/cheZmAzbJME",
+   "id": "S45"
+  },
+  {
+   "kind": "search",
+   "title": "The Puber 😣 (Patent Pending)",
+   "channel": "Zack D. Films",
+   "views": 36913268,
+   "query": "what happens if you",
+   "url": "https://www.youtube.com/shorts/1Rd3_pXs6DU",
+   "id": "S46"
+  },
+  {
+   "kind": "search",
+   "title": "What happens when you press a $100 bill? #asmr #money #satisfying",
+   "channel": "Whats Next",
+   "views": 33087475,
+   "query": "what happens if you",
+   "url": "https://www.youtube.com/shorts/3x8ZkpUvKkw",
+   "id": "S47"
+  },
+  {
+   "kind": "search",
+   "title": "What Happens When You Trap Smoke With Ronaldo?",
+   "channel": "Futcrunch",
+   "views": 32231383,
+   "query": "what happens if you",
+   "url": "https://www.youtube.com/shorts/5sldVV6Ts6k",
+   "id": "S48"
+  },
+  {
+   "kind": "search",
+   "title": "what would you do if you were him in this situation 😭",
+   "channel": "Curtain Call ",
+   "views": 22965385,
+   "query": "what if you were",
+   "url": "https://www.youtube.com/shorts/ykF79-yhd5g",
+   "id": "S49"
+  },
+  {
+   "kind": "search",
+   "title": "What To Do If Your Car Sinks? 😨",
+   "channel": "Zack D. Films",
+   "views": 20658293,
+   "query": "what happens if you",
+   "url": "https://www.youtube.com/shorts/p832whe8hrI",
+   "id": "S50"
+  },
+  {
+   "kind": "search",
+   "title": "When Nails Get Too Long! 💀💀",
+   "channel": "BlobbyClips",
+   "views": 20505817,
+   "query": "what happens if you",
+   "url": "https://www.youtube.com/shorts/zzPaUsyE474",
+   "id": "S51"
+  },
+  {
+   "kind": "search",
+   "title": "What happens when you combine these words? 🍎 Compound Words 6 #learning #shorts #kids #english",
+   "channel": "Camp Jasmine - Kids Songs & Toddler Learning ",
+   "views": 20051759,
+   "query": "what happens if you",
+   "url": "https://www.youtube.com/shorts/Q_8cuQoFtdE",
+   "id": "S52"
+  },
+  {
+   "kind": "search",
+   "title": "What If Your Hair Had Nerves 😱",
+   "channel": "Zack D. Films",
+   "views": 20006744,
+   "query": "what happens if you",
+   "url": "https://www.youtube.com/shorts/jgsIDwOiERQ",
+   "id": "S53"
+  },
+  {
+   "kind": "search",
+   "title": "What Happens To Bugs When You Mow? 😯",
+   "channel": "Zack D. Films",
+   "views": 19945689,
+   "query": "what happens if you",
+   "url": "https://www.youtube.com/shorts/esR-EXzvckw",
+   "id": "S54"
+  },
+  {
+   "kind": "search",
+   "title": "When You Leave Your Minecraft Dog",
+   "channel": "BlobbyClips",
+   "views": 19857480,
+   "query": "what happens if you",
+   "url": "https://www.youtube.com/shorts/nARD2-oI_98",
+   "id": "S55"
+  },
+  {
+   "kind": "search",
+   "title": "When You Press F3! 🤔🤔",
+   "channel": "BlobbyClips",
+   "views": 17576401,
+   "query": "what happens if you",
+   "url": "https://www.youtube.com/shorts/kjvHkXe7_68",
+   "id": "S56"
+  },
+  {
+   "kind": "search",
+   "title": "THINGS To DO When YOU’RE Bored SCAR Wax EDITION",
+   "channel": "juliyav",
+   "views": 17265647,
+   "query": "what happens if you",
+   "url": "https://www.youtube.com/shorts/uNJuvYHcQ1Q",
+   "id": "S57"
+  },
+  {
+   "kind": "search",
+   "title": "What If You Hit Absolute Zero? 🥶",
+   "channel": "Zack D. Films",
+   "views": 16954742,
+   "query": "what happens if you",
+   "url": "https://www.youtube.com/shorts/fk-BOmxtM8Y",
+   "id": "S58"
+  },
+  {
+   "kind": "search",
+   "title": "What If You Hit Absolute Zero? 🥶",
+   "channel": "Zack D. Films",
+   "views": 16954742,
+   "query": "what if you were",
+   "url": "https://www.youtube.com/shorts/fk-BOmxtM8Y",
+   "id": "S59"
+  },
+  {
+   "kind": "search",
+   "title": "How it Feels to Play AAA Games Now",
+   "channel": "CircleToonsHD",
+   "views": 16603956,
+   "query": "how it feels to",
+   "url": "https://www.youtube.com/shorts/Gb5iU-jo4L8",
+   "id": "S60"
+  },
+  {
+   "kind": "search",
+   "title": "What Happens If Shazam Stays 50 Years⚡️",
+   "channel": "The Outliners ",
+   "views": 16314665,
+   "query": "what happens if you",
+   "url": "https://www.youtube.com/shorts/tvPEVFkk-wQ",
+   "id": "S61"
+  },
+  {
+   "kind": "search",
+   "title": "Can Farts Contaminate An Open Wound? 😱",
+   "channel": "Zack D. Films",
+   "views": 16296703,
+   "query": "what happens if you",
+   "url": "https://www.youtube.com/shorts/QQX1UDlAYI0",
+   "id": "S62"
+  },
+  {
+   "kind": "search",
+   "title": "The Flash | If You Were The Flash, What Would You Do? ⚡😎#shorts  #movierecap",
+   "channel": "Sona Darus",
+   "views": 14862367,
+   "query": "what happens if you",
+   "url": "https://www.youtube.com/shorts/m5R9OdJjevA",
+   "id": "S63"
+  },
+  {
+   "kind": "search",
+   "title": "The Flash | If You Were The Flash, What Would You Do? ⚡😎#shorts  #movierecap",
+   "channel": "Sona Darus",
+   "views": 14862367,
+   "query": "what if you were",
+   "url": "https://www.youtube.com/shorts/m5R9OdJjevA",
+   "id": "S64"
+  },
+  {
+   "kind": "search",
+   "title": "How Rare You Are 😱",
+   "channel": "FactoHolic",
+   "views": 14328839,
+   "query": "what if you were",
+   "url": "https://www.youtube.com/shorts/Y5vdfyM3X8k",
+   "id": "S65"
+  },
+  {
+   "kind": "search",
+   "title": "What happens when you forget your glasses 👓😂 #comedy #shorts #fail",
+   "channel": "Courtney & Alex ",
+   "views": 13166477,
+   "query": "what happens if you",
+   "url": "https://www.youtube.com/shorts/WyTZRLgB1Jo",
+   "id": "S66"
+  },
+  {
+   "kind": "search",
+   "title": "What happens if you make espresso with pinto beans?",
+   "channel": "Kelly Coffee ",
+   "views": 13131715,
+   "query": "what happens if you",
+   "url": "https://www.youtube.com/shorts/l2nAojncCks",
+   "id": "S67"
+  },
+  {
+   "kind": "search",
+   "title": "THINGS To DO When YOU’RE Bored MAKE Up PUMPKIN Edition",
+   "channel": "juliyav",
+   "views": 13082528,
+   "query": "what happens if you",
+   "url": "https://www.youtube.com/shorts/oF1aNm_Jw6Q",
+   "id": "S68"
+  },
+  {
+   "kind": "search",
+   "title": "What If You Were Pregnant With 10 Babies 😨 ER Doctor Reacts to Zack D. Films",
+   "channel": "Doctor ER",
+   "views": 12176196,
+   "query": "what if you were",
+   "url": "https://www.youtube.com/shorts/-Fxuy9lwU7w",
+   "id": "S69"
+  },
+  {
+   "kind": "search",
+   "title": "If a cow eats blueberries... #shorts #shortsfeed #youtubeshorts #cringe #zackdfilms #comedy #funny",
+   "channel": "LouisAyy",
+   "views": 11891830,
+   "query": "what happens if you",
+   "url": "https://www.youtube.com/shorts/X0cJ1D1G_No",
+   "id": "S70"
+  },
+  {
+   "kind": "search",
+   "title": "¿Qué pasaría si caes al fondo del océano? 💀",
+   "channel": "Mateo Ferruz",
+   "views": 11864724,
+   "query": "what happens if you",
+   "url": "https://www.youtube.com/shorts/zuZcxmBD610",
+   "id": "S71"
+  },
+  {
+   "kind": "search",
+   "title": "¿Qué pasaría si caes al fondo del océano? 💀",
+   "channel": "Mateo Ferruz",
+   "views": 11864724,
+   "query": "what would happen if",
+   "url": "https://www.youtube.com/shorts/zuZcxmBD610",
+   "id": "S72"
+  },
+  {
+   "kind": "search",
+   "title": "What happens when you have s*x early in the morning#health #sexualhealth #sexualwellness #menshealth",
+   "channel": "Woh wali baat",
+   "views": 11051631,
+   "query": "what happens if you",
+   "url": "https://www.youtube.com/shorts/abfrCjSdcgY",
+   "id": "S73"
+  },
+  {
+   "kind": "search",
+   "title": "If You Get Spiderman Web-Shooters 🕸️",
+   "channel": "The Outliners ",
+   "views": 10893346,
+   "query": "what happens if you",
+   "url": "https://www.youtube.com/shorts/GMLsF7BqXvc",
+   "id": "S74"
+  },
+  {
+   "kind": "search",
+   "title": "Why You Shouldn't Lay On Your Arm Too Long 😨",
+   "channel": "Zack D. Films",
+   "views": 10804487,
+   "query": "what happens if you",
+   "url": "https://www.youtube.com/shorts/ZoBDbB6jFEY",
+   "id": "S75"
+  },
+  {
+   "kind": "search",
+   "title": "When You Try Not to Cry 😭😭",
+   "channel": "BlobbyClips",
+   "views": 10737966,
+   "query": "what happens if you",
+   "url": "https://www.youtube.com/shorts/XDQDROqNp_s",
+   "id": "S76"
+  },
+  {
+   "kind": "search",
+   "title": "How The Floating Arm Trick Works 😮",
+   "channel": "Zack D. Films",
+   "views": 10557994,
+   "query": "what happens if you",
+   "url": "https://www.youtube.com/shorts/WSuIKzCLBys",
+   "id": "S77"
+  },
+  {
+   "kind": "search",
+   "title": "When You Ask a Bee For Directions...",
+   "channel": "Hoodie Guy",
+   "views": 10508919,
+   "query": "what happens if you",
+   "url": "https://www.youtube.com/shorts/TiTvBu4O2kc",
+   "id": "S78"
+  },
+  {
+   "kind": "search",
+   "title": "Is your Uzi crashing out? Follow these simple steps",
+   "channel": "GLITCH",
+   "views": 10292513,
+   "query": "what if you were",
+   "url": "https://www.youtube.com/shorts/EHULX_aKSL8",
+   "id": "S79"
+  }
+ ],
+ "test_a": [
+  {
+   "channel": "Zack D. Films",
+   "title": "How Electrical Outlets Work 🤔",
+   "hit": true,
+   "ratio": 5.9
+  },
+  {
+   "channel": "Zack D. Films",
+   "title": "How Cookiecutter Sharks Bite Whales 😨",
+   "hit": true,
+   "ratio": 5.3
+  },
+  {
+   "channel": "Zack D. Films",
+   "title": "How To Get Water Out Of Your Ear 🤔",
+   "hit": true,
+   "ratio": 4.2
+  },
+  {
+   "channel": "Zack D. Films",
+   "title": "How They Filmed An Invisible Man In Snow 🤔",
+   "hit": true,
+   "ratio": 3.0
+  },
+  {
+   "channel": "Zack D. Films",
+   "title": "How To Catch A Liar 🤔",
+   "hit": false,
+   "ratio": 0.6
+  },
+  {
+   "channel": "Zack D. Films",
+   "title": "The Boy Who Offered His Last Dollar 🙂",
+   "hit": false,
+   "ratio": 0.5
+  },
+  {
+   "channel": "Zack D. Films",
+   "title": "What You Have Is Someone Else’s Dream 😢",
+   "hit": false,
+   "ratio": 0.8
+  },
+  {
+   "channel": "Zack D. Films",
+   "title": "Why Scientists Put Pigs In Diving Suits 😨",
+   "hit": false,
+   "ratio": 0.6
+  },
+  {
+   "channel": "Zack D. Films",
+   "title": "How To Find Tiny Things You Dropped 🤔",
+   "hit": false,
+   "ratio": 1.4
+  },
+  {
+   "channel": "Zack D. Films",
+   "title": "The $23 Michael Jordan Signed Basketball 🤨",
+   "hit": false,
+   "ratio": 0.8
+  },
+  {
+   "channel": "Zack D. Films",
+   "title": "How Banks Make Money With Your Savings 🤔",
+   "hit": false,
+   "ratio": 0.6
+  },
+  {
+   "channel": "Zack D. Films",
+   "title": "The Crocodile Paradox 😮",
+   "hit": false,
+   "ratio": 0.8
+  },
+  {
+   "channel": "Zack D. Films",
+   "title": "Two Friends Trapped In One Chair 😅",
+   "hit": false,
+   "ratio": 1.2
+  },
+  {
+   "channel": "Zack D. Films",
+   "title": "Why Your Environment Beats Willpower 🤔",
+   "hit": false,
+   "ratio": 0.6
+  },
+  {
+   "channel": "Zack D. Films",
+   "title": "How To Make A Shape Gauge 🤔",
+   "hit": false,
+   "ratio": 1.0
+  },
+  {
+   "channel": "Zack D. Films",
+   "title": "How This Robot Melts And Reforms 😮",
+   "hit": false,
+   "ratio": 0.5
+  },
+  {
+   "channel": "Zack D. Films",
+   "title": "The Segway Owner Who Fell Off A Cliff 😱",
+   "hit": false,
+   "ratio": 0.6
+  },
+  {
+   "channel": "Zack D. Films",
+   "title": "Fixing A Turtle Shell With A Bottle Cap 😮",
+   "hit": false,
+   "ratio": 0.6
+  },
+  {
+   "channel": "Zack D. Films",
+   "title": "Why Most Sperm Never Reach The Egg 🤔",
+   "hit": false,
+   "ratio": 1.2
+  },
+  {
+   "channel": "Zack D. Films",
+   "title": "The Machine That Copies Human Digestion 😮",
+   "hit": false,
+   "ratio": 0.9
+  },
+  {
+   "channel": "Zack D. Films",
+   "title": "How Banana Slugs Glide Across Razor Blades 😮",
+   "hit": false,
+   "ratio": 0.9
+  },
+  {
+   "channel": "Zack D. Films",
+   "title": "How To Make An Expensive Spam Burger 😏",
+   "hit": false,
+   "ratio": 0.8
+  },
+  {
+   "channel": "Zack D. Films",
+   "title": "Why Your Own Spit Disgusts You 🤢",
+   "hit": false,
+   "ratio": 0.5
+  },
+  {
+   "channel": "Zack D. Films",
+   "title": "Why Consistency Beats Hard Work 🤔",
+   "hit": false,
+   "ratio": 1.2
+  },
+  {
+   "channel": "Zack D. Films",
+   "title": "The Empty Boat Thought Experiment 😌",
+   "hit": false,
+   "ratio": 0.8
+  },
+  {
+   "channel": "Zack D. Films",
+   "title": "How Film Sets Get Babies To Cry 😢",
+   "hit": false,
+   "ratio": 0.8
+  },
+  {
+   "channel": "Zack D. Films",
+   "title": "Why Other People’s Opinions Don’t Matter 😌",
+   "hit": false,
+   "ratio": 1.3
+  },
+  {
+   "channel": "Zack D. Films",
+   "title": "Why A Giant T Makes You Look Better 🤔",
+   "hit": false,
+   "ratio": 0.9
+  },
+  {
+   "channel": "Zack D. Films",
+   "title": "The Titanic Orphans Reunited With Their Mother 😮",
+   "hit": false,
+   "ratio": 1.3
+  },
+  {
+   "channel": "Zack D. Films",
+   "title": "How Plato’s Alarm Clock Worked 🤔",
+   "hit": false,
+   "ratio": 1.1
+  },
+  {
+   "channel": "Zack D. Films",
+   "title": "She Kept Getting Flowers From Her Dead Father 😢",
+   "hit": false,
+   "ratio": 0.5
+  },
+  {
+   "channel": "Zack D. Films",
+   "title": "How Bad Posture Gets Worse Over Time 😨",
+   "hit": false,
+   "ratio": 1.0
+  },
+  {
+   "channel": "Zack D. Films",
+   "title": "Why Baby Koalas Eat Their Mom’s Poop 🤢",
+   "hit": false,
+   "ratio": 1.5
+  },
+  {
+   "channel": "Zack D. Films",
+   "title": "Making A Glass Cup From A Bottle 😮",
+   "hit": false,
+   "ratio": 0.6
+  },
+  {
+   "channel": "Zack D. Films",
+   "title": "Boxer Saw His Opponent Die In A Dream 😨",
+   "hit": false,
+   "ratio": 0.7
+  },
+  {
+   "channel": "Zack D. Films",
+   "title": "How To Fold A Fitted Sheet 🤔",
+   "hit": false,
+   "ratio": 0.7
+  },
+  {
+   "channel": "Zack D. Films",
+   "title": "The Imaginary Life He Created On Death Row 😢",
+   "hit": false,
+   "ratio": 1.0
+  },
+  {
+   "channel": "Zack D. Films",
+   "title": "Why Cats Rub Against Your Laptop 🤔",
+   "hit": false,
+   "ratio": 1.4
+  },
+  {
+   "channel": "Zack D. Films",
+   "title": "The Horse That Sparked An Oxygen Explosion 😱",
+   "hit": false,
+   "ratio": 1.1
+  },
+  {
+   "channel": "Zack D. Films",
+   "title": "Why You Can’t Run In Your Dreams 😬",
+   "hit": false,
+   "ratio": 0.9
+  },
+  {
+   "channel": "Zack D. Films",
+   "title": "She Was Stuck In Quicksand For 14 Hours 😨",
+   "hit": false,
+   "ratio": 0.5
+  },
+  {
+   "channel": "Zack D. Films",
+   "title": "How Harris’s Hawks Hunt Together 😨",
+   "hit": false,
+   "ratio": 1.1
+  },
+  {
+   "channel": "Zack D. Films",
+   "title": "The Goalkeeper Who Faked A Firework Injury 😵",
+   "hit": false,
+   "ratio": 1.2
+  },
+  {
+   "channel": "Zack D. Films",
+   "title": "Turning A Shoebox Into A Movie Projector 😮",
+   "hit": false,
+   "ratio": 1.5
+  },
+  {
+   "channel": "Zack D. Films",
+   "title": "The Fan Who Waited Years For Starfield 😢",
+   "hit": false,
+   "ratio": 1.3
+  },
+  {
+   "channel": "Zack D. Films",
+   "title": "Toad Holds Onto A Moving Python 😳",
+   "hit": false,
+   "ratio": 0.6
+  },
+  {
+   "channel": "Zack D. Films",
+   "title": "How A Canary Trap Works 🤔",
+   "hit": false,
+   "ratio": 0.8
+  },
+  {
+   "channel": "Zack D. Films",
+   "title": "The Injured Bird That Flew With A Drone 😮",
+   "hit": false,
+   "ratio": 0.6
+  },
+  {
+   "channel": "Zack D. Films",
+   "title": "Where Loose Cannon Got Its Meaning 🤔",
+   "hit": false,
+   "ratio": 0.6
+  },
+  {
+   "channel": "Zack D. Films",
+   "title": "He Had No Idea 9/11 Had Started 😨",
+   "hit": false,
+   "ratio": 1.4
+  },
+  {
+   "channel": "Zack D. Films",
+   "title": "Fishing With A Slingshot And Reel 🤨",
+   "hit": false,
+   "ratio": 0.8
+  },
+  {
+   "channel": "Zack D. Films",
+   "title": "They Turned Lady Gaga's Pee Into Perfume 🤢",
+   "hit": false,
+   "ratio": 1.2
+  },
+  {
+   "channel": "Zack D. Films",
+   "title": "Why Animals Have Different Eye Positions 🤔",
+   "hit": false,
+   "ratio": 1.5
+  },
+  {
+   "channel": "Zack D. Films",
+   "title": "How Your Brain Filters What You See 🤔",
+   "hit": false,
+   "ratio": 0.9
+  },
+  {
+   "channel": "Zack D. Films",
+   "title": "Bullied Boy's Shirt Became Official College Gear 🥲",
+   "hit": false,
+   "ratio": 1.3
+  },
+  {
+   "channel": "Zack D. Films",
+   "title": "How Natural Selection Works 🤔",
+   "hit": false,
+   "ratio": 0.6
+  },
+  {
+   "channel": "Zack D. Films",
+   "title": "Why Failure Makes Success Feel Better 😌",
+   "hit": false,
+   "ratio": 1.0
+  },
+  {
+   "channel": "Zack D. Films",
+   "title": "Man Invites His Mugger To Dinner 😳",
+   "hit": false,
+   "ratio": 1.5
+  },
+  {
+   "channel": "Zack D. Films",
+   "title": "The Mysterious Hum Heard Around The World 😨",
+   "hit": false,
+   "ratio": 1.1
+  },
+  {
+   "channel": "Zack D. Films",
+   "title": "He Raced His Dead Dad In A Video Game 😢",
+   "hit": false,
+   "ratio": 1.2
+  },
+  {
+   "channel": "Zack D. Films",
+   "title": "The Good Samaritan Experiment 😞",
+   "hit": false,
+   "ratio": 1.0
+  },
+  {
+   "channel": "Zack D. Films",
+   "title": "He Climbed Africa’s Tallest Mountain Without Legs 😮",
+   "hit": false,
+   "ratio": 1.4
+  },
+  {
+   "channel": "Zack D. Films",
+   "title": "The Phone Built For Final Goodbyes 😢",
+   "hit": false,
+   "ratio": 0.7
+  },
+  {
+   "channel": "Cosmo Teorías",
+   "title": "¿QUÉ PASARÍA SI BOLIVIA TUVIERA MAR?",
+   "hit": true,
+   "ratio": 11.8
+  },
+  {
+   "channel": "Cosmo Teorías",
+   "title": "QUÉ PASARÍA SI ATRAPARAN AL PAJARITO QUE LE CHISMEA TODO A LAS MADRES...",
+   "hit": true,
+   "ratio": 10.3
+  },
+  {
+   "channel": "Cosmo Teorías",
+   "title": "CHOUCHA VS JESUSITO PORTERO",
+   "hit": true,
+   "ratio": 9.0
+  },
+  {
+   "channel": "Cosmo Teorías",
+   "title": "¿QUÉ TAN PODEROSO ES JESUSITO?",
+   "hit": true,
+   "ratio": 8.3
+  },
+  {
+   "channel": "Cosmo Teorías",
+   "title": "¿QUÉ PASARÍA SI LA CHANCLA DE LA ABUELA CHOCA CONTRA EL MACHETE DEL ABUELO?",
+   "hit": true,
+   "ratio": 7.6
+  },
+  {
+   "channel": "Cosmo Teorías",
+   "title": "EL MACHETE DEL ABUELO VS LA ESPADA DE TRUNKS",
+   "hit": true,
+   "ratio": 6.3
+  },
+  {
+   "channel": "Cosmo Teorías",
+   "title": "¿Y SI TU AMIGO CONSIGUIERA NOVIA?",
+   "hit": true,
+   "ratio": 5.4
+  },
+  {
+   "channel": "Cosmo Teorías",
+   "title": "¿CUÁNTOS CLAVITOS REALMENTE CLAVÓ PABLITO?",
+   "hit": true,
+   "ratio": 5.3
+  },
+  {
+   "channel": "Cosmo Teorías",
+   "title": "CALDITO DE LA ABUELA VS SEMILLAS DEL ERMITAÑO",
+   "hit": true,
+   "ratio": 5.0
+  },
+  {
+   "channel": "Cosmo Teorías",
+   "title": "¿Y SI EL PATITO FEO FUERA GUAPO?",
+   "hit": true,
+   "ratio": 3.9
+  },
+  {
+   "channel": "Cosmo Teorías",
+   "title": "¿QUÉ PASARÍ SI EL MACHETE DEL ABUELO SE ROMPE?",
+   "hit": true,
+   "ratio": 3.8
+  },
+  {
+   "channel": "Cosmo Teorías",
+   "title": "¿Y SI MR BEAST SE QUEDARA SIN DINERO?",
+   "hit": true,
+   "ratio": 3.8
+  },
+  {
+   "channel": "Cosmo Teorías",
+   "title": "¿QUÉ PASARÍA SI PAPÁ CERDITO FUERA AL GYM?",
+   "hit": true,
+   "ratio": 3.5
+  },
+  {
+   "channel": "Cosmo Teorías",
+   "title": "JESUSITO VS GEORGE WAR",
+   "hit": true,
+   "ratio": 3.2
+  },
+  {
+   "channel": "Cosmo Teorías",
+   "title": "EL PODER DE MAMÁ COCO",
+   "hit": true,
+   "ratio": 3.1
+  },
+  {
+   "channel": "Cosmo Teorías",
+   "title": "LA VARIANTE MÁS PODEROSA DE JESUSITO",
+   "hit": false,
+   "ratio": 1.3
+  },
+  {
+   "channel": "Cosmo Teorías",
+   "title": "FROZONO VS ELSA",
+   "hit": false,
+   "ratio": 1.0
+  },
+  {
+   "channel": "Cosmo Teorías",
+   "title": "¿QUÉ PASARIA SI EL PATITO JUAN NO EXISTIERA?",
+   "hit": false,
+   "ratio": 0.6
+  },
+  {
+   "channel": "Cosmo Teorías",
+   "title": "EL PODER DE CHAYANNE",
+   "hit": false,
+   "ratio": 0.9
+  },
+  {
+   "channel": "Cosmo Teorías",
+   "title": "¿QUÉ PASARÍA SÍ FROZONO NO PUSIERA BACHATA?",
+   "hit": false,
+   "ratio": 1.1
+  },
+  {
+   "channel": "Cosmo Teorías",
+   "title": "SUPERMAN VS CHAPULÍN COLORADO",
+   "hit": false,
+   "ratio": 0.6
+  },
+  {
+   "channel": "Cosmo Teorías",
+   "title": "CHAPULÍN COLORADO VS SUPERMAN",
+   "hit": false,
+   "ratio": 1.0
+  },
+  {
+   "channel": "Cosmo Teorías",
+   "title": "YAMCHA VS KRILLIN VS INMORTAL",
+   "hit": false,
+   "ratio": 1.0
+  },
+  {
+   "channel": "Cosmo Teorías",
+   "title": "¿QUÉ PASARÍA SI @JavCaz DEJARA DE SOBREEXPLOTAR SERIES?",
+   "hit": false,
+   "ratio": 1.0
+  },
+  {
+   "channel": "Cosmo Teorías",
+   "title": "¿QUÉ PASARÍA SI TOM ATRAPARA A JERRY?",
+   "hit": false,
+   "ratio": 1.1
+  },
+  {
+   "channel": "Cosmo Teorías",
+   "title": "¿QUÉ PASARÍA SI LOS ELEFANTES YA NO SE BALANCEARAN EN SU TELARAÑA?",
+   "hit": false,
+   "ratio": 1.2
+  },
+  {
+   "channel": "Cosmo Teorías",
+   "title": "¿QUÉ PASARÍA SI A COCARDO LO HICIERAN JUGO DE COCO?",
+   "hit": false,
+   "ratio": 1.1
+  },
+  {
+   "channel": "Cosmo Teorías",
+   "title": "COCARDO VS SAMMY EL HELADERO",
+   "hit": false,
+   "ratio": 1.0
+  },
+  {
+   "channel": "Cosmo Teorías",
+   "title": "¿QUÉ PASARÍA SI BARNEY SE ENFRENTARA CON GODZILLA?",
+   "hit": false,
+   "ratio": 0.8
+  },
+  {
+   "channel": "Cosmo Teorías",
+   "title": "DOCTOR COSMO VS ONLY GOD",
+   "hit": false,
+   "ratio": 0.7
+  },
+  {
+   "channel": "Cosmo Teorías",
+   "title": "FÓRMULA SECRETA DE LA CANGREBURGUER…",
+   "hit": false,
+   "ratio": 0.5
+  },
+  {
+   "channel": "Cosmo Teorías",
+   "title": "TRONCHATORO VS RASPUTIA",
+   "hit": false,
+   "ratio": 0.5
+  },
+  {
+   "channel": "Cosmo Teorías",
+   "title": "¿QUÉ PASARÍA SI CRISTIANO RONALDO FUERA ATEO RONALDO?",
+   "hit": false,
+   "ratio": 0.8
+  },
+  {
+   "channel": "Cosmo Teorías",
+   "title": "DUOLINGO VS DORA LA EXPLORADORA",
+   "hit": false,
+   "ratio": 0.5
+  },
+  {
+   "channel": "Cosmo Teorías",
+   "title": "GEORGE PIG VS POCOYÓ",
+   "hit": false,
+   "ratio": 0.8
+  },
+  {
+   "channel": "Cosmo Teorías",
+   "title": "¿QUIÉN LE ENSEÑÓ INGLES A DUOLINGO?",
+   "hit": false,
+   "ratio": 1.0
+  },
+  {
+   "channel": "Cosmo Teorías",
+   "title": "BATALLA DE AURA: TOMMY SHELBY VS DON RAMON",
+   "hit": false,
+   "ratio": 0.8
+  },
+  {
+   "channel": "Cosmo Teorías",
+   "title": "¿QUÉ PASARÍA SI LUISITO FUERA DESCOMUNICA?",
+   "hit": false,
+   "ratio": 0.9
+  },
+  {
+   "channel": "Cosmo Teorías",
+   "title": "¿QUÉ PASARÍA SI EL GATO CON BOTAS FUERA EL GATO CON CHANCLAS?",
+   "hit": false,
+   "ratio": 0.5
+  },
+  {
+   "channel": "Cosmo Teorías",
+   "title": "¿QUÉ PASARÍA SI RORO SE ENFRENTA A CAPITÁN PERÚ?",
+   "hit": false,
+   "ratio": 1.5
+  },
+  {
+   "channel": "Cosmo Teorías",
+   "title": "¿QUÉ PASARÍA SI ALGUIEN PASARA LA ESQUINA DE LAS DIVINAS?",
+   "hit": false,
+   "ratio": 0.5
+  },
+  {
+   "channel": "Cosmo Teorías",
+   "title": "¿QUÉ PASARÍA SI UN OTAKU SE BAÑARA?",
+   "hit": false,
+   "ratio": 0.8
+  },
+  {
+   "channel": "Cosmo Teorías",
+   "title": "¿QUE PASARÍA SI EL CHAPULIN COLORADO FUERA DESCOLORADO?",
+   "hit": false,
+   "ratio": 0.6
+  },
+  {
+   "channel": "Cosmo Teorías",
+   "title": "¿Y SI SHREK COBRA CARO SUS CLASES?",
+   "hit": false,
+   "ratio": 0.8
+  },
+  {
+   "channel": "Cosmo Teorías",
+   "title": "¿QUIÉN ES MÁS PODEROSO ENTRE SHAGGY VS CHAPULÍN COLORADO?",
+   "hit": false,
+   "ratio": 0.8
+  },
+  {
+   "channel": "Cosmo Teorías",
+   "title": "¿QUÉ TAN PODEROSO ES EL CHAPULÍN COLORADO?",
+   "hit": false,
+   "ratio": 0.9
+  },
+  {
+   "channel": "Cosmo Teorías",
+   "title": "¿QUÉ PASARÍA SI EL POLLITO PIO RENUNCIARA A LA RADIO?",
+   "hit": false,
+   "ratio": 0.5
+  },
+  {
+   "channel": "Cosmo Teorías",
+   "title": "¿QUÉ PASARÍA SI LA GALLINA TURULETA PUSIERA LOS HUEVOS EN SU CORRAL?",
+   "hit": false,
+   "ratio": 1.0
+  },
+  {
+   "channel": "Cosmo Teorías",
+   "title": "¿QUIÉN PUEDE REVIVIR AL MAR MUERTO?",
+   "hit": false,
+   "ratio": 1.0
+  },
+  {
+   "channel": "Cosmo Teorías",
+   "title": "INVENCIBLE VS GEORGE",
+   "hit": false,
+   "ratio": 1.0
+  },
+  {
+   "channel": "Cosmo Teorías",
+   "title": "¿QUÉ PASARÍA SI WITSI WITSI ARAÑA NO SUBIERA SU TELARAÑA?",
+   "hit": false,
+   "ratio": 0.6
+  },
+  {
+   "channel": "Cosmo Teorías",
+   "title": "PABLO CIENTÍFICO VS PATO LUCAS EL HECHICERO",
+   "hit": false,
+   "ratio": 0.7
+  },
+  {
+   "channel": "Cosmo Teorías",
+   "title": "LA CHANCLA DE MAMÁ VS EL CINTURÓN DE PAPÁ",
+   "hit": false,
+   "ratio": 1.2
+  },
+  {
+   "channel": "BlobbyClips",
+   "title": "Grandpa's Epic Crafting Powers! 🤯🤯",
+   "hit": true,
+   "ratio": 3.9
+  },
+  {
+   "channel": "BlobbyClips",
+   "title": "When Mobs Get Smart! 💀💀",
+   "hit": true,
+   "ratio": 3.8
+  },
+  {
+   "channel": "BlobbyClips",
+   "title": "Java vs Bedrock Madness! 😂😂",
+   "hit": true,
+   "ratio": 3.2
+  },
+  {
+   "channel": "BlobbyClips",
+   "title": "When You Turn Keep Inventory On... 😂😂",
+   "hit": true,
+   "ratio": 3.2
+  },
+  {
+   "channel": "BlobbyClips",
+   "title": "Crafting Circles in Minecraft! 😂😂",
+   "hit": true,
+   "ratio": 3.0
+  },
+  {
+   "channel": "BlobbyClips",
+   "title": "Minecraft Museum Mayhem! 😂😂",
+   "hit": false,
+   "ratio": 0.6
+  },
+  {
+   "channel": "BlobbyClips",
+   "title": "The Rage of Losing! 💀💀",
+   "hit": false,
+   "ratio": 0.8
+  },
+  {
+   "channel": "BlobbyClips",
+   "title": "Crafting Tables Get Jealous! 🤣🤣",
+   "hit": false,
+   "ratio": 0.9
+  },
+  {
+   "channel": "BlobbyClips",
+   "title": "The Infinite Water Source Problem 😭😭",
+   "hit": false,
+   "ratio": 0.6
+  },
+  {
+   "channel": "BlobbyClips",
+   "title": "Gamers With Bad Mics! 🤣🤣",
+   "hit": false,
+   "ratio": 0.9
+  },
+  {
+   "channel": "BlobbyClips",
+   "title": "Where's Parkour Guy?",
+   "hit": false,
+   "ratio": 1.3
+  },
+  {
+   "channel": "BlobbyClips",
+   "title": "Skeleton Fight Club Be Like! 💀💀",
+   "hit": false,
+   "ratio": 0.5
+  },
+  {
+   "channel": "BlobbyClips",
+   "title": "Being Scared in Games! 😆😆",
+   "hit": false,
+   "ratio": 0.9
+  },
+  {
+   "channel": "BlobbyClips",
+   "title": "Why Can't You Pause? 🤔🤔",
+   "hit": false,
+   "ratio": 1.5
+  },
+  {
+   "channel": "BlobbyClips",
+   "title": "Why Minecraft Foxes are Loyal! 😆😆",
+   "hit": false,
+   "ratio": 1.3
+  },
+  {
+   "channel": "BlobbyClips",
+   "title": "When Phantoms Know You're Awake! 😧😧",
+   "hit": false,
+   "ratio": 0.7
+  },
+  {
+   "channel": "BlobbyClips",
+   "title": "The Life of The Worst Teammate! 😂😂",
+   "hit": false,
+   "ratio": 0.5
+  },
+  {
+   "channel": "BlobbyClips",
+   "title": "Welcome to the Afterlife! 😂😂",
+   "hit": false,
+   "ratio": 0.5
+  },
+  {
+   "channel": "BlobbyClips",
+   "title": "Roblox Chaos Through the Ages! 🤣🤣",
+   "hit": false,
+   "ratio": 0.7
+  },
+  {
+   "channel": "BlobbyClips",
+   "title": "When Games Remove Features! 😭😭",
+   "hit": false,
+   "ratio": 1.2
+  },
+  {
+   "channel": "BlobbyClips",
+   "title": "Retry Spammers Be Like! 😂😂",
+   "hit": false,
+   "ratio": 1.0
+  },
+  {
+   "channel": "BlobbyClips",
+   "title": "Evolution of Gaming Consoles! 🤔🤔",
+   "hit": false,
+   "ratio": 0.7
+  },
+  {
+   "channel": "BlobbyClips",
+   "title": "When Your Enemy is Chill! 😌😌",
+   "hit": false,
+   "ratio": 1.1
+  },
+  {
+   "channel": "BlobbyClips",
+   "title": "When Old Devices Are Alive! 😭😭",
+   "hit": false,
+   "ratio": 1.0
+  },
+  {
+   "channel": "BlobbyClips",
+   "title": "What Video Game Trailers are Like! 💀💀",
+   "hit": false,
+   "ratio": 0.7
+  },
+  {
+   "channel": "BlobbyClips",
+   "title": "Night People vs. Morning People! 🤣🤣",
+   "hit": false,
+   "ratio": 1.1
+  },
+  {
+   "channel": "BlobbyClips",
+   "title": "When You Follow a Minecraft Tutorial 😭😭",
+   "hit": false,
+   "ratio": 0.8
+  },
+  {
+   "channel": "BlobbyClips",
+   "title": "Teamers in Video Games Be Like! 💀💀",
+   "hit": false,
+   "ratio": 1.2
+  },
+  {
+   "channel": "BlobbyClips",
+   "title": "Entering the Cool Stick Dimension! 😆😆",
+   "hit": false,
+   "ratio": 0.5
+  },
+  {
+   "channel": "BlobbyClips",
+   "title": "When Video Games Have Glitches 😭😭",
+   "hit": false,
+   "ratio": 0.9
+  },
+  {
+   "channel": "BlobbyClips",
+   "title": "Old vs New Minecraft Adventures! 😆😆",
+   "hit": false,
+   "ratio": 0.8
+  },
+  {
+   "channel": "BlobbyClips",
+   "title": "Noobs Take Over Teams! 😂😂",
+   "hit": false,
+   "ratio": 0.8
+  },
+  {
+   "channel": "BlobbyClips",
+   "title": "The Universe's Gameplay Be Like! 😭😭",
+   "hit": false,
+   "ratio": 1.2
+  },
+  {
+   "channel": "BlobbyClips",
+   "title": "Video Games vs. Their Audiences! 😆😆",
+   "hit": false,
+   "ratio": 0.6
+  },
+  {
+   "channel": "BlobbyClips",
+   "title": "A Well is On The Run! 😂😂",
+   "hit": false,
+   "ratio": 0.5
+  },
+  {
+   "channel": "BlobbyClips",
+   "title": "When Your Minecraft Skin is Weird 😭😭",
+   "hit": false,
+   "ratio": 1.5
+  },
+  {
+   "channel": "BlobbyClips",
+   "title": "Why Bedrock Doors are a Problem! 💀💀",
+   "hit": false,
+   "ratio": 0.7
+  },
+  {
+   "channel": "BlobbyClips",
+   "title": "History Remembers You By Food! 🤣🤣",
+   "hit": false,
+   "ratio": 1.1
+  },
+  {
+   "channel": "BlobbyClips",
+   "title": "When Minecraft Skins Collide! 💀💀",
+   "hit": false,
+   "ratio": 0.5
+  },
+  {
+   "channel": "BlobbyClips",
+   "title": "Beware of Fake Downloads! 😭😭",
+   "hit": false,
+   "ratio": 1.0
+  },
+  {
+   "channel": "BlobbyClips",
+   "title": "What Minecraft Houses are Like! 🤣🤣",
+   "hit": false,
+   "ratio": 0.8
+  },
+  {
+   "channel": "BlobbyClips",
+   "title": "What Duels Are Like! 🤣🤣",
+   "hit": false,
+   "ratio": 1.1
+  },
+  {
+   "channel": "BlobbyClips",
+   "title": "Gaming Through the Generations! 😂😂",
+   "hit": false,
+   "ratio": 0.9
+  },
+  {
+   "channel": "BlobbyClips",
+   "title": "Minecraft Spawn Luck Be Like! 😭😭",
+   "hit": false,
+   "ratio": 0.6
+  },
+  {
+   "channel": "BlobbyClips",
+   "title": "Your Inventory When Mining! 😆😆",
+   "hit": false,
+   "ratio": 1.4
+  },
+  {
+   "channel": "BlobbyClips",
+   "title": "Creeper Logic Be Like 🤣🤣",
+   "hit": false,
+   "ratio": 0.5
+  },
+  {
+   "channel": "BlobbyClips",
+   "title": "Villain's End vs Hero's Fate! 😆😆",
+   "hit": false,
+   "ratio": 0.7
+  },
+  {
+   "channel": "BlobbyClips",
+   "title": "That One Piece in the Air Fryer 😭😭",
+   "hit": false,
+   "ratio": 0.5
+  },
+  {
+   "channel": "BlobbyClips",
+   "title": "The Evolution of Evil Plants! 💀💀",
+   "hit": false,
+   "ratio": 1.0
+  },
+  {
+   "channel": "BlobbyClips",
+   "title": "Minecraft Saves the World! 😆😆",
+   "hit": false,
+   "ratio": 1.4
+  },
+  {
+   "channel": "BlobbyClips",
+   "title": "The Minecraft Liquids Update! 🤔🤔",
+   "hit": false,
+   "ratio": 1.5
+  },
+  {
+   "channel": "BlobbyClips",
+   "title": "How Life Was Created! 😭😭",
+   "hit": false,
+   "ratio": 0.9
+  },
+  {
+   "channel": "BlobbyClips",
+   "title": "The Music Disc Interrogation! 🤣🤣",
+   "hit": false,
+   "ratio": 1.3
+  },
+  {
+   "channel": "BlobbyClips",
+   "title": "Villages in Survival vs Creative! 😭😭",
+   "hit": false,
+   "ratio": 1.3
+  },
+  {
+   "channel": "BlobbyClips",
+   "title": "The Nametag Revenge! 🤣🤣",
+   "hit": false,
+   "ratio": 1.0
+  },
+  {
+   "channel": "BlobbyClips",
+   "title": "Minecraft Has Emojis Too! 😭😭",
+   "hit": false,
+   "ratio": 0.9
+  },
+  {
+   "channel": "BlobbyClips",
+   "title": "When You Press F3! 🤔🤔",
+   "hit": false,
+   "ratio": 1.5
+  },
+  {
+   "channel": "BlobbyClips",
+   "title": "Why Cows Wear Blindfolds! 😆😆",
+   "hit": false,
+   "ratio": 1.1
+  },
+  {
+   "channel": "BlobbyClips",
+   "title": "That One Guy With Tomatoes! 🤣🤣",
+   "hit": false,
+   "ratio": 0.9
+  },
+  {
+   "channel": "BlobbyClips",
+   "title": "Minecraft Hotbar War! 🤣🤣",
+   "hit": false,
+   "ratio": 1.0
+  },
+  {
+   "channel": "BlobbyClips",
+   "title": "Spiders at Night vs Day! 😂😂",
+   "hit": false,
+   "ratio": 1.1
+  },
+  {
+   "channel": "BlobbyClips",
+   "title": "What is the Nether Reactor Core? 🤔🤔",
+   "hit": false,
+   "ratio": 1.4
+  },
+  {
+   "channel": "BlobbyClips",
+   "title": "Would You Eat This?! 🤔🤔",
+   "hit": false,
+   "ratio": 1.4
+  },
+  {
+   "channel": "BlobbyClips",
+   "title": "Ice Molecules Be Like! 🤣🤣",
+   "hit": false,
+   "ratio": 1.1
+  },
+  {
+   "channel": "FactoHolic",
+   "title": "Longest Summer Vacation 😱",
+   "hit": true,
+   "ratio": 5.6
+  },
+  {
+   "channel": "FactoHolic",
+   "title": "Saudi Prince Vacation 😱",
+   "hit": true,
+   "ratio": 5.0
+  },
+  {
+   "channel": "FactoHolic",
+   "title": "The Story Of Jeanne Calment 😱",
+   "hit": true,
+   "ratio": 4.9
+  },
+  {
+   "channel": "FactoHolic",
+   "title": "A Hole Through The Earth 😱",
+   "hit": true,
+   "ratio": 3.4
+  },
+  {
+   "channel": "FactoHolic",
+   "title": "The Luckiest Unlucky Man 😱",
+   "hit": true,
+   "ratio": 3.3
+  },
+  {
+   "channel": "FactoHolic",
+   "title": "Pablo Escobar 😱",
+   "hit": true,
+   "ratio": 3.2
+  },
+  {
+   "channel": "FactoHolic",
+   "title": "The Ageless People 😱",
+   "hit": true,
+   "ratio": 3.2
+  },
+  {
+   "channel": "FactoHolic",
+   "title": "Leg Lengthening Surgery 😱",
+   "hit": false,
+   "ratio": 0.7
+  },
+  {
+   "channel": "FactoHolic",
+   "title": "How To Survive a Plane Crash 😱",
+   "hit": false,
+   "ratio": 0.9
+  },
+  {
+   "channel": "FactoHolic",
+   "title": "A Day in My Life 😱",
+   "hit": false,
+   "ratio": 0.8
+  },
+  {
+   "channel": "FactoHolic",
+   "title": "How Companies Fool Us 😱",
+   "hit": false,
+   "ratio": 0.7
+  },
+  {
+   "channel": "FactoHolic",
+   "title": "The Smart AI Shopping 😱",
+   "hit": false,
+   "ratio": 0.5
+  },
+  {
+   "channel": "FactoHolic",
+   "title": "Alien Creature On Earth 😱",
+   "hit": false,
+   "ratio": 1.0
+  },
+  {
+   "channel": "FactoHolic",
+   "title": "How Rare You Are 😱",
+   "hit": false,
+   "ratio": 0.5
+  },
+  {
+   "channel": "FactoHolic",
+   "title": "How Giant Ships Floats 😱",
+   "hit": false,
+   "ratio": 0.6
+  },
+  {
+   "channel": "FactoHolic",
+   "title": "Sounds Fake But True | Ep 5",
+   "hit": false,
+   "ratio": 0.5
+  },
+  {
+   "channel": "FactoHolic",
+   "title": "Don't Show Fingers in Photo 😱",
+   "hit": false,
+   "ratio": 0.8
+  },
+  {
+   "channel": "FactoHolic",
+   "title": "Man Who Sue Everyone 😱",
+   "hit": false,
+   "ratio": 1.4
+  },
+  {
+   "channel": "FactoHolic",
+   "title": "$100,000 Given To Homeless Man 😱",
+   "hit": false,
+   "ratio": 0.8
+  },
+  {
+   "channel": "FactoHolic",
+   "title": "The Bird Of Crime 😱",
+   "hit": false,
+   "ratio": 0.6
+  },
+  {
+   "channel": "FactoHolic",
+   "title": "The Lobster 😱",
+   "hit": false,
+   "ratio": 1.5
+  },
+  {
+   "channel": "FactoHolic",
+   "title": "What if You Become Invisible 😱",
+   "hit": false,
+   "ratio": 1.0
+  },
+  {
+   "channel": "FactoHolic",
+   "title": "The Lawnchair Larry 😱",
+   "hit": false,
+   "ratio": 1.1
+  },
+  {
+   "channel": "FactoHolic",
+   "title": "Why Rats Are Used For Experiments 😱",
+   "hit": false,
+   "ratio": 0.9
+  },
+  {
+   "channel": "FactoHolic",
+   "title": "The Correct Way of Breathing 😱",
+   "hit": false,
+   "ratio": 0.7
+  },
+  {
+   "channel": "FactoHolic",
+   "title": "India's Most Futuristic College 😱",
+   "hit": false,
+   "ratio": 0.6
+  },
+  {
+   "channel": "FactoHolic",
+   "title": "Why Do We Crave Sweets 😱",
+   "hit": false,
+   "ratio": 0.7
+  },
+  {
+   "channel": "FactoHolic",
+   "title": "The Future Of Humans 😱",
+   "hit": false,
+   "ratio": 1.2
+  },
+  {
+   "channel": "FactoHolic",
+   "title": "Sounds Fake But True | Ep 3",
+   "hit": false,
+   "ratio": 0.9
+  },
+  {
+   "channel": "FactoHolic",
+   "title": "How The Sun is Burning 😱",
+   "hit": false,
+   "ratio": 0.9
+  },
+  {
+   "channel": "FactoHolic",
+   "title": "Why Can't We Drink Ocean Water 😱",
+   "hit": false,
+   "ratio": 0.5
+  },
+  {
+   "channel": "FactoHolic",
+   "title": "What is Cancer 😱",
+   "hit": false,
+   "ratio": 0.5
+  },
+  {
+   "channel": "FactoHolic",
+   "title": "Crazy Things People Found in Trash 😱",
+   "hit": false,
+   "ratio": 1.5
+  },
+  {
+   "channel": "FactoHolic",
+   "title": "Gaming Subject in School 😱",
+   "hit": false,
+   "ratio": 0.7
+  },
+  {
+   "channel": "FactoHolic",
+   "title": "Richest Surnames in India 😱",
+   "hit": false,
+   "ratio": 1.4
+  },
+  {
+   "channel": "FactoHolic",
+   "title": "The Dumb Thieves 😱",
+   "hit": false,
+   "ratio": 0.8
+  },
+  {
+   "channel": "FactoHolic",
+   "title": "Sounds Fake But True | Ep 1",
+   "hit": false,
+   "ratio": 1.1
+  },
+  {
+   "channel": "FactoHolic",
+   "title": "The Axolotl 😱",
+   "hit": false,
+   "ratio": 1.5
+  },
+  {
+   "channel": "FactoHolic",
+   "title": "Why Most Engineers Don't Get Jobs 😱",
+   "hit": false,
+   "ratio": 1.1
+  },
+  {
+   "channel": "FactoHolic",
+   "title": "Why Cricket is Not in Olympics 😱",
+   "hit": false,
+   "ratio": 1.0
+  },
+  {
+   "channel": "FactoHolic",
+   "title": "China's Marriage Market 😱",
+   "hit": false,
+   "ratio": 0.7
+  },
+  {
+   "channel": "FactoHolic",
+   "title": "Stop Using Hand Dryers 😱",
+   "hit": false,
+   "ratio": 0.9
+  },
+  {
+   "channel": "FactoHolic",
+   "title": "Why Do We Feel Motivated At Night 😱",
+   "hit": false,
+   "ratio": 1.1
+  },
+  {
+   "channel": "FactoHolic",
+   "title": "The Magic Of Racket Sports 😱",
+   "hit": false,
+   "ratio": 0.5
+  },
+  {
+   "channel": "FactoHolic",
+   "title": "There Are Insects In Your Food 😱",
+   "hit": false,
+   "ratio": 0.7
+  },
+  {
+   "channel": "FactoHolic",
+   "title": "What Is a Black Hole 😱",
+   "hit": false,
+   "ratio": 1.2
+  },
+  {
+   "channel": "FactoHolic",
+   "title": "Handwriting Says a Lot 😱",
+   "hit": false,
+   "ratio": 0.9
+  },
+  {
+   "channel": "FactoHolic",
+   "title": "Right To Sleep 😱",
+   "hit": false,
+   "ratio": 1.5
+  },
+  {
+   "channel": "FactoHolic",
+   "title": "The Nasal Cycle 😱",
+   "hit": false,
+   "ratio": 0.6
+  },
+  {
+   "channel": "FactoHolic",
+   "title": "Create AI Videos For Free 😱",
+   "hit": false,
+   "ratio": 0.7
+  },
+  {
+   "channel": "FactoHolic",
+   "title": "Are You A Night Owl 😱",
+   "hit": false,
+   "ratio": 0.7
+  },
+  {
+   "channel": "FactoHolic",
+   "title": "Why Do We Shake Hands 😱",
+   "hit": false,
+   "ratio": 0.6
+  },
+  {
+   "channel": "FactoHolic",
+   "title": "How Do Plants Breathe 😱",
+   "hit": false,
+   "ratio": 0.7
+  },
+  {
+   "channel": "FactoHolic",
+   "title": "Why Do We Shiver 😱",
+   "hit": false,
+   "ratio": 0.6
+  },
+  {
+   "channel": "Henreee",
+   "title": "What Happens If You Leave Sonic Alone? 😳",
+   "hit": true,
+   "ratio": 10.6
+  },
+  {
+   "channel": "Henreee",
+   "title": "What Happens If You Hide From the Ghosts in Pac-Man? 👻",
+   "hit": true,
+   "ratio": 9.5
+  },
+  {
+   "channel": "Henreee",
+   "title": "What Happens If You Shoot the Duck Hunt Dog? 😳",
+   "hit": true,
+   "ratio": 5.4
+  },
+  {
+   "channel": "Henreee",
+   "title": "What Happens If Tails Gets Every Super Emerald? 😳",
+   "hit": true,
+   "ratio": 4.4
+  },
+  {
+   "channel": "Henreee",
+   "title": "What Happens If You Plug Sonic 1 Into Sonic & Knuckles? 😳",
+   "hit": true,
+   "ratio": 3.9
+  },
+  {
+   "channel": "Henreee",
+   "title": "Do You Know Games 79 - Pacman 256",
+   "hit": true,
+   "ratio": 3.7
+  },
+  {
+   "channel": "Henreee",
+   "title": "What Happens If You Steal in Zelda? 😳",
+   "hit": true,
+   "ratio": 3.6
+  },
+  {
+   "channel": "Henreee",
+   "title": "What Happens If You Leave the Last Dots in Pac-Man? 😳",
+   "hit": true,
+   "ratio": 3.4
+  },
+  {
+   "channel": "Henreee",
+   "title": "What Happens If You Leave Mario Alone in Mario 64? 😴",
+   "hit": true,
+   "ratio": 3.1
+  },
+  {
+   "channel": "Henreee",
+   "title": "What Happens If You Cheat in Mario 64? 😳",
+   "hit": true,
+   "ratio": 3.1
+  },
+  {
+   "channel": "Henreee",
+   "title": "Why Sonic Is Blue 🤔",
+   "hit": true,
+   "ratio": 3.1
+  },
+  {
+   "channel": "Henreee",
+   "title": "What Happens If You Swim Past the Buoys in Sonic Generations? 🦈",
+   "hit": false,
+   "ratio": 0.5
+  },
+  {
+   "channel": "Henreee",
+   "title": "Why Is Pac-Man Missing a Slice? 🍕",
+   "hit": false,
+   "ratio": 0.5
+  },
+  {
+   "channel": "Henreee",
+   "title": "What Happens If You Let Mom Save Your Money in Pokémon Gold and Silver? 💸",
+   "hit": false,
+   "ratio": 0.6
+  },
+  {
+   "channel": "Henreee",
+   "title": "Who Would Win? Cuphead or Bendy?",
+   "hit": false,
+   "ratio": 0.5
+  },
+  {
+   "channel": "Henreee",
+   "title": "What Happens If You Dress Up as Luigi and Go Show Luigi in Super Mario Odyssey? 👀",
+   "hit": false,
+   "ratio": 1.0
+  },
+  {
+   "channel": "Henreee",
+   "title": "Who Would Win? Sonic or Bowser?",
+   "hit": false,
+   "ratio": 0.9
+  },
+  {
+   "channel": "Henreee",
+   "title": "What Are Pac-Man's Big Dots Really?",
+   "hit": false,
+   "ratio": 0.5
+  },
+  {
+   "channel": "Henreee",
+   "title": "What Happens If You Let a Chain Chomp Keep Lunging in Super Mario Bros. 3? ⛓️",
+   "hit": false,
+   "ratio": 0.9
+  },
+  {
+   "channel": "Henreee",
+   "title": "When You Get Scared, You Drop Your Rings 💍",
+   "hit": false,
+   "ratio": 0.5
+  },
+  {
+   "channel": "Henreee",
+   "title": "In This City, Every Robot Has a Battery 🔋",
+   "hit": false,
+   "ratio": 0.6
+  },
+  {
+   "channel": "Henreee",
+   "title": "Why Does Tails Have Two Tails? 🦊",
+   "hit": false,
+   "ratio": 1.4
+  },
+  {
+   "channel": "Henreee",
+   "title": "Who Would Win? Luigi or Tails?",
+   "hit": false,
+   "ratio": 0.7
+  },
+  {
+   "channel": "Henreee",
+   "title": "What Happens If You Save the King in a Costume in Super Mario Bros. 3? 👑",
+   "hit": false,
+   "ratio": 0.8
+  },
+  {
+   "channel": "Henreee",
+   "title": "Who Would Win? Mario or Super Sonic?",
+   "hit": false,
+   "ratio": 1.1
+  },
+  {
+   "channel": "Henreee",
+   "title": "What Happens If You Throw Omochao in Sonic Adventure 2? 🤖",
+   "hit": false,
+   "ratio": 0.9
+  },
+  {
+   "channel": "Henreee",
+   "title": "What Happens If You Leave Donkey Kong Alone in Donkey Kong Country? 🎮",
+   "hit": false,
+   "ratio": 0.6
+  },
+  {
+   "channel": "Henreee",
+   "title": "What Happens If You Don't Break a Single Box in Crash Bandicoot? 📦",
+   "hit": false,
+   "ratio": 0.9
+  },
+  {
+   "channel": "Henreee",
+   "title": "Who Would Win? Sonic or Pac-Man?",
+   "hit": false,
+   "ratio": 1.5
+  },
+  {
+   "channel": "Henreee",
+   "title": "What Happens If You Blow Up a Gossip Stone in Zelda? 💣",
+   "hit": false,
+   "ratio": 0.5
+  },
+  {
+   "channel": "Henreee",
+   "title": "What Happens If You Play Minecraft on Halloween? 🎃",
+   "hit": false,
+   "ratio": 0.5
+  },
+  {
+   "channel": "Henreee",
+   "title": "What Happens If You Shoot Pac-Man With a Slingshot? 😡",
+   "hit": false,
+   "ratio": 0.8
+  },
+  {
+   "channel": "Henreee",
+   "title": "What Happens If You Bring Back the Wrong Baby Penguin in Mario 64? 🐧",
+   "hit": false,
+   "ratio": 1.5
+  },
+  {
+   "channel": "Henreee",
+   "title": "What Happens If Your Friend Grabs the Other Controller in Duck Hunt? 🦆",
+   "hit": false,
+   "ratio": 0.6
+  },
+  {
+   "channel": "Henreee",
+   "title": "What Happens If You Never Let Go of Hoot in Mario 64? 🦉",
+   "hit": false,
+   "ratio": 0.5
+  },
+  {
+   "channel": "Henreee",
+   "title": "What Happens If You Throw King Bob-omb Off the Mountain? 😳",
+   "hit": false,
+   "ratio": 1.4
+  },
+  {
+   "channel": "Henreee",
+   "title": "What Happens If You Hit Your Chao in Sonic Adventure 2? 😢",
+   "hit": false,
+   "ratio": 1.5
+  },
+  {
+   "channel": "Henreee",
+   "title": "What Happens If You Leave the Lights Off in Sonic 3? 😳",
+   "hit": false,
+   "ratio": 1.2
+  },
+  {
+   "channel": "Henreee",
+   "title": "Why does Mario grow when he eats a mushroom?",
+   "hit": false,
+   "ratio": 0.9
+  },
+  {
+   "channel": "Henreee",
+   "title": "What Happens If You Keep Resetting in Animal Crossing? 😡",
+   "hit": false,
+   "ratio": 1.5
+  },
+  {
+   "channel": "Henreee",
+   "title": "Who Would Win? Mario or Sonic?",
+   "hit": false,
+   "ratio": 1.2
+  },
+  {
+   "channel": "Henreee",
+   "title": "Can You Beat Bowser WITHOUT THE JOYSTICK?!",
+   "hit": false,
+   "ratio": 1.1
+  },
+  {
+   "channel": "Henreee",
+   "title": "What Happens If You Reach Level 22 in Donkey Kong? 😳",
+   "hit": false,
+   "ratio": 1.5
+  },
+  {
+   "channel": "Henreee",
+   "title": "What Happens If You Fly Into the Bird in Star Fox? 🔥",
+   "hit": false,
+   "ratio": 0.8
+  },
+  {
+   "channel": "Henreee",
+   "title": "What Happens If You Beat Super Mario World's Secret Zone? 🎃",
+   "hit": false,
+   "ratio": 0.5
+  },
+  {
+   "channel": "Henreee",
+   "title": "Why Is Jigglypuff In Smash Bros? 🤔",
+   "hit": false,
+   "ratio": 1.0
+  },
+  {
+   "channel": "Henreee",
+   "title": "Why Snorlax Is Always Asleep 🤔",
+   "hit": false,
+   "ratio": 1.0
+  },
+  {
+   "channel": "Henreee",
+   "title": "Why The Creeper Has No Arms 🤔",
+   "hit": false,
+   "ratio": 1.5
+  },
+  {
+   "channel": "Henreee",
+   "title": "Why Yoshi Has A Saddle 🤔",
+   "hit": false,
+   "ratio": 1.1
+  },
+  {
+   "channel": "Henreee",
+   "title": "Why Couldn't You Find Mew Anywhere? 🤔",
+   "hit": false,
+   "ratio": 1.0
+  },
+  {
+   "channel": "Henreee",
+   "title": "#76 - Why Is Pikachu Skinny Now?",
+   "hit": false,
+   "ratio": 0.6
+  },
+  {
+   "channel": "Henreee",
+   "title": "DYKG 75: Why Is Donkey Kong Named After a Donkey? 🦍",
+   "hit": false,
+   "ratio": 0.6
+  },
+  {
+   "channel": "SeedThePast",
+   "title": "Can a Hot Pepper Conquer the Dinosaurs? 🌶️🦖",
+   "hit": true,
+   "ratio": 7.6
+  },
+  {
+   "channel": "SeedThePast",
+   "title": "Can a Mango Conquer the Dinosaur Era? 🥭🦕",
+   "hit": true,
+   "ratio": 4.1
+  },
+  {
+   "channel": "SeedThePast",
+   "title": "Can Sugarcane Survive the Dinosaur Era? 🎋🦖",
+   "hit": true,
+   "ratio": 3.5
+  },
+  {
+   "channel": "SeedThePast",
+   "title": "Dropping an ORANGE 66 Million Years in the Past 🍊🦖",
+   "hit": false,
+   "ratio": 0.8
+  },
+  {
+   "channel": "SeedThePast",
+   "title": "Can One Apple Survive the Dinosaur Era? 🍎🦕",
+   "hit": false,
+   "ratio": 1.0
+  }
+ ]
+}

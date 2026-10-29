@@ -1,0 +1,26 @@
+[topics] 79 signals from 8 channels, 444 YouTube units
+[llm] emotion_ideas: gemini-3.8-flash unavailable (HTTP 503 (busy)); trying next model
+[llm] emotion_ideas: gemini-3.6-flash unavailable (HTTP 503 (busy)); trying next model
+[llm] emotion_ideas: gemini-3.5-flash unavailable (HTTP 503 (busy)); trying next model
+[llm] emotion_ideas: cf:@cf/openai/gpt-oss-120b unavailable (daily free quota used up); trying next model
+[llm] emotion_ideas: every model busy; waiting 120s (round 1)
+[llm] emotion_ideas: gemini-3.8-flash unavailable (ConnectionResetError(104, 'Connection reset by peer')); trying next model
+[llm] emotion_ideas: gemini-3.6-flash unavailable (HTTP 503 (busy)); trying next model
+[llm] emotion_ideas: gemini-3.5-flash unavailable (daily free quota used up); trying next model
+[llm] emotion_ideas: every model busy; waiting 120s (round 2)
+[llm] emotion_ideas: gemini-3.8-flash unavailable (HTTP 503 (busy)); trying next model
+[llm] emotion_ideas: gemini-3.6-flash unavailable (daily free quota used up); trying next model
+Traceback (most recent call last):
+  File "/home/runner/work/yt-auto/yt-auto/cartoon/find_topics.py", line 79, in <module>
+    main()
+    ~~~~^^
+  File "/home/runner/work/yt-auto/yt-auto/cartoon/find_topics.py", line 69, in main
+    r = et.run(out, ROOT / "library", Path(args.signals) if args.signals else None)
+  File "/home/runner/work/yt-auto/yt-auto/yt_auto/emotion_topics.py", line 444, in run
+    ideas = propose(sig["signals"], past, CFG["ideas"])
+  File "/home/runner/work/yt-auto/yt-auto/yt_auto/emotion_topics.py", line 279, in propose
+    return llm(prompt, schema=IDEA_SCHEMA, name="emotion_ideas", temperature=0.9, models=QUALITY)["ideas"]
+           ~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/runner/work/yt-auto/yt-auto/yt_auto/llm.py", line 109, in llm
+    raise LLMError(f"{name}: no model available: {errors}")
+yt_auto.llm.LLMError: emotion_ideas: no model available: ['gemini-3.8-flash: HTTP 503 (busy)', 'gemini-3.6-flash: HTTP 503 (busy)', 'gemini-3.5-flash: HTTP 503 (busy)', 'cf:@cf/openai/gpt-oss-120b: daily free quota used up', "gemini-3.8-flash: ConnectionResetError(104, 'Connection reset by peer')", 'gemini-3.6-flash: HTTP 503 (busy)', 'gemini-3.5-flash: daily free quota used up', 'gemini-3.8-flash: HTTP 503 (busy)', 'gemini-3.6-flash: daily free quota used up']

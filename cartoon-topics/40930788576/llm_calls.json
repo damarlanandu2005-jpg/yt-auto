@@ -1,0 +1,83 @@
+[
+ {
+  "name": "emotion_ideas",
+  "model": "gemini-3.8-flash",
+  "prompt_chars": 9833,
+  "images": 0,
+  "status": 503,
+  "attempt": 1,
+  "error": "{\n  \"error\": {\n    \"code\": 503,\n    \"message\": \"This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.\",\n    \"status\": \"UNAVAILABLE\"\n  }\n}\n"
+ },
+ {
+  "name": "emotion_ideas",
+  "model": "gemini-3.6-flash",
+  "prompt_chars": 9833,
+  "images": 0,
+  "status": 503,
+  "attempt": 1,
+  "error": "{\n  \"error\": {\n    \"code\": 503,\n    \"message\": \"This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.\",\n    \"status\": \"UNAVAILABLE\"\n  }\n}\n"
+ },
+ {
+  "name": "emotion_ideas",
+  "model": "gemini-3.5-flash",
+  "prompt_chars": 9833,
+  "images": 0,
+  "status": 503,
+  "attempt": 1,
+  "error": "{\n  \"error\": {\n    \"code\": 503,\n    \"message\": \"This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.\",\n    \"status\": \"UNAVAILABLE\"\n  }\n}\n"
+ },
+ {
+  "name": "emotion_ideas",
+  "model": "cf:@cf/openai/gpt-oss-120b",
+  "prompt_chars": 9833,
+  "images": 0,
+  "status": 429,
+  "attempt": 1,
+  "error": "{\"errors\":[{\"message\":\"AiError: AiError: you have used up your daily free allocation of 10,000 neurons, please upgrade to Cloudflare's Workers Paid plan if you would like to continue usage. (bfb208d5-2be3-48b8-b86b-52bfc0f144de)\",\"code\":4006}],\"success\":false,\"result\":{},\"messages\":[]}"
+ },
+ {
+  "name": "emotion_ideas",
+  "model": "gemini-3.8-flash",
+  "prompt_chars": 9833,
+  "images": 0,
+  "status": null,
+  "attempt": 1,
+  "error": "ConnectionResetError(104, 'Connection reset by peer')"
+ },
+ {
+  "name": "emotion_ideas",
+  "model": "gemini-3.6-flash",
+  "prompt_chars": 9833,
+  "images": 0,
+  "status": 503,
+  "attempt": 1,
+  "error": "{\n  \"error\": {\n    \"code\": 503,\n    \"message\": \"This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.\",\n    \"status\": \"UNAVAILABLE\"\n  }\n}\n"
+ },
+ {
+  "name": "emotion_ideas",
+  "model": "gemini-3.5-flash",
+  "prompt_chars": 9833,
+  "images": 0,
+  "status": 429,
+  "attempt": 1,
+  "error": "{\n  \"error\": {\n    \"code\": 429,\n    \"message\": \"You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \\n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 20, model: gemini-3.6-flash, description: Generate content requests per day limit exceeded on Free Tier. See https://ai.google.dev/gemini-api/docs/rate-limits.\\nPlease retry in 12h25m40.941686747s.\",\n    \"status\": \"RESOURCE_EXHAUSTED\",\n    \"details\": [\n      {\n        \"@type\": \"type.googleapis.com/google.rpc.Help\",\n        \"links\": [\n          {\n            \"description\": \"Learn more about Gemini API quotas\",\n            \"url\": \"https://ai.google.dev/gemini-api/docs/rate-limits\"\n          }\n        ]\n      },\n      {\n        \"@type\": \"type.googleapis.com/google.rpc.QuotaFailure\",\n        \"violations\": [\n          {\n            \"description\": \"Generate content requests per day limit exceeded on Free Tier. See https://ai.google.dev/gemini-api/docs/rate-limits.\",\n            \"quotaMetric\": \"generativelanguage.googleapis.com/generate_content_free_tier_requests\",\n            \"quotaId\": \"GenerateRequestsPerDayPerProjectPerModel-FreeTier\",\n            \"quotaDimensions\": {\n              \"location\": \"global\",\n              \"model\": \"gemini-3.6-flash\"\n            },\n            \"quotaValue\": \"20\""
+ },
+ {
+  "name": "emotion_ideas",
+  "model": "gemini-3.8-flash",
+  "prompt_chars": 9833,
+  "images": 0,
+  "status": 503,
+  "attempt": 1,
+  "error": "{\n  \"error\": {\n    \"code\": 503,\n    \"message\": \"This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.\",\n    \"status\": \"UNAVAILABLE\"\n  }\n}\n"
+ },
+ {
+  "name": "emotion_ideas",
+  "model": "gemini-3.6-flash",
+  "prompt_chars": 9833,
+  "images": 0,
+  "status": 429,
+  "attempt": 1,
+  "error": "{\n  \"error\": {\n    \"code\": 429,\n    \"message\": \"You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \\n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 20, model: gemini-3.6-flash, description: Generate content requests per day limit exceeded on Free Tier. See https://ai.google.dev/gemini-api/docs/rate-limits.\\nPlease retry in 12h23m38.924460405s.\",\n    \"status\": \"RESOURCE_EXHAUSTED\",\n    \"details\": [\n      {\n        \"@type\": \"type.googleapis.com/google.rpc.Help\",\n        \"links\": [\n          {\n            \"description\": \"Learn more about Gemini API quotas\",\n            \"url\": \"https://ai.google.dev/gemini-api/docs/rate-limits\"\n          }\n        ]\n      },\n      {\n        \"@type\": \"type.googleapis.com/google.rpc.QuotaFailure\",\n        \"violations\": [\n          {\n            \"description\": \"Generate content requests per day limit exceeded on Free Tier. See https://ai.google.dev/gemini-api/docs/rate-limits.\",\n            \"quotaMetric\": \"generativelanguage.googleapis.com/generate_content_free_tier_requests\",\n            \"quotaId\": \"GenerateRequestsPerDayPerProjectPerModel-FreeTier\",\n            \"quotaDimensions\": {\n              \"location\": \"global\",\n              \"model\": \"gemini-3.6-flash\"\n            },\n            \"quotaValue\": \"20\""
+ }
+]
