@@ -1,0 +1,105 @@
+{
+ "facts": [
+  {
+   "id": "A1.2",
+   "fact": "At the bottom of the trench, the water column exerts a pressure of 1,086 bar, approximately 1,071.8 times the standard atmospheric pressure at sea level, with a temperature of 1 to 4 °C."
+  },
+  {
+   "id": "A1.1",
+   "fact": "The Mariana Trench's maximum depth is 10,935 ± 6 meters at the Challenger Deep, making it the deepest point on Earth."
+  },
+  {
+   "id": "A3.4",
+   "fact": "Barotrauma can affect the lungs, causing damage from pressure differences between the lungs and surrounding water."
+  },
+  {
+   "id": "A4.1",
+   "fact": "Drowning occurs when submersion prevents breathing, leading to low oxygen levels and carbon dioxide buildup in the blood."
+  },
+  {
+   "id": "A1.14",
+   "fact": "The Mariana Trench was mapped to a depth of 10,924 meters in 2020, with pressures reaching over 1,000 times sea level."
+  }
+ ],
+ "scenes": [
+  {
+   "role": "hook",
+   "sentences": [
+    {
+     "text": "What if you fell into the Mariana Trench?",
+     "kind": "framing",
+     "sources": [],
+     "id": "s01.01",
+     "check": "supported"
+    }
+   ],
+   "id": "s01"
+  },
+  {
+   "role": "step",
+   "sentences": [
+    {
+     "text": "Cold water can contribute to drowning and complications like low body temperature, but the cited passages do not specify a time frame of minutes.",
+     "kind": "fact",
+     "sources": [
+      "A4.1"
+     ],
+     "id": "s02.01",
+     "check": "supported (after fix)"
+    }
+   ],
+   "id": "s02"
+  },
+  {
+   "role": "step",
+   "sentences": [
+    {
+     "text": "The Mariana Trench's maximum depth is approximately 10,935 meters. The cited passages do not confirm that water pressure collapses the body before reaching the bottom.",
+     "kind": "fact",
+     "sources": [
+      "A1.1",
+      "A1.14"
+     ],
+     "id": "s04.01",
+     "check": "supported (after fix)"
+    }
+   ],
+   "id": "s04"
+  },
+  {
+   "role": "answer",
+   "sentences": [
+    {
+     "text": "Without a protective submarine, drowning and pressure-related injuries like lung collapse can occur, but the cited passages do not specify the order or time frame.",
+     "kind": "fact",
+     "sources": [
+      "A4.1",
+      "A3.4",
+      "A1.2"
+     ],
+     "id": "s05.01",
+     "check": "supported (after fix)"
+    }
+   ],
+   "id": "s05"
+  },
+  {
+   "role": "end",
+   "sentences": [
+    {
+     "text": "The Mariana Trench's extreme pressure and risk of drowning pose fatal threats to unprotected individuals, but the cited passages do not specify a time frame of minutes for these effects.",
+     "kind": "fact",
+     "sources": [
+      "A1.2",
+      "A4.1",
+      "A1.1"
+     ],
+     "id": "s06.01",
+     "check": "supported (after fix)"
+    }
+   ],
+   "id": "s06"
+  }
+ ],
+ "title": "What Happens If You Fall Into the Mariana Trench?"
+}

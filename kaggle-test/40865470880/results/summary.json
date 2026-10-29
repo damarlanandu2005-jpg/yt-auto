@@ -1,0 +1,238 @@
+{
+ "install_s": 18,
+ "server": true,
+ "models": {
+  "qwen3:14b": {
+   "pull_ok": true,
+   "pull_s": 73,
+   "factcheck_s": 301,
+   "factcheck": {
+    "guard_only": {
+     "caught": 8,
+     "errors": 30,
+     "rate": 0.267,
+     "per_category": {
+      "conflict": "0/6",
+      "misquote": "0/6",
+      "outdated": "0/6",
+      "units": "6/6",
+      "unsupported": "2/6"
+     },
+     "false_alarms": [],
+     "controls": 16
+    },
+    "combined": {
+     "caught": 28,
+     "errors": 30,
+     "rate": 0.933,
+     "per_category": {
+      "conflict": "6/6",
+      "misquote": "5/6",
+      "outdated": "6/6",
+      "units": "6/6",
+      "unsupported": "5/6"
+     },
+     "false_alarms": [],
+     "controls": 16
+    },
+    "ai_only": {
+     "caught": 28,
+     "errors": 30,
+     "rate": 0.933,
+     "per_category": {
+      "conflict": "6/6",
+      "misquote": "5/6",
+      "outdated": "6/6",
+      "units": "6/6",
+      "unsupported": "5/6"
+     },
+     "false_alarms": [],
+     "controls": 16
+    },
+    "pass": true,
+    "rule": {
+     "min_caught_overall": 0.8,
+     "min_caught_per_category": 0.6,
+     "max_false_alarms": 1
+    }
+   },
+   "short_s": 394,
+   "short": {
+    "script": {
+     "words": 25,
+     "dropped": 4,
+     "fixed": 0,
+     "story_problems": [
+      "the answer scene was dropped by the fact-check (rule R2: the hook must be answered)",
+      "25 words after the fact-check (want about 110-140)"
+     ],
+     "seconds": 196
+    },
+    "scenes": {
+     "problems": [
+      "answer: the cue 'answer' is not spoken in this scene (spoken: \"In short, cold shock and drowning can kill you in minutes. As you descend, rising water pressure can injure your gas-containing internal organs.\")",
+      "answer: label 'COLD SHOCK & PRESSURE INJURIES' must be at most 4 words, all spoken in this scene (not spoken: INJURIES)",
+      "answer: nothing is drawn besides the stickman: draw what the narration talks about",
+      "end: the cue 'end' is not spoken in this scene (spoken: \"Would you ever dare to explore the ocean deeps?\")",
+      "end: label 'WOULD YOU DARE TO EXPLORE?' must be at most 4 words, all spoken in this scene (not spoken: -)",
+      "end: nothing is drawn besides the stickman: draw what the narration talks about"
+     ],
+     "n_problems": 6,
+     "seconds": 198
+    }
+   }
+  },
+  "qwen3:32b": {
+   "pull_ok": true,
+   "pull_s": 176,
+   "factcheck_s": 834,
+   "factcheck": {
+    "guard_only": {
+     "caught": 8,
+     "errors": 30,
+     "rate": 0.267,
+     "per_category": {
+      "conflict": "0/6",
+      "misquote": "0/6",
+      "outdated": "0/6",
+      "units": "6/6",
+      "unsupported": "2/6"
+     },
+     "false_alarms": [],
+     "controls": 16
+    },
+    "combined": {
+     "caught": 28,
+     "errors": 30,
+     "rate": 0.933,
+     "per_category": {
+      "conflict": "6/6",
+      "misquote": "5/6",
+      "outdated": "6/6",
+      "units": "6/6",
+      "unsupported": "5/6"
+     },
+     "false_alarms": [],
+     "controls": 16
+    },
+    "ai_only": {
+     "caught": 27,
+     "errors": 30,
+     "rate": 0.9,
+     "per_category": {
+      "conflict": "6/6",
+      "misquote": "5/6",
+      "outdated": "6/6",
+      "units": "5/6",
+      "unsupported": "5/6"
+     },
+     "false_alarms": [],
+     "controls": 16
+    },
+    "pass": true,
+    "rule": {
+     "min_caught_overall": 0.8,
+     "min_caught_per_category": 0.6,
+     "max_false_alarms": 1
+    }
+   },
+   "short_s": 1130,
+   "short": {
+    "script": {
+     "words": 112,
+     "dropped": 1,
+     "fixed": 4,
+     "story_problems": [],
+     "seconds": 736
+    },
+    "scenes": {
+     "problems": [
+      "step3: the cue 'injured' is not spoken in this scene (spoken: \"This difference in pressure causes injuries to gas-containing internal organs like your lungs and ears.\")",
+      "step3: the cue 'injured' is not spoken in this scene (spoken: \"This difference in pressure causes injuries to gas-containing internal organs like your lungs and ears.\")",
+      "step3: the cue 'injured' is not spoken in this scene (spoken: \"This difference in pressure causes injuries to gas-containing internal organs like your lungs and ears.\")",
+      "step3: label 'INJURED LUNGS & EARS' must be at most 4 words, all spoken in this scene (not spoken: INJURED)"
+     ],
+     "n_problems": 4,
+     "seconds": 393
+    }
+   }
+  },
+  "gpt-oss:20b": {
+   "pull_ok": true,
+   "pull_s": 99,
+   "factcheck_s": 232,
+   "factcheck": {
+    "guard_only": {
+     "caught": 8,
+     "errors": 30,
+     "rate": 0.267,
+     "per_category": {
+      "conflict": "0/6",
+      "misquote": "0/6",
+      "outdated": "0/6",
+      "units": "6/6",
+      "unsupported": "2/6"
+     },
+     "false_alarms": [],
+     "controls": 16
+    },
+    "combined": {
+     "caught": 30,
+     "errors": 30,
+     "rate": 1.0,
+     "per_category": {
+      "conflict": "6/6",
+      "misquote": "6/6",
+      "outdated": "6/6",
+      "units": "6/6",
+      "unsupported": "6/6"
+     },
+     "false_alarms": [],
+     "controls": 16
+    },
+    "ai_only": {
+     "caught": 30,
+     "errors": 30,
+     "rate": 1.0,
+     "per_category": {
+      "conflict": "6/6",
+      "misquote": "6/6",
+      "outdated": "6/6",
+      "units": "6/6",
+      "unsupported": "6/6"
+     },
+     "false_alarms": [],
+     "controls": 16
+    },
+    "pass": true,
+    "rule": {
+     "min_caught_overall": 0.8,
+     "min_caught_per_category": 0.6,
+     "max_false_alarms": 1
+    }
+   },
+   "short_s": 277,
+   "short": {
+    "script": {
+     "words": 71,
+     "dropped": 3,
+     "fixed": 2,
+     "story_problems": [
+      "the answer scene was dropped by the fact-check (rule R2: the hook must be answered)",
+      "71 words after the fact-check (want about 110-140)"
+     ],
+     "seconds": 170
+    },
+    "scenes": {
+     "problems": [
+      "step3: nothing is drawn besides the stickman: draw what the narration talks about",
+      "answer: nothing is drawn besides the stickman: draw what the narration talks about",
+      "end: nothing is drawn besides the stickman: draw what the narration talks about"
+     ],
+     "n_problems": 3,
+     "seconds": 107
+    }
+   }
+  }
+ }
+}

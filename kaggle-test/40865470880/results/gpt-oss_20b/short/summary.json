@@ -1,0 +1,21 @@
+{
+ "script": {
+  "words": 71,
+  "dropped": 3,
+  "fixed": 2,
+  "story_problems": [
+   "the answer scene was dropped by the fact-check (rule R2: the hook must be answered)",
+   "71 words after the fact-check (want about 110-140)"
+  ],
+  "seconds": 170
+ },
+ "scenes": {
+  "problems": [
+   "step3: nothing is drawn besides the stickman: draw what the narration talks about",
+   "answer: nothing is drawn besides the stickman: draw what the narration talks about",
+   "end: nothing is drawn besides the stickman: draw what the narration talks about"
+  ],
+  "n_problems": 3,
+  "seconds": 107
+ }
+}

@@ -1,0 +1,48 @@
+[model] local:qwen3:32b
+[system]
+
+
+[user]
+You are a strict fact-checker. For each sentence below, decide using ONLY its cited passages
+(not your own knowledge):
+- supported: every detail (numbers, names, dates, causes, comparisons) is stated in or directly follows from them.
+- partly: the main point is backed but some detail is not, or it overstates / oversimplifies into something false.
+  Also partly: "every/all/always/never" the passages don't say, or a model-based estimate stated as a plain
+  certain fact (fixed_text adds "scientists estimate" or "in today's standard model").
+- unsupported: the cited passages do not back it, or there are none.
+- Conflict: if the cited passages DISAGREE with each other about any number, date or name the sentence
+  states, the sentence is at most "partly" even if it matches one of them; say "sources conflict". Its
+  fixed_text must not pick a side: state only what all passages agree on, or give both values.
+For partly/unsupported, give fixed_text: a corrected sentence in the same plain spoken style that the cited
+passages fully support (keep digits and full unit words; no copying 8+ words). Leave fixed_text empty if impossible.
+A FRAMING SENTENCE has no passages: it is "supported" only if it makes no checkable claim at all (a question,
+transition or invitation). If it states any fact, mark it "unsupported" and give fixed_text: the same idea as a
+pure question or transition with no claim (e.g. "So what would a nearby supernova do to us?").
+
+[s01.01] FRAMING SENTENCE: What if you fell into the Mariana Trench?
+
+[s02.01] SENTENCE: Cold water triggers shock and drowning within minutes near the surface without breathing equipment.
+CITED PASSAGES:
+A4.1: Drowning is a type of suffocation induced by the submersion of the mouth and nose in a liquid. Submersion injury refers to both drowning and near-miss incidents. Most instances of fatal drowning occur alone or in situations where others present are either unaware of the victim's situation or unable to offer assistance. After successful resuscitation, drowning victims may experience breathing problems, confusion, or unconsciousness. Occasionally, victims may not begin experiencing these symptoms until several hours after they are rescued. An incident of drowning can also cause further complications for victims due to low body temperature, aspiration, or acute respiratory distress syndrome (respiratory failure from lung inflammation).
+
+[s03.01] SENTENCE: As you sink, the ocean's pressure rises to over 1,000 times the surface pressure, crushing air-filled body spaces like lungs.
+CITED PASSAGES:
+A1.2: At the bottom of the trench the water column above exerts a pressure of 1,086 bar (15,750 psi), approximately 1,071.8 times the standard atmospheric pressure at sea level or eight tons per square inch. The temperature at the bottom is 1 to 4 °C (34 to 39 °F).
+A3.4: Lungs may be affected by both under-pressure or, more commonly, overpressure relative to the external pressure
+
+[s04.01] SENTENCE: At 11,000 meters deep, water pressure collapses your body long before reaching the trench's bottom.
+CITED PASSAGES:
+A1.1: The Mariana Trench is the deepest oceanic trench on Earth, located in the western Pacific Ocean, about 200 kilometers (124 mi) east of the Mariana Islands. It is crescent-shaped and measures about 2,550 km (1,580 mi) in length and 69 km (43 mi) in width. The maximum known depth is 10,935 ± 6 meters (35,876 ± 20 ft; 5,979.3 ± 3.3 fathoms; 6.7947 ± 0.0037 mi) at the southern end of a small slot-shaped valley in its floor known as the Challenger Deep. This makes the deepest point of the trench more than 2 km (1.2 mi) farther from sea level than the peak of Mount Everest.
+A1.14: In 2011, it was announced at the American Geophysical Union Fall Meeting that a US Navy hydrographic ship equipped with a multibeam echosounder conducted a survey which mapped the entire trench to 100 m (330 ft; 55 fathoms) resolution. The mapping revealed the existence of four rocky outcrops thought to be former seamounts.
+
+[s05.01] SENTENCE: Without a protective submarine, cold shock and drowning happen first, followed by fatal pressure-induced lung collapse.
+CITED PASSAGES:
+A4.1: Drowning is a type of suffocation induced by the submersion of the mouth and nose in a liquid. Submersion injury refers to both drowning and near-miss incidents. Most instances of fatal drowning occur alone or in situations where others present are either unaware of the victim's situation or unable to offer assistance. After successful resuscitation, drowning victims may experience breathing problems, confusion, or unconsciousness. Occasionally, victims may not begin experiencing these symptoms until several hours after they are rescued. An incident of drowning can also cause further complications for victims due to low body temperature, aspiration, or acute respiratory distress syndrome (respiratory failure from lung inflammation).
+A3.4: Lungs may be affected by both under-pressure or, more commonly, overpressure relative to the external pressure
+A1.2: At the bottom of the trench the water column above exerts a pressure of 1,086 bar (15,750 psi), approximately 1,071.8 times the standard atmospheric pressure at sea level or eight tons per square inch. The temperature at the bottom is 1 to 4 °C (34 to 39 °F).
+
+[s06.01] SENTENCE: The Mariana Trench's extreme conditions crush and drown anyone unprotected within minutes.
+CITED PASSAGES:
+A1.2: At the bottom of the trench the water column above exerts a pressure of 1,086 bar (15,750 psi), approximately 1,071.8 times the standard atmospheric pressure at sea level or eight tons per square inch. The temperature at the bottom is 1 to 4 °C (34 to 39 °F).
+A4.1: Drowning is a type of suffocation induced by the submersion of the mouth and nose in a liquid. Submersion injury refers to both drowning and near-miss incidents. Most instances of fatal drowning occur alone or in situations where others present are either unaware of the victim's situation or unable to offer assistance. After successful resuscitation, drowning victims may experience breathing problems, confusion, or unconsciousness. Occasionally, victims may not begin experiencing these symptoms until several hours after they are rescued. An incident of drowning can also cause further complications for victims due to low body temperature, aspiration, or acute respiratory distress syndrome (respiratory failure from lung inflammation).
+A1.1: The Mariana Trench is the deepest oceanic trench on Earth, located in the western Pacific Ocean, about 200 kilometers (124 mi) east of the Mariana Islands. It is crescent-shaped and measures about 2,550 km (1,580 mi) in length and 69 km (43 mi) in width. The maximum known depth is 10,935 ± 6 meters (35,876 ± 20 ft; 5,979.3 ± 3.3 fathoms; 6.7947 ± 0.0037 mi) at the southern end of a small slot-shaped valley in its floor known as the Challenger Deep. This makes the deepest point of the trench more than 2 km (1.2 mi) farther from sea level than the peak of Mount Everest.

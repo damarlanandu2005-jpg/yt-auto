@@ -1,0 +1,44 @@
+[model] local:qwen3:14b
+[system]
+
+
+[user]
+You are a strict fact-checker. For each sentence below, decide using ONLY its cited passages
+(not your own knowledge):
+- supported: every detail (numbers, names, dates, causes, comparisons) is stated in or directly follows from them.
+- partly: the main point is backed but some detail is not, or it overstates / oversimplifies into something false.
+  Also partly: "every/all/always/never" the passages don't say, or a model-based estimate stated as a plain
+  certain fact (fixed_text adds "scientists estimate" or "in today's standard model").
+- unsupported: the cited passages do not back it, or there are none.
+- Conflict: if the cited passages DISAGREE with each other about any number, date or name the sentence
+  states, the sentence is at most "partly" even if it matches one of them; say "sources conflict". Its
+  fixed_text must not pick a side: state only what all passages agree on, or give both values.
+For partly/unsupported, give fixed_text: a corrected sentence in the same plain spoken style that the cited
+passages fully support (keep digits and full unit words; no copying 8+ words). Leave fixed_text empty if impossible.
+A FRAMING SENTENCE has no passages: it is "supported" only if it makes no checkable claim at all (a question,
+transition or invitation). If it states any fact, mark it "unsupported" and give fixed_text: the same idea as a
+pure question or transition with no claim (e.g. "So what would a nearby supernova do to us?").
+
+[s01.01] FRAMING SENTENCE: What if you fell into the Mariana Trench? Would you even notice?
+
+[s02.01] SENTENCE: Cold shock triggers drowning within minutes near the surface, even without breathing equipment.
+CITED PASSAGES:
+A4.25: People who do not know how to swim can struggle on the surface of the water for only 20 to 60 seconds before being submerged. In the early stages of drowning, a person holds their breath to prevent water from entering their lungs. When this is no longer possible, a small amount of water entering the trachea causes a muscular spasm that seals the airway and prevents further passage of water. If the process is not interrupted, loss of consciousness due to hypoxia is followed by cardiac arrest.
+
+[s03.01] SENTENCE: As you sink, water pressure rises rapidly, crushing air-filled spaces in your body.
+CITED PASSAGES:
+A3.8: When diving, the pressure differences which cause the barotrauma are changes in hydrostatic pressure. There are two components to the surrounding pressure acting on the diver: the atmospheric pressure and the water pressure. A descent of 10 metres (33 feet) in water increases the ambient pressure by an amount approximately equal to the pressure of the atmosphere at sea level. So, a descent from the surface to 10 metres (33 feet) underwater results in a doubling of the pressure on the diver. This pressure change will reduce the volume of a flexible gas-filled space by half. Boyle's law describes the relationship between the volume of the gas space and the pressure in the gas.
+
+[s04.01] SENTENCE: Lungs, sinuses, and other air-filled spaces collapse under pressure long before reaching the bottom.
+CITED PASSAGES:
+A3.16: A free-diver can dive and safely ascend without exhaling, because the gas in the lungs had been inhaled at atmospheric pressure, is compressed during the descent, and expands back to the original volume during ascent. A scuba or surface-supplied diver breathing gas at depth from underwater breathing apparatus fills their lungs with gas at an ambient pressure greater than atmospheric pressure. At 10 metres the lungs contain twice the amount of gas that they would contain at atmospheric pressure, and if they ascend without exhaling the gas will expand to match the decreasing pressure until the lungs reach their elastic limit, and begin to tear, and is very likely to sustain life-threatening lung damage. Besides tissue rupture, the overpressure may cause ingress of gases into the tissues through the ruptures, and further afield through the circulatory system. Pulmonary barotrauma (PBt) of ascent is also known as pulmonary over-inflation syndrome (POIS), lung over-pressure injury (LOP) and burst lung. Consequent injuries may include arterial gas embolism, pneumothorax, mediastinal, interstitial and subcutaneous emphysemas, depending on where the gas ends up, not usually all at the same time.
+
+[s05.01] SENTENCE: Without a protective submarine, cold shock and drowning happen within minutes near the surface. As you sink, the ocean water pressure crushes all air-filled spaces in your body long before you reach the bottom.
+CITED PASSAGES:
+A4.25: People who do not know how to swim can struggle on the surface of the water for only 20 to 60 seconds before being submerged. In the early stages of drowning, a person holds their breath to prevent water from entering their lungs. When this is no longer possible, a small amount of water entering the trachea causes a muscular spasm that seals the airway and prevents further passage of water. If the process is not interrupted, loss of consciousness due to hypoxia is followed by cardiac arrest.
+A3.8: When diving, the pressure differences which cause the barotrauma are changes in hydrostatic pressure. There are two components to the surrounding pressure acting on the diver: the atmospheric pressure and the water pressure. A descent of 10 metres (33 feet) in water increases the ambient pressure by an amount approximately equal to the pressure of the atmosphere at sea level. So, a descent from the surface to 10 metres (33 feet) underwater results in a doubling of the pressure on the diver. This pressure change will reduce the volume of a flexible gas-filled space by half. Boyle's law describes the relationship between the volume of the gas space and the pressure in the gas.
+A3.16: A free-diver can dive and safely ascend without exhaling, because the gas in the lungs had been inhaled at atmospheric pressure, is compressed during the descent, and expands back to the original volume during ascent. A scuba or surface-supplied diver breathing gas at depth from underwater breathing apparatus fills their lungs with gas at an ambient pressure greater than atmospheric pressure. At 10 metres the lungs contain twice the amount of gas that they would contain at atmospheric pressure, and if they ascend without exhaling the gas will expand to match the decreasing pressure until the lungs reach their elastic limit, and begin to tear, and is very likely to sustain life-threatening lung damage. Besides tissue rupture, the overpressure may cause ingress of gases into the tissues through the ruptures, and further afield through the circulatory system. Pulmonary barotrauma (PBt) of ascent is also known as pulmonary over-inflation syndrome (POIS), lung over-pressure injury (LOP) and burst lung. Consequent injuries may include arterial gas embolism, pneumothorax, mediastinal, interstitial and subcutaneous emphysemas, depending on where the gas ends up, not usually all at the same time.
+
+[s06.01] SENTENCE: The pressure at the trench's bottom is over 1,000 times greater than at sea level.
+CITED PASSAGES:
+A1.2: At the bottom of the trench the water column above exerts a pressure of 1,086 bar (15,750 psi), approximately 1,071.8 times the standard atmospheric pressure at sea level or eight tons per square inch. The temperature at the bottom is 1 to 4 °C (34 to 39 °F).

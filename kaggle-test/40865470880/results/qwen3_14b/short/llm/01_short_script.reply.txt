@@ -1,0 +1,72 @@
+{
+
+"facts": [
+  {"id": "A1.2", "fact": "At the bottom of the trench the water column above exerts a pressure of 1,086 bar (15,750 psi), approximately 1,071.8 times the standard atmospheric pressure at sea level or eight tons per square inch."},
+  {"id": "A1.1", "fact": "The maximum known depth is 10,935 ± 6 meters (35,876 ± 20 ft) at the southern end of a small slot-shaped valley in its floor known as the Challenger Deep."},
+  {"id": "A3.8", "fact": "A descent of 10 metres (33 feet) in water increases the ambient pressure by an amount approximately equal to the pressure of the atmosphere at sea level."},
+  {"id": "A4.25", "fact": "People who do not know how to swim can struggle on the surface of the water for only 20 to 60 seconds before being submerged."},
+  {"id": "A3.16", "fact": "A scuba or surface-supplied diver breathing gas at depth from underwater breathing apparatus fills their lungs with gas at an ambient pressure greater than atmospheric pressure. At 10 metres the lungs contain twice the amount of gas that they would contain at atmospheric pressure, and if they ascend without exhaling the gas will expand to match the decreasing pressure until the lungs reach their elastic limit, and begin to tear, and is very likely to sustain life-threatening lung damage."}
+],
+"scenes": [
+  {
+    "role": "hook",
+    "sentences": [
+      {
+        "text": "What if you fell into the Mariana Trench? Would you even notice?",
+        "kind": "framing",
+        "sources": []
+      }
+    ]
+  },
+  {
+    "role": "step",
+    "sentences": [
+      {
+        "text": "Cold shock triggers drowning within minutes near the surface, even without breathing equipment.",
+        "kind": "fact",
+        "sources": ["A4.25"]
+      }
+    ]
+  },
+  {
+    "role": "step",
+    "sentences": [
+      {
+        "text": "As you sink, water pressure rises rapidly, crushing air-filled spaces in your body.",
+        "kind": "fact",
+        "sources": ["A3.8"]
+      }
+    ]
+  },
+  {
+    "role": "step",
+    "sentences": [
+      {
+        "text": "Lungs, sinuses, and other air-filled spaces collapse under pressure long before reaching the bottom.",
+        "kind": "fact",
+        "sources": ["A3.16"]
+      }
+    ]
+  },
+  {
+    "role": "answer",
+    "sentences": [
+      {
+        "text": "Without a protective submarine, cold shock and drowning happen within minutes near the surface. As you sink, the ocean water pressure crushes all air-filled spaces in your body long before you reach the bottom.",
+        "kind": "fact",
+        "sources": ["A4.25", "A3.8", "A3.16"]
+      }
+    ]
+  },
+  {
+    "role": "end",
+    "sentences": [
+      {
+        "text": "The pressure at the trench's bottom is over 1,000 times greater than at sea level.",
+        "kind": "fact",
+        "sources": ["A1.2"]
+      }
+    ]
+  }
+]
+}

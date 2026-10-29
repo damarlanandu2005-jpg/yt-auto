@@ -1,0 +1,22 @@
+{
+
+"results": [
+  {
+    "id": "s02.01",
+    "verdict": "partly",
+    "problem": "The cited passage does not mention 'cold shock' as a trigger for drowning, only the time frame of 20-60 seconds for non-swimmers to submerge.",
+    "fixed_text": "People who do not know how to swim can struggle on the surface of the water for only 20 to 60 seconds before being submerged."
+  },
+  {
+    "id": "s04.01",
+    "verdict": "partly",
+    "problem": "The cited passage discusses lung over-expansion during ascent, not collapse of sinuses or other air-filled spaces during ascent.",
+    "fixed_text": "Lungs can expand dangerously during ascent if a diver does not exhale, leading to life-threatening lung damage."
+  },
+  {
+    "id": "s05.01",
+    "verdict": "partly",
+    "problem": "The cited passages describe pressure effects during descent (volume reduction) and ascent (lung over-expansion), but do not mention 'crushing' of air-filled spaces during descent or specify 'sinuses' as affected.",
+    "fixed_text": "Without a protective submarine, drowning can occur within 20 to 60 seconds near the surface. During descent, pressure reduces the volume of air-filled spaces in the body."
+  }
+]}
