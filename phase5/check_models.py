@@ -42,8 +42,8 @@ def main() -> None:
     pics = [("Image 1:", picture("red", "square")), ("Image 2:", picture("blue", "circle")),
             ("Image 3:", picture("green", "square"))]
     for m in dict.fromkeys(llm.LIGHT + llm.VISION):
-        if m in llm.QUALITY:
-            continue  # strong models are checked by the real runs
+        if m in llm.QUALITY and not m.startswith("cf:"):
+            continue  # Gemini's strong models are checked by the real runs (Cloudflare's backup is new, 29 Oct)
         r = {}
         try:
             a = llm.llm("What is the capital of France, and what is 17 + 25?", schema=SCHEMA, model=m, name=f"json_{m}")
@@ -60,6 +60,16 @@ def main() -> None:
         except Exception as e:  # noqa: BLE001
             r["vision"] = f"failed: {e}"[:300]
         rows[m] = r
+    # Cloudflare backup with a prompt as long as a real fact-check (about 25,000 characters)
+    long_text = " ".join(f"Passage {i}: the ship had {i} lifeboats on deck number {i % 7}." for i in range(1, 450))
+    try:
+        a = llm.llm(long_text + "\n\nHow many lifeboats did passage 321 say, and what is 17 + 25?", model=llm.CF_STRONG,
+                    schema={"type": "object", "properties": {"lifeboats": {"type": "integer"}, "n": {"type": "integer"}},
+                            "required": ["lifeboats", "n"]}, name="long_cf")
+        rows.setdefault(llm.CF_STRONG, {})["long_prompt"] = ("ok" if a.get("lifeboats") == 321 and a.get("n") == 42
+                                                              else f"wrong: {a}")
+    except Exception as e:  # noqa: BLE001
+        rows.setdefault(llm.CF_STRONG, {})["long_prompt"] = f"failed: {e}"[:300]
     # Gemma with one picture (three pictures gave HTTP 500 in run 40557681397)
     try:
         a = llm.llm("Give the colour and shape of the image.", model="gemma-4-31b-it", images=[pics[1]],

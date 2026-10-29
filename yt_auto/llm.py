@@ -4,9 +4,12 @@ Providers (all free, no billing):
   * Gemini API (key GEMINI_API_KEY): Gemini Flash models for the jobs where quality matters
     (script, fact-check, plan), and Gemma 4 / Flash-Lite for lighter jobs. Each model has its
     own published free daily limit.
-  * GitHub Models (the workflow's GITHUB_TOKEN with `models: read`): backup for light jobs
-    when Gemini is busy. Model ids are written "github:<publisher>/<model>". Small requests
-    only (free tier caps the request size), so long prompts skip it.
+  * GitHub Models (the workflow's GITHUB_TOKEN with `models: read`): retired by GitHub on
+    30 Jul 2026; the "github:<publisher>/<model>" path stays but is in no list.
+  * Cloudflare Workers AI (owner's CLOUDFLARE_API_TOKEN / CLOUDFLARE_ACCOUNT_ID, free 10,000
+    neurons a day, reset 00:00 UTC): backup when every Gemini model is busy or out of free quota
+    (owner, 29 Oct). Model ids are written "cf:@cf/<publisher>/<model>". This is another company's
+    own free plan, not a second Gemini key.
 
 Keys are sent in headers, never in URLs or logs. Every call is logged to LOG.
 """
@@ -23,16 +26,21 @@ from pathlib import Path
 
 GEMINI = "https://generativelanguage.googleapis.com/v1beta"
 GITHUB_MODELS = "https://models.github.ai/inference/chat/completions"
+CLOUDFLARE = "https://api.cloudflare.com/client/v4/accounts/{account}/ai/v1/chat/completions"  # OpenAI-style
 
 # STRONG: the script, the fact-check and the plan. Never Flash-Lite or small models here: Flash-Lite
 # copied source wording and wrote short scripts (run 40402246414).
-QUALITY = ["gemini-3.8-flash", "gemini-3.6-flash", "gemini-3.5-flash"]
+# After them, Cloudflare's gpt-oss-120b (Apache-2.0 open model): Gemini ran out of free daily quota on
+# all three models during the Short tests (run 40846680032), which stopped the whole video.
+CF_STRONG = "cf:@cf/openai/gpt-oss-120b"
+QUALITY = [m for m in os.environ.get(
+    "LLM_QUALITY_MODELS", f"gemini-3.8-flash,gemini-3.6-flash,gemini-3.5-flash,{CF_STRONG}").split(",") if m]
 # LIGHT: visual plan, photo pick/check, quality-gate review, topic scoring. Gemma 4 first (free, own
 # daily limit), then Flash-Lite models, then GitHub Models, then the strong models as a last resort.
 LIGHT = [m for m in os.environ.get(
     "LLM_LIGHT_MODELS",
     "gemma-4-31b-it,gemini-3.5-flash-lite,gemini-3.1-flash-lite,"
-    "gemini-3.6-flash,gemini-3.8-flash").split(",") if m]
+    f"{CF_STRONG},gemini-3.6-flash,gemini-3.8-flash").split(",") if m]
 # PICTURES: the photo check (sends images). Not Gemma: it answered HTTP 500 to every request with
 # pictures (6/6, models checks 40557681397 and 40559021860) while text-only JSON worked.
 VISION = [m for m in os.environ.get(
@@ -98,6 +106,8 @@ def llm(prompt: str, *, system: str = "", schema: dict | None = None, model: str
 def _call(model, prompt, system, schema, temperature, name, images, max_tries, timeout):
     if model.startswith("github:"):
         return _call_github(model, prompt, system, schema, temperature, name, images, max_tries, timeout)
+    if model.startswith("cf:"):
+        return _call_cloudflare(model, prompt, system, schema, temperature, name, images, max_tries, timeout)
     return _call_gemini(model, prompt, system, schema, temperature, name, images, max_tries, timeout)
 
 
@@ -137,7 +147,8 @@ def _post(url: str, body: dict, headers: dict, entry: dict, model: str, name: st
         except urllib.error.HTTPError as e:
             err = e.read().decode(errors="replace")
             LOG.append({**entry, "status": e.code, "attempt": attempt, "error": err[:1500]})
-            if e.code == 429 and ("PerDay" in err or "per day" in err.lower() or "UserByModelByDay" in err):
+            if e.code == 429 and ("PerDay" in err or "per day" in err.lower() or "UserByModelByDay" in err
+                                  or "neurons" in err.lower() or "daily" in err.lower()):
                 raise _TryNextModel("daily free quota used up") from None
             if e.code in (401, 403, 404):
                 raise _TryNextModel(f"not available (HTTP {e.code})") from None
@@ -150,7 +161,7 @@ def _post(url: str, body: dict, headers: dict, entry: dict, model: str, name: st
                     time.sleep(wait)
                     continue
                 raise _TryNextModel(f"HTTP {e.code} (busy)") from None
-            if e.code == 400 and model.startswith(("gemma", "github:")):
+            if e.code == 400 and model.startswith(("gemma", "github:", "cf:")):
                 raise _TryNextModel(f"rejected the request: {err[:200]}") from None
             raise LLMError(f"{name}: HTTP {e.code}: {err[:600]}") from None
         except OSError as e:
@@ -179,7 +190,7 @@ def _finish(entry, t0, attempt, name, model, system, prompt, text, schema, finis
         try:
             return _json_from_text(text)
         except ValueError as e:
-            if model.startswith(("gemma", "github:")):  # no strict JSON mode: let the next model try
+            if model.startswith(("gemma", "github:", "cf:")):  # no strict JSON mode: let the next model try
                 raise _TryNextModel(f"reply was not valid JSON ({e})") from None
             raise LLMError(f"{name}: reply is not valid JSON: {e}; starts {text[:200]!r}") from None
     return text
@@ -243,6 +254,30 @@ def _call_github(model, prompt, system, schema, temperature, name, images, max_t
     reply, attempt = _post(GITHUB_MODELS, body, {"Authorization": f"Bearer {token}",
                                                   "Accept": "application/vnd.github+json",
                                                   "X-GitHub-Api-Version": "2022-11-28"},
+                           entry, model, name, max_tries, timeout)
+    choice = (reply.get("choices") or [{}])[0]
+    text = (choice.get("message") or {}).get("content") or ""
+    u = reply.get("usage", {})
+    usage = {"in_tokens": u.get("prompt_tokens"), "out_tokens": u.get("completion_tokens")}
+    return _finish(entry, t0, attempt, name, model, system, prompt, text, schema,
+                   choice.get("finish_reason") in (None, "stop"), choice.get("finish_reason"), usage)
+
+
+def _call_cloudflare(model, prompt, system, schema, temperature, name, images, max_tries, timeout):
+    token, account = os.environ.get("CLOUDFLARE_API_TOKEN"), os.environ.get("CLOUDFLARE_ACCOUNT_ID")
+    if not token or not account:
+        raise _TryNextModel("not available (no Cloudflare secrets)")
+    if images:
+        raise _TryNextModel("not available (pictures are not sent to Cloudflare text models)")
+    messages = ([{"role": "system", "content": system}] if system else []) + \
+        [{"role": "user", "content": prompt + (_schema_note(schema) if schema else "")}]
+    # Workers AI's default answer length is short: a whole scenes.js file needs several thousand tokens.
+    body = {"model": model.split(":", 1)[1], "messages": messages, "temperature": temperature, "max_tokens": 16000}
+    if schema:
+        body["response_format"] = {"type": "json_object"}
+    entry = {"name": name, "model": model, "prompt_chars": len(prompt) + len(system), "images": 0}
+    t0 = time.perf_counter()
+    reply, attempt = _post(CLOUDFLARE.format(account=account), body, {"Authorization": f"Bearer {token}"},
                            entry, model, name, max_tries, timeout)
     choice = (reply.get("choices") or [{}])[0]
     text = (choice.get("message") or {}).get("content") or ""
