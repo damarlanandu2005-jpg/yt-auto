@@ -1,0 +1,7 @@
+https://www.kaggle.com/terms -> 200 5875
+https://www.kaggle.com/docs/notebooks -> 200 5760
+https://www.kaggle.com/docs/api -> 200 5603
+https://raw.githubusercontent.com/Kaggle/kaggle-api/main/docs/README.md -> 200 4239
+https://raw.githubusercontent.com/Kaggle/kaggle-api/main/docs/kernels_metadata.md -> 200 2886
+https://ollama.com/library/qwen3 -> 200 96253
+https://huggingface.co/Qwen/Qwen3-14B/raw/main/LICENSE -> 200 11343
