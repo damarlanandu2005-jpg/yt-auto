@@ -1,0 +1,11 @@
+[plan] What would it feel like to be on the Titanic as it sank? | feeling: fear
+[script] 86 words; fact-check {'checked': 10, 'supported_first_pass': 5, 'fixed': 2, 'dropped': 3, 'bad_ids': 0, 'copied': 0, 'guard': 1, 'words_after': 86}; story ok
+[llm] short_scenes: gemini-3.8-flash unavailable (daily free quota used up); trying next model
+[llm] short_scenes: gemini-3.6-flash unavailable (HTTP 503 (busy)); trying next model
+[llm] short_scenes: gemini-3.5-flash unavailable (daily free quota used up); trying next model
+[scenes] problems, one fix round:
+  hook: face 'curious' does not exist (use one from the list in the rules)
+  step2: pose 'shocked' does not exist (use one from the list in the rules)
+  answer: 2 labels; use at most ONE short label per scene and draw the rest
+  answer: label 'NO SWIM' must be at most 4 words, all spoken in this scene (not spoken: NO)
+[scenes] ok

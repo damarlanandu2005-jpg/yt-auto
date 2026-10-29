@@ -1,0 +1,5 @@
+hook: Stickman in 1912 passenger attire on the Titanic deck enjoying the voyage, then looking down worried as the ship starts sinking.
+step1: Deck view pointing at a distant snow-capped iceberg with ice pieces flying on impact, cutting to crowded lifeboats marked 1,178 people.
+step2: Panicking crowd rushing together on the rear deck as the ship tilts, cutting to water rising and the stickman plunging into freezing minus 2 degree water.
+answer: Stickman paralyzed underwater in cold blue depths, surrounded by snowflakes and drifting bubbles, unable to move his limbs.
+end: Stickman in deep sea darkness standing beside the massive decaying shipwreck of the Titanic on the ocean floor.

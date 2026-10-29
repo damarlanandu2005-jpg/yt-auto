@@ -1,0 +1,25 @@
+{
+ "seen": {
+  "hook": "A cartoon stick figure with a grey round head, black circular eyes, an open oval mouth of shock, wearing a brown bowler hat and a brown jacket with a red bow tie, is shown standing on the wooden deck of a ship at night under a dark starry sky. The stick figure is positioned in the lower center, slightly angled, with its head fully visible and unobstructed except for the hat resting on top. In the background on the left, parts of the ship's white structure and large orange smokestacks are visible. On the right, dark blue water and an iceberg are dimly lit. There is no text in this image.",
+  "step1": "The same stick figure stands on the deck at night, but now with a concerned facial expression featuring a wavy zig-zag mouth and simple curved eyebrows. Its arms are bent outwards. Behind the stick figure, a lifeboat filled with numerous small stick figures is floating on the water near the ship's side. Bold uppercase text at the top reads \"1,178 PEOPLE\" and text directly across the stick figure's body and lower face area reads \"PEOPLE\", partially overlapping and covering part of the figure's body.",
+  "step2": "The stick figure is shown submerged up to the waist in cold blue water on the deck, shivering intensely with teeth gritted, eyes squeezed shut in discomfort (< >), and a small sweat drop next to its head. Two light blue snowflake icons float above in the air. Bold uppercase text at the top reads \"MINUS 2 DEGREES\" and across the center over the stick figure's chest/mouth area reads the word \"WATER\", partially covering the character.",
+  "answer": "The stick figure is fully underwater in a deep blue aquatic environment surrounded by distant rocks on the ocean floor and upward light rays from the surface. The figure has a sad facial expression with down-turned eyebrows, a frown, and a blue teardrop falling from one eye, with tiny bubbles rising near the top of its head. Bold uppercase text at the top reads \"UNABLE TO SWIM\" in pink.",
+  "end": "A tiny stick figure stands at the bottom of the ocean floor next to underwater rocks and green seaweed plants, looking up in front of the massive, rusted, dark shipwreck of the Titanic in the background. The stick figure's head is small and visible, with a neutral expression. Bold uppercase text in the upper middle area reads \"TITANIC\" against the dark hull of the sunken ship."
+ },
+ "problems": {
+  "hook": [],
+  "step1": [
+   "There is more than one short piece of text",
+   "Text covers the stick figure's head or body"
+  ],
+  "step2": [
+   "A number on screen is not in the narration",
+   "There is more than one short piece of text",
+   "Text covers the stick figure's head or body"
+  ],
+  "answer": [],
+  "end": [
+   "The stick figure is small or hard to see"
+  ]
+ }
+}

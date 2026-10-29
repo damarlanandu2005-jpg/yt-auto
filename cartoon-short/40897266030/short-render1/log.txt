@@ -1,0 +1,31 @@
+voice hook: 4.1s in 2.2s
+voice step1: 10.4s in 3.1s
+voice step2: 9.4s in 2.9s
+voice answer: 5.0s in 1.5s
+voice end: 2.3s in 0.9s
+hook                 4.1s  100% confirmed
+step1               10.4s  100% confirmed
+step2                9.4s  96% confirmed  unconfirmed: minus
+answer               5.0s  100% confirmed
+end                  2.3s  100% confirmed
+total 38.7s
+ERROR step1 @0s: unknown thing "iceberg" (have: sun, earth, moon, ship, wave, mountain, volcano, tree, house, fire, drop, heart, brain, clock, rock, fish, rocket, question)
+WARN  step2: the voice check could not confirm "minus". It heard: "Many passengers and crew gathered on the rear poop deck as the ship sank. As the ship went under, you would plunge into -2 degrees Celsius water.". If a word is mispronounced, write it as {shown|spoken} in script.md.
+HINT  step1 @0s: no new element for 11.5s (from 0.0s); consider revealing something on a cue in that stretch
+HINT  step2 @0s: no new element for 10.4s (from 0.0s); consider revealing something on a cue in that stretch
+HINT  answer @0s: no new element for 6.1s (from 0.0s); consider revealing something on a cue in that stretch
+1 error(s), 4 other finding(s) in 5 scenes (38.7s)
+hook@end                 /home/runner/explainroo/videos/short/out/stills/hook@end.png
+step1@end                /home/runner/explainroo/videos/short/out/stills/step1@end.png
+step2@end                /home/runner/explainroo/videos/short/out/stills/step2@end.png
+answer@end               /home/runner/explainroo/videos/short/out/stills/answer@end.png
+end@end                  /home/runner/explainroo/videos/short/out/stills/end@end.png
+error: page.evaluate: Error: unknown thing "iceberg" (have: sun, earth, moon, ship, wave, mountain, volcano, tree, house, fire, drop, heart, brain, clock, rock, fish, rocket, question) (scene "step1" at 0.03s)
+    at Object.sheet (http://127.0.0.1:45911/frame.html?scale=0.5:109:17)
+    at eval (eval at evaluate (:311:30), <anonymous>:1:26)
+    at UtilityScript.evaluate (<anonymous>:313:16)
+    at UtilityScript.<anonymous> (<anonymous>:1:44)
+rendering 38.7s (1161 frames at 30 fps, 1080x1920) with 2 workers
+error: page.evaluate: Error: scene "step1" at 0.00s: unknown thing "iceberg" (have: sun, earth, moon, ship, wave, mountain, volcano, tree, house, fire, drop, heart, brain, clock, rock, fish, rocket, question)
+    at Object.soundtrack (http://127.0.0.1:34175/frame.html?scale=1:126:32)
+    at async <anonymous>:337:30
