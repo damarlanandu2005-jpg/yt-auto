@@ -1,0 +1,60 @@
+[model] gemini-3.6-flash
+[system]
+
+
+[user]
+You are a strict fact-checker. For each sentence below, decide using ONLY its cited passages
+(not your own knowledge):
+- supported: every detail (numbers, names, dates, causes, comparisons) is stated in or directly follows from them.
+- partly: the main point is backed but some detail is not, or it overstates / oversimplifies into something false.
+  Also partly: "every/all/always/never" the passages don't say, or a model-based estimate stated as a plain
+  certain fact (fixed_text adds "scientists estimate" or "in today's standard model").
+- unsupported: the cited passages do not back it, or there are none.
+- Conflict: if the cited passages DISAGREE with each other about any number, date or name the sentence
+  states, the sentence is at most "partly" even if it matches one of them; say "sources conflict". Its
+  fixed_text must not pick a side: state only what all passages agree on, or give both values.
+For partly/unsupported, give fixed_text: a corrected sentence in the same plain spoken style that the cited
+passages fully support (keep digits and full unit words; no copying 8+ words). Leave fixed_text empty if impossible.
+A FRAMING SENTENCE has no passages: it is "supported" only if it makes no checkable claim at all (a question,
+transition or invitation). If it states any fact, mark it "unsupported" and give fixed_text: the same idea as a
+pure question or transition with no claim (e.g. "So what would a nearby supernova do to us?").
+
+[s02.01] FRAMING SENTENCE: What happens if you sink into the open ocean without breathing gear?
+
+[s02.02] SENTENCE: At an approximate depth of 200 metres, natural sunlight begins to fade.
+CITED PASSAGES:
+A3.1: The deep sea is broadly defined as the ocean depth where light begins to fade, at an approximate depth of 200 m (660 ft) or the point of transition from continental shelves to continental slopes. Conditions within the deep sea are a combination of low temperatures, darkness, and high pressure. The deep sea is considered the least explored Earth biome as the extreme conditions make the environment difficult to access and explore.
+A3.4: Natural light does not penetrate the deep ocean, with the exception of the upper parts of the mesopelagic. Since photosynthesis is not possible, plants and phytoplankton cannot live in this zone, and as these are the primary producers of almost all of earth's ecosystems, life in this area of the ocean must depend on energy sources from elsewhere. Except for the areas close to the hydrothermal vents, this energy comes from organic material drifting down from the photic zone. The sinking organic material is composed of algal particulates, detritus, and other forms of biological waste, which is collectively referred to as marine snow.
+
+[s03.01] SENTENCE: In the deep sea, natural light does not penetrate and darkness surrounds you.
+CITED PASSAGES:
+A3.1: The deep sea is broadly defined as the ocean depth where light begins to fade, at an approximate depth of 200 m (660 ft) or the point of transition from continental shelves to continental slopes. Conditions within the deep sea are a combination of low temperatures, darkness, and high pressure. The deep sea is considered the least explored Earth biome as the extreme conditions make the environment difficult to access and explore.
+A3.4: Natural light does not penetrate the deep ocean, with the exception of the upper parts of the mesopelagic. Since photosynthesis is not possible, plants and phytoplankton cannot live in this zone, and as these are the primary producers of almost all of earth's ecosystems, life in this area of the ocean must depend on energy sources from elsewhere. Except for the areas close to the hydrothermal vents, this energy comes from organic material drifting down from the photic zone. The sinking organic material is composed of algal particulates, detritus, and other forms of biological waste, which is collectively referred to as marine snow.
+A3.7: The two areas of greatest temperature gradient in the oceans are the transition zone between the surface waters and the deep waters, the thermocline, and the transition between the deep-sea floor and the hot water flows at the hydrothermal vents. Thermoclines vary in thickness from a few hundred meters to nearly a thousand meters. Below the thermocline, the water mass of the deep ocean is cold and far more homogeneous. Thermoclines are strongest in the tropics, where the temperature of the epipelagic zone is usually above 20 °C (68 °F). From the base of the epipelagic, the temperature drops over several hundred meters to 5–6 °C at 1,000 meters (41–43 °F at 3,300 ft). It continues to decrease to the bottom, but the rate is much slower. The cold water stems from sinking heavy surface water in the polar regions.
+
+[s03.02] SENTENCE: Ocean pressure increases by about 1 atmosphere for every 10 metres of depth.
+CITED PASSAGES:
+A1.2: At the bottom of the trench the water column above exerts a pressure of 1,086 bar (15,750 psi), approximately 1,071.8 times the standard atmospheric pressure at sea level or eight tons per square inch. The temperature at the bottom is 1 to 4 °C (34 to 39 °F).
+A3.1: The deep sea is broadly defined as the ocean depth where light begins to fade, at an approximate depth of 200 m (660 ft) or the point of transition from continental shelves to continental slopes. Conditions within the deep sea are a combination of low temperatures, darkness, and high pressure. The deep sea is considered the least explored Earth biome as the extreme conditions make the environment difficult to access and explore.
+A3.5: Because pressure in the ocean increases by about 1 atmosphere for every 10 meters of depth, the amount of pressure experienced by many marine organisms is extreme. Until recent years, the scientific community lacked detailed information about the effects of pressure on most deep sea organisms because the specimens encountered arrived at the surface dead or dying and weren't observable at the pressures at which they lived. With the advent of traps that incorporate a special pressure-maintaining chamber, undamaged larger metazoan animals have been retrieved from the deep sea in good condition.
+
+[s04.01] SENTENCE: Your body continues sinking through water that drops to near freezing temperatures.
+CITED PASSAGES:
+A1.2: At the bottom of the trench the water column above exerts a pressure of 1,086 bar (15,750 psi), approximately 1,071.8 times the standard atmospheric pressure at sea level or eight tons per square inch. The temperature at the bottom is 1 to 4 °C (34 to 39 °F).
+A3.7: The two areas of greatest temperature gradient in the oceans are the transition zone between the surface waters and the deep waters, the thermocline, and the transition between the deep-sea floor and the hot water flows at the hydrothermal vents. Thermoclines vary in thickness from a few hundred meters to nearly a thousand meters. Below the thermocline, the water mass of the deep ocean is cold and far more homogeneous. Thermoclines are strongest in the tropics, where the temperature of the epipelagic zone is usually above 20 °C (68 °F). From the base of the epipelagic, the temperature drops over several hundred meters to 5–6 °C at 1,000 meters (41–43 °F at 3,300 ft). It continues to decrease to the bottom, but the rate is much slower. The cold water stems from sinking heavy surface water in the polar regions.
+
+[s04.02] SENTENCE: At nearly 11,000 metres down, you reach the seafloor.
+CITED PASSAGES:
+A1.1: The Mariana Trench is the deepest oceanic trench on Earth, located in the western Pacific Ocean, about 200 kilometers (124 mi) east of the Mariana Islands. It is crescent-shaped and measures about 2,550 km (1,580 mi) in length and 69 km (43 mi) in width. The maximum known depth is 10,935 ± 6 meters (35,876 ± 20 ft; 5,979.3 ± 3.3 fathoms; 6.7947 ± 0.0037 mi) at the southern end of a small slot-shaped valley in its floor known as the Challenger Deep. This makes the deepest point of the trench more than 2 km (1.2 mi) farther from sea level than the peak of Mount Everest.
+A3.3: In 1960, the bathyscaphe Trieste descended to the bottom of the Mariana Trench near Guam, at 10,911 m (35,797 ft; 6.780 mi), the deepest known spot in any ocean. If Mount Everest (8,848 m or 29,029 ft or 5.498 mi) were submerged there, its peak would be more than 2 km (1.2 mi) beneath the surface. After the Trieste was retired, the Japanese remote-operated vehicle (ROV) Kaikō was the only vessel capable of reaching this depth until it was lost at sea in 2003. In May and June 2009, the hybrid-ROV Nereus returned to the Challenger Deep for a series of three dives to depths exceeding 10,900 m (35,800 ft; 6.8 mi).
+
+[s05.01] SENTENCE: Ocean pressure increases with depth by approximately 1 atmosphere for every 10 metres.
+CITED PASSAGES:
+A1.2: At the bottom of the trench the water column above exerts a pressure of 1,086 bar (15,750 psi), approximately 1,071.8 times the standard atmospheric pressure at sea level or eight tons per square inch. The temperature at the bottom is 1 to 4 °C (34 to 39 °F).
+A3.5: Because pressure in the ocean increases by about 1 atmosphere for every 10 meters of depth, the amount of pressure experienced by many marine organisms is extreme. Until recent years, the scientific community lacked detailed information about the effects of pressure on most deep sea organisms because the specimens encountered arrived at the surface dead or dying and weren't observable at the pressures at which they lived. With the advent of traps that incorporate a special pressure-maintaining chamber, undamaged larger metazoan animals have been retrieved from the deep sea in good condition.
+
+[s05.02] SENTENCE: The ocean floor sits in darkness at a depth of nearly 11,000 metres.
+CITED PASSAGES:
+A1.1: The Mariana Trench is the deepest oceanic trench on Earth, located in the western Pacific Ocean, about 200 kilometers (124 mi) east of the Mariana Islands. It is crescent-shaped and measures about 2,550 km (1,580 mi) in length and 69 km (43 mi) in width. The maximum known depth is 10,935 ± 6 meters (35,876 ± 20 ft; 5,979.3 ± 3.3 fathoms; 6.7947 ± 0.0037 mi) at the southern end of a small slot-shaped valley in its floor known as the Challenger Deep. This makes the deepest point of the trench more than 2 km (1.2 mi) farther from sea level than the peak of Mount Everest.
+A1.2: At the bottom of the trench the water column above exerts a pressure of 1,086 bar (15,750 psi), approximately 1,071.8 times the standard atmospheric pressure at sea level or eight tons per square inch. The temperature at the bottom is 1 to 4 °C (34 to 39 °F).
+A3.1: The deep sea is broadly defined as the ocean depth where light begins to fade, at an approximate depth of 200 m (660 ft) or the point of transition from continental shelves to continental slopes. Conditions within the deep sea are a combination of low temperatures, darkness, and high pressure. The deep sea is considered the least explored Earth biome as the extreme conditions make the environment difficult to access and explore.

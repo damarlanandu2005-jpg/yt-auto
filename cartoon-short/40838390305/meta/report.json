@@ -1,0 +1,19 @@
+{
+ "topic": "What happens if you fall into the Mariana Trench?",
+ "fact_check": {
+  "checked": 11,
+  "supported_first_pass": 3,
+  "fixed": 3,
+  "dropped": 5,
+  "bad_ids": 0,
+  "copied": 0,
+  "guard": 2,
+  "words_after": 72
+ },
+ "story_problems": [
+  "72 words after the fact-check (want about 110-140)"
+ ],
+ "words": 72,
+ "scene_problems": [],
+ "llm_calls": 21
+}

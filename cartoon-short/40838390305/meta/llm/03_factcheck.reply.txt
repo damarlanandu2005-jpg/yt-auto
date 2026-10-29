@@ -1,0 +1,70 @@
+{
+  "results": [
+    {
+      "id": "s01.01",
+      "verdict": "supported",
+      "problem": "",
+      "fixed_text": ""
+    },
+    {
+      "id": "s02.01",
+      "verdict": "unsupported",
+      "problem": "This framing sentence states a factual claim without cited passages.",
+      "fixed_text": "What happens if you sink into the open ocean without breathing gear?"
+    },
+    {
+      "id": "s02.02",
+      "verdict": "partly",
+      "problem": "Light begins to fade at about 200 metres, rather than fading away completely.",
+      "fixed_text": "At an approximate depth of 200 metres, natural sunlight begins to fade."
+    },
+    {
+      "id": "s03.01",
+      "verdict": "unsupported",
+      "problem": "The passages do not mention pitch darkness specifically beginning past 1,000 metres.",
+      "fixed_text": "In the deep sea, natural light does not penetrate and darkness surrounds you."
+    },
+    {
+      "id": "s03.02",
+      "verdict": "unsupported",
+      "problem": "The passages describe increasing ocean pressure but do not mention air spaces inside the body being squeezed flat.",
+      "fixed_text": "Ocean pressure increases by about 1 atmosphere for every 10 metres of depth."
+    },
+    {
+      "id": "s04.01",
+      "verdict": "partly",
+      "problem": "The passages support near-freezing temperatures in the deep ocean, but do not mention sinking for several hours.",
+      "fixed_text": "Your body continues sinking through water that drops to near freezing temperatures."
+    },
+    {
+      "id": "s04.02",
+      "verdict": "partly",
+      "problem": "The passages support the depth of nearly 11,000 metres, but do not mention that the seafloor is quiet.",
+      "fixed_text": "At nearly 11,000 metres down, you reach the seafloor."
+    },
+    {
+      "id": "s04.03",
+      "verdict": "supported",
+      "problem": "",
+      "fixed_text": ""
+    },
+    {
+      "id": "s05.01",
+      "verdict": "unsupported",
+      "problem": "The passages do not mention drowning in minutes or water pressure flattening lungs.",
+      "fixed_text": "Ocean pressure increases with depth by approximately 1 atmosphere for every 10 metres."
+    },
+    {
+      "id": "s05.02",
+      "verdict": "partly",
+      "problem": "The passages support darkness and the depth of nearly 11,000 metres, but do not state that reaching the bottom takes hours.",
+      "fixed_text": "The ocean floor sits in darkness at a depth of nearly 11,000 metres."
+    },
+    {
+      "id": "s06.01",
+      "verdict": "supported",
+      "problem": "",
+      "fixed_text": ""
+    }
+  ]
+}

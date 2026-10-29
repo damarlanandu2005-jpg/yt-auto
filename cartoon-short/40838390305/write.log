@@ -1,0 +1,25 @@
+[plan] What happens if you fall into the Mariana Trench? | feeling: dread
+[research] A1 Mariana Trench: 30 passages
+[research] A2 Challenger Deep: 37 passages
+[research] A3 Deep sea: 24 passages
+[llm] short_script: gemini-3.8-flash unavailable (TimeoutError('The read operation timed out')); trying next model
+[llm] short_script: gemini-3.6-flash unavailable (HTTP 503 (busy)); trying next model
+[llm] factcheck: gemini-3.5-flash unavailable (HTTP 503 (busy)); trying next model
+[llm] factcheck: gemini-3.8-flash unavailable (TimeoutError('The read operation timed out')); trying next model
+[llm] factcheck: gemini-3.6-flash unavailable (HTTP 503 (busy)); trying next model
+[llm] factcheck: every model busy; waiting 120s (round 1)
+[llm] factcheck: gemini-3.8-flash unavailable (ConnectionResetError(104, 'Connection reset by peer')); trying next model
+[llm] factcheck: gemini-3.6-flash unavailable (HTTP 503 (busy)); trying next model
+[llm] factcheck2: gemini-3.8-flash unavailable (HTTP 503 (busy)); trying next model
+[llm] factcheck2: gemini-3.6-flash unavailable (HTTP 503 (busy)); trying next model
+[llm] factcheck2: gemini-3.5-flash unavailable (HTTP 503 (busy)); trying next model
+[llm] factcheck2: every model busy; waiting 120s (round 1)
+[llm] factcheck2: gemini-3.8-flash unavailable (HTTP 503 (busy)); trying next model
+[script] 72 words; fact-check {'checked': 11, 'supported_first_pass': 3, 'fixed': 3, 'dropped': 5, 'bad_ids': 0, 'copied': 0, 'guard': 2, 'words_after': 72}; story ['72 words after the fact-check (want about 110-140)']
+[llm] short_scenes: gemini-3.8-flash unavailable (HTTP 503 (busy)); trying next model
+[llm] short_scenes: gemini-3.6-flash unavailable (HTTP 503 (busy)); trying next model
+[llm] short_scenes: gemini-3.5-flash unavailable (HTTP 503 (busy)); trying next model
+[llm] short_scenes: every model busy; waiting 120s (round 1)
+[llm] short_scenes: gemini-3.8-flash unavailable (HTTP 503 (busy)); trying next model
+[llm] short_scenes: gemini-3.6-flash unavailable (HTTP 503 (busy)); trying next model
+[scenes] ok

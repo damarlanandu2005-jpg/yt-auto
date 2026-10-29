@@ -1,0 +1,5 @@
+hook: Stickman falling into open ocean above the Mariana Trench.
+step1: Stickman sinking as sunlight fades and depth counter reaches 200 metres.
+step2: Red pressure arrows crush stickman with 1000x pressure label.
+answer: Stickman points to depth scale showing +1 ATM pressure increase per 10 metres.
+end: Stickman floats in the mysterious dark ocean with an eye icon above.

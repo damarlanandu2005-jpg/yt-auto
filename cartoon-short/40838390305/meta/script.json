@@ -1,0 +1,89 @@
+{
+ "scenes": [
+  {
+   "role": "hook",
+   "sentences": [
+    {
+     "text": "What if you fell into the open ocean above the Mariana Trench without any equipment?",
+     "kind": "framing",
+     "sources": [],
+     "id": "s01.01",
+     "check": "supported"
+    }
+   ],
+   "id": "s01"
+  },
+  {
+   "role": "step",
+   "sentences": [
+    {
+     "text": "What happens if you sink into the open ocean without breathing gear?",
+     "kind": "framing",
+     "sources": [],
+     "id": "s02.01",
+     "check": "supported (after fix)"
+    },
+    {
+     "text": "At an approximate depth of 200 metres, natural sunlight begins to fade.",
+     "kind": "fact",
+     "sources": [
+      "A3.1",
+      "A3.4"
+     ],
+     "id": "s02.02",
+     "check": "supported (after fix)"
+    }
+   ],
+   "id": "s02"
+  },
+  {
+   "role": "step",
+   "sentences": [
+    {
+     "text": "The surrounding water exerts over 1,000 times standard surface pressure.",
+     "kind": "fact",
+     "sources": [
+      "A1.2",
+      "A3.24"
+     ],
+     "id": "s04.03",
+     "check": "supported"
+    }
+   ],
+   "id": "s04"
+  },
+  {
+   "role": "answer",
+   "sentences": [
+    {
+     "text": "Ocean pressure increases with depth by approximately 1 atmosphere for every 10 metres.",
+     "kind": "fact",
+     "sources": [
+      "A1.2",
+      "A3.5"
+     ],
+     "id": "s05.01",
+     "check": "supported (after fix)"
+    }
+   ],
+   "id": "s05"
+  },
+  {
+   "role": "end",
+   "sentences": [
+    {
+     "text": "The deep ocean remains one of Earth's least explored areas.",
+     "kind": "fact",
+     "sources": [
+      "A3.1",
+      "A3.24"
+     ],
+     "id": "s06.01",
+     "check": "supported"
+    }
+   ],
+   "id": "s06"
+  }
+ ],
+ "title": "What Happens If You Fall Into the Mariana Trench?"
+}

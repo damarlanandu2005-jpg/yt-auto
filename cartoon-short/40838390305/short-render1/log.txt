@@ -1,0 +1,48 @@
+voice hook: 5.0s in 5.4s
+voice step1: 9.3s in 7.2s
+voice step2: 4.7s in 3.5s
+voice answer: 5.9s in 4.0s
+voice end: 3.6s in 2.9s
+hook                 5.0s  100% confirmed
+step1                9.3s  100% confirmed
+step2                4.7s  100% confirmed
+answer               5.9s  100% confirmed
+end                  3.6s  100% confirmed
+total 35.9s
+HINT  step1 @0s: no new element for 6.0s (from 0.0s); consider revealing something on a cue in that stretch
+0 error(s), 1 other finding(s) in 5 scenes (35.9s)
+hook@end                 /home/runner/explainroo/videos/short/out/stills/hook@end.png
+step1@end                /home/runner/explainroo/videos/short/out/stills/step1@end.png
+step2@end                /home/runner/explainroo/videos/short/out/stills/step2@end.png
+answer@end               /home/runner/explainroo/videos/short/out/stills/answer@end.png
+end@end                  /home/runner/explainroo/videos/short/out/stills/end@end.png
+/home/runner/explainroo/videos/short/out/sheet.jpg (31 frames)
+rendering 35.9s (1076 frames at 30 fps, 1080x1920) with 2 workers
+soundtrack: 42 sound cues, mixed in 1.7s
+frames 72/1076 (22.9 fps, about 44s left)
+frames 162/1076 (25.5 fps, about 36s left)
+frames 204/1076 (21.6 fps, about 41s left)
+frames 264/1076 (20.9 fps, about 39s left)
+frames 318/1076 (20.0 fps, about 38s left)
+frames 354/1076 (18.5 fps, about 39s left)
+frames 396/1076 (17.4 fps, about 40s left)
+frames 456/1076 (17.7 fps, about 36s left)
+frames 522/1076 (18.0 fps, about 31s left)
+frames 588/1076 (18.3 fps, about 27s left)
+frames 648/1076 (18.3 fps, about 24s left)
+frames 702/1076 (18.3 fps, about 21s left)
+frames 774/1076 (18.7 fps, about 17s left)
+frames 828/1076 (18.6 fps, about 14s left)
+frames 870/1076 (18.2 fps, about 12s left)
+frames 924/1076 (18.1 fps, about 9s left)
+frames 996/1076 (18.4 fps, about 5s left)
+frames 1072/1076 (18.7 fps, about 1s left)
+frames done in 58.0s
+wrote videos/short/out/video.mp4 in 63.3s
+videos/short/out/video.mp4
+videos/short/out/video.srt
+videos/short/out/video.vtt
+videos/short/out/video.cover.jpg
+checking that the narration is understandable in the final mix
+/home/runner/explainroo/videos/short/out/video.mp4: 35.87s, 1080x1920, loudness -14 LUFS, true peak -1.5 dBFS
+narration understood: 100%

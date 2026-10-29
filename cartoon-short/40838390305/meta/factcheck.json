@@ -1,0 +1,68 @@
+{
+ "checked": 11,
+ "supported_first_pass": 3,
+ "fixed": [
+  {
+   "id": "s02.01",
+   "old": "You quickly start sinking into the open ocean without any breathing gear.",
+   "new": "What happens if you sink into the open ocean without breathing gear?",
+   "problem": "This framing sentence states a factual claim without cited passages."
+  },
+  {
+   "id": "s02.02",
+   "old": "Within 200 metres, natural sunlight begins to fade away completely.",
+   "new": "At an approximate depth of 200 metres, natural sunlight begins to fade.",
+   "problem": "Light begins to fade at about 200 metres, rather than fading away completely."
+  },
+  {
+   "id": "s05.01",
+   "old": "You drown in minutes near the surface while water pressure flattens your lungs.",
+   "new": "Ocean pressure increases with depth by approximately 1 atmosphere for every 10 metres.",
+   "problem": "The passages do not mention drowning in minutes or water pressure flattening lungs."
+  }
+ ],
+ "dropped": [
+  {
+   "id": "s03.01",
+   "text": "Past 1,000 metres down, complete pitch darkness surrounds your body.",
+   "problem": "The passages do not mention pitch darkness specifically beginning past 1,000 metres."
+  },
+  {
+   "id": "s03.02",
+   "text": "The growing water pressure squeezes all air spaces inside you flat.",
+   "problem": "The passages describe increasing ocean pressure but do not mention air spaces inside the body being squeezed flat."
+  },
+  {
+   "id": "s04.01",
+   "text": "Your body continues sinking for several hours through near freezing water.",
+   "problem": "The passages support near-freezing temperatures in the deep ocean, but do not mention sinking for several hours."
+  },
+  {
+   "id": "s04.02",
+   "text": "At nearly 11,000 metres down, you reach the quiet seafloor.",
+   "problem": "The passages support the depth of nearly 11,000 metres, but do not mention that the seafloor is quiet."
+  },
+  {
+   "id": "s05.02",
+   "text": "It takes hours to reach the bottom in total darkness nearly 11,000 metres down.",
+   "problem": "The passages support darkness and the depth of nearly 11,000 metres, but do not state that reaching the bottom takes hours."
+  }
+ ],
+ "bad_ids": [],
+ "copied": [],
+ "guard": [
+  {
+   "id": "s04.02",
+   "problems": [
+    "number 11,000 is not in the cited sources"
+   ]
+  },
+  {
+   "id": "s05.02",
+   "problems": [
+    "number 11,000 is not in the cited sources"
+   ]
+  }
+ ],
+ "words_after": 72
+}

@@ -1,0 +1,137 @@
+{
+ "scenes": [
+  {
+   "role": "hook",
+   "sentences": [
+    {
+     "text": "What if you fell into the open ocean above the Mariana Trench without any equipment?",
+     "kind": "framing",
+     "sources": [],
+     "id": "s01.01"
+    }
+   ],
+   "id": "s01"
+  },
+  {
+   "role": "step",
+   "sentences": [
+    {
+     "text": "You quickly start sinking into the open ocean without any breathing gear.",
+     "kind": "framing",
+     "sources": [],
+     "id": "s02.01"
+    },
+    {
+     "text": "Within 200 metres, natural sunlight begins to fade away completely.",
+     "kind": "fact",
+     "sources": [
+      "A3.1",
+      "A3.4"
+     ],
+     "id": "s02.02"
+    }
+   ],
+   "id": "s02"
+  },
+  {
+   "role": "step",
+   "sentences": [
+    {
+     "text": "Past 1,000 metres down, complete pitch darkness surrounds your body.",
+     "kind": "fact",
+     "sources": [
+      "A3.1",
+      "A3.4",
+      "A3.7"
+     ],
+     "id": "s03.01"
+    },
+    {
+     "text": "The growing water pressure squeezes all air spaces inside you flat.",
+     "kind": "fact",
+     "sources": [
+      "A1.2",
+      "A3.1",
+      "A3.5"
+     ],
+     "id": "s03.02"
+    }
+   ],
+   "id": "s03"
+  },
+  {
+   "role": "step",
+   "sentences": [
+    {
+     "text": "Your body continues sinking for several hours through near freezing water.",
+     "kind": "fact",
+     "sources": [
+      "A1.2",
+      "A3.7"
+     ],
+     "id": "s04.01"
+    },
+    {
+     "text": "At nearly 11,000 metres down, you reach the quiet seafloor.",
+     "kind": "fact",
+     "sources": [
+      "A1.1",
+      "A3.3"
+     ],
+     "id": "s04.02"
+    },
+    {
+     "text": "The surrounding water exerts over 1,000 times standard surface pressure.",
+     "kind": "fact",
+     "sources": [
+      "A1.2",
+      "A3.24"
+     ],
+     "id": "s04.03"
+    }
+   ],
+   "id": "s04"
+  },
+  {
+   "role": "answer",
+   "sentences": [
+    {
+     "text": "You drown in minutes near the surface while water pressure flattens your lungs.",
+     "kind": "fact",
+     "sources": [
+      "A1.2",
+      "A3.5"
+     ],
+     "id": "s05.01"
+    },
+    {
+     "text": "It takes hours to reach the bottom in total darkness nearly 11,000 metres down.",
+     "kind": "fact",
+     "sources": [
+      "A1.1",
+      "A1.2",
+      "A3.1"
+     ],
+     "id": "s05.02"
+    }
+   ],
+   "id": "s05"
+  },
+  {
+   "role": "end",
+   "sentences": [
+    {
+     "text": "The deep ocean remains one of Earth's least explored areas.",
+     "kind": "fact",
+     "sources": [
+      "A3.1",
+      "A3.24"
+     ],
+     "id": "s06.01"
+    }
+   ],
+   "id": "s06"
+  }
+ ],
+ "title": "What Happens If You Fall Into the Mariana Trench?"
+}

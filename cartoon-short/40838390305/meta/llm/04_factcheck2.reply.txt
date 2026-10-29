@@ -1,0 +1,52 @@
+{
+  "results": [
+    {
+      "id": "s02.01",
+      "verdict": "supported",
+      "problem": "",
+      "fixed_text": ""
+    },
+    {
+      "id": "s02.02",
+      "verdict": "supported",
+      "problem": "",
+      "fixed_text": ""
+    },
+    {
+      "id": "s03.01",
+      "verdict": "partly",
+      "problem": "Natural light penetrates the upper parts of the mesopelagic zone of the deep ocean.",
+      "fixed_text": "In the deep sea, darkness surrounds you and natural light does not penetrate, except in the upper parts of the mesopelagic."
+    },
+    {
+      "id": "s03.02",
+      "verdict": "supported",
+      "problem": "",
+      "fixed_text": ""
+    },
+    {
+      "id": "s04.01",
+      "verdict": "partly",
+      "problem": "The passages state that water temperatures drop to 1 to 4 degrees Celsius at the bottom, rather than stating near freezing.",
+      "fixed_text": "Your body continues sinking through water that drops to temperatures between 1 and 4 degrees Celsius at the bottom."
+    },
+    {
+      "id": "s04.02",
+      "verdict": "partly",
+      "problem": "Nearly 11,000 metres is the maximum depth at the deepest known spot in the ocean, not the depth where you reach the seafloor generally.",
+      "fixed_text": "At the deepest known spot in the ocean, you reach the seafloor at nearly 11,000 metres down."
+    },
+    {
+      "id": "s05.01",
+      "verdict": "supported",
+      "problem": "",
+      "fixed_text": ""
+    },
+    {
+      "id": "s05.02",
+      "verdict": "partly",
+      "problem": "Nearly 11,000 metres is the maximum ocean depth rather than the depth of the ocean floor as a whole.",
+      "fixed_text": "The ocean floor at its deepest point sits in darkness at a depth of nearly 11,000 metres."
+    }
+  ]
+}
