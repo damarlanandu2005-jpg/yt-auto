@@ -234,6 +234,18 @@ def emoji_names() -> set[str]:
     return set((EMOJI_DIR / "NAMES.txt").read_text().split())  # the list travels to Kaggle; the 945 files do not
 
 
+def _js_keys(name: str) -> set[str]:
+    """Keys of `export const NAME = { key: ... }` in character.js (the poses and faces hero() knows)."""
+    js = (CARTOON / "character.js").read_text()
+    body = js[js.index(f"export const {name} = {{"):]
+    return set(re.findall(r"^  (\w+)\s*:", body[:body.index("\n};")], re.M))
+
+
+def icon_names() -> set[str]:
+    text = (CARTOON / "lucide_names.txt").read_text()
+    return set(" ".join(l for l in text.splitlines() if not l.startswith("#")).split())
+
+
 def used_emoji(js: str) -> list[str]:
     return sorted(set(EMOJI_CALL.findall(js)))
 
@@ -306,6 +318,12 @@ def validate_scenes(js: str, script: dict) -> list[str]:
         sc = re.search(r"hero\(s,\s*\{[^}]*?scale:\s*([\d.]+)", body)
         if sc and float(sc.group(1)) < 0.8:
             problems.append(f"{sid}: the stickman is too small (scale {sc.group(1)}); use 0.9 to 1.8")
+        # names that only fail at render time (Titanic run 40877631750: face 'worried', icon 'question')
+        for kind, found, known in (("pose", re.findall(r"\bpose\s*:\s*'(\w+)'", body), _js_keys("POSES")),
+                                   ("face", re.findall(r"\bface\s*:\s*'(\w+)'", body), _js_keys("FACES")),
+                                   ("icon", re.findall(r"s\.icon\(\s*['\"]([\w-]+)['\"]", body), icon_names())):
+            for n in sorted(set(found) - known):
+                problems.append(f"{sid}: {kind} '{n}' does not exist (use one from the list in the rules)")
         for n in used_emoji(body):
             if n not in emoji_names():
                 problems.append(f"{sid}: emoji '{n}' does not exist (use a name from the emoji list, or thing()/your own drawing)")

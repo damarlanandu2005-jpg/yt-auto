@@ -69,7 +69,7 @@ jobs:
           set -e
           mkdir -p bundle/cartoon bundle/kaggle k
           cp -r yt_auto bundle/ && cp kaggle/ollama_setup.py bundle/kaggle/
-          cp cartoon/make_short.py cartoon/SCENE_API.md cartoon/example_scenes.js cartoon/TEMPLATE.md bundle/cartoon/
+          cp cartoon/make_short.py cartoon/SCENE_API.md cartoon/example_scenes.js cartoon/TEMPLATE.md cartoon/character.js cartoon/lucide_names.txt bundle/cartoon/
           mkdir -p bundle/cartoon/emoji && cp cartoon/emoji/NAMES.txt bundle/cartoon/emoji/   # names only; files are added at render
           find bundle -name __pycache__ -prune -exec rm -rf {} +
           tar czf bundle.tgz -C bundle .
@@ -139,6 +139,19 @@ jobs:
           cp kout/job.json out/short/kaggle/ 2>/dev/null || true
           cp -r kout/logs out/short/kaggle/ 2>/dev/null || true
           cp kout/*.log out/short/kaggle/ 2>/dev/null || true
+          # Gemini is the backup writer (owner, 29 Oct): if Kaggle's script still breaks the story rules after its
+          # own rewrite (Titanic run 40877631750: the answer was dropped, 88 words), Gemini writes the script and
+          # the scenes again from Kaggle's plan and sources. Kaggle's attempt is kept under kaggle/.
+          python3 - <<'EOF'
+          import json, pathlib, shutil
+          meta = pathlib.Path("out/short/meta"); rep = meta / "report.json"
+          r = json.loads(rep.read_text()) if rep.exists() else {}
+          if r.get("story_problems"):
+              keep = pathlib.Path("out/short/kaggle/first_try"); keep.mkdir(parents=True, exist_ok=True)
+              for n in ("script.json", "script_draft.json", "script_retry.json", "factcheck.json", "scenes.js", "report.json"):
+                  if (meta / n).exists(): shutil.move(str(meta / n), str(keep / n))
+              print("Kaggle script had story problems, Gemini writes it again:", r["story_problems"])
+          EOF
           echo "state=ok" >> "$GITHUB_OUTPUT"
 
       - name: Install Python packages
@@ -178,8 +191,9 @@ jobs:
       out_artifact: short-render1
 
   fix:
-    needs: render
-    if: needs.render.result == 'success'
+    needs: [write, render]
+    # also after a failed render: its errors (e.g. an unknown face name) are exactly what the fix repairs
+    if: always() && needs.write.outputs.ready == 'true' && (needs.render.result == 'success' || needs.render.result == 'failure')
     runs-on: ubuntu-24.04
     timeout-minutes: 30
     outputs:
