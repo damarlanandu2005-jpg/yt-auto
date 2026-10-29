@@ -1,0 +1,98 @@
+ok   node                 v22.23.4
+ok   ffmpeg               ffmpeg version n8.1.3-24-g92611900bb-20261026 Copyright (c) 2000-2026 the FFmpeg developers
+ok   espeak-ng            not found; only needed for Spanish, French, Italian, Portuguese and Hindi
+ok   misaki ja            not found; only needed for Japanese
+ok   misaki zh            not found; only needed for Chinese
+ok   chrome               /usr/bin/google-chrome
+ok   voice model          Kokoro 82M (fp32) in /home/runner/.cache/explainroo/models/onnx-community
+ok   speech check model   Whisper base.en
+FAIL language model       Whisper small for languages other than English; downloaded on first use, not by --fetch
+voice hook: 4.2s in 5.8s
+voice stretch: 8.6s in 7.8s
+voice name: 4.6s in 4.5s
+voice size: 10.7s in 8.6s
+voice outside: 8.7s in 7.6s
+voice trapped: 6.1s in 5.2s
+hook                 4.2s  100% confirmed
+stretch              8.6s  100% confirmed
+name                 4.6s  100% confirmed
+size                10.7s  100% confirmed
+outside              8.7s  100% confirmed
+trapped              6.1s  100% confirmed
+total 51.3s
+ERROR stretch @2.5s: "strong pull" runs off the frame (-131,910 to 136,970 in a 1080x1920 frame)
+ERROR stretch @3.5s: "weak pull" runs off the frame (-67,269 to 136,321 in a 1080x1920 frame)
+2 error(s), 0 other finding(s) in 6 scenes (51.3s)
+hook@end                 /home/runner/explainroo/videos/black-hole-fall/out/stills/hook@end.png
+stretch@end              /home/runner/explainroo/videos/black-hole-fall/out/stills/stretch@end.png
+name@end                 /home/runner/explainroo/videos/black-hole-fall/out/stills/name@end.png
+size@end                 /home/runner/explainroo/videos/black-hole-fall/out/stills/size@end.png
+outside@end              /home/runner/explainroo/videos/black-hole-fall/out/stills/outside@end.png
+trapped@end              /home/runner/explainroo/videos/black-hole-fall/out/stills/trapped@end.png
+/home/runner/explainroo/videos/black-hole-fall/out/sheet.jpg (31 frames)
+rendering 51.3s (1540 frames at 30 fps, 1080x1920) with 2 workers
+soundtrack: 14 sound cues, mixed in 50.1s
+frames 6/1540 (0.5 fps, about 3222s left)
+frames 12/1540 (0.8 fps, about 1990s left)
+frames 18/1540 (0.7 fps, about 2089s left)
+frames 24/1540 (0.8 fps, about 1944s left)
+frames 30/1540 (0.8 fps, about 1856s left)
+frames 36/1540 (0.8 fps, about 1972s left)
+frames 48/1540 (0.8 fps, about 1902s left)
+frames 60/1540 (0.8 fps, about 1812s left)
+frames 66/1540 (0.8 fps, about 1783s left)
+frames 72/1540 (0.8 fps, about 1747s left)
+frames 78/1540 (0.8 fps, about 1802s left)
+frames 90/1540 (0.8 fps, about 1774s left)
+frames 102/1540 (0.8 fps, about 1726s left)
+frames 108/1540 (0.8 fps, about 1713s left)
+frames 114/1540 (0.8 fps, about 1685s left)
+frames 120/1540 (0.8 fps, about 1723s left)
+frames 132/1540 (0.8 fps, about 1729s left)
+frames 144/1540 (0.8 fps, about 1760s left)
+frames 150/1540 (0.8 fps, about 1837s left)
+frames 156/1540 (0.7 fps, about 1906s left)
+frames 162/1540 (0.7 fps, about 1968s left)
+frames 168/1540 (0.7 fps, about 2019s left)
+frames 174/1540 (0.7 fps, about 2042s left)
+frames 186/1540 (0.7 fps, about 1990s left)
+frames 192/1540 (0.7 fps, about 2010s left)
+frames 198/1540 (0.7 fps, about 2028s left)
+frames 204/1540 (0.7 fps, about 2045s left)
+frames 210/1540 (0.6 fps, about 2060s left)
+frames 216/1540 (0.6 fps, about 2073s left)
+frames 222/1540 (0.6 fps, about 2085s left)
+frames 228/1540 (0.6 fps, about 2294s left)
+frames 234/1540 (0.5 fps, about 2737s left)
+frames 240/1540 (0.4 fps, about 3073s left)
+frames 246/1540 (0.4 fps, about 3646s left)
+frames 252/1540 (0.3 fps, about 3763s left)
+frames 258/1540 (0.3 fps, about 4150s left)
+frames 264/1540 (0.3 fps, about 4175s left)
+frames 270/1540 (0.3 fps, about 4197s left)
+frames 276/1540 (0.3 fps, about 4109s left)
+frames 282/1540 (0.3 fps, about 4099s left)
+frames 288/1540 (0.3 fps, about 4119s left)
+frames 294/1540 (0.3 fps, about 4136s left)
+frames 300/1540 (0.3 fps, about 4152s left)
+frames 306/1540 (0.3 fps, about 4165s left)
+frames 312/1540 (0.3 fps, about 4177s left)
+frames 318/1540 (0.3 fps, about 4111s left)
+frames 324/1540 (0.3 fps, about 4077s left)
+frames 330/1540 (0.3 fps, about 3997s left)
+frames 336/1540 (0.3 fps, about 3953s left)
+frames 342/1540 (0.3 fps, about 3919s left)
+frames 354/1540 (0.3 fps, about 3807s left)
+frames 360/1540 (0.3 fps, about 3761s left)
+frames 366/1540 (0.3 fps, about 3698s left)
+frames 372/1540 (0.3 fps, about 3672s left)
+frames 378/1540 (0.3 fps, about 3616s left)
+frames 384/1540 (0.3 fps, about 3627s left)
+frames 390/1540 (0.3 fps, about 3637s left)
+frames 396/1540 (0.3 fps, about 3584s left)
+frames 402/1540 (0.3 fps, about 3573s left)
+frames 408/1540 (0.3 fps, about 3581s left)
+frames 414/1540 (0.3 fps, about 3588s left)
+frames 420/1540 (0.3 fps, about 3543s left)
+frames 426/1540 (0.3 fps, about 3524s left)
+frames 432/1540 (0.3 fps, about 3658s left)
