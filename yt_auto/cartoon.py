@@ -51,9 +51,10 @@ SCRIPT_SCHEMA = {"type": "object", "properties": {
     "required": ["facts", "scenes"]}
 
 SCENES_SCHEMA = {"type": "object", "properties": {
-    "scenes_js": {"type": "string", "description": "the complete scenes.js file"},
-    "notes": {"type": "string", "description": "one line per scene: what the picture shows"}},
-    "required": ["scenes_js", "notes"]}
+    "notes": {"type": "string", "description": "FIRST, one line per scene: what is DRAWN (the stickman's pose and "
+                                               "feeling, the props, where they are) - pictures, not text"},
+    "scenes_js": {"type": "string", "description": "the complete scenes.js file"}},
+    "required": ["notes", "scenes_js"]}
 
 SAFETY = """- Allowed: any subject with a strong, TRUE feeling (space, history, the human body, animals, nature,
   disasters, inventions, everyday mysteries). Not allowed: health, money or legal advice ("you should..."),
@@ -187,15 +188,14 @@ def scene_texts(script: dict) -> dict[str, str]:
 
 def write_scenes(script: dict, md: str, feedback: str = "", previous: str = "") -> dict:
     api = (CARTOON / "SCENE_API.md").read_text()
-    example = (CARTOON / "videos" / "black-hole-fall" / "scenes.js").read_text()
+    example = (CARTOON / "example_scenes.js").read_text()
     ask = f"""Write scenes.js for this Short. Scene ids, in order: {', '.join(scene_ids(script))}.
 
 RULES AND DRAWING FUNCTIONS:
 {api}
 
-STYLE EXAMPLE (another video; do NOT copy its pictures, make pictures for THIS story). It times things with
-[#markers] like at: '#feet' and s.mark('long'): THIS video's script.md has NO markers, so use spoken words of the
-same scene (at: 'ocean') or seconds (at: 1.5) instead:
+STYLE EXAMPLE (another video, its narration is in the comment at the top; do NOT copy its pictures, make
+pictures for THIS story). Times use spoken words of the same scene (at: 'feet', s.cue('stretched')) or seconds:
 ```js
 {example}
 ```
@@ -256,6 +256,26 @@ def validate_scenes(js: str, script: dict) -> list[str]:
             words = [_norm(w) for w in cue.split()]
             if " ".join(words) not in spoken:
                 problems.append(f"{sid}: the cue '{cue}' is not spoken in this scene (spoken: \"{texts[sid]}\")")
+        # Show, don't write (run 40843120092: stacks of small labels, 'LUNGS & EARS CRUSHED' where the
+        # narration said 'injure'): one short label at most, made only of words the voice says.
+        labels = re.findall(r"\blabel\(\s*s\s*,\s*(['\"`])(.*?)\1", body)
+        if len(labels) > 1:
+            problems.append(f"{sid}: {len(labels)} labels; use at most ONE short label per scene and draw the rest")
+        for _, text in labels:
+            extra = [w for w in text.split() if _norm(w) and _norm(w) not in spoken.split()]
+            if extra or len(text.split()) > 4:
+                problems.append(f"{sid}: label '{text}' must be at most 4 words, all spoken in this scene "
+                                f"(not spoken: {', '.join(extra) or '-'})")
+        for call in ("s.text(", "s.note(", "s.title(", "s.subtitle(", "s.list("):
+            if call in body:
+                problems.append(f"{sid}: {call} is not allowed (text on screen = one label() at most)")
+        if "hero(" not in body:
+            problems.append(f"{sid}: no stickman: every scene shows hero(...)")
+        if not re.search(r"\b(thing|blackHole)\(|s\.(draw|icon|circle|path|line|arrow|number)\(", body):
+            problems.append(f"{sid}: nothing is drawn besides the stickman: draw what the narration talks about")
+        sc = re.search(r"hero\(s,\s*\{[^}]*?scale:\s*([\d.]+)", body)
+        if sc and float(sc.group(1)) < 0.8:
+            problems.append(f"{sid}: the stickman is too small (scale {sc.group(1)}); use 0.9 to 1.8")
         for mark in re.findall(r"(?:at|out)\s*:\s*'#(\w+)'|s\.mark\('(\w+)'\)", body):
             problems.append(f"{sid}: uses a [#marker] ({''.join(mark)}); script.md has no markers, use spoken words")
     r = subprocess.run(["node", "--check", "--input-type=module"], input=js, capture_output=True, text=True, timeout=60)
@@ -312,7 +332,9 @@ image, describe plainly what is drawn and where: the stick figure (pose, face), 
 scene. A scene has a problem when: text covers the stick figure's head or body; something is cut off at the
 edge; the picture does not show what the narration says (or shows something it doesn't say); an abbreviation
 like "ATM", "km", "x10" is on screen; a number on screen is not in the narration; the picture looks the same as
-the scene before. Be concrete: say what to change. If a scene is fine, ok = true and no problems.
+the scene before; there is more than one short piece of text; a text says more or stronger than the narration
+("crushed" when it says "injure"); the stick figure is small or hard to see; the drawing does not show the
+thing the narration names. Be concrete: say what to change. If a scene is fine, ok = true and no problems.
 
 {listing}""", schema=JUDGE, name="short_pictures_judge", temperature=0.1, models=LIGHT, last_resort=True)
     out = {sid: [] for sid, _ in shots}

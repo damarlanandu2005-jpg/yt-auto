@@ -65,6 +65,16 @@ hero(s, { x: 540, y: 1300, scale: 1.4, outline: '#ffffff', at: 0,
 - `s.draw({ x, y, at }, (ctx) => { ... })` for a small custom drawing with the canvas (thick black outline,
   flat colours, like the props). No `ctx.filter`, no images.
 
+## Show, don't write (the most important rule)
+
+- The story is told by DRAWINGS and the stickman's feelings, not by text. The voice and the captions already
+  say every word.
+- At most ONE `label` per scene, at most 4 words, and ONLY words the voice says in that scene (checked in code:
+  a label that says "crushed" when the voice says "injure" is rejected). No `s.text`, `s.note`, `s.title`, `s.list`.
+- Every scene shows the stickman (`hero`, scale 0.9-1.8) AND a drawing of what the voice talks about:
+  `thing(...)`, `blackHole(...)`, an icon, arrows, or your own simple `s.draw` drawing (a lung, a trench, a
+  wave, a body outline: flat colours and a thick black outline, like the props).
+
 ## Good pictures
 
 - One idea per picture. The picture shows what the voice says at that moment.
