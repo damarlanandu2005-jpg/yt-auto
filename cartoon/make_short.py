@@ -36,13 +36,13 @@ def cached(path: Path, make):
 def scenes_with_checks(script: dict, md: str, meta: Path, feedback: str = "", previous: str = "") -> tuple[str, list[str]]:
     """AI writes scenes.js; plain-code checks; one automatic fix round if they find problems."""
     res = cartoon.write_scenes(script, md, feedback, previous)
-    js = res["scenes_js"]
+    js = cartoon.fix_imports(res["scenes_js"])
     problems = cartoon.validate_scenes(js, script)
     (meta / "scene_notes.txt").write_text(res.get("notes", ""), encoding="utf-8")
     if problems:
         print("[scenes] problems, one fix round:\n  " + "\n  ".join(problems), flush=True)
         res2 = cartoon.write_scenes(script, md, "\n".join(f"- {p}" for p in problems), js)
-        js2 = res2["scenes_js"]
+        js2 = cartoon.fix_imports(res2["scenes_js"])
         problems2 = cartoon.validate_scenes(js2, script)
         if len(problems2) <= len(problems):
             js, problems = js2, problems2

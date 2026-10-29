@@ -197,6 +197,17 @@ def scene_texts(script: dict) -> dict[str, str]:
     return {sid: " ".join(s["text"] for s in sc["sentences"]) for sid, sc in zip(scene_ids(script), script["scenes"])}
 
 
+def fix_imports(js: str) -> str:
+    """Replace the AI's import lines with the full, correct ones (plain code, no AI). Models invented names
+    twice ('import { s } from ./props.js', runs 40894668099 and 40906132795), which stops the whole render."""
+    names = {}
+    for f in ("character.js", "props.js"):
+        names[f] = sorted(set(re.findall(r"^export (?:function|const) (\w+)", (CARTOON / f).read_text(), re.M)))
+    body = re.sub(r"^\s*import\s[^;]*?from\s+['\"][^'\"]+['\"];?\s*$\n?", "", js, flags=re.M)
+    head = "".join(f"import {{ {', '.join(n)} }} from './{f}';\n" for f, n in names.items())
+    return head + body
+
+
 def write_scenes(script: dict, md: str, feedback: str = "", previous: str = "") -> dict:
     api = ((CARTOON / "SCENE_API.md").read_text()
            + "\n\n## EMOJI NAMES (the only names emoji() accepts)\n\n" + (EMOJI_DIR / "NAMES.txt").read_text()
@@ -402,7 +413,7 @@ def validate_scenes(js: str, script: dict) -> list[str]:
         for seg in re.split(r"(?=\bplace\()", body):
             m = re.match(r"place\(\s*s\s*,\s*'(\w+)'", seg)
             if m and m.group(1) in water_places:
-                bad = sorted(set(re.findall(r"\bposes?\s*:\s*\[?\s*'(walk|sprint|run|stand|kneel|crouch|sit|lie|jump|push|pull)'", seg)))
+                bad = sorted(set(re.findall(r"\bposes?\s*:\s*\[?\s*'(walk|sprint|run|kneel|crouch|sit|lie|jump|push|pull)'", seg)))
                 if bad:
                     problems.append(f"{sid}: on '{m.group(1)}' (open water) people cannot {'/'.join(bad)}: use swim, "
                                     f"float, panic or climb (stand() puts them in the water up to the chest), or put them in a boat")
