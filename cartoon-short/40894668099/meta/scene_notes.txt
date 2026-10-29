@@ -1,0 +1,5 @@
+hook: stickman stands on the Titanic deck looking astonished, then terrified as the ship begins to sink.
+step1: on the dark Atlantic ocean, stickman points towards a looming iceberg and a crowded lifeboat.
+step2: on the tilted stern deck, stickman tumbles off towards the freezing water in panic.
+answer: deep underwater, stickman drifts paralyzed with shivering cold, unable to use his limbs.
+end: at the ocean surface at night, stickman stands sadly looking back at the sinking Titanic.

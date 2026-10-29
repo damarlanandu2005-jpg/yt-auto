@@ -1,0 +1,19 @@
+{
+ "question": "What would it feel like to be on the Titanic as it sank?",
+ "title": "Stickman Survives the Titanic Sink",
+ "emotion": "fear",
+ "answer": "You would feel panic as the ship tilts violently, cold water rushes in, and the structure breaks apart below you.",
+ "steps": [
+  "Stickman boards the RMS Titanic, unaware of the iceberg ahead",
+  "A loud crash shakes the ship as it hits an iceberg",
+  "Passengers scream as water floods the lower decks",
+  "The ship splits in two, plunging you into icy water"
+ ],
+ "wikipedia_titles": [
+  "RMS Titanic",
+  "Iceberg",
+  "Maritime Disaster",
+  "Hypothermia",
+  "Shipwreck"
+ ]
+}

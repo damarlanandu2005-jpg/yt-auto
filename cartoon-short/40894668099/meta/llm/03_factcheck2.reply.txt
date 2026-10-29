@@ -1,0 +1,28 @@
+{
+  "results": [
+    {
+      "id": "s03.01",
+      "verdict": "partly",
+      "problem": "The claim that inrushing water ripped the real Grand Staircase from its foundations is not directly stated; only the replica is mentioned.",
+      "fixed_text": "Inrushing water ripped the replica Grand Staircase from its foundations on the 1997 set, and it has been suggested that the real staircase may have been ejected upward during the sinking."
+    },
+    {
+      "id": "s03.02",
+      "verdict": "supported",
+      "problem": "",
+      "fixed_text": ""
+    },
+    {
+      "id": "s04.01",
+      "verdict": "supported",
+      "problem": "",
+      "fixed_text": ""
+    },
+    {
+      "id": "s06.01",
+      "verdict": "supported",
+      "problem": "",
+      "fixed_text": ""
+    }
+  ]
+}

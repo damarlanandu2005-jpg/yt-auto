@@ -1,0 +1,16 @@
+[plan] What would it feel like to be on the Titanic as it sank? | feeling: fear
+[research] A1 Titanic: 49 passages
+[research] A2 Iceberg: 42 passages
+[research] A3 List of maritime disasters: 4 passages
+[research] A4 Hypothermia: 62 passages
+[research] A5 Shipwreck: 53 passages
+[script] ['the answer scene was dropped by the fact-check (rule R2: the hook must be answered)', '36 words after the fact-check (want about 110-140)']: rewrite 1
+[script] ['the answer scene was dropped by the fact-check (rule R2: the hook must be answered)', '36 words after the fact-check (want about 110-140)']: rewrite 2
+[script] ['the answer scene was dropped by the fact-check (rule R2: the hook must be answered)', '36 words after the fact-check (want about 110-140)']: rewrite 3
+[script] 36 words; fact-check {'checked': 4, 'supported_first_pass': 2, 'fixed': 2, 'dropped': 0, 'bad_ids': 0, 'copied': 0, 'guard': 0, 'words_after': 36}; story ['the answer scene was dropped by the fact-check (rule R2: the hook must be answered)', '36 words after the fact-check (want about 110-140)']
+[scenes] problems, one fix round:
+  hook: emoji 'iceberg' does not exist (use a name from the emoji list, or thing()/your own drawing)
+  step1: emoji 'iceberg' does not exist (use a name from the emoji list, or thing()/your own drawing)
+  step2: emoji 'iceberg' does not exist (use a name from the emoji list, or thing()/your own drawing)
+  step3: face 'worried' does not exist (use one from the list in the rules)
+[scenes] ok

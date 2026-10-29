@@ -1,0 +1,64 @@
+{
+  "results": [
+    {
+      "id": "s01.01",
+      "verdict": "supported",
+      "problem": "",
+      "fixed_text": ""
+    },
+    {
+      "id": "s02.01",
+      "verdict": "supported",
+      "problem": "",
+      "fixed_text": ""
+    },
+    {
+      "id": "s02.02",
+      "verdict": "supported",
+      "problem": "",
+      "fixed_text": ""
+    },
+    {
+      "id": "s03.01",
+      "verdict": "partly",
+      "problem": "The passage does not state that inrushing water smashed through interior spaces; it only mentions the staircase being ripped by water force.",
+      "fixed_text": "Inrushing water forced the Grand Staircase to be ripped from its foundations and possibly ejected upward."
+    },
+    {
+      "id": "s03.02",
+      "verdict": "partly",
+      "problem": "The passage says the generators remained operational but does not explicitly say they kept lights burning.",
+      "fixed_text": "The ship’s generators remained operational until the last few minutes before the ship sank."
+    },
+    {
+      "id": "s04.01",
+      "verdict": "partly",
+      "problem": "The passage notes many passengers gathered on the poop deck, not specifically \"hundreds\".",
+      "fixed_text": "Many passengers and crew gathered on the rear poop deck as the ship sank."
+    },
+    {
+      "id": "s04.02",
+      "verdict": "supported",
+      "problem": "",
+      "fixed_text": ""
+    },
+    {
+      "id": "s05.01",
+      "verdict": "supported",
+      "problem": "",
+      "fixed_text": ""
+    },
+    {
+      "id": "s05.02",
+      "verdict": "supported",
+      "problem": "",
+      "fixed_text": ""
+    },
+    {
+      "id": "s06.01",
+      "verdict": "unsupported",
+      "problem": "No cited passage supports the claim that the sinking remains a tragic disaster in ocean history.",
+      "fixed_text": "Let's consider the sinking of the Titanic."
+    }
+  ]
+}

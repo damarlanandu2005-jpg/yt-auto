@@ -1,0 +1,34 @@
+[model] cf:@cf/openai/gpt-oss-120b
+[system]
+
+
+[user]
+You are a strict fact-checker. For each sentence below, decide using ONLY its cited passages
+(not your own knowledge):
+- supported: every detail (numbers, names, dates, causes, comparisons) is stated in or directly follows from them.
+- partly: the main point is backed but some detail is not, or it overstates / oversimplifies into something false.
+  Also partly: "every/all/always/never" the passages don't say, or a model-based estimate stated as a plain
+  certain fact (fixed_text adds "scientists estimate" or "in today's standard model").
+- unsupported: the cited passages do not back it, or there are none.
+- Conflict: if the cited passages DISAGREE with each other about any number, date or name the sentence
+  states, the sentence is at most "partly" even if it matches one of them; say "sources conflict". Its
+  fixed_text must not pick a side: state only what all passages agree on, or give both values.
+For partly/unsupported, give fixed_text: a corrected sentence in the same plain spoken style that the cited
+passages fully support (keep digits and full unit words; no copying 8+ words). Leave fixed_text empty if impossible.
+A FRAMING SENTENCE has no passages: it is "supported" only if it makes no checkable claim at all (a question,
+transition or invitation). If it states any fact, mark it "unsupported" and give fixed_text: the same idea as a
+pure question or transition with no claim (e.g. "So what would a nearby supernova do to us?").
+
+[s03.01] SENTENCE: Inrushing water forced the Grand Staircase to be ripped from its foundations and possibly ejected upward.
+CITED PASSAGES:
+A1.38: At the uppermost landing was a large carved wooden panel containing a clock, with figures of "Honour and Glory Crowning Time" flanking the clock face. The Grand Staircase was destroyed during the sinking and is now just a void in the ship which modern explorers have used to access the lower decks. During the filming of James Cameron's Titanic in 1997, his replica of the Grand Staircase was ripped from its foundations by the force of the inrushing water on the set. It has been suggested that during the real event, the entire Grand Staircase was ejected upwards through the dome.
+
+[s03.02] SENTENCE: The ship’s generators remained operational until the last few minutes before the ship sank.
+CITED PASSAGES:
+A1.25: Titanic's electrical plant was capable of producing more power than an average city power station of the time. Immediately aft of the turbine engine were four 400 kW steam-driven electric generators, used to provide electrical power to the ship, plus two 30 kW auxiliary generators for emergency use. Their location in the stern of the ship meant they remained operational until the last few minutes before the ship sank.
+
+[s04.01] SENTENCE: Many passengers and crew gathered on the rear poop deck as the ship sank.
+CITED PASSAGES:
+A1.14: B Deck, the bridge deck, was the top weight-bearing deck and the uppermost level of the hull. More First Class passenger accommodations were located here with six palatial staterooms (cabins) featuring their own private promenades. On Titanic, the à la carte restaurant and the Café Parisien provided luxury dining facilities to First Class passengers. Both were run by subcontracted chefs and their staff; all were lost in the disaster. The Second Class smoking room and entrance hall were both located on this deck. The raised forecastle of the ship was forward of the bridge deck, accommodating Number 1 hatch (the main hatch through to the cargo holds), numerous pieces of machinery and the anchor housings. Aft of the bridge deck was the raised poop deck, 106 feet (32 m) long, used as a promenade by Third Class passengers. It was where many of Titanic's passengers and crew made their last stand as the ship sank. The forecastle and poop deck were separated from the bridge deck by well decks.
+
+[s06.01] FRAMING SENTENCE: Let's consider the sinking of the Titanic.

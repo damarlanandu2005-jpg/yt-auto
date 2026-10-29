@@ -1,0 +1,44 @@
+{"facts": [
+  {"id": "A1.1", "fact": "RMS Titanic sank after striking an iceberg, resulting in approximately 1,500 deaths."}, 
+  {"id": "A1.16", "fact": "C Deck had First-Class cabins and was the highest level reached by watertight bulkheads, but water flooded lower decks."}, 
+  {"id": "A4.29", "fact": "Water temperatures of −2 °C (28 °F) during the Titanic sinking caused hypothermia, with most victims dying in 15–30 minutes."}, 
+  {"id": "A5.26", "fact": "RMS Titanic sank by foundering, taking in so much water that buoyancy was lost, causing it to break apart."}, 
+  {"id": "A1.44", "fact": "Titanic had 20 lifeboats, but only 1,178 passengers could be accommodated, far below the total capacity."}
+], "scenes": [
+  {
+    "role": "hook", 
+    "sentences": [
+      {"text": "What would it feel like to be on the Titanic as it sank?", "kind": "framing", "sources": []}
+    ]
+  },
+  {
+    "role": "step", 
+    "sentences": [
+      {"text": "A loud crash shakes the ship as it hits an iceberg.", "kind": "fact", "sources": ["A1.1"]}
+    ]
+  },
+  {
+    "role": "step", 
+    "sentences": [
+      {"text": "Passengers scream as water floods the lower decks.", "kind": "fact", "sources": ["A1.16"]}
+    ]
+  },
+  {
+    "role": "step", 
+    "sentences": [
+      {"text": "The ship splits in two, plunging you into icy water.", "kind": "fact", "sources": ["A5.26"]}
+    ]
+  },
+  {
+    "role": "answer", 
+    "sentences": [
+      {"text": "You would feel panic as the ship tilts violently, cold water rushes in, and the structure breaks apart below you.", "kind": "fact", "sources": ["A1.1", "A4.29", "A5.26"]}
+    ]
+  },
+  {
+    "role": "end", 
+    "sentences": [
+      {"text": "The Titanic's sinking was a terrifying mix of chaos, cold, and sudden disaster.", "kind": "framing", "sources": []}
+    ]
+  }
+]}

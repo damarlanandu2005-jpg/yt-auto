@@ -1,0 +1,71 @@
+{
+ "facts": [
+  {
+   "id": "A1.1",
+   "fact": "RMS Titanic sank after striking an iceberg, resulting in approximately 1,500 deaths."
+  },
+  {
+   "id": "A1.3",
+   "fact": "The ship had 20 lifeboats, but only enough capacity for about one-third of the passengers and crew."
+  },
+  {
+   "id": "A1.4",
+   "fact": "First-class accommodations included luxury features like a swimming pool and Turkish bath."
+  },
+  {
+   "id": "A2.1",
+   "fact": "An iceberg is a piece of fresh water ice more than 15 meters long floating in open water."
+  },
+  {
+   "id": "A4.29",
+   "fact": "Water temperatures of −2 °C (28 °F) during the Titanic sinking caused most victims to die within 15–30 minutes from hypothermia."
+  },
+  {
+   "id": "A5.26",
+   "fact": "The Titanic sank after taking in water, leading to its breakup and the deaths of most passengers."
+  }
+ ],
+ "scenes": [
+  {
+   "role": "hook",
+   "sentences": [
+    {
+     "text": "What would it feel like to be on the Titanic as it sank?",
+     "kind": "framing",
+     "sources": [],
+     "id": "s01.01",
+     "check": "supported"
+    }
+   ],
+   "id": "s01"
+  },
+  {
+   "role": "step",
+   "sentences": [
+    {
+     "text": "The ship hits an iceberg.",
+     "kind": "fact",
+     "sources": [
+      "A1.1",
+      "A2.1"
+     ],
+     "id": "s02.01",
+     "check": "supported (after fix)"
+    }
+   ],
+   "id": "s02"
+  }
+ ],
+ "role": "answer",
+ "sentences": [
+  {
+   "text": "You’d experience terror as the ship breaks apart, cold water rushes in, and hypothermia sets in within minutes.",
+   "kind": "fact",
+   "sources": [
+    "A4.29",
+    "A5.26"
+   ]
+  }
+ ],
+ "title": "Stickman Survives the Titanic Sink"
+}

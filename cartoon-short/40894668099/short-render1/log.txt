@@ -1,0 +1,16 @@
+voice hook: 4.1s in 2.5s
+voice step1: 10.4s in 3.3s
+voice step2: 9.4s in 3.0s
+voice answer: 5.0s in 1.6s
+voice end: 2.3s in 1.0s
+hook                 4.1s  100% confirmed
+step1               10.4s  100% confirmed
+step2                9.4s  96% confirmed  unconfirmed: minus
+answer               5.0s  100% confirmed
+end                  2.3s  100% confirmed
+total 38.7s
+error: engine failed to start: The requested module './props.js' does not provide an export named 's'
+error: engine failed to start: The requested module './props.js' does not provide an export named 's'
+error: engine failed to start: The requested module './props.js' does not provide an export named 's'
+rendering 38.7s (1161 frames at 30 fps, 1080x1920) with 2 workers
+error: engine failed to start: The requested module './props.js' does not provide an export named 's'

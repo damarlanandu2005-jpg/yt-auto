@@ -1,0 +1,55 @@
+{
+ "facts": [
+  {
+   "id": "A1.1",
+   "fact": "RMS Titanic sank after striking an iceberg, resulting in approximately 1,500 deaths."
+  },
+  {
+   "id": "A1.16",
+   "fact": "C Deck had First-Class cabins and was the highest level reached by watertight bulkheads, but water flooded lower decks."
+  },
+  {
+   "id": "A4.29",
+   "fact": "Water temperatures of −2 °C (28 °F) during the Titanic sinking caused hypothermia, with most victims dying in 15–30 minutes."
+  },
+  {
+   "id": "A5.26",
+   "fact": "RMS Titanic sank by foundering, taking in so much water that buoyancy was lost, causing it to break apart."
+  },
+  {
+   "id": "A1.44",
+   "fact": "Titanic had 20 lifeboats, but only 1,178 passengers could be accommodated, far below the total capacity."
+  }
+ ],
+ "scenes": [
+  {
+   "role": "hook",
+   "sentences": [
+    {
+     "text": "What would it feel like to be on the Titanic as it sank?",
+     "kind": "framing",
+     "sources": [],
+     "id": "s01.01",
+     "check": "supported"
+    }
+   ],
+   "id": "s01"
+  },
+  {
+   "role": "step",
+   "sentences": [
+    {
+     "text": "The ship struck an iceberg.",
+     "kind": "fact",
+     "sources": [
+      "A1.1"
+     ],
+     "id": "s02.01",
+     "check": "supported (after fix)"
+    }
+   ],
+   "id": "s02"
+  }
+ ],
+ "title": "Stickman Survives the Titanic Sink"
+}

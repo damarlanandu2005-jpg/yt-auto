@@ -1,0 +1,23 @@
+{
+ "checked": 4,
+ "supported_first_pass": 2,
+ "fixed": [
+  {
+   "id": "s03.01",
+   "old": "A loud crash shakes the ship as it hits an iceberg.",
+   "new": "The ship struck an iceberg.",
+   "problem": "detail about a loud crash not supported"
+  },
+  {
+   "id": "s04.01",
+   "old": "Passengers scream as water floods the lower decks, breaching watertight bulkheads.",
+   "new": "The ship's watertight bulkheads reached the D Deck.",
+   "problem": "no evidence of water flooding lower decks or passengers screaming"
+  }
+ ],
+ "dropped": [],
+ "bad_ids": [],
+ "copied": [],
+ "guard": [],
+ "words_after": 36
+}

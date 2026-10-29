@@ -1,0 +1,16 @@
+[{"stream_name":"stderr","time":1.217400007,"data":"/kaggle/src/script.py:37: DeprecationWarning: Python 3.14 will, by default, filter extracted tar archives and reject files or modify their metadata. Use the filter argument to control this behavior.\n"}
+,{"stream_name":"stderr","time":1.2174447609999999,"data":"  tarfile.open(fileobj=io.BytesIO(base64.b64decode(BUNDLE)), mode=\"r:gz\").extractall(CODE)  # noqa: F821\n"}
+,{"stream_name":"stdout","time":1.396132944,"data":"$ apt-get install -y -q zstd || (apt-get update -q \u0026\u0026 apt-get install -y -q zstd)\n"}
+,{"stream_name":"stdout","time":11.484468468,"data":"$ curl -fsSL https://ollama.com/install.sh | sh\n"}
+,{"stream_name":"stdout","time":30.750675888,"data":"$ command -v ollama\n"}
+,{"stream_name":"stdout","time":30.765545109,"data":"[models] saved models linked: ['gpt-oss:20b', 'qwen3:32b']\n"}
+,{"stream_name":"stdout","time":41.392610326,"data":"$ OLLAMA_MODELS=/root/.ollama/models ollama show qwen3:32b --modelfile \u003e /dev/null\n"}
+,{"stream_name":"stdout","time":41.607448584,"data":"$ OLLAMA_MODELS=/root/.ollama/models ollama show gpt-oss:20b --modelfile \u003e /dev/null\n"}
+,{"stream_name":"stdout","time":3537.067420159,"data":"{\"job_id\": \"40879324270\", \"topic\": \"What would it feel like to be on the Titanic as it sank?\", \"write_models\": [\"qwen3:32b\"], \"check_models\": [\"gpt-oss:20b\"], \"started\": \"2026-10-29T13:19:52Z\", \"saved_models\": [\"gpt-oss:20b\", \"qwen3:32b\"], \"server\": true, \"models\": {\"qwen3:32b\": {\"source\": \"saved\", \"seconds\": 0}, \"gpt-oss:20b\": {\"source\": \"saved\", \"seconds\": 0}}, \"setup_s\": 41, \"write_s\": 3495, \"write_exit\": 0, \"complete\": true}\n"}
+,{"stream_name":"stderr","time":3539.795739331,"data":"/usr/local/lib/python3.13/dist-packages/mistune.py:435: SyntaxWarning: invalid escape sequence '\\|'\n"}
+,{"stream_name":"stderr","time":3539.795774093,"data":"  cells[i][c] = re.sub('\\\\\\\\\\|', '|', cell)\n"}
+,{"stream_name":"stderr","time":3540.240464789,"data":"/usr/local/lib/python3.13/dist-packages/nbconvert/filters/filter_links.py:36: SyntaxWarning: invalid escape sequence '\\_'\n"}
+,{"stream_name":"stderr","time":3540.240513708,"data":"  text = re.sub(r'_', '\\_', text) # Escape underscores in display text\n"}
+,{"stream_name":"stderr","time":3542.541547484,"data":"[NbConvertApp] Converting notebook __script__.ipynb to html\n"}
+,{"stream_name":"stderr","time":3543.670614699,"data":"[NbConvertApp] Writing 440051 bytes to __results__.html\n"}
+]

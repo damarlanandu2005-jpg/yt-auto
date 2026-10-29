@@ -1,0 +1,5 @@
+[review] no stills found
+[scenes] problems, one fix round:
+  hook: nothing is drawn besides the stickman: draw what the narration talks about
+[llm] short_scenes_fix: gemini-3.8-flash unavailable (ConnectionResetError(104, 'Connection reset by peer')); trying next model
+[fix] 4 layout error(s), 0 picture problem(s) sent back to the scene writer

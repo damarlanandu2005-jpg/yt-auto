@@ -1,0 +1,128 @@
+{
+ "facts": [
+  {
+   "id": "A1.1",
+   "fact": "RMS Titanic sank in April 1912 after striking an iceberg in the North Atlantic."
+  },
+  {
+   "id": "A1.45",
+   "fact": "Titanic carried lifeboats that could accommodate 1,178 people."
+  },
+  {
+   "id": "A1.38",
+   "fact": "Inrushing water destroyed luxury interior spaces including the Grand Staircase."
+  },
+  {
+   "id": "A1.25",
+   "fact": "Electric generators in the stern remained operational until the last few minutes."
+  },
+  {
+   "id": "A1.14",
+   "fact": "Many passengers gathered on the rear poop deck for a last stand as the ship sank."
+  },
+  {
+   "id": "A4.29",
+   "fact": "Water temperatures during the sinking were minus 2 degrees Celsius."
+  },
+  {
+   "id": "A4.30",
+   "fact": "Plunging into freezing water causes cold shock with rapid gasping within 2 minutes."
+  },
+  {
+   "id": "A4.30",
+   "fact": "Cold incapacitation prevents the use of limbs for swimming within 15 to 30 minutes."
+  }
+ ],
+ "scenes": [
+  {
+   "role": "hook",
+   "sentences": [
+    {
+     "text": "What if you were on board the Titanic as it began to sink into the ocean?",
+     "kind": "framing",
+     "sources": [],
+     "id": "s01.01",
+     "check": "supported"
+    }
+   ],
+   "id": "s01"
+  },
+  {
+   "role": "step",
+   "sentences": [
+    {
+     "text": "In April 1912, the massive liner struck an iceberg in the North Atlantic.",
+     "kind": "fact",
+     "sources": [
+      "A1.1"
+     ],
+     "id": "s02.01",
+     "check": "supported"
+    },
+    {
+     "text": "You would soon learn that lifeboats could only save 1,178 people.",
+     "kind": "fact",
+     "sources": [
+      "A1.45"
+     ],
+     "id": "s02.02",
+     "check": "supported"
+    }
+   ],
+   "id": "s02"
+  },
+  {
+   "role": "step",
+   "sentences": [
+    {
+     "text": "Many passengers and crew gathered on the rear poop deck as the ship sank.",
+     "kind": "fact",
+     "sources": [
+      "A1.14"
+     ],
+     "id": "s04.01",
+     "check": "supported (after fix)"
+    },
+    {
+     "text": "As the ship went under, you would plunge into minus 2 degrees Celsius water.",
+     "kind": "fact",
+     "sources": [
+      "A4.29"
+     ],
+     "id": "s04.02",
+     "check": "supported"
+    }
+   ],
+   "id": "s04"
+  },
+  {
+   "role": "answer",
+   "sentences": [
+    {
+     "text": "Cold incapacitation would disable your limbs, leaving you unable to swim.",
+     "kind": "fact",
+     "sources": [
+      "A4.30"
+     ],
+     "id": "s05.02",
+     "check": "supported"
+    }
+   ],
+   "id": "s05"
+  },
+  {
+   "role": "end",
+   "sentences": [
+    {
+     "text": "Let's consider the sinking of the Titanic.",
+     "kind": "framing",
+     "sources": [],
+     "id": "s06.01",
+     "check": "supported (after fix)"
+    }
+   ],
+   "id": "s06"
+  }
+ ],
+ "title": "Stickman Survives the Titanic Sink"
+}

@@ -1,0 +1,262 @@
+[model] local:qwen3:32b
+[system]
+
+
+[user]
+Write scenes.js for this Short. Scene ids, in order: hook, step1, step2, step3.
+
+RULES AND DRAWING FUNCTIONS:
+# Scene writing rules (given to the AI scene writer)
+
+You write `scenes.js` for one YouTube Short in the "Stickman Thoughts" style (see TEMPLATE.md).
+explainroo calls each scene function for every frame with a fresh `s`; everything must depend only on time.
+Never keep state, never use timers, never use `Math.random()` (use `s.rand(i)`), never import anything except
+`./character.js` and `./props.js`, never use `fetch`, `eval`, `document`, `window` or `ctx.filter`.
+
+```js
+import { hero } from './character.js';
+import { background, thing, emoji, label, words, blackHole } from './props.js';
+export default {
+  sceneId(s) { background(s, 'ocean'); /* ...pictures... */ words(s); },  // one function per "## sceneId"
+};
+```
+
+Every scene: FIRST `background(s, kind)` (it also keeps the camera still, so captions are never cut off),
+LAST `words(s)` (the one-word captions). Never call `s.camera` or `s.focus` yourself.
+
+## Frame (1080 x 1920, the whole screen is the picture)
+
+- Pictures between y = 150 and y = 1300. Captions sit at y ~ 1380: put nothing important at y 1330-1440.
+- YouTube's buttons cover x > 930 and y > 1450: nothing important there.
+- On ground backgrounds (land, city, desert, snow, room) the ground line is at y ~ 1300: feet go at y 1300.
+- Keep every label fully inside x 90-990.
+
+## Timing
+
+`at` and `out` take seconds (`1.2`), a spoken word of THIS scene (`'ocean'`, exact word, any case), or a marker
+(`'#name'`, written as `[#name]` in script.md). A word that is not spoken in the scene is an error.
+`at: -1` = already there from the start (for things carried over from the previous scene).
+`s.p(at, dur)` gives 0..1 progress for your own motion; `s.t` = seconds since the scene started.
+Something new should appear every 2-4 seconds, on the word it belongs to.
+
+## The character (one stickman, the same in every video)
+
+```js
+hero(s, { x: 540, y: 1300, scale: 1.4, outline: '#ffffff', at: 0,
+  moves: [{ at: 0, pose: 'stand', face: 'happy' }, { at: 'deep', pose: 'scared', face: 'scared' }] });
+```
+
+- poses: stand, wave, point, shrug, scared, think, cheer, fall, float, run, sit, sad
+- faces: neutral, happy, wow, scared, shocked, confused, thinking, sad, angry
+- options: x, y (feet), scale (0.4 small ... 1.9 big; his height is about 340 x scale px), flip (face left),
+  helmet (space suit), float (gentle drift), outline (ALWAYS '#ffffff'), at, out,
+  stretch (1 normal ... 2.2; number or `() => ...`), alpha (0..1), color (line colour).
+- He shows the FEELING of each step. Usually one stickman; a second one (a friend) only when the story needs it.
+
+## Props, labels, captions (from props.js)
+
+- `background(s, kind)`: space, night, ocean, deep, sky, land, city, body, desert, snow, fire, room.
+- `thing(s, name, { x, y, size, at, out, rotate })`: sun, earth, moon, ship, wave, mountain, volcano, tree, house,
+  fire, drop, heart, brain, clock, rock, fish, rocket, question. `size` = width in px (60-400).
+- `blackHole(s, { x, y, r, at })`.
+- `emoji(s, name, { x, y, size, at, out, rotate, flip })`: a colourful cartoon drawing (Twemoji) with a white
+  sticker edge, for animals and objects that `thing` does not have: 'shark', 'whale', 't_rex', 'lungs',
+  'passenger_ship', 'skull', 'volcano'... ONLY names from the EMOJI NAMES list below (checked in code). `size` =
+  width in px (120-500). `flip: true` turns it to face the other way. Use a `thing` when one fits, an emoji when not.
+- `label(s, 'SHORT TEXT', { x, y, size, color, at, out })`: bold text with a black edge, readable on any
+  background. color: yellow, red, green, blue or white. Max 3-4 words. Never repeat the narration sentence.
+- `words(s)`: the captions. Call it last in EVERY scene.
+
+## explainroo shapes you may also use
+
+- `s.arrow([x1, y1], [x2, y2], { color: 'red', width: 12, label: 'text', labelSize: 50, bend: 0.3, dashed, at })`
+- `s.circle({ x, y, r, fill, color, at })`, `s.box('text', { x, y, w, h, color, at })`
+- `s.path('M0 0 L100 0', { x, y, color, width, fill, at })`, `s.line([[x1, y1], [x2, y2]], { color, width, at })`
+- `s.number(1500, { x, y, size, suffix: ' metres', at })` counts up with ticks. Only numbers from the script.
+- `s.icon(name, { x, y, size, color, at })`: Lucide icons (e.g. 'skull', 'anchor', 'thermometer', 'wind',
+  'zap', 'clock', 'eye', 'shield', 'snowflake', 'waves', 'mountain', 'bug', 'bird', 'dog', 'fish', 'heart-pulse').
+- `s.draw({ x, y, at }, (ctx) => { ... })` for a small custom drawing with the canvas (thick black outline,
+  flat colours, like the props). No `ctx.filter`, no images.
+
+## Show, don't write (the most important rule)
+
+- The story is told by DRAWINGS and the stickman's feelings, not by text. The voice and the captions already
+  say every word.
+- At most ONE `label` per scene, at most 4 words, and ONLY words the voice says in that scene (checked in code:
+  a label that says "crushed" when the voice says "injure" is rejected). No `s.text`, `s.note`, `s.title`, `s.list`.
+- Every scene shows the stickman (`hero`, scale 0.9-1.8) AND a drawing of what the voice talks about:
+  `thing(...)`, `emoji(...)`, `blackHole(...)`, an icon, arrows, or your own simple `s.draw` drawing (a lung, a trench, a
+  wave, a body outline: flat colours and a thick black outline, like the props).
+
+## Good pictures
+
+- One idea per picture. The picture shows what the voice says at that moment.
+- Big and simple: the main thing at least 300 px. The stickman at scale 1.0-1.8 most of the time.
+- Every scene looks different from the one before (new background, distance, prop or pose).
+- Honest: never draw something the narration doesn't say. Numbers on screen only if they are in the script.
+
+## Mistakes seen in test videos (do not repeat)
+
+- Text on top of the stickman: a label must never cross his body or head. He fills a box of about
+  (x - 110*scale ... x + 110*scale) by (y - 340*scale ... y). Put labels above that box or beside it.
+- Counting numbers that make no sense ("172x pressure"): use `s.number` only for a plain quantity spoken in the
+  scene (depth, years, degrees), never for "x times" or percentages; write those with `label`.
+- Abbreviations on screen ("ATM/10m", "km"): write words ("1 MORE ATMOSPHERE", "EVERY 10 METRES").
+- The background must follow the story: deeper or darker as the story goes deeper, never jump back.
+- Every scene's main picture must be different from the last: change the background, the distance (scale),
+  the prop or the pose. Do not draw the same stickman in the same spot scene after scene.
+- explainroo arrow labels are light grey text: on light backgrounds (sky, land, desert, snow, room) use
+  `label()` next to the arrow instead of the arrow's own `label`.
+
+
+## EMOJI NAMES (the only names emoji() accepts)
+
+abacus accordion adhesive_bandage admission_tickets aerial_tramway airplane airplane_arriving airplane_departure alarm_clock alembic alien_monster ambulance amphora anatomical_heart anchor anger ant antenna_with_bars articulated_lorry artist_palette athletic_shoe aubergine auto_rickshaw automated_teller_machine automobile avocado axe baby baby_bottle baby_chick bacon bactrian_camel badger badminton_racquet_and_shuttlecock bagel baggage_claim baguette_bread ball_of_yarn ballet_shoes balloon ballot_box_with_ballot ballot_box_with_check banana banjo bank banknote_with_dollar banknote_with_euro banknote_with_pound banknote_with_yen bar_chart bar_of_soap barber_pole baseball basket basketball_and_hoop bat bathtub battery beach_with_umbrella beans bear_face beating_heart beaver bed beetle bell bell_pepper bell_with_cancellation_stroke bellhop_bell bento_box beverage_box bicycle billed_cap billiards biohazard bird birthday_cake bison black_chess_pawn black_circle_for_record black_club_suit black_diamond_suit black_down_pointing_double_triangle black_heart black_heart_suit black_left_pointing_double_triangle black_left_pointing_double_triangle_with_vertical_bar black_left_pointing_triangle black_medium_small_square black_medium_square black_nib black_right_pointing_double_triangle black_right_pointing_double_triangle_with_vertical_bar black_right_pointing_triangle black_right_pointing_triangle_with_double_vertical_bar black_scissors black_small_square black_spade_suit black_square_for_stop black_sun_with_rays black_telephone black_universal_recycling black_up_pointing_double_triangle blossom blowfish blue_book blue_heart blueberries boar bomb bone bookmark bookmark_tabs books boomerang bouquet bowl_with_spoon bowling boxing_glove brain bread breast_feeding brick bridge_at_night briefcase broccoli broken_heart broom brown_heart bubble_tea bucket bug building_construction burrito bus bus_stop bust_in_silhouette busts_in_silhouette butter butterfly cactus calendar camera camera_with_flash camping candle candy canned_food canoe card_file_box carousel_horse carp_streamer carpentry_saw carrot cat cat_face chains chair chart_with_downwards_trend chart_with_upwards_trend chart_with_upwards_trend_and_yen cheering_megaphone cheese_wedge chequered_flag cherries cherry_blossom chestnut chicken children_crossing chipmunk chocolate_bar chopsticks christmas_tree circus_tent cityscape cityscape_at_dusk clapper_board classical_building clinking_glasses clipboard clock_face_eight_oclock clock_face_eight_thirty clock_face_eleven_oclock clock_face_eleven_thirty clock_face_five_oclock clock_face_five_thirty clock_face_four_oclock clock_face_four_thirty clock_face_nine_oclock clock_face_nine_thirty clock_face_one_oclock clock_face_one_thirty clock_face_seven_oclock clock_face_seven_thirty clock_face_six_oclock clock_face_six_thirty clock_face_ten_oclock clock_face_ten_thirty clock_face_three_oclock clock_face_three_thirty clock_face_twelve_oclock clock_face_twelve_thirty clock_face_two_oclock clock_face_two_thirty closed_book closed_lock_with_key closed_mailbox_with_lowered_flag closed_mailbox_with_raised_flag closed_umbrella cloud cloud_with_lightning cloud_with_rain cloud_with_snow cloud_with_tornado coat cockroach coconut coffin coin collision comet compass compression confetti_ball construction control_knobs convenience_store cooked_rice cookie cooking coral couch_and_lamp couple_with_heart cow cow_face crab credit_card crescent_moon cricket cricket_bat_and_ball crocodile croissant crossed_swords crown crutch crystal_ball cucumber cup_with_straw cupcake curling_stone currency_exchange curry_and_rice custard customs cut_of_meat cyclone dagger_knife dango dark_sunglasses dash deciduous_tree deer delivery_truck department_store derelict_house_building desert desert_island desktop_computer diamond_shape_with_a_dot_inside direct_hit diving_mask diya_lamp dizzy dna_double_helix do_not_litter dodo dog dog_face dolphin donkey door double_vertical_bar doughnut dove_of_peace dragon dragon_face dress dromedary_camel drop_of_blood droplet drum_with_drumsticks duck dumpling dvd e_mail eagle ear ear_of_maize ear_of_rice ear_with_hearing_aid earth_globe_americas earth_globe_asia_australia earth_globe_europe_africa egg eight_pointed_black_star eight_spoked_asterisk eject electric_light_bulb electric_plug electric_torch elephant elevator emoji_component_bald emoji_component_curly_hair emoji_component_red_hair emoji_component_white_hair emoji_modifier_fitzpatrick_type_1_2 emoji_modifier_fitzpatrick_type_3 emoji_modifier_fitzpatrick_type_4 emoji_modifier_fitzpatrick_type_5 emoji_modifier_fitzpatrick_type_6 empty_nest envelope european_castle european_post_office evergreen_tree extraterrestrial_alien eye eyeglasses eyes face_with_monocle factory falafel fallen_leaf father_christmas fax_machine feather female ferris_wheel ferry field_hockey_stick_and_ball file_cabinet file_folder film_frames film_projector fire fire_engine fire_extinguisher firecracker firework_sparkler fireworks first_place_medal first_quarter_moon fish fish_cake_with_swirl_design fishing_pole_and_fish flag_in_hole flamingo flat_shoe flatbread floppy_disk flute fly flying_disc flying_saucer fog foggy folding_hand_fan fondue foot footprints fork_and_knife fork_and_knife_with_plate fortune_cookie fountain four_leaf_clover fox_face frame_with_picture french_fries frog_face front_facing_baby_chick fuel_pump full_moon funeral_urn garlic gear gem_stone ghost ginger_root giraffe_face glass_of_milk globe_with_meridians gloves glowing_star goal_net goat goggles goose gorilla graduation_cap grapes green_apple green_book green_heart green_salad grey_heart growing_heart guide_dog guitar hair_pick hamburger hammer hammer_and_pick hammer_and_wrench hamsa hamster_face handbag hatching_chick headphone headstone heart_decoration heart_with_ribbon hedgehog helicopter helmet_with_white_cross herb hibiscus high_brightness high_heeled_shoe high_speed_train high_speed_train_with_bullet_nose high_voltage hiking_boot hippopotamus hocho hole honey_pot honeybee hook horizontal_traffic_light horse horse_face hospital hot_beverage hot_dog hot_pepper hot_springs hotel hourglass hourglass_with_flowing_sand house_building house_buildings house_with_garden hundred_points hut hyacinth ice_cream ice_cube ice_hockey_stick_and_puck ice_skate identification_card inbox_tray incoming_envelope izakaya_lantern jack_o_lantern jar jeans jellyfish jigsaw_puzzle_piece joystick kangaroo key keyboard kimono kite kiwifruit knot koala lab_coat label lacrosse_stick_and_ball ladder lady_beetle large_blue_square large_brown_circle large_brown_square large_green_circle large_green_square large_orange_circle large_orange_square large_purple_circle large_purple_square large_red_square large_yellow_circle large_yellow_square last_quarter_moon leaf_fluttering_in_wind leafy_green ledger left_luggage left_pointing_magnifying_glass left_speech_bubble leg lemon level_slider light_blue_heart light_rail link linked_paperclips lion_face lizard llama lobster lock lock_with_ink_pen lollipop long_drum lotion_bottle lotus love_hotel love_letter low_battery low_brightness lower_left_ballpoint_pen lower_left_crayon lower_left_fountain_pen lower_left_paintbrush luggage lungs magic_wand magnet male male_with_stroke_and_male_and_female mammoth mango mans_shoe mantelpiece_clock manual_wheelchair maple_leaf maracas martial_arts_uniform mate_drink meat_on_bone medium_black_circle medium_white_circle melon memo mens metro microbe microphone microscope military_helmet military_medal milky_way minibus minidisc mirror mirror_ball mobile_phone money_bag money_with_wings monkey monkey_face monorail moon_cake moon_viewing_ceremony moose mosquito motor_boat motor_scooter motorized_wheelchair motorway mount_fuji mountain mountain_cableway mountain_railway mouse mouse_face mouse_trap mouth movie_camera moyai multiple_musical_notes mushroom musical_keyboard musical_note musical_score national_park nazar_amulet necktie nest_with_eggs nesting_dolls new_moon newspaper night_with_stars no_bicycles no_entry no_mobile_phones no_pedestrians no_smoking non_potable_water nose notebook notebook_with_decorative_cover nut_and_bolt octagonal octopus oden office_building oil_drum old_key olive oncoming_automobile oncoming_bus oncoming_police_car oncoming_taxi one_piece_swimsuit onion open_book open_file_folder open_lock open_mailbox_with_lowered_flag open_mailbox_with_raised_flag optical_disc orange_book orange_heart orangutan otter outbox_tray owl ox oyster package page_facing_up page_with_curl pager palm_tree pancakes panda_face paperclip parachute parrot party_popper passenger_ship passport_control paw_prints pea_pod peacock peanuts pear pencil penguin people_hugging performing_arts personal_computer petri_dish pick pickup_truck pie pig pig_face pig_nose pinata pinched_fingers pinching_hand pine_decoration pineapple pink_heart placard playground_slide plunger police_car police_cars_revolving_light poodle popcorn postal_horn postbox pot_of_food potable_water potato potted_plant pouch poultry_leg pouring_liquid pregnant_woman pretzel printer probing_cane public_address_loudspeaker purple_heart purse pushpin put_litter_in_its_place rabbit rabbit_face raccoon racing_car racing_motorcycle radio radioactive railway_car railway_track rainbow ram rat razor receipt recreational_vehicle red_apple red_gift_envelope reminder_ribbon restroom revolving_hearts rhinoceros ribbon rice_ball rice_cracker right_anger_bubble right_pointing_magnifying_glass ring ring_buoy ringed_planet roasted_sweet_potato rock rocket roll_of_paper rolled_up_newspaper roller_coaster roller_skate rooster rose rosette round_pushpin running_shirt_with_sash safety_pin safety_vest sailboat salt_shaker sandwich sari satellite satellite_antenna sauropod saxophone scales scarf school school_satchel scooter scorpion screwdriver scroll seal seat second_place_medal seedling sewing_needle shallow_pan_of_food shamrock shark shaved_ice sheep shield ship shooting_star shopping_bags shopping_trolley shortcake shorts shower silhouette_of_japan skateboard ski_and_ski_boot skier skull skull_and_crossbones skunk sled sleeping slice_of_pizza sloth small_airplane smoking snail snake snow_capped_mountain snowflake snowman snowman_without_snow soccer_ball socks soft_ice_cream softball spaghetti sparkle sparkles sparkling_heart speaker speaker_with_cancellation_stroke speaker_with_one_sound_wave speaker_with_three_sound_waves speaking_head_in_silhouette speech_balloon speedboat spider spider_web spiral_calendar_pad spiral_note_pad spiral_shell splashing_sweat sponge spool_of_thread spoon spouting_whale squid stadium staff_of_aesculapius station statue_of_liberty steam_locomotive steaming_bowl stethoscope stopwatch straight_ruler strawberry studio_microphone stuffed_flatbread sun_behind_cloud sun_with_face sunflower sunrise sunrise_over_mountains sunset_over_buildings sushi suspension_railway swan t_rex t_shirt table_tennis_paddle_and_ball taco takeout_box tamale tanabata_tree tangerine taxi teacup_without_handle teapot tear_off_calendar teddy_bear telephone_receiver telescope television tennis_racquet_and_ball tent test_tube thermometer third_place_medal thong_sandal thought_balloon thunder_cloud_and_rain ticket tiger tiger_face timer_clock toilet tokyo_tower tomato tongue toolbox tooth toothbrush top_hat trackball tractor train tram tram_car triangular_ruler troll trolleybus tropical_drink tropical_fish trumpet tulip turkey turtle two_hearts umbrella umbrella_on_ground umbrella_with_rain_drops unicorn_face vertical_traffic_light video_camera video_game videocassette violin volcano volleyball waffle waning_crescent_moon waning_gibbous_moon warning wastebasket watch water_buffalo water_closet water_wave watermelon wavy_dash waxing_crescent_moon waxing_gibbous_moon wedding whale wheel wheelchair white_flower white_heart white_medium_small_square white_medium_square white_small_square white_sun_behind_cloud white_sun_behind_cloud_with_rain white_sun_with_small_cloud wilted_flower wind_blowing_face wind_chime window wing wireless wolf_face womans_boots womans_clothes womans_hat womans_sandal womens wood world_map worm wrapped_present wrench x_ray yellow_heart yo_yo zebra_face
+
+
+STYLE EXAMPLE (another video, its narration is in the comment at the top; do NOT copy its pictures, make
+pictures for THIS story). Times use spoken words of the same scene (at: 'feet', s.cue('stretched')) or seconds:
+```js
+// STYLE EXAMPLE for the AI scene writer (follows SCENE_API.md: drawings tell the story, at most one label
+// of spoken words per scene, cues are spoken words). Narration of this example:
+//   hook:   "Imagine you fall into a black hole, feet first. What would you feel?"
+//   step1:  "Gravity pulls much harder on your feet than on your head. So your body is stretched long and thin."
+//   step2:  "Scientists call this spaghettification."
+//   step3:  "A small black hole stretches you apart before you even reach its edge."
+//   answer: "A giant one lets you cross the edge without feeling much at all."
+//   end:    "Once you cross the edge, nothing, not even light, can escape."
+import { hero } from './character.js';
+import { background, blackHole, label, thing, words } from './props.js';
+
+export default {
+  hook(s) {
+    background(s, 'space');
+    blackHole(s, { x: 540, y: 1080, r: 190, at: 0, enter: 'none' });
+    hero(s, { x: 540, y: 780, scale: 1.7, helmet: true, float: true, outline: '#ffffff', at: 0, enter: 'none',
+      moves: [{ at: 0, pose: 'float', face: 'happy' }, { at: 'feet', pose: 'fall', face: 'scared' },
+        { at: 'feel', pose: 'shrug', face: 'confused' }] });
+    words(s);
+  },
+
+  step1(s) {
+    background(s, 'space');
+    blackHole(s, { x: 540, y: 1230, r: 120, at: -1 });
+    hero(s, { x: 540, y: 1100, scale: 1.3, helmet: true, outline: '#ffffff', at: -1,
+      stretch: () => 1 + 1.0 * s.p(s.cue('stretched'), 2.2),
+      moves: [{ at: 0, pose: 'fall', face: 'scared' }, { at: 'thin', pose: 'fall', face: 'shocked' }] });
+    s.arrow([340, 780], [340, 1100], { color: 'red', width: 16, at: 'feet' });   // strong pull on the feet
+    s.arrow([340, 250], [340, 330], { color: 'muted', width: 8, at: 'head' });   // weak pull on the head
+    label(s, 'STRETCHED', { x: 760, y: 300, size: 80, color: 'yellow', at: 'stretched' });
+    words(s);
+  },
+
+  step2(s) {
+    background(s, 'space');
+    hero(s, { x: 540, y: 1250, scale: 1.0, helmet: true, outline: '#ffffff', at: -1, stretch: 2.0,
+      moves: [{ at: 0, pose: 'fall', face: 'shocked' }] });
+    s.icon('utensils', { x: 540, y: 500, size: 170, color: 'orange', at: 'spaghettification' });
+    label(s, 'SPAGHETTIFICATION', { y: 300, size: 96, color: 'yellow', at: 'spaghettification' });
+    words(s);
+  },
+
+  step3(s) {
+    background(s, 'space');
+    blackHole(s, { x: 720, y: 700, r: 110, at: 0.2 });
+    hero(s, { x: 330, y: 900, scale: 0.9, helmet: true, outline: '#ffffff', at: 'small',
+      stretch: () => 1 + 1.2 * s.p(s.cue('apart'), 2.0), moves: [{ at: 0, pose: 'fall', face: 'scared' }] });
+    label(s, 'SMALL', { x: 720, y: 450, size: 80, color: 'red', at: 'small' });
+    words(s);
+  },
+
+  answer(s) {
+    background(s, 'space');
+    blackHole(s, { x: 540, y: 1000, r: 300, at: 0 });
+    hero(s, { x: 540, y: 900, scale: 1.1, helmet: true, float: true, outline: '#ffffff', at: 'cross',
+      moves: [{ at: 0, pose: 'float', face: 'happy' }] });
+    label(s, 'GIANT', { y: 330, size: 96, color: 'green', at: 'giant' });
+    words(s);
+  },
+
+  end(s) {
+    background(s, 'space');
+    blackHole(s, { x: 540, y: 860, r: 320, at: 0 });
+    hero(s, { x: 540, y: 990, scale: 0.95, helmet: true, color: '#ffffff', at: 0.3,
+      moves: [{ at: 0, pose: 'scared', face: 'scared' }, { at: 'light', pose: 'sad', face: 'sad' }] });
+    for (let i = 0; i < 3; i++) { // light tries to get out and bends back in
+      const a = -0.9 + i * 0.9;
+      s.arrow([540 + 60 * a, 700], [540 + 260 * a, 600], { bend: 1.2, color: 'yellow', dashed: true, width: 8, at: s.cue('light') + 0.2 * i });
+    }
+    label(s, 'NOT EVEN LIGHT', { y: 260, size: 90, color: 'red', at: 'light' });
+    words(s);
+  },
+};
+
+```
+
+THIS VIDEO'S script.md (narration per scene; lines starting with > are source notes, not spoken):
+# Stickman Survives the Titanic Sink
+
+> Stickman Thoughts Short (cartoon/TEMPLATE.md). Every fact sentence was checked against the passages
+> noted under its scene (writer.fact_check); framing sentences make no claims.
+
+## hook
+What would it feel like to be on the Titanic as it sank?
+
+## step1
+You board the RMS Titanic, unaware of the iceberg ahead.
+
+## step2
+The ship struck an iceberg.
+> s03.01 <- Titanic (rev 1382315077), A1.1: "RMS Titanic was a British ocean liner that sank in the early hours of 15 April 1912 after striking an iceberg on her maiden voyage from Southampton, England, to New York City. Of the 2,208 passengers and crew aboard, app..."
+
+## step3
+The ship's watertight bulkheads reached the D Deck.
+> s04.01 <- Titanic (rev 1382315077), A1.16: "D Deck, the saloon deck, was dominated by three public rooms—the First-Class reception room, the First-Class dining saloon and the Second-Class dining saloon. The first- and second-class galleys were also located on this..."
+
+
+Your previous scenes.js had these problems. Fix ALL of them and return the whole corrected file:
+- hook: emoji 'iceberg' does not exist (use a name from the emoji list, or thing()/your own drawing)
+- step1: emoji 'iceberg' does not exist (use a name from the emoji list, or thing()/your own drawing)
+- step2: emoji 'iceberg' does not exist (use a name from the emoji list, or thing()/your own drawing)
+- step3: face 'worried' does not exist (use one from the list in the rules)
+
+PREVIOUS scenes.js:
+```js
+import { hero } from './character.js';
+import { background, thing, emoji, label, words } from './props.js';
+
+export default {
+  hook(s) {
+    background(s, 'ocean');
+    thing(s, 'ship', { x: 540, y: 1300, size: 300, at: 0 });
+    hero(s, { x: 540, y: 1300, scale: 1.4, at: 0, moves: [{ at: 0, pose: 'wave', face: 'happy' }] });
+    emoji(s, 'iceberg', { x: 900, y: 400, size: 150, at: 0 });
+    words(s);
+  },
+
+  step1(s) {
+    background(s, 'ocean');
+    thing(s, 'ship', { x: 540, y: 1300, size: 300, at: -1 });
+    hero(s, { x: 540, y: 1300, scale: 1.4, at: -1, moves: [{ at: 0, pose: 'stand', face: 'neutral' }] });
+    emoji(s, 'iceberg', { x: 900, y: 400, size: 150, at: 'iceberg' });
+    words(s);
+  },
+
+  step2(s) {
+    background(s, 'ocean');
+    thing(s, 'ship', { x: 540, y: 1300, size: 300, at: -1 });
+    emoji(s, 'iceberg', { x: 600, y: 900, size: 180, at: 'struck' });
+    hero(s, { x: 540, y: 1250, scale: 1.4, at: -1, moves: [{ at: 0, pose: 'scared', face: 'shocked' }] });
+    words(s);
+  },
+
+  step3(s) {
+    background(s, 'ocean');
+    thing(s, 'ship', { x: 540, y: 1350, size: 300, rotate: -0.2, at: -1 });
+    hero(s, { x: 540, y: 1200, scale: 1.2, at: -1, moves: [{ at: 0, pose: 'sad', face: 'worried' }] });
+    s.line([[400, 1100], [700, 1100]], { color: 'black', width: 12, at: 0 });
+    label(s, 'D DECK', { x: 540, y: 1050, size: 60, color: 'white', at: 0 });
+    words(s);
+  }
+};
+```

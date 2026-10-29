@@ -1,0 +1,9 @@
+[plan] What would it feel like to be on the Titanic as it sank? | feeling: fear
+[llm] short_script: gemini-3.8-flash unavailable (HTTP 503 (busy)); trying next model
+[llm] short_script: gemini-3.6-flash unavailable (HTTP 503 (busy)); trying next model
+[llm] factcheck: gemini-3.5-flash unavailable (HTTP 503 (busy)); trying next model
+[script] 86 words; fact-check {'checked': 10, 'supported_first_pass': 5, 'fixed': 2, 'dropped': 3, 'bad_ids': 0, 'copied': 0, 'guard': 1, 'words_after': 86}; story ok
+[scenes] problems, one fix round:
+  step2: the cue 'cold' is not spoken in this scene (spoken: "Many passengers and crew gathered on the rear poop deck as the ship sank. As the ship went under, you would plunge into minus 2 degrees Celsius water.")
+  step2: label 'COLD' must be at most 4 words, all spoken in this scene (not spoken: COLD)
+[scenes] ok

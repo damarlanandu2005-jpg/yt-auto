@@ -1,0 +1,46 @@
+{
+ "checked": 10,
+ "supported_first_pass": 5,
+ "fixed": [
+  {
+   "id": "s04.01",
+   "old": "You would retreat to the rear poop deck alongside hundreds of other passengers.",
+   "new": "Many passengers and crew gathered on the rear poop deck as the ship sank.",
+   "problem": "The passage notes many passengers gathered on the poop deck, not specifically \"hundreds\"."
+  },
+  {
+   "id": "s06.01",
+   "old": "The sinking of the Titanic remains a tragic disaster in ocean history.",
+   "new": "Let's consider the sinking of the Titanic.",
+   "problem": "No cited passage supports the claim that the sinking remains a tragic disaster in ocean history."
+  }
+ ],
+ "dropped": [
+  {
+   "id": "s03.01",
+   "text": "Inrushing water smashed through interior spaces like the Grand Staircase.",
+   "problem": "The passage does not state that inrushing water smashed through interior spaces; it only mentions the staircase being ripped by water force."
+  },
+  {
+   "id": "s03.02",
+   "text": "Electrical generators kept lights burning until the last few minutes.",
+   "problem": "The passage says the generators remained operational but does not explicitly say they kept lights burning."
+  },
+  {
+   "id": "s05.01",
+   "text": "You would feel sudden cold shock, causing rapid gasping within 2 minutes.",
+   "problem": "number 2 is not in the cited sources"
+  }
+ ],
+ "bad_ids": [],
+ "copied": [],
+ "guard": [
+  {
+   "id": "s05.01",
+   "problems": [
+    "number 2 is not in the cited sources"
+   ]
+  }
+ ],
+ "words_after": 86
+}

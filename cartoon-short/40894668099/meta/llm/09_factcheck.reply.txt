@@ -1,0 +1,1 @@
+{"results":[{"id":"s01.01","verdict":"supported","problem":"","fixed_text":""},{"id":"s02.01","verdict":"partly","problem":"Details about shaking violently and tearing open hull are not in the passage.","fixed_text":"The ship struck an iceberg."}]}

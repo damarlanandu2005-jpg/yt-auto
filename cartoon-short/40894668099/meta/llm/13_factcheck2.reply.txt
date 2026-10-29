@@ -1,0 +1,1 @@
+{"results":[{"id":"s02.01","verdict":"supported","problem":"","fixed_text":""},{"id":"s05.01","verdict":"partly","problem":"The cited passages do not state that cold water rushed in; they only mention water temperature and that water entered the ship.","fixed_text":"Water rushed in as the ship sank."}]}

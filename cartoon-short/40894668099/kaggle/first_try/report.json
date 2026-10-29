@@ -1,0 +1,24 @@
+{
+ "topic": "What would it feel like to be on the Titanic as it sank?",
+ "fact_check": {
+  "checked": 4,
+  "supported_first_pass": 2,
+  "fixed": 2,
+  "dropped": 0,
+  "bad_ids": 0,
+  "copied": 0,
+  "guard": 0,
+  "words_after": 36
+ },
+ "story_problems": [
+  "the answer scene was dropped by the fact-check (rule R2: the hook must be answered)",
+  "36 words after the fact-check (want about 110-140)"
+ ],
+ "words": 36,
+ "scene_problems": [],
+ "llm_calls": 15,
+ "models_used": [
+  "local:gpt-oss:20b",
+  "local:qwen3:32b"
+ ]
+}

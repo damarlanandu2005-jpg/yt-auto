@@ -1,0 +1,29 @@
+{
+ "topic": "What would it feel like to be on the Titanic as it sank?",
+ "fact_check": {
+  "checked": 10,
+  "supported_first_pass": 5,
+  "fixed": 2,
+  "dropped": 3,
+  "bad_ids": 0,
+  "copied": 0,
+  "guard": 1,
+  "words_after": 86
+ },
+ "story_problems": [],
+ "words": 86,
+ "scene_problems": [],
+ "llm_calls": 8,
+ "models_used": [
+  "cf:@cf/openai/gpt-oss-120b",
+  "gemini-3.5-flash"
+ ],
+ "render_errors_first": [
+  "error: engine failed to start: The requested module './props.js' does not provide an export named 's'",
+  "error: engine failed to start: The requested module './props.js' does not provide an export named 's'",
+  "error: engine failed to start: The requested module './props.js' does not provide an export named 's'",
+  "error: engine failed to start: The requested module './props.js' does not provide an export named 's'"
+ ],
+ "picture_problems_first": [],
+ "fix_problems": []
+}
