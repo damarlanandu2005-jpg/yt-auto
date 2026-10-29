@@ -10,6 +10,9 @@ Providers (all free, no billing):
     neurons a day, reset 00:00 UTC): backup when every Gemini model is busy or out of free quota
     (owner, 29 Oct). Model ids are written "cf:@cf/<publisher>/<model>". This is another company's
     own free plan, not a second Gemini key.
+  * A local model server (Ollama on a free Kaggle GPU, owner's idea 29 Oct): ids "local:<model>",
+    OpenAI-style API at LLM_LOCAL_URL (default http://127.0.0.1:11434/v1/chat/completions).
+    No daily request limit; quality must pass the Phase 2 fact-check test before real use.
 
 Keys are sent in headers, never in URLs or logs. Every call is logged to LOG.
 """
@@ -108,6 +111,8 @@ def _call(model, prompt, system, schema, temperature, name, images, max_tries, t
         return _call_github(model, prompt, system, schema, temperature, name, images, max_tries, timeout)
     if model.startswith("cf:"):
         return _call_cloudflare(model, prompt, system, schema, temperature, name, images, max_tries, timeout)
+    if model.startswith("local:"):
+        return _call_local(model, prompt, system, schema, temperature, name, images, max_tries, timeout)
     return _call_gemini(model, prompt, system, schema, temperature, name, images, max_tries, timeout)
 
 
@@ -161,7 +166,7 @@ def _post(url: str, body: dict, headers: dict, entry: dict, model: str, name: st
                     time.sleep(wait)
                     continue
                 raise _TryNextModel(f"HTTP {e.code} (busy)") from None
-            if e.code == 400 and model.startswith(("gemma", "github:", "cf:")):
+            if e.code == 400 and model.startswith(("gemma", "github:", "cf:", "local:")):
                 raise _TryNextModel(f"rejected the request: {err[:200]}") from None
             raise LLMError(f"{name}: HTTP {e.code}: {err[:600]}") from None
         except OSError as e:
@@ -190,7 +195,7 @@ def _finish(entry, t0, attempt, name, model, system, prompt, text, schema, finis
         try:
             return _json_from_text(text)
         except ValueError as e:
-            if model.startswith(("gemma", "github:", "cf:")):  # no strict JSON mode: let the next model try
+            if model.startswith(("gemma", "github:", "cf:", "local:")):  # no strict JSON mode: let the next model try
                 raise _TryNextModel(f"reply was not valid JSON ({e})") from None
             raise LLMError(f"{name}: reply is not valid JSON: {e}; starts {text[:200]!r}") from None
     return text
@@ -281,6 +286,27 @@ def _call_cloudflare(model, prompt, system, schema, temperature, name, images, m
                            entry, model, name, max_tries, timeout)
     choice = (reply.get("choices") or [{}])[0]
     text = (choice.get("message") or {}).get("content") or ""
+    u = reply.get("usage", {})
+    usage = {"in_tokens": u.get("prompt_tokens"), "out_tokens": u.get("completion_tokens")}
+    return _finish(entry, t0, attempt, name, model, system, prompt, text, schema,
+                   choice.get("finish_reason") in (None, "stop"), choice.get("finish_reason"), usage)
+
+
+def _call_local(model, prompt, system, schema, temperature, name, images, max_tries, timeout):
+    if images:
+        raise _TryNextModel("not available (pictures are not sent to the local text model)")
+    url = os.environ.get("LLM_LOCAL_URL", "http://127.0.0.1:11434/v1/chat/completions")
+    messages = ([{"role": "system", "content": system}] if system else []) + \
+        [{"role": "user", "content": prompt + (_schema_note(schema) if schema else "")}]
+    body = {"model": model.split(":", 1)[1], "messages": messages, "temperature": temperature, "max_tokens": 16000}
+    if schema:
+        body["response_format"] = {"type": "json_object"}
+    entry = {"name": name, "model": model, "prompt_chars": len(prompt) + len(system), "images": 0}
+    t0 = time.perf_counter()
+    reply, attempt = _post(url, body, {}, entry, model, name, max_tries, max(timeout, 1800))
+    choice = (reply.get("choices") or [{}])[0]
+    text = (choice.get("message") or {}).get("content") or ""
+    text = re.sub(r"<think>.*?</think>", "", text, flags=re.S).strip()  # reasoning models may include their notes
     u = reply.get("usage", {})
     usage = {"in_tokens": u.get("prompt_tokens"), "out_tokens": u.get("completion_tokens")}
     return _finish(entry, t0, attempt, name, model, system, prompt, text, schema,

@@ -278,7 +278,10 @@ def validate_scenes(js: str, script: dict) -> list[str]:
             problems.append(f"{sid}: the stickman is too small (scale {sc.group(1)}); use 0.9 to 1.8")
         for mark in re.findall(r"(?:at|out)\s*:\s*'#(\w+)'|s\.mark\('(\w+)'\)", body):
             problems.append(f"{sid}: uses a [#marker] ({''.join(mark)}); script.md has no markers, use spoken words")
-    r = subprocess.run(["node", "--check", "--input-type=module"], input=js, capture_output=True, text=True, timeout=60)
+    try:
+        r = subprocess.run(["node", "--check", "--input-type=module"], input=js, capture_output=True, text=True, timeout=60)
+    except FileNotFoundError:  # no Node.js here (e.g. a Kaggle test): explainroo's own check still runs at render
+        return problems
     if r.returncode:
         problems.append("JavaScript syntax error: " + r.stderr.strip()[-600:])
     return problems

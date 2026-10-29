@@ -1,0 +1,92 @@
+name: Kaggle AI test (our own model on a free GPU)
+
+# Owner's idea (29 Oct): run an open AI model on Kaggle's free GPUs (no daily request limit) instead of
+# Gemini's free 20 requests a day. kaggle/run_test.py runs the SAME tests Gemini passed.
+#   action = start   : packs our code + test inputs into one private Kaggle script, starts it on GPU T4 x2
+#   action = collect : (run 2-3 hours later) downloads the results to bench-results/kaggle-test/<kernel version>/
+# Needs repo secrets KAGGLE_USERNAME and KAGGLE_API_TOKEN (Kaggle -> Settings -> API -> Generate New Token).
+# No other secret goes to Kaggle: the kernel holds no keys.
+on:
+  workflow_dispatch:
+    inputs:
+      action:
+        description: "start or collect"
+        type: choice
+        options: [start, collect]
+        default: start
+      models:
+        description: "Ollama models to test (Apache-2.0), space-separated"
+        default: "qwen3:14b qwen3:32b gpt-oss:20b"
+
+permissions:
+  contents: write
+
+jobs:
+  kaggle:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 20
+    env:
+      KAGGLE_USERNAME: ${{ secrets.KAGGLE_USERNAME }}
+      KAGGLE_API_TOKEN: ${{ secrets.KAGGLE_API_TOKEN }}
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.13"
+      - name: Install the Kaggle CLI
+        timeout-minutes: 5
+        run: |
+          [ -n "$KAGGLE_USERNAME" ] && [ -n "$KAGGLE_API_TOKEN" ] || { echo "Add repo secrets KAGGLE_USERNAME and KAGGLE_API_TOKEN first"; exit 1; }
+          pip install -q kaggle && kaggle --version
+
+      - name: Pack and start the test on Kaggle
+        if: inputs.action == 'start'
+        timeout-minutes: 10
+        env:
+          MODELS: ${{ inputs.models }}
+        run: |
+          set -e
+          [[ "$MODELS" =~ ^[a-z0-9.:\ /_-]+$ ]] || { echo "bad model list"; exit 1; }
+          git fetch --depth 1 origin bench-results
+          mkdir -p bundle/test_inputs k
+          for f in plan.json sources.json script.json; do git show "FETCH_HEAD:cartoon-short/40843120092/meta/$f" > "bundle/test_inputs/$f"; done
+          cp -r yt_auto phase2 bundle/ && mkdir -p bundle/cartoon && cp cartoon/SCENE_API.md cartoon/example_scenes.js bundle/cartoon/
+          find bundle -name __pycache__ -prune -exec rm -rf {} +
+          tar czf bundle.tgz -C bundle .
+          python3 - "$MODELS" <<'EOF'
+          import base64, json, os, sys
+          b = base64.b64encode(open("bundle.tgz", "rb").read()).decode()
+          models = sys.argv[1].split()
+          body = open("kaggle/run_test.py").read()
+          open("k/run.py", "w").write(f"BUNDLE = {b!r}\nMODELS = {json.dumps(models)}\n" + body)
+          json.dump({"id": f"{os.environ['KAGGLE_USERNAME']}/yt-auto-llm-test", "title": "yt-auto llm test",
+                     "code_file": "run.py", "language": "python", "kernel_type": "script", "is_private": "true",
+                     "enable_gpu": "true", "enable_internet": "true", "machine_shape": "NvidiaTeslaT4",
+                     "dataset_sources": [], "competition_sources": [], "kernel_sources": [], "model_sources": []},
+                    open("k/kernel-metadata.json", "w"), indent=1)
+          print("run.py", os.path.getsize("k/run.py"), "bytes; models", models)
+          EOF
+          kaggle kernels push -p k
+          sleep 30
+          kaggle kernels status "$KAGGLE_USERNAME/yt-auto-llm-test" || true
+
+      - name: Collect the results
+        if: inputs.action == 'collect'
+        timeout-minutes: 10
+        run: |
+          set -e
+          kaggle kernels status "$KAGGLE_USERNAME/yt-auto-llm-test" | tee status.txt
+          mkdir -p out
+          kaggle kernels output "$KAGGLE_USERNAME/yt-auto-llm-test" -p out || true
+          cp status.txt out/
+          ls -R out | head -50
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git fetch --depth 1 origin bench-results
+          git worktree add results FETCH_HEAD
+          git -C results checkout -B bench-results
+          dest="results/kaggle-test/${{ github.run_id }}"
+          mkdir -p "$dest"
+          (cd out && find . -type f -size -5M -exec cp --parents {} "../$dest/" \;)
+          cd results && git add -A && git commit -m "Kaggle AI test results ${{ github.run_id }}" || exit 0
+          for i in 1 2 3 4 5; do git push origin bench-results && break; git pull --rebase origin bench-results; sleep 5; done
