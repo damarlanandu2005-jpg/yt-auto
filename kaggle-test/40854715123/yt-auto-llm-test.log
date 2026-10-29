@@ -1,0 +1,31 @@
+[{"stream_name":"stderr","time":0.980289689,"data":"/kaggle/src/script.py:83: DeprecationWarning: Python 3.14 will, by default, filter extracted tar archives and reject files or modify their metadata. Use the filter argument to control this behavior.\n"}
+,{"stream_name":"stderr","time":0.980339483,"data":"  tarfile.open(fileobj=io.BytesIO(base64.b64decode(BUNDLE)), mode=\"r:gz\").extractall(CODE)  # noqa: F821\n"}
+,{"stream_name":"stdout","time":1.011851034,"data":"$ nvidia-smi\n"}
+,{"stream_name":"stdout","time":1.493720153,"data":"$ curl -fsSL https://ollama.com/install.sh | sh\n"}
+,{"stream_name":"stderr","time":2.167679308,"data":"Traceback (most recent call last):\n"}
+,{"stream_name":"stderr","time":2.168838516,"data":"  File \"/kaggle/src/script.py\", line 125, in \u003cmodule\u003e\n"}
+,{"stream_name":"stderr","time":2.168856173,"data":"    main()\n"}
+,{"stream_name":"stderr","time":2.16885919,"data":"    ~~~~^^\n"}
+,{"stream_name":"stderr","time":2.168861636,"data":"  File \"/kaggle/src/script.py\", line 88, in main\n"}
+,{"stream_name":"stderr","time":2.16886432,"data":"    subprocess.Popen([\"ollama\", \"serve\"], stdout=open(OUT / \"ollama_server.log\", \"w\"), stderr=subprocess.STDOUT, env=env)\n"}
+,{"stream_name":"stderr","time":2.168867237,"data":"    ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n"}
+,{"stream_name":"stderr","time":2.168869866,"data":"  File \"/usr/lib/python3.13/subprocess.py\", line 1039, in __init__\n"}
+,{"stream_name":"stderr","time":2.16887234,"data":"    self._execute_child(args, executable, preexec_fn, close_fds,\n"}
+,{"stream_name":"stderr","time":2.168874752,"data":"    ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n"}
+,{"stream_name":"stderr","time":2.168877149,"data":"                        pass_fds, cwd, env,\n"}
+,{"stream_name":"stderr","time":2.168879564,"data":"                        ^^^^^^^^^^^^^^^^^^^\n"}
+,{"stream_name":"stderr","time":2.168881984,"data":"    ...\u003c5 lines\u003e...\n"}
+,{"stream_name":"stderr","time":2.168884408,"data":"                        gid, gids, uid, umask,\n"}
+,{"stream_name":"stderr","time":2.168886762,"data":"                        ^^^^^^^^^^^^^^^^^^^^^^\n"}
+,{"stream_name":"stderr","time":2.168889529,"data":"                        start_new_session, process_group)\n"}
+,{"stream_name":"stderr","time":2.168907661,"data":"                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n"}
+,{"stream_name":"stderr","time":2.168911848,"data":"  File \"/usr/lib/python3.13/subprocess.py\", line 1991, in _execute_child\n"}
+,{"stream_name":"stderr","time":2.168916401,"data":"    raise child_exception_type(errno_num, err_msg, err_filename)\n"}
+,{"stream_name":"stderr","time":2.168920252,"data":"FileNotFoundError: [Errno 2] No such file or directory: 'ollama'\n"}
+,{"stream_name":"stderr","time":4.548466952,"data":"/usr/local/lib/python3.13/dist-packages/mistune.py:435: SyntaxWarning: invalid escape sequence '\\|'\n"}
+,{"stream_name":"stderr","time":4.548526704,"data":"  cells[i][c] = re.sub('\\\\\\\\\\|', '|', cell)\n"}
+,{"stream_name":"stderr","time":4.931025448,"data":"/usr/local/lib/python3.13/dist-packages/nbconvert/filters/filter_links.py:36: SyntaxWarning: invalid escape sequence '\\_'\n"}
+,{"stream_name":"stderr","time":4.931050751,"data":"  text = re.sub(r'_', '\\_', text) # Escape underscores in display text\n"}
+,{"stream_name":"stderr","time":6.717464627,"data":"[NbConvertApp] Converting notebook __script__.ipynb to html\n"}
+,{"stream_name":"stderr","time":7.854353772,"data":"[NbConvertApp] Writing 479389 bytes to __results__.html\n"}
+]
