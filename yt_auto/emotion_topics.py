@@ -157,16 +157,47 @@ def channel_shorts(channel: dict, log: dict) -> dict | None:
     today = dt.date.today()
     shorts = [v for v in vids if 0 < v["seconds"] <= CFG["shorts_max_seconds"]
               and (today - dt.date.fromisoformat(v["published"])).days >= CFG["min_age_days"]]
+    en = sum(english(v["title"]) for v in shorts)
+    if channel.get("found_by") and shorts and en / len(shorts) < 0.7:
+        log.setdefault("channel_errors", []).append(f"{c['snippet']['title']}: skipped, mostly not English")
+        return None
     if len(shorts) < 5:
         return {"name": c["snippet"]["title"], "id": c["id"], "shorts": len(shorts), "median": 0, "hits": [], "normal": []}
     med = statistics.median(v["views"] for v in shorts) or 1
     for v in shorts:
         v["ratio"] = round(v["views"] / med, 1)
-    hits = [v for v in shorts if v["ratio"] >= CFG["hit_ratio"] and v["views"] >= CFG["hit_min_views"]]
+    hits = [v for v in shorts if v["ratio"] >= CFG["hit_ratio"] and v["views"] >= CFG["hit_min_views"]
+            and useful(v["title"])]
     normal = [v for v in shorts if 0.5 <= v["ratio"] <= 1.5]
     return {"name": c["snippet"]["title"], "id": c["id"], "handle": channel.get("handle", ""),
             "subscribers": int(c.get("statistics", {}).get("subscriberCount", 0) or 0), "shorts": len(shorts),
             "median": int(med), "hits": sorted(hits, key=lambda v: -v["ratio"]), "normal": normal}
+
+
+_EN = set("the an you your if what why how is are to of in on and it this that when they can was will be do".split())
+_OTHER = set("que qu el la los las de del si se por para con una un es tu como pero mas les des und der die das ist "
+             "nao com voce ki ka ke hai".split())
+
+
+def english(title: str) -> bool:
+    """Our channel is English only (owner, 29 Oct): Spanish or other-language Shorts are no signal for us."""
+    letters = [c for c in title if c.isalpha()]
+    if not letters or sum(c.isascii() for c in letters) / len(letters) < 0.9:
+        return False
+    w = topics._words(title)
+    if "¿" in title or "¡" in title or len(_OTHER & set(w)) > len(_EN & set(w)):
+        return False
+    return len(w) <= 3 or bool(_EN & set(w))
+
+
+# Game, meme and joke clips match "what happens if you..." searches but are no signal for a true-facts channel
+# (first run 40930788576: Sonic, Mario, Minecraft, #comedy clips).
+JUNK = re.compile(r"minecraft|sonic|mario|pac-?man|zelda|fortnite|roblox|pokemon|\bgta\b|\bgames?\b|#comedy|#funny|"
+                  r"cringe|#asmr|prank|\bmeme|reacts? to|movie ?recap|s\*x|#kids|\bbored\b", re.I)
+
+
+def useful(title: str) -> bool:
+    return english(title) and not JUNK.search(title)
 
 
 def search_shorts(query: str, log: dict) -> list[dict]:
@@ -179,7 +210,8 @@ def search_shorts(query: str, log: dict) -> list[dict]:
         log.setdefault("search_errors", []).append(f"{query}: {e!r}"[:200])
         return []
     return [{**v, "query": query} for v in vids
-            if 0 < v["seconds"] <= CFG["shorts_max_seconds"] and v["views"] >= CFG["search_min_views"]]
+            if 0 < v["seconds"] <= CFG["shorts_max_seconds"] and v["views"] >= CFG["search_min_views"]
+            and useful(v["title"])]
 
 
 def collect_signals(log: dict) -> dict:
@@ -216,7 +248,7 @@ def collect_signals(log: dict) -> dict:
     log["youtube_units"] = USED["units"]
     return {"channels": [{k: c[k] for k in ("name", "id", "found_by", "shorts", "median")} | {"hits": len(c["hits"])}
                          for c in chans],
-            "signals": signals,
+            "signals": signals, "log": dict(log),
             # hits vs normal Shorts of the same channels: the set for test A (feeling scorer, AUC >= 0.65)
             "test_a": [{"channel": c["name"], "title": v["title"], "hit": v in c["hits"], "ratio": v["ratio"]}
                        for c in chans for v in c["hits"] + c["normal"]]}
@@ -436,6 +468,7 @@ def run(out: Path, library_dir: Path, signals_file: Path | None = None, second_m
     log: dict = {"date": dt.date.today().isoformat()}
     past = [p for p in topics.load_past(library_dir)]
     sig = json.loads(signals_file.read_text()) if signals_file else collect_signals(log)
+    sig["signals"] = [x for x in sig["signals"] if useful(x["title"])]  # also cleans signals saved by older code
     (out / "signals.json").write_text(json.dumps(sig, indent=1, ensure_ascii=False))
     print(f"[topics] {len(sig['signals'])} signals from {len(sig['channels'])} channels, {USED['units']} YouTube units",
           flush=True)
