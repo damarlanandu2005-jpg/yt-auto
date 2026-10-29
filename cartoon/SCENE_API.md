@@ -7,7 +7,7 @@ Never keep state, never use timers, never use `Math.random()` (use `s.rand(i)`),
 
 ```js
 import { hero, crowd } from './character.js';
-import { place, floorY, art, background, thing, emoji, label, words, blackHole } from './props.js';
+import { place, stand, art, background, thing, emoji, label, words, blackHole } from './props.js';
 export default {
   sceneId(s) { background(s, 'ocean'); /* ...pictures... */ words(s); },  // one function per "## sceneId"
 };
@@ -60,12 +60,17 @@ crowd(s, { n: 6, x0: 120, x1: 960, y: 1500, scale: 0.8, depth: 40, seed: 4, outf
 
 ## Props, labels, captions (from props.js)
 
-- `place(s, name, { mood, zoom, focus, flash })`: a REAL PLACE from the LIBRARY list below (a detailed picture:
+- `place(s, name, { shot, focus, mood, flash })`: a REAL PLACE from the LIBRARY list below (a detailed picture:
   Titanic deck, hospital room, volcano crater, city street...). PREFER a place over `background` whenever one fits.
-  `mood`: night, dark, fire, cold, storm, dusk, underwater (the same place in another light). `zoom: 1.6` with
-  `focus: [x, y]` (0..1) = a closer shot of part of the place. `flash: ['boom']` = a white flash on that word.
-- `floorY(s, place, depth)`: the y where feet stand in that place (depth 0 = far back, 1 = front). Put hero and
-  art on the floor with it: `hero(s, { x, y: floorY(s, 'garage', 0.6), ... })`. Further back = smaller scale.
+  `shot`: 'wide' (the whole place, people small), 'medium' (people ~40 % of the screen: the usual shot),
+  'close' (a face fills the screen, cut at the waist: for strong feelings). Change the shot often, like a film:
+  wide to show where we are, then medium, then close on the feeling. `focus`: 0 = left part of the place ... 1 =
+  right part. `mood`: night, dark, fire, cold, storm, dusk, underwater (lights the place AND the people).
+  `flash: ['boom']` = a white flash on that word.
+- `stand(s, depth)`: where a person stands in the current shot and how big they are (depth 0 = far back, 1 =
+  front). ALWAYS place people on a place with it: `hero(s, { x: 300, ...stand(s, 0.8), look: {...}, moves })`,
+  `crowd(s, { n: 4, x0: 500, x1: 980, ...stand(s, 0.3) })`. On a place, people get a floor shadow and no white
+  edge automatically (they stand IN the room, not pasted on it).
 - `art(s, name, { x, y, scale, size, at, flip, rotate })`: a detailed library object (lifeboat, bed, car, bomb
   timer...) drawn at its REAL size next to the stickman; `y` = where it stands (its bottom), `scale` = the same
   as the stickman's scale beside it. `size` (px of height) only for a close-up of the object.

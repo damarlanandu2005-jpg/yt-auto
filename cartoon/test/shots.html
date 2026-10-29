@@ -1,0 +1,28 @@
+<!doctype html><meta charset="utf-8"><body style="margin:0">
+<canvas id="c" width="2160" height="1920"></canvas>
+<script type="module">
+// Test: camera shots on library places (wide / medium / close), stand(), floor shadows, room light on people.
+import { hero, crowd } from '../character.js';
+import { place, stand, words, art } from '../props.js';
+import { PLACES, ART } from '../art_cards.js';
+const cv = document.getElementById('c'), ctx = cv.getContext('2d');
+const images = new Map();
+const load = (k, src) => new Promise((ok) => { const im = new Image(); im.onload = () => { images.set(k, im); ok(); }; im.onerror = ok; im.src = src; });
+await Promise.all([...Object.values(PLACES), ...Object.values(ART)].map((c) => load(`assets/art/${c.file}`, `../art/${c.file}`)));
+const shots = [
+  (s) => { place(s, 'hospital_room', { shot: 'wide' }); hero(s, { x: 330, ...stand(s, 0.75), look: { outfit: 'hospital_gown', hair: 'short' }, moves: [{ at: 0, pose: 'stand', face: 'worried' }] });
+           hero(s, { x: 760, ...stand(s, 0.4), flip: true, look: { outfit: 'doctor', hair: 'bun', glasses: true }, moves: [{ at: 0, pose: 'hold', face: 'neutral' }] }); words(s); },
+  (s) => { place(s, 'hospital_room', { shot: 'medium', focus: 0.3 }); hero(s, { x: 360, ...stand(s, 0.8), look: { outfit: 'hospital_gown', hair: 'short' }, moves: [{ at: 0, pose: 'think', face: 'confused' }] }); words(s); },
+  (s) => { place(s, 'titanic_deck_night', { shot: 'medium', mood: 'night' }); crowd(s, { n: 4, x0: 520, x1: 980, ...{ y: stand(s, 0.35).y, scale: stand(s, 0.35).scale }, seed: 5, outfits: ['passenger_1912', 'dress'], faces: ['scared', 'shocked'], poses: ['panic', 'scared'] });
+           hero(s, { x: 330, ...stand(s, 0.85), look: { outfit: 'passenger_1912', hat: 'bowler', hair: 'short' }, moves: [{ at: 0, pose: 'point', face: 'shocked' }] }); words(s); },
+  (s) => { place(s, 'garage', { shot: 'close', focus: 0.5 }); hero(s, { x: 540, ...stand(s, 0.85), look: { outfit: 'police', hat: 'police_cap', moustache: true }, moves: [{ at: 0, pose: 'look_down', face: 'sweating' }] });
+           art(s, 'bomb_timer', { x: 700, y: 1500, size: 330 }); words(s); },
+];
+shots.forEach((fn, i) => {
+  ctx.save(); ctx.translate(i * 540, 0); ctx.scale(0.5, 0.5); ctx.beginPath(); ctx.rect(0, 0, 1080, 1920); ctx.clip();
+  const s = { t: 1.3, W: 1080, H: 1920, cx: 540, cy: 960, words: [], time: (v) => (typeof v === 'number' ? v : 0), engine: { image: (k) => images.get(k) },
+    draw(o, f) { ctx.save(); ctx.translate(o.x ?? 0, o.y ?? 0); f(ctx, { p: 1, local: 1 }); ctx.restore(); } };
+  fn(s); ctx.restore();
+});
+document.title = 'done';
+</script>

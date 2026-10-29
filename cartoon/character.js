@@ -519,9 +519,20 @@ export function hero(s, o = {}) {
     const shake = c.face.shake ? Math.sin(t * 60) * c.face.shake : 0;
     const drift = o.float ? Math.sin(t * 1.6) * 14 : Math.sin(t * 2.2) * 1.5; // breathing or floating
     const ink = val(o.color, BLACK);
+    // On a library place: a soft shadow on the floor and NO white sticker edge, so people stand IN the room
+    // (owner, 29 Oct: "looks like pasted"). The edge stays for plain dark backgrounds.
+    const onPlace = !!s._shot;
+    if (onPlace && o.shadow !== false && !o.float) {
+      ctx.save();
+      ctx.fillStyle = 'rgba(0,0,0,0.28)';
+      ctx.beginPath();
+      ctx.ellipse(0, 4 * sc, (c.pose.rot ? 150 : 62) * sc, 13 * sc, 0, 0, Math.PI * 2);
+      ctx.fill();
+      ctx.restore();
+    }
     // outline: draw the whole figure first in the edge colour with wider lines, then normally on top.
     // (A canvas drop-shadow filter did the same but made rendering ~30x slower: run 40824544082 hung.)
-    if (o.outline) {
+    if (o.outline && !(onPlace && o.outline === '#ffffff')) {
       INK = o.outline;
       WIDEN = 7 / sc;
       figure(ctx, c, o, sc, k, t, shake, drift, true);

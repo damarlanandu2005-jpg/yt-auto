@@ -71,6 +71,7 @@ export function stars(s, o = {}) {
 // Captions like the big Shorts channels (owner's example, 29 Oct): ONE word at a time, bold white with a black
 // edge, no box, popping in as it is spoken. Uses explainroo's word timings (s.words). Numbers in yellow.
 export function words(s, o = {}) {
+  atmosphere(s);
   const list = s.words || [];
   const y = o.y ?? s.H * 0.72;
   const size = o.size ?? 78;
@@ -312,40 +313,85 @@ const PX_PER_M = 165;  // the stickman at scale 1 is about 1.7 m tall on screen
 
 // Moods drawn over a place: the same picture by day, at night, lit by fire, in the dark...
 const MOODS = {
-  night: ['rgba(10,20,60,0.45)', 'multiply'], dark: ['rgba(0,0,0,0.55)', 'multiply'],
+  night: ['rgba(30,45,110,0.55)', 'multiply'], dark: ['rgba(0,0,0,0.55)', 'multiply'],
   fire: ['rgba(255,110,20,0.28)', 'overlay'], cold: ['rgba(120,170,255,0.25)', 'overlay'],
   storm: ['rgba(30,40,60,0.45)', 'multiply'], dusk: ['rgba(255,120,60,0.22)', 'overlay'],
   underwater: ['rgba(0,90,160,0.3)', 'multiply'],
 };
+
+// Camera shots on a place (owner, 29 Oct: "the stickman looks small, like pasted"): the reference Shorts show
+// people big, standing IN the room. wide = the whole place; medium = closer, people ~40 % of the screen;
+// close = closer still, people cut at the knees. Use stand(s, depth) for where people stand and how big they are.
+const SHOTS = { wide: 1, medium: 1.55, close: 1.95 };
+const SOFT = new Map();
+function softened(img, px) { // a slightly blurred copy, made once (a per-frame canvas filter is far too slow)
+  const key = img.src + '|' + px;
+  if (SOFT.has(key)) return SOFT.get(key);
+  const c = document.createElement('canvas');
+  c.width = img.naturalWidth || img.width; c.height = img.naturalHeight || img.height;
+  const g = c.getContext('2d');
+  g.filter = `blur(${px}px)`;
+  g.drawImage(img, 0, 0, c.width, c.height);
+  SOFT.set(key, c);
+  return c;
+}
 
 export function place(s, name, o = {}) {
   const card = PLACES[name];
   if (!card) throw new Error(`unknown place "${name}" (have: ${Object.keys(PLACES).join(', ')})`);
   if (s.camera) s.camera([]);  // still camera, like background() (captions are never cut off)
   const img = s.engine.image(`assets/art/${card.file}`);
+  const z = o.zoom ?? SHOTS[o.shot || 'wide'] ?? 1;
+  const fx = o.focus ?? 0.5;  // 0 = left side of the place, 1 = right side
+  // keep the open floor in view: the point 3/4 into the floor lands near the bottom of the screen
+  const top = card.floor * s.H + 30, bottom = s.H * 0.97;
+  const anchor = top + (bottom - top) * 0.75;
+  const want = z >= 1.8 ? s.H * 1.3 : z > 1 ? s.H * 0.92 : anchor;  // close: more of the wall behind the face
+  const oy = Math.min(0, Math.max(s.H - s.H * z, want - anchor * z));
+  const ox = (s.W - s.W * z) * fx;
+  s._shot = { name, z, ox, oy, top, bottom, mood: o.mood };
   s.draw({ x: 0, y: 0, at: 0, enter: 'none', sfx: false }, (ctx) => {
-    const zoom = o.zoom ?? 1;  // > 1 = closer shot of the same place, centred on o.focus ([x, y] in 0..1)
-    const [fx, fy] = o.focus ?? [0.5, 0.6];
-    const w = s.W * zoom, h = s.H * zoom;
-    ctx.drawImage(img, (s.W - w) * fx, (s.H - h) * fy, w, h);
-    const mood = MOODS[o.mood];
-    if (mood) {
-      ctx.save(); ctx.globalCompositeOperation = mood[1]; ctx.fillStyle = mood[0]; ctx.fillRect(0, 0, s.W, s.H); ctx.restore();
-    }
+    ctx.drawImage(z > 1.2 ? softened(img, z >= 1.8 ? 2.2 : 1.4) : img, ox, oy, s.W * z, s.H * z);
     if (o.flash) {  // lightning or an explosion: a short white flash at these times (seconds in the scene)
       const k = Math.max(0, ...[].concat(o.flash).map((t) => 1 - Math.abs(s.t - s.time(t)) / 0.15));
       if (k > 0) { ctx.fillStyle = `rgba(255,255,255,${0.8 * k})`; ctx.fillRect(0, 0, s.W, s.H); }
     }
   });
-  return { floor: card.floor * s.H };
+  return { floor: top * z + oy };
 }
 
-// Where feet stand in a place: depth 0 = the back of the open floor, 1 = the front of the picture.
+// Where a person stands in the current shot and how big they are: depth 0 = far back of the floor,
+// 1 = right at the front. hero(s, { x: 300, ...stand(s, 0.8), look: {...} }). Further back = smaller.
+export function stand(s, depth = 0.7) {
+  const sh = s._shot;
+  if (!sh) return { y: s.H * 0.8, scale: 1.4 };
+  const d = Math.min(1, Math.max(0, depth));
+  // close shot: the person fills ~3/4 of the height, cut at the knees (like the reference close-ups)
+  if (sh.z >= 1.8) return { y: s.H * (1.04 + 0.1 * d), scale: 3.2 + 1.2 * d };
+  const y = (sh.top + (sh.bottom - sh.top) * d) * sh.z + sh.oy;
+  return { y, scale: (0.75 + 0.85 * d) * sh.z };
+}
+
+// Kept for older scenes: where feet stand in the wide shot.
 export function floorY(s, name, depth = 0.5) {
   const card = PLACES[name];
   if (!card) throw new Error(`unknown place "${name}"`);
   const top = card.floor * s.H + 40, bottom = s.H * 0.86;
   return top + (bottom - top) * Math.min(1, Math.max(0, depth));
+}
+
+// The place's light over EVERYTHING (place, people, objects), so people look lit by the room, not pasted;
+// plus a soft dark edge (vignette). Drawn by words(s), which every scene calls last.
+function atmosphere(s) {
+  const sh = s._shot;
+  if (!sh) return;
+  s.draw({ at: 0, enter: 'none', sfx: false }, (ctx) => {
+    const mood = MOODS[sh.mood];
+    if (mood) { ctx.save(); ctx.globalCompositeOperation = mood[1]; ctx.fillStyle = mood[0]; ctx.fillRect(0, 0, s.W, s.H); ctx.restore(); }
+    const g = ctx.createRadialGradient(s.W / 2, s.H * 0.45, s.H * 0.35, s.W / 2, s.H * 0.5, s.H * 0.75);
+    g.addColorStop(0, 'rgba(0,0,0,0)'); g.addColorStop(1, 'rgba(0,0,0,0.28)');
+    ctx.fillStyle = g; ctx.fillRect(0, 0, s.W, s.H);
+  });
 }
 
 // A detailed object, drawn at its real size next to the stickman: art(s, 'car', { x, y, scale }) where y is
@@ -355,7 +401,7 @@ export function art(s, name, o = {}) {
   const card = ART[name];
   if (!card) throw new Error(`unknown art "${name}" (have: ${Object.keys(ART).join(', ')})`);
   const img = s.engine.image(`assets/art/${card.file}`);
-  const h = Math.min(s.H * 1.4, o.size ?? card.height_m * PX_PER_M * (o.scale ?? 1));
+  const h = Math.min(s.H * 1.4, o.size ?? card.height_m * PX_PER_M * (o.scale ?? (s._shot ? s._shot.z : 1)));
   const w = (h * card.w) / card.h;
   s.draw({ x: o.x ?? s.W / 2, y: o.y ?? s.H * 0.8, at: o.at ?? 0, out: o.out, enter: o.enter ?? 'pop', id: o.id }, (ctx) => {
     ctx.save();
