@@ -1,0 +1,224 @@
+{
+  "fps": 30,
+  "width": 1080,
+  "height": 1920,
+  "duration": 12.733333333333333,
+  "frames": 382,
+  "transitionSeconds": 0.7,
+  "pace": 1,
+  "scenes": [
+    {
+      "id": "deck",
+      "index": 0,
+      "start": 0,
+      "dur": 4.366666666666666,
+      "lead": 0.35,
+      "text": "The stickman walks on the deck at night and sees the iceberg.",
+      "transition": "none",
+      "voice": {
+        "url": "build/voice/deck.wav",
+        "start": 0.35,
+        "dur": 3.31
+      },
+      "words": [
+        {
+          "text": "The",
+          "start": 0.35,
+          "end": 0.44999999999999996
+        },
+        {
+          "text": "stickman",
+          "start": 0.44999999999999996,
+          "end": 0.85
+        },
+        {
+          "text": "walks",
+          "start": 0.85,
+          "end": 1.0499999999999998
+        },
+        {
+          "text": "on",
+          "start": 1.0499999999999998,
+          "end": 1.33
+        },
+        {
+          "text": "the",
+          "start": 1.33,
+          "end": 1.4100000000000001
+        },
+        {
+          "text": "deck",
+          "start": 1.4100000000000001,
+          "end": 1.5699999999999998
+        },
+        {
+          "text": "at",
+          "start": 1.5699999999999998,
+          "end": 1.71
+        },
+        {
+          "text": "night",
+          "start": 1.71,
+          "end": 1.9100000000000001
+        },
+        {
+          "text": "and",
+          "start": 1.9100000000000001,
+          "end": 2.49
+        },
+        {
+          "text": "sees",
+          "start": 2.49,
+          "end": 2.67
+        },
+        {
+          "text": "the",
+          "start": 2.67,
+          "end": 2.95
+        },
+        {
+          "text": "iceberg.",
+          "start": 2.95,
+          "end": 3.25
+        }
+      ],
+      "marks": {},
+      "attrs": {}
+    },
+    {
+      "id": "sea",
+      "index": 1,
+      "start": 4.366666666666666,
+      "dur": 3.7,
+      "lead": 0.35,
+      "text": "Then the ship breaks and the lifeboat drifts away.",
+      "transition": "auto",
+      "voice": {
+        "url": "build/voice/sea.wav",
+        "start": 4.716666666666666,
+        "dur": 2.635
+      },
+      "words": [
+        {
+          "text": "Then",
+          "start": 0.35,
+          "end": 0.51
+        },
+        {
+          "text": "the",
+          "start": 0.51,
+          "end": 0.59
+        },
+        {
+          "text": "ship",
+          "start": 0.59,
+          "end": 0.81
+        },
+        {
+          "text": "breaks",
+          "start": 0.81,
+          "end": 1.0499999999999998
+        },
+        {
+          "text": "and",
+          "start": 1.0499999999999998,
+          "end": 1.5699999999999998
+        },
+        {
+          "text": "the",
+          "start": 1.5699999999999998,
+          "end": 1.67
+        },
+        {
+          "text": "lifeboat",
+          "start": 1.67,
+          "end": 2.13
+        },
+        {
+          "text": "drifts",
+          "start": 2.13,
+          "end": 2.43
+        },
+        {
+          "text": "away.",
+          "start": 2.43,
+          "end": 2.77
+        }
+      ],
+      "marks": {},
+      "attrs": {}
+    },
+    {
+      "id": "room",
+      "index": 2,
+      "start": 8.066666666666666,
+      "dur": 4.666666666666667,
+      "lead": 0.35,
+      "text": "Later he wakes up in a hospital room.",
+      "transition": "auto",
+      "voice": {
+        "url": "build/voice/room.wav",
+        "start": 8.416666666666666,
+        "dur": 2.205
+      },
+      "words": [
+        {
+          "text": "Later",
+          "start": 0.35,
+          "end": 0.63
+        },
+        {
+          "text": "he",
+          "start": 0.63,
+          "end": 0.79
+        },
+        {
+          "text": "wakes",
+          "start": 0.79,
+          "end": 0.97
+        },
+        {
+          "text": "up",
+          "start": 0.97,
+          "end": 1.23
+        },
+        {
+          "text": "in",
+          "start": 1.23,
+          "end": 1.4500000000000002
+        },
+        {
+          "text": "a",
+          "start": 1.4500000000000002,
+          "end": 1.5299999999999998
+        },
+        {
+          "text": "hospital",
+          "start": 1.5299999999999998,
+          "end": 1.85
+        },
+        {
+          "text": "room.",
+          "start": 1.85,
+          "end": 2.35
+        }
+      ],
+      "marks": {},
+      "attrs": {}
+    }
+  ],
+  "voiceSpans": [
+    {
+      "start": 0.35,
+      "end": 3.66
+    },
+    {
+      "start": 4.716666666666666,
+      "end": 7.351666666666666
+    },
+    {
+      "start": 8.416666666666666,
+      "end": 10.621666666666666
+    }
+  ]
+}

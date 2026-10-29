@@ -1,0 +1,37 @@
+ok   node                 v22.23.4
+ok   ffmpeg               ffmpeg version n8.1.3-24-g92611900bb-20261026 Copyright (c) 2000-2026 the FFmpeg developers
+ok   espeak-ng            not found; only needed for Spanish, French, Italian, Portuguese and Hindi
+ok   misaki ja            not found; only needed for Japanese
+ok   misaki zh            not found; only needed for Chinese
+ok   chrome               /usr/bin/google-chrome
+ok   voice model          Kokoro 82M (fp32) in /home/runner/.cache/explainroo/models/onnx-community
+ok   speech check model   Whisper base.en
+FAIL language model       Whisper small for languages other than English; downloaded on first use, not by --fetch
+voice deck: 3.3s in 2.3s
+voice sea: 2.6s in 1.3s
+voice room: 2.2s in 1.1s
+deck                 3.3s  100% confirmed
+sea                  2.6s  100% confirmed
+room                 2.2s  100% confirmed
+total 12.7s
+no problems found in 3 scenes (12.7s)
+deck@end                 /home/runner/explainroo/videos/library-test/out/stills/deck@end.png
+sea@end                  /home/runner/explainroo/videos/library-test/out/stills/sea@end.png
+room@end                 /home/runner/explainroo/videos/library-test/out/stills/room@end.png
+/home/runner/explainroo/videos/library-test/out/sheet.jpg (26 frames)
+rendering 12.7s (382 frames at 30 fps, 1080x1920) with 2 workers
+soundtrack: 2 sound cues, mixed in 0.2s
+frames 108/382 (34.7 fps, about 8s left)
+frames 192/382 (29.6 fps, about 7s left)
+frames 246/382 (25.6 fps, about 6s left)
+frames 324/382 (25.6 fps, about 3s left)
+frames 377/382 (23.6 fps, about 1s left)
+frames done in 17.5s
+wrote videos/library-test/out/video.mp4 in 21.2s
+videos/library-test/out/video.mp4
+videos/library-test/out/video.srt
+videos/library-test/out/video.vtt
+videos/library-test/out/video.cover.jpg
+checking that the narration is understandable in the final mix
+/home/runner/explainroo/videos/library-test/out/video.mp4: 12.73s, 1080x1920, loudness -14 LUFS, true peak -1.4 dBFS
+narration understood: 100%

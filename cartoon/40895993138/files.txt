@@ -1,0 +1,14 @@
+videos/library-test/video.json
+videos/library-test/out/video.srt
+videos/library-test/out/video.mp4
+videos/library-test/out/report.json
+videos/library-test/out/stills/sea@end.png
+videos/library-test/out/stills/room@end.png
+videos/library-test/out/stills/deck@end.png
+videos/library-test/out/sheet.jpg
+videos/library-test/out/video.cover.jpg
+videos/library-test/space-look.json
+videos/library-test/build/timeline.json
+videos/library-test/build/voice/room.json
+videos/library-test/build/voice/deck.json
+videos/library-test/build/voice/sea.json
