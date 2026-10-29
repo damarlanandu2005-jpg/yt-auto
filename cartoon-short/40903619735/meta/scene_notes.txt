@@ -1,0 +1,6 @@
+hook: wide view of Titanic deck at night with stickman walking, then close on stickman pointing shocked at looming iceberg.
+step1: wide icy ocean showing massive iceberg, then close on iceberg showing only a small tip above water with label "ONE TENTH ABOVE".
+step2: medium shot of Titanic bow colliding with iceberg, stickman pointing shocked; then medium shot of crowded lifeboat on deck with panicked crowd.
+step3: medium shot of passengers on raised poop deck awaiting rescue, stickman worried; then close shot of water rushing up the deck, stickman falling into freezing sea, label "FREEZING".
+answer: close shot of stickman shivering with label "COLD SHOCK"; then close shot with heart monitor and label "GASPING"; then close shot of stickman slumped with label "INCAPACITATION".
+end: medium shot of a lifeboat with few empty seats, stickman thinking hopeful, label "HOPE?".

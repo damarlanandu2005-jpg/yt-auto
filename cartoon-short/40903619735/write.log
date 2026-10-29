@@ -1,0 +1,12 @@
+[plan] What would it feel like to be on the Titanic as it sank? | feeling: fear
+[script] ['the closing line is weak ("let\'s consider the sinking of the titanic."): end with a short question to the viewer or a true twist']: rewrite 1
+[llm] factcheck: gemini-3.8-flash unavailable (daily free quota used up); trying next model
+[llm] factcheck: gemini-3.6-flash unavailable (daily free quota used up); trying next model
+[llm] factcheck: gemini-3.5-flash unavailable (daily free quota used up); trying next model
+[script] 110 words; fact-check {'checked': 10, 'supported_first_pass': 9, 'fixed': 0, 'dropped': 1, 'bad_ids': 0, 'copied': 0, 'guard': 0, 'words_after': 110}; story ok
+[scenes] problems, one fix round:
+  step1: label 'ONE TENTH ABOVE' must be at most 4 words, all spoken in this scene (not spoken: ONE, TENTH)
+  step3: 2 labels; use at most ONE short label per scene and draw the rest
+  answer: 3 labels; use at most ONE short label per scene and draw the rest
+  end: label 'HOPE?' must be at most 4 words, all spoken in this scene (not spoken: HOPE?)
+[scenes] ["step1: label 'ONE TENTH' must be at most 4 words, all spoken in this scene (not spoken: ONE, TENTH)"]

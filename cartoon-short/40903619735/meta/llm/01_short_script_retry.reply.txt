@@ -1,0 +1,118 @@
+{
+  "facts": [
+    {
+      "id": "A1.1",
+      "fact": "RMS Titanic was a British ocean liner that sank in the early hours of 15 April 1912 after striking an iceberg."
+    },
+    {
+      "id": "A2.4",
+      "fact": "Typically about one-tenth of the volume of an iceberg is above water."
+    },
+    {
+      "id": "A5.26",
+      "fact": "Foundering occurs when a ship takes in water, loses buoyancy, and sinks, which happened to the Titanic."
+    },
+    {
+      "id": "A1.45",
+      "fact": "The Titanic carried lifeboats that could accommodate 1,178 people, which was only one-third of its total capacity."
+    },
+    {
+      "id": "A1.14",
+      "fact": "Many passengers and crew made their last stand on the raised poop deck as the ship sank."
+    },
+    {
+      "id": "A4.29",
+      "fact": "Most people who entered the minus 2 degrees Celsius water during the sinking died in 15 to 30 minutes."
+    },
+    {
+      "id": "A4.30",
+      "fact": "Cold shock from freezing seas triggers uncontrolled rapid breathing, gasping, cardiac strain, and panic."
+    },
+    {
+      "id": "A4.30",
+      "fact": "Cold incapacitation within 15 to 30 minutes shuts down limb muscles, preventing swimming or gripping."
+    }
+  ],
+  "scenes": [
+    {
+      "role": "hook",
+      "sentences": [
+        {
+          "text": "What if you were aboard the Titanic when it struck that fatal iceberg?",
+          "kind": "framing",
+          "sources": []
+        }
+      ]
+    },
+    {
+      "role": "step",
+      "sentences": [
+        {
+          "text": "Typically, only about one-tenth of an iceberg floats above the water surface.",
+          "kind": "fact",
+          "sources": ["A2.4"]
+        }
+      ]
+    },
+    {
+      "role": "step",
+      "sentences": [
+        {
+          "text": "The British liner strikes ice and begins foundering in the North Atlantic.",
+          "kind": "fact",
+          "sources": ["A1.1", "A5.26"]
+        },
+        {
+          "text": "The ship carries lifeboats for only one-third of the people on board.",
+          "kind": "fact",
+          "sources": ["A1.45"]
+        }
+      ]
+    },
+    {
+      "role": "step",
+      "sentences": [
+        {
+          "text": "Many passengers and crew make their last stand on the raised poop deck.",
+          "kind": "fact",
+          "sources": ["A1.14"]
+        },
+        {
+          "text": "Victims are plunged into freezing sea water at minus 2 degrees Celsius.",
+          "kind": "fact",
+          "sources": ["A4.29"]
+        }
+      ]
+    },
+    {
+      "role": "answer",
+      "sentences": [
+        {
+          "text": "You would feel terrifying panic as your body faces extreme freezing shock.",
+          "kind": "framing",
+          "sources": []
+        },
+        {
+          "text": "Cold shock triggers uncontrolled rapid breathing, gasping, and severe heart strain.",
+          "kind": "fact",
+          "sources": ["A4.30"]
+        },
+        {
+          "text": "Within 15 to 30 minutes, cold incapacitation shuts down limb muscles, preventing swimming.",
+          "kind": "fact",
+          "sources": ["A4.30"]
+        }
+      ]
+    },
+    {
+      "role": "end",
+      "sentences": [
+        {
+          "text": "Would you have found a place in one of the few lifeboats?",
+          "kind": "framing",
+          "sources": []
+        }
+      ]
+    }
+  ]
+}

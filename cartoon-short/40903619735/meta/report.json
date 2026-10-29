@@ -1,0 +1,25 @@
+{
+ "topic": "What would it feel like to be on the Titanic as it sank?",
+ "fact_check": {
+  "checked": 10,
+  "supported_first_pass": 9,
+  "fixed": 0,
+  "dropped": 1,
+  "bad_ids": 0,
+  "copied": 0,
+  "guard": 0,
+  "words_after": 110
+ },
+ "story_problems": [],
+ "words": 110,
+ "scene_problems": [
+  "step1: label 'ONE TENTH' must be at most 4 words, all spoken in this scene (not spoken: ONE, TENTH)"
+ ],
+ "llm_calls": 7,
+ "models_used": [
+  "cf:@cf/openai/gpt-oss-120b",
+  "gemini-3.8-flash"
+ ],
+ "render_errors_first": [],
+ "picture_problems_first": []
+}

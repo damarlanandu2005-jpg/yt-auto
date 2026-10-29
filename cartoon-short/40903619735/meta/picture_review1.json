@@ -1,0 +1,18 @@
+{
+ "seen": {
+  "hook": "In Image 1, a cartoon stick figure stands on the deck of a ship. The figure has a round white head with wide, surprised circular eyes and an open oval mouth. It wears a brown hat, a brown jacket, and a red bow tie. The figure's left arm extends horizontally to the right, with its hand cut off at the right edge of the frame. In the upper center, the yellow text \"ICEBERG\" is written in a box. Below the text, near the upper right, is a red exclamation mark. In the upper portion, a large blue iceberg shape floats above and behind the figure, partially covering the top edge of the background. The background shows the ship's wooden deck and railing on the right, and lifeboat davits and white structures on the left.",
+  "step1": "In Image 2, the same stick figure stands against an icy, snowy background with water at the bottom and a massive blue iceberg behind it. The figure has a neutral or mildly disappointed face with solid black dot eyes and a curved mouth pointing downwards, and two black lines sticking up from its hat. Its hands are raised near its chest. In the upper center, the yellow text \"ONE TENTH\" is displayed in a box. The iceberg extends off the top edge of the frame, and the water extends off the bottom edge.",
+  "step2": "In Image 3, the stick figure stands in the foreground on the deck of a ship at night, with a sad expression and a single blue teardrop on its right cheek. Behind the main figure, five other cartoon characters with purple dresses or tops stand in a row, looking anxious or scared with wide eyes and wavy mouths. Above them in the background, the ship's superstructure and smokestacks are visible. In the upper right area, the white text \"LIFEBOATS\" is shown.",
+  "step3": "In Image 4, the stick figure is shown jumping or floating in the air, with its arms raised and legs bent downwards as if falling or jumping. The figure has a surprised expression with wide circular eyes and an open oval mouth. A red exclamation mark floats above its head near the top edge. The bottom portion of the figure is submerged behind a horizontal blue water-like graphic line that cuts across the lower part of the frame. The background shows a ship's deck at night on the left and a dark sea with mountains or icebergs on the right.",
+  "answer": "In Image 5, a close-up shows the stick figure's head and upper body on the deck of a ship at night. The figure has a sad expression with closed-loop eyes and a downturned mouth, and a blue teardrop streams down its left eye. The background features the illuminated wooden deck, ship railings, and large orange smokestacks on the left. The figure's body is centered in the lower-middle area.",
+  "end": "In Image 6, the stick figure stands on the ship's deck at night, looking up and slightly to the right with a neutral face. Floating directly above the figure's hat is a small cartoon lifeboat filled with tiny passengers on blue water. In the upper center, the white text \"LIFEBOATS\" appears against the dark night sky. The background shows the ship's deck and white railings stretching into the distance on the right."
+ },
+ "problems": {
+  "hook": [],
+  "step1": [],
+  "step2": [],
+  "step3": [],
+  "answer": [],
+  "end": []
+ }
+}

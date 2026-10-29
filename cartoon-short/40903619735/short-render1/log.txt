@@ -1,0 +1,60 @@
+voice hook: 4.0s in 3.8s
+voice step1: 4.8s in 3.0s
+voice step2: 8.2s in 6.6s
+voice step3: 9.4s in 5.6s
+voice answer: 12.1s in 6.6s
+voice end: 2.8s in 2.1s
+hook                 4.0s  100% confirmed
+step1                4.8s  92% confirmed  unconfirmed: one-tenth
+step2                8.2s  96% confirmed  unconfirmed: one-third
+step3                9.4s  88% confirmed  unconfirmed: sea, water, minus
+answer              12.1s  100% confirmed
+end                  2.8s  100% confirmed
+total 49.7s
+WARN  step1: the voice check could not confirm "one-tenth". It heard: "Typically, only about 1/10 of an iceberg floats above the water surface.". If a word is mispronounced, write it as {shown|spoken} in script.md.
+WARN  step2: the voice check could not confirm "one-third". It heard: "The British liner strikes ice and begins foundering in the North Atlantic. The ship carries lifeboats for only one-third of the people on board.". If a word is mispronounced, write it as {shown|spoken} in script.md.
+WARN  step3: the voice check could not confirm "water", "minus". It heard: "Many passengers and crew make their last stand on the raised poop deck. Victims are plunged into freezing seawater at -2 degrees Celsius.". If a word is mispronounced, write it as {shown|spoken} in script.md.
+HINT  step2 @0s: no new element for 9.3s (from 0.0s); consider revealing something on a cue in that stretch
+HINT  step3 @0s: no new element for 7.0s (from 0.0s); consider revealing something on a cue in that stretch
+HINT  answer @0s: no new element for 13.1s (from 0.0s); consider revealing something on a cue in that stretch
+HINT  end @0s: no new element for 6.0s (from 0.0s); consider revealing something on a cue in that stretch
+HINT  answer: cue "cold" means the first of the 2 times it is spoken in this scene; if you meant a later one, use s.cue("cold", 2) or a [#marker]
+0 error(s), 8 other finding(s) in 6 scenes (49.7s)
+hook@end                 /home/runner/explainroo/videos/short/out/stills/hook@end.png
+step1@end                /home/runner/explainroo/videos/short/out/stills/step1@end.png
+step2@end                /home/runner/explainroo/videos/short/out/stills/step2@end.png
+step3@end                /home/runner/explainroo/videos/short/out/stills/step3@end.png
+answer@end               /home/runner/explainroo/videos/short/out/stills/answer@end.png
+end@end                  /home/runner/explainroo/videos/short/out/stills/end@end.png
+/home/runner/explainroo/videos/short/out/sheet.jpg (31 frames)
+rendering 49.7s (1491 frames at 30 fps, 1080x1920) with 2 workers
+soundtrack: 5 sound cues, mixed in 2.2s
+frames 84/1491 (25.9 fps, about 55s left)
+frames 198/1491 (31.4 fps, about 42s left)
+frames 288/1491 (30.3 fps, about 40s left)
+frames 330/1491 (25.9 fps, about 45s left)
+frames 354/1491 (21.3 fps, about 54s left)
+frames 414/1491 (20.8 fps, about 52s left)
+frames 498/1491 (21.6 fps, about 47s left)
+frames 570/1491 (21.8 fps, about 43s left)
+frames 684/1491 (23.3 fps, about 35s left)
+frames 774/1491 (23.8 fps, about 31s left)
+frames 858/1491 (24.0 fps, about 27s left)
+frames 918/1491 (23.5 fps, about 25s left)
+frames 984/1491 (23.2 fps, about 22s left)
+frames 1056/1491 (23.3 fps, about 19s left)
+frames 1134/1491 (23.4 fps, about 16s left)
+frames 1230/1491 (23.9 fps, about 11s left)
+frames 1332/1491 (24.5 fps, about 7s left)
+frames 1357/1491 (23.5 fps, about 6s left)
+frames 1375/1491 (22.5 fps, about 6s left)
+frames 1441/1491 (22.5 fps, about 3s left)
+frames done in 66.8s
+wrote videos/short/out/video.mp4 in 73.4s
+videos/short/out/video.mp4
+videos/short/out/video.srt
+videos/short/out/video.vtt
+videos/short/out/video.cover.jpg
+checking that the narration is understandable in the final mix
+/home/runner/explainroo/videos/short/out/video.mp4: 49.7s, 1080x1920, loudness -14 LUFS, true peak -1.5 dBFS
+narration understood: 96%

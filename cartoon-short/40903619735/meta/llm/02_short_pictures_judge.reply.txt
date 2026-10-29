@@ -1,0 +1,46 @@
+```json
+{
+  "scenes": [
+    {
+      "scene": "Scene hook (Image 1)",
+      "ok": false,
+      "problems": [
+        "the stick figure's hand is cut off at the right edge of the frame",
+        "there is more than one short piece of text ('ICEBERG' and '!')"
+      ]
+    },
+    {
+      "scene": "Scene step1 (Image 2)",
+      "ok": false,
+      "problems": [
+        "the iceberg is cut off at the top edge of the frame",
+        "the water is cut off at the bottom edge of the frame"
+      ]
+    },
+    {
+      "scene": "Scene step2 (Image 3)",
+      "ok": false,
+      "problems": [
+        "the drawing does not show the lifeboats mentioned in the narration (only the text 'LIFEBOATS' is shown)"
+      ]
+    },
+    {
+      "scene": "Scene step3 (Image 4)",
+      "ok": true,
+      "problems": []
+    },
+    {
+      "scene": "Scene answer (Image 5)",
+      "ok": false,
+      "problems": [
+        "the picture does not show the physiological effects described in the narration (rapid breathing, gasping, heart strain, or limb incapacitation)"
+      ]
+    },
+    {
+      "scene": "Scene end (Image 6)",
+      "ok": true,
+      "problems": []
+    }
+  ]
+}
+```

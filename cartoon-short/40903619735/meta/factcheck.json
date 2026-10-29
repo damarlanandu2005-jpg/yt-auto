@@ -1,0 +1,16 @@
+{
+ "checked": 10,
+ "supported_first_pass": 9,
+ "fixed": [],
+ "dropped": [
+  {
+   "id": "s05.01",
+   "text": "You would feel terrifying panic as your body faces extreme freezing shock.",
+   "problem": "not returned by checker"
+  }
+ ],
+ "bad_ids": [],
+ "copied": [],
+ "guard": [],
+ "words_after": 110
+}

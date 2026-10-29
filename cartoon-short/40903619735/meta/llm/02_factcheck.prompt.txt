@@ -1,0 +1,55 @@
+[model] cf:@cf/openai/gpt-oss-120b
+[system]
+
+
+[user]
+You are a strict fact-checker. For each sentence below, decide using ONLY its cited passages
+(not your own knowledge):
+- supported: every detail (numbers, names, dates, causes, comparisons) is stated in or directly follows from them.
+- partly: the main point is backed but some detail is not, or it overstates / oversimplifies into something false.
+  Also partly: "every/all/always/never" the passages don't say, or a model-based estimate stated as a plain
+  certain fact (fixed_text adds "scientists estimate" or "in today's standard model").
+- unsupported: the cited passages do not back it, or there are none.
+- Conflict: if the cited passages DISAGREE with each other about any number, date or name the sentence
+  states, the sentence is at most "partly" even if it matches one of them; say "sources conflict". Its
+  fixed_text must not pick a side: state only what all passages agree on, or give both values.
+For partly/unsupported, give fixed_text: a corrected sentence in the same plain spoken style that the cited
+passages fully support (keep digits and full unit words; no copying 8+ words). Leave fixed_text empty if impossible.
+A FRAMING SENTENCE has no passages: it is "supported" only if it makes no checkable claim at all (a question,
+transition or invitation). If it states any fact, mark it "unsupported" and give fixed_text: the same idea as a
+pure question or transition with no claim (e.g. "So what would a nearby supernova do to us?").
+
+[s01.01] FRAMING SENTENCE: What if you were aboard the Titanic when it struck that fatal iceberg?
+
+[s02.01] SENTENCE: Typically, only about one-tenth of an iceberg floats above the water surface.
+CITED PASSAGES:
+A2.4: Typically about one-tenth of the volume of an iceberg is above water, which follows from Archimedes's Principle of buoyancy; the density of pure ice is about 920 kg/m3 (57 lb/cu ft), and that of seawater about 1,025 kg/m3 (64 lb/cu ft). The contour of the underwater portion can be difficult to judge by looking at the portion above the surface.
+
+[s03.01] SENTENCE: The British liner strikes ice and begins foundering in the North Atlantic.
+CITED PASSAGES:
+A1.1: RMS Titanic was a British ocean liner that sank in the early hours of 15 April 1912 after striking an iceberg on her maiden voyage from Southampton, England, to New York City. Of the 2,208 passengers and crew aboard, approximately 1,500 died (estimates vary), making the incident one of the deadliest peacetime sinkings of a single ship.
+A5.26: Foundering, i.e., taking in so much water that buoyancy is lost and the ship sinks (e.g., RMS Titanic and HMHS Britannic); some ships with a dense cargo (e.g., iron ore) may break up when sinking quickly and hitting a rocky seabed
+
+[s03.02] SENTENCE: The ship carries lifeboats for only one-third of the people on board.
+CITED PASSAGES:
+A1.45: Titanic had 16 sets of Welin davits, each able to handle three lifeboats. This gave Titanic the ability to carry up to 48 wooden lifeboats. However, the White Star Line and Harland and Wolff decided that only 16 wooden lifeboats and four collapsibles would be carried, which could accommodate 1,178 people, only one-third of Titanic's total capacity. At the time, the Board of Trade's regulations required British vessels over 10,000 tonnes to carry only 16 lifeboats with a capacity of 990 occupants.
+
+[s04.01] SENTENCE: Many passengers and crew make their last stand on the raised poop deck.
+CITED PASSAGES:
+A1.14: B Deck, the bridge deck, was the top weight-bearing deck and the uppermost level of the hull. More First Class passenger accommodations were located here with six palatial staterooms (cabins) featuring their own private promenades. On Titanic, the à la carte restaurant and the Café Parisien provided luxury dining facilities to First Class passengers. Both were run by subcontracted chefs and their staff; all were lost in the disaster. The Second Class smoking room and entrance hall were both located on this deck. The raised forecastle of the ship was forward of the bridge deck, accommodating Number 1 hatch (the main hatch through to the cargo holds), numerous pieces of machinery and the anchor housings. Aft of the bridge deck was the raised poop deck, 106 feet (32 m) long, used as a promenade by Third Class passengers. It was where many of Titanic's passengers and crew made their last stand as the ship sank. The forecastle and poop deck were separated from the bridge deck by well decks.
+
+[s04.02] SENTENCE: Victims are plunged into freezing sea water at minus 2 degrees Celsius.
+CITED PASSAGES:
+A4.29: Heat is lost much more quickly to water than to air. Thus, water temperatures that would be quite reasonable as outdoor air temperatures can lead to hypothermia, although this is not usually the direct clinical cause of death for those not rescued from accidental immmersion in cold water. A water temperature of 10 °C (50 °F) can kill a human adult in as little as one hour, and water temperatures near freezing can kill in as little as 15 minutes. During the sinking of the Titanic, most people who entered the −2 °C (28 °F) water died in 15–30 minutes.
+
+[s05.01] FRAMING SENTENCE: You would feel terrifying panic as your body faces extreme freezing shock.
+
+[s05.02] SENTENCE: Cold shock triggers uncontrolled rapid breathing, gasping, and severe heart strain.
+CITED PASSAGES:
+A4.30: The actual cause of death in cold water is usually the bodily reactions to heat loss and to freezing water, rather than hypothermia (loss of core temperature) itself. For example, plunged into freezing seas, around 20% of victims die within two minutes from cold shock (uncontrolled rapid breathing and gasping, causing water inhalation; massive increase in blood pressure and cardiac strain, leading to cardiac arrest; and panic, causing ineffectual flailing of the limbs); another 50% die within 15–30 minutes from cold incapacitation (inability to use or control limbs and hands for swimming or gripping, as the body "protectively" shuts down the peripheral muscles of the limbs to protect its core). Exhaustion and unconsciousness cause drowning, claiming the rest within a similar time.
+
+[s05.03] SENTENCE: Within 15 to 30 minutes, cold incapacitation shuts down limb muscles, preventing swimming.
+CITED PASSAGES:
+A4.30: The actual cause of death in cold water is usually the bodily reactions to heat loss and to freezing water, rather than hypothermia (loss of core temperature) itself. For example, plunged into freezing seas, around 20% of victims die within two minutes from cold shock (uncontrolled rapid breathing and gasping, causing water inhalation; massive increase in blood pressure and cardiac strain, leading to cardiac arrest; and panic, causing ineffectual flailing of the limbs); another 50% die within 15–30 minutes from cold incapacitation (inability to use or control limbs and hands for swimming or gripping, as the body "protectively" shuts down the peripheral muscles of the limbs to protect its core). Exhaustion and unconsciousness cause drowning, claiming the rest within a similar time.
+
+[s06.01] FRAMING SENTENCE: Would you have found a place in one of the few lifeboats?
