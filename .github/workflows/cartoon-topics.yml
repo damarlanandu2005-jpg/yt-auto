@@ -1,0 +1,90 @@
+name: Stickman topic finder
+
+# Strong-emotion topic finder for Stickman Thoughts (cartoon/find_topics.py, design cartoon/TOPIC_FINDER.md).
+# find: ~600-900 YouTube units, 3 AI requests; about 5-10 minutes. test-feeling: test A on the competitor Shorts
+# measured by an earlier find run (1-2 AI requests). test-safety: test B, plain code.
+# Results: bench-results cartoon-topics/<run_id>/ (report.md, queue.json, pictures_needed.md, signals.json, llm/);
+# a passed find run also becomes cartoon-topics/latest/ (the queue the daily Short takes from).
+on:
+  workflow_dispatch:
+    inputs:
+      action:
+        description: "find = new queue; test-feeling = test A; test-safety = test B"
+        type: choice
+        options: ["find", "test-feeling", "test-safety"]
+        default: "find"
+      signals_from:
+        description: "Reuse the signals of this earlier run id (no YouTube units). Needed for test-feeling."
+        type: string
+        default: ""
+
+permissions:
+  contents: write
+
+concurrency:
+  group: cartoon-topics
+  cancel-in-progress: false
+
+jobs:
+  topics:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 30
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.13"
+
+      - name: Get bench-results
+        timeout-minutes: 3
+        run: |
+          git fetch --depth 1 origin bench-results
+          git worktree add results FETCH_HEAD
+          git -C results checkout -B bench-results
+
+      - name: Find topics
+        timeout-minutes: 22
+        env:
+          GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
+          CLOUDFLARE_API_TOKEN: ${{ secrets.CLOUDFLARE_API_TOKEN }}
+          CLOUDFLARE_ACCOUNT_ID: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
+          YOUTUBE_API_KEY: ${{ secrets.YOUTUBE_API_KEY }}
+          ACTION: ${{ inputs.action }}
+          SIGNALS_FROM: ${{ inputs.signals_from }}
+        run: |
+          set -o pipefail
+          mkdir -p out/topics
+          sig=""
+          if [ -n "$SIGNALS_FROM" ]; then
+            sig="results/cartoon-topics/$SIGNALS_FROM/signals.json"
+            test -f "$sig" || { echo "no signals.json for run $SIGNALS_FROM"; exit 1; }
+          fi
+          python cartoon/find_topics.py "$ACTION" --out out/topics ${sig:+--signals "$sig"} 2>&1 | tee out/topics/build.log
+
+      - name: Save to bench-results
+        if: always()
+        timeout-minutes: 3
+        env:
+          ACTION: ${{ inputs.action }}
+          OK: ${{ job.status == 'success' }}
+        run: |
+          set -e
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          dest="results/cartoon-topics/${{ github.run_id }}"
+          mkdir -p "$dest"
+          cp -r out/topics/. "$dest/"
+          if [ "$ACTION" = find ] && [ "$OK" = true ] && [ -f out/topics/queue.json ]; then
+            rm -rf results/cartoon-topics/latest && mkdir -p results/cartoon-topics/latest
+            cp out/topics/queue.json out/topics/report.md out/topics/pictures_needed.md results/cartoon-topics/latest/
+            echo "${{ github.run_id }}" > results/cartoon-topics/latest/run_id.txt
+          fi
+          cd results
+          git add -A cartoon-topics
+          git commit -m "Stickman topics $ACTION ${{ github.run_id }}" || echo "nothing to save"
+          for i in 1 2 3 4 5; do
+            git push origin bench-results && break
+            git pull --rebase origin bench-results
+            sleep 5
+          done

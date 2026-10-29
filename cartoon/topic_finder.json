@@ -1,0 +1,32 @@
+{
+ "about": "Settings of the strong-emotion topic finder (cartoon/TOPIC_FINDER.md, yt_auto/emotion_topics.py). Fixed before the first run, 29 Oct 2026. Owner has not yet sent the extra watch-list channels or red lines: defaults below, change them here.",
+ "watch_channels": [
+  {"name": "Zack D. Films", "handle": "@zackdfilms"},
+  {"name": "Flippo Explains", "handle": "@FlippoExplains"},
+  {"name": "WorldMesh3D", "handle": "@WorldMesh3D"},
+  {"name": "Captain Workout", "handle": "@CaptainWorkout"}
+ ],
+ "discover_channels_from_searches": 6,
+ "searches": [
+  "what happens if you",
+  "what would happen if",
+  "what if you were",
+  "how it feels to"
+ ],
+ "search_days": 60,
+ "shorts_max_seconds": 180,
+ "min_age_days": 3,
+ "videos_per_channel": 100,
+ "hit_ratio": 3.0,
+ "hit_min_views": 100000,
+ "search_min_views": 200000,
+ "youtube_stop_at_units": 1500,
+ "ideas": 40,
+ "queue_size": 14,
+ "max_per_area": 3,
+ "areas": ["human body", "ocean", "space", "history", "animals", "nature and weather", "disasters", "engineering and inventions", "everyday life", "earth and geology", "food and plants", "sport and extreme limits"],
+ "weights": {"demand": 0.35, "feeling": 0.25, "sources": 0.20, "drawable": 0.10, "variety": 0.10},
+ "min_source_hits": 3,
+ "competitor_copy_sim": 0.60,
+ "recent_years": 25
+}

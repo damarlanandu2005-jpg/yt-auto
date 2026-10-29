@@ -1,4 +1,11 @@
-# Strong-emotion topic finder — DESIGN (draft for the owner, 29 Oct 2026; nothing built yet)
+# Strong-emotion topic finder — DESIGN (29 Oct 2026) and BUILT (29 Oct evening)
+
+**Built:** yt_auto/emotion_topics.py, entry cartoon/find_topics.py, settings cartoon/topic_finder.json (all numbers
+below are there), workflow .github/workflows/cartoon-topics.yml (find / test-feeling / test-safety). The owner's
+data answers (section 6) were not in yet, so defaults are used: watch list = the 4 channels below + the 6 channels
+that appear most in the searches each run; red lines = T5; approval = the owner OKs the weekly list of 14.
+Test B (plain-code part): 25/25 unsafe blocked, 0/25 false blocks (cartoon/topic_safety_test.json, written before
+the filter). The AI adds a second safety flag in the feeling step.
 
 Owner, 29 Oct: "build the strong emotion topic finder … should be more precise … first let's design it as a strong
 one; if you need any data ask me, we collect it." Topics: any subject with a strong, TRUE feeling (like Zack D
