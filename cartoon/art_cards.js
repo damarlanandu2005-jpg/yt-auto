@@ -1,4 +1,4 @@
-// Made from cartoon/art/library.json by yt_auto/cartoon.py write_art_cards(): do not edit by hand.
+// Made from cartoon/art/library.json by cartoon/art/add_batch.py: do not edit by hand.
 export const PLACES = {
  "classroom": {
   "file": "places/classroom.jpg",
@@ -179,6 +179,66 @@ export const PLACES = {
   "floor": 0.74,
   "ground": "ground",
   "light": "day"
+ },
+ "kitchen": {
+  "file": "places/kitchen.jpg",
+  "floor": 0.66,
+  "ground": "floor",
+  "light": "day"
+ },
+ "living_room": {
+  "file": "places/living_room.jpg",
+  "floor": 0.66,
+  "ground": "floor",
+  "light": "day"
+ },
+ "office": {
+  "file": "places/office.jpg",
+  "floor": 0.66,
+  "ground": "floor",
+  "light": "day"
+ },
+ "police_station": {
+  "file": "places/police_station.jpg",
+  "floor": 0.66,
+  "ground": "floor",
+  "light": "day"
+ },
+ "courtroom": {
+  "file": "places/courtroom.jpg",
+  "floor": 0.66,
+  "ground": "floor",
+  "light": "day"
+ },
+ "stadium": {
+  "file": "places/stadium.jpg",
+  "floor": 0.62,
+  "ground": "ground",
+  "light": "floodlights"
+ },
+ "farm": {
+  "file": "places/farm.jpg",
+  "floor": 0.66,
+  "ground": "ground",
+  "light": "day"
+ },
+ "inside_body_blood": {
+  "file": "places/inside_body_blood.jpg",
+  "floor": 0.7,
+  "ground": "ground",
+  "light": "pink glow"
+ },
+ "inside_body_lungs": {
+  "file": "places/inside_body_lungs.jpg",
+  "floor": 0.7,
+  "ground": "ground",
+  "light": "pink glow"
+ },
+ "old_village_india": {
+  "file": "places/old_village_india.jpg",
+  "floor": 0.66,
+  "ground": "ground",
+  "light": "day"
  }
 };
 export const ART = {
@@ -349,5 +409,75 @@ export const ART = {
   "h": 413,
   "height_m": 20,
   "stand": "floor"
+ },
+ "lifeboat": {
+  "file": "things/lifeboat.png",
+  "w": 640,
+  "h": 337,
+  "height_m": 1.2,
+  "stand": "water"
+ },
+ "iceberg": {
+  "file": "things/iceberg.png",
+  "w": 492,
+  "h": 640,
+  "height_m": 25,
+  "stand": "water"
+ },
+ "ocean_liner": {
+  "file": "things/ocean_liner.png",
+  "w": 640,
+  "h": 539,
+  "height_m": 30,
+  "stand": "water"
+ },
+ "submarine": {
+  "file": "things/submarine.png",
+  "w": 640,
+  "h": 475,
+  "height_m": 3,
+  "stand": "water"
+ },
+ "diving_helmet": {
+  "file": "things/diving_helmet.png",
+  "w": 500,
+  "h": 640,
+  "height_m": 0.5,
+  "stand": "hand"
+ },
+ "pyramid": {
+  "file": "things/pyramid.png",
+  "w": 640,
+  "h": 425,
+  "height_m": 140,
+  "stand": "floor"
+ },
+ "hospital_bed": {
+  "file": "things/hospital_bed.png",
+  "w": 640,
+  "h": 486,
+  "height_m": 1,
+  "stand": "floor"
+ },
+ "heart_monitor": {
+  "file": "things/heart_monitor.png",
+  "w": 560,
+  "h": 640,
+  "height_m": 1.5,
+  "stand": "floor"
+ },
+ "desk": {
+  "file": "things/desk.png",
+  "w": 640,
+  "h": 420,
+  "height_m": 0.8,
+  "stand": "floor"
+ },
+ "desk_lamp": {
+  "file": "things/desk_lamp.png",
+  "w": 477,
+  "h": 640,
+  "height_m": 0.5,
+  "stand": "table"
  }
 };

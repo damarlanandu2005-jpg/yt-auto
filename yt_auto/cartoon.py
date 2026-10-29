@@ -379,6 +379,10 @@ def validate_scenes(js: str, script: dict) -> list[str]:
                                    ("hair", re.findall(r"\bhair\s*:\s*'(\w+)'", body), _js_list("HAIRS"))):
             for n in sorted(set(found) - known):
                 problems.append(f"{sid}: {kind} '{n}' does not exist (use one from the list in the rules)")
+        thing_names = set(re.findall(r"^  (\w+): \(ctx", (CARTOON / "props.js").read_text(), re.M))
+        for n in sorted(set(re.findall(r"\bthing\(\s*s\s*,\s*'(\w+)'", body)) - thing_names):
+            problems.append(f"{sid}: thing '{n}' does not exist (things: {', '.join(sorted(thing_names))}; "
+                            f"for other objects use art() from the LIBRARY or emoji())")
         lib = art_library()
         for kind, names in (("places", PLACE_CALL.findall(body)), ("things", ART_CALL.findall(body))):
             for n in sorted(set(names) - set(lib[kind])):
@@ -389,6 +393,11 @@ def validate_scenes(js: str, script: dict) -> list[str]:
                 problems.append(f"{sid}: emoji '{n}' does not exist (use a name from the emoji list, or thing()/your own drawing)")
         for mark in re.findall(r"(?:at|out)\s*:\s*'#(\w+)'|s\.mark\('(\w+)'\)", body):
             problems.append(f"{sid}: uses a [#marker] ({''.join(mark)}); script.md has no markers, use spoken words")
+    shots = re.findall(r"\bplace\(\s*s\s*,\s*'\w+'\s*(?:,\s*\{([^}]*)\})?", js)
+    wide = sum(1 for opts in shots if "shot" not in opts or re.search(r"shot\s*:\s*'wide'", opts))
+    if shots and wide * 3 > len(shots) + 1:
+        problems.append(f"{wide} of {len(shots)} shots are wide (people look tiny): use 'medium' or 'close' for most "
+                        "shots, 'wide' only to show where we are")
     try:
         r = subprocess.run(["node", "--check", "--input-type=module"], input=js, capture_output=True, text=True, timeout=60)
     except FileNotFoundError:  # no Node.js here (e.g. a Kaggle test): explainroo's own check still runs at render

@@ -35,7 +35,7 @@ export default {
       place(s, 'volcano_crater', { shot: 'medium', quake: { at: 'shake', until: 'smoke' } });
       hero(s, { x: 400, ...stand(s, 0.8), look: ME, at: 0, moves: [{ at: 0, pose: 'shiver', face: 'worried' }] });
     } else {
-      place(s, 'volcano_crater', { shot: 'wide', mood: 'fire' });
+      place(s, 'volcano_crater', { shot: 'medium', mood: 'fire' });
       smoke(s, { x: 540, y: 820, size: 260, dark: true, at: 'smoke' });
       glow(s, { x: 540, y: 900, r: 420, color: '255,140,40', pulse: true });
       hero(s, { x: 300, ...stand(s, 0.7), look: ME, at: 0, moves: [{ at: 0, pose: 'point', face: 'scared' }] });
@@ -64,7 +64,7 @@ export default {
   answer(s) {
     const k = cut(s, ['race']);
     if (k === 0) {
-      place(s, 'volcano_crater', { shot: 'wide', mood: 'dark' });
+      place(s, 'volcano_crater', { shot: 'medium', mood: 'dark' });
       smoke(s, { x: 540, y: 1100, size: 340, dark: true });
       lava(s, { y: 1700 });
     } else {

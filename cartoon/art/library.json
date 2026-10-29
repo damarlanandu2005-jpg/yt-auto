@@ -579,6 +579,188 @@
     "disaster",
     "sea"
    ]
+  },
+  "kitchen": {
+   "file": "places/kitchen.jpg",
+   "size": [
+    576,
+    1024
+   ],
+   "prompt": "",
+   "batch": "batch8_places",
+   "floor": 0.66,
+   "ground": "floor",
+   "light": "day",
+   "tags": [
+    "kitchen",
+    "home",
+    "food",
+    "cooking"
+   ]
+  },
+  "living_room": {
+   "file": "places/living_room.jpg",
+   "size": [
+    576,
+    1024
+   ],
+   "prompt": "",
+   "batch": "batch8_places",
+   "floor": 0.66,
+   "ground": "floor",
+   "light": "day",
+   "tags": [
+    "home",
+    "living",
+    "room",
+    "sofa",
+    "tv"
+   ]
+  },
+  "office": {
+   "file": "places/office.jpg",
+   "size": [
+    576,
+    1024
+   ],
+   "prompt": "",
+   "batch": "batch8_places",
+   "floor": 0.66,
+   "ground": "floor",
+   "light": "day",
+   "tags": [
+    "office",
+    "work",
+    "computer",
+    "job"
+   ]
+  },
+  "police_station": {
+   "file": "places/police_station.jpg",
+   "size": [
+    576,
+    1024
+   ],
+   "prompt": "",
+   "batch": "batch8_places",
+   "floor": 0.66,
+   "ground": "floor",
+   "light": "day",
+   "tags": [
+    "police",
+    "station",
+    "crime",
+    "law"
+   ]
+  },
+  "courtroom": {
+   "file": "places/courtroom.jpg",
+   "size": [
+    576,
+    1024
+   ],
+   "prompt": "",
+   "batch": "batch8_places",
+   "floor": 0.66,
+   "ground": "floor",
+   "light": "day",
+   "tags": [
+    "court",
+    "judge",
+    "trial",
+    "law"
+   ]
+  },
+  "stadium": {
+   "file": "places/stadium.jpg",
+   "size": [
+    576,
+    1024
+   ],
+   "prompt": "",
+   "batch": "batch8_places",
+   "floor": 0.62,
+   "ground": "ground",
+   "light": "floodlights",
+   "tags": [
+    "stadium",
+    "sport",
+    "football",
+    "crowd"
+   ]
+  },
+  "farm": {
+   "file": "places/farm.jpg",
+   "size": [
+    576,
+    1024
+   ],
+   "prompt": "",
+   "batch": "batch8_places",
+   "floor": 0.66,
+   "ground": "ground",
+   "light": "day",
+   "tags": [
+    "farm",
+    "barn",
+    "fields",
+    "village"
+   ]
+  },
+  "inside_body_blood": {
+   "file": "places/inside_body_blood.jpg",
+   "size": [
+    576,
+    1024
+   ],
+   "prompt": "",
+   "batch": "batch8_places",
+   "floor": 0.7,
+   "ground": "ground",
+   "light": "pink glow",
+   "tags": [
+    "blood",
+    "body",
+    "vessel",
+    "cells",
+    "heart"
+   ]
+  },
+  "inside_body_lungs": {
+   "file": "places/inside_body_lungs.jpg",
+   "size": [
+    576,
+    1024
+   ],
+   "prompt": "",
+   "batch": "batch8_places",
+   "floor": 0.7,
+   "ground": "ground",
+   "light": "pink glow",
+   "tags": [
+    "lungs",
+    "body",
+    "breathing",
+    "air"
+   ]
+  },
+  "old_village_india": {
+   "file": "places/old_village_india.jpg",
+   "size": [
+    576,
+    1024
+   ],
+   "prompt": "",
+   "batch": "batch8_places",
+   "floor": 0.66,
+   "ground": "ground",
+   "light": "day",
+   "tags": [
+    "india",
+    "village",
+    "old",
+    "history"
+   ]
   }
  },
  "things": {
@@ -946,6 +1128,172 @@
     "titanic",
     "wreck",
     "shipwreck"
+   ]
+  },
+  "lifeboat": {
+   "file": "things/lifeboat.png",
+   "size": [
+    640,
+    337
+   ],
+   "prompt": "a wooden lifeboat from 1912, side view",
+   "batch": "batch3_objects",
+   "height_m": 1.2,
+   "stand": "water",
+   "tags": [
+    "lifeboat",
+    "boat",
+    "rescue",
+    "titanic"
+   ]
+  },
+  "iceberg": {
+   "file": "things/iceberg.png",
+   "size": [
+    492,
+    640
+   ],
+   "prompt": "a big iceberg, most of it under a water line",
+   "batch": "batch3_objects",
+   "height_m": 25,
+   "stand": "water",
+   "tags": [
+    "iceberg",
+    "ice",
+    "titanic",
+    "arctic"
+   ]
+  },
+  "ocean_liner": {
+   "file": "things/ocean_liner.png",
+   "size": [
+    640,
+    539
+   ],
+   "prompt": "a 1912 ocean liner with four funnels, side view",
+   "batch": "batch3_objects",
+   "height_m": 30,
+   "stand": "water",
+   "tags": [
+    "ship",
+    "titanic",
+    "liner",
+    "1912"
+   ]
+  },
+  "submarine": {
+   "file": "things/submarine.png",
+   "size": [
+    640,
+    475
+   ],
+   "prompt": "a small yellow research submarine, side view",
+   "batch": "batch3_objects",
+   "height_m": 3,
+   "stand": "water",
+   "tags": [
+    "submarine",
+    "deep",
+    "sea",
+    "dive"
+   ]
+  },
+  "diving_helmet": {
+   "file": "things/diving_helmet.png",
+   "size": [
+    500,
+    640
+   ],
+   "prompt": "",
+   "batch": "batch3_objects",
+   "height_m": 0.5,
+   "stand": "hand",
+   "tags": [
+    "diving",
+    "helmet",
+    "diver"
+   ]
+  },
+  "pyramid": {
+   "file": "things/pyramid.png",
+   "size": [
+    640,
+    425
+   ],
+   "prompt": "an Egyptian pyramid of sand-coloured stone",
+   "batch": "batch3_objects",
+   "height_m": 140,
+   "stand": "floor",
+   "tags": [
+    "pyramid",
+    "egypt",
+    "ancient"
+   ]
+  },
+  "hospital_bed": {
+   "file": "things/hospital_bed.png",
+   "size": [
+    640,
+    486
+   ],
+   "prompt": "a hospital bed with white sheets",
+   "batch": "batch3_objects",
+   "height_m": 1,
+   "stand": "floor",
+   "tags": [
+    "hospital",
+    "bed",
+    "patient"
+   ]
+  },
+  "heart_monitor": {
+   "file": "things/heart_monitor.png",
+   "size": [
+    560,
+    640
+   ],
+   "prompt": "a heart monitor on a stand showing a pulse line",
+   "batch": "batch3_objects",
+   "height_m": 1.5,
+   "stand": "floor",
+   "tags": [
+    "heart",
+    "monitor",
+    "hospital",
+    "pulse"
+   ]
+  },
+  "desk": {
+   "file": "things/desk.png",
+   "size": [
+    640,
+    420
+   ],
+   "prompt": "a wooden desk",
+   "batch": "batch3_objects",
+   "height_m": 0.8,
+   "stand": "floor",
+   "tags": [
+    "desk",
+    "table",
+    "office",
+    "school"
+   ]
+  },
+  "desk_lamp": {
+   "file": "things/desk_lamp.png",
+   "size": [
+    477,
+    640
+   ],
+   "prompt": "a metal desk lamp",
+   "batch": "batch3_objects",
+   "height_m": 0.5,
+   "stand": "table",
+   "tags": [
+    "lamp",
+    "light",
+    "desk"
    ]
   }
  }
