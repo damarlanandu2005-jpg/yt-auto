@@ -6,3 +6,4 @@ __pycache__/
 *.pyc
 .env
 cartoon/test/emoji_tmp/
+cartoon/test/bg_tmp/
