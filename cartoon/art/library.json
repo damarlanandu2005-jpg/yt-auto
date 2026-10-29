@@ -1080,7 +1080,8 @@
    "tags": [
     "lifeboat",
     "survivors"
-   ]
+   ],
+   "needs_water": true
   },
   "ship_back_half": {
    "file": "things/ship_back_half.png",
@@ -1096,7 +1097,8 @@
     "titanic",
     "stern",
     "ship"
-   ]
+   ],
+   "needs_water": true
   },
   "ship_front_half": {
    "file": "things/ship_front_half.png",
@@ -1112,7 +1114,8 @@
     "titanic",
     "bow",
     "ship"
-   ]
+   ],
+   "needs_water": true
   },
   "ship_wreck": {
    "file": "things/ship_wreck.png",

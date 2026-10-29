@@ -315,6 +315,11 @@ def _norm(w: str) -> str:
     return re.sub(r"[^a-z0-9']", "", w.lower())
 
 
+def _words(text: str) -> list[str]:
+    """Spoken words, with hyphenated words split ('one-tenth' -> one, tenth; run 40903619735)."""
+    return [n for w in re.split(r"[\s\u2010-\u2015-]+", text) if (n := _norm(w))]
+
+
 def validate_scenes(js: str, script: dict) -> list[str]:
     """Plain-code checks before rendering. Returns problems (empty = fine)."""
     problems = []
@@ -347,10 +352,10 @@ def validate_scenes(js: str, script: dict) -> list[str]:
             problems.append(f"{sid}: words(s) (the captions) is not called")
         if "background(" not in body and "place(" not in body:
             problems.append(f"{sid}: no place(s, name) or background(s, kind) is called")
-        spoken = " ".join(_norm(w) for w in texts[sid].split())
+        spoken = " ".join(_words(texts[sid]))
         cut_cues = [c for m in re.findall(r"\bcut\(\s*s\s*,\s*\[([^\]]*)\]", body) for c in re.findall(r"'([^']+)'", m)]
         for cue in re.findall(r"\b(?:at|out|until)\s*:\s*'([^'#][^']*)'", body) + cut_cues:
-            words = [_norm(w) for w in cue.split()]
+            words = _words(cue)
             if " ".join(words) not in spoken:
                 problems.append(f"{sid}: the cue '{cue}' is not spoken in this scene (spoken: \"{texts[sid]}\")")
         # Show, don't write (run 40843120092: stacks of small labels, 'LUNGS & EARS CRUSHED' where the
@@ -359,8 +364,8 @@ def validate_scenes(js: str, script: dict) -> list[str]:
         if len(labels) > 1:
             problems.append(f"{sid}: {len(labels)} labels; use at most ONE short label per scene and draw the rest")
         for _, text in labels:
-            extra = [w for w in text.split() if _norm(w) and _norm(w) not in spoken.split()]
-            if extra or len(text.split()) > 4:
+            extra = [w for w in _words(text) if w not in spoken.split()]
+            if extra or len(_words(text)) > 4:
                 problems.append(f"{sid}: label '{text}' must be at most 4 words, all spoken in this scene "
                                 f"(not spoken: {', '.join(extra) or '-'})")
         for call in ("s.text(", "s.note(", "s.title(", "s.subtitle(", "s.list("):
@@ -387,6 +392,13 @@ def validate_scenes(js: str, script: dict) -> list[str]:
             for n in sorted(set(found) - known):
                 problems.append(f"{sid}: {kind} '{n}' does not exist (use one from the list in the rules)")
         water_places = {n for n, c in art_library()["places"].items() if c.get("ground") == "water"}
+        water_things = {n for n, c in art_library()["things"].items() if c.get("needs_water")}
+        for seg in re.split(r"(?=\bplace\()", body):
+            m = re.match(r"place\(\s*s\s*,\s*'(\w+)'", seg)
+            if m and m.group(1) not in water_places:
+                for n in sorted(set(ART_CALL.findall(seg)) & water_things):
+                    problems.append(f"{sid}: '{n}' floats on water but this shot is in '{m.group(1)}' (no open water): "
+                                    "show it in ocean_surface / storm_sea, or use another object")
         for seg in re.split(r"(?=\bplace\()", body):
             m = re.match(r"place\(\s*s\s*,\s*'(\w+)'", seg)
             if m and m.group(1) in water_places:
