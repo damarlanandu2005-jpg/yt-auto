@@ -1,0 +1,36 @@
+[model] local:gpt-oss:20b
+[system]
+
+
+[user]
+You are a strict fact-checker. For each sentence below, decide using ONLY its cited passages
+(not your own knowledge):
+- supported: every detail (numbers, names, dates, causes, comparisons) is stated in or directly follows from them.
+- partly: the main point is backed but some detail is not, or it overstates / oversimplifies into something false.
+  Also partly: "every/all/always/never" the passages don't say, or a model-based estimate stated as a plain
+  certain fact (fixed_text adds "scientists estimate" or "in today's standard model").
+- unsupported: the cited passages do not back it, or there are none.
+- Conflict: if the cited passages DISAGREE with each other about any number, date or name the sentence
+  states, the sentence is at most "partly" even if it matches one of them; say "sources conflict". Its
+  fixed_text must not pick a side: state only what all passages agree on, or give both values.
+For partly/unsupported, give fixed_text: a corrected sentence in the same plain spoken style that the cited
+passages fully support (keep digits and full unit words; no copying 8+ words). Leave fixed_text empty if impossible.
+A FRAMING SENTENCE has no passages: it is "supported" only if it makes no checkable claim at all (a question,
+transition or invitation). If it states any fact, mark it "unsupported" and give fixed_text: the same idea as a
+pure question or transition with no claim (e.g. "So what would a nearby supernova do to us?").
+
+[s03.01] SENTENCE: Lifeboats were scarce, with only 1,178 seats for the people aboard.
+CITED PASSAGES:
+A2.42: Titanic had a total of 20 lifeboats, comprising 16 wooden boats on davits, eight on either side of the ship, and four collapsible boats with wooden bottoms and canvas sides. The collapsibles were stored upside down with the sides folded in, and would have to be erected and moved to the davits for launching. Two were stored under the wooden boats and the other two were lashed atop the officers' quarters. The position of the latter would make them extremely difficult to launch, as they weighed several tons each and had to be manhandled down to the boat deck. On average, the lifeboats could take up to 68 people each, and collectively they could accommodate 1,178 – barely half the number of people on board and a third of the number the ship was licensed to carry. The shortage of lifeboats was not because of a lack of space nor because of cost. Titanic had been designed to accommodate up to 68 lifeboats. In fact, it carried more than the regulation lifeboats legislated by the Board of Trade and indeed more than there was time to launch.
+
+[s04.01] SENTENCE: The ship listed about five degrees to starboard and two degrees down by the head, and water at -2°C could kill in 15–30 minutes.
+CITED PASSAGES:
+A2.35: Captain Smith felt the collision in his cabin and immediately came to the bridge. Boxhall, who was walking to the bridge when the collision occurred, went below and inspected all the decks in the vicinity of the strike. Finding no traces of damage, and he returned to the bridge and reported this to the captain. Smith ordered him to find the carpenter and send him to the bridge. While heading back down, Boxhall ran into the ship's carpenter, who was coming up to see the captain, and was told that the ship was taking water in the mail room. He subsequently headed to the mail room himself and found mail sacks floating with the clerks still at work. Boxhall reported this to the captain. Informed of the situation, Smith summoned Thomas Andrews, one of the chief architects of Titanic, who was among a party of engineers from Harland & Wolff observing the ship's first passenger voyage. The ship was listing five degrees to starboard and was two degrees down by the head within a few minutes of the collision. Smith and Andrews went below and found that the forward cargo holds, the mail room and the squash court were flooded, while No. 6 boiler room was already filled to a depth of 14 feet (4.3 m). Water was flowing into No. 5 boiler room, and crewmen there were battling to pump it out.
+A3.29: Heat is lost much more quickly to water than to air. Thus, water temperatures that would be quite reasonable as outdoor air temperatures can lead to hypothermia, although this is not usually the direct clinical cause of death for those not rescued from accidental immmersion in cold water. A water temperature of 10 °C (50 °F) can kill a human adult in as little as one hour, and water temperatures near freezing can kill in as little as 15 minutes. During the sinking of the Titanic, most people who entered the −2 °C (28 °F) water died in 15–30 minutes.
+
+[s06.01] SENTENCE: The ship opened six compartments and water poured in, but the sinking took longer than two hours.
+CITED PASSAGES:
+A2.2: Titanic's wireless operators received seven warnings of sea ice leading up to the night of 14 April, but was travelling at a speed of roughly 22 knots (41 km/h; 25 mph) when her lookouts sighted the iceberg. Unable to turn quickly enough, the ship suffered a glancing blow that buckled the steel plates covering her starboard side and opened six of her sixteen compartments to the sea. Titanic had been designed to stay afloat with up to four of her forward compartments flooded, and the crew used distress rockets and wireless messages to attract rescue vessels as the passengers were put into lifeboats.
+A3.29: Heat is lost much more quickly to water than to air. Thus, water temperatures that would be quite reasonable as outdoor air temperatures can lead to hypothermia, although this is not usually the direct clinical cause of death for those not rescued from accidental immmersion in cold water. A water temperature of 10 °C (50 °F) can kill a human adult in as little as one hour, and water temperatures near freezing can kill in as little as 15 minutes. During the sinking of the Titanic, most people who entered the −2 °C (28 °F) water died in 15–30 minutes.
+
+[s07.01] FRAMING SENTENCE: What factors influenced survival on the Titanic?

@@ -1,0 +1,1 @@
+hook: Stickman on Titanic ship (scale 1.4), thinking face; ocean background. step1: Iceberg (custom draw), flooding waves, stickman scared on ship. step2: Sparse lifeboats (ship props), 'SCARCE' label. step3: Tilted ship position, -2°C thermometer icon. step4: Stickman in water (fall pose), cold waves, thermometer. end: Stickman thinking with question icon.

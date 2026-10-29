@@ -1,0 +1,1 @@
+{"results":[{"id":"s03.01","verdict":"supported","problem":"","fixed_text":""},{"id":"s04.01","verdict":"supported","problem":"","fixed_text":""},{"id":"s06.01","verdict":"partly","problem":"the sinking took longer than two hours","fixed_text":"The ship opened six compartments and water poured in."},{"id":"s07.01","verdict":"supported","problem":"","fixed_text":""}]}

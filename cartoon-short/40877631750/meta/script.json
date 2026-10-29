@@ -1,0 +1,136 @@
+{
+ "facts": [
+  {
+   "id": "A2.2",
+   "fact": "Titanic sank two hours and forty minutes after hitting an iceberg on 14 April 1912, resulting in around 1,500 deaths."
+  },
+  {
+   "id": "A2.30",
+   "fact": "Passengers felt a shudder or bump during the collision, with some describing it as \"a thousand marbles\"."
+  },
+  {
+   "id": "A2.31",
+   "fact": "Water poured into the ship at 7 long tons per second, faster than it could be pumped out."
+  },
+  {
+   "id": "A2.42",
+   "fact": "Titanic had 20 lifeboats, accommodating 1,178 people, barely half the passengers and crew."
+  },
+  {
+   "id": "A3.29",
+   "fact": "Water at −2 °C (28 °F) caused most victims to die within 15–30 minutes from cold shock or hypothermia."
+  },
+  {
+   "id": "A2.44",
+   "fact": "Collapsible lifeboats were difficult to launch, requiring manual handling from the officers' quarters."
+  },
+  {
+   "id": "A3.30",
+   "fact": "Cold shock caused 20% of victims to die within two minutes, while 50% died within 15–30 minutes."
+  },
+  {
+   "id": "A2.35",
+   "fact": "The ship's design could not handle six flooded compartments, leading to inevitable sinking."
+  },
+  {
+   "id": "A2.39",
+   "fact": "Lifeboats were launched starting at 00:05, but many were not fully loaded due to panic and confusion."
+  },
+  {
+   "id": "A2.2",
+   "fact": "Titanic's speed of 22 knots (41 km/h) in ice-heavy waters was later criticized as reckless."
+  }
+ ],
+ "scenes": [
+  {
+   "role": "hook",
+   "sentences": [
+    {
+     "text": "What would it feel like to be on the Titanic as it sank?",
+     "kind": "framing",
+     "sources": [],
+     "id": "s01.01",
+     "check": "supported"
+    }
+   ],
+   "id": "s01"
+  },
+  {
+   "role": "step",
+   "sentences": [
+    {
+     "text": "You feel a sudden shudder as the ship hits an iceberg, followed by icy water flooding lower decks.",
+     "kind": "fact",
+     "sources": [
+      "A2.30",
+      "A2.31"
+     ],
+     "id": "s02.01",
+     "check": "supported"
+    }
+   ],
+   "id": "s02"
+  },
+  {
+   "role": "step",
+   "sentences": [
+    {
+     "text": "Lifeboats were scarce, with only 1,178 seats for the people aboard.",
+     "kind": "fact",
+     "sources": [
+      "A2.42"
+     ],
+     "id": "s03.01",
+     "check": "supported (after fix)"
+    }
+   ],
+   "id": "s03"
+  },
+  {
+   "role": "step",
+   "sentences": [
+    {
+     "text": "The ship listed about five degrees to starboard and two degrees down by the head, and water at -2°C could kill in 15–30 minutes.",
+     "kind": "fact",
+     "sources": [
+      "A2.35",
+      "A3.29"
+     ],
+     "id": "s04.01",
+     "check": "supported (after fix)"
+    }
+   ],
+   "id": "s04"
+  },
+  {
+   "role": "step",
+   "sentences": [
+    {
+     "text": "Cold shock and hypothermia set in quickly, with most drowning or succumbing within 15–30 minutes.",
+     "kind": "fact",
+     "sources": [
+      "A3.30",
+      "A2.39"
+     ],
+     "id": "s05.01",
+     "check": "supported"
+    }
+   ],
+   "id": "s05"
+  },
+  {
+   "role": "end",
+   "sentences": [
+    {
+     "text": "What factors influenced survival on the Titanic?",
+     "kind": "framing",
+     "sources": [],
+     "id": "s07.01",
+     "check": "supported (after fix)"
+    }
+   ],
+   "id": "s07"
+  }
+ ],
+ "title": "What If You Were on the Sinking Titanic?"
+}

@@ -1,0 +1,1 @@
+{"results":[{"id":"s02.01","verdict":"partly","problem":"detail about iceberg scraping hull not directly supported","fixed_text":"You’d feel a sudden jolt as the iceberg struck the hull, just as though you were driving over a thousand marbles."}]}

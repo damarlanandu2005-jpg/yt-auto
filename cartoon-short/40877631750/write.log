@@ -1,0 +1,3 @@
+[plan] What would it feel like to be on the Titanic as it sank? | feeling: fear
+[script] 88 words; fact-check {'checked': 7, 'supported_first_pass': 3, 'fixed': 3, 'dropped': 1, 'bad_ids': 1, 'copied': 0, 'guard': 0, 'words_after': 88}; story ['the answer scene was dropped by the fact-check (rule R2: the hook must be answered)']
+[scenes] ok

@@ -1,0 +1,30 @@
+{
+ "job_id": "40870855894",
+ "topic": "What would it feel like to be on the Titanic as it sank?",
+ "write_models": [
+  "qwen3:32b"
+ ],
+ "check_models": [
+  "gpt-oss:20b"
+ ],
+ "started": "2026-10-29T12:16:20Z",
+ "saved_models": [
+  "gpt-oss:20b",
+  "qwen3:32b"
+ ],
+ "server": true,
+ "models": {
+  "qwen3:32b": {
+   "source": "saved",
+   "seconds": 0
+  },
+  "gpt-oss:20b": {
+   "source": "saved",
+   "seconds": 0
+  }
+ },
+ "setup_s": 42,
+ "write_s": 2153,
+ "write_exit": 0,
+ "complete": true
+}

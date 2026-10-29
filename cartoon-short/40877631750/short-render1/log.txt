@@ -1,0 +1,34 @@
+voice hook: 2.9s in 4.3s
+voice step1: 6.0s in 4.4s
+voice step2: 5.5s in 4.0s
+voice step3: 9.5s in 6.1s
+voice step4: 6.7s in 4.6s
+voice end: 2.8s in 2.6s
+hook                 2.9s  100% confirmed
+step1                6.0s  100% confirmed
+step2                5.5s  100% confirmed
+step3                9.5s  96% confirmed  unconfirmed: -2°C
+step4                6.7s  100% confirmed
+end                  2.8s  100% confirmed
+total 42.0s
+ERROR step2 @0s: unknown face "worried" (have: neutral, happy, wow, scared, shocked, confused, thinking, sad, angry)
+ERROR end @0s: icon "question" does not exist. Try: file-question-mark, file-question, mail-question, shield-question, badge-question-mark, circle-question-mark, mail-question-mark, shield-question-mark. Search with: explainroo icons <word>
+HINT  step1 @0.99s: no new element for 6.1s (from 1.0s); consider revealing something on a cue in that stretch
+HINT  step2 @0s: no new element for 6.6s (from 0.0s); consider revealing something on a cue in that stretch
+HINT  step3 @0s: no new element for 10.6s (from 0.0s); consider revealing something on a cue in that stretch
+HINT  step4 @0s: no new element for 7.7s (from 0.0s); consider revealing something on a cue in that stretch
+HINT  end @0s: no new element for 6.1s (from 0.0s); consider revealing something on a cue in that stretch
+2 error(s), 5 other finding(s) in 6 scenes (42.0s)
+error: page.evaluate: Error: unknown face "worried" (have: neutral, happy, wow, scared, shocked, confused, thinking, sad, angry) (scene "step2" at 6.27s)
+    at Object.stills (http://127.0.0.1:42819/frame.html?scale=1:84:17)
+    at async <anonymous>:337:30
+error: page.evaluate: Error: unknown face "worried" (have: neutral, happy, wow, scared, shocked, confused, thinking, sad, angry) (scene "step2" at 0.13s)
+    at Object.sheet (http://127.0.0.1:46029/frame.html?scale=0.5:109:17)
+    at eval (eval at evaluate (:311:30), <anonymous>:1:26)
+    at UtilityScript.evaluate (<anonymous>:313:16)
+    at UtilityScript.<anonymous> (<anonymous>:1:44)
+rendering 42.0s (1260 frames at 30 fps, 1080x1920) with 2 workers
+error: page.evaluate: Error: scene "step2" at 0.00s: unknown face "worried" (have: neutral, happy, wow, scared, shocked, confused, thinking, sad, angry)
+scene "end" at 0.00s: icon "question" does not exist. Try: file-question-mark, file-question, mail-question, shield-question, badge-question-mark, circle-question-mark, mail-question-mark, shield-question-mark. Search with: explainroo icons <word>
+    at Object.soundtrack (http://127.0.0.1:43091/frame.html?scale=1:126:32)
+    at async <anonymous>:337:30

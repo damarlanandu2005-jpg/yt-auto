@@ -1,0 +1,42 @@
+{
+ "checked": 7,
+ "supported_first_pass": 3,
+ "fixed": [
+  {
+   "id": "s03.01",
+   "old": "Lifeboats are scarce and chaotic, with many launching before they're full.",
+   "new": "Lifeboats were scarce, with only 1,178 seats for the people aboard.",
+   "problem": "claim about many launching before they're full not supported"
+  },
+  {
+   "id": "s04.01",
+   "old": "The ship tilts violently, and you plunge into freezing water at −2 °C (28 °F).",
+   "new": "The ship listed about five degrees to starboard and two degrees down by the head, and water at -2°C could kill in 15–30 minutes.",
+   "problem": "claim about violent tilt and plunging into water at -2°C not supported"
+  },
+  {
+   "id": "s07.01",
+   "old": "Survival depended on lifeboats and speed, but most faced icy deaths in minutes.",
+   "new": "What factors influenced survival on the Titanic?",
+   "problem": "contains factual claims but no citations"
+  }
+ ],
+ "dropped": [
+  {
+   "id": "s06.01",
+   "text": "The sinking would bring chaos, freezing water, and rising panic as the ship sank in two hours.",
+   "problem": "claim about chaos, rising panic, and sinking in two hours not supported"
+  }
+ ],
+ "bad_ids": [
+  {
+   "id": "s03.01",
+   "ids": [
+    "A2.44"
+   ]
+  }
+ ],
+ "copied": [],
+ "guard": [],
+ "words_after": 88
+}

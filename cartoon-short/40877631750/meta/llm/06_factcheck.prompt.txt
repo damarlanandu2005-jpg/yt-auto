@@ -1,0 +1,26 @@
+[model] local:gpt-oss:20b
+[system]
+
+
+[user]
+You are a strict fact-checker. For each sentence below, decide using ONLY its cited passages
+(not your own knowledge):
+- supported: every detail (numbers, names, dates, causes, comparisons) is stated in or directly follows from them.
+- partly: the main point is backed but some detail is not, or it overstates / oversimplifies into something false.
+  Also partly: "every/all/always/never" the passages don't say, or a model-based estimate stated as a plain
+  certain fact (fixed_text adds "scientists estimate" or "in today's standard model").
+- unsupported: the cited passages do not back it, or there are none.
+- Conflict: if the cited passages DISAGREE with each other about any number, date or name the sentence
+  states, the sentence is at most "partly" even if it matches one of them; say "sources conflict". Its
+  fixed_text must not pick a side: state only what all passages agree on, or give both values.
+For partly/unsupported, give fixed_text: a corrected sentence in the same plain spoken style that the cited
+passages fully support (keep digits and full unit words; no copying 8+ words). Leave fixed_text empty if impossible.
+A FRAMING SENTENCE has no passages: it is "supported" only if it makes no checkable claim at all (a question,
+transition or invitation). If it states any fact, mark it "unsupported" and give fixed_text: the same idea as a
+pure question or transition with no claim (e.g. "So what would a nearby supernova do to us?").
+
+[s01.01] FRAMING SENTENCE: What would it feel like to be on the Titanic as it sank?
+
+[s02.01] SENTENCE: You’d feel a sudden jolt as the iceberg scraped the hull, like driving over marbles.
+CITED PASSAGES:
+A2.30: Above the waterline, there was little evidence of the collision. The stewards in the first-class dining room noticed a shudder, which some thought might have been caused by the ship shedding a propeller blade. A number of passengers felt a bump or shudder – "just as though we went over about a thousand marbles", as one survivor put it – but did not know what had happened. Others failed to notice it entirely, including second operator Harold Bride and fifth officer Harold Lowe, both of whom remained asleep up in the officers' quarters. Those on the lowest decks, nearest the site of the collision, felt it much more directly. Fireman Walter Hurst recalled being "awakened by a grinding crash along the starboard side. No one was very much alarmed but knew we had struck something." Fireman George Kemish heard a "heavy thud and grinding tearing sound" from the starboard hull.

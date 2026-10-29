@@ -1,0 +1,9 @@
+[plan] What would it feel like to be on the Titanic as it sank? | feeling: fear
+[research] A1 Titanic: 49 passages
+[research] A2 Sinking of the Titanic: 43 passages
+[research] A3 Hypothermia: 62 passages
+[research] A4 List of maritime disasters: 4 passages
+[research] A5 Iceberg: 42 passages
+[script] ['the answer scene was dropped by the fact-check (rule R2: the hook must be answered)']: one rewrite
+[script] 88 words; fact-check {'checked': 7, 'supported_first_pass': 3, 'fixed': 3, 'dropped': 1, 'bad_ids': 1, 'copied': 0, 'guard': 0, 'words_after': 88}; story ['the answer scene was dropped by the fact-check (rule R2: the hook must be answered)']
+[scenes] ok
