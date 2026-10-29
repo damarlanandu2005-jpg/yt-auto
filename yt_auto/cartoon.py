@@ -309,9 +309,15 @@ def validate_scenes(js: str, script: dict) -> list[str]:
     for pat in FORBIDDEN:
         if re.search(pat, js):
             problems.append(f"forbidden code: {pat}")
-    for m in re.finditer(r"^\s*import\s.*?from\s+['\"]([^'\"]+)['\"]", js, re.M):
-        if m.group(1) not in ("./character.js", "./props.js"):
-            problems.append(f"imports {m.group(1)}: only ./character.js and ./props.js are allowed")
+    for m in re.finditer(r"^\s*import\s*\{([^}]*)\}\s*from\s+['\"]([^'\"]+)['\"]|^\s*import\s.*?from\s+['\"]([^'\"]+)['\"]", js, re.M):
+        src = m.group(2) or m.group(3)
+        if src not in ("./character.js", "./props.js"):
+            problems.append(f"imports {src}: only ./character.js and ./props.js are allowed")
+        elif m.group(1):  # every imported name must exist (run 40894668099: "import { s } from './props.js'")
+            have = set(re.findall(r"^export (?:function|const) (\w+)", (CARTOON / src[2:]).read_text(), re.M))
+            for name in [n.strip() for n in m.group(1).split(",") if n.strip()]:
+                if name not in have:
+                    problems.append(f"imports '{name}' from {src}, which has no such name (has: {', '.join(sorted(have))})")
     if "export default" not in js:
         problems.append("no 'export default { ... }'")
     texts = scene_texts(script)

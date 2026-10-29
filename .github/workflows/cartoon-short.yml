@@ -234,7 +234,7 @@ jobs:
 
   render2:
     needs: fix
-    if: needs.fix.outputs.fixed == 'true'
+    if: always() && needs.fix.outputs.fixed == 'true'
     uses: ./.github/workflows/cartoon-render.yml
     with:
       project_artifact: short-fixed
@@ -242,7 +242,7 @@ jobs:
 
   review2:
     needs: [fix, render2]
-    if: needs.render2.result == 'success'
+    if: always() && needs.render2.result == 'success'
     runs-on: ubuntu-24.04
     timeout-minutes: 20
     steps:
