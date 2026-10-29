@@ -1,0 +1,189 @@
+name: Stickman Short (topic in, Short out)
+
+# Manual for now (the daily topic finder comes next). Follows cartoon/TEMPLATE.md:
+#   write   (our code, Gemini key): plan -> Wikipedia -> 110-140 word script -> fact-check -> scenes.js
+#   render  (explainroo, no secrets): voice, layout check, stills, video
+#   fix     (our code, Gemini key): if explainroo's check found errors, one AI repair of scenes.js
+#   render2 (explainroo, no secrets): only after a fix
+#   publish (no outside code): release "Ready for your review" only if every check passed, else
+#           "DRAFT - do not upload" (rule R1); results to bench-results/cartoon-short/<run_id>/
+on:
+  workflow_dispatch:
+    inputs:
+      topic:
+        description: "Topic or question with a strong, true feeling"
+        required: true
+        default: "What happens if you fall into the Mariana Trench?"
+
+permissions:
+  contents: read
+
+concurrency:
+  group: cartoon-short
+  cancel-in-progress: false
+
+jobs:
+  write:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 45
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          persist-credentials: false
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.13"
+          cache: pip
+      - name: Install Python packages
+        timeout-minutes: 10
+        run: pip install -r requirements.txt && python cartoon/make_short.py --help > /dev/null
+      - name: Write the Short
+        timeout-minutes: 40
+        env:
+          GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
+          TOPIC: ${{ inputs.topic }}
+        run: |
+          set -o pipefail
+          mkdir -p out/short
+          python cartoon/make_short.py write --topic "$TOPIC" --out out/short 2>&1 | tee out/short/write.log
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: short-written
+          path: out/short
+          retention-days: 7
+
+  render:
+    needs: write
+    uses: ./.github/workflows/cartoon-render.yml
+    with:
+      project_artifact: short-written
+      out_artifact: short-render1
+
+  fix:
+    needs: render
+    if: needs.render.outputs.errors != '0'
+    runs-on: ubuntu-24.04
+    timeout-minutes: 30
+    outputs:
+      fixed: ${{ steps.fix.outputs.fixed }}
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          persist-credentials: false
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.13"
+          cache: pip
+      - run: pip install -r requirements.txt
+      - uses: actions/download-artifact@v4
+        with:
+          name: short-written
+          path: out/short
+      - uses: actions/download-artifact@v4
+        with:
+          name: short-render1
+          path: out/render1
+      - name: Repair scenes.js from explainroo's errors
+        id: fix
+        timeout-minutes: 25
+        env:
+          GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
+        run: |
+          python cartoon/make_short.py fix --out out/short --log out/render1/log.txt 2>&1 | tee out/short/fix.log
+          [ -f out/short/fixed ] && echo "fixed=true" >> "$GITHUB_OUTPUT" || echo "fixed=false" >> "$GITHUB_OUTPUT"
+      - uses: actions/upload-artifact@v4
+        with:
+          name: short-fixed
+          path: out/short
+          retention-days: 7
+
+  render2:
+    needs: fix
+    if: needs.fix.outputs.fixed == 'true'
+    uses: ./.github/workflows/cartoon-render.yml
+    with:
+      project_artifact: short-fixed
+      out_artifact: short-render2
+
+  publish:
+    needs: [write, render, fix, render2]
+    if: always() && needs.write.result == 'success'
+    runs-on: ubuntu-24.04
+    timeout-minutes: 10
+    permissions:
+      contents: write
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/download-artifact@v4
+        with:
+          path: art
+      - name: Pick the final version and decide the label (rule R1)
+        id: pick
+        env:
+          RENDER1_ERRORS: ${{ needs.render.outputs.errors }}
+          RENDER2_RESULT: ${{ needs.render2.result }}
+          RENDER2_ERRORS: ${{ needs.render2.outputs.errors }}
+        run: |
+          meta=art/short-written
+          final=art/short-render1; errors="$RENDER1_ERRORS"
+          if [ "$RENDER2_RESULT" = "success" ] && [ -d art/short-render2 ]; then final=art/short-render2; errors="$RENDER2_ERRORS"; meta=art/short-fixed; fi
+          echo "final=$final" >> "$GITHUB_OUTPUT"; echo "meta=$meta" >> "$GITHUB_OUTPUT"
+          python3 - "$meta/meta/report.json" "${errors:-1}" "$final" >> "$GITHUB_OUTPUT" <<'EOF'
+          import json, os, sys
+          r = json.load(open(sys.argv[1]))
+          errors = int(sys.argv[2] or 1)
+          has_video = os.path.exists(os.path.join(sys.argv[3], "render", "video.mp4"))
+          problems = list(r.get("story_problems", [])) + list(r.get("scene_problems", []))
+          if errors: problems.append(f"{errors} layout error(s) in explainroo's check")
+          if not has_video: problems.append("no video was rendered")
+          label = "Ready for your review" if not problems else "DRAFT - do not upload"
+          print("label=" + label)
+          print("problems=" + " | ".join(problems)[:900])
+          EOF
+      - name: Publish as a pre-release
+        if: hashFiles(format('{0}/render/video.mp4', steps.pick.outputs.final)) != ''
+        env:
+          GH_TOKEN: ${{ github.token }}
+          LABEL: ${{ steps.pick.outputs.label }}
+          PROBLEMS: ${{ steps.pick.outputs.problems }}
+          FINAL: ${{ steps.pick.outputs.final }}
+          META: ${{ steps.pick.outputs.meta }}
+        run: |
+          title=$(python3 -c "import json;print(json.load(open('$META/meta/plan.json'))['title'][:80])")
+          notes="$LABEL. ${PROBLEMS:-Every automatic check passed.} Watch it fully before uploading. Description: description.txt."
+          cp "$META/description.txt" description.txt
+          gh release create "short-${{ github.run_id }}" --prerelease --title "$LABEL: $title" --notes "$notes" \
+            "$FINAL/render/video.mp4" "$FINAL/render/video.cover.jpg" description.txt
+      - name: Save results to the bench-results branch
+        if: always()
+        timeout-minutes: 3
+        env:
+          FINAL: ${{ steps.pick.outputs.final }}
+          META: ${{ steps.pick.outputs.meta }}
+        run: |
+          set -e
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git fetch --depth 1 origin bench-results
+          git worktree add results FETCH_HEAD
+          git -C results checkout -B bench-results
+          dest="results/cartoon-short/${{ github.run_id }}"
+          mkdir -p "$dest"
+          cp -r "$META/meta" "$META/project" "$dest/" 2>/dev/null || true
+          cp "$META"/*.log "$META/description.txt" "$dest/" 2>/dev/null || true
+          for r in art/short-render1 art/short-render2; do
+            [ -d "$r" ] || continue
+            n=$(basename "$r"); mkdir -p "$dest/$n"
+            cp "$r/log.txt" "$dest/$n/" 2>/dev/null || true
+            cp "$r/render/sheet.jpg" "$r/render/video.cover.jpg" "$dest/$n/" 2>/dev/null || true
+            cp -r "$r/render/stills" "$dest/$n/" 2>/dev/null || true
+          done
+          cd results
+          git add -A
+          git commit -m "Stickman Short ${{ github.run_id }}" || exit 0
+          for i in 1 2 3 4 5; do
+            git push origin bench-results && break
+            git pull --rebase origin bench-results
+            sleep 5
+          done
