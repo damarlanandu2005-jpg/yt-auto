@@ -72,9 +72,9 @@ jobs:
           cp cartoon/make_short.py cartoon/SCENE_API.md cartoon/example_scenes.js cartoon/TEMPLATE.md bundle/cartoon/
           find bundle -name __pycache__ -prune -exec rm -rf {} +
           tar czf bundle.tgz -C bundle .
-          saved=false; kaggle datasets status "$KAGGLE_USERNAME/ollama-models" > /dev/null 2>&1 && saved=true
-          echo "saved models dataset: $saved"
-          SAVED=$saved python3 - <<'EOF'
+          # the saved models (kaggle-test.yml action=save-models); `datasets status` answered 403 right after the
+          # upload (run 40867955929), so attach it and push again without it only if Kaggle refuses
+          SAVED=true python3 - <<'EOF'
           import base64, json, os
           b = base64.b64encode(open("bundle.tgz", "rb").read()).decode()
           head = (f"JOB_ID = {os.environ['GITHUB_RUN_ID']!r}\nTOPIC = {os.environ['TOPIC']!r}\n"
@@ -88,7 +88,11 @@ jobs:
                      "competition_sources": [], "kernel_sources": [], "model_sources": []},
                     open("k/kernel-metadata.json", "w"), indent=1)
           EOF
-          kaggle kernels push -p k
+          if ! kaggle kernels push -p k | tee push.txt || grep -qiE 'error|not found|forbidden' push.txt; then
+            echo "push with the saved-models dataset refused; pushing without it (the models are downloaded instead)"
+            python3 -c "import json;p='k/kernel-metadata.json';m=json.load(open(p));m['dataset_sources']=[];json.dump(m,open(p,'w'),indent=1)"
+            kaggle kernels push -p k
+          fi
           echo "::notice::Started on Kaggle. Run this workflow again with writer = kaggle-collect in about 40 minutes."
 
       - name: Collect the writing from Kaggle
