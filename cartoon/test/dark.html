@@ -13,5 +13,8 @@ stars(s, { light: true, count: 70 });
 blackHole(s, { x: 540, y: 1080, r: 190 });
 hero(s, { x: 540, y: 780, scale: 1.7, helmet: true, outline: '#ffffff', moves: [{ at: 0, pose: 'fall', face: 'scared' }] });
 words(s);
+const t0 = performance.now(); for (let i = 0; i < 100; i++) { s.t = 1 + i / 30; hero(s, { x: 540, y: 780, scale: 1.7, helmet: true, outline: '#ffffff', moves: [{ at: 0, pose: 'fall', face: 'scared' }] }); }
+console.log('100 hero frames ms', Math.round(performance.now() - t0));
+ctx.fillStyle = '#0d1328'; ctx.fillRect(0, 0, 1080, 1920); s.t = 1.05; stars(s, { light: true, count: 70 }); blackHole(s, { x: 540, y: 1080, r: 190 }); hero(s, { x: 540, y: 780, scale: 1.7, helmet: true, outline: '#ffffff', moves: [{ at: 0, pose: 'fall', face: 'scared' }] }); words(s);
 document.title = 'done';
 </script>

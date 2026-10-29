@@ -11,6 +11,7 @@
 
 const BLACK = '#1d1d1f';
 let INK = BLACK; // the line colour of the character being drawn (see the `color` option)
+let WIDEN = 0; // extra line width while drawing the outline pass
 const SKIN = '#ffffff';
 const RED = '#e5484d';
 const GLASS = 'rgba(150, 200, 235, 0.28)';
@@ -156,6 +157,78 @@ function face(ctx, f, R, t, blinkSeed) {
   ctx.restore();
 }
 
+// One pass of the figure. edge = true draws only the silhouette (wider lines, no face, no glass fill).
+function figure(ctx, c, o, sc, k, t, shake, drift, edge) {
+  ctx.save();
+  ctx.translate(shake, drift);
+  ctx.scale((o.flip ? -sc : sc) / Math.sqrt(k), sc * k); // taller and thinner, same volume (Spaghettification article)
+  if (c.spin) {
+    ctx.translate(0, -150);
+    ctx.rotate(rad(c.spin * c.since));
+    ctx.translate(0, 150);
+  }
+  ctx.lineCap = 'round';
+  ctx.lineJoin = 'round';
+  ctx.strokeStyle = INK;
+  ctx.lineWidth = L.width + WIDEN;
+  const hip = [0, -(L.thigh + L.shin)];
+  limb(ctx, hip[0], hip[1], c.pose.g[0], [L.thigh, L.shin]);
+  limb(ctx, hip[0], hip[1], c.pose.g[1], [L.thigh, L.shin]);
+  // upper body leans around the hip
+  ctx.save();
+  ctx.translate(hip[0], hip[1]);
+  ctx.rotate(rad(c.pose.lean));
+  const neck = [0, -L.body];
+  if (o.helmet) { // small backpack behind the shoulders
+    ctx.save();
+    ctx.fillStyle = edge ? INK : '#d9d9de';
+    ctx.lineWidth = 5 + WIDEN;
+    ctx.beginPath();
+    ctx.roundRect(-30, neck[1] + 6, 24, 54, 7);
+    ctx.fill();
+    ctx.stroke();
+    ctx.restore();
+  }
+  ctx.beginPath();
+  ctx.moveTo(0, 0);
+  ctx.lineTo(neck[0], neck[1]);
+  ctx.stroke();
+  const shoulder = [0, neck[1] + 8];
+  limb(ctx, shoulder[0], shoulder[1], c.pose.a[0], Object.assign([L.upper, L.fore], { hand: L.hand + WIDEN / 2 }));
+  limb(ctx, shoulder[0], shoulder[1], c.pose.a[1], Object.assign([L.upper, L.fore], { hand: L.hand + WIDEN / 2 }));
+  // head
+  ctx.translate(0, neck[1] - L.head + 6);
+  if (o.flip) ctx.scale(-1, 1); // keep the face and marks readable when he faces left
+  ctx.beginPath();
+  ctx.fillStyle = edge ? INK : SKIN;
+  ctx.lineWidth = 7 + WIDEN;
+  ctx.arc(0, 0, L.head, 0, Math.PI * 2);
+  ctx.fill();
+  ctx.stroke();
+  if (!edge) face(ctx, c.face, L.head, t, (o.x ?? 0) % 1.7);
+  if (o.helmet) {
+    ctx.beginPath();
+    ctx.lineWidth = 5 + WIDEN;
+    ctx.arc(0, 4, L.head * 1.5, 0, Math.PI * 2);
+    if (!edge) {
+      ctx.fillStyle = GLASS;
+      ctx.fill();
+    }
+    ctx.stroke();
+    if (!edge) {
+      ctx.beginPath();
+      ctx.strokeStyle = 'rgba(255,255,255,0.9)';
+      ctx.lineWidth = 6;
+      ctx.arc(0, 4, L.head * 1.22, rad(200), rad(250));
+      ctx.stroke();
+      ctx.strokeStyle = INK;
+    }
+  }
+  if (!edge) mark(ctx, c.face.mark, L.head, t);
+  ctx.restore();
+  ctx.restore();
+}
+
 function mark(ctx, kind, r, t) {
   if (!kind) return;
   ctx.save();
@@ -184,7 +257,7 @@ function mark(ctx, kind, r, t) {
 // Draw the character. Options: x, y (feet), scale, flip (face left), at, out, enter, moves, helmet (space),
 // float (gentle up-down drift, for space), id, and three that may be numbers or functions of `s`:
 // stretch (1 = normal; 2 = twice as tall and squeezed thin, for spaghettification), alpha (0-1), color (line colour),
-// and outline: a colour for a thin 'sticker' edge around every line, so he stays readable on dark backgrounds.
+// and outline: a colour for a 'sticker' edge around the whole figure, so he stays readable on dark backgrounds.
 export function hero(s, o = {}) {
   const moves = o.moves && o.moves.length ? o.moves : [{ at: 0, pose: o.pose || 'stand', face: o.face || 'neutral' }];
   const sc = o.scale ?? 1;
@@ -194,83 +267,20 @@ export function hero(s, o = {}) {
     const c = current(s, moves, t);
     const val = (v, d) => (typeof v === 'function' ? v(s) : v ?? d);
     const k = Math.max(0.2, val(o.stretch, 1));
-    INK = val(o.color, BLACK);
     ctx.globalAlpha *= Math.max(0, Math.min(1, val(o.alpha, 1)));
     const shake = c.face.shake ? Math.sin(t * 60) * c.face.shake : 0;
     const drift = o.float ? Math.sin(t * 1.6) * 14 : Math.sin(t * 2.2) * 1.5; // breathing or floating
-    ctx.save();
-    ctx.translate(shake, drift);
-    if (o.outline) { // four hard drop shadows = a thin outline (canvas filters ignore the transform: screen pixels)
-      const w = 3;
-      ctx.filter = [[w, 0], [-w, 0], [0, w], [0, -w]].map(([dx, dy]) => `drop-shadow(${dx}px ${dy}px 0 ${o.outline})`).join(' ');
+    const ink = val(o.color, BLACK);
+    // outline: draw the whole figure first in the edge colour with wider lines, then normally on top.
+    // (A canvas drop-shadow filter did the same but made rendering ~30x slower: run 40824544082 hung.)
+    if (o.outline) {
+      INK = o.outline;
+      WIDEN = 7 / sc;
+      figure(ctx, c, o, sc, k, t, shake, drift, true);
     }
-    ctx.scale((o.flip ? -sc : sc) / Math.sqrt(k), sc * k); // taller and thinner, same volume (Spaghettification article)
-    if (c.spin) {
-      ctx.translate(0, -150);
-      ctx.rotate(rad(c.spin * c.since));
-      ctx.translate(0, 150);
-    }
-    ctx.lineCap = 'round';
-    ctx.lineJoin = 'round';
-    ctx.strokeStyle = INK;
-    ctx.lineWidth = L.width;
-    const hip = [0, -(L.thigh + L.shin)];
-    limb(ctx, hip[0], hip[1], c.pose.g[0], [L.thigh, L.shin]);
-    limb(ctx, hip[0], hip[1], c.pose.g[1], [L.thigh, L.shin]);
-    // upper body leans around the hip
-    ctx.save();
-    ctx.translate(hip[0], hip[1]);
-    ctx.rotate(rad(c.pose.lean));
-    const neck = [0, -L.body];
-    if (o.helmet) { // small backpack behind the shoulders
-      ctx.save();
-      ctx.fillStyle = '#d9d9de';
-      ctx.lineWidth = 5;
-      ctx.beginPath();
-      ctx.roundRect(-30, neck[1] + 6, 24, 54, 7);
-      ctx.fill();
-      ctx.stroke();
-      ctx.restore();
-    }
-    ctx.beginPath();
-    ctx.moveTo(0, 0);
-    ctx.lineTo(neck[0], neck[1]);
-    ctx.stroke();
-    const shoulder = [0, neck[1] + 8];
-    limb(ctx, shoulder[0], shoulder[1], c.pose.a[0], Object.assign([L.upper, L.fore], { hand: L.hand }));
-    limb(ctx, shoulder[0], shoulder[1], c.pose.a[1], Object.assign([L.upper, L.fore], { hand: L.hand }));
-    // head
-    ctx.translate(0, neck[1] - L.head + 6);
-    if (o.flip) ctx.scale(-1, 1); // keep the face and marks readable when he faces left
-    ctx.beginPath();
-    ctx.fillStyle = SKIN;
-    ctx.lineWidth = 7;
-    ctx.arc(0, 0, L.head, 0, Math.PI * 2);
-    ctx.fill();
-    ctx.stroke();
-    face(ctx, c.face, L.head, t, (o.x ?? 0) % 1.7);
-    if (o.helmet) {
-      ctx.beginPath();
-      ctx.fillStyle = GLASS;
-      ctx.lineWidth = 5;
-      ctx.arc(0, 4, L.head * 1.5, 0, Math.PI * 2);
-      const edge = ctx.filter;
-      ctx.filter = 'none'; // the outline shadows of a see-through fill stack up into solid white and hide the face
-      ctx.fill();
-      ctx.filter = edge;
-      ctx.stroke();
-      ctx.beginPath();
-      ctx.strokeStyle = 'rgba(255,255,255,0.9)';
-      ctx.lineWidth = 6;
-      ctx.arc(0, 4, L.head * 1.22, rad(200), rad(250));
-      ctx.filter = 'none';
-      ctx.stroke();
-      ctx.filter = edge;
-      ctx.strokeStyle = INK;
-    }
-    mark(ctx, c.face.mark, L.head, t);
-    ctx.restore();
-    ctx.restore();
+    INK = ink;
+    WIDEN = 0;
+    figure(ctx, c, o, sc, k, t, shake, drift, false);
     INK = BLACK;
   });
   return box;
