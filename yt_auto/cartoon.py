@@ -348,6 +348,26 @@ def _words(text: str) -> list[str]:
     return [n for w in re.split(r"[\s\u2010-\u2015-]+", text) if (n := _norm(w))]
 
 
+_NUM = {1: "one", 2: "two", 3: "three", 4: "four", 5: "five", 6: "six", 7: "seven", 8: "eight", 9: "nine", 10: "ten"}
+_PART = {2: "half", 3: "third", 4: "quarter", 5: "fifth", 10: "tenth", 100: "hundredth"}
+
+
+def _label_words(text: str) -> list[str]:
+    """A label's words the way the voice says them (Kaggle test 2, run 40960523199: '1/10' vs 'one-tenth' and
+    '-2°C' vs 'minus 2 degrees Celsius' were false alarms)."""
+    t = re.sub(r"\b(\d+)\s*/\s*(\d+)\b", lambda m: f"{_NUM.get(int(m[1]), m[1])} {_PART.get(int(m[2]), m[2])}", text)
+    t = re.sub(r"(?<![\w])-\s*(\d)", r"minus \1", t)
+    t = re.sub(r"\s*°\s*C\b", " degrees celsius", t)
+    t = re.sub(r"\s*°\s*F\b", " degrees fahrenheit", t)
+    t = re.sub(r"(\d)\s*%", r"\1 percent", t)
+    return _words(t)
+
+
+def _said(word: str, spoken: set[str]) -> bool:
+    """Spoken as is, or as its singular/plural ('LIFEBOAT' when the voice says 'lifeboats')."""
+    return word in spoken or word + "s" in spoken or word + "es" in spoken or (word.endswith("s") and word[:-1] in spoken)
+
+
 def validate_scenes(js: str, script: dict) -> list[str]:
     """Plain-code checks before rendering. Returns problems (empty = fine)."""
     problems = []
@@ -392,8 +412,9 @@ def validate_scenes(js: str, script: dict) -> list[str]:
         if len(labels) > 1:
             problems.append(f"{sid}: {len(labels)} labels; use at most ONE short label per scene and draw the rest")
         for _, text in labels:
-            extra = [w for w in _words(text) if w not in spoken.split()]
-            if extra or len(_words(text)) > 4:
+            said = set(spoken.split())
+            extra = [w for w in _label_words(text) if not _said(w, said)]
+            if extra or len(_label_words(text)) > 4:
                 problems.append(f"{sid}: label '{text}' must be at most 4 words, all spoken in this scene "
                                 f"(not spoken: {', '.join(extra) or '-'})")
         for call in ("s.text(", "s.note(", "s.title(", "s.subtitle(", "s.list("):
