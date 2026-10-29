@@ -1,0 +1,10 @@
+[llm] json_gemma-4-31b-it: gemma-4-31b-it unavailable (HTTP 503 (busy)); trying next model
+[llm] vision_gemma-4-31b-it: gemma-4-31b-it unavailable (HTTP 500 (busy)); trying next model
+[llm] json_cf:@cf/openai/gpt-oss-120b: cf:@cf/openai/gpt-oss-120b unavailable (daily free quota used up); trying next model
+[llm] vision1_gemma: gemma-4-31b-it unavailable (HTTP 500 (busy)); trying next model
+gemma-4-31b-it {'json': "failed: json_gemma-4-31b-it: no model available: ['gemma-4-31b-it: HTTP 503 (busy)']", 'vision': "failed: vision_gemma-4-31b-it: no model available: ['gemma-4-31b-it: HTTP 500 (busy)']", 'vision_one_image': "failed: vision1_gemma: no model available: ['gemma-4-31b-it: HTTP 500 (busy)']"}
+gemini-3.5-flash-lite {'json': 'ok', 'vision': 'ok'}
+gemini-3.1-flash-lite {'json': 'ok', 'vision': 'ok'}
+cf:@cf/openai/gpt-oss-120b {'json': "failed: json_cf:@cf/openai/gpt-oss-120b: no model available: ['cf:@cf/openai/gpt-oss-120b: daily free quota used up']", 'vision': 'failed: vision_cf:@cf/openai/gpt-oss-120b: no model available: []', 'long_prompt': 'failed: long_cf: no model available: []'}
+GitHub catalog: status 200 bytes 4 'OK\r\n'
+GitHub chat: status 200 bytes 4 'OK\r\n'

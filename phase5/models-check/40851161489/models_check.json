@@ -1,0 +1,116 @@
+{
+ "models": {
+  "gemma-4-31b-it": {
+   "json": "failed: json_gemma-4-31b-it: no model available: ['gemma-4-31b-it: HTTP 503 (busy)']",
+   "vision": "failed: vision_gemma-4-31b-it: no model available: ['gemma-4-31b-it: HTTP 500 (busy)']",
+   "vision_one_image": "failed: vision1_gemma: no model available: ['gemma-4-31b-it: HTTP 500 (busy)']"
+  },
+  "gemini-3.5-flash-lite": {
+   "json": "ok",
+   "vision": "ok"
+  },
+  "gemini-3.1-flash-lite": {
+   "json": "ok",
+   "vision": "ok"
+  },
+  "cf:@cf/openai/gpt-oss-120b": {
+   "json": "failed: json_cf:@cf/openai/gpt-oss-120b: no model available: ['cf:@cf/openai/gpt-oss-120b: daily free quota used up']",
+   "vision": "failed: vision_cf:@cf/openai/gpt-oss-120b: no model available: []",
+   "long_prompt": "failed: long_cf: no model available: []"
+  }
+ },
+ "errors": [
+  {
+   "model": "gemma-4-31b-it",
+   "status": 503,
+   "error": "{\n  \"error\": {\n    \"code\": 503,\n    \"message\": \"This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.\",\n    \"status\": \"UNAVAILABLE\"\n  }\n}\n"
+  },
+  {
+   "model": "gemma-4-31b-it",
+   "status": 500,
+   "error": "{\n  \"error\": {\n    \"code\": 500,\n    \"message\": \"Internal error encountered.\",\n    \"status\": \"INTERNAL\"\n  }\n}\n"
+  },
+  {
+   "model": "cf:@cf/openai/gpt-oss-120b",
+   "status": 429,
+   "error": "{\"errors\":[{\"message\":\"AiError: AiError: you have used up your daily free allocation of 10,000 neurons, please upgrade to Cloudflare's Workers Paid plan if you would like to continue usage. (5f68a611-d4c8-444c-a12d-8c2b42f475ad)\",\"code\":4006}],\"success\":false,\"result\":{},\"messages\":[]}"
+  },
+  {
+   "model": "gemma-4-31b-it",
+   "status": 500,
+   "error": "{\n  \"error\": {\n    \"code\": 500,\n    \"message\": \"Internal error encountered.\",\n    \"status\": \"INTERNAL\"\n  }\n}\n"
+  }
+ ],
+ "github_catalog": {
+  "catalog": {
+   "status": 200,
+   "url": "https://models.github.ai/catalog/models",
+   "headers": {
+    "Content-Type": "text/plain",
+    "connection": "close"
+   },
+   "bytes": 4,
+   "body": "OK\r\n"
+  },
+  "chat": {
+   "status": 200,
+   "url": "https://models.github.ai/inference/chat/completions",
+   "headers": {
+    "Content-Type": "text/plain",
+    "connection": "close"
+   },
+   "bytes": 4,
+   "body": "OK\r\n"
+  }
+ },
+ "calls": [
+  {
+   "name": "json_gemma-4-31b-it",
+   "model": "gemma-4-31b-it",
+   "status": 503,
+   "seconds": null
+  },
+  {
+   "name": "vision_gemma-4-31b-it",
+   "model": "gemma-4-31b-it",
+   "status": 500,
+   "seconds": null
+  },
+  {
+   "name": "json_gemini-3.5-flash-lite",
+   "model": "gemini-3.5-flash-lite",
+   "status": 200,
+   "seconds": 3.9
+  },
+  {
+   "name": "vision_gemini-3.5-flash-lite",
+   "model": "gemini-3.5-flash-lite",
+   "status": 200,
+   "seconds": 4.5
+  },
+  {
+   "name": "json_gemini-3.1-flash-lite",
+   "model": "gemini-3.1-flash-lite",
+   "status": 200,
+   "seconds": 15.4
+  },
+  {
+   "name": "vision_gemini-3.1-flash-lite",
+   "model": "gemini-3.1-flash-lite",
+   "status": 200,
+   "seconds": 1.4
+  },
+  {
+   "name": "json_cf:@cf/openai/gpt-oss-120b",
+   "model": "cf:@cf/openai/gpt-oss-120b",
+   "status": 429,
+   "seconds": null
+  },
+  {
+   "name": "vision1_gemma",
+   "model": "gemma-4-31b-it",
+   "status": 500,
+   "seconds": null
+  }
+ ]
+}
