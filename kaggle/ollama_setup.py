@@ -45,8 +45,8 @@ def link_saved_models() -> list[str]:
         (MODELS_DIR / "blobs").mkdir(parents=True, exist_ok=True)
         for b in blobs:
             dst = MODELS_DIR / "blobs" / b.name
-            if not dst.exists():
-                dst.symlink_to(b)
+            if not (dst.exists() or dst.is_symlink()):
+                dst.symlink_to(b.resolve())
         mdir = MODELS_DIR / "manifests" / "registry.ollama.ai" / "library" / name
         mdir.mkdir(parents=True, exist_ok=True)
         (mdir / tag).write_bytes(man.read_bytes())

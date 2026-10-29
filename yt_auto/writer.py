@@ -14,7 +14,7 @@ import json
 import re
 
 from . import factguard
-from .llm import QUALITY, llm
+from .llm import CHECK, QUALITY, llm
 from .research import as_prompt_text, passage_index
 
 AUDIENCE = ("a curious worldwide English-speaking audience (many are non-native speakers, "
@@ -191,7 +191,7 @@ transition or invitation). If it states any fact, mark it "unsupported" and give
 pure question or transition with no claim (e.g. "So what would a nearby supernova do to us?").
 
 """ + "\n\n".join(items)
-    res = llm(prompt, schema=CHECK_SCHEMA, name=name, temperature=0.1, models=QUALITY)
+    res = llm(prompt, schema=CHECK_SCHEMA, name=name, temperature=0.1, models=CHECK)
     return {r["id"]: r for r in res["results"]}
 
 

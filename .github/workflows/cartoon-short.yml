@@ -1,7 +1,13 @@
 name: Stickman Short (topic in, Short out)
 
 # Manual for now (the daily topic finder comes next). Follows cartoon/TEMPLATE.md:
-#   write   (our code, Gemini key): plan -> Wikipedia -> 110-140 word script -> fact-check -> scenes.js
+#   write   (our code): plan -> Wikipedia -> 110-140 word script -> fact-check -> scenes.js. Who writes (owner, 29 Oct:
+#           Kaggle first, Gemini as the backup):
+#             kaggle-start   packs our code and starts kaggle/short_kernel.py on a free Kaggle GPU (qwen3:32b writes,
+#                            gpt-oss:20b fact-checks, models from the private dataset); nothing else runs now
+#             kaggle-collect fetches Kaggle's result and goes on to render; if Kaggle failed or stopped early,
+#                            Gemini finishes the missing stages (every stage is cached, so it resumes)
+#             gemini         the old way: everything on GitHub with Gemini
 #   render  (explainroo, no secrets): voice, layout check, stills, video
 #   fix     (our code, Gemini key): an AI looks at the last frame of every scene (blind description + judge);
 #           layout errors and picture problems go back to the scene writer once
@@ -15,6 +21,11 @@ on:
         description: "Topic or question with a strong, true feeling"
         required: true
         default: "What happens if you fall into the Mariana Trench?"
+      writer:
+        description: "kaggle-start (open models on Kaggle, then run again with kaggle-collect ~40 min later), kaggle-collect, or gemini"
+        type: choice
+        options: [kaggle-start, kaggle-collect, gemini]
+        default: kaggle-start
 
 permissions:
   contents: read
@@ -27,6 +38,11 @@ jobs:
   write:
     runs-on: ubuntu-24.04
     timeout-minutes: 45
+    outputs:
+      ready: ${{ steps.done.outputs.ready }}
+      job_id: ${{ steps.kc.outputs.job_id }}
+    env:
+      WRITER: ${{ inputs.writer || 'gemini' }}
     steps:
       - uses: actions/checkout@v4
         with:
@@ -35,22 +51,114 @@ jobs:
         with:
           python-version: "3.13"
           cache: pip
+      - name: Kaggle login
+        if: env.WRITER != 'gemini'
+        timeout-minutes: 5
+        env:
+          KAGGLE_USERNAME: ${{ secrets.KAGGLE_USERNAME }}
+          KAGGLE_API_TOKEN: ${{ secrets.KAGGLE_API_TOKEN }}
+        run: bash kaggle/login.sh
+
+      - name: Start the writing on Kaggle
+        if: env.WRITER == 'kaggle-start'
+        timeout-minutes: 10
+        env:
+          KAGGLE_USERNAME: ${{ secrets.KAGGLE_USERNAME }}
+          TOPIC: ${{ inputs.topic }}
+        run: |
+          set -e
+          mkdir -p bundle/cartoon bundle/kaggle k
+          cp -r yt_auto bundle/ && cp kaggle/ollama_setup.py bundle/kaggle/
+          cp cartoon/make_short.py cartoon/SCENE_API.md cartoon/example_scenes.js cartoon/TEMPLATE.md bundle/cartoon/
+          find bundle -name __pycache__ -prune -exec rm -rf {} +
+          tar czf bundle.tgz -C bundle .
+          saved=false; kaggle datasets status "$KAGGLE_USERNAME/ollama-models" > /dev/null 2>&1 && saved=true
+          echo "saved models dataset: $saved"
+          SAVED=$saved python3 - <<'EOF'
+          import base64, json, os
+          b = base64.b64encode(open("bundle.tgz", "rb").read()).decode()
+          head = (f"JOB_ID = {os.environ['GITHUB_RUN_ID']!r}\nTOPIC = {os.environ['TOPIC']!r}\n"
+                  "WRITE_MODELS = ['qwen3:32b']\nCHECK_MODELS = ['gpt-oss:20b']\n" f"BUNDLE = {b!r}\n")
+          open("k/run.py", "w").write(head + open("kaggle/short_kernel.py").read())
+          user = os.environ["KAGGLE_USERNAME"]
+          json.dump({"id": f"{user}/yt-auto-short", "title": "yt-auto short", "code_file": "run.py",
+                     "language": "python", "kernel_type": "script", "is_private": "true", "enable_gpu": "true",
+                     "enable_internet": "true", "machine_shape": "NvidiaTeslaT4",
+                     "dataset_sources": [f"{user}/ollama-models"] if os.environ["SAVED"] == "true" else [],
+                     "competition_sources": [], "kernel_sources": [], "model_sources": []},
+                    open("k/kernel-metadata.json", "w"), indent=1)
+          EOF
+          kaggle kernels push -p k
+          echo "::notice::Started on Kaggle. Run this workflow again with writer = kaggle-collect in about 40 minutes."
+
+      - name: Collect the writing from Kaggle
+        id: kc
+        if: env.WRITER == 'kaggle-collect'
+        timeout-minutes: 10
+        env:
+          KAGGLE_USERNAME: ${{ secrets.KAGGLE_USERNAME }}
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          set -e
+          k="$KAGGLE_USERNAME/yt-auto-short"
+          st=$(kaggle kernels status "$k" 2>&1 || true); echo "$st"
+          if echo "$st" | grep -qiE 'running|queued'; then
+            echo "::notice::Kaggle is still working. Run kaggle-collect again in 10-20 minutes."
+            echo "state=wait" >> "$GITHUB_OUTPUT"; exit 0
+          fi
+          mkdir -p kout kp
+          kaggle kernels output "$k" -p kout > /dev/null || true
+          kaggle kernels pull "$k" -p kp > /dev/null || true
+          # the job (run id + topic) from the output, else from the pushed script itself
+          python3 - >> "$GITHUB_OUTPUT" <<'EOF'
+          import ast, json, pathlib
+          p = pathlib.Path("kout/job.json")
+          job = json.loads(p.read_text()) if p.exists() else {}
+          if not job.get("topic"):
+              for line in pathlib.Path("kp/run.py").read_text().splitlines()[:4]:
+                  name, _, value = line.partition(" = ")
+                  if name in ("JOB_ID", "TOPIC"):
+                      job[name.lower() if name == "TOPIC" else "job_id"] = ast.literal_eval(value)
+          print("job_id=" + str(job.get("job_id", "")))
+          print("topic=" + " ".join(str(job.get("topic", "")).split())[:200])
+          print("kaggle_complete=" + str(bool(job.get("complete"))).lower())
+          EOF
+          id=$(grep '^job_id=' "$GITHUB_OUTPUT" | tail -1 | cut -d= -f2)
+          [ -n "$id" ] || { echo "no Kaggle job found"; exit 1; }
+          if gh api "repos/${{ github.repository }}/contents/cartoon-short/kaggle-done/$id?ref=bench-results" > /dev/null 2>&1; then
+            echo "::notice::Kaggle job $id was already turned into a Short."
+            echo "state=done-already" >> "$GITHUB_OUTPUT"; exit 0
+          fi
+          mkdir -p out/short/kaggle
+          [ -d kout/short ] && cp -r kout/short/. out/short/
+          cp kout/job.json out/short/kaggle/ 2>/dev/null || true
+          cp -r kout/logs out/short/kaggle/ 2>/dev/null || true
+          cp kout/*.log out/short/kaggle/ 2>/dev/null || true
+          echo "state=ok" >> "$GITHUB_OUTPUT"
+
       - name: Install Python packages
+        if: env.WRITER == 'gemini' || steps.kc.outputs.state == 'ok'
         timeout-minutes: 10
         run: pip install -r requirements.txt && python cartoon/make_short.py --help > /dev/null
-      - name: Write the Short
+      - name: Write the Short (finishes with Gemini whatever Kaggle did not finish; cached stages are kept)
+        id: write
+        if: env.WRITER == 'gemini' || steps.kc.outputs.state == 'ok'
         timeout-minutes: 40
         env:
           GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
           CLOUDFLARE_API_TOKEN: ${{ secrets.CLOUDFLARE_API_TOKEN }}
           CLOUDFLARE_ACCOUNT_ID: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
-          TOPIC: ${{ inputs.topic }}
+          TOPIC: ${{ steps.kc.outputs.topic || inputs.topic }}
         run: |
           set -o pipefail
           mkdir -p out/short
           python cartoon/make_short.py write --topic "$TOPIC" --out out/short 2>&1 | tee out/short/write.log
-      - uses: actions/upload-artifact@v4
+      - name: Ready for the render?
+        id: done
         if: always()
+        run: echo "ready=${{ steps.write.outcome == 'success' }}" >> "$GITHUB_OUTPUT"
+      - uses: actions/upload-artifact@v4
+        if: steps.write.outcome != 'skipped'
         with:
           name: short-written
           path: out/short
@@ -58,6 +166,7 @@ jobs:
 
   render:
     needs: write
+    if: needs.write.outputs.ready == 'true'
     uses: ./.github/workflows/cartoon-render.yml
     with:
       project_artifact: short-written
@@ -148,7 +257,7 @@ jobs:
 
   publish:
     needs: [write, render, fix, render2, review2]
-    if: always() && needs.write.result == 'success'
+    if: always() && needs.write.result == 'success' && needs.write.outputs.ready == 'true'
     runs-on: ubuntu-24.04
     timeout-minutes: 10
     permissions:
@@ -200,7 +309,8 @@ jobs:
           META: ${{ steps.pick.outputs.meta }}
         run: |
           title=$(python3 -c "import json;print(json.load(open('$META/meta/plan.json'))['title'][:80])")
-          notes="$LABEL. ${PROBLEMS:-Every automatic check passed.} Watch it fully before uploading. Description: description.txt."
+          by=$(python3 -c "import json;print(', '.join(json.load(open('$META/meta/report.json')).get('models_used', [])) or 'cached')")
+          notes="$LABEL. ${PROBLEMS:-Every automatic check passed.} Watch it fully before uploading. Description: description.txt. Written by: $by."
           cp "$META/description.txt" description.txt
           gh release create "short-${{ github.run_id }}" --prerelease --title "$LABEL: $title" --notes "$notes" \
             "$FINAL/render/video.mp4" "$FINAL/render/video.cover.jpg" description.txt
@@ -210,6 +320,7 @@ jobs:
         env:
           FINAL: ${{ steps.pick.outputs.final }}
           META: ${{ steps.pick.outputs.meta }}
+          JOB_ID: ${{ needs.write.outputs.job_id }}
         run: |
           set -e
           git config user.name "github-actions[bot]"
@@ -221,6 +332,10 @@ jobs:
           mkdir -p "$dest"
           cp -r "$META/meta" "$META/project" "$dest/" 2>/dev/null || true
           cp "$META"/*.log "$META/description.txt" "$dest/" 2>/dev/null || true
+          cp -r "$META/kaggle" "$dest/" 2>/dev/null || true
+          if [ -n "$JOB_ID" ]; then  # this Kaggle job is used up: a later kaggle-collect must not make it again
+            mkdir -p results/cartoon-short/kaggle-done && echo "${{ github.run_id }}" > "results/cartoon-short/kaggle-done/$JOB_ID"
+          fi
           cp art/short-review2/picture_review2.json "$dest/meta/" 2>/dev/null || true
           for r in art/short-render1 art/short-render2; do
             [ -d "$r" ] || continue

@@ -14,6 +14,7 @@ from __future__ import annotations
 import argparse
 import faulthandler
 import json
+import os
 import re
 import sys
 from pathlib import Path
@@ -97,6 +98,9 @@ def write(args) -> None:
     cartoon.write_project(out / "project", script, sources, js)
     (out / "description.txt").write_text(cartoon.description(script, sources), encoding="utf-8")
     report["llm_calls"] = len(llm.LOG)
+    old = json.loads((meta / "report.json").read_text()) if (meta / "report.json").exists() else {}
+    # a rerun resumes from cached stages (e.g. after Kaggle): keep the models that wrote them
+    report["models_used"] = sorted({e["model"] for e in llm.LOG if not e.get("error")} | set(old.get("models_used", [])))
     (meta / "report.json").write_text(json.dumps(report, indent=1, ensure_ascii=False), encoding="utf-8")
 
 
@@ -167,7 +171,8 @@ def main() -> None:
     r.add_argument("--stills", required=True)
     r.add_argument("--name", default="picture_review2")
     args = ap.parse_args()
-    faulthandler.dump_traceback_later(40 * 60, exit=True)
+    # 40 min on GitHub; longer on Kaggle, where qwen3:32b took 12 min for one script (run 40865470880)
+    faulthandler.dump_traceback_later(int(os.environ.get("MAKE_SHORT_TIMEOUT_MIN", "40")) * 60, exit=True)
     {"write": write, "fix": fix, "review": review}[args.cmd](args)
 
 

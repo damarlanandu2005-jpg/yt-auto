@@ -38,6 +38,9 @@ CLOUDFLARE = "https://api.cloudflare.com/client/v4/accounts/{account}/ai/v1/chat
 CF_STRONG = "cf:@cf/openai/gpt-oss-120b"
 QUALITY = [m for m in os.environ.get(
     "LLM_QUALITY_MODELS", f"gemini-3.8-flash,gemini-3.6-flash,gemini-3.5-flash,{CF_STRONG}").split(",") if m]
+# CHECK: the fact-check only. Same as QUALITY unless set: on Kaggle gpt-oss:20b checks (30/30 in the Kaggle
+# test, run 40865470880) what qwen3:32b wrote (the only open model whose Short script matched Gemini's).
+CHECK = [m for m in os.environ.get("LLM_CHECK_MODELS", ",".join(QUALITY)).split(",") if m]
 # LIGHT: visual plan, photo pick/check, quality-gate review, topic scoring. Gemma 4 first (free, own
 # daily limit), then Flash-Lite models, then GitHub Models, then the strong models as a last resort.
 LIGHT = [m for m in os.environ.get(
