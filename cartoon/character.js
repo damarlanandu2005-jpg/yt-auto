@@ -183,7 +183,8 @@ function mark(ctx, kind, r, t) {
 
 // Draw the character. Options: x, y (feet), scale, flip (face left), at, out, enter, moves, helmet (space),
 // float (gentle up-down drift, for space), id, and three that may be numbers or functions of `s`:
-// stretch (1 = normal; 2 = twice as tall and squeezed thin, for spaghettification), alpha (0-1), color (line colour).
+// stretch (1 = normal; 2 = twice as tall and squeezed thin, for spaghettification), alpha (0-1), color (line colour),
+// and outline: a colour for a thin 'sticker' edge around every line, so he stays readable on dark backgrounds.
 export function hero(s, o = {}) {
   const moves = o.moves && o.moves.length ? o.moves : [{ at: 0, pose: o.pose || 'stand', face: o.face || 'neutral' }];
   const sc = o.scale ?? 1;
@@ -199,6 +200,10 @@ export function hero(s, o = {}) {
     const drift = o.float ? Math.sin(t * 1.6) * 14 : Math.sin(t * 2.2) * 1.5; // breathing or floating
     ctx.save();
     ctx.translate(shake, drift);
+    if (o.outline) { // four hard drop shadows = a thin outline (canvas filters ignore the transform: screen pixels)
+      const w = 3;
+      ctx.filter = [[w, 0], [-w, 0], [0, w], [0, -w]].map(([dx, dy]) => `drop-shadow(${dx}px ${dy}px 0 ${o.outline})`).join(' ');
+    }
     ctx.scale((o.flip ? -sc : sc) / Math.sqrt(k), sc * k); // taller and thinner, same volume (Spaghettification article)
     if (c.spin) {
       ctx.translate(0, -150);
@@ -249,13 +254,18 @@ export function hero(s, o = {}) {
       ctx.fillStyle = GLASS;
       ctx.lineWidth = 5;
       ctx.arc(0, 4, L.head * 1.5, 0, Math.PI * 2);
+      const edge = ctx.filter;
+      ctx.filter = 'none'; // the outline shadows of a see-through fill stack up into solid white and hide the face
       ctx.fill();
+      ctx.filter = edge;
       ctx.stroke();
       ctx.beginPath();
       ctx.strokeStyle = 'rgba(255,255,255,0.9)';
       ctx.lineWidth = 6;
       ctx.arc(0, 4, L.head * 1.22, rad(200), rad(250));
+      ctx.filter = 'none';
       ctx.stroke();
+      ctx.filter = edge;
       ctx.strokeStyle = INK;
     }
     mark(ctx, c.face.mark, L.head, t);

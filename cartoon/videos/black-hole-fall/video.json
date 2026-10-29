@@ -1,8 +1,9 @@
 {
   "title": "What happens if you fall into a black hole?",
-  "theme": "paper",
-  "size": "shorts",
+  "theme": "space-look.json",
+  "size": "9:16",
   "voice": "af_heart",
   "music": true,
-  "captions": "auto"
+  "captions": false,
+  "watermark": false
 }

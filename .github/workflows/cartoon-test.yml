@@ -86,7 +86,7 @@ jobs:
           set -o pipefail
           mkdir -p videos out
           cp -r "$GITHUB_WORKSPACE/cartoon/videos/$P" "videos/$P"
-          cp "$GITHUB_WORKSPACE"/cartoon/*.js "videos/$P/"   # character + props, served with the project
+          cp "$GITHUB_WORKSPACE"/cartoon/*.js "$GITHUB_WORKSPACE"/cartoon/*.json "videos/$P/"   # character, props, look
           x() { echo "::group::$*"; node bin/explainroo.js "$@" 2>&1 | tee -a out/log.txt; echo "::endgroup::"; }
           x doctor || true
           x voice "videos/$P"

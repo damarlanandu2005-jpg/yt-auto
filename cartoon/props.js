@@ -52,7 +52,7 @@ export function blackHole(s, o = {}) {
   return { x: o.x ?? s.cx, y: o.y ?? s.cy, w: r * 4, h: r * 2.6 };
 }
 
-// A few twinkling stars, for space scenes.
+// A few twinkling stars, for space scenes (light: true on a dark background).
 export function stars(s, o = {}) {
   s.draw({ at: o.at ?? 0, out: o.out, enter: 'none' }, (ctx) => {
     for (let i = 0; i < (o.count ?? 40); i++) {
@@ -60,9 +60,42 @@ export function stars(s, o = {}) {
       const y = s.rand(i + 100) * s.H;
       const tw = 0.5 + 0.5 * Math.sin(s.t * 2 + i);
       ctx.beginPath();
-      ctx.fillStyle = `rgba(29, 29, 31, ${0.15 + 0.25 * tw})`;
+      ctx.fillStyle = o.light ? `rgba(255, 255, 255, ${0.35 + 0.5 * tw})` : `rgba(29, 29, 31, ${0.15 + 0.25 * tw})`;
       ctx.arc(x, y, 2 + 2 * s.rand(i + 200), 0, Math.PI * 2);
       ctx.fill();
     }
+  });
+}
+
+// Captions like the big Shorts channels (owner's example, 29 Oct): ONE word at a time, bold white with a black
+// edge, no box, popping in as it is spoken. Uses explainroo's word timings (s.words). Numbers in yellow.
+export function words(s, o = {}) {
+  const list = s.words || [];
+  const y = o.y ?? s.H * 0.72;
+  const size = o.size ?? 78;
+  s.draw({ at: 0, enter: 'none', sfx: false }, (ctx) => {
+    const t = s.t;
+    let i = -1;
+    for (let k = 0; k < list.length; k++) if (list[k].start <= t) i = k;
+    if (i < 0) return;
+    const w = list[i];
+    const until = i + 1 < list.length ? Math.min(list[i + 1].start, w.end + 0.6) : w.end + 0.6;
+    if (t > until) return;
+    const text = w.text.replace(/[^\p{L}\p{N}'%.-]/gu, '').replace(/\.$/, '').toUpperCase();
+    if (!text) return;
+    const pop = Math.min(1, (t - w.start) / 0.09);
+    ctx.save();
+    ctx.translate(s.W / 2, y);
+    ctx.scale(0.85 + 0.15 * pop, 0.85 + 0.15 * pop);
+    ctx.font = `900 ${size}px Inter, "Arial Black", sans-serif`;
+    ctx.textAlign = 'center';
+    ctx.textBaseline = 'middle';
+    ctx.lineJoin = 'round';
+    ctx.lineWidth = size * 0.16;
+    ctx.strokeStyle = '#000000';
+    ctx.strokeText(text, 0, 0);
+    ctx.fillStyle = /\d/.test(text) ? '#fcd34d' : '#ffffff';
+    ctx.fillText(text, 0, 0);
+    ctx.restore();
   });
 }

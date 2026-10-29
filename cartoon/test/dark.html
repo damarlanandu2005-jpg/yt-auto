@@ -1,0 +1,17 @@
+<!doctype html><meta charset="utf-8"><body style="margin:0;background:#0d1328">
+<canvas id="c" width="1080" height="1920"></canvas>
+<script type="module">
+// Test page: full 9:16 dark frame, outlined character, one-word caption (tiny stand-in for explainroo's `s`).
+import { hero } from '../character.js';
+import { blackHole, stars, words } from '../props.js';
+const ctx = document.getElementById('c').getContext('2d');
+ctx.fillStyle = '#0d1328'; ctx.fillRect(0, 0, 1080, 1920);
+const s = { t: 1.05, cx: 540, cy: 960, W: 1080, H: 1920, time: (v) => v, rand: (i) => Math.abs(Math.sin(i * 12.9898) * 43758.5453) % 1,
+  words: [{ text: 'feet', start: 0.6, end: 1.0 }, { text: 'first.', start: 1.0, end: 1.5 }],
+  draw(o, fn) { ctx.save(); ctx.translate(o.x ?? 0, o.y ?? 0); fn(ctx, { p: 1, local: 1 }); ctx.restore(); } };
+stars(s, { light: true, count: 70 });
+blackHole(s, { x: 540, y: 1080, r: 190 });
+hero(s, { x: 540, y: 780, scale: 1.7, helmet: true, outline: '#ffffff', moves: [{ at: 0, pose: 'fall', face: 'scared' }] });
+words(s);
+document.title = 'done';
+</script>
