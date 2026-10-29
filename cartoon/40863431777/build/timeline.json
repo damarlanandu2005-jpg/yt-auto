@@ -1,0 +1,714 @@
+{
+  "fps": 30,
+  "width": 1080,
+  "height": 1920,
+  "duration": 53.8,
+  "frames": 1614,
+  "transitionSeconds": 0.7,
+  "pace": 1,
+  "scenes": [
+    {
+      "id": "hook",
+      "index": 0,
+      "start": 0,
+      "dur": 4.533333333333333,
+      "lead": 0.35,
+      "text": "What would happen to your body if you fell into the Mariana Trench?",
+      "transition": "none",
+      "voice": {
+        "url": "build/voice/hook.wav",
+        "start": 0.35,
+        "dur": 3.495
+      },
+      "words": [
+        {
+          "text": "What",
+          "start": 0.35,
+          "end": 0.51
+        },
+        {
+          "text": "would",
+          "start": 0.51,
+          "end": 0.59
+        },
+        {
+          "text": "happen",
+          "start": 0.59,
+          "end": 0.91
+        },
+        {
+          "text": "to",
+          "start": 0.91,
+          "end": 1.1099999999999999
+        },
+        {
+          "text": "your",
+          "start": 1.1099999999999999,
+          "end": 1.19
+        },
+        {
+          "text": "body",
+          "start": 1.19,
+          "end": 1.5099999999999998
+        },
+        {
+          "text": "if",
+          "start": 1.5099999999999998,
+          "end": 2.09
+        },
+        {
+          "text": "you",
+          "start": 2.09,
+          "end": 2.21
+        },
+        {
+          "text": "fell",
+          "start": 2.21,
+          "end": 2.41
+        },
+        {
+          "text": "into",
+          "start": 2.41,
+          "end": 2.65
+        },
+        {
+          "text": "the",
+          "start": 2.65,
+          "end": 2.75
+        },
+        {
+          "text": "Mariana",
+          "start": 2.75,
+          "end": 3.11
+        },
+        {
+          "text": "Trench?",
+          "start": 3.11,
+          "end": 3.5300000000000002
+        }
+      ],
+      "marks": {},
+      "attrs": {}
+    },
+    {
+      "id": "step1",
+      "index": 1,
+      "start": 4.533333333333333,
+      "dur": 13.833333333333334,
+      "lead": 0.35,
+      "text": "You drop into the western Pacific Ocean, directly above a depth of 10,935 metres. Cold water triggers cold shock and uncontrolled gasping, which can kill within 2 minutes.",
+      "transition": "auto",
+      "voice": {
+        "url": "build/voice/step1.wav",
+        "start": 4.883333333333333,
+        "dur": 12.79
+      },
+      "words": [
+        {
+          "text": "You",
+          "start": 0.35,
+          "end": 0.49
+        },
+        {
+          "text": "drop",
+          "start": 0.49,
+          "end": 0.75
+        },
+        {
+          "text": "into",
+          "start": 0.75,
+          "end": 1.03
+        },
+        {
+          "text": "the",
+          "start": 1.03,
+          "end": 1.21
+        },
+        {
+          "text": "western",
+          "start": 1.21,
+          "end": 1.5099999999999998
+        },
+        {
+          "text": "Pacific",
+          "start": 1.5099999999999998,
+          "end": 1.9899999999999998
+        },
+        {
+          "text": "Ocean,",
+          "start": 1.9899999999999998,
+          "end": 2.5100000000000002
+        },
+        {
+          "text": "directly",
+          "start": 3.23,
+          "end": 3.49
+        },
+        {
+          "text": "above",
+          "start": 3.49,
+          "end": 3.93
+        },
+        {
+          "text": "a",
+          "start": 3.93,
+          "end": 4.01
+        },
+        {
+          "text": "depth",
+          "start": 4.01,
+          "end": 4.369999999999999
+        },
+        {
+          "text": "of",
+          "start": 4.369999999999999,
+          "end": 4.6499999999999995
+        },
+        {
+          "text": "10,935",
+          "start": 4.6499999999999995,
+          "end": 6.35
+        },
+        {
+          "text": "metres.",
+          "start": 6.35,
+          "end": 6.869999999999999
+        },
+        {
+          "text": "Cold",
+          "start": 7.494999999999999,
+          "end": 7.755
+        },
+        {
+          "text": "water",
+          "start": 7.755,
+          "end": 8.015
+        },
+        {
+          "text": "triggers",
+          "start": 8.015,
+          "end": 8.395
+        },
+        {
+          "text": "cold",
+          "start": 8.395,
+          "end": 8.915
+        },
+        {
+          "text": "shock",
+          "start": 8.915,
+          "end": 9.254999999999999
+        },
+        {
+          "text": "and",
+          "start": 9.254999999999999,
+          "end": 9.715
+        },
+        {
+          "text": "uncontrolled",
+          "start": 9.715,
+          "end": 10.115
+        },
+        {
+          "text": "gasping,",
+          "start": 10.115,
+          "end": 10.975
+        },
+        {
+          "text": "which",
+          "start": 11.375,
+          "end": 11.594999999999999
+        },
+        {
+          "text": "can",
+          "start": 11.594999999999999,
+          "end": 11.795
+        },
+        {
+          "text": "kill",
+          "start": 11.795,
+          "end": 12.055
+        },
+        {
+          "text": "within",
+          "start": 12.055,
+          "end": 12.275
+        },
+        {
+          "text": "2",
+          "start": 12.275,
+          "end": 12.575
+        },
+        {
+          "text": "minutes.",
+          "start": 12.575,
+          "end": 12.855
+        }
+      ],
+      "marks": {},
+      "attrs": {}
+    },
+    {
+      "id": "step2",
+      "index": 2,
+      "start": 18.366666666666667,
+      "dur": 11.733333333333333,
+      "lead": 0.35,
+      "text": "With your mouth submerged, gasping forces water in and causes drowning. As your body sinks deeper, rising hydrostatic pressure shrinks flexible gas-filled spaces.",
+      "transition": "auto",
+      "voice": {
+        "url": "build/voice/step2.wav",
+        "start": 18.71666666666667,
+        "dur": 10.685
+      },
+      "words": [
+        {
+          "text": "With",
+          "start": 0.35,
+          "end": 0.47
+        },
+        {
+          "text": "your",
+          "start": 0.47,
+          "end": 0.59
+        },
+        {
+          "text": "mouth",
+          "start": 0.59,
+          "end": 0.83
+        },
+        {
+          "text": "submerged,",
+          "start": 0.83,
+          "end": 1.17
+        },
+        {
+          "text": "gasping",
+          "start": 2.01,
+          "end": 2.49
+        },
+        {
+          "text": "forces",
+          "start": 2.49,
+          "end": 2.81
+        },
+        {
+          "text": "water",
+          "start": 2.81,
+          "end": 3.19
+        },
+        {
+          "text": "in",
+          "start": 3.19,
+          "end": 3.49
+        },
+        {
+          "text": "and",
+          "start": 3.49,
+          "end": 3.67
+        },
+        {
+          "text": "causes",
+          "start": 3.67,
+          "end": 3.89
+        },
+        {
+          "text": "drowning.",
+          "start": 3.89,
+          "end": 4.33
+        },
+        {
+          "text": "As",
+          "start": 5.005,
+          "end": 5.145
+        },
+        {
+          "text": "your",
+          "start": 5.145,
+          "end": 5.244999999999999
+        },
+        {
+          "text": "body",
+          "start": 5.244999999999999,
+          "end": 5.5649999999999995
+        },
+        {
+          "text": "sinks",
+          "start": 5.5649999999999995,
+          "end": 5.805
+        },
+        {
+          "text": "deeper,",
+          "start": 5.805,
+          "end": 6.244999999999999
+        },
+        {
+          "text": "rising",
+          "start": 6.665,
+          "end": 7.225
+        },
+        {
+          "text": "hydrostatic",
+          "start": 7.225,
+          "end": 7.864999999999999
+        },
+        {
+          "text": "pressure",
+          "start": 7.864999999999999,
+          "end": 8.465
+        },
+        {
+          "text": "shrinks",
+          "start": 8.465,
+          "end": 9.084999999999999
+        },
+        {
+          "text": "flexible",
+          "start": 9.084999999999999,
+          "end": 9.565
+        },
+        {
+          "text": "gas-filled",
+          "start": 9.565,
+          "end": 10.165
+        },
+        {
+          "text": "spaces.",
+          "start": 10.165,
+          "end": 10.745
+        }
+      ],
+      "marks": {},
+      "attrs": {}
+    },
+    {
+      "id": "step3",
+      "index": 3,
+      "start": 30.1,
+      "dur": 7.733333333333333,
+      "lead": 0.35,
+      "text": "This difference in pressure causes injuries to gas-containing internal organs like your lungs and ears.",
+      "transition": "auto",
+      "voice": {
+        "url": "build/voice/step3.wav",
+        "start": 30.450000000000003,
+        "dur": 6.695
+      },
+      "words": [
+        {
+          "text": "This",
+          "start": 0.35,
+          "end": 0.49
+        },
+        {
+          "text": "difference",
+          "start": 0.49,
+          "end": 0.81
+        },
+        {
+          "text": "in",
+          "start": 0.81,
+          "end": 1.0499999999999998
+        },
+        {
+          "text": "pressure",
+          "start": 1.0499999999999998,
+          "end": 1.35
+        },
+        {
+          "text": "causes",
+          "start": 1.35,
+          "end": 2.27
+        },
+        {
+          "text": "injuries",
+          "start": 2.27,
+          "end": 2.75
+        },
+        {
+          "text": "to",
+          "start": 2.75,
+          "end": 3.15
+        },
+        {
+          "text": "gas-containing",
+          "start": 3.15,
+          "end": 3.89
+        },
+        {
+          "text": "internal",
+          "start": 3.89,
+          "end": 4.369999999999999
+        },
+        {
+          "text": "organs",
+          "start": 4.369999999999999,
+          "end": 4.869999999999999
+        },
+        {
+          "text": "like",
+          "start": 4.869999999999999,
+          "end": 5.569999999999999
+        },
+        {
+          "text": "your",
+          "start": 5.569999999999999,
+          "end": 5.75
+        },
+        {
+          "text": "lungs",
+          "start": 5.75,
+          "end": 6.029999999999999
+        },
+        {
+          "text": "and",
+          "start": 6.029999999999999,
+          "end": 6.409999999999999
+        },
+        {
+          "text": "ears.",
+          "start": 6.409999999999999,
+          "end": 6.67
+        }
+      ],
+      "marks": {},
+      "attrs": {}
+    },
+    {
+      "id": "answer",
+      "index": 4,
+      "start": 37.833333333333336,
+      "dur": 10.166666666666666,
+      "lead": 0.35,
+      "text": "In short, cold shock and drowning can kill you in minutes. As you descend, rising water pressure can injure your gas-containing internal organs.",
+      "transition": "auto",
+      "voice": {
+        "url": "build/voice/answer.wav",
+        "start": 38.18333333333334,
+        "dur": 9.125
+      },
+      "words": [
+        {
+          "text": "In",
+          "start": 0.35,
+          "end": 0.47
+        },
+        {
+          "text": "short,",
+          "start": 0.47,
+          "end": 0.79
+        },
+        {
+          "text": "cold",
+          "start": 1.13,
+          "end": 1.4300000000000002
+        },
+        {
+          "text": "shock",
+          "start": 1.4300000000000002,
+          "end": 1.69
+        },
+        {
+          "text": "and",
+          "start": 1.69,
+          "end": 1.9700000000000002
+        },
+        {
+          "text": "drowning",
+          "start": 1.9700000000000002,
+          "end": 2.19
+        },
+        {
+          "text": "can",
+          "start": 2.19,
+          "end": 2.5700000000000003
+        },
+        {
+          "text": "kill",
+          "start": 2.5700000000000003,
+          "end": 2.85
+        },
+        {
+          "text": "you",
+          "start": 2.85,
+          "end": 3.0100000000000002
+        },
+        {
+          "text": "in",
+          "start": 3.0100000000000002,
+          "end": 3.11
+        },
+        {
+          "text": "minutes.",
+          "start": 3.11,
+          "end": 3.35
+        },
+        {
+          "text": "As",
+          "start": 3.92,
+          "end": 4.1
+        },
+        {
+          "text": "you",
+          "start": 4.1,
+          "end": 4.22
+        },
+        {
+          "text": "descend,",
+          "start": 4.22,
+          "end": 4.56
+        },
+        {
+          "text": "rising",
+          "start": 5.14,
+          "end": 5.56
+        },
+        {
+          "text": "water",
+          "start": 5.56,
+          "end": 5.92
+        },
+        {
+          "text": "pressure",
+          "start": 5.92,
+          "end": 6.359999999999999
+        },
+        {
+          "text": "can",
+          "start": 6.359999999999999,
+          "end": 6.779999999999999
+        },
+        {
+          "text": "injure",
+          "start": 6.779999999999999,
+          "end": 7.14
+        },
+        {
+          "text": "your",
+          "start": 7.14,
+          "end": 7.34
+        },
+        {
+          "text": "gas-containing",
+          "start": 7.34,
+          "end": 8.14
+        },
+        {
+          "text": "internal",
+          "start": 8.14,
+          "end": 8.62
+        },
+        {
+          "text": "organs.",
+          "start": 8.62,
+          "end": 9.12
+        }
+      ],
+      "marks": {},
+      "attrs": {}
+    },
+    {
+      "id": "end",
+      "index": 5,
+      "start": 48,
+      "dur": 5.8,
+      "lead": 0.35,
+      "text": "Would you ever dare to explore the ocean deeps?",
+      "transition": "auto",
+      "voice": {
+        "url": "build/voice/end.wav",
+        "start": 48.35,
+        "dur": 2.535
+      },
+      "words": [
+        {
+          "text": "Would",
+          "start": 0.35,
+          "end": 0.49
+        },
+        {
+          "text": "you",
+          "start": 0.49,
+          "end": 0.61
+        },
+        {
+          "text": "ever",
+          "start": 0.61,
+          "end": 0.89
+        },
+        {
+          "text": "dare",
+          "start": 0.89,
+          "end": 1.17
+        },
+        {
+          "text": "to",
+          "start": 1.17,
+          "end": 1.4500000000000002
+        },
+        {
+          "text": "explore",
+          "start": 1.4500000000000002,
+          "end": 1.79
+        },
+        {
+          "text": "the",
+          "start": 1.79,
+          "end": 1.9899999999999998
+        },
+        {
+          "text": "ocean",
+          "start": 1.9899999999999998,
+          "end": 2.31
+        },
+        {
+          "text": "deeps?",
+          "start": 2.31,
+          "end": 2.81
+        }
+      ],
+      "marks": {},
+      "attrs": {
+        "hold": 1.5
+      }
+    }
+  ],
+  "voiceSpans": [
+    {
+      "start": 0.35,
+      "end": 3.845
+    },
+    {
+      "start": 4.883333333333333,
+      "end": 11.728333333333332
+    },
+    {
+      "start": 12.028333333333332,
+      "end": 17.673333333333332
+    },
+    {
+      "start": 18.71666666666667,
+      "end": 23.07166666666667
+    },
+    {
+      "start": 23.37166666666667,
+      "end": 29.40166666666667
+    },
+    {
+      "start": 30.450000000000003,
+      "end": 37.145
+    },
+    {
+      "start": 38.18333333333334,
+      "end": 41.45333333333334
+    },
+    {
+      "start": 41.75333333333334,
+      "end": 47.30833333333334
+    },
+    {
+      "start": 48.35,
+      "end": 50.885000000000005
+    }
+  ]
+}

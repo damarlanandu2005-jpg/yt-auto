@@ -1,0 +1,61 @@
+ok   node                 v22.23.4
+ok   ffmpeg               ffmpeg version n8.1.3-24-g92611900bb-20261026 Copyright (c) 2000-2026 the FFmpeg developers
+ok   espeak-ng            not found; only needed for Spanish, French, Italian, Portuguese and Hindi
+ok   misaki ja            not found; only needed for Japanese
+ok   misaki zh            not found; only needed for Chinese
+ok   chrome               /usr/bin/google-chrome
+ok   voice model          Kokoro 82M (fp32) in /home/runner/.cache/explainroo/models/onnx-community
+ok   speech check model   Whisper base.en
+FAIL language model       Whisper small for languages other than English; downloaded on first use, not by --fetch
+voice hook: 3.5s in 4.4s
+voice step1: 12.8s in 8.6s
+voice step2: 10.7s in 7.6s
+voice step3: 6.7s in 4.4s
+voice answer: 9.1s in 6.7s
+voice end: 2.5s in 2.4s
+hook                 3.5s  100% confirmed
+step1               12.8s  100% confirmed
+step2               10.7s  100% confirmed
+step3                6.7s  100% confirmed
+answer               9.1s  100% confirmed
+end                  2.5s  100% confirmed
+total 53.8s
+HINT  step1: cue "cold" means the first of the 2 times it is spoken in this scene; if you meant a later one, use s.cue("cold", 2) or a [#marker]
+0 error(s), 1 other finding(s) in 6 scenes (53.8s)
+hook@end                 /home/runner/explainroo/videos/mariana-trench/out/stills/hook@end.png
+step1@end                /home/runner/explainroo/videos/mariana-trench/out/stills/step1@end.png
+step2@end                /home/runner/explainroo/videos/mariana-trench/out/stills/step2@end.png
+step3@end                /home/runner/explainroo/videos/mariana-trench/out/stills/step3@end.png
+answer@end               /home/runner/explainroo/videos/mariana-trench/out/stills/answer@end.png
+end@end                  /home/runner/explainroo/videos/mariana-trench/out/stills/end@end.png
+/home/runner/explainroo/videos/mariana-trench/out/sheet.jpg (30 frames)
+rendering 53.8s (1614 frames at 30 fps, 1080x1920) with 2 workers
+soundtrack: 23 sound cues, mixed in 2.5s
+frames 108/1614 (34.2 fps, about 45s left)
+frames 192/1614 (31.1 fps, about 46s left)
+frames 252/1614 (25.9 fps, about 53s left)
+frames 312/1614 (24.3 fps, about 54s left)
+frames 414/1614 (26.1 fps, about 46s left)
+frames 504/1614 (26.4 fps, about 42s left)
+frames 576/1614 (25.9 fps, about 41s left)
+frames 666/1614 (26.3 fps, about 37s left)
+frames 720/1614 (25.1 fps, about 36s left)
+frames 804/1614 (25.2 fps, about 33s left)
+frames 888/1614 (25.3 fps, about 29s left)
+frames 966/1614 (25.2 fps, about 26s left)
+frames 1068/1614 (25.9 fps, about 22s left)
+frames 1170/1614 (26.3 fps, about 17s left)
+frames 1254/1614 (26.4 fps, about 14s left)
+frames 1368/1614 (27.1 fps, about 10s left)
+frames 1458/1614 (27.1 fps, about 6s left)
+frames 1521/1614 (26.6 fps, about 4s left)
+frames 1611/1614 (26.7 fps, about 1s left)
+frames done in 61.2s
+wrote videos/mariana-trench/out/video.mp4 in 67.9s
+videos/mariana-trench/out/video.mp4
+videos/mariana-trench/out/video.srt
+videos/mariana-trench/out/video.vtt
+videos/mariana-trench/out/video.cover.jpg
+checking that the narration is understandable in the final mix
+/home/runner/explainroo/videos/mariana-trench/out/video.mp4: 53.8s, 1080x1920, loudness -14 LUFS, true peak -1.4 dBFS
+narration understood: 100%

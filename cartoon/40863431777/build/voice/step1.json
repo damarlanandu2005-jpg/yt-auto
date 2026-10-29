@@ -1,0 +1,219 @@
+{
+  "hash": "43e296f7ee6c9872",
+  "id": "step1",
+  "duration": 12.79,
+  "words": [
+    {
+      "text": "You",
+      "spoken": "You",
+      "start": 0,
+      "end": 0.14,
+      "matched": true
+    },
+    {
+      "text": "drop",
+      "spoken": "drop",
+      "start": 0.14,
+      "end": 0.4,
+      "matched": true
+    },
+    {
+      "text": "into",
+      "spoken": "into",
+      "start": 0.4,
+      "end": 0.68,
+      "matched": true
+    },
+    {
+      "text": "the",
+      "spoken": "the",
+      "start": 0.68,
+      "end": 0.86,
+      "matched": true
+    },
+    {
+      "text": "western",
+      "spoken": "western",
+      "start": 0.86,
+      "end": 1.16,
+      "matched": true
+    },
+    {
+      "text": "Pacific",
+      "spoken": "Pacific",
+      "start": 1.16,
+      "end": 1.64,
+      "matched": true
+    },
+    {
+      "text": "Ocean,",
+      "spoken": "Ocean,",
+      "start": 1.64,
+      "end": 2.16,
+      "matched": true
+    },
+    {
+      "text": "directly",
+      "spoken": "directly",
+      "start": 2.88,
+      "end": 3.14,
+      "matched": true
+    },
+    {
+      "text": "above",
+      "spoken": "above",
+      "start": 3.14,
+      "end": 3.58,
+      "matched": true
+    },
+    {
+      "text": "a",
+      "spoken": "a",
+      "start": 3.58,
+      "end": 3.66,
+      "matched": true
+    },
+    {
+      "text": "depth",
+      "spoken": "depth",
+      "start": 3.66,
+      "end": 4.02,
+      "matched": true
+    },
+    {
+      "text": "of",
+      "spoken": "of",
+      "start": 4.02,
+      "end": 4.3,
+      "matched": true
+    },
+    {
+      "text": "10,935",
+      "spoken": "10,935",
+      "start": 4.3,
+      "end": 6,
+      "matched": true
+    },
+    {
+      "text": "metres.",
+      "spoken": "metres.",
+      "start": 6,
+      "end": 6.52,
+      "matched": true
+    },
+    {
+      "text": "Cold",
+      "spoken": "Cold",
+      "start": 7.145,
+      "end": 7.405,
+      "matched": true
+    },
+    {
+      "text": "water",
+      "spoken": "water",
+      "start": 7.405,
+      "end": 7.665,
+      "matched": true
+    },
+    {
+      "text": "triggers",
+      "spoken": "triggers",
+      "start": 7.665,
+      "end": 8.045,
+      "matched": true
+    },
+    {
+      "text": "cold",
+      "spoken": "cold",
+      "start": 8.045,
+      "end": 8.565,
+      "matched": true
+    },
+    {
+      "text": "shock",
+      "spoken": "shock",
+      "start": 8.565,
+      "end": 8.905,
+      "matched": true
+    },
+    {
+      "text": "and",
+      "spoken": "and",
+      "start": 8.905,
+      "end": 9.365,
+      "matched": true
+    },
+    {
+      "text": "uncontrolled",
+      "spoken": "uncontrolled",
+      "start": 9.365,
+      "end": 9.765,
+      "matched": true
+    },
+    {
+      "text": "gasping,",
+      "spoken": "gasping,",
+      "start": 9.765,
+      "end": 10.625,
+      "matched": true
+    },
+    {
+      "text": "which",
+      "spoken": "which",
+      "start": 11.025,
+      "end": 11.245,
+      "matched": true
+    },
+    {
+      "text": "can",
+      "spoken": "can",
+      "start": 11.245,
+      "end": 11.445,
+      "matched": true
+    },
+    {
+      "text": "kill",
+      "spoken": "kill",
+      "start": 11.445,
+      "end": 11.705,
+      "matched": true
+    },
+    {
+      "text": "within",
+      "spoken": "within",
+      "start": 11.705,
+      "end": 11.925,
+      "matched": true
+    },
+    {
+      "text": "2",
+      "spoken": "2",
+      "start": 11.925,
+      "end": 12.225,
+      "matched": true
+    },
+    {
+      "text": "minutes.",
+      "spoken": "minutes.",
+      "start": 12.225,
+      "end": 12.505,
+      "matched": true
+    }
+  ],
+  "marks": {},
+  "chunks": [
+    {
+      "start": 0,
+      "end": 6.845,
+      "text": "You drop into the western Pacific Ocean, directly above a depth of 10,935 metres."
+    },
+    {
+      "start": 7.145,
+      "end": 12.79,
+      "text": "Cold water triggers cold shock and uncontrolled gasping, which can kill within 2 minutes."
+    }
+  ],
+  "transcript": "You drop into the western Pacific Ocean, directly above a depth of 10,935 meters. Cold water triggers cold shock and uncontrolled gasping, which can kill within two minutes.",
+  "matchRate": 1,
+  "unmatched": []
+}
