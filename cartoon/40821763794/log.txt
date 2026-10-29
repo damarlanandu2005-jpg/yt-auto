@@ -1,0 +1,65 @@
+ok   node                 v22.23.4
+ok   ffmpeg               ffmpeg version n8.1.3-24-g92611900bb-20261026 Copyright (c) 2000-2026 the FFmpeg developers
+ok   espeak-ng            not found; only needed for Spanish, French, Italian, Portuguese and Hindi
+ok   misaki ja            not found; only needed for Japanese
+ok   misaki zh            not found; only needed for Chinese
+ok   chrome               /usr/bin/google-chrome
+ok   voice model          Kokoro 82M (fp32) in /home/runner/.cache/explainroo/models/onnx-community
+ok   speech check model   Whisper base.en
+FAIL language model       Whisper small for languages other than English; downloaded on first use, not by --fetch
+voice hook: 4.2s in 4.5s
+voice stretch: 8.6s in 4.6s
+voice name: 4.6s in 2.5s
+voice size: 10.7s in 4.9s
+voice outside: 8.7s in 4.3s
+voice trapped: 6.1s in 3.0s
+hook                 4.2s  100% confirmed
+stretch              8.6s  100% confirmed
+name                 4.6s  100% confirmed
+size                10.7s  100% confirmed
+outside              8.7s  100% confirmed
+trapped              6.1s  100% confirmed
+total 51.3s
+WARN  stretch @2.5s: "strong pull" is outside the shorts safe area (65,288 to 950,1248), where the app's buttons, name or caption can cover it
+0 error(s), 1 other finding(s) in 6 scenes (51.3s)
+hook@end                 /home/runner/explainroo/videos/black-hole-fall/out/stills/hook@end.png
+stretch@end              /home/runner/explainroo/videos/black-hole-fall/out/stills/stretch@end.png
+name@end                 /home/runner/explainroo/videos/black-hole-fall/out/stills/name@end.png
+size@end                 /home/runner/explainroo/videos/black-hole-fall/out/stills/size@end.png
+outside@end              /home/runner/explainroo/videos/black-hole-fall/out/stills/outside@end.png
+trapped@end              /home/runner/explainroo/videos/black-hole-fall/out/stills/trapped@end.png
+/home/runner/explainroo/videos/black-hole-fall/out/sheet.jpg (31 frames)
+rendering 51.3s (1540 frames at 30 fps, 1080x1920) with 2 workers
+soundtrack: 14 sound cues, mixed in 2.2s
+frames 102/1540 (32.5 fps, about 45s left)
+frames 180/1540 (28.6 fps, about 48s left)
+frames 264/1540 (27.5 fps, about 47s left)
+frames 324/1540 (25.4 fps, about 48s left)
+frames 372/1540 (22.3 fps, about 53s left)
+frames 408/1540 (20.7 fps, about 55s left)
+frames 450/1540 (19.6 fps, about 56s left)
+frames 510/1540 (19.7 fps, about 53s left)
+frames 588/1540 (20.2 fps, about 48s left)
+frames 666/1540 (20.6 fps, about 43s left)
+frames 738/1540 (20.7 fps, about 39s left)
+frames 828/1540 (21.4 fps, about 34s left)
+frames 906/1540 (21.7 fps, about 30s left)
+frames 954/1540 (21.0 fps, about 28s left)
+frames 996/1540 (20.4 fps, about 27s left)
+frames 1044/1540 (20.1 fps, about 25s left)
+frames 1116/1540 (20.2 fps, about 21s left)
+frames 1170/1540 (20.1 fps, about 19s left)
+frames 1242/1540 (20.1 fps, about 15s left)
+frames 1308/1540 (20.2 fps, about 12s left)
+frames 1374/1540 (20.3 fps, about 9s left)
+frames 1424/1540 (20.0 fps, about 6s left)
+frames 1496/1540 (20.0 fps, about 3s left)
+frames done in 78.0s
+wrote videos/black-hole-fall/out/video.mp4 in 83.3s
+videos/black-hole-fall/out/video.mp4
+videos/black-hole-fall/out/video.srt
+videos/black-hole-fall/out/video.vtt
+videos/black-hole-fall/out/video.cover.jpg
+checking that the narration is understandable in the final mix
+/home/runner/explainroo/videos/black-hole-fall/out/video.mp4: 51.33s, 1080x1920, loudness -14 LUFS, true peak -1.2 dBFS
+narration understood: 100%
