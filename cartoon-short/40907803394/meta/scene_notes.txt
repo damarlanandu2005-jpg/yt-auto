@@ -1,0 +1,6 @@
+hook: hero walks on Titanic deck (wide) then close‑up points shocked at a fully visible iceberg in the distance.
+step1: hero watches a massive iceberg where only its tip sticks above the water; water line shown, hero looks surprised.
+step2: medium shot of Titanic’s bow colliding with the iceberg; close‑up shows two lifeboats on deck with a yellow label “ONE‑THIRD” floating above them, hero looks shocked.
+step3: medium shot of the raised poop deck with icy water rising up to the rail; close‑up shows hero diving into the freezing water, bubbles and speed lines emphasize the plunge.
+answer: underwater view of hero in icy water, breath clouds and a pulsing red glow around the chest illustrate cold shock, rapid breathing and heart strain; label “COLD SHOCK” appears above.
+end: close‑up of a lifeboat on the deck with hero standing beside it, hand on the boat, thinking about finding a place; no other props obscure the figure.

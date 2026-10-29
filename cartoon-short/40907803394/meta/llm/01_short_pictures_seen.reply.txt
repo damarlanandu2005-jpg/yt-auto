@@ -1,0 +1,28 @@
+{
+  "images": [
+    {
+      "n": 1,
+      "seen": "A stick figure in a brown suit and bowler hat stands in the center of a ship's deck, looking surprised with wide eyes and an open mouth. An exclamation mark floats near its head. Above the figure, the blue shape of a massive iceberg is visible against the night sky, cut off at the top edge of the image."
+    },
+    {
+      "n": 2,
+      "seen": "The same stick figure in a brown suit and bowler hat stands on the ship's deck, looking surprised with wide eyes and an open mouth, with an exclamation mark next to its head. The massive blue tip of an iceberg descends from the top, covering the upper portion of the stick figure's head and hat."
+    },
+    {
+      "n": 3,
+      "seen": "The stick figure stands on the ship's deck looking sad with a teardrop on its cheek. A wooden lifeboat is held horizontally across its torso, covering most of its body. Across the lifeboat and the figure, the bold yellow text \"ONE-WORD\" is displayed horizontally."
+    },
+    {
+      "n": 4,
+      "seen": "The stick figure falls downward past the ship's deck, with wide surprised eyes, an open mouth, and a red exclamation mark near its head. White vertical streaks representing heavy rain or falling water surround the figure, extending off the top and bottom edges of the image."
+    },
+    {
+      "n": 5,
+      "seen": "The stick figure is underwater in blue water, floating with arms outstretched and a worried expression with a sweat drop on its head. Small bubbles drift around the figure, and a glowing pinkish light source appears directly beneath its feet."
+    },
+    {
+      "n": 6,
+      "seen": "The stick figure stands upright on the ship's deck again, wearing its bowler hat and brown suit, holding a lifeboat horizontally across its back and torso which covers its body. The figure has a neutral, slightly sad expression."
+    }
+  ]
+}

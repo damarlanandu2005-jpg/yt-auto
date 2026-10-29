@@ -1,0 +1,12 @@
+[plan] What would it feel like to be on the Titanic as it sank? | feeling: fear
+[script] 110 words; fact-check {'checked': 10, 'supported_first_pass': 9, 'fixed': 0, 'dropped': 1, 'bad_ids': 0, 'copied': 0, 'guard': 0, 'words_after': 110}; story ok
+[llm] short_scenes: gemini-3.8-flash unavailable (daily free quota used up); trying next model
+[llm] short_scenes: gemini-3.6-flash unavailable (daily free quota used up); trying next model
+[llm] short_scenes: gemini-3.5-flash unavailable (HTTP 503 (busy)); trying next model
+[scenes] problems, one fix round:
+  step2: pose 'shocked' does not exist (use one from the list in the rules)
+  step2: 'ship_front_half' floats on water but this shot is in 'titanic_deck_night' (no open water): show it in ocean_surface / storm_sea, or use another object
+  step3: 'ship_back_half' floats on water but this shot is in 'titanic_deck_night' (no open water): show it in ocean_surface / storm_sea, or use another object
+  answer: 3 labels; use at most ONE short label per scene and draw the rest
+  end: 'lifeboat_crowded' floats on water but this shot is in 'titanic_deck_night' (no open water): show it in ocean_surface / storm_sea, or use another object
+[scenes] ok

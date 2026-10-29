@@ -1,0 +1,25 @@
+[model] gemini-3.5-flash-lite
+[system]
+
+
+[user]
+Someone described the last frame of each scene of a cartoon Short WITHOUT knowing the story. Judge each
+scene. A scene has a problem when: text covers the stick figure's head or body; something is cut off at the
+edge; the picture does not show what the narration says (or shows something it doesn't say); an abbreviation
+like "ATM", "km", "x10" is on screen; a number on screen is not in the narration; the picture looks the same as
+the scene before; there is more than one short piece of text; a text says more or stronger than the narration
+("crushed" when it says "injure"); the stick figure is small or hard to see; the drawing does not show the
+thing the narration names. Be concrete: say what to change. If a scene is fine, ok = true and no problems.
+
+Scene hook (Image 1): narration: "What if you were aboard the Titanic when it struck that fatal iceberg?"
+  described as: A stick figure in a brown suit and bowler hat stands in the center of a ship's deck, looking surprised with wide eyes and an open mouth. An exclamation mark floats near its head. Above the figure, the blue shape of a massive iceberg is visible against the night sky, cut off at the top edge of the image.
+Scene step1 (Image 2): narration: "Typically, only about one-tenth of an iceberg floats above the water surface."
+  described as: The same stick figure in a brown suit and bowler hat stands on the ship's deck, looking surprised with wide eyes and an open mouth, with an exclamation mark next to its head. The massive blue tip of an iceberg descends from the top, covering the upper portion of the stick figure's head and hat.
+Scene step2 (Image 3): narration: "The British liner strikes ice and begins foundering in the North Atlantic. The ship carries lifeboats for only one-third of the people on board."
+  described as: The stick figure stands on the ship's deck looking sad with a teardrop on its cheek. A wooden lifeboat is held horizontally across its torso, covering most of its body. Across the lifeboat and the figure, the bold yellow text "ONE-WORD" is displayed horizontally.
+Scene step3 (Image 4): narration: "Many passengers and crew make their last stand on the raised poop deck. Victims are plunged into freezing sea water at minus 2 degrees Celsius."
+  described as: The stick figure falls downward past the ship's deck, with wide surprised eyes, an open mouth, and a red exclamation mark near its head. White vertical streaks representing heavy rain or falling water surround the figure, extending off the top and bottom edges of the image.
+Scene answer (Image 5): narration: "Cold shock triggers uncontrolled rapid breathing, gasping, and severe heart strain. Within 15 to 30 minutes, cold incapacitation shuts down limb muscles, preventing swimming."
+  described as: The stick figure is underwater in blue water, floating with arms outstretched and a worried expression with a sweat drop on its head. Small bubbles drift around the figure, and a glowing pinkish light source appears directly beneath its feet.
+Scene end (Image 6): narration: "Would you have found a place in one of the few lifeboats?"
+  described as: The stick figure stands upright on the ship's deck again, wearing its bowler hat and brown suit, holding a lifeboat horizontally across its back and torso which covers its body. The figure has a neutral, slightly sad expression.

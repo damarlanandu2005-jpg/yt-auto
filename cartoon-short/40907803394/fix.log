@@ -1,0 +1,18 @@
+[llm] short_pictures_judge: gemma-4-31b-it unavailable (HTTP 500 (busy)); trying next model
+[review] 6 scene(s) with picture problems
+  hook: ['Something is cut off at the edge: the iceberg is cut off at the top edge of the image.']
+  step1: ["Text covers the stick figure's head or body: the tip of the iceberg covers the upper portion of the stick figure's head and hat."]
+  step2: ["Text covers the stick figure's head or body: the lifeboat and yellow text cover most of the figure's body.", 'The picture does not show what the narration says: the text says ONE-WORD which is not mentioned in the narration.']
+  step3: ['Something is cut off at the edge: the white vertical streaks representing heavy rain extend off the top and bottom edges of the image.']
+  answer: ['The drawing does not show the thing the narration names: the glowing pinkish light source beneath the feet is not mentioned in the narration.']
+  end: ['The picture looks the same as the scene before: the stick figure holding a lifeboat across its body is visually very similar to the setup in step2.', "Text covers the stick figure's head or body: the lifeboat covers the figure's body."]
+[llm] short_scenes_fix: gemini-3.8-flash unavailable (daily free quota used up); trying next model
+[llm] short_scenes_fix: gemini-3.6-flash unavailable (daily free quota used up); trying next model
+[llm] short_scenes_fix: gemini-3.5-flash unavailable (daily free quota used up); trying next model
+[scenes] problems, one fix round:
+  step2: pose 'shocked' does not exist (use one from the list in the rules)
+  step2: 'ship_front_half' floats on water but this shot is in 'titanic_deck_night' (no open water): show it in ocean_surface / storm_sea, or use another object
+  step3: thing 'ice' does not exist (things: brain, clock, drop, earth, fire, fish, heart, house, moon, mountain, question, rock, rocket, ship, sun, tree, volcano, wave; for other objects use art() from the LIBRARY or emoji())
+  answer: 3 labels; use at most ONE short label per scene and draw the rest
+  end: label 'LIFEBOAT?' must be at most 4 words, all spoken in this scene (not spoken: lifeboat)
+[fix] 0 layout error(s), 8 picture problem(s) sent back to the scene writer

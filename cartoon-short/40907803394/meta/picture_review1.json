@@ -1,0 +1,32 @@
+{
+ "seen": {
+  "hook": "A stick figure in a brown suit and bowler hat stands in the center of a ship's deck, looking surprised with wide eyes and an open mouth. An exclamation mark floats near its head. Above the figure, the blue shape of a massive iceberg is visible against the night sky, cut off at the top edge of the image.",
+  "step1": "The same stick figure in a brown suit and bowler hat stands on the ship's deck, looking surprised with wide eyes and an open mouth, with an exclamation mark next to its head. The massive blue tip of an iceberg descends from the top, covering the upper portion of the stick figure's head and hat.",
+  "step2": "The stick figure stands on the ship's deck looking sad with a teardrop on its cheek. A wooden lifeboat is held horizontally across its torso, covering most of its body. Across the lifeboat and the figure, the bold yellow text \"ONE-WORD\" is displayed horizontally.",
+  "step3": "The stick figure falls downward past the ship's deck, with wide surprised eyes, an open mouth, and a red exclamation mark near its head. White vertical streaks representing heavy rain or falling water surround the figure, extending off the top and bottom edges of the image.",
+  "answer": "The stick figure is underwater in blue water, floating with arms outstretched and a worried expression with a sweat drop on its head. Small bubbles drift around the figure, and a glowing pinkish light source appears directly beneath its feet.",
+  "end": "The stick figure stands upright on the ship's deck again, wearing its bowler hat and brown suit, holding a lifeboat horizontally across its back and torso which covers its body. The figure has a neutral, slightly sad expression."
+ },
+ "problems": {
+  "hook": [
+   "Something is cut off at the edge: the iceberg is cut off at the top edge of the image."
+  ],
+  "step1": [
+   "Text covers the stick figure's head or body: the tip of the iceberg covers the upper portion of the stick figure's head and hat."
+  ],
+  "step2": [
+   "Text covers the stick figure's head or body: the lifeboat and yellow text cover most of the figure's body.",
+   "The picture does not show what the narration says: the text says ONE-WORD which is not mentioned in the narration."
+  ],
+  "step3": [
+   "Something is cut off at the edge: the white vertical streaks representing heavy rain extend off the top and bottom edges of the image."
+  ],
+  "answer": [
+   "The drawing does not show the thing the narration names: the glowing pinkish light source beneath the feet is not mentioned in the narration."
+  ],
+  "end": [
+   "The picture looks the same as the scene before: the stick figure holding a lifeboat across its body is visually very similar to the setup in step2.",
+   "Text covers the stick figure's head or body: the lifeboat covers the figure's body."
+  ]
+ }
+}

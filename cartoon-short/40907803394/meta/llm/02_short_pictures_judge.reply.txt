@@ -1,0 +1,48 @@
+{
+  "scenes": [
+    {
+      "scene": "hook",
+      "ok": false,
+      "problems": [
+        "Something is cut off at the edge: the iceberg is cut off at the top edge of the image."
+      ]
+    },
+    {
+      "scene": "step1",
+      "ok": false,
+      "problems": [
+        "Text covers the stick figure's head or body: the tip of the iceberg covers the upper portion of the stick figure's head and hat."
+      ]
+    },
+    {
+      "scene": "step2",
+      "ok": false,
+      "problems": [
+        "Text covers the stick figure's head or body: the lifeboat and yellow text cover most of the figure's body.",
+        "The picture does not show what the narration says: the text says ONE-WORD which is not mentioned in the narration."
+      ]
+    },
+    {
+      "scene": "step3",
+      "ok": false,
+      "problems": [
+        "Something is cut off at the edge: the white vertical streaks representing heavy rain extend off the top and bottom edges of the image."
+      ]
+    },
+    {
+      "scene": "answer",
+      "ok": false,
+      "problems": [
+        "The drawing does not show the thing the narration names: the glowing pinkish light source beneath the feet is not mentioned in the narration."
+      ]
+    },
+    {
+      "scene": "end",
+      "ok": false,
+      "problems": [
+        "The picture looks the same as the scene before: the stick figure holding a lifeboat across its body is visually very similar to the setup in step2.",
+        "Text covers the stick figure's head or body: the lifeboat covers the figure's body."
+      ]
+    }
+  ]
+}

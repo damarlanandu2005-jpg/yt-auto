@@ -1,0 +1,34 @@
+voice hook: 4.0s in 3.9s
+voice step1: 4.8s in 3.0s
+voice step2: 8.2s in 5.1s
+voice step3: 9.4s in 5.4s
+voice answer: 12.1s in 6.4s
+voice end: 2.8s in 2.1s
+hook                 4.0s  100% confirmed
+step1                4.8s  92% confirmed  unconfirmed: one-tenth
+step2                8.2s  96% confirmed  unconfirmed: one-third
+step3                9.4s  88% confirmed  unconfirmed: sea, water, minus
+answer              12.1s  100% confirmed
+end                  2.8s  100% confirmed
+total 49.7s
+ERROR step2 @0s: cue("strike") is not in the narration of scene "step2". Close words: strikes, the, ice, ship, liner, begins
+WARN  step1: the voice check could not confirm "one-tenth". It heard: "Typically, only about 1/10 of an iceberg floats above the water surface.". If a word is mispronounced, write it as {shown|spoken} in script.md.
+WARN  step2: the voice check could not confirm "one-third". It heard: "The British liner strikes ice and begins foundering in the North Atlantic. The ship carries lifeboats for only one-third of the people on board.". If a word is mispronounced, write it as {shown|spoken} in script.md.
+WARN  step3: the voice check could not confirm "water", "minus". It heard: "Many passengers and crew make their last stand on the raised poop deck. Victims are plunged into freezing seawater at -2 degrees Celsius.". If a word is mispronounced, write it as {shown|spoken} in script.md.
+WARN  step2: nothing enters in this scene; add at least one element with an "at" time
+HINT  step3 @0s: no new element for 7.0s (from 0.0s); consider revealing something on a cue in that stretch
+HINT  answer @4.83s: no new element for 8.3s (from 4.8s); consider revealing something on a cue in that stretch
+HINT  answer: cue "cold" means the first of the 2 times it is spoken in this scene; if you meant a later one, use s.cue("cold", 2) or a [#marker]
+1 error(s), 7 other finding(s) in 6 scenes (49.7s)
+error: page.evaluate: Error: cue("strike") is not in the narration of scene "step2". Close words: strikes, the, ice, ship, liner, begins (scene "step2" at 9.00s)
+    at Object.stills (http://127.0.0.1:39197/frame.html?scale=1:84:17)
+    at async <anonymous>:337:30
+error: page.evaluate: Error: cue("strike") is not in the narration of scene "step2". Close words: strikes, the, ice, ship, liner, begins (scene "step2" at 0.80s)
+    at Object.sheet (http://127.0.0.1:38761/frame.html?scale=0.5:109:17)
+    at eval (eval at evaluate (:311:30), <anonymous>:1:26)
+    at UtilityScript.evaluate (<anonymous>:313:16)
+    at UtilityScript.<anonymous> (<anonymous>:1:44)
+rendering 49.7s (1491 frames at 30 fps, 1080x1920) with 2 workers
+error: page.evaluate: Error: scene "step2" at 0.00s: cue("strike") is not in the narration of scene "step2". Close words: strikes, the, ice, ship, liner, begins
+    at Object.soundtrack (http://127.0.0.1:39797/frame.html?scale=1:126:32)
+    at async <anonymous>:337:30

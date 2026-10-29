@@ -1,0 +1,32 @@
+{
+ "topic": "What would it feel like to be on the Titanic as it sank?",
+ "fact_check": {
+  "checked": 10,
+  "supported_first_pass": 9,
+  "fixed": 0,
+  "dropped": 1,
+  "bad_ids": 0,
+  "copied": 0,
+  "guard": 0,
+  "words_after": 110
+ },
+ "story_problems": [],
+ "words": 110,
+ "scene_problems": [],
+ "llm_calls": 5,
+ "models_used": [
+  "cf:@cf/openai/gpt-oss-120b"
+ ],
+ "render_errors_first": [],
+ "picture_problems_first": [
+  "hook: Something is cut off at the edge: the iceberg is cut off at the top edge of the image.",
+  "step1: Text covers the stick figure's head or body: the tip of the iceberg covers the upper portion of the stick figure's head and hat.",
+  "step2: Text covers the stick figure's head or body: the lifeboat and yellow text cover most of the figure's body.",
+  "step2: The picture does not show what the narration says: the text says ONE-WORD which is not mentioned in the narration.",
+  "step3: Something is cut off at the edge: the white vertical streaks representing heavy rain extend off the top and bottom edges of the image.",
+  "answer: The drawing does not show the thing the narration names: the glowing pinkish light source beneath the feet is not mentioned in the narration.",
+  "end: The picture looks the same as the scene before: the stick figure holding a lifeboat across its body is visually very similar to the setup in step2.",
+  "end: Text covers the stick figure's head or body: the lifeboat covers the figure's body."
+ ],
+ "fix_problems": []
+}
