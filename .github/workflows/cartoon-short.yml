@@ -21,6 +21,9 @@ on:
         description: "Topic or question with a strong, true feeling"
         required: true
         default: "What happens if you fall into the Mariana Trench?"
+      script_file:
+        description: "optional: your own script, a file in the repo, e.g. cartoon/scripts/titanic.txt (writer: gemini). It is still fact-checked"
+        default: ""
       resume_from:
         description: "optional: a finished cartoon-short run id; reuse its plan, sources and checked script (new scenes only)"
         default: ""
@@ -187,10 +190,19 @@ jobs:
           CLOUDFLARE_API_TOKEN: ${{ secrets.CLOUDFLARE_API_TOKEN }}
           CLOUDFLARE_ACCOUNT_ID: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
           TOPIC: ${{ steps.kc.outputs.topic || inputs.topic }}
+          SCRIPT_FILE: ${{ inputs.script_file }}
         run: |
           set -o pipefail
           mkdir -p out/short
-          python cartoon/make_short.py write --topic "$TOPIC" --out out/short 2>&1 | tee out/short/write.log
+          extra=()
+          if [ -n "$SCRIPT_FILE" ]; then
+            case "$SCRIPT_FILE" in cartoon/scripts/*) ;; *) echo "script_file must be in cartoon/scripts/"; exit 1;; esac
+            [ -f "$SCRIPT_FILE" ] || { echo "no file $SCRIPT_FILE"; exit 1; }
+            extra=(--script-file "$SCRIPT_FILE")
+            # the topic: the first line of the file if the topic input was left at its default
+            [ "$TOPIC" = "What happens if you fall into the Mariana Trench?" ] && TOPIC=$(head -1 "$SCRIPT_FILE" | sed 's/^#* *//; s/^[Tt]itle: *//')
+          fi
+          python cartoon/make_short.py write --topic "$TOPIC" --out out/short "${extra[@]}" 2>&1 | tee out/short/write.log
       - name: Ready for the render?
         id: done
         if: always()
@@ -351,8 +363,9 @@ jobs:
           by=$(python3 -c "import json;print(', '.join(json.load(open('$META/meta/report.json')).get('models_used', [])) or 'cached')")
           notes="$LABEL. ${PROBLEMS:-Every automatic check passed.} Watch it fully before uploading. Description: description.txt. Written by: $by."
           cp "$META/description.txt" description.txt
+          extra=(); [ -f "$META/meta/owner_script_changes.md" ] && cp "$META/meta/owner_script_changes.md" . && extra=(owner_script_changes.md)
           gh release create "short-${{ github.run_id }}" --prerelease --title "$LABEL: $title" --notes "$notes" \
-            "$FINAL/render/video.mp4" "$FINAL/render/video.cover.jpg" description.txt
+            "$FINAL/render/video.mp4" "$FINAL/render/video.cover.jpg" description.txt "${extra[@]}"
       - name: Save results to the bench-results branch
         if: always()
         timeout-minutes: 3

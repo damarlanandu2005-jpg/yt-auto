@@ -61,9 +61,16 @@ SAFETY = """- Allowed: any subject with a strong, TRUE feeling (space, history, 
   accusations against named companies or living people, tragedies from the last 12 months, gore."""
 
 
-def plan_short(topic: str) -> dict:
+def plan_short(topic: str, given: str = "") -> dict:
+    owner = (f"""
+THE OWNER ALREADY WROTE THE SCRIPT (below). Plan to match it: the same question, steps and answer, and choose
+wikipedia_titles that can prove EVERY fact in it.
+---
+{given}
+---
+""" if given else "")
     prompt = f"""Topic idea: {topic}
-
+{owner}
 Plan one YouTube Short (40-60 seconds) for the channel "Stickman Thoughts": a simple stickman lives through a
 "what if...?" or "why...?" story and finds out the true answer.
 - question: the one big question, the way a curious viewer would ask it.
@@ -79,8 +86,18 @@ Plan one YouTube Short (40-60 seconds) for the channel "Stickman Thoughts": a si
     return llm(prompt, system=writer.RULES, schema=PLAN_SCHEMA, name="short_plan", temperature=0.8, models=QUALITY)
 
 
-def write_short(topic: str, plan: dict, sources: dict, feedback: str = "") -> dict:
+def write_short(topic: str, plan: dict, sources: dict, feedback: str = "", given: str = "") -> dict:
+    owner = (f"""
+THE OWNER WROTE THIS SCRIPT (owner, 29 Oct: "I generate a script and give it to you"). KEEP its sentences, order
+and wording as much as you can; only split it into the scenes below, shorten it to the word count, and change a
+sentence ONLY where the passages do not support it (then say it the way the passages do, or turn it into a
+question). Never add facts of your own.
+---
+{given}
+---
+""" if given else "")
     prompt = f"""Topic: {topic}
+{owner}
 Question: {plan['question']}
 Feeling: {plan['emotion']}
 Steps: {json.dumps(plan['steps'])}

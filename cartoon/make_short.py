@@ -54,8 +54,11 @@ def write(args) -> None:
     meta = out / "meta"
     meta.mkdir(parents=True, exist_ok=True)
     llm.LOG_DIR = meta / "llm"
-    report: dict = {"topic": args.topic}
-    plan = cached(meta / "plan.json", lambda: cartoon.plan_short(args.topic))
+    given = Path(args.script_file).read_text(encoding="utf-8").strip() if args.script_file else ""
+    if given:  # the owner's own script (e.g. from ChatGPT): it still goes through the same fact-check
+        (meta / "owner_script.txt").write_text(given, encoding="utf-8")
+    report: dict = {"topic": args.topic, "owner_script": bool(given)}
+    plan = cached(meta / "plan.json", lambda: cartoon.plan_short(args.topic, given))
     print(f"[plan] {plan['question']} | feeling: {plan['emotion']}", flush=True)
     sources = (json.loads((meta / "sources.json").read_text()) if (meta / "sources.json").exists()
                else research.gather(plan["wikipedia_titles"], meta / "sources.json"))
@@ -63,7 +66,7 @@ def write(args) -> None:
         sys.exit("no Wikipedia article could be fetched for this plan")
 
     def make_script():
-        s = cartoon.write_short(args.topic, plan, sources)
+        s = cartoon.write_short(args.topic, plan, sources, given=given)
         (meta / "script_draft.json").write_text(json.dumps(s, indent=1, ensure_ascii=False), encoding="utf-8")
         rep = writer.fact_check(s, sources)
         (meta / "factcheck.json").write_text(json.dumps(rep, indent=1, ensure_ascii=False), encoding="utf-8")
@@ -79,13 +82,19 @@ def write(args) -> None:
         if not problems0 or (meta / name).exists():
             continue
         print(f"[script] {problems0}: rewrite {i + 1}", flush=True)
-        s2 = cartoon.write_short(args.topic, plan, sources, cartoon.rewrite_feedback(fc, problems0))
+        s2 = cartoon.write_short(args.topic, plan, sources, cartoon.rewrite_feedback(fc, problems0), given=given)
         rep2 = writer.fact_check(s2, sources)
         (meta / name).write_text(json.dumps(s2, indent=1, ensure_ascii=False), encoding="utf-8")
         if len(cartoon.check_story(s2)) < len(problems0) or (not cartoon.check_story(s2)):
             script, fc = s2, rep2
             (meta / "script.json").write_text(json.dumps(s2, indent=1, ensure_ascii=False), encoding="utf-8")
             (meta / "factcheck.json").write_text(json.dumps(rep2, indent=1, ensure_ascii=False), encoding="utf-8")
+    if given:
+        changes = ["# What happened to your script", "", "Fixed by the fact-check (the sources say it differently):"]
+        changes += [f"- \"{f['old']}\" -> \"{f['new']}\"" for f in fc.get("fixed", [])] or ["- nothing"]
+        changes += ["", "Removed (no source says it):"] + ([f"- \"{d['text']}\" ({d['problem']})" for d in fc.get("dropped", [])] or ["- nothing"])
+        changes += ["", "Final narration:"] + [f"- {x['text']}" for sc in script["scenes"] for x in sc["sentences"]]
+        (meta / "owner_script_changes.md").write_text("\n".join(changes) + "\n", encoding="utf-8")
     report["fact_check"] = {k: (len(v) if isinstance(v, list) else v) for k, v in fc.items()}
     report["story_problems"] = cartoon.check_story(script)
     report["words"] = writer.word_count(script)
@@ -169,6 +178,7 @@ def main() -> None:
     sub = ap.add_subparsers(dest="cmd", required=True)
     w = sub.add_parser("write")
     w.add_argument("--topic", required=True)
+    w.add_argument("--script-file", default="", help="the owner's own script (plain text); it is still fact-checked")
     w.add_argument("--out", required=True)
     f = sub.add_parser("fix")
     f.add_argument("--out", required=True)
