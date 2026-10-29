@@ -102,6 +102,7 @@ jobs:
           git -C results checkout -B bench-results
           dest="results/kaggle-test/${{ github.run_id }}"
           mkdir -p "$dest"
+          rm -rf out/code   # our own code, unpacked on Kaggle: already in the repo
           (cd out && find . -type f -size -5M -exec cp --parents {} "../$dest/" \;)
           cd results && git add -A && git commit -m "Kaggle AI test results ${{ github.run_id }}" || exit 0
           for i in 1 2 3 4 5; do git push origin bench-results && break; git pull --rebase origin bench-results; sleep 5; done

@@ -81,7 +81,12 @@ def main() -> None:
     tarfile.open(fileobj=io.BytesIO(base64.b64decode(BUNDLE)), mode="r:gz").extractall(CODE)  # noqa: F821
     sh("nvidia-smi", OUT / "gpu.txt")
     t0 = time.time()
+    # Ollama's installer needs zstd, which Kaggle's image lacks (first run: "requires zstd for extraction")
+    sh("apt-get install -y -q zstd || (apt-get update -q && apt-get install -y -q zstd)", OUT / "ollama_install.log", 600)
     sh("curl -fsSL https://ollama.com/install.sh | sh", OUT / "ollama_install.log", 900)
+    if sh("command -v ollama", OUT / "ollama_install.log", 30) != 0:
+        (OUT / "summary.json").write_text(json.dumps({"error": "ollama did not install; see ollama_install.log"}))
+        return
     env = {**os.environ, "OLLAMA_KEEP_ALIVE": "60m", "OLLAMA_CONTEXT_LENGTH": "32768"}
     subprocess.Popen(["ollama", "serve"], stdout=open(OUT / "ollama_server.log", "w"), stderr=subprocess.STDOUT, env=env)
     summary = {"install_s": round(time.time() - t0), "server": wait_server(), "models": {}}
