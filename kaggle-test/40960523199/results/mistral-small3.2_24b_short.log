@@ -1,0 +1,11 @@
+[llm] factcheck: local:gpt-oss:20b unavailable (HTTP 500 (busy)); trying next model
+[llm] factcheck: every model busy; waiting 120s (round 1)
+[llm] factcheck: local:gpt-oss:20b unavailable (HTTP 500 (busy)); trying next model
+[llm] factcheck: every model busy; waiting 120s (round 2)
+[llm] factcheck: local:gpt-oss:20b unavailable (HTTP 500 (busy)); trying next model
+[llm] short_scenes: local:mistral-small3.2:24b unavailable (reply was not valid JSON (Expecting property name enclosed in double quotes: line 1 column 3 (char 2))); trying next model
+[llm] short_scenes: every model busy; waiting 120s (round 1)
+[llm] short_scenes: local:mistral-small3.2:24b unavailable (reply was not valid JSON (Expecting property name enclosed in double quotes: line 1 column 3 (char 2))); trying next model
+[llm] short_scenes: every model busy; waiting 120s (round 2)
+[llm] short_scenes: local:mistral-small3.2:24b unavailable (reply was not valid JSON (Expecting property name enclosed in double quotes: line 1 column 3 (char 2))); trying next model
+{"script": {"error": "LLMError(\"factcheck: no model available: ['local:gpt-oss:20b: HTTP 500 (busy)', 'local:gpt-oss:20b: HTTP 500 (busy)', 'local:gpt-oss:20b: HTTP 500 (busy)']\")"}, "scenes": {"error": "LLMError(\"short_scenes: no model available: ['local:mistral-small3.2:24b: reply was not valid JSON (Expecting property name enclosed in double quotes: line 1 column 3 (char 2))', 'local:mistral-small3.2:24b: reply was not valid JSON (Expecting property name enclosed in double quotes: line 1 column 3 (char 2))', 'local:mistral-small3.2:24b: reply was not valid JSON (Expecting property name enclosed in double quotes: line 1 column 3 (char 2))']\")"}}

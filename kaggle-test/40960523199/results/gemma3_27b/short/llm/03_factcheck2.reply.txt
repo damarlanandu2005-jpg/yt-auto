@@ -1,0 +1,1 @@
+{"results":[{"id":"s04.02","verdict":"supported","problem":"","fixed_text":""}]}

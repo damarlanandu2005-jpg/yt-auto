@@ -1,0 +1,92 @@
+{
+ "facts": [
+  {
+   "id": "A1.1",
+   "fact": "RMS Titanic sank in the early hours of 15 April 1912 after striking an iceberg, resulting in approximately 1,500 deaths."
+  },
+  {
+   "id": "A1.34",
+   "fact": "Third Class accommodations on Titanic were better than many other ships of the time but still not as luxurious as First or Second Class."
+  },
+  {
+   "id": "A1.43",
+   "fact": "Titanic carried 16 wooden lifeboats and 4 collapsible lifeboats, accommodating 1,178 people, only one-third of its total capacity."
+  },
+  {
+   "id": "A4.29",
+   "fact": "During the sinking of the Titanic, most people who entered the −2 °C water died within 15–30 minutes due to cold shock and incapacitation."
+  },
+  {
+   "id": "A5.26",
+   "fact": "Titanic sank after taking in so much water that buoyancy was lost, causing it to founder and eventually break apart."
+  }
+ ],
+ "scenes": [
+  {
+   "role": "hook",
+   "sentences": [
+    {
+     "text": "What if you were on the Titanic as it sank? How would it feel?",
+     "kind": "framing",
+     "sources": [],
+     "id": "s01.01",
+     "check": "supported"
+    }
+   ],
+   "id": "s01"
+  },
+  {
+   "role": "step",
+   "sentences": [
+    {
+     "text": "The ship hits an iceberg.",
+     "kind": "fact",
+     "sources": [
+      "A1.1"
+     ],
+     "id": "s02.01",
+     "check": "supported (after fix)"
+    }
+   ],
+   "id": "s02"
+  },
+  {
+   "role": "step",
+   "sentences": [
+    {
+     "text": "The ship takes in so much water that it loses buoyancy and sinks.",
+     "kind": "fact",
+     "sources": [
+      "A5.26"
+     ],
+     "id": "s03.01",
+     "check": "supported (after fix)"
+    }
+   ],
+   "id": "s03"
+  }
+ ],
+ "answer": {
+  "role": "answer",
+  "sentences": [
+   {
+    "text": "You would panic as the structure breaks apart, cold water rushes in, and the freezing ocean claims you within minutes.",
+    "kind": "fact",
+    "sources": [
+     "A4.29"
+    ]
+   }
+  ]
+ },
+ "end": {
+  "role": "end",
+  "sentences": [
+   {
+    "text": "Would you have made it to one of the 16 lifeboats that saved only one-third of the passengers?",
+    "kind": "framing",
+    "sources": []
+   }
+  ]
+ },
+ "title": "Stickman Survives the Titanic Sink"
+}

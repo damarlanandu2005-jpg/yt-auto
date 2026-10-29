@@ -1,0 +1,40 @@
+[model] local:gpt-oss:20b
+[system]
+
+
+[user]
+You are a strict fact-checker. For each sentence below, decide using ONLY its cited passages
+(not your own knowledge):
+- supported: every detail (numbers, names, dates, causes, comparisons) is stated in or directly follows from them.
+- partly: the main point is backed but some detail is not, or it overstates / oversimplifies into something false.
+  Also partly: "every/all/always/never" the passages don't say, or a model-based estimate stated as a plain
+  certain fact (fixed_text adds "scientists estimate" or "in today's standard model").
+- unsupported: the cited passages do not back it, or there are none.
+- Conflict: if the cited passages DISAGREE with each other about any number, date or name the sentence
+  states, the sentence is at most "partly" even if it matches one of them; say "sources conflict". Its
+  fixed_text must not pick a side: state only what all passages agree on, or give both values.
+For partly/unsupported, give fixed_text: a corrected sentence in the same plain spoken style that the cited
+passages fully support (keep digits and full unit words; no copying 8+ words). Leave fixed_text empty if impossible.
+A FRAMING SENTENCE has no passages: it is "supported" only if it makes no checkable claim at all (a question,
+transition or invitation). If it states any fact, mark it "unsupported" and give fixed_text: the same idea as a
+pure question or transition with no claim (e.g. "So what would a nearby supernova do to us?").
+
+[s01.01] FRAMING SENTENCE: Imagine you're boarding the RMS Titanic, unaware of the iceberg ahead. Would you even notice?
+
+[s02.01] SENTENCE: A loud crash shakes the ship as it hits an iceberg.
+CITED PASSAGES:
+A1.29: The ship was equipped with waterworks capable of heating and pumping water to all parts of the vessel via a complex network of pipes and valves. The main water supply was taken aboard while Titanic was in port, but in an emergency, the ship could also distil fresh water from seawater. However, this was not a straightforward process as the distillation plant could quickly become clogged by salt deposits. A network of insulated ducts conveyed warm air around the ship with electric fans and First-Class cabins were fitted with additional electric heaters. The "Sirocco Fan" a centrifugal fan was used after a deal with H&W took place with Davidson and Co, Sirocco Works.
+
+[s03.01] SENTENCE: Passengers scream as water floods the lower decks.
+CITED PASSAGES:
+A4.29: Heat is lost much more quickly to water than to air. Thus, water temperatures that would be quite reasonable as outdoor air temperatures can lead to hypothermia, although this is not usually the direct clinical cause of death for those not rescued from accidental immmersion in cold water. A water temperature of 10 °C (50 °F) can kill a human adult in as little as one hour, and water temperatures near freezing can kill in as little as 15 minutes. During the sinking of the Titanic, most people who entered the −2 °C (28 °F) water died in 15–30 minutes.
+
+[s04.01] SENTENCE: The ship splits in two, plunging you into icy water.
+CITED PASSAGES:
+A4.30: The actual cause of death in cold water is usually the bodily reactions to heat loss and to freezing water, rather than hypothermia (loss of core temperature) itself. For example, plunged into freezing seas, around 20% of victims die within two minutes from cold shock (uncontrolled rapid breathing and gasping, causing water inhalation; massive increase in blood pressure and cardiac strain, leading to cardiac arrest; and panic, causing ineffectual flailing of the limbs); another 50% die within 15–30 minutes from cold incapacitation (inability to use or control limbs and hands for swimming or gripping, as the body "protectively" shuts down the peripheral muscles of the limbs to protect its core). Exhaustion and unconsciousness cause drowning, claiming the rest within a similar time.
+
+[s05.01] SENTENCE: You would feel panic as the ship tilts violently, cold water rushes in, and the structure breaks apart below you.
+CITED PASSAGES:
+A4.30: The actual cause of death in cold water is usually the bodily reactions to heat loss and to freezing water, rather than hypothermia (loss of core temperature) itself. For example, plunged into freezing seas, around 20% of victims die within two minutes from cold shock (uncontrolled rapid breathing and gasping, causing water inhalation; massive increase in blood pressure and cardiac strain, leading to cardiac arrest; and panic, causing ineffectual flailing of the limbs); another 50% die within 15–30 minutes from cold incapacitation (inability to use or control limbs and hands for swimming or gripping, as the body "protectively" shuts down the peripheral muscles of the limbs to protect its core). Exhaustion and unconsciousness cause drowning, claiming the rest within a similar time.
+
+[s06.01] FRAMING SENTENCE: Would you have made it to a lifeboat?

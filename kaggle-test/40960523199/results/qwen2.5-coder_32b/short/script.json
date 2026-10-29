@@ -1,0 +1,95 @@
+{
+ "facts": [
+  {
+   "id": "A1.29",
+   "fact": "The ship was equipped with waterworks capable of heating and pumping water to all parts of the vessel via a complex network of pipes and valves."
+  },
+  {
+   "id": "A1.33",
+   "fact": "Third Class (commonly referred to as steerage) accommodations aboard Titanic were not as luxurious as First or Second Class but were better than on many other ships of the time."
+  },
+  {
+   "id": "A2.29",
+   "fact": "The U.S. National Ice Center (NIC), established in 1995, which produces analyses and forecasts of Arctic, Antarctic, Great Lakes and Chesapeake Bay ice conditions."
+  },
+  {
+   "id": "A4.29",
+   "fact": "Heat is lost much more quickly to water than to air. Thus, water temperatures that would be quite reasonable as outdoor air temperatures can lead to hypothermia."
+  },
+  {
+   "id": "A4.30",
+   "fact": "During the sinking of the Titanic, most people who entered the −2 °C (28 °F) water died in 15–30 minutes."
+  },
+  {
+   "id": "A4.16",
+   "fact": "Symptoms of mild hypothermia may be vague, with sympathetic nervous system excitation (shivering, high blood pressure, fast heart rate, fast respiratory rate, and contraction of blood vessels)."
+  },
+  {
+   "id": "A4.17",
+   "fact": "As hypothermia progresses, symptoms include amnesia, confusion, slurred speech, decreased reflexes, and loss of fine motor skills."
+  },
+  {
+   "id": "A5.26",
+   "fact": "Foundering, i.e., taking in so much water that buoyancy is lost and the ship sinks (e.g., RMS Titanic and HMHS Britannic); some ships with a dense cargo (e.g., iron ore) may break up when sinking quickly and hitting a rocky seabed"
+  }
+ ],
+ "scenes": [
+  {
+   "role": "hook",
+   "sentences": [
+    {
+     "text": "Imagine you board the RMS Titanic, unaware of the iceberg ahead. Would you even notice?",
+     "kind": "framing",
+     "sources": [],
+     "id": "s01.01",
+     "check": "supported"
+    }
+   ],
+   "id": "s01"
+  },
+  {
+   "role": "step",
+   "sentences": [
+    {
+     "text": "The Titanic sank after taking on water.",
+     "kind": "fact",
+     "sources": [
+      "A5.26"
+     ],
+     "id": "s02.01",
+     "check": "supported (after fix)"
+    }
+   ],
+   "id": "s02"
+  },
+  {
+   "role": "step",
+   "sentences": [
+    {
+     "text": "Water began to flood the ship, leading to its sinking.",
+     "kind": "fact",
+     "sources": [
+      "A5.26"
+     ],
+     "id": "s03.01",
+     "check": "supported (after fix)"
+    }
+   ],
+   "id": "s03"
+  },
+  {
+   "role": "end",
+   "sentences": [
+    {
+     "text": "Would you have made it to a lifeboat?",
+     "kind": "framing",
+     "sources": [],
+     "id": "s06.01",
+     "check": "supported"
+    }
+   ],
+   "id": "s06"
+  }
+ ],
+ "title": "Stickman Survives the Titanic Sink"
+}

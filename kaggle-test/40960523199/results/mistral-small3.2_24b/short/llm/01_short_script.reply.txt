@@ -1,0 +1,96 @@
+{
+  "facts": [
+    {
+      "id": "A1.1",
+      "fact": "RMS Titanic was a British ocean liner that sank in the early hours of 15 April 1912 after striking an iceberg on her maiden voyage from Southampton, England, to New York City. Of the 2,208 passengers and crew aboard, approximately 1,500 died."
+    },
+    {
+      "id": "A1.30",
+      "fact": "Titanic's radiotelegraph equipment was provided to the White Star Line by the Marconi International Marine Communication Company, which also supplied two of its employees, Jack Phillips and Harold Bride, as wireless operators. The service maintained a 24-hour schedule, primarily sending and receiving passenger telegrams (marconigrams), but also handling navigation messages including weather reports and ice warnings."
+    },
+    {
+      "id": "A2.25",
+      "fact": "In April 1912, the brand new liner RMS Titanic sank after it struck an iceberg, leading to the deaths of around 1,500 people. This was despite the amount of safety precautions that had been built into the ship which was meant to make it practically unsinkable and having 24-hour wireless service warning the ship about ice in the area."
+    },
+    {
+      "id": "A4.30",
+      "fact": "The actual cause of death in cold water is usually the bodily reactions to heat loss and to freezing water, rather than hypothermia (loss of core temperature) itself. For example, plunged into freezing seas, around 20% of victims die within two minutes from cold shock (uncontrolled rapid breathing and gasping, causing water inhalation; massive increase in blood pressure and cardiac strain, leading to cardiac arrest; and panic, causing ineffectual flailing of the limbs); another 50% die within 15–30 minutes from cold incapacitation (inability to use or control limbs and hands for swimming or gripping, as the body protectively shuts down the peripheral muscles of the limbs to protect its core). Exhaustion and unconsciousness cause drowning, claiming the rest within a similar time."
+    },
+    {
+      "id": "A5.8",
+      "fact": "Poor design, improperly stowed cargo, navigation and other human errors leading to collisions (with another ship, the shoreline, an iceberg, etc.), inadequate maintenance, bad weather, fire, and other causes can lead to accidental sinking."
+    }
+  ],
+  "scenes": [
+    {
+      "role": "hook",
+      "sentences": [
+        {
+          "text": "Imagine you are on the Titanic as it strikes an iceberg.",
+          "kind": "framing",
+          "sources": []
+        }
+      ]
+    },
+    {
+      "role": "step",
+      "sentences": [
+        {
+          "text": "A loud crash shakes the ship as it hits an iceberg.",
+          "kind": "fact",
+          "sources": ["A2.25"]
+        }
+      ]
+    },
+    {
+      "role": "step",
+      "sentences": [
+        {
+          "text": "Passengers scream as water floods the lower decks.",
+          "kind": "fact",
+          "sources": ["A5.8"]
+        }
+      ]
+    },
+    {
+      "role": "step",
+      "sentences": [
+        {
+          "text": "The ship splits in two, plunging you into icy water.",
+          "kind": "fact",
+          "sources": ["A5.8"]
+        }
+      ]
+    },
+    {
+      "role": "step",
+      "sentences": [
+        {
+          "text": "The cold water causes uncontrollable rapid breathing and gasping, water inhalation, and panic.",
+          "kind": "fact",
+          "sources": ["A4.30"]
+        }
+      ]
+    },
+    {
+      "role": "answer",
+      "sentences": [
+        {
+          "text": "You would feel panic as the ship tilts violently, cold water rushes in, and the structure breaks apart below you.",
+          "kind": "fact",
+          "sources": ["A4.30", "A5.8"]
+        }
+      ]
+    },
+    {
+      "role": "end",
+      "sentences": [
+        {
+          "text": "Would you have survived in the icy waters?",
+          "kind": "framing",
+          "sources": []
+        }
+      ]
+    }
+  ]
+}

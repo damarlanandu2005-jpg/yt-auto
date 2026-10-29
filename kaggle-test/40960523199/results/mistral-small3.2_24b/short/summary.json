@@ -1,0 +1,8 @@
+{
+ "script": {
+  "error": "LLMError(\"factcheck: no model available: ['local:gpt-oss:20b: HTTP 500 (busy)', 'local:gpt-oss:20b: HTTP 500 (busy)', 'local:gpt-oss:20b: HTTP 500 (busy)']\")"
+ },
+ "scenes": {
+  "error": "LLMError(\"short_scenes: no model available: ['local:mistral-small3.2:24b: reply was not valid JSON (Expecting property name enclosed in double quotes: line 1 column 3 (char 2))', 'local:mistral-small3.2:24b: reply was not valid JSON (Expecting property name enclosed in double quotes: line 1 column 3 (char 2))', 'local:mistral-small3.2:24b: reply was not valid JSON (Expecting property name enclosed in double quotes: line 1 column 3 (char 2))']\")"
+ }
+}

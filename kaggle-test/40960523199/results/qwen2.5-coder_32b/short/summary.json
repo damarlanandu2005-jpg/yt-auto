@@ -1,0 +1,34 @@
+{
+ "script": {
+  "first_try": {
+   "words": 38,
+   "dropped": 3,
+   "problems": [
+    "the answer scene was dropped by the fact-check (rule R2: the hook must be answered)",
+    "38 words after the fact-check (want about 110-140)"
+   ]
+  },
+  "words": 40,
+  "dropped": 2,
+  "fixed": 2,
+  "story_problems": [
+   "the answer scene was dropped by the fact-check (rule R2: the hook must be answered)",
+   "40 words after the fact-check (want about 110-140)"
+  ],
+  "seconds": 1054
+ },
+ "scenes": {
+  "problems_first": [
+   "step1: the cue 'sinking' is not spoken in this scene (spoken: \"Typically, only about one-tenth of an iceberg floats above the water surface.\")",
+   "step1: the cue 'sinking' is not spoken in this scene (spoken: \"Typically, only about one-tenth of an iceberg floats above the water surface.\")",
+   "step1: the cue 'sinking' is not spoken in this scene (spoken: \"Typically, only about one-tenth of an iceberg floats above the water surface.\")",
+   "answer: the cue 'plunged' is not spoken in this scene (spoken: \"Cold shock triggers uncontrolled rapid breathing, gasping, and severe heart strain. Within 15 to 30 minutes, cold incapacitation shuts down limb muscles, preventing swimming.\")",
+   "end: label 'LIFEBOAT' must be at most 4 words, all spoken in this scene (not spoken: lifeboat)"
+  ],
+  "n_first": 5,
+  "problems_after_fix": [],
+  "n_after_fix": 0,
+  "shots": 11,
+  "seconds": 863
+ }
+}

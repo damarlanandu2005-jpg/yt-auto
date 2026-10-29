@@ -1,0 +1,59 @@
+[model] local:gpt-oss:20b
+[system]
+
+
+[user]
+You are a strict fact-checker. For each sentence below, decide using ONLY its cited passages
+(not your own knowledge):
+- supported: every detail (numbers, names, dates, causes, comparisons) is stated in or directly follows from them.
+- partly: the main point is backed but some detail is not, or it overstates / oversimplifies into something false.
+  Also partly: "every/all/always/never" the passages don't say, or a model-based estimate stated as a plain
+  certain fact (fixed_text adds "scientists estimate" or "in today's standard model").
+- unsupported: the cited passages do not back it, or there are none.
+- Conflict: if the cited passages DISAGREE with each other about any number, date or name the sentence
+  states, the sentence is at most "partly" even if it matches one of them; say "sources conflict". Its
+  fixed_text must not pick a side: state only what all passages agree on, or give both values.
+For partly/unsupported, give fixed_text: a corrected sentence in the same plain spoken style that the cited
+passages fully support (keep digits and full unit words; no copying 8+ words). Leave fixed_text empty if impossible.
+A FRAMING SENTENCE has no passages: it is "supported" only if it makes no checkable claim at all (a question,
+transition or invitation). If it states any fact, mark it "unsupported" and give fixed_text: the same idea as a
+pure question or transition with no claim (e.g. "So what would a nearby supernova do to us?").
+
+[s01.01] FRAMING SENTENCE: Imagine you are aboard the Titanic, unaware of the danger ahead?
+
+[s02.01] SENTENCE: Titanic was enormous, measuring 46,329 GRT and 21,831 NRT.
+CITED PASSAGES:
+A1.10: The ship's total height, measured from the base of the keel to the top of the bridge, was 104 feet (32 m). Titanic measured 46,329 GRT and 21,831 NRT and with a draught of 34 feet 7 inches (10.54 m) and displaced 52,310 tonnes.
+
+[s02.02] SENTENCE: You are on one of its ten decks, enjoying the large dining saloons on D Deck.
+CITED PASSAGES:
+A1.11: All three of the Olympic-class ships had ten decks (excluding the top of the officers' quarters), eight of which were for passenger use. From top to bottom, the decks were:
+A1.16: D Deck, the saloon deck, was dominated by three public rooms—the First-Class reception room, the First-Class dining saloon and the Second-Class dining saloon. The first- and second-class galleys were also located on this deck. An open space was provided for Third Class passengers. First, Second- and Third-Class passengers had cabins on this deck, with berths for firemen located in the bow. It was the highest level reached by the ship's watertight bulkheads (though only by eight of the fifteen bulkheads).
+
+[s03.01] SENTENCE: Suddenly, the ship strikes an iceberg.
+CITED PASSAGES:
+A1.1: RMS Titanic was a British ocean liner that sank in the early hours of 15 April 1912 after striking an iceberg on her maiden voyage from Southampton, England, to New York City. Of the 2,208 passengers and crew aboard, approximately 1,500 died (estimates vary), making the incident one of the deadliest peacetime sinkings of a single ship.
+
+[s03.02] SENTENCE: About one-tenth of the iceberg was visible above the water.
+CITED PASSAGES:
+A2.4: Typically about one-tenth of the volume of an iceberg is above water, which follows from Archimedes's Principle of buoyancy; the density of pure ice is about 920 kg/m3 (57 lb/cu ft), and that of seawater about 1,025 kg/m3 (64 lb/cu ft). The contour of the underwater portion can be difficult to judge by looking at the portion above the surface.
+
+[s04.01] SENTENCE: As water floods the ship, it begins to capsize.
+CITED PASSAGES:
+A2.15: An iceberg may flip, or capsize, as it melts and breaks apart, changing the center of gravity. Capsizing can occur shortly after calving when the iceberg is young and establishing balance. Icebergs are unpredictable and can capsize anytime and without warning. Large icebergs that break off from a glacier front and flip onto the glacier face can push the entire glacier backwards momentarily, producing 'glacial earthquakes' that generate as much energy as an atomic bomb.
+
+[s04.02] SENTENCE: The water temperature is near freezing, and you feel the cold rapidly setting in.
+CITED PASSAGES:
+A4.29: Heat is lost much more quickly to water than to air. Thus, water temperatures that would be quite reasonable as outdoor air temperatures can lead to hypothermia, although this is not usually the direct clinical cause of death for those not rescued from accidental immmersion in cold water. A water temperature of 10 °C (50 °F) can kill a human adult in as little as one hour, and water temperatures near freezing can kill in as little as 15 minutes. During the sinking of the Titanic, most people who entered the −2 °C (28 °F) water died in 15–30 minutes.
+
+[s05.01] SENTENCE: Hypothermia sets in when your body temperature drops below 35.0 °C.
+CITED PASSAGES:
+A4.1: Hypothermia is defined as a body core temperature below 35.0 °C (95.0 °F) in humans. Symptoms depend on the temperature. In mild hypothermia, there is shivering and mental confusion. In moderate hypothermia, shivering stops and confusion increases. In severe hypothermia, there may be hallucinations and paradoxical undressing, the victim's self-removal of their own clothing, as well as an increased risk of the heart's stopping.
+
+[s05.02] SENTENCE: You would quickly feel confused and numb as your body fights the cold.
+CITED PASSAGES:
+A4.14: Behavioural changes such as impaired judgement, impaired sense of time and place, unusual aggression, and numbness can be observed in individuals with hypothermia; they can also deny their condition and refuse any help. A hypothermic person can be euphoric and hallucinating.
+
+[s06.01] SENTENCE: With over three million shipwrecks worldwide, many have faced this same fate.
+CITED PASSAGES:
+A5.1: A shipwreck is the wreckage of a ship that is either beached on land or sunken to the bottom of a body of water. It results from the event of shipwrecking, which may be intentional or unintentional. There were approximately three million shipwrecks worldwide as of January 1999, according to Angela Croome, a science writer and author who specialized in the history of underwater archaeology  (an estimate rapidly endorsed by UNESCO and other organizations).

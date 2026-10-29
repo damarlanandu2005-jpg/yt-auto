@@ -1,0 +1,40 @@
+[model] local:gpt-oss:20b
+[system]
+
+
+[user]
+You are a strict fact-checker. For each sentence below, decide using ONLY its cited passages
+(not your own knowledge):
+- supported: every detail (numbers, names, dates, causes, comparisons) is stated in or directly follows from them.
+- partly: the main point is backed but some detail is not, or it overstates / oversimplifies into something false.
+  Also partly: "every/all/always/never" the passages don't say, or a model-based estimate stated as a plain
+  certain fact (fixed_text adds "scientists estimate" or "in today's standard model").
+- unsupported: the cited passages do not back it, or there are none.
+- Conflict: if the cited passages DISAGREE with each other about any number, date or name the sentence
+  states, the sentence is at most "partly" even if it matches one of them; say "sources conflict". Its
+  fixed_text must not pick a side: state only what all passages agree on, or give both values.
+For partly/unsupported, give fixed_text: a corrected sentence in the same plain spoken style that the cited
+passages fully support (keep digits and full unit words; no copying 8+ words). Leave fixed_text empty if impossible.
+A FRAMING SENTENCE has no passages: it is "supported" only if it makes no checkable claim at all (a question,
+transition or invitation). If it states any fact, mark it "unsupported" and give fixed_text: the same idea as a
+pure question or transition with no claim (e.g. "So what would a nearby supernova do to us?").
+
+[s01.01] FRAMING SENTENCE: What would it feel like to be on the Titanic as it sank?
+
+[s02.01] SENTENCE: The ship hits an iceberg, shaking violently as the hull is breached.
+CITED PASSAGES:
+A1.1: RMS Titanic was a British ocean liner that sank in the early hours of 15 April 1912 after striking an iceberg on her maiden voyage from Southampton, England, to New York City. Of the 2,208 passengers and crew aboard, approximately 1,500 died (estimates vary), making the incident one of the deadliest peacetime sinkings of a single ship.
+
+[s03.01] SENTENCE: Water floods the lower decks, tilting the ship as cold water rushes in.
+CITED PASSAGES:
+A4.29: Heat is lost much more quickly to water than to air. Thus, water temperatures that would be quite reasonable as outdoor air temperatures can lead to hypothermia, although this is not usually the direct clinical cause of death for those not rescued from accidental immmersion in cold water. A water temperature of 10 °C (50 °F) can kill a human adult in as little as one hour, and water temperatures near freezing can kill in as little as 15 minutes. During the sinking of the Titanic, most people who entered the −2 °C (28 °F) water died in 15–30 minutes.
+
+[s04.01] SENTENCE: The ship splits in two, with the stern rising steeply before plunging into the icy sea.
+CITED PASSAGES:
+A1.26: Titanic lacked a searchlight, in accordance with the ban on the use of searchlights in the merchant navy.
+
+[s05.01] SENTENCE: You'd panic as the structure breaks apart, facing hypothermia in −2 °C water with only 15–30 minutes to survive.
+CITED PASSAGES:
+A4.29: Heat is lost much more quickly to water than to air. Thus, water temperatures that would be quite reasonable as outdoor air temperatures can lead to hypothermia, although this is not usually the direct clinical cause of death for those not rescued from accidental immmersion in cold water. A water temperature of 10 °C (50 °F) can kill a human adult in as little as one hour, and water temperatures near freezing can kill in as little as 15 minutes. During the sinking of the Titanic, most people who entered the −2 °C (28 °F) water died in 15–30 minutes.
+
+[s06.01] FRAMING SENTENCE: Would you have made it to one of the 20 lifeboats, which held just one-third of the passengers?

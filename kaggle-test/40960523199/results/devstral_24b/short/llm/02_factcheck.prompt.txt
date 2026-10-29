@@ -1,0 +1,40 @@
+[model] local:gpt-oss:20b
+[system]
+
+
+[user]
+You are a strict fact-checker. For each sentence below, decide using ONLY its cited passages
+(not your own knowledge):
+- supported: every detail (numbers, names, dates, causes, comparisons) is stated in or directly follows from them.
+- partly: the main point is backed but some detail is not, or it overstates / oversimplifies into something false.
+  Also partly: "every/all/always/never" the passages don't say, or a model-based estimate stated as a plain
+  certain fact (fixed_text adds "scientists estimate" or "in today's standard model").
+- unsupported: the cited passages do not back it, or there are none.
+- Conflict: if the cited passages DISAGREE with each other about any number, date or name the sentence
+  states, the sentence is at most "partly" even if it matches one of them; say "sources conflict". Its
+  fixed_text must not pick a side: state only what all passages agree on, or give both values.
+For partly/unsupported, give fixed_text: a corrected sentence in the same plain spoken style that the cited
+passages fully support (keep digits and full unit words; no copying 8+ words). Leave fixed_text empty if impossible.
+A FRAMING SENTENCE has no passages: it is "supported" only if it makes no checkable claim at all (a question,
+transition or invitation). If it states any fact, mark it "unsupported" and give fixed_text: the same idea as a
+pure question or transition with no claim (e.g. "So what would a nearby supernova do to us?").
+
+[s01.01] FRAMING SENTENCE: Imagine you are on the Titanic when it hits an iceberg.
+
+[s02.01] SENTENCE: A loud crash shakes the ship as it hits an iceberg
+CITED PASSAGES:
+A1.1: RMS Titanic was a British ocean liner that sank in the early hours of 15 April 1912 after striking an iceberg on her maiden voyage from Southampton, England, to New York City. Of the 2,208 passengers and crew aboard, approximately 1,500 died (estimates vary), making the incident one of the deadliest peacetime sinkings of a single ship.
+
+[s03.01] SENTENCE: Passengers scream as water floods the lower decks
+CITED PASSAGES:
+A1.4: The first-class accommodations were designed to be the pinnacle of comfort and luxury. They included a gymnasium, swimming pool, smoking rooms, fine restaurants and cafes, a Victorian-style Turkish bath, and opulent cabins. A high-powered spark-gap transmitter was provided by the Marconi Marine Company for first-class passenger use. However, the ship was primarily built as an immigration ship designed to carry around 1,000 third-class passengers. They provided comfortable accomodations for the standards of the time, including providing a dining saloon and an open space free for their personal use.
+
+[s04.01] SENTENCE: The ship splits in two, plunging you into icy water
+CITED PASSAGES:
+A2.1: An iceberg is a piece of fresh water ice more than 15 meters (16 yards) long that has broken off a glacier or an ice shelf and is floating freely in open water. Smaller chunks of floating glacially derived ice are called "growlers" or "bergy bits". Much of an iceberg is below the water's surface, which led to the expression "tip of the iceberg" to illustrate a small part of a larger unseen issue. Icebergs are considered a serious maritime hazard.
+
+[s05.01] SENTENCE: You would feel panic as the ship tilts violently, cold water rushes in, and the structure breaks apart below you.
+CITED PASSAGES:
+A2.4: Typically about one-tenth of the volume of an iceberg is above water, which follows from Archimedes's Principle of buoyancy; the density of pure ice is about 920 kg/m3 (57 lb/cu ft), and that of seawater about 1,025 kg/m3 (64 lb/cu ft). The contour of the underwater portion can be difficult to judge by looking at the portion above the surface.
+
+[s06.01] FRAMING SENTENCE: Would you have made it to a lifeboat?

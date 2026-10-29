@@ -1,0 +1,141 @@
+{
+ "facts": [
+  {
+   "id": "A1.1",
+   "fact": "RMS Titanic sank in the early hours of 15 April 1912 after striking an iceberg on her maiden voyage from Southampton, England, to New York City."
+  },
+  {
+   "id": "A1.3",
+   "fact": "Titanic was equipped with twenty lifeboats: fourteen regular lifeboats, two emergency cutters, and four collapsible boats."
+  },
+  {
+   "id": "A2.1",
+   "fact": "An iceberg is a piece of fresh water ice more than 15 meters (16 yards) long that has broken off a glacier or an ice shelf and is floating freely in open water."
+  },
+  {
+   "id": "A4.29",
+   "fact": "During the sinking of the Titanic, most people who entered the −2 °C (28 °F) water died in 15–30 minutes."
+  },
+  {
+   "id": "A4.1",
+   "fact": "Hypothermia is defined as a body core temperature below 35.0 °C (95.0 °F) in humans."
+  }
+ ],
+ "scenes": [
+  {
+   "role": "hook",
+   "sentences": [
+    {
+     "text": "What would it feel like to be on the Titanic as it sank?",
+     "kind": "framing",
+     "sources": [],
+     "id": "s01.01",
+     "check": "supported"
+    }
+   ],
+   "id": "s01"
+  },
+  {
+   "role": "step",
+   "sentences": [
+    {
+     "text": "The RMS Titanic struck an iceberg on its maiden voyage.",
+     "kind": "fact",
+     "sources": [
+      "A1.1"
+     ],
+     "id": "s02.01",
+     "check": "supported (after fix)"
+    }
+   ],
+   "id": "s02"
+  },
+  {
+   "role": "step",
+   "sentences": [
+    {
+     "text": "The RMS Titanic struck an iceberg on its maiden voyage.",
+     "kind": "fact",
+     "sources": [
+      "A1.1"
+     ],
+     "id": "s03.01",
+     "check": "supported (after fix)"
+    },
+    {
+     "text": "The RMS Titanic struck an iceberg on its maiden voyage.",
+     "kind": "fact",
+     "sources": [
+      "A1.1"
+     ],
+     "id": "s03.02",
+     "check": "supported (after fix)"
+    }
+   ],
+   "id": "s03"
+  },
+  {
+   "role": "step",
+   "sentences": [
+    {
+     "text": "The RMS Titanic struck an iceberg on its maiden voyage.",
+     "kind": "fact",
+     "sources": [
+      "A1.1"
+     ],
+     "id": "s04.01",
+     "check": "supported (after fix)"
+    },
+    {
+     "text": "Water temperature was −2 °C (28 °F).",
+     "kind": "fact",
+     "sources": [
+      "A4.29"
+     ],
+     "id": "s04.02",
+     "check": "supported"
+    }
+   ],
+   "id": "s04"
+  },
+  {
+   "role": "answer",
+   "sentences": [
+    {
+     "text": "You would experience hypothermia symptoms such as shivering and confusion.",
+     "kind": "fact",
+     "sources": [
+      "A4.1",
+      "A4.29"
+     ],
+     "id": "s05.01",
+     "check": "supported (after fix)"
+    },
+    {
+     "text": "Most people died within 15 to 30 minutes.",
+     "kind": "fact",
+     "sources": [
+      "A4.29"
+     ],
+     "id": "s05.02",
+     "check": "supported"
+    }
+   ],
+   "id": "s05"
+  },
+  {
+   "role": "end",
+   "sentences": [
+    {
+     "text": "Would you even notice the cold before drowning?",
+     "kind": "framing",
+     "sources": [],
+     "id": "s06.01",
+     "check": "supported"
+    }
+   ],
+   "id": "s06"
+  }
+ ],
+ "title": "Stickman Survives the Titanic Sink"
+}

@@ -1,0 +1,49 @@
+{
+  "facts": [
+    { "id": "A2.10", "fact": "Icebergs lose mass due to melting, and calving." },
+    { "id": "A2.30", "fact": "Icebergs lose mass due to melting, and calving." },
+    { "id": "A4.29", "fact": "A water temperature of 10 °C (50 °F) can kill a human adult in as little as one hour, and water temperatures near freezing can kill in as little as 15 minutes." },
+    { "id": "A4.30", "fact": "During the sinking of the Titanic, most people who entered the −2 °C (28 °F) water died in 15–30 minutes." },
+    { "id": "A5.18", "fact": "Propellers, condensers, hinges and portholes were often made from non-ferrous metals such as brass and bronze, which do not corrode easily." }
+  ],
+  "scenes": [
+    {
+      "role": "hook",
+      "sentences": [
+        { "text": "Imagine you are on the Titanic as it hits an iceberg. What would it feel like?", "kind": "framing", "sources": [] }
+      ]
+    },
+    {
+      "role": "step",
+      "sentences": [
+        { "text": "You hear a loud crash as the ship strikes the iceberg.", "kind": "framing", "sources": [] },
+        { "text": "The ship starts to tilt as water rushes in.", "kind": "framing", "sources": [] }
+      ]
+    },
+    {
+      "role": "step",
+      "sentences": [
+        { "text": "The water is very cold, only −2 °C (28 °F).", "kind": "fact", "sources": ["A4.30"] },
+        { "text": "Most people who entered this water died in 15–30 minutes.", "kind": "fact", "sources": ["A4.30"] }
+      ]
+    },
+    {
+      "role": "step",
+      "sentences": [
+        { "text": "The metal parts of the ship start to corrode quickly.", "kind": "fact", "sources": ["A5.18"] }
+      ]
+    },
+    {
+      "role": "answer",
+      "sentences": [
+        { "text": "You would feel intense cold and panic as the ship tilts and the cold water rushes in.", "kind": "framing", "sources": [] }
+      ]
+    },
+    {
+      "role": "end",
+      "sentences": [
+        { "text": "Would you have made it to a lifeboat?", "kind": "framing", "sources": [] }
+      ]
+    }
+  ]
+}

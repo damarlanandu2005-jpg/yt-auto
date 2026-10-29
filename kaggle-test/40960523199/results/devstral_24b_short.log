@@ -1,0 +1,10 @@
+[llm] factcheck: local:gpt-oss:20b unavailable (HTTP 500 (busy)); trying next model
+[llm] factcheck: every model busy; waiting 120s (round 1)
+[llm] factcheck: local:gpt-oss:20b unavailable (HTTP 500 (busy)); trying next model
+[llm] factcheck: every model busy; waiting 120s (round 2)
+[llm] factcheck: local:gpt-oss:20b unavailable (HTTP 500 (busy)); trying next model
+[llm] factcheck: every model busy; waiting 120s (round 1)
+[llm] factcheck: local:gpt-oss:20b unavailable (HTTP 500 (busy)); trying next model
+[llm] factcheck: every model busy; waiting 120s (round 2)
+[llm] factcheck: local:gpt-oss:20b unavailable (HTTP 500 (busy)); trying next model
+{"script": {"error": "LLMError(\"factcheck: no model available: ['local:gpt-oss:20b: HTTP 500 (busy)', 'local:gpt-oss:20b: HTTP 500 (busy)', 'local:gpt-oss:20b: HTTP 500 (busy)']\")"}, "scenes": {"problems_first": ["step1: no stickman: every scene shows hero(...)", "step3: 'ship_back_half' floats on water but this shot is in 'titanic_deck_night' (no open water): show it in ocean_surface / storm_sea, or use another object", "answer: pose 'gasping' does not exist (use one from the list in the rules)"], "n_first": 3, "problems_after_fix": [], "n_after_fix": 0, "shots": 10, "seconds": 272}}

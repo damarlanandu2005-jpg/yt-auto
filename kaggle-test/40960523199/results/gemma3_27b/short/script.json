@@ -1,0 +1,171 @@
+{
+ "facts": [
+  {
+   "id": "A1.1",
+   "fact": "RMS Titanic sank in the early hours of 15 April 1912 after striking an iceberg."
+  },
+  {
+   "id": "A1.10",
+   "fact": "Titanic measured 46,329 GRT and 21,831 NRT."
+  },
+  {
+   "id": "A1.11",
+   "fact": "Titanic had ten decks for passenger use."
+  },
+  {
+   "id": "A1.16",
+   "fact": "D Deck, the saloon deck, was dominated by the First-Class reception room, the First-Class dining saloon and the Second-Class dining saloon."
+  },
+  {
+   "id": "A2.1",
+   "fact": "An iceberg is a piece of fresh water ice more than 15 meters long that has broken off a glacier or an ice shelf."
+  },
+  {
+   "id": "A2.4",
+   "fact": "About one-tenth of an iceberg’s volume is above water."
+  },
+  {
+   "id": "A2.15",
+   "fact": "Icebergs can capsize as they melt and break apart."
+  },
+  {
+   "id": "A4.1",
+   "fact": "Hypothermia is defined as a body core temperature below 35.0 °C."
+  },
+  {
+   "id": "A4.14",
+   "fact": "Hypothermia can cause confusion and numbness."
+  },
+  {
+   "id": "A4.29",
+   "fact": "A water temperature of 10 °C can kill a human adult in as little as one hour."
+  },
+  {
+   "id": "A5.1",
+   "fact": "There were approximately three million shipwrecks worldwide as of January 1999."
+  },
+  {
+   "id": "A5.38",
+   "fact": "Shipwreck law determines the ownership of a wreck."
+  }
+ ],
+ "scenes": [
+  {
+   "role": "hook",
+   "sentences": [
+    {
+     "text": "Imagine you are aboard the Titanic, unaware of the danger ahead?",
+     "kind": "framing",
+     "sources": [],
+     "id": "s01.01",
+     "check": "supported"
+    }
+   ],
+   "id": "s01"
+  },
+  {
+   "role": "step",
+   "sentences": [
+    {
+     "text": "Titanic was enormous, measuring 46,329 GRT and 21,831 NRT.",
+     "kind": "fact",
+     "sources": [
+      "A1.10"
+     ],
+     "id": "s02.01",
+     "check": "supported"
+    },
+    {
+     "text": "You are on one of its ten decks, enjoying the large dining saloons on D Deck.",
+     "kind": "fact",
+     "sources": [
+      "A1.11",
+      "A1.16"
+     ],
+     "id": "s02.02",
+     "check": "supported"
+    }
+   ],
+   "id": "s02"
+  },
+  {
+   "role": "step",
+   "sentences": [
+    {
+     "text": "Suddenly, the ship strikes an iceberg.",
+     "kind": "fact",
+     "sources": [
+      "A1.1"
+     ],
+     "id": "s03.01",
+     "check": "supported"
+    },
+    {
+     "text": "About one-tenth of the iceberg was visible above the water.",
+     "kind": "fact",
+     "sources": [
+      "A2.4"
+     ],
+     "id": "s03.02",
+     "check": "supported"
+    }
+   ],
+   "id": "s03"
+  },
+  {
+   "role": "step",
+   "sentences": [
+    {
+     "text": "The water temperature is near freezing, and it can kill quickly.",
+     "kind": "fact",
+     "sources": [
+      "A4.29"
+     ],
+     "id": "s04.02",
+     "check": "supported (after fix)"
+    }
+   ],
+   "id": "s04"
+  },
+  {
+   "role": "answer",
+   "sentences": [
+    {
+     "text": "Hypothermia sets in when your body temperature drops below 35.0 °C.",
+     "kind": "fact",
+     "sources": [
+      "A4.1"
+     ],
+     "id": "s05.01",
+     "check": "supported"
+    },
+    {
+     "text": "You would quickly feel confused and numb as your body fights the cold.",
+     "kind": "fact",
+     "sources": [
+      "A4.14"
+     ],
+     "id": "s05.02",
+     "check": "supported"
+    }
+   ],
+   "id": "s05"
+  },
+  {
+   "role": "end",
+   "sentences": [
+    {
+     "text": "With over three million shipwrecks worldwide, many have faced this same fate.",
+     "kind": "fact",
+     "sources": [
+      "A5.1"
+     ],
+     "id": "s06.01",
+     "check": "supported"
+    }
+   ],
+   "id": "s06"
+  }
+ ],
+ "title": "Stickman Survives the Titanic Sink"
+}

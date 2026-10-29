@@ -1,0 +1,242 @@
+{
+ "install_s": 18,
+ "saved": [
+  "gpt-oss:20b",
+  "qwen3:32b"
+ ],
+ "server": true,
+ "checker": "gpt-oss:20b",
+ "models": {
+  "gemma3:27b": {
+   "pull": {
+    "source": "downloaded",
+    "seconds": 154
+   },
+   "short_s": 912,
+   "short": {
+    "script": {
+     "first_try": {
+      "words": 99,
+      "dropped": 1,
+      "problems": []
+     },
+     "words": 99,
+     "dropped": 1,
+     "fixed": 1,
+     "story_problems": [],
+     "seconds": 569
+    },
+    "scenes": {
+     "problems_first": [
+      "step1: the cue 'strike' is not spoken in this scene (spoken: \"Typically, only about one-tenth of an iceberg floats above the water surface.\")",
+      "step1: the cue 'tilt' is not spoken in this scene (spoken: \"Typically, only about one-tenth of an iceberg floats above the water surface.\")",
+      "step1: the cue 'tilt' is not spoken in this scene (spoken: \"Typically, only about one-tenth of an iceberg floats above the water surface.\")",
+      "step2: the cue 'panic' is not spoken in this scene (spoken: \"The British liner strikes ice and begins foundering in the North Atlantic. The ship carries lifeboats for only one-third of the people on board.\")",
+      "step2: the cue 'water' is not spoken in this scene (spoken: \"The British liner strikes ice and begins foundering in the North Atlantic. The ship carries lifeboats for only one-third of the people on board.\")",
+      "step2: the cue 'freezing' is not spoken in this scene (spoken: \"The British liner strikes ice and begins foundering in the North Atlantic. The ship carries lifeboats for only one-third of the people on board.\")",
+      "step3: the cue 'shiver' is not spoken in this scene (spoken: \"Many passengers and crew make their last stand on the raised poop deck. Victims are plunged into freezing sea water at minus 2 degrees Celsius.\")",
+      "step3: the cue 'cold' is not spoken in this scene (spoken: \"Many passengers and crew make their last stand on the raised poop deck. Victims are plunged into freezing sea water at minus 2 degrees Celsius.\")",
+      "step3: the cue 'incapacitation' is not spoken in this scene (spoken: \"Many passengers and crew make their last stand on the raised poop deck. Victims are plunged into freezing sea water at minus 2 degrees Celsius.\")",
+      "step3: nothing is drawn besides the stickman: draw what the narration talks about",
+      "answer: the cue 'limbs' is not spoken in this scene (spoken: \"Cold shock triggers uncontrolled rapid breathing, gasping, and severe heart strain. Within 15 to 30 minutes, cold incapacitation shuts down limb muscles, preventing swimming.\")",
+      "answer: nothing is drawn besides the stickman: draw what the narration talks about",
+      "answer: the stickman is too small (scale 0.6); use 0.9 to 1.8",
+      "end: nothing is drawn besides the stickman: draw what the narration talks about"
+     ],
+     "n_first": 14,
+     "problems_after_fix": [
+      "step2: the cue 'panic' is not spoken in this scene (spoken: \"The British liner strikes ice and begins foundering in the North Atlantic. The ship carries lifeboats for only one-third of the people on board.\")",
+      "step2: the cue 'water' is not spoken in this scene (spoken: \"The British liner strikes ice and begins foundering in the North Atlantic. The ship carries lifeboats for only one-third of the people on board.\")",
+      "step3: the cue 'cold' is not spoken in this scene (spoken: \"Many passengers and crew make their last stand on the raised poop deck. Victims are plunged into freezing sea water at minus 2 degrees Celsius.\")",
+      "step3: the cue 'cold' is not spoken in this scene (spoken: \"Many passengers and crew make their last stand on the raised poop deck. Victims are plunged into freezing sea water at minus 2 degrees Celsius.\")",
+      "answer: emoji 'heart' does not exist (use a name from the emoji list, or thing()/your own drawing)"
+     ],
+     "n_after_fix": 5,
+     "shots": 4,
+     "seconds": 343
+    }
+   }
+  },
+  "qwen3-coder:30b": {
+   "pull": {
+    "source": "downloaded",
+    "seconds": 159
+   },
+   "short_s": 348,
+   "short": {
+    "script": {
+     "first_try": {
+      "words": 86,
+      "dropped": 0,
+      "problems": []
+     },
+     "words": 86,
+     "dropped": 0,
+     "fixed": 5,
+     "story_problems": [],
+     "seconds": 246
+    },
+    "scenes": {
+     "problems_first": [
+      "step1: label '1/10 ABOVE' must be at most 4 words, all spoken in this scene (not spoken: 110)",
+      "step2: pose 'shock' does not exist (use one from the list in the rules)",
+      "step3: label '-2\u00b0C' must be at most 4 words, all spoken in this scene (not spoken: 2c)",
+      "step3: pose 'shocked' does not exist (use one from the list in the rules)",
+      "step3: emoji 'wave' does not exist (use a name from the emoji list, or thing()/your own drawing)",
+      "answer: pose 'sweating' does not exist (use one from the list in the rules)",
+      "end: place 'lifeboat_crowded' is not in the library (have: airplane_cabin, ancient_egypt, arctic_ice, bedroom_night, burning_building, cave, city_earthquake, city_night, city_street_day, classroom, courtroom, deep_sea, desert, farm, forest, garage, hospital_room, inside_body_blood, inside_body_lungs, jungle, kitchen, living_room, mars_surface, mine_tunnel, moon_surface, ocean_surface, office, old_village_india, police_station, prehistoric_land, science_lab, ship_corridor, snow_mountain, space_station, stadium, storm_sea, titanic_deck_night, tsunami_beach, underwater, volcano_crater)"
+     ],
+     "n_first": 7,
+     "problems_after_fix": [
+      "hook: thing 'iceberg' does not exist (things: brain, clock, drop, earth, fire, fish, heart, house, moon, mountain, question, rock, rocket, ship, sun, tree, volcano, wave; for other objects use art() from the LIBRARY or emoji())",
+      "step1: label '1/10 ABOVE' must be at most 4 words, all spoken in this scene (not spoken: 110)",
+      "step1: thing 'iceberg' does not exist (things: brain, clock, drop, earth, fire, fish, heart, house, moon, mountain, question, rock, rocket, ship, sun, tree, volcano, wave; for other objects use art() from the LIBRARY or emoji())",
+      "step2: pose 'shocked' does not exist (use one from the list in the rules)",
+      "step2: thing 'iceberg' does not exist (things: brain, clock, drop, earth, fire, fish, heart, house, moon, mountain, question, rock, rocket, ship, sun, tree, volcano, wave; for other objects use art() from the LIBRARY or emoji())",
+      "step3: label '-2\u00b0C' must be at most 4 words, all spoken in this scene (not spoken: 2c)",
+      "step3: pose 'shocked' does not exist (use one from the list in the rules)",
+      "step3: thing 'passenger_ship' does not exist (things: brain, clock, drop, earth, fire, fish, heart, house, moon, mountain, question, rock, rocket, ship, sun, tree, volcano, wave; for other objects use art() from the LIBRARY or emoji())"
+     ],
+     "n_after_fix": 8,
+     "shots": 11,
+     "seconds": 102
+    }
+   }
+  },
+  "qwen2.5-coder:32b": {
+   "pull": {
+    "source": "downloaded",
+    "seconds": 170
+   },
+   "short_s": 1917,
+   "short": {
+    "script": {
+     "first_try": {
+      "words": 38,
+      "dropped": 3,
+      "problems": [
+       "the answer scene was dropped by the fact-check (rule R2: the hook must be answered)",
+       "38 words after the fact-check (want about 110-140)"
+      ]
+     },
+     "words": 40,
+     "dropped": 2,
+     "fixed": 2,
+     "story_problems": [
+      "the answer scene was dropped by the fact-check (rule R2: the hook must be answered)",
+      "40 words after the fact-check (want about 110-140)"
+     ],
+     "seconds": 1054
+    },
+    "scenes": {
+     "problems_first": [
+      "step1: the cue 'sinking' is not spoken in this scene (spoken: \"Typically, only about one-tenth of an iceberg floats above the water surface.\")",
+      "step1: the cue 'sinking' is not spoken in this scene (spoken: \"Typically, only about one-tenth of an iceberg floats above the water surface.\")",
+      "step1: the cue 'sinking' is not spoken in this scene (spoken: \"Typically, only about one-tenth of an iceberg floats above the water surface.\")",
+      "answer: the cue 'plunged' is not spoken in this scene (spoken: \"Cold shock triggers uncontrolled rapid breathing, gasping, and severe heart strain. Within 15 to 30 minutes, cold incapacitation shuts down limb muscles, preventing swimming.\")",
+      "end: label 'LIFEBOAT' must be at most 4 words, all spoken in this scene (not spoken: lifeboat)"
+     ],
+     "n_first": 5,
+     "problems_after_fix": [],
+     "n_after_fix": 0,
+     "shots": 11,
+     "seconds": 863
+    }
+   }
+  },
+  "mistral-small3.2:24b": {
+   "pull": {
+    "source": "downloaded",
+    "seconds": 128
+   },
+   "short_s": 1912,
+   "short": {
+    "script": {
+     "error": "LLMError(\"factcheck: no model available: ['local:gpt-oss:20b: HTTP 500 (busy)', 'local:gpt-oss:20b: HTTP 500 (busy)', 'local:gpt-oss:20b: HTTP 500 (busy)']\")"
+    },
+    "scenes": {
+     "error": "LLMError(\"short_scenes: no model available: ['local:mistral-small3.2:24b: reply was not valid JSON (Expecting property name enclosed in double quotes: line 1 column 3 (char 2))', 'local:mistral-small3.2:24b: reply was not valid JSON (Expecting property name enclosed in double quotes: line 1 column 3 (char 2))', 'local:mistral-small3.2:24b: reply was not valid JSON (Expecting property name enclosed in double quotes: line 1 column 3 (char 2))']\")"
+    }
+   }
+  },
+  "devstral:24b": {
+   "pull": {
+    "source": "downloaded",
+    "seconds": 117
+   },
+   "short_s": 2825,
+   "short": {
+    "script": {
+     "error": "LLMError(\"factcheck: no model available: ['local:gpt-oss:20b: HTTP 500 (busy)', 'local:gpt-oss:20b: HTTP 500 (busy)', 'local:gpt-oss:20b: HTTP 500 (busy)']\")"
+    },
+    "scenes": {
+     "problems_first": [
+      "step1: no stickman: every scene shows hero(...)",
+      "step3: 'ship_back_half' floats on water but this shot is in 'titanic_deck_night' (no open water): show it in ocean_surface / storm_sea, or use another object",
+      "answer: pose 'gasping' does not exist (use one from the list in the rules)"
+     ],
+     "n_first": 3,
+     "problems_after_fix": [],
+     "n_after_fix": 0,
+     "shots": 10,
+     "seconds": 272
+    }
+   }
+  },
+  "qwen3:32b": {
+   "pull": {
+    "source": "saved",
+    "seconds": 0
+   },
+   "short_s": 3719,
+   "short": {
+    "script": {
+     "first_try": {
+      "words": 60,
+      "dropped": 0,
+      "problems": [
+       "60 words after the fact-check (want about 110-140)"
+      ]
+     },
+     "words": 32,
+     "dropped": 1,
+     "fixed": 2,
+     "story_problems": [
+      "the answer scene was dropped by the fact-check (rule R2: the hook must be answered)",
+      "32 words after the fact-check (want about 110-140)"
+     ],
+     "seconds": 2071
+    },
+    "scenes": {
+     "problems_first": [
+      "step1: label '1/10 ABOVE WATER' must be at most 4 words, all spoken in this scene (not spoken: 110)",
+      "step1: thing 'thermometer' does not exist (things: brain, clock, drop, earth, fire, fish, heart, house, moon, mountain, question, rock, rocket, ship, sun, tree, volcano, wave; for other objects use art() from the LIBRARY or emoji())",
+      "step2: label 'ONLY 1/3 CAPACITY' must be at most 4 words, all spoken in this scene (not spoken: 13, capacity)",
+      "step3: label '-2\u00b0C' must be at most 4 words, all spoken in this scene (not spoken: 2c)",
+      "step3: face 'shivering' does not exist (use one from the list in the rules)",
+      "step3: thing 'thermometer' does not exist (things: brain, clock, drop, earth, fire, fish, heart, house, moon, mountain, question, rock, rocket, ship, sun, tree, volcano, wave; for other objects use art() from the LIBRARY or emoji())",
+      "answer: 2 labels; use at most ONE short label per scene and draw the rest",
+      "answer: pose 'gasp' does not exist (use one from the list in the rules)",
+      "answer: face 'panicking' does not exist (use one from the list in the rules)",
+      "answer: face 'unconscious' does not exist (use one from the list in the rules)",
+      "end: label 'LIFEBOAT SPOT?' must be at most 4 words, all spoken in this scene (not spoken: lifeboat, spot)"
+     ],
+     "n_first": 11,
+     "problems_after_fix": [
+      "step1: label '1/10 ABOVE WATER' must be at most 4 words, all spoken in this scene (not spoken: 110)",
+      "step2: label 'ONLY 1/3 LIFEBOATS' must be at most 4 words, all spoken in this scene (not spoken: 13)",
+      "step3: label '-2\u00b0C' must be at most 4 words, all spoken in this scene (not spoken: 2c)",
+      "end: label 'PLACE IN LIFEBOAT?' must be at most 4 words, all spoken in this scene (not spoken: lifeboat)"
+     ],
+     "n_after_fix": 4,
+     "shots": 11,
+     "seconds": 1647
+    }
+   }
+  }
+ },
+ "checker_model": {
+  "source": "saved",
+  "seconds": 0
+ }
+}

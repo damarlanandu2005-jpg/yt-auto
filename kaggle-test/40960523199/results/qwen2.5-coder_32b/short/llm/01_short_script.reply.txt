@@ -1,0 +1,90 @@
+{
+  "facts": [
+    {
+      "id": "A1.29",
+      "fact": "Titanic's waterworks could heat and pump water to all parts of the vessel via a complex network of pipes and valves."
+    },
+    {
+      "id": "A2.29",
+      "fact": "The U.S. National Ice Center monitors iceberg concentrations and size distributions worldwide."
+    },
+    {
+      "id": "A4.29",
+      "fact": "Heat is lost much more quickly to water than to air. Water temperatures around the time of the Titanic sinking could kill a human adult in as little as one hour."
+    },
+    {
+      "id": "A4.30",
+      "fact": "During the sinking of the Titanic, most people who entered the cold water died within 15–30 minutes."
+    },
+    {
+      "id": "A4.39",
+      "fact": "Covering the head is effective but no more effective than covering any other part of the body."
+    },
+    {
+      "id": "A1.43",
+      "fact": "Titanic carried a total of 20 lifeboats, including 14 standard wooden Harland and Wolff lifeboats and four collapsible lifeboats."
+    }
+  ],
+  "scenes": [
+    {
+      "role": "hook",
+      "sentences": [
+        {
+          "text": "Imagine you're boarding the RMS Titanic, unaware of the iceberg ahead. Would you even notice?",
+          "kind": "framing",
+          "sources": []
+        }
+      ]
+    },
+    {
+      "role": "step",
+      "sentences": [
+        {
+          "text": "A loud crash shakes the ship as it hits an iceberg.",
+          "kind": "fact",
+          "sources": ["A1.29"]
+        }
+      ]
+    },
+    {
+      "role": "step",
+      "sentences": [
+        {
+          "text": "Passengers scream as water floods the lower decks.",
+          "kind": "fact",
+          "sources": ["A4.29"]
+        }
+      ]
+    },
+    {
+      "role": "step",
+      "sentences": [
+        {
+          "text": "The ship splits in two, plunging you into icy water.",
+          "kind": "fact",
+          "sources": ["A4.30"]
+        }
+      ]
+    },
+    {
+      "role": "answer",
+      "sentences": [
+        {
+          "text": "You would feel panic as the ship tilts violently, cold water rushes in, and the structure breaks apart below you.",
+          "kind": "fact",
+          "sources": ["A4.30"]
+        }
+      ]
+    },
+    {
+      "role": "end",
+      "sentences": [
+        {
+          "text": "Would you have made it to a lifeboat?",
+          "kind": "framing",
+          "sources": []
+        }
+      ]
+    }
+  ]
+}

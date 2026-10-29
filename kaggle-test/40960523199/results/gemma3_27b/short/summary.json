@@ -1,0 +1,43 @@
+{
+ "script": {
+  "first_try": {
+   "words": 99,
+   "dropped": 1,
+   "problems": []
+  },
+  "words": 99,
+  "dropped": 1,
+  "fixed": 1,
+  "story_problems": [],
+  "seconds": 569
+ },
+ "scenes": {
+  "problems_first": [
+   "step1: the cue 'strike' is not spoken in this scene (spoken: \"Typically, only about one-tenth of an iceberg floats above the water surface.\")",
+   "step1: the cue 'tilt' is not spoken in this scene (spoken: \"Typically, only about one-tenth of an iceberg floats above the water surface.\")",
+   "step1: the cue 'tilt' is not spoken in this scene (spoken: \"Typically, only about one-tenth of an iceberg floats above the water surface.\")",
+   "step2: the cue 'panic' is not spoken in this scene (spoken: \"The British liner strikes ice and begins foundering in the North Atlantic. The ship carries lifeboats for only one-third of the people on board.\")",
+   "step2: the cue 'water' is not spoken in this scene (spoken: \"The British liner strikes ice and begins foundering in the North Atlantic. The ship carries lifeboats for only one-third of the people on board.\")",
+   "step2: the cue 'freezing' is not spoken in this scene (spoken: \"The British liner strikes ice and begins foundering in the North Atlantic. The ship carries lifeboats for only one-third of the people on board.\")",
+   "step3: the cue 'shiver' is not spoken in this scene (spoken: \"Many passengers and crew make their last stand on the raised poop deck. Victims are plunged into freezing sea water at minus 2 degrees Celsius.\")",
+   "step3: the cue 'cold' is not spoken in this scene (spoken: \"Many passengers and crew make their last stand on the raised poop deck. Victims are plunged into freezing sea water at minus 2 degrees Celsius.\")",
+   "step3: the cue 'incapacitation' is not spoken in this scene (spoken: \"Many passengers and crew make their last stand on the raised poop deck. Victims are plunged into freezing sea water at minus 2 degrees Celsius.\")",
+   "step3: nothing is drawn besides the stickman: draw what the narration talks about",
+   "answer: the cue 'limbs' is not spoken in this scene (spoken: \"Cold shock triggers uncontrolled rapid breathing, gasping, and severe heart strain. Within 15 to 30 minutes, cold incapacitation shuts down limb muscles, preventing swimming.\")",
+   "answer: nothing is drawn besides the stickman: draw what the narration talks about",
+   "answer: the stickman is too small (scale 0.6); use 0.9 to 1.8",
+   "end: nothing is drawn besides the stickman: draw what the narration talks about"
+  ],
+  "n_first": 14,
+  "problems_after_fix": [
+   "step2: the cue 'panic' is not spoken in this scene (spoken: \"The British liner strikes ice and begins foundering in the North Atlantic. The ship carries lifeboats for only one-third of the people on board.\")",
+   "step2: the cue 'water' is not spoken in this scene (spoken: \"The British liner strikes ice and begins foundering in the North Atlantic. The ship carries lifeboats for only one-third of the people on board.\")",
+   "step3: the cue 'cold' is not spoken in this scene (spoken: \"Many passengers and crew make their last stand on the raised poop deck. Victims are plunged into freezing sea water at minus 2 degrees Celsius.\")",
+   "step3: the cue 'cold' is not spoken in this scene (spoken: \"Many passengers and crew make their last stand on the raised poop deck. Victims are plunged into freezing sea water at minus 2 degrees Celsius.\")",
+   "answer: emoji 'heart' does not exist (use a name from the emoji list, or thing()/your own drawing)"
+  ],
+  "n_after_fix": 5,
+  "shots": 4,
+  "seconds": 343
+ }
+}
