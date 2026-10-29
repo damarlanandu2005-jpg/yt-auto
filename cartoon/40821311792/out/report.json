@@ -1,0 +1,53 @@
+{
+  "file": "/home/runner/explainroo/videos/black-hole-fall/out/video.mp4",
+  "duration": 51.33,
+  "video": {
+    "width": 1080,
+    "height": 1920,
+    "fps": "30/1",
+    "codec": "h264"
+  },
+  "audio": {
+    "codec": "aac",
+    "sampleRate": 48000,
+    "channels": 2
+  },
+  "loudness": {
+    "integrated": -14,
+    "range": 2.2,
+    "truePeak": -1.5
+  },
+  "blackSegments": [],
+  "silences": [],
+  "speech": {
+    "matchRate": 1,
+    "transcript": "Imagine you fall into a black hole, feet first. What would you feel? Gravity pulls much harder on your feet than on your head, so your body is stretched long and thin. At the same time, your sides are squeezed inward. Scientists call this spagatification. Stephen Hawking made the word \"famous.\" The size of the black hole changes everything. A small one stretches you apart before you even reach its edge. A giant one lets you cross the edge without feeling much at all. A friend watching from far away sees something strange. You seem to slow down near the edge. You look redder and dimmer until you fade from view. Once you cross the edge, there is no way back. Nothing, not even light, can escape from inside.",
+    "scenes": [
+      {
+        "id": "hook",
+        "matchRate": 1
+      },
+      {
+        "id": "stretch",
+        "matchRate": 1
+      },
+      {
+        "id": "name",
+        "matchRate": 1
+      },
+      {
+        "id": "size",
+        "matchRate": 1
+      },
+      {
+        "id": "outside",
+        "matchRate": 1
+      },
+      {
+        "id": "trapped",
+        "matchRate": 1
+      }
+    ]
+  },
+  "issues": []
+}

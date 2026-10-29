@@ -1,0 +1,221 @@
+{
+  "hash": "b0d6465d1076db9c",
+  "id": "outside",
+  "duration": 8.69,
+  "words": [
+    {
+      "text": "A",
+      "spoken": "A",
+      "start": 0,
+      "end": 0.1,
+      "matched": true
+    },
+    {
+      "text": "friend",
+      "spoken": "friend",
+      "start": 0.1,
+      "end": 0.3,
+      "matched": true
+    },
+    {
+      "text": "watching",
+      "spoken": "watching",
+      "start": 0.3,
+      "end": 0.7,
+      "matched": true
+    },
+    {
+      "text": "from",
+      "spoken": "from",
+      "start": 0.7,
+      "end": 1,
+      "matched": true
+    },
+    {
+      "text": "far",
+      "spoken": "far",
+      "start": 1,
+      "end": 1.2,
+      "matched": true
+    },
+    {
+      "text": "away",
+      "spoken": "away",
+      "start": 1.2,
+      "end": 1.56,
+      "matched": true
+    },
+    {
+      "text": "sees",
+      "spoken": "sees",
+      "start": 1.56,
+      "end": 2.16,
+      "matched": true
+    },
+    {
+      "text": "something",
+      "spoken": "something",
+      "start": 2.16,
+      "end": 2.54,
+      "matched": true
+    },
+    {
+      "text": "strange.",
+      "spoken": "strange.",
+      "start": 2.54,
+      "end": 3.12,
+      "matched": true
+    },
+    {
+      "text": "You",
+      "spoken": "You",
+      "start": 3.65,
+      "end": 3.77,
+      "matched": true
+    },
+    {
+      "text": "seem",
+      "spoken": "seem",
+      "start": 3.77,
+      "end": 3.95,
+      "matched": true
+    },
+    {
+      "text": "to",
+      "spoken": "to",
+      "start": 3.95,
+      "end": 4.09,
+      "matched": true
+    },
+    {
+      "text": "slow",
+      "spoken": "slow",
+      "start": 4.09,
+      "end": 4.33,
+      "matched": true
+    },
+    {
+      "text": "down",
+      "spoken": "down",
+      "start": 4.33,
+      "end": 4.65,
+      "matched": true
+    },
+    {
+      "text": "near",
+      "spoken": "near",
+      "start": 4.65,
+      "end": 4.83,
+      "matched": true
+    },
+    {
+      "text": "the",
+      "spoken": "the",
+      "start": 4.83,
+      "end": 4.97,
+      "matched": true
+    },
+    {
+      "text": "edge.",
+      "spoken": "edge.",
+      "start": 4.97,
+      "end": 5.25,
+      "matched": true
+    },
+    {
+      "text": "You",
+      "spoken": "You",
+      "start": 5.765,
+      "end": 5.905,
+      "matched": true
+    },
+    {
+      "text": "look",
+      "spoken": "look",
+      "start": 5.905,
+      "end": 6.065,
+      "matched": true
+    },
+    {
+      "text": "redder",
+      "spoken": "redder",
+      "start": 6.065,
+      "end": 6.445,
+      "matched": true
+    },
+    {
+      "text": "and",
+      "spoken": "and",
+      "start": 6.445,
+      "end": 6.605,
+      "matched": true
+    },
+    {
+      "text": "dimmer,",
+      "spoken": "dimmer,",
+      "start": 6.605,
+      "end": 6.925,
+      "matched": true
+    },
+    {
+      "text": "until",
+      "spoken": "until",
+      "start": 6.925,
+      "end": 7.405,
+      "matched": true
+    },
+    {
+      "text": "you",
+      "spoken": "you",
+      "start": 7.405,
+      "end": 7.705,
+      "matched": true
+    },
+    {
+      "text": "fade",
+      "spoken": "fade",
+      "start": 7.705,
+      "end": 7.905,
+      "matched": true
+    },
+    {
+      "text": "from",
+      "spoken": "from",
+      "start": 7.905,
+      "end": 8.205,
+      "matched": true
+    },
+    {
+      "text": "view.",
+      "spoken": "view.",
+      "start": 8.205,
+      "end": 8.465,
+      "matched": true
+    }
+  ],
+  "marks": {
+    "slow": 3.65,
+    "red": 5.765,
+    "gone": 6.925
+  },
+  "chunks": [
+    {
+      "start": 0,
+      "end": 3.35,
+      "text": "A friend watching from far away sees something strange."
+    },
+    {
+      "start": 3.65,
+      "end": 5.465,
+      "text": "You seem to slow down near the edge."
+    },
+    {
+      "start": 5.765,
+      "end": 8.69,
+      "text": "You look redder and dimmer, until you fade from view."
+    }
+  ],
+  "transcript": "A friend watching from far away sees something strange. you seem to slow down near the edge. You look redder and dimmer until you fade from view.",
+  "matchRate": 1,
+  "unmatched": []
+}

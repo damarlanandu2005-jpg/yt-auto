@@ -1,0 +1,117 @@
+{
+  "hash": "0e28e83ec031cd42",
+  "id": "hook",
+  "duration": 4.225,
+  "words": [
+    {
+      "text": "Imagine",
+      "spoken": "Imagine",
+      "start": 0,
+      "end": 0.46,
+      "matched": true
+    },
+    {
+      "text": "you",
+      "spoken": "you",
+      "start": 0.46,
+      "end": 0.64,
+      "matched": true
+    },
+    {
+      "text": "fall",
+      "spoken": "fall",
+      "start": 0.64,
+      "end": 0.82,
+      "matched": true
+    },
+    {
+      "text": "into",
+      "spoken": "into",
+      "start": 0.82,
+      "end": 1.06,
+      "matched": true
+    },
+    {
+      "text": "a",
+      "spoken": "a",
+      "start": 1.06,
+      "end": 1.16,
+      "matched": true
+    },
+    {
+      "text": "black",
+      "spoken": "black",
+      "start": 1.16,
+      "end": 1.36,
+      "matched": true
+    },
+    {
+      "text": "hole,",
+      "spoken": "hole,",
+      "start": 1.36,
+      "end": 1.68,
+      "matched": true
+    },
+    {
+      "text": "feet",
+      "spoken": "feet",
+      "start": 1.98,
+      "end": 2.22,
+      "matched": true
+    },
+    {
+      "text": "first.",
+      "spoken": "first.",
+      "start": 2.22,
+      "end": 2.56,
+      "matched": true
+    },
+    {
+      "text": "What",
+      "spoken": "What",
+      "start": 3.195,
+      "end": 3.395,
+      "matched": true
+    },
+    {
+      "text": "would",
+      "spoken": "would",
+      "start": 3.395,
+      "end": 3.495,
+      "matched": true
+    },
+    {
+      "text": "you",
+      "spoken": "you",
+      "start": 3.495,
+      "end": 3.635,
+      "matched": true
+    },
+    {
+      "text": "feel?",
+      "spoken": "feel?",
+      "start": 3.635,
+      "end": 3.915,
+      "matched": true
+    }
+  ],
+  "marks": {
+    "feet": 1.98,
+    "ask": 3.195
+  },
+  "chunks": [
+    {
+      "start": 0,
+      "end": 2.895,
+      "text": "Imagine you fall into a black hole, feet first."
+    },
+    {
+      "start": 3.195,
+      "end": 4.225,
+      "text": "What would you feel?"
+    }
+  ],
+  "transcript": "Imagine you fall into a black hole, feet first. What would you feel?",
+  "matchRate": 1,
+  "unmatched": []
+}
