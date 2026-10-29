@@ -96,7 +96,9 @@ sentences were dropped by the fact-check for details like "sinking for hours" th
 - Then 3 or 4 scenes (role "step"), 1 to 3 short sentences each: what the stickman goes through, step by step,
   one idea per scene, each sentence 6 to 16 words.
 - One scene (role "answer") that clearly answers the question, with facts.
-- Last scene (role "end"): ONE plain sentence that sums it up.
+- Last scene (role "end"): ONE strong closing line that lands the feeling: a short question to the viewer ("Would
+  you have made it to a lifeboat?") or a surprising true twist from the passages. Never "Let's consider...",
+  "In conclusion", "So that's..." or a summary of the video.
 - Feelings belong in framing sentences that claim nothing ("Would you even notice?"). Speak to the viewer as
   "you". Short words, no lists, no dashes, no abbreviations. Never "in this video".
 - Mark every sentence "fact" (with the passage ids backing EVERY detail) or "framing" (no checkable claim).
@@ -129,6 +131,11 @@ def check_story(script: dict) -> list[str]:
         problems.append("the first scene is not a hook question")
     if "answer" not in roles:
         problems.append("the answer scene was dropped by the fact-check (rule R2: the hook must be answered)")
+    end = [sc for sc in script["scenes"] if sc.get("role") == "end"]
+    if end and end[-1]["sentences"]:
+        last = " ".join(x["text"] for x in end[-1]["sentences"]).strip().lower()
+        if re.match(r"(let'?s|in conclusion|so that'?s|to sum up|in summary|now you know)", last) or "consider" in last:
+            problems.append(f'the closing line is weak ("{last[:60]}"): end with a short question to the viewer or a true twist')
     n = writer.word_count(script)
     if not 80 <= n <= 170:
         problems.append(f"{n} words after the fact-check (want about {WORDS[0]}-{WORDS[1]})")
@@ -379,6 +386,14 @@ def validate_scenes(js: str, script: dict) -> list[str]:
                                    ("hair", re.findall(r"\bhair\s*:\s*'(\w+)'", body), _js_list("HAIRS"))):
             for n in sorted(set(found) - known):
                 problems.append(f"{sid}: {kind} '{n}' does not exist (use one from the list in the rules)")
+        water_places = {n for n, c in art_library()["places"].items() if c.get("ground") == "water"}
+        for seg in re.split(r"(?=\bplace\()", body):
+            m = re.match(r"place\(\s*s\s*,\s*'(\w+)'", seg)
+            if m and m.group(1) in water_places:
+                bad = sorted(set(re.findall(r"\bposes?\s*:\s*\[?\s*'(walk|sprint|run|stand|kneel|crouch|sit|lie|jump|push|pull)'", seg)))
+                if bad:
+                    problems.append(f"{sid}: on '{m.group(1)}' (open water) people cannot {'/'.join(bad)}: use swim, "
+                                    f"float, panic or climb (stand() puts them in the water up to the chest), or put them in a boat")
         thing_names = set(re.findall(r"^  (\w+): \(ctx", (CARTOON / "props.js").read_text(), re.M))
         for n in sorted(set(re.findall(r"\bthing\(\s*s\s*,\s*'(\w+)'", body)) - thing_names):
             problems.append(f"{sid}: thing '{n}' does not exist (things: {', '.join(sorted(thing_names))}; "

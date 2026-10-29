@@ -515,6 +515,14 @@ export function hero(s, o = {}) {
     const c = current(s, moves, t);
     // move: { to: [x, y], at, until, scale }: slide from (x, y) to `to` between two words or times (walk in,
     // fall down a hole, sink); with `scale` the size changes on the way (walking away = smaller)
+    if (o.water !== undefined) {  // in water: everything below the water line is hidden, with a ripple ring
+      const wl = o.water - (o.y ?? 0);
+      ctx.save();
+      ctx.strokeStyle = 'rgba(255,255,255,0.7)'; ctx.lineWidth = 5;
+      ctx.beginPath(); ctx.ellipse(0, wl, (70 + 8 * Math.sin(t * 3)) * sc, 12 * sc, 0, 0, Math.PI * 2); ctx.stroke();
+      ctx.restore();
+      ctx.beginPath(); ctx.rect(-s.W * 2, -s.H * 2, s.W * 4, wl + s.H * 2); ctx.clip();
+    }
     if (o.move) {
       const a = s.time(o.move.at ?? 0), b = s.time(o.move.until ?? (o.move.at ?? 0)) + (o.move.until ? 0 : 1.5);
       const p = ease(Math.min(1, Math.max(0, (t - a) / Math.max(0.01, b - a))));
@@ -530,7 +538,7 @@ export function hero(s, o = {}) {
     // On a library place: a soft shadow on the floor and NO white sticker edge, so people stand IN the room
     // (owner, 29 Oct: "looks like pasted"). The edge stays for plain dark backgrounds.
     const onPlace = !!s._shot;
-    if (onPlace && o.shadow !== false && !o.float) {
+    if (onPlace && o.shadow !== false && !o.float && o.water === undefined) {
       ctx.save();
       ctx.fillStyle = 'rgba(0,0,0,0.28)';
       ctx.beginPath();

@@ -71,7 +71,9 @@ crowd(s, { n: 6, x0: 120, x1: 960, y: 1500, scale: 0.8, depth: 40, seed: 4, outf
 - `stand(s, depth)`: where a person stands in the current shot and how big they are (depth 0 = far back, 1 =
   front). ALWAYS place people on a place with it: `hero(s, { x: 300, ...stand(s, 0.8), look: {...}, moves })`,
   `crowd(s, { n: 4, x0: 500, x1: 980, ...stand(s, 0.3) })`. On a place, people get a floor shadow and no white
-  edge automatically (they stand IN the room, not pasted on it).
+  edge automatically (they stand IN the room, not pasted on it). On open water (ocean_surface, storm_sea) stand()
+  puts people IN the water up to the chest: use swim, float, panic or climb there, never walk/stand/run; or seat
+  them in a boat (art 'lifeboat').
 - `art(s, name, { x, y, scale, size, at, flip, rotate })`: a detailed library object (lifeboat, bed, car, bomb
   timer...) drawn at its REAL size next to the stickman; `y` = where it stands (its bottom), `scale` = the same
   as the stickman's scale beside it. `size` (px of height) only for a close-up of the object.

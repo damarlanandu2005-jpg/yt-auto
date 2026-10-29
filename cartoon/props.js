@@ -80,10 +80,15 @@ export function words(s, o = {}) {
     let i = -1;
     for (let k = 0; k < list.length; k++) if (list[k].start <= t) i = k;
     if (i < 0) return;
-    const w = list[i];
-    const until = i + 1 < list.length ? Math.min(list[i + 1].start, w.end + 0.6) : w.end + 0.6;
+    // a number is shown together with the next word ("2 DEGREES"), never alone (owner, 29 Oct)
+    const isNum = (k) => k >= 0 && k < list.length && /\d/.test(list[k].text);
+    if (i > 0 && isNum(i - 1) && !isNum(i)) i -= 1;
+    const w = isNum(i) && i + 1 < list.length
+      ? { text: list[i].text + ' ' + list[i + 1].text, start: list[i].start, end: list[i + 1].end } : list[i];
+    const next = isNum(i) && i + 1 < list.length ? i + 2 : i + 1;
+    const until = next < list.length ? Math.min(list[next].start, w.end + 0.6) : w.end + 0.6;
     if (t > until) return;
-    const text = w.text.replace(/[^\p{L}\p{N}'%.-]/gu, '').replace(/\.$/, '').toUpperCase();
+    const text = w.text.replace(/[^\p{L}\p{N}'%.,\s-]/gu, '').replace(/[.,]$/, '').trim().toUpperCase();
     if (!text) return;
     const pop = Math.min(1, (t - w.start) / 0.09);
     ctx.save();
@@ -313,7 +318,7 @@ const PX_PER_M = 165;  // the stickman at scale 1 is about 1.7 m tall on screen
 
 // Moods drawn over a place: the same picture by day, at night, lit by fire, in the dark...
 const MOODS = {
-  night: ['rgba(25,35,95,0.72)', 'multiply'], dark: ['rgba(0,0,0,0.55)', 'multiply'],
+  night: ['rgba(40,55,120,0.5)', 'multiply'], dark: ['rgba(0,0,0,0.55)', 'multiply'],
   fire: ['rgba(255,110,20,0.28)', 'overlay'], cold: ['rgba(120,170,255,0.25)', 'overlay'],
   storm: ['rgba(30,40,60,0.45)', 'multiply'], dusk: ['rgba(255,120,60,0.22)', 'overlay'],
   underwater: ['rgba(0,90,160,0.3)', 'multiply'],
@@ -371,9 +376,13 @@ export function stand(s, depth = 0.7) {
   if (!sh) return { y: s.H * 0.8, scale: 1.4 };
   const d = Math.min(1, Math.max(0, depth));
   // close shot: the person fills ~3/4 of the height, cut at the knees (like the reference close-ups)
-  if (sh.z >= 1.8) return { y: s.H * (1.04 + 0.1 * d), scale: 3.2 + 1.2 * d };
-  const y = (sh.top + (sh.bottom - sh.top) * d) * sh.z + sh.oy;
-  return { y, scale: (0.75 + 0.85 * d) * sh.z };
+  const water = (PLACES[sh.name] || {}).ground === 'water';
+  let y, scale;
+  if (sh.z >= 1.8) { y = s.H * (1.04 + 0.1 * d); scale = 3.2 + 1.2 * d; }
+  else { y = (sh.top + (sh.bottom - sh.top) * d) * sh.z + sh.oy; scale = (0.75 + 0.85 * d) * sh.z; }
+  // open water: people are IN it, the water line at their chest (owner, 29 Oct: he stood on top of the sea)
+  if (water) { y += 120 * scale; return { y, scale, water: y - 160 * scale }; }
+  return { y, scale };
 }
 
 // Kept for older scenes: where feet stand in the wide shot.
