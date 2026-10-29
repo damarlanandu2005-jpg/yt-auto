@@ -1,0 +1,106 @@
+<!doctype html><meta charset="utf-8"><body style="margin:0;background:#0d1328">
+<canvas id="c"></canvas>
+<script type="module">
+// Channel art for "Stickman Thoughts", drawn with the SAME code-drawn character as the videos
+// (cartoon/character.js), so logo, banner, thumbnails and videos all match. Own work.
+// ?kind=logo (800x800) | banner (2560x1440, text inside the 1546x423 area every device shows)
+//      | thumb (1280x720 sample thumbnail) | short (1080x1920 Shorts cover) | watermark (150x150, video watermark)
+// &t=... (scene time, for blinking/pose) &words=TWO|WORDS &face=shocked &pose=fall
+import { hero } from '../../cartoon/character.js';
+import { blackHole, stars } from '../../cartoon/props.js';
+
+const q = new URLSearchParams(location.search);
+const kind = q.get('kind') || 'logo';
+const SIZE = { logo: [800, 800], banner: [2560, 1440], thumb: [1280, 720], short: [1080, 1920], watermark: [150, 150] }[kind];
+const cv = document.getElementById('c');
+[cv.width, cv.height] = SIZE;
+const ctx = cv.getContext('2d');
+const [W, H] = SIZE;
+const s = { t: 0.5, W, H, cx: W / 2, cy: H / 2, time: (v) => v,
+  rand: (i) => Math.abs(Math.sin(i * 12.9898 + 4.1) * 43758.5453) % 1,
+  draw(o, fn) { ctx.save(); ctx.translate(o.x ?? 0, o.y ?? 0); fn(ctx, { p: 1, local: 1 }); ctx.restore(); } };
+
+const NAVY = '#0d1328', YELLOW = '#fcd34d', WHITE = '#ffffff';
+
+function sky() {
+  const g = ctx.createRadialGradient(W * 0.35, H * 0.3, 0, W * 0.5, H * 0.5, Math.max(W, H) * 0.8);
+  g.addColorStop(0, '#1d2b55');
+  g.addColorStop(1, NAVY);
+  ctx.fillStyle = g;
+  ctx.fillRect(0, 0, W, H);
+}
+
+// a thought bubble: big cloud + two small puffs leading to the head
+function bubble(x, y, r, from, text, size) {
+  ctx.save();
+  ctx.fillStyle = WHITE;
+  ctx.strokeStyle = '#1d1d1f';
+  ctx.lineWidth = Math.max(4, r * 0.06);
+  const puffs = [[0, 0, 1], [-0.62, 0.18, 0.62], [0.62, 0.16, 0.66], [-0.3, -0.45, 0.6], [0.32, -0.42, 0.62], [0, 0.42, 0.6]];
+  ctx.beginPath();
+  for (const [dx, dy, k] of puffs) { ctx.moveTo(x + dx * r + k * r * 0.62, y + dy * r); ctx.arc(x + dx * r, y + dy * r, k * r * 0.62, 0, Math.PI * 2); }
+  ctx.stroke();
+  ctx.fill();
+  for (const [k, f] of [[0.16, 0.45], [0.1, 0.75]]) { // the small trail puffs
+    const px = x + (from[0] - x) * f, py = y + (from[1] - y) * f;
+    ctx.beginPath(); ctx.arc(px, py, r * k, 0, Math.PI * 2); ctx.fill(); ctx.stroke();
+  }
+  if (text) {
+    ctx.fillStyle = '#e5484d';
+    ctx.font = `900 ${size}px Inter`;
+    ctx.textAlign = 'center'; ctx.textBaseline = 'middle';
+    ctx.fillText(text, x, y + size * 0.05);
+  }
+  ctx.restore();
+}
+
+function outlined(text, x, y, size, color = WHITE, align = 'center', maxW = W * 0.9) {
+  ctx.save();
+  ctx.font = `900 ${size}px Inter`;
+  while (ctx.measureText(text).width > maxW && size > 20) { size -= 4; ctx.font = `900 ${size}px Inter`; } // never cut off
+  ctx.textAlign = align; ctx.textBaseline = 'middle'; ctx.lineJoin = 'round';
+  ctx.lineWidth = size * 0.16; ctx.strokeStyle = '#000';
+  ctx.strokeText(text, x, y);
+  ctx.fillStyle = color;
+  ctx.fillText(text, x, y);
+  ctx.restore();
+}
+
+if (kind === 'logo' || kind === 'watermark') {
+  // YouTube shows the profile picture as a circle: keep everything inside the middle 80 %.
+  const k = W / 800;
+  sky();
+  s.W = W; s.H = H;
+  stars(s, { light: true, count: kind === 'logo' ? 40 : 0 });
+  hero(s, { x: 330 * k, y: 1010 * k, scale: 2.4 * k, outline: WHITE, moves: [{ at: 0, pose: 'think', face: 'thinking' }] });
+  bubble(560 * k, 250 * k, 120 * k, [430 * k, 400 * k], '?', 150 * k);
+} else if (kind === 'banner') {
+  sky();
+  stars(s, { light: true, count: 260 });
+  blackHole(s, { x: 2280, y: 330, r: 120 });          // outside the safe area: only on TV / wide screens
+  // safe area: x 507-2053, y 508-931
+  hero(s, { x: 620, y: 1060, scale: 1.5, outline: WHITE, moves: [{ at: 0, pose: 'think', face: 'thinking' }] });
+  bubble(800, 470, 62, [700, 560], '?', 80);
+  outlined('STICKMAN THOUGHTS', 1400, 660, 118, WHITE, 'center', 1250);
+  outlined('Big questions. True stories. Simple drawings.', 1400, 800, 52, YELLOW, 'center', 1250);
+} else if (kind === 'short') {
+  // Shorts cover (pick it in the YouTube app): same scene language as the video, words in the top half
+  sky();
+  stars(s, { light: true, count: 120 });
+  blackHole(s, { x: 540, y: 1400, r: 230 });
+  hero(s, { x: 540, y: 1260, scale: 1.9, helmet: true, outline: WHITE,
+    moves: [{ at: 0, pose: q.get('pose') || 'fall', face: q.get('face') || 'scared' }] });
+  const words = (q.get('words') || 'FALLING INTO|A BLACK HOLE?').split('|');
+  words.forEach((w, i) => outlined(w, 540, 230 + i * 140, 120, i === words.length - 1 ? YELLOW : WHITE, 'center', 960));
+} else {
+  // sample thumbnail: the character's feeling on the left, 2-4 honest words on the right
+  sky();
+  stars(s, { light: true, count: 80 });
+  blackHole(s, { x: 360, y: 560, r: 150 });
+  hero(s, { x: 360, y: 470, scale: 1.25, helmet: true, outline: WHITE,
+    moves: [{ at: 0, pose: q.get('pose') || 'fall', face: q.get('face') || 'scared' }] });
+  const words = (q.get('words') || 'FALLING INTO|A BLACK HOLE?').split('|');
+  words.forEach((w, i) => outlined(w, 650, 300 + i * 150, 104, i === words.length - 1 ? YELLOW : WHITE, 'left', 590));
+}
+document.title = 'done';
+</script>
