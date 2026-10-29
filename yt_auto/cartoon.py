@@ -176,7 +176,9 @@ def description(script: dict, sources: dict) -> str:
         if pid in idx:
             a = next(x for x in sources["articles"] if x["title"] == idx[pid]["article"])
             arts[a["title"]] = f"https://en.wikipedia.org/w/index.php?title={a['title'].replace(' ', '_')}&oldid={a.get('revision_id')}"
-    tags = " ".join("#" + w for w in re.findall(r"[A-Za-z]{4,}", script["title"].lower())[:3])
+    stop = {"what", "happens", "happen", "would", "could", "your", "into", "with", "from", "that", "this", "when",
+            "where", "which", "does", "have", "fall", "falls", "they", "them", "there", "their", "about", "really"}
+    tags = " ".join("#" + w for w in [w for w in re.findall(r"[a-z]{4,}", script["title"].lower()) if w not in stop][:3])
     return "\n".join([script["title"] + " The stickman finds out.", "", "Sources (facts checked):"]
                      + [f'Wikipedia, "{t}": {u}' for t, u in arts.items()]
                      + ["", "Voice: text-to-speech. Icons: Lucide (ISC licence).", "", f"#shorts #stickman {tags}".strip()]) + "\n"
@@ -271,7 +273,10 @@ def validate_scenes(js: str, script: dict) -> list[str]:
                 problems.append(f"{sid}: {call} is not allowed (text on screen = one label() at most)")
         if "hero(" not in body:
             problems.append(f"{sid}: no stickman: every scene shows hero(...)")
-        if not re.search(r"\b(thing|blackHole)\(|s\.(draw|icon|circle|path|line|arrow|number)\(", body):
+        # own helper functions defined in the file (e.g. bubbles(s, ...)) that draw count too
+        helpers = [h for h in re.findall(r"^function\s+(\w+)\s*\(s\b", js, re.M)]
+        drawn = r"\b(thing|blackHole" + "".join(f"|{h}" for h in helpers) + r")\(|s\.(draw|icon|circle|path|line|arrow|number)\("
+        if not re.search(drawn, body):
             problems.append(f"{sid}: nothing is drawn besides the stickman: draw what the narration talks about")
         sc = re.search(r"hero\(s,\s*\{[^}]*?scale:\s*([\d.]+)", body)
         if sc and float(sc.group(1)) < 0.8:
