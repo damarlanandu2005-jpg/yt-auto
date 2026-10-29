@@ -1,6 +1,8 @@
 # Runs ON KAGGLE (free GPU notebook), pushed by .github/workflows/kaggle-test.yml. The workflow puts two lines
 # above this file: BUNDLE (our code + test inputs, base64 tar.gz) and MODELS (Ollama model names).
 # Owner's idea (29 Oct): run our own open AI model on Kaggle's free GPUs, so there is no daily request limit.
+# Test 2 (29 Oct evening, owner dropped the model licence rule: "give the best model"): writers and coders for
+# the two Short jobs, see SCRIPT_AND_SCENES. Test 1 (run 40865470880) also ran the Phase 2 fact-check test.
 # The models must first pass the SAME tests as Gemini:
 #   1. Phase 2 fact-check test: 30 planted errors + 16 clean controls (rule set before testing: >= 80 % caught,
 #      >= 60 % per error type, <= 1 false alarm). Gemini Flash: 30/30, 0 false alarms (run 40466026336).
@@ -9,6 +11,7 @@
 #   3. Scene writer: scenes.js for that script -> our plain-code checks (Gemini: 0 problems after one fix).
 # No keys or secrets are in this kernel. Results go to /kaggle/working/results (fetched by the workflow).
 import base64
+import shutil
 import io
 import json
 import os
@@ -43,6 +46,11 @@ def wait_server(seconds: int = 120) -> bool:
 
 
 SCRIPT_AND_SCENES = r'''
+# Test 2 (29 Oct, owner: "give the best model"): the same two jobs a Short needs, with the same checks.
+#   script: plan + Wikipedia sources of the Titanic test -> write_short -> fact-check (always gpt-oss:20b, so
+#           every writer is judged by the same checker) -> story check, one rewrite like the real pipeline
+#   scenes: the good, checked Titanic script (run 40903619735) -> write_scenes in the new library style ->
+#           plain-code checks -> one fix round -> checks again (like make_short.scenes_with_checks)
 import json, sys, time
 from pathlib import Path
 sys.path.insert(0, ".")
@@ -54,64 +62,68 @@ plan = json.loads((inp / "plan.json").read_text()); sources = json.loads((inp / 
 res = {}
 t0 = time.time()
 try:
-    s = cartoon.write_short("What happens if you fall into the Mariana Trench?", plan, sources)
+    s = cartoon.write_short(plan["question"], plan, sources)
     rep = writer.fact_check(s, sources)
-    res["script"] = {"words": writer.word_count(s), "dropped": len(rep["dropped"]), "fixed": len(rep["fixed"]),
-                     "story_problems": cartoon.check_story(s), "seconds": round(time.time() - t0)}
+    problems = cartoon.check_story(s)
+    first = {"words": writer.word_count(s), "dropped": len(rep["dropped"]), "problems": problems}
+    if problems:
+        s = cartoon.write_short(plan["question"], plan, sources, cartoon.rewrite_feedback(rep, problems))
+        rep = writer.fact_check(s, sources)
+        problems = cartoon.check_story(s)
+    res["script"] = {"first_try": first, "words": writer.word_count(s), "dropped": len(rep["dropped"]),
+                     "fixed": len(rep["fixed"]), "story_problems": problems, "seconds": round(time.time() - t0)}
     (out / "script.json").write_text(json.dumps(s, indent=1, ensure_ascii=False))
 except Exception as e:
     res["script"] = {"error": repr(e)[:500]}
-# scene writer on the GEMINI script of the same test, so both models get the same input
 t0 = time.time()
 try:
     g = json.loads((inp / "script.json").read_text())
-    r = cartoon.write_scenes(g, cartoon.script_md(g, sources))
-    problems = cartoon.validate_scenes(r["scenes_js"], g)
-    res["scenes"] = {"problems": problems, "n_problems": len(problems), "seconds": round(time.time() - t0)}
-    (out / "scenes.js").write_text(r["scenes_js"])
+    md = cartoon.script_md(g, sources)
+    js = cartoon.fix_imports(cartoon.write_scenes(g, md)["scenes_js"])
+    p1 = cartoon.validate_scenes(js, g)
+    js2, p2 = js, p1
+    if p1:
+        js2 = cartoon.fix_imports(cartoon.write_scenes(g, md, "\n".join(f"- {p}" for p in p1), js)["scenes_js"])
+        p2 = cartoon.validate_scenes(js2, g)
+    res["scenes"] = {"problems_first": p1, "n_first": len(p1), "problems_after_fix": p2, "n_after_fix": len(p2),
+                     "shots": len(__import__("re").findall(r"\bplace\(", js2)), "seconds": round(time.time() - t0)}
+    (out / "scenes.js").write_text(js2)
 except Exception as e:
     res["scenes"] = {"error": repr(e)[:500]}
 (out / "summary.json").write_text(json.dumps(res, indent=1))
 print(json.dumps(res)[:1500])
 '''
 
+CHECKER = "gpt-oss:20b"
+
 
 def main() -> None:
     OUT.mkdir(parents=True, exist_ok=True)
     tarfile.open(fileobj=io.BytesIO(base64.b64decode(BUNDLE)), mode="r:gz").extractall(CODE)  # noqa: F821
+    sys.path.insert(0, str(CODE / "kaggle"))
+    import ollama_setup as ol
     sh("nvidia-smi", OUT / "gpu.txt")
     t0 = time.time()
-    # Ollama's installer needs zstd, which Kaggle's image lacks (first run: "requires zstd for extraction")
-    sh("apt-get install -y -q zstd || (apt-get update -q && apt-get install -y -q zstd)", OUT / "ollama_install.log", 600)
-    sh("curl -fsSL https://ollama.com/install.sh | sh", OUT / "ollama_install.log", 900)
-    if sh("command -v ollama", OUT / "ollama_install.log", 30) != 0:
+    if not ol.install(OUT / "ollama_install.log"):
         (OUT / "summary.json").write_text(json.dumps({"error": "ollama did not install; see ollama_install.log"}))
         return
-    env = {**os.environ, "OLLAMA_KEEP_ALIVE": "60m", "OLLAMA_CONTEXT_LENGTH": "32768"}
-    subprocess.Popen(["ollama", "serve"], stdout=open(OUT / "ollama_server.log", "w"), stderr=subprocess.STDOUT, env=env)
-    summary = {"install_s": round(time.time() - t0), "server": wait_server(), "models": {}}
+    saved = ol.link_saved_models()
+    summary = {"install_s": round(time.time() - t0), "saved": saved, "server": ol.serve(OUT / "ollama_server.log"),
+               "checker": CHECKER, "models": {}}
+    summary["checker_model"] = ol.ensure(CHECKER, OUT / "models.log")
     (CODE / "run_script_scenes.py").write_text(SCRIPT_AND_SCENES)
     for model in MODELS:  # noqa: F821
         slug = model.replace(":", "_").replace("/", "_")
         m = summary["models"][model] = {}
         try:
-            t = time.time()
-            m["pull_ok"] = sh(f"ollama pull {model}", OUT / f"{slug}_pull.log", 2400) == 0
-            m["pull_s"] = round(time.time() - t)
+            m["pull"] = ol.ensure(model, OUT / f"{slug}_pull.log")
+            if m["pull"]["source"] == "failed":
+                continue
             run_env = {**os.environ, "LLM_QUALITY_MODELS": f"local:{model}", "LLM_LIGHT_MODELS": f"local:{model}",
-                       "PYTHONUNBUFFERED": "1"}
-            t = time.time()
-            r = subprocess.run([sys.executable, "phase2/eval_factcheck.py", "--out", str(OUT / slug / "factcheck")],
-                               cwd=CODE, env=run_env, timeout=5400, capture_output=True, text=True)
-            (OUT / f"{slug}_factcheck.log").write_text(r.stdout + r.stderr)
-            m["factcheck_s"] = round(time.time() - t)
-            fc = OUT / slug / "factcheck" / "results.json"
-            if fc.exists():
-                s = json.loads(fc.read_text())["summary"]
-                m["factcheck"] = {k: v for k, v in s.items() if k != "llm_calls"}
+                       "LLM_CHECK_MODELS": f"local:{CHECKER}", "PYTHONUNBUFFERED": "1"}
             t = time.time()
             r = subprocess.run([sys.executable, "run_script_scenes.py", str(OUT / slug / "short")], cwd=CODE, env=run_env,
-                               timeout=7200, capture_output=True, text=True)
+                               timeout=5400, capture_output=True, text=True)
             (OUT / f"{slug}_short.log").write_text(r.stdout + r.stderr)
             m["short_s"] = round(time.time() - t)
             sj = OUT / slug / "short" / "summary.json"
@@ -119,10 +131,12 @@ def main() -> None:
                 m["short"] = json.loads(sj.read_text())
         except Exception:  # noqa: BLE001  one model failing must not lose the others
             m["error"] = traceback.format_exc()[-1500:]
-        sh(f"ollama rm {model}", None, 300)  # free the disk for the next model
+        if model not in saved and model != CHECKER:
+            sh(f"ollama rm {model}", None, 300)  # free the disk for the next model
         (OUT / "summary.json").write_text(json.dumps(summary, indent=1))
         print(model, json.dumps(m)[:1000], flush=True)
     (OUT / "summary.json").write_text(json.dumps(summary, indent=1))
+    shutil.rmtree(CODE, ignore_errors=True)
 
 
 main()

@@ -18,8 +18,8 @@ on:
         options: [start, collect, save-models]
         default: start
       models:
-        description: "Ollama models to test (Apache-2.0), space-separated"
-        default: "qwen3:32b gpt-oss:20b"
+        description: "Ollama models to test, space-separated (save-models: the models to keep)"
+        default: "gemma3:27b qwen3-coder:30b qwen2.5-coder:32b mistral-small3.2:24b devstral:24b qwen3:32b"
 
 permissions:
   contents: write
@@ -50,8 +50,11 @@ jobs:
           [[ "$MODELS" =~ ^[a-z0-9.:\ /_-]+$ ]] || { echo "bad model list"; exit 1; }
           git fetch --depth 1 origin bench-results
           mkdir -p bundle/test_inputs k
-          for f in plan.json sources.json script.json; do git show "FETCH_HEAD:cartoon-short/40843120092/meta/$f" > "bundle/test_inputs/$f"; done
-          cp -r yt_auto phase2 bundle/ && mkdir -p bundle/cartoon && cp cartoon/SCENE_API.md cartoon/example_scenes.js cartoon/character.js cartoon/lucide_names.txt bundle/cartoon/ && mkdir -p bundle/cartoon/emoji && cp cartoon/emoji/NAMES.txt bundle/cartoon/emoji/
+          # test 2 inputs: the Titanic plan, sources and the good checked script of run 40903619735
+          for f in plan.json sources.json script.json; do git show "FETCH_HEAD:cartoon-short/40903619735/meta/$f" > "bundle/test_inputs/$f"; done
+          cp -r yt_auto phase2 bundle/ && mkdir -p bundle/cartoon/emoji bundle/cartoon/art bundle/kaggle
+          cp cartoon/*.md cartoon/*.js cartoon/lucide_names.txt bundle/cartoon/ && cp cartoon/emoji/NAMES.txt bundle/cartoon/emoji/
+          cp cartoon/art/library.json bundle/cartoon/art/ && cp kaggle/ollama_setup.py bundle/kaggle/
           find bundle -name __pycache__ -prune -exec rm -rf {} +
           tar czf bundle.tgz -C bundle .
           python3 - "$MODELS" <<'EOF'
@@ -63,7 +66,8 @@ jobs:
           json.dump({"id": f"{os.environ['KAGGLE_USERNAME']}/yt-auto-llm-test", "title": "yt-auto llm test",
                      "code_file": "run.py", "language": "python", "kernel_type": "script", "is_private": "true",
                      "enable_gpu": "true", "enable_internet": "true", "machine_shape": "NvidiaTeslaT4",
-                     "dataset_sources": [], "competition_sources": [], "kernel_sources": [], "model_sources": []},
+                     "dataset_sources": [f"{os.environ['KAGGLE_USERNAME']}/ollama-models"],
+                     "competition_sources": [], "kernel_sources": [], "model_sources": []},
                     open("k/kernel-metadata.json", "w"), indent=1)
           print("run.py", os.path.getsize("k/run.py"), "bytes; models", models)
           EOF
