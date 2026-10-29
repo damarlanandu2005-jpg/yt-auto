@@ -47,7 +47,7 @@ export default {
     stars(s);
     s.text('SIZE CHANGES *EVERYTHING*', { y: 600, size: 70, font: 'display', at: 0.2, out: '#small' });
     // small black hole: stretched before the edge
-    s.text('small black hole', { x: s.cx + 170, y: 330, size: 48, color: 'red', at: '#small' });
+    s.text('small black hole', { x: s.cx + 120, y: 410, size: 48, color: 'red', at: '#small' });
     blackHole(s, { x: s.cx + 200, y: 520, r: 65, at: '#small' });
     hero(s, { x: s.cx - 170, y: 640, scale: 0.42, helmet: true, at: '#small', stretch: () => 1 + 1.0 * s.p('#small', 2.5),
       moves: [{ at: 0, pose: 'fall', face: 'scared' }] });
@@ -78,13 +78,13 @@ export default {
 
   trapped(s) {
     stars(s);
-    blackHole(s, { x: s.cx, y: 720, r: 230, at: 0 });
-    hero(s, { x: s.cx, y: 800, scale: 0.6, helmet: true, at: 0.4, color: '#ffffff',
+    blackHole(s, { x: s.cx, y: 760, r: 210, at: 0 });
+    hero(s, { x: s.cx, y: 830, scale: 0.6, helmet: true, at: 0.4, color: '#ffffff',
       moves: [{ at: 0, pose: 'scared', face: 'scared' }, { at: '#light', pose: 'sad', face: 'sad' }] });
     for (let i = 0; i < 3; i++) { // light tries to get out and bends back in
       const a = -0.9 + i * 0.9;
-      s.arrow([s.cx + 40 * a, 600], [s.cx + 190 * a, 520], { bend: 1.2, color: 'yellow', dashed: true, width: 6, at: s.mark('light') + 0.2 * i });
+      s.arrow([s.cx + 40 * a, 640], [s.cx + 180 * a, 570], { bend: 1.2, color: 'yellow', dashed: true, width: 6, at: s.mark('light') + 0.2 * i });
     }
-    s.text('NO WAY BACK', { y: 330, size: 80, font: 'display', color: 'red', at: 'back' });
+    s.text('NO WAY BACK', { y: 410, size: 80, font: 'display', color: 'red', at: 'back' });
   },
 };
