@@ -94,10 +94,10 @@ export default {
     hero(s, { x: 540, y: 820, scale: 1.1, outline: EDGE, at: 0,
       moves: [{ at: 0, pose: 'fall', face: 'scared' }, { at: 'cold', pose: 'scared', face: 'shocked' },
         { at: 'gasping', pose: 'scared', face: 'scared' }] });
-    s.number(10935, { x: 540, y: 300, size: 96, suffix: ' metres', color: 'yellow', at: 'depth' });
+    s.number(10935, { x: 540, y: 200, size: 96, suffix: ' metres', color: 'yellow', at: 'depth' });
     s.icon('snowflake', { x: 860, y: 520, size: 150, color: 'blue', at: 'cold' });
     bubbles(s, 560, 470, s.cue('gasping'));
-    label(s, '2 MINUTES', { x: 300, y: 520, size: 80, color: 'red', at: 'kill' });
+    label(s, '2 MINUTES', { x: 540, y: 330, size: 80, color: 'red', at: 'kill' });
     words(s);
   },
 

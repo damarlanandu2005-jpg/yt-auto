@@ -13,7 +13,8 @@ export default {
 };
 ```
 
-Every scene: FIRST `background(s, kind)`, LAST `words(s)` (the one-word captions).
+Every scene: FIRST `background(s, kind)` (it also keeps the camera still, so captions are never cut off),
+LAST `words(s)` (the one-word captions). Never call `s.camera` or `s.focus` yourself.
 
 ## Frame (1080 x 1920, the whole screen is the picture)
 

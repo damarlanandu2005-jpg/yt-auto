@@ -110,6 +110,9 @@ const SKIES = {
 };
 
 export function background(s, kind = 'space') {
+  // Keep the camera still: explainroo's automatic camera zoomed into the drawings and cut the captions off
+  // (Mariana Trench Short, render 40862860430). background() is called first in every scene, as the camera needs.
+  if (s.camera) s.camera([]);
   const [top, bottom] = SKIES[kind] || SKIES.space;
   s.draw({ at: 0, enter: 'none', sfx: false }, (ctx) => {
     const g = ctx.createLinearGradient(0, 0, 0, s.H);
