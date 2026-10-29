@@ -1,0 +1,8 @@
+[model] gemini-3.5-flash-lite
+[system]
+
+
+[user]
+Above are 5 frames of a vertical cartoon video, each after its label "Image n:". For EVERY
+image, describe plainly what is drawn and where: the stick figure (pose, face), objects, every piece of text
+(quote it), and whether any text or object covers the stick figure's head or body or is cut off at an edge.

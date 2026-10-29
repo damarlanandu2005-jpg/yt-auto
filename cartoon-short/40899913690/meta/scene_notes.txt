@@ -1,0 +1,5 @@
+hook: stickman on titanic deck in evening chill, then water floods deck as he panics
+step1: liner hits iceberg in North Atlantic, then survivor looks sadly at crowded lifeboat
+step2: crowded poop deck as stern rises, then stickman falls freezing into minus 2 degree ocean
+answer: stickman shivering in icy waters, failing to swim as cold incapacitation takes hold
+end: survivor in a lifeboat solemnly looks back at the Titanic sinking into the dark ocean

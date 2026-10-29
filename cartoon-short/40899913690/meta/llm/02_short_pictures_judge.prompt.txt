@@ -1,0 +1,23 @@
+[model] gemini-3.5-flash-lite
+[system]
+
+
+[user]
+Someone described the last frame of each scene of a cartoon Short WITHOUT knowing the story. Judge each
+scene. A scene has a problem when: text covers the stick figure's head or body; something is cut off at the
+edge; the picture does not show what the narration says (or shows something it doesn't say); an abbreviation
+like "ATM", "km", "x10" is on screen; a number on screen is not in the narration; the picture looks the same as
+the scene before; there is more than one short piece of text; a text says more or stronger than the narration
+("crushed" when it says "injure"); the stick figure is small or hard to see; the drawing does not show the
+thing the narration names. Be concrete: say what to change. If a scene is fine, ok = true and no problems.
+
+Scene hook (Image 1): narration: "What if you were on board the Titanic as it began to sink into the ocean?"
+  described as: A stick figure with a worried face, wide eyes with circular pupils, a wavy mouth, and a sweat drop on the right side of its head, wearing a dark bowler hat and brown coat with a red bow tie, stands on the deck of a ship at night with the ocean and icebergs in the background. No text is present, and no text or object covers the stick figure's head or body, but the bottom portion of its legs is cut off at the bottom edge.
+Scene step1 (Image 2): narration: "In April 1912, the massive liner struck an iceberg in the North Atlantic. You would soon learn that lifeboats could only save 1,178 people."
+  described as: A sad stick figure with a single tear stands in the ocean near a lifeboat filled with people, during sunset. There is text '1,178 PEOPLE' at the top and 'PEOPLE' at the bottom. The text '1,178 PEOPLE' is above the stick figure's head, and 'PEOPLE' is below its feet; neither covers the stick figure's body.
+Scene step2 (Image 3): narration: "Many passengers and crew gathered on the rear poop deck as the ship sank. As the ship went under, you would plunge into minus 2 degrees Celsius water."
+  described as: A stick figure with a chattering teeth face and a sweat drop on the right side of its head stands in the middle of stormy, churning ocean waves under a dark, stormy sky. The text 'MINUS 2 DEGREES' is at the top above the stick figure, and the text 'WATER' is at the bottom below its feet. Neither text covers the stick figure's body.
+Scene answer (Image 4): narration: "Cold incapacitation would disable your limbs, leaving you unable to swim."
+  described as: A sad stick figure with a single tear and its arms slightly raised stands underwater on the seabed surrounded by rocks and glowing particles. The text 'UNABLE TO SWIM' is at the top, positioned above the stick figure's head without covering it or its body.
+Scene end (Image 5): narration: "Let's consider the sinking of the Titanic."
+  described as: A sad stick figure with a neutral-to-downturned mouth stands on the surface of the calm, sunlit ocean during a vivid sunset with clouds. No text is present, and nothing covers the stick figure's head or body.

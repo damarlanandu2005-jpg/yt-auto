@@ -1,0 +1,16 @@
+{
+ "seen": {
+  "hook": "A vertical cartoon video frame showing a dark night scene on the deck of a ship like the Titanic. In the foreground, a stick figure character wearing a brown coat and a black bowler hat stands with a worried facial expression, teeth chattering or mouth wavy, and a drop of sweat on the right side of his head. He holds his hat with one hand. The background shows the wooden deck, a railing on the right, lifeboats on the left, and dark blue ocean and mountains in the distance. No text is present in this image.",
+  "step1": "A vertical cartoon video frame depicting a sunset over the ocean. On the right, the same stick figure with a brown coat and bowler hat stands looking sad with a tear on his cheek. To his left is a wooden lifeboat filled with many small stick figure passengers. Below the boat, the word \"PEOPLE\" is written in bold white capital letters inside a black rectangular background. The text does not cover the stick figure's head or body.",
+  "step2": "A vertical cartoon video frame showing a stormy blue ocean with rough waves under a dark sky. The stick figure stands in the center wearing his brown coat and bowler hat, shivering with a nervous, chattering expression and a sweat drop. Above him on the left is a white snowflake icon, and on the right is a white thermometer icon. Below the stick figure, the word \"WATER\" is written in bold white capital letters with a black outline. The text does not cover the stick figure's body or head.",
+  "answer": "A vertical cartoon video frame set underwater in the deep blue ocean with rocky seabeds and glowing spots. The stick figure is floating or sinking underwater, wearing his brown coat and bowler hat, with a sad face and a tear on his cheek, arms raised slightly. Near the top, the text \"UNABLE TO SWIM\" is written in bold red capital letters. The text does not cover the stick figure's head or body.",
+  "end": "A vertical cartoon video frame showing a sunset sky and ocean with a large ship looming diagonally from the upper left corner. In the middle-right, the stick figure stands alone inside a small wooden lifeboat, wearing his brown coat and bowler hat, looking sad. No text is present in this image."
+ },
+ "problems": {
+  "hook": [],
+  "step1": [],
+  "step2": [],
+  "answer": [],
+  "end": []
+ }
+}

@@ -1,0 +1,50 @@
+voice hook: 4.1s in 5.0s
+voice step1: 10.4s in 9.4s
+voice step2: 9.4s in 7.5s
+voice answer: 5.0s in 3.6s
+voice end: 2.3s in 2.3s
+hook                 4.1s  100% confirmed
+step1               10.4s  100% confirmed
+step2                9.4s  96% confirmed  unconfirmed: minus
+answer               5.0s  100% confirmed
+end                  2.3s  100% confirmed
+total 38.7s
+WARN  step2: the voice check could not confirm "minus". It heard: "Many passengers and crew gathered on the rear poop deck as the ship sank. As the ship went under, you would plunge into -2 degrees celsius water.". If a word is mispronounced, write it as {shown|spoken} in script.md.
+0 error(s), 1 other finding(s) in 5 scenes (38.7s)
+hook@end                 /home/runner/explainroo/videos/short/out/stills/hook@end.png
+step1@end                /home/runner/explainroo/videos/short/out/stills/step1@end.png
+step2@end                /home/runner/explainroo/videos/short/out/stills/step2@end.png
+answer@end               /home/runner/explainroo/videos/short/out/stills/answer@end.png
+end@end                  /home/runner/explainroo/videos/short/out/stills/end@end.png
+/home/runner/explainroo/videos/short/out/sheet.jpg (31 frames)
+rendering 38.7s (1161 frames at 30 fps, 1080x1920) with 2 workers
+soundtrack: 6 sound cues, mixed in 2.0s
+frames 60/1161 (19.8 fps, about 56s left)
+frames 150/1161 (24.7 fps, about 41s left)
+frames 228/1161 (25.1 fps, about 38s left)
+frames 300/1161 (23.4 fps, about 37s left)
+frames 330/1161 (20.4 fps, about 41s left)
+frames 378/1161 (19.5 fps, about 41s left)
+frames 408/1161 (17.8 fps, about 43s left)
+frames 444/1161 (17.0 fps, about 43s left)
+frames 486/1161 (16.6 fps, about 41s left)
+frames 516/1161 (15.5 fps, about 42s left)
+frames 582/1161 (16.0 fps, about 37s left)
+frames 648/1161 (16.4 fps, about 32s left)
+frames 732/1161 (17.2 fps, about 25s left)
+frames 780/1161 (17.0 fps, about 23s left)
+frames 840/1161 (17.0 fps, about 19s left)
+frames 894/1161 (17.0 fps, about 16s left)
+frames 936/1161 (16.8 fps, about 14s left)
+frames 990/1161 (16.7 fps, about 11s left)
+frames 1044/1161 (16.8 fps, about 7s left)
+frames 1120/1161 (17.1 fps, about 3s left)
+frames done in 69.5s
+wrote videos/short/out/video.mp4 in 75.5s
+videos/short/out/video.mp4
+videos/short/out/video.srt
+videos/short/out/video.vtt
+videos/short/out/video.cover.jpg
+checking that the narration is understandable in the final mix
+/home/runner/explainroo/videos/short/out/video.mp4: 38.7s, 1080x1920, loudness -14 LUFS, true peak -1.4 dBFS
+narration understood: 99%
