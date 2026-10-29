@@ -265,3 +265,42 @@ export function thing(s, name, o = {}) {
   });
   return { x: o.x, y: o.y, w: r * 2, h: r * 2 };
 }
+
+// Twemoji drawings (CC BY 4.0, owner's choice 29 Oct) for animals and objects we have not drawn ourselves:
+// emoji(s, 'shark', { x, y, size, at, out, enter, rotate, flip }). Names: cartoon/emoji/NAMES.txt. The file is
+// copied into the project's assets/emoji/ before rendering. Each gets the white sticker edge the stickman has, so
+// they look like one family; the outlined picture is made once per name and size, then reused every frame.
+const STICKERS = new Map();
+function sticker(img, size) {
+  const key = img.src + '|' + size;
+  if (STICKERS.has(key)) return STICKERS.get(key);
+  const edge = Math.max(4, Math.round(size * 0.045));
+  const c = document.createElement('canvas');
+  c.width = c.height = size + edge * 2 + 2;
+  const g = c.getContext('2d');
+  for (let i = 0; i < 16; i++) {  // white silhouette: the picture drawn around a circle, then painted white
+    const a = (i / 16) * Math.PI * 2;
+    g.drawImage(img, edge + 1 + Math.cos(a) * edge, edge + 1 + Math.sin(a) * edge, size, size);
+  }
+  g.globalCompositeOperation = 'source-in';
+  g.fillStyle = '#ffffff';
+  g.fillRect(0, 0, c.width, c.height);
+  g.globalCompositeOperation = 'source-over';
+  g.drawImage(img, edge + 1, edge + 1, size, size);
+  STICKERS.set(key, c);
+  return c;
+}
+
+export function emoji(s, name, o = {}) {
+  const size = Math.round(o.size ?? 240);
+  const img = s.engine.image(`assets/emoji/${name}.svg`);
+  s.draw({ x: o.x ?? s.W / 2, y: o.y ?? s.H / 2, at: o.at ?? 0, out: o.out, enter: o.enter ?? 'pop', id: o.id }, (ctx) => {
+    const pic = sticker(img, size);
+    ctx.save();
+    if (o.rotate) ctx.rotate((o.rotate * Math.PI) / 180);
+    if (o.flip) ctx.scale(-1, 1);
+    ctx.drawImage(pic, -pic.width / 2, -pic.height / 2);
+    ctx.restore();
+  });
+  return { x: o.x, y: o.y, w: size, h: size };
+}

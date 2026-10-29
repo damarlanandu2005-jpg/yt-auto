@@ -7,7 +7,7 @@ Never keep state, never use timers, never use `Math.random()` (use `s.rand(i)`),
 
 ```js
 import { hero } from './character.js';
-import { background, thing, label, words, blackHole } from './props.js';
+import { background, thing, emoji, label, words, blackHole } from './props.js';
 export default {
   sceneId(s) { background(s, 'ocean'); /* ...pictures... */ words(s); },  // one function per "## sceneId"
 };
@@ -51,6 +51,10 @@ hero(s, { x: 540, y: 1300, scale: 1.4, outline: '#ffffff', at: 0,
 - `thing(s, name, { x, y, size, at, out, rotate })`: sun, earth, moon, ship, wave, mountain, volcano, tree, house,
   fire, drop, heart, brain, clock, rock, fish, rocket, question. `size` = width in px (60-400).
 - `blackHole(s, { x, y, r, at })`.
+- `emoji(s, name, { x, y, size, at, out, rotate, flip })`: a colourful cartoon drawing (Twemoji) with a white
+  sticker edge, for animals and objects that `thing` does not have: 'shark', 'whale', 't_rex', 'lungs',
+  'passenger_ship', 'skull', 'volcano'... ONLY names from the EMOJI NAMES list below (checked in code). `size` =
+  width in px (120-500). `flip: true` turns it to face the other way. Use a `thing` when one fits, an emoji when not.
 - `label(s, 'SHORT TEXT', { x, y, size, color, at, out })`: bold text with a black edge, readable on any
   background. color: yellow, red, green, blue or white. Max 3-4 words. Never repeat the narration sentence.
 - `words(s)`: the captions. Call it last in EVERY scene.
@@ -73,7 +77,7 @@ hero(s, { x: 540, y: 1300, scale: 1.4, outline: '#ffffff', at: 0,
 - At most ONE `label` per scene, at most 4 words, and ONLY words the voice says in that scene (checked in code:
   a label that says "crushed" when the voice says "injure" is rejected). No `s.text`, `s.note`, `s.title`, `s.list`.
 - Every scene shows the stickman (`hero`, scale 0.9-1.8) AND a drawing of what the voice talks about:
-  `thing(...)`, `blackHole(...)`, an icon, arrows, or your own simple `s.draw` drawing (a lung, a trench, a
+  `thing(...)`, `emoji(...)`, `blackHole(...)`, an icon, arrows, or your own simple `s.draw` drawing (a lung, a trench, a
   wave, a body outline: flat colours and a thick black outline, like the props).
 
 ## Good pictures

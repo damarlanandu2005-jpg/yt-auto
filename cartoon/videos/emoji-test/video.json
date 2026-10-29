@@ -1,0 +1,9 @@
+{
+  "title": "Emoji render test",
+  "theme": "space-look.json",
+  "size": "9:16",
+  "voice": "af_heart",
+  "music": false,
+  "captions": false,
+  "watermark": false
+}

@@ -168,7 +168,7 @@ def script_md(script: dict, sources: dict) -> str:
     return "\n".join(lines)
 
 
-def description(script: dict, sources: dict) -> str:
+def description(script: dict, sources: dict, scenes_js: str = "") -> str:
     used = {pid for sc in script["scenes"] for s in sc["sentences"] for pid in s.get("sources", [])}
     idx = passage_index(sources)
     arts = {}
@@ -181,7 +181,9 @@ def description(script: dict, sources: dict) -> str:
     tags = " ".join("#" + w for w in [w for w in re.findall(r"[a-z]{4,}", script["title"].lower()) if w not in stop][:3])
     return "\n".join([script["title"] + " The stickman finds out.", "", "Sources (facts checked):"]
                      + [f'Wikipedia, "{t}": {u}' for t, u in arts.items()]
-                     + ["", "Voice: text-to-speech. Icons: Lucide (ISC licence).", "", f"#shorts #stickman {tags}".strip()]) + "\n"
+                     + ["", "Voice: text-to-speech. Icons: Lucide (ISC licence)."
+                        + (" Emoji: Twemoji by Twitter and contributors (CC BY 4.0)." if used_emoji(scenes_js) else ""),
+                        "", f"#shorts #stickman {tags}".strip()]) + "\n"
 
 
 def scene_texts(script: dict) -> dict[str, str]:
@@ -189,7 +191,8 @@ def scene_texts(script: dict) -> dict[str, str]:
 
 
 def write_scenes(script: dict, md: str, feedback: str = "", previous: str = "") -> dict:
-    api = (CARTOON / "SCENE_API.md").read_text()
+    api = ((CARTOON / "SCENE_API.md").read_text()
+           + "\n\n## EMOJI NAMES (the only names emoji() accepts)\n\n" + (EMOJI_DIR / "NAMES.txt").read_text())
     example = (CARTOON / "example_scenes.js").read_text()
     ask = f"""Write scenes.js for this Short. Scene ids, in order: {', '.join(scene_ids(script))}.
 
@@ -221,6 +224,28 @@ PREVIOUS scenes.js:
 FORBIDDEN = [r"\bfetch\s*\(", r"\beval\s*\(", r"\bFunction\s*\(", r"\bdocument\b", r"\bwindow\b", r"\bglobalThis\b",
              r"\bsetTimeout\b", r"\bsetInterval\b", r"\brequire\s*\(", r"Math\.random", r"\.filter\s*=", r"\bimport\s*\(",
              r"\bXMLHttpRequest\b", r"\bWebSocket\b", r"\blocalStorage\b"]
+
+
+EMOJI_DIR = CARTOON / "emoji"   # Twemoji (CC BY 4.0), chosen by the owner 29 Oct: animals and objects we have not drawn
+EMOJI_CALL = re.compile(r"\bemoji\(\s*s\s*,\s*['\"]([\w-]+)['\"]")
+
+
+def emoji_names() -> set[str]:
+    return set((EMOJI_DIR / "NAMES.txt").read_text().split())  # the list travels to Kaggle; the 945 files do not
+
+
+def used_emoji(js: str) -> list[str]:
+    return sorted(set(EMOJI_CALL.findall(js)))
+
+
+def copy_emoji(js: str, project: Path) -> list[str]:
+    """Copy the emoji a scenes.js uses into the project's assets/emoji/ (explainroo loads only assets/)."""
+    names = [n for n in used_emoji(js) if (EMOJI_DIR / f"{n}.svg").exists()]
+    if names:
+        (project / "assets" / "emoji").mkdir(parents=True, exist_ok=True)
+        for n in names:
+            (project / "assets" / "emoji" / f"{n}.svg").write_bytes((EMOJI_DIR / f"{n}.svg").read_bytes())
+    return names
 
 
 def _norm(w: str) -> str:
@@ -275,12 +300,15 @@ def validate_scenes(js: str, script: dict) -> list[str]:
             problems.append(f"{sid}: no stickman: every scene shows hero(...)")
         # own helper functions defined in the file (e.g. bubbles(s, ...)) that draw count too
         helpers = [h for h in re.findall(r"^function\s+(\w+)\s*\(s\b", js, re.M)]
-        drawn = r"\b(thing|blackHole" + "".join(f"|{h}" for h in helpers) + r")\(|s\.(draw|icon|circle|path|line|arrow|number)\("
+        drawn = r"\b(thing|emoji|blackHole" + "".join(f"|{h}" for h in helpers) + r")\(|s\.(draw|icon|circle|path|line|arrow|number)\("
         if not re.search(drawn, body):
             problems.append(f"{sid}: nothing is drawn besides the stickman: draw what the narration talks about")
         sc = re.search(r"hero\(s,\s*\{[^}]*?scale:\s*([\d.]+)", body)
         if sc and float(sc.group(1)) < 0.8:
             problems.append(f"{sid}: the stickman is too small (scale {sc.group(1)}); use 0.9 to 1.8")
+        for n in used_emoji(body):
+            if n not in emoji_names():
+                problems.append(f"{sid}: emoji '{n}' does not exist (use a name from the emoji list, or thing()/your own drawing)")
         for mark in re.findall(r"(?:at|out)\s*:\s*'#(\w+)'|s\.mark\('(\w+)'\)", body):
             problems.append(f"{sid}: uses a [#marker] ({''.join(mark)}); script.md has no markers, use spoken words")
     try:
@@ -296,6 +324,7 @@ def write_project(out: Path, script: dict, sources: dict, scenes_js: str) -> Non
     out.mkdir(parents=True, exist_ok=True)
     (out / "script.md").write_text(script_md(script, sources), encoding="utf-8")
     (out / "scenes.js").write_text(scenes_js, encoding="utf-8")
+    copy_emoji(scenes_js, out)
     (out / "video.json").write_text(json.dumps({
         "title": script["title"], "theme": "space-look.json", "size": "9:16", "voice": "af_heart",
         "music": True, "captions": False, "watermark": False}, indent=2) + "\n", encoding="utf-8")

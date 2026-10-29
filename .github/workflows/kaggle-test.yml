@@ -51,7 +51,7 @@ jobs:
           git fetch --depth 1 origin bench-results
           mkdir -p bundle/test_inputs k
           for f in plan.json sources.json script.json; do git show "FETCH_HEAD:cartoon-short/40843120092/meta/$f" > "bundle/test_inputs/$f"; done
-          cp -r yt_auto phase2 bundle/ && mkdir -p bundle/cartoon && cp cartoon/SCENE_API.md cartoon/example_scenes.js bundle/cartoon/
+          cp -r yt_auto phase2 bundle/ && mkdir -p bundle/cartoon && cp cartoon/SCENE_API.md cartoon/example_scenes.js bundle/cartoon/ && mkdir -p bundle/cartoon/emoji && cp cartoon/emoji/NAMES.txt bundle/cartoon/emoji/
           find bundle -name __pycache__ -prune -exec rm -rf {} +
           tar czf bundle.tgz -C bundle .
           python3 - "$MODELS" <<'EOF'

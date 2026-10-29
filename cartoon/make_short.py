@@ -96,7 +96,7 @@ def write(args) -> None:
     report["scene_problems"] = problems
     print(f"[scenes] {'ok' if not problems else problems}", flush=True)
     cartoon.write_project(out / "project", script, sources, js)
-    (out / "description.txt").write_text(cartoon.description(script, sources), encoding="utf-8")
+    (out / "description.txt").write_text(cartoon.description(script, sources, js), encoding="utf-8")
     report["llm_calls"] = len(llm.LOG)
     old = json.loads((meta / "report.json").read_text()) if (meta / "report.json").exists() else {}
     # a rerun resumes from cached stages (e.g. after Kaggle): keep the models that wrote them
@@ -151,6 +151,8 @@ def fix(args) -> None:
     else:
         Path(out / "fixed").write_text("1")
     (out / "project" / "scenes.js").write_text(js, encoding="utf-8")
+    cartoon.copy_emoji(js, out / "project")  # the fixed scenes may use other emoji
+    (out / "description.txt").write_text(cartoon.description(script, sources, js), encoding="utf-8")
     report["fix_problems"] = problems
     (meta / "report.json").write_text(json.dumps(report, indent=1, ensure_ascii=False), encoding="utf-8")
     print(f"[fix] {len(errors)} layout error(s), {len(pictures)} picture problem(s) sent back to the scene writer", flush=True)

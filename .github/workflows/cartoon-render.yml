@@ -88,6 +88,7 @@ jobs:
           mkdir -p videos out
           cp -r "$GITHUB_WORKSPACE/in/project" "videos/$P"
           cp "$GITHUB_WORKSPACE"/cartoon/*.js "$GITHUB_WORKSPACE"/cartoon/*.json "videos/$P/"   # character, props, look
+          python3 "$GITHUB_WORKSPACE/cartoon/copy_emoji.py" "videos/$P"   # Twemoji files the scenes use
           x() { echo "::group::$*"; node bin/explainroo.js "$@" 2>&1 | tee -a out/log.txt; echo "::endgroup::"; }
           x voice "videos/$P"
           x check "videos/$P" || true

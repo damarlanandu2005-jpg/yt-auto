@@ -70,6 +70,7 @@ jobs:
           mkdir -p bundle/cartoon bundle/kaggle k
           cp -r yt_auto bundle/ && cp kaggle/ollama_setup.py bundle/kaggle/
           cp cartoon/make_short.py cartoon/SCENE_API.md cartoon/example_scenes.js cartoon/TEMPLATE.md bundle/cartoon/
+          mkdir -p bundle/cartoon/emoji && cp cartoon/emoji/NAMES.txt bundle/cartoon/emoji/   # names only; files are added at render
           find bundle -name __pycache__ -prune -exec rm -rf {} +
           tar czf bundle.tgz -C bundle .
           # the saved models (kaggle-test.yml action=save-models); `datasets status` answered 403 right after the
