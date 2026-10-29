@@ -1,0 +1,37 @@
+{
+  "file": "/home/runner/explainroo/videos/emoji-test/out/video.mp4",
+  "duration": 9.47,
+  "video": {
+    "width": 1080,
+    "height": 1920,
+    "fps": "30/1",
+    "codec": "h264"
+  },
+  "audio": {
+    "codec": "aac",
+    "sampleRate": 48000,
+    "channels": 2
+  },
+  "loudness": {
+    "integrated": -14,
+    "range": 4.2,
+    "truePeak": -1.5
+  },
+  "blackSegments": [],
+  "silences": [],
+  "speech": {
+    "matchRate": 1,
+    "transcript": "A shark swims past the stickman in the deep blue sea. Then a dinosaur walks by a smoking volcano.",
+    "scenes": [
+      {
+        "id": "hook",
+        "matchRate": 1
+      },
+      {
+        "id": "end",
+        "matchRate": 1
+      }
+    ]
+  },
+  "issues": []
+}

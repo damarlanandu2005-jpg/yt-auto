@@ -1,0 +1,31 @@
+ok   node                 v22.23.4
+ok   ffmpeg               ffmpeg version n8.1.3-24-g92611900bb-20261026 Copyright (c) 2000-2026 the FFmpeg developers
+ok   espeak-ng            not found; only needed for Spanish, French, Italian, Portuguese and Hindi
+ok   misaki ja            not found; only needed for Japanese
+ok   misaki zh            not found; only needed for Chinese
+ok   chrome               /usr/bin/google-chrome
+ok   voice model          Kokoro 82M (fp32) in /home/runner/.cache/explainroo/models/onnx-community
+ok   speech check model   Whisper base.en
+FAIL language model       Whisper small for languages other than English; downloaded on first use, not by --fetch
+voice hook: 3.1s in 3.3s
+voice end: 2.9s in 2.2s
+hook                 3.1s  100% confirmed
+end                  2.9s  100% confirmed
+total 9.5s
+no problems found in 2 scenes (9.5s)
+hook@end                 /home/runner/explainroo/videos/emoji-test/out/stills/hook@end.png
+end@end                  /home/runner/explainroo/videos/emoji-test/out/stills/end@end.png
+/home/runner/explainroo/videos/emoji-test/out/sheet.jpg (19 frames)
+rendering 9.5s (284 frames at 30 fps, 1080x1920) with 2 workers
+soundtrack: 1 sound cues, mixed in 0.2s
+frames 114/284 (35.6 fps, about 5s left)
+frames 228/284 (36.0 fps, about 2s left)
+frames done in 10.1s
+wrote videos/emoji-test/out/video.mp4 in 12.7s
+videos/emoji-test/out/video.mp4
+videos/emoji-test/out/video.srt
+videos/emoji-test/out/video.vtt
+videos/emoji-test/out/video.cover.jpg
+checking that the narration is understandable in the final mix
+/home/runner/explainroo/videos/emoji-test/out/video.mp4: 9.47s, 1080x1920, loudness -14 LUFS, true peak -1.5 dBFS
+narration understood: 100%

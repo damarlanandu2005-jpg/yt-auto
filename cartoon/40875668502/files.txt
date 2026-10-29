@@ -1,0 +1,12 @@
+videos/emoji-test/video.json
+videos/emoji-test/out/video.srt
+videos/emoji-test/out/video.mp4
+videos/emoji-test/out/report.json
+videos/emoji-test/out/stills/end@end.png
+videos/emoji-test/out/stills/hook@end.png
+videos/emoji-test/out/sheet.jpg
+videos/emoji-test/out/video.cover.jpg
+videos/emoji-test/space-look.json
+videos/emoji-test/build/timeline.json
+videos/emoji-test/build/voice/hook.json
+videos/emoji-test/build/voice/end.json

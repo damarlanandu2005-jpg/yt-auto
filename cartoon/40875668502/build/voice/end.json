@@ -1,0 +1,74 @@
+{
+  "hash": "f48c5dac3d8998e6",
+  "id": "end",
+  "duration": 2.865,
+  "words": [
+    {
+      "text": "Then",
+      "spoken": "Then",
+      "start": 0,
+      "end": 0.2,
+      "matched": true
+    },
+    {
+      "text": "a",
+      "spoken": "a",
+      "start": 0.2,
+      "end": 0.3,
+      "matched": true
+    },
+    {
+      "text": "dinosaur",
+      "spoken": "dinosaur",
+      "start": 0.3,
+      "end": 0.78,
+      "matched": true
+    },
+    {
+      "text": "walks",
+      "spoken": "walks",
+      "start": 0.78,
+      "end": 1.18,
+      "matched": true
+    },
+    {
+      "text": "by",
+      "spoken": "by",
+      "start": 1.18,
+      "end": 1.54,
+      "matched": true
+    },
+    {
+      "text": "a",
+      "spoken": "a",
+      "start": 1.54,
+      "end": 1.64,
+      "matched": true
+    },
+    {
+      "text": "smoking",
+      "spoken": "smoking",
+      "start": 1.64,
+      "end": 1.86,
+      "matched": true
+    },
+    {
+      "text": "volcano.",
+      "spoken": "volcano.",
+      "start": 1.86,
+      "end": 2.34,
+      "matched": true
+    }
+  ],
+  "marks": {},
+  "chunks": [
+    {
+      "start": 0,
+      "end": 2.865,
+      "text": "Then a dinosaur walks by a smoking volcano."
+    }
+  ],
+  "transcript": "then a dinosaur walks by a smoking volcano.",
+  "matchRate": 1,
+  "unmatched": []
+}

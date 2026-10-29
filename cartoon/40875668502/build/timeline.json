@@ -1,0 +1,152 @@
+{
+  "fps": 30,
+  "width": 1080,
+  "height": 1920,
+  "duration": 9.466666666666667,
+  "frames": 284,
+  "transitionSeconds": 0.7,
+  "pace": 1,
+  "scenes": [
+    {
+      "id": "hook",
+      "index": 0,
+      "start": 0,
+      "dur": 4.166666666666667,
+      "lead": 0.35,
+      "text": "A shark swims past the stickman in the deep blue sea.",
+      "transition": "none",
+      "voice": {
+        "url": "build/voice/hook.wav",
+        "start": 0.35,
+        "dur": 3.125
+      },
+      "words": [
+        {
+          "text": "A",
+          "start": 0.35,
+          "end": 0.44999999999999996
+        },
+        {
+          "text": "shark",
+          "start": 0.44999999999999996,
+          "end": 0.6699999999999999
+        },
+        {
+          "text": "swims",
+          "start": 0.6699999999999999,
+          "end": 1.19
+        },
+        {
+          "text": "past",
+          "start": 1.19,
+          "end": 1.4300000000000002
+        },
+        {
+          "text": "the",
+          "start": 1.4300000000000002,
+          "end": 1.65
+        },
+        {
+          "text": "stickman",
+          "start": 1.65,
+          "end": 2.03
+        },
+        {
+          "text": "in",
+          "start": 2.03,
+          "end": 2.35
+        },
+        {
+          "text": "the",
+          "start": 2.35,
+          "end": 2.45
+        },
+        {
+          "text": "deep",
+          "start": 2.45,
+          "end": 2.69
+        },
+        {
+          "text": "blue",
+          "start": 2.69,
+          "end": 2.95
+        },
+        {
+          "text": "sea.",
+          "start": 2.95,
+          "end": 3.25
+        }
+      ],
+      "marks": {},
+      "attrs": {}
+    },
+    {
+      "id": "end",
+      "index": 1,
+      "start": 4.166666666666667,
+      "dur": 5.3,
+      "lead": 0.35,
+      "text": "Then a dinosaur walks by a smoking volcano.",
+      "transition": "auto",
+      "voice": {
+        "url": "build/voice/end.wav",
+        "start": 4.516666666666667,
+        "dur": 2.865
+      },
+      "words": [
+        {
+          "text": "Then",
+          "start": 0.35,
+          "end": 0.55
+        },
+        {
+          "text": "a",
+          "start": 0.55,
+          "end": 0.6499999999999999
+        },
+        {
+          "text": "dinosaur",
+          "start": 0.6499999999999999,
+          "end": 1.13
+        },
+        {
+          "text": "walks",
+          "start": 1.13,
+          "end": 1.5299999999999998
+        },
+        {
+          "text": "by",
+          "start": 1.5299999999999998,
+          "end": 1.8900000000000001
+        },
+        {
+          "text": "a",
+          "start": 1.8900000000000001,
+          "end": 1.9899999999999998
+        },
+        {
+          "text": "smoking",
+          "start": 1.9899999999999998,
+          "end": 2.21
+        },
+        {
+          "text": "volcano.",
+          "start": 2.21,
+          "end": 2.69
+        }
+      ],
+      "marks": {},
+      "attrs": {}
+    }
+  ],
+  "voiceSpans": [
+    {
+      "start": 0.35,
+      "end": 3.475
+    },
+    {
+      "start": 4.516666666666667,
+      "end": 7.381666666666667
+    }
+  ]
+}

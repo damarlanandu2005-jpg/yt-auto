@@ -1,0 +1,10 @@
+1
+00:00:00,350 --> 00:00:03,500
+A shark swims past the
+stickman in the deep blue sea.
+
+2
+00:00:04,517 --> 00:00:07,107
+Then a dinosaur walks
+by a smoking volcano.
+
