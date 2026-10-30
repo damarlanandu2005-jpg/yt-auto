@@ -1,9 +1,9 @@
 {
- "started": "2026-10-30T20:18:39Z",
+ "started": "2026-10-30T20:45:13Z",
  "seconds": {
-  "qwen8_bf16_01.png": 1.6,
+  "qwen8_bf16_01.png": 2.4,
   "qwen8_bf16_04.png": 0.4,
-  "qwen8_bf16_07.png": 0.4
+  "qwen8_bf16_07.png": 0.3
  },
  "errors": [
   "qwen8_bf16_01.png: cal/lib/python3.13/dist-packages/accelerate/hooks.py\", line 187, in new_forward\n    args, kwargs = module._hf_hook.pre_forward(module, *args, **kwargs)\n                   ~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/usr/local/lib/python3.13/dist-packages/accelerate/hooks.py\", line 50, in wrapper\n    return wrapper._compiled_fn(*args, **kwargs)\n           ~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^\n  File \"/usr/local/lib/python3.13/dist-packages/torch/_dynamo/eval_frame.py\", line 1263, in _fn\n    return fn(*args, **kwargs)\n  File \"/usr/local/lib/python3.13/dist-packages/accelerate/hooks.py\", line 388, in pre_forward\n    set_module_tensor_to_device(\n    ~~~~~~~~~~~~~~~~~~~~~~~~~~~^\n        module,\n        ^^^^^^^\n    ...<4 lines>...\n        tied_params_map=self.tied_params_map,\n        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n    )\n    ^\n  File \"/usr/local/lib/python3.13/dist-packages/accelerate/utils/modeling.py\", line 374, in set_module_tensor_to_device\n    new_value = param_cls(new_value, requires_grad=old_value.requires_grad, **kwargs).to(\n        device, non_blocking=non_blocking\n    )\n  File \"/usr/local/lib/python3.13/dist-packages/bitsandbytes/nn/modules.py\", line 431, in to\n    self.quant_state.to(device)\n    ~~~~~~~~~~~~~~~~~~~^^^^^^^^\n  File \"/usr/local/lib/python3.13/dist-packages/bitsandbytes/functional.py\", line 582, in to\n    self.code = self.code.to(device)\n                ~~~~~~~~~~~~^^^^^^^^\nNotImplementedError: Cannot copy out of meta tensor; no data!\n",
@@ -60,7 +60,7 @@
  "transformer_device": "cuda:0",
  "execution_device": "cuda:0",
  "vae_image_size_was": 1048576,
- "load_s": 112,
+ "load_s": 125,
  "vram_after_load_gb": [
   11.0,
   4.7
@@ -154,8 +154,8 @@
   "torch.float16": "816 4-bit layers"
  },
  "variant_setup_s": {
-  "bf16": 28
+  "bf16": 30
  },
  "pictures": [],
- "total_s": 256
+ "total_s": 301
 }
