@@ -76,7 +76,7 @@ def main() -> None:
     def load_transformer():
         return getattr(diffusers, index["transformer"][1]).from_pretrained(
             REPO, subfolder="transformer", torch_dtype=torch.bfloat16, device_map="auto",
-            max_memory={0: "7GiB", 1: "5GiB"})
+            max_memory={0: "7.5GiB", 1: "9.5GiB"})  # run 9: 7+5 (and run 2: 8.5+3.5) failed the size check
         # runs 4-6 failed with meta tensors (cause: the Lightning LoRA / newer torchao, not the split); run 8 had the
         # whole ~11 GiB transformer on GPU 0 and attention needed 4.1 GiB with 2.6 free. Split it again ~7 + 4.
     tr = load_transformer()
