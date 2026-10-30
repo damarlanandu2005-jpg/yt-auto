@@ -123,8 +123,10 @@ def main() -> None:
     torch.cuda.empty_cache()
 
     t = time.time()
+    # Run 2: 'auto' filled GPU 0 (12.9 GiB) and left 4.2 on GPU 1, so drawing had 0.8 GiB free on GPU 0 and every
+    # attention step (2-3 GiB) ran out. Cap each card lower so the ~17 GiB transformer is spread ~8.5 + 8.5.
     tr = Flux2Transformer2DModel.from_pretrained(REPO, subfolder="transformer", torch_dtype=dtype, device_map="auto",
-                                                 max_memory=cap)
+                                                 max_memory={0: "8.5GiB", 1: "10GiB"})
     pipe.transformer = tr
     pipe.vae.to("cuda:0")
     JOB["transformer_load_s"] = round(time.time() - t)
