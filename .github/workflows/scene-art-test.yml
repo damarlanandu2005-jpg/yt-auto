@@ -3,6 +3,7 @@ name: Scene picture test (AI draws the whole scene)
 # Owner 'go' (30 Oct): the same 8 Titanic scenes drawn 3 ways, to fix the "pasted stickman" look
 # (cartoon/scene_art_test/prompts.json):
 #   action = start   : Cloudflare FLUX draws 8 (words only) now; Kaggle SDXL + IP-Adapter (logo reference) starts
+#   engine = flux2 : kaggle/flux2_kernel.py (kernel yt-auto-flux2), references from cartoon/character_refs/
 #   action = cloudflare : only the Cloudflare part again (Kaggle untouched)
 #   action = collect : (~40-60 min later) fetches Kaggle's pictures; adds the owner's ChatGPT pictures if they are in
 #                      cartoon/scene_art_test/chatgpt/; makes one comparison sheet
@@ -16,6 +17,11 @@ on:
         type: choice
         options: [start, collect, cloudflare]
         default: start
+      engine:
+        description: "Kaggle picture model: flux2 = FLUX.2 [dev] 32B with the stickman references (owner, 30 Oct); sdxl = old test"
+        type: choice
+        options: [flux2, sdxl]
+        default: flux2
 
 permissions:
   contents: write
@@ -53,7 +59,7 @@ jobs:
           mkdir -p results/scene-art-test/pictures
 
       - name: Cloudflare FLUX, 8 pictures (words only)
-        if: inputs.action == 'start' || inputs.action == 'cloudflare'
+        if: (inputs.action == 'start' && inputs.engine == 'sdxl') || inputs.action == 'cloudflare'
         timeout-minutes: 8
         env:
           CLOUDFLARE_API_TOKEN: ${{ secrets.CLOUDFLARE_API_TOKEN }}
@@ -64,7 +70,7 @@ jobs:
           cp out/flux/cloudflare.json results/scene-art-test/
 
       - name: Start Kaggle SDXL + IP-Adapter
-        if: inputs.action == 'start'
+        if: inputs.action == 'start' && inputs.engine == 'sdxl'
         timeout-minutes: 8
         run: |
           set -e
@@ -85,18 +91,54 @@ jobs:
           sleep 20
           kaggle kernels status "$KAGGLE_USERNAME/yt-auto-scene-art" || true
 
+      - name: Start Kaggle FLUX.2 [dev] 32B
+        if: inputs.action == 'start' && inputs.engine == 'flux2'
+        timeout-minutes: 8
+        run: |
+          set -e
+          mkdir -p k
+          python3 - <<'EOF'
+          import base64, io, json, os
+          from PIL import Image
+          P = json.load(open("cartoon/scene_art_test/prompts.json"))
+          refs = {}
+          for name, path in [("stickman_front", "cartoon/character_refs/stickman_front.png"),
+                             ("stickman_poses", "cartoon/character_refs/stickman_poses.png"),
+                             ("costume_diver", "cartoon/character_refs/costumes/costume_diver.png"),
+                             ("costume_sailor", "cartoon/character_refs/costumes/costume_sailor.png")]:
+              im = Image.open(path).convert("RGB")
+              im.thumbnail((512, 512))  # small: keeps the kernel file small; the model sees ~512 px anyway
+              b = io.BytesIO()
+              im.save(b, "JPEG", quality=92)
+              refs[name] = base64.b64encode(b.getvalue()).decode()
+          body = open("kaggle/flux2_kernel.py").read()
+          open("k/run.py", "w").write(f"import json as _j\nPROMPTS = _j.loads({json.dumps(P)!r})\nREFS = {refs!r}\n" + body)
+          json.dump({"id": f"{os.environ['KAGGLE_USERNAME']}/yt-auto-flux2", "title": "yt-auto flux2",
+                     "code_file": "run.py", "language": "python", "kernel_type": "script", "is_private": "true",
+                     "enable_gpu": "true", "enable_internet": "true", "machine_shape": "NvidiaTeslaT4",
+                     "dataset_sources": [], "competition_sources": [], "kernel_sources": [], "model_sources": []},
+                    open("k/kernel-metadata.json", "w"), indent=1)
+          print("run.py", os.path.getsize("k/run.py"), "bytes")
+          EOF
+          kaggle kernels push -p k
+          sleep 20
+          kaggle kernels status "$KAGGLE_USERNAME/yt-auto-flux2" || true
+
       - name: Collect Kaggle pictures
         if: inputs.action == 'collect'
         timeout-minutes: 10
+        env:
+          KERNEL: ${{ inputs.engine == 'flux2' && 'yt-auto-flux2' || 'yt-auto-scene-art' }}
+          ENGINE: ${{ inputs.engine }}
         run: |
-          kaggle kernels status "$KAGGLE_USERNAME/yt-auto-scene-art" | tee results/scene-art-test/kaggle_status.txt
+          kaggle kernels status "$KAGGLE_USERNAME/$KERNEL" | tee "results/scene-art-test/kaggle_status_$ENGINE.txt"
           mkdir -p out/kaggle
-          kaggle kernels output "$KAGGLE_USERNAME/yt-auto-scene-art" -p out/kaggle || true
-          cp out/kaggle/job.json results/scene-art-test/kaggle_job.json 2>/dev/null || true
+          kaggle kernels output "$KAGGLE_USERNAME/$KERNEL" -p out/kaggle || true
+          cp out/kaggle/job.json "results/scene-art-test/kaggle_job_$ENGINE.json" 2>/dev/null || true
           python3 - <<'EOF'
           from pathlib import Path
           from PIL import Image
-          for p in Path("out/kaggle").rglob("sdxl_*.png"):
+          for p in [*Path("out/kaggle").rglob("sdxl_*.png"), *Path("out/kaggle").rglob("flux2dev_*.png")]:
               Image.open(p).convert("RGB").save(f"results/scene-art-test/pictures/{p.stem}.jpg", quality=88)
           EOF
           for f in cartoon/scene_art_test/chatgpt/chatgpt_*; do [ -f "$f" ] && cp "$f" results/scene-art-test/pictures/; done

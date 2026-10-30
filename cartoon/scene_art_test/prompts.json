@@ -1,24 +1,73 @@
 {
- "about": "Scene-picture test (owner 'go', 30 Oct 2026): the same 8 scenes of the checked Titanic Short (run 40903619735) drawn 3 ways: Cloudflare FLUX (words only), Kaggle SDXL + IP-Adapter (words + reference.png = the channel logo's stickman), and the owner in ChatGPT (quality target). Scored on: same stickman, stickman belongs in the scene, nice art, matches the voice, time/cost. Prompts written by hand for the test; the same for every way.",
+ "about": "Scene-picture test (owner 'go', 30 Oct 2026): the same 8 scenes of the checked Titanic Short (run 40903619735) drawn 3 ways: Cloudflare FLUX (words only), Kaggle SDXL + IP-Adapter (words + reference.png = the channel logo's stickman), and the owner in ChatGPT (quality target). Scored on: same stickman, stickman belongs in the scene, nice art, matches the voice, time/cost. Prompts written by hand for the test; the same for every way. 30 Oct: 'refs' = reference pictures (cartoon/character_refs/) for models that take them (FLUX.2 [dev]).",
  "character": "the same simple stickman in every picture: a big round white head with a thick black outline, two small black oval eyes, expressive black eyebrows, a small mouth, thin black stick arms and legs, no clothes",
  "style": "flat 2D cartoon illustration, clean thick dark outlines, soft muted colours with simple flat shading, detailed full background, modern animated explainer style, vertical 9:16 portrait, no text, no letters, no numbers, no logos",
  "negative": "text, letters, words, numbers, watermark, logo, photo, realistic, 3d render, blurry, extra limbs, deformed, frame, border, multiple panels",
  "scenes": [
-  {"id": "01", "voice": "What if you were aboard the Titanic when it struck that fatal iceberg?",
-   "prompt": "the stickman stands on the wooden deck of a huge 1912 ocean liner at night, white railings and tall funnels behind him, he looks worried at a giant iceberg ahead in the dark calm sea, stars in the sky"},
-  {"id": "02", "voice": "Typically, only about one-tenth of an iceberg floats above the water surface.",
-   "prompt": "cut-away view of the ocean: a small tip of an iceberg above the water line and a giant iceberg hidden below the surface, the stickman in an old brass diving helmet floats underwater next to it, looking up amazed, blue water, sunbeams"},
-  {"id": "03", "voice": "The British liner strikes ice and begins foundering in the North Atlantic.",
-   "prompt": "the side of a 1912 ocean liner scraping along a huge iceberg at night, chunks of ice falling onto the deck, the stickman on the deck losing his balance with a shocked face"},
-  {"id": "04", "voice": "The ship carries lifeboats for only one-third of the people on board.",
-   "prompt": "the tilted deck of a sinking 1912 ocean liner at night, only two small wooden lifeboats hanging on the side, a long crowd of worried stickman passengers waiting, our stickman in front looking at the few lifeboats"},
-  {"id": "05", "voice": "Many passengers and crew make their last stand on the raised poop deck.",
-   "prompt": "the back of a huge ocean liner rising high out of the dark sea at night, many small stickman passengers holding the railing on the raised back deck, our stickman holding on tight with a scared face, big ship propellers above the water"},
-  {"id": "06", "voice": "Victims are plunged into freezing sea water at minus 2 degrees Celsius.",
-   "prompt": "the stickman falling into a dark freezing ocean at night with a big splash, small pieces of ice floating around, cold blue light, his eyes wide open"},
-  {"id": "07", "voice": "Cold shock triggers uncontrolled rapid breathing, gasping, and severe heart strain. Within 15 to 30 minutes, cold incapacitation shuts down limb muscles, preventing swimming.",
-   "prompt": "the stickman in icy black water up to his neck at night, gasping with his mouth open, frost on his head, shivering, his stiff arms barely moving, ice pieces around him, a faint ship light far away"},
-  {"id": "08", "voice": "Would you have found a place in one of the few lifeboats?",
-   "prompt": "the stickman sits in a crowded wooden lifeboat at night on a calm dark sea under bright stars, other stickman passengers wrapped in blankets beside him, he looks back at the empty sea with a thoughtful face, hand on his chin"}
+  {
+   "id": "01",
+   "voice": "What if you were aboard the Titanic when it struck that fatal iceberg?",
+   "prompt": "the stickman stands on the wooden deck of a huge 1912 ocean liner at night, white railings and tall funnels behind him, he looks worried at a giant iceberg ahead in the dark calm sea, stars in the sky",
+   "refs": [
+    "stickman_front"
+   ]
+  },
+  {
+   "id": "02",
+   "voice": "Typically, only about one-tenth of an iceberg floats above the water surface.",
+   "prompt": "cut-away view of the ocean: a small tip of an iceberg above the water line and a giant iceberg hidden below the surface, the stickman in an old brass diving helmet floats underwater next to it, looking up amazed, blue water, sunbeams",
+   "refs": [
+    "stickman_front",
+    "costume_diver"
+   ]
+  },
+  {
+   "id": "03",
+   "voice": "The British liner strikes ice and begins foundering in the North Atlantic.",
+   "prompt": "the side of a 1912 ocean liner scraping along a huge iceberg at night, chunks of ice falling onto the deck, the stickman on the deck losing his balance with a shocked face",
+   "refs": [
+    "stickman_front"
+   ]
+  },
+  {
+   "id": "04",
+   "voice": "The ship carries lifeboats for only one-third of the people on board.",
+   "prompt": "the tilted deck of a sinking 1912 ocean liner at night, only two small wooden lifeboats hanging on the side, a long crowd of worried stickman passengers waiting, our stickman in front looking at the few lifeboats",
+   "refs": [
+    "stickman_front"
+   ]
+  },
+  {
+   "id": "05",
+   "voice": "Many passengers and crew make their last stand on the raised poop deck.",
+   "prompt": "the back of a huge ocean liner rising high out of the dark sea at night, many small stickman passengers holding the railing on the raised back deck, our stickman holding on tight with a scared face, big ship propellers above the water",
+   "refs": [
+    "stickman_front"
+   ]
+  },
+  {
+   "id": "06",
+   "voice": "Victims are plunged into freezing sea water at minus 2 degrees Celsius.",
+   "prompt": "the stickman falling into a dark freezing ocean at night with a big splash, small pieces of ice floating around, cold blue light, his eyes wide open",
+   "refs": [
+    "stickman_front"
+   ]
+  },
+  {
+   "id": "07",
+   "voice": "Cold shock triggers uncontrolled rapid breathing, gasping, and severe heart strain. Within 15 to 30 minutes, cold incapacitation shuts down limb muscles, preventing swimming.",
+   "prompt": "the stickman in icy black water up to his neck at night, gasping with his mouth open, frost on his head, shivering, his stiff arms barely moving, ice pieces around him, a faint ship light far away",
+   "refs": [
+    "stickman_front"
+   ]
+  },
+  {
+   "id": "08",
+   "voice": "Would you have found a place in one of the few lifeboats?",
+   "prompt": "the stickman sits in a crowded wooden lifeboat at night on a calm dark sea under bright stars, other stickman passengers wrapped in blankets beside him, he looks back at the empty sea with a thoughtful face, hand on his chin",
+   "refs": [
+    "stickman_front"
+   ]
+  }
  ]
 }
