@@ -28,8 +28,12 @@ STEPS = 30
 def main() -> None:
     OUT.mkdir(parents=True, exist_ok=True)
     t = time.time()
-    subprocess.run([sys.executable, "-m", "pip", "install", "-q", "-U", "diffusers", "accelerate", "safetensors"],
-                   check=True)
+    # Upgrade these together so pip picks versions that fit each other: upgrading diffusers alone pulled
+    # huggingface-hub 2.4, which Kaggle's transformers refused (first run, 30 Oct)
+    subprocess.run([sys.executable, "-m", "pip", "install", "-q", "-U", "diffusers", "transformers", "accelerate",
+                    "safetensors", "huggingface-hub"], check=True)
+    import importlib.metadata as md
+    JOB["versions"] = {p: md.version(p) for p in ("diffusers", "transformers", "huggingface-hub", "torch")}
     import torch
     from diffusers import StableDiffusionXLPipeline
     from PIL import Image
