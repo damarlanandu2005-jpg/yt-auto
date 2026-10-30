@@ -75,9 +75,10 @@ def main() -> None:
     print("text encoder on GPU 1:", JOB["text_encoder_gb"], "GiB", flush=True)
     def load_transformer():
         return getattr(diffusers, index["transformer"][1]).from_pretrained(
-            REPO, subfolder="transformer", torch_dtype=torch.bfloat16, device_map={"": "cuda:0"})
-        # runs 4-5: split over two GPUs, the 4-bit transformer failed on every picture ("Cannot copy out of meta
-        # tensor", with and without the LoRA); it is ~11 GiB, so it now sits whole on GPU 0 (14.6 GiB)
+            REPO, subfolder="transformer", torch_dtype=torch.bfloat16, device_map="auto",
+            max_memory={0: "7GiB", 1: "5GiB"})
+        # runs 4-6 failed with meta tensors (cause: the Lightning LoRA / newer torchao, not the split); run 8 had the
+        # whole ~11 GiB transformer on GPU 0 and attention needed 4.1 GiB with 2.6 free. Split it again ~7 + 4.
     tr = load_transformer()
     pipe = QwenImageEditPlusPipeline.from_pretrained(REPO, text_encoder=te, transformer=tr,
                                                      torch_dtype=torch.bfloat16)
