@@ -72,6 +72,8 @@ ROWS = [("flux_", "1. Cloudflare FLUX (words only)"), ("sdxl_ip0_", "2a. Kaggle 
         ("sdxl_c5_", "2d. SDXL, logo character 0.5"), ("sdxl_c8_", "2e. SDXL, logo character 0.8"),
         ("sdxl_s10_", "2f. SDXL, logo style only"), ("flux2dev_", "4. FLUX.2 dev 32B + refs"),
         ("qwen_", "5. Qwen-Image-Edit 20B + refs"),
+        ("flux2dev_fp16_", "A. FLUX.2 dev, 28 steps, fp16"), ("qwen8_bf16_", "B. Qwen 8-step (Lightning)"),
+        ("qwen8_fp16_", "C. Qwen 8-step + fp16"),
         ("chatgpt_", "3. ChatGPT (owner)")]
 
 

@@ -33,6 +33,24 @@ USE_LORA = False
 T0 = time.time()
 
 
+def set_compute(model, dtype) -> None:
+    """Make the 4-bit (bitsandbytes) layers compute in `dtype` (T4: fp16 has tensor cores, bf16 does not)."""
+    n = 0
+    for m in model.modules():
+        if hasattr(m, "compute_dtype") and m.__class__.__name__ == "Linear4bit":
+            m.compute_dtype = dtype
+            n += 1
+    JOB.setdefault("compute_dtype", {})[str(dtype)] = f"{n} 4-bit layers"
+
+
+def image_stats(img) -> dict:
+    import numpy as np
+    a = np.asarray(img.convert("L"), dtype="float32")
+    st = {"mean": round(float(a.mean()), 1), "std": round(float(a.std()), 1)}
+    st["looks_broken"] = st["std"] < 8 or st["mean"] < 6
+    return st
+
+
 def save_job() -> None:
     JOB["pictures"] = sorted(p.name for p in OUT.glob("*.png")) if OUT.exists() else []
     W.mkdir(parents=True, exist_ok=True)
@@ -43,6 +61,7 @@ def main() -> None:
     OUT.mkdir(parents=True, exist_ok=True)
     subprocess.run([sys.executable, "-m", "pip", "install", "-q", "-U", "diffusers", "transformers", "accelerate",
                     "safetensors", "huggingface-hub", "bitsandbytes", "peft", "psutil"], check=True)
+    subprocess.run([sys.executable, "-m", "pip", "uninstall", "-y", "-q", "torchao"], check=False)
     # runs 4-6 (newer torchao + Lightning LoRA loaded) all failed with "Cannot copy out of meta tensor", even
     # after reloading the transformer; run 3 (neither) reached the last stage. So: no LoRA, no torchao upgrade.
     import importlib.metadata as md
@@ -73,9 +92,9 @@ def main() -> None:
     add_hook_to_module(te, AlignDevicesHook(execution_device=torch.device("cuda:1"), io_same_device=True))
     JOB["text_encoder_gb"] = round(torch.cuda.memory_allocated(1) / 2**30, 1)
     print("text encoder on GPU 1:", JOB["text_encoder_gb"], "GiB", flush=True)
-    def load_transformer():
+    def load_transformer(dtype=torch.bfloat16):
         return getattr(diffusers, index["transformer"][1]).from_pretrained(
-            REPO, subfolder="transformer", torch_dtype=torch.bfloat16, device_map="auto",
+            REPO, subfolder="transformer", torch_dtype=dtype, device_map="auto",
             max_memory={0: "7.5GiB", 1: "9.5GiB"})  # run 9: 7+5 (and run 2: 8.5+3.5) failed the size check
         # runs 4-6 failed with meta tensors (cause: the Lightning LoRA / newer torchao, not the split); run 8 had the
         # whole ~11 GiB transformer on GPU 0 and attention needed 4.1 GiB with 2.6 free. Split it again ~7 + 4.
@@ -100,70 +119,80 @@ def main() -> None:
     JOB["load_s"] = round(time.time() - t)
     JOB["vram_after_load_gb"] = [round(torch.cuda.memory_allocated(i) / 2**30, 1) for i in range(2)]
     print("loaded", JOB["load_s"], "s", JOB["vram_after_load_gb"], flush=True)
-    steps, cfg = 20, 4.0
-    try:
-        if not USE_LORA:
-            raise RuntimeError("off for this run (runs 4-6)")
+    # Speed test (owner, 30 Oct): OPTIONS {"lora": true, "dtypes": ["bf16", "fp16"], "scenes": [...]}.
+    # Runs 4-6 failed ("Cannot copy out of meta tensor") after the LoRA was loaded with a pip-upgraded torchao;
+    # peft only wanted torchao because Kaggle has an old copy installed, so this run removes torchao instead.
+    O = OPTIONS  # noqa: F821
+    JOB["options"] = O
+    P = dict(PROMPTS)  # noqa: F821
+    if O.get("scenes"):
+        P["scenes"] = [sc for sc in P["scenes"] if sc["id"] in O["scenes"]]
+    refs = {k: Image.open(io.BytesIO(base64.b64decode(v))).convert("RGB") for k, v in REFS.items()}  # noqa: F821
+    use_lora = bool(O.get("lora", USE_LORA))
+    pick = None
+    if use_lora:
         files = [f for f in HfApi().list_repo_files(LORA) if f.endswith(".safetensors")]
         JOB["lora_files"] = files
         pick = next((f for f in files if "8step" in f.lower() and "bf16" in f.lower()), None) or \
-            next((f for f in files if "8step" in f.lower()), None) or (files[0] if files else None)
-        pipe.load_lora_weights(LORA, weight_name=pick)
-        steps, cfg = 8, 1.0
-        JOB["notes"].append(f"Lightning LoRA loaded: {pick} -> 8 steps, CFG 1")
-    except Exception as e:  # noqa: BLE001
-        JOB["notes"].append(f"Lightning LoRA not used ({type(e).__name__}: {str(e)[:300]}) -> 20 steps, CFG 4")
-    JOB["steps"], JOB["cfg"] = steps, cfg
-    JOB["setup_s"] = round(time.time() - T0)
-    print("setup", JOB["setup_s"], "s", JOB["notes"], flush=True)
-
-    P = PROMPTS  # noqa: F821
-    refs = {k: Image.open(io.BytesIO(base64.b64decode(v))).convert("RGB") for k, v in REFS.items()}  # noqa: F821
-    lora_on = steps == 8
-    scenes = list(P["scenes"])
-    i = 0
-    while i < len(scenes):
-        sc = scenes[i]
-        if time.time() - T0 > BUDGET_S:
-            JOB["notes"].append(f"stopped before scene {sc['id']}: time budget")
-            break
-        name = f"qwen_{sc['id']}.png"
+            next((f for f in files if "8step" in f.lower()), None)
+    first = True
+    for dname in O.get("dtypes", ["bf16"]):
+        dtype = torch.float16 if dname == "fp16" else torch.bfloat16
         t = time.time()
-        try:
-            names = [r for r in sc.get("refs", ["stickman_front"]) if r in refs]
-            ref_list = [refs[r] for r in names]
-            which = " and ".join(f"picture {k + 1} ({'his costume' if 'costume' in n else 'our stickman'})"
-                                 for k, n in enumerate(names))
-            prompt = (f"Use {which} as the character reference: draw exactly this same stickman (same round white "
-                      f"head, same eyes and eyebrows, same thin black stick body). New picture: {sc['prompt']}. "
-                      f"{P['style']}")
-            img = pipe(image=ref_list, prompt=prompt, negative_prompt=P["negative"], true_cfg_scale=cfg,
-                       num_inference_steps=steps, width=SIZE[0], height=SIZE[1],
-                       generator=torch.Generator("cpu").manual_seed(SEED)).images[0]
-            img.save(OUT / name)
-            JOB["peak_vram_gb"] = [round(torch.cuda.max_memory_allocated(k) / 2**30, 1)
-                                   for k in range(torch.cuda.device_count())]
-        except Exception as e:  # noqa: BLE001  one failed picture is recorded, the rest go on
-            JOB["errors"].append(f"{name}: {traceback.format_exc()[-1500:]}")
-            if "out of memory" in str(e).lower():
-                torch.cuda.empty_cache()
-            # run 4: the Lightning LoRA loaded onto the 4-bit transformer split over two GPUs left 'meta' tensors
-            # ("Cannot copy out of meta tensor"). Reload a clean transformer without it and redo this scene.
-            if lora_on:
-                lora_on = False
-                JOB["notes"].append(f"Lightning LoRA broke drawing ({type(e).__name__}); reloaded without it, "
-                                    "20 steps, CFG 4")
-                pipe.transformer = None
-                gc.collect()
-                torch.cuda.empty_cache()
-                pipe.transformer = load_transformer()
-                steps, cfg = 20, 4.0
-                JOB["steps"], JOB["cfg"] = steps, cfg
+        # a fresh transformer for every variant after the first (fp16 weights; no LoRA left from the last one)
+        if not (first and dtype == torch.bfloat16):
+            pipe.transformer = None
+            gc.collect()
+            torch.cuda.empty_cache()
+            pipe.transformer = load_transformer(dtype)
+        first = False
+        set_compute(pipe.transformer, dtype)
+        steps, cfg, prefix = 20, 4.0, f"qwen_{dname}_" if O.get("dtypes") else "qwen_"
+        if use_lora:
+            try:
+                pipe.load_lora_weights(LORA, weight_name=pick)
+                steps, cfg, prefix = 8, 1.0, f"qwen8_{dname}_"
+                JOB["notes"].append(f"{dname}: Lightning LoRA loaded ({pick}) -> 8 steps, CFG 1")
+            except Exception as e:  # noqa: BLE001
+                JOB["notes"].append(f"{dname}: Lightning LoRA failed to load ({type(e).__name__}: {str(e)[:300]})")
                 continue
-        JOB["seconds"][name] = round(time.time() - t, 1)
-        print(name, JOB["seconds"][name], flush=True)
-        save_job()
-        i += 1
+        JOB.setdefault("variant_setup_s", {})[dname] = round(time.time() - t)
+        print("variant", dname, "steps", steps, flush=True)
+        for sc in P["scenes"]:
+            if time.time() - T0 > BUDGET_S:
+                JOB["notes"].append(f"stopped before {dname} scene {sc['id']}: time budget")
+                break
+            name = f"{prefix}{sc['id']}.png"
+            t = time.time()
+            try:
+                names = [r for r in sc.get("refs", ["stickman_front"]) if r in refs]
+                ref_list = [refs[r] for r in names]
+                which = " and ".join(f"picture {k + 1} ({'his costume' if 'costume' in n else 'our stickman'})"
+                                     for k, n in enumerate(names))
+                prompt = (f"Use {which} as the character reference: draw exactly this same stickman (same round "
+                          f"white head, same eyes and eyebrows, same thin black stick body). New picture: "
+                          f"{sc['prompt']}. {P['style']}")
+                img = pipe(image=ref_list, prompt=prompt, negative_prompt=P["negative"], true_cfg_scale=cfg,
+                           num_inference_steps=steps, width=SIZE[0], height=SIZE[1],
+                           generator=torch.Generator("cpu").manual_seed(SEED)).images[0]
+                torch.cuda.synchronize()
+                JOB.setdefault("gen_s", {})[name] = round(time.time() - t, 1)  # drawing only
+                JOB.setdefault("image_stats", {})[name] = image_stats(img)
+                img.save(OUT / name)
+                JOB["peak_vram_gb"] = [round(torch.cuda.max_memory_allocated(k) / 2**30, 1)
+                                       for k in range(torch.cuda.device_count())]
+            except Exception as e:  # noqa: BLE001  one failed picture is recorded, the rest go on
+                JOB["errors"].append(f"{name}: {traceback.format_exc()[-1500:]}")
+                if "out of memory" in str(e).lower():
+                    torch.cuda.empty_cache()
+            JOB["seconds"][name] = round(time.time() - t, 1)
+            print(name, JOB["seconds"][name], flush=True)
+            save_job()
+        if use_lora:
+            try:
+                pipe.unload_lora_weights()
+            except Exception as e:  # noqa: BLE001
+                JOB["notes"].append(f"unload LoRA: {type(e).__name__}")
 
 
 try:

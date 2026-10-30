@@ -22,6 +22,10 @@ on:
         type: choice
         options: [flux2, qwen, sdxl]
         default: flux2
+      options:
+        description: 'JSON settings for the flux2/qwen kernel, e.g. {"dtype":"fp16","scenes":["01","04","07"]}'
+        type: string
+        default: "{}"
 
 permissions:
   contents: write
@@ -96,6 +100,7 @@ jobs:
         timeout-minutes: 8
         env:
           ENGINE: ${{ inputs.engine }}
+          OPTIONS: ${{ inputs.options }}
         run: |
           set -e
           mkdir -p k
@@ -115,7 +120,10 @@ jobs:
               refs[name] = base64.b64encode(b.getvalue()).decode()
           eng = os.environ["ENGINE"]
           body = open(f"kaggle/{eng}_kernel.py").read()
-          open("k/run.py", "w").write(f"import json as _j\nPROMPTS = _j.loads({json.dumps(P)!r})\nREFS = {refs!r}\n" + body)
+          opts = json.loads(os.environ.get("OPTIONS") or "{}")
+          assert isinstance(opts, dict), "options must be a JSON object"
+          open("k/run.py", "w").write(f"import json as _j\nPROMPTS = _j.loads({json.dumps(P)!r})\nREFS = {refs!r}\n"
+                                      f"OPTIONS = _j.loads({json.dumps(opts)!r})\n" + body)
           json.dump({"id": f"{os.environ['KAGGLE_USERNAME']}/yt-auto-{eng}", "title": f"yt-auto {eng}",
                      "code_file": "run.py", "language": "python", "kernel_type": "script", "is_private": "true",
                      "enable_gpu": "true", "enable_internet": "true", "machine_shape": "NvidiaTeslaT4",
@@ -142,7 +150,7 @@ jobs:
           from pathlib import Path
           from PIL import Image
           for p in [*Path("out/kaggle").rglob("sdxl_*.png"), *Path("out/kaggle").rglob("flux2dev_*.png"),
-                    *Path("out/kaggle").rglob("qwen_*.png")]:
+                    *Path("out/kaggle").rglob("qwen_*.png"), *Path("out/kaggle").rglob("qwen8_*.png")]:
               Image.open(p).convert("RGB").save(f"results/scene-art-test/pictures/{p.stem}.jpg", quality=88)
           EOF
           for f in cartoon/scene_art_test/chatgpt/chatgpt_*; do [ -f "$f" ] && cp "$f" results/scene-art-test/pictures/; done

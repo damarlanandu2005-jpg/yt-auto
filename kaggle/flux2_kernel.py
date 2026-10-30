@@ -41,6 +41,25 @@ def save_job() -> None:
     (W / "job.json").write_text(json.dumps(JOB, indent=1))
 
 
+def set_compute(model, dtype) -> None:
+    """Make the 4-bit (bitsandbytes) layers compute in `dtype` (their saved setting is bf16)."""
+    n = 0
+    for m in model.modules():
+        if hasattr(m, "compute_dtype") and m.__class__.__name__ == "Linear4bit":
+            m.compute_dtype = dtype
+            n += 1
+    JOB.setdefault("compute_dtype", {})[model.__class__.__name__] = f"{dtype} on {n} 4-bit layers"
+
+
+def image_stats(img) -> dict:
+    """Black or broken pictures (fp16 overflow) show up as a tiny spread of pixel values."""
+    import numpy as np
+    a = np.asarray(img.convert("L"), dtype="float32")
+    st = {"mean": round(float(a.mean()), 1), "std": round(float(a.std()), 1)}
+    st["looks_broken"] = st["std"] < 8 or st["mean"] < 6
+    return st
+
+
 def hardware() -> None:
     import psutil
     import torch
@@ -87,9 +106,16 @@ def main() -> None:
     hf_login_if_needed()
     from diffusers import Flux2Pipeline
 
-    # T4 has no native bf16; FLUX can overflow in fp16. Try bf16 first (emulated, slower), record what happened.
-    dtype = torch.bfloat16
-    P = PROMPTS  # noqa: F821
+    # T4 has fp16 tensor cores but no native bf16. Run 3 (bf16) took ~92 s per step, ~43 min per picture.
+    # OPTIONS dtype=fp16 (owner's speed test, 30 Oct): only the transformer (the slow part, 28 steps) works in
+    # fp16; the text encoder (once per picture) and the VAE stay bf16. FLUX can overflow in fp16, so every picture is checked for black/NaN.
+    O = OPTIONS  # noqa: F821
+    JOB["options"] = O
+    dtype = torch.float16 if O.get("dtype") == "fp16" else torch.bfloat16
+    tag = f"{O['dtype']}_" if O.get("dtype") else ""
+    P = dict(PROMPTS)  # noqa: F821
+    if O.get("scenes"):
+        P["scenes"] = [sc for sc in P["scenes"] if sc["id"] in O["scenes"]]
     refs = {k: Image.open(io.BytesIO(base64.b64decode(v))).convert("RGB") for k, v in REFS.items()}  # noqa: F821
     for im in refs.values():
         im.thumbnail((512, 512))
@@ -103,10 +129,10 @@ def main() -> None:
     from huggingface_hub import hf_hub_download
     t = time.time()
     lib, cls = json.loads(Path(hf_hub_download(REPO, "model_index.json")).read_text())["text_encoder"]
-    te = getattr(transformers, cls).from_pretrained(REPO, subfolder="text_encoder", torch_dtype=dtype, device_map="auto",
+    te = getattr(transformers, cls).from_pretrained(REPO, subfolder="text_encoder", torch_dtype=torch.bfloat16, device_map="auto",
                                    max_memory=cap)
     JOB["text_encoder_class"] = type(te).__name__
-    pipe = Flux2Pipeline.from_pretrained(REPO, text_encoder=te, transformer=None, torch_dtype=dtype)
+    pipe = Flux2Pipeline.from_pretrained(REPO, text_encoder=te, transformer=None, torch_dtype=torch.bfloat16)
     JOB["text_encoder_load_s"] = round(time.time() - t)
     print("text encoder loaded", JOB["text_encoder_load_s"], "s", flush=True)
     t = time.time()
@@ -127,6 +153,7 @@ def main() -> None:
     # attention step (2-3 GiB) ran out. Cap each card lower so the ~17 GiB transformer is spread ~8.5 + 8.5.
     tr = Flux2Transformer2DModel.from_pretrained(REPO, subfolder="transformer", torch_dtype=dtype, device_map="auto",
                                                  max_memory={0: "8.5GiB", 1: "10GiB"})
+    set_compute(tr, dtype)
     pipe.transformer = tr
     pipe.vae.to("cuda:0")
     JOB["transformer_load_s"] = round(time.time() - t)
@@ -137,13 +164,16 @@ def main() -> None:
         if time.time() - T0 > BUDGET_S:
             JOB["notes"].append(f"stopped before scene {sc['id']}: time budget")
             break
-        name = f"flux2dev_{sc['id']}.png"
+        name = f"flux2dev_{tag}{sc['id']}.png"
         t = time.time()
         try:
             ref_list = [refs[r] for r in sc.get("refs", ["stickman_front"]) if r in refs]
-            img = pipe(prompt_embeds=embeds[sc["id"]].to("cuda:0"), image=ref_list or None,
+            img = pipe(prompt_embeds=embeds[sc["id"]].to("cuda:0", dtype), image=ref_list or None,
                        width=SIZE[0], height=SIZE[1], num_inference_steps=STEPS, guidance_scale=GUIDANCE,
                        generator=torch.Generator("cuda:0").manual_seed(SEED)).images[0]
+            torch.cuda.synchronize()
+            JOB.setdefault("gen_s", {})[name] = round(time.time() - t, 1)  # drawing only (owner's condition 2)
+            JOB.setdefault("image_stats", {})[name] = image_stats(img)
             img.save(OUT / name)
             JOB["peak_vram_gb"] = [round(torch.cuda.max_memory_allocated(i) / 2**30, 1) for i in range(2)]
         except Exception as e:  # noqa: BLE001  one failed picture is recorded, the rest go on
