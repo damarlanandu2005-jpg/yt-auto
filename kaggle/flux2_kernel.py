@@ -3,13 +3,15 @@
 # base64 PNG reference pictures from cartoon/character_refs/).
 # Owner's choice (30 Oct): FLUX.2 [dev] 32B, the big multi-reference model, squeezed to fit Kaggle:
 #   - the 4-bit copy diffusers/FLUX.2-dev-bnb-4bit (transformer and Mistral text encoder in 4-bit, VAE bf16)
-#   - all prompts are read first by the text encoder on GPU 1, then it is freed
-#   - the transformer runs on GPU 0 with group offloading (blocks stream in from CPU RAM: slow, but fits 16 GB)
+#   - each big part is split over both T4s (14.6 GiB usable each): the text encoder reads all prompts first and is
+#     freed, then the transformer is loaded over both cards
 # Every scene gets the stickman reference picture(s) so he stays the same; one picture per scene, saved at once,
 # so a run that hits Kaggle's time limit still leaves the finished pictures. Hardware is printed first.
 # No keys are in this kernel. If Hugging Face refuses the download (gated model), the kernel reads HF_TOKEN from
 # Kaggle's own secrets store (Add-ons -> Secrets in the notebook), which the owner adds by hand.
 import base64
+import os as _os
+_os.environ.setdefault("PYTORCH_CUDA_ALLOC_CONF", "expandable_segments:True")
 import gc
 import io
 import json
@@ -92,30 +94,42 @@ def main() -> None:
     for im in refs.values():
         im.thumbnail((512, 512))
 
-    pipe = Flux2Pipeline.from_pretrained(REPO, torch_dtype=dtype)
-    JOB["download_load_s"] = round(time.time() - t)
-    print("loaded", JOB["download_load_s"], "s", flush=True)
-
-    # 1) read every prompt with the text encoder on GPU 1, then free it
+    # Run 1 (30 Oct): loading the whole pipeline put the 4-bit transformer on GPU 0 alone and needed 15.0 GiB of
+    # its 14.6. So each big part is split over BOTH T4s (device_map auto, ~13 GiB cap each), one at a time:
+    # 1) the text encoder reads every prompt, then is freed; 2) the transformer is loaded and draws.
+    cap = {0: "13GiB", 1: "13GiB"}
+    from diffusers import Flux2Transformer2DModel
+    import transformers
+    from huggingface_hub import hf_hub_download
     t = time.time()
-    pipe.text_encoder.to("cuda:1")
+    lib, cls = json.loads(Path(hf_hub_download(REPO, "model_index.json")).read_text())["text_encoder"]
+    te = getattr(transformers, cls).from_pretrained(REPO, subfolder="text_encoder", torch_dtype=dtype, device_map="auto",
+                                   max_memory=cap)
+    JOB["text_encoder_class"] = type(te).__name__
+    pipe = Flux2Pipeline.from_pretrained(REPO, text_encoder=te, transformer=None, torch_dtype=dtype)
+    JOB["text_encoder_load_s"] = round(time.time() - t)
+    print("text encoder loaded", JOB["text_encoder_load_s"], "s", flush=True)
+    t = time.time()
     embeds = {}
     for sc in P["scenes"]:
         text = f"{sc['prompt']}. {P['character']}. {P['style']}"
         with torch.no_grad():
-            out = pipe.encode_prompt(prompt=text, device=torch.device("cuda:1"))
-        embeds[sc["id"]] = out[0] if isinstance(out, (tuple, list)) else out
-    pipe.text_encoder.to("cpu")
-    del pipe.text_encoder
+            out = pipe.encode_prompt(prompt=text, device=torch.device("cuda:0"))
+        embeds[sc["id"]] = (out[0] if isinstance(out, (tuple, list)) else out).to("cpu")
+    JOB["encode_s"] = round(time.time() - t)
     pipe.text_encoder = None
+    del te
     gc.collect()
     torch.cuda.empty_cache()
-    JOB["encode_s"] = round(time.time() - t)
 
-    # 2) transformer on GPU 0, its blocks streamed from CPU RAM
-    pipe.transformer.enable_group_offload(onload_device=torch.device("cuda:0"), offload_device=torch.device("cpu"),
-                                          offload_type="block_level", num_blocks_per_group=2, use_stream=True)
+    t = time.time()
+    tr = Flux2Transformer2DModel.from_pretrained(REPO, subfolder="transformer", torch_dtype=dtype, device_map="auto",
+                                                 max_memory=cap)
+    pipe.transformer = tr
     pipe.vae.to("cuda:0")
+    JOB["transformer_load_s"] = round(time.time() - t)
+    JOB["vram_after_load_gb"] = [round(torch.cuda.memory_allocated(i) / 2**30, 1) for i in range(2)]
+    print("transformer loaded", JOB["transformer_load_s"], "s", JOB["vram_after_load_gb"], flush=True)
     JOB["setup_s"] = round(time.time() - T0)
     for sc in P["scenes"]:
         if time.time() - T0 > BUDGET_S:
@@ -129,7 +143,7 @@ def main() -> None:
                        width=SIZE[0], height=SIZE[1], num_inference_steps=STEPS, guidance_scale=GUIDANCE,
                        generator=torch.Generator("cuda:0").manual_seed(SEED)).images[0]
             img.save(OUT / name)
-            JOB["peak_vram_gb"] = round(torch.cuda.max_memory_allocated(0) / 2**30, 1)
+            JOB["peak_vram_gb"] = [round(torch.cuda.max_memory_allocated(i) / 2**30, 1) for i in range(2)]
         except Exception as e:  # noqa: BLE001  one failed picture is recorded, the rest go on
             JOB["errors"].append(f"{name}: {traceback.format_exc()[-1200:]}")
             if "out of memory" in str(e).lower():
