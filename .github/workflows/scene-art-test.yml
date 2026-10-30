@@ -18,9 +18,9 @@ on:
         options: [start, collect, cloudflare]
         default: start
       engine:
-        description: "Kaggle picture model: flux2 = FLUX.2 [dev] 32B with the stickman references (owner, 30 Oct); sdxl = old test"
+        description: "Kaggle picture model: flux2 = FLUX.2 [dev] 32B; qwen = Qwen-Image-Edit 20B (both with the stickman references, owner 30 Oct); sdxl = old test"
         type: choice
-        options: [flux2, sdxl]
+        options: [flux2, qwen, sdxl]
         default: flux2
 
 permissions:
@@ -91,9 +91,11 @@ jobs:
           sleep 20
           kaggle kernels status "$KAGGLE_USERNAME/yt-auto-scene-art" || true
 
-      - name: Start Kaggle FLUX.2 [dev] 32B
-        if: inputs.action == 'start' && inputs.engine == 'flux2'
+      - name: Start Kaggle FLUX.2 [dev] 32B or Qwen-Image-Edit 20B
+        if: inputs.action == 'start' && (inputs.engine == 'flux2' || inputs.engine == 'qwen')
         timeout-minutes: 8
+        env:
+          ENGINE: ${{ inputs.engine }}
         run: |
           set -e
           mkdir -p k
@@ -111,9 +113,10 @@ jobs:
               b = io.BytesIO()
               im.save(b, "JPEG", quality=92)
               refs[name] = base64.b64encode(b.getvalue()).decode()
-          body = open("kaggle/flux2_kernel.py").read()
+          eng = os.environ["ENGINE"]
+          body = open(f"kaggle/{eng}_kernel.py").read()
           open("k/run.py", "w").write(f"import json as _j\nPROMPTS = _j.loads({json.dumps(P)!r})\nREFS = {refs!r}\n" + body)
-          json.dump({"id": f"{os.environ['KAGGLE_USERNAME']}/yt-auto-flux2", "title": "yt-auto flux2",
+          json.dump({"id": f"{os.environ['KAGGLE_USERNAME']}/yt-auto-{eng}", "title": f"yt-auto {eng}",
                      "code_file": "run.py", "language": "python", "kernel_type": "script", "is_private": "true",
                      "enable_gpu": "true", "enable_internet": "true", "machine_shape": "NvidiaTeslaT4",
                      "dataset_sources": [], "competition_sources": [], "kernel_sources": [], "model_sources": []},
@@ -122,13 +125,13 @@ jobs:
           EOF
           kaggle kernels push -p k
           sleep 20
-          kaggle kernels status "$KAGGLE_USERNAME/yt-auto-flux2" || true
+          kaggle kernels status "$KAGGLE_USERNAME/yt-auto-$ENGINE" || true
 
       - name: Collect Kaggle pictures
         if: inputs.action == 'collect'
         timeout-minutes: 10
         env:
-          KERNEL: ${{ inputs.engine == 'flux2' && 'yt-auto-flux2' || 'yt-auto-scene-art' }}
+          KERNEL: ${{ inputs.engine == 'sdxl' && 'yt-auto-scene-art' || format('yt-auto-{0}', inputs.engine) }}
           ENGINE: ${{ inputs.engine }}
         run: |
           kaggle kernels status "$KAGGLE_USERNAME/$KERNEL" | tee "results/scene-art-test/kaggle_status_$ENGINE.txt"
@@ -138,7 +141,8 @@ jobs:
           python3 - <<'EOF'
           from pathlib import Path
           from PIL import Image
-          for p in [*Path("out/kaggle").rglob("sdxl_*.png"), *Path("out/kaggle").rglob("flux2dev_*.png")]:
+          for p in [*Path("out/kaggle").rglob("sdxl_*.png"), *Path("out/kaggle").rglob("flux2dev_*.png"),
+                    *Path("out/kaggle").rglob("qwen_*.png")]:
               Image.open(p).convert("RGB").save(f"results/scene-art-test/pictures/{p.stem}.jpg", quality=88)
           EOF
           for f in cartoon/scene_art_test/chatgpt/chatgpt_*; do [ -f "$f" ] && cp "$f" results/scene-art-test/pictures/; done
