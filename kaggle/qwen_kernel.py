@@ -40,7 +40,8 @@ def save_job() -> None:
 def main() -> None:
     OUT.mkdir(parents=True, exist_ok=True)
     subprocess.run([sys.executable, "-m", "pip", "install", "-q", "-U", "diffusers", "transformers", "accelerate",
-                    "safetensors", "huggingface-hub", "bitsandbytes", "peft", "psutil"], check=True)
+                    "safetensors", "huggingface-hub", "bitsandbytes", "peft", "psutil",
+                    "torchao"], check=True)  # run 3: Kaggle's torchao 0.10 blocked the Lightning LoRA (needs > 0.16)
     import importlib.metadata as md
     JOB["versions"] = {p: md.version(p) for p in ("diffusers", "transformers", "huggingface-hub", "bitsandbytes",
                                                   "peft", "torch")}
@@ -71,7 +72,10 @@ def main() -> None:
         max_memory={0: "10.5GiB", 1: "8GiB"})  # run 2: 8.5 + 3.5 was too small (spilled to CPU)
     pipe = QwenImageEditPlusPipeline.from_pretrained(REPO, text_encoder=te, transformer=tr,
                                                      torch_dtype=torch.bfloat16)
-    pipe.vae.to("cuda:0")
+    # run 3: the pipeline works on the text encoder's GPU (cuda:1) and the VAE on cuda:0 got the reference
+    # pictures from cuda:1 ("Expected all tensors to be on the same device"): keep the VAE where the pipeline works
+    JOB["execution_device"] = str(pipe._execution_device)
+    pipe.vae.to(pipe._execution_device)
     JOB["load_s"] = round(time.time() - t)
     JOB["vram_after_load_gb"] = [round(torch.cuda.memory_allocated(i) / 2**30, 1) for i in range(2)]
     print("loaded", JOB["load_s"], "s", JOB["vram_after_load_gb"], flush=True)
