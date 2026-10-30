@@ -5,7 +5,7 @@
 #   - model: the community 4-bit (NF4) build libaya/Qwen-Image-Edit-2511-4bit (whole pipeline, said to fit 16 GB)
 #   - speed: try the Lightning LoRA (lightx2v/Qwen-Image-Edit-2511-Lightning, 8 steps, CFG 1); if it does not load
 #     on the 4-bit model, fall back to 20 normal steps
-#   - parts are moved to the GPU only while used (enable_model_cpu_offload)
+#   - text encoder on GPU 1, transformer spread over both T4s, VAE on GPU 0 (whole-pipeline loading ran out of memory)
 # Hardware, versions, times and every error go to job.json; each picture is saved as soon as it is drawn.
 # No keys or secrets are in this kernel.
 import base64
@@ -53,9 +53,26 @@ def main() -> None:
                        "ram_gb": round(psutil.virtual_memory().total / 2**30, 1),
                        "disk_free_gb": round(shutil.disk_usage("/root").free / 2**30, 1)}
 
+    # Run 1 (30 Oct): from_pretrained put every 4-bit part on GPU 0 and ran out of memory while loading (needed
+    # 4.6 GiB more, 3.7 free). So each part goes to its own place: the text encoder (Qwen2.5-VL, it also looks at
+    # the reference pictures every call) on GPU 1, the transformer spread over both cards, the VAE on GPU 0.
+    import diffusers
+    import transformers
+    from huggingface_hub import hf_hub_download
     t = time.time()
-    pipe = QwenImageEditPlusPipeline.from_pretrained(REPO, torch_dtype=torch.bfloat16)
+    index = json.loads(Path(hf_hub_download(REPO, "model_index.json")).read_text())
+    JOB["model_index"] = {k: v for k, v in index.items() if isinstance(v, list)}
+    te = getattr(transformers, index["text_encoder"][1]).from_pretrained(
+        REPO, subfolder="text_encoder", torch_dtype=torch.bfloat16, device_map={"": "cuda:1"})
+    tr = getattr(diffusers, index["transformer"][1]).from_pretrained(
+        REPO, subfolder="transformer", torch_dtype=torch.bfloat16, device_map="auto",
+        max_memory={0: "8.5GiB", 1: "3.5GiB"})
+    pipe = QwenImageEditPlusPipeline.from_pretrained(REPO, text_encoder=te, transformer=tr,
+                                                     torch_dtype=torch.bfloat16)
+    pipe.vae.to("cuda:0")
     JOB["load_s"] = round(time.time() - t)
+    JOB["vram_after_load_gb"] = [round(torch.cuda.memory_allocated(i) / 2**30, 1) for i in range(2)]
+    print("loaded", JOB["load_s"], "s", JOB["vram_after_load_gb"], flush=True)
     steps, cfg = 20, 4.0
     try:
         files = [f for f in HfApi().list_repo_files(LORA) if f.endswith(".safetensors")]
@@ -68,7 +85,6 @@ def main() -> None:
     except Exception as e:  # noqa: BLE001
         JOB["notes"].append(f"Lightning LoRA not used ({type(e).__name__}: {str(e)[:300]}) -> 20 steps, CFG 4")
     JOB["steps"], JOB["cfg"] = steps, cfg
-    pipe.enable_model_cpu_offload()
     JOB["setup_s"] = round(time.time() - T0)
     print("setup", JOB["setup_s"], "s", JOB["notes"], flush=True)
 
