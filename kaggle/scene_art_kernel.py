@@ -2,8 +2,8 @@
 # The workflow puts two lines above this file: PROMPTS (cartoon/scene_art_test/prompts.json) and REF (the channel
 # logo's stickman, base64 PNG).
 # Scene-picture test (owner, 30 Oct): can an open image model draw a WHOLE scene with OUR stickman inside it?
-# SDXL base 1.0 + IP-Adapter (the reference picture guides the character), 8 scenes at 3 reference strengths
-# (0 = words only, 0.4, 0.7), the same seed for every scene. Results: /kaggle/working/scenes/*.png + job.json.
+# SDXL base 1.0 + IP-Adapter (the reference picture guides the character), 8 scenes per VARIANT, the same seed
+# for every scene. Results: /kaggle/working/scenes/*.png + job.json.
 # No keys or secrets are in this kernel; models come from Hugging Face (public, no login).
 # Licences: SDXL base 1.0 = CreativeML Open RAIL++-M (outputs may be used commercially, with use limits);
 # IP-Adapter (h94) = Apache-2.0.
@@ -19,7 +19,12 @@ from pathlib import Path
 W = Path("/kaggle/working")
 OUT = W / "scenes"
 JOB = {"started": time.strftime("%Y-%m-%dT%H:%M:%SZ", time.gmtime()), "seconds": {}, "errors": []}
-SCALES = [0.0, 0.4, 0.7]
+# Try 1 (run of 04:33 UTC, 30 Oct): one strength for the whole model copied the logo's look AND layout (0.7 = only
+# the face; 0.4 = our face but grey, simple scenes). Try 2 applies the reference to one part only (the InstantStyle
+# idea in diffusers' IP-Adapter docs): 'down block_2' = content/layout, 'up block_0' = style.
+VARIANTS = [("c5", {"down": {"block_2": [0.0, 0.5]}}),      # character content, light
+            ("c8", {"down": {"block_2": [0.0, 0.8]}}),      # character content, strong
+            ("s10", {"up": {"block_0": [0.0, 1.0, 0.0]}})]  # drawing style only, stickman from the words
 SEED = 30
 SIZE = (768, 1344)  # SDXL's own 9:16-like size
 STEPS = 30
@@ -49,10 +54,10 @@ def main() -> None:
     JOB["setup_s"] = round(time.time() - t)
     ref = Image.open(io.BytesIO(base64.b64decode(REF))).convert("RGB")  # noqa: F821
     P = PROMPTS  # noqa: F821
-    for scale in SCALES:
+    for tag, scale in VARIANTS:
         pipe.set_ip_adapter_scale(scale)
         for sc in P["scenes"]:
-            name = f"sdxl_ip{int(scale * 10)}_{sc['id']}.png"
+            name = f"sdxl_{tag}_{sc['id']}.png"
             t = time.time()
             try:
                 img = pipe(prompt=f"{sc['prompt']}. {P['character']}. {P['style']}", negative_prompt=P["negative"],

@@ -69,6 +69,8 @@ def cloudflare(out: Path) -> None:
 
 ROWS = [("flux_", "1. Cloudflare FLUX (words only)"), ("sdxl_ip0_", "2a. Kaggle SDXL (words only)"),
         ("sdxl_ip4_", "2b. Kaggle SDXL + logo 0.4"), ("sdxl_ip7_", "2c. Kaggle SDXL + logo 0.7"),
+        ("sdxl_c5_", "2d. SDXL, logo character 0.5"), ("sdxl_c8_", "2e. SDXL, logo character 0.8"),
+        ("sdxl_s10_", "2f. SDXL, logo style only"),
         ("chatgpt_", "3. ChatGPT (owner)")]
 
 
