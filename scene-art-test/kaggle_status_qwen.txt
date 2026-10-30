@@ -1,1 +1,1 @@
-narasimhadamarla/yt-auto-qwen has status "KernelWorkerStatus.RUNNING"
+narasimhadamarla/yt-auto-qwen has status "KernelWorkerStatus.COMPLETE"
