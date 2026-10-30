@@ -64,9 +64,11 @@ def main() -> None:
     JOB["model_index"] = {k: v for k, v in index.items() if isinstance(v, list)}
     te = getattr(transformers, index["text_encoder"][1]).from_pretrained(
         REPO, subfolder="text_encoder", torch_dtype=torch.bfloat16, device_map={"": "cuda:1"})
+    JOB["text_encoder_gb"] = round(torch.cuda.memory_allocated(1) / 2**30, 1)
+    print("text encoder on GPU 1:", JOB["text_encoder_gb"], "GiB", flush=True)
     tr = getattr(diffusers, index["transformer"][1]).from_pretrained(
         REPO, subfolder="transformer", torch_dtype=torch.bfloat16, device_map="auto",
-        max_memory={0: "8.5GiB", 1: "3.5GiB"})
+        max_memory={0: "10.5GiB", 1: "8GiB"})  # run 2: 8.5 + 3.5 was too small (spilled to CPU)
     pipe = QwenImageEditPlusPipeline.from_pretrained(REPO, text_encoder=te, transformer=tr,
                                                      torch_dtype=torch.bfloat16)
     pipe.vae.to("cuda:0")
