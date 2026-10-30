@@ -9,6 +9,7 @@
 # Hardware, versions, times and every error go to job.json; each picture is saved as soon as it is drawn.
 # No keys or secrets are in this kernel.
 import base64
+import gc
 import io
 import json
 import os
@@ -67,9 +68,11 @@ def main() -> None:
         REPO, subfolder="text_encoder", torch_dtype=torch.bfloat16, device_map={"": "cuda:1"})
     JOB["text_encoder_gb"] = round(torch.cuda.memory_allocated(1) / 2**30, 1)
     print("text encoder on GPU 1:", JOB["text_encoder_gb"], "GiB", flush=True)
-    tr = getattr(diffusers, index["transformer"][1]).from_pretrained(
-        REPO, subfolder="transformer", torch_dtype=torch.bfloat16, device_map="auto",
-        max_memory={0: "10.5GiB", 1: "8GiB"})  # run 2: 8.5 + 3.5 was too small (spilled to CPU)
+    def load_transformer():
+        return getattr(diffusers, index["transformer"][1]).from_pretrained(
+            REPO, subfolder="transformer", torch_dtype=torch.bfloat16, device_map="auto",
+            max_memory={0: "10.5GiB", 1: "8GiB"})  # run 2: 8.5 + 3.5 was too small (spilled to CPU)
+    tr = load_transformer()
     pipe = QwenImageEditPlusPipeline.from_pretrained(REPO, text_encoder=te, transformer=tr,
                                                      torch_dtype=torch.bfloat16)
     # run 3: the pipeline works on the text encoder's GPU (cuda:1) and the VAE on cuda:0 got the reference
@@ -96,7 +99,11 @@ def main() -> None:
 
     P = PROMPTS  # noqa: F821
     refs = {k: Image.open(io.BytesIO(base64.b64decode(v))).convert("RGB") for k, v in REFS.items()}  # noqa: F821
-    for sc in P["scenes"]:
+    lora_on = steps == 8
+    scenes = list(P["scenes"])
+    i = 0
+    while i < len(scenes):
+        sc = scenes[i]
         if time.time() - T0 > BUDGET_S:
             JOB["notes"].append(f"stopped before scene {sc['id']}: time budget")
             break
@@ -105,8 +112,8 @@ def main() -> None:
         try:
             names = [r for r in sc.get("refs", ["stickman_front"]) if r in refs]
             ref_list = [refs[r] for r in names]
-            which = " and ".join(f"picture {i + 1} ({'his costume' if 'costume' in n else 'our stickman'})"
-                                 for i, n in enumerate(names))
+            which = " and ".join(f"picture {k + 1} ({'his costume' if 'costume' in n else 'our stickman'})"
+                                 for k, n in enumerate(names))
             prompt = (f"Use {which} as the character reference: draw exactly this same stickman (same round white "
                       f"head, same eyes and eyebrows, same thin black stick body). New picture: {sc['prompt']}. "
                       f"{P['style']}")
@@ -114,15 +121,29 @@ def main() -> None:
                        num_inference_steps=steps, width=SIZE[0], height=SIZE[1],
                        generator=torch.Generator("cpu").manual_seed(SEED)).images[0]
             img.save(OUT / name)
-            JOB["peak_vram_gb"] = [round(torch.cuda.max_memory_allocated(i) / 2**30, 1)
-                                   for i in range(torch.cuda.device_count())]
+            JOB["peak_vram_gb"] = [round(torch.cuda.max_memory_allocated(k) / 2**30, 1)
+                                   for k in range(torch.cuda.device_count())]
         except Exception as e:  # noqa: BLE001  one failed picture is recorded, the rest go on
             JOB["errors"].append(f"{name}: {traceback.format_exc()[-1500:]}")
             if "out of memory" in str(e).lower():
                 torch.cuda.empty_cache()
+            # run 4: the Lightning LoRA loaded onto the 4-bit transformer split over two GPUs left 'meta' tensors
+            # ("Cannot copy out of meta tensor"). Reload a clean transformer without it and redo this scene.
+            if lora_on:
+                lora_on = False
+                JOB["notes"].append(f"Lightning LoRA broke drawing ({type(e).__name__}); reloaded without it, "
+                                    "20 steps, CFG 4")
+                pipe.transformer = None
+                gc.collect()
+                torch.cuda.empty_cache()
+                pipe.transformer = load_transformer()
+                steps, cfg = 20, 4.0
+                JOB["steps"], JOB["cfg"] = steps, cfg
+                continue
         JOB["seconds"][name] = round(time.time() - t, 1)
         print(name, JOB["seconds"][name], flush=True)
         save_job()
+        i += 1
 
 
 try:
