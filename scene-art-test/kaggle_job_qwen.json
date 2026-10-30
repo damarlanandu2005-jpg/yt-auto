@@ -1,14 +1,14 @@
 {
- "started": "2026-10-30T14:02:59Z",
+ "started": "2026-10-30T14:10:51Z",
  "seconds": {
   "qwen_01.png": 0.5,
   "qwen_02.png": 0.5,
   "qwen_03.png": 0.4,
-  "qwen_04.png": 0.4,
-  "qwen_05.png": 0.4,
-  "qwen_06.png": 0.4,
-  "qwen_07.png": 0.4,
-  "qwen_08.png": 0.4
+  "qwen_04.png": 0.3,
+  "qwen_05.png": 0.3,
+  "qwen_06.png": 0.3,
+  "qwen_07.png": 0.3,
+  "qwen_08.png": 0.3
  },
  "errors": [
   "qwen_01.png: cal/lib/python3.13/dist-packages/accelerate/hooks.py\", line 187, in new_forward\n    args, kwargs = module._hf_hook.pre_forward(module, *args, **kwargs)\n                   ~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/usr/local/lib/python3.13/dist-packages/accelerate/hooks.py\", line 50, in wrapper\n    return wrapper._compiled_fn(*args, **kwargs)\n           ~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^\n  File \"/usr/local/lib/python3.13/dist-packages/torch/_dynamo/eval_frame.py\", line 1263, in _fn\n    return fn(*args, **kwargs)\n  File \"/usr/local/lib/python3.13/dist-packages/accelerate/hooks.py\", line 388, in pre_forward\n    set_module_tensor_to_device(\n    ~~~~~~~~~~~~~~~~~~~~~~~~~~~^\n        module,\n        ^^^^^^^\n    ...<4 lines>...\n        tied_params_map=self.tied_params_map,\n        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n    )\n    ^\n  File \"/usr/local/lib/python3.13/dist-packages/accelerate/utils/modeling.py\", line 374, in set_module_tensor_to_device\n    new_value = param_cls(new_value, requires_grad=old_value.requires_grad, **kwargs).to(\n        device, non_blocking=non_blocking\n    )\n  File \"/usr/local/lib/python3.13/dist-packages/bitsandbytes/nn/modules.py\", line 431, in to\n    self.quant_state.to(device)\n    ~~~~~~~~~~~~~~~~~~~^^^^^^^^\n  File \"/usr/local/lib/python3.13/dist-packages/bitsandbytes/functional.py\", line 582, in to\n    self.code = self.code.to(device)\n                ~~~~~~~~~~~~^^^^^^^^\nNotImplementedError: Cannot copy out of meta tensor; no data!\n",
@@ -68,11 +68,11 @@
   ]
  },
  "text_encoder_gb": 4.7,
- "execution_device": "cuda:1",
- "load_s": 111,
+ "execution_device": "cuda:0",
+ "load_s": 110,
  "vram_after_load_gb": [
-  9.0,
-  6.8
+  11.0,
+  4.7
  ],
  "lora_files": [
   "Qwen-Image-Edit-2511-Lightning-4steps-V1.0-bf16.safetensors",
@@ -147,7 +147,7 @@
  ],
  "steps": 20,
  "cfg": 4.0,
- "setup_s": 198,
+ "setup_s": 200,
  "pictures": [],
- "total_s": 247
+ "total_s": 249
 }
