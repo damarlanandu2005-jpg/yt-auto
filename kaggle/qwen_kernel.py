@@ -29,6 +29,7 @@ LORA = "lightx2v/Qwen-Image-Edit-2511-Lightning"
 SIZE = (576, 1024)
 SEED = 30
 BUDGET_S = 10.5 * 3600
+USE_LORA = False
 T0 = time.time()
 
 
@@ -41,8 +42,9 @@ def save_job() -> None:
 def main() -> None:
     OUT.mkdir(parents=True, exist_ok=True)
     subprocess.run([sys.executable, "-m", "pip", "install", "-q", "-U", "diffusers", "transformers", "accelerate",
-                    "safetensors", "huggingface-hub", "bitsandbytes", "peft", "psutil",
-                    "torchao"], check=True)  # run 3: Kaggle's torchao 0.10 blocked the Lightning LoRA (needs > 0.16)
+                    "safetensors", "huggingface-hub", "bitsandbytes", "peft", "psutil"], check=True)
+    # runs 4-6 (newer torchao + Lightning LoRA loaded) all failed with "Cannot copy out of meta tensor", even
+    # after reloading the transformer; run 3 (neither) reached the last stage. So: no LoRA, no torchao upgrade.
     import importlib.metadata as md
     JOB["versions"] = {p: md.version(p) for p in ("diffusers", "transformers", "huggingface-hub", "bitsandbytes",
                                                   "peft", "torch")}
@@ -89,6 +91,8 @@ def main() -> None:
     print("loaded", JOB["load_s"], "s", JOB["vram_after_load_gb"], flush=True)
     steps, cfg = 20, 4.0
     try:
+        if not USE_LORA:
+            raise RuntimeError("off for this run (runs 4-6)")
         files = [f for f in HfApi().list_repo_files(LORA) if f.endswith(".safetensors")]
         JOB["lora_files"] = files
         pick = next((f for f in files if "8step" in f.lower() and "bf16" in f.lower()), None) or \
