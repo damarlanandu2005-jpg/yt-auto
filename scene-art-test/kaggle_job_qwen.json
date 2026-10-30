@@ -1,20 +1,18 @@
 {
- "started": "2026-10-30T15:04:15Z",
+ "started": "2026-10-30T19:53:20Z",
  "seconds": {
-  "qwen_01.png": 1122.6,
-  "qwen_02.png": 38.0,
-  "qwen_03.png": 1132.3,
-  "qwen_04.png": 1133.2,
-  "qwen_05.png": 1133.3,
-  "qwen_06.png": 1123.4,
-  "qwen_07.png": 1129.1,
-  "qwen_08.png": 1133.0
+  "qwen8_bf16_01.png": 1.4,
+  "qwen8_bf16_04.png": 0.3,
+  "qwen8_bf16_07.png": 0.3
  },
  "errors": [
-  "qwen_02.png: py\", line 607, in forward\n    return self.processor(\n           ~~~~~~~~~~~~~~^\n        self,\n        ^^^^^\n    ...<3 lines>...\n        **cross_attention_kwargs,\n        ^^^^^^^^^^^^^^^^^^^^^^^^^\n    )\n    ^\n  File \"/usr/local/lib/python3.13/dist-packages/diffusers/models/transformers/transformer_qwenimage.py\", line 560, in __call__\n    joint_hidden_states = dispatch_attention_fn(\n        joint_query,\n    ...<6 lines>...\n        parallel_config=self._parallel_config,\n    )\n  File \"/usr/local/lib/python3.13/dist-packages/diffusers/models/attention_dispatch.py\", line 450, in dispatch_attention_fn\n    return backend_fn(**kwargs)\n  File \"/usr/local/lib/python3.13/dist-packages/diffusers/models/attention_dispatch.py\", line 3760, in _native_attention\n    out = torch.nn.functional.scaled_dot_product_attention(\n        query=query,\n    ...<6 lines>...\n        enable_gqa=enable_gqa,\n    )\ntorch.OutOfMemoryError: CUDA out of memory. Tried to allocate 548.00 MiB. GPU 1 has a total capacity of 14.56 GiB of which 248.81 MiB is free. Including non-PyTorch memory, this process has 14.32 GiB memory in use. Of the allocated memory 14.11 GiB is allocated by PyTorch, and 79.00 MiB is reserved by PyTorch but unallocated. If reserved but unallocated memory is large try setting PYTORCH_CUDA_ALLOC_CONF=expandable_segments:True to avoid fragmentation.  See documentation for Memory Management  (https://docs.pytorch.org/docs/stable/notes/cuda.html#optimizing-memory-usage-with-pytorch-cuda-alloc-conf)\n"
+  "qwen8_bf16_01.png: cal/lib/python3.13/dist-packages/accelerate/hooks.py\", line 187, in new_forward\n    args, kwargs = module._hf_hook.pre_forward(module, *args, **kwargs)\n                   ~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/usr/local/lib/python3.13/dist-packages/accelerate/hooks.py\", line 50, in wrapper\n    return wrapper._compiled_fn(*args, **kwargs)\n           ~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^\n  File \"/usr/local/lib/python3.13/dist-packages/torch/_dynamo/eval_frame.py\", line 1263, in _fn\n    return fn(*args, **kwargs)\n  File \"/usr/local/lib/python3.13/dist-packages/accelerate/hooks.py\", line 388, in pre_forward\n    set_module_tensor_to_device(\n    ~~~~~~~~~~~~~~~~~~~~~~~~~~~^\n        module,\n        ^^^^^^^\n    ...<4 lines>...\n        tied_params_map=self.tied_params_map,\n        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n    )\n    ^\n  File \"/usr/local/lib/python3.13/dist-packages/accelerate/utils/modeling.py\", line 374, in set_module_tensor_to_device\n    new_value = param_cls(new_value, requires_grad=old_value.requires_grad, **kwargs).to(\n        device, non_blocking=non_blocking\n    )\n  File \"/usr/local/lib/python3.13/dist-packages/bitsandbytes/nn/modules.py\", line 431, in to\n    self.quant_state.to(device)\n    ~~~~~~~~~~~~~~~~~~~^^^^^^^^\n  File \"/usr/local/lib/python3.13/dist-packages/bitsandbytes/functional.py\", line 582, in to\n    self.code = self.code.to(device)\n                ~~~~~~~~~~~~^^^^^^^^\nNotImplementedError: Cannot copy out of meta tensor; no data!\n",
+  "qwen8_bf16_04.png: cal/lib/python3.13/dist-packages/accelerate/hooks.py\", line 187, in new_forward\n    args, kwargs = module._hf_hook.pre_forward(module, *args, **kwargs)\n                   ~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/usr/local/lib/python3.13/dist-packages/accelerate/hooks.py\", line 50, in wrapper\n    return wrapper._compiled_fn(*args, **kwargs)\n           ~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^\n  File \"/usr/local/lib/python3.13/dist-packages/torch/_dynamo/eval_frame.py\", line 1263, in _fn\n    return fn(*args, **kwargs)\n  File \"/usr/local/lib/python3.13/dist-packages/accelerate/hooks.py\", line 388, in pre_forward\n    set_module_tensor_to_device(\n    ~~~~~~~~~~~~~~~~~~~~~~~~~~~^\n        module,\n        ^^^^^^^\n    ...<4 lines>...\n        tied_params_map=self.tied_params_map,\n        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n    )\n    ^\n  File \"/usr/local/lib/python3.13/dist-packages/accelerate/utils/modeling.py\", line 374, in set_module_tensor_to_device\n    new_value = param_cls(new_value, requires_grad=old_value.requires_grad, **kwargs).to(\n        device, non_blocking=non_blocking\n    )\n  File \"/usr/local/lib/python3.13/dist-packages/bitsandbytes/nn/modules.py\", line 431, in to\n    self.quant_state.to(device)\n    ~~~~~~~~~~~~~~~~~~~^^^^^^^^\n  File \"/usr/local/lib/python3.13/dist-packages/bitsandbytes/functional.py\", line 582, in to\n    self.code = self.code.to(device)\n                ~~~~~~~~~~~~^^^^^^^^\nNotImplementedError: Cannot copy out of meta tensor; no data!\n",
+  "qwen8_bf16_07.png: cal/lib/python3.13/dist-packages/accelerate/hooks.py\", line 187, in new_forward\n    args, kwargs = module._hf_hook.pre_forward(module, *args, **kwargs)\n                   ~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/usr/local/lib/python3.13/dist-packages/accelerate/hooks.py\", line 50, in wrapper\n    return wrapper._compiled_fn(*args, **kwargs)\n           ~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^\n  File \"/usr/local/lib/python3.13/dist-packages/torch/_dynamo/eval_frame.py\", line 1263, in _fn\n    return fn(*args, **kwargs)\n  File \"/usr/local/lib/python3.13/dist-packages/accelerate/hooks.py\", line 388, in pre_forward\n    set_module_tensor_to_device(\n    ~~~~~~~~~~~~~~~~~~~~~~~~~~~^\n        module,\n        ^^^^^^^\n    ...<4 lines>...\n        tied_params_map=self.tied_params_map,\n        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n    )\n    ^\n  File \"/usr/local/lib/python3.13/dist-packages/accelerate/utils/modeling.py\", line 374, in set_module_tensor_to_device\n    new_value = param_cls(new_value, requires_grad=old_value.requires_grad, **kwargs).to(\n        device, non_blocking=non_blocking\n    )\n  File \"/usr/local/lib/python3.13/dist-packages/bitsandbytes/nn/modules.py\", line 431, in to\n    self.quant_state.to(device)\n    ~~~~~~~~~~~~~~~~~~~^^^^^^^^\n  File \"/usr/local/lib/python3.13/dist-packages/bitsandbytes/functional.py\", line 582, in to\n    self.code = self.code.to(device)\n                ~~~~~~~~~~~~^^^^^^^^\nNotImplementedError: Cannot copy out of meta tensor; no data!\n"
  ],
  "notes": [
-  "Lightning LoRA not used (RuntimeError: off for this run (runs 4-6)) -> 20 steps, CFG 4"
+  "bf16: Lightning LoRA loaded (Qwen-Image-Edit-2511-Lightning-8steps-V1.0-bf16.safetensors) -> 8 steps, CFG 1",
+  "fp16: Lightning LoRA failed to load (NotImplementedError: Cannot copy out of meta tensor; no data!)"
  ],
  "versions": {
   "diffusers": "0.42.1",
@@ -61,26 +59,101 @@
  "text_encoder_gb": 4.7,
  "execution_device": "cuda:0",
  "vae_image_size_was": 1048576,
- "load_s": 115,
+ "load_s": 114,
  "vram_after_load_gb": [
   6.4,
   9.3
  ],
- "steps": 20,
- "cfg": 4.0,
- "setup_s": 173,
- "peak_vram_gb": [
-  11.8,
-  14.1
+ "options": {
+  "lora": true,
+  "dtypes": [
+   "bf16",
+   "fp16"
+  ],
+  "scenes": [
+   "01",
+   "04",
+   "07"
+  ]
+ },
+ "lora_files": [
+  "Qwen-Image-Edit-2511-Lightning-4steps-V1.0-bf16.safetensors",
+  "Qwen-Image-Edit-2511-Lightning-4steps-V1.0-fp32.safetensors",
+  "Qwen-Image-Edit-2511-Lightning-8steps-V1.0-bf16.safetensors",
+  "Qwen-Image-Edit-2511-Lightning-8steps-V1.0-fp32.safetensors",
+  "qwen_image_edit_2511_fp8_e4m3fn_scaled.safetensors",
+  "qwen_image_edit_2511_fp8_e4m3fn_scaled_lightning_4steps_v1.0.safetensors",
+  "qwen_image_edit_2511_fp8_e4m3fn_scaled_lightning_8steps_v1.0.safetensors",
+  "qwen_image_edit_2511_fp8_e4m3fn_scaled_lightning_comfyui_4steps_v1.0.safetensors",
+  "qwen_image_edit_2511_fp8_e4m3fn_scaled_lightning_split/block_0.safetensors",
+  "qwen_image_edit_2511_fp8_e4m3fn_scaled_lightning_split/block_1.safetensors",
+  "qwen_image_edit_2511_fp8_e4m3fn_scaled_lightning_split/block_10.safetensors",
+  "qwen_image_edit_2511_fp8_e4m3fn_scaled_lightning_split/block_11.safetensors",
+  "qwen_image_edit_2511_fp8_e4m3fn_scaled_lightning_split/block_12.safetensors",
+  "qwen_image_edit_2511_fp8_e4m3fn_scaled_lightning_split/block_13.safetensors",
+  "qwen_image_edit_2511_fp8_e4m3fn_scaled_lightning_split/block_14.safetensors",
+  "qwen_image_edit_2511_fp8_e4m3fn_scaled_lightning_split/block_15.safetensors",
+  "qwen_image_edit_2511_fp8_e4m3fn_scaled_lightning_split/block_16.safetensors",
+  "qwen_image_edit_2511_fp8_e4m3fn_scaled_lightning_split/block_17.safetensors",
+  "qwen_image_edit_2511_fp8_e4m3fn_scaled_lightning_split/block_18.safetensors",
+  "qwen_image_edit_2511_fp8_e4m3fn_scaled_lightning_split/block_19.safetensors",
+  "qwen_image_edit_2511_fp8_e4m3fn_scaled_lightning_split/block_2.safetensors",
+  "qwen_image_edit_2511_fp8_e4m3fn_scaled_lightning_split/block_20.safetensors",
+  "qwen_image_edit_2511_fp8_e4m3fn_scaled_lightning_split/block_21.safetensors",
+  "qwen_image_edit_2511_fp8_e4m3fn_scaled_lightning_split/block_22.safetensors",
+  "qwen_image_edit_2511_fp8_e4m3fn_scaled_lightning_split/block_23.safetensors",
+  "qwen_image_edit_2511_fp8_e4m3fn_scaled_lightning_split/block_24.safetensors",
+  "qwen_image_edit_2511_fp8_e4m3fn_scaled_lightning_split/block_25.safetensors",
+  "qwen_image_edit_2511_fp8_e4m3fn_scaled_lightning_split/block_26.safetensors",
+  "qwen_image_edit_2511_fp8_e4m3fn_scaled_lightning_split/block_27.safetensors",
+  "qwen_image_edit_2511_fp8_e4m3fn_scaled_lightning_split/block_28.safetensors",
+  "qwen_image_edit_2511_fp8_e4m3fn_scaled_lightning_split/block_29.safetensors",
+  "qwen_image_edit_2511_fp8_e4m3fn_scaled_lightning_split/block_3.safetensors",
+  "qwen_image_edit_2511_fp8_e4m3fn_scaled_lightning_split/block_30.safetensors",
+  "qwen_image_edit_2511_fp8_e4m3fn_scaled_lightning_split/block_31.safetensors",
+  "qwen_image_edit_2511_fp8_e4m3fn_scaled_lightning_split/block_32.safetensors",
+  "qwen_image_edit_2511_fp8_e4m3fn_scaled_lightning_split/block_33.safetensors",
+  "qwen_image_edit_2511_fp8_e4m3fn_scaled_lightning_split/block_34.safetensors",
+  "qwen_image_edit_2511_fp8_e4m3fn_scaled_lightning_split/block_35.safetensors",
+  "qwen_image_edit_2511_fp8_e4m3fn_scaled_lightning_split/block_36.safetensors",
+  "qwen_image_edit_2511_fp8_e4m3fn_scaled_lightning_split/block_37.safetensors",
+  "qwen_image_edit_2511_fp8_e4m3fn_scaled_lightning_split/block_38.safetensors",
+  "qwen_image_edit_2511_fp8_e4m3fn_scaled_lightning_split/block_39.safetensors",
+  "qwen_image_edit_2511_fp8_e4m3fn_scaled_lightning_split/block_4.safetensors",
+  "qwen_image_edit_2511_fp8_e4m3fn_scaled_lightning_split/block_40.safetensors",
+  "qwen_image_edit_2511_fp8_e4m3fn_scaled_lightning_split/block_41.safetensors",
+  "qwen_image_edit_2511_fp8_e4m3fn_scaled_lightning_split/block_42.safetensors",
+  "qwen_image_edit_2511_fp8_e4m3fn_scaled_lightning_split/block_43.safetensors",
+  "qwen_image_edit_2511_fp8_e4m3fn_scaled_lightning_split/block_44.safetensors",
+  "qwen_image_edit_2511_fp8_e4m3fn_scaled_lightning_split/block_45.safetensors",
+  "qwen_image_edit_2511_fp8_e4m3fn_scaled_lightning_split/block_46.safetensors",
+  "qwen_image_edit_2511_fp8_e4m3fn_scaled_lightning_split/block_47.safetensors",
+  "qwen_image_edit_2511_fp8_e4m3fn_scaled_lightning_split/block_48.safetensors",
+  "qwen_image_edit_2511_fp8_e4m3fn_scaled_lightning_split/block_49.safetensors",
+  "qwen_image_edit_2511_fp8_e4m3fn_scaled_lightning_split/block_5.safetensors",
+  "qwen_image_edit_2511_fp8_e4m3fn_scaled_lightning_split/block_50.safetensors",
+  "qwen_image_edit_2511_fp8_e4m3fn_scaled_lightning_split/block_51.safetensors",
+  "qwen_image_edit_2511_fp8_e4m3fn_scaled_lightning_split/block_52.safetensors",
+  "qwen_image_edit_2511_fp8_e4m3fn_scaled_lightning_split/block_53.safetensors",
+  "qwen_image_edit_2511_fp8_e4m3fn_scaled_lightning_split/block_54.safetensors",
+  "qwen_image_edit_2511_fp8_e4m3fn_scaled_lightning_split/block_55.safetensors",
+  "qwen_image_edit_2511_fp8_e4m3fn_scaled_lightning_split/block_56.safetensors",
+  "qwen_image_edit_2511_fp8_e4m3fn_scaled_lightning_split/block_57.safetensors",
+  "qwen_image_edit_2511_fp8_e4m3fn_scaled_lightning_split/block_58.safetensors",
+  "qwen_image_edit_2511_fp8_e4m3fn_scaled_lightning_split/block_59.safetensors",
+  "qwen_image_edit_2511_fp8_e4m3fn_scaled_lightning_split/block_6.safetensors",
+  "qwen_image_edit_2511_fp8_e4m3fn_scaled_lightning_split/block_7.safetensors",
+  "qwen_image_edit_2511_fp8_e4m3fn_scaled_lightning_split/block_8.safetensors",
+  "qwen_image_edit_2511_fp8_e4m3fn_scaled_lightning_split/block_9.safetensors",
+  "qwen_image_edit_2511_fp8_e4m3fn_scaled_lightning_split/non_block.safetensors"
  ],
- "pictures": [
-  "qwen_01.png",
-  "qwen_03.png",
-  "qwen_04.png",
-  "qwen_05.png",
-  "qwen_06.png",
-  "qwen_07.png",
-  "qwen_08.png"
- ],
- "total_s": 8118
+ "compute_dtype": {
+  "torch.bfloat16": "816 4-bit layers",
+  "torch.float16": "816 4-bit layers"
+ },
+ "variant_setup_s": {
+  "bf16": 27
+ },
+ "pictures": [],
+ "total_s": 254
 }
