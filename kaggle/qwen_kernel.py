@@ -89,6 +89,12 @@ def main() -> None:
     pipe.vae.to("cuda:0")
     # run 7: encoding the reference picture needed 5.1 GiB with only 2.0 free next to the 11 GiB transformer;
     # tiles and slices keep the VAE's working memory small
+    # run 10: every step's attention needed 4.1 GiB (3.1 free) because the edit pipeline enlarges each reference
+    # picture to ~1 megapixel (4096 extra tokens). 512x512 is plenty to show who the stickman is (~1024 tokens).
+    import diffusers.pipelines.qwenimage.pipeline_qwenimage_edit_plus as qep
+    JOB["vae_image_size_was"] = getattr(qep, "VAE_IMAGE_SIZE", None)
+    if hasattr(qep, "VAE_IMAGE_SIZE"):
+        qep.VAE_IMAGE_SIZE = 512 * 512
     pipe.vae.enable_tiling()
     pipe.vae.enable_slicing()
     JOB["load_s"] = round(time.time() - t)
