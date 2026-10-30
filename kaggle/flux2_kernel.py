@@ -155,7 +155,8 @@ def main() -> None:
                                                  max_memory={0: "8.5GiB", 1: "10GiB"})
     set_compute(tr, dtype)
     pipe.transformer = tr
-    pipe.vae.to("cuda:0")
+    # speed test 1: fp16 latents met the bf16 VAE ("Input type Half and bias type BFloat16"): VAE in the same dtype
+    pipe.vae.to("cuda:0", dtype)
     JOB["transformer_load_s"] = round(time.time() - t)
     JOB["vram_after_load_gb"] = [round(torch.cuda.memory_allocated(i) / 2**30, 1) for i in range(2)]
     print("transformer loaded", JOB["transformer_load_s"], "s", JOB["vram_after_load_gb"], flush=True)

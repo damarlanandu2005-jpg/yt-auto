@@ -159,7 +159,9 @@ def main() -> None:
         steps, cfg, prefix = 20, 4.0, f"qwen_{dname}_" if O.get("dtypes") else "qwen_"
         if use_lora:
             try:
-                pipe.load_lora_weights(LORA, weight_name=pick)
+                # speed tests 1-2: with the default low_cpu_mem_usage the LoRA layers start on the 'meta' device and
+                # the 4-bit base layers' quant_state was left empty ("Cannot copy out of meta tensor"), split or not
+                pipe.load_lora_weights(LORA, weight_name=pick, low_cpu_mem_usage=False)
                 steps, cfg, prefix = 8, 1.0, f"qwen8_{dname}_"
                 JOB["notes"].append(f"{dname}: Lightning LoRA loaded ({pick}) -> 8 steps, CFG 1")
             except Exception as e:  # noqa: BLE001
