@@ -33,7 +33,10 @@ def cloudflare(out: Path) -> None:
             raw = drawings.cloud_draw(f"{sc['prompt']}. {P['character']}. {P['style']}")
             (out / f"flux_{sc['id']}.jpg").write_bytes(raw)
         except Exception as e:  # noqa: BLE001  one failed picture is recorded, the rest go on
-            log["errors"].append(f"{sc['id']}: {e!r}"[:300])
+            body = e.read().decode(errors="replace")[:400] if hasattr(e, "read") else ""
+            log["errors"].append(f"{sc['id']}: {e!r} {body}"[:600])
+            if "429" in str(e):  # first run 30 Oct: all 8 got 429; keep the reason, don't spend more
+                break
         log["seconds"][sc["id"]] = round(time.time() - t, 1)
     # Which Cloudflare image models exist now: some may take a reference picture (the one we used takes words only)
     try:
@@ -46,6 +49,19 @@ def cloudflare(out: Path) -> None:
                                 "properties": m.get("properties")} for m in models]
     except Exception as e:  # noqa: BLE001
         log["errors"].append(f"model list: {e!r}"[:300])
+    # Input format of the FLUX.2 models that take reference pictures (their docs page is not reachable from
+    # Claude's sandbox; the API describes itself)
+    log["schemas"] = {}
+    for m in ("@cf/black-forest-labs/flux-2-klein-4b", "@cf/black-forest-labs/flux-2-klein-9b",
+              "@cf/black-forest-labs/flux-2-dev"):
+        try:
+            url = (f"https://api.cloudflare.com/client/v4/accounts/{os.environ['CLOUDFLARE_ACCOUNT_ID']}/ai/models/schema?"
+                   + urllib.parse.urlencode({"model": m}))
+            req = urllib.request.Request(url, headers={"Authorization": f"Bearer {os.environ['CLOUDFLARE_API_TOKEN']}"})
+            with urllib.request.urlopen(req, timeout=60) as r:
+                log["schemas"][m] = json.loads(r.read()).get("result")
+        except Exception as e:  # noqa: BLE001
+            log["schemas"][m] = f"error: {e!r}"[:300]
     (out / "cloudflare.json").write_text(json.dumps(log, indent=1))
     print(json.dumps({k: v for k, v in log.items() if k != "image_models"}, indent=1))
     print("image models:", [m["name"] for m in log.get("image_models", [])])

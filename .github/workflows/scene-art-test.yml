@@ -3,6 +3,7 @@ name: Scene picture test (AI draws the whole scene)
 # Owner 'go' (30 Oct): the same 8 Titanic scenes drawn 3 ways, to fix the "pasted stickman" look
 # (cartoon/scene_art_test/prompts.json):
 #   action = start   : Cloudflare FLUX draws 8 (words only) now; Kaggle SDXL + IP-Adapter (logo reference) starts
+#   action = cloudflare : only the Cloudflare part again (Kaggle untouched)
 #   action = collect : (~40-60 min later) fetches Kaggle's pictures; adds the owner's ChatGPT pictures if they are in
 #                      cartoon/scene_art_test/chatgpt/; makes one comparison sheet
 # Results: bench-results scene-art-test/pictures/ (all pictures, jpg) and scene-art-test/sheet.jpg.
@@ -13,7 +14,7 @@ on:
       action:
         description: "start or collect"
         type: choice
-        options: [start, collect]
+        options: [start, collect, cloudflare]
         default: start
 
 permissions:
@@ -52,7 +53,7 @@ jobs:
           mkdir -p results/scene-art-test/pictures
 
       - name: Cloudflare FLUX, 8 pictures (words only)
-        if: inputs.action == 'start'
+        if: inputs.action == 'start' || inputs.action == 'cloudflare'
         timeout-minutes: 8
         env:
           CLOUDFLARE_API_TOKEN: ${{ secrets.CLOUDFLARE_API_TOKEN }}
