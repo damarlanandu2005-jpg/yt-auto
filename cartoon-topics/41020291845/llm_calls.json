@@ -1,0 +1,50 @@
+[
+ {
+  "name": "emotion_ideas",
+  "model": "gemini-3.8-flash",
+  "prompt_chars": 6294,
+  "images": 0,
+  "status": 200,
+  "seconds": 170.7,
+  "attempts": 1,
+  "finish": "STOP",
+  "in_tokens": 2017,
+  "out_tokens": 4281,
+  "thought_tokens": 1259
+ },
+ {
+  "name": "emotion_feeling_a",
+  "model": "gemini-3.8-flash",
+  "prompt_chars": 12314,
+  "images": 0,
+  "status": 200,
+  "seconds": 45.6,
+  "attempts": 1,
+  "finish": "STOP",
+  "in_tokens": 2490,
+  "out_tokens": 1676,
+  "thought_tokens": 3818
+ },
+ {
+  "name": "emotion_feeling_b",
+  "model": "gemma-4-31b-it",
+  "prompt_chars": 12314,
+  "images": 0,
+  "status": 500,
+  "attempt": 1,
+  "error": "{\n  \"error\": {\n    \"code\": 500,\n    \"message\": \"Internal error encountered.\",\n    \"status\": \"INTERNAL\"\n  }\n}\n"
+ },
+ {
+  "name": "emotion_feeling_b",
+  "model": "gemini-3.5-flash-lite",
+  "prompt_chars": 12314,
+  "images": 0,
+  "status": 200,
+  "seconds": 6.4,
+  "attempts": 1,
+  "finish": "STOP",
+  "in_tokens": 2490,
+  "out_tokens": 2668,
+  "thought_tokens": null
+ }
+]

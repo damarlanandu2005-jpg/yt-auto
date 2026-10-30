@@ -1,0 +1,73 @@
+[model] gemini-3.8-flash
+[system]
+
+
+[user]
+Channel "Stickman Thoughts" (YouTube Shorts, 40-60 s, worldwide English): "The stickman wonders
+'what if...?' He goes there. He feels it. He finds out the truth." Every fact comes from Wikipedia.
+
+Below are MEASURED signals: Shorts that beat their own channel's normal views, and Shorts with many views for
+"what happens if you..." searches. Propose 40 different Short ideas that real viewers are showing interest in.
+- Each idea is ONE vivid situation a viewer can imagine being in, with a strong feeling that the true facts
+  really carry (no fake drama), and an answer that is known and written down (a real event or a documented effect).
+- What wins: one famous subject + a concrete situation + a twist ("What if you fell into the Mariana Trench?").
+- Cite the ids of the signals that show interest (at least one). Never copy a signal's title: find the subject and
+  the kind of situation people want, then give our own question.
+- Spread the ideas over these areas (at most 5 per area): human body, ocean, space, history, animals, nature and weather, disasters, engineering and inventions, everyday life, earth and geology, food and plants, sport and extreme limits.
+- wikipedia_articles: 2-4 exact English Wikipedia titles that state the answer; for "what happens to you" ideas
+  include the article about the effect itself (e.g. "Barotrauma", "Hypothermia").
+- places: 1-2 names from OUR picture library where the story happens: airplane_cabin, ancient_egypt, arctic_ice, bedroom_night, burning_building, cave, city_earthquake, city_night, city_street_day, classroom, courtroom, deep_sea, desert, farm, forest, garage, hospital_room, inside_body_blood, inside_body_lungs, jungle, kitchen, living_room, mars_surface, mine_tunnel, moon_surface, ocean_surface, office, old_village_india, police_station, prehistoric_land, science_lab, ship_corridor, snow_mountain, space_station, stadium, storm_sea, titanic_deck_night, tsunami_beach, underwater, volcano_crater; or "space" for
+  outer space. If none fits, write the place you would need (it goes on a list of pictures to make).
+- things: 0-3 objects from the library (airplane, astronaut_helmet, bed, bomb_timer, bus, cactus, campfire, car, desk, desk_lamp, diving_helmet, flask, heart_monitor, hospital_bed, house, iceberg, lifeboat, lifeboat_crowded, lockers, microscope, ocean_liner, pyramid, rock_pile, rocket_launch, ship_back_half, ship_front_half, ship_wreck, street_lamp, submarine, telescope, tent, traffic_light, train, wooden_crate) or the object you would need.
+- Allowed: any subject with a strong, TRUE feeling (space, history, the human body, animals, nature,
+  disasters, inventions, everyday mysteries). Not allowed: health, money or legal advice ("you should..."),
+  accusations against named companies or living people, tragedies from the last 12 months, gore.
+- No dangerous acts a viewer could copy, no self-harm, no politics or religion, no tragedy with living victims or
+  families (less than 25 years ago), no gore beyond a cartoon.
+- Do NOT repeat these past Shorts:
+- How GPS Finds Your Location Using Satellite Timestamps
+- What happens if you fall into a black hole?
+- What Happens If You Fall Into the Mariana Trench?
+
+SIGNALS:
+S1 [beats_channel] How Electrical Outlets Work 🤔 (5.9x its channel's normal)
+S2 [beats_channel] How Cookiecutter Sharks Bite Whales 😨 (5.3x its channel's normal)
+S3 [beats_channel] How To Get Water Out Of Your Ear 🤔 (4.2x its channel's normal)
+S4 [beats_channel] How They Filmed An Invisible Man In Snow 🤔 (3.0x its channel's normal)
+S18 [beats_channel] When Mobs Get Smart! 💀💀 (3.8x its channel's normal)
+S20 [beats_channel] When You Turn Keep Inventory On... 😂😂 (3.2x its channel's normal)
+S22 [beats_channel] Longest Summer Vacation 😱 (5.6x its channel's normal)
+S23 [beats_channel] Saudi Prince Vacation 😱 (5.0x its channel's normal)
+S24 [beats_channel] The Story Of Jeanne Calment 😱 (4.9x its channel's normal)
+S25 [beats_channel] A Hole Through The Earth 😱 (3.4x its channel's normal)
+S26 [beats_channel] The Luckiest Unlucky Man 😱 (3.3x its channel's normal)
+S27 [beats_channel] Pablo Escobar 😱 (3.2x its channel's normal)
+S28 [beats_channel] The Ageless People 😱 (3.2x its channel's normal)
+S31 [beats_channel] What Happens If You Shoot the Duck Hunt Dog? 😳 (5.4x its channel's normal)
+S32 [beats_channel] What Happens If Tails Gets Every Super Emerald? 😳 (4.4x its channel's normal)
+S40 [beats_channel] Can a Hot Pepper Conquer the Dinosaurs? 🌶️🦖 (7.6x its channel's normal)
+S41 [beats_channel] Can a Mango Conquer the Dinosaur Era? 🥭🦕 (4.1x its channel's normal)
+S42 [beats_channel] Can Sugarcane Survive the Dinosaur Era? 🎋🦖 (3.5x its channel's normal)
+S43 [search] What happens when you don't pay attention #bear #wildanimals #animalencounters #scare #shorts (67,404,826 views)
+S44 [search] What if Our Sun Disappeared 😱 (48,685,463 views)
+S45 [search] What if Our Sun Disappeared 😱 (48,685,463 views)
+S46 [search] The Puber 😣 (Patent Pending) (36,913,268 views)
+S48 [search] What Happens When You Trap Smoke With Ronaldo? (32,231,383 views)
+S49 [search] what would you do if you were him in this situation 😭 (22,965,385 views)
+S50 [search] What To Do If Your Car Sinks? 😨 (20,658,293 views)
+S51 [search] When Nails Get Too Long! 💀💀 (20,505,817 views)
+S53 [search] What If Your Hair Had Nerves 😱 (20,006,744 views)
+S54 [search] What Happens To Bugs When You Mow? 😯 (19,945,689 views)
+S56 [search] When You Press F3! 🤔🤔 (17,576,401 views)
+S58 [search] What If You Hit Absolute Zero? 🥶 (16,954,742 views)
+S59 [search] What If You Hit Absolute Zero? 🥶 (16,954,742 views)
+S61 [search] What Happens If Shazam Stays 50 Years⚡️ (16,314,665 views)
+S62 [search] Can Farts Contaminate An Open Wound? 😱 (16,296,703 views)
+S65 [search] How Rare You Are 😱 (14,328,839 views)
+S67 [search] What happens if you make espresso with pinto beans? (13,131,715 views)
+S74 [search] If You Get Spiderman Web-Shooters 🕸️ (10,893,346 views)
+S75 [search] Why You Shouldn't Lay On Your Arm Too Long 😨 (10,804,487 views)
+S76 [search] When You Try Not to Cry 😭😭 (10,737,966 views)
+S77 [search] How The Floating Arm Trick Works 😮 (10,557,994 views)
+S78 [search] When You Ask a Bee For Directions... (10,508,919 views)
+S79 [search] Is your Uzi crashing out? Follow these simple steps (10,292,513 views)

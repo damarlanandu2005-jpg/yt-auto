@@ -1,0 +1,212 @@
+# Stickman topic queue (2026-10-30)
+
+14 in the queue, 21 in reserve, 5 dropped. YouTube units used: 0. Score = demand 0.35 + feeling 0.25 + sources 0.20 + drawable 0.10 + variety 0.10 (each 1-5).
+
+| # | Question | Feeling | Score | Demand | Feeling | Sources | Draw | Variety |
+|---|---|---|---|---|---|---|---|---|
+| 1 | What happens if you stand directly underneath a launching Saturn V rocket? | awe | **4.33** | 3.8 | 4.0 | 5 | 5.0 | 5.0 |
+| 2 | What happens if you touch a blue-ringed octopus in a tidal pool? | fear | **4.32** | 3.6 | 4.25 | 5 | 5.0 | 5.0 |
+| 3 | What happens if you get bitten by an inland taipan in the outback? | fear | **4.27** | 3.8 | 3.75 | 5 | 5.0 | 5.0 |
+| 4 | What happens if an astronaut takes off their helmet in space? | fear | **4.25** | 3.4 | 4.25 | 5 | 5.0 | 5.0 |
+| 5 | What happens if an earthquake hits while you are in a skyscraper elevator? | fear | **4.17** | 3.8 | 3.38 | 5 | 5.0 | 5.0 |
+| 6 | What happens to the Earth if the Sun suddenly vanished? | awe | **4.16** | 3.8 | 4.12 | 5 | 5.0 | 3.0 |
+| 7 | What happens if you walk onto the surface of Mars without a heated suit? | fear | **4.13** | 3.4 | 3.75 | 5 | 5.0 | 5.0 |
+| 8 | What happens if you get trapped inside a commercial refrigerator room? | fear | **4.11** | 3.8 | 3.12 | 5 | 5.0 | 5.0 |
+| 9 | What happens if you accidentally startle a sleeping grizzly bear? | fear | **4.09** | 3.4 | 3.62 | 5 | 5.0 | 5.0 |
+| 10 | What happens if you scuba dive too deep and breathe air? | surprise | **4.09** | 3.4 | 3.62 | 5 | 5.0 | 5.0 |
+| 11 | What happens if you sleep on your arm all night? | fear | **4.06** | 3.4 | 3.5 | 5 | 5.0 | 5.0 |
+| 12 | What happens if you hold in a sneeze? | surprise | **4.06** | 3.4 | 3.5 | 5 | 5.0 | 5.0 |
+| 13 | What happens if you get trapped inside a bank vault for a weekend? | fear | **4.04** | 3.4 | 3.38 | 5 | 5.0 | 5.0 |
+| 14 | What happens if you get bitten by a cookiecutter shark? | fear | **4.03** | 3.2 | 3.62 | 5 | 5.0 | 5.0 |
+
+## Evidence cards
+
+### 1. What happens if you stand directly underneath a launching Saturn V rocket?
+
+- Situation: Standing on the launchpad concrete directly beneath five ignited F-1 rocket engines
+- True answer: The acoustic sound pressure exceeds 200 decibels, producing intense shockwaves capable of tearing human tissue and destroying internal organs.
+- Area: engineering and inventions
+- Places / things: space_station / rocket_launch
+- Signal S48: [What Happens When You Trap Smoke With Ronaldo?](https://www.youtube.com/shorts/5sldVV6Ts6k) (Futcrunch, 32.2M views, search 'what happens if you')
+- Wikipedia: [Saturn V](https://en.wikipedia.org/wiki/Saturn_V) 11/43 passages, [Acoustics](https://en.wikipedia.org/wiki/Acoustics) 12/41 passages, [Acoustic trauma](https://en.wikipedia.org/wiki/Acoustic_trauma) 3/11 passages; 26k readers in 30 days
+- Feeling (two models): [4.0, 4.0] - Extreme physical forces where lethal acoustic pressure takes priority over thermal blast.
+
+### 2. What happens if you touch a blue-ringed octopus in a tidal pool?
+
+- Situation: Reaching down to pick up a tiny, glowing sapphire-patterned octopus resting in shallow ocean water
+- True answer: Its painless bite injects tetrodotoxin, blocking nervous system signals and causing complete motor paralysis while you remain fully conscious.
+- Area: ocean
+- Places / things: tsunami_beach / -
+- Signal S2: [How Cookiecutter Sharks Bite Whales 😨](https://www.youtube.com/shorts/CRGWDiIgMZ4) (Zack D. Films, 5.3x its channel's normal)
+- Wikipedia: [Blue-ringed octopus](https://en.wikipedia.org/wiki/Blue-ringed_octopus) 7/25 passages, [Tetrodotoxin](https://en.wikipedia.org/wiki/Tetrodotoxin) 11/44 passages, [Paralysis](https://en.wikipedia.org/wiki/Paralysis) 6/16 passages; 48k readers in 30 days
+- Feeling (two models): [4.5, 4.0] - Deceptive marine beauty leads to terrifying conscious paralysis, delivering strong tension.
+
+### 3. What happens if you get bitten by an inland taipan in the outback?
+
+- Situation: Accidentally kicking a dusty rock in the outback and feeling needle-sharp fangs pierce your ankle boot
+- True answer: Its potent neurotoxic and hemotoxic venom can paralyze muscles and coagulate blood, causing respiratory arrest in forty-five minutes.
+- Area: animals
+- Places / things: desert / -
+- Signal S43: [What happens when you don't pay attention #bear #wildanimals #animalencounters #scare #shorts](https://www.youtube.com/shorts/udacwkR6CpU) (FailArmy, 67.4M views, search 'what happens if you')
+- Wikipedia: [Inland taipan](https://en.wikipedia.org/wiki/Inland_taipan) 5/62 passages, [Snakebite](https://en.wikipedia.org/wiki/Snakebite) 14/55 passages, [Neurotoxin](https://en.wikipedia.org/wiki/Neurotoxin) 5/31 passages; 29k readers in 30 days
+- Feeling (two models): [3.75, 3.75] - Deadly envenomation scenario where the lethality is terrifying but entirely expected.
+
+### 4. What happens if an astronaut takes off their helmet in space?
+
+- Situation: Unlatching and lifting your spacesuit helmet while floating untethered outside the International Space Station
+- True answer: Lacking atmospheric pressure, bodily fluids boil at body temperature via ebullism, and loss of consciousness occurs in under fifteen seconds.
+- Area: space
+- Places / things: space / astronaut_helmet
+- Signal S58: [What If You Hit Absolute Zero? 🥶](https://www.youtube.com/shorts/fk-BOmxtM8Y) (Zack D. Films, 17.0M views, search 'what happens if you')
+- Signal S59: [What If You Hit Absolute Zero? 🥶](https://www.youtube.com/shorts/fk-BOmxtM8Y) (Zack D. Films, 17.0M views, search 'what if you were')
+- Wikipedia: [Ebullism](https://en.wikipedia.org/wiki/Ebullism) 12/19 passages, [Uncontrolled decompression](https://en.wikipedia.org/wiki/Uncontrolled_decompression) 10/28 passages, [Vacuum](https://en.wikipedia.org/wiki/Vacuum) 20/59 passages; 1k readers in 30 days
+- Feeling (two models): [4.0, 4.5] - Visceral space emergency that debunks explosive decompression myths in favor of ebullism.
+
+### 5. What happens if an earthquake hits while you are in a skyscraper elevator?
+
+- Situation: Feeling the elevator cabin shudder violently and swing like a pendulum inside a dark skyscraper shaft
+- True answer: Modern seismic sensors trigger automatic counterweight brakes and bring the car to the nearest floor before cables can snag.
+- Area: disasters
+- Places / things: city_earthquake / -
+- Signal S49: [what would you do if you were him in this situation 😭](https://www.youtube.com/shorts/ykF79-yhd5g) (Curtain Call , 23.0M views, search 'what if you were')
+- Wikipedia: [Elevator](https://en.wikipedia.org/wiki/Elevator) 25/75 passages, [Earthquake engineering](https://en.wikipedia.org/wiki/Earthquake_engineering) 3/94 passages, [Northern Light (spacecraft)](https://en.wikipedia.org/wiki/Northern_Light_(spacecraft)) 0/22 passages; 12k readers in 30 days
+- Feeling (two models): [3.5, 3.25] - Common urban phobia resolved by the reassuring reality of modern elevator engineering.
+
+### 6. What happens to the Earth if the Sun suddenly vanished?
+
+- Situation: Staring up as midday turns pitch black instantly while city lights flicker and the ground rapidly freezes
+- True answer: Earth would fly off in a straight tangent into space while surface temperatures drop below freezing within a single week.
+- Area: space
+- Places / things: city_night / street_lamp
+- Signal S44: [What if Our Sun Disappeared 😱](https://www.youtube.com/shorts/cheZmAzbJME) (FactoHolic, 48.7M views, search 'what happens if you')
+- Signal S45: [What if Our Sun Disappeared 😱](https://www.youtube.com/shorts/cheZmAzbJME) (FactoHolic, 48.7M views, search 'what would happen if')
+- Wikipedia: [Earth's orbit](https://en.wikipedia.org/wiki/Earth%27s_orbit) 5/11 passages, [Solar irradiance](https://en.wikipedia.org/wiki/Solar_irradiance) 15/75 passages, [Cretaceous–Paleogene extinction event](https://en.wikipedia.org/wiki/Cretaceous%E2%80%93Paleogene_extinction_event) 10/44 passages; 11k readers in 30 days
+- Feeling (two models): [4.0, 4.25] - Apocalyptic scale with interesting orbital mechanics, though somewhat familiar in pop science.
+
+### 7. What happens if you walk onto the surface of Mars without a heated suit?
+
+- Situation: Stepping out onto red Martian sand during an afternoon where air pressure is less than one percent of Earth
+- True answer: Low pressure causes bodily fluids to boil at room temperature, while intense freezing cold and lack of oxygen cause death in seconds.
+- Area: space
+- Places / things: mars_surface / -
+- Signal S44: [What if Our Sun Disappeared 😱](https://www.youtube.com/shorts/cheZmAzbJME) (FactoHolic, 48.7M views, search 'what happens if you')
+- Signal S58: [What If You Hit Absolute Zero? 🥶](https://www.youtube.com/shorts/fk-BOmxtM8Y) (Zack D. Films, 17.0M views, search 'what happens if you')
+- Wikipedia: [Atmosphere of Mars](https://en.wikipedia.org/wiki/Atmosphere_of_Mars) 32/61 passages, [Colonization of Mars](https://en.wikipedia.org/wiki/Colonization_of_Mars) 30/60 passages, [Hypothermia](https://en.wikipedia.org/wiki/Hypothermia) 31/62 passages; 7k readers in 30 days
+- Feeling (two models): [3.75, 3.75] - Hostile alien environment produces immediate and predictable vacuum decompression.
+
+### 8. What happens if you get trapped inside a commercial refrigerator room?
+
+- Situation: Listening to the heavy walk-in cooler latch lock behind you while frosted air chills your breath
+- True answer: Without warm gear, prolonged exposure leads to shivering, disorientation, and fatal core hypothermia within hours unless the escape latch is used.
+- Area: everyday life
+- Places / things: kitchen / -
+- Signal S58: [What If You Hit Absolute Zero? 🥶](https://www.youtube.com/shorts/fk-BOmxtM8Y) (Zack D. Films, 17.0M views, search 'what happens if you')
+- Wikipedia: [Hypothermia](https://en.wikipedia.org/wiki/Hypothermia) 26/62 passages, [Refrigeration](https://en.wikipedia.org/wiki/Refrigeration) 8/44 passages, [Shivering](https://en.wikipedia.org/wiki/Shivering) 2/6 passages; 17k readers in 30 days
+- Feeling (two models): [3.25, 3.0] - Chilling everyday trap that plays out through standard progressive hypothermia.
+
+### 9. What happens if you accidentally startle a sleeping grizzly bear?
+
+- Situation: Stepping over a fallen pine log and coming nose-to-nose with an eight-hundred-pound grizzly in dense brush
+- True answer: Startled bears perceive humans as an immediate predatory threat and will launch a defensive charge to neutralize the surprise.
+- Area: animals
+- Places / things: forest / campfire
+- Signal S43: [What happens when you don't pay attention #bear #wildanimals #animalencounters #scare #shorts](https://www.youtube.com/shorts/udacwkR6CpU) (FailArmy, 67.4M views, search 'what happens if you')
+- Wikipedia: [Bear attack](https://en.wikipedia.org/wiki/Bear_attack) 22/82 passages, [Grizzly bear](https://en.wikipedia.org/wiki/Grizzly_bear) 42/62 passages, [Aggression](https://en.wikipedia.org/wiki/Aggression) 4/46 passages; 6k readers in 30 days
+- Feeling (two models): [3.5, 3.75] - Terrifying immediate danger, but an aggressive defensive charge is the expected response.
+
+### 10. What happens if you scuba dive too deep and breathe air?
+
+- Situation: Checking your depth gauge past two hundred feet underwater while sudden euphoric giggles take over your mind
+- True answer: Breathing nitrogen under extreme ambient pressure produces nitrogen narcosis, an intoxicating anesthetic effect similar to laughing gas.
+- Area: sport and extreme limits
+- Places / things: underwater / diving_helmet
+- Signal S2: [How Cookiecutter Sharks Bite Whales 😨](https://www.youtube.com/shorts/CRGWDiIgMZ4) (Zack D. Films, 5.3x its channel's normal)
+- Signal S50: [What To Do If Your Car Sinks? 😨](https://www.youtube.com/shorts/p832whe8hrI) (Zack D. Films, 20.7M views, search 'what happens if you')
+- Wikipedia: [Nitrogen narcosis](https://en.wikipedia.org/wiki/Nitrogen_narcosis) 30/33 passages, [Scuba diving](https://en.wikipedia.org/wiki/Scuba_diving) 27/38 passages, [Barotrauma](https://en.wikipedia.org/wiki/Barotrauma) 27/60 passages; 7k readers in 30 days
+- Feeling (two models): [3.75, 3.5] - Atmospheric underwater peril driven by the deceptive, intoxicating nature of nitrogen narcosis.
+
+### 11. What happens if you sleep on your arm all night?
+
+- Situation: Waking up in bed with an arm that flops like a dead rubber noodle and will not move
+- True answer: Compressing your limb compresses the radial nerve and cuts off blood flow, causing temporary neuropraxia known as Saturday night palsy.
+- Area: human body
+- Places / things: bedroom_night / bed
+- Signal S75: [Why You Shouldn't Lay On Your Arm Too Long 😨](https://www.youtube.com/shorts/ZoBDbB6jFEY) (Zack D. Films, 10.8M views, search 'what happens if you')
+- Wikipedia: [Radial neuropathy](https://en.wikipedia.org/wiki/Radial_neuropathy) 8/11 passages, [Paresthesia](https://en.wikipedia.org/wiki/Paresthesia) 5/20 passages, [Nerve compression syndrome](https://en.wikipedia.org/wiki/Nerve_compression_syndrome) 13/42 passages; 554 readers in 30 days
+- Feeling (two models): [3.25, 3.75] - Very relatable physical sensation with mild temporary stakes and a well-known biological explanation.
+
+### 12. What happens if you hold in a sneeze?
+
+- Situation: Pinching your nose and clamping your mouth shut during a violent tickle in a quiet room
+- True answer: Trapping sneeze pressure inside your airway can rupture your eardrum, pop blood vessels, or tear throat tissue.
+- Area: human body
+- Places / things: classroom / desk
+- Signal S76: [When You Try Not to Cry 😭😭](https://www.youtube.com/shorts/XDQDROqNp_s) (BlobbyClips, 10.7M views, search 'what happens if you')
+- Signal S49: [what would you do if you were him in this situation 😭](https://www.youtube.com/shorts/ykF79-yhd5g) (Curtain Call , 23.0M views, search 'what if you were')
+- Wikipedia: [Sneeze](https://en.wikipedia.org/wiki/Sneeze) 11/30 passages, [Barotrauma](https://en.wikipedia.org/wiki/Barotrauma) 28/60 passages, [Pneumomediastinum](https://en.wikipedia.org/wiki/Pneumomediastinum) 1/10 passages; 6k readers in 30 days
+- Feeling (two models): [3.5, 3.5] - Relatable habit with a surprisingly severe physical consequence that subverts expectations.
+
+### 13. What happens if you get trapped inside a bank vault for a weekend?
+
+- Situation: Hearing the giant steel vault door swing shut with a heavy mechanical click as lights shut off on Friday night
+- True answer: Airtight commercial vaults contain a finite volume of oxygen, causing carbon dioxide poisoning and hypercapnia if occupants are stuck too long.
+- Area: disasters
+- Places / things: office / -
+- Signal S49: [what would you do if you were him in this situation 😭](https://www.youtube.com/shorts/ykF79-yhd5g) (Curtain Call , 23.0M views, search 'what if you were')
+- Wikipedia: [Bank vault](https://en.wikipedia.org/wiki/Bank_vault) 19/28 passages, [Hypercapnia](https://en.wikipedia.org/wiki/Hypercapnia) 20/34 passages, [Asphyxia](https://en.wikipedia.org/wiki/Asphyxia) 4/25 passages; 2k readers in 30 days
+- Feeling (two models): [3.5, 3.25] - Claustrophobic setting where hypercapnia rather than sudden oxygen starvation is the true culprit.
+
+### 14. What happens if you get bitten by a cookiecutter shark?
+
+- Situation: Swimming in open night water when a tiny glowing shark latches onto your leg with suction lips
+- True answer: The cookiecutter shark uses suction to seal its mouth and twists its body 360 degrees to excise a clean conical plug of flesh.
+- Area: ocean
+- Places / things: deep_sea / diving_helmet
+- Signal S2: [How Cookiecutter Sharks Bite Whales 😨](https://www.youtube.com/shorts/CRGWDiIgMZ4) (Zack D. Films, 5.3x its channel's normal)
+- Wikipedia: [Cookiecutter shark](https://en.wikipedia.org/wiki/Cookiecutter_shark) 24/26 passages, [Bioluminescence](https://en.wikipedia.org/wiki/Bioluminescence) 4/55 passages, [Shark attack](https://en.wikipedia.org/wiki/Shark_attack) 8/36 passages; 19k readers in 30 days
+- Feeling (two models): [4.0, 3.25] - Eerie encounter with a bizarre and mechanically specific predator attack method.
+
+## Reserve
+
+- What happens if you swallow chewing gum every day? (4.02)
+- What happens if you touch matter cooled to absolute zero? (4.02)
+- What happens if a giant sinkhole opens underneath your bedroom floor? (4.02)
+- What happens if you drink ocean water when stranded at sea? (3.99)
+- What happens if you eat polar bear liver to survive the Arctic? (3.93)
+- What happens if you run an ultra-marathon through Death Valley in July? (3.92)
+- What happens if an uncontacted ancient tree falls with no animals around? (3.83)
+- What happens if you fall into quicksand and thrash around? (3.82)
+- What happens if a honeybee loses its way home from flowers? (3.81)
+- What happens if you never cut your fingernails? (3.79)
+- What happens if you drop a dropped penny from the Empire State Building? (3.76)
+- What happens if your car plunges into deep water? (3.71)
+- What happens if you spend six straight months living in total weightlessness? (3.71)
+- What happens if you hike to the top of Mount Everest without oxygen? (3.71)
+- What happens if a deep-sea creature is hauled up to the surface? (3.69)
+- What happens if you survive a lightning strike while standing outdoors? (3.68)
+- What happens to insects when a lawn mower cuts the grass? (3.62)
+- What happens if you leave a cut apple slice out on a counter? (3.59)
+- What happens if you put a live pepper plant in the Jurassic period? (3.58)
+- What happens if you yell into the mouth of an erupting volcano crater? (3.5)
+- What happens if water stays trapped deep in your ear canal? (3.42)
+
+## Dropped
+
+- What happens if you jump into a hole drilled straight through Earth?: too close to the competitor title 'A Hole Through The Earth 😱'
+- What happens if you try to make espresso using ground pinto beans?: too close to the competitor title 'What happens if you make espresso with pinto beans?'
+- What happens if you do the doorframe floating arm trick?: too close to the competitor title 'How The Floating Arm Trick Works 😮'
+- What happens if you stay awake for over two hundred hours?: safety (AI): Portrays an extreme endurance stunt that could encourage dangerous emulation by young viewers.
+- What happens if you touch an active electric fence barehanded?: safety (AI): Presents an accessible agricultural hazard that viewers could easily replicate as a stunt.
+
+## Channels measured
+
+| Channel | Found by | Shorts | Median views | Hits |
+|---|---|---|---|---|
+| Zack D. Films | watch list | 88 | 10.6M | 4 |
+| Flippo Explains | watch list | 0 | 0 | 0 |
+| WorldMesh 3D | watch list | 4 | 0 | 0 |
+| Cosmo Teorías | searches | 91 | 895k | 15 |
+| BlobbyClips | searches | 96 | 11.6M | 5 |
+| FactoHolic | searches | 97 | 29.9M | 7 |
+| Henreee | searches | 78 | 766k | 11 |
+| SeedThePast | searches | 7 | 2.0M | 3 |

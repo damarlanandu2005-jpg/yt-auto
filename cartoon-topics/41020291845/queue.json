@@ -1,0 +1,2699 @@
+{
+ "made": "2026-10-30T07:34:35Z",
+ "settings": {
+  "about": "Settings of the strong-emotion topic finder (cartoon/TOPIC_FINDER.md, yt_auto/emotion_topics.py). Fixed before the first run, 29 Oct 2026. Owner has not yet sent the extra watch-list channels or red lines: defaults below, change them here.",
+  "watch_channels": [
+   {
+    "name": "Zack D. Films",
+    "handle": "@zackdfilms"
+   },
+   {
+    "name": "Flippo Explains",
+    "handle": "@FlippoExplains"
+   },
+   {
+    "name": "WorldMesh3D",
+    "handle": "@WorldMesh3D"
+   },
+   {
+    "name": "Captain Workout",
+    "handle": "@CaptainWorkout"
+   }
+  ],
+  "discover_channels_from_searches": 6,
+  "searches": [
+   "what happens if you",
+   "what would happen if",
+   "what if you were",
+   "how it feels to"
+  ],
+  "search_days": 60,
+  "shorts_max_seconds": 180,
+  "min_age_days": 3,
+  "videos_per_channel": 100,
+  "hit_ratio": 3.0,
+  "hit_min_views": 100000,
+  "search_min_views": 200000,
+  "youtube_stop_at_units": 1500,
+  "ideas": 40,
+  "queue_size": 14,
+  "max_per_area": 3,
+  "areas": [
+   "human body",
+   "ocean",
+   "space",
+   "history",
+   "animals",
+   "nature and weather",
+   "disasters",
+   "engineering and inventions",
+   "everyday life",
+   "earth and geology",
+   "food and plants",
+   "sport and extreme limits"
+  ],
+  "weights": {
+   "demand": 0.35,
+   "feeling": 0.25,
+   "sources": 0.2,
+   "drawable": 0.1,
+   "variety": 0.1
+  },
+  "min_source_hits": 3,
+  "competitor_copy_sim": 0.6,
+  "recent_years": 25
+ },
+ "queue": [
+  {
+   "question": "What happens if you stand directly underneath a launching Saturn V rocket?",
+   "situation": "Standing on the launchpad concrete directly beneath five ignited F-1 rocket engines",
+   "feeling": "awe",
+   "answer": "The acoustic sound pressure exceeds 200 decibels, producing intense shockwaves capable of tearing human tissue and destroying internal organs.",
+   "area": "engineering and inventions",
+   "wikipedia_articles": [
+    "Saturn V",
+    "Acoustics",
+    "Acoustic trauma"
+   ],
+   "places": [
+    "space_station"
+   ],
+   "things": [
+    "rocket_launch"
+   ],
+   "signals": [
+    "S48"
+   ],
+   "angle": "Standing on the launchpad concrete directly beneath five ignited F-1 rocket engines",
+   "sources": [
+    {
+     "title": "Saturn V",
+     "url": "https://en.wikipedia.org/wiki/Saturn_V",
+     "passages": 43,
+     "about_answer": 11
+    },
+    {
+     "title": "Acoustics",
+     "url": "https://en.wikipedia.org/wiki/Acoustics",
+     "passages": 41,
+     "about_answer": 12
+    },
+    {
+     "title": "Acoustic trauma",
+     "url": "https://en.wikipedia.org/wiki/Acoustic_trauma",
+     "passages": 11,
+     "about_answer": 3
+    }
+   ],
+   "source_hits": 26,
+   "pageviews": {
+    "article": "Saturn V",
+    "last_30_days": 26273,
+    "trend": 1.01
+   },
+   "feeling_models": [
+    4.0,
+    4.0
+   ],
+   "flag": "",
+   "feeling_reason": "Extreme physical forces where lethal acoustic pressure takes priority over thermal blast.",
+   "pictures_needed": [],
+   "parts": {
+    "demand": 3.8,
+    "feeling": 4.0,
+    "sources": 5,
+    "drawable": 5.0,
+    "variety": 5.0
+   },
+   "score": 4.33,
+   "rank": 1,
+   "evidence": [
+    {
+     "kind": "search",
+     "title": "What Happens When You Trap Smoke With Ronaldo?",
+     "channel": "Futcrunch",
+     "views": 32231383,
+     "query": "what happens if you",
+     "url": "https://www.youtube.com/shorts/5sldVV6Ts6k",
+     "id": "S48"
+    }
+   ]
+  },
+  {
+   "question": "What happens if you touch a blue-ringed octopus in a tidal pool?",
+   "situation": "Reaching down to pick up a tiny, glowing sapphire-patterned octopus resting in shallow ocean water",
+   "feeling": "fear",
+   "answer": "Its painless bite injects tetrodotoxin, blocking nervous system signals and causing complete motor paralysis while you remain fully conscious.",
+   "area": "ocean",
+   "wikipedia_articles": [
+    "Blue-ringed octopus",
+    "Tetrodotoxin",
+    "Paralysis"
+   ],
+   "places": [
+    "tsunami_beach"
+   ],
+   "things": [],
+   "signals": [
+    "S2"
+   ],
+   "angle": "Reaching down to pick up a tiny, glowing sapphire-patterned octopus resting in shallow ocean water",
+   "sources": [
+    {
+     "title": "Blue-ringed octopus",
+     "url": "https://en.wikipedia.org/wiki/Blue-ringed_octopus",
+     "passages": 25,
+     "about_answer": 7
+    },
+    {
+     "title": "Tetrodotoxin",
+     "url": "https://en.wikipedia.org/wiki/Tetrodotoxin",
+     "passages": 44,
+     "about_answer": 11
+    },
+    {
+     "title": "Paralysis",
+     "url": "https://en.wikipedia.org/wiki/Paralysis",
+     "passages": 16,
+     "about_answer": 6
+    }
+   ],
+   "source_hits": 24,
+   "pageviews": {
+    "article": "Blue-ringed octopus",
+    "last_30_days": 47744,
+    "trend": 1.13
+   },
+   "feeling_models": [
+    4.5,
+    4.0
+   ],
+   "flag": "",
+   "feeling_reason": "Deceptive marine beauty leads to terrifying conscious paralysis, delivering strong tension.",
+   "pictures_needed": [],
+   "parts": {
+    "demand": 3.6,
+    "feeling": 4.25,
+    "sources": 5,
+    "drawable": 5.0,
+    "variety": 5.0
+   },
+   "score": 4.32,
+   "rank": 2,
+   "evidence": [
+    {
+     "kind": "beats_channel",
+     "title": "How Cookiecutter Sharks Bite Whales 😨",
+     "channel": "Zack D. Films",
+     "ratio": 5.3,
+     "views": 56556832,
+     "url": "https://www.youtube.com/shorts/CRGWDiIgMZ4",
+     "id": "S2"
+    }
+   ]
+  },
+  {
+   "question": "What happens if you get bitten by an inland taipan in the outback?",
+   "situation": "Accidentally kicking a dusty rock in the outback and feeling needle-sharp fangs pierce your ankle boot",
+   "feeling": "fear",
+   "answer": "Its potent neurotoxic and hemotoxic venom can paralyze muscles and coagulate blood, causing respiratory arrest in forty-five minutes.",
+   "area": "animals",
+   "wikipedia_articles": [
+    "Inland taipan",
+    "Snakebite",
+    "Neurotoxin"
+   ],
+   "places": [
+    "desert"
+   ],
+   "things": [],
+   "signals": [
+    "S43"
+   ],
+   "angle": "Accidentally kicking a dusty rock in the outback and feeling needle-sharp fangs pierce your ankle boot",
+   "sources": [
+    {
+     "title": "Inland taipan",
+     "url": "https://en.wikipedia.org/wiki/Inland_taipan",
+     "passages": 62,
+     "about_answer": 5
+    },
+    {
+     "title": "Snakebite",
+     "url": "https://en.wikipedia.org/wiki/Snakebite",
+     "passages": 55,
+     "about_answer": 14
+    },
+    {
+     "title": "Neurotoxin",
+     "url": "https://en.wikipedia.org/wiki/Neurotoxin",
+     "passages": 31,
+     "about_answer": 5
+    }
+   ],
+   "source_hits": 24,
+   "pageviews": {
+    "article": "Inland taipan",
+    "last_30_days": 29035,
+    "trend": 0.68
+   },
+   "feeling_models": [
+    3.75,
+    3.75
+   ],
+   "flag": "",
+   "feeling_reason": "Deadly envenomation scenario where the lethality is terrifying but entirely expected.",
+   "pictures_needed": [],
+   "parts": {
+    "demand": 3.8,
+    "feeling": 3.75,
+    "sources": 5,
+    "drawable": 5.0,
+    "variety": 5.0
+   },
+   "score": 4.27,
+   "rank": 3,
+   "evidence": [
+    {
+     "kind": "search",
+     "title": "What happens when you don't pay attention #bear #wildanimals #animalencounters #scare #shorts",
+     "channel": "FailArmy",
+     "views": 67404826,
+     "query": "what happens if you",
+     "url": "https://www.youtube.com/shorts/udacwkR6CpU",
+     "id": "S43"
+    }
+   ]
+  },
+  {
+   "question": "What happens if an astronaut takes off their helmet in space?",
+   "situation": "Unlatching and lifting your spacesuit helmet while floating untethered outside the International Space Station",
+   "feeling": "fear",
+   "answer": "Lacking atmospheric pressure, bodily fluids boil at body temperature via ebullism, and loss of consciousness occurs in under fifteen seconds.",
+   "area": "space",
+   "wikipedia_articles": [
+    "Ebullism",
+    "Uncontrolled decompression",
+    "Vacuum"
+   ],
+   "places": [
+    "space"
+   ],
+   "things": [
+    "astronaut_helmet"
+   ],
+   "signals": [
+    "S58",
+    "S59"
+   ],
+   "angle": "Unlatching and lifting your spacesuit helmet while floating untethered outside the International Space Station",
+   "sources": [
+    {
+     "title": "Ebullism",
+     "url": "https://en.wikipedia.org/wiki/Ebullism",
+     "passages": 19,
+     "about_answer": 12
+    },
+    {
+     "title": "Uncontrolled decompression",
+     "url": "https://en.wikipedia.org/wiki/Uncontrolled_decompression",
+     "passages": 28,
+     "about_answer": 10
+    },
+    {
+     "title": "Vacuum",
+     "url": "https://en.wikipedia.org/wiki/Vacuum",
+     "passages": 59,
+     "about_answer": 20
+    }
+   ],
+   "source_hits": 42,
+   "pageviews": {
+    "article": "Ebullism",
+    "last_30_days": 1060,
+    "trend": 1.01
+   },
+   "feeling_models": [
+    4.0,
+    4.5
+   ],
+   "flag": "",
+   "feeling_reason": "Visceral space emergency that debunks explosive decompression myths in favor of ebullism.",
+   "pictures_needed": [],
+   "parts": {
+    "demand": 3.4,
+    "feeling": 4.25,
+    "sources": 5,
+    "drawable": 5.0,
+    "variety": 5.0
+   },
+   "score": 4.25,
+   "rank": 4,
+   "evidence": [
+    {
+     "kind": "search",
+     "title": "What If You Hit Absolute Zero? 🥶",
+     "channel": "Zack D. Films",
+     "views": 16954742,
+     "query": "what happens if you",
+     "url": "https://www.youtube.com/shorts/fk-BOmxtM8Y",
+     "id": "S58"
+    },
+    {
+     "kind": "search",
+     "title": "What If You Hit Absolute Zero? 🥶",
+     "channel": "Zack D. Films",
+     "views": 16954742,
+     "query": "what if you were",
+     "url": "https://www.youtube.com/shorts/fk-BOmxtM8Y",
+     "id": "S59"
+    }
+   ]
+  },
+  {
+   "question": "What happens if an earthquake hits while you are in a skyscraper elevator?",
+   "situation": "Feeling the elevator cabin shudder violently and swing like a pendulum inside a dark skyscraper shaft",
+   "feeling": "fear",
+   "answer": "Modern seismic sensors trigger automatic counterweight brakes and bring the car to the nearest floor before cables can snag.",
+   "area": "disasters",
+   "wikipedia_articles": [
+    "Elevator",
+    "Earthquake engineering",
+    "Seismic sensor"
+   ],
+   "places": [
+    "city_earthquake"
+   ],
+   "things": [],
+   "signals": [
+    "S49"
+   ],
+   "angle": "Feeling the elevator cabin shudder violently and swing like a pendulum inside a dark skyscraper shaft",
+   "sources": [
+    {
+     "title": "Elevator",
+     "url": "https://en.wikipedia.org/wiki/Elevator",
+     "passages": 75,
+     "about_answer": 25
+    },
+    {
+     "title": "Earthquake engineering",
+     "url": "https://en.wikipedia.org/wiki/Earthquake_engineering",
+     "passages": 94,
+     "about_answer": 3
+    },
+    {
+     "title": "Northern Light (spacecraft)",
+     "url": "https://en.wikipedia.org/wiki/Northern_Light_(spacecraft)",
+     "passages": 22,
+     "about_answer": 0
+    }
+   ],
+   "source_hits": 28,
+   "pageviews": {
+    "article": "Elevator",
+    "last_30_days": 11500,
+    "trend": 0.9
+   },
+   "feeling_models": [
+    3.5,
+    3.25
+   ],
+   "flag": "",
+   "feeling_reason": "Common urban phobia resolved by the reassuring reality of modern elevator engineering.",
+   "pictures_needed": [],
+   "parts": {
+    "demand": 3.8,
+    "feeling": 3.38,
+    "sources": 5,
+    "drawable": 5.0,
+    "variety": 5.0
+   },
+   "score": 4.17,
+   "rank": 5,
+   "evidence": [
+    {
+     "kind": "search",
+     "title": "what would you do if you were him in this situation 😭",
+     "channel": "Curtain Call ",
+     "views": 22965385,
+     "query": "what if you were",
+     "url": "https://www.youtube.com/shorts/ykF79-yhd5g",
+     "id": "S49"
+    }
+   ]
+  },
+  {
+   "question": "What happens to the Earth if the Sun suddenly vanished?",
+   "situation": "Staring up as midday turns pitch black instantly while city lights flicker and the ground rapidly freezes",
+   "feeling": "awe",
+   "answer": "Earth would fly off in a straight tangent into space while surface temperatures drop below freezing within a single week.",
+   "area": "space",
+   "wikipedia_articles": [
+    "Earth's orbit",
+    "Solar irradiance",
+    "Extinction of the Sun"
+   ],
+   "places": [
+    "city_night"
+   ],
+   "things": [
+    "street_lamp"
+   ],
+   "signals": [
+    "S44",
+    "S45"
+   ],
+   "angle": "Staring up as midday turns pitch black instantly while city lights flicker and the ground rapidly freezes",
+   "sources": [
+    {
+     "title": "Earth's orbit",
+     "url": "https://en.wikipedia.org/wiki/Earth%27s_orbit",
+     "passages": 11,
+     "about_answer": 5
+    },
+    {
+     "title": "Solar irradiance",
+     "url": "https://en.wikipedia.org/wiki/Solar_irradiance",
+     "passages": 75,
+     "about_answer": 15
+    },
+    {
+     "title": "Cretaceous–Paleogene extinction event",
+     "url": "https://en.wikipedia.org/wiki/Cretaceous%E2%80%93Paleogene_extinction_event",
+     "passages": 44,
+     "about_answer": 10
+    }
+   ],
+   "source_hits": 30,
+   "pageviews": {
+    "article": "Earth's orbit",
+    "last_30_days": 10793,
+    "trend": 0.91
+   },
+   "feeling_models": [
+    4.0,
+    4.25
+   ],
+   "flag": "",
+   "feeling_reason": "Apocalyptic scale with interesting orbital mechanics, though somewhat familiar in pop science.",
+   "pictures_needed": [],
+   "parts": {
+    "demand": 3.8,
+    "feeling": 4.12,
+    "sources": 5,
+    "drawable": 5.0,
+    "variety": 3.0
+   },
+   "score": 4.16,
+   "rank": 6,
+   "evidence": [
+    {
+     "kind": "search",
+     "title": "What if Our Sun Disappeared 😱",
+     "channel": "FactoHolic",
+     "views": 48685463,
+     "query": "what happens if you",
+     "url": "https://www.youtube.com/shorts/cheZmAzbJME",
+     "id": "S44"
+    },
+    {
+     "kind": "search",
+     "title": "What if Our Sun Disappeared 😱",
+     "channel": "FactoHolic",
+     "views": 48685463,
+     "query": "what would happen if",
+     "url": "https://www.youtube.com/shorts/cheZmAzbJME",
+     "id": "S45"
+    }
+   ]
+  },
+  {
+   "question": "What happens if you walk onto the surface of Mars without a heated suit?",
+   "situation": "Stepping out onto red Martian sand during an afternoon where air pressure is less than one percent of Earth",
+   "feeling": "fear",
+   "answer": "Low pressure causes bodily fluids to boil at room temperature, while intense freezing cold and lack of oxygen cause death in seconds.",
+   "area": "space",
+   "wikipedia_articles": [
+    "Atmosphere of Mars",
+    "Colonization of Mars",
+    "Hypothermia"
+   ],
+   "places": [
+    "mars_surface"
+   ],
+   "things": [],
+   "signals": [
+    "S44",
+    "S58"
+   ],
+   "angle": "Stepping out onto red Martian sand during an afternoon where air pressure is less than one percent of Earth",
+   "sources": [
+    {
+     "title": "Atmosphere of Mars",
+     "url": "https://en.wikipedia.org/wiki/Atmosphere_of_Mars",
+     "passages": 61,
+     "about_answer": 32
+    },
+    {
+     "title": "Colonization of Mars",
+     "url": "https://en.wikipedia.org/wiki/Colonization_of_Mars",
+     "passages": 60,
+     "about_answer": 30
+    },
+    {
+     "title": "Hypothermia",
+     "url": "https://en.wikipedia.org/wiki/Hypothermia",
+     "passages": 62,
+     "about_answer": 31
+    }
+   ],
+   "source_hits": 93,
+   "pageviews": {
+    "article": "Atmosphere of Mars",
+    "last_30_days": 7309,
+    "trend": 0.99
+   },
+   "feeling_models": [
+    3.75,
+    3.75
+   ],
+   "flag": "",
+   "feeling_reason": "Hostile alien environment produces immediate and predictable vacuum decompression.",
+   "pictures_needed": [],
+   "parts": {
+    "demand": 3.4,
+    "feeling": 3.75,
+    "sources": 5,
+    "drawable": 5.0,
+    "variety": 5.0
+   },
+   "score": 4.13,
+   "rank": 7,
+   "evidence": [
+    {
+     "kind": "search",
+     "title": "What if Our Sun Disappeared 😱",
+     "channel": "FactoHolic",
+     "views": 48685463,
+     "query": "what happens if you",
+     "url": "https://www.youtube.com/shorts/cheZmAzbJME",
+     "id": "S44"
+    },
+    {
+     "kind": "search",
+     "title": "What If You Hit Absolute Zero? 🥶",
+     "channel": "Zack D. Films",
+     "views": 16954742,
+     "query": "what happens if you",
+     "url": "https://www.youtube.com/shorts/fk-BOmxtM8Y",
+     "id": "S58"
+    }
+   ]
+  },
+  {
+   "question": "What happens if you get trapped inside a commercial refrigerator room?",
+   "situation": "Listening to the heavy walk-in cooler latch lock behind you while frosted air chills your breath",
+   "feeling": "fear",
+   "answer": "Without warm gear, prolonged exposure leads to shivering, disorientation, and fatal core hypothermia within hours unless the escape latch is used.",
+   "area": "everyday life",
+   "wikipedia_articles": [
+    "Hypothermia",
+    "Refrigeration",
+    "Shivering"
+   ],
+   "places": [
+    "kitchen"
+   ],
+   "things": [],
+   "signals": [
+    "S58"
+   ],
+   "angle": "Listening to the heavy walk-in cooler latch lock behind you while frosted air chills your breath",
+   "sources": [
+    {
+     "title": "Hypothermia",
+     "url": "https://en.wikipedia.org/wiki/Hypothermia",
+     "passages": 62,
+     "about_answer": 26
+    },
+    {
+     "title": "Refrigeration",
+     "url": "https://en.wikipedia.org/wiki/Refrigeration",
+     "passages": 44,
+     "about_answer": 8
+    },
+    {
+     "title": "Shivering",
+     "url": "https://en.wikipedia.org/wiki/Shivering",
+     "passages": 6,
+     "about_answer": 2
+    }
+   ],
+   "source_hits": 36,
+   "pageviews": {
+    "article": "Hypothermia",
+    "last_30_days": 17403,
+    "trend": 0.88
+   },
+   "feeling_models": [
+    3.25,
+    3.0
+   ],
+   "flag": "",
+   "feeling_reason": "Chilling everyday trap that plays out through standard progressive hypothermia.",
+   "pictures_needed": [],
+   "parts": {
+    "demand": 3.8,
+    "feeling": 3.12,
+    "sources": 5,
+    "drawable": 5.0,
+    "variety": 5.0
+   },
+   "score": 4.11,
+   "rank": 8,
+   "evidence": [
+    {
+     "kind": "search",
+     "title": "What If You Hit Absolute Zero? 🥶",
+     "channel": "Zack D. Films",
+     "views": 16954742,
+     "query": "what happens if you",
+     "url": "https://www.youtube.com/shorts/fk-BOmxtM8Y",
+     "id": "S58"
+    }
+   ]
+  },
+  {
+   "question": "What happens if you accidentally startle a sleeping grizzly bear?",
+   "situation": "Stepping over a fallen pine log and coming nose-to-nose with an eight-hundred-pound grizzly in dense brush",
+   "feeling": "fear",
+   "answer": "Startled bears perceive humans as an immediate predatory threat and will launch a defensive charge to neutralize the surprise.",
+   "area": "animals",
+   "wikipedia_articles": [
+    "Bear attack",
+    "Grizzly bear",
+    "Animal aggression"
+   ],
+   "places": [
+    "forest"
+   ],
+   "things": [
+    "campfire"
+   ],
+   "signals": [
+    "S43"
+   ],
+   "angle": "Stepping over a fallen pine log and coming nose-to-nose with an eight-hundred-pound grizzly in dense brush",
+   "sources": [
+    {
+     "title": "Bear attack",
+     "url": "https://en.wikipedia.org/wiki/Bear_attack",
+     "passages": 82,
+     "about_answer": 22
+    },
+    {
+     "title": "Grizzly bear",
+     "url": "https://en.wikipedia.org/wiki/Grizzly_bear",
+     "passages": 62,
+     "about_answer": 42
+    },
+    {
+     "title": "Aggression",
+     "url": "https://en.wikipedia.org/wiki/Aggression",
+     "passages": 46,
+     "about_answer": 4
+    }
+   ],
+   "source_hits": 68,
+   "pageviews": {
+    "article": "Bear attack",
+    "last_30_days": 6000,
+    "trend": 0.86
+   },
+   "feeling_models": [
+    3.5,
+    3.75
+   ],
+   "flag": "",
+   "feeling_reason": "Terrifying immediate danger, but an aggressive defensive charge is the expected response.",
+   "pictures_needed": [],
+   "parts": {
+    "demand": 3.4,
+    "feeling": 3.62,
+    "sources": 5,
+    "drawable": 5.0,
+    "variety": 5.0
+   },
+   "score": 4.09,
+   "rank": 9,
+   "evidence": [
+    {
+     "kind": "search",
+     "title": "What happens when you don't pay attention #bear #wildanimals #animalencounters #scare #shorts",
+     "channel": "FailArmy",
+     "views": 67404826,
+     "query": "what happens if you",
+     "url": "https://www.youtube.com/shorts/udacwkR6CpU",
+     "id": "S43"
+    }
+   ]
+  },
+  {
+   "question": "What happens if you scuba dive too deep and breathe air?",
+   "situation": "Checking your depth gauge past two hundred feet underwater while sudden euphoric giggles take over your mind",
+   "feeling": "surprise",
+   "answer": "Breathing nitrogen under extreme ambient pressure produces nitrogen narcosis, an intoxicating anesthetic effect similar to laughing gas.",
+   "area": "sport and extreme limits",
+   "wikipedia_articles": [
+    "Nitrogen narcosis",
+    "Scuba diving",
+    "Barotrauma"
+   ],
+   "places": [
+    "underwater"
+   ],
+   "things": [
+    "diving_helmet"
+   ],
+   "signals": [
+    "S2",
+    "S50"
+   ],
+   "angle": "Checking your depth gauge past two hundred feet underwater while sudden euphoric giggles take over your mind",
+   "sources": [
+    {
+     "title": "Nitrogen narcosis",
+     "url": "https://en.wikipedia.org/wiki/Nitrogen_narcosis",
+     "passages": 33,
+     "about_answer": 30
+    },
+    {
+     "title": "Scuba diving",
+     "url": "https://en.wikipedia.org/wiki/Scuba_diving",
+     "passages": 38,
+     "about_answer": 27
+    },
+    {
+     "title": "Barotrauma",
+     "url": "https://en.wikipedia.org/wiki/Barotrauma",
+     "passages": 60,
+     "about_answer": 27
+    }
+   ],
+   "source_hits": 84,
+   "pageviews": {
+    "article": "Nitrogen narcosis",
+    "last_30_days": 6529,
+    "trend": 1.08
+   },
+   "feeling_models": [
+    3.75,
+    3.5
+   ],
+   "flag": "",
+   "feeling_reason": "Atmospheric underwater peril driven by the deceptive, intoxicating nature of nitrogen narcosis.",
+   "pictures_needed": [],
+   "parts": {
+    "demand": 3.4,
+    "feeling": 3.62,
+    "sources": 5,
+    "drawable": 5.0,
+    "variety": 5.0
+   },
+   "score": 4.09,
+   "rank": 10,
+   "evidence": [
+    {
+     "kind": "beats_channel",
+     "title": "How Cookiecutter Sharks Bite Whales 😨",
+     "channel": "Zack D. Films",
+     "ratio": 5.3,
+     "views": 56556832,
+     "url": "https://www.youtube.com/shorts/CRGWDiIgMZ4",
+     "id": "S2"
+    },
+    {
+     "kind": "search",
+     "title": "What To Do If Your Car Sinks? 😨",
+     "channel": "Zack D. Films",
+     "views": 20658293,
+     "query": "what happens if you",
+     "url": "https://www.youtube.com/shorts/p832whe8hrI",
+     "id": "S50"
+    }
+   ]
+  },
+  {
+   "question": "What happens if you sleep on your arm all night?",
+   "situation": "Waking up in bed with an arm that flops like a dead rubber noodle and will not move",
+   "feeling": "fear",
+   "answer": "Compressing your limb compresses the radial nerve and cuts off blood flow, causing temporary neuropraxia known as Saturday night palsy.",
+   "area": "human body",
+   "wikipedia_articles": [
+    "Radial neuropathy",
+    "Paresthesia",
+    "Nerve compression syndrome"
+   ],
+   "places": [
+    "bedroom_night"
+   ],
+   "things": [
+    "bed"
+   ],
+   "signals": [
+    "S75"
+   ],
+   "angle": "Waking up in bed with an arm that flops like a dead rubber noodle and will not move",
+   "sources": [
+    {
+     "title": "Radial neuropathy",
+     "url": "https://en.wikipedia.org/wiki/Radial_neuropathy",
+     "passages": 11,
+     "about_answer": 8
+    },
+    {
+     "title": "Paresthesia",
+     "url": "https://en.wikipedia.org/wiki/Paresthesia",
+     "passages": 20,
+     "about_answer": 5
+    },
+    {
+     "title": "Nerve compression syndrome",
+     "url": "https://en.wikipedia.org/wiki/Nerve_compression_syndrome",
+     "passages": 42,
+     "about_answer": 13
+    }
+   ],
+   "source_hits": 26,
+   "pageviews": {
+    "article": "Radial neuropathy",
+    "last_30_days": 554,
+    "trend": 0.85
+   },
+   "feeling_models": [
+    3.25,
+    3.75
+   ],
+   "flag": "",
+   "feeling_reason": "Very relatable physical sensation with mild temporary stakes and a well-known biological explanation.",
+   "pictures_needed": [],
+   "parts": {
+    "demand": 3.4,
+    "feeling": 3.5,
+    "sources": 5,
+    "drawable": 5.0,
+    "variety": 5.0
+   },
+   "score": 4.06,
+   "rank": 11,
+   "evidence": [
+    {
+     "kind": "search",
+     "title": "Why You Shouldn't Lay On Your Arm Too Long 😨",
+     "channel": "Zack D. Films",
+     "views": 10804487,
+     "query": "what happens if you",
+     "url": "https://www.youtube.com/shorts/ZoBDbB6jFEY",
+     "id": "S75"
+    }
+   ]
+  },
+  {
+   "question": "What happens if you hold in a sneeze?",
+   "situation": "Pinching your nose and clamping your mouth shut during a violent tickle in a quiet room",
+   "feeling": "surprise",
+   "answer": "Trapping sneeze pressure inside your airway can rupture your eardrum, pop blood vessels, or tear throat tissue.",
+   "area": "human body",
+   "wikipedia_articles": [
+    "Sneezing",
+    "Barotrauma",
+    "Pneumomediastinum"
+   ],
+   "places": [
+    "classroom"
+   ],
+   "things": [
+    "desk"
+   ],
+   "signals": [
+    "S76",
+    "S49"
+   ],
+   "angle": "Pinching your nose and clamping your mouth shut during a violent tickle in a quiet room",
+   "sources": [
+    {
+     "title": "Sneeze",
+     "url": "https://en.wikipedia.org/wiki/Sneeze",
+     "passages": 30,
+     "about_answer": 11
+    },
+    {
+     "title": "Barotrauma",
+     "url": "https://en.wikipedia.org/wiki/Barotrauma",
+     "passages": 60,
+     "about_answer": 28
+    },
+    {
+     "title": "Pneumomediastinum",
+     "url": "https://en.wikipedia.org/wiki/Pneumomediastinum",
+     "passages": 10,
+     "about_answer": 1
+    }
+   ],
+   "source_hits": 40,
+   "pageviews": {
+    "article": "Sneeze",
+    "last_30_days": 5552,
+    "trend": 1.0
+   },
+   "feeling_models": [
+    3.5,
+    3.5
+   ],
+   "flag": "",
+   "feeling_reason": "Relatable habit with a surprisingly severe physical consequence that subverts expectations.",
+   "pictures_needed": [],
+   "parts": {
+    "demand": 3.4,
+    "feeling": 3.5,
+    "sources": 5,
+    "drawable": 5.0,
+    "variety": 5.0
+   },
+   "score": 4.06,
+   "rank": 12,
+   "evidence": [
+    {
+     "kind": "search",
+     "title": "When You Try Not to Cry 😭😭",
+     "channel": "BlobbyClips",
+     "views": 10737966,
+     "query": "what happens if you",
+     "url": "https://www.youtube.com/shorts/XDQDROqNp_s",
+     "id": "S76"
+    },
+    {
+     "kind": "search",
+     "title": "what would you do if you were him in this situation 😭",
+     "channel": "Curtain Call ",
+     "views": 22965385,
+     "query": "what if you were",
+     "url": "https://www.youtube.com/shorts/ykF79-yhd5g",
+     "id": "S49"
+    }
+   ]
+  },
+  {
+   "question": "What happens if you get trapped inside a bank vault for a weekend?",
+   "situation": "Hearing the giant steel vault door swing shut with a heavy mechanical click as lights shut off on Friday night",
+   "feeling": "fear",
+   "answer": "Airtight commercial vaults contain a finite volume of oxygen, causing carbon dioxide poisoning and hypercapnia if occupants are stuck too long.",
+   "area": "disasters",
+   "wikipedia_articles": [
+    "Bank vault",
+    "Hypercapnia",
+    "Suffocation"
+   ],
+   "places": [
+    "office"
+   ],
+   "things": [],
+   "signals": [
+    "S49"
+   ],
+   "angle": "Hearing the giant steel vault door swing shut with a heavy mechanical click as lights shut off on Friday night",
+   "sources": [
+    {
+     "title": "Bank vault",
+     "url": "https://en.wikipedia.org/wiki/Bank_vault",
+     "passages": 28,
+     "about_answer": 19
+    },
+    {
+     "title": "Hypercapnia",
+     "url": "https://en.wikipedia.org/wiki/Hypercapnia",
+     "passages": 34,
+     "about_answer": 20
+    },
+    {
+     "title": "Asphyxia",
+     "url": "https://en.wikipedia.org/wiki/Asphyxia",
+     "passages": 25,
+     "about_answer": 4
+    }
+   ],
+   "source_hits": 43,
+   "pageviews": {
+    "article": "Bank vault",
+    "last_30_days": 2479,
+    "trend": 0.96
+   },
+   "feeling_models": [
+    3.5,
+    3.25
+   ],
+   "flag": "",
+   "feeling_reason": "Claustrophobic setting where hypercapnia rather than sudden oxygen starvation is the true culprit.",
+   "pictures_needed": [],
+   "parts": {
+    "demand": 3.4,
+    "feeling": 3.38,
+    "sources": 5,
+    "drawable": 5.0,
+    "variety": 5.0
+   },
+   "score": 4.04,
+   "rank": 13,
+   "evidence": [
+    {
+     "kind": "search",
+     "title": "what would you do if you were him in this situation 😭",
+     "channel": "Curtain Call ",
+     "views": 22965385,
+     "query": "what if you were",
+     "url": "https://www.youtube.com/shorts/ykF79-yhd5g",
+     "id": "S49"
+    }
+   ]
+  },
+  {
+   "question": "What happens if you get bitten by a cookiecutter shark?",
+   "situation": "Swimming in open night water when a tiny glowing shark latches onto your leg with suction lips",
+   "feeling": "fear",
+   "answer": "The cookiecutter shark uses suction to seal its mouth and twists its body 360 degrees to excise a clean conical plug of flesh.",
+   "area": "ocean",
+   "wikipedia_articles": [
+    "Cookiecutter shark",
+    "Bioluminescence",
+    "Shark attack"
+   ],
+   "places": [
+    "deep_sea"
+   ],
+   "things": [
+    "diving_helmet"
+   ],
+   "signals": [
+    "S2"
+   ],
+   "angle": "Swimming in open night water when a tiny glowing shark latches onto your leg with suction lips",
+   "sources": [
+    {
+     "title": "Cookiecutter shark",
+     "url": "https://en.wikipedia.org/wiki/Cookiecutter_shark",
+     "passages": 26,
+     "about_answer": 24
+    },
+    {
+     "title": "Bioluminescence",
+     "url": "https://en.wikipedia.org/wiki/Bioluminescence",
+     "passages": 55,
+     "about_answer": 4
+    },
+    {
+     "title": "Shark attack",
+     "url": "https://en.wikipedia.org/wiki/Shark_attack",
+     "passages": 36,
+     "about_answer": 8
+    }
+   ],
+   "source_hits": 36,
+   "pageviews": {
+    "article": "Cookiecutter shark",
+    "last_30_days": 18602,
+    "trend": 1.57
+   },
+   "feeling_models": [
+    4.0,
+    3.25
+   ],
+   "flag": "",
+   "feeling_reason": "Eerie encounter with a bizarre and mechanically specific predator attack method.",
+   "pictures_needed": [],
+   "parts": {
+    "demand": 3.2,
+    "feeling": 3.62,
+    "sources": 5,
+    "drawable": 5.0,
+    "variety": 5.0
+   },
+   "score": 4.03,
+   "rank": 14,
+   "evidence": [
+    {
+     "kind": "beats_channel",
+     "title": "How Cookiecutter Sharks Bite Whales 😨",
+     "channel": "Zack D. Films",
+     "ratio": 5.3,
+     "views": 56556832,
+     "url": "https://www.youtube.com/shorts/CRGWDiIgMZ4",
+     "id": "S2"
+    }
+   ]
+  }
+ ],
+ "reserve": [
+  {
+   "question": "What happens if you swallow chewing gum every day?",
+   "situation": "Gulping down sticky wads of gum after every meal until your stomach knots up",
+   "feeling": "disgust",
+   "answer": "While gum base is indigestible and usually passes unharmed, swallowing huge masses can form a solid obstructive mass called a bezoar.",
+   "area": "human body",
+   "wikipedia_articles": [
+    "Chewing gum",
+    "Bezoar",
+    "Gastrointestinal tract"
+   ],
+   "places": [
+    "inside_body_blood"
+   ],
+   "things": [],
+   "signals": [
+    "S46",
+    "S65"
+   ],
+   "angle": "Gulping down sticky wads of gum after every meal until your stomach knots up",
+   "sources": [
+    {
+     "title": "Chewing gum",
+     "url": "https://en.wikipedia.org/wiki/Chewing_gum",
+     "passages": 45,
+     "about_answer": 12
+    },
+    {
+     "title": "Bezoar",
+     "url": "https://en.wikipedia.org/wiki/Bezoar",
+     "passages": 25,
+     "about_answer": 5
+    },
+    {
+     "title": "Gastrointestinal tract",
+     "url": "https://en.wikipedia.org/wiki/Gastrointestinal_tract",
+     "passages": 72,
+     "about_answer": 8
+    }
+   ],
+   "source_hits": 25,
+   "pageviews": {
+    "article": "Chewing gum",
+    "last_30_days": 13183,
+    "trend": 0.98
+   },
+   "feeling_models": [
+    2.75,
+    2.75
+   ],
+   "flag": "",
+   "feeling_reason": "Busts the seven-year myth while introducing the real, milder risk of bezoar formation.",
+   "pictures_needed": [],
+   "parts": {
+    "demand": 3.8,
+    "feeling": 2.75,
+    "sources": 5,
+    "drawable": 5.0,
+    "variety": 5.0
+   },
+   "score": 4.02
+  },
+  {
+   "question": "What happens if you touch matter cooled to absolute zero?",
+   "situation": "Reaching out a bare finger toward an experimental vacuum chamber holding a zero-kelvin crystal",
+   "feeling": "fear",
+   "answer": "Absolute zero cannot physically be reached under thermodynamic laws, but touching near-zero matter causes instantaneous severe cryogenic burns.",
+   "area": "engineering and inventions",
+   "wikipedia_articles": [
+    "Absolute zero",
+    "Third law of thermodynamics",
+    "Frostbite"
+   ],
+   "places": [
+    "science_lab"
+   ],
+   "things": [
+    "flask"
+   ],
+   "signals": [
+    "S58",
+    "S59"
+   ],
+   "angle": "Reaching out a bare finger toward an experimental vacuum chamber holding a zero-kelvin crystal",
+   "sources": [
+    {
+     "title": "Absolute zero",
+     "url": "https://en.wikipedia.org/wiki/Absolute_zero",
+     "passages": 38,
+     "about_answer": 23
+    },
+    {
+     "title": "Third law of thermodynamics",
+     "url": "https://en.wikipedia.org/wiki/Third_law_of_thermodynamics",
+     "passages": 51,
+     "about_answer": 22
+    },
+    {
+     "title": "Frostbite",
+     "url": "https://en.wikipedia.org/wiki/Frostbite",
+     "passages": 54,
+     "about_answer": 1
+    }
+   ],
+   "source_hits": 46,
+   "pageviews": {
+    "article": "Absolute zero",
+    "last_30_days": 20180,
+    "trend": 1.07
+   },
+   "feeling_models": [
+    2.5,
+    3.0
+   ],
+   "flag": "",
+   "feeling_reason": "Theoretical physics scenario that resolves into standard cryogenic freeze burns.",
+   "pictures_needed": [],
+   "parts": {
+    "demand": 3.8,
+    "feeling": 2.75,
+    "sources": 5,
+    "drawable": 5.0,
+    "variety": 5.0
+   },
+   "score": 4.02
+  },
+  {
+   "question": "What happens if a giant sinkhole opens underneath your bedroom floor?",
+   "situation": "Lying in bed at night when the floor cracks open and drops your entire room into a pitch-black abyss",
+   "feeling": "fear",
+   "answer": "Subsurface limestone dissolves from acidic groundwater until catastrophic roof collapse swallows surface ground without warning.",
+   "area": "earth and geology",
+   "wikipedia_articles": [
+    "Sinkhole",
+    "Karst",
+    "Groundwater"
+   ],
+   "places": [
+    "bedroom_night"
+   ],
+   "things": [
+    "bed"
+   ],
+   "signals": [
+    "S25",
+    "S49"
+   ],
+   "angle": "Lying in bed at night when the floor cracks open and drops your entire room into a pitch-black abyss",
+   "sources": [
+    {
+     "title": "Sinkhole",
+     "url": "https://en.wikipedia.org/wiki/Sinkhole",
+     "passages": 80,
+     "about_answer": 20
+    },
+    {
+     "title": "Karst",
+     "url": "https://en.wikipedia.org/wiki/Karst",
+     "passages": 49,
+     "about_answer": 17
+    },
+    {
+     "title": "Groundwater",
+     "url": "https://en.wikipedia.org/wiki/Groundwater",
+     "passages": 69,
+     "about_answer": 30
+    }
+   ],
+   "source_hits": 67,
+   "pageviews": {
+    "article": "Sinkhole",
+    "last_30_days": 9777,
+    "trend": 0.87
+   },
+   "feeling_models": [
+    4.25,
+    4.0
+   ],
+   "flag": "",
+   "feeling_reason": "Nightmarish everyday scenario driven by invisible geological decay and sudden catastrophic collapse.",
+   "pictures_needed": [],
+   "parts": {
+    "demand": 3.4,
+    "feeling": 4.12,
+    "sources": 5,
+    "drawable": 5.0,
+    "variety": 3.0
+   },
+   "score": 4.02
+  },
+  {
+   "question": "What happens if you drink ocean water when stranded at sea?",
+   "situation": "Scooping salty brine into your parched mouth while drifting on a quiet, baking wooden raft",
+   "feeling": "fear",
+   "answer": "The high salt concentration draws water out of your cells by osmosis, accelerating dehydration and causing acute kidney failure.",
+   "area": "ocean",
+   "wikipedia_articles": [
+    "Dehydration",
+    "Saline water",
+    "Osmosis"
+   ],
+   "places": [
+    "ocean_surface"
+   ],
+   "things": [
+    "lifeboat"
+   ],
+   "signals": [
+    "S50"
+   ],
+   "angle": "Scooping salty brine into your parched mouth while drifting on a quiet, baking wooden raft",
+   "sources": [
+    {
+     "title": "Dehydration",
+     "url": "https://en.wikipedia.org/wiki/Dehydration",
+     "passages": 24,
+     "about_answer": 19
+    },
+    {
+     "title": "Saline water",
+     "url": "https://en.wikipedia.org/wiki/Saline_water",
+     "passages": 4,
+     "about_answer": 1
+    },
+    {
+     "title": "Osmosis",
+     "url": "https://en.wikipedia.org/wiki/Osmosis",
+     "passages": 28,
+     "about_answer": 20
+    }
+   ],
+   "source_hits": 40,
+   "pageviews": {
+    "article": "Dehydration",
+    "last_30_days": 6122,
+    "trend": 0.87
+   },
+   "feeling_models": [
+    3.75,
+    4.25
+   ],
+   "flag": "",
+   "feeling_reason": "Classic life-or-death survival dilemma with a straightforward osmotic mechanism.",
+   "pictures_needed": [],
+   "parts": {
+    "demand": 3.4,
+    "feeling": 4.0,
+    "sources": 5,
+    "drawable": 5.0,
+    "variety": 3.0
+   },
+   "score": 3.99
+  },
+  {
+   "question": "What happens if you eat polar bear liver to survive the Arctic?",
+   "situation": "Slicing into fresh liver from a hunted polar bear inside an icy snow shelter after days of starvation",
+   "feeling": "disgust",
+   "answer": "Polar bear liver contains lethal concentrations of Vitamin A, causing acute hypervitaminosis A, skin peeling, and toxic liver failure.",
+   "area": "animals",
+   "wikipedia_articles": [
+    "Hypervitaminosis A",
+    "Polar bear",
+    "Liver"
+   ],
+   "places": [
+    "arctic_ice"
+   ],
+   "things": [
+    "tent"
+   ],
+   "signals": [
+    "S62"
+   ],
+   "angle": "Slicing into fresh liver from a hunted polar bear inside an icy snow shelter after days of starvation",
+   "sources": [
+    {
+     "title": "Hypervitaminosis A",
+     "url": "https://en.wikipedia.org/wiki/Hypervitaminosis_A",
+     "passages": 32,
+     "about_answer": 20
+    },
+    {
+     "title": "Polar bear",
+     "url": "https://en.wikipedia.org/wiki/Polar_bear",
+     "passages": 39,
+     "about_answer": 34
+    },
+    {
+     "title": "Liver",
+     "url": "https://en.wikipedia.org/wiki/Liver",
+     "passages": 73,
+     "about_answer": 32
+    }
+   ],
+   "source_hits": 86,
+   "pageviews": {
+    "article": "Hypervitaminosis A",
+    "last_30_days": 3847,
+    "trend": 0.78
+   },
+   "feeling_models": [
+    3.75,
+    3.75
+   ],
+   "flag": "",
+   "feeling_reason": "Grim survival situation with a surprising biochemical twist involving lethal vitamin toxicity.",
+   "pictures_needed": [],
+   "parts": {
+    "demand": 3.4,
+    "feeling": 3.75,
+    "sources": 5,
+    "drawable": 5.0,
+    "variety": 3.0
+   },
+   "score": 3.93
+  },
+  {
+   "question": "What happens if you run an ultra-marathon through Death Valley in July?",
+   "situation": "Staggering across asphalt baking at one hundred and thirty degrees Fahrenheit as your salt stains crust on your skin",
+   "feeling": "fear",
+   "answer": "Sweat evaporation fails to keep core temperature safe, triggering exertional heat stroke, organ breakdown, and circulatory collapse.",
+   "area": "sport and extreme limits",
+   "wikipedia_articles": [
+    "Heat stroke",
+    "Badwater Ultramarathon",
+    "Thermoregulation"
+   ],
+   "places": [
+    "desert"
+   ],
+   "things": [],
+   "signals": [
+    "S22",
+    "S26"
+   ],
+   "angle": "Staggering across asphalt baking at one hundred and thirty degrees Fahrenheit as your salt stains crust on your skin",
+   "sources": [
+    {
+     "title": "Heat stroke",
+     "url": "https://en.wikipedia.org/wiki/Heat_stroke",
+     "passages": 37,
+     "about_answer": 28
+    },
+    {
+     "title": "Badwater Ultramarathon",
+     "url": "https://en.wikipedia.org/wiki/Badwater_Ultramarathon",
+     "passages": 34,
+     "about_answer": 2
+    },
+    {
+     "title": "Thermoregulation",
+     "url": "https://en.wikipedia.org/wiki/Thermoregulation",
+     "passages": 54,
+     "about_answer": 24
+    }
+   ],
+   "source_hits": 54,
+   "pageviews": {
+    "article": "Heat stroke",
+    "last_30_days": 4413,
+    "trend": 0.67
+   },
+   "feeling_models": [
+    3.5,
+    4.0
+   ],
+   "flag": "",
+   "feeling_reason": "Extreme endurance environment leading predictably to severe exertional heat illness.",
+   "pictures_needed": [],
+   "parts": {
+    "demand": 2.8,
+    "feeling": 3.75,
+    "sources": 5,
+    "drawable": 5.0,
+    "variety": 5.0
+   },
+   "score": 3.92
+  },
+  {
+   "question": "What happens if an uncontacted ancient tree falls with no animals around?",
+   "situation": "Standing in an ancient primeval moss forest as a rotten sequoia collapses onto the forest floor in silence",
+   "feeling": "wonder",
+   "answer": "The falling trunk creates real acoustic pressure waves in the air regardless of whether an ear is present to perceive them as sound.",
+   "area": "nature and weather",
+   "wikipedia_articles": [
+    "If a tree falls in a forest",
+    "Sound",
+    "Acoustics"
+   ],
+   "places": [
+    "forest"
+   ],
+   "things": [
+    "campfire"
+   ],
+   "signals": [
+    "S54"
+   ],
+   "angle": "Standing in an ancient primeval moss forest as a rotten sequoia collapses onto the forest floor in silence",
+   "sources": [
+    {
+     "title": "If a tree falls in a forest and no one is around to hear it, does it make a sound?",
+     "url": "https://en.wikipedia.org/wiki/If_a_tree_falls_in_a_forest_and_no_one_is_around_to_hear_it,_does_it_make_a_sound%3F",
+     "passages": 24,
+     "about_answer": 12
+    },
+    {
+     "title": "Sound",
+     "url": "https://en.wikipedia.org/wiki/Sound",
+     "passages": 48,
+     "about_answer": 29
+    },
+    {
+     "title": "Acoustics",
+     "url": "https://en.wikipedia.org/wiki/Acoustics",
+     "passages": 41,
+     "about_answer": 15
+    }
+   ],
+   "source_hits": 56,
+   "pageviews": {
+    "article": "If a tree falls in a forest and no one is around to hear it, does it make a sound?",
+    "last_30_days": 10529,
+    "trend": 0.99
+   },
+   "feeling_models": [
+    1.75,
+    2.25
+   ],
+   "flag": "",
+   "feeling_reason": "Dry philosophical riddle with a pedantic physics conclusion that carries little emotional weight.",
+   "pictures_needed": [],
+   "parts": {
+    "demand": 3.8,
+    "feeling": 2.0,
+    "sources": 5,
+    "drawable": 5.0,
+    "variety": 5.0
+   },
+   "score": 3.83
+  },
+  {
+   "question": "What happens if you fall into quicksand and thrash around?",
+   "situation": "Stepping into river silt that suddenly behaves like water, sinking you past your waist as you frantically kick",
+   "feeling": "fear",
+   "answer": "Thrusting and kicking liquefies non-Newtonian quicksand further, but your natural buoyancy prevents you from sinking past your chest.",
+   "area": "earth and geology",
+   "wikipedia_articles": [
+    "Quicksand",
+    "Non-Newtonian fluid",
+    "Buoyancy"
+   ],
+   "places": [
+    "jungle"
+   ],
+   "things": [],
+   "signals": [
+    "S49"
+   ],
+   "angle": "Stepping into river silt that suddenly behaves like water, sinking you past your waist as you frantically kick",
+   "sources": [
+    {
+     "title": "Quicksand",
+     "url": "https://en.wikipedia.org/wiki/Quicksand",
+     "passages": 8,
+     "about_answer": 6
+    },
+    {
+     "title": "Non-Newtonian fluid",
+     "url": "https://en.wikipedia.org/wiki/Non-Newtonian_fluid",
+     "passages": 21,
+     "about_answer": 7
+    },
+    {
+     "title": "Buoyancy",
+     "url": "https://en.wikipedia.org/wiki/Buoyancy",
+     "passages": 63,
+     "about_answer": 9
+    }
+   ],
+   "source_hits": 22,
+   "pageviews": {
+    "article": "Quicksand",
+    "last_30_days": 9662,
+    "trend": 0.83
+   },
+   "feeling_models": [
+    4.0,
+    4.25
+   ],
+   "flag": "",
+   "feeling_reason": "Classic movie trope effectively debunked by the physical reality of human body buoyancy.",
+   "pictures_needed": [],
+   "parts": {
+    "demand": 3.4,
+    "feeling": 4.12,
+    "sources": 5,
+    "drawable": 5.0,
+    "variety": 1.0
+   },
+   "score": 3.82
+  },
+  {
+   "question": "What happens if a honeybee loses its way home from flowers?",
+   "situation": "Hovering alone above a field as the sun shifts and your internal sun compass gets disoriented",
+   "feeling": "sadness",
+   "answer": "A lost foraging honeybee unable to read the sun angle or polarized light rapidly runs out of nectar energy and dies away from its hive.",
+   "area": "animals",
+   "wikipedia_articles": [
+    "Waggle dance",
+    "Bee learning and communication",
+    "Foraging"
+   ],
+   "places": [
+    "farm"
+   ],
+   "things": [],
+   "signals": [
+    "S78"
+   ],
+   "angle": "Hovering alone above a field as the sun shifts and your internal sun compass gets disoriented",
+   "sources": [
+    {
+     "title": "Waggle dance",
+     "url": "https://en.wikipedia.org/wiki/Waggle_dance",
+     "passages": 28,
+     "about_answer": 6
+    },
+    {
+     "title": "Bee learning and communication",
+     "url": "https://en.wikipedia.org/wiki/Bee_learning_and_communication",
+     "passages": 33,
+     "about_answer": 7
+    },
+    {
+     "title": "Foraging",
+     "url": "https://en.wikipedia.org/wiki/Foraging",
+     "passages": 36,
+     "about_answer": 9
+    }
+   ],
+   "source_hits": 22,
+   "pageviews": {
+    "article": "Waggle dance",
+    "last_30_days": 4451,
+    "trend": 1.1
+   },
+   "feeling_models": [
+    2.5,
+    2.5
+   ],
+   "flag": "",
+   "feeling_reason": "Gentle nature documentary vibe with minimal dramatic surprise.",
+   "pictures_needed": [],
+   "parts": {
+    "demand": 3.4,
+    "feeling": 2.5,
+    "sources": 5,
+    "drawable": 5.0,
+    "variety": 5.0
+   },
+   "score": 3.81
+  },
+  {
+   "question": "What happens if you never cut your fingernails?",
+   "situation": "Watching fingernails twist into curling, heavy ram horns over thirty years",
+   "feeling": "surprise",
+   "answer": "Keratin buildup continues unchecked, curling nails into spiral claws that can deform bones and render hands useless.",
+   "area": "human body",
+   "wikipedia_articles": [
+    "Nail (anatomy)",
+    "Onychogryphosis",
+    "Keratin"
+   ],
+   "places": [
+    "living_room"
+   ],
+   "things": [],
+   "signals": [
+    "S51"
+   ],
+   "angle": "Watching fingernails twist into curling, heavy ram horns over thirty years",
+   "sources": [
+    {
+     "title": "Nail (anatomy)",
+     "url": "https://en.wikipedia.org/wiki/Nail_(anatomy)",
+     "passages": 57,
+     "about_answer": 13
+    },
+    {
+     "title": "Onychogryphosis",
+     "url": "https://en.wikipedia.org/wiki/Onychogryphosis",
+     "passages": 5,
+     "about_answer": 1
+    },
+    {
+     "title": "Keratin",
+     "url": "https://en.wikipedia.org/wiki/Keratin",
+     "passages": 25,
+     "about_answer": 6
+    }
+   ],
+   "source_hits": 20,
+   "pageviews": {
+    "article": "Nail (anatomy)",
+    "last_30_days": 14568,
+    "trend": 0.93
+   },
+   "feeling_models": [
+    3.0,
+    2.25
+   ],
+   "flag": "",
+   "feeling_reason": "Visually grotesque and striking, though the biological outcome is largely predictable.",
+   "pictures_needed": [],
+   "parts": {
+    "demand": 3.8,
+    "feeling": 2.62,
+    "sources": 5,
+    "drawable": 5.0,
+    "variety": 3.0
+   },
+   "score": 3.79
+  },
+  {
+   "question": "What happens if you drop a dropped penny from the Empire State Building?",
+   "situation": "Watching a small bronze coin tumble off the observation deck railing and vanish into the windy abyss",
+   "feeling": "surprise",
+   "answer": "Air resistance caps the terminal velocity of a flat penny at about 40 miles per hour, making it sting but unable to crack a skull.",
+   "area": "everyday life",
+   "wikipedia_articles": [
+    "Terminal velocity",
+    "Empire State Building",
+    "Aerodynamics"
+   ],
+   "places": [
+    "city_street_day"
+   ],
+   "things": [],
+   "signals": [
+    "S1"
+   ],
+   "angle": "Watching a small bronze coin tumble off the observation deck railing and vanish into the windy abyss",
+   "sources": [
+    {
+     "title": "Terminal velocity",
+     "url": "https://en.wikipedia.org/wiki/Terminal_velocity",
+     "passages": 27,
+     "about_answer": 14
+    },
+    {
+     "title": "Empire State Building",
+     "url": "https://en.wikipedia.org/wiki/Empire_State_Building",
+     "passages": 39,
+     "about_answer": 4
+    },
+    {
+     "title": "Aerodynamics",
+     "url": "https://en.wikipedia.org/wiki/Aerodynamics",
+     "passages": 37,
+     "about_answer": 3
+    }
+   ],
+   "source_hits": 21,
+   "pageviews": {
+    "article": "Terminal velocity",
+    "last_30_days": 10282,
+    "trend": 0.87
+   },
+   "feeling_models": [
+    3.75,
+    3.0
+   ],
+   "flag": "",
+   "feeling_reason": "Debunks a legendary urban myth using straightforward aerodynamic terminal velocity.",
+   "pictures_needed": [],
+   "parts": {
+    "demand": 3.2,
+    "feeling": 3.38,
+    "sources": 5,
+    "drawable": 5.0,
+    "variety": 3.0
+   },
+   "score": 3.76
+  },
+  {
+   "question": "What happens if your car plunges into deep water?",
+   "situation": "Sitting strapped in your seat as murky water rises up the windshield and the doors refuse to budge",
+   "feeling": "fear",
+   "answer": "Water pressure against the outside prevents doors from opening until the cabin completely fills with water and equalizes.",
+   "area": "disasters",
+   "wikipedia_articles": [
+    "Automobile submersion",
+    "Hydrostatic pressure",
+    "Escape from submerged vehicle"
+   ],
+   "places": [
+    "underwater"
+   ],
+   "things": [
+    "car"
+   ],
+   "signals": [
+    "S50"
+   ],
+   "angle": "Sitting strapped in your seat as murky water rises up the windshield and the doors refuse to budge",
+   "sources": [
+    {
+     "title": "Gordon Giesbrecht",
+     "url": "https://en.wikipedia.org/wiki/Gordon_Giesbrecht",
+     "passages": 13,
+     "about_answer": 0
+    },
+    {
+     "title": "Hydrostatic pressure",
+     "url": "https://en.wikipedia.org/wiki/Hydrostatic_pressure",
+     "passages": 22,
+     "about_answer": 3
+    },
+    {
+     "title": "Deep wading",
+     "url": "https://en.wikipedia.org/wiki/Deep_wading",
+     "passages": 7,
+     "about_answer": 2
+    }
+   ],
+   "source_hits": 5,
+   "pageviews": {
+    "article": "Gordon Giesbrecht",
+    "last_30_days": 112,
+    "trend": 1.07
+   },
+   "feeling_models": [
+    4.5,
+    4.5
+   ],
+   "flag": "",
+   "feeling_reason": "High-stakes survival scenario with a counterintuitive physics twist regarding pressure equalization.",
+   "pictures_needed": [],
+   "parts": {
+    "demand": 3.4,
+    "feeling": 4.5,
+    "sources": 3,
+    "drawable": 5.0,
+    "variety": 3.0
+   },
+   "score": 3.71
+  },
+  {
+   "question": "What happens if you spend six straight months living in total weightlessness?",
+   "situation": "Floating inside the space station as your leg muscles shrink and you bump your head into the ceiling",
+   "feeling": "sadness",
+   "answer": "Prolonged microgravity causes progressive bone demineralization, muscle atrophy, and cardiovascular deconditioning that impairs walking on Earth.",
+   "area": "space",
+   "wikipedia_articles": [
+    "Spaceflight osteopenia",
+    "Microgravity",
+    "Muscle atrophy"
+   ],
+   "places": [
+    "space_station"
+   ],
+   "things": [
+    "astronaut_helmet"
+   ],
+   "signals": [
+    "S44"
+   ],
+   "angle": "Floating inside the space station as your leg muscles shrink and you bump your head into the ceiling",
+   "sources": [
+    {
+     "title": "Spaceflight osteopenia",
+     "url": "https://en.wikipedia.org/wiki/Spaceflight_osteopenia",
+     "passages": 8,
+     "about_answer": 4
+    },
+    {
+     "title": "Weightlessness",
+     "url": "https://en.wikipedia.org/wiki/Weightlessness",
+     "passages": 57,
+     "about_answer": 21
+    },
+    {
+     "title": "Muscle atrophy",
+     "url": "https://en.wikipedia.org/wiki/Muscle_atrophy",
+     "passages": 30,
+     "about_answer": 26
+    }
+   ],
+   "source_hits": 51,
+   "pageviews": {
+    "article": "Spaceflight osteopenia",
+    "last_30_days": 271,
+    "trend": 1.18
+   },
+   "feeling_models": [
+    2.75,
+    3.0
+   ],
+   "flag": "",
+   "feeling_reason": "Well-documented spaceflight medical consequences that lack immediate narrative surprise.",
+   "pictures_needed": [],
+   "parts": {
+    "demand": 3.4,
+    "feeling": 2.88,
+    "sources": 5,
+    "drawable": 5.0,
+    "variety": 3.0
+   },
+   "score": 3.71
+  },
+  {
+   "question": "What happens if you hike to the top of Mount Everest without oxygen?",
+   "situation": "Struggling to take a single step on the icy South Col ridge as your vision darkens and your lungs burn",
+   "feeling": "fear",
+   "answer": "The severe lack of barometric oxygen above eight thousand meters causes rapid altitude sickness, cerebral edema, and fatal hypoxia.",
+   "area": "sport and extreme limits",
+   "wikipedia_articles": [
+    "High-altitude cerebral edema",
+    "Mount Everest",
+    "Hypoxia (medical)"
+   ],
+   "places": [
+    "snow_mountain"
+   ],
+   "things": [
+    "tent"
+   ],
+   "signals": [
+    "S26"
+   ],
+   "angle": "Struggling to take a single step on the icy South Col ridge as your vision darkens and your lungs burn",
+   "sources": [
+    {
+     "title": "High-altitude cerebral edema",
+     "url": "https://en.wikipedia.org/wiki/High-altitude_cerebral_edema",
+     "passages": 26,
+     "about_answer": 13
+    },
+    {
+     "title": "Mount Everest",
+     "url": "https://en.wikipedia.org/wiki/Mount_Everest",
+     "passages": 56,
+     "about_answer": 13
+    },
+    {
+     "title": "Hypoxia (medicine)",
+     "url": "https://en.wikipedia.org/wiki/Hypoxia_(medicine)",
+     "passages": 76,
+     "about_answer": 46
+    }
+   ],
+   "source_hits": 72,
+   "pageviews": {
+    "article": "High-altitude cerebral edema",
+    "last_30_days": 3598,
+    "trend": 1.21
+   },
+   "feeling_models": [
+    3.75,
+    3.75
+   ],
+   "flag": "",
+   "feeling_reason": "Brutal high-altitude survival challenge with standard textbook hypoxia symptoms.",
+   "pictures_needed": [],
+   "parts": {
+    "demand": 2.2,
+    "feeling": 3.75,
+    "sources": 5,
+    "drawable": 5.0,
+    "variety": 5.0
+   },
+   "score": 3.71
+  },
+  {
+   "question": "What happens if a deep-sea creature is hauled up to the surface?",
+   "situation": "Watching a netted blobfish pulled rapidly from thousands of feet down onto a sunny fishing boat deck",
+   "feeling": "disgust",
+   "answer": "Rapid depressurization expands trapped gases, severely damaging soft tissues and turning the blobfish into a gelatinous collapsed blob.",
+   "area": "ocean",
+   "wikipedia_articles": [
+    "Blobfish",
+    "Barotrauma",
+    "Decompression illness"
+   ],
+   "places": [
+    "storm_sea"
+   ],
+   "things": [],
+   "signals": [
+    "S2"
+   ],
+   "angle": "Watching a netted blobfish pulled rapidly from thousands of feet down onto a sunny fishing boat deck",
+   "sources": [
+    {
+     "title": "Blobfish",
+     "url": "https://en.wikipedia.org/wiki/Blobfish",
+     "passages": 2,
+     "about_answer": 0
+    },
+    {
+     "title": "Barotrauma",
+     "url": "https://en.wikipedia.org/wiki/Barotrauma",
+     "passages": 60,
+     "about_answer": 7
+    },
+    {
+     "title": "Decompression illness",
+     "url": "https://en.wikipedia.org/wiki/Decompression_illness",
+     "passages": 30,
+     "about_answer": 2
+    }
+   ],
+   "source_hits": 9,
+   "pageviews": {
+    "article": "Blobfish",
+    "last_30_days": 6357,
+    "trend": 1.08
+   },
+   "feeling_models": [
+    3.5,
+    3.75
+   ],
+   "flag": "",
+   "feeling_reason": "Fascinating biological reveal about why a famous creature looks radically different at surface pressure.",
+   "pictures_needed": [],
+   "parts": {
+    "demand": 2.8,
+    "feeling": 3.62,
+    "sources": 4,
+    "drawable": 5.0,
+    "variety": 5.0
+   },
+   "score": 3.69
+  },
+  {
+   "question": "What happens if you survive a lightning strike while standing outdoors?",
+   "situation": "Feeling your hair stand straight up a fraction of a second before a blinding white bolt slams into your head",
+   "feeling": "awe",
+   "answer": "Massive electrical current flashover can burst blood vessels beneath the skin, leaving branching reddish scars called Lichtenberg figures.",
+   "area": "nature and weather",
+   "wikipedia_articles": [
+    "Lightning strike",
+    "Lichtenberg figure",
+    "Flashover"
+   ],
+   "places": [
+    "city_street_day"
+   ],
+   "things": [
+    "tree"
+   ],
+   "signals": [
+    "S1",
+    "S26"
+   ],
+   "angle": "Feeling your hair stand straight up a fraction of a second before a blinding white bolt slams into your head",
+   "sources": [
+    {
+     "title": "Lightning strike",
+     "url": "https://en.wikipedia.org/wiki/Lightning_strike",
+     "passages": 79,
+     "about_answer": 10
+    },
+    {
+     "title": "Lichtenberg figure",
+     "url": "https://en.wikipedia.org/wiki/Lichtenberg_figure",
+     "passages": 21,
+     "about_answer": 17
+    },
+    {
+     "title": "Flashover",
+     "url": "https://en.wikipedia.org/wiki/Flashover",
+     "passages": 21,
+     "about_answer": 3
+    }
+   ],
+   "source_hits": 30,
+   "pageviews": {
+    "article": "Lightning strike",
+    "last_30_days": 4576,
+    "trend": 0.66
+   },
+   "feeling_models": [
+    3.75,
+    4.25
+   ],
+   "flag": "",
+   "feeling_reason": "High danger paired with the striking real-world visual phenomenon of Lichtenberg figures.",
+   "pictures_needed": [
+    "thing: tree"
+   ],
+   "parts": {
+    "demand": 2.8,
+    "feeling": 4.0,
+    "sources": 5,
+    "drawable": 4.0,
+    "variety": 3.0
+   },
+   "score": 3.68
+  },
+  {
+   "question": "What happens to insects when a lawn mower cuts the grass?",
+   "situation": "Crouching at blade level as a spinning steel blade turns grass blades into a green whirlwind",
+   "feeling": "fear",
+   "answer": "Many grass-dwelling insects are shredded by mower blades or desiccate and get eaten by waiting predatory birds after losing shelter.",
+   "area": "nature and weather",
+   "wikipedia_articles": [
+    "Rotary mower",
+    "Insect biodiversity",
+    "Predation"
+   ],
+   "places": [
+    "farm"
+   ],
+   "things": [],
+   "signals": [
+    "S54"
+   ],
+   "angle": "Crouching at blade level as a spinning steel blade turns grass blades into a green whirlwind",
+   "sources": [
+    {
+     "title": "Rotary mower",
+     "url": "https://en.wikipedia.org/wiki/Rotary_mower",
+     "passages": 4,
+     "about_answer": 3
+    },
+    {
+     "title": "Insect biodiversity",
+     "url": "https://en.wikipedia.org/wiki/Insect_biodiversity",
+     "passages": 14,
+     "about_answer": 3
+    },
+    {
+     "title": "Predation",
+     "url": "https://en.wikipedia.org/wiki/Predation",
+     "passages": 58,
+     "about_answer": 12
+    }
+   ],
+   "source_hits": 18,
+   "pageviews": {
+    "article": "Rotary mower",
+    "last_30_days": 163,
+    "trend": 0.84
+   },
+   "feeling_models": [
+    2.25,
+    2.75
+   ],
+   "flag": "",
+   "feeling_reason": "Perspective shift lacks personal viewer stakes and yields unsurprising ecological results.",
+   "pictures_needed": [],
+   "parts": {
+    "demand": 3.4,
+    "feeling": 2.5,
+    "sources": 5,
+    "drawable": 5.0,
+    "variety": 3.0
+   },
+   "score": 3.62
+  },
+  {
+   "question": "What happens if you leave a cut apple slice out on a counter?",
+   "situation": "Leaving a freshly sliced crisp apple on a sunny cutting board while you leave for work",
+   "feeling": "disgust",
+   "answer": "Polyphenol oxidase enzymes inside the apple react with ambient oxygen, producing brown melanin pigments through enzymatic browning.",
+   "area": "food and plants",
+   "wikipedia_articles": [
+    "Enzymatic browning",
+    "Polyphenol oxidase",
+    "Apple"
+   ],
+   "places": [
+    "kitchen"
+   ],
+   "things": [
+    "desk"
+   ],
+   "signals": [
+    "S67"
+   ],
+   "angle": "Leaving a freshly sliced crisp apple on a sunny cutting board while you leave for work",
+   "sources": [
+    {
+     "title": "Food browning",
+     "url": "https://en.wikipedia.org/wiki/Food_browning",
+     "passages": 22,
+     "about_answer": 18
+    },
+    {
+     "title": "Polyphenol oxidase",
+     "url": "https://en.wikipedia.org/wiki/Polyphenol_oxidase",
+     "passages": 27,
+     "about_answer": 16
+    },
+    {
+     "title": "Apple",
+     "url": "https://en.wikipedia.org/wiki/Apple",
+     "passages": 69,
+     "about_answer": 15
+    }
+   ],
+   "source_hits": 49,
+   "pageviews": {
+    "article": "Food browning",
+    "last_30_days": 1874,
+    "trend": 0.5
+   },
+   "feeling_models": [
+    1.5,
+    1.75
+   ],
+   "flag": "",
+   "feeling_reason": "Trivial everyday occurrence with virtually zero stakes and common scientific knowledge.",
+   "pictures_needed": [],
+   "parts": {
+    "demand": 3.4,
+    "feeling": 1.62,
+    "sources": 5,
+    "drawable": 5.0,
+    "variety": 5.0
+   },
+   "score": 3.59
+  },
+  {
+   "question": "What happens if you put a live pepper plant in the Jurassic period?",
+   "situation": "Planting a modern hot chili pepper plant directly into the soil beside a grazing sauropod dinosaur",
+   "feeling": "surprise",
+   "answer": "Dinosaur herbivores lacking mammal capsaicin receptors would devour the chili peppers completely oblivious to the heat.",
+   "area": "food and plants",
+   "wikipedia_articles": [
+    "Capsaicin",
+    "Evolutionary history of plants",
+    "Herbivore"
+   ],
+   "places": [
+    "prehistoric_land"
+   ],
+   "things": [],
+   "signals": [
+    "S40"
+   ],
+   "angle": "Planting a modern hot chili pepper plant directly into the soil beside a grazing sauropod dinosaur",
+   "sources": [
+    {
+     "title": "Capsaicin",
+     "url": "https://en.wikipedia.org/wiki/Capsaicin",
+     "passages": 41,
+     "about_answer": 19
+    },
+    {
+     "title": "Evolutionary history of plants",
+     "url": "https://en.wikipedia.org/wiki/Evolutionary_history_of_plants",
+     "passages": 38,
+     "about_answer": 3
+    },
+    {
+     "title": "Herbivore",
+     "url": "https://en.wikipedia.org/wiki/Herbivore",
+     "passages": 42,
+     "about_answer": 23
+    }
+   ],
+   "source_hits": 45,
+   "pageviews": {
+    "article": "Capsaicin",
+    "last_30_days": 20998,
+    "trend": 0.88
+   },
+   "feeling_models": [
+    3.0,
+    2.25
+   ],
+   "flag": "",
+   "feeling_reason": "Absurd hypothetical setup saved by a genuinely neat physiological fact about capsaicin.",
+   "pictures_needed": [],
+   "parts": {
+    "demand": 3.2,
+    "feeling": 2.62,
+    "sources": 5,
+    "drawable": 5.0,
+    "variety": 3.0
+   },
+   "score": 3.58
+  },
+  {
+   "question": "What happens if you yell into the mouth of an erupting volcano crater?",
+   "situation": "Peering over a smoking sulfur brim as red hot lava bubbles furiously hundreds of feet below",
+   "feeling": "awe",
+   "answer": "The acoustic resonance of the crater cavity and acoustic disruption from rising superheated gas plumes distort and swallow your voice.",
+   "area": "earth and geology",
+   "wikipedia_articles": [
+    "Volcano",
+    "Lava lake",
+    "Infrasound"
+   ],
+   "places": [
+    "volcano_crater"
+   ],
+   "things": [],
+   "signals": [
+    "S25"
+   ],
+   "angle": "Peering over a smoking sulfur brim as red hot lava bubbles furiously hundreds of feet below",
+   "sources": [
+    {
+     "title": "Volcano",
+     "url": "https://en.wikipedia.org/wiki/Volcano",
+     "passages": 66,
+     "about_answer": 9
+    },
+    {
+     "title": "Lava lake",
+     "url": "https://en.wikipedia.org/wiki/Lava_lake",
+     "passages": 11,
+     "about_answer": 6
+    },
+    {
+     "title": "Infrasound",
+     "url": "https://en.wikipedia.org/wiki/Infrasound",
+     "passages": 37,
+     "about_answer": 2
+    }
+   ],
+   "source_hits": 17,
+   "pageviews": {
+    "article": "Volcano",
+    "last_30_days": 36352,
+    "trend": 0.87
+   },
+   "feeling_models": [
+    2.25,
+    3.0
+   ],
+   "flag": "",
+   "feeling_reason": "Novel scenario that boils down to acoustic scattering from hot rising gas plumes.",
+   "pictures_needed": [],
+   "parts": {
+    "demand": 3.0,
+    "feeling": 2.62,
+    "sources": 5,
+    "drawable": 5.0,
+    "variety": 3.0
+   },
+   "score": 3.5
+  },
+  {
+   "question": "What happens if water stays trapped deep in your ear canal?",
+   "situation": "Shaking your head violently after swimming while hearing a dull underwater squelch inside your skull",
+   "feeling": "disgust",
+   "answer": "Trapped moisture breaks down the protective wax lining, allowing bacteria to cause acute external otitis, commonly known as swimmer's ear.",
+   "area": "everyday life",
+   "wikipedia_articles": [
+    "Otitis externa",
+    "Earwax",
+    "Ear canal"
+   ],
+   "places": [
+    "bedroom_night"
+   ],
+   "things": [
+    "bed"
+   ],
+   "signals": [
+    "S3"
+   ],
+   "angle": "Shaking your head violently after swimming while hearing a dull underwater squelch inside your skull",
+   "sources": [
+    {
+     "title": "Otitis externa",
+     "url": "https://en.wikipedia.org/wiki/Otitis_externa",
+     "passages": 39,
+     "about_answer": 31
+    },
+    {
+     "title": "Earwax",
+     "url": "https://en.wikipedia.org/wiki/Earwax",
+     "passages": 40,
+     "about_answer": 10
+    },
+    {
+     "title": "Ear canal",
+     "url": "https://en.wikipedia.org/wiki/Ear_canal",
+     "passages": 5,
+     "about_answer": 1
+    }
+   ],
+   "source_hits": 42,
+   "pageviews": {
+    "article": "Otitis externa",
+    "last_30_days": 4048,
+    "trend": 0.94
+   },
+   "feeling_models": [
+    2.25,
+    3.0
+   ],
+   "flag": "",
+   "feeling_reason": "Mundane irritation with an ordinary medical outcome that lacks narrative tension.",
+   "pictures_needed": [],
+   "parts": {
+    "demand": 2.2,
+    "feeling": 2.62,
+    "sources": 5,
+    "drawable": 5.0,
+    "variety": 5.0
+   },
+   "score": 3.42
+  }
+ ],
+ "dropped": [
+  {
+   "question": "What happens if you jump into a hole drilled straight through Earth?",
+   "situation": "Leaping feet-first into an endless vacuum tunnel bored from the North Pole to the South Pole",
+   "feeling": "wonder",
+   "answer": "You would accelerate to maximum speed at the core before decelerating, taking about 38 to 42 minutes to reach the opposite side.",
+   "area": "earth and geology",
+   "wikipedia_articles": [
+    "Gravity train",
+    "Newton's law of universal gravitation",
+    "Core of the Earth"
+   ],
+   "places": [
+    "mine_tunnel"
+   ],
+   "things": [],
+   "signals": [
+    "S25"
+   ],
+   "angle": "Leaping feet-first into an endless vacuum tunnel bored from the North Pole to the South Pole",
+   "dropped": "too close to the competitor title 'A Hole Through The Earth 😱'"
+  },
+  {
+   "question": "What happens if you try to make espresso using ground pinto beans?",
+   "situation": "Tamping finely ground pinto bean flour into an espresso portafilter and turning the steam pressure pump on",
+   "feeling": "disgust",
+   "answer": "The high starch and low soluble oil content causes the bean powder to form a gluey paste that completely clogs the filter.",
+   "area": "food and plants",
+   "wikipedia_articles": [
+    "Espresso",
+    "Pinto bean",
+    "Food chemistry"
+   ],
+   "places": [
+    "kitchen"
+   ],
+   "things": [],
+   "signals": [
+    "S67"
+   ],
+   "angle": "Tamping finely ground pinto bean flour into an espresso portafilter and turning the steam pressure pump on",
+   "dropped": "too close to the competitor title 'What happens if you make espresso with pinto beans?'"
+  },
+  {
+   "question": "What happens if you do the doorframe floating arm trick?",
+   "situation": "Pressing the backs of your hands against a doorframe for thirty seconds, then stepping forward into empty air",
+   "feeling": "surprise",
+   "answer": "Your arms float upward involuntarily due to involuntary motor persistence caused by post-tetanic potentiation in your muscles and nervous system.",
+   "area": "everyday life",
+   "wikipedia_articles": [
+    "Kohnstamm's phenomenon",
+    "Muscle memory",
+    "Motor control"
+   ],
+   "places": [
+    "living_room"
+   ],
+   "things": [],
+   "signals": [
+    "S77"
+   ],
+   "angle": "Pressing the backs of your hands against a doorframe for thirty seconds, then stepping forward into empty air",
+   "dropped": "too close to the competitor title 'How The Floating Arm Trick Works 😮'"
+  },
+  {
+   "question": "What happens if you stay awake for over two hundred hours?",
+   "situation": "Propping your eyes open with heavy eyelids as shadows hallucinate and walls seem to breathe around you",
+   "feeling": "fear",
+   "answer": "Prolonged severe sleep deprivation causes auditory and visual hallucinations, slurred speech, and acute psychosis before micro-sleeps take over.",
+   "area": "sport and extreme limits",
+   "wikipedia_articles": [
+    "Sleep deprivation",
+    "Microsleep",
+    "Randy Gardner sleep deprivation experiment"
+   ],
+   "places": [
+    "bedroom_night"
+   ],
+   "things": [
+    "bed"
+   ],
+   "signals": [
+    "S26"
+   ],
+   "angle": "Propping your eyes open with heavy eyelids as shadows hallucinate and walls seem to breathe around you",
+   "sources": [
+    {
+     "title": "Sleep deprivation",
+     "url": "https://en.wikipedia.org/wiki/Sleep_deprivation",
+     "passages": 57,
+     "about_answer": 40
+    },
+    {
+     "title": "Microsleep",
+     "url": "https://en.wikipedia.org/wiki/Microsleep",
+     "passages": 23,
+     "about_answer": 7
+    },
+    {
+     "title": "Randy Gardner sleep deprivation experiment",
+     "url": "https://en.wikipedia.org/wiki/Randy_Gardner_sleep_deprivation_experiment",
+     "passages": 9,
+     "about_answer": 6
+    }
+   ],
+   "source_hits": 53,
+   "pageviews": {
+    "article": "Sleep deprivation",
+    "last_30_days": 11988,
+    "trend": 0.93
+   },
+   "dropped": "safety (AI): Portrays an extreme endurance stunt that could encourage dangerous emulation by young viewers."
+  },
+  {
+   "question": "What happens if you touch an active electric fence barehanded?",
+   "situation": "Grabbing a thin metallic cattle wire with a sweaty palm on a foggy morning farm walk",
+   "feeling": "surprise",
+   "answer": "Pulsed high-voltage direct current contracts arm muscles in a sharp jerk and delivers a safe, painful involuntary shock.",
+   "area": "engineering and inventions",
+   "wikipedia_articles": [
+    "Electric fence",
+    "Electric shock",
+    "Electrical resistance and conductance"
+   ],
+   "places": [
+    "farm"
+   ],
+   "things": [],
+   "signals": [
+    "S1"
+   ],
+   "angle": "Grabbing a thin metallic cattle wire with a sweaty palm on a foggy morning farm walk",
+   "sources": [
+    {
+     "title": "Electric fence",
+     "url": "https://en.wikipedia.org/wiki/Electric_fence",
+     "passages": 51,
+     "about_answer": 16
+    },
+    {
+     "title": "Electrical injury",
+     "url": "https://en.wikipedia.org/wiki/Electrical_injury",
+     "passages": 63,
+     "about_answer": 30
+    },
+    {
+     "title": "Electrical resistance and conductance",
+     "url": "https://en.wikipedia.org/wiki/Electrical_resistance_and_conductance",
+     "passages": 49,
+     "about_answer": 20
+    }
+   ],
+   "source_hits": 66,
+   "pageviews": {
+    "article": "Electric fence",
+    "last_30_days": 1510,
+    "trend": 0.87
+   },
+   "dropped": "safety (AI): Presents an accessible agricultural hazard that viewers could easily replicate as a stunt."
+  }
+ ],
+ "log": {
+  "date": "2026-10-30",
+  "youtube_units": 0
+ },
+ "channels": [
+  {
+   "name": "Zack D. Films",
+   "id": "UCvz84_Q0BbvZThy75mbd-Dg",
+   "found_by": "watch list",
+   "shorts": 88,
+   "median": 10613093,
+   "hits": 4
+  },
+  {
+   "name": "Flippo Explains",
+   "id": "UC8ky9TMY_sn7TDIFLUevUYQ",
+   "found_by": "watch list",
+   "shorts": 0,
+   "median": 0,
+   "hits": 0
+  },
+  {
+   "name": "WorldMesh 3D",
+   "id": "UCOCcHseCrUrbDlCSvvwKA7A",
+   "found_by": "watch list",
+   "shorts": 4,
+   "median": 0,
+   "hits": 0
+  },
+  {
+   "name": "Cosmo Teorías",
+   "id": "UCMcR6N9Q9p0YQ0rpXGcbvlg",
+   "found_by": "searches",
+   "shorts": 91,
+   "median": 894627,
+   "hits": 15
+  },
+  {
+   "name": "BlobbyClips",
+   "id": "UCK2WCrRlxqXXKS710sRZHDQ",
+   "found_by": "searches",
+   "shorts": 96,
+   "median": 11570120,
+   "hits": 5
+  },
+  {
+   "name": "FactoHolic",
+   "id": "UCS4uc8cHDqcwwro8lGChaQQ",
+   "found_by": "searches",
+   "shorts": 97,
+   "median": 29906562,
+   "hits": 7
+  },
+  {
+   "name": "Henreee",
+   "id": "UCIYo_L-ZTXTMYUGe3Id9sGw",
+   "found_by": "searches",
+   "shorts": 78,
+   "median": 765521,
+   "hits": 11
+  },
+  {
+   "name": "SeedThePast",
+   "id": "UCeqyqvILOplrXSu2hfFhxkA",
+   "found_by": "searches",
+   "shorts": 7,
+   "median": 2002714,
+   "hits": 3
+  }
+ ]
+}
