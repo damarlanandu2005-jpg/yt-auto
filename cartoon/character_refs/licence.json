@@ -1,0 +1,7 @@
+{
+ "what": "Stickman Thoughts character reference set: who the stickman is (front, three-quarter, side, faces, poses, thinking) and 8 costumes. Sent as reference pictures to the scene-picture model so the stickman stays the same in every scene.",
+ "made_by": "the channel owner (Nandu) with ChatGPT's image generator, from the channel logo (branding/stickman_thoughts/final/logo.png)",
+ "date": "2026-10-30",
+ "rights": "AI pictures made by the owner; OpenAI's terms assign the output to the user. Our own channel mascot.",
+ "checked_by_claude": "2026-10-30: matches the logo (big round white head, thick black outline, small oval eyes, short eyebrows, round hands, stick body). An earlier set drawn with Python shapes was rejected. thinking_ideas_2/3 are pose idea sheets with props, not main references. Costumes: same face; the body becomes a fuller cartoon body under clothes (expected)."
+}
