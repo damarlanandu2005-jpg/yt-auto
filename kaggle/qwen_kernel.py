@@ -86,6 +86,10 @@ def main() -> None:
     type(pipe)._execution_device = property(lambda self: torch.device("cuda:0"))
     JOB["execution_device"] = str(pipe._execution_device)
     pipe.vae.to("cuda:0")
+    # run 7: encoding the reference picture needed 5.1 GiB with only 2.0 free next to the 11 GiB transformer;
+    # tiles and slices keep the VAE's working memory small
+    pipe.vae.enable_tiling()
+    pipe.vae.enable_slicing()
     JOB["load_s"] = round(time.time() - t)
     JOB["vram_after_load_gb"] = [round(torch.cuda.memory_allocated(i) / 2**30, 1) for i in range(2)]
     print("loaded", JOB["load_s"], "s", JOB["vram_after_load_gb"], flush=True)
