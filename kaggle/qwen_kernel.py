@@ -66,19 +66,24 @@ def main() -> None:
     JOB["model_index"] = {k: v for k, v in index.items() if isinstance(v, list)}
     te = getattr(transformers, index["text_encoder"][1]).from_pretrained(
         REPO, subfolder="text_encoder", torch_dtype=torch.bfloat16, device_map={"": "cuda:1"})
+    # run 6: the pipeline works on GPU 0; this hook moves the text encoder's inputs to GPU 1 and its answer back
+    from accelerate.hooks import AlignDevicesHook, add_hook_to_module
+    add_hook_to_module(te, AlignDevicesHook(execution_device=torch.device("cuda:1"), io_same_device=True))
     JOB["text_encoder_gb"] = round(torch.cuda.memory_allocated(1) / 2**30, 1)
     print("text encoder on GPU 1:", JOB["text_encoder_gb"], "GiB", flush=True)
     def load_transformer():
         return getattr(diffusers, index["transformer"][1]).from_pretrained(
-            REPO, subfolder="transformer", torch_dtype=torch.bfloat16, device_map="auto",
-            max_memory={0: "10.5GiB", 1: "8GiB"})  # run 2: 8.5 + 3.5 was too small (spilled to CPU)
+            REPO, subfolder="transformer", torch_dtype=torch.bfloat16, device_map={"": "cuda:0"})
+        # runs 4-5: split over two GPUs, the 4-bit transformer failed on every picture ("Cannot copy out of meta
+        # tensor", with and without the LoRA); it is ~11 GiB, so it now sits whole on GPU 0 (14.6 GiB)
     tr = load_transformer()
     pipe = QwenImageEditPlusPipeline.from_pretrained(REPO, text_encoder=te, transformer=tr,
                                                      torch_dtype=torch.bfloat16)
     # run 3: the pipeline works on the text encoder's GPU (cuda:1) and the VAE on cuda:0 got the reference
     # pictures from cuda:1 ("Expected all tensors to be on the same device"): keep the VAE where the pipeline works
+    type(pipe)._execution_device = property(lambda self: torch.device("cuda:0"))
     JOB["execution_device"] = str(pipe._execution_device)
-    pipe.vae.to(pipe._execution_device)
+    pipe.vae.to("cuda:0")
     JOB["load_s"] = round(time.time() - t)
     JOB["vram_after_load_gb"] = [round(torch.cuda.memory_allocated(i) / 2**30, 1) for i in range(2)]
     print("loaded", JOB["load_s"], "s", JOB["vram_after_load_gb"], flush=True)
