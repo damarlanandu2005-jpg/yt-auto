@@ -1,17 +1,14 @@
 {
- "started": "2026-10-30T10:05:23Z",
+ "started": "2026-10-30T19:52:29Z",
  "seconds": {
-  "flux2dev_01.png": 2648.4,
-  "flux2dev_02.png": 1.9,
-  "flux2dev_03.png": 2626.6,
-  "flux2dev_04.png": 2583.4,
-  "flux2dev_05.png": 2581.6,
-  "flux2dev_06.png": 2593.7,
-  "flux2dev_07.png": 2653.5,
-  "flux2dev_08.png": 2665.2
+  "flux2dev_fp16_01.png": 341.6,
+  "flux2dev_fp16_04.png": 351.5,
+  "flux2dev_fp16_07.png": 355.9
  },
  "errors": [
-  "flux2dev_02.png: mers/transformer_flux2.py\", line 372, in __call__\n    hidden_states = dispatch_attention_fn(\n        query,\n    ...<4 lines>...\n        parallel_config=self._parallel_config,\n    )\n  File \"/usr/local/lib/python3.13/dist-packages/diffusers/models/attention_dispatch.py\", line 450, in dispatch_attention_fn\n    return backend_fn(**kwargs)\n  File \"/usr/local/lib/python3.13/dist-packages/diffusers/models/attention_dispatch.py\", line 3760, in _native_attention\n    out = torch.nn.functional.scaled_dot_product_attention(\n        query=query,\n    ...<6 lines>...\n        enable_gqa=enable_gqa,\n    )\ntorch.OutOfMemoryError: CUDA out of memory. Tried to allocate 2.96 GiB. GPU 0 has a total capacity of 14.56 GiB of which 2.40 GiB is free. Including non-PyTorch memory, this process has 12.16 GiB memory in use. Of the allocated memory 11.89 GiB is allocated by PyTorch, and 137.56 MiB is reserved by PyTorch but unallocated. If reserved but unallocated memory is large try setting PYTORCH_CUDA_ALLOC_CONF=expandable_segments:True to avoid fragmentation.  See documentation for Memory Management  (https://docs.pytorch.org/docs/stable/notes/cuda.html#optimizing-memory-usage-with-pytorch-cuda-alloc-conf)\n"
+  "flux2dev_fp16_01.png: n decode\n    decoded = self._decode(z).sample\n              ~~~~~~~~~~~~^^^\n  File \"/usr/local/lib/python3.13/dist-packages/diffusers/models/autoencoders/autoencoder_kl_flux2.py\", line 216, in _decode\n    z = self.post_quant_conv(z)\n  File \"/usr/local/lib/python3.13/dist-packages/torch/nn/modules/module.py\", line 1779, in _wrapped_call_impl\n    return self._call_impl(*args, **kwargs)\n           ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^\n  File \"/usr/local/lib/python3.13/dist-packages/torch/nn/modules/module.py\", line 1790, in _call_impl\n    return forward_call(*args, **kwargs)\n  File \"/usr/local/lib/python3.13/dist-packages/torch/nn/modules/conv.py\", line 553, in forward\n    return self._conv_forward(input, self.weight, self.bias)\n           ~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/usr/local/lib/python3.13/dist-packages/torch/nn/modules/conv.py\", line 548, in _conv_forward\n    return F.conv2d(\n           ~~~~~~~~^\n        input, weight, bias, self.stride, self.padding, self.dilation, self.groups\n        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n    )\n    ^\nRuntimeError: Input type (c10::Half) and bias type (c10::BFloat16) should be the same\n",
+  "flux2dev_fp16_04.png: n decode\n    decoded = self._decode(z).sample\n              ~~~~~~~~~~~~^^^\n  File \"/usr/local/lib/python3.13/dist-packages/diffusers/models/autoencoders/autoencoder_kl_flux2.py\", line 216, in _decode\n    z = self.post_quant_conv(z)\n  File \"/usr/local/lib/python3.13/dist-packages/torch/nn/modules/module.py\", line 1779, in _wrapped_call_impl\n    return self._call_impl(*args, **kwargs)\n           ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^\n  File \"/usr/local/lib/python3.13/dist-packages/torch/nn/modules/module.py\", line 1790, in _call_impl\n    return forward_call(*args, **kwargs)\n  File \"/usr/local/lib/python3.13/dist-packages/torch/nn/modules/conv.py\", line 553, in forward\n    return self._conv_forward(input, self.weight, self.bias)\n           ~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/usr/local/lib/python3.13/dist-packages/torch/nn/modules/conv.py\", line 548, in _conv_forward\n    return F.conv2d(\n           ~~~~~~~~^\n        input, weight, bias, self.stride, self.padding, self.dilation, self.groups\n        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n    )\n    ^\nRuntimeError: Input type (c10::Half) and bias type (c10::BFloat16) should be the same\n",
+  "flux2dev_fp16_07.png: n decode\n    decoded = self._decode(z).sample\n              ~~~~~~~~~~~~^^^\n  File \"/usr/local/lib/python3.13/dist-packages/diffusers/models/autoencoders/autoencoder_kl_flux2.py\", line 216, in _decode\n    z = self.post_quant_conv(z)\n  File \"/usr/local/lib/python3.13/dist-packages/torch/nn/modules/module.py\", line 1779, in _wrapped_call_impl\n    return self._call_impl(*args, **kwargs)\n           ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^\n  File \"/usr/local/lib/python3.13/dist-packages/torch/nn/modules/module.py\", line 1790, in _call_impl\n    return forward_call(*args, **kwargs)\n  File \"/usr/local/lib/python3.13/dist-packages/torch/nn/modules/conv.py\", line 553, in forward\n    return self._conv_forward(input, self.weight, self.bias)\n           ~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/usr/local/lib/python3.13/dist-packages/torch/nn/modules/conv.py\", line 548, in _conv_forward\n    return F.conv2d(\n           ~~~~~~~~^\n        input, weight, bias, self.stride, self.padding, self.dilation, self.groups\n        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n    )\n    ^\nRuntimeError: Input type (c10::Half) and bias type (c10::BFloat16) should be the same\n"
  ],
  "notes": [
   "diffusers/FLUX.2-dev-bnb-4bit: downloads without login"
@@ -36,27 +33,26 @@
   },
   "bf16_supported": true
  },
+ "options": {
+  "dtype": "fp16",
+  "scenes": [
+   "01",
+   "04",
+   "07"
+  ]
+ },
  "text_encoder_class": "Mistral3ForConditionalGeneration",
- "text_encoder_load_s": 108,
- "encode_s": 78,
- "transformer_load_s": 145,
+ "text_encoder_load_s": 111,
+ "encode_s": 29,
+ "compute_dtype": {
+  "Flux2Transformer2DModel": "torch.float16 on 203 4-bit layers"
+ },
+ "transformer_load_s": 143,
  "vram_after_load_gb": [
   8.3,
   8.8
  ],
- "setup_s": 394,
- "peak_vram_gb": [
-  13.8,
-  14.2
- ],
- "pictures": [
-  "flux2dev_01.png",
-  "flux2dev_03.png",
-  "flux2dev_04.png",
-  "flux2dev_05.png",
-  "flux2dev_06.png",
-  "flux2dev_07.png",
-  "flux2dev_08.png"
- ],
- "total_s": 18748
+ "setup_s": 351,
+ "pictures": [],
+ "total_s": 1400
 }
