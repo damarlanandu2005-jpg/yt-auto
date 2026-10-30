@@ -93,12 +93,21 @@ def main() -> None:
     JOB["text_encoder_gb"] = round(torch.cuda.memory_allocated(1) / 2**30, 1)
     print("text encoder on GPU 1:", JOB["text_encoder_gb"], "GiB", flush=True)
     def load_transformer(dtype=torch.bfloat16):
+        if OPTIONS.get("single_gpu"):  # noqa: F821
+            # Speed test 1 (30 Oct 19:53): the LoRA on the transformer split by accelerate (device_map) failed with
+            # "Cannot copy out of meta tensor" even without torchao. Here: no device_map at all (no accelerate hooks),
+            # the whole ~11 GiB 4-bit transformer on GPU 0; the reference pictures are 512x512 now, so attention
+            # needs far less than run 8's 4.1 GiB.
+            with torch.cuda.device(0):
+                return getattr(diffusers, index["transformer"][1]).from_pretrained(
+                    REPO, subfolder="transformer", torch_dtype=dtype)
         return getattr(diffusers, index["transformer"][1]).from_pretrained(
             REPO, subfolder="transformer", torch_dtype=dtype, device_map="auto",
             max_memory={0: "7.5GiB", 1: "9.5GiB"})  # run 9: 7+5 (and run 2: 8.5+3.5) failed the size check
         # runs 4-6 failed with meta tensors (cause: the Lightning LoRA / newer torchao, not the split); run 8 had the
         # whole ~11 GiB transformer on GPU 0 and attention needed 4.1 GiB with 2.6 free. Split it again ~7 + 4.
     tr = load_transformer()
+    JOB["transformer_device"] = str(next(tr.parameters()).device)
     pipe = QwenImageEditPlusPipeline.from_pretrained(REPO, text_encoder=te, transformer=tr,
                                                      torch_dtype=torch.bfloat16)
     # run 3: the pipeline works on the text encoder's GPU (cuda:1) and the VAE on cuda:0 got the reference
