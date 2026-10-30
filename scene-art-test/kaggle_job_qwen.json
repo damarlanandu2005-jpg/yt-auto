@@ -1,0 +1,26 @@
+{
+ "started": "2026-10-30T13:30:20Z",
+ "seconds": {},
+ "errors": [
+  "Traceback (most recent call last):\n  File \"/kaggle/src/script.py\", line 110, in <module>\n    main()\n    ~~~~^^\n  File \"/kaggle/src/script.py\", line 60, in main\n    pipe = QwenImageEditPlusPipeline.from_pretrained(REPO, torch_dtype=torch.bfloat16)\n  File \"/usr/local/lib/python3.13/dist-packages/huggingface_hub/utils/_validators.py\", line 89, in _inner_fn\n    return fn(*args, **kwargs)\n  File \"/usr/local/lib/python3.13/dist-packages/diffusers/pipelines/pipeline_utils.py\", line 1044, in from_pretrained\n    loaded_sub_model = load_sub_model(\n        library_name=library_name,\n    ...<22 lines>...\n        trust_remote_code=trust_remote_code,\n    )\n  File \"/usr/local/lib/python3.13/dist-packages/diffusers/pipelines/pipeline_loading_utils.py\", line 923, in load_sub_model\n    loaded_sub_model = load_method(os.path.join(cached_folder, name), **loading_kwargs)\n  File \"/usr/local/lib/python3.13/dist-packages/transformers/modeling_utils.py\", line 4353, in from_pretrained\n    loading_info, disk_offload_index = cls._load_pretrained_model(\n                                       ~~~~~~~~~~~~~~~~~~~~~~~~~~^\n        model, state_dict, checkpoint_files, load_config\n        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n    )\n    ^\n  File \"/usr/local/lib/python3.13/dist-packages/transformers/modeling_utils.py\", line 4435, in _load_pretrained_model\n    caching_allocator_warmup(model, expanded_device_map, load_config.hf_quantizer)\n    ~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/usr/local/lib/python3.13/dist-packages/transformers/modeling_utils.py\", line 5148, in caching_allocator_warmup\n    _ = torch.empty(int(byte_count // 2), dtype=torch.float16, device=device, requires_grad=False)\ntorch.OutOfMemoryError: CUDA out of memory. Tried to allocate 4.62 GiB. GPU 0 has a total capacity of 14.56 GiB of which 3.66 GiB is free. Including non-PyTorch memory, this process has 10.89 GiB memory in use. Of the allocated memory 10.79 GiB is allocated by PyTorch, and 4.45 MiB is reserved by PyTorch but unallocated. If reserved but unallocated memory is large try setting PYTORCH_CUDA_ALLOC_CONF=expandable_segments:True to avoid fragmentation.  See documentation for Memory Management  (https://docs.pytorch.org/docs/stable/notes/cuda.html#optimizing-memory-usage-with-pytorch-cuda-alloc-conf)\n"
+ ],
+ "notes": [],
+ "versions": {
+  "diffusers": "0.42.1",
+  "transformers": "5.22.1",
+  "huggingface-hub": "1.33.0",
+  "bitsandbytes": "0.50.2",
+  "peft": "0.21.2",
+  "torch": "2.11.0+cu128"
+ },
+ "hardware": {
+  "gpus": [
+   "Tesla T4",
+   "Tesla T4"
+  ],
+  "ram_gb": 31.3,
+  "disk_free_gb": 1048.4
+ },
+ "total_s": 170,
+ "pictures": []
+}
