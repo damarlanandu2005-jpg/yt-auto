@@ -1,0 +1,114 @@
+name: Scene picture test (AI draws the whole scene)
+
+# Owner 'go' (30 Oct): the same 8 Titanic scenes drawn 3 ways, to fix the "pasted stickman" look
+# (cartoon/scene_art_test/prompts.json):
+#   action = start   : Cloudflare FLUX draws 8 (words only) now; Kaggle SDXL + IP-Adapter (logo reference) starts
+#   action = collect : (~40-60 min later) fetches Kaggle's pictures; adds the owner's ChatGPT pictures if they are in
+#                      cartoon/scene_art_test/chatgpt/; makes one comparison sheet
+# Results: bench-results scene-art-test/pictures/ (all pictures, jpg) and scene-art-test/sheet.jpg.
+# Secrets: Cloudflare (pictures) and Kaggle (start/collect). The Kaggle kernel holds no keys.
+on:
+  workflow_dispatch:
+    inputs:
+      action:
+        description: "start or collect"
+        type: choice
+        options: [start, collect]
+        default: start
+
+permissions:
+  contents: write
+
+concurrency:
+  group: scene-art-test
+  cancel-in-progress: false
+
+jobs:
+  test:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 25
+    env:
+      KAGGLE_USERNAME: ${{ secrets.KAGGLE_USERNAME }}
+      KAGGLE_API_TOKEN: ${{ secrets.KAGGLE_API_TOKEN }}
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.13"
+      - name: Install
+        timeout-minutes: 3
+        run: pip install -q pillow numpy
+
+      - name: Kaggle login
+        timeout-minutes: 5
+        run: bash kaggle/login.sh
+
+      - name: Get bench-results
+        timeout-minutes: 3
+        run: |
+          git fetch --depth 1 origin bench-results
+          git worktree add results FETCH_HEAD
+          git -C results checkout -B bench-results
+          mkdir -p results/scene-art-test/pictures
+
+      - name: Cloudflare FLUX, 8 pictures (words only)
+        if: inputs.action == 'start'
+        timeout-minutes: 8
+        env:
+          CLOUDFLARE_API_TOKEN: ${{ secrets.CLOUDFLARE_API_TOKEN }}
+          CLOUDFLARE_ACCOUNT_ID: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
+        run: |
+          python cartoon/scene_art_test/run.py cloudflare --out out/flux
+          cp out/flux/*.jpg results/scene-art-test/pictures/ 2>/dev/null || true
+          cp out/flux/cloudflare.json results/scene-art-test/
+
+      - name: Start Kaggle SDXL + IP-Adapter
+        if: inputs.action == 'start'
+        timeout-minutes: 8
+        run: |
+          set -e
+          mkdir -p k
+          python3 - <<'EOF'
+          import base64, json, os
+          P = json.load(open("cartoon/scene_art_test/prompts.json"))
+          ref = base64.b64encode(open("cartoon/scene_art_test/reference.png", "rb").read()).decode()
+          body = open("kaggle/scene_art_kernel.py").read()
+          open("k/run.py", "w").write(f"PROMPTS = {json.dumps(P)!r}\nimport json as _j\nPROMPTS = _j.loads(PROMPTS)\nREF = {ref!r}\n" + body)
+          json.dump({"id": f"{os.environ['KAGGLE_USERNAME']}/yt-auto-scene-art", "title": "yt-auto scene art",
+                     "code_file": "run.py", "language": "python", "kernel_type": "script", "is_private": "true",
+                     "enable_gpu": "true", "enable_internet": "true", "machine_shape": "NvidiaTeslaT4",
+                     "dataset_sources": [], "competition_sources": [], "kernel_sources": [], "model_sources": []},
+                    open("k/kernel-metadata.json", "w"), indent=1)
+          EOF
+          kaggle kernels push -p k
+          sleep 20
+          kaggle kernels status "$KAGGLE_USERNAME/yt-auto-scene-art" || true
+
+      - name: Collect Kaggle pictures
+        if: inputs.action == 'collect'
+        timeout-minutes: 10
+        run: |
+          kaggle kernels status "$KAGGLE_USERNAME/yt-auto-scene-art" | tee results/scene-art-test/kaggle_status.txt
+          mkdir -p out/kaggle
+          kaggle kernels output "$KAGGLE_USERNAME/yt-auto-scene-art" -p out/kaggle || true
+          cp out/kaggle/job.json results/scene-art-test/kaggle_job.json 2>/dev/null || true
+          python3 - <<'EOF'
+          from pathlib import Path
+          from PIL import Image
+          for p in Path("out/kaggle").rglob("sdxl_*.png"):
+              Image.open(p).convert("RGB").save(f"results/scene-art-test/pictures/{p.stem}.jpg", quality=88)
+          EOF
+          for f in cartoon/scene_art_test/chatgpt/chatgpt_*; do [ -f "$f" ] && cp "$f" results/scene-art-test/pictures/; done
+          ls results/scene-art-test/pictures | head -50
+
+      - name: Sheet and save
+        if: always()
+        timeout-minutes: 5
+        run: |
+          python cartoon/scene_art_test/run.py sheet --out results/scene-art-test results/scene-art-test/pictures || true
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          cd results
+          git add -A scene-art-test
+          git commit -m "Scene picture test ${{ inputs.action }} ${{ github.run_id }}" || exit 0
+          for i in 1 2 3 4 5; do git push origin bench-results && break; git pull --rebase origin bench-results; sleep 5; done
