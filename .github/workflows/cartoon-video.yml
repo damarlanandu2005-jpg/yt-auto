@@ -81,6 +81,7 @@ jobs:
         timeout-minutes: 30
         run: |
           set -o pipefail
+          mkdir -p out
           python cartoon/make_video.py --script in/script.json --pictures in/pics --sources in/sources.json --out out/short | tee out/make.log
       - name: Publish
         timeout-minutes: 8
