@@ -80,6 +80,7 @@ jobs:
           CLOUDFLARE_ACCOUNT_ID: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
         run: |
           set -o pipefail
+          mkdir -p results/cartoon-pictures/checktest
           python cartoon/make_pictures.py checktest --pictures results/scene-art-test/pictures --out results/cartoon-pictures/checktest | tee results/cartoon-pictures/checktest/log.txt
 
       - name: Plan the picture prompts
