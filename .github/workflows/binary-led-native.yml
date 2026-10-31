@@ -15,7 +15,10 @@ on:
   pull_request:
     paths:
       - "yt_auto/binary_scene.py"
+      - "yt_auto/binary_scene_ai.py"
       - "examples/binary_driving_scene.json"
+      - "scripts/generate_binary_ai_scene.py"
+      - "tests/test_binary_scene_ai.py"
       - "scripts/render_binary_demo.py"
       - "tests/test_binary_scene.py"
       - ".github/workflows/binary-led-native.yml"
@@ -59,6 +62,21 @@ jobs:
           assert values.issubset({0, 255}), f"non-binary values: {values}"
           print("Verified: 1080x1920, binary pixel values only")
           PY
+      - name: Generate AI-planned binary scene (text-only, no image inputs)
+        env:
+          GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
+          CLOUDFLARE_API_TOKEN: ${{ secrets.CLOUDFLARE_API_TOKEN }}
+          CLOUDFLARE_ACCOUNT_ID: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
+        run: |
+          if [ -z "$GEMINI_API_KEY" ] && { [ -z "$CLOUDFLARE_API_TOKEN" ] || [ -z "$CLOUDFLARE_ACCOUNT_ID" ]; }; then
+            echo "No LLM secrets configured; skipping AI-generated scene preview."
+            exit 0
+          fi
+          python scripts/generate_binary_ai_scene.py \
+            --scene "A driver steers a small car along a road, approaches a traffic light, stops, then drives forward when it turns green. Draw a clear stick-figure driver, car, road markings and traffic light." \
+            --narration "The driver approaches the traffic light, stops at the red signal, and moves again when it turns green." \
+            --duration 8 \
+            --out out/binary-led-ai/ai-driving-scene.mp4
       - uses: actions/upload-artifact@v4
         with:
           name: binary-led-native-preview
