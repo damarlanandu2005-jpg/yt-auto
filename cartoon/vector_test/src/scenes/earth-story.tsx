@@ -1,6 +1,5 @@
 import {
   Circle,
-  Ellipse,
   Layout,
   Line,
   Rect,
@@ -27,7 +26,7 @@ function Stickman(props: {scale?: number; outfit?: string}) {
       <Circle y={-145} size={105} fill="#fffdf7" stroke="#202027" lineWidth={9} />
       <Circle x={-20} y={-153} size={9} fill="#202027" />
       <Circle x={20} y={-153} size={9} fill="#202027" />
-      <Ellipse y={-126} width={27} height={13} stroke="#202027" lineWidth={4} />
+      <Circle y={-126} width={27} height={13} stroke="#202027" lineWidth={4} />
     </Layout>
   );
 }
@@ -41,7 +40,7 @@ export default makeScene2D(function* (view) {
     const y = ((i * 293) % 1280) - 640;
     view.add(<Circle x={x} y={y - 170} size={i % 5 === 0 ? 8 : 4} fill="#8b8794" opacity={0.5} />);
   }
-  view.add(<Ellipse x={30} y={-250} width={830} height={350} stroke="#c7b9a4" lineWidth={4} opacity={0.7} />);
+  view.add(<Circle x={30} y={-250} width={830} height={350} stroke="#c7b9a4" lineWidth={4} opacity={0.7} />);
 
   const title = createRef<Txt>();
   view.add(
@@ -63,10 +62,10 @@ export default makeScene2D(function* (view) {
   view.add(
     <Layout ref={earth} x={110} y={-180} scale={0.9}>
       <Circle size={490} fill="#4f91bd" stroke="#202027" lineWidth={10} />
-      <Ellipse x={-70} y={-70} width={150} height={105} fill="#83a96b" stroke="#202027" lineWidth={5} rotation={-25} />
-      <Ellipse x={95} y={55} width={190} height={120} fill="#83a96b" stroke="#202027" lineWidth={5} rotation={28} />
-      <Ellipse x={-130} y={130} width={95} height={60} fill="#83a96b" stroke="#202027" lineWidth={5} rotation={-15} />
-      <Ellipse width={560} height={175} stroke="#d2a45d" lineWidth={8} rotation={-18} opacity={0.75} />
+      <Circle x={-70} y={-70} width={150} height={105} fill="#83a96b" stroke="#202027" lineWidth={5} rotation={-25} />
+      <Circle x={95} y={55} width={190} height={120} fill="#83a96b" stroke="#202027" lineWidth={5} rotation={28} />
+      <Circle x={-130} y={130} width={95} height={60} fill="#83a96b" stroke="#202027" lineWidth={5} rotation={-15} />
+      <Circle width={560} height={175} stroke="#d2a45d" lineWidth={8} rotation={-18} opacity={0.75} />
     </Layout>,
   );
 
@@ -81,7 +80,7 @@ export default makeScene2D(function* (view) {
   const rocket = createRef<Layout>();
   view.add(
     <Layout ref={rocket} x={-620} y={250} rotation={-28}>
-      <Ellipse width={62} height={180} fill="#fffdf7" stroke="#202027" lineWidth={8} />
+      <Circle width={62} height={180} fill="#fffdf7" stroke="#202027" lineWidth={8} />
       <Circle y={-30} size={42} fill="#79b6d5" stroke="#202027" lineWidth={6} />
       <Line points={[[-27, 45], [-70, 95], [-22, 82]]} closed fill="#d66b50" stroke="#202027" lineWidth={6} />
       <Line points={[[27, 45], [70, 95], [22, 82]]} closed fill="#d66b50" stroke="#202027" lineWidth={6} />
