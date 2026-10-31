@@ -28,6 +28,7 @@ OUT = W / "scenes"
 JOB = {"started": time.strftime("%Y-%m-%dT%H:%M:%SZ", time.gmtime()), "seconds": {}, "errors": [], "notes": []}
 REPO = "diffusers/FLUX.2-dev-bnb-4bit"
 SIZE = (576, 1024)       # 9:16; small first, the T4 is slow (upscaling comes later if the look is right)
+SMALL = (512, 912)       # only used when a picture runs out of memory at SIZE (owner OK 31 Oct: lower size is fine on phones)
 STEPS = 28
 GUIDANCE = 4.0
 SEED = 30
@@ -167,20 +168,29 @@ def main() -> None:
             break
         name = f"flux2dev_{tag}{sc['id']}.png"
         t = time.time()
-        try:
-            ref_list = [refs[r] for r in sc.get("refs", ["stickman_front"]) if r in refs]
-            img = pipe(prompt_embeds=embeds[sc["id"]].to("cuda:0", dtype), image=ref_list or None,
-                       width=SIZE[0], height=SIZE[1], num_inference_steps=STEPS, guidance_scale=GUIDANCE,
-                       generator=torch.Generator("cuda:0").manual_seed(SEED)).images[0]
-            torch.cuda.synchronize()
-            JOB.setdefault("gen_s", {})[name] = round(time.time() - t, 1)  # drawing only (owner's condition 2)
-            JOB.setdefault("image_stats", {})[name] = image_stats(img)
-            img.save(OUT / name)
-            JOB["peak_vram_gb"] = [round(torch.cuda.max_memory_allocated(i) / 2**30, 1) for i in range(2)]
-        except Exception as e:  # noqa: BLE001  one failed picture is recorded, the rest go on
-            JOB["errors"].append(f"{name}: {traceback.format_exc()[-1200:]}")
-            if "out of memory" in str(e).lower():
-                torch.cuda.empty_cache()
+        ref_list = [refs[r] for r in sc.get("refs", ["stickman_front"]) if r in refs]
+        for size in (SIZE, SMALL):
+            try:
+                img = pipe(prompt_embeds=embeds[sc["id"]].to("cuda:0", dtype), image=ref_list or None,
+                           width=size[0], height=size[1], num_inference_steps=STEPS, guidance_scale=GUIDANCE,
+                           generator=torch.Generator("cuda:0").manual_seed(SEED)).images[0]
+                torch.cuda.synchronize()
+                JOB.setdefault("gen_s", {})[name] = round(time.time() - t, 1)  # drawing only (owner's condition 2)
+                JOB.setdefault("size_used", {})[name] = list(size)
+                JOB.setdefault("image_stats", {})[name] = image_stats(img)
+                img.save(OUT / name)
+                JOB["peak_vram_gb"] = [round(torch.cuda.max_memory_allocated(i) / 2**30, 1) for i in range(2)]
+                break
+            except Exception as e:  # noqa: BLE001  one failed picture is recorded, the rest go on
+                JOB["errors"].append(f"{name} at {size}: {traceback.format_exc()[-1200:]}")
+                if "out of memory" in str(e).lower():
+                    gc.collect()
+                    torch.cuda.empty_cache()
+                    if size == SIZE:
+                        JOB["notes"].append(f"{name}: out of memory at {SIZE}, retrying at {SMALL}")
+                        t = time.time()
+                        continue
+                break
         JOB["seconds"][name] = round(time.time() - t, 1)
         print(name, JOB["seconds"][name], flush=True)
         save_job()

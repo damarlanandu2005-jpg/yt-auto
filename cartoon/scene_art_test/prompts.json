@@ -17,8 +17,7 @@
    "voice": "Typically, only about one-tenth of an iceberg floats above the water surface.",
    "prompt": "cut-away view of the ocean: a small tip of an iceberg above the water line and a giant iceberg hidden below the surface, the stickman in an old brass diving helmet floats underwater next to it, looking up amazed, blue water, sunbeams",
    "refs": [
-    "stickman_front",
-    "costume_diver"
+    "stickman_diver"
    ]
   },
   {
@@ -32,7 +31,7 @@
   {
    "id": "04",
    "voice": "The ship carries lifeboats for only one-third of the people on board.",
-   "prompt": "the tilted deck of a sinking 1912 ocean liner at night, only two small wooden lifeboats hanging on the side, a long crowd of worried stickman passengers waiting, our stickman in front looking at the few lifeboats",
+   "prompt": "the tilted deck of a sinking 1912 ocean liner at night, only two small wooden lifeboats hanging on the side, a long crowd of worried passengers waiting that are ALL small stickmen exactly like our stickman (round white heads, thin black stick bodies, no skin, no hair, no real humans), our stickman in front looking at the few lifeboats",
    "refs": [
     "stickman_front"
    ]

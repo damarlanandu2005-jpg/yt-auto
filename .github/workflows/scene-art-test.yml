@@ -118,6 +118,16 @@ jobs:
               b = io.BytesIO()
               im.save(b, "JPEG", quality=92)
               refs[name] = base64.b64encode(b.getvalue()).decode()
+          # one reference instead of two (scene 02 ran out of memory with two): stickman + diver costume side by side
+          a = Image.open("cartoon/character_refs/stickman_front.png").convert("RGB")
+          c = Image.open("cartoon/character_refs/costumes/costume_diver.png").convert("RGB")
+          h = 512
+          a = a.resize((int(a.width * h / a.height), h)); c = c.resize((int(c.width * h / c.height), h))
+          both = Image.new("RGB", (a.width + c.width, h), "white")
+          both.paste(a, (0, 0)); both.paste(c, (a.width, 0))
+          both.thumbnail((1024, 512))
+          b = io.BytesIO(); both.save(b, "JPEG", quality=92)
+          refs["stickman_diver"] = base64.b64encode(b.getvalue()).decode()
           eng = os.environ["ENGINE"]
           body = open(f"kaggle/{eng}_kernel.py").read()
           opts = json.loads(os.environ.get("OPTIONS") or "{}")
