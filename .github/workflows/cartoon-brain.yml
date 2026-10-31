@@ -23,6 +23,9 @@ on:
       vision_model:
         description: "start: Ollama picture-reading model that checks the pictures"
         default: "gemma3:27b"
+      resume_from:
+        description: "start, optional: run id of an earlier brain run (bench-results cartoon-brain/<id>): reuse its checked script and sources, make a new picture plan and pictures only"
+        default: ""
 
 permissions:
   contents: write
@@ -56,8 +59,10 @@ jobs:
           TOPIC: ${{ inputs.topic }}
           SCRIPT_FILE: ${{ inputs.script_file }}
           VISION_MODEL: ${{ inputs.vision_model }}
+          RESUME_FROM: ${{ inputs.resume_from }}
         run: |
           set -e
+          [[ "$RESUME_FROM" =~ ^[0-9]*$ ]] || { echo "resume_from must be a run id"; exit 1; }
           [[ "$VISION_MODEL" =~ ^[a-z0-9.:/_-]+$ ]] || { echo "bad model name"; exit 1; }
           mkdir -p bundle/cartoon/emoji bundle/cartoon/art bundle/cartoon/character_refs/costumes bundle/kaggle k
           cp -r yt_auto bundle/ && cp kaggle/ollama_setup.py kaggle/flux2_kernel.py bundle/kaggle/
@@ -76,8 +81,18 @@ jobs:
           import base64, json, os
           b = base64.b64encode(open("bundle.tgz", "rb").read()).decode()
           own = open(os.environ["SCRIPT_FILE"]).read().strip() if os.environ.get("SCRIPT_FILE") else ""
+          resume = {}
+          if os.environ.get("RESUME_FROM"):
+              import subprocess
+              subprocess.run(["git", "fetch", "--depth", "1", "origin", "bench-results"], check=True)
+              for n in ("plan.json", "sources.json", "script.json", "factcheck.json"):
+                  r = subprocess.run(["git", "show", f"FETCH_HEAD:cartoon-brain/{os.environ['RESUME_FROM']}/out/short/meta/{n}"],
+                                     capture_output=True, text=True)
+                  assert r.returncode == 0, f"resume file {n} not found"
+                  resume[n] = r.stdout
           head = (f"JOB_ID = {os.environ['GITHUB_RUN_ID']!r}\nTOPIC = {os.environ['TOPIC']!r}\nSCRIPT_TEXT = {own!r}\n"
                   f"WRITE_MODELS = ['qwen3:32b']\nCHECK_MODELS = ['gpt-oss:20b']\nVISION_MODEL = {os.environ['VISION_MODEL']!r}\n"
+                  f"RESUME_FILES = {resume!r}\n"
                   f"BUNDLE = {b!r}\n")
           open("k/run.py", "w").write(head + open("kaggle/brain_kernel.py").read())
           user = os.environ["KAGGLE_USERNAME"]

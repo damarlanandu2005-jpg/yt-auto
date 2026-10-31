@@ -198,6 +198,10 @@ def selftest(_a=None) -> None:
     assert any("photo" in x for x in ph) and any("text" in x for x in ph), ph
     assert any("no prompt" in x for x in S.validate(_plan([HERO], []), {"s1": "a"}))
     assert any("wide shots" in x for x in S.validate(_plan([HERO], [dict(_sc(f"w{i}", ["hero"], "wide"), prompt=f"w{i} " * 3 + LONG + f" n{i} " * 4) for i in range(3)]), {f"w{i}": "t" for i in range(3)}))
+    gore = S.validate(_plan([HERO], [dict(_sc("s1", ["hero"]), prompt="Picture s1: the stickman floats in space and blood sprays from his suit " + LONG)]), {"s1": "a"})
+    assert any("blood or gore" in x for x in gore), gore
+    r5 = S.redo_prompt(p1["scenes"][0], ["blood or gore is drawn; show danger without blood"], 1)
+    assert "no blood" in S.compose(r5, p1)
     # old-format plans (Titanic first run) still load
     old = S.upgrade({"scenes": [{"id": "a", "shot": "wide", "costume": "winter", "others": "nobody", "prompt": "x"},
                                 {"id": "b", "shot": "wide", "costume": "winter", "others": "5 stickmen", "prompt": "y"}]})

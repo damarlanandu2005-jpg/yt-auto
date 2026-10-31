@@ -78,7 +78,15 @@ def main() -> None:
             "LLM_QUALITY_MODELS": local(WRITE_MODELS), "LLM_CHECK_MODELS": local(CHECK_MODELS),  # noqa: F821
             "LLM_LIGHT_MODELS": local(CHECK_MODELS + WRITE_MODELS)}  # noqa: F821
 
-    # A. the checked script
+    # A. the checked script (RESUME_FILES: plan, sources and script of an earlier run: the script stage is then skipped,
+    # 86 min in the first run; no rewrites on a resume)
+    resume = RESUME_FILES  # noqa: F821
+    if resume:
+        (SHORT / "meta").mkdir(parents=True, exist_ok=True)
+        for name, text in resume.items():
+            (SHORT / "meta" / name).write_text(text)
+        base["SCRIPT_REWRITES"] = "0"
+        JOB["resumed_files"] = sorted(resume)
     t = time.time()
     args = ["cartoon/make_short.py", "write", "--topic", TOPIC, "--out", str(SHORT), "--script-only"]  # noqa: F821
     if SCRIPT_TEXT:  # noqa: F821

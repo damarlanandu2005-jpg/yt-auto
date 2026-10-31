@@ -39,6 +39,7 @@ CROWD_RULE = ("EVERY other person in the picture is also a stickman: a round whi
 CROWD_WORDS = re.compile(r"\b(crowd|passengers?|people|persons?|men|women|children|kids|workers|soldiers|villagers|"
                          r"audience|everyone|others?|survivors|sailors|crew|passers)\b", re.I)
 BAD_WORDS = re.compile(r"\b(photo|photograph|photorealistic|realistic|3d|render|hyperreal\w*)\b", re.I)
+GORE_WORDS = re.compile(r"\b(blood\w*|gore|gory|corpses?|dead bod\w+|bleed\w*|wounds?|guts|severed|dismember\w*|mutilat\w*)\b", re.I)
 TEXT_WORDS = re.compile(r"\b(sign|banner|poster|caption|label|title|text|letters?|words?|numbers?|logo|newspaper)\b", re.I)
 
 PLAN_SCHEMA = {"type": "object", "properties": {
@@ -90,6 +91,8 @@ prompt, pin to pin, so nothing is left to chance:
 - WHAT EACH CHARACTER DOES: pose, where he stands in the picture, face (eyes, eyebrows, mouth) and the feeling.
 - The PROPS and the BIG THING the narration names, with their size next to the stickman.
 - Show, don't write: no word, sign or number in the picture. Never ask for text.
+- NO blood, gore, wounds or dead bodies, ever (YouTube and the channel rules). Show danger and fear with the face, ice,
+  bubbles, smoke, light and the setting, never with blood.
 - Say how many extras (a small group of 6, not "a huge crowd") and what they do.
 - The pictures must differ: different camera, place or pose. The hero must be easy to see: at least a third of the
   picture height in "medium" and "close" shots.
@@ -206,6 +209,8 @@ def validate(plan: dict, texts: dict[str, str]) -> list[str]:
             problems.append(f"{sid}: prompt too short ({len(p.split())} words), details are left to chance")
         if BAD_WORDS.search(p):
             problems.append(f"{sid}: asks for a photo/realistic/3d look (the style is flat 2D cartoon)")
+        if GORE_WORDS.search(p):
+            problems.append(f"{sid}: asks for blood or gore ({GORE_WORDS.search(p).group(0)}): show danger without it")
         if TEXT_WORDS.search(p):
             problems.append(f"{sid}: asks for text in the picture ({TEXT_WORDS.search(p).group(0)}): show, don't write")
         named = [w for w in s.get("who", []) if w in ids and next(c for c in cast if c["id"] == w)["role"] != "crowd"]
@@ -229,8 +234,9 @@ PIC_SEEN = {"type": "object", "properties": {"images": {"type": "array", "items"
     "realistic_people_count": {"type": "integer", "description": "how many BACKGROUND people with skin-coloured faces, "
                                "hair or noses (the main hero, even in a costume with a white round head, does not count)"},
     "main_figures": {"type": "string", "description": "each main figure and what it wears (head, clothes, colours)"},
+    "blood_or_gore": {"type": "boolean", "description": "true if any blood, wound, gore or dead-looking body is drawn"},
     "text_seen": {"type": "string", "description": "every letter, number or word in the picture, or 'none'"}},
-    "required": ["n", "seen", "stickmen_count", "realistic_people_count", "main_figures", "text_seen"]}}},
+    "required": ["n", "seen", "stickmen_count", "realistic_people_count", "main_figures", "blood_or_gore", "text_seen"]}}},
     "required": ["images"]}
 PIC_JUDGE = {"type": "object", "properties": {"scenes": {"type": "array", "items": {"type": "object", "properties": {
     "scene": {"type": "string"}, "ok": {"type": "boolean"},
@@ -259,7 +265,7 @@ what is drawn (the place, the big objects, what each main figure does and feels)
 (a plain round white head with a black outline and thin stick body, with or without clothes). Count any REAL-LOOKING
 people: skin-coloured faces, hair, noses and realistic bodies. The main hero (a white round head, even when he wears a
 costume) is NOT one. Describe what each main figure wears. Quote every letter, number or word drawn (or say none).
-Mention any deformed face, hand or body.""", images=[(f"Image {i}:", _thumb(pics[s])) for i, s in enumerate(ids, 1)],
+Say if any blood, wound or gore is drawn. Mention any deformed face, hand or body.""", images=[(f"Image {i}:", _thumb(pics[s])) for i, s in enumerate(ids, 1)],
                schema=PIC_SEEN, name="art_seen", temperature=0.1, models=VISION, last_resort=True)
     by_n = {x["n"]: x for x in seen["images"]}
     out = {s: [] for s in ids}
@@ -270,8 +276,14 @@ Mention any deformed face, hand or body.""", images=[(f"Image {i}:", _thumb(pics
             continue
         if x["realistic_people_count"] > 0:
             out[sid].append(f"{x['realistic_people_count']} real-looking people are drawn; every person must be a stickman")
-        if by_scene.get(sid, {}).get("who") and x["stickmen_count"] < 1:
+        sc0 = by_scene.get(sid, {})
+        hero_in = any(by_cast.get(w, {}).get("role") == "hero" for w in sc0.get("who", []))
+        # a hero in a costume (astronaut suit) is not counted as a stick figure by the describer (Helmet Short, 31 Oct):
+        # only a plain-stickman scene must show one; costume scenes are left to the judge
+        if sc0.get("who") and x["stickmen_count"] < 1 and not (hero_in and outfit(plan, sid) != "none"):
             out[sid].append("no stickman is visible")
+        if x.get("blood_or_gore"):
+            out[sid].append("blood or gore is drawn; show danger without blood")
         if x["text_seen"].strip().lower() not in ("none", "", "no text", "n/a"):
             out[sid].append(f"text in the picture: {x['text_seen'][:60]}")
     lines = []
@@ -290,7 +302,10 @@ a problem when: a character who should be there is missing, or an extra MAIN cha
 list; a character does not look like his cast description (head, clothes, colours); the hero wears something else than
 planned or than in the other scenes (outfits may differ ONLY where the plan says so); the picture does not show what the
 narration or the prompt asked for; the hero is tiny or hard to see; a face/hand/body is deformed; it looks the same as
-another scene. Crowds, several heroes and costumes are fine when the plan lists them. An exact number of extras need not match (8 instead of 5 is fine) unless the scene is clearly crowded or empty when it should not be. Be concrete (say what to change).
+another scene. Do NOT fail a picture for small props or details of the prompt that the picture model cannot draw exactly
+(a torn collar, a frozen tear, the exact number of bubbles, red or blue trims on a suit, an exact pose or an eye state): only
+for a missing or extra MAIN character, a wrong place or story, a deformed body, a tiny hero, or a picture that shows the
+opposite of the narration. Crowds, several heroes and costumes are fine when the plan lists them. An exact number of extras need not match (8 instead of 5 is fine) unless the scene is clearly crowded or empty when it should not be. Be concrete (say what to change).
 If a scene is fine: ok = true and no problems.
 
 {chr(10).join(lines)}""", schema=PIC_JUDGE, name="art_judge", temperature=0.1, models=LIGHT, last_resort=True)
@@ -310,6 +325,8 @@ def redo_prompt(scene: dict, problems: list[str], level: int) -> dict:
                     "head, two dots for eyes and thin black line arms and legs. Not one person has hair, skin or a nose")
         if level >= 2:
             new["prompt"] = scene["prompt"] + " Only a few stickmen are in the picture (at most 5), and the picture is mostly the place."
+    if "blood" in text or "gore" in text:
+        redo.append("There is no blood, no wound and no gore anywhere: show danger with the face, ice, bubbles and light only")
     if "text" in text:
         redo.append("There is absolutely no writing of any kind: no letters, numbers, signs or labels anywhere")
     if "tiny" in text or "hard to see" in text:
