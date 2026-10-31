@@ -28,7 +28,6 @@ function Stickman(props: {scale?: number; outfit?: string}) {
       <Circle x={-20} y={-153} size={9} fill="#202027" />
       <Circle x={20} y={-153} size={9} fill="#202027" />
       <Ellipse y={-126} width={27} height={13} stroke="#202027" lineWidth={4} />
-      <Rect y={-15} width={44} height={80} radius={12} fill={shirt} opacity={0.0} />
     </Layout>
   );
 }
@@ -51,7 +50,7 @@ export default makeScene2D(function* (view) {
       y={-760}
       text="WHAT IF EARTH STOPPED?"
       fontFamily="Arial"
-      fontSize={ sixty }
+      fontSize={60}
       fontWeight={900}
       fill="#202027"
       textAlign="center"
@@ -72,7 +71,6 @@ export default makeScene2D(function* (view) {
   );
 
   const hero = createRef<Layout>();
-  view.add(<Stickman scale={0.95} />);
   // Presenter is positioned separately from the planet so the visual stays readable.
   view.add(
     <Layout ref={hero} x={-310} y={480} scale={0.85}>
