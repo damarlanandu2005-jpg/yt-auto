@@ -1,0 +1,39 @@
+{
+ "expect": {
+  "flux2dev_04": false,
+  "flux2dev_fp16_04": false,
+  "flux2dev_01": true,
+  "flux2dev_fp16_01": true,
+  "flux2dev_fp16_02": true,
+  "flux2dev_fp16_07": true,
+  "flux2dev_07": true
+ },
+ "got": {
+  "flux2dev_04": [
+   "45 real-looking people are drawn; every person must be a stickman",
+   "The stick figure is among a crowd of realistic people, making it inconsistent with a pure stickman style."
+  ],
+  "flux2dev_fp16_04": [
+   "35 real-looking people are drawn; every person must be a stickman",
+   "Several people have transformed into stick figures instead of having a single consistent main stick figure."
+  ],
+  "flux2dev_01": [],
+  "flux2dev_fp16_01": [
+   "It looks nearly identical to image 3, which is redundant."
+  ],
+  "flux2dev_fp16_02": [],
+  "flux2dev_fp16_07": [],
+  "flux2dev_07": [
+   "It looks nearly identical to image 6, which is redundant."
+  ]
+ },
+ "right": {
+  "flux2dev_04": true,
+  "flux2dev_fp16_04": true,
+  "flux2dev_01": true,
+  "flux2dev_fp16_01": false,
+  "flux2dev_fp16_02": true,
+  "flux2dev_fp16_07": true,
+  "flux2dev_07": false
+ }
+}
