@@ -1,9 +1,8 @@
 {
- "started": "2026-10-30T20:44:24Z",
+ "started": "2026-10-31T05:13:43Z",
  "seconds": {
-  "flux2dev_fp16_01.png": 338.8,
-  "flux2dev_fp16_04.png": 336.6,
-  "flux2dev_fp16_07.png": 335.8
+  "flux2dev_fp16_02.png": 390.2,
+  "flux2dev_fp16_04.png": 356.5
  },
  "errors": [],
  "notes": [
@@ -32,53 +31,55 @@
  "options": {
   "dtype": "fp16",
   "scenes": [
-   "01",
-   "04",
-   "07"
+   "02",
+   "04"
   ]
  },
  "text_encoder_class": "Mistral3ForConditionalGeneration",
- "text_encoder_load_s": 107,
- "encode_s": 28,
+ "text_encoder_load_s": 110,
+ "encode_s": 20,
  "compute_dtype": {
   "Flux2Transformer2DModel": "torch.float16 on 203 4-bit layers"
  },
- "transformer_load_s": 143,
+ "transformer_load_s": 148,
  "vram_after_load_gb": [
   8.3,
   8.8
  ],
- "setup_s": 363,
+ "setup_s": 345,
  "gen_s": {
-  "flux2dev_fp16_01.png": 338.5,
-  "flux2dev_fp16_04.png": 336.4,
-  "flux2dev_fp16_07.png": 335.6
+  "flux2dev_fp16_02.png": 389.9,
+  "flux2dev_fp16_04.png": 356.3
+ },
+ "size_used": {
+  "flux2dev_fp16_02.png": [
+   576,
+   1024
+  ],
+  "flux2dev_fp16_04.png": [
+   576,
+   1024
+  ]
  },
  "image_stats": {
-  "flux2dev_fp16_01.png": {
-   "mean": 96.3,
-   "std": 68.7,
+  "flux2dev_fp16_02.png": {
+   "mean": 149.7,
+   "std": 49.3,
    "looks_broken": false
   },
   "flux2dev_fp16_04.png": {
-   "mean": 70.7,
-   "std": 38.9,
-   "looks_broken": false
-  },
-  "flux2dev_fp16_07.png": {
-   "mean": 67.4,
-   "std": 72.3,
+   "mean": 74.7,
+   "std": 46.9,
    "looks_broken": false
   }
  },
  "peak_vram_gb": [
   9.6,
-  9.9
+  10.0
  ],
  "pictures": [
-  "flux2dev_fp16_01.png",
-  "flux2dev_fp16_04.png",
-  "flux2dev_fp16_07.png"
+  "flux2dev_fp16_02.png",
+  "flux2dev_fp16_04.png"
  ],
- "total_s": 1374
+ "total_s": 1092
 }
