@@ -60,31 +60,38 @@ def plan(a) -> None:
     script = json.loads(Path(a.script).read_text())
     texts = cartoon.scene_texts(script)
     res = scene_art.plan_prompts(script, texts, a.topic)
-    problems = scene_art.validate(res["scenes"], texts)
+    problems = scene_art.validate(res, texts)
     log = {"first_problems": problems}
     if problems:  # one automatic fix round, like the scene writer
-        again = scene_art.plan_prompts(script, texts, a.topic + "\n\nFIX THESE PROBLEMS of your first answer:\n- " + "\n- ".join(problems))
-        p2 = scene_art.validate(again["scenes"], texts)
+        again = scene_art.plan_prompts(script, texts, a.topic,
+                                       "\nFIX THESE PROBLEMS of your first answer:\n- " + "\n- ".join(problems) + "\n")
+        p2 = scene_art.validate(again, texts)
         if len(p2) <= len(problems):
             res, problems = again, p2
     log["problems"] = problems
     for s in res["scenes"]:
         s["narration"] = texts.get(s["id"], "")
-    (out / "pictures.json").write_text(json.dumps({"topic": a.topic, "scenes": res["scenes"], "log": log}, indent=1, ensure_ascii=False))
+    (out / "pictures.json").write_text(json.dumps({"topic": a.topic, **res, "log": log}, indent=1, ensure_ascii=False))
     print(json.dumps(log, indent=1))
+    print("cast:", [(c["id"], c["role"], c["costume"]) for c in res["cast"]], "changes:", res["changes"])
     for s in res["scenes"]:
-        print(f"\n[{s['id']}] {s['shot']} costume={s['costume']} others={s['others']}\n  {scene_art.compose(s)[:300]}")
+        print(f"\n[{s['id']}] {s['shot']} who={s['who']} outfit={scene_art.outfit(res, s['id'])}\n  {scene_art.compose(s, res)[:300]}")
+
+
+def load_plan(path: Path) -> dict:
+    return scene_art.upgrade(json.loads(path.read_text()))
 
 
 def pack(a) -> None:
     out = Path(a.out)
-    data = json.loads((Path(a.redo) if a.redo else out / "pictures.json").read_text())
+    data = load_plan(Path(a.redo) if a.redo else out / "pictures.json")
     scenes = data["scenes"]
     if a.only:
         scenes = [s for s in scenes if s["id"] in a.only.split(",")]
     assert scenes, "no scenes to draw"
-    prompts = {"composed": True, "scenes": [{"id": s["id"], "prompt": scene_art.compose(s), "refs": scene_art.refs_for(s),
-                                              "seed": s.get("seed", 30)} for s in scenes]}
+    prompts = {"composed": True, "scenes": [{"id": s["id"], "prompt": scene_art.compose(s, data),
+                                              "refs": scene_art.refs_for(s, data), "seed": s.get("seed", 30)}
+                                             for s in scenes]}
     refs = build_refs({r for s in prompts["scenes"] for r in s["refs"]})
     opts = {"dtype": "fp16", "scenes": [s["id"] for s in scenes]}
     k = out / "k"
@@ -103,10 +110,10 @@ def pack(a) -> None:
 
 def check(a) -> None:
     out = Path(a.out)
-    data = json.loads((out / "pictures.json").read_text())
-    by_id = {s["id"]: s for s in data["scenes"]}
-    if a.redo:  # a redraw round: only those scenes are looked at again
-        by_id = {s["id"]: s for s in json.loads(Path(a.redo).read_text())["scenes"]}
+    plan_ = load_plan(out / "pictures.json")
+    if a.redo:  # a redraw round: only those scenes are looked at again (the cast sheet stays the whole plan's)
+        plan_ = {**plan_, "scenes": load_plan(Path(a.redo))["scenes"]}
+    by_id = {s["id"]: s for s in plan_["scenes"]}
     pics = {}
     for s in by_id:
         for pat in (f"flux2dev_fp16_{s}.*", f"flux2dev_{s}.*"):
@@ -115,68 +122,111 @@ def check(a) -> None:
                 pics[s] = f
                 break
     texts = {s["id"]: s.get("narration", "") for s in by_id.values()}
-    res = scene_art.check_pictures(pics, by_id, texts)
+    res = scene_art.check_pictures(pics, plan_, texts)
     failed = {sid: p for sid, p in res.items() if p}
     missing = [s for s in by_id if s not in pics]
     (out / f"check_{a.level}.json").write_text(json.dumps({"problems": res, "missing": missing}, indent=1))
-    redo = {"scenes": [scene_art.redo_prompt(by_id[sid], p, a.level + 1) for sid, p in failed.items()]}
-    redo["scenes"] += [by_id[m] for m in missing]
+    redo = {**{k: v for k, v in plan_.items() if k != "scenes"},
+            "scenes": [scene_art.redo_prompt(by_id[sid], p, a.level + 1) for sid, p in failed.items()]
+                      + [by_id[m] for m in missing]}
     (out / f"redo_{a.level + 1}.json").write_text(json.dumps(redo, indent=1, ensure_ascii=False))
     print(f"passed {len(pics) - len(failed)} of {len(by_id)}; failed {sorted(failed)}; missing {missing}")
     for sid, p in failed.items():
         print(" ", sid, p)
 
 
+def _plan(cast, scenes, changes=()):
+    return {"cast": cast, "changes": list(changes), "scenes": scenes}
+
+
+HERO = {"id": "hero", "name": "the stickman", "role": "hero", "look": "the plain white-headed stickman", "costume": "none"}
+LONG = ("at a dark quiet harbour at night under bright stars, cold blue moonlight on the calm water, wide worried eyes "
+        "and raised eyebrows, small things around him on the ground and a tall lamp behind him")
+
+
+def _sc(i, who, shot="medium", extra=""):
+    return {"id": i, "shot": shot, "who": who, "prompt": f"Picture {i}: the stickman stands {LONG} {extra}"}
+
+
 def selftest(_a=None) -> None:
-    """Plain-code test of compose / validate / redo (no AI). Written before the code, 31 Oct."""
-    ok = {"id": "step1", "shot": "medium", "costume": "none", "others": "a small group of 6 stickmen",
-          "prompt": "the tilted deck of a sinking 1912 ocean liner at night under bright stars, a small group of six passengers "
-                    "waiting, our stickman in the front looking at two lifeboats with wide worried eyes and raised eyebrows, "
-                    "cold blue moonlight on the dark sea behind him"}
-    texts = {"step1": "The ship carries lifeboats for only one-third of the people."}
-    t = scene_art.compose(ok)
-    assert "NO real humans" in t and "no letters" in t and "round white head" in t, t
-    assert scene_art.refs_for(ok) == ["stickman_front"]
-    # a crowd word in the prompt adds the stickman crowd rule even when 'others' says nobody
-    sneaky = dict(ok, others="nobody")
-    assert "NO real humans" in scene_art.compose(sneaky)
-    # no people at all: no crowd rule
-    alone = dict(ok, others="nobody", prompt="the stickman stands alone on an empty dark beach at night looking up at the moon, "
-                 "his arms hanging down and a small worried mouth, soft blue light, a calm sea and a few rocks behind him")
-    assert "NO real humans" not in scene_art.compose(alone)
-    # costume
-    dv = dict(ok, costume="diver")
-    assert scene_art.refs_for(dv) == ["costume_diver"] and "brass diving helmet" in scene_art.compose(dv)
-    assert scene_art.validate([ok], texts) == [], scene_art.validate([ok], texts)
-    bad = scene_art.validate([dict(ok, prompt="a photo of a ship with a sign saying TITANIC"), ], texts)
-    assert any("photo" in p for p in bad) and any("text" in p for p in bad) and any("too short" in p for p in bad), bad
-    assert scene_art.validate([dict(ok, costume="clown")], texts)
-    two = scene_art.validate([ok, dict(ok, id="step2", costume="winter")], {"step1": "a", "step2": "b"})
-    assert any("outfit" in p for p in two), two
-    assert any("no prompt" in p for p in scene_art.validate([], texts))
-    assert any("wide shots" in p for p in scene_art.validate([dict(ok, id=f"w{i}", shot="wide", prompt=ok["prompt"] + str(i) * 3 + f" x{i}" * 12) for i in range(3)], {f"w{i}": "t" for i in range(3)}))
-    # redraw gets stronger
-    r1 = scene_art.redo_prompt(ok, ["5 real-looking people are drawn; every person must be a stickman"], 1)
-    assert "IMPORTANT" in scene_art.compose(r1) and r1["seed"] == 31
-    r2 = scene_art.redo_prompt(r1, ["2 real-looking people are drawn"], 2)
+    """Plain-code test of the plan rules for FIVE different story shapes (no AI): a lone hero with a crowd, two
+    friends, a costume change, a battle with a crowd and a named leader, a hero with background extras."""
+    S = scene_art
+    crowd = {"id": "crowd", "name": "passengers", "role": "crowd", "look": "a small group of plain stickmen", "costume": "none"}
+    friend = {"id": "friend", "name": "Mia", "role": "supporting", "costume": "none",
+              "look": "a stickman with a red scarf and a green backpack"}
+    leader = {"id": "gen", "name": "the general", "role": "supporting", "costume": "none",
+              "look": "a stickman with a tall black hat and a long grey coat"}
+    # 1 Titanic: hero + crowd. The crowd rule appears only in scenes with the crowd.
+    p1 = _plan([HERO, crowd], [_sc("s1", ["hero"]), _sc("s2", ["hero", "crowd"], "medium", "with a group of passengers behind")])
+    t1 = {"s1": "a", "s2": "b"}
+    assert S.validate(p1, t1) == [], S.validate(p1, t1)
+    assert "NO real humans" not in S.compose(p1["scenes"][0], p1) and "NO real humans" in S.compose(p1["scenes"][1], p1)
+    assert S.refs_for(p1["scenes"][0], p1) == ["stickman_front"]
+    # 2 two friends: both described word for word in every scene they share; only the hero has a reference
+    p2 = _plan([HERO, friend], [_sc("s1", ["hero", "friend"]), _sc("s2", ["hero"]), _sc("s3", ["friend"], "close")])
+    t2 = {"s1": "a", "s2": "b", "s3": "c"}
+    assert S.validate(p2, t2) == [], S.validate(p2, t2)
+    c1, c3 = S.compose(p2["scenes"][0], p2), S.compose(p2["scenes"][2], p2)
+    assert "a red scarf and a green backpack" in c1 and "a red scarf and a green backpack" in c3
+    assert "the same simple stickman" not in c3 and "hero is the same simple stickman" in c1  # no hero text without the hero
+    assert S.refs_for(p2["scenes"][0], p2) == ["stickman_front"] and S.refs_for(p2["scenes"][2], p2) == []
+    # 3 costume change: declared with a reason; scenes 3-4 use the astronaut picture, the others the plain stickman
+    p3 = _plan([HERO], [_sc(f"s{i}", ["hero"]) for i in range(1, 6)] ,
+               [{"scenes": ["s3", "s4"], "costume": "astronaut", "reason": "he flies to the Moon"}])
+    t3 = {f"s{i}": "x" for i in range(1, 6)}
+    assert S.validate(p3, t3) == [], S.validate(p3, t3)
+    assert [S.outfit(p3, f"s{i}") for i in range(1, 6)] == ["none", "none", "astronaut", "astronaut", "none"]
+    assert S.refs_for(p3["scenes"][2], p3) == ["costume_astronaut"] and "white space suit" in S.compose(p3["scenes"][2], p3)
+    assert "white space suit" not in S.compose(p3["scenes"][0], p3)
+    # 3b a change with no reason or an unknown scene is refused
+    bad = _plan([HERO], p3["scenes"], [{"scenes": ["s9"], "costume": "astronaut", "reason": " "}])
+    b = S.validate(bad, t3)
+    assert any("no reason" in x for x in b) and any("unknown scene" in x for x in b), b
+    # 4 battle: hero + named leader + crowd (several kinds of characters are fine)
+    p4 = _plan([HERO, leader, crowd], [_sc("s1", ["hero", "gen", "crowd"]), _sc("s2", ["gen"], "close")])
+    assert S.validate(p4, {"s1": "a", "s2": "b"}) == []
+    # 5 hero + extras only in some scenes, costume chosen for the whole story
+    p5 = _plan([dict(HERO, costume="diver"), crowd], [_sc("s1", ["hero"]), _sc("s2", ["hero", "crowd"])])
+    assert S.refs_for(p5["scenes"][0], p5) == S.refs_for(p5["scenes"][1], p5) == ["costume_diver"]
+    # the rules that must still refuse bad plans
+    assert any("exactly one hero" in x for x in S.validate(_plan([HERO, dict(HERO, id="h2")], [_sc("s1", ["hero"])]), {"s1": "a"}))
+    assert any("not in the cast" in x for x in S.validate(_plan([HERO], [_sc("s1", ["hero", "ghost"])]), {"s1": "a"}))
+    assert any("only the hero uses a costume" in x for x in S.validate(_plan([HERO, dict(friend, costume="winter")], [_sc("s1", ["hero"])]), {"s1": "a"}))
+    assert any("too short" in x for x in S.validate(_plan([HERO], [dict(_sc("s1", ["hero"]), prompt="a stickman")]), {"s1": "a"}))
+    ph = S.validate(_plan([HERO], [dict(_sc("s1", ["hero"]), prompt="a photo of the stickman with a sign saying TITANIC " + LONG)]), {"s1": "a"})
+    assert any("photo" in x for x in ph) and any("text" in x for x in ph), ph
+    assert any("no prompt" in x for x in S.validate(_plan([HERO], []), {"s1": "a"}))
+    assert any("wide shots" in x for x in S.validate(_plan([HERO], [dict(_sc(f"w{i}", ["hero"], "wide"), prompt=f"w{i} " * 3 + LONG + f" n{i} " * 4) for i in range(3)]), {f"w{i}": "t" for i in range(3)}))
+    # old-format plans (Titanic first run) still load
+    old = S.upgrade({"scenes": [{"id": "a", "shot": "wide", "costume": "winter", "others": "nobody", "prompt": "x"},
+                                {"id": "b", "shot": "wide", "costume": "winter", "others": "5 stickmen", "prompt": "y"}]})
+    assert old["cast"][0]["costume"] == "winter" and old["scenes"][1]["who"] == ["hero", "crowd"]
+    # a redraw gets stronger, with a new seed
+    r1 = S.redo_prompt(p1["scenes"][1], ["5 real-looking people are drawn; every person must be a stickman"], 1)
+    assert "IMPORTANT" in S.compose(r1, p1) and r1["seed"] == 31
+    r2 = S.redo_prompt(r1, ["2 real-looking people are drawn"], 2)
     assert "at most 5" in r2["prompt"] and r2["seed"] == 32
-    r3 = scene_art.redo_prompt(ok, ["text in the picture: SOS"], 1)
-    assert "no writing of any kind" in scene_art.compose(r3)
+    r3 = S.redo_prompt(p1["scenes"][0], ["text in the picture: SOS"], 1)
+    assert "no writing of any kind" in S.compose(r3, p1)
+    r4 = S.redo_prompt(p2["scenes"][0], ["the character Mia is missing"], 1)
+    assert "character descriptions exactly" in S.compose(r4, p2)
     print("selftest: all checks passed")
 
 
 # Labelled pictures for the checker test (31 Oct, written BEFORE the checker ran): the real-people crowds must fail,
 # the stickman pictures must pass. Files are in bench-results scene-art-test/pictures/.
 EXPECT = {"flux2dev_04": False, "flux2dev_fp16_04": False,  # crowds of real-looking people with a few stickmen
-          "flux2dev_01": True, "flux2dev_fp16_01": True, "flux2dev_fp16_02": True, "flux2dev_fp16_07": True,
-          "flux2dev_07": True}
+          "flux2dev_fp16_02": True, "flux2dev_fp16_07": True, "flux2dev_01": True}
 
 
 def checktest(a) -> None:
     pics = {n: next(iter(sorted(Path(a.pictures).glob(f"{n}.*"))), None) for n in EXPECT}
     pics = {n: f for n, f in pics.items() if f}
-    scenes = {n: {"id": n, "prompt": "the stickman in the scene described by the narration"} for n in pics}
-    res = scene_art.check_pictures(pics, scenes, {n: "" for n in pics})
+    plan_ = _plan([HERO, {"id": "crowd", "name": "extras", "role": "crowd", "look": "plain stickmen", "costume": "none"}],
+                  [{"id": n, "shot": "medium", "who": ["hero"], "prompt": "the stickman in the scene described by the narration"}
+                   for n in pics])
+    res = scene_art.check_pictures(pics, plan_, {n: "" for n in pics})
     right = {n: (not res[n]) == EXPECT[n] for n in pics}
     for n in pics:
         print(f"{n}: expected {'pass' if EXPECT[n] else 'FAIL'}; got {'pass' if not res[n] else 'FAIL'} {res[n]}")
