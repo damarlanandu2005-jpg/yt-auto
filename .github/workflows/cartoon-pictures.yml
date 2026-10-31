@@ -66,6 +66,11 @@ jobs:
           git -C results checkout -B bench-results
           mkdir -p "results/cartoon-pictures/$JOB/pictures"
 
+      - name: Kaggle login
+        if: inputs.action == 'start' || inputs.action == 'collect'
+        timeout-minutes: 5
+        run: bash kaggle/login.sh
+
       - name: Selftest
         if: inputs.action == 'selftest'
         timeout-minutes: 3
@@ -101,7 +106,6 @@ jobs:
         timeout-minutes: 8
         run: |
           set -e
-          bash kaggle/login.sh
           redo=""
           if [ "$LEVEL" != "0" ]; then redo="--redo results/cartoon-pictures/$JOB/redo_$LEVEL.json"; fi
           python cartoon/make_pictures.py pack --out "results/cartoon-pictures/$JOB" $redo
@@ -119,7 +123,6 @@ jobs:
           CLOUDFLARE_ACCOUNT_ID: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
         run: |
           set -o pipefail
-          bash kaggle/login.sh
           D="results/cartoon-pictures/$JOB"
           kaggle kernels status "$KAGGLE_USERNAME/yt-auto-flux2" | tee "$D/kaggle_status_$LEVEL.txt"
           grep -q COMPLETE "$D/kaggle_status_$LEVEL.txt" || { echo "Kaggle is not finished yet"; exit 0; }
