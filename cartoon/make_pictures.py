@@ -30,8 +30,8 @@ REFS = ROOT / "cartoon" / "character_refs"
 
 
 def build_refs(names: set[str]) -> dict[str, str]:
-    """base64 JPEGs: stickman_front, and stickman_<costume> = stickman + costume side by side in ONE picture
-    (two separate references ran out of memory on the T4s, 31 Oct)."""
+    """base64 JPEGs: stickman_front, and costume_<name> = the costume picture alone, ONE reference
+    (two references ran out of memory on the T4s, and stickman + costume side by side made FLUX draw two heroes, 31 Oct)."""
     from PIL import Image
 
     def enc(im) -> str:
@@ -46,14 +46,9 @@ def build_refs(names: set[str]) -> dict[str, str]:
             im = front.copy()
             im.thumbnail((512, 512))
         else:
-            c = Image.open(REFS / "costumes" / f"costume_{n.removeprefix('stickman_')}.png").convert("RGB")
-            h = 512
-            a = front.resize((int(front.width * h / front.height), h))
-            c = c.resize((int(c.width * h / c.height), h))
-            im = Image.new("RGB", (a.width + c.width, h), "white")
-            im.paste(a, (0, 0))
-            im.paste(c, (a.width, 0))
-            im.thumbnail((1024, 512))
+            # the costume picture ALONE (it already shows the hero's face): next to the plain stickman FLUX drew two heroes
+            im = Image.open(REFS / "costumes" / f"{n}.png").convert("RGB")
+            im.thumbnail((512, 512))
         out[n] = enc(im)
     return out
 
@@ -151,11 +146,13 @@ def selftest(_a=None) -> None:
     assert "NO real humans" not in scene_art.compose(alone)
     # costume
     dv = dict(ok, costume="diver")
-    assert scene_art.refs_for(dv) == ["stickman_diver"] and "brass diving helmet" in scene_art.compose(dv)
+    assert scene_art.refs_for(dv) == ["costume_diver"] and "brass diving helmet" in scene_art.compose(dv)
     assert scene_art.validate([ok], texts) == [], scene_art.validate([ok], texts)
     bad = scene_art.validate([dict(ok, prompt="a photo of a ship with a sign saying TITANIC"), ], texts)
     assert any("photo" in p for p in bad) and any("text" in p for p in bad) and any("too short" in p for p in bad), bad
     assert scene_art.validate([dict(ok, costume="clown")], texts)
+    two = scene_art.validate([ok, dict(ok, id="step2", costume="winter")], {"step1": "a", "step2": "b"})
+    assert any("outfit" in p for p in two), two
     assert any("no prompt" in p for p in scene_art.validate([], texts))
     assert any("wide shots" in p for p in scene_art.validate([dict(ok, id=f"w{i}", shot="wide", prompt=ok["prompt"] + str(i) * 3 + f" x{i}" * 12) for i in range(3)], {f"w{i}": "t" for i in range(3)}))
     # redraw gets stronger

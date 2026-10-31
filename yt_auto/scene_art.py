@@ -56,7 +56,9 @@ who lives through the story. Write a DETAILED prompt for every scene below, pin 
 - Show, don't write: the picture tells the narration without any word, sign or number in it. Never ask for text.
 - Other people are ALWAYS stickmen too, never real humans. Say how many (a small group of 6, not "a huge crowd") and
   what they do. If nobody else is there, say "nobody".
-- Pick a costume only if the story needs one (diving, space, winter, sailor...); otherwise "none". Costumes:
+- COSTUME: the SAME choice in EVERY scene (the hero must look the same all through the Short). Default "none": the plain
+  stickman is the channel's face. Choose one costume for ALL scenes only if the story physically needs it (a diving or
+  space Short). A cold or night story does NOT need a winter coat. Costumes:
 {costumes}
 - The pictures must differ from each other: different camera, place or pose. The stickman must be easy to see: at
   least a third of the picture height in "medium" and "close" shots.
@@ -69,7 +71,7 @@ SCENES:
 
 
 def refs_for(scene: dict) -> list[str]:
-    return ["stickman_front"] if scene.get("costume", "none") == "none" else [f"stickman_{scene['costume']}"]
+    return ["stickman_front"] if scene.get("costume", "none") == "none" else [f"costume_{scene['costume']}"]
 
 
 def compose(scene: dict) -> str:
@@ -109,6 +111,9 @@ def validate(scenes: list[dict], texts: dict[str, str]) -> list[str]:
             problems.append(f"{sid}: unknown costume {s.get('costume')}")
         if not re.search(r"stick", p, re.I) and s.get("shot") != "wide":
             problems.append(f"{sid}: the stickman is not mentioned")
+    used = {s.get("costume", "none") for s in scenes}
+    if len(used) > 1:
+        problems.append(f"the hero changes outfit between scenes ({sorted(used)}): one costume (or none) for the whole Short")
     shots = [s["id"] for s in scenes if s.get("shot") == "wide"]
     if scenes and len(shots) > max(2, len(scenes) // 3):
         problems.append(f"too many wide shots ({len(shots)} of {len(scenes)}): the stickman gets tiny")
@@ -125,7 +130,7 @@ PIC_SEEN = {"type": "object", "properties": {"images": {"type": "array", "items"
     "n": {"type": "integer"}, "seen": {"type": "string"},
     "stickmen_count": {"type": "integer", "description": "how many stick figures with a plain round white head"},
     "realistic_people_count": {"type": "integer",
-                               "description": "how many people with skin-coloured faces, hair, noses or realistic clothes"},
+                               "description": "how many BACKGROUND people with skin-coloured faces, hair or noses (the main hero, even in a costume with a white round head, does not count)"},
     "text_seen": {"type": "string", "description": "every letter, number or word in the picture, or 'none'"}},
     "required": ["n", "seen", "stickmen_count", "realistic_people_count", "text_seen"]}}}, "required": ["images"]}
 PIC_JUDGE = {"type": "object", "properties": {"scenes": {"type": "array", "items": {"type": "object", "properties": {
@@ -150,7 +155,7 @@ def check_pictures(pics: dict[str, Path], scenes: dict[str, dict], texts: dict[s
     seen = llm(f"""Above are {len(ids)} cartoon pictures, each right after its label "Image n:". For EVERY image: say plainly
 what is drawn (the place, the big objects, what the main stick figure does and feels). Count the stick figures
 (a plain round white head with a black outline and thin stick body). Count any REAL-LOOKING people: skin-coloured
-faces, hair, noses, realistic clothes and bodies. Quote every letter, number or word drawn (or say none). Mention any
+faces, hair, noses and realistic bodies. The main hero (a white round head, even when he wears a costume) is NOT one. Quote every letter, number or word drawn (or say none). Mention any
 deformed face, hand or body.""", images=[(f"Image {i}:", _thumb(pics[s])) for i, s in enumerate(ids, 1)],
                schema=PIC_SEEN, name="art_seen", temperature=0.1, models=VISION, last_resort=True)
     by_n = {x["n"]: x for x in seen["images"]}
