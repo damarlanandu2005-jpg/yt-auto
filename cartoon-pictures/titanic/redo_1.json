@@ -1,62 +1,38 @@
 {
- "scenes": [
+ "topic": "What if you were aboard the Titanic when it struck the iceberg?",
+ "log": {
+  "first_problems": [],
+  "problems": []
+ },
+ "cast": [
   {
-   "id": "hook",
-   "shot": "medium",
-   "costume": "winter",
-   "others": "nobody",
-   "prompt": "Medium shot. On the illuminated wooden deck of a grand ocean liner late at night, under a dark starry sky. Cool blue lighting. A white stickman wearing a winter coat stands near the railing on the left, looking out with wide open eyes and a trembling mouth in panic. Outside in the dark ocean, a massive white ice wall towers huge beside the ship.",
-   "narration": "What if you were aboard the Titanic when it struck that fatal iceberg?",
-   "redo": [
-    "IMPORTANT: draw only STICKMEN. Every single person, near or far, has a perfectly plain white circle head, two dots for eyes and thin black line arms and legs. Not one person has hair, skin or a nose"
-   ],
-   "seed": 31
+   "id": "hero",
+   "name": "the stickman",
+   "role": "hero",
+   "look": "the plain stickman",
+   "costume": "none"
   },
+  {
+   "id": "crowd",
+   "name": "extras",
+   "role": "crowd",
+   "look": "plain stickmen",
+   "costume": "none"
+  }
+ ],
+ "changes": [],
+ "scenes": [
   {
    "id": "step2",
    "shot": "wide",
-   "costume": "winter",
-   "others": "a small group of 5 stickmen",
-   "prompt": "Wide shot. On the tilting deck of the large ocean ship at night, under dim yellow lamps. Sparks and steam rise as the bow sinks into dark water. On the right, one small wooden lifeboat is being lowered with 5 stickmen inside. The hero stickman stands on the steep deck on the left, looking dismayed with curved eyebrows and a open down-turned mouth, clutching the guardrail.",
+   "prompt": "Wide shot of the tilted ocean liner deck slipping into dark sea water at night under moonlight. The stickman stands on the slanted wooden deck looking anxious with hands reaching out. A small group of 5 stickmen crowd frantically around a single small wooden lifeboat, while the vast ship deck around them has far too few boats for everyone.",
    "narration": "The British liner strikes ice and begins foundering in the North Atlantic. The ship carries lifeboats for only one-third of the people on board.",
-   "redo": [
-    "IMPORTANT: draw only STICKMEN. Every single person, near or far, has a perfectly plain white circle head, two dots for eyes and thin black line arms and legs. Not one person has hair, skin or a nose"
+   "who": [
+    "hero",
+    "crowd"
    ],
-   "seed": 31
-  },
-  {
-   "id": "step3",
-   "shot": "medium",
-   "costume": "winter",
-   "others": "a small group of 4 stickmen",
-   "prompt": "Medium shot. On the sharply tilted back deck of the ocean liner under a dark night sky. The hero stickman clings tightly to a metal post, wide-eyed and terrified with an open mouth. Next to him, a group of 4 stickmen slide downward towards the dark freezing sea, splashing into icy water below with floating ice chunks around them.",
-   "narration": "Many passengers and crew make their last stand on the raised poop deck. Victims are plunged into freezing sea water at minus 2 degrees Celsius.",
    "redo": [
-    "IMPORTANT: draw only STICKMEN. Every single person, near or far, has a perfectly plain white circle head, two dots for eyes and thin black line arms and legs. Not one person has hair, skin or a nose"
-   ],
-   "seed": 31
-  },
-  {
-   "id": "answer",
-   "shot": "close",
-   "costume": "winter",
-   "others": "nobody",
-   "prompt": "Close-up shot. In the dark freezing ocean water at night, illuminated by cold moonlight. The white stickman floats in the water wearing a thick coat and life vest. His face shows severe distress with wide panicked eyes, tightly raised eyebrows, and a wide open gasping mouth surrounded by white breath mist. Icicles cling to his coat as his limbs stiffen.",
-   "narration": "Cold shock triggers uncontrolled rapid breathing, gasping, and severe heart strain. Within 15 to 30 minutes, cold incapacitation shuts down limb muscles, preventing swimming.",
-   "redo": [
-    "IMPORTANT: draw only STICKMEN. Every single person, near or far, has a perfectly plain white circle head, two dots for eyes and thin black line arms and legs. Not one person has hair, skin or a nose"
-   ],
-   "seed": 31
-  },
-  {
-   "id": "end",
-   "shot": "medium",
-   "costume": "winter",
-   "others": "a small group of 3 stickmen",
-   "prompt": "Medium shot. Out on the dark calm sea at night under stars, lit by distant lanterns. The white stickman sits inside a small wooden lifeboat wearing a winter coat, holding an oar. He looks back at the empty ocean with sad eyes and a thin straight mouth. A small group of 3 stickmen sit wrapped in blankets beside him inside the boat.",
-   "narration": "Would you have found a place in one of the few lifeboats?",
-   "redo": [
-    "IMPORTANT: draw only STICKMEN. Every single person, near or far, has a perfectly plain white circle head, two dots for eyes and thin black line arms and legs. Not one person has hair, skin or a nose"
+    "Follow the scene description exactly: Crowd size does not match the prompt: prompt asks for 5 stickmen, but description states 8 other stick figures (9 total including hero)."
    ],
    "seed": 31
   }

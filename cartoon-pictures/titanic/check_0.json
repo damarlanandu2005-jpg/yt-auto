@@ -1,22 +1,13 @@
 {
  "problems": {
-  "hook": [
-   "1 real-looking people are drawn; every person must be a stickman"
-  ],
+  "hook": [],
   "step1": [],
   "step2": [
-   "1 real-looking people are drawn; every person must be a stickman"
+   "Crowd size does not match the prompt: prompt asks for 5 stickmen, but description states 8 other stick figures (9 total including hero)."
   ],
-  "step3": [
-   "1 real-looking people are drawn; every person must be a stickman"
-  ],
-  "answer": [
-   "1 real-looking people are drawn; every person must be a stickman",
-   "no stickman is visible"
-  ],
-  "end": [
-   "1 real-looking people are drawn; every person must be a stickman"
-  ]
+  "step3": [],
+  "answer": [],
+  "end": []
  },
  "missing": []
 }

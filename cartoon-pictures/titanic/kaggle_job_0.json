@@ -1,12 +1,12 @@
 {
- "started": "2026-10-31T07:15:38Z",
+ "started": "2026-10-31T08:08:08Z",
  "seconds": {
-  "flux2dev_fp16_hook.png": 393.6,
-  "flux2dev_fp16_step1.png": 356.4,
-  "flux2dev_fp16_step2.png": 390.5,
-  "flux2dev_fp16_step3.png": 389.6,
-  "flux2dev_fp16_answer.png": 389.8,
-  "flux2dev_fp16_end.png": 389.7
+  "flux2dev_fp16_hook.png": 371.1,
+  "flux2dev_fp16_step1.png": 369.2,
+  "flux2dev_fp16_step2.png": 368.8,
+  "flux2dev_fp16_step3.png": 368.7,
+  "flux2dev_fp16_answer.png": 368.5,
+  "flux2dev_fp16_end.png": 368.6
  },
  "errors": [],
  "notes": [
@@ -44,24 +44,24 @@
   ]
  },
  "text_encoder_class": "Mistral3ForConditionalGeneration",
- "text_encoder_load_s": 111,
- "encode_s": 60,
+ "text_encoder_load_s": 109,
+ "encode_s": 59,
  "compute_dtype": {
   "Flux2Transformer2DModel": "torch.float16 on 203 4-bit layers"
  },
- "transformer_load_s": 142,
+ "transformer_load_s": 137,
  "vram_after_load_gb": [
   8.3,
   8.8
  ],
- "setup_s": 381,
+ "setup_s": 371,
  "gen_s": {
-  "flux2dev_fp16_hook.png": 393.3,
-  "flux2dev_fp16_step1.png": 356.1,
-  "flux2dev_fp16_step2.png": 390.2,
-  "flux2dev_fp16_step3.png": 389.4,
-  "flux2dev_fp16_answer.png": 389.5,
-  "flux2dev_fp16_end.png": 389.4
+  "flux2dev_fp16_hook.png": 370.8,
+  "flux2dev_fp16_step1.png": 368.9,
+  "flux2dev_fp16_step2.png": 368.5,
+  "flux2dev_fp16_step3.png": 368.4,
+  "flux2dev_fp16_answer.png": 368.2,
+  "flux2dev_fp16_end.png": 368.3
  },
  "size_used": {
   "flux2dev_fp16_hook.png": [
@@ -91,39 +91,39 @@
  },
  "image_stats": {
   "flux2dev_fp16_hook.png": {
-   "mean": 77.9,
-   "std": 73.4,
+   "mean": 59.2,
+   "std": 48.2,
    "looks_broken": false
   },
   "flux2dev_fp16_step1.png": {
-   "mean": 50.6,
-   "std": 46.9,
+   "mean": 64.8,
+   "std": 42.8,
    "looks_broken": false
   },
   "flux2dev_fp16_step2.png": {
-   "mean": 48.9,
-   "std": 32.9,
+   "mean": 61.1,
+   "std": 48.7,
    "looks_broken": false
   },
   "flux2dev_fp16_step3.png": {
-   "mean": 76.1,
-   "std": 60.0,
+   "mean": 46.0,
+   "std": 43.4,
    "looks_broken": false
   },
   "flux2dev_fp16_answer.png": {
-   "mean": 61.3,
-   "std": 55.5,
+   "mean": 67.9,
+   "std": 68.8,
    "looks_broken": false
   },
   "flux2dev_fp16_end.png": {
-   "mean": 43.2,
-   "std": 41.7,
+   "mean": 37.2,
+   "std": 41.1,
    "looks_broken": false
   }
  },
  "peak_vram_gb": [
   9.6,
-  10.0
+  9.9
  ],
  "pictures": [
   "flux2dev_fp16_answer.png",
@@ -133,5 +133,5 @@
   "flux2dev_fp16_step2.png",
   "flux2dev_fp16_step3.png"
  ],
- "total_s": 2690
+ "total_s": 2586
 }
