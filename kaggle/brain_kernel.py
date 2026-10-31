@@ -103,7 +103,7 @@ def main() -> None:
     JOB["plan_problems"] = plan.get("log", {}).get("problems", [])
 
     # C-E. draw, look, redraw
-    eyes = {**base, "LLM_VISION_MODELS": local([VISION_MODEL]), "LLM_LIGHT_MODELS": local(CHECK_MODELS)}  # noqa: F821
+    eyes = {**base, "OLLAMA_UNLOAD_OTHERS": "1", "LLM_VISION_MODELS": local([VISION_MODEL]), "LLM_LIGHT_MODELS": local(CHECK_MODELS)}  # noqa: F821
     flux_dir = W / "scenes"  # where kaggle/flux2_kernel.py saves
     level, redo = 0, ""
     JOB["rounds"] = []

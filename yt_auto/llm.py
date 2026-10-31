@@ -295,7 +295,27 @@ def _call_cloudflare(model, prompt, system, schema, temperature, name, images, m
                    choice.get("finish_reason") in (None, "stop"), choice.get("finish_reason"), usage)
 
 
+_LAST_LOCAL: list[str] = []
+
+
+def _unload_previous_local(model: str) -> None:
+    """Kaggle vision test 31 Oct: after a big picture-reading model, the text judge answered HTTP 500 (two big models in
+    GPU memory). With OLLAMA_UNLOAD_OTHERS=1 the model used before is unloaded first (keep_alive 0)."""
+    if os.environ.get("OLLAMA_UNLOAD_OTHERS") != "1":
+        return
+    if _LAST_LOCAL and _LAST_LOCAL[-1] != model:
+        try:
+            body = json.dumps({"model": _LAST_LOCAL[-1].split(":", 1)[1], "keep_alive": 0}).encode()
+            urllib.request.urlopen(urllib.request.Request("http://127.0.0.1:11434/api/generate", body,
+                                                          {"Content-Type": "application/json"}), timeout=60).read()
+            time.sleep(3)
+        except OSError:
+            pass
+    _LAST_LOCAL[:] = [model]
+
+
 def _call_local(model, prompt, system, schema, temperature, name, images, max_tries, timeout):
+    _unload_previous_local(model)
     url = os.environ.get("LLM_LOCAL_URL", "http://127.0.0.1:11434/v1/chat/completions")
     text = prompt + (_schema_note(schema) if schema else "")
     if images:  # Ollama's OpenAI-style API takes pictures as base64 data URLs (picture-reading models only)
