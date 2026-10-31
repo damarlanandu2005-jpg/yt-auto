@@ -1,0 +1,67 @@
+name: Binary LED native scene test
+
+on:
+  push:
+    branches: [experiment/binary-led-native]
+    paths:
+      - "yt_auto/binary_scene.py"
+      - "examples/binary_driving_scene.json"
+      - "scripts/render_binary_demo.py"
+      - "tests/test_binary_scene.py"
+      - ".github/workflows/binary-led-native.yml"
+  pull_request:
+    paths:
+      - "yt_auto/binary_scene.py"
+      - "examples/binary_driving_scene.json"
+      - "scripts/render_binary_demo.py"
+      - "tests/test_binary_scene.py"
+      - ".github/workflows/binary-led-native.yml"
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  test-and-preview:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.13"
+      - name: Install FFmpeg and Python dependencies
+        run: |
+          sudo apt-get update
+          sudo apt-get install -y ffmpeg
+          python -m pip install --upgrade pip
+          python -m pip install "numpy>=1.26" "Pillow>=10"
+      - name: Run binary renderer tests
+        run: python -m unittest tests.test_binary_scene -v
+      - name: Render native binary scene (no image/video input)
+        run: python scripts/render_binary_demo.py --out out/binary-led-demo/binary-led-demo.mp4
+      - name: Verify output video
+        run: |
+          ffprobe -v error -select_streams v:0 -show_entries stream=width,height,r_frame_rate,pix_fmt -show_entries format=duration -of json out/binary-led-demo/binary-led-demo.mp4
+          python - <<'PY'
+          import cv2
+          import numpy as np
+          p = "out/binary-led-demo/binary-led-demo.mp4"
+          cap = cv2.VideoCapture(p)
+          ok, frame = cap.read()
+          assert ok, "video cannot be decoded"
+          gray = cv2.cvtColor(frame, cv2.COLOR_BGR2GRAY)
+          values = set(np.unique(gray).tolist())
+          assert values.issubset({0, 255}), f"non-binary values: {values}"
+          assert int(cap.get(cv2.CAP_PROP_FRAME_WIDTH)) == 1080
+          assert int(cap.get(cv2.CAP_PROP_FRAME_HEIGHT)) == 1920
+          cap.release()
+          print("Verified: 1080x1920, binary pixel values only")
+          PY
+      - uses: actions/upload-artifact@v4
+        with:
+          name: binary-led-native-preview
+          path: |
+            out/binary-led-demo/binary-led-demo.mp4
+            out/binary-led-demo/binary-led-demo.report.json
+          retention-days: 7
