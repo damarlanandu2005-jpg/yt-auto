@@ -23,10 +23,12 @@ function Stickman(props: {scale?: number; outfit?: 'astronaut' | 'explorer' | 'd
   return (
     <Layout scale={props.scale ?? 1} width={180} height={390}>
       {/* Backpack sits behind the body. */}
-      {#if outfit === 'astronaut'}
-        <Rect x={-49} y={8} width={42} height={94} radius={12} fill="#c8cdd4" stroke="#202027" lineWidth={7} />
-        <Rect x={-49} y={-12} width={30} height={20} fill="#e6a34c" stroke="#202027" lineWidth={4} />
-      {/if}
+      {outfit === 'astronaut' && (
+        <>
+          <Rect x={-49} y={8} width={42} height={94} radius={12} fill="#c8cdd4" stroke="#202027" lineWidth={7} />
+          <Rect x={-49} y={-12} width={30} height={20} fill="#e6a34c" stroke="#202027" lineWidth={4} />
+        </>
+      )}
       {/* Arms and legs: dark outer stroke with a light suit-coloured centre. */}
       <Line points={[[0, -62], [-62, -8]]} stroke="#202027" lineWidth={20} lineCap="round" />
       <Line points={[[0, -62], [-62, -8]]} stroke={top} lineWidth={11} lineCap="round" />
@@ -40,13 +42,15 @@ function Stickman(props: {scale?: number; outfit?: 'astronaut' | 'explorer' | 'd
       <Rect y={42} width={82} height={13} radius={4} fill="#333943" stroke="#202027" lineWidth={4} />
       <Circle x={0} y={-23} size={10} fill="#e6a34c" stroke="#202027" lineWidth={3} />
       <Circle x={0} y={4} size={8} fill="#79b6d5" stroke="#202027" lineWidth={3} />
-      {#if outfit === 'astronaut'}
-        <Rect x={0} y={-4} width={18} height={38} radius={4} fill="#d7dce3" stroke="#202027" lineWidth={3} />
-        <Circle x={0} y={-145} size={125} fill="#d7dce3" stroke="#202027" lineWidth={7} />
-        <Circle y={-145} size={105} fill="#fffdf7" stroke="#202027" lineWidth={8} />
-      {:else}
+      {outfit === 'astronaut' ? (
+        <>
+          <Rect x={0} y={-4} width={18} height={38} radius={4} fill="#d7dce3" stroke="#202027" lineWidth={3} />
+          <Circle x={0} y={-145} size={125} fill="#d7dce3" stroke="#202027" lineWidth={7} />
+          <Circle y={-145} size={105} fill="#fffdf7" stroke="#202027" lineWidth={8} />
+        </>
+      ) : (
         <Circle y={-145} size={105} fill="#fffdf7" stroke="#202027" lineWidth={9} />
-      {/if}
+      )}
       <Circle x={-20} y={-153} size={9} fill="#202027" />
       <Circle x={20} y={-153} size={9} fill="#202027" />
       <Ellipse y={-126} width={27} height={13} stroke="#202027" lineWidth={4} />
