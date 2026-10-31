@@ -68,7 +68,7 @@ jobs:
           from PIL import Image
           for p in [Path("cartoon/character_refs/stickman_front.png"), *Path("cartoon/character_refs/costumes").glob("*.png")]:
               im = Image.open(p).convert("RGB"); im.thumbnail((512, 512))
-              im.save(Path("bundle") / p, "PNG", optimize=True)
+              im.save(Path("bundle") / p, "JPEG", quality=90)  # JPEG bytes under the .png name (PIL reads by content): 1.2 MB -> ~0.3 MB
           PY
           find bundle -name __pycache__ -prune -exec rm -rf {} +
           tar czf bundle.tgz -C bundle .
@@ -88,11 +88,14 @@ jobs:
                     open("k/kernel-metadata.json", "w"), indent=1)
           print("run.py", os.path.getsize("k/run.py"), "bytes")
           PY
-          if ! kaggle kernels push -p k | tee push.txt || grep -qiE 'error|not found|forbidden' push.txt; then
-            echo "push with the saved-models dataset refused; pushing without it (models are downloaded instead)"
+          # the push's error goes to stderr: capture both, retry once without the saved-models dataset, and FAIL if Kaggle refuses
+          if ! kaggle kernels push -p k > push.txt 2>&1 || grep -qiE 'error|not found|forbidden' push.txt; then
+            cat push.txt
+            echo "push refused; trying again without the saved-models dataset (the models are downloaded instead)"
             python3 -c "import json;p='k/kernel-metadata.json';m=json.load(open(p));m['dataset_sources']=[];json.dump(m,open(p,'w'),indent=1)"
-            kaggle kernels push -p k
+            kaggle kernels push -p k > push2.txt 2>&1 || { cat push2.txt; echo "::error::Kaggle refused the kernel"; exit 1; }
           fi
+          cat push.txt
           sleep 20
           kaggle kernels status "$KAGGLE_USERNAME/yt-auto-brain" || true
 
