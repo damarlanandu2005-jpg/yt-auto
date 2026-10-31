@@ -40,21 +40,22 @@ def apply_effects(frame: np.ndarray, t: float, effects: Iterable[str], seed: int
     out = np.asarray(frame, dtype=np.uint8).copy()
     h, w, _ = out.shape
     active = set(effects)
-    yy, xx = np.mgrid[0:h, 0:w]
+    # Broadcast 1-D coordinate arrays instead of allocating two full-frame grids.
+    x = np.arange(w, dtype=np.float32)[None, :]
+    y = np.arange(h, dtype=np.float32)[:, None]
 
     if "water" in active:
         # Thin moving cyan highlights follow a low-amplitude wave pattern.
-        phase = (xx * 0.018 + t * 5.2)
-        wave = np.sin(phase + yy * 0.006)
-        band = (wave > 0.965) & (yy > int(h * 0.48))
+        wave = np.sin(x * 0.018 + y * 0.006 + t * 5.2)
+        band = (wave > 0.965) & (y > int(h * 0.48))
         out[band, 0] = np.maximum(out[band, 0], 65)
         out[band, 1] = np.maximum(out[band, 1], 145)
         out[band, 2] = np.maximum(out[band, 2], 190)
 
     if "ice_shimmer" in active:
         # Sparse, moving cool-white glints, limited to small pixel clusters.
-        phase = np.sin(xx * 0.031 + yy * 0.017 + t * 4.0 + seed)
-        mask = (phase > 0.997) & (yy < int(h * 0.72))
+        phase = np.sin(x * 0.031 + y * 0.017 + t * 4.0 + seed)
+        mask = (phase > 0.997) & (y < int(h * 0.72))
         out[mask] = np.maximum(out[mask], np.array([190, 225, 245], dtype=np.uint8))
 
     if "snow" in active:
@@ -72,7 +73,7 @@ def apply_effects(frame: np.ndarray, t: float, effects: Iterable[str], seed: int
         # Warm local glow around a fixed lower-middle focal point; subtle flicker.
         cx, cy = int(w * 0.52), int(h * 0.62)
         radius = max(1, int(min(w, h) * 0.20))
-        dist2 = ((xx - cx) ** 2 + (yy - cy) ** 2) / float(radius * radius)
+        dist2 = ((x - cx) ** 2 + (y - cy) ** 2) / float(radius * radius)
         glow = np.clip(1.0 - dist2, 0.0, 1.0) ** 2
         flicker = 0.78 + 0.12 * math.sin(t * 17.0) + 0.07 * math.sin(t * 29.0 + seed)
         amount = (glow * flicker * 34).astype(np.uint8)
