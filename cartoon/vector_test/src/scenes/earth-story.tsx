@@ -53,7 +53,7 @@ function Stickman(props: {scale?: number; outfit?: 'astronaut' | 'explorer' | 'd
       )}
       <Circle x={-20} y={-153} size={9} fill="#202027" />
       <Circle x={20} y={-153} size={9} fill="#202027" />
-      <Ellipse y={-126} width={27} height={13} stroke="#202027" lineWidth={4} />
+      <Circle y={-126} width={27} height={13} stroke="#202027" lineWidth={4} />
     </Layout>
   );
 }
