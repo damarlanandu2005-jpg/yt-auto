@@ -144,11 +144,11 @@ def burn_ass(video: Path, ass: Path, fonts_dir: Path, out: Path) -> float:
                 timeout=1800, name="keywords_burn")
 
 
-def mux(video: Path, audio: Path, out: Path) -> None:
-    """Add narration, normalised to about -16 LUFS (typical for online video)."""
+def mux(video: Path, audio: Path, out: Path, lufs: float = -16.0) -> None:
+    """Add narration, normalised to about -16 LUFS (typical for online video; Shorts use -14)."""
     _run(["ffmpeg", "-y", "-loglevel", "error", "-i", str(video), "-i", str(audio),
           "-map", "0:v", "-map", "1:a", "-c:v", "copy",
-          "-af", "loudnorm=I=-16:TP=-1.5:LRA=11", "-c:a", "aac", "-b:a", "160k", "-ar", "48000",
+          "-af", f"loudnorm=I={lufs}:TP=-1.5:LRA=11", "-c:a", "aac", "-b:a", "160k", "-ar", "48000",
           "-shortest", "-movflags", "+faststart", str(out)], name="mux")
 
 
