@@ -65,9 +65,9 @@ def apply_effects(frame: np.ndarray, t: float, effects: Iterable[str], seed: int
         xs = (idx * 7919 + seed * 97) % w
         ys = ((idx * 104729 + int(t * 92) * (1 + idx % 3)) % h).astype(int)
         for radius in (0, 1):
-            x = np.clip(xs + radius, 0, w - 1)
-            y = ys
-            out[y, x] = np.maximum(out[y, x], np.array([215, 232, 245], dtype=np.uint8))
+            px = np.clip(xs + radius, 0, w - 1)
+            py = ys
+            out[py, px] = np.maximum(out[py, px], np.array([215, 232, 245], dtype=np.uint8))
 
     if "lantern" in active:
         # Warm local glow around a fixed lower-middle focal point; subtle flicker.
