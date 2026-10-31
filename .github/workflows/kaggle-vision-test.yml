@@ -1,0 +1,89 @@
+name: Kaggle picture-reading model test
+
+# Owner decision 31 Oct 2026: remove Gemini. Which open model on Kaggle can LOOK at our pictures well enough to be the
+# picture checker (yt_auto/scene_art.check_pictures)? Same labelled pictures as the Gemini checker test; rule in
+# kaggle/vision_test.py (both real-people crowds caught, at most 1 wrong block). start: packs and starts the kernel
+# (no keys inside); collect: ~30-60 min later, results to bench-results kaggle-vision-test/<run_id>/.
+on:
+  workflow_dispatch:
+    inputs:
+      action:
+        description: "start or collect"
+        type: choice
+        options: [start, collect]
+        default: start
+      models:
+        description: "Ollama picture-reading models, space-separated"
+        default: "gemma3:27b qwen2.5vl:32b mistral-small3.2:24b llama3.2-vision:11b"
+
+permissions:
+  contents: write
+
+jobs:
+  kaggle:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 20
+    env:
+      KAGGLE_USERNAME: ${{ secrets.KAGGLE_USERNAME }}
+      KAGGLE_API_TOKEN: ${{ secrets.KAGGLE_API_TOKEN }}
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.13"
+      - name: Kaggle login
+        timeout-minutes: 5
+        run: bash kaggle/login.sh
+
+      - name: Pack and start
+        if: inputs.action == 'start'
+        timeout-minutes: 10
+        env:
+          MODELS: ${{ inputs.models }}
+        run: |
+          set -e
+          [[ "$MODELS" =~ ^[a-z0-9.:\ /_-]+$ ]] || { echo "bad model list"; exit 1; }
+          git fetch --depth 1 origin bench-results
+          mkdir -p bundle/test_inputs/pics bundle/kaggle bundle/cartoon k
+          for n in flux2dev_04 flux2dev_fp16_04 flux2dev_fp16_02 flux2dev_fp16_07 flux2dev_01; do
+            git show "FETCH_HEAD:scene-art-test/pictures/$n.jpg" > "bundle/test_inputs/pics/$n.jpg"
+          done
+          cp -r yt_auto bundle/ && cp cartoon/make_pictures.py bundle/cartoon/ && cp kaggle/ollama_setup.py bundle/kaggle/
+          find bundle -name __pycache__ -prune -exec rm -rf {} +
+          tar czf bundle.tgz -C bundle .
+          python3 - "$MODELS" <<'PY'
+          import base64, json, os, sys
+          b = base64.b64encode(open("bundle.tgz", "rb").read()).decode()
+          body = open("kaggle/vision_test.py").read()
+          open("k/run.py", "w").write(f"BUNDLE = {b!r}\nMODELS = {json.dumps(sys.argv[1].split())}\n" + body)
+          json.dump({"id": f"{os.environ['KAGGLE_USERNAME']}/yt-auto-vision-test", "title": "yt-auto vision test",
+                     "code_file": "run.py", "language": "python", "kernel_type": "script", "is_private": "true",
+                     "enable_gpu": "true", "enable_internet": "true", "machine_shape": "NvidiaTeslaT4",
+                     "dataset_sources": [f"{os.environ['KAGGLE_USERNAME']}/ollama-models"],
+                     "competition_sources": [], "kernel_sources": [], "model_sources": []},
+                    open("k/kernel-metadata.json", "w"), indent=1)
+          PY
+          kaggle kernels push -p k
+          sleep 30
+          kaggle kernels status "$KAGGLE_USERNAME/yt-auto-vision-test" || true
+
+      - name: Collect
+        if: inputs.action == 'collect'
+        timeout-minutes: 10
+        run: |
+          set -e
+          kaggle kernels status "$KAGGLE_USERNAME/yt-auto-vision-test" | tee status.txt
+          mkdir -p out
+          kaggle kernels output "$KAGGLE_USERNAME/yt-auto-vision-test" -p out || true
+          cp status.txt out/
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git fetch --depth 1 origin bench-results
+          git worktree add results FETCH_HEAD
+          git -C results checkout -B bench-results
+          dest="results/kaggle-vision-test/${{ github.run_id }}"
+          mkdir -p "$dest"
+          rm -rf out/code
+          (cd out && find . -type f -size -5M -exec cp --parents {} "../$dest/" \;)
+          cd results && git add -A && git commit -m "Kaggle vision test results ${{ github.run_id }}" || exit 0
+          for i in 1 2 3 4 5; do git push origin bench-results && break; git pull --rebase origin bench-results; sleep 5; done

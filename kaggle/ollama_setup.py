@@ -55,9 +55,11 @@ def link_saved_models() -> list[str]:
     return found
 
 
-def serve(log: Path, context: int = 32768) -> bool:
+def serve(log: Path, context: int = 32768, max_loaded: int | None = None) -> bool:
     env = {**os.environ, "OLLAMA_MODELS": str(MODELS_DIR), "OLLAMA_KEEP_ALIVE": "60m",
            "OLLAMA_CONTEXT_LENGTH": str(context), "OLLAMA_NOPRUNE": "1"}  # never delete the linked files
+    if max_loaded:  # two big models loaded together gave HTTP 500 on the T4s (Kaggle test 2): swap them instead
+        env["OLLAMA_MAX_LOADED_MODELS"] = str(max_loaded)
     subprocess.Popen(["ollama", "serve"], stdout=open(log, "w"), stderr=subprocess.STDOUT, env=env)
     for _ in range(120):
         try:

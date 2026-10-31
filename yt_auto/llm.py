@@ -296,15 +296,24 @@ def _call_cloudflare(model, prompt, system, schema, temperature, name, images, m
 
 
 def _call_local(model, prompt, system, schema, temperature, name, images, max_tries, timeout):
-    if images:
-        raise _TryNextModel("not available (pictures are not sent to the local text model)")
     url = os.environ.get("LLM_LOCAL_URL", "http://127.0.0.1:11434/v1/chat/completions")
-    messages = ([{"role": "system", "content": system}] if system else []) + \
-        [{"role": "user", "content": prompt + (_schema_note(schema) if schema else "")}]
+    text = prompt + (_schema_note(schema) if schema else "")
+    if images:  # Ollama's OpenAI-style API takes pictures as base64 data URLs (picture-reading models only)
+        import base64
+        content = []
+        for im in images:
+            label, data = im if isinstance(im, tuple) else (None, im)
+            if label:
+                content.append({"type": "text", "text": label})
+            content.append({"type": "image_url", "image_url": {"url": "data:image/jpeg;base64," + base64.b64encode(data).decode()}})
+        content.append({"type": "text", "text": text})
+    else:
+        content = text
+    messages = ([{"role": "system", "content": system}] if system else []) + [{"role": "user", "content": content}]
     body = {"model": model.split(":", 1)[1], "messages": messages, "temperature": temperature, "max_tokens": 16000}
     if schema:
         body["response_format"] = {"type": "json_object"}
-    entry = {"name": name, "model": model, "prompt_chars": len(prompt) + len(system), "images": 0}
+    entry = {"name": name, "model": model, "prompt_chars": len(prompt) + len(system), "images": len(images or [])}
     t0 = time.perf_counter()
     reply, attempt = _post(url, body, {}, entry, model, name, max_tries, max(timeout, 1800))
     choice = (reply.get("choices") or [{}])[0]
