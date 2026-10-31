@@ -1,0 +1,124 @@
+name: Stickman Short on Kaggle (script, picture plan, drawing, picture check)
+
+# Owner decision 31 Oct 2026: no Gemini. One Kaggle kernel (kaggle/brain_kernel.py) does the whole picture side of a Short
+# with open models: checked script (qwen3:32b + gpt-oss:20b) -> cast sheet + scene prompts -> FLUX.2 [dev] fp16 draws
+# -> a picture-reading model looks at every picture -> failed ones are redrawn (max 2 times).
+#   start   : packs our code + small character references and starts the kernel (no keys inside); ~1.5-2.5 h of Kaggle GPU
+#   collect : fetches the result (summary.json, script, plan, pictures) into bench-results cartoon-brain/<run_id>/
+# The video itself (voice, pictures, captions) is assembled on GitHub afterwards (next step).
+on:
+  workflow_dispatch:
+    inputs:
+      action:
+        description: "start or collect"
+        type: choice
+        options: [start, collect]
+        default: start
+      topic:
+        description: "start: topic or question with a strong, true feeling"
+        default: "What happens if you fall into the Mariana Trench?"
+      script_file:
+        description: "start, optional: your own script, a file in the repo (it is still fact-checked)"
+        default: ""
+      vision_model:
+        description: "start: Ollama picture-reading model that checks the pictures"
+        default: "gemma3:27b"
+
+permissions:
+  contents: write
+
+concurrency:
+  group: cartoon-brain
+  cancel-in-progress: false
+
+jobs:
+  brain:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 20
+    env:
+      KAGGLE_USERNAME: ${{ secrets.KAGGLE_USERNAME }}
+      KAGGLE_API_TOKEN: ${{ secrets.KAGGLE_API_TOKEN }}
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.13"
+      - name: Kaggle login
+        timeout-minutes: 5
+        run: bash kaggle/login.sh
+      - name: Install
+        run: pip install -q pillow
+
+      - name: Pack and start on Kaggle
+        if: inputs.action == 'start'
+        timeout-minutes: 10
+        env:
+          TOPIC: ${{ inputs.topic }}
+          SCRIPT_FILE: ${{ inputs.script_file }}
+          VISION_MODEL: ${{ inputs.vision_model }}
+        run: |
+          set -e
+          [[ "$VISION_MODEL" =~ ^[a-z0-9.:/_-]+$ ]] || { echo "bad model name"; exit 1; }
+          mkdir -p bundle/cartoon/emoji bundle/cartoon/art bundle/cartoon/character_refs/costumes bundle/kaggle k
+          cp -r yt_auto bundle/ && cp kaggle/ollama_setup.py kaggle/flux2_kernel.py bundle/kaggle/
+          cp cartoon/make_short.py cartoon/make_pictures.py cartoon/SCENE_API.md cartoon/example_scenes.js cartoon/example_scenes_place.js cartoon/TEMPLATE.md cartoon/character.js cartoon/lucide_names.txt bundle/cartoon/
+          cp cartoon/emoji/NAMES.txt bundle/cartoon/emoji/ && cp cartoon/art/library.json bundle/cartoon/art/
+          python3 - <<'PY'
+          from pathlib import Path
+          from PIL import Image
+          for p in [Path("cartoon/character_refs/stickman_front.png"), *Path("cartoon/character_refs/costumes").glob("*.png")]:
+              im = Image.open(p).convert("RGB"); im.thumbnail((512, 512))
+              im.save(Path("bundle") / p, "PNG", optimize=True)
+          PY
+          find bundle -name __pycache__ -prune -exec rm -rf {} +
+          tar czf bundle.tgz -C bundle .
+          python3 - <<'PY'
+          import base64, json, os
+          b = base64.b64encode(open("bundle.tgz", "rb").read()).decode()
+          own = open(os.environ["SCRIPT_FILE"]).read().strip() if os.environ.get("SCRIPT_FILE") else ""
+          head = (f"JOB_ID = {os.environ['GITHUB_RUN_ID']!r}\nTOPIC = {os.environ['TOPIC']!r}\nSCRIPT_TEXT = {own!r}\n"
+                  f"WRITE_MODELS = ['qwen3:32b']\nCHECK_MODELS = ['gpt-oss:20b']\nVISION_MODEL = {os.environ['VISION_MODEL']!r}\n"
+                  f"BUNDLE = {b!r}\n")
+          open("k/run.py", "w").write(head + open("kaggle/brain_kernel.py").read())
+          user = os.environ["KAGGLE_USERNAME"]
+          json.dump({"id": f"{user}/yt-auto-brain", "title": "yt-auto brain", "code_file": "run.py", "language": "python",
+                     "kernel_type": "script", "is_private": "true", "enable_gpu": "true", "enable_internet": "true",
+                     "machine_shape": "NvidiaTeslaT4", "dataset_sources": [f"{user}/ollama-models"],
+                     "competition_sources": [], "kernel_sources": [], "model_sources": []},
+                    open("k/kernel-metadata.json", "w"), indent=1)
+          print("run.py", os.path.getsize("k/run.py"), "bytes")
+          PY
+          if ! kaggle kernels push -p k | tee push.txt || grep -qiE 'error|not found|forbidden' push.txt; then
+            echo "push with the saved-models dataset refused; pushing without it (models are downloaded instead)"
+            python3 -c "import json;p='k/kernel-metadata.json';m=json.load(open(p));m['dataset_sources']=[];json.dump(m,open(p,'w'),indent=1)"
+            kaggle kernels push -p k
+          fi
+          sleep 20
+          kaggle kernels status "$KAGGLE_USERNAME/yt-auto-brain" || true
+
+      - name: Collect
+        if: inputs.action == 'collect'
+        timeout-minutes: 10
+        run: |
+          set -e
+          kaggle kernels status "$KAGGLE_USERNAME/yt-auto-brain" | tee status.txt
+          mkdir -p out
+          kaggle kernels output "$KAGGLE_USERNAME/yt-auto-brain" -p out || true
+          cp status.txt out/
+          python3 - <<'PY'
+          from pathlib import Path
+          from PIL import Image
+          for p in list(Path("out").rglob("*.png")):
+              Image.open(p).convert("RGB").save(p.with_suffix(".jpg"), quality=92); p.unlink()
+          PY
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git fetch --depth 1 origin bench-results
+          git worktree add results FETCH_HEAD
+          git -C results checkout -B bench-results
+          dest="results/cartoon-brain/${{ github.run_id }}"
+          mkdir -p "$dest"
+          rm -rf out/code
+          (cd out && find . -type f -size -5M -exec cp --parents {} "../$dest/" \;)
+          cd results && git add -A && git commit -m "Kaggle Short (brain) ${{ github.run_id }}" || exit 0
+          for i in 1 2 3 4 5; do git push origin bench-results && break; git pull --rebase origin bench-results; sleep 5; done

@@ -100,6 +100,12 @@ def write(args) -> None:
     report["words"] = writer.word_count(script)
     print(f"[script] {report['words']} words; fact-check {report['fact_check']}; story {report['story_problems'] or 'ok'}",
           flush=True)
+    if getattr(args, "script_only", False):  # FLUX pictures replace scenes.js (owner, 31 Oct): stop after the checked script
+        report["script_only"] = True
+        report["llm_calls"] = len(llm.LOG)
+        report["models_used"] = sorted({e["model"] for e in llm.LOG if not e.get("error")})
+        (meta / "report.json").write_text(json.dumps(report, indent=1, ensure_ascii=False), encoding="utf-8")
+        return
     md = cartoon.script_md(script, sources)
     if (meta / "scenes.js").exists():
         js = (meta / "scenes.js").read_text()
@@ -180,6 +186,7 @@ def main() -> None:
     w.add_argument("--topic", required=True)
     w.add_argument("--script-file", default="", help="the owner's own script (plain text); it is still fact-checked")
     w.add_argument("--out", required=True)
+    w.add_argument("--script-only", action="store_true", help="stop after the fact-checked script (no scenes.js)")
     f = sub.add_parser("fix")
     f.add_argument("--out", required=True)
     f.add_argument("--log", required=True)

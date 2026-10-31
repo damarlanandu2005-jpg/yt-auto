@@ -101,7 +101,7 @@ def llm(prompt: str, *, system: str = "", schema: dict | None = None, model: str
         if rnd < ROUNDS and any(m not in _EXHAUSTED for m in order):
             print(f"[llm] {name}: every model busy; waiting {ROUND_WAIT_S}s (round {rnd})", flush=True)
             time.sleep(ROUND_WAIT_S)
-    if last_resort and LITE not in _EXHAUSTED:
+    if last_resort and LITE not in _EXHAUSTED and os.environ.get("GEMINI_API_KEY"):  # no key (Kaggle): no Gemini
         try:
             return _call(LITE, prompt, system, schema, temperature, name, images, max_tries, timeout)
         except _TryNextModel as e:
