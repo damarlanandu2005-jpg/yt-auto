@@ -1,0 +1,47 @@
+name: Titanic pixel-effects visual preview
+
+on:
+  push:
+    branches: [test/vector-cartoon-2d]
+    paths:
+      - "yt_auto/pixel_effects.py"
+      - ".github/workflows/pixel-effects-preview.yml"
+      - "cartoon/art/places/titanic_deck_night.jpg"
+
+permissions:
+  contents: read
+
+jobs:
+  preview:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.13"
+      - name: Install NumPy
+        run: python -m pip install "numpy>=1.26"
+      - name: Create a short moving base scene
+        run: |
+          mkdir -p out
+          ffmpeg -y -v error -loop 1 -i cartoon/art/places/titanic_deck_night.jpg \
+            -vf "scale=1080:1920:force_original_aspect_ratio=increase,crop=1080:1920,zoompan=z='min(1+0.0005*on,1.06)':d=120:s=1080x1920:fps=30,format=yuv420p" \
+            -t 4 -an -c:v libx264 -preset veryfast -crf 20 out/base.mp4
+      - name: Apply story-driven RGB pixel effects
+        run: |
+          python - <<'PY'
+          from pathlib import Path
+          from yt_auto.pixel_effects import apply_video_effects
+          apply_video_effects(
+              Path("out/base.mp4"),
+              Path("out/titanic-pixel-effects-preview.mp4"),
+              ["snow", "ice_shimmer", "water", "impact", "lantern"],
+              width=1080, height=1920, fps=30, seed=31,
+          )
+          PY
+      - uses: actions/upload-artifact@v4
+        with:
+          name: titanic-pixel-effects-preview
+          path: out/titanic-pixel-effects-preview.mp4
+          retention-days: 7
