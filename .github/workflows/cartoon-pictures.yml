@@ -1,0 +1,149 @@
+name: Stickman scene pictures (FLUX.2 on Kaggle)
+
+# Picture step of a Short (owner decision 31 Oct 2026: FLUX.2 [dev] 32B fp16 on Kaggle, ~5.6 min a picture).
+# cartoon/make_pictures.py + yt_auto/scene_art.py. Everything lives in bench-results cartoon-pictures/<job>/.
+#   selftest  : plain-code test of the prompt rules, no AI, no secrets
+#   checktest : the picture checker on labelled old pictures (2 AI requests)
+#   plan      : detailed prompt per scene from the checked script of an earlier Short run (short_run); 1-2 AI requests
+#   start     : packs the prompts (level 0 = all scenes, level n = redo_n.json) and starts Kaggle (kernel holds no keys)
+#   collect   : (~15 min + 6 min per 3 pictures later) fetches the pictures, looks at each one, writes redo_<level+1>.json
+on:
+  workflow_dispatch:
+    inputs:
+      action:
+        description: "selftest, checktest, plan, start or collect"
+        type: choice
+        options: [selftest, checktest, plan, start, collect]
+        default: selftest
+      job:
+        description: "name of the picture job, e.g. titanic"
+        type: string
+        default: "titanic"
+      short_run:
+        description: "plan: run id of the Short whose script to draw (bench-results cartoon-short/<id>/meta/script.json)"
+        type: string
+        default: "40903619735"
+      topic:
+        description: "plan: the topic"
+        type: string
+        default: "What if you were aboard the Titanic when it struck the iceberg?"
+      level:
+        description: "start/collect: 0 = first drawing, 1 = first redraw (redo_1.json), ..."
+        type: string
+        default: "0"
+
+permissions:
+  contents: write
+
+concurrency:
+  group: cartoon-pictures
+  cancel-in-progress: false
+
+jobs:
+  pictures:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 25
+    env:
+      KAGGLE_USERNAME: ${{ secrets.KAGGLE_USERNAME }}
+      KAGGLE_API_TOKEN: ${{ secrets.KAGGLE_API_TOKEN }}
+      ACTION: ${{ inputs.action }}
+      JOB: ${{ inputs.job }}
+      LEVEL: ${{ inputs.level }}
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.13"
+      - name: Install
+        timeout-minutes: 3
+        run: pip install -q pillow numpy kaggle
+
+      - name: Get bench-results
+        timeout-minutes: 3
+        run: |
+          git fetch --depth 1 origin bench-results
+          git worktree add results FETCH_HEAD
+          git -C results checkout -B bench-results
+          mkdir -p "results/cartoon-pictures/$JOB/pictures"
+
+      - name: Selftest
+        if: inputs.action == 'selftest'
+        timeout-minutes: 3
+        run: python cartoon/make_pictures.py selftest | tee "results/cartoon-pictures/selftest.txt"
+
+      - name: Checker test (labelled pictures)
+        if: inputs.action == 'checktest'
+        timeout-minutes: 12
+        env:
+          GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
+          CLOUDFLARE_API_TOKEN: ${{ secrets.CLOUDFLARE_API_TOKEN }}
+          CLOUDFLARE_ACCOUNT_ID: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
+        run: |
+          set -o pipefail
+          python cartoon/make_pictures.py checktest --pictures results/scene-art-test/pictures --out results/cartoon-pictures/checktest | tee results/cartoon-pictures/checktest/log.txt
+
+      - name: Plan the picture prompts
+        if: inputs.action == 'plan'
+        timeout-minutes: 12
+        env:
+          GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
+          CLOUDFLARE_API_TOKEN: ${{ secrets.CLOUDFLARE_API_TOKEN }}
+          CLOUDFLARE_ACCOUNT_ID: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
+          SHORT_RUN: ${{ inputs.short_run }}
+          TOPIC: ${{ inputs.topic }}
+        run: |
+          set -o pipefail
+          python cartoon/make_pictures.py plan --script "results/cartoon-short/$SHORT_RUN/meta/script.json" --topic "$TOPIC" --out "results/cartoon-pictures/$JOB" | tee "results/cartoon-pictures/$JOB/plan_log.txt"
+
+      - name: Start Kaggle
+        if: inputs.action == 'start'
+        timeout-minutes: 8
+        run: |
+          set -e
+          bash kaggle/login.sh
+          redo=""
+          if [ "$LEVEL" != "0" ]; then redo="--redo results/cartoon-pictures/$JOB/redo_$LEVEL.json"; fi
+          python cartoon/make_pictures.py pack --out "results/cartoon-pictures/$JOB" $redo
+          rm -rf k && cp -r "results/cartoon-pictures/$JOB/k" k && rm -rf "results/cartoon-pictures/$JOB/k"
+          kaggle kernels push -p k
+          sleep 20
+          kaggle kernels status "$KAGGLE_USERNAME/yt-auto-flux2" || true
+
+      - name: Collect and look at the pictures
+        if: inputs.action == 'collect'
+        timeout-minutes: 15
+        env:
+          GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
+          CLOUDFLARE_API_TOKEN: ${{ secrets.CLOUDFLARE_API_TOKEN }}
+          CLOUDFLARE_ACCOUNT_ID: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
+        run: |
+          set -o pipefail
+          bash kaggle/login.sh
+          D="results/cartoon-pictures/$JOB"
+          kaggle kernels status "$KAGGLE_USERNAME/yt-auto-flux2" | tee "$D/kaggle_status_$LEVEL.txt"
+          grep -q COMPLETE "$D/kaggle_status_$LEVEL.txt" || { echo "Kaggle is not finished yet"; exit 0; }
+          mkdir -p out/kaggle "$D/pictures"
+          kaggle kernels output "$KAGGLE_USERNAME/yt-auto-flux2" -p out/kaggle || true
+          cp out/kaggle/job.json "$D/kaggle_job_$LEVEL.json" 2>/dev/null || true
+          python3 - <<'EOF'
+          from pathlib import Path
+          from PIL import Image
+          import os
+          d = Path(os.environ["JOB"])
+          for p in Path("out/kaggle").rglob("flux2dev_*.png"):
+              Image.open(p).convert("RGB").save(f"results/cartoon-pictures/{os.environ['JOB']}/pictures/{p.stem}.jpg", quality=92)
+          EOF
+          redo=""
+          if [ "$LEVEL" != "0" ]; then redo="--redo $D/redo_$LEVEL.json"; fi
+          python cartoon/make_pictures.py check --out "$D" --pictures "$D/pictures" --level "$LEVEL" $redo | tee "$D/check_log_$LEVEL.txt"
+
+      - name: Save
+        if: always()
+        timeout-minutes: 5
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          cd results
+          git add -A cartoon-pictures
+          git commit -m "Scene pictures $ACTION $JOB ${{ github.run_id }}" || exit 0
+          for i in 1 2 3 4 5; do git push origin bench-results && break; git pull --rebase origin bench-results; sleep 5; done

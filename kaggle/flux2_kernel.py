@@ -139,7 +139,8 @@ def main() -> None:
     t = time.time()
     embeds = {}
     for sc in P["scenes"]:
-        text = f"{sc['prompt']}. {P['character']}. {P['style']}"
+        # P["composed"]: cartoon/make_pictures.py already added the stickman, style and crowd rules (yt_auto/scene_art.py)
+        text = sc["prompt"] if P.get("composed") else f"{sc['prompt']}. {P['character']}. {P['style']}"
         with torch.no_grad():
             out = pipe.encode_prompt(prompt=text, device=torch.device("cuda:0"))
         embeds[sc["id"]] = (out[0] if isinstance(out, (tuple, list)) else out).to("cpu")
@@ -173,7 +174,7 @@ def main() -> None:
             try:
                 img = pipe(prompt_embeds=embeds[sc["id"]].to("cuda:0", dtype), image=ref_list or None,
                            width=size[0], height=size[1], num_inference_steps=STEPS, guidance_scale=GUIDANCE,
-                           generator=torch.Generator("cuda:0").manual_seed(SEED)).images[0]
+                           generator=torch.Generator("cuda:0").manual_seed(sc.get("seed", SEED))).images[0]
                 torch.cuda.synchronize()
                 JOB.setdefault("gen_s", {})[name] = round(time.time() - t, 1)  # drawing only (owner's condition 2)
                 JOB.setdefault("size_used", {})[name] = list(size)
