@@ -1,0 +1,6 @@
+passed 1 of 6; failed ['answer', 'end', 'hook', 'step2', 'step3']; missing []
+  hook ['1 real-looking people are drawn; every person must be a stickman']
+  step2 ['1 real-looking people are drawn; every person must be a stickman']
+  step3 ['1 real-looking people are drawn; every person must be a stickman']
+  answer ['1 real-looking people are drawn; every person must be a stickman', 'no stickman is visible']
+  end ['1 real-looking people are drawn; every person must be a stickman']
