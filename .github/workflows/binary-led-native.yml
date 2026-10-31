@@ -5,9 +5,12 @@ on:
     branches: [experiment/binary-led-native]
     paths:
       - "yt_auto/binary_scene.py"
+      - "yt_auto/binary_scene_ai.py"
       - "examples/binary_driving_scene.json"
       - "scripts/render_binary_demo.py"
+      - "scripts/generate_binary_ai_scene.py"
       - "tests/test_binary_scene.py"
+      - "tests/test_binary_scene_ai.py"
       - ".github/workflows/binary-led-native.yml"
   pull_request:
     paths:
@@ -37,7 +40,7 @@ jobs:
           python -m pip install --upgrade pip
           python -m pip install "numpy>=1.26" "Pillow>=10"
       - name: Run binary renderer tests
-        run: python -m unittest discover -s tests -p 'test_binary_scene.py' -v
+        run: python -m unittest discover -s tests -p 'test_binary_scene*.py' -v
       - name: Render native binary scene (no image/video input)
         run: python scripts/render_binary_demo.py --out out/binary-led-demo/binary-led-demo.mp4
       - name: Verify output video
@@ -62,4 +65,5 @@ jobs:
           path: |
             out/binary-led-demo/binary-led-demo.mp4
             out/binary-led-demo/binary-led-demo.report.json
+            out/binary-led-ai/
           retention-days: 7
