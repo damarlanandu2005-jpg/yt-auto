@@ -1,0 +1,18 @@
+{
+ "seconds": 49.5,
+ "words": 110,
+ "scenes": 6,
+ "shots": 20,
+ "captions": 110,
+ "cuts": 19,
+ "sound": {
+  "music": false,
+  "cuts": 19,
+  "voice_rms": 0.0843
+ },
+ "checks": {
+  "length_40_62": true,
+  "captions_cover_words": true,
+  "every_scene_has_picture": true
+ }
+}

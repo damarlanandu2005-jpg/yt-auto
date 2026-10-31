@@ -1,0 +1,89 @@
+[
+ {
+  "id": "hook",
+  "start": 0.0,
+  "end": 5.14,
+  "sentences": [
+   {
+    "text": "What if you were aboard the Titanic when it struck that fatal iceberg?",
+    "start": 0.00275,
+    "end": 3.770166666666667
+   }
+  ]
+ },
+ {
+  "id": "step1",
+  "start": 5.14,
+  "end": 10.925333333333333,
+  "sentences": [
+   {
+    "text": "Typically, only about one-tenth of an iceberg floats above the water surface.",
+    "start": 5.144541666666666,
+    "end": 9.988125
+   }
+  ]
+ },
+ {
+  "id": "step2",
+  "start": 10.925333333333333,
+  "end": 20.28933333333333,
+  "sentences": [
+   {
+    "text": "The British liner strikes ice and begins foundering in the North Atlantic.",
+    "start": 10.943083333333332,
+    "end": 15.088124999999998
+   },
+   {
+    "text": "The ship carries lifeboats for only one-third of the people on board.",
+    "start": 15.567,
+    "end": 19.284541666666666
+   }
+  ]
+ },
+ {
+  "id": "step3",
+  "start": 20.28933333333333,
+  "end": 30.67733333333333,
+  "sentences": [
+   {
+    "text": "Many passengers and crew make their last stand on the raised poop deck.",
+    "start": 20.305166666666665,
+    "end": 24.64945833333333
+   },
+   {
+    "text": "Victims are plunged into freezing sea water at minus 2 degrees Celsius.",
+    "start": 25.107999999999997,
+    "end": 29.739958333333334
+   }
+  ]
+ },
+ {
+  "id": "answer",
+  "start": 30.67733333333333,
+  "end": 44.90533333333333,
+  "sentences": [
+   {
+    "text": "Cold shock triggers uncontrolled rapid breathing, gasping, and severe heart strain.",
+    "start": 30.67733333333333,
+    "end": 37.34675
+   },
+   {
+    "text": "Within 15 to 30 minutes, cold incapacitation shuts down limb muscles, preventing swimming.",
+    "start": 37.80595833333333,
+    "end": 43.94333333333333
+   }
+  ]
+ },
+ {
+  "id": "end",
+  "start": 44.90533333333333,
+  "end": 49.55466666666666,
+  "sentences": [
+   {
+    "text": "Would you have found a place in one of the few lifeboats?",
+    "start": 44.945625,
+    "end": 48.18354166666666
+   }
+  ]
+ }
+]
