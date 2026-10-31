@@ -1,0 +1,23 @@
+{
+  "title": "Binary LED driving scene",
+  "duration": 8,
+  "objects": [
+    {"id":"title","type":"text","x":0.12,"y":0.08,"text":"DRIVING DAY","visible":[0,1.8]},
+    {"id":"road","type":"rect","x":0,"y":0.69,"w":1,"h":0.31},
+    {"id":"road-mark-1","type":"rect","x":0.08,"y":0.82,"w":0.16,"h":0.012},
+    {"id":"road-mark-2","type":"rect","x":0.42,"y":0.82,"w":0.16,"h":0.012},
+    {"id":"road-mark-3","type":"rect","x":0.76,"y":0.82,"w":0.16,"h":0.012},
+    {"id":"sun","type":"ellipse","x":0.76,"y":0.12,"w":0.12,"h":0.07},
+    {"id":"car-body","type":"polygon","x":0.12,"y":0.53,"points":[[0.02,0.12],[0.10,0.02],[0.48,0.02],[0.59,0.12],[0.65,0.15],[0.65,0.27],[0,0.27],[0,0.16]],"motion":{"start":1.5,"end":7.5,"dx":0.22,"dy":0}},
+    {"id":"car-window","type":"polygon","x":0.25,"y":0.55,"points":[[0,0.08],[0.08,0],[0.20,0],[0.26,0.08]],"motion":{"start":1.5,"end":7.5,"dx":0.22,"dy":0}},
+    {"id":"driver-head","type":"ellipse","x":0.32,"y":0.54,"w":0.055,"h":0.055,"motion":{"start":1.5,"end":7.5,"dx":0.22,"dy":0}},
+    {"id":"driver-body","type":"rect","x":0.32,"y":0.59,"w":0.07,"h":0.08,"motion":{"start":1.5,"end":7.5,"dx":0.22,"dy":0}},
+    {"id":"wheel-left","type":"ellipse","x":0.20,"y":0.68,"w":0.12,"h":0.07,"motion":{"start":1.5,"end":7.5,"dx":0.22,"dy":0}},
+    {"id":"wheel-right","type":"ellipse","x":0.53,"y":0.68,"w":0.12,"h":0.07,"motion":{"start":1.5,"end":7.5,"dx":0.22,"dy":0}},
+    {"id":"traffic-pole","type":"rect","x":0.83,"y":0.25,"w":0.018,"h":0.44,"visible":[5,8]},
+    {"id":"traffic-box","type":"rect","x":0.78,"y":0.22,"w":0.12,"h":0.22,"visible":[5,8]},
+    {"id":"red-light","type":"ellipse","x":0.815,"y":0.245,"w":0.05,"h":0.05,"visible":[5,6.5]},
+    {"id":"green-light","type":"ellipse","x":0.815,"y":0.355,"w":0.05,"h":0.05,"visible":[6.5,8]},
+    {"id":"caption","type":"text","x":0.12,"y":0.12,"text":"STOP AT THE LIGHT","visible":[6.1,8]}
+  ]
+}
