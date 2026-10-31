@@ -37,25 +37,23 @@ jobs:
           python -m pip install --upgrade pip
           python -m pip install "numpy>=1.26" "Pillow>=10"
       - name: Run binary renderer tests
-        run: python -m unittest tests.test_binary_scene -v
+        run: python -m unittest discover -s tests -p 'test_binary_scene.py' -v
       - name: Render native binary scene (no image/video input)
         run: python scripts/render_binary_demo.py --out out/binary-led-demo/binary-led-demo.mp4
       - name: Verify output video
         run: |
           ffprobe -v error -select_streams v:0 -show_entries stream=width,height,r_frame_rate,pix_fmt -show_entries format=duration -of json out/binary-led-demo/binary-led-demo.mp4
           python - <<'PY'
-          import cv2
+          import subprocess
           import numpy as np
           p = "out/binary-led-demo/binary-led-demo.mp4"
-          cap = cv2.VideoCapture(p)
-          ok, frame = cap.read()
-          assert ok, "video cannot be decoded"
-          gray = cv2.cvtColor(frame, cv2.COLOR_BGR2GRAY)
-          values = set(np.unique(gray).tolist())
+          probe = subprocess.check_output(["ffprobe", "-v", "error", "-select_streams", "v:0", "-show_entries", "stream=width,height", "-of", "json", p])
+          import json
+          stream = json.loads(probe)["streams"][0]
+          assert (stream["width"], stream["height"]) == (1080, 1920), stream
+          raw = subprocess.check_output(["ffmpeg", "-v", "error", "-i", p, "-frames:v", "1", "-f", "rawvideo", "-pix_fmt", "gray", "-"])
+          values = set(np.unique(np.frombuffer(raw, dtype=np.uint8)).tolist())
           assert values.issubset({0, 255}), f"non-binary values: {values}"
-          assert int(cap.get(cv2.CAP_PROP_FRAME_WIDTH)) == 1080
-          assert int(cap.get(cv2.CAP_PROP_FRAME_HEIGHT)) == 1920
-          cap.release()
           print("Verified: 1080x1920, binary pixel values only")
           PY
       - uses: actions/upload-artifact@v4
