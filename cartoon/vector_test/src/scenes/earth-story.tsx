@@ -14,19 +14,42 @@ import {
 } from '@motion-canvas/core';
 
 // A reusable, code-drawn presenter. Coordinates are local to the character.
-function Stickman(props: {scale?: number; outfit?: string}) {
-  const shirt = props.outfit ?? '#ffffff';
+// Motion Canvas adaptation of the channel's recurring character.
+// The main demo uses the astronaut look from cartoon/character.js OUTFITS.
+function Stickman(props: {scale?: number; outfit?: 'astronaut' | 'explorer' | 'doctor' | 'diver'}) {
+  const outfit = props.outfit ?? 'astronaut';
+  const top = outfit === 'explorer' ? '#b8945a' : outfit === 'doctor' ? '#f4f4f6' : outfit === 'diver' ? '#2b2f38' : '#eeeeF2';
+  const accent = outfit === 'diver' ? '#e8e8e8' : '#d7dce3';
   return (
     <Layout scale={props.scale ?? 1} width={180} height={390}>
-      <Line points={[[0, -92], [0, 65]]} stroke="#202027" lineWidth={13} lineCap="round" />
-      <Line points={[[0, -65], [-62, -8]]} stroke="#202027" lineWidth={12} lineCap="round" />
-      <Line points={[[0, -65], [62, -8]]} stroke="#202027" lineWidth={12} lineCap="round" />
-      <Line points={[[0, 65], [-42, 150]]} stroke="#202027" lineWidth={13} lineCap="round" />
-      <Line points={[[0, 65], [42, 150]]} stroke="#202027" lineWidth={13} lineCap="round" />
-      <Circle y={-145} size={105} fill="#fffdf7" stroke="#202027" lineWidth={9} />
+      {/* Backpack sits behind the body. */}
+      {#if outfit === 'astronaut'}
+        <Rect x={-49} y={8} width={42} height={94} radius={12} fill="#c8cdd4" stroke="#202027" lineWidth={7} />
+        <Rect x={-49} y={-12} width={30} height={20} fill="#e6a34c" stroke="#202027" lineWidth={4} />
+      {/if}
+      {/* Arms and legs: dark outer stroke with a light suit-coloured centre. */}
+      <Line points={[[0, -62], [-62, -8]]} stroke="#202027" lineWidth={20} lineCap="round" />
+      <Line points={[[0, -62], [-62, -8]]} stroke={top} lineWidth={11} lineCap="round" />
+      <Line points={[[0, -62], [62, -8]]} stroke="#202027" lineWidth={20} lineCap="round" />
+      <Line points={[[0, -62], [62, -8]]} stroke={top} lineWidth={11} lineCap="round" />
+      <Line points={[[0, 62], [-42, 150]]} stroke="#202027" lineWidth={21} lineCap="round" />
+      <Line points={[[0, 62], [-42, 150]]} stroke={top} lineWidth={12} lineCap="round" />
+      <Line points={[[0, 62], [42, 150]]} stroke="#202027" lineWidth={21} lineCap="round" />
+      <Line points={[[0, 62], [42, 150]]} stroke={top} lineWidth={12} lineCap="round" />
+      <Rect y={2} width={76} height={125} radius={19} fill={top} stroke="#202027" lineWidth={8} />
+      <Rect y={42} width={82} height={13} radius={4} fill="#333943" stroke="#202027" lineWidth={4} />
+      <Circle x={0} y={-23} size={10} fill="#e6a34c" stroke="#202027" lineWidth={3} />
+      <Circle x={0} y={4} size={8} fill="#79b6d5" stroke="#202027" lineWidth={3} />
+      {#if outfit === 'astronaut'}
+        <Rect x={0} y={-4} width={18} height={38} radius={4} fill="#d7dce3" stroke="#202027" lineWidth={3} />
+        <Circle x={0} y={-145} size={125} fill="#d7dce3" stroke="#202027" lineWidth={7} />
+        <Circle y={-145} size={105} fill="#fffdf7" stroke="#202027" lineWidth={8} />
+      {:else}
+        <Circle y={-145} size={105} fill="#fffdf7" stroke="#202027" lineWidth={9} />
+      {/if}
       <Circle x={-20} y={-153} size={9} fill="#202027" />
       <Circle x={20} y={-153} size={9} fill="#202027" />
-      <Circle y={-126} width={27} height={13} stroke="#202027" lineWidth={4} />
+      <Ellipse y={-126} width={27} height={13} stroke="#202027" lineWidth={4} />
     </Layout>
   );
 }
@@ -73,7 +96,7 @@ export default makeScene2D(function* (view) {
   // Presenter is positioned separately from the planet so the visual stays readable.
   view.add(
     <Layout ref={hero} x={-310} y={480} scale={0.85}>
-      <Stickman scale={1} />
+      <Stickman scale={1} outfit="astronaut" />
     </Layout>,
   );
 
