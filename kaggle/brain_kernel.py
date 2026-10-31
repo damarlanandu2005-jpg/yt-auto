@@ -149,11 +149,32 @@ def main() -> None:
     last = JOB["rounds"][-1]
     JOB["final_failed"] = sorted(set(last["failed"]) | set(last["missing"]))
     JOB["pictures_ok"] = not JOB["final_failed"]
-    # the final pictures, one per scene, as JPEG-free PNGs (the newest drawing of each scene)
+    # the final pictures, one per scene: the BEST drawing of each scene, not the newest (a redraw can be worse).
+    # Best = the first round in which the scene passed, else the round with the fewest problems.
     final = OUT / "pictures"
     final.mkdir(exist_ok=True)
-    for p in flux_dir.glob("flux2dev_*.png"):
-        shutil.copy(p, final / p.name)
+    JOB["picked_round"] = {}
+    for p in sorted(PICS.glob("drawn_*/flux2dev_*.png")) or sorted(flux_dir.glob("flux2dev_*.png")):
+        pass
+    names = {q.name for q in flux_dir.glob("flux2dev_*.png")}
+    for name in names:
+        sid = name.removeprefix("flux2dev_fp16_").removeprefix("flux2dev_").rsplit(".", 1)[0]
+        best, best_n = None, None
+        for r in JOB["rounds"]:
+            if sid not in r["failed"] and sid not in r["missing"]:
+                n = 0  # passed in this round
+            elif sid in r["failed"]:
+                n = len(r["failed"][sid])
+            else:
+                continue
+            src = PICS / f"drawn_{r['level']}" / name
+            if src.exists() and (best_n is None or n < best_n):
+                best, best_n = (src, r["level"]), n
+                if n == 0:
+                    break
+        src = best[0] if best else flux_dir / name
+        JOB["picked_round"][sid] = best[1] if best else "latest"
+        shutil.copy(src, final / name)
 
 
 try:
