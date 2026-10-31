@@ -1,0 +1,31 @@
+[llm] art_judge: local:gpt-oss:20b unavailable (HTTP 500 (busy)); trying next model
+[llm] art_judge: every model busy; waiting 120s (round 1)
+[llm] art_judge: local:gpt-oss:20b unavailable (HTTP 500 (busy)); trying next model
+[llm] art_judge: every model busy; waiting 120s (round 2)
+[llm] art_judge: local:gpt-oss:20b unavailable (HTTP 500 (busy)); trying next model
+Traceback (most recent call last):
+  File "/kaggle/working/code/cartoon/make_pictures.py", line 253, in <module>
+    main()
+    ~~~~^^
+  File "/kaggle/working/code/cartoon/make_pictures.py", line 249, in main
+    {"plan": plan, "pack": pack, "check": check, "selftest": selftest, "checktest": checktest}[a.action](a)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^
+  File "/kaggle/working/code/cartoon/make_pictures.py", line 229, in checktest
+    res = scene_art.check_pictures(pics, plan_, {n: "" for n in pics})
+  File "/kaggle/working/code/yt_auto/scene_art.py", line 288, in check_pictures
+        res = llm(f"""Someone described each cartoon picture WITHOUT knowing the story. Judge each scene against the plan. A scene has
+              ~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    a problem when: a character who should be there is missing, or an extra MAIN character is there that the plan does not
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<5 lines>...
+    
+    
+    {chr(10).join(lines)}""", schema=PIC_JUDGE, name="art_judge", temperature=0.1, models=LIGHT, last_resort=True)
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/kaggle/working/code/yt_auto/llm.py", line 106, in llm
+    return _call(LITE, prompt, system, schema, temperature, name, images, max_tries, timeout)
+  File "/kaggle/working/code/yt_auto/llm.py", line 119, in _call
+    return _call_gemini(model, prompt, system, schema, temperature, name, images, max_tries, timeout)
+  File "/kaggle/working/code/yt_auto/llm.py", line 210, in _call_gemini
+    raise LLMError("GEMINI_API_KEY is not set")
+yt_auto.llm.LLMError: GEMINI_API_KEY is not set

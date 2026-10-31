@@ -1,0 +1,30 @@
+{
+ "expect": {
+  "flux2dev_04": false,
+  "flux2dev_fp16_04": false,
+  "flux2dev_fp16_02": true,
+  "flux2dev_fp16_07": true,
+  "flux2dev_01": true
+ },
+ "got": {
+  "flux2dev_04": [
+   "45 real-looking people are drawn; every person must be a stickman"
+  ],
+  "flux2dev_fp16_04": [
+   "40 real-looking people are drawn; every person must be a stickman",
+   "extra main characters: four stick figures not listed in the plan"
+  ],
+  "flux2dev_fp16_02": [
+   "hero wears a diving suit, not the plain white-headed stickman as per plan"
+  ],
+  "flux2dev_fp16_07": [],
+  "flux2dev_01": []
+ },
+ "right": {
+  "flux2dev_04": true,
+  "flux2dev_fp16_04": true,
+  "flux2dev_fp16_02": false,
+  "flux2dev_fp16_07": true,
+  "flux2dev_01": true
+ }
+}

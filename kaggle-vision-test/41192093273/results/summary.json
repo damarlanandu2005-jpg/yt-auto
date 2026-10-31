@@ -1,0 +1,56 @@
+{
+ "install_s": 23,
+ "saved": [
+  "gpt-oss:20b",
+  "qwen3:32b"
+ ],
+ "server": true,
+ "judge": "gpt-oss:20b",
+ "models": {
+  "gemma3:27b": {
+   "pull": {
+    "source": "downloaded",
+    "seconds": 149
+   },
+   "seconds": 966,
+   "right": 4,
+   "of": 5,
+   "crowds_caught": 2,
+   "crowds": 2,
+   "wrong": {
+    "flux2dev_fp16_02": [
+     "hero wears a diving suit, not the plain white-headed stickman as per plan"
+    ]
+   },
+   "passes": true
+  },
+  "qwen2.5vl:32b": {
+   "pull": {
+    "source": "downloaded",
+    "seconds": 196
+   },
+   "seconds": 1374,
+   "error": " knowing the story. Judge each scene against the plan. A scene has\n              ~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n    a problem when: a character who should be there is missing, or an extra MAIN character is there that the plan does not\n    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n    ...<5 lines>...\n    \n    \n    {chr(10).join(lines)}\"\"\", schema=PIC_JUDGE, name=\"art_judge\", temperature=0.1, models=LIGHT, last_resort=True)\n    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/kaggle/working/code/yt_auto/llm.py\", line 106, in llm\n    return _call(LITE, prompt, system, schema, temperature, name, images, max_tries, timeout)\n  File \"/kaggle/working/code/yt_auto/llm.py\", line 119, in _call\n    return _call_gemini(model, prompt, system, schema, temperature, name, images, max_tries, timeout)\n  File \"/kaggle/working/code/yt_auto/llm.py\", line 210, in _call_gemini\n    raise LLMError(\"GEMINI_API_KEY is not set\")\nyt_auto.llm.LLMError: GEMINI_API_KEY is not set\n"
+  },
+  "mistral-small3.2:24b": {
+   "pull": {
+    "source": "downloaded",
+    "seconds": 129
+   },
+   "seconds": 1254,
+   "error": " knowing the story. Judge each scene against the plan. A scene has\n              ~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n    a problem when: a character who should be there is missing, or an extra MAIN character is there that the plan does not\n    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n    ...<5 lines>...\n    \n    \n    {chr(10).join(lines)}\"\"\", schema=PIC_JUDGE, name=\"art_judge\", temperature=0.1, models=LIGHT, last_resort=True)\n    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/kaggle/working/code/yt_auto/llm.py\", line 106, in llm\n    return _call(LITE, prompt, system, schema, temperature, name, images, max_tries, timeout)\n  File \"/kaggle/working/code/yt_auto/llm.py\", line 119, in _call\n    return _call_gemini(model, prompt, system, schema, temperature, name, images, max_tries, timeout)\n  File \"/kaggle/working/code/yt_auto/llm.py\", line 210, in _call_gemini\n    raise LLMError(\"GEMINI_API_KEY is not set\")\nyt_auto.llm.LLMError: GEMINI_API_KEY is not set\n"
+  },
+  "llama3.2-vision:11b": {
+   "pull": {
+    "source": "downloaded",
+    "seconds": 59
+   },
+   "seconds": 250,
+   "error": "^^^^^^^^^^^^^^^^^\n    what is drawn (the place, the big objects, what each main figure does and feels). Count the stick figures\n    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n    ...<3 lines>...\n    Mention any deformed face, hand or body.\"\"\", images=[(f\"Image {i}:\", _thumb(pics[s])) for i, s in enumerate(ids, 1)],\n    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n                   schema=PIC_SEEN, name=\"art_seen\", temperature=0.1, models=VISION, last_resort=True)\n                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/kaggle/working/code/yt_auto/llm.py\", line 106, in llm\n    return _call(LITE, prompt, system, schema, temperature, name, images, max_tries, timeout)\n  File \"/kaggle/working/code/yt_auto/llm.py\", line 119, in _call\n    return _call_gemini(model, prompt, system, schema, temperature, name, images, max_tries, timeout)\n  File \"/kaggle/working/code/yt_auto/llm.py\", line 210, in _call_gemini\n    raise LLMError(\"GEMINI_API_KEY is not set\")\nyt_auto.llm.LLMError: GEMINI_API_KEY is not set\n"
+  }
+ },
+ "judge_model": {
+  "source": "saved",
+  "seconds": 0
+ }
+}

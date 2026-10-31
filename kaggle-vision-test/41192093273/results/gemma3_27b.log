@@ -1,0 +1,8 @@
+[llm] art_judge: local:gpt-oss:20b unavailable (HTTP 500 (busy)); trying next model
+[llm] art_judge: every model busy; waiting 120s (round 1)
+flux2dev_04: expected FAIL; got FAIL ['45 real-looking people are drawn; every person must be a stickman']
+flux2dev_fp16_04: expected FAIL; got FAIL ['40 real-looking people are drawn; every person must be a stickman', 'extra main characters: four stick figures not listed in the plan']
+flux2dev_fp16_02: expected pass; got FAIL ['hero wears a diving suit, not the plain white-headed stickman as per plan']
+flux2dev_fp16_07: expected pass; got pass []
+flux2dev_01: expected pass; got pass []
+checker test: 4 of 5 right

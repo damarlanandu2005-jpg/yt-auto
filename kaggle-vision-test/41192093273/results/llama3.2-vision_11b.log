@@ -1,0 +1,31 @@
+[llm] art_seen: local:llama3.2-vision:11b unavailable (HTTP 500 (busy)); trying next model
+[llm] art_seen: every model busy; waiting 120s (round 1)
+[llm] art_seen: local:llama3.2-vision:11b unavailable (HTTP 500 (busy)); trying next model
+[llm] art_seen: every model busy; waiting 120s (round 2)
+[llm] art_seen: local:llama3.2-vision:11b unavailable (HTTP 500 (busy)); trying next model
+Traceback (most recent call last):
+  File "/kaggle/working/code/cartoon/make_pictures.py", line 253, in <module>
+    main()
+    ~~~~^^
+  File "/kaggle/working/code/cartoon/make_pictures.py", line 249, in main
+    {"plan": plan, "pack": pack, "check": check, "selftest": selftest, "checktest": checktest}[a.action](a)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^
+  File "/kaggle/working/code/cartoon/make_pictures.py", line 229, in checktest
+    res = scene_art.check_pictures(pics, plan_, {n: "" for n in pics})
+  File "/kaggle/working/code/yt_auto/scene_art.py", line 257, in check_pictures
+        seen = llm(f"""Above are {len(ids)} cartoon pictures, each right after its label "Image n:". For EVERY image: say plainly
+               ~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    what is drawn (the place, the big objects, what each main figure does and feels). Count the stick figures
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<3 lines>...
+    Mention any deformed face, hand or body.""", images=[(f"Image {i}:", _thumb(pics[s])) for i, s in enumerate(ids, 1)],
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+                   schema=PIC_SEEN, name="art_seen", temperature=0.1, models=VISION, last_resort=True)
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/kaggle/working/code/yt_auto/llm.py", line 106, in llm
+    return _call(LITE, prompt, system, schema, temperature, name, images, max_tries, timeout)
+  File "/kaggle/working/code/yt_auto/llm.py", line 119, in _call
+    return _call_gemini(model, prompt, system, schema, temperature, name, images, max_tries, timeout)
+  File "/kaggle/working/code/yt_auto/llm.py", line 210, in _call_gemini
+    raise LLMError("GEMINI_API_KEY is not set")
+yt_auto.llm.LLMError: GEMINI_API_KEY is not set
