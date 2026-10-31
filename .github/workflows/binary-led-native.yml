@@ -1,0 +1,87 @@
+name: Binary LED native scene test
+
+on:
+  push:
+    branches: [experiment/binary-led-native]
+    paths:
+      - "yt_auto/binary_scene.py"
+      - "yt_auto/binary_scene_ai.py"
+      - "examples/binary_driving_scene.json"
+      - "scripts/render_binary_demo.py"
+      - "scripts/generate_binary_ai_scene.py"
+      - "tests/test_binary_scene.py"
+      - "tests/test_binary_scene_ai.py"
+      - ".github/workflows/binary-led-native.yml"
+  pull_request:
+    paths:
+      - "yt_auto/binary_scene.py"
+      - "yt_auto/binary_scene_ai.py"
+      - "examples/binary_driving_scene.json"
+      - "scripts/generate_binary_ai_scene.py"
+      - "tests/test_binary_scene_ai.py"
+      - "scripts/render_binary_demo.py"
+      - "tests/test_binary_scene.py"
+      - ".github/workflows/binary-led-native.yml"
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  test-and-preview:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.13"
+      - name: Install FFmpeg and Python dependencies
+        run: |
+          sudo apt-get update
+          sudo apt-get install -y ffmpeg
+          python -m pip install --upgrade pip
+          python -m pip install "numpy>=1.26" "Pillow>=10"
+      - name: Run binary renderer tests
+        run: python -m unittest discover -s tests -p 'test_binary_scene*.py' -v
+      - name: Render native binary scene (no image/video input)
+        run: python scripts/render_binary_demo.py --out out/binary-led-demo/binary-led-demo.mp4
+      - name: Verify output video
+        run: |
+          ffprobe -v error -select_streams v:0 -show_entries stream=width,height,r_frame_rate,pix_fmt -show_entries format=duration -of json out/binary-led-demo/binary-led-demo.mp4
+          python - <<'PY'
+          import subprocess
+          import numpy as np
+          p = "out/binary-led-demo/binary-led-demo.mp4"
+          probe = subprocess.check_output(["ffprobe", "-v", "error", "-select_streams", "v:0", "-show_entries", "stream=width,height", "-of", "json", p])
+          import json
+          stream = json.loads(probe)["streams"][0]
+          assert (stream["width"], stream["height"]) == (1080, 1920), stream
+          raw = subprocess.check_output(["ffmpeg", "-v", "error", "-i", p, "-frames:v", "1", "-f", "rawvideo", "-pix_fmt", "gray", "-"])
+          values = set(np.unique(np.frombuffer(raw, dtype=np.uint8)).tolist())
+          assert values.issubset({0, 255}), f"non-binary values: {values}"
+          print("Verified: 1080x1920, binary pixel values only")
+          PY
+      - name: Generate AI-planned binary scene (text-only, no image inputs)
+        env:
+          GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
+          CLOUDFLARE_API_TOKEN: ${{ secrets.CLOUDFLARE_API_TOKEN }}
+          CLOUDFLARE_ACCOUNT_ID: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
+        run: |
+          if [ -z "$GEMINI_API_KEY" ] && { [ -z "$CLOUDFLARE_API_TOKEN" ] || [ -z "$CLOUDFLARE_ACCOUNT_ID" ]; }; then
+            echo "No LLM secrets configured; skipping AI-generated scene preview."
+            exit 0
+          fi
+          python scripts/generate_binary_ai_scene.py \
+            --scene "A driver steers a small car along a road, approaches a traffic light, stops, then drives forward when it turns green. Draw a clear stick-figure driver, car, road markings and traffic light." \
+            --narration "The driver approaches the traffic light, stops at the red signal, and moves again when it turns green." \
+            --duration 8 \
+            --out out/binary-led-ai/ai-driving-scene.mp4
+      - uses: actions/upload-artifact@v4
+        with:
+          name: binary-led-native-preview
+          path: |
+            out/binary-led-demo/binary-led-demo.mp4
+            out/binary-led-demo/binary-led-demo.report.json
+            out/binary-led-ai/
+          retention-days: 7
