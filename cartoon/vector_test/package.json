@@ -1,0 +1,21 @@
+{
+  "name": "stickman-thoughts-vector-test",
+  "private": true,
+  "version": "0.1.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "tsc --noEmit && vite build"
+  },
+  "dependencies": {
+    "@motion-canvas/2d": "*",
+    "@motion-canvas/core": "*"
+  },
+  "devDependencies": {
+    "@motion-canvas/ffmpeg": "*",
+    "@motion-canvas/ui": "*",
+    "@motion-canvas/vite-plugin": "*",
+    "typescript": "*",
+    "vite": "*"
+  }
+}
