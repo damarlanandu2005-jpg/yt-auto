@@ -1,0 +1,17 @@
+{
+ "checked": 7,
+ "supported_first_pass": 6,
+ "fixed": [
+  {
+   "id": "s06.01",
+   "old": "Three astronauts died instantly when their Soyuz capsule depressurized in 1971.",
+   "new": "Three astronauts died when their Soyuz capsule depressurized in 1971.",
+   "problem": "overstates that the deaths were instant"
+  }
+ ],
+ "dropped": [],
+ "bad_ids": [],
+ "copied": [],
+ "guard": [],
+ "words_after": 75
+}

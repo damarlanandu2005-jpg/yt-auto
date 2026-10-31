@@ -1,0 +1,29 @@
+{
+ "first_problems": [
+  "end: who has 'crowd', which is not in the cast",
+  "too many wide shots (3 of 7): the characters get tiny"
+ ],
+ "problems": []
+}
+cast: [('hero', 'hero', 'astronaut'), ('crowd', 'crowd', 'none')] changes: []
+
+[hook] medium who=['hero'] outfit=astronaut
+  Space, bright sunlight, hero floating in front of Earth. Head and body in astronaut suit, helmet intact. Arms outstretched, curious expression, eyes wide. No props. Background stars and Earth. Hero takes off helmet with one hand, revealing face. the hero is the same simple stickman in every picture:
+
+[step1] close who=['hero'] outfit=astronaut
+  Space, dimmer light. Hero's body swollen, arms and legs stretched. Fluids visibly boiling around head and torso. Face distorted, eyes bulging, mouth open in silent scream. No props. Hero's suit torn at neck, helmet removed. the hero is the same simple stickman in every picture: a big round white hea
+
+[step2] medium who=['hero'] outfit=astronaut
+  Space, same background. Hero limp, floating head-down. Eyes closed, mouth slightly open. Arms dangling, suit deflated. No movement. Small cloud of air particles drifting away from helmet opening. the hero is the same simple stickman in every picture: a big round white head with a thick black outline
+
+[step3] close who=['hero'] outfit=astronaut
+  Space, darkened. Hero lifeless, body rigid. Blood and bodily fluids frozen mid-boil. Suit completely collapsed. No Earth visible, only stars. One hand pointing toward camera, fingers stiff. the hero is the same simple stickman in every picture: a big round white head with a thick black outline, two 
+
+[answer] medium who=['hero'] outfit=astronaut
+  Space, Earth in background. Hero's helmet floating separately. Body decompressing, fluids expanding. One leg bent at angle, suit torn. No movement. Two bubbles escaping from mouth. Stars visible through transparent helmet. the hero is the same simple stickman in every picture: a big round white head
+
+[end] medium who=['crowd'] outfit=astronaut
+  1971 Soyuz capsule interior. Three stickmen in astronaut suits, all slumped against walls. One floating near hatch, two against metal panels. Capsule controls visible in background. No movement, suits deflated. Astronauts: plain stickmen in astronaut suits. EVERY other person in the picture is also 
+
+[end6] close who=['hero'] outfit=astronaut
+  Space, hero's face filling frame. Eyes closed, mouth open slightly. One tear frozen mid-fall. Helmet visible in background. No movement. Stars reflected in tear. Body rigid, arms at sides. the hero is the same simple stickman in every picture: a big round white head with a thick black outline, two s

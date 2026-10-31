@@ -1,0 +1,8 @@
+passed 0 of 7; failed ['answer', 'end', 'end6', 'hook', 'step1', 'step2', 'step3']; missing []
+  hook ['Hero still wearing helmet instead of removing it as plan requires', 'Suit includes red and blue details not specified in plan', 'Hero’s expression is surprised rather than curious']
+  step1 ['Helmet remains on hero; plan says it should be removed', 'No visible boiling fluids; only water spraying from helmet', 'Suit is not torn at the neck as required', 'Hero’s expression is terrified instead of a silent scream']
+  step2 ['Helmet still present; should be removed', 'Smoke is shown instead of a small cloud of air particles', 'Hero is not floating head‑down; orientation is wrong', 'Hero’s eyes are not closed as plan specifies']
+  step3 ['Helmet still present; should be removed', 'Hero’s expression is shocked instead of lifeless', 'No frozen fluids or blood covering the body are shown', 'Suit is not collapsed as required']
+  answer ['Two astronauts are shown instead of one hero', 'Helmet is not floating separately from the body', 'Body decompressing and fluids expanding are not depicted', 'No bubbles escaping from the mouth are shown']
+  end ['Four astronauts are shown instead of three', 'An extra astronaut is floating; plan specifies one near hatch and two against panels', 'Capsule controls are not visible as required', 'Slumped posture against walls is not depicted']
+  end6 ['Hero’s face does not fill the frame as plan requires', 'Tear is falling rather than frozen mid‑fall', 'Body is not rigid and arms are not at sides', 'Stars reflected in the tear are not shown']

@@ -1,0 +1,7 @@
+passed 1 of 7; failed ['answer', 'end', 'end6', 'hook', 'step2', 'step3']; missing []
+  hook ['no stickman is visible']
+  step2 ['no stickman is visible']
+  step3 ['no stickman is visible']
+  answer ['no stickman is visible']
+  end ['1 real-looking people are drawn; every person must be a stickman']
+  end6 ['no stickman is visible']

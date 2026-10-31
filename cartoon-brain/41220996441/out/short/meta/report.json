@@ -1,0 +1,24 @@
+{
+ "topic": "What happens if you take your helmet off in space?",
+ "owner_script": false,
+ "fact_check": {
+  "checked": 7,
+  "supported_first_pass": 6,
+  "fixed": 1,
+  "dropped": 0,
+  "bad_ids": 0,
+  "copied": 0,
+  "guard": 0,
+  "words_after": 75
+ },
+ "story_problems": [
+  "75 words after the fact-check (want about 110-140)"
+ ],
+ "words": 75,
+ "script_only": true,
+ "llm_calls": 14,
+ "models_used": [
+  "local:gpt-oss:20b",
+  "local:qwen3:32b"
+ ]
+}

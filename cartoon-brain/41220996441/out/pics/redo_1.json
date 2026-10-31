@@ -1,0 +1,120 @@
+{
+ "topic": "What happens if you take your helmet off in space?",
+ "cast": [
+  {
+   "id": "hero",
+   "name": "Stickman",
+   "role": "hero",
+   "look": "round white head, thin black stick body, astronaut suit with helmet",
+   "costume": "astronaut"
+  },
+  {
+   "id": "crowd",
+   "name": "Astronauts",
+   "role": "crowd",
+   "look": "plain stickmen in astronaut suits",
+   "costume": "none"
+  }
+ ],
+ "changes": [],
+ "log": {
+  "first_problems": [
+   "end: who has 'crowd', which is not in the cast",
+   "too many wide shots (3 of 7): the characters get tiny"
+  ],
+  "problems": []
+ },
+ "scenes": [
+  {
+   "id": "hook",
+   "shot": "medium",
+   "who": [
+    "hero"
+   ],
+   "prompt": "Space, bright sunlight, hero floating in front of Earth. Head and body in astronaut suit, helmet intact. Arms outstretched, curious expression, eyes wide. No props. Background stars and Earth. Hero takes off helmet with one hand, revealing face.",
+   "narration": "What happens if you remove your helmet in space?",
+   "redo": [
+    "Follow the scene description exactly: no stickman is visible"
+   ],
+   "seed": 31
+  },
+  {
+   "id": "step1",
+   "shot": "close",
+   "who": [
+    "hero"
+   ],
+   "prompt": "Space, dimmer light. Hero's body swollen, arms and legs stretched. Fluids visibly boiling around head and torso. Face distorted, eyes bulging, mouth open in silent scream. No props. Hero's suit torn at neck, helmet removed.",
+   "narration": "Your body swells as bodily fluids begin to boil due to the vacuum.",
+   "redo": [
+    "Follow the scene description exactly: no stickman is visible"
+   ],
+   "seed": 31
+  },
+  {
+   "id": "step2",
+   "shot": "medium",
+   "who": [
+    "hero"
+   ],
+   "prompt": "Space, same background. Hero limp, floating head-down. Eyes closed, mouth slightly open. Arms dangling, suit deflated. No movement. Small cloud of air particles drifting away from helmet opening.",
+   "narration": "You lose consciousness in about 14 seconds due to lack of oxygen.",
+   "redo": [
+    "Follow the scene description exactly: no stickman is visible"
+   ],
+   "seed": 31
+  },
+  {
+   "id": "step3",
+   "shot": "close",
+   "who": [
+    "hero"
+   ],
+   "prompt": "Space, darkened. Hero lifeless, body rigid. Blood and bodily fluids frozen mid-boil. Suit completely collapsed. No Earth visible, only stars. One hand pointing toward camera, fingers stiff.",
+   "narration": "Without recompression within 90 seconds, death is unavoidable.",
+   "redo": [
+    "Follow the scene description exactly: no stickman is visible"
+   ],
+   "seed": 31
+  },
+  {
+   "id": "answer",
+   "shot": "medium",
+   "who": [
+    "hero"
+   ],
+   "prompt": "Space, Earth in background. Hero's helmet floating separately. Body decompressing, fluids expanding. One leg bent at angle, suit torn. No movement. Two bubbles escaping from mouth. Stars visible through transparent helmet.",
+   "narration": "Removing your helmet causes rapid decompression, oxygen loss, and boiling bodily fluids, leading to unconsciousness and death within minutes.",
+   "redo": [
+    "Follow the scene description exactly: no stickman is visible"
+   ],
+   "seed": 31
+  },
+  {
+   "id": "end",
+   "shot": "medium",
+   "who": [
+    "crowd"
+   ],
+   "prompt": "1971 Soyuz capsule interior. Three stickmen in astronaut suits, all slumped against walls. One floating near hatch, two against metal panels. Capsule controls visible in background. No movement, suits deflated.",
+   "narration": "Three astronauts died when their Soyuz capsule depressurized in 1971.",
+   "redo": [
+    "Follow the scene description exactly: no stickman is visible"
+   ],
+   "seed": 31
+  },
+  {
+   "id": "end6",
+   "shot": "close",
+   "who": [
+    "hero"
+   ],
+   "prompt": "Space, hero's face filling frame. Eyes closed, mouth open slightly. One tear frozen mid-fall. Helmet visible in background. No movement. Stars reflected in tear. Body rigid, arms at sides.",
+   "narration": "Would you have survived?",
+   "redo": [
+    "Follow the scene description exactly: no stickman is visible"
+   ],
+   "seed": 31
+  }
+ ]
+}

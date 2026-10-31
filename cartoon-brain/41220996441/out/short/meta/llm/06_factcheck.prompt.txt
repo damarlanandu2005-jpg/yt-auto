@@ -1,0 +1,26 @@
+[model] local:gpt-oss:20b
+[system]
+
+
+[user]
+You are a strict fact-checker. For each sentence below, decide using ONLY its cited passages
+(not your own knowledge):
+- supported: every detail (numbers, names, dates, causes, comparisons) is stated in or directly follows from them.
+- partly: the main point is backed but some detail is not, or it overstates / oversimplifies into something false.
+  Also partly: "every/all/always/never" the passages don't say, or a model-based estimate stated as a plain
+  certain fact (fixed_text adds "scientists estimate" or "in today's standard model").
+- unsupported: the cited passages do not back it, or there are none.
+- Conflict: if the cited passages DISAGREE with each other about any number, date or name the sentence
+  states, the sentence is at most "partly" even if it matches one of them; say "sources conflict". Its
+  fixed_text must not pick a side: state only what all passages agree on, or give both values.
+For partly/unsupported, give fixed_text: a corrected sentence in the same plain spoken style that the cited
+passages fully support (keep digits and full unit words; no copying 8+ words). Leave fixed_text empty if impossible.
+A FRAMING SENTENCE has no passages: it is "supported" only if it makes no checkable claim at all (a question,
+transition or invitation). If it states any fact, mark it "unsupported" and give fixed_text: the same idea as a
+pure question or transition with no claim (e.g. "So what would a nearby supernova do to us?").
+
+[s01.01] FRAMING SENTENCE: What if you removed your helmet in space?
+
+[s02.01] SENTENCE: Without oxygen, your blood would lose oxygen in 9 to 12 seconds.
+CITED PASSAGES:
+A1.15: Human physiology is adapted to living within the atmosphere of Earth, and a certain amount of oxygen is required in the air we breathe. If the body does not get enough oxygen, then the astronaut is at risk of becoming unconscious and dying from hypoxia. In the vacuum of space, gas exchange in the lungs continues but results in the removal of all gases, including oxygen, from the bloodstream. After 9 to 12 seconds, the deoxygenated blood reaches the brain, and it results in the loss of consciousness. Exposure to vacuum for up to 30 seconds is unlikely to cause permanent physical damage. Animal experiments show that rapid and complete recovery is normal for exposures shorter than 90 seconds, while longer full-body exposures are fatal and resuscitation has never been successful. There is only a limited amount of data available from human accidents, but it is consistent with animal data. Limbs may be exposed for much longer if breathing is not impaired.

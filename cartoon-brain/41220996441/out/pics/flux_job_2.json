@@ -1,0 +1,150 @@
+{
+ "started": "2026-10-31T15:28:43Z",
+ "seconds": {
+  "flux2dev_fp16_hook.png": 345.0,
+  "flux2dev_fp16_step1.png": 346.8,
+  "flux2dev_fp16_step2.png": 354.8,
+  "flux2dev_fp16_step3.png": 347.7,
+  "flux2dev_fp16_answer.png": 351.7,
+  "flux2dev_fp16_end.png": 257.9,
+  "flux2dev_fp16_end6.png": 342.3
+ },
+ "errors": [],
+ "notes": [
+  "diffusers/FLUX.2-dev-bnb-4bit: downloads without login"
+ ],
+ "versions": {
+  "diffusers": "0.42.1",
+  "transformers": "5.22.1",
+  "huggingface-hub": "1.33.0",
+  "bitsandbytes": "0.50.2",
+  "torch": "2.11.0+cu128"
+ },
+ "hardware": {
+  "gpus": [
+   "Tesla T4 14.6 GB",
+   "Tesla T4 14.6 GB"
+  ],
+  "ram_gb": 31.3,
+  "disk_free_gb": {
+   "/kaggle/working": 19.5,
+   "/root": 998.1,
+   "/tmp": 998.1
+  },
+  "bf16_supported": true
+ },
+ "options": {
+  "dtype": "fp16",
+  "scenes": [
+   "hook",
+   "step1",
+   "step2",
+   "step3",
+   "answer",
+   "end",
+   "end6"
+  ]
+ },
+ "text_encoder_class": "Mistral3ForConditionalGeneration",
+ "text_encoder_load_s": 63,
+ "encode_s": 68,
+ "compute_dtype": {
+  "Flux2Transformer2DModel": "torch.float16 on 203 4-bit layers"
+ },
+ "transformer_load_s": 60,
+ "vram_after_load_gb": [
+  8.3,
+  8.8
+ ],
+ "setup_s": 214,
+ "gen_s": {
+  "flux2dev_fp16_hook.png": 344.7,
+  "flux2dev_fp16_step1.png": 346.5,
+  "flux2dev_fp16_step2.png": 354.5,
+  "flux2dev_fp16_step3.png": 347.4,
+  "flux2dev_fp16_answer.png": 351.4,
+  "flux2dev_fp16_end.png": 257.7,
+  "flux2dev_fp16_end6.png": 342.0
+ },
+ "size_used": {
+  "flux2dev_fp16_hook.png": [
+   576,
+   1024
+  ],
+  "flux2dev_fp16_step1.png": [
+   576,
+   1024
+  ],
+  "flux2dev_fp16_step2.png": [
+   576,
+   1024
+  ],
+  "flux2dev_fp16_step3.png": [
+   576,
+   1024
+  ],
+  "flux2dev_fp16_answer.png": [
+   576,
+   1024
+  ],
+  "flux2dev_fp16_end.png": [
+   576,
+   1024
+  ],
+  "flux2dev_fp16_end6.png": [
+   576,
+   1024
+  ]
+ },
+ "image_stats": {
+  "flux2dev_fp16_hook.png": {
+   "mean": 61.5,
+   "std": 69.3,
+   "looks_broken": false
+  },
+  "flux2dev_fp16_step1.png": {
+   "mean": 72.3,
+   "std": 70.1,
+   "looks_broken": false
+  },
+  "flux2dev_fp16_step2.png": {
+   "mean": 60.4,
+   "std": 64.7,
+   "looks_broken": false
+  },
+  "flux2dev_fp16_step3.png": {
+   "mean": 60.0,
+   "std": 88.0,
+   "looks_broken": false
+  },
+  "flux2dev_fp16_answer.png": {
+   "mean": 79.2,
+   "std": 76.2,
+   "looks_broken": false
+  },
+  "flux2dev_fp16_end.png": {
+   "mean": 98.9,
+   "std": 58.5,
+   "looks_broken": false
+  },
+  "flux2dev_fp16_end6.png": {
+   "mean": 83.1,
+   "std": 91.0,
+   "looks_broken": false
+  }
+ },
+ "peak_vram_gb": [
+  9.6,
+  9.9
+ ],
+ "pictures": [
+  "flux2dev_fp16_answer.png",
+  "flux2dev_fp16_end.png",
+  "flux2dev_fp16_end6.png",
+  "flux2dev_fp16_hook.png",
+  "flux2dev_fp16_step1.png",
+  "flux2dev_fp16_step2.png",
+  "flux2dev_fp16_step3.png"
+ ],
+ "total_s": 2560
+}

@@ -1,0 +1,88 @@
+{
+ "facts": [
+  {
+   "id": "A1.14",
+   "fact": "The environment of space is lethal without appropriate protection: the greatest threat in the vacuum of space derives from the lack of oxygen and pressure, although temperature and radiation also pose risks."
+  },
+  {
+   "id": "A1.15",
+   "fact": "In the vacuum of space, gas exchange in the lungs continues but results in the removal of all gases, including oxygen, from the bloodstream. After 9 to 12 seconds, the deoxygenated blood reaches the brain, and it results in the loss of consciousness."
+  },
+  {
+   "id": "A1.16",
+   "fact": "Jim LeBlanc remained conscious for about 14 seconds before losing consciousness due to hypoxia after his suit pressure dropped rapidly in a vacuum test."
+  },
+  {
+   "id": "A1.17",
+   "fact": "In a vacuum, ebullism results from the formation of bubbles in body fluids due to reduced ambient pressure. The least severe symptoms include freezing of bodily secretions due to evaporative cooling, while severe symptoms like loss of oxygen in tissue occur in about 30 seconds."
+  },
+  {
+   "id": "A4.6",
+   "fact": "Exposure to extreme low pressure or vacuum from spacesuit damage can cause asphyxia, which is a condition of deficient supply of oxygen to the body arising from abnormal breathing."
+  },
+  {
+   "id": "A1.19",
+   "fact": "There is no danger of immediately freezing in a vacuum; heat loss by radiation is slow, though rapid evaporative cooling of skin moisture may create frost, particularly in the mouth."
+  }
+ ],
+ "scenes": [
+  {
+   "role": "hook",
+   "sentences": [
+    {
+     "text": "What if you removed your helmet in space? Would you survive the void?",
+     "kind": "framing",
+     "sources": [],
+     "id": "s01.01",
+     "check": "supported"
+    }
+   ],
+   "id": "s01"
+  },
+  {
+   "role": "step",
+   "sentences": [
+    {
+     "text": "Within 14 seconds, you'd lose consciousness as oxygen vanishes from your blood.",
+     "kind": "fact",
+     "sources": [
+      "A1.16"
+     ],
+     "id": "s03.01",
+     "check": "supported"
+    }
+   ],
+   "id": "s03"
+  },
+  {
+   "role": "step",
+   "sentences": [
+    {
+     "text": "Bodily fluids begin to boil, and your skin may frost over from evaporative cooling.",
+     "kind": "fact",
+     "sources": [
+      "A1.17",
+      "A1.19"
+     ],
+     "id": "s04.01",
+     "check": "supported"
+    }
+   ],
+   "id": "s04"
+  },
+  {
+   "role": "end",
+   "sentences": [
+    {
+     "text": "Would you even notice the air leaving your lungs before the frost forms?",
+     "kind": "framing",
+     "sources": [],
+     "id": "s06.01",
+     "check": "supported"
+    }
+   ],
+   "id": "s06"
+  }
+ ],
+ "title": "What Happens If You Remove Your Helmet In Space?"
+}

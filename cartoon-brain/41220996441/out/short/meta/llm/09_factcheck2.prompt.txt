@@ -1,0 +1,24 @@
+[model] local:gpt-oss:20b
+[system]
+
+
+[user]
+You are a strict fact-checker. For each sentence below, decide using ONLY its cited passages
+(not your own knowledge):
+- supported: every detail (numbers, names, dates, causes, comparisons) is stated in or directly follows from them.
+- partly: the main point is backed but some detail is not, or it overstates / oversimplifies into something false.
+  Also partly: "every/all/always/never" the passages don't say, or a model-based estimate stated as a plain
+  certain fact (fixed_text adds "scientists estimate" or "in today's standard model").
+- unsupported: the cited passages do not back it, or there are none.
+- Conflict: if the cited passages DISAGREE with each other about any number, date or name the sentence
+  states, the sentence is at most "partly" even if it matches one of them; say "sources conflict". Its
+  fixed_text must not pick a side: state only what all passages agree on, or give both values.
+For partly/unsupported, give fixed_text: a corrected sentence in the same plain spoken style that the cited
+passages fully support (keep digits and full unit words; no copying 8+ words). Leave fixed_text empty if impossible.
+A FRAMING SENTENCE has no passages: it is "supported" only if it makes no checkable claim at all (a question,
+transition or invitation). If it states any fact, mark it "unsupported" and give fixed_text: the same idea as a
+pure question or transition with no claim (e.g. "So what would a nearby supernova do to us?").
+
+[s06.01] SENTENCE: Three astronauts died when their Soyuz capsule depressurized in 1971.
+CITED PASSAGES:
+A1.18: The only humans known to have died of exposure to vacuum in space are the three crew-members of the Soyuz 11 spacecraft; Vladislav Volkov, Georgi Dobrovolski, and Viktor Patsayev. During preparations for re-entry from orbit on June 30, 1971, a pressure-equalisation valve in the spacecraft's descent module unexpectedly opened at an altitude of 168 kilometres (551,000 ft), causing rapid depressurisation and the subsequent death of the entire crew.

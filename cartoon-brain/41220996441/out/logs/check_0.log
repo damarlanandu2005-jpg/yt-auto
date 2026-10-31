@@ -1,0 +1,8 @@
+passed 0 of 7; failed ['answer', 'end', 'end6', 'hook', 'step1', 'step2', 'step3']; missing []
+  hook ['no stickman is visible']
+  step1 ['no stickman is visible']
+  step2 ['no stickman is visible']
+  step3 ['no stickman is visible']
+  answer ['no stickman is visible']
+  end ['no stickman is visible']
+  end6 ['no stickman is visible']

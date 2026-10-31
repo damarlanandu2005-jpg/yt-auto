@@ -1,0 +1,1 @@
+{"results":[{"id":"s02.01","verdict":"partly","problem":"The passage does not state that the suit will lose pressure.","fixed_text":"Without proper protection, the vacuum of space exposes you to a lack of oxygen."},{"id":"s03.01","verdict":"supported","problem":"","fixed_text":""},{"id":"s04.01","verdict":"supported","problem":"","fixed_text":""}]}

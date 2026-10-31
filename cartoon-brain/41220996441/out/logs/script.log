@@ -1,0 +1,13 @@
+[llm] short_plan: local:qwen3:32b unavailable (HTTP 500 (busy)); trying next model
+[llm] short_plan: every model busy; waiting 120s (round 1)
+[plan] What happens if I take my helmet off in space? | feeling: shock
+[research] A1 Effect of spaceflight on the human body: 47 passages
+[research] A2 Hypoxia (medicine): 76 passages
+[research] A3 Decompression sickness: 54 passages
+[research] A4 Asphyxia: 25 passages
+[llm] factcheck: local:gpt-oss:20b unavailable (HTTP 500 (busy)); trying next model
+[llm] factcheck: every model busy; waiting 120s (round 1)
+[script] ['the answer scene was dropped by the fact-check (rule R2: the hook must be answered)', '39 words after the fact-check (want about 110-140)']: rewrite 1
+[script] ['the answer scene was dropped by the fact-check (rule R2: the hook must be answered)', '39 words after the fact-check (want about 110-140)']: rewrite 2
+[script] ['75 words after the fact-check (want about 110-140)']: rewrite 3
+[script] 75 words; fact-check {'checked': 7, 'supported_first_pass': 6, 'fixed': 1, 'dropped': 0, 'bad_ids': 0, 'copied': 0, 'guard': 0, 'words_after': 75}; story ['75 words after the fact-check (want about 110-140)']

@@ -1,0 +1,30 @@
+[model] local:gpt-oss:20b
+[system]
+
+
+[user]
+You are a strict fact-checker. For each sentence below, decide using ONLY its cited passages
+(not your own knowledge):
+- supported: every detail (numbers, names, dates, causes, comparisons) is stated in or directly follows from them.
+- partly: the main point is backed but some detail is not, or it overstates / oversimplifies into something false.
+  Also partly: "every/all/always/never" the passages don't say, or a model-based estimate stated as a plain
+  certain fact (fixed_text adds "scientists estimate" or "in today's standard model").
+- unsupported: the cited passages do not back it, or there are none.
+- Conflict: if the cited passages DISAGREE with each other about any number, date or name the sentence
+  states, the sentence is at most "partly" even if it matches one of them; say "sources conflict". Its
+  fixed_text must not pick a side: state only what all passages agree on, or give both values.
+For partly/unsupported, give fixed_text: a corrected sentence in the same plain spoken style that the cited
+passages fully support (keep digits and full unit words; no copying 8+ words). Leave fixed_text empty if impossible.
+A FRAMING SENTENCE has no passages: it is "supported" only if it makes no checkable claim at all (a question,
+transition or invitation). If it states any fact, mark it "unsupported" and give fixed_text: the same idea as a
+pure question or transition with no claim (e.g. "So what would a nearby supernova do to us?").
+
+[s02.01] SENTENCE: Air escapes from your suit, exposing you to vacuum.
+CITED PASSAGES:
+A1.14: The environment of space is lethal without appropriate protection: the greatest threat in the vacuum of space derives from the lack of oxygen and pressure, although temperature and radiation also pose risks. The effects of space exposure can result in ebullism, hypoxia, hypocapnia, and decompression sickness. In addition to these, there is also cellular mutation and destruction from high energy photons and sub-atomic particles that are present in the surroundings. Decompression is a serious concern during the extra-vehicular activities (EVAs) of astronauts. Current Extravehicular Mobility Unit (EMU) designs take this and other issues into consideration, and have evolved over time. A key challenge has been the competing interests of increasing astronaut mobility (which is reduced by high-pressure EMUs, analogous to the difficulty of deforming an inflated balloon relative to a deflated one) and minimising decompression risk. Investigators have considered pressurizing a separate head unit to the regular 71 kPa (10.3 psi) cabin pressure as opposed to the current whole-EMU pressure of 29.6 kPa (4.3 psi). In such a design, pressurization of the torso could be achieved mechanically, avoiding mobility reduction associated with pneumatic pressurization.
+
+[s05.01] SENTENCE: Without a helmet, you'd face decompression, oxygen loss, and boiling fluids, leading to unconsciousness and death within minutes.
+CITED PASSAGES:
+A1.14: The environment of space is lethal without appropriate protection: the greatest threat in the vacuum of space derives from the lack of oxygen and pressure, although temperature and radiation also pose risks. The effects of space exposure can result in ebullism, hypoxia, hypocapnia, and decompression sickness. In addition to these, there is also cellular mutation and destruction from high energy photons and sub-atomic particles that are present in the surroundings. Decompression is a serious concern during the extra-vehicular activities (EVAs) of astronauts. Current Extravehicular Mobility Unit (EMU) designs take this and other issues into consideration, and have evolved over time. A key challenge has been the competing interests of increasing astronaut mobility (which is reduced by high-pressure EMUs, analogous to the difficulty of deforming an inflated balloon relative to a deflated one) and minimising decompression risk. Investigators have considered pressurizing a separate head unit to the regular 71 kPa (10.3 psi) cabin pressure as opposed to the current whole-EMU pressure of 29.6 kPa (4.3 psi). In such a design, pressurization of the torso could be achieved mechanically, avoiding mobility reduction associated with pneumatic pressurization.
+A1.15: Human physiology is adapted to living within the atmosphere of Earth, and a certain amount of oxygen is required in the air we breathe. If the body does not get enough oxygen, then the astronaut is at risk of becoming unconscious and dying from hypoxia. In the vacuum of space, gas exchange in the lungs continues but results in the removal of all gases, including oxygen, from the bloodstream. After 9 to 12 seconds, the deoxygenated blood reaches the brain, and it results in the loss of consciousness. Exposure to vacuum for up to 30 seconds is unlikely to cause permanent physical damage. Animal experiments show that rapid and complete recovery is normal for exposures shorter than 90 seconds, while longer full-body exposures are fatal and resuscitation has never been successful. There is only a limited amount of data available from human accidents, but it is consistent with animal data. Limbs may be exposed for much longer if breathing is not impaired.
+A4.6: Exposure to extreme low pressure or vacuum from spacesuit damage (see space exposure)
