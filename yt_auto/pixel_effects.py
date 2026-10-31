@@ -63,7 +63,7 @@ def apply_effects(frame: np.ndarray, t: float, effects: Iterable[str], seed: int
         count = max(45, (w * h) // 18000)
         idx = np.arange(count, dtype=np.int64)
         xs = (idx * 7919 + seed * 97) % w
-        ys = ((idx * 104729 + int(t * 92 * (1 + idx % 3))) % h).astype(int)
+        ys = ((idx * 104729 + int(t * 92) * (1 + idx % 3)) % h).astype(int)
         for radius in (0, 1):
             x = np.clip(xs + radius, 0, w - 1)
             y = ys
