@@ -290,7 +290,7 @@ a problem when: a character who should be there is missing, or an extra MAIN cha
 list; a character does not look like his cast description (head, clothes, colours); the hero wears something else than
 planned or than in the other scenes (outfits may differ ONLY where the plan says so); the picture does not show what the
 narration or the prompt asked for; the hero is tiny or hard to see; a face/hand/body is deformed; it looks the same as
-another scene. Crowds, several heroes and costumes are fine when the plan lists them. Be concrete (say what to change).
+another scene. Crowds, several heroes and costumes are fine when the plan lists them. An exact number of extras need not match (8 instead of 5 is fine) unless the scene is clearly crowded or empty when it should not be. Be concrete (say what to change).
 If a scene is fine: ok = true and no problems.
 
 {chr(10).join(lines)}""", schema=PIC_JUDGE, name="art_judge", temperature=0.1, models=LIGHT, last_resort=True)
