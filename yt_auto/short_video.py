@@ -11,7 +11,7 @@ import json
 import re
 from pathlib import Path
 
-from . import align, render, sound
+from . import align, pixel_effects, render, sound
 
 W, H = 1080, 1920
 SHOT_S = 2.5          # target length of one shot
@@ -64,7 +64,10 @@ def make_audio(script: dict, narrator, out_dir: Path) -> list[dict]:
         wav = out_dir / f"{sid}.wav"
         dur, spans = narrator.speak_timed(marks[i], wav, tail_pause=SCENE_PAUSE_S)
         sents = [{"text": s["text"], "start": clock + a, "end": clock + b} for s, (a, b) in zip(sc["sentences"], spans)]
-        scenes.append({"id": sid, "start": clock, "end": clock + dur, "sentences": sents, "wav": str(wav)})
+        spoken = " ".join(s["text"] for s in sc["sentences"])
+        effects = sc.get("effects") or pixel_effects.infer_effects(spoken)
+        scenes.append({"id": sid, "start": clock, "end": clock + dur, "sentences": sents,
+                       "wav": str(wav), "effects": effects})
         clock += dur
     return scenes
 
@@ -105,6 +108,11 @@ def make_video_track(scenes: list[dict], pictures: dict[str, Path], work: Path) 
             motion = MOTIONS[0] if j == 0 else (MOTIONS[4] if j == len(shots) - 1 and len(shots) > 2 else MOTIONS[(k + j) % 4])
             seg = work / f"shot_{k:02d}.mp4"
             make_shot(big, d, motion, seg)
+            tags = sc.get("effects") or []
+            if tags:
+                effected = work / f"shot_{k:02d}_fx.mp4"
+                pixel_effects.apply_video_effects(seg, effected, tags, W, H, render.FPS, seed=si * 1000 + j)
+                seg = effected
             segs.append(seg)
             if j:
                 cuts.append((t, "click"))
@@ -206,7 +214,8 @@ def build(script: dict, pictures: dict[str, Path], narrator, out: Path, sources:
     report = {"seconds": round(dur, 1), "words": words, "scenes": len(scenes), "shots": sum(1 for _, k in cuts if k == "click") + len(scenes),
               "captions": len(evs), "cuts": len(cuts), "sound": info,
               "checks": {"length_40_62": 40 <= dur <= 62, "captions_cover_words": len(evs) >= 0.9 * words,
-                         "every_scene_has_picture": not missing}}
+                         "every_scene_has_picture": not missing},
+              "pixel_effects": {s["id"]: s.get("effects", []) for s in scenes}}
     (out / "report.json").write_text(json.dumps(report, indent=1))
     (out / "timings.json").write_text(json.dumps([{k: v for k, v in s.items() if k != "wav"} for s in scenes], indent=1))
     return report
