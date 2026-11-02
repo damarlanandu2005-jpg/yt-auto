@@ -1,12 +1,47 @@
-# Niche backward check (early answer; the 4-week test confirms)
+[snapshot] 2026-11-02.json: 43 channels, 87 units
+[quota] 87 calls, 87 units
+# Niche data test — report (2 snapshots, 0.7 weeks of change)
 
-Made 2026-10-27. Method and winner rule: RULES.md 'Backward check' (written before running).
+Rules: phase0b/RULES.md (version 2). Channels chosen 2026-10-27 from 2356 candidates (80 eligible).
 
-| Niche | Eligible | Young (≤3 y) | Subs/month (median) | Momentum | Breakouts | Wikipedia interest (last 6 vs prev 6 months) |
-| --- | --- | --- | --- | --- | --- | --- |
-| How technology works | 12 | 4 (too little data) | 956.897 | 3.121 | 0.295 | 0.915x (4,126,724 views) |
-| Science and space | 57 | 32 | 611.193 | 1.852 | 0.244 | 0.97x (5,024,238 views) |
-| Money and economics (education only) | 11 | 5 (too little data) | 845.556 | 1.921 | 0.27 | 0.82x (1,256,948 views) |
+| Niche | Channels | Weekly view growth (median) | Subs grew | Videos beating normal |
+| --- | --- | --- | --- | --- |
+| How technology works | 12 | needs 2+ snapshots | - | 31% |
+| Science and space | 20 | needs 2+ snapshots | - | 27% |
+| Money and economics (education only) | 11 | needs 2+ snapshots | - | 24% |
 
-**Backward winner: Science and space** (ranking on main measure: Science and space)
-[quota] 76 YouTube units
+## How technology works: videos beating their channel's normal
+
+- 245.6x · Flying Roadster Explained: How Tesla's flying car works and what the technology is useful for?! — SpaceEyeTech (2,360 subs)
+- 52.5x · How Bicycle Gears Work — Quasar-Ed (43,300 subs)
+- 16.9x · The Teenager Who Invented TV (And How RCA Stole It) — The Build Era (7,190 subs)
+- 14.6x · Bakit Libu-libo ang Wika sa Mundo? — The Build Era (7,190 subs)
+- 13.3x · How AGI works? (Easiest Explanation) — Xplained with MUSHROOMS (1,950 subs)
+- 9.1x · All Of Mechanical Engineering Explained in 10 Minutes — Simplex Academy (13,800 subs)
+- 9.0x · Audi Quattro vs BMW xDrive vs Mercedes 4MATIC – Engineering Explained — Motoring Masters (99,700 subs)
+- 8.7x · Everything About Car Engines Explained – From Diesel Giants to Electric — Drive Explained (5,940 subs)
+
+## Science and space: videos beating their channel's normal
+
+- 710.1x · How Fast Are We Really Moving Through Space? — Curio (3,970 subs)
+- 216.7x · How Huge Is the Universe? (The Answer Breaks Physics) — Curio (3,970 subs)
+- 66.4x · Artemis II Explained | 2026 Mission to the Moon — Digital Astronaut (51,800 subs)
+- 47.7x · Where Did Earth’s Gold ACTUALLY Come From?. Can Science Finally Make Artificial Gold? — Simply Wonder (6,770 subs)
+- 35.8x · The new telescope 100x better than Hubble | Nancy Grace Roman Explained — Digital Astronaut (51,800 subs)
+- 21.2x · The Darkest Truth About Cryosleep Nobody Tells You — The Gravity Well (3,870 subs)
+- 20.4x · What Was There Before the Big Bang? — Caelum (2,080 subs)
+- 14.7x · Every Crazy Temperature in the Universe — Space Explainer (23,300 subs)
+
+## Money and economics (education only): videos beating their channel's normal
+
+- 383.6x · What Happens When Economists Run a Country — False Profit (7,800 subs)
+- 47.6x · Why Rome Never Industrialized — False Profit (7,800 subs)
+- 32.3x · Stop Sharing This Graph — False Profit (7,800 subs)
+- 30.9x · Will AI Replace Banking Jobs? Skills Bankers Need to Survive — BANKING & FINANCE ACADEMY (2,780 subs)
+- 22.5x · Economics Explained Is A Junk Channel — False Profit (7,800 subs)
+- 9.4x · Inflation Outlook 2027: Will Prices Rise Again? 📈 — Wallet Wise America (1,000 subs)
+- 8.2x · BlackRock Backed Bank Dumps $4.5 BILLION in Mortgages (SEC Filing Confirms) — Econofin (76,600 subs)
+- 7.4x · Which G7 Country Will Go Bankrupt First? — Economics Help (98,000 subs)
+
+Final choice: after 5 snapshots (4 weeks), by the rule in RULES.md. Owner confirms.
+[quota] 0 calls, 0 units
