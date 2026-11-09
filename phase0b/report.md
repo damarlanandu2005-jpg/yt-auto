@@ -1,44 +1,44 @@
-# Niche data test — report (2 snapshots, 0.7 weeks of change)
+# Niche data test — report (3 snapshots, 1.7 weeks of change)
 
 Rules: phase0b/RULES.md (version 2). Channels chosen 2026-10-27 from 2356 candidates (80 eligible).
 
 | Niche | Channels | Weekly view growth (median) | Subs grew | Videos beating normal |
 | --- | --- | --- | --- | --- |
-| How technology works | 12 | needs 2+ snapshots | - | 31% |
-| Science and space | 20 | needs 2+ snapshots | - | 27% |
-| Money and economics (education only) | 11 | needs 2+ snapshots | - | 24% |
+| How technology works | 12 | 1.55 % | 83% | 23% |
+| Science and space | 20 | 2.19 % | 85% | 26% |
+| Money and economics (education only) | 11 | 6.30 % | 91% | 22% |
 
 ## How technology works: videos beating their channel's normal
 
-- 245.6x · Flying Roadster Explained: How Tesla's flying car works and what the technology is useful for?! — SpaceEyeTech (2,360 subs)
-- 52.5x · How Bicycle Gears Work — Quasar-Ed (43,300 subs)
-- 16.9x · The Teenager Who Invented TV (And How RCA Stole It) — The Build Era (7,190 subs)
-- 14.6x · Bakit Libu-libo ang Wika sa Mundo? — The Build Era (7,190 subs)
-- 13.3x · How AGI works? (Easiest Explanation) — Xplained with MUSHROOMS (1,950 subs)
-- 9.1x · All Of Mechanical Engineering Explained in 10 Minutes — Simplex Academy (13,800 subs)
-- 9.0x · Audi Quattro vs BMW xDrive vs Mercedes 4MATIC – Engineering Explained — Motoring Masters (99,700 subs)
-- 8.7x · Everything About Car Engines Explained – From Diesel Giants to Electric — Drive Explained (5,940 subs)
+- 112.9x · Flying Roadster Explained: How Tesla's flying car works and what the technology is useful for?! — SpaceEyeTech (2,360 subs)
+- 46.7x · How Bicycle Gears Work — Quasar-Ed (43,300 subs)
+- 14.7x · The Teenager Who Invented TV (And How RCA Stole It) — The Build Era (7,190 subs)
+- 13.5x · All Of Electrical Engineering Explained in 12 Minutes — Simplex Academy (13,800 subs)
+- 11.1x · Bakit Libu-libo ang Wika sa Mundo? — The Build Era (7,190 subs)
+- 8.9x · Audi Quattro vs BMW xDrive vs Mercedes 4MATIC – Engineering Explained — Motoring Masters (99,700 subs)
+- 8.8x · The New AIKO Panel That Could Change Domestic Solar — Apex Doma Solar (9,520 subs)
+- 8.4x · All Of Mechanical Engineering Explained in 10 Minutes — Simplex Academy (13,800 subs)
 
 ## Science and space: videos beating their channel's normal
 
-- 710.1x · How Fast Are We Really Moving Through Space? — Curio (3,970 subs)
-- 216.7x · How Huge Is the Universe? (The Answer Breaks Physics) — Curio (3,970 subs)
-- 66.4x · Artemis II Explained | 2026 Mission to the Moon — Digital Astronaut (51,800 subs)
-- 47.7x · Where Did Earth’s Gold ACTUALLY Come From?. Can Science Finally Make Artificial Gold? — Simply Wonder (6,770 subs)
-- 35.8x · The new telescope 100x better than Hubble | Nancy Grace Roman Explained — Digital Astronaut (51,800 subs)
-- 21.2x · The Darkest Truth About Cryosleep Nobody Tells You — The Gravity Well (3,870 subs)
-- 20.4x · What Was There Before the Big Bang? — Caelum (2,080 subs)
-- 14.7x · Every Crazy Temperature in the Universe — Space Explainer (23,300 subs)
+- 360.3x · How Fast Are We Really Moving Through Space? — Curio (3,970 subs)
+- 192.9x · New Horizons Just Saw Pluto for The First Time — And It’s Terrifying — Today in the Space World (78,400 subs)
+- 187.7x · Ramayana: How Did Rama Reach Lanka? | Journey Map in English — Simply Wonder (6,770 subs)
+- 134.6x · How Huge Is the Universe? (The Answer Breaks Physics) — Curio (3,970 subs)
+- 67.6x · Artemis II Explained | 2026 Mission to the Moon — Digital Astronaut (51,800 subs)
+- 44.1x · Pauli Weighed Nothing. It Broke the Universe — Arthur's Physics (1,970 subs)
+- 34.9x · The new telescope 100x better than Hubble | Nancy Grace Roman Explained — Digital Astronaut (51,800 subs)
+- 28.6x · Scientists May Have Found Another Earth — The Mysterious Planet That Could Change Everything — Space Fact (1,020 subs)
 
 ## Money and economics (education only): videos beating their channel's normal
 
-- 383.6x · What Happens When Economists Run a Country — False Profit (7,800 subs)
-- 47.6x · Why Rome Never Industrialized — False Profit (7,800 subs)
-- 32.3x · Stop Sharing This Graph — False Profit (7,800 subs)
-- 30.9x · Will AI Replace Banking Jobs? Skills Bankers Need to Survive — BANKING & FINANCE ACADEMY (2,780 subs)
-- 22.5x · Economics Explained Is A Junk Channel — False Profit (7,800 subs)
-- 9.4x · Inflation Outlook 2027: Will Prices Rise Again? 📈 — Wallet Wise America (1,000 subs)
-- 8.2x · BlackRock Backed Bank Dumps $4.5 BILLION in Mortgages (SEC Filing Confirms) — Econofin (76,600 subs)
-- 7.4x · Which G7 Country Will Go Bankrupt First? — Economics Help (98,000 subs)
+- 138.4x · What Happens When Economists Run a Country — False Profit (7,800 subs)
+- 36.4x · Will AI Replace Banking Jobs? Skills Bankers Need to Survive — BANKING & FINANCE ACADEMY (2,780 subs)
+- 18.1x · Why Rome Never Industrialized — False Profit (7,800 subs)
+- 14.4x · Inside Vietnam’s Money Factory: How 500,000 Dong Banknotes Are Made (Full Process) — Inside Factory Process (54,900 subs)
+- 12.1x · Stop Sharing This Graph — False Profit (7,800 subs)
+- 7.8x · Economics Explained Is A Junk Channel — False Profit (7,800 subs)
+- 6.1x · Which G7 Country Will Go Bankrupt First? — Economics Help (98,000 subs)
+- 5.0x · How Many SCHD Shares Do You Need to Retire?| The Answer Is Smaller Than You Think — BANKING & FINANCE ACADEMY (2,780 subs)
 
 Final choice: after 5 snapshots (4 weeks), by the rule in RULES.md. Owner confirms.
