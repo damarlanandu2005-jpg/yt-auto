@@ -1,47 +1,47 @@
-[snapshot] 2026-11-16.json: 43 channels, 87 units
-[quota] 87 calls, 87 units
-# Niche data test — report (4 snapshots, 2.7 weeks of change)
+[snapshot] 2026-11-23.json: 43 channels, 85 units
+[quota] 85 calls, 85 units
+# Niche data test — report (5 snapshots, 3.7 weeks of change)
 
 Rules: phase0b/RULES.md (version 2). Channels chosen 2026-10-27 from 2356 candidates (80 eligible).
 
 | Niche | Channels | Weekly view growth (median) | Subs grew | Videos beating normal |
 | --- | --- | --- | --- | --- |
-| How technology works | 12 | 1.52 % | 83% | 26% |
-| Science and space | 20 | 2.39 % | 90% | 29% |
-| Money and economics (education only) | 11 | 4.67 % | 91% | 14% |
+| How technology works | 12 | 1.55 % | 83% | 26% |
+| Science and space | 20 | 2.10 % | 90% | 28% |
+| Money and economics (education only) | 11 | 2.87 % | 100% | 21% |
 
 ## How technology works: videos beating their channel's normal
 
-- 43.7x · How Bicycle Gears Work — Quasar-Ed (43,300 subs)
-- 14.5x · What Happens If AGI Gets a Quantum Computer? ( Easiest Explanation ) — Xplained with MUSHROOMS (1,950 subs)
-- 14.2x · The Teenager Who Invented TV (And How RCA Stole It) — The Build Era (7,190 subs)
-- 13.0x · The AI Problem Mushroom Farmers Solved Decades Ago — Xplained with MUSHROOMS (1,950 subs)
-- 10.0x · Bakit Libu-libo ang Wika sa Mundo? — The Build Era (7,190 subs)
-- 9.3x · The New AIKO Panel That Could Change Domestic Solar — Apex Doma Solar (9,520 subs)
-- 9.1x · All Of Electrical Engineering Explained in 12 Minutes — Simplex Academy (13,800 subs)
+- 41.6x · How Bicycle Gears Work — Quasar-Ed (43,300 subs)
+- 16.7x · All Of Electrical Engineering Explained in 12 Minutes — Simplex Academy (13,800 subs)
+- 13.7x · The Teenager Who Invented TV (And How RCA Stole It) — The Build Era (7,190 subs)
+- 13.2x · The AI Problem Mushroom Farmers Solved Decades Ago — Xplained with MUSHROOMS (1,950 subs)
+- 9.4x · Bakit Libu-libo ang Wika sa Mundo? — The Build Era (7,190 subs)
+- 9.0x · The New AIKO Panel That Could Change Domestic Solar — Apex Doma Solar (9,520 subs)
 - 8.8x · Audi Quattro vs BMW xDrive vs Mercedes 4MATIC – Engineering Explained — Motoring Masters (99,700 subs)
+- 7.5x · SigEnergy Just Revealed Something Big — Apex Doma Solar (9,520 subs)
 
 ## Science and space: videos beating their channel's normal
 
-- 275.4x · Ramayana: How Did Rama Reach Lanka? | Journey Map in English — Simply Wonder (6,770 subs)
-- 261.1x · How Fast Are We Really Moving Through Space? — Curio (3,970 subs)
-- 119.1x · How Huge Is the Universe? (The Answer Breaks Physics) — Curio (3,970 subs)
-- 110.5x · The Most Comforting Lie About Warp Drives — The Gravity Well (3,870 subs)
-- 84.2x · New Horizons Just Saw Pluto for The First Time — And It’s Terrifying — Today in the Space World (78,400 subs)
-- 68.7x · Artemis II Explained | 2026 Mission to the Moon — Digital Astronaut (51,800 subs)
-- 34.6x · The Planet That Destroys Everything It Touches | हिंदी — sleepdairy  (1,010 subs)
-- 34.0x · The new telescope 100x better than Hubble | Nancy Grace Roman Explained — Digital Astronaut (51,800 subs)
+- 266.2x · Ramayana: How Did Rama Reach Lanka? | Journey Map in English — Simply Wonder (6,770 subs)
+- 187.4x · How Fast Are We Really Moving Through Space? — Curio (3,970 subs)
+- 132.7x · The Most Comforting Lie About Artificial Gravity — The Gravity Well (3,870 subs)
+- 115.4x · Voyager 1 is Now 1 Light-Day From Home - And It's Terrifying — Today in the Space World (78,400 subs)
+- 97.5x · How Huge Is the Universe? (The Answer Breaks Physics) — Curio (3,970 subs)
+- 69.5x · Artemis II Explained | 2026 Mission to the Moon — Digital Astronaut (51,800 subs)
+- 68.0x · The Most Comforting Lie About Warp Drives — The Gravity Well (3,870 subs)
+- 33.6x · Every Crazy Temperature in the Universe — Space Explainer (23,300 subs)
 
 ## Money and economics (education only): videos beating their channel's normal
 
-- 203.3x · What Happens When Economists Run a Country — False Profit (7,800 subs)
-- 28.0x · Why Rome Never Industrialized — False Profit (7,800 subs)
-- 18.3x · Stop Sharing This Graph — False Profit (7,800 subs)
-- 11.1x · Economics Explained Is A Junk Channel — False Profit (7,800 subs)
-- 6.5x · France Now Borrows at a Higher Rate Than Greece — Economics Help (98,000 subs)
-- 5.4x · Which G7 Country Will Go Bankrupt First? — Economics Help (98,000 subs)
-- 4.8x · How Many SCHD Shares Do You Need to Retire?| The Answer Is Smaller Than You Think — BANKING & FINANCE ACADEMY (2,780 subs)
-- 4.0x · Bên trong nhà máy in tiền tại Việt Nam: Quy trình sản xuất tờ tiền 500.000 đồng (Toàn bộ quy trình) — Inside Factory Process (54,900 subs)
+- 248.4x · What Happens When Economists Run a Country — False Profit (7,800 subs)
+- 35.7x · Why Rome Never Industrialized — False Profit (7,800 subs)
+- 22.9x · Stop Sharing This Graph — False Profit (7,800 subs)
+- 13.2x · Economics Explained Is A Junk Channel — False Profit (7,800 subs)
+- 4.9x · Inside the Silk Factory: How Millions of Silkworms Become Luxury Silk Blankets (Full Process) — Inside Factory Process (54,900 subs)
+- 4.4x · How Many SCHD Shares Do You Need to Retire?| The Answer Is Smaller Than You Think — BANKING & FINANCE ACADEMY (2,780 subs)
+- 4.0x · The Housing Market Just Took a Strange Turn... Follow the Money — Econofin (76,600 subs)
+- 4.0x · Mortgage Rates Doubled. Why Haven't House Prices Crashed? — Economics Help (98,000 subs)
 
 Final choice: after 5 snapshots (4 weeks), by the rule in RULES.md. Owner confirms.
 [quota] 0 calls, 0 units
